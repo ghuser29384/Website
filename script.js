@@ -2401,7 +2401,7 @@ function renderAnimalIssues(country) {
   if (animalDataState.loading) {
     renderAnimalIssueStatus(
       "Loading animal data",
-      "Fetching country-level slaughter, wild terrestrial arthropod, agricultural land, and human-caused insect estimates to model local farmed and wild animal suffering."
+      "Fetching country-level slaughter, wild terrestrial arthropod and wild bird estimates, agricultural land, and human-caused insect estimates to model local farmed and wild animal suffering."
     );
     return;
   }
