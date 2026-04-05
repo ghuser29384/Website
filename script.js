@@ -12,6 +12,9 @@ const maxScale = baseScale * 3.25;
 const ISSUE_DATA_DATE_RANGE = "2010:2025";
 const ISSUE_CONTEXT_INDICATORS = ["SP.POP.TOTL", "SP.DYN.CBRT.IN", "AG.LND.TOTL.K2", "AG.LND.AGRI.K2"];
 const TERRESTRIAL_SOIL_ARTHROPODS_PER_SQKM = 6.7e10;
+const GLOBAL_LAND_AREA_SQKM = 1.489e8;
+const GLOBAL_WILD_BIRD_ESTIMATE = 5e10;
+const WILD_BIRDS_PER_SQKM = GLOBAL_WILD_BIRD_ESTIMATE / GLOBAL_LAND_AREA_SQKM;
 const INSECT_WELFARE_PROXY = {
   sentience: { median: 0.226, low: 0.002, high: 0.573 },
   welfareRange: { median: 0.029, low: 0, high: 0.244 },
@@ -37,12 +40,12 @@ const GLOBE_MODES = {
       improvement: {
         label: "Available improvement per dollar",
         copy:
-          "For humans, mixes recurring EA priorities with broader cross-country burden indicators. For animals, it favors tractable burden proxies and clearly marks where the evidence is welfare-range weighted, sentience-only, land-area wild-estimated, or based on a direct human-caused insect estimate.",
+          "For humans, mixes recurring EA priorities with broader cross-country burden indicators. For animals, it uses cost-effectiveness anchors from chicken campaigns, fish and shrimp welfare estimates, and hen ballot initiatives, while flagging where data are welfare-range weighted, sentience-only, wild-estimated, or based on a direct human-caused insect estimate.",
       },
       total: {
         label: "Total amount of suffering caused",
         copy:
-          "For humans, uses affected-person or direct-count burden proxies. For animals, it uses sentience-adjusted counts where possible, a land-area wild estimate for terrestrial arthropods, sentience-only bovine proxies where needed, and a direct human-caused insect estimate calibrated from insecticide-treated agricultural land.",
+          "For humans, uses affected-person or direct-count burden proxies. For animals, it uses sentience-adjusted counts where possible, land-area wild estimates for terrestrial arthropods and wild birds, sentience-only bovine proxies where needed, and a direct human-caused insect estimate calibrated from insecticide-treated agricultural land.",
       },
       "per-being": {
         label: "Amount of suffering suffered per being",
@@ -655,7 +658,7 @@ const CONTEXT_DATA_URL = (iso) =>
 const SUFFERING_BRIEF = {
   location: "Whole Earth",
   summary:
-    "The global view now includes estimated global animal suffering ranks; click a country to order a broader country suffering set with current national data: child health, infectious disease, food insecurity, poverty, pollution, water, clean cooking, violence, conflict, farmed animals, wild terrestrial arthropods, and a direct human-caused insect estimate.",
+    "The global view now includes estimated global animal suffering ranks; click a country to order a broader country suffering set with current national data: child health, infectious disease, food insecurity, poverty, pollution, water, clean cooking, violence, conflict, farmed animals, wild terrestrial arthropods, wild birds, and a direct human-caused insect estimate.",
   footnote:
     "Geography comes from Natural Earth and geoBoundaries. Human issue ordering uses World Bank country indicators; animal cards use Our World in Data production proxies, World Bank land-area data, a Wild Animal Initiative insect benchmark, and Rethink Priorities sentience and welfare-range distributions where available. Wild-animal estimates are coarse and inference-heavy, and Bentham's Bulldog argues both that they may dominate the global picture and that simple animals may feel more intense pain than low-neuron intuitions suggest.",
   issues: [
@@ -719,7 +722,7 @@ const DEATH_BRIEF = {
 
 const animalBrief = {
   summary:
-    "Animal suffering is now expanded country-by-country using slaughter and aquaculture proxies from Our World in Data, a wild terrestrial arthropod estimate derived from country land area, and a direct human-caused insect estimate calibrated from insecticide-treated agricultural land, plus Rethink Priorities sentience and welfare-range distributions where those exist.",
+    "Animal suffering is now expanded country-by-country using slaughter and aquaculture proxies from Our World in Data, wild terrestrial arthropod and wild bird estimates derived from country land area, and a direct human-caused insect estimate calibrated from insecticide-treated agricultural land, plus Rethink Priorities sentience and welfare-range distributions where those exist.",
   issues: [
     {
       tag: "Prior",
@@ -729,7 +732,7 @@ const animalBrief = {
     {
       tag: "Method",
       title: "Country counts first, then the strongest weighting the source pack supports",
-      body: "Where the RP distributions doc gives sentience-adjusted welfare ranges, this site uses them. Where it only gives sentience, the card says so. For wild terrestrial arthropods, the site estimates country scale from land area multiplied by a global arthropod-density benchmark from Rosenberg et al., and labels that estimate as rough rather than exact.",
+      body: "Where the RP distributions doc gives sentience-adjusted welfare ranges, this site uses them. Where it only gives sentience, the card says so. For wild terrestrial arthropods and birds, the site estimates country scale from land area multiplied by global density benchmarks and labels those estimates as rough rather than exact.",
     },
     {
       tag: "Bentham's Bulldog",
@@ -739,7 +742,7 @@ const animalBrief = {
     {
       tag: "Conservative proxy",
       title: "The direct insect card is narrower than the wild-insect question",
-      body: "The human-caused insect card estimates insects potentially affected on insecticide-treated agricultural land. The wild-arthropod card estimates the much larger baseline wild-animal scale. Both are rough: one is a direct but partial human-caused estimate, the other is a broad but highly inferential baseline.",
+      body: "The human-caused insect card estimates insects potentially affected on insecticide-treated agricultural land. The wild-arthropod card estimates the much larger baseline wild-animal scale, and the wild-bird card covers non-insect wild animals. All of these are rough: one is a direct but partial human-caused estimate, the others are broad but highly inferential baselines.",
     },
     {
       tag: "Intensity",
@@ -822,6 +825,12 @@ const MORAL_WEIGHT_NOTES = [
       "The country wild-animal card combines World Bank land area with Rosenberg et al.'s global estimate of about 1e19 soil arthropods, which works out to roughly 6.7e10 terrestrial arthropods per square kilometer of land. That gives the site an explicit scale estimate, but not a country-specific census.",
   },
   {
+    tag: "Counts",
+    title: "Wild birds use a global abundance benchmark",
+    body:
+      "The wild bird card scales World Bank land area by a global bird abundance estimate of about 50 billion birds, which works out to a few hundred birds per square kilometer on average. It is a coarse global-average proxy, not a country-specific census.",
+  },
+  {
     tag: "Direct harm",
     title: "The human-caused insect card is U.S.-calibrated and conservative",
     body:
@@ -855,6 +864,36 @@ const WILD_ANIMAL_CONTEXT_MODELS = [
     },
     source: (context) =>
       `World Bank land area · ${worldBankDate(context.landAreaDate)} combined with Rosenberg et al. 2023 estimate of about 1e19 soil arthropods globally, roughly ${formatCompactNumber(TERRESTRIAL_SOIL_ARTHROPODS_PER_SQKM)} per sq. km of land. This is a coarse global-average estimate rather than a country-specific census.`,
+    improvementNote:
+      "Per-dollar proxy set extremely low because scalable wild-insect welfare interventions are still exploratory.",
+  },
+  {
+    id: "wild-birds",
+    title: "Wild bird abundance (non-insect wild animals)",
+    improvementFactor: 0.01,
+    model: "wild-bird",
+    sentience: { median: 0.904, low: 0.629, high: 0.99 },
+    welfareRange: { median: 0.327, low: 0.002, high: 0.856 },
+    valueFromContext: (context) => context.landArea * WILD_BIRDS_PER_SQKM,
+    score: (value) => Math.max(0, Math.min(100, (Math.log10(value + 1) - 6) * 20)),
+    metric: (value) => `${formatScaleCount(value)} estimated wild birds`,
+    perBeingNote:
+      "bird proxy using chicken welfare-range median 0.327; this is a cautious stand-in for diverse wild bird species",
+    body: (value, score, country) => {
+      if (score >= 70) {
+        return `${country} has a very large land area, so even a coarse global-density estimate implies an enormous wild bird population. This card treats wild birds as a non-insect wild-animal baseline alongside the insect and farmed-animal estimates.`;
+      }
+
+      if (score >= 45) {
+        return `${country} has enough land area that a global-average bird estimate still implies a large wild bird population, which can materially add to the country's non-insect wild-animal burden.`;
+      }
+
+      return `${country} is smaller on this land-area-based wild bird estimate than the largest countries, but the implied number of birds is still substantial.`;
+    },
+    source: (context) =>
+      `World Bank land area · ${worldBankDate(context.landAreaDate)} combined with Callaghan et al. 2021 estimate of roughly 50 billion birds globally, which implies about ${formatCompactNumber(WILD_BIRDS_PER_SQKM)} birds per sq. km of land. This is a coarse global-average estimate rather than a country-specific census.`,
+    improvementNote:
+      "Per-dollar proxy set low because there is not yet a mature, scalable wild bird welfare intervention literature.",
   },
 ];
 
@@ -864,11 +903,13 @@ const ANIMAL_DATASETS = [
     title: "Chickens killed for meat",
     url: "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.csv",
     valueKey: "Chickens",
-    improvementFactor: 1.08,
+    improvementFactor: 1,
     model: "welfare-range",
     sentience: { median: 0.904, low: 0.629, high: 0.99 },
     welfareRange: { median: 0.327, low: 0.002, high: 0.856 },
     metric: (value) => `${formatCompactNumber(value)} chickens slaughtered for meat in the latest year`,
+    improvementNote:
+      "Per-dollar proxy anchored to chicken welfare campaign estimates (about 10-280 animals helped per dollar) and hen ballot-initiative cost-effectiveness.",
     body: (value, score, country) => {
       if (score >= 70) {
         return `${country} kills chickens for meat at very large scale, so broiler confinement, handling, transport, and slaughter are likely among its biggest farmed-animal harms.`;
@@ -888,11 +929,13 @@ const ANIMAL_DATASETS = [
     title: "Pigs killed for meat",
     url: "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.csv",
     valueKey: "Pigs",
-    improvementFactor: 0.92,
+    improvementFactor: 0.05,
     model: "welfare-range",
     sentience: { median: 0.973, low: 0.737, high: 0.99 },
     welfareRange: { median: 0.512, low: 0.005, high: 1.031 },
     metric: (value) => `${formatCompactNumber(value)} pigs slaughtered for meat in the latest year`,
+    improvementNote:
+      "Per-dollar proxy discounted using ballot-initiative evidence that hen reforms were about two orders of magnitude more cost-effective than breeding-sow or veal reforms.",
     body: (value, score, country) => {
       if (score >= 70) {
         return `${country} kills pigs for meat at very large scale, making confinement, transport, and slaughter a first-order animal welfare issue there.`;
@@ -912,11 +955,13 @@ const ANIMAL_DATASETS = [
     title: "Ducks, geese, and turkeys killed for meat",
     url: "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.csv",
     valueKeys: ["Ducks", "Geese", "Turkeys"],
-    improvementFactor: 0.84,
+    improvementFactor: 0.9,
     model: "bird-proxy",
     sentience: { median: 0.904, low: 0.629, high: 0.99 },
     welfareRange: { median: 0.327, low: 0.002, high: 0.856 },
     metric: (value) => `${formatCompactNumber(value)} ducks, geese, and turkeys slaughtered for meat`,
+    improvementNote:
+      "Per-dollar proxy anchored to chicken welfare campaign estimates because the main intervention evidence base is for poultry.",
     body: (value, score, country) => {
       if (score >= 70) {
         return `${country} kills very large numbers of non-chicken birds for meat. This card uses chicken values as a cautious bird proxy rather than pretending those species have no welfare significance.`;
@@ -936,10 +981,12 @@ const ANIMAL_DATASETS = [
     title: "Bovines killed for meat",
     url: "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.csv",
     valueKey: "Cattle",
-    improvementFactor: 0.58,
+    improvementFactor: 0.03,
     model: "sentience-only",
     sentience: { median: 0.945, low: 0.712, high: 0.99 },
     metric: (value) => `${formatCompactNumber(value)} bovines slaughtered for meat in the latest year`,
+    improvementNote:
+      "Per-dollar proxy discounted using ballot-initiative evidence that hen reforms were about two orders of magnitude more cost-effective than veal reforms.",
     body: (value, score, country) => {
       if (score >= 70) {
         return `${country} kills bovines at very large scale. The current card uses cow sentience directly because the loaded RP distribution pack clearly supports cow sentience but does not provide the matching Table 7 welfare-range output here.`;
@@ -959,13 +1006,15 @@ const ANIMAL_DATASETS = [
     title: "Farmed fish killed for food",
     url: "https://ourworldindata.org/grapher/farmed-fish-killed.csv",
     valueKey: "Mid-point estimate",
-    improvementFactor: 0.82,
+    improvementFactor: 0.22,
     model: "welfare-range",
     sentience: { median: 0.328, low: 0.08, high: 0.911 },
     welfareRange: { median: 0.071, low: 0, high: 0.543 },
     metric: (value) => `${formatCompactNumber(value)} farmed fish killed for food (midpoint estimate)`,
     perBeingNote:
       "sentience-adjusted welfare range median 0.071; Bentham's Bulldog argues fish pain may be more intense than cortex-based intuitions suggest",
+    improvementNote:
+      "Per-dollar proxy anchored to farmed fish welfare estimates (about 2-36 animals helped per dollar) and Fish Welfare Initiative cost-effectiveness.",
     body: (value, score, country) => {
       if (score >= 70) {
         return `${country} appears to be a very large farmed-fish producer. Even with lower central welfare-range estimates than pigs or chickens, fish numbers can be so high that they dominate the national animal-suffering picture. Bentham's Bulldog argues objections from brain architecture are weak and that fish behavior is strongly pain-like.`;
@@ -985,13 +1034,15 @@ const ANIMAL_DATASETS = [
     title: "Shrimp and crustacean farming",
     url: "https://ourworldindata.org/grapher/farmed-crustaceans.csv",
     valueKey: "Mid-point estimate",
-    improvementFactor: 0.76,
+    improvementFactor: 6,
     model: "welfare-range",
     sentience: { median: 0.314, low: 0.079, high: 0.87 },
     welfareRange: { median: 0.03, low: 0, high: 0.681 },
     metric: (value) => `${formatCompactNumber(value)} farmed crustaceans killed for food (midpoint estimate)`,
     perBeingNote:
       "sentience-adjusted welfare range median 0.030; Bentham's Bulldog argues decapod pain evidence is stronger than skeptical defaults suggest",
+    improvementNote:
+      "Per-dollar proxy anchored to shrimp welfare estimates (roughly 1,000-2,100 shrimp helped per dollar-year).",
     body: (value, score, country) => {
       if (score >= 70) {
         return `${country} appears to be a very large crustacean producer. The central welfare-range estimates are lower than for pigs or chickens, but the sheer number of animals can make this one of the country's worst hidden harms. Bentham's Bulldog argues decapods behave like animals in pain across multiple independent criteria.`;
@@ -1011,13 +1062,15 @@ const ANIMAL_DATASETS = [
     title: "Human-caused insect suffering estimate",
     url: "https://ourworldindata.org/grapher/insecticide-use.csv",
     valueKey: "Insecticides - Agricultural use (tonnes)",
-    improvementFactor: 0.98,
+    improvementFactor: 0.02,
     model: "human-caused-insect",
     sentience: INSECT_WELFARE_PROXY.sentience,
     welfareRange: INSECT_WELFARE_PROXY.welfareRange,
     valueFromRecord: (record, metrics, context) => estimateHumanCausedInsectExposure(record.value, context).insectsAffected,
     perBeingNote:
       "cautious insect welfare proxy median 0.029; Bentham's Bulldog argues insect pain may be more totalizing than this conservative proxy implies",
+    improvementNote:
+      "Per-dollar proxy kept low because tractable, scaled insect-welfare interventions remain early-stage compared with farmed-animal campaigns.",
     metric: (value, record, context) => {
       const estimate = estimateHumanCausedInsectExposure(record.value, context);
       const coverageNote =
@@ -1755,11 +1808,10 @@ function buildAnimalIssuesFromMetrics(metrics, context, countryLabel) {
           ? " This card is a country pressure proxy rather than a direct estimate of insects affected."
           : dataset.model === "human-caused-insect"
             ? " This card is a U.S.-calibrated estimate of insects directly affected on human-managed land rather than a direct country census."
-          : dataset.model === "wild-proxy"
-            ? " This card estimates wild arthropod scale from country land area and a global average density, so it is much rougher than the farmed-animal counts."
           : dataset.model === "bird-proxy"
             ? " This card uses chicken values as a cautious bird proxy."
             : " This card is a country burden proxy, not a full moral-weight calculation.";
+    const improvementNote = dataset.improvementNote ? ` ${dataset.improvementNote}` : "";
     const tagPrefix =
       dataset.model === "pressure-proxy"
         ? "Insect pressure"
@@ -1777,7 +1829,7 @@ function buildAnimalIssuesFromMetrics(metrics, context, countryLabel) {
       title: dataset.title,
       metric: dataset.metric(rawValue, record, context),
       body: dataset.body(rawValue, score, country, record, context),
-      source: `${dataset.source(record.year, record, context)}${modelTail}`,
+      source: `${dataset.source(record.year, record, context)}${modelTail}${improvementNote}`,
       score,
       welfareRange: dataset.welfareRange || null,
       sentience: dataset.sentience || null,
@@ -1812,6 +1864,22 @@ function buildAnimalIssuesFromMetrics(metrics, context, countryLabel) {
       const totalBurdenRaw = rawValue * perBeingRaw;
       const improvementRaw = totalBurdenRaw * model.improvementFactor;
       const score = typeof model.score === "function" ? model.score(rawValue, totalBurdenRaw) : animalIssueScore(totalBurdenRaw);
+      const improvementNote = model.improvementNote ? ` ${model.improvementNote}` : "";
+      const perBeingNote =
+        model.perBeingNote ||
+        (model.model === "wild-bird"
+          ? `bird proxy using chicken welfare-range median ${model.welfareRange.median.toFixed(3)}`
+          : `cautious insect welfare proxy median ${model.welfareRange.median.toFixed(3)} applied to a land-area-derived wild arthropod estimate`);
+      const modelTail =
+        model.model === "wild-bird"
+          ? " This card estimates wild bird scale from country land area and a global average density, so it is much rougher than the farmed-animal counts."
+          : " This card estimates wild arthropod scale from country land area and a global average density, so it is much rougher than the farmed-animal counts.";
+      const rankingMetric =
+        typeof model.rankingMetric === "function"
+          ? model.rankingMetric(rawValue, context)
+          : model.model === "wild-bird"
+            ? `${formatScaleCount(rawValue)} estimated wild birds from land area`
+            : `${formatScaleCount(rawValue)} estimated terrestrial arthropods from land area`;
 
       issues.push({
         id: model.id,
@@ -1819,13 +1887,11 @@ function buildAnimalIssuesFromMetrics(metrics, context, countryLabel) {
         title: model.title,
         metric: model.metric(rawValue, context),
         body: model.body(rawValue, score, country, context),
-        source: `${model.source(context)} This card estimates wild arthropod scale from country land area and a global average density, so it is much rougher than the farmed-animal counts.`,
+        source: `${model.source(context)}${modelTail}${improvementNote}`,
         score,
         welfareRange: model.welfareRange || null,
         sentience: model.sentience || null,
-        perBeingNote:
-          model.perBeingNote ||
-          `cautious insect welfare proxy median ${model.welfareRange.median.toFixed(3)} applied to a land-area-derived wild arthropod estimate`,
+        perBeingNote,
         ranking: {
           improvement: {
             score: Math.log10(improvementRaw + 1),
@@ -1834,7 +1900,7 @@ function buildAnimalIssuesFromMetrics(metrics, context, countryLabel) {
           total: {
             score: Math.log10(totalBurdenRaw + 1),
             raw: totalBurdenRaw,
-            metric: `${formatScaleCount(rawValue)} estimated terrestrial arthropods from land area`,
+            metric: rankingMetric,
           },
           "per-being": {
             score: perBeingRaw,
