@@ -2337,7 +2337,7 @@ function renderAnimalIssues(country) {
     if (animalDataState.loading) {
       renderAnimalIssueStatus(
         "Loading global animal data",
-        "Fetching global slaughter, aquaculture, insecticide, and land-area context to estimate global animal suffering rankings."
+        "Fetching global slaughter, aquaculture, insecticide, and land-area context to estimate global animal suffering rankings (including wild arthropods and wild birds)."
       );
       return;
     }
@@ -2603,7 +2603,7 @@ function renderDetails() {
       ? `${provinceNameLabel} is selected inside ${name}. The boundary is provincial, but the issue lists below remain national and are currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
       : state.globeMode === "death"
         ? `The list below focuses on human death causes. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
-        : `The lists below combine broader human suffering indicators with country-specific farmed and wild animal burden proxies plus a direct human-caused insect estimate. They are currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
+        : `The lists below combine broader human suffering indicators with country-specific farmed, wild bird, and wild insect burden proxies plus a direct human-caused insect estimate. They are currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
     factIssueSource.textContent = state.globeMode === "death"
       ? "Human: World Bank WDI death indicators."
       : animalDataState.loading
