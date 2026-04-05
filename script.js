@@ -1,380 +1,657 @@
-const regions = {
+import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
+import { feature as topojsonFeature } from "https://cdn.jsdelivr.net/npm/topojson-client@3/+esm";
+
+const COUNTRY_DATA_URL =
+  "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson";
+const GLOBE_ROTATION = [-18, -14, 0];
+const width = 900;
+const height = 900;
+const baseScale = 388;
+
+const briefs = {
   global: {
-    meta: "Global view",
-    title: "Start with the whole planet.",
+    location: "Whole Earth",
     summary:
-      "This map mixes two effective-altruist questions: where is suffering concentrated, and where can people or institutions in a region alter the largest outcomes?",
-    lens: "Scale, neglect, leverage",
-    pressure: "Burden and influence do not sit in the same places",
+      "Real geometry is now loaded. The prioritization layer still asks the same EA question: where do scale, suffering, neglect, and leverage combine most strongly?",
     footnote:
-      "Wealthier regions often show up here because of policy and institutional leverage. Poorer regions more often show up because the direct welfare burden is still enormous.",
+      "Country outlines come from Natural Earth. Provinces and states load from geoBoundaries only after a country is selected.",
     issues: [
       {
         tag: "Human welfare",
-        title: "Malaria and child survival",
-        body: "A tractable, preventable burden still falls heavily on children, especially in sub-Saharan Africa.",
-        response: "Back delivery systems that actually reach children: bednets, seasonal prevention, treatment access.",
+        title: "Preventable disease burden",
+        body: "Large welfare gains still come from old problems like malaria, undernutrition, polluted air, and toxic exposure.",
       },
       {
         tag: "Animals",
-        title: "Industrial animal agriculture",
-        body: "A vast amount of suffering remains hidden inside food systems, especially in poultry, fish, and shrimp production.",
-        response: "Cut demand, push welfare reforms, and treat animal numbers as morally relevant rather than background noise.",
+        title: "Industrial animal systems",
+        body: "A huge amount of suffering remains structurally hidden inside global food production, especially in poultry, fish, and shrimp systems.",
       },
       {
-        tag: "Systems",
-        title: "Pandemic preparedness and frontier governance",
-        body: "A small number of regions house institutions that can shape catastrophic-risk policy for everyone else.",
-        response: "Support better oversight, better preparedness, and better coordination before crises arrive.",
+        tag: "Governance",
+        title: "High-leverage institutions",
+        body: "Some places matter less because of local burden and more because decisions made there shape risks and welfare worldwide.",
       },
     ],
   },
   "north-america": {
-    meta: "North America",
-    title: "Power sits here, so governance issues rise.",
+    location: "North America",
     summary:
-      "From an EA lens, North America matters less because of local disease burden and more because of labs, capital, large firms, and political institutions with global reach.",
-    lens: "Leverage over global systems",
-    pressure: "Policy, capital, compute, animal agriculture",
+      "The strongest EA case here is institutional leverage: frontier labs, capital, large public agencies, and animal agriculture all have wide spillovers.",
     footnote:
-      "The claim is not that North America suffers most locally. It is that decisions made here can spill outward across the planet.",
+      "North America rises mostly because of policy, compute, biosecurity, and procurement leverage rather than direct disease burden alone.",
     issues: [
       {
         tag: "Governance",
         title: "AI oversight and frontier model governance",
-        body: "A large share of frontier AI capacity, funding, and policy debate is concentrated here.",
-        response: "Push for stronger oversight, evaluation, and institutional competence before capabilities outpace controls.",
+        body: "A large share of frontier model development and policy debate is concentrated here.",
       },
       {
         tag: "Biosecurity",
         title: "Pandemic preparedness",
-        body: "Research capacity and international coordination leverage are both unusually high in this region.",
-        response: "Strengthen surveillance, indoor air standards, vaccine readiness, and emergency institutions.",
+        body: "Institutional capacity is high enough that competence gains here can matter globally.",
       },
       {
         tag: "Animals",
-        title: "Industrial meat and procurement defaults",
-        body: "Large-scale poultry and livestock systems still turn cheap food into hidden suffering.",
-        response: "Change procurement defaults and push corporate standards rather than treating food choices as purely private.",
+        title: "Industrial meat systems",
+        body: "Large-scale poultry and livestock production still turns routine procurement into hidden suffering.",
       },
     ],
   },
   "south-america": {
-    meta: "Latin America",
-    title: "Violence, state capacity, and ecological leverage.",
+    location: "South America",
     summary:
-      "This region combines serious harms from organized violence and weak institutions with globally significant ecological and food-system spillovers.",
-    lens: "Institutional fragility plus ecological leverage",
-    pressure: "Violence, forests, food systems",
+      "Major priorities here mix institutional fragility with ecological leverage. Violence, forests, and food systems can all matter at once.",
     footnote:
-      "This is a coarse regional sketch. The main point is that human welfare, ecological stability, and animal welfare can all be live at once here.",
+      "Regional variation is large. The panel is a coarse strategic sketch, not a country ranking.",
     issues: [
       {
         tag: "Human welfare",
-        title: "Violence and criminal governance",
-        body: "Organized crime and weak institutions can dominate daily life and distort development for millions.",
-        response: "Support state-capacity improvements, violence prevention, and institutions that reduce coercive control.",
+        title: "Violence and state capacity",
+        body: "Organized violence can dominate development outcomes for millions.",
       },
       {
         tag: "Climate",
-        title: "Deforestation and land-use pressure",
-        body: "Forest loss, especially around the Amazon, creates global climate and biodiversity costs far beyond the region.",
-        response: "Back enforcement, indigenous land protection, and policies that reduce destructive land conversion.",
+        title: "Deforestation and land conversion",
+        body: "Forest loss creates costs that spill far beyond national borders.",
       },
       {
         tag: "Animals",
-        title: "Poultry and fish welfare",
-        body: "Growing animal production means many moral patients can be harmed by ordinary food-system choices.",
-        response: "Support welfare standards and demand shifts before poor defaults harden further.",
+        title: "Growing poultry and fish production",
+        body: "Food-system growth can lock in poor animal-welfare defaults early.",
       },
     ],
   },
   europe: {
-    meta: "Europe",
-    title: "Regulatory leverage is the main story.",
+    location: "Europe",
     summary:
-      "Europe's strongest EA case is often indirect: regulation, procurement, aid, and trade standards here can shape outcomes well beyond Europe itself.",
-    lens: "Policy leverage",
-    pressure: "Regulation, standards, diplomacy",
+      "Europe stands out for regulatory leverage. Rules written here can shift welfare, trade, and safety standards well beyond the region.",
     footnote:
-      "Low direct burden does not imply low priority if the rulemaking leverage is unusually high.",
+      "Low direct burden does not imply low importance when standard-setting leverage is unusually high.",
     issues: [
       {
         tag: "Governance",
         title: "AI and biotech regulation",
-        body: "Europe has disproportionate influence over safety standards, compliance norms, and institutional design.",
-        response: "Use that leverage for credible safety regimes rather than shallow performative rules.",
+        body: "Regulatory design choices can either raise the bar or perform safety theatrics.",
       },
       {
         tag: "Animals",
         title: "Farmed-animal welfare reform",
-        body: "Retail and regulatory decisions in Europe can change conditions for very large numbers of animals.",
-        response: "Push cage-free, broiler, fish, and procurement reforms that move entire sectors.",
+        body: "Retail and policy changes can improve conditions for very large numbers of animals.",
       },
       {
         tag: "Human welfare",
-        title: "Aid architecture and refugee policy",
-        body: "Funding choices and border policy can strongly affect vulnerable people far beyond Europe's borders.",
-        response: "Favor humane asylum systems and evidence-based development spending over symbolic politics.",
+        title: "Aid and refugee policy",
+        body: "European border and funding decisions strongly affect vulnerable people outside Europe too.",
       },
     ],
   },
   africa: {
-    meta: "Africa",
-    title: "Some of the clearest cases of preventable suffering.",
+    location: "Africa",
     summary:
-      "This coarse region mostly points toward sub-Saharan Africa, where malaria, child mortality, undernutrition, and toxic exposure still create enormous and tractable human losses.",
-    lens: "Acute welfare burden",
-    pressure: "Child survival, poverty, health access",
+      "This remains one of the clearest cases of concentrated, tractable human suffering: malaria, child mortality, undernutrition, and toxic exposure.",
     footnote:
-      "The continent is not morally homogeneous. This panel compresses large internal variation for a high-level map.",
+      "The continent is morally and politically heterogeneous. This is a high-level EA framing, not a continent-wide uniform claim.",
     issues: [
       {
         tag: "Human welfare",
         title: "Malaria and child survival",
-        body: "Malaria still falls overwhelmingly on African children and remains unusually tractable relative to the suffering involved.",
-        response: "Invest in bednets, prevention, treatment access, and delivery systems that reach remote households.",
+        body: "Malaria still falls heavily on African children and remains unusually tractable relative to the harm involved.",
       },
       {
         tag: "Health",
         title: "Lead exposure and dirty air",
-        body: "Toxic exposures and polluted air can quietly damage cognition, health, and lifetime outcomes at massive scale.",
-        response: "Support lead remediation, cleaner fuels, and environmental-health interventions that are still underfunded.",
+        body: "Quiet toxic exposure can damage cognition and health at massive scale.",
       },
       {
         tag: "Poverty",
         title: "Extreme poverty and undernutrition",
-        body: "Cash constraints and poor access to basic services still produce large, preventable losses in wellbeing.",
-        response: "Use direct transfers and highly evidenced health and nutrition programs where implementation is strong.",
+        body: "Direct transfers and evidence-backed health programs still have large upside.",
       },
     ],
   },
   "middle-east": {
-    meta: "Middle East and North Africa",
-    title: "Conflict turns ordinary problems into collapses.",
+    location: "Middle East and North Africa",
     summary:
-      "In an EA frame, the region's most pressing issues are often the ones that rapidly destroy health systems: war, displacement, outbreaks, and water stress.",
-    lens: "Conflict and fragility",
-    pressure: "Displacement, service collapse, climate stress",
+      "Conflict, displacement, and service collapse dominate here. Fragility makes ordinary health and welfare problems much more severe.",
     footnote:
-      "In fragile settings, interventions that preserve health access or put cash in people's hands can become unusually valuable very quickly.",
+      "In fragile settings, fast humanitarian logistics and health continuity can become unusually valuable very quickly.",
     issues: [
       {
         tag: "Human welfare",
         title: "Conflict and displacement",
-        body: "War displaces families, destroys infrastructure, and creates long tails of trauma and poverty.",
-        response: "Prioritize civilian protection, humanitarian access, and fast, flexible assistance that reaches people in motion.",
+        body: "War destroys infrastructure, uproots households, and creates long tails of trauma and poverty.",
       },
       {
         tag: "Health",
-        title: "Health-system interruption and outbreaks",
-        body: "When clinics collapse, treatable diseases and maternal risks become much deadlier.",
-        response: "Support emergency health logistics, vaccination continuity, and outbreak response capacity.",
+        title: "Health-system interruption",
+        body: "When clinics fail, treatable disease and maternal risks become much deadlier.",
       },
       {
         tag: "Climate",
-        title: "Water insecurity and extreme heat",
-        body: "Heat and water stress compound fragile politics and make everyday survival harder.",
-        response: "Back resilience, cooling, and water-access work where institutions can actually deliver.",
+        title: "Water stress and extreme heat",
+        body: "Heat and water insecurity compound already fragile politics.",
       },
     ],
   },
   "south-asia": {
-    meta: "South Asia",
-    title: "Huge population, chronic exposures, rising animal scale.",
+    location: "South Asia",
     summary:
-      "The moral weight here comes from very large numbers of people living with persistent harms, plus food systems that can affect staggering numbers of animals.",
-    lens: "Scale",
-    pressure: "Air, toxins, heat, animals",
+      "Very large population scale combines with chronic harms like polluted air, toxic exposure, heat, and rapidly expanding animal systems.",
     footnote:
-      "Many of the harms in South Asia are chronic rather than spectacular, which is one reason they remain easy to underrate.",
+      "Many of the region's biggest harms are chronic and familiar rather than spectacular, which makes them easy to underrate.",
     issues: [
       {
         tag: "Health",
         title: "Air pollution",
-        body: "Air pollution remains one of the region's largest contributors to disease burden and early death.",
-        response: "Treat clean air as a first-order public-health intervention rather than an aesthetic preference.",
+        body: "Clean air is a first-order public-health intervention here, not just an environmental preference.",
       },
       {
         tag: "Health",
-        title: "Lead exposure and industrial contamination",
-        body: "Hidden toxic exposure can do irreversible damage at enormous scale, especially for children.",
-        response: "Push lead regulation, safer recycling, and enforcement that actually removes exposure pathways.",
+        title: "Lead and industrial contamination",
+        body: "Hidden toxic exposure can impose irreversible damage at very large scale.",
       },
       {
         tag: "Animals",
-        title: "Rapidly scaling poultry and aquaculture",
-        body: "As demand grows, huge numbers of animals can enter systems with poor welfare by default.",
-        response: "Build welfare standards early instead of waiting for cruel norms to become entrenched.",
+        title: "Poultry and aquaculture growth",
+        body: "Demand growth can push huge numbers of animals into poor-welfare systems by default.",
       },
     ],
   },
   "east-asia": {
-    meta: "East and Southeast Asia",
-    title: "Animal numbers and systemic risks dominate.",
+    location: "East and Southeast Asia",
     summary:
-      "This region matters heavily for aquatic animal scale, dense urban-industrial systems, and technologies that can spill across borders.",
-    lens: "Animal scale plus systemic risk",
-    pressure: "Aquaculture, pandemics, dense industry",
+      "Animal numbers, pandemic preparedness, and dense industrial exposure all matter heavily here.",
     footnote:
-      "A region can be simultaneously a human-health priority, an animal-welfare priority, and a governance priority.",
+      "This region can be simultaneously a human-health priority, an animal-welfare priority, and a systemic-risk priority.",
     issues: [
       {
         tag: "Animals",
         title: "Fish and shrimp welfare at extreme scale",
-        body: "Aquatic food systems can involve very large numbers of sentient beings, even when each individual looks easy to ignore.",
-        response: "Take invertebrate and fish uncertainty seriously and push for welfare improvements before scale grows further.",
+        body: "Aquatic systems can affect very large numbers of sentient beings even when each individual is easy to ignore.",
       },
       {
         tag: "Biosecurity",
         title: "Pandemic surveillance and preparedness",
-        body: "Dense populations, trade, and livestock interfaces make early detection and response unusually important.",
-        response: "Improve surveillance, reporting, lab safety, and regional coordination before emergencies spread.",
+        body: "Dense trade and livestock interfaces make fast detection unusually important.",
       },
       {
         tag: "Health",
-        title: "Urban air pollution and industrial exposure",
-        body: "Chronic exposure in dense urban corridors can quietly remove huge amounts of healthy life.",
-        response: "Treat emissions control and clean energy as direct health policy, not just climate policy.",
+        title: "Urban industrial exposure",
+        body: "Air pollution and chronic exposure can quietly remove huge amounts of healthy life.",
       },
     ],
   },
   oceania: {
-    meta: "Oceania",
-    title: "Small population, outsized regional stewardship.",
+    location: "Oceania",
     summary:
-      "The strongest EA case in Oceania is usually about what the region can do for neighbors and for global preparedness rather than local burden alone.",
-    lens: "Preparedness and regional support",
-    pressure: "Biosecurity, Pacific resilience, animal systems",
+      "The strongest case here is often regional stewardship: preparedness, Pacific resilience, and avoiding hidden cruelty in animal systems.",
     footnote:
-      "The region matters partly because competent institutions can act early and help nearby countries with fewer buffers.",
+      "The region matters partly because relatively capable institutions can act early and support nearby communities with fewer buffers.",
     issues: [
       {
         tag: "Biosecurity",
-        title: "Biosecurity and pandemic preparedness",
-        body: "Island geography and strong institutions make preparation and containment unusually tractable.",
-        response: "Invest early in surveillance, indoor air, and response capacity while systems are still manageable.",
+        title: "Biosecurity and preparedness",
+        body: "Early action can still be unusually tractable in a region with strong institutions.",
       },
       {
         tag: "Climate",
-        title: "Climate resilience for Pacific communities",
-        body: "Nearby island states face acute climate exposure despite contributing little to the underlying damage.",
-        response: "Fund adaptation, relocation support, and infrastructure that protects communities before crisis becomes forced migration.",
+        title: "Pacific climate resilience",
+        body: "Nearby island communities face acute risk despite contributing little to the underlying damage.",
       },
       {
         tag: "Animals",
         title: "Animal farming and live-export welfare",
-        body: "Local industry choices can create severe suffering for animals even in a relatively wealthy region.",
-        response: "Push better welfare rules and reduce dependence on practices built around invisibility.",
+        body: "Wealth does not stop animal suffering from being systemically hidden.",
       },
     ],
   },
 };
 
-const regionOrder = [
-  "global",
-  "north-america",
-  "south-america",
-  "europe",
-  "africa",
-  "middle-east",
-  "south-asia",
-  "east-asia",
-  "oceania",
-];
+const svg = d3.select("#globe");
+const mapStatus = document.getElementById("map-status");
+const resetButton = document.getElementById("reset-view");
+const selectionMeta = document.getElementById("selection-meta");
+const selectionTitle = document.getElementById("selection-title");
+const selectionSummary = document.getElementById("selection-summary");
+const selectionFootnote = document.getElementById("selection-footnote");
+const factLocation = document.getElementById("fact-location");
+const factCountrySource = document.getElementById("fact-country-source");
+const factAdminSource = document.getElementById("fact-admin-source");
+const factUnitCount = document.getElementById("fact-unit-count");
+const issuesRoot = document.getElementById("issues");
 
-const regionLabels = {
-  global: "Global",
-  "north-america": "North America",
-  "south-america": "Latin America",
-  europe: "Europe",
-  africa: "Africa",
-  "middle-east": "Middle East & North Africa",
-  "south-asia": "South Asia",
-  "east-asia": "East & Southeast Asia",
-  oceania: "Oceania",
+const projection = d3
+  .geoOrthographic()
+  .translate([width / 2, height / 2])
+  .scale(baseScale)
+  .clipAngle(90)
+  .precision(0.2)
+  .rotate(GLOBE_ROTATION);
+
+const path = d3.geoPath(projection);
+const graticule = d3.geoGraticule10();
+
+const spherePath = svg.append("path").attr("class", "sphere");
+const graticulePath = svg.append("path").attr("class", "graticule");
+const countriesGroup = svg.append("g");
+const provincesGroup = svg.append("g");
+const outlinePath = svg.append("path").attr("class", "globe-outline");
+
+const state = {
+  countries: [],
+  selectedCountry: null,
+  selectedProvince: null,
+  provinceMeta: null,
+  provinceFeatures: [],
 };
 
-const switcher = document.getElementById("region-switcher");
-const meta = document.getElementById("region-meta");
-const title = document.getElementById("region-title");
-const summary = document.getElementById("region-summary");
-const lens = document.getElementById("region-lens");
-const pressure = document.getElementById("region-pressure");
-const issues = document.getElementById("issues");
-const footnote = document.getElementById("region-footnote");
-const svgRegions = document.querySelectorAll(".region-group");
+const provinceCache = new Map();
+let provinceRequestId = 0;
+let justDragged = false;
 
-let activeRegion = "global";
-
-function buildSwitcher() {
-  const fragment = document.createDocumentFragment();
-
-  for (const regionId of regionOrder) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "region-pill";
-    button.dataset.region = regionId;
-    button.textContent = regionLabels[regionId];
-    button.addEventListener("click", () => setActiveRegion(regionId));
-    fragment.appendChild(button);
-  }
-
-  switcher.appendChild(fragment);
+function setStatus(message) {
+  mapStatus.textContent = message;
 }
 
-function renderIssues(region) {
-  issues.textContent = "";
+function formatNumber(value) {
+  return new Intl.NumberFormat("en-US").format(Number(value || 0));
+}
 
-  for (const issue of region.issues) {
+function countryName(properties) {
+  return (
+    properties.NAME_LONG ||
+    properties.NAME_EN ||
+    properties.ADMIN ||
+    properties.NAME ||
+    "Unknown country"
+  );
+}
+
+function countryIso(properties) {
+  return properties.ADM0_A3 || properties.ISO_A3 || properties.ISO_A3_EH || null;
+}
+
+function provinceName(feature) {
+  const properties = feature.properties || {};
+  return (
+    properties.shapeName ||
+    properties.NAME_1 ||
+    properties.name ||
+    properties.NAME ||
+    properties.PROV_NAME ||
+    "Unknown ADM1 unit"
+  );
+}
+
+function countryRegionKey(feature) {
+  if (!feature) {
+    return "global";
+  }
+
+  const properties = feature.properties || {};
+  const continent = properties.CONTINENT || "";
+  const subregion = properties.SUBREGION || "";
+
+  if (subregion === "Northern Africa" || subregion === "Western Asia") {
+    return "middle-east";
+  }
+
+  if (subregion === "Southern Asia") {
+    return "south-asia";
+  }
+
+  if (subregion === "Eastern Asia" || subregion === "South-Eastern Asia") {
+    return "east-asia";
+  }
+
+  if (continent === "North America") {
+    return "north-america";
+  }
+
+  if (continent === "South America") {
+    return "south-america";
+  }
+
+  if (continent === "Europe") {
+    return "europe";
+  }
+
+  if (continent === "Africa") {
+    return "africa";
+  }
+
+  if (continent === "Oceania") {
+    return "oceania";
+  }
+
+  if (continent === "Asia") {
+    return "east-asia";
+  }
+
+  return "global";
+}
+
+function mediaGithubUrl(url) {
+  if (!url) {
+    return url;
+  }
+
+  if (url.includes("media.githubusercontent.com")) {
+    return url;
+  }
+
+  if (url.includes("github.com/") && url.includes("/raw/")) {
+    return url
+      .replace("https://github.com/", "https://media.githubusercontent.com/media/")
+      .replace("/raw/", "/");
+  }
+
+  if (url.includes("raw.githubusercontent.com/")) {
+    return url.replace(
+      "https://raw.githubusercontent.com/",
+      "https://media.githubusercontent.com/media/"
+    );
+  }
+
+  return url;
+}
+
+async function fetchJson(url) {
+  const response = await fetch(url);
+
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}`);
+  }
+
+  return response.json();
+}
+
+function renderIssues(country) {
+  const brief = briefs[countryRegionKey(country)];
+  issuesRoot.textContent = "";
+
+  for (const issue of brief.issues) {
     const card = document.createElement("article");
     card.className = "issue-card";
     card.innerHTML = `
       <p class="issue-tag">${issue.tag}</p>
       <h3>${issue.title}</h3>
       <p>${issue.body}</p>
-      <p class="issue-response"><span>EA response:</span> ${issue.response}</p>
     `;
-    issues.appendChild(card);
+    issuesRoot.appendChild(card);
   }
 }
 
-function updateSelectionState() {
-  for (const button of switcher.querySelectorAll(".region-pill")) {
-    const isActive = button.dataset.region === activeRegion;
-    button.classList.toggle("active", isActive);
-    button.setAttribute("aria-pressed", isActive ? "true" : "false");
+function renderDetails() {
+  const brief = briefs[countryRegionKey(state.selectedCountry)];
+
+  if (!state.selectedCountry) {
+    selectionMeta.textContent = "Global view";
+    selectionTitle.textContent = "The whole Earth.";
+    selectionSummary.textContent =
+      "Drag the globe to rotate it. Click a country to load first-order administrative boundaries with real geometry.";
+    selectionFootnote.textContent = brief.footnote;
+    factLocation.textContent = brief.location;
+    factCountrySource.textContent = "Natural Earth Admin 0, 1:50m";
+    factAdminSource.textContent = "geoBoundaries ADM1 will load on click";
+    factUnitCount.textContent = "0";
+    renderIssues(null);
+    return;
   }
 
-  for (const regionNode of svgRegions) {
-    regionNode.classList.toggle("active", regionNode.dataset.region === activeRegion);
+  const countryProps = state.selectedCountry.properties;
+  const name = countryName(countryProps);
+  const iso = countryIso(countryProps) || "Unknown ISO";
+  const subregion = countryProps.SUBREGION || countryProps.CONTINENT || "Unknown region";
+
+  selectionMeta.textContent = `${name} · ${subregion}`;
+  selectionTitle.textContent = state.selectedProvince ? provinceName(state.selectedProvince) : name;
+  selectionSummary.textContent = state.selectedProvince
+    ? `${provinceName(state.selectedProvince)} is selected inside ${name}. The outline is drawn from the live ADM1 layer for ${iso}.`
+    : brief.summary;
+  selectionFootnote.textContent = state.provinceMeta?.boundarySource
+    ? `ADM1 source: ${state.provinceMeta.boundarySource}. ${brief.footnote}`
+    : brief.footnote;
+
+  factLocation.textContent = `${name} · ${iso}`;
+  factCountrySource.textContent = "Natural Earth Admin 0, 1:50m";
+
+  if (state.provinceMeta?.error) {
+    factAdminSource.textContent = "ADM1 failed to load";
+    factUnitCount.textContent = "0";
+  } else if (state.provinceMeta) {
+    const canonical = state.provinceMeta.boundaryCanonical || "ADM1";
+    const buildDate = state.provinceMeta.buildDate || state.provinceMeta.sourceDataUpdateDate || "Current build";
+    factAdminSource.textContent = `${canonical} · ${buildDate}`;
+    factUnitCount.textContent = formatNumber(state.provinceMeta.admUnitCount || state.provinceFeatures.length);
+  } else {
+    factAdminSource.textContent = "Loading ADM1 boundaries...";
+    factUnitCount.textContent = "0";
   }
+
+  renderIssues(state.selectedCountry);
 }
 
-function setActiveRegion(regionId) {
-  activeRegion = regionId;
-  const region = regions[regionId];
+function renderGlobe() {
+  spherePath.attr("d", path({ type: "Sphere" }));
+  graticulePath.attr("d", path(graticule));
+  outlinePath.attr("d", path({ type: "Sphere" }));
 
-  meta.textContent = region.meta;
-  title.textContent = region.title;
-  summary.textContent = region.summary;
-  lens.textContent = region.lens;
-  pressure.textContent = region.pressure;
-  footnote.textContent = region.footnote;
+  countriesGroup
+    .selectAll("path")
+    .data(state.countries, (feature) => countryIso(feature.properties) || countryName(feature.properties))
+    .join("path")
+    .attr("class", (feature) => {
+      const iso = countryIso(feature.properties);
+      const selectedIso = state.selectedCountry ? countryIso(state.selectedCountry.properties) : null;
 
-  renderIssues(region);
-  updateSelectionState();
+      if (selectedIso && iso === selectedIso) {
+        return "country-path is-selected";
+      }
+
+      if (selectedIso) {
+        return "country-path is-muted";
+      }
+
+      return "country-path";
+    })
+    .attr("d", path)
+    .attr("aria-label", (feature) => countryName(feature.properties))
+    .on("click", (event, feature) => {
+      if (justDragged) {
+        return;
+      }
+
+      selectCountry(feature);
+    });
+
+  provincesGroup
+    .selectAll("path")
+    .data(
+      state.provinceFeatures,
+      (feature) => feature.properties.shapeID || feature.properties.shapeISO || provinceName(feature)
+    )
+    .join("path")
+    .attr("class", (feature) => {
+      const isSelected =
+        state.selectedProvince &&
+        (feature.properties.shapeID === state.selectedProvince.properties.shapeID ||
+          provinceName(feature) === provinceName(state.selectedProvince));
+
+      return isSelected ? "province-path is-selected" : "province-path";
+    })
+    .attr("d", path)
+    .on("click", (event, feature) => {
+      event.stopPropagation();
+
+      if (justDragged) {
+        return;
+      }
+
+      state.selectedProvince = feature;
+      renderDetails();
+      renderGlobe();
+      setStatus(`${provinceName(feature)} selected.`);
+    });
 }
 
-for (const regionNode of svgRegions) {
-  regionNode.addEventListener("click", () => setActiveRegion(regionNode.dataset.region));
-  regionNode.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      setActiveRegion(regionNode.dataset.region);
+function rotateTo(feature) {
+  const [longitude, latitude] = d3.geoCentroid(feature);
+  const start = projection.rotate();
+  const end = [-longitude, -latitude, 0];
+  const interpolate = d3.interpolate(start, end);
+
+  d3.transition()
+    .duration(900)
+    .tween("rotate-globe", () => (time) => {
+      projection.rotate(interpolate(time));
+      renderGlobe();
+    });
+}
+
+async function loadAdm1(feature) {
+  const properties = feature.properties;
+  const iso = countryIso(properties);
+  const name = countryName(properties);
+
+  if (!iso) {
+    state.provinceMeta = { error: "Missing ISO code" };
+    state.provinceFeatures = [];
+    renderDetails();
+    renderGlobe();
+    setStatus(`No ISO code available for ${name}.`);
+    return;
+  }
+
+  if (provinceCache.has(iso)) {
+    const cached = provinceCache.get(iso);
+    state.provinceMeta = cached.meta;
+    state.provinceFeatures = cached.features;
+    renderDetails();
+    renderGlobe();
+    setStatus(`${name} ADM1 boundaries loaded from cache.`);
+    return;
+  }
+
+  const requestId = ++provinceRequestId;
+  state.provinceMeta = null;
+  state.provinceFeatures = [];
+  renderDetails();
+  renderGlobe();
+  setStatus(`Loading ${name} ADM1 boundaries...`);
+
+  try {
+    const meta = await fetchJson(`https://www.geoboundaries.org/api/current/gbOpen/${iso}/ADM1/`);
+    const topology = await fetchJson(mediaGithubUrl(meta.tjDownloadURL));
+    const objectKey = Object.keys(topology.objects)[0];
+    const features = topojsonFeature(topology, topology.objects[objectKey]).features;
+
+    provinceCache.set(iso, { meta, features });
+
+    if (requestId !== provinceRequestId || countryIso(state.selectedCountry?.properties) !== iso) {
+      return;
     }
-  });
+
+    state.provinceMeta = meta;
+    state.provinceFeatures = features;
+    renderDetails();
+    renderGlobe();
+    setStatus(`Loaded ${formatNumber(meta.admUnitCount || features.length)} ADM1 units for ${name}.`);
+  } catch (error) {
+    if (requestId !== provinceRequestId) {
+      return;
+    }
+
+    state.provinceMeta = { error: error.message };
+    state.provinceFeatures = [];
+    renderDetails();
+    renderGlobe();
+    setStatus(`ADM1 load failed for ${name}.`);
+  }
 }
 
-buildSwitcher();
-setActiveRegion(activeRegion);
+async function selectCountry(feature) {
+  state.selectedCountry = feature;
+  state.selectedProvince = null;
+  rotateTo(feature);
+  renderDetails();
+  renderGlobe();
+  await loadAdm1(feature);
+}
+
+function resetView() {
+  state.selectedCountry = null;
+  state.selectedProvince = null;
+  state.provinceMeta = null;
+  state.provinceFeatures = [];
+  projection.rotate(GLOBE_ROTATION);
+  renderDetails();
+  renderGlobe();
+  setStatus("Showing global country boundaries.");
+}
+
+function setupInteraction() {
+  svg.call(
+    d3
+      .drag()
+      .on("start", () => {
+        justDragged = false;
+      })
+      .on("drag", (event) => {
+        const rotate = projection.rotate();
+        const nextRotation = [
+          rotate[0] + event.dx * 0.34,
+          Math.max(-88, Math.min(88, rotate[1] - event.dy * 0.34)),
+          0,
+        ];
+
+        projection.rotate(nextRotation);
+        justDragged = true;
+        renderGlobe();
+      })
+      .on("end", () => {
+        window.setTimeout(() => {
+          justDragged = false;
+        }, 120);
+      })
+  );
+
+  resetButton.addEventListener("click", resetView);
+}
+
+async function init() {
+  setStatus("Loading Natural Earth country boundaries...");
+
+  try {
+    const data = await fetchJson(COUNTRY_DATA_URL);
+    state.countries = data.features.filter((feature) => countryName(feature.properties) !== "Antarctica");
+    renderDetails();
+    renderGlobe();
+    setupInteraction();
+    setStatus("Drag to rotate. Click a country to load provinces or states.");
+  } catch (error) {
+    setStatus(`Country data failed to load: ${error.message}`);
+  }
+}
+
+init();

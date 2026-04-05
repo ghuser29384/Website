@@ -6,7 +6,7 @@
     <title>Earth of Stakes</title>
     <meta
       name="description"
-      content="A minimalist effective altruism map where users click regions of Earth to see their most pressing issues."
+      content="An effective altruism globe with accurate country boundaries and on-demand provincial detail."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -14,160 +14,109 @@
     <div class="shell">
       <header class="topbar">
         <div>
-          <p class="label">Effective altruism atlas</p>
-          <h1>Earth, seen through urgency.</h1>
+          <p class="label">Earth of Stakes</p>
+          <h1>Accurate boundaries first.</h1>
         </div>
         <p class="topbar-note">
-          Click a region to see the issues that rise when you care about scale, suffering, neglect, and leverage,
-          not just what feels vivid on the news.
+          The globe now uses real country geometry and loads provincial or state boundaries on demand. Drag to rotate,
+          click a country, then click an ADM1 unit to inspect it.
         </p>
       </header>
 
-      <main class="atlas">
-        <section class="earth-panel">
-          <div class="earth-copy">
-            <p class="label">Main page</p>
-            <p class="earth-intro">
-              This is not a travel guide or a live crisis tracker. It is a coarse effective-altruist map of where
-              preventable suffering concentrates and where institutions can move the largest outcomes.
-            </p>
+      <main class="layout">
+        <section class="globe-panel">
+          <div class="panel-head">
+            <div>
+              <p class="label">Globe</p>
+              <p class="panel-copy">
+                Base geography: Natural Earth Admin 0 at 1:50m. Provincial detail: geoBoundaries ADM1.
+              </p>
+            </div>
+            <button class="ghost-button" id="reset-view" type="button">Reset globe</button>
           </div>
 
           <div class="globe-frame">
-            <svg id="earth" viewBox="0 0 640 640" aria-label="Clickable Earth map">
-              <defs>
-                <clipPath id="globe-clip">
-                  <circle cx="320" cy="320" r="250"></circle>
-                </clipPath>
-              </defs>
-
-              <circle class="ocean" cx="320" cy="320" r="250"></circle>
-
-              <g class="graticule" aria-hidden="true">
-                <circle cx="320" cy="320" r="250"></circle>
-                <ellipse cx="320" cy="320" rx="250" ry="98"></ellipse>
-                <ellipse cx="320" cy="320" rx="250" ry="170"></ellipse>
-                <ellipse cx="320" cy="320" rx="180" ry="250" transform="rotate(-22 320 320)"></ellipse>
-                <ellipse cx="320" cy="320" rx="180" ry="250" transform="rotate(22 320 320)"></ellipse>
-              </g>
-
-              <g clip-path="url(#globe-clip)">
-                <g class="region-group" data-region="north-america" tabindex="0" role="button" aria-label="North America">
-                  <path
-                    class="region-shape"
-                    d="M168 170 C120 185 98 230 110 273 C124 319 170 323 196 294 C222 296 250 278 258 244 C265 215 250 183 221 168 C202 160 186 161 168 170 Z"
-                  ></path>
-                </g>
-                <g class="region-group" data-region="south-america" tabindex="0" role="button" aria-label="South America">
-                  <path
-                    class="region-shape"
-                    d="M236 326 C212 348 206 381 216 414 C223 439 216 466 231 507 C243 539 266 570 289 556 C306 545 310 516 298 488 C293 457 300 427 286 397 C273 369 259 343 236 326 Z"
-                  ></path>
-                </g>
-                <g class="region-group" data-region="europe" tabindex="0" role="button" aria-label="Europe">
-                  <path
-                    class="region-shape"
-                    d="M356 199 C340 205 333 220 340 232 C352 244 372 243 390 234 C401 223 394 207 377 200 C369 197 364 196 356 199 Z"
-                  ></path>
-                </g>
-                <g class="region-group" data-region="africa" tabindex="0" role="button" aria-label="Africa">
-                  <path
-                    class="region-shape"
-                    d="M360 252 C338 272 329 307 337 346 C347 388 371 431 400 445 C425 444 442 414 438 380 C435 347 420 315 404 287 C391 266 383 256 360 252 Z"
-                  ></path>
-                </g>
-                <g class="region-group" data-region="middle-east" tabindex="0" role="button" aria-label="Middle East and North Africa">
-                  <path
-                    class="region-shape"
-                    d="M420 246 C402 251 397 266 403 280 C418 289 442 287 454 274 C458 259 445 247 420 246 Z"
-                  ></path>
-                </g>
-                <g class="region-group" data-region="south-asia" tabindex="0" role="button" aria-label="South Asia">
-                  <path
-                    class="region-shape"
-                    d="M460 282 C443 294 438 316 451 334 C463 352 487 353 499 338 C503 318 489 294 460 282 Z"
-                  ></path>
-                </g>
-                <g class="region-group" data-region="east-asia" tabindex="0" role="button" aria-label="East and Southeast Asia">
-                  <path
-                    class="region-shape"
-                    d="M468 192 C446 201 438 225 449 244 C468 259 500 260 528 246 C546 230 547 202 526 187 C503 177 481 180 468 192 Z"
-                  ></path>
-                </g>
-                <g class="region-group" data-region="oceania" tabindex="0" role="button" aria-label="Oceania">
-                  <path
-                    class="region-shape"
-                    d="M518 401 C501 409 495 424 505 438 C520 449 549 450 565 438 C571 423 558 404 518 401 Z"
-                  ></path>
-                </g>
-              </g>
-
-              <circle class="globe-outline" cx="320" cy="320" r="250"></circle>
-            </svg>
+            <svg id="globe" viewBox="0 0 900 900" aria-label="Interactive Earth with country and province boundaries"></svg>
+            <p class="map-status" id="map-status" role="status">Loading country boundaries...</p>
           </div>
 
-          <div class="region-switcher" id="region-switcher" aria-label="Region selector"></div>
+          <div class="legend" aria-hidden="true">
+            <span><i class="swatch swatch-country"></i>Country</span>
+            <span><i class="swatch swatch-province"></i>Province or state</span>
+            <span><i class="swatch swatch-selected"></i>Selected</span>
+          </div>
         </section>
 
         <aside class="detail-panel" aria-live="polite">
-          <p class="label" id="region-meta"></p>
-          <h2 id="region-title"></h2>
-          <p class="region-summary" id="region-summary"></p>
+          <p class="label" id="selection-meta">Global view</p>
+          <h2 id="selection-title">The whole Earth.</h2>
+          <p class="selection-summary" id="selection-summary">
+            Drag the globe to rotate it. Click a country to load first-order administrative boundaries with real geometry.
+          </p>
 
-          <div class="detail-signals">
-            <article class="signal">
-              <span class="signal-label">Dominant lens</span>
-              <strong id="region-lens"></strong>
+          <div class="facts">
+            <article class="fact-card">
+              <span class="fact-label">Location</span>
+              <strong id="fact-location">No country selected</strong>
             </article>
-            <article class="signal">
-              <span class="signal-label">Why it rises</span>
-              <strong id="region-pressure"></strong>
+            <article class="fact-card">
+              <span class="fact-label">Country source</span>
+              <strong id="fact-country-source">Natural Earth Admin 0, 1:50m</strong>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">ADM1 source</span>
+              <strong id="fact-admin-source">geoBoundaries ADM1 will load on click</strong>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">Units loaded</span>
+              <strong id="fact-unit-count">0</strong>
             </article>
           </div>
 
-          <div class="issues" id="issues"></div>
-          <p class="detail-footnote" id="region-footnote"></p>
+          <section class="issues-section">
+            <p class="label">EA lens</p>
+            <div class="issues" id="issues"></div>
+          </section>
+
+          <p class="detail-footnote" id="selection-footnote">
+            This is still an effective-altruism framing layer, not a live ranked dashboard. The geography is now real; the prioritization copy remains a coarse strategic lens.
+          </p>
         </aside>
       </main>
 
-      <section class="method">
-        <article class="method-card">
-          <p class="label">Scale</p>
-          <h3>Big harms stay big even when they are ordinary.</h3>
-          <p>Recurring disease, chronic pollution, and factory farming can matter more than the dramatic event your attention system prefers.</p>
+      <section class="sources">
+        <article class="source-card">
+          <p class="label">Natural Earth</p>
+          <h3>Country geometry</h3>
+          <p>
+            The globe uses official Natural Earth Admin 0 countries data at 1:50m scale for accurate country outlines.
+          </p>
         </article>
-        <article class="method-card">
-          <p class="label">Leverage</p>
-          <h3>Some regions matter because of institutions, not local burden.</h3>
-          <p>Rich regions often surface governance and policy questions because decisions made there spill outward across the world.</p>
+        <article class="source-card">
+          <p class="label">geoBoundaries</p>
+          <h3>Provincial detail</h3>
+          <p>
+            Clicking a country loads ADM1 boundaries from geoBoundaries so states and provinces reflect real administrative shapes instead of rough regions.
+          </p>
         </article>
-        <article class="method-card">
-          <p class="label">Neglect</p>
-          <h3>The map prefers what is under-seen.</h3>
-          <p>Many of the largest problems are familiar enough to look normal. That is partly why they remain under-addressed.</p>
+        <article class="source-card">
+          <p class="label">Why not Google Earth</p>
+          <h3>Open data wins here</h3>
+          <p>
+            Google Maps or Earth would require credentials and billing setup. This version stays deployable on static hosting while still using high-quality geographic data.
+          </p>
         </article>
       </section>
 
-      <footer class="sources" id="sources">
-        <div class="sources-copy">
-          <p class="label">Grounding</p>
-          <h2>What informed the map</h2>
-          <p>
-            The framing comes from Bentham&rsquo;s Bulldog and the Effective Altruism Forum. The regional issue choices are illustrative,
-            with broad factual grounding from WHO and Our World in Data rather than a claim to be a live ranked dashboard.
-          </p>
-        </div>
-        <ul class="sources-list">
-          <li><a href="https://benthams.substack.com/" target="_blank" rel="noreferrer">Bentham&rsquo;s Newsletter</a></li>
-          <li><a href="https://forum.effectivealtruism.org/" target="_blank" rel="noreferrer">Effective Altruism Forum</a></li>
-          <li><a href="https://www.who.int/health-topics/malaria" target="_blank" rel="noreferrer">WHO malaria overview</a></li>
-          <li><a href="https://www.who.int/southeastasia/health-topics/air-pollution" target="_blank" rel="noreferrer">WHO South-East Asia air pollution overview</a></li>
-          <li><a href="https://www.who.int/publications/m/item/emro-who-health-emergency-appeal-2024" target="_blank" rel="noreferrer">WHO Eastern Mediterranean emergency appeal</a></li>
-          <li><a href="https://ourworldindata.org/air-pollution" target="_blank" rel="noreferrer">Our World in Data air pollution overview</a></li>
-        </ul>
+      <footer class="source-links">
+        <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/" target="_blank" rel="noreferrer">Natural Earth Admin 0 countries</a>
+        <a href="https://www.geoboundaries.org/api.html" target="_blank" rel="noreferrer">geoBoundaries API</a>
+        <a href="https://developers.google.com/maps/documentation/javascript/overview" target="_blank" rel="noreferrer">Google Maps JavaScript API</a>
+        <a href="https://benthams.substack.com/" target="_blank" rel="noreferrer">Bentham&rsquo;s Newsletter</a>
+        <a href="https://forum.effectivealtruism.org/" target="_blank" rel="noreferrer">Effective Altruism Forum</a>
       </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>

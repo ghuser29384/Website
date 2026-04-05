@@ -1,14 +1,18 @@
 :root {
-  --bg: #f7f6f2;
+  --bg: #f7f7f4;
   --panel: #ffffff;
-  --line: #d8d9d3;
-  --text: #111418;
-  --muted: #5d646a;
-  --accent: #305f66;
-  --accent-soft: #dfe8e7;
-  --ocean: #f1f4f4;
-  --land: #9eb4b1;
-  --land-active: #305f66;
+  --line: #d7dbd8;
+  --text: #121519;
+  --muted: #5e676d;
+  --accent: #315f66;
+  --accent-soft: #e2ecea;
+  --ocean: #f1f4f3;
+  --graticule: #cfd8d5;
+  --country: #b8c8c6;
+  --country-hover: #7f9a97;
+  --country-selected: #315f66;
+  --province: rgba(49, 95, 102, 0.18);
+  --province-line: rgba(49, 95, 102, 0.58);
 }
 
 * {
@@ -31,16 +35,22 @@ a {
   color: inherit;
 }
 
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
 .shell {
-  width: min(1180px, calc(100% - 2rem));
+  width: min(1240px, calc(100% - 2rem));
   margin: 0 auto;
   padding: 1.5rem 0 3rem;
 }
 
 .topbar,
-.earth-panel,
+.globe-panel,
 .detail-panel,
-.method,
 .sources {
   border: 1px solid var(--line);
   background: var(--panel);
@@ -48,20 +58,20 @@ a {
 
 .topbar {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 28rem);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 30rem);
   gap: 1.5rem;
-  padding: 1.4rem 1.5rem;
+  padding: 1.45rem 1.5rem;
 }
 
 .label,
-.signal-label,
+.fact-label,
 .issue-tag {
   margin: 0;
+  color: var(--accent);
   font-size: 0.72rem;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 700;
 }
 
 h1,
@@ -75,14 +85,13 @@ h3 {
 
 h1 {
   margin-top: 0.35rem;
-  font-size: clamp(2.8rem, 7vw, 5.2rem);
+  font-size: clamp(2.7rem, 7vw, 5rem);
   max-width: 8ch;
 }
 
 h2 {
-  margin-top: 0.5rem;
-  font-size: clamp(2rem, 4vw, 3.1rem);
-  max-width: 12ch;
+  margin-top: 0.55rem;
+  font-size: clamp(2rem, 4vw, 3rem);
 }
 
 h3 {
@@ -92,142 +101,151 @@ h3 {
 
 p {
   margin: 0;
-  line-height: 1.6;
   color: var(--muted);
+  line-height: 1.6;
 }
 
 .topbar-note {
   align-self: end;
-  max-width: 34ch;
+  max-width: 35ch;
 }
 
-.atlas {
+.layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.9fr);
+  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.9fr);
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.earth-panel,
+.globe-panel,
 .detail-panel,
-.method,
 .sources {
   padding: 1.4rem;
 }
 
-.earth-copy {
-  display: grid;
-  gap: 0.4rem;
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: start;
 }
 
-.earth-intro {
-  max-width: 58ch;
+.panel-copy {
+  max-width: 34rem;
+}
+
+.ghost-button {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+
+.ghost-button:hover,
+.ghost-button:focus-visible {
+  background: var(--accent-soft);
+  border-color: var(--accent);
 }
 
 .globe-frame {
+  position: relative;
   display: grid;
   place-items: center;
-  margin-top: 1.3rem;
-  padding: 1rem 0 0.35rem;
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, #fcfcfb, #f2f4f2);
+  overflow: hidden;
 }
 
-#earth {
-  width: min(100%, 540px);
+#globe {
+  width: min(100%, 820px);
   height: auto;
+  display: block;
+  touch-action: none;
 }
 
-.ocean {
-  fill: var(--ocean);
+.map-status {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  max-width: 28rem;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--text);
 }
 
-.graticule circle,
-.graticule ellipse,
-.globe-outline {
-  fill: none;
-  stroke: #d6dddc;
-  stroke-width: 1.2;
-}
-
-.region-shape {
-  fill: var(--land);
-  stroke: transparent;
-  stroke-width: 2;
-  transition: fill 180ms ease, stroke 180ms ease, opacity 180ms ease;
-  opacity: 0.72;
-  cursor: pointer;
-}
-
-.region-group:hover .region-shape,
-.region-group:focus-visible .region-shape {
-  fill: #5f817d;
-  opacity: 1;
-}
-
-.region-group.active .region-shape {
-  fill: var(--land-active);
-  opacity: 1;
-  stroke: #214349;
-}
-
-.region-switcher {
+.legend {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: 1rem;
   margin-top: 1rem;
-}
-
-.region-pill {
-  appearance: none;
-  border: 1px solid var(--line);
-  background: transparent;
   color: var(--muted);
-  border-radius: 999px;
-  padding: 0.72rem 1rem;
-  font: inherit;
-  cursor: pointer;
-  transition: border-color 180ms ease, color 180ms ease, background 180ms ease;
+  font-size: 0.95rem;
 }
 
-.region-pill:hover,
-.region-pill:focus-visible {
-  border-color: var(--accent);
-  color: var(--text);
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
 }
 
-.region-pill.active {
-  background: var(--accent-soft);
-  border-color: var(--accent);
-  color: var(--text);
+.swatch {
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid var(--line);
 }
 
-.region-summary {
+.swatch-country {
+  background: var(--country);
+}
+
+.swatch-province {
+  background: var(--province);
+  border-color: var(--province-line);
+}
+
+.swatch-selected {
+  background: var(--country-selected);
+  border-color: var(--country-selected);
+}
+
+.selection-summary {
   margin-top: 1rem;
-  max-width: 52ch;
 }
 
-.detail-signals {
+.facts {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.8rem;
-  margin-top: 1.3rem;
+  gap: 0.85rem;
+  margin-top: 1.35rem;
 }
 
-.signal,
+.fact-card,
 .issue-card,
-.method-card {
+.source-card {
   border-top: 1px solid var(--line);
   padding-top: 0.95rem;
 }
 
-.signal strong {
+.fact-card strong {
   display: block;
-  margin-top: 0.5rem;
+  margin-top: 0.55rem;
   color: var(--text);
   font-weight: 600;
 }
 
+.issues-section {
+  margin-top: 1.35rem;
+}
+
 .issues {
-  margin-top: 1.4rem;
+  margin-top: 0.85rem;
 }
 
 .issue-card + .issue-card {
@@ -238,15 +256,6 @@ p {
   margin-top: 0.65rem;
 }
 
-.issue-response {
-  color: var(--text);
-}
-
-.issue-response span {
-  color: var(--accent);
-  font-weight: 700;
-}
-
 .detail-footnote {
   margin-top: 1.4rem;
   padding-top: 1rem;
@@ -254,40 +263,79 @@ p {
   font-size: 0.95rem;
 }
 
-.method {
+.sources {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
 
-.sources {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.88fr);
+.source-links {
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
-}
-
-.sources-list {
-  margin: 0;
-  padding-left: 1rem;
   color: var(--muted);
 }
 
-.sources-list li + li {
-  margin-top: 0.7rem;
+.source-links a {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
 }
 
-.sources-list a {
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.16em;
+.sphere {
+  fill: var(--ocean);
+}
+
+.graticule {
+  fill: none;
+  stroke: var(--graticule);
+  stroke-width: 1.3;
+}
+
+.country-path {
+  fill: var(--country);
+  stroke: #f7f7f4;
+  stroke-width: 0.7;
+  cursor: pointer;
+  transition: fill 160ms ease;
+}
+
+.country-path:hover {
+  fill: var(--country-hover);
+}
+
+.country-path.is-selected {
+  fill: var(--country-selected);
+}
+
+.country-path.is-muted {
+  fill: #d8e0de;
+}
+
+.province-path {
+  fill: var(--province);
+  stroke: var(--province-line);
+  stroke-width: 0.7;
+  cursor: pointer;
+}
+
+.province-path.is-selected {
+  fill: rgba(49, 95, 102, 0.34);
+  stroke: var(--country-selected);
+  stroke-width: 1.05;
+}
+
+.globe-outline {
+  fill: none;
+  stroke: var(--graticule);
+  stroke-width: 1.5;
 }
 
 @media (max-width: 980px) {
   .topbar,
-  .atlas,
-  .sources,
-  .method {
+  .layout,
+  .sources {
     grid-template-columns: 1fr;
   }
 
@@ -303,20 +351,27 @@ p {
   }
 
   .topbar,
-  .earth-panel,
+  .globe-panel,
   .detail-panel,
-  .method,
   .sources {
     padding: 1rem;
   }
 
-  .detail-signals {
+  .panel-head {
+    flex-direction: column;
+  }
+
+  .ghost-button {
+    width: 100%;
+  }
+
+  .facts {
     grid-template-columns: 1fr;
   }
 
-  .region-pill {
-    width: 100%;
-    text-align: left;
+  .map-status {
+    position: static;
+    margin: 0.75rem;
   }
 }
 
@@ -325,8 +380,8 @@ p {
     scroll-behavior: auto;
   }
 
-  .region-shape,
-  .region-pill {
+  .ghost-button,
+  .country-path {
     transition: none;
   }
 }
