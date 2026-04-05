@@ -2555,10 +2555,10 @@ function renderDetails() {
     factIssueSource.textContent = state.globeMode === "death"
       ? "Human: WDI death indicators on click."
       : animalDataState.loading
-        ? "Human: WDI on click. Animals: loading OWID + WDI + RP + WAI insect estimates."
+        ? "Human: WDI on click. Animals: loading OWID + WDI + RP + WAI + cost-effectiveness anchors."
         : animalDataState.error
           ? "Human: WDI on click. Animals: OWID load failed."
-          : "Human: WDI on click. Animals: OWID + WDI + RP + WAI insect estimates.";
+          : "Human: WDI on click. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
     factUnitCount.textContent = "0";
     renderIssues(null);
     renderAnimalIssues(null);
@@ -2585,8 +2585,8 @@ function renderDetails() {
     factIssueSource.textContent = state.globeMode === "death"
       ? "Human: loading WDI death indicators."
       : animalDataState.loading
-        ? "Human: loading WDI. Animals: loading OWID + WDI + RP + WAI insect estimates."
-        : "Human: loading WDI. Animals: OWID + WDI + RP + WAI insect estimates.";
+        ? "Human: loading WDI. Animals: loading OWID + WDI + RP + WAI + cost-effectiveness anchors."
+        : "Human: loading WDI. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
   } else if (issueData.error) {
     selectionSummary.textContent = provinceNameLabel
       ? `${provinceNameLabel} is selected inside ${name}. The ADM1 geometry is real, but the national issue ranking failed to load.`
@@ -2594,10 +2594,10 @@ function renderDetails() {
     factIssueSource.textContent = state.globeMode === "death"
       ? "Human: WDI death indicators failed."
       : animalDataState.loading
-        ? "Human: WDI failed. Animals: loading OWID + WDI + RP + WAI insect estimates."
+        ? "Human: WDI failed. Animals: loading OWID + WDI + RP + WAI + cost-effectiveness anchors."
         : animalDataState.error
           ? "Human: WDI failed. Animals: OWID load failed."
-          : "Human: WDI failed. Animals: OWID + WDI + RP + WAI insect estimates.";
+          : "Human: WDI failed. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
   } else {
     selectionSummary.textContent = provinceNameLabel
       ? `${provinceNameLabel} is selected inside ${name}. The boundary is provincial, but the issue lists below remain national and are currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
@@ -2607,10 +2607,10 @@ function renderDetails() {
     factIssueSource.textContent = state.globeMode === "death"
       ? "Human: World Bank WDI death indicators."
       : animalDataState.loading
-        ? "Human: World Bank WDI. Animals: loading OWID + WDI + RP + WAI insect estimates."
+        ? "Human: World Bank WDI. Animals: loading OWID + WDI + RP + WAI + cost-effectiveness anchors."
         : animalDataState.error
           ? "Human: World Bank WDI. Animals: OWID load failed."
-          : "Human: World Bank WDI. Animals: OWID + WDI + RP + WAI insect estimates.";
+          : "Human: World Bank WDI. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
   }
 
   const boundarySource = state.provinceMeta?.boundarySource
@@ -2629,7 +2629,7 @@ function renderDetails() {
       ? " Animal issue data is still loading from Our World in Data."
       : animalDataState.error
         ? " Animal issue data failed to load."
-        : " Animal cards use Our World in Data country slaughter and insecticide data, World Bank land and agricultural-land indicators, a Wild Animal Initiative direct-insect benchmark, and Rethink Priorities sentience and welfare-range distributions where available. Bentham's Bulldog's ubiquitous-pain argument is reflected in the notes and interpretation, so current per-being animal scores should be read as conservative rather than as upper bounds.";
+        : " Animal cards use Our World in Data country slaughter and insecticide data, World Bank land and agricultural-land indicators, a Wild Animal Initiative direct-insect benchmark, and Rethink Priorities sentience and welfare-range distributions where available. Per-dollar ordering uses rough cost-effectiveness anchors from animal-welfare research. Bentham's Bulldog's ubiquitous-pain argument is reflected in the notes and interpretation, so current per-being animal scores should be read as conservative rather than as upper bounds.";
   selectionFootnote.textContent = `${boundarySource}${issueSource}${animalSource} Current ordering: ${rankingLabel(state.rankingMode)}.`;
 
   factLocation.textContent = provinceNameLabel ? `${provinceNameLabel}, ${name} · ${iso}` : `${name} · ${iso}`;
