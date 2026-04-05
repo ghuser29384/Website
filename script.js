@@ -649,11 +649,13 @@ const DEATH_MODELS = [
 const HUMAN_ISSUE_MODELS = [...SUFFERING_ISSUE_MODELS, ...DEATH_MODELS];
 const ISSUE_DATA_URL = (iso) =>
   `https://api.worldbank.org/v2/country/${iso.toLowerCase()}/indicator/${[...new Set([...HUMAN_ISSUE_MODELS.map((indicator) => indicator.id), ...ISSUE_CONTEXT_INDICATORS])].join(";")}?source=2&date=${ISSUE_DATA_DATE_RANGE}&format=json&per_page=400`;
+const CONTEXT_DATA_URL = (iso) =>
+  `https://api.worldbank.org/v2/country/${iso.toLowerCase()}/indicator/${ISSUE_CONTEXT_INDICATORS.join(";")}?source=2&date=${ISSUE_DATA_DATE_RANGE}&format=json&per_page=400`;
 
 const SUFFERING_BRIEF = {
   location: "Whole Earth",
   summary:
-    "Click a country to order a broader country suffering set with current national data: child health, infectious disease, food insecurity, poverty, pollution, water, clean cooking, violence, conflict, farmed animals, wild terrestrial arthropods, and a direct human-caused insect estimate.",
+    "The global view now includes estimated global animal suffering ranks; click a country to order a broader country suffering set with current national data: child health, infectious disease, food insecurity, poverty, pollution, water, clean cooking, violence, conflict, farmed animals, wild terrestrial arthropods, and a direct human-caused insect estimate.",
   footnote:
     "Geography comes from Natural Earth and geoBoundaries. Human issue ordering uses World Bank country indicators; animal cards use Our World in Data production proxies, World Bank land-area data, a Wild Animal Initiative insect benchmark, and Rethink Priorities sentience and welfare-range distributions where available. Wild-animal estimates are coarse and inference-heavy, and Bentham's Bulldog argues both that they may dominate the global picture and that simple animals may feel more intense pain than low-neuron intuitions suggest.",
   issues: [
@@ -1255,12 +1257,14 @@ const state = {
   provinceMeta: null,
   provinceFeatures: [],
   countryIssueData: null,
+  globalContext: { loading: true, error: null, context: null },
 };
 
 const animalDataState = {
   loading: true,
   error: null,
   byCountry: new Map(),
+  world: null,
 };
 
 const provinceCache = new Map();
@@ -1664,18 +1668,42 @@ function parseLatestAnimalSeries(rows, dataset) {
   return latest;
 }
 
-function buildAnimalIssues(feature) {
-  const iso = countryIso(feature.properties);
-  const country = countryName(feature.properties);
-  const metrics = animalDataState.byCountry.get(iso) || {};
-  const context = state.countryIssueData?.context;
+function parseWorldAnimalSeries(rows, dataset) {
+  let latest = null;
 
-  if (!iso) {
-    return [];
+  for (const row of rows || []) {
+    const entity = (row.Entity || "").trim();
+    const code = (row.Code || "").trim();
+    const isWorld = entity === "World" || code === "OWID_WRL";
+
+    if (!isWorld) {
+      continue;
+    }
+
+    const year = Number(row.Year);
+    const value = animalDatasetValue(row, dataset);
+
+    if (!Number.isFinite(year) || !Number.isFinite(value) || value <= 0) {
+      continue;
+    }
+
+    if (!latest || year > latest.year) {
+      latest = {
+        entity: row.Entity,
+        year,
+        value,
+      };
+    }
   }
 
+  return latest;
+}
+
+function buildAnimalIssuesFromMetrics(metrics, context, countryLabel) {
+  const country = countryLabel || "this country";
+
   const issues = ANIMAL_DATASETS.map((dataset) => {
-    const record = metrics[dataset.id];
+    const record = metrics?.[dataset.id];
 
     if (!record) {
       return null;
@@ -1820,6 +1848,20 @@ function buildAnimalIssues(feature) {
   return issues.sort((left, right) => right.ranking.improvement.score - left.ranking.improvement.score);
 }
 
+function buildAnimalIssues(feature) {
+  const iso = countryIso(feature.properties);
+  const country = countryName(feature.properties);
+
+  if (!iso) {
+    return [];
+  }
+
+  const metrics = animalDataState.byCountry.get(iso) || {};
+  const context = state.countryIssueData?.context;
+
+  return buildAnimalIssuesFromMetrics(metrics, context, country);
+}
+
 async function loadAnimalBurdenData() {
   animalDataState.loading = true;
   animalDataState.error = null;
@@ -1831,9 +1873,15 @@ async function loadAnimalBurdenData() {
       )
     );
     const byCountry = new Map();
+    const world = {};
 
     ANIMAL_DATASETS.forEach((dataset) => {
       const latestSeries = parseLatestAnimalSeries(results.get(dataset.url) || [], dataset);
+      const worldRecord = parseWorldAnimalSeries(results.get(dataset.url) || [], dataset);
+
+      if (worldRecord) {
+        world[dataset.id] = worldRecord;
+      }
 
       for (const [code, record] of latestSeries) {
         const entry = byCountry.get(code) || {};
@@ -1843,6 +1891,7 @@ async function loadAnimalBurdenData() {
     });
 
     animalDataState.byCountry = byCountry;
+    animalDataState.world = Object.keys(world).length ? world : null;
     animalDataState.loading = false;
     renderDetails();
   } catch (error) {
@@ -1940,6 +1989,33 @@ function parseCountryIssueData(payload, feature) {
     context,
     sufferingIssues: buildHumanIssues(SUFFERING_ISSUE_MODELS, latestByIndicator, feature, context),
     deathIssues: buildHumanIssues(DEATH_MODELS, latestByIndicator, feature, context),
+  };
+}
+
+function parseContextData(payload) {
+  if (!Array.isArray(payload) || !Array.isArray(payload[1])) {
+    throw new Error("Unexpected World Bank response");
+  }
+
+  const meta = payload[0] || {};
+  const rows = payload[1];
+  const latestByIndicator = new Map();
+
+  for (const row of rows) {
+    if (!row || row.value === null || !row.indicator?.id) {
+      continue;
+    }
+
+    const existing = latestByIndicator.get(row.indicator.id);
+
+    if (!existing || Number(row.date) > Number(existing.date)) {
+      latestByIndicator.set(row.indicator.id, row);
+    }
+  }
+
+  return {
+    meta,
+    context: humanContext(latestByIndicator),
   };
 }
 
@@ -2192,15 +2268,63 @@ function renderAnimalIssues(country) {
   }
 
   if (!country) {
-    animalIssuesRoot.textContent = "";
+    if (animalDataState.loading) {
+      renderAnimalIssueStatus(
+        "Loading global animal data",
+        "Fetching global slaughter, aquaculture, insecticide, and land-area context to estimate global animal suffering rankings."
+      );
+      return;
+    }
 
-    for (const issue of animalBrief.issues) {
+    if (animalDataState.error) {
+      renderAnimalIssueStatus(
+        "Global animal data unavailable",
+        "The global farmed and wild animal proxy data failed to load, so the panel cannot yet estimate global animal burdens."
+      );
+      return;
+    }
+
+    if (!animalDataState.world) {
+      animalIssuesRoot.textContent = "";
+
+      for (const issue of animalBrief.issues) {
+        const card = document.createElement("article");
+        card.className = "issue-card";
+        card.innerHTML = `
+          <p class="issue-tag">${issue.tag}</p>
+          <h3>${issue.title}</h3>
+          <p>${issue.body}</p>
+        `;
+        animalIssuesRoot.appendChild(card);
+      }
+
+      return;
+    }
+
+    const context = state.globalContext?.context || {};
+    const issues = buildAnimalIssuesFromMetrics(animalDataState.world, context, "the world");
+
+    if (!issues.length) {
+      renderAnimalIssueStatus(
+        "No global animal issue data",
+        "No matching global slaughter, wild-animal, or human-caused insect estimate was found for the loaded data."
+      );
+      return;
+    }
+
+    animalIssuesRoot.textContent = "";
+    const orderedIssues = sortIssuesByMode(issues, state.rankingMode);
+
+    for (const issue of orderedIssues) {
       const card = document.createElement("article");
       card.className = "issue-card";
       card.innerHTML = `
         <p class="issue-tag">${issue.tag}</p>
         <h3>${issue.title}</h3>
+        <strong class="issue-metric">${issue.metric}</strong>
         <p>${issue.body}</p>
+        <p class="issue-order-note">${formatAnimalRanking(issue, state.rankingMode)}</p>
+        <p class="issue-source">${issue.source}</p>
       `;
       animalIssuesRoot.appendChild(card);
     }
@@ -2615,6 +2739,21 @@ async function loadAdm1(feature) {
   }
 }
 
+async function loadGlobalContext() {
+  state.globalContext = { loading: true, error: null, context: null };
+  renderDetails();
+
+  try {
+    const payload = await fetchJson(CONTEXT_DATA_URL("WLD"));
+    const parsed = parseContextData(payload);
+    state.globalContext = { ...parsed, loading: false, error: null };
+    renderDetails();
+  } catch (error) {
+    state.globalContext = { loading: false, error: error.message, context: null };
+    renderDetails();
+  }
+}
+
 async function loadCountryIssueData(feature) {
   const properties = feature.properties;
   const iso = countryIso(properties);
@@ -2762,6 +2901,7 @@ async function init() {
   renderPainVisuals();
   renderMoralWeightNotes();
   loadAnimalBurdenData();
+  loadGlobalContext();
 
   try {
     const data = await fetchJson(COUNTRY_DATA_URL);
