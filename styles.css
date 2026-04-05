@@ -13,6 +13,11 @@
   --country-selected: #315f66;
   --province: rgba(49, 95, 102, 0.18);
   --province-line: rgba(49, 95, 102, 0.58);
+  --pain-annoying: #d8e5b7;
+  --pain-hurtful: #f0c775;
+  --pain-disabling: #de7a67;
+  --pain-excruciating: #8d332b;
+  --pain-track: #edf1ef;
 }
 
 * {
@@ -51,6 +56,8 @@ select {
 .topbar,
 .globe-panel,
 .detail-panel,
+.pain-panel,
+.mw-panel,
 .sources {
   border: 1px solid var(--line);
   background: var(--panel);
@@ -119,6 +126,8 @@ p {
 
 .globe-panel,
 .detail-panel,
+.pain-panel,
+.mw-panel,
 .sources {
   padding: 1.4rem;
 }
@@ -132,6 +141,43 @@ p {
 
 .panel-copy {
   max-width: 34rem;
+}
+
+.toolbar {
+  display: grid;
+  gap: 0.75rem;
+  justify-items: end;
+}
+
+.search-form,
+.zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.search-form {
+  width: min(100%, 28rem);
+}
+
+.search-input,
+.zoom-range {
+  accent-color: var(--accent);
+}
+
+.search-input {
+  min-width: 14rem;
+  flex: 1 1 14rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  padding: 0.72rem 0.9rem;
+  border-radius: 999px;
+}
+
+.search-input:focus-visible {
+  outline: 2px solid rgba(49, 95, 102, 0.24);
+  outline-offset: 2px;
 }
 
 .ghost-button {
@@ -148,6 +194,27 @@ p {
 .ghost-button:focus-visible {
   background: var(--accent-soft);
   border-color: var(--accent);
+}
+
+.zoom-button {
+  min-width: 2.7rem;
+  padding-inline: 0.8rem;
+}
+
+.zoom-range {
+  width: 9rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .globe-frame {
@@ -226,6 +293,35 @@ p {
   margin-top: 1.35rem;
 }
 
+.ranking-panel {
+  margin-top: 1.35rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.95rem;
+}
+
+.ranking-controls {
+  margin-top: 0.8rem;
+}
+
+.ranking-select {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  padding: 0.72rem 0.9rem;
+  border-radius: 0.95rem;
+}
+
+.ranking-select:focus-visible {
+  outline: 2px solid rgba(49, 95, 102, 0.24);
+  outline-offset: 2px;
+}
+
+.ranking-copy {
+  margin-top: 0.65rem;
+  font-size: 0.92rem;
+}
+
 .fact-card,
 .issue-card,
 .source-card {
@@ -252,8 +348,24 @@ p {
   margin-top: 1rem;
 }
 
+.issue-metric {
+  display: block;
+  margin-top: 0.65rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
 .issue-card p + p {
   margin-top: 0.65rem;
+}
+
+.issue-source {
+  font-size: 0.92rem;
+}
+
+.issue-order-note {
+  color: var(--text);
+  font-size: 0.92rem;
 }
 
 .detail-footnote {
@@ -263,9 +375,220 @@ p {
   font-size: 0.95rem;
 }
 
-.sources {
+.pain-panel {
+  margin-top: 1rem;
+}
+
+.pain-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 34rem);
+  gap: 1rem;
+  align-items: end;
+}
+
+.pain-copy,
+.pain-note,
+.pain-footnote {
+  max-width: 44rem;
+}
+
+.pain-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.pain-card {
+  border-top: 1px solid var(--line);
+  padding-top: 0.95rem;
+}
+
+.pain-anchor-list,
+.pain-chart-list,
+.pain-callouts {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 0.95rem;
+}
+
+.pain-anchor {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+}
+
+.pain-anchor-swatch {
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 50%;
+  margin-top: 0.3rem;
+}
+
+.pain-anchor h4,
+.pain-callout h4,
+.pain-row h4 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.02rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.pain-anchor p + p,
+.pain-callout p + p,
+.pain-row p + p {
+  margin-top: 0.3rem;
+}
+
+.pain-row {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.pain-row-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.pain-total {
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.pain-meta {
+  font-size: 0.92rem;
+}
+
+.pain-bar {
+  display: flex;
+  width: 100%;
+  min-height: 0.9rem;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--pain-track);
+}
+
+.pain-segment {
+  min-width: 0;
+}
+
+.pain-segment.is-annoying {
+  background: var(--pain-annoying);
+}
+
+.pain-segment.is-hurtful {
+  background: var(--pain-hurtful);
+}
+
+.pain-segment.is-disabling {
+  background: var(--pain-disabling);
+}
+
+.pain-segment.is-excruciating {
+  background: var(--pain-excruciating);
+}
+
+.pain-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.9rem;
+}
+
+.pain-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.86rem;
+}
+
+.pain-chip i {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pain-chip .is-annoying {
+  background: var(--pain-annoying);
+}
+
+.pain-chip .is-hurtful {
+  background: var(--pain-hurtful);
+}
+
+.pain-chip .is-disabling {
+  background: var(--pain-disabling);
+}
+
+.pain-chip .is-excruciating {
+  background: var(--pain-excruciating);
+}
+
+.pain-callout {
+  border-left: 2px solid var(--line);
+  padding-left: 0.9rem;
+}
+
+.pain-footnote {
+  margin-top: 1.25rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.94rem;
+}
+
+.mw-panel {
+  margin-top: 1rem;
+}
+
+.mw-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 34rem);
+  gap: 1rem;
+  align-items: end;
+}
+
+.mw-copy,
+.mw-footnote {
+  max-width: 44rem;
+}
+
+.mw-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.mw-card {
+  border-top: 1px solid var(--line);
+  padding-top: 0.95rem;
+}
+
+.mw-card h3 {
+  font-size: 1.15rem;
+  line-height: 1.12;
+}
+
+.mw-card p + p {
+  margin-top: 0.45rem;
+}
+
+.mw-footnote {
+  margin-top: 1.2rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.94rem;
+}
+
+.sources {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -335,6 +658,10 @@ p {
 @media (max-width: 980px) {
   .topbar,
   .layout,
+  .pain-head,
+  .pain-layout,
+  .mw-head,
+  .mw-grid,
   .sources {
     grid-template-columns: 1fr;
   }
@@ -353,6 +680,8 @@ p {
   .topbar,
   .globe-panel,
   .detail-panel,
+  .pain-panel,
+  .mw-panel,
   .sources {
     padding: 1rem;
   }
@@ -361,12 +690,37 @@ p {
     flex-direction: column;
   }
 
+  .toolbar {
+    width: 100%;
+    justify-items: stretch;
+  }
+
+  .search-form,
+  .zoom-controls {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
   .ghost-button {
+    width: 100%;
+  }
+
+  .zoom-controls .zoom-button {
+    width: calc(50% - 0.3rem);
+  }
+
+  .search-input,
+  .zoom-range {
     width: 100%;
   }
 
   .facts {
     grid-template-columns: 1fr;
+  }
+
+  .pain-row-head {
+    flex-direction: column;
+    align-items: start;
   }
 
   .map-status {

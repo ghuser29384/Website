@@ -6,7 +6,7 @@
     <title>Earth of Stakes</title>
     <meta
       name="description"
-      content="An effective altruism globe with accurate country boundaries and on-demand provincial detail."
+      content="An effective altruism globe with accurate country boundaries, broader country suffering rankings, and factory-farming pain visualizations grounded in Welfare Footprint estimates."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -17,9 +17,10 @@
           <p class="label">Earth of Stakes</p>
           <h1>Accurate boundaries first.</h1>
         </div>
-        <p class="topbar-note">
-          The globe now uses real country geometry and loads provincial or state boundaries on demand. Drag to rotate,
-          click a country, then click an ADM1 unit to inspect it.
+        <p class="topbar-note" id="topbar-note">
+          Drag to rotate, search or click a country, and inspect real ADM1 geometry. The issue list is now ordered from
+          broader country-by-country human, farmed-animal, wild-animal, and human-caused insect suffering data. Below it,
+          factory-farming pain is visualized with Welfare Footprint estimates.
         </p>
       </header>
 
@@ -32,7 +33,29 @@
                 Base geography: Natural Earth Admin 0 at 1:50m. Provincial detail: geoBoundaries ADM1.
               </p>
             </div>
-            <button class="ghost-button" id="reset-view" type="button">Reset globe</button>
+            <div class="toolbar">
+              <form class="search-form" id="country-search-form">
+                <label class="sr-only" for="country-search">Search country</label>
+                <input
+                  id="country-search"
+                  class="search-input"
+                  type="search"
+                  list="country-options"
+                  placeholder="Search country"
+                  autocomplete="off"
+                  spellcheck="false"
+                >
+                <datalist id="country-options"></datalist>
+                <button class="ghost-button" id="country-search-button" type="submit">Find</button>
+              </form>
+              <div class="zoom-controls" aria-label="Zoom controls">
+                <button class="ghost-button zoom-button" id="zoom-out" type="button" aria-label="Zoom out">-</button>
+                <label class="sr-only" for="zoom-range">Zoom level</label>
+                <input id="zoom-range" class="zoom-range" type="range" min="1" max="3.25" step="0.01" value="1">
+                <button class="ghost-button zoom-button" id="zoom-in" type="button" aria-label="Zoom in">+</button>
+                <button class="ghost-button" id="reset-view" type="button">Reset globe</button>
+              </div>
+            </div>
           </div>
 
           <div class="globe-frame">
@@ -51,7 +74,9 @@
           <p class="label" id="selection-meta">Global view</p>
           <h2 id="selection-title">The whole Earth.</h2>
           <p class="selection-summary" id="selection-summary">
-            Drag the globe to rotate it. Click a country to load first-order administrative boundaries with real geometry.
+            Click a country to order a broader suffering set with current national data: child health, infectious
+            disease, food insecurity, poverty, pollution, water, clean cooking, violence, conflict, animal
+            agriculture, wild terrestrial arthropods, and a direct human-caused insect estimate.
           </p>
 
           <div class="facts">
@@ -60,7 +85,7 @@
               <strong id="fact-location">No country selected</strong>
             </article>
             <article class="fact-card">
-              <span class="fact-label">Country source</span>
+              <span class="fact-label">Boundary source</span>
               <strong id="fact-country-source">Natural Earth Admin 0, 1:50m</strong>
             </article>
             <article class="fact-card">
@@ -68,21 +93,139 @@
               <strong id="fact-admin-source">geoBoundaries ADM1 will load on click</strong>
             </article>
             <article class="fact-card">
+              <span class="fact-label">Issue sources</span>
+              <strong id="fact-issue-source">Human: WDI. Animals: OWID + WDI + RP + WAI insect estimates.</strong>
+            </article>
+            <article class="fact-card">
               <span class="fact-label">Units loaded</span>
               <strong id="fact-unit-count">0</strong>
             </article>
           </div>
 
+          <section class="ranking-panel" aria-labelledby="globe-mode-title">
+            <p class="label" id="globe-mode-title">Choose Globe</p>
+            <div class="ranking-controls">
+              <label class="sr-only" for="globe-mode">Globe mode</label>
+              <select id="globe-mode" class="ranking-select">
+                <option value="suffering">Top Causes of Suffering by Country</option>
+                <option value="death">Top Causes of Death by Country</option>
+              </select>
+            </div>
+            <p class="ranking-copy" id="globe-mode-copy">
+              The suffering globe mixes broader human burden indicators with farmed-animal counts, wild-animal
+              estimates, and a direct human-caused insect estimate.
+            </p>
+          </section>
+
+          <section class="ranking-panel" aria-labelledby="ranking-title">
+            <p class="label" id="ranking-title">Order Causes By</p>
+            <div class="ranking-controls">
+              <label class="sr-only" for="ranking-mode">Cause ordering</label>
+              <select id="ranking-mode" class="ranking-select">
+                <option value="improvement">Available improvement per dollar</option>
+                <option value="total">Total amount of suffering caused</option>
+                <option value="per-being">Amount of suffering suffered per being</option>
+              </select>
+            </div>
+            <p class="ranking-copy" id="ranking-copy">
+              For humans, this mixes recurring EA priorities with broader cross-country burden indicators.
+            </p>
+          </section>
+
           <section class="issues-section">
-            <p class="label">EA lens</p>
+            <p class="label" id="human-section-label">Human suffering</p>
             <div class="issues" id="issues"></div>
           </section>
 
+          <section class="issues-section" id="animal-section">
+            <p class="label" id="animal-section-label">Farmed and wild animal suffering</p>
+            <div class="issues" id="animal-issues"></div>
+          </section>
+
           <p class="detail-footnote" id="selection-footnote">
-            This is still an effective-altruism framing layer, not a live ranked dashboard. The geography is now real; the prioritization copy remains a coarse strategic lens.
+            Human-country rankings combine recurring EA priorities with broader World Bank burden indicators. Animal
+            cards use country slaughter, aquaculture, land-area wild estimates, and a Wild Animal Initiative direct
+            insect benchmark plus Rethink Priorities sentience and welfare-range distributions as burden proxies rather
+            than full moral-weight outputs.
           </p>
         </aside>
       </main>
+
+      <section class="pain-panel" aria-labelledby="pain-visuals-title">
+        <div class="pain-head">
+          <div>
+            <p class="label">Factory-Farming Pain</p>
+            <h2 id="pain-visuals-title">How bad would this feel?</h2>
+          </div>
+          <p class="pain-copy">
+            These visualizations use Welfare Footprint Institute estimates of time spent in different pain categories.
+            They do not claim a perfect human-animal conversion. Instead, they use the Institute&rsquo;s own
+            human-facing pain definitions as anchors.
+          </p>
+        </div>
+
+        <div class="pain-layout">
+          <article class="pain-card">
+            <p class="label">Human anchors</p>
+            <h3>If a human felt pain at this intensity</h3>
+            <div class="pain-anchor-list" id="pain-anchors"></div>
+          </article>
+
+          <article class="pain-card">
+            <p class="label">Long pain loads</p>
+            <h3>Hours or days of pain added by a system</h3>
+            <p class="pain-note">
+              Different rows cover different time windows. Each label states whether the estimate is for one bird&rsquo;s
+              life, one hen&rsquo;s laying period, or one breeder&rsquo;s life.
+            </p>
+            <div class="pain-chart-list" id="pain-long-chart"></div>
+          </article>
+
+          <article class="pain-card">
+            <p class="label">Acute agony at slaughter</p>
+            <h3>Seconds before loss of consciousness</h3>
+            <p class="pain-note">
+              These rows compare common broiler stunning systems from the moment of placement in the system until loss
+              of consciousness.
+            </p>
+            <div class="pain-chart-list" id="pain-acute-chart"></div>
+          </article>
+
+          <article class="pain-card">
+            <p class="label">What to keep in mind</p>
+            <h3>Why the numbers matter</h3>
+            <div class="pain-callouts" id="pain-callouts"></div>
+          </article>
+        </div>
+
+        <p class="pain-footnote">
+          The Welfare Footprint method measures cumulative negative affective states in time units. It is useful for
+          comparing harms, but it is not a claim that one hour of chicken pain is morally identical to one hour of
+          human pain.
+        </p>
+      </section>
+
+      <section class="mw-panel" aria-labelledby="mw-title">
+        <div class="mw-head">
+          <div>
+            <p class="label">Moral Weight Notes</p>
+            <h2 id="mw-title">How to read the animal numbers</h2>
+          </div>
+          <p class="mw-copy">
+            These country cards are informed by the Moral Weight Project, but they are not full moral-weight or
+            DALY-equivalent calculations. They are country-level suffering-pressure proxies built to be usable on a
+            static site.
+          </p>
+        </div>
+
+        <div class="mw-grid" id="mw-grid"></div>
+
+        <p class="mw-footnote">
+          The most important practical update from these sources is restraint: do not treat neuron counts as the whole
+          story, do not multiply octopuses by nine minds, and do not dismiss animal-heavy conclusions merely because
+          they feel uncomfortable.
+        </p>
+      </section>
 
       <section class="sources">
         <article class="source-card">
@@ -100,10 +243,21 @@
           </p>
         </article>
         <article class="source-card">
-          <p class="label">Why not Google Earth</p>
-          <h3>Open data wins here</h3>
+          <p class="label">Country burden data</p>
+          <h3>Broader suffering model</h3>
           <p>
-            Google Maps or Earth would require credentials and billing setup. This version stays deployable on static hosting while still using high-quality geographic data.
+            Human issues combine recurring EA priorities with broader World Bank country indicators. Animal and insect
+            issues use Our World in Data country proxies, World Bank land and agricultural-land data, and a Wild
+            Animal Initiative insect benchmark instead of invented regional prose, while Bentham&rsquo;s Bulldog is used
+            to frame the current animal per-being numbers as conservative.
+          </p>
+        </article>
+        <article class="source-card">
+          <p class="label">Welfare Footprint</p>
+          <h3>Animal pain metrics</h3>
+          <p>
+            The factory-farming visualizations use Welfare Footprint Institute estimates for laying hens, broilers, and
+            broiler slaughter, along with its pain-intensity definitions.
           </p>
         </article>
       </section>
@@ -111,9 +265,35 @@
       <footer class="source-links">
         <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/" target="_blank" rel="noreferrer">Natural Earth Admin 0 countries</a>
         <a href="https://www.geoboundaries.org/api.html" target="_blank" rel="noreferrer">geoBoundaries API</a>
-        <a href="https://developers.google.com/maps/documentation/javascript/overview" target="_blank" rel="noreferrer">Google Maps JavaScript API</a>
-        <a href="https://benthams.substack.com/" target="_blank" rel="noreferrer">Bentham&rsquo;s Newsletter</a>
-        <a href="https://forum.effectivealtruism.org/" target="_blank" rel="noreferrer">Effective Altruism Forum</a>
+        <a href="https://www.givewell.org/charities/top-charities" target="_blank" rel="noreferrer">GiveWell top charities</a>
+        <a href="https://www.givingwhatwecan.org/cause-areas/improving-human-wellbeing" target="_blank" rel="noreferrer">Giving What We Can: improving human wellbeing</a>
+        <a href="https://www.givingwhatwecan.org/charities/givewell" target="_blank" rel="noreferrer">Giving What We Can: GiveWell fund</a>
+        <a href="https://www.thelifeyoucansave.org/cause-funds/health-fund/" target="_blank" rel="noreferrer">The Life You Can Save Health Fund</a>
+        <a href="https://www.thelifeyoucansave.org/best-charities/givedirectly/" target="_blank" rel="noreferrer">The Life You Can Save: GiveDirectly</a>
+        <a href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation" target="_blank" rel="noreferrer">World Bank indicators API docs</a>
+        <a href="https://data.worldbank.org/indicator/AG.LND.TOTL.K2" target="_blank" rel="noreferrer">World Bank: land area</a>
+        <a href="https://data.worldbank.org/indicator/AG.LND.AGRI.K2" target="_blank" rel="noreferrer">World Bank: agricultural land</a>
+        <a href="https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat" target="_blank" rel="noreferrer">OWID: land animals slaughtered for meat</a>
+        <a href="https://ourworldindata.org/grapher/insecticide-use" target="_blank" rel="noreferrer">OWID: insecticide use</a>
+        <a href="https://benthams.substack.com/p/insect-suffering-is-the-biggest-issue" target="_blank" rel="noreferrer">Bentham&rsquo;s Bulldog: insect suffering is the biggest issue</a>
+        <a href="https://benthams.substack.com/p/betting-on-ubiquitous-pain" target="_blank" rel="noreferrer">Bentham&rsquo;s Bulldog: betting on ubiquitous pain</a>
+        <a href="https://reducing-suffering.org/humanitys-net-impact-on-wild-animal-suffering/" target="_blank" rel="noreferrer">Reducing Suffering: humanity&rsquo;s net impact on wild animal suffering</a>
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9897674/" target="_blank" rel="noreferrer">Rosenberg et al.: global soil arthropods</a>
+        <a href="https://www.wildanimalinitiative.org/about" target="_blank" rel="noreferrer">Wild Animal Initiative: about</a>
+        <a href="https://www.wildanimalinitiative.org/s/ImprovingPestManagementforWildInsectWelfare.pdf" target="_blank" rel="noreferrer">Wild Animal Initiative: improving pest management for wild insect welfare</a>
+        <a href="https://forum.effectivealtruism.org/posts/hxtwzcsz8hQfGyZQM/an-introduction-to-the-moral-weight-project" target="_blank" rel="noreferrer">EA Forum: introduction to the Moral Weight Project</a>
+        <a href="https://rethinkpriorities.org/research-area/welfare-range-estimates/" target="_blank" rel="noreferrer">Rethink Priorities: welfare range estimates</a>
+        <a href="https://forum.effectivealtruism.org/posts/tnSg6o7crcHFLc395/the-welfare-range-table" target="_blank" rel="noreferrer">EA Forum: welfare range table</a>
+        <a href="https://forum.effectivealtruism.org/posts/WfeWN2X4k8w8nTeaS/theories-of-welfare-and-welfare-range-estimates" target="_blank" rel="noreferrer">EA Forum: theories of welfare</a>
+        <a href="https://forum.effectivealtruism.org/posts/Mfq7KxQRvkeLnJvoB/using-neuron-counts-as-a-proxy-for-moral-weight" target="_blank" rel="noreferrer">EA Forum: neuron counts and moral weight</a>
+        <a href="https://forum.effectivealtruism.org/posts/vbhoFsyQmrntru6Kw/do-brains-contain-many-conscious-subsystems-if-so-should-we" target="_blank" rel="noreferrer">EA Forum: conscious subsystems</a>
+        <a href="https://forum.effectivealtruism.org/posts/WBWXLZTF5FPzmK8nh/octopuses-probably-don-t-have-nine-minds" target="_blank" rel="noreferrer">EA Forum: octopuses and nine minds</a>
+        <a href="https://forum.effectivealtruism.org/posts/KXSBb2zgkLE6gnn3K/don-t-balk-at-animal-friendly-results-1" target="_blank" rel="noreferrer">EA Forum: don&rsquo;t balk at animal-friendly results</a>
+        <a href="https://docs.google.com/document/d/1xUvMKRkEOJQcc6V7VJqcLLGAJ2SsdZno0jTIUb61D8k/edit?tab=t.0#heading=h.uskcgipunmm1" target="_blank" rel="noreferrer">RP distributions doc</a>
+        <a href="https://welfarefootprint.org/technical-definitions/pain-intensities/" target="_blank" rel="noreferrer">Welfare Footprint: pain intensities</a>
+        <a href="https://welfarefootprint.org/broilers/" target="_blank" rel="noreferrer">Welfare Footprint: broilers</a>
+        <a href="https://welfarefootprint.org/laying-hens/" target="_blank" rel="noreferrer">Welfare Footprint: laying hens</a>
+        <a href="https://welfarefootprint.org/research-projects/poultry-slaughter/" target="_blank" rel="noreferrer">Welfare Footprint: poultry slaughter</a>
       </footer>
     </div>
 
