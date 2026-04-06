@@ -10,11 +10,18 @@ const baseScale = 388;
 const minScale = baseScale;
 const maxScale = baseScale * 3.25;
 const ISSUE_DATA_DATE_RANGE = "2010:2025";
-const ISSUE_CONTEXT_INDICATORS = ["SP.POP.TOTL", "SP.DYN.CBRT.IN", "AG.LND.TOTL.K2", "AG.LND.AGRI.K2"];
+const ISSUE_CONTEXT_INDICATORS = [
+  "SP.POP.TOTL",
+  "SP.DYN.CBRT.IN",
+  "AG.LND.TOTL.K2",
+  "AG.LND.AGRI.K2",
+  "SP.DYN.LE00.IN",
+];
 const TERRESTRIAL_SOIL_ARTHROPODS_PER_SQKM = 6.7e10;
 const GLOBAL_LAND_AREA_SQKM = 1.489e8;
 const GLOBAL_WILD_BIRD_ESTIMATE = 5e10;
 const WILD_BIRDS_PER_SQKM = GLOBAL_WILD_BIRD_ESTIMATE / GLOBAL_LAND_AREA_SQKM;
+const WORLD_RANK_LIMIT = 10;
 const INSECT_WELFARE_PROXY = {
   sentience: { median: 0.226, low: 0.002, high: 0.573 },
   welfareRange: { median: 0.029, low: 0, high: 0.244 },
@@ -30,54 +37,54 @@ const GLOBE_MODES = {
   suffering: {
     label: "Top Causes of Suffering by Country",
     topbarNote:
-      "Drag to rotate, search or click a country, and inspect real ADM1 geometry. This globe orders broader country-by-country human, animal, and insect suffering data, while separating wild insect scale from a direct human-caused insect estimate and still treating both as conservative slices of a larger wild-insect question.",
+      "Drag to rotate, search or click a country, and inspect real ADM1 geometry. Whole World now ranks mixed human and animal suffering together, while country drill-down still shows separate human and animal layers with real ADM1 boundaries.",
     globeCopy:
-      "The suffering globe mixes broader human burden indicators with farmed-animal counts, wild-animal estimates, and a direct human-caused insect estimate.",
+      "Whole World mixes broader human burden indicators with farmed-animal counts, wild-animal estimates, and a direct human-caused insect estimate into one mixed-species top 10.",
     humanSectionLabel: "Human suffering",
     animalSectionLabel: "Farmed and wild animal suffering",
     showAnimals: true,
     rankingModes: {
       improvement: {
-        label: "Available improvement per dollar",
+        label: "Available decrease in suffering per dollar",
         copy:
-          "For humans, mixes recurring EA priorities with broader cross-country burden indicators. For animals, it uses cost-effectiveness anchors from chicken campaigns, fish and shrimp welfare estimates, and hen ballot initiatives, while flagging where data are welfare-range weighted, sentience-only, wild-estimated, or based on a direct human-caused insect estimate.",
+          "Whole World combines human severity proxies with animal welfare-range proxies. Human tractability is anchored to recurring GiveWell, Giving What We Can, and The Life You Can Save priorities; animal tractability uses welfare-focused anchors from chicken, fish, and shrimp intervention literature, while wild-animal interventions stay heavily discounted.",
       },
       total: {
         label: "Total amount of suffering caused",
         copy:
-          "For humans, uses affected-person or direct-count burden proxies. For animals, it uses sentience-adjusted counts where possible, land-area wild estimates for terrestrial arthropods and wild birds, sentience-only bovine proxies where needed, and a direct human-caused insect estimate calibrated from insecticide-treated agricultural land.",
+          "Whole World uses affected-person proxies for humans and sentience-adjusted or welfare-range-weighted counts for animals, including wild terrestrial arthropod and wild-bird estimates plus a direct human-caused insect estimate.",
       },
       "per-being": {
         label: "Amount of suffering suffered per being",
         copy:
-          "For humans, this uses severity per affected person. For animals, it uses welfare-range medians when available, sentience medians when that is all the source pack supports, and a cautious insect blend for wild and direct human-caused insect proxies, while noting Bentham's Bulldog's argument that pain in simpler animals may be more intense than these conservative scores suggest.",
+          "Whole World uses a human severity proxy per affected person and animal welfare-range or sentience medians per animal. Bentham's Bulldog's arguments about pain in simpler animals still make the current animal per-being numbers conservative rather than aggressive.",
       },
     },
   },
   death: {
     label: "Top Causes of Death by Country",
     topbarNote:
-      "Drag to rotate, search or click a country, and inspect real ADM1 geometry. This globe switches to human death-focused causes using direct mortality indicators and death proxies.",
+      "Drag to rotate, search or click a country, and inspect real ADM1 geometry. Whole World now ranks mixed human and animal death causes by life-years lost, while country drill-down still uses national human mortality indicators.",
     globeCopy:
-      "The death globe narrows the panel to human death-focused causes and hides the animal suffering layer.",
+      "Whole World combines human deaths and animal killing into one life-years-lost ranking. Country drill-down stays human because there is no equally robust national animal-death source pack loaded yet.",
     humanSectionLabel: "Human deaths",
     animalSectionLabel: "",
     showAnimals: false,
     rankingModes: {
       improvement: {
-        label: "Available deaths averted per dollar",
+        label: "Available increase in life-years per dollar",
         copy:
-          "Uses a rough preventability and tractability proxy for each human death cause rather than treating all deaths as equally easy to avert.",
+          "Whole World uses tractability-adjusted life-years. Human causes are anchored to established global-health intervention priorities; animal death causes are discounted harder because most measured animal interventions reduce suffering more directly than they extend lives.",
       },
       total: {
-        label: "Total number of deaths",
+        label: "Total number of life-years taken away",
         copy:
-          "Uses death counts or count proxies, so large-population and high-mortality causes rise even when the per-person rate is lower.",
+          "Whole World multiplies death counts by remaining-life proxies. Human causes use World Bank death counts plus WHO-style age-profile anchors; animal causes use slaughter counts plus conservative remaining-lifespan proxies.",
       },
       "per-being": {
-        label: "Death rate per person",
+        label: "Number of life-years taken away per being",
         copy:
-          "Uses the most relevant death-rate measure for each cause, such as deaths per 100,000 people or per 100,000 live births.",
+          "Whole World compares how much life a typical death removes. Human causes use life expectancy minus a rough age-at-death anchor; animal causes use conservative species-typical remaining-lifespan proxies.",
       },
     },
   },
@@ -460,6 +467,9 @@ const DEATH_MODELS = [
     prioritySource:
       "Death globe: child survival proxy derived from the World Bank country indicator set.",
     weight: 1.08,
+    typicalAgeAtDeath: 1,
+    lifeYearsSource:
+      "Life-years proxy uses local life expectancy at birth minus about age 1, reflecting UNICEF's emphasis that many under-5 deaths are concentrated in infancy and the first few years.",
     totalBurden: (value, context) => (value / 1000) * context.births,
     totalMetric: (value, context) =>
       `${formatCompactNumber((value / 1000) * context.births)} under-5 deaths per year proxy`,
@@ -484,6 +494,9 @@ const DEATH_MODELS = [
     prioritySource:
       "Death globe: maternal mortality indicator from the World Bank country set.",
     weight: 0.88,
+    typicalAgeAtDeath: 29,
+    lifeYearsSource:
+      "Life-years proxy uses local life expectancy at birth minus about age 29 as a rough childbearing-age anchor informed by WHO maternal mortality framing.",
     totalBurden: (value, context) => (value / 100000) * context.births,
     totalMetric: (value, context) =>
       `${formatCompactNumber((value / 100000) * context.births)} maternal deaths per year proxy`,
@@ -508,6 +521,9 @@ const DEATH_MODELS = [
     prioritySource:
       "Death globe: direct mortality indicator from the World Bank country set.",
     weight: 0.92,
+    typicalAgeAtDeath: 61,
+    lifeYearsSource:
+      "Life-years proxy uses local life expectancy at birth minus about age 61, reflecting WHO's older-adult cardiovascular and respiratory profile for air-pollution deaths.",
     totalBurden: (value, context) => (value / 100000) * context.population,
     totalMetric: (value, context) =>
       `${formatCompactNumber((value / 100000) * context.population)} deaths attributed to air pollution`,
@@ -532,6 +548,9 @@ const DEATH_MODELS = [
     prioritySource:
       "Death globe: direct WASH mortality indicator from the World Bank country set.",
     weight: 0.98,
+    typicalAgeAtDeath: 32,
+    lifeYearsSource:
+      "Life-years proxy uses local life expectancy at birth minus about age 32 because WHO's WASH burden is child-heavy but not exclusively concentrated in early childhood.",
     totalBurden: (value, context) => (value / 100000) * context.population,
     totalMetric: (value, context) =>
       `${formatCompactNumber((value / 100000) * context.population)} deaths attributed to unsafe WASH`,
@@ -556,6 +575,9 @@ const DEATH_MODELS = [
     prioritySource:
       "Death globe: direct road-injury mortality indicator from the World Bank country set.",
     weight: 0.71,
+    typicalAgeAtDeath: 31,
+    lifeYearsSource:
+      "Life-years proxy uses local life expectancy at birth minus about age 31, consistent with WHO's emphasis that road injuries disproportionately kill younger people and are the leading cause of death for ages 5-29.",
     totalBurden: (value, context) => (value / 100000) * context.population,
     totalMetric: (value, context) =>
       `${formatCompactNumber((value / 100000) * context.population)} road injury deaths`,
@@ -580,6 +602,9 @@ const DEATH_MODELS = [
     prioritySource:
       "Death globe: suicide mortality indicator from the World Bank country set.",
     weight: 0.66,
+    typicalAgeAtDeath: 37,
+    lifeYearsSource:
+      "Life-years proxy uses local life expectancy at birth minus about age 37 as a rough mid-adult anchor consistent with WHO's global suicide age profile.",
     totalBurden: (value, context) => (value / 100000) * context.population,
     totalMetric: (value, context) =>
       `${formatCompactNumber((value / 100000) * context.population)} suicide deaths`,
@@ -604,6 +629,9 @@ const DEATH_MODELS = [
     prioritySource:
       "Death globe: homicide mortality indicator from the World Bank country set.",
     weight: 0.72,
+    typicalAgeAtDeath: 31,
+    lifeYearsSource:
+      "Life-years proxy uses local life expectancy at birth minus about age 31 as a rough young-adult violence anchor.",
     totalBurden: (value, context) => (value / 100000) * context.population,
     totalMetric: (value, context) =>
       `${formatCompactNumber((value / 100000) * context.population)} homicide deaths`,
@@ -628,6 +656,9 @@ const DEATH_MODELS = [
     prioritySource:
       "Death globe: direct conflict death indicator from the World Bank country set.",
     weight: 0.93,
+    typicalAgeAtDeath: 30,
+    lifeYearsSource:
+      "Life-years proxy uses local life expectancy at birth minus about age 30 as a rough conflict-death anchor, since modern war deaths often skew toward younger adults.",
     totalBurden: (value) => value,
     totalMetric: (value) => `${formatCompactNumber(value)} battle-related deaths`,
     score: (value, context) => Math.min(100, (per100kRate(value, context.population) / 40) * 100),
@@ -654,108 +685,16 @@ const ISSUE_DATA_URL = (iso) =>
   `https://api.worldbank.org/v2/country/${iso.toLowerCase()}/indicator/${[...new Set([...HUMAN_ISSUE_MODELS.map((indicator) => indicator.id), ...ISSUE_CONTEXT_INDICATORS])].join(";")}?source=2&date=${ISSUE_DATA_DATE_RANGE}&format=json&per_page=400`;
 const CONTEXT_DATA_URL = (iso) =>
   `https://api.worldbank.org/v2/country/${iso.toLowerCase()}/indicator/${ISSUE_CONTEXT_INDICATORS.join(";")}?source=2&date=${ISSUE_DATA_DATE_RANGE}&format=json&per_page=400`;
-
-const SUFFERING_BRIEF = {
-  location: "Whole Earth",
-  summary:
-    "The global view now includes estimated global animal suffering ranks; click a country to order a broader country suffering set with current national data: child health, infectious disease, food insecurity, poverty, pollution, water, clean cooking, violence, conflict, farmed animals, wild terrestrial arthropods, wild birds, and a direct human-caused insect estimate.",
-  footnote:
-    "Geography comes from Natural Earth and geoBoundaries. Human issue ordering uses World Bank country indicators; animal cards use Our World in Data production proxies, World Bank land-area data, a Wild Animal Initiative insect benchmark, and Rethink Priorities sentience and welfare-range distributions where available. Wild-animal estimates are coarse and inference-heavy, and Bentham's Bulldog argues both that they may dominate the global picture and that simple animals may feel more intense pain than low-neuron intuitions suggest.",
-  issues: [
-    {
-      tag: "Health burden",
-      title: "Child survival and infectious disease",
-      body: "The country layer now tracks preventable child death, malaria, routine immunization gaps, maternal mortality, and tuberculosis rather than compressing them into a single regional label.",
-    },
-    {
-      tag: "Deprivation",
-      title: "Food, poverty, and basic services",
-      body: "Food insecurity, severe poverty, sanitation, drinking water, and clean cooking access are all tracked directly with country indicators where available.",
-    },
-    {
-      tag: "Environmental burden",
-      title: "Air pollution and household smoke",
-      body: "The country list now treats chronic PM2.5 exposure and dirty household fuels as distinct causes of suffering rather than burying them in general development prose.",
-    },
-    {
-      tag: "Violence burden",
-      title: "War, homicide, and displacement",
-      body: "The site now loads country-specific homicide, battle-death, and conflict-displacement indicators so violent harm appears as data rather than as omission.",
-    },
-    {
-      tag: "Insect stakes",
-      title: "Debated species may still be conscious and feel intense pain",
-      body: "Bentham's Bulldog argues for a stronger prior that insects, fish, and decapods are conscious, and that conditional on consciousness their pain may be quite intense rather than faint. The site still uses conservative numeric proxies, but now explains that these numbers may understate pain intensity.",
-    },
-  ],
+const WORLD_FEATURE = {
+  properties: {
+    NAME: "World",
+    ADMIN: "World",
+    NAME_LONG: "World",
+    ISO_A3: "WLD",
+    CONTINENT: "World",
+  },
 };
-
-const DEATH_BRIEF = {
-  location: "Whole Earth",
-  summary:
-    "Click a country to order a death-focused set with current national data: child mortality, maternal mortality, air pollution deaths, unsafe WASH deaths, road injuries, suicide, homicide, and war deaths.",
-  footnote:
-    "Geography comes from Natural Earth and geoBoundaries. The death globe uses World Bank mortality indicators and death proxies. It hides the animal layer because this view is specifically about human death causes.",
-  issues: [
-    {
-      tag: "Preventable deaths",
-      title: "Child and maternal mortality",
-      body: "The death globe tracks under-5 and maternal mortality directly instead of leaving preventable deaths folded into general suffering prose.",
-    },
-    {
-      tag: "Environmental deaths",
-      title: "Air pollution and unsafe WASH",
-      body: "The death view separates chronic pollution mortality from deaths attributed to unsafe water, sanitation, and hygiene.",
-    },
-    {
-      tag: "Injury deaths",
-      title: "Road injury mortality",
-      body: "Road deaths are treated as their own cross-country mortality category rather than disappearing into a catch-all safety problem.",
-    },
-    {
-      tag: "Violence and conflict",
-      title: "Suicide, homicide, and war",
-      body: "The death globe also tracks violent mortality directly, including self-harm, homicide, and battle-related deaths.",
-    },
-  ],
-};
-
-const animalBrief = {
-  summary:
-    "Animal suffering is now expanded country-by-country using slaughter and aquaculture proxies from Our World in Data, wild terrestrial arthropod and wild bird estimates derived from country land area, and a direct human-caused insect estimate calibrated from insecticide-treated agricultural land, plus Rethink Priorities sentience and welfare-range distributions where those exist.",
-  issues: [
-    {
-      tag: "Prior",
-      title: "The site now surfaces a stronger default presumption of sentience",
-      body: "Bentham's Bulldog argues that behavioral, evolutionary, inductive, probabilistic, and theoretical considerations together favor treating many debated species as conscious unless the evidence turns against that view, rather than defaulting to skepticism.",
-    },
-    {
-      tag: "Method",
-      title: "Country counts first, then the strongest weighting the source pack supports",
-      body: "Where the RP distributions doc gives sentience-adjusted welfare ranges, this site uses them. Where it only gives sentience, the card says so. For wild terrestrial arthropods and birds, the site estimates country scale from land area multiplied by global density benchmarks and labels those estimates as rough rather than exact.",
-    },
-    {
-      tag: "Bentham's Bulldog",
-      title: "Wild insects may dominate the whole animal picture",
-      body: "The article argues that if insects can suffer, the sheer number of wild insects and the frequency of short, painful deaths could make insect suffering vastly larger than farmed-vertebrate suffering. The site now includes an explicit wild terrestrial arthropod estimate instead of only mentioning this as a caveat.",
-    },
-    {
-      tag: "Conservative proxy",
-      title: "The direct insect card is narrower than the wild-insect question",
-      body: "The human-caused insect card estimates insects potentially affected on insecticide-treated agricultural land. The wild-arthropod card estimates the much larger baseline wild-animal scale, and the wild-bird card covers non-insect wild animals. All of these are rough: one is a direct but partial human-caused estimate, the others are broad but highly inferential baselines.",
-    },
-    {
-      tag: "Intensity",
-      title: "Simple minds do not imply mild pain",
-      body: "The article argues that lower neuron counts do not automatically mean weaker suffering. If simpler creatures cannot cognitively step back from pain, painful experience may occupy more of their total consciousness. The site now states that its per-being ordering is conservative on this point.",
-    },
-    {
-      tag: "Caution",
-      title: "Habitat-loss conclusions are noted, not encoded",
-      body: "The reducing-suffering literature argues that if wild insect lives are mostly net negative, some human actions that reduce insect populations could reduce suffering. The site surfaces that as an important but controversial note rather than hard-coding it into country rankings.",
-    },
-  ],
-};
+const SUFFERING_MODEL_BY_ID = new Map(SUFFERING_ISSUE_MODELS.map((definition) => [definition.id, definition]));
 
 const MORAL_WEIGHT_NOTES = [
   {
@@ -1108,6 +1047,39 @@ const ANIMAL_DATASETS = [
   },
 ];
 
+const ANIMAL_DEATH_MODELS = {
+  chickens: {
+    lifeYearsLost: 5,
+    typicalLifeSource:
+      "Life-years proxy uses a conservative remaining-life estimate for broiler chickens relative to sanctuary-style chicken lifespans around 10-15 years and slaughter in early weeks.",
+  },
+  pigs: {
+    lifeYearsLost: 8,
+    typicalLifeSource:
+      "Life-years proxy uses a conservative remaining-life estimate for pigs relative to sanctuary-style pig lifespans around 10-15 years and slaughter in the first year.",
+  },
+  "other-birds": {
+    lifeYearsLost: 4,
+    typicalLifeSource:
+      "Life-years proxy uses a conservative remaining-life estimate for ducks, geese, and turkeys relative to sanctuary-style bird lifespans often around a decade and slaughter in the first year.",
+  },
+  bovines: {
+    lifeYearsLost: 12,
+    typicalLifeSource:
+      "Life-years proxy uses a conservative remaining-life estimate for bovines relative to sanctuary-style cattle lifespans around 18-22 years and slaughter at young ages.",
+  },
+  fish: {
+    lifeYearsLost: 1.5,
+    typicalLifeSource:
+      "Life-years proxy uses a conservative remaining-life estimate for farmed fish because the source pack mixes species with very different lifespans and grow-out periods.",
+  },
+  crustaceans: {
+    lifeYearsLost: 0.5,
+    typicalLifeSource:
+      "Life-years proxy uses a conservative remaining-life estimate for farmed crustaceans because shrimp and related species are harvested quickly and species-specific lifespan data varies widely.",
+  },
+};
+
 const PAIN_LEVELS = [
   {
     id: "annoying",
@@ -1310,6 +1282,7 @@ const state = {
   provinceMeta: null,
   provinceFeatures: [],
   countryIssueData: null,
+  globalIssueData: { loading: true, error: null, sufferingIssues: [], deathIssues: [] },
   globalContext: { loading: true, error: null, context: null },
 };
 
@@ -1339,6 +1312,18 @@ function formatCompactNumber(value) {
     notation: "compact",
     maximumFractionDigits: value >= 1e9 ? 1 : 0,
   }).format(Number(value || 0));
+}
+
+function formatLifeYears(value) {
+  const number = Number(value || 0);
+
+  if (number >= 1000) {
+    return formatCompactNumber(number);
+  }
+
+  return new Intl.NumberFormat("en-US", {
+    maximumFractionDigits: number >= 100 ? 0 : number >= 10 ? 1 : 2,
+  }).format(number);
 }
 
 function formatScaleCount(value) {
@@ -1543,10 +1528,6 @@ function currentRankingModes() {
   return currentGlobeModeConfig().rankingModes;
 }
 
-function currentGlobalBrief() {
-  return state.globeMode === "death" ? DEATH_BRIEF : SUFFERING_BRIEF;
-}
-
 function currentHumanIssues(issueData) {
   if (!issueData) {
     return [];
@@ -1613,6 +1594,8 @@ function humanContext(latestByIndicator) {
   const landArea = Number(landAreaRecord?.value || 0);
   const agriculturalLandRecord = latestByIndicator.get("AG.LND.AGRI.K2");
   const agriculturalLand = Number(agriculturalLandRecord?.value || 0);
+  const lifeExpectancyRecord = latestByIndicator.get("SP.DYN.LE00.IN");
+  const lifeExpectancyAtBirth = Number(lifeExpectancyRecord?.value || 73);
 
   return {
     population,
@@ -1623,7 +1606,14 @@ function humanContext(latestByIndicator) {
     landAreaDate: landAreaRecord?.date || null,
     agriculturalLand,
     agriculturalLandDate: agriculturalLandRecord?.date || null,
+    lifeExpectancyAtBirth,
+    lifeExpectancyDate: lifeExpectancyRecord?.date || null,
   };
+}
+
+function lifeYearsLostPerDeath(definition, context = {}) {
+  const lifeExpectancy = Number(context.lifeExpectancyAtBirth || 73);
+  return Math.max(0.1, lifeExpectancy - Number(definition.typicalAgeAtDeath || 0));
 }
 
 function formatHumanRanking(issue, mode) {
@@ -1635,18 +1625,18 @@ function formatHumanRanking(issue, mode) {
 
   if (state.globeMode === "death") {
     if (mode === "improvement") {
-      return "Order mode: available deaths averted per dollar proxy.";
+      return `Order mode: available life-years gained per dollar proxy · ${ranking.metric}.`;
     }
 
     if (mode === "total") {
-      return `Order mode: total deaths proxy · ${ranking.metric}`;
+      return `Order mode: total life-years lost proxy · ${ranking.metric}.`;
     }
 
-    return `Order mode: death rate proxy · ${ranking.metric}.`;
+    return `Order mode: life-years lost per death proxy · ${ranking.metric}.`;
   }
 
   if (mode === "improvement") {
-    return "Order mode: available improvement per dollar proxy.";
+    return "Order mode: available decrease in suffering per dollar proxy.";
   }
 
   if (mode === "total") {
@@ -1664,7 +1654,7 @@ function formatAnimalRanking(issue, mode) {
   }
 
   if (mode === "improvement") {
-    return `Order mode: available improvement per dollar proxy · tractability-adjusted burden ${formatCompactNumber(ranking.raw)}.`;
+    return `Order mode: available decrease in suffering per dollar proxy · tractability-adjusted burden ${formatCompactNumber(ranking.raw)}.`;
   }
 
   if (mode === "total") {
@@ -1928,6 +1918,150 @@ function buildAnimalIssues(feature) {
   return buildAnimalIssuesFromMetrics(metrics, context, country);
 }
 
+function animalDeathImprovementFactor(dataset) {
+  return Math.max(0.003, Math.min(0.08, Math.sqrt(dataset.improvementFactor || 0.01) * 0.03));
+}
+
+function buildAnimalDeathIssuesFromMetrics(metrics, countryLabel) {
+  const country = countryLabel || "the world";
+
+  return ANIMAL_DATASETS.map((dataset) => {
+    const deathModel = ANIMAL_DEATH_MODELS[dataset.id];
+    const record = metrics?.[dataset.id];
+
+    if (!deathModel || !record) {
+      return null;
+    }
+
+    const rawValue =
+      typeof dataset.valueFromRecord === "function" ? dataset.valueFromRecord(record, metrics, {}) : record.value;
+
+    if (!Number.isFinite(rawValue) || rawValue <= 0) {
+      return null;
+    }
+
+    const lifeYearsLost = deathModel.lifeYearsLost;
+    const totalLifeYears = rawValue * lifeYearsLost;
+    const improvementRaw = totalLifeYears * animalDeathImprovementFactor(dataset);
+    const score = animalIssueScore(totalLifeYears);
+
+    return {
+      id: `animal-death-${dataset.id}`,
+      worldKind: "animal-death",
+      tag: `Animal deaths · ${issueLevel(score)}`,
+      title: dataset.title,
+      metric: dataset.metric(rawValue, record, {}),
+      body: dataset.body(rawValue, score, country, record, {}),
+      source: `${dataset.source(record.year, record, {})} ${deathModel.typicalLifeSource} Whole-world death ordering discounts current animal-welfare cost-effectiveness anchors because most measured interventions reduce suffering more directly than they extend lives.`,
+      score,
+      ranking: {
+        improvement: {
+          score: Math.log10(improvementRaw + 1),
+          raw: improvementRaw,
+          metric: `${formatLifeYears(improvementRaw)} tractability-adjusted animal life-years`,
+        },
+        total: {
+          score: Math.log10(totalLifeYears + 1),
+          raw: totalLifeYears,
+          metric: `${formatLifeYears(totalLifeYears)} life-years lost from ${dataset.metric(rawValue, record, {}).toLowerCase()}`,
+        },
+        "per-being": {
+          score: lifeYearsLost,
+          raw: lifeYearsLost,
+          metric: `${formatLifeYears(lifeYearsLost)} life-years lost per animal`,
+        },
+      },
+    };
+  })
+    .filter(Boolean)
+    .sort((left, right) => right.ranking.improvement.score - left.ranking.improvement.score);
+}
+
+function buildWholeWorldSufferingIssues() {
+  const context = state.globalContext?.context || {};
+  const humanIssues = (state.globalIssueData?.sufferingIssues || []).map((issue) => {
+    const definition = SUFFERING_MODEL_BY_ID.get(issue.id);
+    const perBeingRaw = Math.max(0, Math.min(1, (issue.severityScore || 0) / 100));
+    const totalRaw = (issue.ranking?.total?.raw || 0) * perBeingRaw;
+    const improvementRaw = totalRaw * (definition?.weight || 1);
+
+    return {
+      ...issue,
+      id: `world-human-suffering-${issue.id}`,
+      worldKind: "human-suffering",
+      tag: `Human burden · ${issueLevel(issue.score)}`,
+      source: `${issue.source} Whole-world mixed-species note: this human card rescales the existing country-level severity score to a 0-1 per-being proxy so it can sit beside animal welfare-range proxies.`,
+      ranking: {
+        improvement: {
+          score: Math.log10(improvementRaw + 1),
+          raw: improvementRaw,
+          metric: `${formatCompactNumber(improvementRaw)} tractability-adjusted human suffering proxy units`,
+        },
+        total: {
+          score: Math.log10(totalRaw + 1),
+          raw: totalRaw,
+          metric: `${formatCompactNumber(totalRaw)} human suffering proxy units from ${issue.ranking.total.metric.toLowerCase()}`,
+        },
+        "per-being": {
+          score: perBeingRaw,
+          raw: perBeingRaw,
+          metric: `severity proxy ${perBeingRaw.toFixed(2)} per affected human`,
+        },
+      },
+    };
+  });
+  const animalIssues = animalDataState.world
+    ? buildAnimalIssuesFromMetrics(animalDataState.world, context, "the world").map((issue) => ({
+        ...issue,
+        worldKind: "animal-suffering",
+      }))
+    : [];
+
+  return sortIssuesByMode([...humanIssues, ...animalIssues], state.rankingMode).slice(0, WORLD_RANK_LIMIT);
+}
+
+function buildWholeWorldDeathIssues() {
+  const humanIssues = (state.globalIssueData?.deathIssues || []).map((issue) => ({
+    ...issue,
+    id: `world-human-death-${issue.id}`,
+    worldKind: "human-death",
+    tag: `Human deaths · ${issueLevel(issue.score)}`,
+  }));
+  const animalIssues = animalDataState.world
+    ? buildAnimalDeathIssuesFromMetrics(animalDataState.world, "the world")
+    : [];
+
+  return sortIssuesByMode([...humanIssues, ...animalIssues], state.rankingMode).slice(0, WORLD_RANK_LIMIT);
+}
+
+function formatWholeWorldRanking(issue, mode) {
+  if (issue.worldKind === "animal-suffering") {
+    return formatAnimalRanking(issue, mode);
+  }
+
+  if (issue.worldKind === "human-suffering") {
+    if (mode === "improvement") {
+      return `Order mode: available decrease in suffering per dollar proxy · ${issue.ranking.improvement.metric}.`;
+    }
+
+    if (mode === "total") {
+      return `Order mode: total suffering proxy · ${issue.ranking.total.metric}.`;
+    }
+
+    return `Order mode: per-being suffering proxy · ${issue.ranking["per-being"].metric}.`;
+  }
+
+  if (mode === "improvement") {
+    return `Order mode: available life-years gained per dollar proxy · ${issue.ranking.improvement.metric}.`;
+  }
+
+  if (mode === "total") {
+    return `Order mode: total life-years lost proxy · ${issue.ranking.total.metric}.`;
+  }
+
+  return `Order mode: life-years lost per death proxy · ${issue.ranking["per-being"].metric}.`;
+}
+
 async function loadAnimalBurdenData() {
   animalDataState.loading = true;
   animalDataState.error = null;
@@ -1986,10 +2120,15 @@ function buildHumanIssues(models, latestByIndicator, feature, context) {
     const severityScore = definition.score(value, context);
     const weightedScore = Math.min(100, severityScore * definition.weight);
     const totalBurden = definition.totalBurden ? definition.totalBurden(value, context) : 0;
+    const isDeathModel = Number.isFinite(definition.typicalAgeAtDeath);
+    const perBeingLifeYears = isDeathModel ? lifeYearsLostPerDeath(definition, context) : null;
+    const totalLifeYears = isDeathModel ? totalBurden * perBeingLifeYears : null;
+    const improvementRaw = isDeathModel ? totalLifeYears * definition.weight : weightedScore;
     const proxyNote = definition.proxy ? `${definition.proxy} ` : "";
     const priorityTag = definition.priorityLabel || issuePriorityLabel(definition.support);
     const prioritySource =
       definition.prioritySource || `Priority sources: ${joinList(definition.support || [])}.`;
+    const sourceTail = isDeathModel ? ` Life-years proxy: ${definition.lifeYearsSource}` : "";
 
     return {
       id: definition.id,
@@ -1997,24 +2136,33 @@ function buildHumanIssues(models, latestByIndicator, feature, context) {
       title: definition.title,
       metric: definition.metric(value, context),
       body: definition.body(value, country, context),
-      source: `${proxyNote}${prioritySource} Data: ${observation.indicator.value} · ${worldBankDate(observation.date)}`,
+      source: `${proxyNote}${prioritySource} Data: ${observation.indicator.value} · ${worldBankDate(observation.date)}.${sourceTail}`,
       score: weightedScore,
       severityScore,
       year: observation.date,
       ranking: {
         improvement: {
-          score: weightedScore,
-          raw: weightedScore,
+          score: isDeathModel ? Math.log10(improvementRaw + 1) : weightedScore,
+          raw: improvementRaw,
+          metric: isDeathModel
+            ? `${formatLifeYears(improvementRaw)} tractability-adjusted life-years`
+            : `${weightedScore.toFixed(1)} weighted severity points`,
         },
         total: {
-          score: Math.log10(totalBurden + 1),
-          raw: totalBurden,
-          metric: definition.totalMetric ? definition.totalMetric(value, context) : "No total-burden proxy available",
+          score: Math.log10((isDeathModel ? totalLifeYears : totalBurden) + 1),
+          raw: isDeathModel ? totalLifeYears : totalBurden,
+          metric: isDeathModel
+            ? `${formatLifeYears(totalLifeYears)} life-years lost from ${definition.totalMetric ? definition.totalMetric(value, context).toLowerCase() : "the latest death proxy"}`
+            : definition.totalMetric
+              ? definition.totalMetric(value, context)
+              : "No total-burden proxy available",
         },
         "per-being": {
-          score: severityScore,
-          raw: severityScore,
-          metric: definition.metric(value, context),
+          score: isDeathModel ? perBeingLifeYears : severityScore,
+          raw: isDeathModel ? perBeingLifeYears : severityScore,
+          metric: isDeathModel
+            ? `${formatLifeYears(perBeingLifeYears)} life-years lost per death proxy`
+            : definition.metric(value, context),
         },
       },
     };
@@ -2260,18 +2408,57 @@ function renderMoralWeightNotes() {
 }
 
 function renderIssues(country) {
-  const brief = currentGlobalBrief();
-
   if (!country) {
+    const needsAnimalData = state.globeMode === "suffering" || state.globeMode === "death";
+    const isLoading =
+      state.globalIssueData.loading ||
+      (needsAnimalData && animalDataState.loading) ||
+      (state.globeMode === "suffering" && state.globalContext.loading);
+    const hasError =
+      state.globalIssueData.error ||
+      (needsAnimalData && animalDataState.error) ||
+      (state.globeMode === "suffering" && state.globalContext.error);
+
+    if (isLoading) {
+      renderIssueStatus(
+        "Loading whole-world ranking",
+        state.globeMode === "death"
+          ? "Fetching World Bank WLD mortality data plus global animal kill counts so the panel can rank life-years lost across humans and animals."
+          : "Fetching World Bank WLD burden data plus global farmed-animal, wild-animal, and insect data so the panel can rank whole-world suffering across humans and animals."
+      );
+      return;
+    }
+
+    if (hasError) {
+      renderIssueStatus(
+        "Whole-world data unavailable",
+        "At least one global human or animal data source failed to load, so the mixed-species world ranking cannot be assembled right now."
+      );
+      return;
+    }
+
+    const issues = state.globeMode === "death" ? buildWholeWorldDeathIssues() : buildWholeWorldSufferingIssues();
+
+    if (!issues.length) {
+      renderIssueStatus(
+        "No whole-world ranking available",
+        "The loaded world data did not produce any mixed human-animal causes for the current ordering mode."
+      );
+      return;
+    }
+
     issuesRoot.textContent = "";
 
-    for (const issue of brief.issues) {
+    for (const issue of issues) {
       const card = document.createElement("article");
       card.className = "issue-card";
       card.innerHTML = `
         <p class="issue-tag">${issue.tag}</p>
         <h3>${issue.title}</h3>
+        <strong class="issue-metric">${issue.metric}</strong>
         <p>${issue.body}</p>
+        <p class="issue-order-note">${formatWholeWorldRanking(issue, state.rankingMode)}</p>
+        <p class="issue-source">${issue.source}</p>
       `;
       issuesRoot.appendChild(card);
     }
@@ -2334,67 +2521,7 @@ function renderAnimalIssues(country) {
   }
 
   if (!country) {
-    if (animalDataState.loading) {
-      renderAnimalIssueStatus(
-        "Loading global animal data",
-        "Fetching global slaughter, aquaculture, insecticide, and land-area context to estimate global animal suffering rankings (including wild arthropods and wild birds)."
-      );
-      return;
-    }
-
-    if (animalDataState.error) {
-      renderAnimalIssueStatus(
-        "Global animal data unavailable",
-        "The global farmed and wild animal proxy data failed to load, so the panel cannot yet estimate global animal burdens."
-      );
-      return;
-    }
-
-    if (!animalDataState.world) {
-      animalIssuesRoot.textContent = "";
-
-      for (const issue of animalBrief.issues) {
-        const card = document.createElement("article");
-        card.className = "issue-card";
-        card.innerHTML = `
-          <p class="issue-tag">${issue.tag}</p>
-          <h3>${issue.title}</h3>
-          <p>${issue.body}</p>
-        `;
-        animalIssuesRoot.appendChild(card);
-      }
-
-      return;
-    }
-
-    const context = state.globalContext?.context || {};
-    const issues = buildAnimalIssuesFromMetrics(animalDataState.world, context, "the world");
-
-    if (!issues.length) {
-      renderAnimalIssueStatus(
-        "No global animal issue data",
-        "No matching global slaughter, wild-animal, or human-caused insect estimate was found for the loaded data."
-      );
-      return;
-    }
-
     animalIssuesRoot.textContent = "";
-    const orderedIssues = sortIssuesByMode(issues, state.rankingMode);
-
-    for (const issue of orderedIssues) {
-      const card = document.createElement("article");
-      card.className = "issue-card";
-      card.innerHTML = `
-        <p class="issue-tag">${issue.tag}</p>
-        <h3>${issue.title}</h3>
-        <strong class="issue-metric">${issue.metric}</strong>
-        <p>${issue.body}</p>
-        <p class="issue-order-note">${formatAnimalRanking(issue, state.rankingMode)}</p>
-        <p class="issue-source">${issue.source}</p>
-      `;
-      animalIssuesRoot.appendChild(card);
-    }
-
     return;
   }
 
@@ -2494,6 +2621,7 @@ function countryFocusScale(feature) {
 function syncModeUi() {
   const globeMode = currentGlobeModeConfig();
   const rankingModes = currentRankingModes();
+  const isCountryView = Boolean(state.selectedCountry);
 
   if (topbarNote) {
     topbarNote.textContent = globeMode.topbarNote;
@@ -2504,11 +2632,19 @@ function syncModeUi() {
   }
 
   if (globeModeCopy) {
-    globeModeCopy.textContent = globeMode.globeCopy;
+    globeModeCopy.textContent = !isCountryView
+      ? globeMode.globeCopy
+      : state.globeMode === "death"
+        ? "Country drill-down narrows back to national human death causes because the site does not load equally robust country animal-death data."
+        : "Country drill-down separates broader human suffering from farmed-animal, wild-animal, and direct human-caused insect burdens for the selected country.";
   }
 
   if (humanSectionLabel) {
-    humanSectionLabel.textContent = globeMode.humanSectionLabel;
+    humanSectionLabel.textContent = state.selectedCountry
+      ? globeMode.humanSectionLabel
+      : state.globeMode === "death"
+        ? "Whole-world top 10 life-years lost"
+        : "Whole-world top 10 across humans and animals";
   }
 
   if (animalSectionLabel) {
@@ -2516,7 +2652,7 @@ function syncModeUi() {
   }
 
   if (animalSection) {
-    animalSection.hidden = !globeMode.showAnimals;
+    animalSection.hidden = !state.selectedCountry || !globeMode.showAnimals;
   }
 
   if (rankingTitle) {
@@ -2534,32 +2670,69 @@ function syncModeUi() {
   }
 
   if (rankingCopy) {
-    rankingCopy.textContent = rankingModes[state.rankingMode].copy;
+    if (!isCountryView) {
+      rankingCopy.textContent = rankingModes[state.rankingMode].copy;
+    } else if (state.globeMode === "death") {
+      rankingCopy.textContent =
+        state.rankingMode === "improvement"
+          ? "Country drill-down uses the same tractability-weighted life-years approach, but only for the selected country's human death causes."
+          : state.rankingMode === "total"
+            ? "Country drill-down orders human death causes by estimated total life-years lost within the selected country."
+            : "Country drill-down orders human death causes by estimated life-years lost per death within the selected country.";
+    } else {
+      rankingCopy.textContent =
+        state.rankingMode === "improvement"
+          ? "Country drill-down mixes recurring EA priorities with broader burden indicators for humans and tractability-adjusted welfare proxies for animals."
+          : state.rankingMode === "total"
+            ? "Country drill-down uses affected-person proxies for humans and sentience-adjusted or welfare-range-weighted counts for animals."
+            : "Country drill-down uses severity per affected human and welfare-range or sentience medians per animal.";
+    }
   }
 }
 
 function renderDetails() {
   const globeMode = currentGlobeModeConfig();
-  const brief = currentGlobalBrief();
   syncModeUi();
 
   if (!state.selectedCountry) {
+    const worldIssues =
+      state.globalIssueData.loading ||
+      state.globalIssueData.error ||
+      animalDataState.loading ||
+      animalDataState.error ||
+      (state.globeMode === "suffering" && (state.globalContext.loading || state.globalContext.error))
+        ? []
+        : state.globeMode === "death"
+          ? buildWholeWorldDeathIssues()
+          : buildWholeWorldSufferingIssues();
+
     countrySearchInput.value = "";
     selectionMeta.textContent = "Global view";
     selectionTitle.textContent = "The whole Earth.";
-    selectionSummary.textContent = brief.summary;
-    selectionFootnote.textContent = brief.footnote;
-    factLocation.textContent = brief.location;
+    selectionSummary.textContent =
+      state.globeMode === "death"
+        ? `The list below shows the whole-world top 10 causes of death across humans and animals. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
+        : `The list below shows the whole-world top 10 causes of suffering across humans and animals. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
+    selectionFootnote.textContent =
+      state.globeMode === "death"
+        ? "Whole-world human death causes come from World Bank WLD mortality indicators. Whole-world animal death causes come from OWID global slaughter and aquaculture kill counts plus conservative remaining-life proxies. Human life-years use life expectancy at birth minus WHO-style age anchors; animal life-years use species-typical remaining-life proxies. Animal per-dollar life-year estimates are the weakest part of the model because most measured animal interventions reduce suffering more directly than they extend lives."
+        : "Whole-world human suffering causes come from World Bank WLD burden indicators, with severity scores rescaled into a 0-1 per-being proxy so they can be compared with animal welfare-range proxies. Whole-world animal suffering uses OWID production and insecticide data, World Bank land area, Rethink Priorities sentience and welfare ranges, Rosenberg et al.'s soil-arthropod estimate, and Callaghan et al.'s bird abundance estimate. This is an explicit inference layer rather than a published master ranking.";
+    factLocation.textContent = "Whole Earth";
     factCountrySource.textContent = "Natural Earth Admin 0, 1:50m";
     factAdminSource.textContent = "geoBoundaries ADM1 will load on click";
-    factIssueSource.textContent = state.globeMode === "death"
-      ? "Human: WDI death indicators on click."
-      : animalDataState.loading
-        ? "Human: WDI on click. Animals: loading OWID + WDI + RP + WAI + cost-effectiveness anchors."
-        : animalDataState.error
-          ? "Human: WDI on click. Animals: OWID load failed."
-          : "Human: WDI on click. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
-    factUnitCount.textContent = "0";
+    factIssueSource.textContent =
+      state.globeMode === "death"
+        ? state.globalIssueData.loading || animalDataState.loading
+          ? "Whole World: loading WDI WLD + OWID animal-death data."
+          : state.globalIssueData.error || animalDataState.error
+            ? "Whole World: mixed-species death data failed."
+            : "Whole World: WDI WLD + OWID slaughter and aquaculture data + life-years proxies."
+        : state.globalIssueData.loading || animalDataState.loading || state.globalContext.loading
+          ? "Whole World: loading WDI WLD + OWID + RP + WAI + land-area context."
+          : state.globalIssueData.error || animalDataState.error || state.globalContext.error
+            ? "Whole World: mixed-species suffering data failed."
+            : "Whole World: WDI WLD + OWID + World Bank land area + RP + WAI + welfare-range proxies.";
+    factUnitCount.textContent = formatNumber(worldIssues.length);
     renderIssues(null);
     renderAnimalIssues(null);
     return;
@@ -2621,7 +2794,7 @@ function renderDetails() {
       : issueData?.loading
         ? " Issue data will appear after the country request completes."
         : state.globeMode === "death"
-          ? " Human death cards use World Bank mortality indicators and death proxies for pollution, unsafe WASH, road injury, suicide, homicide, and conflict. The within-country order is estimated rather than copied from a published master list."
+          ? " Human death cards use World Bank mortality indicators and death proxies for pollution, unsafe WASH, road injury, suicide, homicide, and conflict. The within-country order converts deaths into rough life-years lost using local life expectancy minus WHO-style age anchors, so it is an inference rather than a published master list."
           : " Human cards combine recurring EA priorities with broader World Bank burden indicators for food insecurity, pollution, water, clean cooking, TB, homicide, and conflict. The within-country order is estimated rather than copied from a published master list.";
   const animalSource = !globeMode.showAnimals
     ? " The death globe hides the animal layer because this view is specifically about human death causes."
@@ -2820,6 +2993,21 @@ async function loadGlobalContext() {
   }
 }
 
+async function loadGlobalIssueData() {
+  state.globalIssueData = { loading: true, error: null, sufferingIssues: [], deathIssues: [] };
+  renderDetails();
+
+  try {
+    const payload = await fetchJson(ISSUE_DATA_URL("WLD"));
+    const parsed = parseCountryIssueData(payload, WORLD_FEATURE);
+    state.globalIssueData = { ...parsed, loading: false, error: null };
+    renderDetails();
+  } catch (error) {
+    state.globalIssueData = { loading: false, error: error.message, sufferingIssues: [], deathIssues: [] };
+    renderDetails();
+  }
+}
+
 async function loadCountryIssueData(feature) {
   const properties = feature.properties;
   const iso = countryIso(properties);
@@ -2967,6 +3155,7 @@ async function init() {
   renderPainVisuals();
   renderMoralWeightNotes();
   loadAnimalBurdenData();
+  loadGlobalIssueData();
   loadGlobalContext();
 
   try {

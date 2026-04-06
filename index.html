@@ -18,9 +18,9 @@
           <h1>Accurate boundaries first.</h1>
         </div>
         <p class="topbar-note" id="topbar-note">
-          Drag to rotate, search or click a country, and inspect real ADM1 geometry. The issue list is now ordered from
-          broader country-by-country human, farmed-animal, wild-animal, and human-caused insect suffering data. Below it,
-          factory-farming pain is visualized with Welfare Footprint estimates.
+          Drag to rotate, search or click a country, and inspect real ADM1 geometry. Whole World now ranks mixed human
+          and animal suffering or death together, while country drill-down still shows country-specific burdens with real
+          ADM1 geometry.
         </p>
       </header>
 
@@ -74,9 +74,8 @@
           <p class="label" id="selection-meta">Global view</p>
           <h2 id="selection-title">The whole Earth.</h2>
           <p class="selection-summary" id="selection-summary">
-            Click a country to order a broader suffering set with current national data: child health, infectious
-            disease, food insecurity, poverty, pollution, water, clean cooking, violence, conflict, animal
-            agriculture, wild terrestrial arthropods, wild birds, and a direct human-caused insect estimate.
+            The list below shows a whole-world top 10 across humans and animals. Switch modes to compare suffering
+            proxies or life-years lost, then click a country to drill back into national data.
           </p>
 
           <div class="facts">
@@ -94,7 +93,7 @@
             </article>
             <article class="fact-card">
               <span class="fact-label">Issue sources</span>
-              <strong id="fact-issue-source">Human: WDI. Animals: OWID + WDI + RP + WAI + cost-effectiveness proxies.</strong>
+              <strong id="fact-issue-source">Whole World: WDI WLD + OWID + RP + WAI + life-years and welfare proxies.</strong>
             </article>
             <article class="fact-card">
               <span class="fact-label">Units loaded</span>
@@ -112,8 +111,8 @@
               </select>
             </div>
             <p class="ranking-copy" id="globe-mode-copy">
-              The suffering globe mixes broader human burden indicators with farmed-animal counts, wild-animal
-              estimates, and a direct human-caused insect estimate.
+              Whole World mixes broader human burden indicators with farmed-animal counts, wild-animal estimates, and a
+              direct human-caused insect estimate into one mixed-species top 10.
             </p>
           </section>
 
@@ -122,18 +121,18 @@
             <div class="ranking-controls">
               <label class="sr-only" for="ranking-mode">Cause ordering</label>
               <select id="ranking-mode" class="ranking-select">
-                <option value="improvement">Available improvement per dollar</option>
+                <option value="improvement">Available decrease in suffering per dollar</option>
                 <option value="total">Total amount of suffering caused</option>
                 <option value="per-being">Amount of suffering suffered per being</option>
               </select>
             </div>
             <p class="ranking-copy" id="ranking-copy">
-              For humans, this mixes recurring EA priorities with broader cross-country burden indicators.
+              Whole World combines human severity proxies with animal welfare-range proxies and tractability anchors.
             </p>
           </section>
 
           <section class="issues-section">
-            <p class="label" id="human-section-label">Human suffering</p>
+            <p class="label" id="human-section-label">Whole-world top 10 across humans and animals</p>
             <div class="issues" id="issues"></div>
           </section>
 
@@ -143,11 +142,10 @@
           </section>
 
           <p class="detail-footnote" id="selection-footnote">
-            Human-country rankings combine recurring EA priorities with broader World Bank burden indicators. Animal
-            cards use country slaughter, aquaculture, land-area wild estimates, and a Wild Animal Initiative direct
-            insect benchmark plus Rethink Priorities sentience and welfare-range distributions as burden proxies rather
-            than full moral-weight outputs. The per-dollar ordering uses rough cost-effectiveness anchors from animal
-            welfare research.
+            Whole-world human suffering causes come from World Bank WLD burden indicators, while whole-world animal
+            suffering uses OWID production and insecticide data, World Bank land area, Rethink Priorities sentience and
+            welfare ranges, and Wild Animal Initiative or ecological scale estimates. Whole-world death causes convert
+            human and animal deaths into rough life-years lost using conservative age and lifespan anchors.
           </p>
         </aside>
       </main>
@@ -272,8 +270,16 @@
         <a href="https://www.thelifeyoucansave.org/cause-funds/health-fund/" target="_blank" rel="noreferrer">The Life You Can Save Health Fund</a>
         <a href="https://www.thelifeyoucansave.org/best-charities/givedirectly/" target="_blank" rel="noreferrer">The Life You Can Save: GiveDirectly</a>
         <a href="https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation" target="_blank" rel="noreferrer">World Bank indicators API docs</a>
+        <a href="https://data.unicef.org/topic/child-survival/under-five-mortality/" target="_blank" rel="noreferrer">UNICEF: under-five mortality</a>
+        <a href="https://www.who.int/news-room/fact-sheets/detail/maternal-mortality" target="_blank" rel="noreferrer">WHO: maternal mortality</a>
+        <a href="https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health" target="_blank" rel="noreferrer">WHO: air pollution</a>
+        <a href="https://www.who.int/news-room/fact-sheets/detail/drinking-water" target="_blank" rel="noreferrer">WHO: drinking water</a>
+        <a href="https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries" target="_blank" rel="noreferrer">WHO: road traffic injuries</a>
+        <a href="https://www.who.int/news-room/fact-sheets/detail/suicide" target="_blank" rel="noreferrer">WHO: suicide</a>
         <a href="https://data.worldbank.org/indicator/AG.LND.TOTL.K2" target="_blank" rel="noreferrer">World Bank: land area</a>
         <a href="https://data.worldbank.org/indicator/AG.LND.AGRI.K2" target="_blank" rel="noreferrer">World Bank: agricultural land</a>
+        <a href="https://opensanctuary.org/special-recommendations-for-older-cows/" target="_blank" rel="noreferrer">Open Sanctuary: older cows</a>
+        <a href="https://opensanctuary.org/special-care-recommendations-for-older-turkeys/" target="_blank" rel="noreferrer">Open Sanctuary: older turkeys</a>
         <a href="https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat" target="_blank" rel="noreferrer">OWID: land animals slaughtered for meat</a>
         <a href="https://ourworldindata.org/grapher/farmed-fish-killed" target="_blank" rel="noreferrer">OWID: farmed fish killed</a>
         <a href="https://ourworldindata.org/grapher/farmed-crustaceans" target="_blank" rel="noreferrer">OWID: farmed crustaceans</a>
