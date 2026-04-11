@@ -619,6 +619,7 @@ p {
   gap: 1rem;
   margin-top: 1rem;
   color: var(--muted);
+  order: 5;
 }
 
 .source-links a {
