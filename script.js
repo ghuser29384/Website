@@ -37,9 +37,9 @@ const GLOBE_MODES = {
   suffering: {
     label: "Top Causes of Suffering by Country",
     topbarNote:
-      "Drag to rotate, search or click a country, and inspect real ADM1 geometry. Whole World now ranks mixed human and animal suffering together, while country drill-down still shows separate human and animal layers with real ADM1 boundaries.",
+      "The main purpose of this site is to visualize current research on animal pain, especially event-level Welfare Footprint estimates. The globe is a secondary context layer for where broader suffering burdens scale across countries.",
     globeCopy:
-      "Whole World mixes broader human burden indicators with farmed-animal counts, wild-animal estimates, and a direct human-caused insect estimate into one mixed-species top 10.",
+      "Secondary context layer: compare country-level human, farmed-animal, wild-animal, and insect suffering burdens while the pain research visualizations remain the main focus.",
     humanSectionLabel: "Human suffering",
     animalSectionLabel: "Farmed and wild animal suffering",
     showAnimals: true,
@@ -64,9 +64,9 @@ const GLOBE_MODES = {
   death: {
     label: "Top Causes of Death by Country",
     topbarNote:
-      "Drag to rotate, search or click a country, and inspect real ADM1 geometry. Whole World now ranks mixed human and animal death causes by life-years lost, while country drill-down still uses national human mortality indicators.",
+      "The main purpose of this site is to visualize current research on animal pain. In death mode, the globe becomes a secondary country-context layer for where life-years are being lost.",
     globeCopy:
-      "Whole World combines human deaths and animal killing into one life-years-lost ranking. Country drill-down stays human because there is no equally robust national animal-death source pack loaded yet.",
+      "Secondary context layer: compare country-level death burdens while the pain research charts above remain the main point of the site.",
     humanSectionLabel: "Human deaths",
     animalSectionLabel: "",
     showAnimals: false,
@@ -2643,8 +2643,8 @@ function syncModeUi() {
     humanSectionLabel.textContent = state.selectedCountry
       ? globeMode.humanSectionLabel
       : state.globeMode === "death"
-        ? "Whole-world top 10 life-years lost"
-        : "Whole-world top 10 across humans and animals";
+        ? "Secondary context: whole-world life-years lost"
+        : "Secondary context: whole-world suffering";
   }
 
   if (animalSectionLabel) {
@@ -2656,7 +2656,7 @@ function syncModeUi() {
   }
 
   if (rankingTitle) {
-    rankingTitle.textContent = state.globeMode === "death" ? "Order Death Causes By" : "Order Causes By";
+    rankingTitle.textContent = state.globeMode === "death" ? "Order Context By" : "Order Context By";
   }
 
   if (rankingModeSelect) {
@@ -2707,31 +2707,31 @@ function renderDetails() {
           : buildWholeWorldSufferingIssues();
 
     countrySearchInput.value = "";
-    selectionMeta.textContent = "Global view";
-    selectionTitle.textContent = "The whole Earth.";
+    selectionMeta.textContent = "Secondary context";
+    selectionTitle.textContent = "Country-level context.";
     selectionSummary.textContent =
       state.globeMode === "death"
-        ? `The list below shows the whole-world top 10 causes of death across humans and animals. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
-        : `The list below shows the whole-world top 10 causes of suffering across humans and animals. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
+        ? `The pain research charts are the main point of the site. This panel is a secondary context layer showing whole-world death causes, currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
+        : `The pain research charts are the main point of the site. This panel is a secondary context layer showing whole-world suffering causes, currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
     selectionFootnote.textContent =
       state.globeMode === "death"
-        ? "Whole-world human death causes come from World Bank WLD mortality indicators. Whole-world animal death causes come from OWID global slaughter and aquaculture kill counts plus conservative remaining-life proxies. Human life-years use life expectancy at birth minus WHO-style age anchors; animal life-years use species-typical remaining-life proxies. Animal per-dollar life-year estimates are the weakest part of the model because most measured animal interventions reduce suffering more directly than they extend lives."
-        : "Whole-world human suffering causes come from World Bank WLD burden indicators, with severity scores rescaled into a 0-1 per-being proxy so they can be compared with animal welfare-range proxies. Whole-world animal suffering uses OWID production and insecticide data, World Bank land area, Rethink Priorities sentience and welfare ranges, Rosenberg et al.'s soil-arthropod estimate, and Callaghan et al.'s bird abundance estimate. This is an explicit inference layer rather than a published master ranking.";
+        ? "This context panel is secondary to the event-level pain visualization. Whole-world human death causes come from World Bank WLD mortality indicators. Whole-world animal death causes come from OWID global slaughter and aquaculture kill counts plus conservative remaining-life proxies."
+        : "This context panel is secondary to the event-level pain visualization. Whole-world human suffering causes come from World Bank WLD burden indicators, while whole-world animal suffering uses OWID production and insecticide data, World Bank land area, Rethink Priorities sentience and welfare ranges, Rosenberg et al.'s soil-arthropod estimate, and Callaghan et al.'s bird abundance estimate.";
     factLocation.textContent = "Whole Earth";
     factCountrySource.textContent = "Natural Earth Admin 0, 1:50m";
     factAdminSource.textContent = "geoBoundaries ADM1 will load on click";
     factIssueSource.textContent =
       state.globeMode === "death"
         ? state.globalIssueData.loading || animalDataState.loading
-          ? "Whole World: loading WDI WLD + OWID animal-death data."
+          ? "Secondary context: loading WDI WLD + OWID animal-death data."
           : state.globalIssueData.error || animalDataState.error
-            ? "Whole World: mixed-species death data failed."
-            : "Whole World: WDI WLD + OWID slaughter and aquaculture data + life-years proxies."
+            ? "Secondary context: mixed-species death data failed."
+            : "Secondary context: WDI WLD + OWID slaughter and aquaculture data + life-years proxies."
         : state.globalIssueData.loading || animalDataState.loading || state.globalContext.loading
-          ? "Whole World: loading WDI WLD + OWID + RP + WAI + land-area context."
+          ? "Secondary context: loading WDI WLD + OWID + RP + WAI + land-area context."
           : state.globalIssueData.error || animalDataState.error || state.globalContext.error
-            ? "Whole World: mixed-species suffering data failed."
-            : "Whole World: WDI WLD + OWID + World Bank land area + RP + WAI + welfare-range proxies.";
+            ? "Secondary context: mixed-species suffering data failed."
+            : "Secondary context: WDI WLD + OWID + World Bank land area + RP + WAI + welfare-range proxies.";
     factUnitCount.textContent = formatNumber(worldIssues.length);
     renderIssues(null);
     renderAnimalIssues(null);
@@ -2773,10 +2773,10 @@ function renderDetails() {
           : "Human: WDI failed. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
   } else {
     selectionSummary.textContent = provinceNameLabel
-      ? `${provinceNameLabel} is selected inside ${name}. The boundary is provincial, but the issue lists below remain national and are currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
+      ? `${provinceNameLabel} is selected inside ${name}. This remains a secondary context panel; the boundary is provincial, but the issue lists below remain national and are currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
       : state.globeMode === "death"
-        ? `The list below focuses on human death causes. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
-        : `The lists below combine broader human suffering indicators with country-specific farmed, wild bird, and wild insect burden proxies plus a direct human-caused insect estimate. They are currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
+        ? `This is a secondary context panel focused on human death causes in ${name}. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
+        : `This is a secondary context panel combining broader human suffering indicators with country-specific farmed, wild bird, and wild insect burden proxies plus a direct human-caused insect estimate for ${name}. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
     factIssueSource.textContent = state.globeMode === "death"
       ? "Human: World Bank WDI death indicators."
       : animalDataState.loading

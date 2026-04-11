@@ -6,7 +6,7 @@
     <title>Who Can Feel Pain</title>
     <meta
       name="description"
-      content="An effective altruism globe with accurate country boundaries, broader country suffering rankings, and factory-farming pain visualizations grounded in Welfare Footprint estimates."
+      content="Visualize current research on how much pain animals feel from different events and systems, with country-level suffering data kept as a secondary context layer."
     >
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -15,12 +15,12 @@
       <header class="topbar">
         <div>
           <p class="label">Who Can Feel Pain</p>
-          <h1>Accurate boundaries first.</h1>
+          <h1>How much pain do animals feel?</h1>
         </div>
         <p class="topbar-note" id="topbar-note">
-          Drag to rotate, search or click a country, and inspect real ADM1 geometry. Whole World now ranks mixed human
-          and animal suffering or death together, while country drill-down still shows country-specific burdens with real
-          ADM1 geometry.
+          The main purpose of this site is to visualize current research on animal pain, especially event-level Welfare
+          Footprint estimates for birds in different farming and slaughter systems. The globe is kept as a secondary
+          context layer for where suffering burdens scale.
         </p>
       </header>
 
@@ -28,9 +28,10 @@
         <section class="globe-panel">
           <div class="panel-head">
             <div>
-              <p class="label">Globe</p>
+              <p class="label">Country Context</p>
               <p class="panel-copy">
-                Base geography: Natural Earth Admin 0 at 1:50m. Provincial detail: geoBoundaries ADM1.
+                Secondary layer: real country and ADM1 boundaries for viewing where larger human and animal suffering
+                burdens are concentrated.
               </p>
             </div>
             <div class="toolbar">
@@ -71,11 +72,11 @@
         </section>
 
         <aside class="detail-panel" aria-live="polite">
-          <p class="label" id="selection-meta">Global view</p>
-          <h2 id="selection-title">The whole Earth.</h2>
+          <p class="label" id="selection-meta">Secondary context</p>
+          <h2 id="selection-title">Country-level context.</h2>
           <p class="selection-summary" id="selection-summary">
-            The list below shows a whole-world top 10 across humans and animals. Switch modes to compare suffering
-            proxies or life-years lost, then click a country to drill back into national data.
+            The primary focus of this site is the pain-research visualization. This globe is a secondary context tool:
+            click a country to inspect broader suffering or death burdens by place.
           </p>
 
           <div class="facts">
@@ -93,7 +94,7 @@
             </article>
             <article class="fact-card">
               <span class="fact-label">Issue sources</span>
-              <strong id="fact-issue-source">Whole World: WDI WLD + OWID + RP + WAI + life-years and welfare proxies.</strong>
+              <strong id="fact-issue-source">Secondary context: WDI + OWID + RP + WAI proxies.</strong>
             </article>
             <article class="fact-card">
               <span class="fact-label">Units loaded</span>
@@ -102,7 +103,7 @@
           </div>
 
           <section class="ranking-panel" aria-labelledby="globe-mode-title">
-            <p class="label" id="globe-mode-title">Choose Globe</p>
+            <p class="label" id="globe-mode-title">Country Context Globe</p>
             <div class="ranking-controls">
               <label class="sr-only" for="globe-mode">Globe mode</label>
               <select id="globe-mode" class="ranking-select">
@@ -111,8 +112,8 @@
               </select>
             </div>
             <p class="ranking-copy" id="globe-mode-copy">
-              Whole World mixes broader human burden indicators with farmed-animal counts, wild-animal estimates, and a
-              direct human-caused insect estimate into one mixed-species top 10.
+              This globe is a secondary context layer for comparing country-level suffering or death burdens alongside
+              the animal pain research visualizations.
             </p>
           </section>
 
@@ -127,7 +128,8 @@
               </select>
             </div>
             <p class="ranking-copy" id="ranking-copy">
-              Whole World combines human severity proxies with animal welfare-range proxies and tractability anchors.
+              These controls only affect the country-context layer. The main purpose of the site remains the pain
+              research visualized above.
             </p>
           </section>
 
@@ -142,10 +144,10 @@
           </section>
 
           <p class="detail-footnote" id="selection-footnote">
-            Whole-world human suffering causes come from World Bank WLD burden indicators, while whole-world animal
-            suffering uses OWID production and insecticide data, World Bank land area, Rethink Priorities sentience and
-            welfare ranges, and Wild Animal Initiative or ecological scale estimates. Whole-world death causes convert
-            human and animal deaths into rough life-years lost using conservative age and lifespan anchors.
+            This panel is secondary to the event-level pain visualization. Human-country rankings combine recurring EA
+            priorities with broader World Bank burden indicators. Animal cards use country slaughter, aquaculture,
+            land-area wild estimates, and a Wild Animal Initiative direct insect benchmark plus Rethink Priorities
+            sentience and welfare-range distributions as burden proxies rather than full moral-weight outputs.
           </p>
         </aside>
       </main>
@@ -153,13 +155,14 @@
       <section class="pain-panel" aria-labelledby="pain-visuals-title">
         <div class="pain-head">
           <div>
-            <p class="label">Factory-Farming Pain</p>
-            <h2 id="pain-visuals-title">How bad would this feel?</h2>
+            <p class="label">Current Animal Pain Research</p>
+            <h2 id="pain-visuals-title">How much pain do animals feel from different events?</h2>
           </div>
           <p class="pain-copy">
-            These visualizations use Welfare Footprint Institute estimates of time spent in different pain categories.
-            They do not claim a perfect human-animal conversion. Instead, they use the Institute&rsquo;s own
-            human-facing pain definitions as anchors.
+            These visualizations foreground current Welfare Footprint Institute research on time spent in different pain
+            categories. The current charts focus on the best-developed event-level literature, especially laying hens,
+            broilers, broiler breeders, and poultry slaughter. They do not claim a perfect human-animal conversion;
+            they use the Institute&rsquo;s own human-facing pain definitions as anchors.
           </p>
         </div>
 
@@ -200,7 +203,8 @@
         <p class="pain-footnote">
           The Welfare Footprint method measures cumulative negative affective states in time units. It is useful for
           comparing harms, but it is not a claim that one hour of chicken pain is morally identical to one hour of
-          human pain.
+          human pain. At the moment, the strongest event-level visualization layer is still poultry-heavy rather than a
+          full cross-species atlas.
         </p>
       </section>
 
@@ -228,22 +232,24 @@
 
       <section class="sources">
         <article class="source-card">
-          <p class="label">Natural Earth</p>
-          <h3>Country geometry</h3>
+          <p class="label">Welfare Footprint</p>
+          <h3>Event-level pain research</h3>
           <p>
-            The globe uses official Natural Earth Admin 0 countries data at 1:50m scale for accurate country outlines.
+            The main visualizations use Welfare Footprint Institute estimates of time spent in annoying, hurtful,
+            disabling, and excruciating pain across specific production systems and slaughter methods.
           </p>
         </article>
         <article class="source-card">
-          <p class="label">geoBoundaries</p>
-          <h3>Provincial detail</h3>
+          <p class="label">Moral Weight</p>
+          <h3>How to interpret pain across animals</h3>
           <p>
-            Clicking a country loads ADM1 boundaries from geoBoundaries so states and provinces reflect real administrative shapes instead of rough regions.
+            Rethink Priorities and the Moral Weight Project are used to frame uncertainty about sentience, welfare
+            range, and why simpler animals should not automatically be assumed to feel only faint pain.
           </p>
         </article>
         <article class="source-card">
-          <p class="label">Country burden data</p>
-          <h3>Broader suffering model</h3>
+          <p class="label">Country context</p>
+          <h3>Secondary burden map</h3>
           <p>
             Human issues combine recurring EA priorities with broader World Bank country indicators. Animal and insect
             issues use Our World in Data country proxies, World Bank land and agricultural-land data, and a Wild
@@ -252,11 +258,11 @@
           </p>
         </article>
         <article class="source-card">
-          <p class="label">Welfare Footprint</p>
-          <h3>Animal pain metrics</h3>
+          <p class="label">Geography</p>
+          <h3>Secondary globe layer</h3>
           <p>
-            The factory-farming visualizations use Welfare Footprint Institute estimates for laying hens, broilers, and
-            broiler slaughter, along with its pain-intensity definitions.
+            Natural Earth and geoBoundaries keep the secondary map geographically accurate down to country and ADM1
+            boundaries instead of relying on hand-drawn regional blobs.
           </p>
         </article>
       </section>

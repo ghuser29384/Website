@@ -51,6 +51,9 @@ select {
   width: min(1240px, calc(100% - 2rem));
   margin: 0 auto;
   padding: 1.5rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .topbar,
@@ -93,7 +96,7 @@ h3 {
 h1 {
   margin-top: 0.35rem;
   font-size: clamp(2.7rem, 7vw, 5rem);
-  max-width: 8ch;
+  max-width: 14ch;
 }
 
 h2 {
@@ -114,14 +117,31 @@ p {
 
 .topbar-note {
   align-self: end;
-  max-width: 35ch;
+  max-width: 42ch;
 }
 
 .layout {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.9fr);
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 0;
+  order: 2;
+}
+
+.topbar {
+  order: 0;
+}
+
+.pain-panel {
+  order: 1;
+}
+
+.mw-panel {
+  order: 3;
+}
+
+.sources {
+  order: 4;
 }
 
 .globe-panel,
