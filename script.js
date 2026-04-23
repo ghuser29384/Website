@@ -41,7 +41,7 @@ const GLOBE_MODES = {
     globeCopy:
       "Secondary context layer: compare country-level human, farmed-animal, wild-animal, and insect suffering burdens while the pain research visualizations remain the main focus.",
     humanSectionLabel: "Human suffering",
-    animalSectionLabel: "Farmed and wild animal suffering",
+    animalSectionLabel: "Animal suffering causes",
     showAnimals: true,
     rankingModes: {
       improvement: {
@@ -969,6 +969,34 @@ const ANIMAL_DATASETS = [
       `Our World in Data / Fishcount midpoint estimate · ${year}. RP blend from carp and salmon: sentience median about 0.328 (0.08-0.911) and sentience-adjusted welfare median about 0.071 (0-0.543). Bentham's Bulldog argues that fish respond to painkillers, avoid places where they were hurt, and should not be discounted because they lack human-like cortexes.`,
   },
   {
+    id: "wild-caught-fish",
+    title: "Wild-caught fish",
+    url: "https://ourworldindata.org/grapher/wild-caught-fish.csv",
+    valueKey: "Mid-point estimate",
+    improvementFactor: 0.01,
+    model: "welfare-range",
+    sentience: { median: 0.328, low: 0.08, high: 0.911 },
+    welfareRange: { median: 0.071, low: 0, high: 0.543 },
+    metric: (value) => `${formatCompactNumber(value)} wild-caught fish in the latest midpoint estimate`,
+    perBeingNote:
+      "sentience-adjusted welfare range median 0.071; this uses the same cautious fish blend as the farmed-fish card",
+    improvementNote:
+      "Per-dollar proxy kept very low because scalable, measured wild-fish welfare interventions remain much thinner than farmed-fish or shrimp campaigns.",
+    body: (value, score, country) => {
+      if (score >= 70) {
+        return `${country} catches wild fish at extremely large scale. Even with cautious fish-welfare weights, capture fisheries can dominate the country's non-insect wild-animal burden by sheer numbers alone.`;
+      }
+
+      if (score >= 45) {
+        return `${country} has a large enough capture-fisheries footprint that wild-fish suffering is likely one of its main non-insect wild-animal harms.`;
+      }
+
+      return `${country} has a smaller capture-fisheries burden than the largest fishing countries, but wild-fish suffering still matters because the numbers involved rise very quickly.`;
+    },
+    source: (year) =>
+      `Our World in Data / Fishcount midpoint estimate · ${year}. This uses the same cautious fish sentience and welfare-range blend as the farmed-fish card, but applies it to wild-caught fish rather than aquaculture.`,
+  },
+  {
     id: "crustaceans",
     title: "Shrimp and crustacean farming",
     url: "https://ourworldindata.org/grapher/farmed-crustaceans.csv",
@@ -1654,14 +1682,14 @@ function formatAnimalRanking(issue, mode) {
   }
 
   if (mode === "improvement") {
-    return `Order mode: available decrease in suffering per dollar proxy · tractability-adjusted burden ${formatCompactNumber(ranking.raw)}.`;
+    return `Order mode: available decrease in suffering per dollar proxy · ${ranking.metric || `tractability-adjusted burden ${formatCompactNumber(ranking.raw)}`}.`;
   }
 
   if (mode === "total") {
     return `Order mode: total suffering proxy · ${ranking.metric}.`;
   }
 
-  return `Order mode: per-being suffering proxy · ${issue.perBeingNote}`;
+  return `Order mode: per-being suffering proxy · ${ranking.metric || issue.perBeingNote}.`;
 }
 
 function sortIssuesByMode(issues, mode) {
@@ -1821,13 +1849,16 @@ function buildAnimalIssuesFromMetrics(metrics, context, countryLabel) {
       body: dataset.body(rawValue, score, country, record, context),
       source: `${dataset.source(record.year, record, context)}${modelTail}${improvementNote}`,
       score,
+      countRaw: rawValue,
       welfareRange: dataset.welfareRange || null,
       sentience: dataset.sentience || null,
       perBeingNote,
+      year: record.year,
       ranking: {
         improvement: {
           score: Math.log10(improvementRaw + 1),
           raw: improvementRaw,
+          metric: `${formatCompactNumber(improvementRaw)} tractability-adjusted burden units`,
         },
         total: {
           score: Math.log10(totalBurdenRaw + 1),
@@ -1879,13 +1910,16 @@ function buildAnimalIssuesFromMetrics(metrics, context, countryLabel) {
         body: model.body(rawValue, score, country, context),
         source: `${model.source(context)}${modelTail}${improvementNote}`,
         score,
+        countRaw: rawValue,
         welfareRange: model.welfareRange || null,
         sentience: model.sentience || null,
         perBeingNote,
+        year: null,
         ranking: {
           improvement: {
             score: Math.log10(improvementRaw + 1),
             raw: improvementRaw,
+            metric: `${formatCompactNumber(improvementRaw)} tractability-adjusted burden units`,
           },
           total: {
             score: Math.log10(totalBurdenRaw + 1),
@@ -1904,6 +1938,172 @@ function buildAnimalIssuesFromMetrics(metrics, context, countryLabel) {
   return issues.sort((left, right) => right.ranking.improvement.score - left.ranking.improvement.score);
 }
 
+function animalBucketYearLabel(issues) {
+  const years = [...new Set(issues.map((issue) => issue.year).filter((year) => Number.isFinite(year)))].sort(
+    (left, right) => left - right
+  );
+
+  if (!years.length) {
+    return "latest available years";
+  }
+
+  return years.length === 1 ? `${years[0]}` : `${years[0]}-${years[years.length - 1]}`;
+}
+
+function animalBucketTotals(issues) {
+  return issues.reduce(
+    (accumulator, issue) => {
+      accumulator.countRaw += issue.countRaw || 0;
+      accumulator.totalRaw += issue.ranking?.total?.raw || 0;
+      accumulator.improvementRaw += issue.ranking?.improvement?.raw || 0;
+      return accumulator;
+    },
+    { countRaw: 0, totalRaw: 0, improvementRaw: 0 }
+  );
+}
+
+function dominantAnimalIssue(issues) {
+  return issues.reduce((best, issue) => {
+    if (!best) {
+      return issue;
+    }
+
+    return (issue.ranking?.total?.raw || 0) > (best.ranking?.total?.raw || 0) ? issue : best;
+  }, null);
+}
+
+function aggregateAnimalCauseIssues(issues, countryLabel) {
+  const country = countryLabel || "this country";
+  const issueMap = new Map(issues.map((issue) => [issue.id, issue]));
+  const buckets = [];
+
+  const factoryFarmedMembers = ["chickens", "pigs", "other-birds", "bovines", "fish", "crustaceans"]
+    .map((id) => issueMap.get(id))
+    .filter(Boolean);
+
+  if (factoryFarmedMembers.length) {
+    const totals = animalBucketTotals(factoryFarmedMembers);
+    const perBeingRaw = totals.countRaw > 0 ? totals.totalRaw / totals.countRaw : 0;
+    const score = animalIssueScore(totals.totalRaw);
+    const leadIssue = dominantAnimalIssue(factoryFarmedMembers);
+
+    buckets.push({
+      id: "animal-bucket-factory-farmed",
+      tag: `Animal category · ${issueLevel(score)}`,
+      title: "Factory-farmed animals",
+      metric: `${formatScaleCount(totals.countRaw)} factory-farmed animals in the live model`,
+      body: `This bucket combines land animals, farmed fish, and farmed crustaceans for ${country}. ${
+        leadIssue ? `${leadIssue.title} currently contribute the largest share of the bucket's total burden proxy.` : ""
+      }`,
+      source: `Latest live country rows from Our World in Data's FAO-based land-animal slaughter chart plus the OWID / Fishcount farmed-fish and farmed-crustacean midpoint estimates (${animalBucketYearLabel(factoryFarmedMembers)}). Per-being values use Rethink Priorities sentience and welfare-range medians where available; per-dollar ordering combines the existing chicken, pig, fish, and shrimp tractability anchors rather than claiming one settled cost-effectiveness number.`,
+      score,
+      countRaw: totals.countRaw,
+      perBeingNote: `weighted average welfare proxy ${perBeingRaw.toFixed(3)} per farmed animal across the current mix`,
+      ranking: {
+        improvement: {
+          score: Math.log10(totals.improvementRaw + 1),
+          raw: totals.improvementRaw,
+          metric: `${formatCompactNumber(totals.improvementRaw)} tractability-adjusted burden units across the factory-farmed bucket`,
+        },
+        total: {
+          score: Math.log10(totals.totalRaw + 1),
+          raw: totals.totalRaw,
+          metric: `${formatCompactNumber(totals.totalRaw)} sentience-adjusted burden units across ${formatScaleCount(totals.countRaw)} factory-farmed animals`,
+        },
+        "per-being": {
+          score: perBeingRaw,
+          raw: perBeingRaw,
+          metric: `weighted average welfare proxy ${perBeingRaw.toFixed(3)} per factory-farmed animal`,
+        },
+      },
+    });
+  }
+
+  const nonInsectWildMembers = ["wild-caught-fish", "wild-birds"].map((id) => issueMap.get(id)).filter(Boolean);
+
+  if (nonInsectWildMembers.length) {
+    const totals = animalBucketTotals(nonInsectWildMembers);
+    const perBeingRaw = totals.countRaw > 0 ? totals.totalRaw / totals.countRaw : 0;
+    const score = animalIssueScore(totals.totalRaw);
+    const leadIssue = dominantAnimalIssue(nonInsectWildMembers);
+
+    buckets.push({
+      id: "animal-bucket-non-insect-wild",
+      tag: `Animal category · ${issueLevel(score)}`,
+      title: "Non-insect wild animals",
+      metric: `${formatScaleCount(totals.countRaw)} non-insect wild animals in the live model`,
+      body: `This bucket combines wild-caught fish with a land-area-based wild-bird proxy for ${country}. ${
+        leadIssue ? `${leadIssue.title} currently dominate the bucket's total burden proxy.` : ""
+      } It remains conservative because it still omits most mammals, reptiles, amphibians, and marine vertebrates.`,
+      source: `Uses the OWID / Fishcount wild-caught-fish midpoint estimate plus a World Bank land-area x Callaghan et al. bird-abundance proxy (${animalBucketYearLabel(nonInsectWildMembers)}). Per-dollar ordering stays heavily discounted because scalable, measured wild-animal welfare interventions remain thin compared with farmed-animal campaigns.`,
+      score,
+      countRaw: totals.countRaw,
+      perBeingNote: `weighted average welfare proxy ${perBeingRaw.toFixed(3)} per non-insect wild animal across the fish-plus-bird mix`,
+      ranking: {
+        improvement: {
+          score: Math.log10(totals.improvementRaw + 1),
+          raw: totals.improvementRaw,
+          metric: `${formatCompactNumber(totals.improvementRaw)} tractability-adjusted burden units across the non-insect wild bucket`,
+        },
+        total: {
+          score: Math.log10(totals.totalRaw + 1),
+          raw: totals.totalRaw,
+          metric: `${formatCompactNumber(totals.totalRaw)} sentience-adjusted burden units across ${formatScaleCount(totals.countRaw)} modeled non-insect wild animals`,
+        },
+        "per-being": {
+          score: perBeingRaw,
+          raw: perBeingRaw,
+          metric: `weighted average welfare proxy ${perBeingRaw.toFixed(3)} per non-insect wild animal`,
+        },
+      },
+    });
+  }
+
+  const wildInsects = issueMap.get("wild-terrestrial-arthropods");
+  const directInsects = issueMap.get("insects");
+
+  if (wildInsects || directInsects) {
+    const totalAnchor = wildInsects || directInsects;
+    const totalRaw = totalAnchor?.ranking?.total?.raw || 0;
+    const countRaw = totalAnchor?.countRaw || 0;
+    const perBeingRaw = totalAnchor?.ranking?.["per-being"]?.raw || 0;
+    const improvementRaw = (wildInsects?.ranking?.improvement?.raw || 0) + (directInsects?.ranking?.improvement?.raw || 0);
+    const score = animalIssueScore(totalRaw);
+    const yearLabel = animalBucketYearLabel([wildInsects, directInsects].filter(Boolean));
+
+    buckets.push({
+      id: "animal-bucket-insects",
+      tag: `Animal category · ${issueLevel(score)}`,
+      title: "Insects",
+      metric: `${formatScaleCount(countRaw)} terrestrial arthropods as an insect-heavy lower-bound proxy`,
+      body: `This bucket uses wild terrestrial arthropods as the total-burden anchor for ${country} and the direct insecticide estimate as the tractability anchor. It does not add the two estimates together, because the direct insecticide estimate is partly a subset of the broader insect population proxy.`,
+      source: `Total ordering uses World Bank land area with Rosenberg et al.'s global soil-arthropod estimate; per-dollar ordering uses OWID insecticide-use data with Wild Animal Initiative's direct-insect benchmark (${yearLabel}). This remains conservative because it omits aquatic insects and most country-specific insect-density variation.`,
+      score,
+      countRaw,
+      perBeingNote: `cautious insect welfare proxy ${perBeingRaw.toFixed(3)} per being, with tractability anchored to direct insecticide reform rather than the whole insect bucket`,
+      ranking: {
+        improvement: {
+          score: Math.log10(improvementRaw + 1),
+          raw: improvementRaw,
+          metric: `${formatCompactNumber(improvementRaw)} tractability-adjusted burden units, anchored to insecticide reform rather than the full insect bucket`,
+        },
+        total: {
+          score: Math.log10(totalRaw + 1),
+          raw: totalRaw,
+          metric: `${formatCompactNumber(totalRaw)} insect-burden units from an insect-heavy lower bound of ${formatScaleCount(countRaw)} terrestrial arthropods`,
+        },
+        "per-being": {
+          score: perBeingRaw,
+          raw: perBeingRaw,
+          metric: `cautious insect welfare proxy ${perBeingRaw.toFixed(3)} per insect`,
+        },
+      },
+    });
+  }
+
+  return sortIssuesByMode(buckets, state.rankingMode);
+}
+
 function buildAnimalIssues(feature) {
   const iso = countryIso(feature.properties);
   const country = countryName(feature.properties);
@@ -1915,7 +2115,13 @@ function buildAnimalIssues(feature) {
   const metrics = animalDataState.byCountry.get(iso) || {};
   const context = state.countryIssueData?.context;
 
-  return buildAnimalIssuesFromMetrics(metrics, context, country);
+  return aggregateAnimalCauseIssues(buildAnimalIssuesFromMetrics(metrics, context, country), country);
+}
+
+function buildWholeWorldAnimalIssues() {
+  const context = state.globalContext?.context || {};
+  const issues = animalDataState.world ? buildAnimalIssuesFromMetrics(animalDataState.world, context, "the world") : [];
+  return aggregateAnimalCauseIssues(issues, "the world");
 }
 
 function animalDeathImprovementFactor(dataset) {
@@ -2250,7 +2456,7 @@ function renderAnimalIssueStatus(title, body) {
   const card = document.createElement("article");
   card.className = "issue-card";
   card.innerHTML = `
-    <p class="issue-tag">Farmed and wild animal suffering</p>
+    <p class="issue-tag">Animal suffering causes</p>
     <h3>${title}</h3>
     <p>${body}</p>
   `;
@@ -2521,14 +2727,58 @@ function renderAnimalIssues(country) {
   }
 
   if (!country) {
+    const isLoading = animalDataState.loading || state.globalContext.loading;
+    const hasError = animalDataState.error || state.globalContext.error;
+
+    if (isLoading) {
+      renderAnimalIssueStatus(
+        "Loading whole-world animal causes",
+        "Fetching live global animal data so the panel can rank factory-farmed animals, non-insect wild animals, and insects by total burden, per-being burden, and tractability."
+      );
+      return;
+    }
+
+    if (hasError) {
+      renderAnimalIssueStatus(
+        "Whole-world animal data unavailable",
+        "At least one live animal source failed to load, so the world animal-only ranking cannot be assembled right now."
+      );
+      return;
+    }
+
+    const issues = buildWholeWorldAnimalIssues();
+
+    if (!issues.length) {
+      renderAnimalIssueStatus(
+        "No whole-world animal ranking available",
+        "The loaded animal sources did not produce any whole-world cause buckets for the current ordering mode."
+      );
+      return;
+    }
+
     animalIssuesRoot.textContent = "";
+
+    for (const issue of issues) {
+      const card = document.createElement("article");
+      card.className = "issue-card";
+      card.innerHTML = `
+        <p class="issue-tag">${issue.tag}</p>
+        <h3>${issue.title}</h3>
+        <strong class="issue-metric">${issue.metric}</strong>
+        <p>${issue.body}</p>
+        <p class="issue-order-note">${formatAnimalRanking(issue, state.rankingMode)}</p>
+        <p class="issue-source">${issue.source}</p>
+      `;
+      animalIssuesRoot.appendChild(card);
+    }
+
     return;
   }
 
   if (animalDataState.loading) {
     renderAnimalIssueStatus(
       "Loading animal data",
-      "Fetching country-level slaughter, wild terrestrial arthropod and wild bird estimates, agricultural land, and human-caused insect estimates to model local farmed and wild animal suffering."
+      "Fetching country-level slaughter, wild-caught fish, wild-bird and terrestrial-arthropod proxies, and direct insecticide estimates so the panel can rank the three requested animal buckets."
     );
     return;
   }
@@ -2546,7 +2796,7 @@ function renderAnimalIssues(country) {
   if (!issues.length) {
     renderAnimalIssueStatus(
       "No animal issue data",
-      "No matching country-level slaughter, wild-animal, or human-caused insect estimate was found for this country in the loaded data."
+      "No matching country-level factory-farmed, non-insect wild, or insect estimate was found for this country in the loaded data."
     );
     return;
   }
@@ -2636,7 +2886,7 @@ function syncModeUi() {
       ? globeMode.globeCopy
       : state.globeMode === "death"
         ? "Country drill-down narrows back to national human death causes because the site does not load equally robust country animal-death data."
-        : "Country drill-down separates broader human suffering from farmed-animal, wild-animal, and direct human-caused insect burdens for the selected country.";
+        : "Country drill-down separates broader human suffering from three animal buckets for the selected country: factory-farmed animals, non-insect wild animals, and insects.";
   }
 
   if (humanSectionLabel) {
@@ -2648,11 +2898,15 @@ function syncModeUi() {
   }
 
   if (animalSectionLabel) {
-    animalSectionLabel.textContent = globeMode.animalSectionLabel;
+    animalSectionLabel.textContent = state.selectedCountry
+      ? globeMode.animalSectionLabel
+      : state.globeMode === "death"
+        ? ""
+        : "Whole-world animal suffering";
   }
 
   if (animalSection) {
-    animalSection.hidden = !state.selectedCountry || !globeMode.showAnimals;
+    animalSection.hidden = !globeMode.showAnimals;
   }
 
   if (rankingTitle) {
@@ -2684,8 +2938,8 @@ function syncModeUi() {
         state.rankingMode === "improvement"
           ? "Country drill-down mixes recurring EA priorities with broader burden indicators for humans and tractability-adjusted welfare proxies for animals."
           : state.rankingMode === "total"
-            ? "Country drill-down uses affected-person proxies for humans and sentience-adjusted or welfare-range-weighted counts for animals."
-            : "Country drill-down uses severity per affected human and welfare-range or sentience medians per animal.";
+            ? "Country drill-down uses affected-person proxies for humans and three live animal buckets built from factory-farmed, non-insect wild, and insect estimates."
+            : "Country drill-down uses severity per affected human and average welfare-range or sentience proxies per animal inside each bucket.";
     }
   }
 }
@@ -2712,11 +2966,11 @@ function renderDetails() {
     selectionSummary.textContent =
       state.globeMode === "death"
         ? `The pain research charts are the main point of the site. This panel is a secondary context layer showing whole-world death causes, currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
-        : `The pain research charts are the main point of the site. This panel is a secondary context layer showing whole-world suffering causes, currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
+        : `The pain research charts are the main point of the site. This panel is a secondary context layer showing whole-world suffering causes, with a separate animal-only ranking below ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
     selectionFootnote.textContent =
       state.globeMode === "death"
         ? "This context panel is secondary to the event-level pain visualization. Whole-world human death causes come from World Bank WLD mortality indicators. Whole-world animal death causes come from OWID global slaughter and aquaculture kill counts plus conservative remaining-life proxies."
-        : "This context panel is secondary to the event-level pain visualization. Whole-world human suffering causes come from World Bank WLD burden indicators, while whole-world animal suffering uses OWID production and insecticide data, World Bank land area, Rethink Priorities sentience and welfare ranges, Rosenberg et al.'s soil-arthropod estimate, and Callaghan et al.'s bird abundance estimate.";
+        : "This context panel is secondary to the event-level pain visualization. Whole-world human suffering causes come from World Bank WLD burden indicators, while the animal-only ranking below aggregates live OWID and World Bank inputs into factory-farmed animals, non-insect wild animals, and insects.";
     factLocation.textContent = "Whole Earth";
     factCountrySource.textContent = "Natural Earth Admin 0, 1:50m";
     factAdminSource.textContent = "geoBoundaries ADM1 will load on click";
@@ -2731,7 +2985,7 @@ function renderDetails() {
           ? "Secondary context: loading WDI WLD + OWID + RP + WAI + land-area context."
           : state.globalIssueData.error || animalDataState.error || state.globalContext.error
             ? "Secondary context: mixed-species suffering data failed."
-            : "Secondary context: WDI WLD + OWID + World Bank land area + RP + WAI + welfare-range proxies.";
+            : "Secondary context: WDI WLD + OWID + World Bank land area + RP + WAI + three animal cause buckets.";
     factUnitCount.textContent = formatNumber(worldIssues.length);
     renderIssues(null);
     renderAnimalIssues(null);
@@ -2776,7 +3030,7 @@ function renderDetails() {
       ? `${provinceNameLabel} is selected inside ${name}. This remains a secondary context panel; the boundary is provincial, but the issue lists below remain national and are currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
       : state.globeMode === "death"
         ? `This is a secondary context panel focused on human death causes in ${name}. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
-        : `This is a secondary context panel combining broader human suffering indicators with country-specific farmed, wild bird, and wild insect burden proxies plus a direct human-caused insect estimate for ${name}. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
+        : `This is a secondary context panel combining broader human suffering indicators with three country-level animal buckets for ${name}: factory-farmed animals, non-insect wild animals, and insects. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
     factIssueSource.textContent = state.globeMode === "death"
       ? "Human: World Bank WDI death indicators."
       : animalDataState.loading
@@ -2802,7 +3056,7 @@ function renderDetails() {
       ? " Animal issue data is still loading from Our World in Data."
       : animalDataState.error
         ? " Animal issue data failed to load."
-        : " Animal cards use Our World in Data country slaughter and insecticide data, World Bank land and agricultural-land indicators, a Wild Animal Initiative direct-insect benchmark, and Rethink Priorities sentience and welfare-range distributions where available. Per-dollar ordering uses rough cost-effectiveness anchors from animal-welfare research. Bentham's Bulldog's ubiquitous-pain argument is reflected in the notes and interpretation, so current per-being animal scores should be read as conservative rather than as upper bounds.";
+        : " Animal cards now aggregate live data into three requested buckets: factory-farmed animals, non-insect wild animals, and insects. The model uses Our World in Data slaughter, aquaculture, wild-caught fish, and insecticide data, World Bank land and agricultural-land indicators, a Wild Animal Initiative direct-insect benchmark, and Rethink Priorities sentience and welfare-range distributions where available. Per-dollar ordering remains rough and should be read as intervention-priority guidance rather than a settled cost-effectiveness table.";
   selectionFootnote.textContent = `${boundarySource}${issueSource}${animalSource} Current ordering: ${rankingLabel(state.rankingMode)}.`;
 
   factLocation.textContent = provinceNameLabel ? `${provinceNameLabel}, ${name} · ${iso}` : `${name} · ${iso}`;
