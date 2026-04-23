@@ -1465,6 +1465,74 @@ function provinceName(feature) {
   );
 }
 
+function normalizeSearchText(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ");
+}
+
+function sameProvinceFeature(left, right) {
+  if (!left || !right) {
+    return false;
+  }
+
+  const leftId = left.properties?.shapeID || left.properties?.shapeISO || provinceName(left);
+  const rightId = right.properties?.shapeID || right.properties?.shapeISO || provinceName(right);
+  return normalizeSearchText(leftId) === normalizeSearchText(rightId);
+}
+
+function findProvince(features, query) {
+  const normalized = normalizeSearchText(query);
+
+  if (!normalized || !features?.length) {
+    return null;
+  }
+
+  const entries = features.map((feature) => {
+    const name = provinceName(feature);
+    return {
+      feature,
+      name,
+      nameLower: normalizeSearchText(name),
+      shapeId: normalizeSearchText(feature.properties?.shapeID || ""),
+      shapeIso: normalizeSearchText(feature.properties?.shapeISO || ""),
+    };
+  });
+
+  return (
+    entries.find(
+      (entry) =>
+        entry.nameLower === normalized ||
+        entry.shapeId === normalized ||
+        entry.shapeIso === normalized
+    )?.feature ||
+    entries.find((entry) => entry.nameLower.startsWith(normalized))?.feature ||
+    entries.find((entry) => entry.nameLower.includes(normalized))?.feature ||
+    null
+  );
+}
+
+function parseProvinceCountryQuery(query) {
+  const parts = String(query || "")
+    .split(",")
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  if (parts.length < 2) {
+    return null;
+  }
+
+  const countryQuery = parts.at(-1);
+  const provinceQuery = parts.slice(0, -1).join(", ");
+
+  if (!countryQuery || !provinceQuery) {
+    return null;
+  }
+
+  return { countryQuery, provinceQuery };
+}
+
 function issuePriorityLabel(support) {
   if (!support?.length) {
     return "Cross-country burden";
@@ -2797,18 +2865,45 @@ function populateCountryOptions() {
   countryOptions.textContent = "";
 
   const fragment = document.createDocumentFragment();
+  const optionValues = new Set();
 
   for (const entry of state.countryIndex) {
+    if (optionValues.has(entry.name)) {
+      continue;
+    }
+
     const option = document.createElement("option");
     option.value = entry.name;
     fragment.appendChild(option);
+    optionValues.add(entry.name);
+  }
+
+  for (const [iso, cached] of provinceCache) {
+    const countryEntry = state.countryIndex.find((entry) => entry.iso === iso);
+
+    if (!countryEntry) {
+      continue;
+    }
+
+    for (const feature of cached.features || []) {
+      const value = `${provinceName(feature)}, ${countryEntry.name}`;
+
+      if (optionValues.has(value)) {
+        continue;
+      }
+
+      const option = document.createElement("option");
+      option.value = value;
+      fragment.appendChild(option);
+      optionValues.add(value);
+    }
   }
 
   countryOptions.appendChild(fragment);
 }
 
 function findCountry(query) {
-  const normalized = query.trim().toLowerCase();
+  const normalized = normalizeSearchText(query);
 
   if (!normalized) {
     return null;
@@ -2840,6 +2935,11 @@ function countryFocusScale(feature) {
   const fitMultiplier = 0.58 * Math.min(width / boundsWidth, height / boundsHeight);
 
   return clampScale(baseScale * fitMultiplier);
+}
+
+function focusFeatureView(feature) {
+  const [longitude, latitude] = d3.geoCentroid(feature);
+  transitionGlobe([-longitude, -latitude, 0], countryFocusScale(feature));
 }
 
 function syncModeUi() {
@@ -3134,6 +3234,7 @@ function renderGlobe() {
       }
 
       state.selectedProvince = feature;
+      focusFeatureView(feature);
       renderDetails();
       renderGlobe();
       setStatus(`${provinceName(feature)} selected.`);
@@ -3141,8 +3242,7 @@ function renderGlobe() {
 }
 
 function focusCountryView(feature) {
-  const [longitude, latitude] = d3.geoCentroid(feature);
-  transitionGlobe([-longitude, -latitude, 0], countryFocusScale(feature));
+  focusFeatureView(feature);
 }
 
 async function loadAdm1(feature) {
@@ -3163,6 +3263,7 @@ async function loadAdm1(feature) {
     const cached = provinceCache.get(iso);
     state.provinceMeta = cached.meta;
     state.provinceFeatures = cached.features;
+    populateCountryOptions();
     renderDetails();
     renderGlobe();
     setStatus(`${name} ADM1 boundaries loaded from cache.`);
@@ -3183,6 +3284,7 @@ async function loadAdm1(feature) {
     const features = topojsonFeature(topology, topology.objects[objectKey]).features;
 
     provinceCache.set(iso, { meta, features });
+    populateCountryOptions();
 
     if (requestId !== provinceRequestId || countryIso(state.selectedCountry?.properties) !== iso) {
       return;
@@ -3289,6 +3391,32 @@ async function selectCountry(feature) {
   await Promise.all([loadAdm1(feature), loadCountryIssueData(feature)]);
 }
 
+async function selectProvince(countryFeature, provinceTarget) {
+  const targetIso = countryIso(countryFeature.properties);
+  const currentIso = countryIso(state.selectedCountry?.properties);
+
+  if (currentIso !== targetIso || !state.provinceFeatures.length) {
+    await selectCountry(countryFeature);
+  }
+
+  const resolvedProvince =
+    typeof provinceTarget === "string"
+      ? findProvince(state.provinceFeatures, provinceTarget)
+      : state.provinceFeatures.find((feature) => sameProvinceFeature(feature, provinceTarget)) || null;
+
+  if (!resolvedProvince) {
+    setStatus(`No province or state matched "${typeof provinceTarget === "string" ? provinceTarget : provinceName(provinceTarget)}" inside ${countryName(countryFeature.properties)}.`);
+    return;
+  }
+
+  state.selectedProvince = resolvedProvince;
+  countrySearchInput.value = `${provinceName(resolvedProvince)}, ${countryName(countryFeature.properties)}`;
+  focusFeatureView(resolvedProvince);
+  renderDetails();
+  renderGlobe();
+  setStatus(`${provinceName(resolvedProvince)}, ${countryName(countryFeature.properties)} selected.`);
+}
+
 async function handleCountrySearch(event) {
   event.preventDefault();
 
@@ -3297,10 +3425,40 @@ async function handleCountrySearch(event) {
     return;
   }
 
-  const match = findCountry(countrySearchInput.value);
+  const rawQuery = countrySearchInput.value.trim();
+
+  if (!rawQuery) {
+    setStatus('Enter a country or a province in the form "Province, Country".');
+    return;
+  }
+
+  if (state.selectedCountry && state.provinceFeatures.length) {
+    const provinceMatch = findProvince(state.provinceFeatures, rawQuery);
+
+    if (provinceMatch) {
+      await selectProvince(state.selectedCountry, provinceMatch);
+      return;
+    }
+  }
+
+  const provinceCountryQuery = parseProvinceCountryQuery(rawQuery);
+
+  if (provinceCountryQuery) {
+    const countryMatch = findCountry(provinceCountryQuery.countryQuery);
+
+    if (!countryMatch) {
+      setStatus(`No country matched "${provinceCountryQuery.countryQuery}".`);
+      return;
+    }
+
+    await selectProvince(countryMatch.feature, provinceCountryQuery.provinceQuery);
+    return;
+  }
+
+  const match = findCountry(rawQuery);
 
   if (!match) {
-    setStatus(`No country matched "${countrySearchInput.value.trim()}".`);
+    setStatus(`No country or province matched "${rawQuery}".`);
     return;
   }
 
@@ -3402,7 +3560,7 @@ async function init() {
     updateZoomUi();
     renderGlobe();
     setupInteraction();
-    setStatus("Drag to rotate, search for a country, or zoom in to inspect provinces and states.");
+    setStatus('Drag to rotate, search for a country or "Province, Country", or zoom in to inspect provinces and states.');
   } catch (error) {
     setStatus(`Country data failed to load: ${error.message}`);
   }
