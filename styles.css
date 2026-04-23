@@ -368,6 +368,21 @@ p {
   margin-top: 1rem;
 }
 
+.issue-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+}
+
+.issue-rank {
+  color: var(--accent);
+  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  font-size: 0.82em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  flex: 0 0 auto;
+}
+
 .issue-metric {
   display: block;
   margin-top: 0.65rem;

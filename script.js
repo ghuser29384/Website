@@ -2463,6 +2463,20 @@ function renderAnimalIssueStatus(title, body) {
   animalIssuesRoot.appendChild(card);
 }
 
+function buildRankedIssueCard(issue, rank, orderNote) {
+  const card = document.createElement("article");
+  card.className = "issue-card";
+  card.innerHTML = `
+    <p class="issue-tag">${issue.tag}</p>
+    <h3 class="issue-title"><span class="issue-rank">${rank}.</span><span>${issue.title}</span></h3>
+    <strong class="issue-metric">${issue.metric}</strong>
+    <p>${issue.body}</p>
+    <p class="issue-order-note">${orderNote}</p>
+    <p class="issue-source">${issue.source}</p>
+  `;
+  return card;
+}
+
 function renderPainAnchors() {
   if (!painAnchorsRoot) {
     return;
@@ -2655,19 +2669,9 @@ function renderIssues(country) {
 
     issuesRoot.textContent = "";
 
-    for (const issue of issues) {
-      const card = document.createElement("article");
-      card.className = "issue-card";
-      card.innerHTML = `
-        <p class="issue-tag">${issue.tag}</p>
-        <h3>${issue.title}</h3>
-        <strong class="issue-metric">${issue.metric}</strong>
-        <p>${issue.body}</p>
-        <p class="issue-order-note">${formatWholeWorldRanking(issue, state.rankingMode)}</p>
-        <p class="issue-source">${issue.source}</p>
-      `;
-      issuesRoot.appendChild(card);
-    }
+    issues.forEach((issue, index) => {
+      issuesRoot.appendChild(buildRankedIssueCard(issue, index + 1, formatWholeWorldRanking(issue, state.rankingMode)));
+    });
 
     return;
   }
@@ -2705,19 +2709,9 @@ function renderIssues(country) {
   issuesRoot.textContent = "";
   const orderedIssues = sortIssuesByMode(issues, state.rankingMode);
 
-  for (const issue of orderedIssues) {
-    const card = document.createElement("article");
-    card.className = "issue-card";
-    card.innerHTML = `
-      <p class="issue-tag">${issue.tag}</p>
-      <h3>${issue.title}</h3>
-      <strong class="issue-metric">${issue.metric}</strong>
-      <p>${issue.body}</p>
-      <p class="issue-order-note">${formatHumanRanking(issue, state.rankingMode)}</p>
-      <p class="issue-source">${issue.source}</p>
-    `;
-    issuesRoot.appendChild(card);
-  }
+  orderedIssues.forEach((issue, index) => {
+    issuesRoot.appendChild(buildRankedIssueCard(issue, index + 1, formatHumanRanking(issue, state.rankingMode)));
+  });
 }
 
 function renderAnimalIssues(country) {
@@ -2758,19 +2752,9 @@ function renderAnimalIssues(country) {
 
     animalIssuesRoot.textContent = "";
 
-    for (const issue of issues) {
-      const card = document.createElement("article");
-      card.className = "issue-card";
-      card.innerHTML = `
-        <p class="issue-tag">${issue.tag}</p>
-        <h3>${issue.title}</h3>
-        <strong class="issue-metric">${issue.metric}</strong>
-        <p>${issue.body}</p>
-        <p class="issue-order-note">${formatAnimalRanking(issue, state.rankingMode)}</p>
-        <p class="issue-source">${issue.source}</p>
-      `;
-      animalIssuesRoot.appendChild(card);
-    }
+    issues.forEach((issue, index) => {
+      animalIssuesRoot.appendChild(buildRankedIssueCard(issue, index + 1, formatAnimalRanking(issue, state.rankingMode)));
+    });
 
     return;
   }
@@ -2804,19 +2788,9 @@ function renderAnimalIssues(country) {
   animalIssuesRoot.textContent = "";
   const orderedIssues = sortIssuesByMode(issues, state.rankingMode);
 
-  for (const issue of orderedIssues) {
-    const card = document.createElement("article");
-    card.className = "issue-card";
-    card.innerHTML = `
-      <p class="issue-tag">${issue.tag}</p>
-      <h3>${issue.title}</h3>
-      <strong class="issue-metric">${issue.metric}</strong>
-      <p>${issue.body}</p>
-      <p class="issue-order-note">${formatAnimalRanking(issue, state.rankingMode)}</p>
-      <p class="issue-source">${issue.source}</p>
-    `;
-    animalIssuesRoot.appendChild(card);
-  }
+  orderedIssues.forEach((issue, index) => {
+    animalIssuesRoot.appendChild(buildRankedIssueCard(issue, index + 1, formatAnimalRanking(issue, state.rankingMode)));
+  });
 }
 
 function populateCountryOptions() {
