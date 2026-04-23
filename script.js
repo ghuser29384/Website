@@ -3,12 +3,15 @@ import { feature as topojsonFeature } from "https://cdn.jsdelivr.net/npm/topojso
 
 const COUNTRY_DATA_URL =
   "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson";
+const GSAP_ADM1_DATA_URL = "data/gsap-adm1-2023.json";
 const GLOBE_ROTATION = [-18, -14, 0];
 const width = 900;
 const height = 900;
 const baseScale = 388;
 const minScale = baseScale;
 const maxScale = baseScale * 3.25;
+const EARTH_RADIUS_KM = 6371.0088;
+const WORLDPOP_YEAR = 2020;
 const ISSUE_DATA_DATE_RANGE = "2010:2025";
 const ISSUE_CONTEXT_INDICATORS = [
   "SP.POP.TOTL",
@@ -695,6 +698,8 @@ const WORLD_FEATURE = {
   },
 };
 const SUFFERING_MODEL_BY_ID = new Map(SUFFERING_ISSUE_MODELS.map((definition) => [definition.id, definition]));
+const DEATH_MODEL_BY_ID = new Map(DEATH_MODELS.map((definition) => [definition.id, definition]));
+const HUMAN_MODEL_BY_ID = new Map(HUMAN_ISSUE_MODELS.map((definition) => [definition.id, definition]));
 
 const MORAL_WEIGHT_NOTES = [
   {
@@ -1310,6 +1315,7 @@ const state = {
   provinceMeta: null,
   provinceFeatures: [],
   countryIssueData: null,
+  provinceIssueData: null,
   globalIssueData: { loading: true, error: null, sufferingIssues: [], deathIssues: [] },
   globalContext: { loading: true, error: null, context: null },
 };
@@ -1323,8 +1329,15 @@ const animalDataState = {
 
 const provinceCache = new Map();
 const issueCache = new Map();
+const provinceIssueCache = new Map();
+const gsapAdm1State = {
+  loading: true,
+  error: null,
+  byIso: {},
+};
 let provinceRequestId = 0;
 let issueRequestId = 0;
+let provinceIssueRequestId = 0;
 let justDragged = false;
 
 function setStatus(message) {
@@ -1468,8 +1481,13 @@ function provinceName(feature) {
 function normalizeSearchText(value) {
   return String(value || "")
     .trim()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/&/g, " and ")
     .toLowerCase()
-    .replace(/\s+/g, " ");
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function sameProvinceFeature(left, right) {
@@ -1531,6 +1549,252 @@ function parseProvinceCountryQuery(query) {
   }
 
   return { countryQuery, provinceQuery };
+}
+
+function provinceCacheKey(countryFeature, provinceFeature) {
+  const iso = countryIso(countryFeature?.properties) || "UNK";
+  const provinceId =
+    provinceFeature?.properties?.shapeID ||
+    provinceFeature?.properties?.shapeISO ||
+    normalizeSearchText(provinceName(provinceFeature));
+  return `${iso}:${provinceId}`;
+}
+
+function findProvinceGsapRecord(iso, provinceFeature) {
+  const records = gsapAdm1State.byIso?.[iso];
+
+  if (!records) {
+    return null;
+  }
+
+  const names = [
+    provinceName(provinceFeature),
+    provinceFeature?.properties?.shapeName,
+    provinceFeature?.properties?.NAME_1,
+    provinceFeature?.properties?.name,
+    provinceFeature?.properties?.NAME,
+    provinceFeature?.properties?.PROV_NAME,
+  ]
+    .filter(Boolean)
+    .map(normalizeSearchText);
+
+  for (const name of names) {
+    if (records[name]) {
+      return records[name];
+    }
+  }
+
+  for (const name of names) {
+    const entry = Object.entries(records).find(([key]) => key.startsWith(name) || name.startsWith(key));
+
+    if (entry) {
+      return entry[1];
+    }
+  }
+
+  for (const name of names) {
+    const entry = Object.entries(records).find(([key]) => key.includes(name) || name.includes(key));
+
+    if (entry) {
+      return entry[1];
+    }
+  }
+
+  return null;
+}
+
+function geoAreaSqKm(feature) {
+  return d3.geoArea(feature) * EARTH_RADIUS_KM * EARTH_RADIUS_KM;
+}
+
+function decimateRing(ring, maxPoints = 140) {
+  if (!Array.isArray(ring) || ring.length <= maxPoints) {
+    return ring;
+  }
+
+  const lastIndex = ring.length - 1;
+  const step = Math.max(1, Math.ceil(lastIndex / Math.max(1, maxPoints - 1)));
+  const reduced = ring.filter((_, index) => index === 0 || index === lastIndex || index % step === 0);
+
+  if (reduced.length < 4) {
+    return [ring[0], ring[Math.floor(lastIndex / 3)], ring[Math.floor((2 * lastIndex) / 3)], ring[lastIndex]];
+  }
+
+  const first = reduced[0];
+  const last = reduced[reduced.length - 1];
+
+  if (first[0] !== last[0] || first[1] !== last[1]) {
+    reduced.push([...first]);
+  }
+
+  return reduced;
+}
+
+function simplifyGeometryForWorldPop(geometry, maxPointsPerRing = 140) {
+  if (!geometry) {
+    return null;
+  }
+
+  if (geometry.type === "Polygon") {
+    return {
+      type: "Polygon",
+      coordinates: geometry.coordinates.map((ring) => decimateRing(ring, maxPointsPerRing)),
+    };
+  }
+
+  if (geometry.type === "MultiPolygon") {
+    return {
+      type: "MultiPolygon",
+      coordinates: geometry.coordinates.map((polygon) =>
+        polygon.map((ring) => decimateRing(ring, maxPointsPerRing))
+      ),
+    };
+  }
+
+  return geometry;
+}
+
+function boundsPolygon(feature) {
+  const [[west, south], [east, north]] = d3.geoBounds(feature);
+  return {
+    type: "Polygon",
+    coordinates: [[[west, south], [east, south], [east, north], [west, north], [west, south]]],
+  };
+}
+
+function buildWorldPopGeoJson(feature) {
+  const simplified = {
+    type: "FeatureCollection",
+    features: [
+      {
+        type: "Feature",
+        properties: {},
+        geometry: simplifyGeometryForWorldPop(feature.geometry),
+      },
+    ],
+  };
+  const simplifiedString = JSON.stringify(simplified);
+
+  if (simplifiedString.length <= 14000) {
+    return {
+      geojson: simplified,
+      method: "simplified-province-geometry",
+    };
+  }
+
+  return {
+    geojson: {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          properties: {},
+          geometry: boundsPolygon(feature),
+        },
+      ],
+    },
+    method: "bounding-box-fallback",
+  };
+}
+
+function worldPopStatsUrl(dataset, geojson) {
+  return `https://api.worldpop.org/v1/services/stats?dataset=${dataset}&year=${WORLDPOP_YEAR}&runasync=false&geojson=${encodeURIComponent(JSON.stringify(geojson))}`;
+}
+
+function parseWorldPopAgePyramid(rows = []) {
+  return rows.reduce(
+    (accumulator, row) => {
+      const ageClass = Number(row.class);
+      const male = Number(row.male || 0);
+      const female = Number(row.female || 0);
+      const total = male + female;
+
+      accumulator.total += total;
+
+      if (ageClass === 0 || ageClass === 1) {
+        accumulator.under5 += total;
+      }
+
+      if (ageClass >= 15 && ageClass < 50) {
+        accumulator.female15to49 += female;
+      }
+
+      return accumulator;
+    },
+    { total: 0, under5: 0, female15to49: 0 }
+  );
+}
+
+function provincePopulationShare(provinceContext) {
+  return Number.isFinite(provinceContext.populationShare) && provinceContext.populationShare > 0
+    ? provinceContext.populationShare
+    : provinceContext.areaShare || 0;
+}
+
+function provinceUnder5Share(provinceContext) {
+  return Number.isFinite(provinceContext.under5Share) && provinceContext.under5Share > 0
+    ? provinceContext.under5Share
+    : provincePopulationShare(provinceContext);
+}
+
+function provinceHumanShare(issueId, provinceContext) {
+  if (["SH.DYN.MORT", "SH.STA.STNT.ZS", "SH.IMM.IDPT"].includes(issueId)) {
+    return provinceUnder5Share(provinceContext);
+  }
+
+  if (issueId === "SH.STA.MMRT") {
+    return provinceUnder5Share(provinceContext);
+  }
+
+  return provincePopulationShare(provinceContext);
+}
+
+function provinceHumanShareLabel(issueId) {
+  if (["SH.DYN.MORT", "SH.STA.STNT.ZS", "SH.IMM.IDPT"].includes(issueId)) {
+    return "province under-5 population share from WorldPop age structure";
+  }
+
+  if (issueId === "SH.STA.MMRT") {
+    return "province birth proxy from WorldPop under-5 age structure";
+  }
+
+  return "province population share from WorldPop";
+}
+
+function provinceAnimalShare(datasetId, provinceContext) {
+  const populationShare = provincePopulationShare(provinceContext);
+  const areaShare = provinceContext.areaShare || populationShare;
+  const livestockShare = 0.65 * populationShare + 0.35 * areaShare;
+
+  if (["wild-terrestrial-arthropods", "wild-birds", "insects"].includes(datasetId)) {
+    return areaShare;
+  }
+
+  if (["chickens", "pigs", "other-birds", "bovines"].includes(datasetId)) {
+    return livestockShare;
+  }
+
+  return populationShare;
+}
+
+function provinceAnimalShareLabel(datasetId) {
+  if (["wild-terrestrial-arthropods", "wild-birds", "insects"].includes(datasetId)) {
+    return "province land-area share from ADM1 geometry";
+  }
+
+  if (["chickens", "pigs", "other-birds", "bovines"].includes(datasetId)) {
+    return "a blended province share: 65% population share plus 35% land-area share";
+  }
+
+  return "province population share from WorldPop";
+}
+
+function formatProvinceBurdenMetric(mode, rawValue) {
+  if (mode === "death") {
+    return `${formatLifeYears(rawValue)} province life-years lost proxy`;
+  }
+
+  return `${formatCompactNumber(rawValue)} province burden units`;
 }
 
 function issuePriorityLabel(support) {
@@ -2192,6 +2456,163 @@ function buildWholeWorldAnimalIssues() {
   return aggregateAnimalCauseIssues(issues, "the world");
 }
 
+function buildProvinceContext(countryFeature, provinceFeature, worldPopContext, povertyRecord) {
+  const countryContext = state.countryIssueData?.context || {};
+  const countryArea = Math.max(geoAreaSqKm(countryFeature), 1);
+  const provinceArea = Math.max(geoAreaSqKm(provinceFeature), 0);
+  const areaShare = Math.max(0, Math.min(1, provinceArea / countryArea));
+  const fallbackPopulation = (countryContext.population || 0) * areaShare;
+  const population = Number(worldPopContext.population || fallbackPopulation || 0);
+  const populationShare =
+    countryContext.population > 0 ? Math.max(0, Math.min(1, population / countryContext.population)) : areaShare;
+  const fallbackUnder5 = (countryContext.under5Population || 0) * populationShare;
+  const under5Population = Number(worldPopContext.under5Population || fallbackUnder5 || 0);
+  const under5Share =
+    countryContext.under5Population > 0
+      ? Math.max(0, Math.min(1, under5Population / countryContext.under5Population))
+      : populationShare;
+
+  return {
+    ...countryContext,
+    population,
+    populationShare,
+    births: (countryContext.births || 0) * under5Share,
+    under5Population,
+    under5Share,
+    reproductiveFemalePopulation: Number(worldPopContext.female15to49Population || 0),
+    areaShare,
+    landArea: (countryContext.landArea || 0) * areaShare,
+    agriculturalLand: (countryContext.agriculturalLand || 0) * areaShare,
+    worldPopMethod: worldPopContext.method || "unavailable",
+    povertyRecord: povertyRecord || null,
+  };
+}
+
+function buildProvinceHumanIssues(sourceIssues, provinceContext, provinceFeature, mode) {
+  const provinceLabel = provinceName(provinceFeature);
+
+  return sourceIssues
+    .map((issue) => {
+      const definition = (mode === "death" ? DEATH_MODEL_BY_ID : SUFFERING_MODEL_BY_ID).get(issue.id);
+
+      if (!definition) {
+        return null;
+      }
+
+      if (mode === "suffering" && issue.id === "SI.POV.DDAY" && provinceContext.povertyRecord?.poor300 != null) {
+        const value = Number(provinceContext.povertyRecord.poor300) * 100;
+        const severityScore = definition.score(value, provinceContext);
+        const weightedScore = Math.min(100, severityScore * definition.weight);
+        const totalBurden = (value / 100) * provinceContext.population;
+        const povertyMetric = definition.metric(value, provinceContext);
+
+        return {
+          id: issue.id,
+          tag: `${issuePriorityLabel(definition.support)} · ${issueLevel(weightedScore)}`,
+          title: issue.title,
+          metric: povertyMetric,
+          body: `${provinceLabel} has a directly matched World Bank GSAP ADM1 poverty estimate rather than a country-share fallback for this cause.`,
+          source: `World Bank Global Subnational Poverty Atlas (2023 ADM1 lineup) matched to ${provinceLabel} via ${provinceContext.povertyRecord.geo || "ADM1 poverty row"}. This province uses the GSAP poverty rate directly, while the other causes still rely on province population, age-structure, and land-area allocation where no global ADM1 feed is loaded.`,
+          score: weightedScore,
+          severityScore,
+          ranking: {
+            improvement: {
+              score: Math.log10(weightedScore + 1),
+              raw: weightedScore,
+              metric: `${weightedScore.toFixed(1)} weighted province severity points`,
+            },
+            total: {
+              score: Math.log10(totalBurden + 1),
+              raw: totalBurden,
+              metric: `${formatCompactNumber(totalBurden)} people in severe poverty in the province estimate`,
+            },
+            "per-being": {
+              score: severityScore,
+              raw: severityScore,
+              metric: povertyMetric,
+            },
+          },
+        };
+      }
+
+      const share = provinceHumanShare(issue.id, provinceContext);
+      const totalRaw = (issue.ranking?.total?.raw || 0) * share;
+      const improvementRaw = (issue.ranking?.improvement?.raw || 0) * share;
+
+      return {
+        ...issue,
+        body: `${provinceLabel} uses ${provinceHumanShareLabel(issue.id)} to allocate this cause from the country model because a global province-by-province feed for ${issue.title.toLowerCase()} is not loaded here.`,
+        source: `${issue.source} Province note: total and tractability ordering for ${provinceLabel} use ${provinceHumanShareLabel(issue.id)}; the per-being rate remains the country's latest national reading unless a direct ADM1 source exists.`,
+        ranking: {
+          improvement: {
+            score: Math.log10(improvementRaw + 1),
+            raw: improvementRaw,
+            metric:
+              mode === "death"
+                ? `${formatLifeYears(improvementRaw)} tractability-adjusted province life-years`
+                : `${formatCompactNumber(improvementRaw)} tractability-adjusted province burden units`,
+          },
+          total: {
+            score: Math.log10(totalRaw + 1),
+            raw: totalRaw,
+            metric: formatProvinceBurdenMetric(mode, totalRaw),
+          },
+          "per-being": issue.ranking?.["per-being"] || { score: 0, raw: 0, metric: issue.metric },
+        },
+      };
+    })
+    .filter(Boolean);
+}
+
+function buildProvinceAnimalIssues(countryFeature, provinceFeature, provinceContext) {
+  const iso = countryIso(countryFeature.properties);
+  const provinceLabel = provinceName(provinceFeature);
+  const countryLabel = countryName(countryFeature.properties);
+  const metrics = animalDataState.byCountry.get(iso) || {};
+  const scaledMetrics = Object.fromEntries(
+    Object.entries(metrics).map(([datasetId, record]) => [
+      datasetId,
+      {
+        ...record,
+        value: (record.value || 0) * provinceAnimalShare(datasetId, provinceContext),
+      },
+    ])
+  );
+  const animalContext = {
+    ...state.countryIssueData?.context,
+    landArea: provinceContext.landArea,
+    agriculturalLand: provinceContext.agriculturalLand,
+    agriculturalLandDate: provinceContext.agriculturalLandDate,
+  };
+  const issues = buildAnimalIssuesFromMetrics(scaledMetrics, animalContext, provinceLabel);
+
+  return aggregateAnimalCauseIssues(issues, provinceLabel).map((issue) => ({
+    ...issue,
+    body: `${issue.body} Province note: this bucket is estimated inside ${provinceLabel}, ${countryLabel} using real province population or land-area inputs rather than reusing the full country total unchanged.`,
+    source: `${issue.source} Province note: this bucket is distributed within ${countryLabel} using ${
+      issue.id === "animal-bucket-insects"
+        ? provinceAnimalShareLabel("insects")
+        : issue.id === "animal-bucket-non-insect-wild"
+          ? provinceAnimalShareLabel("wild-birds")
+          : provinceAnimalShareLabel("chickens")
+    }.`,
+  }));
+}
+
+function buildProvinceMixedSufferingIssues(provinceIssueData) {
+  return sortIssuesByMode(
+    [
+      ...(provinceIssueData?.sufferingIssues || []).map((issue) => ({ ...issue, localKind: "human" })),
+      ...(provinceIssueData?.animalIssues || []).map((issue) => ({ ...issue, localKind: "animal" })),
+    ],
+    state.rankingMode
+  ).slice(0, WORLD_RANK_LIMIT);
+}
+
+function formatProvinceRanking(issue, mode) {
+  return issue.localKind === "animal" ? formatAnimalRanking(issue, mode) : formatHumanRanking(issue, mode);
+}
+
 function animalDeathImprovementFactor(dataset) {
   return Math.max(0.003, Math.min(0.08, Math.sqrt(dataset.improvementFactor || 0.01) * 0.03));
 }
@@ -2336,6 +2757,100 @@ function formatWholeWorldRanking(issue, mode) {
   return `Order mode: life-years lost per death proxy · ${issue.ranking["per-being"].metric}.`;
 }
 
+async function loadGsapAdm1Data() {
+  try {
+    gsapAdm1State.byIso = await fetchJson(GSAP_ADM1_DATA_URL);
+    gsapAdm1State.loading = false;
+    gsapAdm1State.error = null;
+    if (state.selectedCountry && state.selectedProvince) {
+      loadProvinceIssueData(state.selectedCountry, state.selectedProvince);
+    }
+    renderDetails();
+  } catch (error) {
+    gsapAdm1State.loading = false;
+    gsapAdm1State.error = error.message;
+    renderDetails();
+  }
+}
+
+async function fetchProvinceWorldPopContext(provinceFeature) {
+  const { geojson, method } = buildWorldPopGeoJson(provinceFeature);
+  const [populationPayload, agePayload] = await Promise.all([
+    fetchJson(worldPopStatsUrl("wpgppop", geojson)),
+    fetchJson(worldPopStatsUrl("wpgpas", geojson)),
+  ]);
+  const ageStats = parseWorldPopAgePyramid(agePayload?.data?.agesexpyramid || []);
+
+  return {
+    population: Number(populationPayload?.data?.total_population || ageStats.total || 0),
+    under5Population: ageStats.under5,
+    female15to49Population: ageStats.female15to49,
+    method,
+  };
+}
+
+async function loadProvinceIssueData(countryFeature, provinceFeature) {
+  const cacheKey = provinceCacheKey(countryFeature, provinceFeature);
+
+  if (provinceIssueCache.has(cacheKey) && !gsapAdm1State.loading && !animalDataState.loading) {
+    state.provinceIssueData = provinceIssueCache.get(cacheKey);
+    renderDetails();
+    return;
+  }
+
+  const requestId = ++provinceIssueRequestId;
+  state.provinceIssueData = { loading: true };
+  renderDetails();
+
+  try {
+    const iso = countryIso(countryFeature.properties);
+    const worldPopContext = await fetchProvinceWorldPopContext(provinceFeature);
+    const povertyRecord = iso ? findProvinceGsapRecord(iso, provinceFeature) : null;
+    const provinceContext = buildProvinceContext(countryFeature, provinceFeature, worldPopContext, povertyRecord);
+    const parsed = {
+      loading: false,
+      error: null,
+      context: provinceContext,
+      sufferingIssues: buildProvinceHumanIssues(
+        state.countryIssueData?.sufferingIssues || [],
+        provinceContext,
+        provinceFeature,
+        "suffering"
+      ),
+      deathIssues: buildProvinceHumanIssues(
+        state.countryIssueData?.deathIssues || [],
+        provinceContext,
+        provinceFeature,
+        "death"
+      ),
+      animalIssues: buildProvinceAnimalIssues(countryFeature, provinceFeature, provinceContext),
+    };
+
+    if (!gsapAdm1State.loading && !animalDataState.loading) {
+      provinceIssueCache.set(cacheKey, parsed);
+    }
+
+    if (
+      requestId !== provinceIssueRequestId ||
+      countryIso(state.selectedCountry?.properties) !== iso ||
+      !sameProvinceFeature(state.selectedProvince, provinceFeature)
+    ) {
+      return;
+    }
+
+    state.provinceIssueData = parsed;
+    renderDetails();
+  } catch (error) {
+    if (requestId !== provinceIssueRequestId) {
+      return;
+    }
+
+    state.provinceIssueData = { loading: false, error: error.message };
+    renderDetails();
+    setStatus(`Province data load failed for ${provinceName(provinceFeature)}.`);
+  }
+}
+
 async function loadAnimalBurdenData() {
   animalDataState.loading = true;
   animalDataState.error = null;
@@ -2367,6 +2882,9 @@ async function loadAnimalBurdenData() {
     animalDataState.byCountry = byCountry;
     animalDataState.world = Object.keys(world).length ? world : null;
     animalDataState.loading = false;
+    if (state.selectedCountry && state.selectedProvince) {
+      loadProvinceIssueData(state.selectedCountry, state.selectedProvince);
+    }
     renderDetails();
   } catch (error) {
     animalDataState.error = error.message;
@@ -2744,6 +3262,49 @@ function renderIssues(country) {
     return;
   }
 
+  if (state.selectedProvince) {
+    if (!state.provinceIssueData || state.provinceIssueData.loading) {
+      renderIssueStatus(
+        "Loading province ranking",
+        state.globeMode === "death"
+          ? "Fetching province population and age structure from WorldPop so the panel can estimate which death causes are largest inside the selected ADM1 region."
+          : "Fetching province population and age structure from WorldPop, matching World Bank ADM1 poverty where available, and then building a province-level top 10 across human and animal pain causes."
+      );
+      return;
+    }
+
+    if (state.provinceIssueData.error) {
+      renderIssueStatus(
+        "Province data unavailable",
+        "The province-specific data request failed, so the panel cannot yet estimate a province-level ranking for the selected ADM1 region."
+      );
+      return;
+    }
+
+    const issues =
+      state.globeMode === "death"
+        ? sortIssuesByMode(state.provinceIssueData.deathIssues || [], state.rankingMode).slice(0, WORLD_RANK_LIMIT)
+        : buildProvinceMixedSufferingIssues(state.provinceIssueData);
+
+    if (!issues.length) {
+      renderIssueStatus(
+        "No province ranking available",
+        "The selected province did not produce any province-level causes for the current ordering mode."
+      );
+      return;
+    }
+
+    issuesRoot.textContent = "";
+    issues.forEach((issue, index) => {
+      const orderNote =
+        state.globeMode === "death" && !issue.localKind
+          ? formatHumanRanking(issue, state.rankingMode)
+          : formatProvinceRanking(issue, state.rankingMode);
+      issuesRoot.appendChild(buildRankedIssueCard(issue, index + 1, orderNote));
+    });
+    return;
+  }
+
   if (!state.countryIssueData || state.countryIssueData.loading) {
     renderIssueStatus(
       "Loading country ranking",
@@ -2783,7 +3344,7 @@ function renderIssues(country) {
 }
 
 function renderAnimalIssues(country) {
-  if (!currentGlobeModeConfig().showAnimals) {
+  if (!currentGlobeModeConfig().showAnimals || state.selectedProvince) {
     animalIssuesRoot.textContent = "";
     return;
   }
@@ -2946,6 +3507,7 @@ function syncModeUi() {
   const globeMode = currentGlobeModeConfig();
   const rankingModes = currentRankingModes();
   const isCountryView = Boolean(state.selectedCountry);
+  const isProvinceView = Boolean(state.selectedProvince);
 
   if (topbarNote) {
     topbarNote.textContent = globeMode.topbarNote;
@@ -2958,13 +3520,21 @@ function syncModeUi() {
   if (globeModeCopy) {
     globeModeCopy.textContent = !isCountryView
       ? globeMode.globeCopy
+      : isProvinceView
+        ? state.globeMode === "death"
+          ? "Province drill-down uses real ADM1 geometry plus province population and age structure from WorldPop to estimate which death causes loom largest in the selected province."
+          : "Province drill-down uses real ADM1 geometry, province population and age structure from WorldPop, World Bank ADM1 poverty where available, and province allocation proxies for the remaining causes."
       : state.globeMode === "death"
         ? "Country drill-down narrows back to national human death causes because the site does not load equally robust country animal-death data."
         : "Country drill-down separates broader human suffering from three animal buckets for the selected country: factory-farmed animals, non-insect wild animals, and insects.";
   }
 
   if (humanSectionLabel) {
-    humanSectionLabel.textContent = state.selectedCountry
+    humanSectionLabel.textContent = isProvinceView
+      ? state.globeMode === "death"
+        ? "Province death causes"
+        : "Top 10 causes of pain in this province"
+      : state.selectedCountry
       ? globeMode.humanSectionLabel
       : state.globeMode === "death"
         ? "Secondary context: whole-world life-years lost"
@@ -2980,7 +3550,7 @@ function syncModeUi() {
   }
 
   if (animalSection) {
-    animalSection.hidden = !globeMode.showAnimals;
+    animalSection.hidden = !globeMode.showAnimals || isProvinceView;
   }
 
   if (rankingTitle) {
@@ -3000,6 +3570,20 @@ function syncModeUi() {
   if (rankingCopy) {
     if (!isCountryView) {
       rankingCopy.textContent = rankingModes[state.rankingMode].copy;
+    } else if (isProvinceView && state.globeMode === "death") {
+      rankingCopy.textContent =
+        state.rankingMode === "improvement"
+          ? "Province death mode uses WorldPop population and age structure to allocate the country death model into the selected ADM1 region."
+          : state.rankingMode === "total"
+            ? "Province death mode estimates total life-years lost inside the selected ADM1 region from province population and age shares."
+            : "Province death mode keeps the country's per-death intensity proxies unless a direct province source is loaded.";
+    } else if (isProvinceView) {
+      rankingCopy.textContent =
+        state.rankingMode === "improvement"
+          ? "Province suffering mode mixes WorldPop province totals, GSAP province poverty where available, and province-distributed animal proxies into one top 10."
+          : state.rankingMode === "total"
+            ? "Province suffering mode estimates total burden inside the selected ADM1 region using province population, under-5 population, and land-area shares."
+            : "Province suffering mode keeps direct province poverty where available and otherwise carries over the country per-being rate while changing the province total.";
     } else if (state.globeMode === "death") {
       rankingCopy.textContent =
         state.rankingMode === "improvement"
@@ -3072,14 +3656,15 @@ function renderDetails() {
   const subregion = countryProps.SUBREGION || countryProps.CONTINENT || "Unknown region";
   const issueData = state.countryIssueData;
   const provinceNameLabel = state.selectedProvince ? provinceName(state.selectedProvince) : null;
+  const provinceIssueData = state.provinceIssueData;
 
-  countrySearchInput.value = name;
+  countrySearchInput.value = provinceNameLabel ? `${provinceNameLabel}, ${name}` : name;
   selectionMeta.textContent = `${name} · ${subregion}`;
   selectionTitle.textContent = provinceNameLabel || name;
 
   if (!issueData || issueData.loading) {
     selectionSummary.textContent = provinceNameLabel
-      ? `${provinceNameLabel} is selected inside ${name}. The boundary is ADM1, but the issue ranking remains national and is still loading.`
+      ? `${provinceNameLabel} is selected inside ${name}. The ADM1 boundary is loaded, and the province model is waiting for the country baseline before it can finish the local ranking.`
       : state.globeMode === "death"
         ? `Loading the death-focused cause ranking for ${name} from World Bank country mortality indicators.`
         : `Loading the broader country suffering ranking for ${name} from World Bank and Our World in Data country indicators.`;
@@ -3090,7 +3675,7 @@ function renderDetails() {
         : "Human: loading WDI. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
   } else if (issueData.error) {
     selectionSummary.textContent = provinceNameLabel
-      ? `${provinceNameLabel} is selected inside ${name}. The ADM1 geometry is real, but the national issue ranking failed to load.`
+      ? `${provinceNameLabel} is selected inside ${name}. The ADM1 geometry is real, but the province model cannot finish because the country baseline failed to load.`
       : `Country-specific issue data could not be loaded for ${name}, so the ranking layer is unavailable right now.`;
     factIssueSource.textContent = state.globeMode === "death"
       ? "Human: WDI death indicators failed."
@@ -3099,19 +3684,40 @@ function renderDetails() {
         : animalDataState.error
           ? "Human: WDI failed. Animals: OWID load failed."
           : "Human: WDI failed. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
+  } else if (provinceNameLabel && (!provinceIssueData || provinceIssueData.loading)) {
+    selectionSummary.textContent =
+      state.globeMode === "death"
+        ? `${provinceNameLabel} is selected inside ${name}. Loading province population and age structure from WorldPop so the panel can estimate which death causes are largest inside this ADM1 region.`
+        : `${provinceNameLabel} is selected inside ${name}. Loading province population and age structure from WorldPop, plus direct World Bank ADM1 poverty where available, so the panel can build a province-level top 10 pain ranking.`;
+    factIssueSource.textContent =
+      state.globeMode === "death"
+        ? "Province: loading WorldPop + national WDI death model."
+        : "Province: loading WorldPop + GSAP + WDI + OWID province estimate model.";
+  } else if (provinceNameLabel && provinceIssueData?.error) {
+    selectionSummary.textContent = `${provinceNameLabel} is selected inside ${name}, but the province-specific data request failed.`;
+    factIssueSource.textContent =
+      state.globeMode === "death"
+        ? "Province: WorldPop or national death-model allocation failed."
+        : "Province: WorldPop, GSAP, or province estimate model failed.";
   } else {
     selectionSummary.textContent = provinceNameLabel
-      ? `${provinceNameLabel} is selected inside ${name}. This remains a secondary context panel; the boundary is provincial, but the issue lists below remain national and are currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
+      ? state.globeMode === "death"
+        ? `${provinceNameLabel} is selected inside ${name}. The list below estimates which death causes loom largest inside this province, currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
+        : `${provinceNameLabel} is selected inside ${name}. The list below estimates the top 10 pain causes in this province across humans and animals, currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
       : state.globeMode === "death"
         ? `This is a secondary context panel focused on human death causes in ${name}. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
         : `This is a secondary context panel combining broader human suffering indicators with three country-level animal buckets for ${name}: factory-farmed animals, non-insect wild animals, and insects. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
-    factIssueSource.textContent = state.globeMode === "death"
-      ? "Human: World Bank WDI death indicators."
-      : animalDataState.loading
-        ? "Human: World Bank WDI. Animals: loading OWID + WDI + RP + WAI + cost-effectiveness anchors."
-        : animalDataState.error
-          ? "Human: World Bank WDI. Animals: OWID load failed."
-          : "Human: World Bank WDI. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
+    factIssueSource.textContent = provinceNameLabel
+      ? state.globeMode === "death"
+        ? "Province: WorldPop + national WDI death model."
+        : `Province: WorldPop + ${provinceIssueData?.context?.povertyRecord ? "World Bank GSAP + " : ""}WDI + OWID + RP + WAI province estimate model.`
+      : state.globeMode === "death"
+        ? "Human: World Bank WDI death indicators."
+        : animalDataState.loading
+          ? "Human: World Bank WDI. Animals: loading OWID + WDI + RP + WAI + cost-effectiveness anchors."
+          : animalDataState.error
+            ? "Human: World Bank WDI. Animals: OWID load failed."
+            : "Human: World Bank WDI. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
   }
 
   const boundarySource = state.provinceMeta?.boundarySource
@@ -3121,10 +3727,22 @@ function renderDetails() {
       ? " Issue data request failed."
       : issueData?.loading
         ? " Issue data will appear after the country request completes."
+        : provinceNameLabel && provinceIssueData?.loading
+          ? " Province ranking is loading from WorldPop population and age structure, plus World Bank ADM1 poverty where available."
+          : provinceNameLabel && provinceIssueData?.error
+            ? " Province ranking failed before the ADM1 estimate could be assembled."
+            : provinceNameLabel && state.globeMode === "death"
+              ? " Province death cards use WorldPop province population and age structure to allocate the national death model into this ADM1 region. Per-death intensities remain the country's current national proxy."
+              : provinceNameLabel
+                ? " Province suffering cards mix WorldPop province totals, World Bank GSAP ADM1 poverty where available, and province-distributed country and animal proxies where no direct ADM1 feed is loaded."
         : state.globeMode === "death"
           ? " Human death cards use World Bank mortality indicators and death proxies for pollution, unsafe WASH, road injury, suicide, homicide, and conflict. The within-country order converts deaths into rough life-years lost using local life expectancy minus WHO-style age anchors, so it is an inference rather than a published master list."
           : " Human cards combine recurring EA priorities with broader World Bank burden indicators for food insecurity, pollution, water, clean cooking, TB, homicide, and conflict. The within-country order is estimated rather than copied from a published master list.";
-  const animalSource = !globeMode.showAnimals
+  const animalSource = provinceNameLabel
+    ? state.globeMode === "death"
+      ? " Province death mode hides the separate animal panel because the province ranking is already consolidated in the main list."
+      : " Province animal estimates distribute country animal totals using real province population or land-area inputs. Wild and insect causes rely more heavily on land area; factory-farmed and aquatic causes rely more on province population because a global ADM1 livestock-by-species feed is not loaded here."
+    : !globeMode.showAnimals
     ? " The death globe hides the animal layer because this view is specifically about human death causes."
     : animalDataState.loading
       ? " Animal issue data is still loading from Our World in Data."
@@ -3233,11 +3851,7 @@ function renderGlobe() {
         return;
       }
 
-      state.selectedProvince = feature;
-      focusFeatureView(feature);
-      renderDetails();
-      renderGlobe();
-      setStatus(`${provinceName(feature)} selected.`);
+      selectProvince(state.selectedCountry, feature);
     });
 }
 
@@ -3385,6 +3999,7 @@ async function selectCountry(feature) {
   state.selectedCountry = feature;
   state.selectedProvince = null;
   state.countryIssueData = { loading: true };
+  state.provinceIssueData = null;
   focusCountryView(feature);
   renderDetails();
   renderGlobe();
@@ -3410,10 +4025,13 @@ async function selectProvince(countryFeature, provinceTarget) {
   }
 
   state.selectedProvince = resolvedProvince;
+  state.provinceIssueData = { loading: true };
   countrySearchInput.value = `${provinceName(resolvedProvince)}, ${countryName(countryFeature.properties)}`;
   focusFeatureView(resolvedProvince);
   renderDetails();
   renderGlobe();
+  setStatus(`Loading province data for ${provinceName(resolvedProvince)}, ${countryName(countryFeature.properties)}...`);
+  await loadProvinceIssueData(countryFeature, resolvedProvince);
   setStatus(`${provinceName(resolvedProvince)}, ${countryName(countryFeature.properties)} selected.`);
 }
 
@@ -3475,6 +4093,7 @@ function resetView() {
   state.provinceMeta = null;
   state.provinceFeatures = [];
   state.countryIssueData = null;
+  state.provinceIssueData = null;
   projection.rotate(GLOBE_ROTATION);
   projection.scale(baseScale);
   renderDetails();
@@ -3543,6 +4162,7 @@ async function init() {
   loadAnimalBurdenData();
   loadGlobalIssueData();
   loadGlobalContext();
+  loadGsapAdm1Data();
 
   try {
     const data = await fetchJson(COUNTRY_DATA_URL);
@@ -3551,7 +4171,7 @@ async function init() {
       .map((feature) => ({
         feature,
         name: countryName(feature.properties),
-        nameLower: countryName(feature.properties).toLowerCase(),
+        nameLower: normalizeSearchText(countryName(feature.properties)),
         iso: countryIso(feature.properties),
       }))
       .sort((left, right) => left.name.localeCompare(right.name));
