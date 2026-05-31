@@ -2,8 +2,8 @@
   "openapi": "3.1.0",
   "info": {
     "title": "PainMap public read-only data contract",
-    "version": "2026-05-31",
-    "description": "Static API contract for PainMap place, dataset, provenance, catalog, and geometry exports. Current production endpoints are static files."
+    "version": "2026-05-31.atlas.2",
+    "description": "Static API contract for immutable PainMap releases, places, layers, sources, provenance, catalog, and geometry exports."
   },
   "servers": [
     {
@@ -11,9 +11,128 @@
     }
   ],
   "paths": {
+    "/v1/releases.json": {
+      "get": {
+        "summary": "Get release index",
+        "responses": {
+          "200": {
+            "description": "Release index JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/layers.json": {
+      "get": {
+        "summary": "Get layer definitions",
+        "responses": {
+          "200": {
+            "description": "Layer definitions JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/sources.json": {
+      "get": {
+        "summary": "Get source registry",
+        "responses": {
+          "200": {
+            "description": "Source registry JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/places/BRA.json": {
+      "get": {
+        "summary": "Get Brazil place profile",
+        "responses": {
+          "200": {
+            "description": "Place profile JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/places/IND.json": {
+      "get": {
+        "summary": "Get India place profile",
+        "responses": {
+          "200": {
+            "description": "Place profile JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/releases/2026-05-31/manifest.json": {
+      "get": {
+        "summary": "Get immutable release manifest",
+        "responses": {
+          "200": {
+            "description": "Release manifest JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/latest/manifest.json": {
+      "get": {
+        "summary": "Get latest release alias manifest",
+        "responses": {
+          "200": {
+            "description": "Latest alias JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/data/provenance-registry.json": {
       "get": {
-        "summary": "Get dataset, source, license, method, and uncertainty registry",
+        "summary": "Get dataset, source, license, evidence-kind, and uncertainty registry",
         "responses": {
           "200": {
             "description": "Provenance registry JSON",
@@ -30,7 +149,7 @@
     },
     "/data/place-measurements.json": {
       "get": {
-        "summary": "Get representative place-level pain-source proxy measurements",
+        "summary": "Get canonical place-level pain-source measurements",
         "responses": {
           "200": {
             "description": "Place measurements JSON",
@@ -47,7 +166,7 @@
     },
     "/data/place-measurements.csv": {
       "get": {
-        "summary": "Get representative place-level measurements as CSV",
+        "summary": "Get canonical place-level measurements as CSV",
         "responses": {
           "200": {
             "description": "Place measurements CSV",
@@ -64,7 +183,7 @@
     },
     "/data/places.geojson": {
       "get": {
-        "summary": "Get representative place features for the atlas contract",
+        "summary": "Get canonical place features for the atlas contract",
         "responses": {
           "200": {
             "description": "GeoJSON feature collection",
@@ -86,7 +205,7 @@
           "200": {
             "description": "Dataset catalog JSON",
             "content": {
-              "application/ld+json": {
+              "application/json": {
                 "schema": {
                   "type": "object"
                 }
@@ -101,40 +220,21 @@
     "schemas": {
       "ProvenanceRegistry": {
         "type": "object",
-        "required": ["build", "methodClasses", "uncertaintyClasses", "licenses", "datasets"],
-        "properties": {
-          "build": {
-            "type": "object"
-          },
-          "methodClasses": {
-            "type": "array",
-            "items": {
-              "type": "object"
-            }
-          },
-          "uncertaintyClasses": {
-            "type": "array",
-            "items": {
-              "type": "object"
-            }
-          },
-          "licenses": {
-            "type": "array",
-            "items": {
-              "type": "object"
-            }
-          },
-          "datasets": {
-            "type": "array",
-            "items": {
-              "type": "object"
-            }
-          }
-        }
+        "required": [
+          "build",
+          "methodClasses",
+          "uncertaintyClasses",
+          "licenses",
+          "sources",
+          "datasets"
+        ]
       },
       "PlaceMeasurements": {
         "type": "object",
-        "required": ["build", "measurements"],
+        "required": [
+          "build",
+          "measurements"
+        ],
         "properties": {
           "build": {
             "type": "object"
@@ -149,8 +249,36 @@
       },
       "PlaceMeasurement": {
         "type": "object",
-        "required": ["place_id", "place_name", "geometry_level", "layer_id", "layer_type", "source_vintage", "method_note", "uncertainty_class", "license_id"],
+        "required": [
+          "measurement_id",
+          "release_id",
+          "place_id",
+          "place_name",
+          "geometry_level",
+          "layer_id",
+          "layer_name",
+          "evidence_kind",
+          "value_type",
+          "raw_value",
+          "display_value",
+          "unit_label",
+          "ranking_mode",
+          "source_ids",
+          "confidence_low",
+          "confidence_high",
+          "provenance_id",
+          "source_vintage",
+          "method_note",
+          "uncertainty_class",
+          "license_id"
+        ],
         "properties": {
+          "measurement_id": {
+            "type": "string"
+          },
+          "release_id": {
+            "type": "string"
+          },
           "place_id": {
             "type": "string"
           },
@@ -163,8 +291,53 @@
           "layer_id": {
             "type": "string"
           },
-          "layer_type": {
-            "enum": ["direct", "modeled", "proxy", "boundary"]
+          "layer_name": {
+            "type": "string"
+          },
+          "evidence_kind": {
+            "enum": [
+              "direct",
+              "modeled",
+              "proxy",
+              "priority-overlay",
+              "boundary"
+            ]
+          },
+          "value_type": {
+            "type": "string"
+          },
+          "raw_value": {
+            "type": "number"
+          },
+          "normalized_value": {
+            "type": "number"
+          },
+          "display_value": {
+            "type": "string"
+          },
+          "unit_label": {
+            "type": "string"
+          },
+          "ranking_mode": {
+            "type": "string"
+          },
+          "rank_value": {
+            "type": "number"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence_low": {
+            "type": "number"
+          },
+          "confidence_high": {
+            "type": "number"
+          },
+          "provenance_id": {
+            "type": "string"
           },
           "source_vintage": {
             "type": "string"
@@ -173,7 +346,11 @@
             "type": "string"
           },
           "uncertainty_class": {
-            "enum": ["moderate", "low", "very-low"]
+            "enum": [
+              "moderate",
+              "low",
+              "very-low"
+            ]
           },
           "license_id": {
             "type": "string"
@@ -182,7 +359,10 @@
       },
       "FeatureCollection": {
         "type": "object",
-        "required": ["type", "features"],
+        "required": [
+          "type",
+          "features"
+        ],
         "properties": {
           "type": {
             "const": "FeatureCollection"

@@ -3,22 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <title>PainMap | Global atlas of pain sources by place</title>
-    <meta
-      name="description"
-      content="Explore PainMap's place-first atlas of pain-source layers, animal pain research, source metadata, uncertainty, and accessible data tables."
-    >
+    <title>PainMap | Mixed-evidence atlas of pain sources by place</title>
+    <meta name="description" content="PainMap is a place-first atlas for direct evidence, modeled estimates, proxy aggregates, and priority overlays about pain sources.">
     <link rel="canonical" href="https://painmap.org/">
-    <meta property="og:title" content="PainMap | Global atlas of pain sources by place">
-    <meta
-      property="og:description"
-      content="A public place-first atlas for pain-source layers, animal pain estimates, methods, sources, uncertainty, and governance."
-    >
+    <meta property="og:title" content="PainMap | Mixed-evidence atlas of pain sources by place">
+    <meta property="og:description" content="PainMap is a place-first atlas for direct evidence, modeled estimates, proxy aggregates, and priority overlays about pain sources.">
+    <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://painmap.org/">
-    <link rel="stylesheet" href="styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PainMap | Mixed-evidence atlas of pain sources by place">
+    <meta name="twitter:description" content="PainMap is a place-first atlas for direct evidence, modeled estimates, proxy aggregates, and priority overlays about pain sources.">
+    <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
+<link rel="stylesheet" href="styles.css" integrity="sha384-0xu3Ra9QdnFGUIVl4iiG9bxAQPqA1XBDaA6rDWDLI8azV6b0Wm3VfNiQi7XUYkBb" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -63,6 +62,7 @@
         <nav class="site-nav" aria-label="Site sections">
           <a href="/atlas/">Atlas</a>
           <a href="/countries/">Places</a>
+          <a href="/compare/">Compare</a>
           <a href="/events/">Events</a>
           <a href="/methods/">Methods</a>
           <a href="/data/">Data</a>
@@ -75,7 +75,7 @@
       <section class="topbar hero-section" id="home" aria-labelledby="home-title">
         <div>
           <p class="label">PainMap</p>
-          <h1 id="home-title">Global atlas of pain sources by place</h1>
+          <h1 id="home-title">Mixed-evidence atlas of pain sources by place</h1>
           <div class="hero-actions" aria-label="Primary routes">
             <a class="solid-button" href="#explore-country">Start with a place</a>
             <a class="ghost-link" href="/atlas/">Browse atlas</a>
@@ -83,10 +83,16 @@
           </div>
         </div>
         <p class="topbar-note" id="topbar-note">
-          PainMap now begins as an atlas: choose a place, inspect pain-source layers, and keep source, vintage, method
-          class, and uncertainty attached to every visible value. Event-level Welfare Footprint estimates remain a core
-          evidence layer inside that atlas.
+          PainMap now begins as an atlas: choose a place, inspect pain-source layers, and keep source, vintage, evidence
+          kind, and uncertainty attached to every visible value. Direct evidence, modeled estimates, proxy aggregates,
+          and priority overlays are labeled separately.
         </p>
+        <div class="evidence-kind-strip" aria-label="Evidence kinds used by PainMap">
+          <span class="evidence-badge">direct evidence</span>
+          <span class="evidence-badge">modeled estimate</span>
+          <span class="evidence-badge">proxy aggregate</span>
+          <span class="evidence-badge">priority overlay</span>
+        </div>
       </section>
 
       <section class="audience-panel" aria-labelledby="audience-title">
@@ -443,8 +449,8 @@
           <p class="label">Exports</p>
           <h3>Dataset and API contract</h3>
           <p>
-            Public static exports include place measurements, a provenance registry, representative GeoJSON, DCAT
-            metadata, and an OpenAPI 3.1 contract for read-only reuse.
+            Public static exports include canonical place measurements, a provenance registry, release manifests,
+            canonical place GeoJSON, DCAT metadata, and an OpenAPI 3.1 contract for read-only reuse.
           </p>
           <div class="route-actions">
             <a class="ghost-link" href="/dataset/place-measurements/">Place dataset</a>
@@ -579,7 +585,8 @@
         <a href="https://welfarefootprint.org/research-projects/poultry-slaughter/" target="_blank" rel="noreferrer">Welfare Footprint: poultry slaughter</a>
       </footer>
     </div>
-
-    <script type="module" src="script.js" integrity="sha384-jlPSUjVNjH6r37tlDPyyk/Y8Vjs2vGYoZONeGbpc/i4rsf05aUX5yzsBe3KGx3u6" crossorigin="anonymous"></script>
+        <script src="vendor/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+    <script src="vendor/topojson-client.v3.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
+    <script type="module" src="script.js" integrity="sha384-Xj01HS40AcJGOwI+CMyQYCd5dUMjob/xeEHM7sQVP5J88O+mN4Diu1zNsn+DsSfG" crossorigin="anonymous"></script>
   </body>
 </html>

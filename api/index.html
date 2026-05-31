@@ -3,16 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>API | PainMap</title>
-    <meta name="description" content="PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, and OpenAPI exports.">
+    <meta name="description" content="PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, release, and OpenAPI exports.">
     <link rel="canonical" href="https://painmap.org/api/">
     <meta property="og:title" content="API | PainMap">
-    <meta property="og:description" content="Read-only public API documentation for PainMap static exports.">
+    <meta property="og:description" content="PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, release, and OpenAPI exports.">
+    <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/api/">
-    <link rel="stylesheet" href="../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="API | PainMap">
+    <meta name="twitter:description" content="PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, release, and OpenAPI exports.">
+    <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-0xu3Ra9QdnFGUIVl4iiG9bxAQPqA1XBDaA6rDWDLI8azV6b0Wm3VfNiQi7XUYkBb" crossorigin="anonymous">
+      <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"TechArticle","name":"API | PainMap","url":"https://painmap.org/api/","description":"PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, release, and OpenAPI exports."}
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -22,6 +30,7 @@
         <nav class="site-nav" aria-label="Site sections">
           <a href="/atlas/">Atlas</a>
           <a href="/countries/">Places</a>
+          <a href="/compare/">Compare</a>
           <a href="/events/">Events</a>
           <a href="/methods/">Methods</a>
           <a href="/data/">Data</a>
@@ -36,7 +45,7 @@
             <h1 id="api-title">Read-only public contract</h1>
           </div>
           <p class="route-copy">
-            PainMap's current public API is a set of static files. They are cacheable, inspectable, and safe for static hosting. The OpenAPI document describes the contract without implying a writable service.
+            PainMap's current public API is a set of static files. They are cacheable, inspectable, and safe for static hosting. Immutable release URLs are the reproducible contract; the latest alias is only a convenience pointer.
           </p>
         </section>
 
@@ -56,8 +65,14 @@
               </thead>
               <tbody>
                 <tr><th scope="row"><a href="/data/openapi.json">/data/openapi.json</a></th><td>OpenAPI 3.1 JSON</td><td>Machine-readable public contract.</td></tr>
-                <tr><th scope="row"><a href="/data/provenance-registry.json">/data/provenance-registry.json</a></th><td>JSON</td><td>Sources, licenses, method classes, uncertainty classes, and dataset distributions.</td></tr>
-                <tr><th scope="row"><a href="/data/place-measurements.json">/data/place-measurements.json</a></th><td>JSON</td><td>Representative place-layer measurements and metadata.</td></tr>
+                <tr><th scope="row"><a href="/v1/releases.json">/v1/releases.json</a></th><td>JSON</td><td>Release index and latest alias metadata.</td></tr>
+                <tr><th scope="row"><a href="/releases/2026-05-31/manifest.json">/releases/2026-05-31/manifest.json</a></th><td>JSON</td><td>Immutable artifact inventory with SHA-256 checksums.</td></tr>
+                <tr><th scope="row"><a href="/v1/layers.json">/v1/layers.json</a></th><td>JSON</td><td>Layer definitions, evidence kinds, units, and ranking modes.</td></tr>
+                <tr><th scope="row"><a href="/v1/sources.json">/v1/sources.json</a></th><td>JSON</td><td>Source and license registry.</td></tr>
+                <tr><th scope="row"><a href="/v1/places/BRA.json">/v1/places/BRA.json</a></th><td>JSON</td><td>Canonical place profile example for Brazil.</td></tr>
+                <tr><th scope="row"><a href="/v1/places/IND.json">/v1/places/IND.json</a></th><td>JSON</td><td>Canonical place profile example for India.</td></tr>
+                <tr><th scope="row"><a href="/data/provenance-registry.json">/data/provenance-registry.json</a></th><td>JSON</td><td>Sources, licenses, evidence-kind classes, uncertainty classes, and dataset distributions.</td></tr>
+                <tr><th scope="row"><a href="/data/place-measurements.json">/data/place-measurements.json</a></th><td>JSON</td><td>Canonical release measurements with numeric values, display values, units, source ids, confidence bounds, and release id.</td></tr>
                 <tr><th scope="row"><a href="/data/place-measurements.csv">/data/place-measurements.csv</a></th><td>CSV</td><td>Spreadsheet-friendly measurements export.</td></tr>
                 <tr><th scope="row"><a href="/data/places.geojson">/data/places.geojson</a></th><td>GeoJSON</td><td>Representative features for atlas clients.</td></tr>
                 <tr><th scope="row"><a href="/data/dcat.json">/data/dcat.json</a></th><td>DCAT JSON</td><td>Catalog metadata for public datasets.</td></tr>
@@ -81,7 +96,7 @@
             <article class="metadata-card">
               <span class="evidence-badge">auditable</span>
               <h2>Source fields</h2>
-              <p>Visible atlas rows must carry source, source vintage, method class, uncertainty, and license pointers.</p>
+              <p>Visible atlas rows must carry source ids, source vintage, evidence kind, confidence bounds, uncertainty, and license pointers.</p>
             </article>
           </div>
           <div class="route-actions">

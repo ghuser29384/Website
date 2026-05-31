@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Compare Places | PainMap</title>
+    <meta name="description" content="Compare places or releases while preserving evidence kind, uncertainty, source vintage, and method notes.">
+    <link rel="canonical" href="https://painmap.org/compare/">
+    <meta property="og:title" content="Compare Places | PainMap">
+    <meta property="og:description" content="Compare places or releases while preserving evidence kind, uncertainty, source vintage, and method notes.">
+    <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://painmap.org/compare/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Compare Places | PainMap">
+    <meta name="twitter:description" content="Compare places or releases while preserving evidence kind, uncertainty, source vintage, and method notes.">
+    <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-0xu3Ra9QdnFGUIVl4iiG9bxAQPqA1XBDaA6rDWDLI8azV6b0Wm3VfNiQi7XUYkBb" crossorigin="anonymous">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Compare Places | PainMap",
+        "url": "https://painmap.org/compare/",
+        "description": "Side-by-side comparison surface for PainMap place and release artifacts."
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/countries/">Places</a>
+          <a href="/compare/">Compare</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <main id="main-content" class="route-page">
+        <section class="route-panel route-hero" aria-labelledby="compare-title">
+          <div>
+            <p class="label">Compare</p>
+            <h1 id="compare-title">Compare places without flattening uncertainty.</h1>
+          </div>
+          <p class="route-copy">
+            This static compare view shows how PainMap should compare places and releases: values are useful only when evidence kind, method, vintage, uncertainty, and source links stay attached.
+          </p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="comparison-title">
+          <div class="compare-grid">
+            <article class="metadata-card">
+              <span class="evidence-badge">BRA</span>
+              <h2 id="comparison-title">Brazil</h2>
+              <p>Release: 2026-05-31.atlas.2</p>
+              <p>Layer mix: proxy aggregate, priority overlay, boundary.</p>
+              <p>Highest uncertainty: low for human and farmed-animal proxy rows.</p>
+              <div class="route-actions">
+                <a class="ghost-link" href="/place/BRA/">Open Brazil</a>
+              </div>
+            </article>
+            <article class="metadata-card compare-gutter">
+              <span class="evidence-badge">difference</span>
+              <h2>What changes</h2>
+              <p>Both columns are proxy-context examples in this release. Differences should be read as release-scoped directional signals, not direct empirical pain measurements.</p>
+              <p class="issue-source">Use the measurement JSON for raw proxy scores, display values, source ids, confidence bands, and provenance pointers.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">IND</span>
+              <h2>India</h2>
+              <p>Release: 2026-05-31.atlas.2</p>
+              <p>Layer mix: proxy aggregate, priority overlay, boundary.</p>
+              <p>Highest uncertainty: low for human and farmed-animal proxy rows.</p>
+              <div class="route-actions">
+                <a class="ghost-link" href="/place/IND/">Open India</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="compare-table-title">
+          <div class="section-intro">
+            <p class="label">Comparison table</p>
+            <h2 id="compare-table-title">Canonical release rows</h2>
+          </div>
+          <div class="data-table-wrap">
+            <table class="route-table">
+              <thead>
+                <tr>
+                  <th>Place</th>
+                  <th>Layer</th>
+                  <th>Evidence kind</th>
+                  <th>Display value</th>
+                  <th>Uncertainty</th>
+                  <th>Source vintage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Brazil</th>
+                  <td>Factory-farmed animals</td>
+                  <td>Proxy aggregate</td>
+                  <td>0.58 normalized burden proxy</td>
+                  <td>Low confidence, 0.44-0.72</td>
+                  <td>2026-05-31 release; runtime OWID/Fishcount overlay optional</td>
+                </tr>
+                <tr>
+                  <th scope="row">India</th>
+                  <td>Factory-farmed animals</td>
+                  <td>Proxy aggregate</td>
+                  <td>0.71 normalized burden proxy</td>
+                  <td>Low confidence, 0.54-0.86</td>
+                  <td>2026-05-31 release; runtime OWID/Fishcount overlay optional</td>
+                </tr>
+                <tr>
+                  <th scope="row">Brazil</th>
+                  <td>Human burden indicators</td>
+                  <td>Proxy aggregate</td>
+                  <td>0.42 normalized burden proxy</td>
+                  <td>Low confidence, 0.32-0.53</td>
+                  <td>World Bank 2010:2025 latest non-null indicator window</td>
+                </tr>
+                <tr>
+                  <th scope="row">India</th>
+                  <td>Human burden indicators</td>
+                  <td>Proxy aggregate</td>
+                  <td>0.64 normalized burden proxy</td>
+                  <td>Low confidence, 0.49-0.78</td>
+                  <td>World Bank 2010:2025 latest non-null indicator window</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="route-actions">
+            <a class="solid-button" href="/data/place-measurements.json">Open canonical JSON</a>
+            <a class="ghost-link" href="/releases/2026-05-31/">Open release manifest</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

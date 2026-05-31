@@ -1,0 +1,19 @@
+{
+  "latest_release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "releases": [
+    {
+      "release_id": "2026-05-31.atlas.2",
+      "release_date": "2026-05-31",
+      "immutable": true,
+      "path": "/releases/2026-05-31/",
+      "manifest_url": "https://painmap.org/releases/2026-05-31/manifest.json",
+      "data_contract_url": "https://painmap.org/data/openapi.json"
+    }
+  ],
+  "latest_alias": {
+    "mutable": true,
+    "manifest_url": "https://painmap.org/latest/manifest.json",
+    "note": "The latest alias may advance; cite release manifests for reproducible analysis."
+  }
+}

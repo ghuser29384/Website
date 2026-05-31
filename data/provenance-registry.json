@@ -1,6 +1,7 @@
 {
   "build": {
-    "id": "2026-05-31-place-atlas",
+    "id": "2026-05-31.atlas.2",
+    "release_id": "2026-05-31.atlas.2",
     "generatedAt": "2026-05-31",
     "site": "https://painmap.org",
     "status": "static public registry"
@@ -20,6 +21,11 @@
       "id": "proxy",
       "label": "Proxy aggregate",
       "definition": "A directional place-level scale indicator built from public datasets and stated welfare assumptions."
+    },
+    {
+      "id": "priority-overlay",
+      "label": "Priority overlay",
+      "definition": "A decision-support overlay that combines proxies, evidence salience, and tractability notes. It is not a direct pain measurement."
     },
     {
       "id": "boundary",
@@ -46,34 +52,144 @@
   ],
   "licenses": [
     {
+      "id": "painmap-mit",
+      "label": "PainMap site code and original release metadata",
+      "license": "MIT",
+      "licenseUri": "https://opensource.org/license/mit/",
+      "url": "https://painmap.org/LICENSE",
+      "attribution": "PainMap contributors"
+    },
+    {
       "id": "welfare-footprint-cc-by",
       "label": "Welfare Footprint data, reports, and charts",
       "license": "CC BY",
-      "url": "https://welfarefootprint.org/"
+      "licenseUri": "https://creativecommons.org/licenses/by/4.0/",
+      "url": "https://welfarefootprint.org/",
+      "attribution": "Welfare Footprint Project"
     },
     {
       "id": "owid-cc-by",
       "label": "Our World in Data charts and data unless otherwise noted",
-      "license": "CC BY",
-      "url": "https://ourworldindata.org/"
+      "license": "CC BY 4.0",
+      "licenseUri": "https://creativecommons.org/licenses/by/4.0/",
+      "url": "https://ourworldindata.org/",
+      "attribution": "Our World in Data"
     },
     {
       "id": "natural-earth-public-domain",
       "label": "Natural Earth Admin 0 countries",
       "license": "Public domain",
-      "url": "https://www.naturalearthdata.com/"
+      "licenseUri": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "url": "https://www.naturalearthdata.com/",
+      "attribution": "Natural Earth"
     },
     {
       "id": "geoboundaries-cc-by-4",
       "label": "geoBoundaries ADM1",
       "license": "CC BY 4.0",
-      "url": "https://www.geoboundaries.org/"
+      "licenseUri": "https://creativecommons.org/licenses/by/4.0/",
+      "url": "https://www.geoboundaries.org/",
+      "attribution": "geoBoundaries"
     },
     {
       "id": "world-bank-terms",
       "label": "World Bank indicator API",
       "license": "World Bank terms",
-      "url": "https://datahelpdesk.worldbank.org/"
+      "licenseUri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "url": "https://datahelpdesk.worldbank.org/",
+      "attribution": "World Bank"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "welfare-footprint-events",
+      "label": "Welfare Footprint event estimates",
+      "publisher": "Welfare Footprint Project",
+      "url": "https://welfarefootprint.org/",
+      "license_id": "welfare-footprint-cc-by",
+      "evidence_kind": "modeled",
+      "source_vintage": "2026-05-31 review",
+      "attribution_text": "Welfare Footprint Project reports and public charts."
+    },
+    {
+      "source_id": "owid-livestock",
+      "label": "Our World in Data livestock and animal production tables",
+      "publisher": "Our World in Data",
+      "url": "https://ourworldindata.org/",
+      "license_id": "owid-cc-by",
+      "evidence_kind": "proxy",
+      "source_vintage": "Latest public runtime rows where available; frozen release values dated 2026-05-31.",
+      "attribution_text": "Our World in Data charts and grapher tables."
+    },
+    {
+      "source_id": "fishcount-aquaculture",
+      "label": "Fishcount-style aquaculture and farmed-fish context",
+      "publisher": "Fishcount and public aquaculture-data aggregations",
+      "url": "http://fishcount.org.uk/",
+      "license_id": "owid-cc-by",
+      "evidence_kind": "proxy",
+      "source_vintage": "2026-05-31 release review",
+      "attribution_text": "Public fish-count and aquaculture source context; rows are used only as proxy inputs."
+    },
+    {
+      "source_id": "world-bank-indicators",
+      "label": "World Bank country indicators",
+      "publisher": "World Bank",
+      "url": "https://data.worldbank.org/",
+      "license_id": "world-bank-terms",
+      "evidence_kind": "proxy",
+      "source_vintage": "2010:2025 latest non-null indicator window",
+      "attribution_text": "World Bank public indicator API."
+    },
+    {
+      "source_id": "world-bank-land-area",
+      "label": "World Bank land-area context",
+      "publisher": "World Bank",
+      "url": "https://data.worldbank.org/",
+      "license_id": "world-bank-terms",
+      "evidence_kind": "proxy",
+      "source_vintage": "2026-05-31 release review",
+      "attribution_text": "World Bank public land-area and country context."
+    },
+    {
+      "source_id": "natural-earth-admin0",
+      "label": "Natural Earth Admin 0 countries",
+      "publisher": "Natural Earth",
+      "url": "https://www.naturalearthdata.com/",
+      "license_id": "natural-earth-public-domain",
+      "evidence_kind": "boundary",
+      "source_vintage": "Vendored 2026-05-31 release copy",
+      "attribution_text": "Natural Earth Admin 0 country boundaries."
+    },
+    {
+      "source_id": "geoboundaries-adm1",
+      "label": "geoBoundaries ADM1",
+      "publisher": "geoBoundaries",
+      "url": "https://www.geoboundaries.org/",
+      "license_id": "geoboundaries-cc-by-4",
+      "evidence_kind": "boundary",
+      "source_vintage": "Runtime current ADM1 API, converted to media.githubusercontent.com when needed",
+      "attribution_text": "geoBoundaries ADM1 country subdivision boundaries."
+    },
+    {
+      "source_id": "painmap-welfare-assumptions",
+      "label": "PainMap welfare and normalization assumptions",
+      "publisher": "PainMap",
+      "url": "https://painmap.org/methods/",
+      "license_id": "painmap-mit",
+      "evidence_kind": "proxy",
+      "source_vintage": "2026-05-31 release",
+      "attribution_text": "PainMap release notes and methods pages."
+    },
+    {
+      "source_id": "painmap-priority-review",
+      "label": "PainMap priority overlay review",
+      "publisher": "PainMap",
+      "url": "https://painmap.org/releases/2026-05-31/",
+      "license_id": "painmap-mit",
+      "evidence_kind": "priority-overlay",
+      "source_vintage": "2026-05-31 release",
+      "attribution_text": "PainMap priority overlay derived from public source indicators and documented assumptions."
     }
   ],
   "datasets": [
@@ -93,14 +209,14 @@
           "url": "https://painmap.org/data/provenance-registry.json"
         }
       ],
-      "sources": ["welfare-footprint-cc-by"]
+      "sources": ["welfare-footprint-events"]
     },
     {
       "id": "place-measurements",
-      "title": "Place-level pain-source proxy measurements",
+      "title": "Canonical place-level pain-source measurements",
       "methodClass": "proxy",
       "uncertainty": "low",
-      "vintage": "2026-05-31 static sample plus runtime country refresh",
+      "vintage": "Immutable 2026-05-31.atlas.2 release artifact",
       "distribution": [
         {
           "format": "JSON",
@@ -115,21 +231,25 @@
           "url": "https://painmap.org/data/places.geojson"
         }
       ],
-      "sources": ["owid-cc-by", "world-bank-terms", "welfare-footprint-cc-by"]
+      "sources": ["owid-livestock", "fishcount-aquaculture", "world-bank-indicators", "painmap-welfare-assumptions", "painmap-priority-review"]
     },
     {
       "id": "boundary-layers",
       "title": "Country and ADM1 boundary layers",
       "methodClass": "boundary",
       "uncertainty": "low",
-      "vintage": "Natural Earth Admin 0 plus geoBoundaries current ADM1 API",
+      "vintage": "Vendored Natural Earth Admin 0 plus runtime geoBoundaries current ADM1 API",
       "distribution": [
+        {
+          "format": "GeoJSON",
+          "url": "https://painmap.org/data/natural-earth-countries.geojson"
+        },
         {
           "format": "HTML",
           "url": "https://painmap.org/countries/"
         }
       ],
-      "sources": ["natural-earth-public-domain", "geoboundaries-cc-by-4"]
+      "sources": ["natural-earth-admin0", "geoboundaries-adm1"]
     }
   ]
 }

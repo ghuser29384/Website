@@ -1,0 +1,499 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "release_date": "2026-05-31",
+  "generated_at": "2026-05-31",
+  "immutable": true,
+  "site": "https://painmap.org",
+  "source_of_truth": {
+    "route_manifest": "https://painmap.org/data/routes.json",
+    "release_manifest": "https://painmap.org/releases/2026-05-31/manifest.json",
+    "measurements": "https://painmap.org/data/place-measurements.json",
+    "provenance": "https://painmap.org/data/provenance-registry.json",
+    "openapi": "https://painmap.org/data/openapi.json"
+  },
+  "navigation": [
+    {
+      "label": "Atlas",
+      "path": "/atlas/"
+    },
+    {
+      "label": "Places",
+      "path": "/countries/"
+    },
+    {
+      "label": "Compare",
+      "path": "/compare/"
+    },
+    {
+      "label": "Events",
+      "path": "/events/"
+    },
+    {
+      "label": "Methods",
+      "path": "/methods/"
+    },
+    {
+      "label": "Data",
+      "path": "/data/"
+    },
+    {
+      "label": "API",
+      "path": "/api/"
+    },
+    {
+      "label": "About",
+      "path": "/about/"
+    }
+  ],
+  "routes": [
+    {
+      "key": "home",
+      "path": "/",
+      "file": "index.html",
+      "title": "PainMap | Mixed-evidence atlas of pain sources by place",
+      "description": "PainMap is a place-first atlas for direct evidence, modeled estimates, proxy aggregates, and priority overlays about pain sources.",
+      "json_ld_type": "WebSite"
+    },
+    {
+      "key": "atlas",
+      "path": "/atlas/",
+      "file": "atlas/index.html",
+      "title": "Atlas | PainMap",
+      "description": "PainMap atlas entry point for place-first pain-source layers, evidence kinds, datasets, uncertainty, and non-map table paths.",
+      "json_ld_type": "CollectionPage"
+    },
+    {
+      "key": "places",
+      "path": "/countries/",
+      "file": "countries/index.html",
+      "title": "Places | PainMap",
+      "description": "Search PainMap places as atlas proxy layers with table-first access and an equal-area map view.",
+      "json_ld_type": "CollectionPage"
+    },
+    {
+      "key": "compare",
+      "path": "/compare/",
+      "file": "compare/index.html",
+      "title": "Compare Places | PainMap",
+      "description": "Compare places or releases while preserving evidence kind, uncertainty, source vintage, and method notes.",
+      "json_ld_type": "WebPage"
+    },
+    {
+      "key": "events",
+      "path": "/events/",
+      "file": "events/index.html",
+      "title": "Animal Pain Events | PainMap",
+      "description": "Explore PainMap's event-level animal pain estimates with source type, uncertainty, assumptions, and Welfare Footprint links.",
+      "json_ld_type": "FAQPage"
+    },
+    {
+      "key": "methods",
+      "path": "/methods/",
+      "file": "methods/index.html",
+      "title": "Methods | PainMap",
+      "description": "PainMap methods, caveats, glossary, and boundaries for event estimates and place proxy context.",
+      "json_ld_type": "Article"
+    },
+    {
+      "key": "data",
+      "path": "/data/",
+      "file": "data/index.html",
+      "title": "Data | PainMap",
+      "description": "PainMap dataset groups, provenance notes, canonical release artifacts, and public source boundaries.",
+      "json_ld_type": "Dataset"
+    },
+    {
+      "key": "dataset-place-measurements",
+      "path": "/dataset/place-measurements/",
+      "file": "dataset/place-measurements/index.html",
+      "title": "Place Measurements Dataset | PainMap",
+      "description": "PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, evidence kind, confidence bounds, source IDs, license, and API links.",
+      "json_ld_type": "Dataset"
+    },
+    {
+      "key": "dataset-provenance-registry",
+      "path": "/dataset/provenance-registry/",
+      "file": "dataset/provenance-registry/index.html",
+      "title": "Provenance Registry Dataset | PainMap",
+      "description": "PainMap provenance registry for dataset sources, licenses, evidence kinds, uncertainty classes, and public distributions.",
+      "json_ld_type": "Dataset"
+    },
+    {
+      "key": "place-bra",
+      "path": "/place/BRA/",
+      "file": "place/BRA/index.html",
+      "title": "Brazil Place Profile | PainMap",
+      "description": "Brazil place profile for PainMap atlas layers, provenance, uncertainty, boundary sources, compare links, and public downloads.",
+      "json_ld_type": "Place"
+    },
+    {
+      "key": "place-ind",
+      "path": "/place/IND/",
+      "file": "place/IND/index.html",
+      "title": "India Place Profile | PainMap",
+      "description": "India place profile for PainMap atlas layers, provenance, uncertainty, boundary sources, compare links, and public downloads.",
+      "json_ld_type": "Place"
+    },
+    {
+      "key": "api",
+      "path": "/api/",
+      "file": "api/index.html",
+      "title": "API | PainMap",
+      "description": "PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, release, and OpenAPI exports.",
+      "json_ld_type": "TechArticle"
+    },
+    {
+      "key": "developers",
+      "path": "/developers/",
+      "file": "developers/index.html",
+      "title": "Developers | PainMap",
+      "description": "Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution.",
+      "json_ld_type": "TechArticle"
+    },
+    {
+      "key": "releases",
+      "path": "/releases/",
+      "file": "releases/index.html",
+      "title": "Releases | PainMap",
+      "description": "PainMap immutable release index, latest alias, manifests, and reproducibility notes.",
+      "json_ld_type": "CollectionPage"
+    },
+    {
+      "key": "release-2026-05-31",
+      "path": "/releases/2026-05-31/",
+      "file": "releases/2026-05-31/index.html",
+      "title": "2026-05-31 Release | PainMap",
+      "description": "PainMap 2026-05-31 atlas release manifest, checksums, data artifacts, and route inventory.",
+      "json_ld_type": "Dataset"
+    },
+    {
+      "key": "security",
+      "path": "/security/",
+      "file": "security/index.html",
+      "title": "Security | PainMap",
+      "description": "PainMap public static-site security baseline, confidential reporting channel, CSP, referrer policy, nosniff, permissions policy, and static API boundaries.",
+      "json_ld_type": "WebPage"
+    },
+    {
+      "key": "resources",
+      "path": "/resources/",
+      "file": "resources/index.html",
+      "title": "Resources | PainMap",
+      "description": "PainMap source links and research resources.",
+      "json_ld_type": "CollectionPage"
+    },
+    {
+      "key": "about",
+      "path": "/about/",
+      "file": "about/index.html",
+      "title": "About | PainMap",
+      "description": "PainMap mission, governance boundaries, editorial posture, and static no-personal-data scope.",
+      "json_ld_type": "AboutPage"
+    },
+    {
+      "key": "updates",
+      "path": "/updates/",
+      "file": "updates/index.html",
+      "title": "Updates | PainMap",
+      "description": "PainMap changelog and release notes.",
+      "json_ld_type": "CollectionPage"
+    },
+    {
+      "key": "privacy",
+      "path": "/policies/privacy/",
+      "file": "policies/privacy/index.html",
+      "title": "Privacy Policy | PainMap",
+      "description": "PainMap privacy policy for the public static research site.",
+      "json_ld_type": "WebPage"
+    },
+    {
+      "key": "terms",
+      "path": "/policies/terms/",
+      "file": "policies/terms/index.html",
+      "title": "Terms | PainMap",
+      "description": "PainMap terms for research, education, and advocacy analysis.",
+      "json_ld_type": "WebPage"
+    },
+    {
+      "key": "accessibility",
+      "path": "/policies/accessibility/",
+      "file": "policies/accessibility/index.html",
+      "title": "Accessibility Statement | PainMap",
+      "description": "PainMap accessibility statement for maps, charts, tables, keyboard access, and reduced motion.",
+      "json_ld_type": "WebPage"
+    },
+    {
+      "key": "editorial",
+      "path": "/policies/editorial-policy/",
+      "file": "policies/editorial-policy/index.html",
+      "title": "Editorial Policy | PainMap",
+      "description": "PainMap editorial policy for source discipline, caveats, and model changes.",
+      "json_ld_type": "WebPage"
+    },
+    {
+      "key": "contact",
+      "path": "/policies/contact/",
+      "file": "policies/contact/index.html",
+      "title": "Contact | PainMap",
+      "description": "PainMap contact route for corrections, source questions, accessibility reports, and governance questions.",
+      "json_ld_type": "ContactPage"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/index.html",
+      "sha256": "2a3cbe15900257bbf038d350c5e05db372642001fa03e383ff723d49a36576ad",
+      "bytes": 36123
+    },
+    {
+      "path": "/atlas/index.html",
+      "sha256": "661d23152d0dc1a88527f63f00ef078153985e0ed4d621bb4a1c739024f5086f",
+      "bytes": 8227
+    },
+    {
+      "path": "/countries/index.html",
+      "sha256": "1c5988a0d2a8605b2e8551a5cf3497a67a2f62c763551f45fad901de6cfa5276",
+      "bytes": 4590
+    },
+    {
+      "path": "/compare/index.html",
+      "sha256": "7cf33ae76d7bccad0cb6d354d41f2f6243c63baaa9c4106528ee821a0d6e337c",
+      "bytes": 7557
+    },
+    {
+      "path": "/events/index.html",
+      "sha256": "25d3222b39f0b79f90e3331c855ef47fa87782c10ed6bda5210a4e961d0863b2",
+      "bytes": 6819
+    },
+    {
+      "path": "/methods/index.html",
+      "sha256": "f47a1dd7fd8a6016a2df8308ed3379b32b2ff6f4ab5149459ab423e0054f5d32",
+      "bytes": 5111
+    },
+    {
+      "path": "/data/index.html",
+      "sha256": "9c51afddee310ccb19847fa1abed2f67e83d887681179148045cbe45fac95486",
+      "bytes": 8646
+    },
+    {
+      "path": "/dataset/place-measurements/index.html",
+      "sha256": "8207f9fca4b92f11ed7904e5b08ccfeff5268292ab2b1365591a3b267a043d6d",
+      "bytes": 7856
+    },
+    {
+      "path": "/dataset/provenance-registry/index.html",
+      "sha256": "b1c71c10e8270ed78d5dcd3b2ca45609dbb1daac90b35b2d125cd3bfbfcf5a09",
+      "bytes": 6349
+    },
+    {
+      "path": "/place/BRA/index.html",
+      "sha256": "889ea5981594a85ed5199b2857ebb48cdaac872dba2be9d5ec17b0f17ac63a03",
+      "bytes": 7848
+    },
+    {
+      "path": "/place/IND/index.html",
+      "sha256": "26dc45b17567dd1eb9280218249ea2c5b1c377a086ad1bf55cb9a0a0a3cc6433",
+      "bytes": 5704
+    },
+    {
+      "path": "/api/index.html",
+      "sha256": "4e5d9eaae441c1d194d1eacb48ed7b8dbce2eb485f776ce221a53cf9964bfeb9",
+      "bytes": 7341
+    },
+    {
+      "path": "/developers/index.html",
+      "sha256": "29d1510190f6ad8289e4f6ede11c0742a81eabfe09adbc769a853f91ab9d8ada",
+      "bytes": 5441
+    },
+    {
+      "path": "/releases/index.html",
+      "sha256": "2f98a6d88bcc938a4065ae3c90c44fefe61bfed8280b0ddb2a7e2ba521ab2348",
+      "bytes": 3921
+    },
+    {
+      "path": "/releases/2026-05-31/index.html",
+      "sha256": "31cadf2254274f1ca02c6a069cb55325c3a4856f8b8518edfea8a1d2d5a10a89",
+      "bytes": 4246
+    },
+    {
+      "path": "/security/index.html",
+      "sha256": "a5fe3bf584f43a61d843ed1d3540800653622b1fd3c1c066a1494ffd4735f40f",
+      "bytes": 5647
+    },
+    {
+      "path": "/resources/index.html",
+      "sha256": "9838721415154a062b81f3cc5502ad5f3e8e57d7d637a6f99617093f945bfb6e",
+      "bytes": 3983
+    },
+    {
+      "path": "/about/index.html",
+      "sha256": "02ee5a9b8891e058162d1cdcdc6e36ab2a3cb713adb4457a4321b566932c5ada",
+      "bytes": 4542
+    },
+    {
+      "path": "/updates/index.html",
+      "sha256": "873e52f0bfbb7d95ea903db835e2f29f10d51f8bf33bf2a92046bb0e1671b727",
+      "bytes": 3964
+    },
+    {
+      "path": "/policies/privacy/index.html",
+      "sha256": "19ba7d46daa455a50f61bc56778c6f45bfcfc694fbe5369685e73409611ca08c",
+      "bytes": 3927
+    },
+    {
+      "path": "/policies/terms/index.html",
+      "sha256": "986f492356c80fdb7b90c7b85f75ae3ce0ad0858f506fde82916f05c7fdb1e8e",
+      "bytes": 3634
+    },
+    {
+      "path": "/policies/accessibility/index.html",
+      "sha256": "f24462b521ff1e4ec8503d23598bacdcbed2664e30d4c7005bab4e67ebb8d872",
+      "bytes": 4235
+    },
+    {
+      "path": "/policies/editorial-policy/index.html",
+      "sha256": "9a534c2dea9b8b637f58bb96bed9a90ce118838bfe97f29355fb51293697b27b",
+      "bytes": 3788
+    },
+    {
+      "path": "/policies/contact/index.html",
+      "sha256": "2184d4de6c42f4860ea6c51b86bf5e5eda1f6824eb196c58f8942ad94122c464",
+      "bytes": 3854
+    },
+    {
+      "path": "/data/routes.json",
+      "sha256": "1533fb87bb88133cea27e8efbdad96aea7622aa6a86537ea224d09fb6fef9dc2",
+      "bytes": 7924
+    },
+    {
+      "path": "/data/route-smoke.json",
+      "sha256": "d7a65031afc1abc5f7a6eef3e4216cf315538d281be68f6935fb364fb0c50adf",
+      "bytes": 8720
+    },
+    {
+      "path": "/data/provenance-registry.json",
+      "sha256": "dca3df0e301d52ab56f53ad06839d3b964d28d19ff7df57e0337702c61374d8d",
+      "bytes": 9232
+    },
+    {
+      "path": "/data/place-measurements.json",
+      "sha256": "259da7c4510bd0da71cb4583a12c58fa95b4ceaaaeb1bef830102c79dee35d45",
+      "bytes": 11773
+    },
+    {
+      "path": "/data/place-measurements.csv",
+      "sha256": "61c92fe7e59432982d0e367cc5bc4621641cac7a00ae49ca8236afc935ba9f6a",
+      "bytes": 6032
+    },
+    {
+      "path": "/data/places.geojson",
+      "sha256": "1e8e0e327802625bbaff143f43be80d7c9b150715a689eefd614ddbd94cb35c2",
+      "bytes": 1923
+    },
+    {
+      "path": "/data/countries-lite.geojson",
+      "sha256": "fdc8c1e7aff6fe6876519d7e625a6a47c1aee3a1842160714a5c2d207155de5d",
+      "bytes": 2214
+    },
+    {
+      "path": "/data/natural-earth-countries.geojson",
+      "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+      "bytes": 3083490
+    },
+    {
+      "path": "/data/dcat.json",
+      "sha256": "f2b22fc2ee820ff976b577d811f7f8b7c45e68adceef22bf86a9e7c6d1332992",
+      "bytes": 2864
+    },
+    {
+      "path": "/data/openapi.json",
+      "sha256": "b42b52bba45126cb46e7f4c349e92cf53526d24f1d72a153e710079775444cdf",
+      "bytes": 8960
+    },
+    {
+      "path": "/v1/releases.json",
+      "sha256": "04d0892d7064f64e740c4ef8044d25e20cdd049e28a1b7312d800ad814fdf0fb",
+      "bytes": 605
+    },
+    {
+      "path": "/v1/layers.json",
+      "sha256": "97f4fc4d1c2dd5ea8769dafc378f77bf87de0a1d7fe1ad5f370a9fdb36a44c22",
+      "bytes": 2347
+    },
+    {
+      "path": "/v1/sources.json",
+      "sha256": "4b3f93dec2fe76aef0c192855698ed9234615a4f051a2ceec82752c20aef1d68",
+      "bytes": 5645
+    },
+    {
+      "path": "/v1/places/BRA.json",
+      "sha256": "b36dd9a0ceb916e772dadadb42f8de0c005dcde955d0a5a940bf49210468e897",
+      "bytes": 4927
+    },
+    {
+      "path": "/v1/places/BRA/measurements.json",
+      "sha256": "aa8c2d67f7a39ecb55342452179a4a40fb3d8bbf23e3b4168138b2db031bc665",
+      "bytes": 4385
+    },
+    {
+      "path": "/v1/places/IND.json",
+      "sha256": "c3cdc093c7e26f85b4b09e8bfd6c46e2e72b31e504d6de9bace7e8de6699f220",
+      "bytes": 4923
+    },
+    {
+      "path": "/v1/places/IND/measurements.json",
+      "sha256": "ffcb31f30bbcc139506055b34974230122a0842f75e74ba3161b83fec70fa0f0",
+      "bytes": 4382
+    },
+    {
+      "path": "/assets/social-card.svg",
+      "sha256": "11e8a8e6da79c96e2cd91c3bfed1e3887448fb1b130352a0b527b3a55d70c5f7",
+      "bytes": 1719
+    },
+    {
+      "path": "/vendor/d3.v7.min.js",
+      "sha256": "f2094bbf6141b359722c4fe454eb6c4b0f0e42cc10cc7af921fc158fceb86539",
+      "bytes": 279706
+    },
+    {
+      "path": "/vendor/topojson-client.v3.min.js",
+      "sha256": "25cd02ae486cc5063e0215a4e4cfb15de83700c87ac48bac4d57dc6aaf3ebb89",
+      "bytes": 7169
+    },
+    {
+      "path": "/sitemap.xml",
+      "sha256": "769f7000678dfb8476b6c9c06eb4f0ad66656cd08b93cc3bdd78f80ffc65fced",
+      "bytes": 2492
+    },
+    {
+      "path": "/robots.txt",
+      "sha256": "3a2d9fbc28643509abf254d81690d19c74b47acfa72fe6000a3764ce2565268a",
+      "bytes": 65
+    },
+    {
+      "path": "/_headers",
+      "sha256": "abc5a7bf7901a3d5e26c0d6b42d87bfc23e897ba74eb0d2e642f05b89e490c30",
+      "bytes": 502
+    },
+    {
+      "path": "/vercel.json",
+      "sha256": "35f1dd23c0c0acc81dd7d2740a7055b5f8aa7146dc3d2bc09f77ab175631b8d5",
+      "bytes": 821
+    },
+    {
+      "path": "/.well-known/security.txt",
+      "sha256": "b633f6469e759ea98243b1dfe778fecfe790c021c708dae57f07ec706faa5f6f",
+      "bytes": 240
+    },
+    {
+      "path": "/README.md",
+      "sha256": "75d4e7209a4507d76a8cd8854be1002d136ec6728f1a232336f2f4e6ab680de7",
+      "bytes": 2112
+    },
+    {
+      "path": "/LICENSE",
+      "sha256": "b53685072553802ab5e805b249dc19484acd01676b24c70f42d2d31c648cfcfa",
+      "bytes": 1265
+    }
+  ]
+}

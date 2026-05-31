@@ -1,0 +1,208 @@
+{
+  "releaseId": "2026-05-31.atlas.2",
+  "generatedAt": "2026-05-31",
+  "navigation": [
+    { "label": "Atlas", "path": "/atlas/" },
+    { "label": "Places", "path": "/countries/" },
+    { "label": "Compare", "path": "/compare/" },
+    { "label": "Events", "path": "/events/" },
+    { "label": "Methods", "path": "/methods/" },
+    { "label": "Data", "path": "/data/" },
+    { "label": "API", "path": "/api/" },
+    { "label": "About", "path": "/about/" }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "file": "index.html",
+      "key": "home",
+      "title": "PainMap | Mixed-evidence atlas of pain sources by place",
+      "description": "PainMap is a place-first atlas for direct evidence, modeled estimates, proxy aggregates, and priority overlays about pain sources.",
+      "jsonLdType": "WebSite"
+    },
+    {
+      "path": "/atlas/",
+      "file": "atlas/index.html",
+      "key": "atlas",
+      "title": "Atlas | PainMap",
+      "description": "PainMap atlas entry point for place-first pain-source layers, evidence kinds, datasets, uncertainty, and non-map table paths.",
+      "jsonLdType": "CollectionPage"
+    },
+    {
+      "path": "/countries/",
+      "file": "countries/index.html",
+      "key": "places",
+      "title": "Places | PainMap",
+      "description": "Search PainMap places as atlas proxy layers with table-first access and an equal-area map view.",
+      "jsonLdType": "CollectionPage"
+    },
+    {
+      "path": "/compare/",
+      "file": "compare/index.html",
+      "key": "compare",
+      "title": "Compare Places | PainMap",
+      "description": "Compare places or releases while preserving evidence kind, uncertainty, source vintage, and method notes.",
+      "jsonLdType": "WebPage"
+    },
+    {
+      "path": "/events/",
+      "file": "events/index.html",
+      "key": "events",
+      "title": "Animal Pain Events | PainMap",
+      "description": "Explore PainMap's event-level animal pain estimates with source type, uncertainty, assumptions, and Welfare Footprint links.",
+      "jsonLdType": "FAQPage"
+    },
+    {
+      "path": "/methods/",
+      "file": "methods/index.html",
+      "key": "methods",
+      "title": "Methods | PainMap",
+      "description": "PainMap methods, caveats, glossary, and boundaries for event estimates and place proxy context.",
+      "jsonLdType": "Article"
+    },
+    {
+      "path": "/data/",
+      "file": "data/index.html",
+      "key": "data",
+      "title": "Data | PainMap",
+      "description": "PainMap dataset groups, provenance notes, canonical release artifacts, and public source boundaries.",
+      "jsonLdType": "Dataset"
+    },
+    {
+      "path": "/dataset/place-measurements/",
+      "file": "dataset/place-measurements/index.html",
+      "key": "dataset-place-measurements",
+      "title": "Place Measurements Dataset | PainMap",
+      "description": "PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, evidence kind, confidence bounds, source IDs, license, and API links.",
+      "jsonLdType": "Dataset"
+    },
+    {
+      "path": "/dataset/provenance-registry/",
+      "file": "dataset/provenance-registry/index.html",
+      "key": "dataset-provenance-registry",
+      "title": "Provenance Registry Dataset | PainMap",
+      "description": "PainMap provenance registry for dataset sources, licenses, evidence kinds, uncertainty classes, and public distributions.",
+      "jsonLdType": "Dataset"
+    },
+    {
+      "path": "/place/BRA/",
+      "file": "place/BRA/index.html",
+      "key": "place-bra",
+      "title": "Brazil Place Profile | PainMap",
+      "description": "Brazil place profile for PainMap atlas layers, provenance, uncertainty, boundary sources, compare links, and public downloads.",
+      "jsonLdType": "Place"
+    },
+    {
+      "path": "/place/IND/",
+      "file": "place/IND/index.html",
+      "key": "place-ind",
+      "title": "India Place Profile | PainMap",
+      "description": "India place profile for PainMap atlas layers, provenance, uncertainty, boundary sources, compare links, and public downloads.",
+      "jsonLdType": "Place"
+    },
+    {
+      "path": "/api/",
+      "file": "api/index.html",
+      "key": "api",
+      "title": "API | PainMap",
+      "description": "PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, release, and OpenAPI exports.",
+      "jsonLdType": "TechArticle"
+    },
+    {
+      "path": "/developers/",
+      "file": "developers/index.html",
+      "key": "developers",
+      "title": "Developers | PainMap",
+      "description": "Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution.",
+      "jsonLdType": "TechArticle"
+    },
+    {
+      "path": "/releases/",
+      "file": "releases/index.html",
+      "key": "releases",
+      "title": "Releases | PainMap",
+      "description": "PainMap immutable release index, latest alias, manifests, and reproducibility notes.",
+      "jsonLdType": "CollectionPage"
+    },
+    {
+      "path": "/releases/2026-05-31/",
+      "file": "releases/2026-05-31/index.html",
+      "key": "release-2026-05-31",
+      "title": "2026-05-31 Release | PainMap",
+      "description": "PainMap 2026-05-31 atlas release manifest, checksums, data artifacts, and route inventory.",
+      "jsonLdType": "Dataset"
+    },
+    {
+      "path": "/security/",
+      "file": "security/index.html",
+      "key": "security",
+      "title": "Security | PainMap",
+      "description": "PainMap public static-site security baseline, confidential reporting channel, CSP, referrer policy, nosniff, permissions policy, and static API boundaries.",
+      "jsonLdType": "WebPage"
+    },
+    {
+      "path": "/resources/",
+      "file": "resources/index.html",
+      "key": "resources",
+      "title": "Resources | PainMap",
+      "description": "PainMap source links and research resources.",
+      "jsonLdType": "CollectionPage"
+    },
+    {
+      "path": "/about/",
+      "file": "about/index.html",
+      "key": "about",
+      "title": "About | PainMap",
+      "description": "PainMap mission, governance boundaries, editorial posture, and static no-personal-data scope.",
+      "jsonLdType": "AboutPage"
+    },
+    {
+      "path": "/updates/",
+      "file": "updates/index.html",
+      "key": "updates",
+      "title": "Updates | PainMap",
+      "description": "PainMap changelog and release notes.",
+      "jsonLdType": "CollectionPage"
+    },
+    {
+      "path": "/policies/privacy/",
+      "file": "policies/privacy/index.html",
+      "key": "privacy",
+      "title": "Privacy Policy | PainMap",
+      "description": "PainMap privacy policy for the public static research site.",
+      "jsonLdType": "WebPage"
+    },
+    {
+      "path": "/policies/terms/",
+      "file": "policies/terms/index.html",
+      "key": "terms",
+      "title": "Terms | PainMap",
+      "description": "PainMap terms for research, education, and advocacy analysis.",
+      "jsonLdType": "WebPage"
+    },
+    {
+      "path": "/policies/accessibility/",
+      "file": "policies/accessibility/index.html",
+      "key": "accessibility",
+      "title": "Accessibility Statement | PainMap",
+      "description": "PainMap accessibility statement for maps, charts, tables, keyboard access, and reduced motion.",
+      "jsonLdType": "WebPage"
+    },
+    {
+      "path": "/policies/editorial-policy/",
+      "file": "policies/editorial-policy/index.html",
+      "key": "editorial",
+      "title": "Editorial Policy | PainMap",
+      "description": "PainMap editorial policy for source discipline, caveats, and model changes.",
+      "jsonLdType": "WebPage"
+    },
+    {
+      "path": "/policies/contact/",
+      "file": "policies/contact/index.html",
+      "key": "contact",
+      "title": "Contact | PainMap",
+      "description": "PainMap contact route for corrections, source questions, accessibility reports, and governance questions.",
+      "jsonLdType": "ContactPage"
+    }
+  ]
+}

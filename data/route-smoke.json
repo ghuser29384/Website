@@ -1,0 +1,198 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "routes": [
+    {
+      "key": "home",
+      "path": "/",
+      "file": "index.html",
+      "expected_title": "PainMap | Mixed-evidence atlas of pain sources by place",
+      "expected_description": "PainMap is a place-first atlas for direct evidence, modeled estimates, proxy aggregates, and priority overlays about pain sources.",
+      "expected_canonical": "https://painmap.org/"
+    },
+    {
+      "key": "atlas",
+      "path": "/atlas/",
+      "file": "atlas/index.html",
+      "expected_title": "Atlas | PainMap",
+      "expected_description": "PainMap atlas entry point for place-first pain-source layers, evidence kinds, datasets, uncertainty, and non-map table paths.",
+      "expected_canonical": "https://painmap.org/atlas/"
+    },
+    {
+      "key": "places",
+      "path": "/countries/",
+      "file": "countries/index.html",
+      "expected_title": "Places | PainMap",
+      "expected_description": "Search PainMap places as atlas proxy layers with table-first access and an equal-area map view.",
+      "expected_canonical": "https://painmap.org/countries/"
+    },
+    {
+      "key": "compare",
+      "path": "/compare/",
+      "file": "compare/index.html",
+      "expected_title": "Compare Places | PainMap",
+      "expected_description": "Compare places or releases while preserving evidence kind, uncertainty, source vintage, and method notes.",
+      "expected_canonical": "https://painmap.org/compare/"
+    },
+    {
+      "key": "events",
+      "path": "/events/",
+      "file": "events/index.html",
+      "expected_title": "Animal Pain Events | PainMap",
+      "expected_description": "Explore PainMap's event-level animal pain estimates with source type, uncertainty, assumptions, and Welfare Footprint links.",
+      "expected_canonical": "https://painmap.org/events/"
+    },
+    {
+      "key": "methods",
+      "path": "/methods/",
+      "file": "methods/index.html",
+      "expected_title": "Methods | PainMap",
+      "expected_description": "PainMap methods, caveats, glossary, and boundaries for event estimates and place proxy context.",
+      "expected_canonical": "https://painmap.org/methods/"
+    },
+    {
+      "key": "data",
+      "path": "/data/",
+      "file": "data/index.html",
+      "expected_title": "Data | PainMap",
+      "expected_description": "PainMap dataset groups, provenance notes, canonical release artifacts, and public source boundaries.",
+      "expected_canonical": "https://painmap.org/data/"
+    },
+    {
+      "key": "dataset-place-measurements",
+      "path": "/dataset/place-measurements/",
+      "file": "dataset/place-measurements/index.html",
+      "expected_title": "Place Measurements Dataset | PainMap",
+      "expected_description": "PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, evidence kind, confidence bounds, source IDs, license, and API links.",
+      "expected_canonical": "https://painmap.org/dataset/place-measurements/"
+    },
+    {
+      "key": "dataset-provenance-registry",
+      "path": "/dataset/provenance-registry/",
+      "file": "dataset/provenance-registry/index.html",
+      "expected_title": "Provenance Registry Dataset | PainMap",
+      "expected_description": "PainMap provenance registry for dataset sources, licenses, evidence kinds, uncertainty classes, and public distributions.",
+      "expected_canonical": "https://painmap.org/dataset/provenance-registry/"
+    },
+    {
+      "key": "place-bra",
+      "path": "/place/BRA/",
+      "file": "place/BRA/index.html",
+      "expected_title": "Brazil Place Profile | PainMap",
+      "expected_description": "Brazil place profile for PainMap atlas layers, provenance, uncertainty, boundary sources, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BRA/"
+    },
+    {
+      "key": "place-ind",
+      "path": "/place/IND/",
+      "file": "place/IND/index.html",
+      "expected_title": "India Place Profile | PainMap",
+      "expected_description": "India place profile for PainMap atlas layers, provenance, uncertainty, boundary sources, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/IND/"
+    },
+    {
+      "key": "api",
+      "path": "/api/",
+      "file": "api/index.html",
+      "expected_title": "API | PainMap",
+      "expected_description": "PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, release, and OpenAPI exports.",
+      "expected_canonical": "https://painmap.org/api/"
+    },
+    {
+      "key": "developers",
+      "path": "/developers/",
+      "file": "developers/index.html",
+      "expected_title": "Developers | PainMap",
+      "expected_description": "Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution.",
+      "expected_canonical": "https://painmap.org/developers/"
+    },
+    {
+      "key": "releases",
+      "path": "/releases/",
+      "file": "releases/index.html",
+      "expected_title": "Releases | PainMap",
+      "expected_description": "PainMap immutable release index, latest alias, manifests, and reproducibility notes.",
+      "expected_canonical": "https://painmap.org/releases/"
+    },
+    {
+      "key": "release-2026-05-31",
+      "path": "/releases/2026-05-31/",
+      "file": "releases/2026-05-31/index.html",
+      "expected_title": "2026-05-31 Release | PainMap",
+      "expected_description": "PainMap 2026-05-31 atlas release manifest, checksums, data artifacts, and route inventory.",
+      "expected_canonical": "https://painmap.org/releases/2026-05-31/"
+    },
+    {
+      "key": "security",
+      "path": "/security/",
+      "file": "security/index.html",
+      "expected_title": "Security | PainMap",
+      "expected_description": "PainMap public static-site security baseline, confidential reporting channel, CSP, referrer policy, nosniff, permissions policy, and static API boundaries.",
+      "expected_canonical": "https://painmap.org/security/"
+    },
+    {
+      "key": "resources",
+      "path": "/resources/",
+      "file": "resources/index.html",
+      "expected_title": "Resources | PainMap",
+      "expected_description": "PainMap source links and research resources.",
+      "expected_canonical": "https://painmap.org/resources/"
+    },
+    {
+      "key": "about",
+      "path": "/about/",
+      "file": "about/index.html",
+      "expected_title": "About | PainMap",
+      "expected_description": "PainMap mission, governance boundaries, editorial posture, and static no-personal-data scope.",
+      "expected_canonical": "https://painmap.org/about/"
+    },
+    {
+      "key": "updates",
+      "path": "/updates/",
+      "file": "updates/index.html",
+      "expected_title": "Updates | PainMap",
+      "expected_description": "PainMap changelog and release notes.",
+      "expected_canonical": "https://painmap.org/updates/"
+    },
+    {
+      "key": "privacy",
+      "path": "/policies/privacy/",
+      "file": "policies/privacy/index.html",
+      "expected_title": "Privacy Policy | PainMap",
+      "expected_description": "PainMap privacy policy for the public static research site.",
+      "expected_canonical": "https://painmap.org/policies/privacy/"
+    },
+    {
+      "key": "terms",
+      "path": "/policies/terms/",
+      "file": "policies/terms/index.html",
+      "expected_title": "Terms | PainMap",
+      "expected_description": "PainMap terms for research, education, and advocacy analysis.",
+      "expected_canonical": "https://painmap.org/policies/terms/"
+    },
+    {
+      "key": "accessibility",
+      "path": "/policies/accessibility/",
+      "file": "policies/accessibility/index.html",
+      "expected_title": "Accessibility Statement | PainMap",
+      "expected_description": "PainMap accessibility statement for maps, charts, tables, keyboard access, and reduced motion.",
+      "expected_canonical": "https://painmap.org/policies/accessibility/"
+    },
+    {
+      "key": "editorial",
+      "path": "/policies/editorial-policy/",
+      "file": "policies/editorial-policy/index.html",
+      "expected_title": "Editorial Policy | PainMap",
+      "expected_description": "PainMap editorial policy for source discipline, caveats, and model changes.",
+      "expected_canonical": "https://painmap.org/policies/editorial-policy/"
+    },
+    {
+      "key": "contact",
+      "path": "/policies/contact/",
+      "file": "policies/contact/index.html",
+      "expected_title": "Contact | PainMap",
+      "expected_description": "PainMap contact route for corrections, source questions, accessibility reports, and governance questions.",
+      "expected_canonical": "https://painmap.org/policies/contact/"
+    }
+  ]
+}

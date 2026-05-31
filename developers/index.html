@@ -3,16 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Developers | PainMap</title>
     <meta name="description" content="Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution.">
     <link rel="canonical" href="https://painmap.org/developers/">
     <meta property="og:title" content="Developers | PainMap">
-    <meta property="og:description" content="How to consume PainMap static data exports and preserve provenance fields.">
+    <meta property="og:description" content="Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution.">
+    <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/developers/">
-    <link rel="stylesheet" href="../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Developers | PainMap">
+    <meta name="twitter:description" content="Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution.">
+    <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-0xu3Ra9QdnFGUIVl4iiG9bxAQPqA1XBDaA6rDWDLI8azV6b0Wm3VfNiQi7XUYkBb" crossorigin="anonymous">
+      <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"TechArticle","name":"Developers | PainMap","url":"https://painmap.org/developers/","description":"Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution."}
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -22,6 +30,7 @@
         <nav class="site-nav" aria-label="Site sections">
           <a href="/atlas/">Atlas</a>
           <a href="/countries/">Places</a>
+          <a href="/compare/">Compare</a>
           <a href="/events/">Events</a>
           <a href="/methods/">Methods</a>
           <a href="/data/">Data</a>
@@ -45,11 +54,14 @@
             <p class="label">Quickstart</p>
             <h2 id="quickstart-title">Fetch the contract</h2>
           </div>
-          <pre class="code-block"><code>curl https://painmap.org/data/openapi.json
+          <pre class="code-block"><code>curl https://painmap.org/v1/releases.json
+curl https://painmap.org/releases/2026-05-31/manifest.json
+curl https://painmap.org/data/openapi.json
 curl https://painmap.org/data/place-measurements.json
+curl https://painmap.org/v1/places/BRA.json
 curl https://painmap.org/data/provenance-registry.json</code></pre>
           <p class="route-copy">
-            The API has no authentication and no write side. Use normal HTTP caching and treat the build id as the stable contract version for this release.
+            The API has no authentication and no write side. Use immutable release URLs for reproducible work; use latest aliases only when freshness matters more than exact replay.
           </p>
         </section>
 
@@ -58,12 +70,12 @@ curl https://painmap.org/data/provenance-registry.json</code></pre>
             <article class="metadata-card">
               <span class="evidence-badge">must keep</span>
               <h2 id="developer-rules-title">Provenance</h2>
-              <p>Carry source, source vintage, method class, uncertainty class, and license id with every copied value.</p>
+              <p>Carry source ids, source vintage, evidence kind, confidence bounds, uncertainty class, release id, and license id with every copied value.</p>
             </article>
             <article class="metadata-card">
               <span class="evidence-badge">must not</span>
               <h2>Overclaim</h2>
-              <p>Country and ADM1 rows are directional proxies unless the method class says direct or modeled.</p>
+              <p>Country and ADM1 rows are directional proxies unless the evidence kind says direct or modeled.</p>
             </article>
             <article class="metadata-card">
               <span class="evidence-badge">security</span>

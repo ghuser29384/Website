@@ -1,0 +1,78 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "layers": [
+    {
+      "layer_id": "factory-farmed-animals",
+      "label": "Factory-farmed animals",
+      "evidence_kind": "proxy",
+      "value_type": "normalized_proxy_score",
+      "unit_label": "0-1 normalized proxy score",
+      "ranking_mode": "higher_proxy_score_more_attention",
+      "source_ids": [
+        "owid-livestock",
+        "fishcount-aquaculture",
+        "painmap-welfare-assumptions"
+      ]
+    },
+    {
+      "layer_id": "human-burden",
+      "label": "Human burden indicators",
+      "evidence_kind": "proxy",
+      "value_type": "normalized_proxy_score",
+      "unit_label": "0-1 normalized proxy score",
+      "ranking_mode": "higher_proxy_score_more_attention",
+      "source_ids": [
+        "world-bank-indicators"
+      ]
+    },
+    {
+      "layer_id": "wild-insects",
+      "label": "Wild terrestrial arthropod scale",
+      "evidence_kind": "proxy",
+      "value_type": "normalized_proxy_score",
+      "unit_label": "0-1 normalized proxy score",
+      "ranking_mode": "higher_proxy_score_more_attention",
+      "source_ids": [
+        "world-bank-land-area",
+        "painmap-welfare-assumptions"
+      ]
+    },
+    {
+      "layer_id": "animal-priority-overlay",
+      "label": "Animal priority overlay",
+      "evidence_kind": "priority-overlay",
+      "value_type": "normalized_priority_score",
+      "unit_label": "0-1 normalized priority score",
+      "ranking_mode": "higher_priority_more_attention",
+      "source_ids": [
+        "owid-livestock",
+        "welfare-footprint-events",
+        "painmap-priority-review"
+      ]
+    },
+    {
+      "layer_id": "event-evidence",
+      "label": "Event-level animal pain evidence",
+      "evidence_kind": "modeled",
+      "value_type": "welfare_footprint_event_estimate",
+      "unit_label": "duration by intensity band",
+      "ranking_mode": "event_context_only",
+      "source_ids": [
+        "welfare-footprint-events"
+      ]
+    },
+    {
+      "layer_id": "country-boundaries",
+      "label": "Country and ADM1 boundaries",
+      "evidence_kind": "boundary",
+      "value_type": "geometry",
+      "unit_label": "GeoJSON or TopoJSON geometry",
+      "ranking_mode": "not_ranked",
+      "source_ids": [
+        "natural-earth-admin0",
+        "geoboundaries-adm1"
+      ]
+    }
+  ]
+}

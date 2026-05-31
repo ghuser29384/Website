@@ -3,16 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Brazil Place Profile | PainMap</title>
-    <meta name="description" content="Brazil place profile for PainMap atlas layers, provenance, uncertainty, boundary sources, and public downloads.">
+    <meta name="description" content="Brazil place profile for PainMap atlas layers, provenance, uncertainty, boundary sources, compare links, and public downloads.">
     <link rel="canonical" href="https://painmap.org/place/BRA/">
     <meta property="og:title" content="Brazil Place Profile | PainMap">
-    <meta property="og:description" content="Place-first atlas profile for Brazil with layer metadata and export links.">
+    <meta property="og:description" content="Brazil place profile for PainMap atlas layers, provenance, uncertainty, boundary sources, compare links, and public downloads.">
+    <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/place/BRA/">
-    <link rel="stylesheet" href="../../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brazil Place Profile | PainMap">
+    <meta name="twitter:description" content="Brazil place profile for PainMap atlas layers, provenance, uncertainty, boundary sources, compare links, and public downloads.">
+    <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
+<link rel="stylesheet" href="../../styles.css" integrity="sha384-0xu3Ra9QdnFGUIVl4iiG9bxAQPqA1XBDaA6rDWDLI8azV6b0Wm3VfNiQi7XUYkBb" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -36,6 +41,7 @@
         <nav class="site-nav" aria-label="Site sections">
           <a href="/atlas/">Atlas</a>
           <a href="/countries/">Places</a>
+          <a href="/compare/">Compare</a>
           <a href="/events/">Events</a>
           <a href="/methods/">Methods</a>
           <a href="/data/">Data</a>
@@ -50,7 +56,7 @@
             <h1 id="place-title">Brazil</h1>
           </div>
           <p class="route-copy">
-            Static atlas profile for BRA. The live homepage can refresh country rankings from public APIs, while this route records the stable place-page contract, evidence expectations, and export links.
+            Static atlas profile for BRA in release 2026-05-31.atlas.2. The live homepage can refresh country rankings from public APIs, while this route records the stable place-page contract, evidence expectations, and export links.
           </p>
         </section>
 
@@ -61,16 +67,16 @@
               <strong>BRA</strong>
             </article>
             <article class="fact-card">
-              <span class="fact-label">Geometry</span>
-              <strong>Country boundary, Natural Earth Admin 0</strong>
+              <span class="fact-label">Release</span>
+              <strong>2026-05-31.atlas.2</strong>
             </article>
             <article class="fact-card">
-              <span class="fact-label">Boundary vintage</span>
-              <strong>Natural Earth 1:50m plus current geoBoundaries ADM1 on demand</strong>
+              <span class="fact-label">Evidence kinds</span>
+              <strong>Proxy aggregate, priority overlay, boundary</strong>
             </article>
             <article class="fact-card">
-              <span class="fact-label">Non-map path</span>
-              <strong>Search, issue cards, and data table equivalent on the homepage</strong>
+              <span class="fact-label">Downloads</span>
+              <strong>JSON, CSV, GeoJSON, manifest</strong>
             </article>
           </div>
         </section>
@@ -82,42 +88,42 @@
           </div>
           <div class="data-table-wrap">
             <table class="route-table">
-              <caption>Representative Brazil layer metadata. Runtime values on the homepage expose the same fields beside visible rankings.</caption>
+              <caption>Canonical Brazil release rows. Runtime values on the homepage expose the same evidence-kind and source fields beside visible rankings.</caption>
               <thead>
                 <tr>
                   <th>Layer</th>
-                  <th>Method class</th>
-                  <th>Vintage</th>
+                  <th>Evidence kind</th>
+                  <th>Display value</th>
                   <th>Uncertainty</th>
                   <th>Source</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row">Human burden indicators</th>
-                  <td>Proxy aggregate</td>
-                  <td>World Bank 2010:2025 latest non-null country rows</td>
-                  <td>Low confidence</td>
-                  <td>World Bank indicator API</td>
-                </tr>
-                <tr>
                   <th scope="row">Factory-farmed animals</th>
                   <td>Proxy aggregate</td>
-                  <td>Latest available OWID/Fishcount-style country rows plus 2026-05-31 contract</td>
-                  <td>Low confidence</td>
-                  <td>OWID, Fishcount, RP welfare assumptions</td>
+                  <td>0.58 normalized burden proxy</td>
+                  <td>Low confidence, 0.44-0.72</td>
+                  <td>OWID/Fishcount-style public rows plus PainMap assumptions</td>
                 </tr>
                 <tr>
-                  <th scope="row">Wild animals and insects</th>
+                  <th scope="row">Human burden indicators</th>
                   <td>Proxy aggregate</td>
-                  <td>2026-05-31 static contract</td>
-                  <td>Very low confidence</td>
-                  <td>World Bank land area, Wild Animal Initiative, public benchmarks</td>
+                  <td>0.42 normalized burden proxy</td>
+                  <td>Low confidence, 0.32-0.53</td>
+                  <td>World Bank 2010:2025 indicator window</td>
+                </tr>
+                <tr>
+                  <th scope="row">Animal priority overlay</th>
+                  <td>Priority overlay</td>
+                  <td>0.61 priority overlay</td>
+                  <td>Very low confidence, 0.43-0.77</td>
+                  <td>OWID, Welfare Footprint event context, PainMap priority review</td>
                 </tr>
                 <tr>
                   <th scope="row">ADM1 boundaries</th>
                   <td>Boundary layer</td>
-                  <td>Current geoBoundaries ADM1 API at selection time</td>
+                  <td>Geometry context only</td>
                   <td>Low confidence</td>
                   <td>geoBoundaries</td>
                 </tr>
@@ -126,6 +132,7 @@
           </div>
           <div class="route-actions">
             <a class="solid-button" href="/#explore-country">Open live Brazil search</a>
+            <a class="ghost-link" href="/compare/">Compare with India</a>
             <a class="ghost-link" href="/dataset/place-measurements/">Open dataset page</a>
           </div>
         </section>
@@ -136,10 +143,13 @@
             <h2 id="place-downloads-title">Public exports</h2>
           </div>
           <ul class="download-list">
-            <li><a href="/data/place-measurements.json">Place measurements JSON</a></li>
+            <li><a href="/v1/places/BRA.json">Brazil place JSON</a></li>
+            <li><a href="/v1/places/BRA/measurements.json">Brazil measurements JSON</a></li>
+            <li><a href="/data/place-measurements.json">Canonical place measurements JSON</a></li>
             <li><a href="/data/place-measurements.csv">Place measurements CSV</a></li>
             <li><a href="/data/places.geojson">Representative places GeoJSON</a></li>
             <li><a href="/data/provenance-registry.json">Provenance registry JSON</a></li>
+            <li><a href="/releases/2026-05-31/manifest.json">Release manifest JSON</a></li>
           </ul>
         </section>
       </main>

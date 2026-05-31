@@ -3,22 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Place Measurements Dataset | PainMap</title>
-    <meta name="description" content="PainMap place measurements dataset with JSON, CSV, GeoJSON, source vintage, method class, uncertainty, license, and API links.">
+    <meta name="description" content="PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, evidence kind, confidence bounds, source IDs, license, and API links.">
     <link rel="canonical" href="https://painmap.org/dataset/place-measurements/">
     <meta property="og:title" content="Place Measurements Dataset | PainMap">
-    <meta property="og:description" content="Dataset page for PainMap place-level pain-source proxy measurements and exports.">
+    <meta property="og:description" content="PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, evidence kind, confidence bounds, source IDs, license, and API links.">
+    <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/dataset/place-measurements/">
-    <link rel="stylesheet" href="../../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Place Measurements Dataset | PainMap">
+    <meta name="twitter:description" content="PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, evidence kind, confidence bounds, source IDs, license, and API links.">
+    <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
+<link rel="stylesheet" href="../../styles.css" integrity="sha384-0xu3Ra9QdnFGUIVl4iiG9bxAQPqA1XBDaA6rDWDLI8azV6b0Wm3VfNiQi7XUYkBb" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Dataset",
         "name": "PainMap place-level pain-source proxy measurements",
-        "description": "Representative static export for place-level pain-source proxy measurements with source vintage, method class, uncertainty, and license fields.",
+        "description": "Canonical release artifact for place-level pain-source measurements with typed values, evidence kind, source IDs, confidence bounds, uncertainty, and license fields.",
         "url": "https://painmap.org/dataset/place-measurements/",
         "identifier": "place-measurements",
         "license": "https://painmap.org/policies/terms/",
@@ -41,6 +46,7 @@
         <nav class="site-nav" aria-label="Site sections">
           <a href="/atlas/">Atlas</a>
           <a href="/countries/">Places</a>
+          <a href="/compare/">Compare</a>
           <a href="/events/">Events</a>
           <a href="/methods/">Methods</a>
           <a href="/data/">Data</a>
@@ -55,7 +61,7 @@
             <h1 id="dataset-title">Place measurements</h1>
           </div>
           <p class="route-copy">
-            A representative static export for the atlas contract. Each row carries place id, layer id, geometry level, method class, source vintage, method note, uncertainty class, and license id.
+            Canonical static release artifact for the atlas contract. Each row carries typed numeric values, display values, units, evidence kind, ranking mode, geography hierarchy, source ids, confidence bounds, release id, and license pointer.
           </p>
         </section>
 
@@ -68,6 +74,9 @@
             <li><a href="/data/place-measurements.json">JSON: /data/place-measurements.json</a></li>
             <li><a href="/data/place-measurements.csv">CSV: /data/place-measurements.csv</a></li>
             <li><a href="/data/places.geojson">GeoJSON: /data/places.geojson</a></li>
+            <li><a href="/v1/places/BRA.json">Place profile: /v1/places/BRA.json</a></li>
+            <li><a href="/v1/places/IND.json">Place profile: /v1/places/IND.json</a></li>
+            <li><a href="/releases/2026-05-31/manifest.json">Release manifest: /releases/2026-05-31/manifest.json</a></li>
             <li><a href="/data/dcat.json">Catalog: /data/dcat.json</a></li>
             <li><a href="/data/openapi.json">OpenAPI: /data/openapi.json</a></li>
           </ul>
@@ -90,7 +99,14 @@
               <tbody>
                 <tr><th scope="row">place_id</th><td>ISO3, WLD, or future ADM1 identifier.</td><td>Yes</td></tr>
                 <tr><th scope="row">layer_id</th><td>Stable layer key such as factory-farmed-animals or human-burden.</td><td>Yes</td></tr>
-                <tr><th scope="row">layer_type</th><td>Method class: direct, modeled, proxy, or boundary.</td><td>Yes</td></tr>
+                <tr><th scope="row">release_id</th><td>Immutable release identifier, currently 2026-05-31.atlas.2.</td><td>Yes</td></tr>
+                <tr><th scope="row">evidence_kind</th><td>Direct, modeled, proxy, priority-overlay, or boundary.</td><td>Yes</td></tr>
+                <tr><th scope="row">raw_value</th><td>Numeric value used for ranking or comparison.</td><td>Yes</td></tr>
+                <tr><th scope="row">display_value</th><td>Human-readable value shown in cards and tables.</td><td>Yes</td></tr>
+                <tr><th scope="row">unit_label</th><td>Unit attached to the numeric field.</td><td>Yes</td></tr>
+                <tr><th scope="row">ranking_mode</th><td>How higher or lower values should be interpreted.</td><td>Yes</td></tr>
+                <tr><th scope="row">source_ids</th><td>Array of source pointers into the provenance registry.</td><td>Yes</td></tr>
+                <tr><th scope="row">confidence_low / confidence_high</th><td>Release-scoped numeric bounds for the value.</td><td>Yes</td></tr>
                 <tr><th scope="row">source_vintage</th><td>Dataset date window or review date for the visible value.</td><td>Yes</td></tr>
                 <tr><th scope="row">uncertainty_class</th><td>Moderate, low, or very-low confidence class.</td><td>Yes</td></tr>
                 <tr><th scope="row">license_id</th><td>Pointer into the provenance registry license table.</td><td>Yes</td></tr>

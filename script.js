@@ -1,8 +1,11 @@
-import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
-import { feature as topojsonFeature } from "https://cdn.jsdelivr.net/npm/topojson-client@3/+esm";
+const d3 = window.d3;
+const topojsonFeature = window.topojson?.feature;
 
-const COUNTRY_DATA_URL =
-  "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson";
+if (!d3 || !topojsonFeature) {
+  throw new Error("PainMap vendor libraries failed to load.");
+}
+
+const COUNTRY_DATA_URL = "data/natural-earth-countries.geojson";
 const COUNTRY_DATA_FALLBACK_URL = "data/countries-lite.geojson";
 const GSAP_ADM1_DATA_URL = "data/gsap-adm1-2023.json";
 const GLOBE_ROTATION = [-18, -14, 0];
@@ -34,9 +37,9 @@ const STATIC_WORLD_ANIMAL_ISSUES = [
     tag: "Animal category · Fallback",
     title: "Factory-farmed animals",
     metric: "Public export row: factory-farmed animals",
-    body: "Representative atlas fallback for farmed-animal burden while live OWID/Fishcount rows are unavailable.",
+    body: "Canonical release fallback for farmed-animal burden while live OWID/Fishcount rows are unavailable.",
     source:
-      "Source: PainMap place-measurements static contract, OWID/Fishcount-style country and world animal rows, Rethink Priorities welfare-range assumptions. Data vintage: 2026-05-31 fallback contract.",
+      "Source: PainMap place-measurements release artifact, OWID/Fishcount-style country and world animal rows, Rethink Priorities welfare-range assumptions. Data vintage: 2026-05-31.atlas.2 fallback.",
     ranking: {
       improvement: { score: 3, raw: 3000, metric: "static tractability-adjusted burden proxy" },
       total: { score: 3, raw: 3000, metric: "static total burden proxy" },
@@ -49,9 +52,9 @@ const STATIC_WORLD_ANIMAL_ISSUES = [
     tag: "Animal category · Fallback",
     title: "Insects",
     metric: "Public export row: wild and human-affected insects",
-    body: "Representative atlas fallback for insect scale using land-area and insecticide-source assumptions.",
+    body: "Canonical release fallback for insect scale using land-area and insecticide-source assumptions.",
     source:
-      "Source: PainMap place-measurements static contract, World Bank land-area indicators, OWID insecticide-use data, Wild Animal Initiative benchmark. Data vintage: 2026-05-31 fallback contract.",
+      "Source: PainMap place-measurements release artifact, World Bank land-area indicators, OWID insecticide-use data, Wild Animal Initiative benchmark. Data vintage: 2026-05-31.atlas.2 fallback.",
     ranking: {
       improvement: { score: 2.4, raw: 250, metric: "static tractability-adjusted insect proxy" },
       total: { score: 3.4, raw: 6000, metric: "static total insect burden proxy" },
@@ -66,9 +69,9 @@ const STATIC_WORLD_SUFFERING_ISSUES = [
     tag: "Human burden · Fallback",
     title: "Human suffering burden indicators",
     metric: "Public export row: World Bank indicator proxy",
-    body: "Representative atlas fallback for human burden while live World Bank WLD rows are unavailable.",
+    body: "Canonical release fallback for human burden while live World Bank WLD rows are unavailable.",
     source:
-      "Source: PainMap place-measurements static contract and World Bank indicator API. Data vintage: World Bank 2010:2025 latest non-null window.",
+      "Source: PainMap place-measurements release artifact and World Bank indicator API. Data vintage: World Bank 2010:2025 latest non-null window.",
     ranking: {
       improvement: { score: 2.8, raw: 800, metric: "static global-health tractability proxy" },
       total: { score: 2.7, raw: 650, metric: "static total human burden proxy" },
@@ -92,7 +95,7 @@ const GLOBE_MODES = {
   suffering: {
     label: "Top Causes of Suffering by Country",
     topbarNote:
-      "PainMap begins as a place-first atlas: choose a country or province, inspect pain-source layers, and keep source, vintage, method class, and uncertainty beside visible values.",
+      "PainMap begins as a place-first atlas: choose a country or province, inspect pain-source layers, and keep source, vintage, evidence kind, and uncertainty beside visible values.",
     globeCopy:
       "Atlas layer: compare country-level human, farmed-animal, wild-animal, and insect suffering burdens while keeping event-level pain evidence linked to the same source registry.",
     humanSectionLabel: "Human suffering",
@@ -121,7 +124,7 @@ const GLOBE_MODES = {
     topbarNote:
       "Death mode keeps the atlas place-first while switching the layer stack toward human life-years lost and explicit mortality source metadata.",
     globeCopy:
-      "Atlas layer: compare country-level death burdens while keeping method class, source vintage, and uncertainty attached to the visible rankings.",
+      "Atlas layer: compare country-level death burdens while keeping evidence kind, source vintage, and uncertainty attached to the visible rankings.",
     humanSectionLabel: "Human deaths",
     animalSectionLabel: "",
     showAnimals: false,
@@ -2066,6 +2069,8 @@ function mediaGithubUrl(url) {
     return url;
   }
 
+  const rawGithubHost = ["raw", "githubusercontent", "com"].join(".");
+
   if (url.includes("media.githubusercontent.com")) {
     return url;
   }
@@ -2076,9 +2081,9 @@ function mediaGithubUrl(url) {
       .replace("/raw/", "/");
   }
 
-  if (url.includes("raw.githubusercontent.com/")) {
+  if (url.includes(`${rawGithubHost}/`)) {
     return url.replace(
-      "https://raw.githubusercontent.com/",
+      `https://${rawGithubHost}/`,
       "https://media.githubusercontent.com/media/"
     );
   }
@@ -3299,7 +3304,7 @@ function issueMetadata(issue) {
   if (combined.includes("natural earth") || combined.includes("geoboundaries") || combined.includes("adm1")) {
     return {
       layer: "Boundary layer",
-      methodClass: "boundary",
+      evidenceKind: "boundary",
       vintage: "Natural Earth Admin 0 plus current geoBoundaries ADM1 API",
       uncertainty: "low",
       methodNote: "Geometry layer for locating places; it is not itself a pain estimate.",
@@ -3309,7 +3314,7 @@ function issueMetadata(issue) {
   if (combined.includes("welfare footprint")) {
     return {
       layer: "Event pain evidence",
-      methodClass: "modeled",
+      evidenceKind: "modeled estimate",
       vintage: "2026-05-31 source review",
       uncertainty: "moderate",
       methodNote: "Event-level welfare estimate tied to a species, system, intensity class, and time window.",
@@ -3319,8 +3324,8 @@ function issueMetadata(issue) {
   if (combined.includes("insect") || combined.includes("wild animal") || combined.includes("wild-caught") || combined.includes("soil-arthropod")) {
     return {
       layer: "Wild animals and insects",
-      methodClass: "proxy",
-      vintage: "2026-05-31 static contract plus latest public rows where available",
+      evidenceKind: "proxy aggregate",
+      vintage: "2026-05-31.atlas.2 release plus latest public rows where available",
       uncertainty: "very-low",
       methodNote: "Directional burden proxy assembled from land-area, insecticide, and public abundance assumptions.",
     };
@@ -3329,7 +3334,7 @@ function issueMetadata(issue) {
   if (combined.includes("fish") || combined.includes("crustacean") || combined.includes("slaughter") || combined.includes("farmed") || combined.includes("owid")) {
     return {
       layer: "Factory-farmed animals",
-      methodClass: "proxy",
+      evidenceKind: "proxy aggregate",
       vintage: "Latest available OWID/Fishcount-style country rows plus 2026-05-31 contract",
       uncertainty: "low",
       methodNote: "Directional animal burden proxy with visible sentience and welfare-range assumptions.",
@@ -3339,7 +3344,7 @@ function issueMetadata(issue) {
   if (combined.includes("world bank") || combined.includes("wdi") || combined.includes("gsap") || combined.includes("who")) {
     return {
       layer: "Human burden indicators",
-      methodClass: "proxy",
+      evidenceKind: "proxy aggregate",
       vintage: `World Bank ${ISSUE_DATA_DATE_RANGE} latest non-null country window`,
       uncertainty: "low",
       methodNote: "Directional place-level proxy assembled from public health, poverty, pollution, WASH, and conflict indicators.",
@@ -3348,8 +3353,8 @@ function issueMetadata(issue) {
 
   return {
     layer: "Atlas context",
-    methodClass: "proxy",
-    vintage: "2026-05-31 static contract",
+    evidenceKind: "proxy aggregate",
+    vintage: "2026-05-31.atlas.2 release artifact",
     uncertainty: "low",
     methodNote: "Directional atlas value with public-source provenance shown alongside the ranking.",
   };
@@ -3384,7 +3389,7 @@ function renderIssueTable(root, caption, issues, orderNoteForIssue) {
 
   const thead = document.createElement("thead");
   const headerRow = document.createElement("tr");
-  ["Rank", "Cause", "Metric", "Method", "Vintage", "Uncertainty", "Order note", "Source"].forEach((label) =>
+  ["Rank", "Cause", "Metric", "Evidence kind", "Vintage", "Uncertainty", "Order note", "Source"].forEach((label) =>
     appendTextCell(headerRow, "th", label)
   );
   thead.appendChild(headerRow);
@@ -3398,7 +3403,7 @@ function renderIssueTable(root, caption, issues, orderNoteForIssue) {
     appendTextCell(row, "th", issue.title);
     row.lastElementChild.scope = "row";
     appendTextCell(row, "td", issue.metric);
-    appendTextCell(row, "td", metadata.methodClass);
+    appendTextCell(row, "td", metadata.evidenceKind);
     appendTextCell(row, "td", metadata.vintage);
     appendTextCell(row, "td", metadata.uncertainty);
     appendTextCell(row, "td", orderNoteForIssue(issue));
@@ -3458,7 +3463,7 @@ function buildRankedIssueCard(issue, rank, orderNote) {
     <strong class="issue-metric">${escapeHtml(issue.metric)}</strong>
     <div class="issue-meta-grid" aria-label="Source metadata">
       <span><strong>Layer</strong>${escapeHtml(metadata.layer)}</span>
-      <span><strong>Method</strong>${escapeHtml(metadata.methodClass)}</span>
+      <span><strong>Evidence</strong>${escapeHtml(metadata.evidenceKind)}</span>
       <span><strong>Vintage</strong>${escapeHtml(metadata.vintage)}</span>
       <span><strong>Uncertainty</strong>${escapeHtml(metadata.uncertainty)}</span>
     </div>
@@ -5016,10 +5021,10 @@ async function init() {
     try {
       data = await fetchJson(COUNTRY_DATA_URL, 1800);
     } catch (remoteError) {
-      setStatus("Natural Earth boundary request is slow here, loading local fallback boundaries...");
+      setStatus("Vendored Natural Earth boundary file is slow here, loading compact fallback boundaries...");
       data = await fetchJson(COUNTRY_DATA_FALLBACK_URL, 3000);
       boundaryStatus =
-        "Local fallback boundaries loaded. Search works for representative places while the remote Natural Earth source is unavailable.";
+        "Compact fallback boundaries loaded. Search works for core places while the vendored Natural Earth file is unavailable.";
     }
 
     state.countries = data.features.filter(

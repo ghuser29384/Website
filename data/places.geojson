@@ -1,6 +1,7 @@
 {
   "type": "FeatureCollection",
-  "name": "PainMap representative places",
+  "name": "PainMap canonical release places",
+  "release_id": "2026-05-31.atlas.2",
   "features": [
     {
       "type": "Feature",
@@ -8,10 +9,18 @@
       "properties": {
         "place_id": "WLD",
         "place_name": "World",
+        "parent_place_id": null,
+        "iso3": "WLD",
         "geometry_level": "world",
-        "method_class": "proxy",
-        "uncertainty_class": "low",
-        "source_vintage": "2026-05-31 static contract"
+        "release_id": "2026-05-31.atlas.2",
+        "evidence_kinds": [
+          "proxy"
+        ],
+        "uncertainty_classes": [
+          "low",
+          "very-low"
+        ],
+        "source_vintage": "2026-05-31.atlas.2 immutable release"
       },
       "geometry": null
     },
@@ -21,14 +30,54 @@
       "properties": {
         "place_id": "BRA",
         "place_name": "Brazil",
+        "parent_place_id": "WLD",
+        "iso3": "BRA",
         "geometry_level": "country",
-        "method_class": "proxy",
-        "uncertainty_class": "low",
-        "source_vintage": "Runtime country values from public source APIs; boundary from Natural Earth in map runtime"
+        "release_id": "2026-05-31.atlas.2",
+        "evidence_kinds": [
+          "proxy",
+          "priority-overlay"
+        ],
+        "uncertainty_classes": [
+          "low",
+          "very-low"
+        ],
+        "source_vintage": "2026-05-31.atlas.2 immutable release"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-53.2, -10.8]
+        "coordinates": [
+          -53.2,
+          -10.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "IND",
+      "properties": {
+        "place_id": "IND",
+        "place_name": "India",
+        "parent_place_id": "WLD",
+        "iso3": "IND",
+        "geometry_level": "country",
+        "release_id": "2026-05-31.atlas.2",
+        "evidence_kinds": [
+          "proxy",
+          "priority-overlay"
+        ],
+        "uncertainty_classes": [
+          "low",
+          "very-low"
+        ],
+        "source_vintage": "2026-05-31.atlas.2 immutable release"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.9,
+          22.7
+        ]
       }
     }
   ]

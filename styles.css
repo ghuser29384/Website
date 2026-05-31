@@ -1158,6 +1158,32 @@ p {
   gap: 1rem;
 }
 
+.compare-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.7fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.compare-gutter {
+  border-color: var(--warn);
+}
+
+.evidence-kind-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.topbar .evidence-kind-strip {
+  grid-column: 1 / -1;
+}
+
+.evidence-kind-strip .evidence-badge {
+  background: #fff;
+}
+
 .route-card {
   border-top: 1px solid var(--line);
   padding-top: 0.95rem;
@@ -1417,12 +1443,22 @@ p {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-delay: -0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
   html {
-    scroll-behavior: auto;
+    scroll-behavior: auto !important;
   }
 
   .ghost-button,
   .country-path {
-    transition: none;
+    transition: none !important;
   }
 }

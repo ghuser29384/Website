@@ -3,16 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Updates | PainMap</title>
-    <meta name="description" content="PainMap update log and release notes for public site changes.">
+    <meta name="description" content="PainMap changelog and release notes.">
     <link rel="canonical" href="https://painmap.org/updates/">
     <meta property="og:title" content="Updates | PainMap">
-    <meta property="og:description" content="Release notes for PainMap public research visualization updates.">
+    <meta property="og:description" content="PainMap changelog and release notes.">
+    <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/updates/">
-    <link rel="stylesheet" href="../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Updates | PainMap">
+    <meta name="twitter:description" content="PainMap changelog and release notes.">
+    <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-0xu3Ra9QdnFGUIVl4iiG9bxAQPqA1XBDaA6rDWDLI8azV6b0Wm3VfNiQi7XUYkBb" crossorigin="anonymous">
+      <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"CollectionPage","name":"Updates | PainMap","url":"https://painmap.org/updates/","description":"PainMap changelog and release notes."}
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -22,6 +30,7 @@
         <nav class="site-nav" aria-label="Site sections">
           <a href="/atlas/">Atlas</a>
           <a href="/countries/">Places</a>
+          <a href="/compare/">Compare</a>
           <a href="/events/">Events</a>
           <a href="/methods/">Methods</a>
           <a href="/data/">Data</a>
@@ -38,6 +47,15 @@
           <p class="route-copy">Release notes are separated from policy text so future data, methodology, and UI changes can be cited directly.</p>
         </section>
         <section class="route-panel">
+          <article class="route-card">
+            <p class="issue-tag">May 31, 2026</p>
+            <h2>Canonical release and compare surfaces</h2>
+            <p>
+              Added data/routes.json as the route source of truth, immutable 2026-05-31.atlas.2 release artifacts,
+              v1 static JSON endpoints, local vendor libraries, a compare route, India and Brazil place profiles,
+              confidence fields, source ids, priority-overlay labels, and a confidential security contact.
+            </p>
+          </article>
           <article class="route-card">
             <p class="issue-tag">May 31, 2026</p>
             <h2>Route split and evidence metadata</h2>

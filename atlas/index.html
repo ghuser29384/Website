@@ -3,16 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Atlas | PainMap</title>
-    <meta name="description" content="PainMap atlas entry point for place-first pain-source layers, datasets, uncertainty, and non-map table paths.">
+    <meta name="description" content="PainMap atlas entry point for place-first pain-source layers, evidence kinds, datasets, uncertainty, and non-map table paths.">
     <link rel="canonical" href="https://painmap.org/atlas/">
     <meta property="og:title" content="Atlas | PainMap">
-    <meta property="og:description" content="Start with a place, inspect pain-source layers, and follow source, vintage, method, uncertainty, and export links.">
+    <meta property="og:description" content="PainMap atlas entry point for place-first pain-source layers, evidence kinds, datasets, uncertainty, and non-map table paths.">
+    <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/atlas/">
-    <link rel="stylesheet" href="../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Atlas | PainMap">
+    <meta name="twitter:description" content="PainMap atlas entry point for place-first pain-source layers, evidence kinds, datasets, uncertainty, and non-map table paths.">
+    <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-0xu3Ra9QdnFGUIVl4iiG9bxAQPqA1XBDaA6rDWDLI8azV6b0Wm3VfNiQi7XUYkBb" crossorigin="anonymous">
+      <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"CollectionPage","name":"Atlas | PainMap","url":"https://painmap.org/atlas/","description":"PainMap atlas entry point for place-first pain-source layers, evidence kinds, datasets, uncertainty, and non-map table paths."}
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -22,6 +30,7 @@
         <nav class="site-nav" aria-label="Site sections">
           <a href="/atlas/">Atlas</a>
           <a href="/countries/">Places</a>
+          <a href="/compare/">Compare</a>
           <a href="/events/">Events</a>
           <a href="/methods/">Methods</a>
           <a href="/data/">Data</a>
@@ -36,7 +45,7 @@
             <h1 id="atlas-title">Start with a place.</h1>
           </div>
           <p class="route-copy">
-            The atlas is PainMap's place-first entry point. It keeps the map, search box, ranking tables, and dataset pages aligned so every visible value has a source, vintage, method class, and uncertainty label.
+            The atlas is PainMap's place-first entry point. It keeps the map, search box, ranking tables, and dataset pages aligned so every visible value has a source, vintage, evidence kind, uncertainty label, and release id.
           </p>
         </section>
 
@@ -53,7 +62,7 @@
             <article class="route-card">
               <p class="issue-tag">Example place</p>
               <h2>Brazil</h2>
-              <p>Place page skeleton with layer metadata, boundary vintage, method class, uncertainty, and export links.</p>
+              <p>Place profile with layer metadata, boundary vintage, evidence kind, confidence bounds, uncertainty, and export links.</p>
               <div class="route-actions">
                 <a class="ghost-link" href="/place/BRA/">Open Brazil</a>
               </div>
@@ -61,7 +70,7 @@
             <article class="route-card">
               <p class="issue-tag">Dataset</p>
               <h2>Place measurements</h2>
-              <p>Representative JSON, CSV, and GeoJSON exports for the public atlas contract.</p>
+              <p>Canonical JSON, CSV, and GeoJSON release artifacts for the public atlas contract.</p>
               <div class="route-actions">
                 <a class="ghost-link" href="/dataset/place-measurements/">Open dataset</a>
               </div>
@@ -85,13 +94,19 @@
               <span class="evidence-badge">proxy</span>
               <h3>Factory-farmed animals</h3>
               <p>Country and world counts from OWID/Fishcount-style public data, weighted only with visible welfare assumptions.</p>
-              <p class="issue-source">Vintage: latest available runtime rows plus 2026-05-31 static contract. Uncertainty: low confidence.</p>
+              <p class="issue-source">Vintage: latest available runtime rows plus 2026-05-31.atlas.2 release. Uncertainty: low confidence.</p>
             </article>
             <article class="metadata-card">
               <span class="evidence-badge">proxy</span>
               <h3>Wild animals and insects</h3>
               <p>Land-area and insecticide proxies used as directional context, not as settled welfare measurements.</p>
-              <p class="issue-source">Vintage: 2026-05-31 static contract. Uncertainty: very low confidence.</p>
+              <p class="issue-source">Vintage: 2026-05-31.atlas.2 release. Uncertainty: very low confidence.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">priority overlay</span>
+              <h3>Animal priority overlay</h3>
+              <p>A decision-support layer combining proxy scale, event-evidence salience, and tractability notes. It is not a direct pain measurement.</p>
+              <p class="issue-source">Vintage: 2026-05-31.atlas.2 release. Uncertainty: very low confidence.</p>
             </article>
             <article class="metadata-card">
               <span class="evidence-badge">boundary</span>
@@ -108,7 +123,8 @@
             <h2 id="exports-title">Atlas data downloads</h2>
           </div>
           <ul class="download-list">
-            <li><a href="/data/place-measurements.json">Place measurements JSON</a></li>
+            <li><a href="/releases/2026-05-31/manifest.json">Release manifest JSON</a></li>
+            <li><a href="/data/place-measurements.json">Canonical place measurements JSON</a></li>
             <li><a href="/data/place-measurements.csv">Place measurements CSV</a></li>
             <li><a href="/data/places.geojson">Representative places GeoJSON</a></li>
             <li><a href="/data/provenance-registry.json">Provenance registry JSON</a></li>
