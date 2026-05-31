@@ -723,6 +723,7 @@ function buildReleaseManifest() {
     "vendor/topojson-client.v3.min.js",
     "sitemap.xml",
     "robots.txt",
+    ".nojekyll",
     "_headers",
     "vercel.json",
     ".well-known/security.txt",

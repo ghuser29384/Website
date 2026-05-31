@@ -471,6 +471,11 @@
       "bytes": 65
     },
     {
+      "path": "/.nojekyll",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1
+    },
+    {
       "path": "/_headers",
       "sha256": "abc5a7bf7901a3d5e26c0d6b42d87bfc23e897ba74eb0d2e642f05b89e490c30",
       "bytes": 502

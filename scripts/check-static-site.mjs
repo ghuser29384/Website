@@ -29,6 +29,7 @@ const expectedExports = [
   "assets/social-card.svg",
   "vendor/d3.v7.min.js",
   "vendor/topojson-client.v3.min.js",
+  ".nojekyll",
   ".well-known/security.txt",
   "_headers",
   "vercel.json",
