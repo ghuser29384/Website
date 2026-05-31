@@ -3,32 +3,116 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Who Can Feel Pain</title>
+    <title>PainMap | Animal pain research and country context</title>
     <meta
       name="description"
-      content="Visualize current research on how much pain animals feel from different events and systems, with country-level suffering data kept as a secondary context layer."
+      content="Explore animal pain research, Welfare Footprint event estimates, country suffering context, transparent methods, and accessible data tables."
     >
+    <link rel="canonical" href="https://painmap.org/">
+    <meta property="og:title" content="PainMap | Animal pain research and country context">
+    <meta
+      property="og:description"
+      content="A public research explorer for animal pain estimates, country context, methods, sources, and governance."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://painmap.org/">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "name": "PainMap",
+            "url": "https://painmap.org/"
+          },
+          {
+            "@type": "WebSite",
+            "name": "PainMap",
+            "url": "https://painmap.org/",
+            "description": "Animal pain research and country-context visualizations with accessible table equivalents."
+          },
+          {
+            "@type": "Dataset",
+            "name": "PainMap public animal pain and country context dataset",
+            "description": "A static public synthesis of Welfare Footprint event estimates, country burden proxies, and source-linked research notes.",
+            "license": "https://painmap.org/#terms",
+            "creator": {
+              "@type": "Organization",
+              "name": "PainMap"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="shell">
-      <header class="topbar">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="#explore-events">Events</a>
+          <a href="#explore-country">Countries</a>
+          <a href="#methods">Methods</a>
+          <a href="#data-sources">Data</a>
+          <a href="#about-policies">Policies</a>
+        </nav>
+      </header>
+
+      <main id="main-content">
+      <section class="topbar hero-section" id="home" aria-labelledby="home-title">
         <div>
-          <p class="label">Who Can Feel Pain</p>
-          <h1>How much pain do animals feel?</h1>
+          <p class="label">PainMap</p>
+          <h1 id="home-title">Animal pain research, made understandable</h1>
+          <div class="hero-actions" aria-label="Primary routes">
+            <a class="solid-button" href="#explore-events">Explore event pain</a>
+            <a class="ghost-link" href="#explore-country">Explore country context</a>
+            <a class="ghost-link" href="#methods">Read methods</a>
+          </div>
         </div>
         <p class="topbar-note" id="topbar-note">
           The main purpose of this site is to visualize current research on animal pain, especially event-level Welfare
           Footprint estimates for birds in different farming and slaughter systems. The globe is kept as a secondary
           context layer for where suffering burdens scale.
         </p>
-      </header>
+      </section>
 
-      <main class="layout">
-        <section class="globe-panel">
+      <section class="audience-panel" aria-labelledby="audience-title">
+        <div class="section-intro">
+          <p class="label">Start here</p>
+          <h2 id="audience-title">Choose the shortest path into the evidence</h2>
+        </div>
+        <div class="audience-grid">
+          <a class="audience-card" href="#explore-events">
+            <span class="fact-label">General readers</span>
+            <strong>Start with the event explorer</strong>
+            <span>See what Welfare Footprint estimates imply for cages, fast growth, hunger, and slaughter.</span>
+          </a>
+          <a class="audience-card" href="#methods">
+            <span class="fact-label">Clinicians & educators</span>
+            <strong>Use the definitions and caveats</strong>
+            <span>Trace pain-intensity language, limits, and classroom-safe framing before sharing charts.</span>
+          </a>
+          <a class="audience-card" href="#data-sources">
+            <span class="fact-label">Researchers</span>
+            <strong>Audit the source layer</strong>
+            <span>Jump to grouped citations, provenance notes, data freshness, and downloadable-equivalent tables.</span>
+          </a>
+        </div>
+        <div class="trust-strip" aria-label="Site status">
+          <span><strong>Scope</strong> Public research visualization, not medical or veterinary advice</span>
+          <span><strong>Data posture</strong> Static public data only; no personal health data collection</span>
+          <span><strong>Updated</strong> May 31, 2026</span>
+        </div>
+      </section>
+
+      <section class="layout" id="explore-country" aria-labelledby="country-context-title">
+        <section class="globe-panel" aria-labelledby="country-context-title">
           <div class="panel-head">
             <div>
-              <p class="label">Country Context</p>
+              <p class="label">Explore by Country</p>
+              <h2 id="country-context-title">Country context is secondary, but searchable</h2>
               <p class="panel-copy">
                 Secondary layer: real country and ADM1 boundaries for viewing where larger human and animal suffering
                 burdens are concentrated.
@@ -45,10 +129,14 @@
                   placeholder='Search country or "Province, Country"'
                   autocomplete="off"
                   spellcheck="false"
+                  aria-describedby="country-search-help"
                 >
                 <datalist id="country-options"></datalist>
                 <button class="ghost-button" id="country-search-button" type="submit">Find</button>
               </form>
+              <p class="control-help" id="country-search-help">
+                The search field is the keyboard and screen-reader equivalent for the globe.
+              </p>
               <div class="zoom-controls" aria-label="Zoom controls">
                 <button class="ghost-button zoom-button" id="zoom-out" type="button" aria-label="Zoom out">-</button>
                 <label class="sr-only" for="zoom-range">Zoom level</label>
@@ -60,9 +148,19 @@
           </div>
 
           <div class="globe-frame">
-            <svg id="globe" viewBox="0 0 900 900" aria-label="Interactive Earth with country and province boundaries"></svg>
+            <svg
+              id="globe"
+              viewBox="0 0 900 900"
+              role="group"
+              aria-labelledby="country-context-title"
+              aria-describedby="globe-description"
+            ></svg>
             <p class="map-status" id="map-status" role="status">Loading country boundaries...</p>
           </div>
+          <p class="map-description" id="globe-description">
+            Orthographic world map with country boundaries and optional ADM1 province or state boundaries. Selecting a
+            place updates the ranked issue cards and the data table beside the map.
+          </p>
 
           <div class="legend" aria-hidden="true">
             <span><i class="swatch swatch-country"></i>Country</span>
@@ -136,11 +234,13 @@
           <section class="issues-section">
             <p class="label" id="human-section-label">Whole-world top 10 across humans and animals</p>
             <div class="issues" id="issues"></div>
+            <div class="table-equivalent" id="issues-table"></div>
           </section>
 
           <section class="issues-section" id="animal-section">
             <p class="label" id="animal-section-label">Animal suffering causes</p>
             <div class="issues" id="animal-issues"></div>
+            <div class="table-equivalent" id="animal-issues-table"></div>
           </section>
 
           <p class="detail-footnote" id="selection-footnote">
@@ -150,12 +250,12 @@
             sentience and welfare-range distributions as burden proxies rather than full moral-weight outputs.
           </p>
         </aside>
-      </main>
+      </section>
 
-      <section class="pain-panel" aria-labelledby="pain-visuals-title">
+      <section class="pain-panel" id="explore-events" aria-labelledby="pain-visuals-title">
         <div class="pain-head">
           <div>
-            <p class="label">Current Animal Pain Research</p>
+            <p class="label">Explore by Event</p>
             <h2 id="pain-visuals-title">How much pain do animals feel from different events?</h2>
           </div>
           <p class="pain-copy">
@@ -181,6 +281,7 @@
               life, one hen&rsquo;s laying period, or one breeder&rsquo;s life.
             </p>
             <div class="pain-chart-list" id="pain-long-chart"></div>
+            <div class="table-equivalent" id="pain-long-table"></div>
           </article>
 
           <article class="pain-card">
@@ -191,6 +292,7 @@
               of consciousness.
             </p>
             <div class="pain-chart-list" id="pain-acute-chart"></div>
+            <div class="table-equivalent" id="pain-acute-table"></div>
           </article>
 
           <article class="pain-card">
@@ -208,10 +310,10 @@
         </p>
       </section>
 
-      <section class="mw-panel" aria-labelledby="mw-title">
+      <section class="mw-panel" id="methods" aria-labelledby="mw-title">
         <div class="mw-head">
           <div>
-            <p class="label">Moral Weight Notes</p>
+            <p class="label">Methods and Glossary</p>
             <h2 id="mw-title">How to read the animal numbers</h2>
           </div>
           <p class="mw-copy">
@@ -219,6 +321,34 @@
             DALY-equivalent calculations. They are country-level suffering-pressure proxies built to be usable on a
             static site.
           </p>
+        </div>
+
+        <div class="method-grid">
+          <article class="method-card">
+            <p class="issue-tag">What this is</p>
+            <h3>Research synthesis and exploration</h3>
+            <p>
+              PainMap visualizes public research estimates and burden proxies so readers can compare events, source
+              claims, and country context without treating the globe as a final moral ranking.
+            </p>
+          </article>
+          <article class="method-card">
+            <p class="issue-tag">What this is not</p>
+            <h3>No personal-data product</h3>
+            <p>
+              This public site does not collect symptom reports, patient records, clinician accounts, or regulated
+              health data. Any future workflow like that should live behind a separate compliant service boundary.
+            </p>
+          </article>
+          <article class="method-card">
+            <p class="issue-tag">Glossary</p>
+            <h3>Key terms</h3>
+            <p>
+              ADM1 means first-level administrative regions such as states or provinces. Welfare range is an uncertain
+              estimate of possible welfare capacity. Burden proxies are directional estimates, not settled
+              DALY-equivalent outputs.
+            </p>
+          </article>
         </div>
 
         <div class="mw-grid" id="mw-grid"></div>
@@ -230,7 +360,15 @@
         </p>
       </section>
 
-      <section class="sources">
+      <section class="sources" id="data-sources" aria-labelledby="sources-title">
+        <div class="section-intro source-intro">
+          <p class="label">Data and Sources</p>
+          <h2 id="sources-title">Source groups and provenance</h2>
+          <p>
+            The source layer is grouped by purpose so a reader can trace a claim to the relevant dataset, research
+            project, or methodological note without scanning one undifferentiated link dump.
+          </p>
+        </div>
         <article class="source-card">
           <p class="label">Welfare Footprint</p>
           <h3>Event-level pain research</h3>
@@ -267,7 +405,74 @@
         </article>
       </section>
 
+      <section class="governance-panel" id="about-policies" aria-labelledby="policies-title">
+        <div class="section-intro">
+          <p class="label">About and Policies</p>
+          <h2 id="policies-title">Trust, governance, and boundaries</h2>
+        </div>
+        <div class="policy-grid">
+          <article class="policy-card" id="privacy">
+            <p class="issue-tag">Privacy Policy</p>
+            <h3>No personal data collection on this static site</h3>
+            <p>
+              PainMap is a public, static research visualization. It does not ask for names, emails, health symptoms,
+              accounts, or payment information. If privacy-first analytics are added later, they should be disclosed
+              here before launch.
+            </p>
+          </article>
+          <article class="policy-card" id="terms">
+            <p class="issue-tag">Terms</p>
+            <h3>Research context, not advice</h3>
+            <p>
+              Content is provided for public research, education, and advocacy analysis. It is not medical, veterinary,
+              legal, investment, or policy advice, and the numbers should be read with the stated assumptions and
+              uncertainty.
+            </p>
+          </article>
+          <article class="policy-card" id="accessibility">
+            <p class="issue-tag">Accessibility Statement</p>
+            <h3>Visuals have text and table equivalents</h3>
+            <p>
+              Core charts and ranking views include table equivalents, native controls, visible labels, keyboard search
+              paths, status updates, and source text. Remaining accessibility issues should be reported through the
+              contact link.
+            </p>
+          </article>
+          <article class="policy-card" id="editorial-policy">
+            <p class="issue-tag">Editorial Policy</p>
+            <h3>Sources, caveats, and update discipline</h3>
+            <p>
+              Method notes should identify the source, model assumption, last meaningful update, and whether a value is
+              measured directly or inferred from a proxy. Major model changes should be reflected in the changelog.
+            </p>
+          </article>
+          <article class="policy-card" id="contact">
+            <p class="issue-tag">Contact</p>
+            <h3>Corrections and source questions</h3>
+            <p>
+              Send corrections, source updates, accessibility reports, or governance questions to the project maintainer
+              before reusing sensitive claims in public materials.
+            </p>
+          </article>
+          <article class="policy-card" id="changelog">
+            <p class="issue-tag">Changelog</p>
+            <h3>May 31, 2026</h3>
+            <p>
+              Added start paths, explicit policy surfaces, metadata, glossary framing, keyboard/search parity notes, and
+              table equivalents for primary charts and rankings.
+            </p>
+          </article>
+        </div>
+      </section>
+      </main>
+
       <footer class="source-links">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+        <a href="#accessibility">Accessibility</a>
+        <a href="#editorial-policy">Editorial policy</a>
+        <a href="#contact">Contact</a>
+        <a href="#changelog">Changelog</a>
         <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/" target="_blank" rel="noreferrer">Natural Earth Admin 0 countries</a>
         <a href="https://www.geoboundaries.org/api.html" target="_blank" rel="noreferrer">geoBoundaries API</a>
         <a href="https://www.givewell.org/charities/top-charities" target="_blank" rel="noreferrer">GiveWell top charities</a>

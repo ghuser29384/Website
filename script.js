@@ -1282,9 +1282,13 @@ const animalSection = document.getElementById("animal-section");
 const animalSectionLabel = document.getElementById("animal-section-label");
 const issuesRoot = document.getElementById("issues");
 const animalIssuesRoot = document.getElementById("animal-issues");
+const issuesTableRoot = document.getElementById("issues-table");
+const animalIssuesTableRoot = document.getElementById("animal-issues-table");
 const painAnchorsRoot = document.getElementById("pain-anchors");
 const painLongChartRoot = document.getElementById("pain-long-chart");
 const painAcuteChartRoot = document.getElementById("pain-acute-chart");
+const painLongTableRoot = document.getElementById("pain-long-table");
+const painAcuteTableRoot = document.getElementById("pain-acute-table");
 const painCalloutsRoot = document.getElementById("pain-callouts");
 const moralWeightGridRoot = document.getElementById("mw-grid");
 
@@ -1854,8 +1858,23 @@ function mediaGithubUrl(url) {
   return url;
 }
 
-async function fetchJson(url) {
-  const response = await fetch(url);
+async function fetchJson(url, timeoutMs = 25000) {
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), timeoutMs);
+
+  let response;
+
+  try {
+    response = await fetch(url, { signal: controller.signal });
+  } catch (error) {
+    if (error.name === "AbortError") {
+      throw new Error("Request timed out");
+    }
+
+    throw error;
+  } finally {
+    window.clearTimeout(timeout);
+  }
 
   if (!response.ok) {
     throw new Error(`HTTP ${response.status}`);
@@ -3025,8 +3044,85 @@ function parseContextData(payload) {
   };
 }
 
+function clearTable(root) {
+  if (root) {
+    root.textContent = "";
+  }
+}
+
+function appendTextCell(row, tagName, value) {
+  const cell = document.createElement(tagName);
+  cell.textContent = value || "";
+  row.appendChild(cell);
+  return cell;
+}
+
+function renderIssueTable(root, caption, issues, orderNoteForIssue) {
+  if (!root) {
+    return;
+  }
+
+  root.textContent = "";
+
+  if (!issues?.length) {
+    return;
+  }
+
+  const details = document.createElement("details");
+  details.className = "data-table-details";
+  details.open = true;
+
+  const summary = document.createElement("summary");
+  summary.textContent = "Data table equivalent";
+
+  const wrap = document.createElement("div");
+  wrap.className = "data-table-wrap";
+
+  const table = document.createElement("table");
+  table.className = "data-table";
+
+  const tableCaption = document.createElement("caption");
+  tableCaption.textContent = caption;
+
+  const thead = document.createElement("thead");
+  const headerRow = document.createElement("tr");
+  ["Rank", "Cause", "Metric", "Order note", "Source"].forEach((label) =>
+    appendTextCell(headerRow, "th", label)
+  );
+  thead.appendChild(headerRow);
+
+  const tbody = document.createElement("tbody");
+
+  issues.forEach((issue, index) => {
+    const row = document.createElement("tr");
+    appendTextCell(row, "td", String(index + 1));
+    appendTextCell(row, "th", issue.title);
+    row.lastElementChild.scope = "row";
+    appendTextCell(row, "td", issue.metric);
+    appendTextCell(row, "td", orderNoteForIssue(issue));
+    appendTextCell(row, "td", issue.source);
+    tbody.appendChild(row);
+  });
+
+  table.append(tableCaption, thead, tbody);
+  wrap.appendChild(table);
+  details.append(summary, wrap);
+  root.appendChild(details);
+}
+
+function renderRankedIssues(root, tableRoot, caption, issues, orderNoteForIssue) {
+  root.textContent = "";
+
+  issues.forEach((issue, index) => {
+    root.appendChild(buildRankedIssueCard(issue, index + 1, orderNoteForIssue(issue)));
+  });
+
+  renderIssueTable(tableRoot, caption, issues, orderNoteForIssue);
+}
+
 function renderIssueStatus(title, body) {
   issuesRoot.textContent = "";
+  clearTable(issuesTableRoot);
   const card = document.createElement("article");
   card.className = "issue-card";
   card.innerHTML = `
@@ -3039,6 +3135,7 @@ function renderIssueStatus(title, body) {
 
 function renderAnimalIssueStatus(title, body) {
   animalIssuesRoot.textContent = "";
+  clearTable(animalIssuesTableRoot);
   const card = document.createElement("article");
   card.className = "issue-card";
   card.innerHTML = `
@@ -3116,6 +3213,11 @@ function buildPainRow(row, maxTotal) {
 
   const bar = document.createElement("div");
   bar.className = "pain-bar";
+  bar.setAttribute("role", "img");
+  bar.setAttribute(
+    "aria-label",
+    `${row.label}: ${formatPainValue(painTotal(row.values), row.unit)} total pain load. Values are also listed in the table below.`
+  );
 
   for (const level of PAIN_LEVELS) {
     const value = row.values[level.id] || 0;
@@ -3168,6 +3270,58 @@ function renderPainChart(root, rows) {
   }
 }
 
+function renderPainDataTable(root, caption, rows) {
+  if (!root) {
+    return;
+  }
+
+  root.textContent = "";
+
+  const details = document.createElement("details");
+  details.className = "data-table-details";
+  details.open = true;
+
+  const summary = document.createElement("summary");
+  summary.textContent = "Data table equivalent";
+
+  const wrap = document.createElement("div");
+  wrap.className = "data-table-wrap";
+
+  const table = document.createElement("table");
+  table.className = "data-table";
+
+  const tableCaption = document.createElement("caption");
+  tableCaption.textContent = caption;
+
+  const thead = document.createElement("thead");
+  const headerRow = document.createElement("tr");
+  ["Event", "Context", "Total", ...PAIN_LEVELS.map((level) => level.label)].forEach((label) =>
+    appendTextCell(headerRow, "th", label)
+  );
+  thead.appendChild(headerRow);
+
+  const tbody = document.createElement("tbody");
+
+  rows.forEach((painRow) => {
+    const row = document.createElement("tr");
+    appendTextCell(row, "th", painRow.label).scope = "row";
+    appendTextCell(row, "td", painRow.meta);
+    appendTextCell(row, "td", formatPainValue(painTotal(painRow.values), painRow.unit));
+
+    PAIN_LEVELS.forEach((level) => {
+      const value = painRow.values[level.id] || 0;
+      appendTextCell(row, "td", value ? formatPainValue(value, painRow.unit) : "0");
+    });
+
+    tbody.appendChild(row);
+  });
+
+  table.append(tableCaption, thead, tbody);
+  wrap.appendChild(table);
+  details.append(summary, wrap);
+  root.appendChild(details);
+}
+
 function renderPainCallouts() {
   if (!painCalloutsRoot) {
     return;
@@ -3191,6 +3345,8 @@ function renderPainVisuals() {
   renderPainAnchors();
   renderPainChart(painLongChartRoot, LONG_PAIN_ROWS);
   renderPainChart(painAcuteChartRoot, ACUTE_PAIN_ROWS);
+  renderPainDataTable(painLongTableRoot, "Long pain loads by event and pain intensity", LONG_PAIN_ROWS);
+  renderPainDataTable(painAcuteTableRoot, "Acute slaughter pain by method and pain intensity", ACUTE_PAIN_ROWS);
   renderPainCallouts();
 }
 
@@ -3253,11 +3409,15 @@ function renderIssues(country) {
       return;
     }
 
-    issuesRoot.textContent = "";
-
-    issues.forEach((issue, index) => {
-      issuesRoot.appendChild(buildRankedIssueCard(issue, index + 1, formatWholeWorldRanking(issue, state.rankingMode)));
-    });
+    renderRankedIssues(
+      issuesRoot,
+      issuesTableRoot,
+      state.globeMode === "death"
+        ? "Whole-world life-years lost ranking"
+        : "Whole-world suffering ranking across humans and animals",
+      issues,
+      (issue) => formatWholeWorldRanking(issue, state.rankingMode)
+    );
 
     return;
   }
@@ -3294,14 +3454,16 @@ function renderIssues(country) {
       return;
     }
 
-    issuesRoot.textContent = "";
-    issues.forEach((issue, index) => {
-      const orderNote =
+    renderRankedIssues(
+      issuesRoot,
+      issuesTableRoot,
+      "Selected province ranking",
+      issues,
+      (issue) =>
         state.globeMode === "death" && !issue.localKind
           ? formatHumanRanking(issue, state.rankingMode)
-          : formatProvinceRanking(issue, state.rankingMode);
-      issuesRoot.appendChild(buildRankedIssueCard(issue, index + 1, orderNote));
-    });
+          : formatProvinceRanking(issue, state.rankingMode)
+    );
     return;
   }
 
@@ -3335,17 +3497,20 @@ function renderIssues(country) {
     return;
   }
 
-  issuesRoot.textContent = "";
   const orderedIssues = sortIssuesByMode(issues, state.rankingMode);
-
-  orderedIssues.forEach((issue, index) => {
-    issuesRoot.appendChild(buildRankedIssueCard(issue, index + 1, formatHumanRanking(issue, state.rankingMode)));
-  });
+  renderRankedIssues(
+    issuesRoot,
+    issuesTableRoot,
+    "Selected country human issue ranking",
+    orderedIssues,
+    (issue) => formatHumanRanking(issue, state.rankingMode)
+  );
 }
 
 function renderAnimalIssues(country) {
   if (!currentGlobeModeConfig().showAnimals || state.selectedProvince) {
     animalIssuesRoot.textContent = "";
+    clearTable(animalIssuesTableRoot);
     return;
   }
 
@@ -3379,11 +3544,13 @@ function renderAnimalIssues(country) {
       return;
     }
 
-    animalIssuesRoot.textContent = "";
-
-    issues.forEach((issue, index) => {
-      animalIssuesRoot.appendChild(buildRankedIssueCard(issue, index + 1, formatAnimalRanking(issue, state.rankingMode)));
-    });
+    renderRankedIssues(
+      animalIssuesRoot,
+      animalIssuesTableRoot,
+      "Whole-world animal suffering ranking",
+      issues,
+      (issue) => formatAnimalRanking(issue, state.rankingMode)
+    );
 
     return;
   }
@@ -3414,12 +3581,14 @@ function renderAnimalIssues(country) {
     return;
   }
 
-  animalIssuesRoot.textContent = "";
   const orderedIssues = sortIssuesByMode(issues, state.rankingMode);
-
-  orderedIssues.forEach((issue, index) => {
-    animalIssuesRoot.appendChild(buildRankedIssueCard(issue, index + 1, formatAnimalRanking(issue, state.rankingMode)));
-  });
+  renderRankedIssues(
+    animalIssuesRoot,
+    animalIssuesTableRoot,
+    "Selected country animal cause ranking",
+    orderedIssues,
+    (issue) => formatAnimalRanking(issue, state.rankingMode)
+  );
 }
 
 function populateCountryOptions() {
@@ -3820,6 +3989,16 @@ function renderGlobe() {
     })
     .attr("d", path)
     .attr("aria-label", (feature) => countryName(feature.properties))
+    .attr("role", "button")
+    .attr("tabindex", 0)
+    .on("keydown", (event, feature) => {
+      if (event.key !== "Enter" && event.key !== " ") {
+        return;
+      }
+
+      event.preventDefault();
+      selectCountry(feature);
+    })
     .on("click", (event, feature) => {
       if (justDragged) {
         return;
@@ -3844,6 +4023,17 @@ function renderGlobe() {
       return isSelected ? "province-path is-selected" : "province-path";
     })
     .attr("d", path)
+    .attr("aria-label", (feature) => `${provinceName(feature)}, ${countryName(state.selectedCountry?.properties)}`)
+    .attr("role", "button")
+    .attr("tabindex", 0)
+    .on("keydown", (event, feature) => {
+      if (event.key !== "Enter" && event.key !== " ") {
+        return;
+      }
+
+      event.preventDefault();
+      selectProvince(state.selectedCountry, feature);
+    })
     .on("click", (event, feature) => {
       event.stopPropagation();
 

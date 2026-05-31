@@ -1,18 +1,21 @@
 :root {
-  --bg: #f7f7f4;
+  --bg: #f5f7f8;
   --panel: #ffffff;
-  --line: #d7dbd8;
+  --line: #d8dee2;
   --text: #121519;
   --muted: #5e676d;
-  --accent: #315f66;
-  --accent-soft: #e2ecea;
-  --ocean: #f1f4f3;
+  --accent: #285c66;
+  --accent-strong: #1b3f48;
+  --accent-soft: #e4f0ef;
+  --warn: #8d332b;
+  --warn-soft: #f6e4df;
+  --ocean: #edf3f4;
   --graticule: #cfd8d5;
   --country: #b8c8c6;
   --country-hover: #7f9a97;
-  --country-selected: #315f66;
-  --province: rgba(49, 95, 102, 0.18);
-  --province-line: rgba(49, 95, 102, 0.58);
+  --country-selected: #285c66;
+  --province: rgba(40, 92, 102, 0.18);
+  --province-line: rgba(40, 92, 102, 0.58);
   --pain-annoying: #d8e5b7;
   --pain-hurtful: #f0c775;
   --pain-disabling: #de7a67;
@@ -40,6 +43,14 @@ a {
   color: inherit;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(141, 51, 43, 0.32);
+  outline-offset: 3px;
+}
+
 button,
 input,
 textarea,
@@ -56,12 +67,117 @@ select {
   gap: 1rem;
 }
 
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 20;
+  transform: translateY(-150%);
+  border: 1px solid var(--accent);
+  background: var(--panel);
+  color: var(--text);
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.94);
+  padding: 0.85rem 1rem;
+  backdrop-filter: blur(16px);
+}
+
+.brand {
+  color: var(--accent-strong);
+  font-family: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 0.35rem 0.85rem;
+}
+
+.site-nav a,
+.ghost-link,
+.solid-button {
+  min-height: 2.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.site-nav a {
+  border-color: transparent;
+  padding: 0.35rem 0.2rem;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--accent);
+}
+
+.solid-button,
+.ghost-link {
+  padding: 0.75rem 1rem;
+}
+
+.solid-button {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.ghost-link:hover,
+.ghost-link:focus-visible,
+.solid-button:hover,
+.solid-button:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section[id],
+article[id] {
+  scroll-margin-top: 6.5rem;
+}
+
 .topbar,
+.audience-panel,
 .globe-panel,
 .detail-panel,
 .pain-panel,
 .mw-panel,
-.sources {
+.sources,
+.governance-panel {
   border: 1px solid var(--line);
   background: var(--panel);
 }
@@ -71,6 +187,18 @@ select {
   grid-template-columns: minmax(0, 1fr) minmax(280px, 30rem);
   gap: 1.5rem;
   padding: 1.45rem 1.5rem;
+}
+
+.hero-section {
+  min-height: min(76vh, 680px);
+  align-items: center;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.35rem;
 }
 
 .label,
@@ -90,13 +218,14 @@ h3 {
   margin: 0;
   font-family: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
   font-weight: 500;
-  line-height: 0.98;
+  line-height: 1.06;
 }
 
 h1 {
   margin-top: 0.35rem;
+  line-height: 0.98;
   font-size: clamp(2.7rem, 7vw, 5rem);
-  max-width: 14ch;
+  max-width: 13ch;
 }
 
 h2 {
@@ -107,6 +236,7 @@ h2 {
 h3 {
   margin-top: 0.45rem;
   font-size: 1.45rem;
+  line-height: 1.12;
 }
 
 p {
@@ -120,6 +250,84 @@ p {
   max-width: 42ch;
 }
 
+.section-intro {
+  display: grid;
+  gap: 0.55rem;
+  max-width: 54rem;
+}
+
+.audience-panel,
+.governance-panel {
+  padding: 1.4rem;
+}
+
+.audience-grid,
+.policy-grid,
+.method-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.1rem;
+}
+
+.audience-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.method-grid,
+.policy-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.audience-card,
+.policy-card,
+.method-card {
+  border-top: 1px solid var(--line);
+  padding-top: 0.95rem;
+}
+
+.audience-card {
+  display: grid;
+  gap: 0.45rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.audience-card strong,
+.policy-card h3,
+.method-card h3 {
+  color: var(--text);
+}
+
+.audience-card:hover strong,
+.audience-card:focus-visible strong {
+  color: var(--accent);
+}
+
+.audience-card span:last-child {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.trust-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.95rem;
+}
+
+.trust-strip span {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.trust-strip strong {
+  display: block;
+  color: var(--text);
+}
+
 .layout {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.9fr);
@@ -129,6 +337,10 @@ p {
 }
 
 .topbar {
+  order: 0;
+}
+
+.audience-panel {
   order: 0;
 }
 
@@ -148,7 +360,8 @@ p {
 .detail-panel,
 .pain-panel,
 .mw-panel,
-.sources {
+.sources,
+.governance-panel {
   padding: 1.4rem;
 }
 
@@ -196,8 +409,7 @@ p {
 }
 
 .search-input:focus-visible {
-  outline: 2px solid rgba(49, 95, 102, 0.24);
-  outline-offset: 2px;
+  outline-color: rgba(141, 51, 43, 0.32);
 }
 
 .ghost-button {
@@ -223,6 +435,17 @@ p {
 
 .zoom-range {
   width: 9rem;
+}
+
+.control-help,
+.map-description {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.control-help {
+  max-width: 28rem;
 }
 
 .sr-only {
@@ -263,6 +486,11 @@ p {
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.92);
   color: var(--text);
+}
+
+.map-description {
+  margin-top: 0.75rem;
+  max-width: 52rem;
 }
 
 .legend {
@@ -333,8 +561,7 @@ p {
 }
 
 .ranking-select:focus-visible {
-  outline: 2px solid rgba(49, 95, 102, 0.24);
-  outline-offset: 2px;
+  outline-color: rgba(141, 51, 43, 0.32);
 }
 
 .ranking-copy {
@@ -570,6 +797,64 @@ p {
   padding-left: 0.9rem;
 }
 
+.table-equivalent {
+  margin-top: 0.95rem;
+}
+
+.data-table-details {
+  border-top: 1px solid var(--line);
+  padding-top: 0.85rem;
+}
+
+.data-table-details summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  list-style-position: inside;
+  text-transform: uppercase;
+}
+
+.data-table-wrap {
+  margin-top: 0.75rem;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  min-width: 580px;
+  border-collapse: collapse;
+  color: var(--text);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.data-table caption {
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.data-table th,
+.data-table td {
+  border-top: 1px solid var(--line);
+  padding: 0.65rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.data-table thead th {
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.data-table tbody th {
+  font-weight: 700;
+}
+
 .pain-footnote {
   margin-top: 1.25rem;
   padding-top: 0.95rem;
@@ -628,6 +913,10 @@ p {
   margin-top: 1rem;
 }
 
+.source-intro {
+  grid-column: 1 / -1;
+}
+
 .source-links {
   display: flex;
   flex-wrap: wrap;
@@ -664,6 +953,13 @@ p {
   fill: var(--country-hover);
 }
 
+.country-path:focus,
+.province-path:focus {
+  outline: none;
+  stroke: var(--warn);
+  stroke-width: 2.2;
+}
+
 .country-path.is-selected {
   fill: var(--country-selected);
 }
@@ -693,11 +989,13 @@ p {
 
 @media (max-width: 980px) {
   .topbar,
+  .audience-grid,
   .layout,
   .pain-head,
   .pain-layout,
   .mw-head,
   .mw-grid,
+  .trust-strip,
   .sources {
     grid-template-columns: 1fr;
   }
@@ -714,12 +1012,28 @@ p {
   }
 
   .topbar,
+  .audience-panel,
   .globe-panel,
   .detail-panel,
   .pain-panel,
   .mw-panel,
-  .sources {
+  .sources,
+  .governance-panel {
     padding: 1rem;
+  }
+
+  .site-header {
+    position: static;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .site-nav {
+    justify-content: start;
+  }
+
+  .hero-section {
+    min-height: auto;
   }
 
   .panel-head {
