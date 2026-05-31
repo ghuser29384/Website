@@ -3,14 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Country Context | PainMap</title>
-    <meta name="description" content="Search PainMap country context as a secondary proxy layer with table-first access and an optional globe.">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Places | PainMap</title>
+    <meta name="description" content="Search PainMap places as atlas proxy layers with table-first access and an equal-area map view.">
     <link rel="canonical" href="https://painmap.org/countries/">
-    <meta property="og:title" content="Country Context | PainMap">
-    <meta property="og:description" content="Country context is secondary to event pain evidence and should be read as proxy information.">
+    <meta property="og:title" content="Places | PainMap">
+    <meta property="og:description" content="Place atlas layers expose source, vintage, method class, uncertainty, and table-first access.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/countries/">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -18,22 +20,23 @@
       <header class="site-header" aria-label="Primary navigation">
         <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
         <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/countries/">Places</a>
           <a href="/events/">Events</a>
-          <a href="/countries/">Countries</a>
           <a href="/methods/">Methods</a>
           <a href="/data/">Data</a>
-          <a href="/resources/">Resources</a>
+          <a href="/api/">API</a>
           <a href="/about/">About</a>
         </nav>
       </header>
       <main id="main-content" class="route-page">
         <section class="route-panel route-hero" aria-labelledby="countries-title">
           <div>
-            <p class="label">Countries</p>
-            <h1 id="countries-title">Secondary country context</h1>
+            <p class="label">Places</p>
+            <h1 id="countries-title">Atlas place context</h1>
           </div>
           <p class="route-copy">
-            Country cards are proxy context, not direct moral rankings. They combine public burden indicators,
+            Place cards are proxy context, not direct moral rankings. They combine public burden indicators,
             animal-count datasets, land-area proxies, and cautious welfare-range assumptions to help readers locate
             scale while keeping event pain evidence primary.
           </p>
@@ -51,14 +54,14 @@
               <p>Country results use directional suffering-pressure proxies and should not be treated as settled DALY-equivalent outputs.</p>
             </article>
             <article class="route-card">
-              <p class="issue-tag">Optional globe</p>
+              <p class="issue-tag">Equal-area map</p>
               <h2>The map is progressive enhancement</h2>
-              <p>The globe is useful for spatial browsing, but it is secondary to the accessible search and table flow.</p>
+              <p>The map is useful for spatial browsing, but it is secondary to the accessible search and table flow.</p>
             </article>
           </div>
           <div class="route-actions">
-            <a class="solid-button" href="/#explore-country">Open country search</a>
-            <a class="ghost-link" href="/data/">Review datasets</a>
+            <a class="solid-button" href="/#explore-country">Open place search</a>
+            <a class="ghost-link" href="/dataset/place-measurements/">Review dataset</a>
           </div>
         </section>
       </main>

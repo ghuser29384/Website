@@ -3,13 +3,15 @@ import { feature as topojsonFeature } from "https://cdn.jsdelivr.net/npm/topojso
 
 const COUNTRY_DATA_URL =
   "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson";
+const COUNTRY_DATA_FALLBACK_URL = "data/countries-lite.geojson";
 const GSAP_ADM1_DATA_URL = "data/gsap-adm1-2023.json";
 const GLOBE_ROTATION = [-18, -14, 0];
 const width = 900;
 const height = 900;
-const baseScale = 388;
-const minScale = baseScale;
-const maxScale = baseScale * 3.25;
+const ATLAS_BASE_SCALE = 180;
+const GLOBE_BASE_SCALE = 388;
+const ATLAS_MAX_SCALE = ATLAS_BASE_SCALE * 4.8;
+const GLOBE_MAX_SCALE = GLOBE_BASE_SCALE * 3.25;
 const EARTH_RADIUS_KM = 6371.0088;
 const WORLDPOP_YEAR = 2020;
 const ISSUE_DATA_DATE_RANGE = "2010:2025";
@@ -25,6 +27,56 @@ const GLOBAL_LAND_AREA_SQKM = 1.489e8;
 const GLOBAL_WILD_BIRD_ESTIMATE = 5e10;
 const WILD_BIRDS_PER_SQKM = GLOBAL_WILD_BIRD_ESTIMATE / GLOBAL_LAND_AREA_SQKM;
 const WORLD_RANK_LIMIT = 10;
+const STATIC_WORLD_ANIMAL_ISSUES = [
+  {
+    id: "fallback-factory-farmed",
+    worldKind: "animal-suffering",
+    tag: "Animal category · Fallback",
+    title: "Factory-farmed animals",
+    metric: "Public export row: factory-farmed animals",
+    body: "Representative atlas fallback for farmed-animal burden while live OWID/Fishcount rows are unavailable.",
+    source:
+      "Source: PainMap place-measurements static contract, OWID/Fishcount-style country and world animal rows, Rethink Priorities welfare-range assumptions. Data vintage: 2026-05-31 fallback contract.",
+    ranking: {
+      improvement: { score: 3, raw: 3000, metric: "static tractability-adjusted burden proxy" },
+      total: { score: 3, raw: 3000, metric: "static total burden proxy" },
+      "per-being": { score: 0.35, raw: 0.35, metric: "static welfare-range proxy" },
+    },
+  },
+  {
+    id: "fallback-wild-insects",
+    worldKind: "animal-suffering",
+    tag: "Animal category · Fallback",
+    title: "Insects",
+    metric: "Public export row: wild and human-affected insects",
+    body: "Representative atlas fallback for insect scale using land-area and insecticide-source assumptions.",
+    source:
+      "Source: PainMap place-measurements static contract, World Bank land-area indicators, OWID insecticide-use data, Wild Animal Initiative benchmark. Data vintage: 2026-05-31 fallback contract.",
+    ranking: {
+      improvement: { score: 2.4, raw: 250, metric: "static tractability-adjusted insect proxy" },
+      total: { score: 3.4, raw: 6000, metric: "static total insect burden proxy" },
+      "per-being": { score: 0.08, raw: 0.08, metric: "static sentience and welfare-range proxy" },
+    },
+  },
+];
+const STATIC_WORLD_SUFFERING_ISSUES = [
+  {
+    id: "fallback-human-burden",
+    worldKind: "human-suffering",
+    tag: "Human burden · Fallback",
+    title: "Human suffering burden indicators",
+    metric: "Public export row: World Bank indicator proxy",
+    body: "Representative atlas fallback for human burden while live World Bank WLD rows are unavailable.",
+    source:
+      "Source: PainMap place-measurements static contract and World Bank indicator API. Data vintage: World Bank 2010:2025 latest non-null window.",
+    ranking: {
+      improvement: { score: 2.8, raw: 800, metric: "static global-health tractability proxy" },
+      total: { score: 2.7, raw: 650, metric: "static total human burden proxy" },
+      "per-being": { score: 0.45, raw: 0.45, metric: "static per-being severity proxy" },
+    },
+  },
+  ...STATIC_WORLD_ANIMAL_ISSUES,
+];
 const INSECT_WELFARE_PROXY = {
   sentience: { median: 0.226, low: 0.002, high: 0.573 },
   welfareRange: { median: 0.029, low: 0, high: 0.244 },
@@ -40,9 +92,9 @@ const GLOBE_MODES = {
   suffering: {
     label: "Top Causes of Suffering by Country",
     topbarNote:
-      "The main purpose of this site is to visualize current research on animal pain, especially event-level Welfare Footprint estimates. The globe is a secondary context layer for where broader suffering burdens scale across countries.",
+      "PainMap begins as a place-first atlas: choose a country or province, inspect pain-source layers, and keep source, vintage, method class, and uncertainty beside visible values.",
     globeCopy:
-      "Secondary context layer: compare country-level human, farmed-animal, wild-animal, and insect suffering burdens while the pain research visualizations remain the main focus.",
+      "Atlas layer: compare country-level human, farmed-animal, wild-animal, and insect suffering burdens while keeping event-level pain evidence linked to the same source registry.",
     humanSectionLabel: "Human suffering",
     animalSectionLabel: "Animal suffering causes",
     showAnimals: true,
@@ -67,9 +119,9 @@ const GLOBE_MODES = {
   death: {
     label: "Top Causes of Death by Country",
     topbarNote:
-      "The main purpose of this site is to visualize current research on animal pain. In death mode, the globe becomes a secondary country-context layer for where life-years are being lost.",
+      "Death mode keeps the atlas place-first while switching the layer stack toward human life-years lost and explicit mortality source metadata.",
     globeCopy:
-      "Secondary context layer: compare country-level death burdens while the pain research charts above remain the main point of the site.",
+      "Atlas layer: compare country-level death burdens while keeping method class, source vintage, and uncertainty attached to the visible rankings.",
     humanSectionLabel: "Human deaths",
     animalSectionLabel: "",
     showAnimals: false,
@@ -468,7 +520,7 @@ const DEATH_MODELS = [
     title: "Under-5 deaths",
     priorityLabel: "Preventable deaths",
     prioritySource:
-      "Death globe: child survival proxy derived from the World Bank country indicator set.",
+      "Death atlas: child survival proxy derived from the World Bank country indicator set.",
     weight: 1.08,
     typicalAgeAtDeath: 1,
     lifeYearsSource:
@@ -495,7 +547,7 @@ const DEATH_MODELS = [
     title: "Maternal deaths",
     priorityLabel: "Preventable deaths",
     prioritySource:
-      "Death globe: maternal mortality indicator from the World Bank country set.",
+      "Death atlas: maternal mortality indicator from the World Bank country set.",
     weight: 0.88,
     typicalAgeAtDeath: 29,
     lifeYearsSource:
@@ -522,7 +574,7 @@ const DEATH_MODELS = [
     title: "Air pollution deaths",
     priorityLabel: "Environmental deaths",
     prioritySource:
-      "Death globe: direct mortality indicator from the World Bank country set.",
+      "Death atlas: direct mortality indicator from the World Bank country set.",
     weight: 0.92,
     typicalAgeAtDeath: 61,
     lifeYearsSource:
@@ -549,7 +601,7 @@ const DEATH_MODELS = [
     title: "Unsafe water, sanitation, and hygiene deaths",
     priorityLabel: "Environmental deaths",
     prioritySource:
-      "Death globe: direct WASH mortality indicator from the World Bank country set.",
+      "Death atlas: direct WASH mortality indicator from the World Bank country set.",
     weight: 0.98,
     typicalAgeAtDeath: 32,
     lifeYearsSource:
@@ -576,7 +628,7 @@ const DEATH_MODELS = [
     title: "Road injury deaths",
     priorityLabel: "Injury deaths",
     prioritySource:
-      "Death globe: direct road-injury mortality indicator from the World Bank country set.",
+      "Death atlas: direct road-injury mortality indicator from the World Bank country set.",
     weight: 0.71,
     typicalAgeAtDeath: 31,
     lifeYearsSource:
@@ -603,7 +655,7 @@ const DEATH_MODELS = [
     title: "Suicide deaths",
     priorityLabel: "Violence deaths",
     prioritySource:
-      "Death globe: suicide mortality indicator from the World Bank country set.",
+      "Death atlas: suicide mortality indicator from the World Bank country set.",
     weight: 0.66,
     typicalAgeAtDeath: 37,
     lifeYearsSource:
@@ -630,7 +682,7 @@ const DEATH_MODELS = [
     title: "Homicide deaths",
     priorityLabel: "Violence deaths",
     prioritySource:
-      "Death globe: homicide mortality indicator from the World Bank country set.",
+      "Death atlas: homicide mortality indicator from the World Bank country set.",
     weight: 0.72,
     typicalAgeAtDeath: 31,
     lifeYearsSource:
@@ -657,7 +709,7 @@ const DEATH_MODELS = [
     title: "Battle-related deaths",
     priorityLabel: "Conflict deaths",
     prioritySource:
-      "Death globe: direct conflict death indicator from the World Bank country set.",
+      "Death atlas: direct conflict death indicator from the World Bank country set.",
     weight: 0.93,
     typicalAgeAtDeath: 30,
     lifeYearsSource:
@@ -1397,6 +1449,8 @@ const zoomOutButton = document.getElementById("zoom-out");
 const zoomInButton = document.getElementById("zoom-in");
 const zoomRange = document.getElementById("zoom-range");
 const resetButton = document.getElementById("reset-view");
+const mapProjectionModeSelect = document.getElementById("map-projection-mode");
+const mapDisclosureSummary = document.querySelector(".globe-disclosure summary");
 const topbarNote = document.getElementById("topbar-note");
 const selectionMeta = document.getElementById("selection-meta");
 const selectionTitle = document.getElementById("selection-title");
@@ -1427,13 +1481,8 @@ const painAcuteTableRoot = document.getElementById("pain-acute-table");
 const painCalloutsRoot = document.getElementById("pain-callouts");
 const moralWeightGridRoot = document.getElementById("mw-grid");
 
-const projection = d3
-  .geoOrthographic()
-  .translate([width / 2, height / 2])
-  .scale(baseScale)
-  .clipAngle(90)
-  .precision(0.2)
-  .rotate(GLOBE_ROTATION);
+let mapViewMode = "atlas";
+let projection = createMapProjection(mapViewMode);
 
 const path = d3.geoPath(projection);
 const graticule = d3.geoGraticule10();
@@ -1480,6 +1529,36 @@ let provinceIssueRequestId = 0;
 let justDragged = false;
 let currentCountrySearchOptions = [];
 let activeCountrySearchIndex = -1;
+
+function createMapProjection(mode) {
+  if (mode === "globe") {
+    return d3
+      .geoOrthographic()
+      .translate([width / 2, height / 2])
+      .scale(GLOBE_BASE_SCALE)
+      .clipAngle(90)
+      .precision(0.2)
+      .rotate(GLOBE_ROTATION);
+  }
+
+  return d3
+    .geoEqualEarth()
+    .translate([width / 2, height / 2])
+    .scale(ATLAS_BASE_SCALE)
+    .precision(0.2);
+}
+
+function currentBaseScale() {
+  return mapViewMode === "globe" ? GLOBE_BASE_SCALE : ATLAS_BASE_SCALE;
+}
+
+function currentMaxScale() {
+  return mapViewMode === "globe" ? GLOBE_MAX_SCALE : ATLAS_MAX_SCALE;
+}
+
+function mapViewLabel() {
+  return mapViewMode === "globe" ? "globe explorer" : "equal-area atlas view";
+}
 
 function setStatus(message) {
   mapStatus.textContent = message;
@@ -1592,10 +1671,16 @@ function painTotal(values) {
 }
 
 function clampScale(scale) {
-  return Math.max(minScale, Math.min(maxScale, scale));
+  return Math.max(currentBaseScale(), Math.min(currentMaxScale(), scale));
 }
 
 function updateZoomUi() {
+  if (!zoomRange) {
+    return;
+  }
+
+  const baseScale = currentBaseScale();
+  zoomRange.max = (currentMaxScale() / baseScale).toFixed(2);
   zoomRange.value = (projection.scale() / baseScale).toFixed(2);
 }
 
@@ -2005,10 +2090,14 @@ async function fetchJson(url, timeoutMs = 25000) {
   const controller = new AbortController();
   const timeout = window.setTimeout(() => controller.abort(), timeoutMs);
 
-  let response;
-
   try {
-    response = await fetch(url, { signal: controller.signal });
+    const response = await fetch(url, { signal: controller.signal });
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    return await response.json();
   } catch (error) {
     if (error.name === "AbortError") {
       throw new Error("Request timed out");
@@ -2018,12 +2107,6 @@ async function fetchJson(url, timeoutMs = 25000) {
   } finally {
     window.clearTimeout(timeout);
   }
-
-  if (!response.ok) {
-    throw new Error(`HTTP ${response.status}`);
-  }
-
-  return response.json();
 }
 
 function issueLevel(score) {
@@ -3200,6 +3283,78 @@ function appendTextCell(row, tagName, value) {
   return cell;
 }
 
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function issueMetadata(issue) {
+  const source = issue.source || "";
+  const combined = `${issue.tag || ""} ${issue.title || ""} ${source}`.toLowerCase();
+
+  if (combined.includes("natural earth") || combined.includes("geoboundaries") || combined.includes("adm1")) {
+    return {
+      layer: "Boundary layer",
+      methodClass: "boundary",
+      vintage: "Natural Earth Admin 0 plus current geoBoundaries ADM1 API",
+      uncertainty: "low",
+      methodNote: "Geometry layer for locating places; it is not itself a pain estimate.",
+    };
+  }
+
+  if (combined.includes("welfare footprint")) {
+    return {
+      layer: "Event pain evidence",
+      methodClass: "modeled",
+      vintage: "2026-05-31 source review",
+      uncertainty: "moderate",
+      methodNote: "Event-level welfare estimate tied to a species, system, intensity class, and time window.",
+    };
+  }
+
+  if (combined.includes("insect") || combined.includes("wild animal") || combined.includes("wild-caught") || combined.includes("soil-arthropod")) {
+    return {
+      layer: "Wild animals and insects",
+      methodClass: "proxy",
+      vintage: "2026-05-31 static contract plus latest public rows where available",
+      uncertainty: "very-low",
+      methodNote: "Directional burden proxy assembled from land-area, insecticide, and public abundance assumptions.",
+    };
+  }
+
+  if (combined.includes("fish") || combined.includes("crustacean") || combined.includes("slaughter") || combined.includes("farmed") || combined.includes("owid")) {
+    return {
+      layer: "Factory-farmed animals",
+      methodClass: "proxy",
+      vintage: "Latest available OWID/Fishcount-style country rows plus 2026-05-31 contract",
+      uncertainty: "low",
+      methodNote: "Directional animal burden proxy with visible sentience and welfare-range assumptions.",
+    };
+  }
+
+  if (combined.includes("world bank") || combined.includes("wdi") || combined.includes("gsap") || combined.includes("who")) {
+    return {
+      layer: "Human burden indicators",
+      methodClass: "proxy",
+      vintage: `World Bank ${ISSUE_DATA_DATE_RANGE} latest non-null country window`,
+      uncertainty: "low",
+      methodNote: "Directional place-level proxy assembled from public health, poverty, pollution, WASH, and conflict indicators.",
+    };
+  }
+
+  return {
+    layer: "Atlas context",
+    methodClass: "proxy",
+    vintage: "2026-05-31 static contract",
+    uncertainty: "low",
+    methodNote: "Directional atlas value with public-source provenance shown alongside the ranking.",
+  };
+}
+
 function renderIssueTable(root, caption, issues, orderNoteForIssue) {
   if (!root) {
     return;
@@ -3229,7 +3384,7 @@ function renderIssueTable(root, caption, issues, orderNoteForIssue) {
 
   const thead = document.createElement("thead");
   const headerRow = document.createElement("tr");
-  ["Rank", "Cause", "Metric", "Order note", "Source"].forEach((label) =>
+  ["Rank", "Cause", "Metric", "Method", "Vintage", "Uncertainty", "Order note", "Source"].forEach((label) =>
     appendTextCell(headerRow, "th", label)
   );
   thead.appendChild(headerRow);
@@ -3237,11 +3392,15 @@ function renderIssueTable(root, caption, issues, orderNoteForIssue) {
   const tbody = document.createElement("tbody");
 
   issues.forEach((issue, index) => {
+    const metadata = issueMetadata(issue);
     const row = document.createElement("tr");
     appendTextCell(row, "td", String(index + 1));
     appendTextCell(row, "th", issue.title);
     row.lastElementChild.scope = "row";
     appendTextCell(row, "td", issue.metric);
+    appendTextCell(row, "td", metadata.methodClass);
+    appendTextCell(row, "td", metadata.vintage);
+    appendTextCell(row, "td", metadata.uncertainty);
     appendTextCell(row, "td", orderNoteForIssue(issue));
     appendTextCell(row, "td", issue.source);
     tbody.appendChild(row);
@@ -3290,15 +3449,26 @@ function renderAnimalIssueStatus(title, body) {
 }
 
 function buildRankedIssueCard(issue, rank, orderNote) {
+  const metadata = issueMetadata(issue);
   const card = document.createElement("article");
   card.className = "issue-card";
   card.innerHTML = `
-    <p class="issue-tag">${issue.tag}</p>
-    <h3 class="issue-title"><span class="issue-rank">${rank}.</span><span>${issue.title}</span></h3>
-    <strong class="issue-metric">${issue.metric}</strong>
-    <p>${issue.body}</p>
-    <p class="issue-order-note">${orderNote}</p>
-    <p class="issue-source">${issue.source}</p>
+    <p class="issue-tag">${escapeHtml(issue.tag)}</p>
+    <h3 class="issue-title"><span class="issue-rank">${rank}.</span><span>${escapeHtml(issue.title)}</span></h3>
+    <strong class="issue-metric">${escapeHtml(issue.metric)}</strong>
+    <div class="issue-meta-grid" aria-label="Source metadata">
+      <span><strong>Layer</strong>${escapeHtml(metadata.layer)}</span>
+      <span><strong>Method</strong>${escapeHtml(metadata.methodClass)}</span>
+      <span><strong>Vintage</strong>${escapeHtml(metadata.vintage)}</span>
+      <span><strong>Uncertainty</strong>${escapeHtml(metadata.uncertainty)}</span>
+    </div>
+    <p>${escapeHtml(issue.body)}</p>
+    <p class="issue-order-note">${escapeHtml(orderNote)}</p>
+    <details class="issue-evidence-details">
+      <summary>Evidence metadata</summary>
+      <p>${escapeHtml(metadata.methodNote)}</p>
+      <p class="issue-source">${escapeHtml(issue.source)}</p>
+    </details>
   `;
   return card;
 }
@@ -3643,9 +3813,12 @@ function renderIssues(country) {
     }
 
     if (hasError) {
-      renderIssueStatus(
-        "Whole-world data unavailable",
-        "At least one global human or animal data source failed to load, so the mixed-species world ranking cannot be assembled right now."
+      renderRankedIssues(
+        issuesRoot,
+        issuesTableRoot,
+        "Whole-world atlas fallback ranking",
+        STATIC_WORLD_SUFFERING_ISSUES,
+        (issue) => formatWholeWorldRanking(issue, state.rankingMode)
       );
       return;
     }
@@ -3778,9 +3951,12 @@ function renderAnimalIssues(country) {
     }
 
     if (hasError) {
-      renderAnimalIssueStatus(
-        "Whole-world animal data unavailable",
-        "At least one live animal source failed to load, so the world animal-only ranking cannot be assembled right now."
+      renderRankedIssues(
+        animalIssuesRoot,
+        animalIssuesTableRoot,
+        "Whole-world animal atlas fallback ranking",
+        STATIC_WORLD_ANIMAL_ISSUES,
+        (issue) => formatAnimalRanking(issue, state.rankingMode)
       );
       return;
     }
@@ -4033,11 +4209,15 @@ function findCountry(query) {
 }
 
 function countryFocusScale(feature) {
+  if (mapViewMode !== "globe") {
+    return currentBaseScale();
+  }
+
   const [longitude, latitude] = d3.geoCentroid(feature);
   const previewProjection = d3
     .geoOrthographic()
     .translate([width / 2, height / 2])
-    .scale(baseScale)
+    .scale(GLOBE_BASE_SCALE)
     .clipAngle(90)
     .precision(0.2)
     .rotate([-longitude, -latitude, 0]);
@@ -4047,10 +4227,16 @@ function countryFocusScale(feature) {
   const boundsHeight = Math.max(1, bounds[1][1] - bounds[0][1]);
   const fitMultiplier = 0.58 * Math.min(width / boundsWidth, height / boundsHeight);
 
-  return clampScale(baseScale * fitMultiplier);
+  return clampScale(GLOBE_BASE_SCALE * fitMultiplier);
 }
 
 function focusFeatureView(feature) {
+  if (mapViewMode !== "globe") {
+    updateZoomUi();
+    renderGlobe();
+    return;
+  }
+
   const [longitude, latitude] = d3.geoCentroid(feature);
   transitionGlobe([-longitude, -latitude, 0], countryFocusScale(feature));
 }
@@ -4089,8 +4275,8 @@ function syncModeUi() {
       : state.selectedCountry
       ? globeMode.humanSectionLabel
       : state.globeMode === "death"
-        ? "Secondary context: whole-world life-years lost"
-        : "Secondary context: whole-world suffering";
+        ? "Atlas context: whole-world life-years lost"
+        : "Atlas context: whole-world suffering";
   }
 
   if (animalSectionLabel) {
@@ -4171,31 +4357,31 @@ function renderDetails() {
           : buildWholeWorldSufferingIssues();
 
     countrySearchInput.value = "";
-    selectionMeta.textContent = "Secondary context";
-    selectionTitle.textContent = "Country-level context.";
+    selectionMeta.textContent = "Atlas context";
+    selectionTitle.textContent = "Place-level context.";
     selectionSummary.textContent =
       state.globeMode === "death"
-        ? `The pain research charts are the main point of the site. This panel is a secondary context layer showing whole-world death causes, currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
-        : `The pain research charts are the main point of the site. This panel is a secondary context layer showing whole-world suffering causes, with a separate animal-only ranking below ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
+        ? `This atlas panel shows whole-world death causes, currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}, with a table path for the same values.`
+        : `This atlas panel shows whole-world suffering causes, with a separate animal-only ranking below ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
     selectionFootnote.textContent =
       state.globeMode === "death"
-        ? "This context panel is secondary to the event-level pain visualization. Whole-world human death causes come from World Bank WLD mortality indicators. Whole-world animal death causes come from OWID global slaughter and aquaculture kill counts plus conservative remaining-life proxies."
-        : "This context panel is secondary to the event-level pain visualization. Whole-world human suffering causes come from World Bank WLD burden indicators, while the animal-only ranking below aggregates live OWID and World Bank inputs into factory-farmed animals, non-insect wild animals, and insects.";
+        ? "This atlas panel connects place-level context to event-level pain evidence. Whole-world human death causes come from World Bank WLD mortality indicators. Whole-world animal death causes come from OWID global slaughter and aquaculture kill counts plus conservative remaining-life proxies."
+        : "This atlas panel connects place-level context to event-level pain evidence. Whole-world human suffering causes come from World Bank WLD burden indicators, while the animal-only ranking below aggregates live OWID and World Bank inputs into factory-farmed animals, non-insect wild animals, and insects.";
     factLocation.textContent = "Whole Earth";
     factCountrySource.textContent = "Natural Earth Admin 0, 1:50m";
     factAdminSource.textContent = "geoBoundaries ADM1 will load on click";
     factIssueSource.textContent =
       state.globeMode === "death"
         ? state.globalIssueData.loading || animalDataState.loading
-          ? "Secondary context: loading WDI WLD + OWID animal-death data."
+          ? "Atlas layer: loading WDI WLD + OWID animal-death data."
           : state.globalIssueData.error || animalDataState.error
-            ? "Secondary context: mixed-species death data failed."
-            : "Secondary context: WDI WLD + OWID slaughter and aquaculture data + life-years proxies."
+            ? "Atlas layer: using local fallback metadata because one live mixed-species source failed."
+            : "Atlas layer: WDI WLD + OWID slaughter and aquaculture data + life-years proxies."
         : state.globalIssueData.loading || animalDataState.loading || state.globalContext.loading
-          ? "Secondary context: loading WDI WLD + OWID + RP + WAI + land-area context."
+          ? "Atlas layer: loading WDI WLD + OWID + RP + WAI + land-area context."
           : state.globalIssueData.error || animalDataState.error || state.globalContext.error
-            ? "Secondary context: mixed-species suffering data failed."
-            : "Secondary context: WDI WLD + OWID + World Bank land area + RP + WAI + three animal cause buckets.";
+            ? "Atlas layer: using local fallback metadata because one live suffering source failed."
+            : "Atlas layer: WDI WLD + OWID + World Bank land area + RP + WAI + three animal cause buckets.";
     factUnitCount.textContent = formatNumber(worldIssues.length);
     renderIssues(null);
     renderAnimalIssues(null);
@@ -4257,8 +4443,8 @@ function renderDetails() {
         ? `${provinceNameLabel} is selected inside ${name}. The list below estimates which death causes loom largest inside this province, currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
         : `${provinceNameLabel} is selected inside ${name}. The list below estimates the top 10 pain causes in this province across humans and animals, currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
       : state.globeMode === "death"
-        ? `This is a secondary context panel focused on human death causes in ${name}. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
-        : `This is a secondary context panel combining broader human suffering indicators with three country-level animal buckets for ${name}: factory-farmed animals, non-insect wild animals, and insects. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
+        ? `This atlas panel focuses on human death causes in ${name}. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`
+        : `This atlas panel combines broader human suffering indicators with three country-level animal buckets for ${name}: factory-farmed animals, non-insect wild animals, and insects. It is currently ordered by ${rankingLabel(state.rankingMode).toLowerCase()}.`;
     factIssueSource.textContent = provinceNameLabel
       ? state.globeMode === "death"
         ? "Province: WorldPop + national WDI death model."
@@ -4295,7 +4481,7 @@ function renderDetails() {
       ? " Province death mode hides the separate animal panel because the province ranking is already consolidated in the main list."
       : " Province animal estimates distribute country animal totals using real province population or land-area inputs. Wild and insect causes rely more heavily on land area; factory-farmed and aquatic causes rely more on province population because a global ADM1 livestock-by-species feed is not loaded here."
     : !globeMode.showAnimals
-    ? " The death globe hides the animal layer because this view is specifically about human death causes."
+    ? " The death atlas mode hides the animal layer because this view is specifically about human death causes."
     : animalDataState.loading
       ? " Animal issue data is still loading from Our World in Data."
       : animalDataState.error
@@ -4347,7 +4533,38 @@ function setProjectionScale(scale) {
   renderGlobe();
 }
 
+function switchMapView(nextMode) {
+  mapViewMode = nextMode === "globe" ? "globe" : "atlas";
+  svg.interrupt();
+  projection = createMapProjection(mapViewMode);
+  path.projection(projection);
+
+  if (mapProjectionModeSelect) {
+    mapProjectionModeSelect.value = mapViewMode;
+  }
+
+  if (mapDisclosureSummary) {
+    mapDisclosureSummary.textContent = mapViewMode === "globe" ? "Globe explorer" : "Equal-area atlas view";
+  }
+
+  updateZoomUi();
+  renderGlobe();
+
+  if (state.selectedProvince) {
+    setStatus(`${provinceName(state.selectedProvince)}, ${countryName(state.selectedCountry?.properties)} selected in ${mapViewLabel()}.`);
+    return;
+  }
+
+  if (state.selectedCountry) {
+    setStatus(`${countryName(state.selectedCountry.properties)} selected in ${mapViewLabel()}.`);
+    return;
+  }
+
+  setStatus(`Showing global country boundaries in ${mapViewLabel()}.`);
+}
+
 function renderGlobe() {
+  svg.classed("is-atlas-view", mapViewMode === "atlas").classed("is-globe-view", mapViewMode === "globe");
   spherePath.attr("d", path({ type: "Sphere" }));
   graticulePath.attr("d", path(graticule));
   outlinePath.attr("d", path({ type: "Sphere" }));
@@ -4667,12 +4884,13 @@ function resetView() {
   state.provinceFeatures = [];
   state.countryIssueData = null;
   state.provinceIssueData = null;
-  projection.rotate(GLOBE_ROTATION);
-  projection.scale(baseScale);
+  svg.interrupt();
+  projection = createMapProjection(mapViewMode);
+  path.projection(projection);
   renderDetails();
   updateZoomUi();
   renderGlobe();
-  setStatus("Showing global country boundaries.");
+  setStatus(`Showing global country boundaries in ${mapViewLabel()}.`);
 }
 
 function setupInteraction() {
@@ -4683,6 +4901,11 @@ function setupInteraction() {
         justDragged = false;
       })
       .on("drag", (event) => {
+        if (mapViewMode !== "globe") {
+          justDragged = Math.abs(event.dx) + Math.abs(event.dy) > 2;
+          return;
+        }
+
         const rotate = projection.rotate();
         const nextRotation = [
           rotate[0] + event.dx * 0.34,
@@ -4758,6 +4981,9 @@ function setupInteraction() {
       closeCountrySearchOptions();
     }
   });
+  mapProjectionModeSelect?.addEventListener("change", () => {
+    switchMapView(mapProjectionModeSelect.value);
+  });
   globeModeSelect.addEventListener("change", () => {
     state.globeMode = globeModeSelect.value;
     renderDetails();
@@ -4769,7 +4995,7 @@ function setupInteraction() {
   zoomInButton.addEventListener("click", () => adjustZoom(1.18));
   zoomOutButton.addEventListener("click", () => adjustZoom(1 / 1.18));
   zoomRange.addEventListener("input", () => {
-    setProjectionScale(baseScale * Number(zoomRange.value));
+    setProjectionScale(currentBaseScale() * Number(zoomRange.value));
   });
   resetButton.addEventListener("click", resetView);
 }
@@ -4784,8 +5010,21 @@ async function init() {
   loadGsapAdm1Data();
 
   try {
-    const data = await fetchJson(COUNTRY_DATA_URL);
-    state.countries = data.features.filter((feature) => countryName(feature.properties) !== "Antarctica");
+    let data;
+    let boundaryStatus = 'Equal-area atlas view loaded. Search for a country or "Province, Country", zoom the map, or switch to globe explorer.';
+
+    try {
+      data = await fetchJson(COUNTRY_DATA_URL, 1800);
+    } catch (remoteError) {
+      setStatus("Natural Earth boundary request is slow here, loading local fallback boundaries...");
+      data = await fetchJson(COUNTRY_DATA_FALLBACK_URL, 3000);
+      boundaryStatus =
+        "Local fallback boundaries loaded. Search works for representative places while the remote Natural Earth source is unavailable.";
+    }
+
+    state.countries = data.features.filter(
+      (feature) => feature.geometry && countryName(feature.properties) !== "Antarctica"
+    );
     state.countryIndex = state.countries
       .map((feature) => ({
         feature,
@@ -4799,7 +5038,7 @@ async function init() {
     updateZoomUi();
     renderGlobe();
     setupInteraction();
-    setStatus('Drag to rotate, search for a country or "Province, Country", or zoom in to inspect provinces and states.');
+    setStatus(boundaryStatus);
   } catch (error) {
     setStatus(`Country data failed to load: ${error.message}`);
   }

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Brazil Place Profile | PainMap</title>
+    <meta name="description" content="Brazil place profile for PainMap atlas layers, provenance, uncertainty, boundary sources, and public downloads.">
+    <link rel="canonical" href="https://painmap.org/place/BRA/">
+    <meta property="og:title" content="Brazil Place Profile | PainMap">
+    <meta property="og:description" content="Place-first atlas profile for Brazil with layer metadata and export links.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://painmap.org/place/BRA/">
+    <link rel="stylesheet" href="../../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Place",
+        "name": "Brazil",
+        "identifier": "BRA",
+        "url": "https://painmap.org/place/BRA/",
+        "subjectOf": {
+          "@type": "Dataset",
+          "name": "PainMap place-level pain-source proxy measurements",
+          "url": "https://painmap.org/dataset/place-measurements/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/countries/">Places</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <main id="main-content" class="route-page">
+        <section class="route-panel route-hero" aria-labelledby="place-title">
+          <div>
+            <p class="label">Place profile</p>
+            <h1 id="place-title">Brazil</h1>
+          </div>
+          <p class="route-copy">
+            Static atlas profile for BRA. The live homepage can refresh country rankings from public APIs, while this route records the stable place-page contract, evidence expectations, and export links.
+          </p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="place-summary-title">
+          <div class="facts place-facts">
+            <article class="fact-card">
+              <span class="fact-label">Place id</span>
+              <strong>BRA</strong>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">Geometry</span>
+              <strong>Country boundary, Natural Earth Admin 0</strong>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">Boundary vintage</span>
+              <strong>Natural Earth 1:50m plus current geoBoundaries ADM1 on demand</strong>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">Non-map path</span>
+              <strong>Search, issue cards, and data table equivalent on the homepage</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="place-layers-title">
+          <div class="section-intro">
+            <p class="label">Layers</p>
+            <h2 id="place-layers-title">Pain-source layers available for this place</h2>
+          </div>
+          <div class="data-table-wrap">
+            <table class="route-table">
+              <caption>Representative Brazil layer metadata. Runtime values on the homepage expose the same fields beside visible rankings.</caption>
+              <thead>
+                <tr>
+                  <th>Layer</th>
+                  <th>Method class</th>
+                  <th>Vintage</th>
+                  <th>Uncertainty</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Human burden indicators</th>
+                  <td>Proxy aggregate</td>
+                  <td>World Bank 2010:2025 latest non-null country rows</td>
+                  <td>Low confidence</td>
+                  <td>World Bank indicator API</td>
+                </tr>
+                <tr>
+                  <th scope="row">Factory-farmed animals</th>
+                  <td>Proxy aggregate</td>
+                  <td>Latest available OWID/Fishcount-style country rows plus 2026-05-31 contract</td>
+                  <td>Low confidence</td>
+                  <td>OWID, Fishcount, RP welfare assumptions</td>
+                </tr>
+                <tr>
+                  <th scope="row">Wild animals and insects</th>
+                  <td>Proxy aggregate</td>
+                  <td>2026-05-31 static contract</td>
+                  <td>Very low confidence</td>
+                  <td>World Bank land area, Wild Animal Initiative, public benchmarks</td>
+                </tr>
+                <tr>
+                  <th scope="row">ADM1 boundaries</th>
+                  <td>Boundary layer</td>
+                  <td>Current geoBoundaries ADM1 API at selection time</td>
+                  <td>Low confidence</td>
+                  <td>geoBoundaries</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="route-actions">
+            <a class="solid-button" href="/#explore-country">Open live Brazil search</a>
+            <a class="ghost-link" href="/dataset/place-measurements/">Open dataset page</a>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="place-downloads-title">
+          <div class="section-intro">
+            <p class="label">Downloads</p>
+            <h2 id="place-downloads-title">Public exports</h2>
+          </div>
+          <ul class="download-list">
+            <li><a href="/data/place-measurements.json">Place measurements JSON</a></li>
+            <li><a href="/data/place-measurements.csv">Place measurements CSV</a></li>
+            <li><a href="/data/places.geojson">Representative places GeoJSON</a></li>
+            <li><a href="/data/provenance-registry.json">Provenance registry JSON</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

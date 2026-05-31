@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Developers | PainMap</title>
+    <meta name="description" content="Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution.">
+    <link rel="canonical" href="https://painmap.org/developers/">
+    <meta property="og:title" content="Developers | PainMap">
+    <meta property="og:description" content="How to consume PainMap static data exports and preserve provenance fields.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://painmap.org/developers/">
+    <link rel="stylesheet" href="../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/countries/">Places</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <main id="main-content" class="route-page">
+        <section class="route-panel route-hero" aria-labelledby="developers-title">
+          <div>
+            <p class="label">Developers</p>
+            <h1 id="developers-title">Use the static data carefully.</h1>
+          </div>
+          <p class="route-copy">
+            PainMap data is public and read-only, but it is not a universal moral scoreboard. Keep provenance, uncertainty, and method fields attached to every value you reuse.
+          </p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="quickstart-title">
+          <div class="section-intro">
+            <p class="label">Quickstart</p>
+            <h2 id="quickstart-title">Fetch the contract</h2>
+          </div>
+          <pre class="code-block"><code>curl https://painmap.org/data/openapi.json
+curl https://painmap.org/data/place-measurements.json
+curl https://painmap.org/data/provenance-registry.json</code></pre>
+          <p class="route-copy">
+            The API has no authentication and no write side. Use normal HTTP caching and treat the build id as the stable contract version for this release.
+          </p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="developer-rules-title">
+          <div class="metadata-grid">
+            <article class="metadata-card">
+              <span class="evidence-badge">must keep</span>
+              <h2 id="developer-rules-title">Provenance</h2>
+              <p>Carry source, source vintage, method class, uncertainty class, and license id with every copied value.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">must not</span>
+              <h2>Overclaim</h2>
+              <p>Country and ADM1 rows are directional proxies unless the method class says direct or modeled.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">security</span>
+              <h2>Headers</h2>
+              <p>The repository includes a static-host header policy and a Vercel header config for CSP, referrer policy, nosniff, and permissions policy.</p>
+            </article>
+          </div>
+          <div class="route-actions">
+            <a class="solid-button" href="/api/">API reference</a>
+            <a class="ghost-link" href="/security/">Security baseline</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

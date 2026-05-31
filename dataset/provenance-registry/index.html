@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Provenance Registry Dataset | PainMap</title>
+    <meta name="description" content="PainMap provenance registry for dataset sources, licenses, method classes, uncertainty classes, and public distributions.">
+    <link rel="canonical" href="https://painmap.org/dataset/provenance-registry/">
+    <meta property="og:title" content="Provenance Registry Dataset | PainMap">
+    <meta property="og:description" content="Registry of PainMap sources, licenses, method classes, uncertainty classes, and dataset distributions.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://painmap.org/dataset/provenance-registry/">
+    <link rel="stylesheet" href="../../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "PainMap provenance registry",
+        "description": "Registry of sources, licenses, method classes, uncertainty classes, and dataset distributions used by PainMap.",
+        "url": "https://painmap.org/dataset/provenance-registry/",
+        "identifier": "provenance-registry",
+        "license": "https://painmap.org/policies/terms/",
+        "isAccessibleForFree": true,
+        "creator": { "@type": "Organization", "name": "PainMap", "url": "https://painmap.org/" },
+        "distribution": [
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/provenance-registry.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/ld+json", "contentUrl": "https://painmap.org/data/dcat.json" }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/countries/">Places</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <main id="main-content" class="route-page">
+        <section class="route-panel route-hero" aria-labelledby="registry-title">
+          <div>
+            <p class="label">Dataset</p>
+            <h1 id="registry-title">Provenance registry</h1>
+          </div>
+          <p class="route-copy">
+            The registry is the public index for PainMap method classes, uncertainty classes, licenses, dataset ids, source groups, and distribution URLs.
+          </p>
+        </section>
+        <section class="route-panel" aria-labelledby="registry-downloads-title">
+          <div class="section-intro">
+            <p class="label">Distributions</p>
+            <h2 id="registry-downloads-title">Download links</h2>
+          </div>
+          <ul class="download-list">
+            <li><a href="/data/provenance-registry.json">Provenance registry JSON</a></li>
+            <li><a href="/data/dcat.json">DCAT catalog JSON</a></li>
+            <li><a href="/data/openapi.json">OpenAPI 3.1 contract</a></li>
+          </ul>
+        </section>
+        <section class="route-panel" aria-labelledby="registry-classes-title">
+          <div class="metadata-grid">
+            <article class="metadata-card">
+              <span class="evidence-badge">direct</span>
+              <h2 id="registry-classes-title">Direct</h2>
+              <p>Source-level welfare estimates tied to a defined event, species, system, and time window.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">modeled</span>
+              <h2>Modeled</h2>
+              <p>Values combining empirical observations with assumptions about duration, intensity, or production context.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">proxy</span>
+              <h2>Proxy</h2>
+              <p>Directional place-level scale indicators built from public datasets and stated welfare assumptions.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">boundary</span>
+              <h2>Boundary</h2>
+              <p>Geometry layers used to locate countries or ADM1 regions; not pain estimates.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+{
+  "type": "FeatureCollection",
+  "name": "PainMap local country fallback",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM0_A3": "BRA",
+        "NAME_LONG": "Brazil",
+        "CONTINENT": "South America",
+        "SUBREGION": "South America",
+        "source": "PainMap coarse fallback; use Natural Earth runtime boundary when available",
+        "source_vintage": "2026-05-31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-53.2, -10.8]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM0_A3": "USA",
+        "NAME_LONG": "United States",
+        "CONTINENT": "North America",
+        "SUBREGION": "Northern America",
+        "source": "PainMap coarse fallback; use Natural Earth runtime boundary when available",
+        "source_vintage": "2026-05-31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-98.6, 39.8]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM0_A3": "IND",
+        "NAME_LONG": "India",
+        "CONTINENT": "Asia",
+        "SUBREGION": "Southern Asia",
+        "source": "PainMap coarse fallback; use Natural Earth runtime boundary when available",
+        "source_vintage": "2026-05-31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.9, 22.9]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM0_A3": "CHN",
+        "NAME_LONG": "China",
+        "CONTINENT": "Asia",
+        "SUBREGION": "Eastern Asia",
+        "source": "PainMap coarse fallback; use Natural Earth runtime boundary when available",
+        "source_vintage": "2026-05-31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.8, 35.9]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "ADM0_A3": "NGA",
+        "NAME_LONG": "Nigeria",
+        "CONTINENT": "Africa",
+        "SUBREGION": "Western Africa",
+        "source": "PainMap coarse fallback; use Natural Earth runtime boundary when available",
+        "source_vintage": "2026-05-31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.7, 9.1]
+      }
+    }
+  ]
+}

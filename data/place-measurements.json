@@ -1,0 +1,69 @@
+{
+  "build": {
+    "id": "2026-05-31-place-atlas",
+    "generatedAt": "2026-05-31",
+    "note": "Static representative export for the public atlas contract. The homepage still refreshes many country values from public APIs at runtime."
+  },
+  "measurements": [
+    {
+      "place_id": "WLD",
+      "place_name": "World",
+      "geometry_level": "world",
+      "layer_id": "factory-farmed-animals",
+      "layer_type": "proxy",
+      "ranking_mode": "total",
+      "value_label": "Factory-farmed animals",
+      "units": "sentience-adjusted welfare-range proxy",
+      "source_dataset_id": "place-measurements",
+      "source_vintage": "2026-05-31 static contract; runtime sources refresh from OWID/Fishcount where available",
+      "method_note": "Aggregates slaughter and aquaculture counts with cautious welfare-range assumptions.",
+      "uncertainty_class": "low",
+      "license_id": "owid-cc-by"
+    },
+    {
+      "place_id": "WLD",
+      "place_name": "World",
+      "geometry_level": "world",
+      "layer_id": "wild-insects",
+      "layer_type": "proxy",
+      "ranking_mode": "total",
+      "value_label": "Wild terrestrial arthropod scale",
+      "units": "land-area proxy",
+      "source_dataset_id": "place-measurements",
+      "source_vintage": "2026-05-31 static contract",
+      "method_note": "Uses global soil-arthropod density benchmarks scaled by land area.",
+      "uncertainty_class": "very-low",
+      "license_id": "world-bank-terms"
+    },
+    {
+      "place_id": "BRA",
+      "place_name": "Brazil",
+      "geometry_level": "country",
+      "layer_id": "factory-farmed-animals",
+      "layer_type": "proxy",
+      "ranking_mode": "total",
+      "value_label": "Factory-farmed animals",
+      "units": "sentience-adjusted welfare-range proxy",
+      "source_dataset_id": "place-measurements",
+      "source_vintage": "Runtime country values from latest available OWID/Fishcount rows",
+      "method_note": "Country production counts are weighted by visible sentience and welfare-range assumptions where available.",
+      "uncertainty_class": "low",
+      "license_id": "owid-cc-by"
+    },
+    {
+      "place_id": "BRA",
+      "place_name": "Brazil",
+      "geometry_level": "country",
+      "layer_id": "human-burden",
+      "layer_type": "proxy",
+      "ranking_mode": "total",
+      "value_label": "Human suffering burden indicators",
+      "units": "World Bank indicator proxy",
+      "source_dataset_id": "place-measurements",
+      "source_vintage": "Runtime country values from World Bank 2010:2025 indicator window",
+      "method_note": "Uses latest non-null country observations for selected health, poverty, pollution, WASH, and conflict indicators.",
+      "uncertainty_class": "low",
+      "license_id": "world-bank-terms"
+    }
+  ]
+}

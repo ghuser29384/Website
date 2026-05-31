@@ -1,0 +1,135 @@
+{
+  "build": {
+    "id": "2026-05-31-place-atlas",
+    "generatedAt": "2026-05-31",
+    "site": "https://painmap.org",
+    "status": "static public registry"
+  },
+  "methodClasses": [
+    {
+      "id": "direct",
+      "label": "Direct welfare estimate",
+      "definition": "A source-level welfare estimate tied to a defined event, species, system, and time window."
+    },
+    {
+      "id": "modeled",
+      "label": "Model-based estimate",
+      "definition": "A public estimate that combines empirical observations with assumptions about duration, intensity, or production context."
+    },
+    {
+      "id": "proxy",
+      "label": "Proxy aggregate",
+      "definition": "A directional place-level scale indicator built from public datasets and stated welfare assumptions."
+    },
+    {
+      "id": "boundary",
+      "label": "Boundary layer",
+      "definition": "A geometry layer used to locate countries or ADM1 regions and not itself a pain estimate."
+    }
+  ],
+  "uncertaintyClasses": [
+    {
+      "id": "moderate",
+      "label": "Moderate",
+      "definition": "The source and method are visible, but the value depends on model assumptions or context transfer."
+    },
+    {
+      "id": "low",
+      "label": "Low confidence",
+      "definition": "The source is public, but the value is a coarse proxy or combines heterogeneous inputs."
+    },
+    {
+      "id": "very-low",
+      "label": "Very low confidence",
+      "definition": "The value is used only as directional context and should not be treated as settled measurement."
+    }
+  ],
+  "licenses": [
+    {
+      "id": "welfare-footprint-cc-by",
+      "label": "Welfare Footprint data, reports, and charts",
+      "license": "CC BY",
+      "url": "https://welfarefootprint.org/"
+    },
+    {
+      "id": "owid-cc-by",
+      "label": "Our World in Data charts and data unless otherwise noted",
+      "license": "CC BY",
+      "url": "https://ourworldindata.org/"
+    },
+    {
+      "id": "natural-earth-public-domain",
+      "label": "Natural Earth Admin 0 countries",
+      "license": "Public domain",
+      "url": "https://www.naturalearthdata.com/"
+    },
+    {
+      "id": "geoboundaries-cc-by-4",
+      "label": "geoBoundaries ADM1",
+      "license": "CC BY 4.0",
+      "url": "https://www.geoboundaries.org/"
+    },
+    {
+      "id": "world-bank-terms",
+      "label": "World Bank indicator API",
+      "license": "World Bank terms",
+      "url": "https://datahelpdesk.worldbank.org/"
+    }
+  ],
+  "datasets": [
+    {
+      "id": "event-evidence",
+      "title": "Event-level animal pain evidence",
+      "methodClass": "modeled",
+      "uncertainty": "moderate",
+      "vintage": "2026-05-31 review",
+      "distribution": [
+        {
+          "format": "HTML",
+          "url": "https://painmap.org/events/"
+        },
+        {
+          "format": "JSON",
+          "url": "https://painmap.org/data/provenance-registry.json"
+        }
+      ],
+      "sources": ["welfare-footprint-cc-by"]
+    },
+    {
+      "id": "place-measurements",
+      "title": "Place-level pain-source proxy measurements",
+      "methodClass": "proxy",
+      "uncertainty": "low",
+      "vintage": "2026-05-31 static sample plus runtime country refresh",
+      "distribution": [
+        {
+          "format": "JSON",
+          "url": "https://painmap.org/data/place-measurements.json"
+        },
+        {
+          "format": "CSV",
+          "url": "https://painmap.org/data/place-measurements.csv"
+        },
+        {
+          "format": "GeoJSON",
+          "url": "https://painmap.org/data/places.geojson"
+        }
+      ],
+      "sources": ["owid-cc-by", "world-bank-terms", "welfare-footprint-cc-by"]
+    },
+    {
+      "id": "boundary-layers",
+      "title": "Country and ADM1 boundary layers",
+      "methodClass": "boundary",
+      "uncertainty": "low",
+      "vintage": "Natural Earth Admin 0 plus geoBoundaries current ADM1 API",
+      "distribution": [
+        {
+          "format": "HTML",
+          "url": "https://painmap.org/countries/"
+        }
+      ],
+      "sources": ["natural-earth-public-domain", "geoboundaries-cc-by-4"]
+    }
+  ]
+}

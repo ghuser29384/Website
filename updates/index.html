@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Updates | PainMap</title>
     <meta name="description" content="PainMap update log and release notes for public site changes.">
     <link rel="canonical" href="https://painmap.org/updates/">
@@ -10,7 +12,7 @@
     <meta property="og:description" content="Release notes for PainMap public research visualization updates.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/updates/">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -18,11 +20,12 @@
       <header class="site-header" aria-label="Primary navigation">
         <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
         <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/countries/">Places</a>
           <a href="/events/">Events</a>
-          <a href="/countries/">Countries</a>
           <a href="/methods/">Methods</a>
           <a href="/data/">Data</a>
-          <a href="/resources/">Resources</a>
+          <a href="/api/">API</a>
           <a href="/about/">About</a>
         </nav>
       </header>
@@ -40,7 +43,7 @@
             <h2>Route split and evidence metadata</h2>
             <p>
               Added public route pages, sitemap and robots metadata, event evidence details, source-linked caveats,
-              accessible country-search listbox behavior, optional globe framing, and static audit checks.
+              accessible place-search listbox behavior, equal-area atlas framing, optional globe mode, and static audit checks.
             </p>
           </article>
         </section>

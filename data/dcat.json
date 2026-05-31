@@ -1,0 +1,72 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "@type": "dcat:Catalog",
+  "dct:title": "PainMap public data catalog",
+  "dct:description": "Catalog of PainMap event evidence, place proxy measurements, boundary layers, and provenance exports.",
+  "dct:issued": "2026-05-31",
+  "dcat:dataset": [
+    {
+      "@type": "dcat:Dataset",
+      "dct:identifier": "place-measurements",
+      "dct:title": "PainMap place-level proxy measurements",
+      "dct:license": "https://painmap.org/policies/terms/",
+      "dcat:distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/data/place-measurements.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "text/csv",
+          "dcat:downloadURL": "https://painmap.org/data/place-measurements.csv"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/geo+json",
+          "dcat:downloadURL": "https://painmap.org/data/places.geojson"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:identifier": "provenance-registry",
+      "dct:title": "PainMap provenance registry",
+      "dct:license": "https://painmap.org/policies/terms/",
+      "dcat:distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/data/provenance-registry.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/ld+json",
+          "dcat:downloadURL": "https://painmap.org/data/dcat.json"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:identifier": "event-evidence",
+      "dct:title": "PainMap event-level animal pain evidence",
+      "dct:license": "https://painmap.org/policies/terms/",
+      "dcat:distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "text/html",
+          "dcat:accessURL": "https://painmap.org/events/"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/data/provenance-registry.json"
+        }
+      ]
+    }
+  ]
+}

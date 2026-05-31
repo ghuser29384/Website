@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Security | PainMap</title>
+    <meta name="description" content="PainMap public static-site security baseline, including CSP, referrer policy, nosniff, permissions policy, and static API boundaries.">
+    <link rel="canonical" href="https://painmap.org/security/">
+    <meta property="og:title" content="Security | PainMap">
+    <meta property="og:description" content="Security baseline for PainMap static hosting and read-only data exports.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://painmap.org/security/">
+    <link rel="stylesheet" href="../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/countries/">Places</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <main id="main-content" class="route-page">
+        <section class="route-panel route-hero" aria-labelledby="security-title">
+          <div>
+            <p class="label">Security</p>
+            <h1 id="security-title">Static public baseline</h1>
+          </div>
+          <p class="route-copy">
+            PainMap is a public static research site with read-only data exports. It has no accounts, payments, health-data submissions, or writable public API.
+          </p>
+        </section>
+        <section class="route-panel" aria-labelledby="headers-title">
+          <div class="metadata-grid">
+            <article class="metadata-card">
+              <span class="evidence-badge">CSP</span>
+              <h2 id="headers-title">Content Security Policy</h2>
+              <p>Default source is self. Scripts are limited to self and pinned jsDelivr module imports. Runtime data fetches are limited to the documented public source domains.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">referrer</span>
+              <h2>Referrer policy</h2>
+              <p>strict-origin-when-cross-origin is declared in HTML and in deployable header configuration.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">nosniff</span>
+              <h2>Static headers</h2>
+              <p>_headers and vercel.json include X-Content-Type-Options, Permissions-Policy, frame restrictions, and the CSP baseline.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">SRI</span>
+              <h2>Subresource integrity</h2>
+              <p>Primary local stylesheet and homepage module script are prepared for integrity hashes as part of the static release check.</p>
+            </article>
+          </div>
+        </section>
+        <section class="route-panel" aria-labelledby="contacts-title">
+          <div class="section-intro">
+            <p class="label">Reports</p>
+            <h2 id="contacts-title">Security contact</h2>
+          </div>
+          <p class="route-copy">
+            Use the public project issue tracker for corrections, broken data links, and security reports that do not require confidential handling. Do not submit personal health data.
+          </p>
+          <div class="route-actions">
+            <a class="solid-button" href="/.well-known/security.txt">Open security.txt</a>
+            <a class="ghost-link" href="/policies/contact/">Contact policy</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -3,20 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PainMap | Animal pain research and country context</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>PainMap | Global atlas of pain sources by place</title>
     <meta
       name="description"
-      content="Explore animal pain research, Welfare Footprint event estimates, country suffering context, transparent methods, and accessible data tables."
+      content="Explore PainMap's place-first atlas of pain-source layers, animal pain research, source metadata, uncertainty, and accessible data tables."
     >
     <link rel="canonical" href="https://painmap.org/">
-    <meta property="og:title" content="PainMap | Animal pain research and country context">
+    <meta property="og:title" content="PainMap | Global atlas of pain sources by place">
     <meta
       property="og:description"
-      content="A public research explorer for animal pain estimates, country context, methods, sources, and governance."
+      content="A public place-first atlas for pain-source layers, animal pain estimates, methods, sources, uncertainty, and governance."
     >
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://painmap.org/">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -37,12 +39,12 @@
             "@type": "WebSite",
             "name": "PainMap",
             "url": "https://painmap.org/",
-            "description": "Animal pain research and country-context visualizations with accessible table equivalents."
+            "description": "Place-first pain-source atlas with animal pain research, source metadata, uncertainty, and accessible table equivalents."
           },
           {
             "@type": "Dataset",
-            "name": "PainMap public animal pain and country context dataset",
-            "description": "A static public synthesis of Welfare Footprint event estimates, country burden proxies, and source-linked research notes.",
+            "name": "PainMap public place atlas and animal pain dataset",
+            "description": "A static public synthesis of place-level burden proxies, Welfare Footprint event estimates, source metadata, and research notes.",
             "license": "https://painmap.org/#terms",
             "creator": {
               "@type": "Organization",
@@ -59,11 +61,12 @@
       <header class="site-header" aria-label="Primary navigation">
         <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
         <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/countries/">Places</a>
           <a href="/events/">Events</a>
-          <a href="/countries/">Countries</a>
           <a href="/methods/">Methods</a>
           <a href="/data/">Data</a>
-          <a href="/resources/">Resources</a>
+          <a href="/api/">API</a>
           <a href="/about/">About</a>
         </nav>
       </header>
@@ -72,45 +75,45 @@
       <section class="topbar hero-section" id="home" aria-labelledby="home-title">
         <div>
           <p class="label">PainMap</p>
-          <h1 id="home-title">Animal pain research, made understandable</h1>
+          <h1 id="home-title">Global atlas of pain sources by place</h1>
           <div class="hero-actions" aria-label="Primary routes">
-            <a class="solid-button" href="/events/">Explore event pain</a>
-            <a class="ghost-link" href="/countries/">Explore country context</a>
+            <a class="solid-button" href="#explore-country">Start with a place</a>
+            <a class="ghost-link" href="/atlas/">Browse atlas</a>
             <a class="ghost-link" href="/methods/">Read methods</a>
           </div>
         </div>
         <p class="topbar-note" id="topbar-note">
-          The main purpose of this site is to visualize current research on animal pain, especially event-level Welfare
-          Footprint estimates for birds in different farming and slaughter systems. The globe is kept as a secondary
-          context layer for where suffering burdens scale.
+          PainMap now begins as an atlas: choose a place, inspect pain-source layers, and keep source, vintage, method
+          class, and uncertainty attached to every visible value. Event-level Welfare Footprint estimates remain a core
+          evidence layer inside that atlas.
         </p>
       </section>
 
       <section class="audience-panel" aria-labelledby="audience-title">
         <div class="section-intro">
           <p class="label">Start here</p>
-          <h2 id="audience-title">Choose the shortest path into the evidence</h2>
+          <h2 id="audience-title">Choose the shortest path into the atlas</h2>
         </div>
         <div class="audience-grid">
-          <a class="audience-card" href="/events/">
-            <span class="fact-label">General readers</span>
-            <strong>Start with the event explorer</strong>
-            <span>See what Welfare Footprint estimates imply for cages, fast growth, hunger, and slaughter.</span>
+          <a class="audience-card" href="#explore-country">
+            <span class="fact-label">Place first</span>
+            <strong>Search a country or province</strong>
+            <span>Use the non-map search path to update the atlas layers, issue cards, and synchronized data table.</span>
           </a>
-          <a class="audience-card" href="/methods/">
-            <span class="fact-label">Clinicians & educators</span>
-            <strong>Use the definitions and caveats</strong>
-            <span>Trace pain-intensity language, limits, and classroom-safe framing before sharing charts.</span>
+          <a class="audience-card" href="/atlas/">
+            <span class="fact-label">Atlas guide</span>
+            <strong>Browse the layer model</strong>
+            <span>See which layers are direct, modeled, proxy, or boundary data before comparing places.</span>
           </a>
-          <a class="audience-card" href="/data/">
+          <a class="audience-card" href="/api/">
             <span class="fact-label">Researchers</span>
-            <strong>Audit the source layer</strong>
-            <span>Jump to grouped citations, provenance notes, data freshness, and downloadable-equivalent tables.</span>
+            <strong>Audit and export data</strong>
+            <span>Open JSON, CSV, GeoJSON, DCAT, OpenAPI, license, uncertainty, and source-vintage records.</span>
           </a>
         </div>
         <div class="trust-strip" aria-label="Site status">
           <span><strong>Scope</strong> Public research visualization, not medical or veterinary advice</span>
-          <span><strong>Data posture</strong> Static public data only; no personal health data collection</span>
+          <span><strong>Data posture</strong> Static public data and runtime public APIs; no personal health data collection</span>
           <span><strong>Updated</strong> May 31, 2026</span>
         </div>
       </section>
@@ -119,14 +122,19 @@
         <section class="globe-panel" aria-labelledby="country-context-title">
           <div class="panel-head">
             <div>
-              <p class="label">Explore by Country</p>
-              <h2 id="country-context-title">Country context is secondary, but searchable</h2>
+              <p class="label">Atlas place search</p>
+              <h2 id="country-context-title">What drives pain here?</h2>
               <p class="panel-copy">
-                Secondary layer: real country and ADM1 boundaries for viewing where larger human and animal suffering
-                burdens are concentrated.
+                Start with a country or loaded ADM1 region. The equal-area atlas view is the default, and the search
+                field plus tables provide the complete non-map path.
               </p>
             </div>
             <div class="toolbar">
+              <label class="sr-only" for="map-projection-mode">Map view</label>
+              <select id="map-projection-mode" class="ranking-select compact-select">
+                <option value="atlas">Equal-area atlas view</option>
+                <option value="globe">Globe explorer</option>
+              </select>
               <form class="search-form" id="country-search-form" role="search">
                 <label class="sr-only" for="country-search">Search country or province</label>
                 <div
@@ -158,21 +166,21 @@
                 <button class="ghost-button" id="country-search-button" type="submit">Find</button>
               </form>
               <p class="control-help" id="country-search-help">
-                The search field is the keyboard and screen-reader equivalent for the globe.
+                The search field is the keyboard and screen-reader equivalent for the map.
               </p>
               <p class="sr-only" id="country-search-status" role="status" aria-live="polite"></p>
               <div class="zoom-controls" aria-label="Zoom controls">
                 <button class="ghost-button zoom-button" id="zoom-out" type="button" aria-label="Zoom out">-</button>
                 <label class="sr-only" for="zoom-range">Zoom level</label>
-                <input id="zoom-range" class="zoom-range" type="range" min="1" max="3.25" step="0.01" value="1">
+                <input id="zoom-range" class="zoom-range" type="range" min="1" max="4.8" step="0.01" value="1">
                 <button class="ghost-button zoom-button" id="zoom-in" type="button" aria-label="Zoom in">+</button>
-                <button class="ghost-button" id="reset-view" type="button">Reset globe</button>
+                <button class="ghost-button" id="reset-view" type="button">Reset view</button>
               </div>
             </div>
           </div>
 
           <details class="globe-disclosure" open>
-            <summary>Optional map view</summary>
+            <summary>Equal-area atlas view</summary>
             <div class="globe-frame">
               <svg
                 id="globe"
@@ -184,9 +192,9 @@
               <p class="map-status" id="map-status" role="status" aria-live="polite">Loading country boundaries...</p>
             </div>
             <p class="map-description" id="globe-description">
-              Orthographic world map with country boundaries and optional ADM1 province or state boundaries. Selecting a
-              place updates the ranked issue cards and the data table beside the map. The search field and data tables
-              are the complete non-map path.
+              Equal Earth thematic map with country boundaries and optional ADM1 province or state boundaries. Switch to
+              the globe only when rotation helps exploration. Selecting a place updates the ranked issue cards and the
+              data table beside the map. The search field and data tables are the complete non-map path.
             </p>
 
             <div class="legend" aria-hidden="true">
@@ -198,11 +206,11 @@
         </section>
 
         <aside class="detail-panel" aria-live="polite">
-          <p class="label" id="selection-meta">Secondary context</p>
-          <h2 id="selection-title">Country-level context.</h2>
+          <p class="label" id="selection-meta">Atlas context</p>
+          <h2 id="selection-title">Place-level context.</h2>
           <p class="selection-summary" id="selection-summary">
-            The primary focus of this site is the pain-research visualization. This globe is a secondary context tool:
-            click a country to inspect broader suffering or death burdens by place.
+            Search or select a place to inspect broader human and animal suffering burdens with source, method,
+            vintage, and uncertainty metadata beside the visible rankings.
           </p>
 
           <div class="facts">
@@ -220,7 +228,7 @@
             </article>
             <article class="fact-card">
               <span class="fact-label">Issue sources</span>
-              <strong id="fact-issue-source">Secondary context: WDI + OWID + RP + WAI proxies.</strong>
+              <strong id="fact-issue-source">Atlas layer: WDI + OWID + RP + WAI proxies.</strong>
             </article>
             <article class="fact-card">
               <span class="fact-label">Units loaded</span>
@@ -229,7 +237,7 @@
           </div>
 
           <section class="ranking-panel" aria-labelledby="globe-mode-title">
-            <p class="label" id="globe-mode-title">Country Context Globe</p>
+            <p class="label" id="globe-mode-title">Atlas layer mode</p>
             <div class="ranking-controls">
               <label class="sr-only" for="globe-mode">Globe mode</label>
               <select id="globe-mode" class="ranking-select">
@@ -238,8 +246,8 @@
               </select>
             </div>
             <p class="ranking-copy" id="globe-mode-copy">
-              This globe is a secondary context layer for comparing country-level suffering or death burdens alongside
-              the animal pain research visualizations.
+              Compare country-level suffering or death burdens while keeping the animal pain research visualizations and
+              dataset pages connected to the same source registry.
             </p>
           </section>
 
@@ -254,8 +262,8 @@
               </select>
             </div>
             <p class="ranking-copy" id="ranking-copy">
-              These controls only affect the country-context layer. The main purpose of the site remains the pain
-              research visualized above.
+              These controls affect the atlas ranking layer. Use the table equivalents and dataset pages to audit the
+              same values without relying on the map.
             </p>
           </section>
 
@@ -272,10 +280,10 @@
           </section>
 
           <p class="detail-footnote" id="selection-footnote">
-            This panel is secondary to the event-level pain visualization. Human-country rankings combine recurring EA
-            priorities with broader World Bank burden indicators. Animal cards use country slaughter, aquaculture,
-            land-area wild estimates, and a Wild Animal Initiative direct insect benchmark plus Rethink Priorities
-            sentience and welfare-range distributions as burden proxies rather than full moral-weight outputs.
+            This panel is the place-first atlas layer. Human rankings combine recurring EA priorities with broader World
+            Bank burden indicators. Animal cards use country slaughter, aquaculture, land-area wild estimates, and a
+            Wild Animal Initiative direct insect benchmark plus Rethink Priorities sentience and welfare-range
+            distributions as burden proxies rather than full moral-weight outputs.
           </p>
         </aside>
       </section>
@@ -357,7 +365,7 @@
             <h3>Research synthesis and exploration</h3>
             <p>
               PainMap visualizes public research estimates and burden proxies so readers can compare events, source
-              claims, and country context without treating the globe as a final moral ranking.
+              claims, and place context without treating the map as a final moral ranking.
             </p>
           </article>
           <article class="method-card">
@@ -414,8 +422,8 @@
           </p>
         </article>
         <article class="source-card">
-          <p class="label">Country context</p>
-          <h3>Secondary burden map</h3>
+          <p class="label">Place atlas</p>
+          <h3>Place atlas burden layers</h3>
           <p>
             Human issues combine recurring EA priorities with broader World Bank country indicators. Animal issues now
             aggregate live country inputs into three buckets: factory-farmed animals, non-insect wild animals, and
@@ -425,11 +433,23 @@
         </article>
         <article class="source-card">
           <p class="label">Geography</p>
-          <h3>Secondary globe layer</h3>
+          <h3>Atlas boundary layer</h3>
           <p>
             Natural Earth and geoBoundaries keep the secondary map geographically accurate down to country and ADM1
             boundaries instead of relying on hand-drawn regional blobs.
           </p>
+        </article>
+        <article class="source-card">
+          <p class="label">Exports</p>
+          <h3>Dataset and API contract</h3>
+          <p>
+            Public static exports include place measurements, a provenance registry, representative GeoJSON, DCAT
+            metadata, and an OpenAPI 3.1 contract for read-only reuse.
+          </p>
+          <div class="route-actions">
+            <a class="ghost-link" href="/dataset/place-measurements/">Place dataset</a>
+            <a class="ghost-link" href="/api/">API contract</a>
+          </div>
         </article>
       </section>
 
@@ -495,6 +515,10 @@
       </main>
 
       <footer class="source-links">
+        <a href="/atlas/">Atlas</a>
+        <a href="/api/">API</a>
+        <a href="/developers/">Developers</a>
+        <a href="/security/">Security</a>
         <a href="/policies/privacy/">Privacy</a>
         <a href="/policies/terms/">Terms</a>
         <a href="/policies/accessibility/">Accessibility</a>
@@ -556,6 +580,6 @@
       </footer>
     </div>
 
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js" integrity="sha384-jlPSUjVNjH6r37tlDPyyk/Y8Vjs2vGYoZONeGbpc/i4rsf05aUX5yzsBe3KGx3u6" crossorigin="anonymous"></script>
   </body>
 </html>

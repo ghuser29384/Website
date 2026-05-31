@@ -3,23 +3,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Data | PainMap</title>
     <meta name="description" content="PainMap dataset groups, provenance notes, and public source boundaries.">
     <link rel="canonical" href="https://painmap.org/data/">
     <meta property="og:title" content="Data | PainMap">
-    <meta property="og:description" content="Source groups and provenance for PainMap animal pain and country context data.">
+    <meta property="og:description" content="Source groups, provenance, exports, and metadata for PainMap animal pain and place atlas data.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/data/">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": "PainMap public animal pain and country context dataset",
-        "description": "A static public synthesis of Welfare Footprint event estimates, country burden proxies, and source-linked research notes.",
+        "name": "PainMap public animal pain and place atlas dataset",
+        "description": "A static public synthesis of Welfare Footprint event estimates, place burden proxies, provenance notes, and public exports.",
         "url": "https://painmap.org/data/",
         "license": "https://painmap.org/policies/terms/",
-        "creator": { "@type": "Organization", "name": "PainMap", "url": "https://painmap.org/" }
+        "temporalCoverage": "2010/2026",
+        "creator": { "@type": "Organization", "name": "PainMap", "url": "https://painmap.org/" },
+        "distribution": [
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/provenance-registry.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/place-measurements.json" },
+          { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://painmap.org/data/place-measurements.csv" },
+          { "@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "https://painmap.org/data/places.geojson" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/openapi.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/ld+json", "contentUrl": "https://painmap.org/data/dcat.json" }
+        ]
       }
     </script>
   </head>
@@ -29,11 +40,12 @@
       <header class="site-header" aria-label="Primary navigation">
         <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
         <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/countries/">Places</a>
           <a href="/events/">Events</a>
-          <a href="/countries/">Countries</a>
           <a href="/methods/">Methods</a>
           <a href="/data/">Data</a>
-          <a href="/resources/">Resources</a>
+          <a href="/api/">API</a>
           <a href="/about/">About</a>
         </nav>
       </header>
@@ -45,7 +57,7 @@
           </div>
           <p class="route-copy">
             PainMap groups sources by role: event-level Welfare Footprint estimates, moral-weight interpretation,
-            country context datasets, and geography. This keeps evidence claims auditable without mixing them into one link dump.
+            place atlas datasets, exports, and geography. This keeps evidence claims auditable without mixing them into one link dump.
           </p>
         </section>
         <section class="route-panel">
@@ -61,19 +73,68 @@
               <p>Uncertain welfare-range and sentience inputs used only with visible caveats.</p>
             </article>
             <article class="route-card">
-              <p class="issue-tag">Country context</p>
+              <p class="issue-tag">Place atlas</p>
               <h2>World Bank, OWID, Fishcount, WAI</h2>
-              <p>Public country and global datasets used for secondary suffering-pressure proxies.</p>
+              <p>Public country and global datasets used for place-level suffering-pressure proxies.</p>
             </article>
             <article class="route-card">
               <p class="issue-tag">Boundaries</p>
               <h2>Natural Earth and geoBoundaries</h2>
-              <p>Country and ADM1 boundaries for the optional map layer.</p>
+              <p>Country and ADM1 boundaries for the equal-area atlas and optional globe layer.</p>
             </article>
           </div>
           <div class="route-actions">
-            <a class="solid-button" href="/resources/">Open resources</a>
-            <a class="ghost-link" href="/#data-sources">Open source list</a>
+            <a class="solid-button" href="/dataset/place-measurements/">Open place dataset</a>
+            <a class="ghost-link" href="/api/">Open API contract</a>
+          </div>
+        </section>
+        <section class="route-panel" aria-labelledby="exports-title">
+          <div class="section-intro">
+            <p class="label">Public exports</p>
+            <h2 id="exports-title">Downloadable dataset surfaces</h2>
+          </div>
+          <div class="data-table-wrap">
+            <table class="route-table">
+              <thead>
+                <tr>
+                  <th>Dataset</th>
+                  <th>Method class</th>
+                  <th>Vintage</th>
+                  <th>Uncertainty</th>
+                  <th>Exports</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><a href="/dataset/place-measurements/">Place measurements</a></th>
+                  <td>Proxy aggregate</td>
+                  <td>2026-05-31 static contract plus runtime public-source refresh</td>
+                  <td>Low to very low confidence by layer</td>
+                  <td><a href="/data/place-measurements.json">JSON</a>, <a href="/data/place-measurements.csv">CSV</a>, <a href="/data/places.geojson">GeoJSON</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="/dataset/provenance-registry/">Provenance registry</a></th>
+                  <td>Registry</td>
+                  <td>2026-05-31 review</td>
+                  <td>Descriptive metadata</td>
+                  <td><a href="/data/provenance-registry.json">JSON</a>, <a href="/data/dcat.json">DCAT</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="/events/">Event pain evidence</a></th>
+                  <td>Modeled estimate</td>
+                  <td>2026-05-31 review</td>
+                  <td>Moderate confidence</td>
+                  <td><a href="/events/">HTML evidence catalog</a>, <a href="/data/provenance-registry.json">registry row</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="/api/">Read-only API contract</a></th>
+                  <td>Documentation</td>
+                  <td>2026-05-31 version</td>
+                  <td>Contract metadata</td>
+                  <td><a href="/data/openapi.json">OpenAPI 3.1</a></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </section>
       </main>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Atlas | PainMap</title>
+    <meta name="description" content="PainMap atlas entry point for place-first pain-source layers, datasets, uncertainty, and non-map table paths.">
+    <link rel="canonical" href="https://painmap.org/atlas/">
+    <meta property="og:title" content="Atlas | PainMap">
+    <meta property="og:description" content="Start with a place, inspect pain-source layers, and follow source, vintage, method, uncertainty, and export links.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://painmap.org/atlas/">
+    <link rel="stylesheet" href="../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/countries/">Places</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <main id="main-content" class="route-page">
+        <section class="route-panel route-hero" aria-labelledby="atlas-title">
+          <div>
+            <p class="label">Atlas</p>
+            <h1 id="atlas-title">Start with a place.</h1>
+          </div>
+          <p class="route-copy">
+            The atlas is PainMap's place-first entry point. It keeps the map, search box, ranking tables, and dataset pages aligned so every visible value has a source, vintage, method class, and uncertainty label.
+          </p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="atlas-start-title">
+          <div class="atlas-entry-grid">
+            <article class="route-card">
+              <p class="issue-tag">Search</p>
+              <h2 id="atlas-start-title">Open the atlas controls</h2>
+              <p>Use the homepage search field to select a country or loaded ADM1 region. It is the complete keyboard and screen-reader path for the map.</p>
+              <div class="route-actions">
+                <a class="solid-button" href="/#explore-country">Search places</a>
+              </div>
+            </article>
+            <article class="route-card">
+              <p class="issue-tag">Example place</p>
+              <h2>Brazil</h2>
+              <p>Place page skeleton with layer metadata, boundary vintage, method class, uncertainty, and export links.</p>
+              <div class="route-actions">
+                <a class="ghost-link" href="/place/BRA/">Open Brazil</a>
+              </div>
+            </article>
+            <article class="route-card">
+              <p class="issue-tag">Dataset</p>
+              <h2>Place measurements</h2>
+              <p>Representative JSON, CSV, and GeoJSON exports for the public atlas contract.</p>
+              <div class="route-actions">
+                <a class="ghost-link" href="/dataset/place-measurements/">Open dataset</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="layers-title">
+          <div class="section-intro">
+            <p class="label">Layers</p>
+            <h2 id="layers-title">What the atlas can compare</h2>
+          </div>
+          <div class="metadata-grid">
+            <article class="metadata-card">
+              <span class="evidence-badge">proxy</span>
+              <h3>Human burden indicators</h3>
+              <p>World Bank country indicators for poverty, mortality, pollution, WASH, conflict, and related burden proxies.</p>
+              <p class="issue-source">Vintage: runtime World Bank 2010:2025 window. Uncertainty: low confidence.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">proxy</span>
+              <h3>Factory-farmed animals</h3>
+              <p>Country and world counts from OWID/Fishcount-style public data, weighted only with visible welfare assumptions.</p>
+              <p class="issue-source">Vintage: latest available runtime rows plus 2026-05-31 static contract. Uncertainty: low confidence.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">proxy</span>
+              <h3>Wild animals and insects</h3>
+              <p>Land-area and insecticide proxies used as directional context, not as settled welfare measurements.</p>
+              <p class="issue-source">Vintage: 2026-05-31 static contract. Uncertainty: very low confidence.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">boundary</span>
+              <h3>Country and ADM1 boundaries</h3>
+              <p>Natural Earth Admin 0 country geometry and geoBoundaries ADM1 geometry loaded only when a place is selected.</p>
+              <p class="issue-source">Vintage: Natural Earth 1:50m plus current geoBoundaries API. Uncertainty: low confidence.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="exports-title">
+          <div class="section-intro">
+            <p class="label">Exports</p>
+            <h2 id="exports-title">Atlas data downloads</h2>
+          </div>
+          <ul class="download-list">
+            <li><a href="/data/place-measurements.json">Place measurements JSON</a></li>
+            <li><a href="/data/place-measurements.csv">Place measurements CSV</a></li>
+            <li><a href="/data/places.geojson">Representative places GeoJSON</a></li>
+            <li><a href="/data/provenance-registry.json">Provenance registry JSON</a></li>
+            <li><a href="/data/dcat.json">DCAT catalog JSON</a></li>
+            <li><a href="/data/openapi.json">OpenAPI 3.1 contract</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

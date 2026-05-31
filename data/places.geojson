@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "name": "PainMap representative places",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "WLD",
+      "properties": {
+        "place_id": "WLD",
+        "place_name": "World",
+        "geometry_level": "world",
+        "method_class": "proxy",
+        "uncertainty_class": "low",
+        "source_vintage": "2026-05-31 static contract"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "id": "BRA",
+      "properties": {
+        "place_id": "BRA",
+        "place_name": "Brazil",
+        "geometry_level": "country",
+        "method_class": "proxy",
+        "uncertainty_class": "low",
+        "source_vintage": "Runtime country values from public source APIs; boundary from Natural Earth in map runtime"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-53.2, -10.8]
+      }
+    }
+  ]
+}

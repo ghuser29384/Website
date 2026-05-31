@@ -1,0 +1,200 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "PainMap public read-only data contract",
+    "version": "2026-05-31",
+    "description": "Static API contract for PainMap place, dataset, provenance, catalog, and geometry exports. Current production endpoints are static files."
+  },
+  "servers": [
+    {
+      "url": "https://painmap.org"
+    }
+  ],
+  "paths": {
+    "/data/provenance-registry.json": {
+      "get": {
+        "summary": "Get dataset, source, license, method, and uncertainty registry",
+        "responses": {
+          "200": {
+            "description": "Provenance registry JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProvenanceRegistry"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/place-measurements.json": {
+      "get": {
+        "summary": "Get representative place-level pain-source proxy measurements",
+        "responses": {
+          "200": {
+            "description": "Place measurements JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlaceMeasurements"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/place-measurements.csv": {
+      "get": {
+        "summary": "Get representative place-level measurements as CSV",
+        "responses": {
+          "200": {
+            "description": "Place measurements CSV",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/places.geojson": {
+      "get": {
+        "summary": "Get representative place features for the atlas contract",
+        "responses": {
+          "200": {
+            "description": "GeoJSON feature collection",
+            "content": {
+              "application/geo+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FeatureCollection"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/dcat.json": {
+      "get": {
+        "summary": "Get DCAT-style dataset catalog",
+        "responses": {
+          "200": {
+            "description": "Dataset catalog JSON",
+            "content": {
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ProvenanceRegistry": {
+        "type": "object",
+        "required": ["build", "methodClasses", "uncertaintyClasses", "licenses", "datasets"],
+        "properties": {
+          "build": {
+            "type": "object"
+          },
+          "methodClasses": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "uncertaintyClasses": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "licenses": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "datasets": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "PlaceMeasurements": {
+        "type": "object",
+        "required": ["build", "measurements"],
+        "properties": {
+          "build": {
+            "type": "object"
+          },
+          "measurements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PlaceMeasurement"
+            }
+          }
+        }
+      },
+      "PlaceMeasurement": {
+        "type": "object",
+        "required": ["place_id", "place_name", "geometry_level", "layer_id", "layer_type", "source_vintage", "method_note", "uncertainty_class", "license_id"],
+        "properties": {
+          "place_id": {
+            "type": "string"
+          },
+          "place_name": {
+            "type": "string"
+          },
+          "geometry_level": {
+            "type": "string"
+          },
+          "layer_id": {
+            "type": "string"
+          },
+          "layer_type": {
+            "enum": ["direct", "modeled", "proxy", "boundary"]
+          },
+          "source_vintage": {
+            "type": "string"
+          },
+          "method_note": {
+            "type": "string"
+          },
+          "uncertainty_class": {
+            "enum": ["moderate", "low", "very-low"]
+          },
+          "license_id": {
+            "type": "string"
+          }
+        }
+      },
+      "FeatureCollection": {
+        "type": "object",
+        "required": ["type", "features"],
+        "properties": {
+          "type": {
+            "const": "FeatureCollection"
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  }
+}

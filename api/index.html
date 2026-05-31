@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>API | PainMap</title>
+    <meta name="description" content="PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, and OpenAPI exports.">
+    <link rel="canonical" href="https://painmap.org/api/">
+    <meta property="og:title" content="API | PainMap">
+    <meta property="og:description" content="Read-only public API documentation for PainMap static exports.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://painmap.org/api/">
+    <link rel="stylesheet" href="../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/countries/">Places</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <main id="main-content" class="route-page">
+        <section class="route-panel route-hero" aria-labelledby="api-title">
+          <div>
+            <p class="label">API</p>
+            <h1 id="api-title">Read-only public contract</h1>
+          </div>
+          <p class="route-copy">
+            PainMap's current public API is a set of static files. They are cacheable, inspectable, and safe for static hosting. The OpenAPI document describes the contract without implying a writable service.
+          </p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="endpoints-title">
+          <div class="section-intro">
+            <p class="label">Endpoints</p>
+            <h2 id="endpoints-title">Static URLs</h2>
+          </div>
+          <div class="data-table-wrap">
+            <table class="route-table">
+              <thead>
+                <tr>
+                  <th>Endpoint</th>
+                  <th>Format</th>
+                  <th>Purpose</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row"><a href="/data/openapi.json">/data/openapi.json</a></th><td>OpenAPI 3.1 JSON</td><td>Machine-readable public contract.</td></tr>
+                <tr><th scope="row"><a href="/data/provenance-registry.json">/data/provenance-registry.json</a></th><td>JSON</td><td>Sources, licenses, method classes, uncertainty classes, and dataset distributions.</td></tr>
+                <tr><th scope="row"><a href="/data/place-measurements.json">/data/place-measurements.json</a></th><td>JSON</td><td>Representative place-layer measurements and metadata.</td></tr>
+                <tr><th scope="row"><a href="/data/place-measurements.csv">/data/place-measurements.csv</a></th><td>CSV</td><td>Spreadsheet-friendly measurements export.</td></tr>
+                <tr><th scope="row"><a href="/data/places.geojson">/data/places.geojson</a></th><td>GeoJSON</td><td>Representative features for atlas clients.</td></tr>
+                <tr><th scope="row"><a href="/data/dcat.json">/data/dcat.json</a></th><td>DCAT JSON</td><td>Catalog metadata for public datasets.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="api-notes-title">
+          <div class="metadata-grid">
+            <article class="metadata-card">
+              <span class="evidence-badge">GET only</span>
+              <h2 id="api-notes-title">Read-only</h2>
+              <p>No forms, accounts, submissions, or write endpoints are exposed on the public static site.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">cacheable</span>
+              <h2>Static hosting</h2>
+              <p>The contract is designed to work on GitHub Pages, Vercel, Cloudflare Pages, or any static file host.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">auditable</span>
+              <h2>Source fields</h2>
+              <p>Visible atlas rows must carry source, source vintage, method class, uncertainty, and license pointers.</p>
+            </article>
+          </div>
+          <div class="route-actions">
+            <a class="solid-button" href="/developers/">Developer notes</a>
+            <a class="ghost-link" href="/dataset/provenance-registry/">Provenance registry</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

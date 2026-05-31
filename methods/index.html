@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; connect-src 'self' https://raw.githubusercontent.com https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Methods | PainMap</title>
     <meta name="description" content="PainMap methods, caveats, glossary, and boundaries for event estimates and country proxy context.">
     <link rel="canonical" href="https://painmap.org/methods/">
@@ -10,7 +12,7 @@
     <meta property="og:description" content="How to read PainMap animal pain evidence and country proxy estimates.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/methods/">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles.css" integrity="sha384-uBq2JfrXr8OPo+aL3DGdf7e8Ei0nIgFS1uLV8jWYuph7TEEx0UeUFGLLXR1x2FOu" crossorigin="anonymous">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -18,11 +20,12 @@
       <header class="site-header" aria-label="Primary navigation">
         <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
         <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/countries/">Places</a>
           <a href="/events/">Events</a>
-          <a href="/countries/">Countries</a>
           <a href="/methods/">Methods</a>
           <a href="/data/">Data</a>
-          <a href="/resources/">Resources</a>
+          <a href="/api/">API</a>
           <a href="/about/">About</a>
         </nav>
       </header>
@@ -33,8 +36,8 @@
             <h1 id="methods-title">How to read PainMap</h1>
           </div>
           <p class="route-copy">
-            PainMap separates event pain estimates from country proxy context. The event layer uses Welfare Footprint
-            pain-intensity definitions and public estimates; the country layer uses directional burden proxies.
+            PainMap separates event pain estimates from place proxy context. The event layer uses Welfare Footprint
+            pain-intensity definitions and public estimates; the atlas layer uses directional burden proxies.
           </p>
         </section>
         <section class="route-panel">
@@ -57,7 +60,7 @@
           </div>
           <ul class="route-list">
             <li>Welfare Footprint intensity language is used as an anchor, not a perfect human-animal conversion.</li>
-            <li>Country context never outranks the event pain layer in the product hierarchy.</li>
+            <li>Place context keeps source, vintage, method class, and uncertainty visible beside ranked values.</li>
             <li>Major assumptions, source type, confidence, and last review date should be visible beside the estimate.</li>
           </ul>
         </section>
