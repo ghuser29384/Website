@@ -1140,11 +1140,54 @@ const PAIN_LEVELS = [
   },
 ];
 
+const PAIN_REVIEW_DATE = "2026-05-31";
+const PAIN_SOURCES = {
+  intensities: {
+    title: "Welfare Footprint Institute: pain intensities",
+    url: "https://welfarefootprint.org/technical-definitions/pain-intensities/",
+    publisher: "Welfare Footprint Institute",
+    type: "institutional method",
+  },
+  layingHens: {
+    title: "Welfare Footprint Institute: laying hens",
+    url: "https://welfarefootprint.org/laying-hens/",
+    publisher: "Welfare Footprint Institute",
+    type: "institutional estimate",
+  },
+  broilers: {
+    title: "Welfare Footprint Institute: broilers",
+    url: "https://welfarefootprint.org/broilers/",
+    publisher: "Welfare Footprint Institute",
+    type: "institutional estimate",
+  },
+  poultrySlaughter: {
+    title: "Welfare Footprint Institute: poultry slaughter",
+    url: "https://welfarefootprint.org/research-projects/poultry-slaughter/",
+    publisher: "Welfare Footprint Institute",
+    type: "institutional estimate",
+  },
+};
+
 const LONG_PAIN_ROWS = [
   {
     id: "caged-hen",
     label: "Conventional cage instead of aviary",
     meta: "Laying hen, one laying life",
+    species: "Laying hen",
+    system: "Conventional cage compared with aviary",
+    windowLabel: "One laying life",
+    estimateKind: "modeled",
+    confidence: "moderate",
+    sourceType: "institutional estimate",
+    lastReviewedAt: PAIN_REVIEW_DATE,
+    uncertainty:
+      "Point estimate from a public synthesis; the largest uncertainty is how housing-system harms transfer across real farm conditions.",
+    assumptions: [
+      "The comparison is read as pain averted by moving from a conventional cage to an aviary system.",
+      "Pain categories follow Welfare Footprint human-facing intensity definitions.",
+      "The estimate is event-level and should not be converted into a whole-species moral weight without extra assumptions.",
+    ],
+    sources: [PAIN_SOURCES.layingHens, PAIN_SOURCES.intensities],
     unit: "hours",
     values: {
       annoying: 4645,
@@ -1157,6 +1200,21 @@ const LONG_PAIN_ROWS = [
     id: "broiler-breeder",
     label: "Feed restriction in broiler breeders",
     meta: "Parent bird, one breeder life",
+    species: "Broiler breeder chicken",
+    system: "Feed restriction in parent birds",
+    windowLabel: "One breeder life",
+    estimateKind: "modeled",
+    confidence: "moderate",
+    sourceType: "institutional estimate",
+    lastReviewedAt: PAIN_REVIEW_DATE,
+    uncertainty:
+      "Point estimate from a public synthesis; the model is sensitive to hunger-duration and production-system assumptions.",
+    assumptions: [
+      "The row treats chronic hunger from restriction as the primary welfare event.",
+      "Pain categories follow Welfare Footprint human-facing intensity definitions.",
+      "The estimate is for a breeder life, not a broiler raised for meat.",
+    ],
+    sources: [PAIN_SOURCES.broilers, PAIN_SOURCES.intensities],
     unit: "hours",
     values: {
       annoying: 0,
@@ -1169,6 +1227,21 @@ const LONG_PAIN_ROWS = [
     id: "fast-broiler",
     label: "Fast-growing broiler instead of slower-growing BCC breed",
     meta: "Broiler chicken, one life",
+    species: "Broiler chicken",
+    system: "Fast-growing breed compared with slower-growing BCC breed",
+    windowLabel: "One broiler life",
+    estimateKind: "modeled",
+    confidence: "moderate",
+    sourceType: "institutional estimate",
+    lastReviewedAt: PAIN_REVIEW_DATE,
+    uncertainty:
+      "Point estimate from a public synthesis; uncertainty depends on breed, stocking, management, and morbidity assumptions.",
+    assumptions: [
+      "The comparison isolates fast-growth harms relative to a slower-growing Better Chicken Commitment breed.",
+      "Pain categories follow Welfare Footprint human-facing intensity definitions.",
+      "The estimate covers one bird life and should not be read as a country-level burden by itself.",
+    ],
+    sources: [PAIN_SOURCES.broilers, PAIN_SOURCES.intensities],
     unit: "hours",
     values: {
       annoying: 0,
@@ -1184,6 +1257,21 @@ const ACUTE_PAIN_ROWS = [
     id: "co2",
     label: "Multi-stage CO2 stunning",
     meta: "Broiler slaughter, from entry to unconsciousness",
+    species: "Broiler chicken",
+    system: "Multi-stage CO2 stunning",
+    windowLabel: "Entry to unconsciousness",
+    estimateKind: "modeled",
+    confidence: "moderate",
+    sourceType: "institutional estimate",
+    lastReviewedAt: PAIN_REVIEW_DATE,
+    uncertainty:
+      "Point estimate from a public synthesis; uncertainty depends on gas mixture, exposure timing, and behavior before loss of consciousness.",
+    assumptions: [
+      "The row measures pain from placement in the stunning system until loss of consciousness.",
+      "Pain categories follow Welfare Footprint human-facing intensity definitions.",
+      "The estimate is acute event pain, not lifetime pain.",
+    ],
+    sources: [PAIN_SOURCES.poultrySlaughter, PAIN_SOURCES.intensities],
     unit: "seconds",
     values: {
       annoying: 0,
@@ -1196,6 +1284,21 @@ const ACUTE_PAIN_ROWS = [
     id: "electronarcosis",
     label: "High-effectiveness electronarcosis",
     meta: "Broiler slaughter, from entry to unconsciousness",
+    species: "Broiler chicken",
+    system: "High-effectiveness electronarcosis",
+    windowLabel: "Entry to unconsciousness",
+    estimateKind: "modeled",
+    confidence: "moderate",
+    sourceType: "institutional estimate",
+    lastReviewedAt: PAIN_REVIEW_DATE,
+    uncertainty:
+      "Point estimate from a public synthesis; uncertainty depends on handling, electrical parameters, and time-to-unconsciousness assumptions.",
+    assumptions: [
+      "The row measures pain from placement in the stunning system until loss of consciousness.",
+      "Pain categories follow Welfare Footprint human-facing intensity definitions.",
+      "The estimate is acute event pain, not lifetime pain.",
+    ],
+    sources: [PAIN_SOURCES.poultrySlaughter, PAIN_SOURCES.intensities],
     unit: "seconds",
     values: {
       annoying: 0,
@@ -1208,6 +1311,21 @@ const ACUTE_PAIN_ROWS = [
     id: "waterbath-stun-kill",
     label: "Waterbath stun-kill",
     meta: "Broiler slaughter, from entry to unconsciousness",
+    species: "Broiler chicken",
+    system: "Waterbath stun-kill",
+    windowLabel: "Entry to unconsciousness",
+    estimateKind: "modeled",
+    confidence: "moderate",
+    sourceType: "institutional estimate",
+    lastReviewedAt: PAIN_REVIEW_DATE,
+    uncertainty:
+      "Point estimate from a public synthesis; uncertainty depends on shackling, electrical parameters, and slaughter-line timing.",
+    assumptions: [
+      "The row measures pain from placement in the stunning system until loss of consciousness.",
+      "Pain categories follow Welfare Footprint human-facing intensity definitions.",
+      "The estimate is acute event pain, not lifetime pain.",
+    ],
+    sources: [PAIN_SOURCES.poultrySlaughter, PAIN_SOURCES.intensities],
     unit: "seconds",
     values: {
       annoying: 0,
@@ -1220,6 +1338,21 @@ const ACUTE_PAIN_ROWS = [
     id: "low-voltage-waterbath",
     label: "Low-voltage waterbath",
     meta: "Broiler slaughter, from entry to unconsciousness",
+    species: "Broiler chicken",
+    system: "Low-voltage waterbath",
+    windowLabel: "Entry to unconsciousness",
+    estimateKind: "modeled",
+    confidence: "moderate",
+    sourceType: "institutional estimate",
+    lastReviewedAt: PAIN_REVIEW_DATE,
+    uncertainty:
+      "Point estimate from a public synthesis; uncertainty depends on line conditions and the probability of ineffective stunning before unconsciousness.",
+    assumptions: [
+      "The row measures pain from placement in the stunning system until loss of consciousness.",
+      "Pain categories follow Welfare Footprint human-facing intensity definitions.",
+      "The estimate is acute event pain, not lifetime pain.",
+    ],
+    sources: [PAIN_SOURCES.poultrySlaughter, PAIN_SOURCES.intensities],
     unit: "seconds",
     values: {
       annoying: 0,
@@ -1257,7 +1390,9 @@ const svg = d3.select("#globe");
 const mapStatus = document.getElementById("map-status");
 const countrySearchForm = document.getElementById("country-search-form");
 const countrySearchInput = document.getElementById("country-search");
+const countrySearchBox = document.querySelector(".country-combobox");
 const countryOptions = document.getElementById("country-options");
+const countrySearchStatus = document.getElementById("country-search-status");
 const zoomOutButton = document.getElementById("zoom-out");
 const zoomInButton = document.getElementById("zoom-in");
 const zoomRange = document.getElementById("zoom-range");
@@ -1343,9 +1478,17 @@ let provinceRequestId = 0;
 let issueRequestId = 0;
 let provinceIssueRequestId = 0;
 let justDragged = false;
+let currentCountrySearchOptions = [];
+let activeCountrySearchIndex = -1;
 
 function setStatus(message) {
   mapStatus.textContent = message;
+}
+
+function setSearchStatus(message) {
+  if (countrySearchStatus) {
+    countrySearchStatus.textContent = message;
+  }
 }
 
 function formatNumber(value) {
@@ -3190,6 +3333,110 @@ function renderPainAnchors() {
   }
 }
 
+function buildPainCitation(row) {
+  const sourceTitles = (row.sources || []).map((source) => source.title).join("; ");
+  return `PainMap. ${row.label}. ${formatPainValue(painTotal(row.values), row.unit)} total ${row.unit} across Welfare Footprint pain categories. Sources: ${sourceTitles}. Last reviewed ${row.lastReviewedAt}. https://painmap.org/events/`;
+}
+
+function buildEvidenceBadge(text) {
+  const badge = document.createElement("span");
+  badge.className = "evidence-badge";
+  badge.textContent = text;
+  return badge;
+}
+
+function buildEvidenceField(label, value) {
+  const field = document.createElement("div");
+  field.className = "evidence-field";
+  const term = document.createElement("dt");
+  term.textContent = label;
+  const description = document.createElement("dd");
+  description.textContent = value || "Not stated";
+  field.append(term, description);
+  return field;
+}
+
+function buildPainEvidenceDetails(row) {
+  const details = document.createElement("details");
+  details.className = "evidence-details";
+
+  const summary = document.createElement("summary");
+  summary.textContent = "Evidence and uncertainty";
+  details.appendChild(summary);
+
+  const badges = document.createElement("div");
+  badges.className = "evidence-badges";
+  badges.append(
+    buildEvidenceBadge(`Estimate: ${row.estimateKind || "modeled"}`),
+    buildEvidenceBadge(`Confidence: ${row.confidence || "not stated"}`),
+    buildEvidenceBadge(`Source type: ${row.sourceType || "source-linked"}`)
+  );
+
+  const fields = document.createElement("dl");
+  fields.className = "evidence-grid";
+  fields.append(
+    buildEvidenceField("Species", row.species),
+    buildEvidenceField("System", row.system),
+    buildEvidenceField("Window", row.windowLabel),
+    buildEvidenceField("Total", `${formatPainValue(painTotal(row.values), row.unit)} ${row.unit}`),
+    buildEvidenceField("Last reviewed", row.lastReviewedAt),
+    buildEvidenceField("Uncertainty", row.uncertainty)
+  );
+
+  const assumptions = document.createElement("div");
+  assumptions.className = "evidence-block";
+  const assumptionsTitle = document.createElement("h5");
+  assumptionsTitle.textContent = "Assumptions";
+  const assumptionsList = document.createElement("ul");
+  for (const assumption of row.assumptions || []) {
+    const item = document.createElement("li");
+    item.textContent = assumption;
+    assumptionsList.appendChild(item);
+  }
+  assumptions.append(assumptionsTitle, assumptionsList);
+
+  const sources = document.createElement("div");
+  sources.className = "evidence-block";
+  const sourcesTitle = document.createElement("h5");
+  sourcesTitle.textContent = "Sources";
+  const sourceList = document.createElement("ul");
+  for (const source of row.sources || []) {
+    const item = document.createElement("li");
+    const link = document.createElement("a");
+    link.href = source.url;
+    link.target = "_blank";
+    link.rel = "noreferrer";
+    link.textContent = `${source.title} (${source.publisher})`;
+    item.appendChild(link);
+    sourceList.appendChild(item);
+  }
+  sources.append(sourcesTitle, sourceList);
+
+  const citationButton = document.createElement("button");
+  citationButton.className = "ghost-button citation-button";
+  citationButton.type = "button";
+  citationButton.textContent = "Copy citation";
+  citationButton.addEventListener("click", async () => {
+    const originalLabel = citationButton.textContent;
+    const citation = buildPainCitation(row);
+
+    try {
+      await navigator.clipboard.writeText(citation);
+      citationButton.textContent = "Citation copied";
+    } catch (error) {
+      setStatus(`Citation: ${citation}`);
+      citationButton.textContent = "Citation shown in status";
+    }
+
+    window.setTimeout(() => {
+      citationButton.textContent = originalLabel;
+    }, 2200);
+  });
+
+  details.append(badges, fields, assumptions, sources, citationButton);
+  return details;
+}
+
 function buildPainRow(row, maxTotal) {
   const article = document.createElement("article");
   article.className = "pain-row";
@@ -3253,7 +3500,7 @@ function buildPainRow(row, maxTotal) {
     breakdown.appendChild(chip);
   }
 
-  article.append(head, bar, breakdown);
+  article.append(head, bar, breakdown, buildPainEvidenceDetails(row));
   return article;
 }
 
@@ -3295,7 +3542,7 @@ function renderPainDataTable(root, caption, rows) {
 
   const thead = document.createElement("thead");
   const headerRow = document.createElement("tr");
-  ["Event", "Context", "Total", ...PAIN_LEVELS.map((level) => level.label)].forEach((label) =>
+  ["Event", "Context", "Estimate", "Confidence", "Last reviewed", "Source", "Total", ...PAIN_LEVELS.map((level) => level.label)].forEach((label) =>
     appendTextCell(headerRow, "th", label)
   );
   thead.appendChild(headerRow);
@@ -3306,6 +3553,10 @@ function renderPainDataTable(root, caption, rows) {
     const row = document.createElement("tr");
     appendTextCell(row, "th", painRow.label).scope = "row";
     appendTextCell(row, "td", painRow.meta);
+    appendTextCell(row, "td", painRow.estimateKind || "modeled");
+    appendTextCell(row, "td", painRow.confidence || "");
+    appendTextCell(row, "td", painRow.lastReviewedAt || "");
+    appendTextCell(row, "td", (painRow.sources || []).map((source) => source.title).join("; "));
     appendTextCell(row, "td", formatPainValue(painTotal(painRow.values), painRow.unit));
 
     PAIN_LEVELS.forEach((level) => {
@@ -3592,19 +3843,29 @@ function renderAnimalIssues(country) {
 }
 
 function populateCountryOptions() {
-  countryOptions.textContent = "";
+  const shouldOpen =
+    document.activeElement === countrySearchInput && Boolean(countrySearchInput.value.trim());
+  renderCountrySearchOptions(countrySearchInput.value, shouldOpen);
+}
 
-  const fragment = document.createDocumentFragment();
+function buildCountrySearchOptions() {
+  const options = [];
   const optionValues = new Set();
+  const optionId = (value) => normalizeSearchText(value).replace(/\s+/g, "-") || "result";
 
   for (const entry of state.countryIndex) {
     if (optionValues.has(entry.name)) {
       continue;
     }
 
-    const option = document.createElement("option");
-    option.value = entry.name;
-    fragment.appendChild(option);
+    options.push({
+      id: `country-${optionId(entry.iso || entry.name)}`,
+      type: "country",
+      label: entry.name,
+      description: entry.iso ? `Country · ${entry.iso}` : "Country",
+      searchText: normalizeSearchText(`${entry.name} ${entry.iso || ""}`),
+      feature: entry.feature,
+    });
     optionValues.add(entry.name);
   }
 
@@ -3622,14 +3883,136 @@ function populateCountryOptions() {
         continue;
       }
 
-      const option = document.createElement("option");
-      option.value = value;
-      fragment.appendChild(option);
+      options.push({
+        id: `province-${optionId(`${iso}-${provinceName(feature)}`)}`,
+        type: "province",
+        label: value,
+        description: `Province or state · ${countryEntry.name}`,
+        searchText: normalizeSearchText(`${value} ${iso}`),
+        feature,
+        countryFeature: countryEntry.feature,
+      });
       optionValues.add(value);
     }
   }
 
+  return options;
+}
+
+function filterCountrySearchOptions(query) {
+  const normalized = normalizeSearchText(query);
+  const options = buildCountrySearchOptions();
+
+  if (!normalized) {
+    return options.slice(0, 12);
+  }
+
+  const exact = options.filter((option) => option.searchText === normalized);
+  const startsWith = options.filter(
+    (option) => option.searchText.startsWith(normalized) && !exact.includes(option)
+  );
+  const contains = options.filter(
+    (option) =>
+      option.searchText.includes(normalized) &&
+      !exact.includes(option) &&
+      !startsWith.includes(option)
+  );
+
+  return [...exact, ...startsWith, ...contains].slice(0, 12);
+}
+
+function closeCountrySearchOptions() {
+  currentCountrySearchOptions = [];
+  activeCountrySearchIndex = -1;
+  countryOptions.hidden = true;
+  countryOptions.textContent = "";
+  countrySearchInput.removeAttribute("aria-activedescendant");
+  countrySearchBox?.setAttribute("aria-expanded", "false");
+}
+
+function setActiveCountrySearchOption(index) {
+  if (!currentCountrySearchOptions.length) {
+    activeCountrySearchIndex = -1;
+    countrySearchInput.removeAttribute("aria-activedescendant");
+    return;
+  }
+
+  activeCountrySearchIndex = Math.max(0, Math.min(index, currentCountrySearchOptions.length - 1));
+  const activeOption = currentCountrySearchOptions[activeCountrySearchIndex];
+  countrySearchInput.setAttribute("aria-activedescendant", activeOption.id);
+
+  countryOptions.querySelectorAll("[role='option']").forEach((option, optionIndex) => {
+    option.setAttribute("aria-selected", String(optionIndex === activeCountrySearchIndex));
+  });
+}
+
+function renderCountrySearchOptions(query, shouldOpen = true) {
+  if (!countryOptions || !countrySearchInput) {
+    return;
+  }
+
+  currentCountrySearchOptions = filterCountrySearchOptions(query);
+  countryOptions.textContent = "";
+
+  if (!shouldOpen || !currentCountrySearchOptions.length) {
+    closeCountrySearchOptions();
+    setSearchStatus(shouldOpen ? "No country or province search results." : "");
+    return;
+  }
+
+  const fragment = document.createDocumentFragment();
+
+  currentCountrySearchOptions.forEach((option, index) => {
+    const item = document.createElement("li");
+    item.id = option.id;
+    item.className = "country-option";
+    item.role = "option";
+    item.setAttribute("aria-selected", String(index === activeCountrySearchIndex));
+
+    const label = document.createElement("span");
+    label.className = "country-option-label";
+    label.textContent = option.label;
+
+    const description = document.createElement("span");
+    description.className = "country-option-meta";
+    description.textContent = option.description;
+
+    item.append(label, description);
+    item.addEventListener("mousedown", (event) => {
+      event.preventDefault();
+      commitCountrySearchOption(option);
+    });
+    fragment.appendChild(item);
+  });
+
   countryOptions.appendChild(fragment);
+  countryOptions.hidden = false;
+  countrySearchBox?.setAttribute("aria-expanded", "true");
+
+  if (activeCountrySearchIndex < 0 || activeCountrySearchIndex >= currentCountrySearchOptions.length) {
+    setActiveCountrySearchOption(0);
+  } else {
+    setActiveCountrySearchOption(activeCountrySearchIndex);
+  }
+
+  setSearchStatus(`${currentCountrySearchOptions.length} results available.`);
+}
+
+async function commitCountrySearchOption(option) {
+  if (!option) {
+    return;
+  }
+
+  countrySearchInput.value = option.label;
+  closeCountrySearchOptions();
+  setSearchStatus(`${option.label} selected.`);
+
+  if (option.type === "province") {
+    await selectProvince(option.countryFeature, option.feature);
+    return;
+  }
+
+  await selectCountry(option.feature);
 }
 
 function findCountry(query) {
@@ -4328,7 +4711,53 @@ function setupInteraction() {
     { passive: false }
   );
 
-  countrySearchForm.addEventListener("submit", handleCountrySearch);
+  countrySearchInput.addEventListener("focus", () => {
+    renderCountrySearchOptions(countrySearchInput.value, true);
+  });
+  countrySearchInput.addEventListener("input", () => {
+    activeCountrySearchIndex = 0;
+    renderCountrySearchOptions(countrySearchInput.value, true);
+  });
+  countrySearchInput.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
+      if (countryOptions.hidden) {
+        renderCountrySearchOptions(countrySearchInput.value, true);
+      } else {
+        setActiveCountrySearchOption(activeCountrySearchIndex + 1);
+      }
+    }
+
+    if (event.key === "ArrowUp") {
+      event.preventDefault();
+      setActiveCountrySearchOption(activeCountrySearchIndex - 1);
+    }
+
+    if (event.key === "Enter" && !countryOptions.hidden && currentCountrySearchOptions[activeCountrySearchIndex]) {
+      event.preventDefault();
+      commitCountrySearchOption(currentCountrySearchOptions[activeCountrySearchIndex]);
+    }
+
+    if (event.key === "Escape") {
+      closeCountrySearchOptions();
+      setSearchStatus("Country search suggestions closed.");
+    }
+  });
+  countrySearchForm.addEventListener("submit", async (event) => {
+    if (!countryOptions.hidden && currentCountrySearchOptions[activeCountrySearchIndex]) {
+      event.preventDefault();
+      await commitCountrySearchOption(currentCountrySearchOptions[activeCountrySearchIndex]);
+      return;
+    }
+
+    closeCountrySearchOptions();
+    await handleCountrySearch(event);
+  });
+  document.addEventListener("click", (event) => {
+    if (!countrySearchForm.contains(event.target)) {
+      closeCountrySearchOptions();
+    }
+  });
   globeModeSelect.addEventListener("change", () => {
     state.globeMode = globeModeSelect.value;
     renderDetails();

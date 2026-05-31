@@ -24,7 +24,14 @@
           {
             "@type": "Organization",
             "name": "PainMap",
-            "url": "https://painmap.org/"
+            "url": "https://painmap.org/",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "corrections and source questions",
+                "url": "https://github.com/ghuser29384/Website/issues"
+              }
+            ]
           },
           {
             "@type": "WebSite",
@@ -50,13 +57,14 @@
     <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="shell">
       <header class="site-header" aria-label="Primary navigation">
-        <a class="brand" href="#home" aria-label="PainMap home">PainMap</a>
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
         <nav class="site-nav" aria-label="Site sections">
-          <a href="#explore-events">Events</a>
-          <a href="#explore-country">Countries</a>
-          <a href="#methods">Methods</a>
-          <a href="#data-sources">Data</a>
-          <a href="#about-policies">Policies</a>
+          <a href="/events/">Events</a>
+          <a href="/countries/">Countries</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/resources/">Resources</a>
+          <a href="/about/">About</a>
         </nav>
       </header>
 
@@ -66,9 +74,9 @@
           <p class="label">PainMap</p>
           <h1 id="home-title">Animal pain research, made understandable</h1>
           <div class="hero-actions" aria-label="Primary routes">
-            <a class="solid-button" href="#explore-events">Explore event pain</a>
-            <a class="ghost-link" href="#explore-country">Explore country context</a>
-            <a class="ghost-link" href="#methods">Read methods</a>
+            <a class="solid-button" href="/events/">Explore event pain</a>
+            <a class="ghost-link" href="/countries/">Explore country context</a>
+            <a class="ghost-link" href="/methods/">Read methods</a>
           </div>
         </div>
         <p class="topbar-note" id="topbar-note">
@@ -84,17 +92,17 @@
           <h2 id="audience-title">Choose the shortest path into the evidence</h2>
         </div>
         <div class="audience-grid">
-          <a class="audience-card" href="#explore-events">
+          <a class="audience-card" href="/events/">
             <span class="fact-label">General readers</span>
             <strong>Start with the event explorer</strong>
             <span>See what Welfare Footprint estimates imply for cages, fast growth, hunger, and slaughter.</span>
           </a>
-          <a class="audience-card" href="#methods">
+          <a class="audience-card" href="/methods/">
             <span class="fact-label">Clinicians & educators</span>
             <strong>Use the definitions and caveats</strong>
             <span>Trace pain-intensity language, limits, and classroom-safe framing before sharing charts.</span>
           </a>
-          <a class="audience-card" href="#data-sources">
+          <a class="audience-card" href="/data/">
             <span class="fact-label">Researchers</span>
             <strong>Audit the source layer</strong>
             <span>Jump to grouped citations, provenance notes, data freshness, and downloadable-equivalent tables.</span>
@@ -119,24 +127,40 @@
               </p>
             </div>
             <div class="toolbar">
-              <form class="search-form" id="country-search-form">
+              <form class="search-form" id="country-search-form" role="search">
                 <label class="sr-only" for="country-search">Search country or province</label>
-                <input
-                  id="country-search"
-                  class="search-input"
-                  type="search"
-                  list="country-options"
-                  placeholder='Search country or "Province, Country"'
-                  autocomplete="off"
-                  spellcheck="false"
-                  aria-describedby="country-search-help"
+                <div
+                  class="country-combobox"
+                  role="combobox"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  aria-owns="country-options"
+                  aria-controls="country-options"
                 >
-                <datalist id="country-options"></datalist>
+                  <input
+                    id="country-search"
+                    class="search-input"
+                    type="text"
+                    placeholder='Search country or "Province, Country"'
+                    autocomplete="off"
+                    spellcheck="false"
+                    aria-autocomplete="list"
+                    aria-describedby="country-search-help country-search-status"
+                  >
+                  <ul
+                    class="country-options"
+                    id="country-options"
+                    role="listbox"
+                    aria-label="Country search results"
+                    hidden
+                  ></ul>
+                </div>
                 <button class="ghost-button" id="country-search-button" type="submit">Find</button>
               </form>
               <p class="control-help" id="country-search-help">
                 The search field is the keyboard and screen-reader equivalent for the globe.
               </p>
+              <p class="sr-only" id="country-search-status" role="status" aria-live="polite"></p>
               <div class="zoom-controls" aria-label="Zoom controls">
                 <button class="ghost-button zoom-button" id="zoom-out" type="button" aria-label="Zoom out">-</button>
                 <label class="sr-only" for="zoom-range">Zoom level</label>
@@ -147,26 +171,30 @@
             </div>
           </div>
 
-          <div class="globe-frame">
-            <svg
-              id="globe"
-              viewBox="0 0 900 900"
-              role="group"
-              aria-labelledby="country-context-title"
-              aria-describedby="globe-description"
-            ></svg>
-            <p class="map-status" id="map-status" role="status">Loading country boundaries...</p>
-          </div>
-          <p class="map-description" id="globe-description">
-            Orthographic world map with country boundaries and optional ADM1 province or state boundaries. Selecting a
-            place updates the ranked issue cards and the data table beside the map.
-          </p>
+          <details class="globe-disclosure" open>
+            <summary>Optional map view</summary>
+            <div class="globe-frame">
+              <svg
+                id="globe"
+                viewBox="0 0 900 900"
+                role="group"
+                aria-labelledby="country-context-title"
+                aria-describedby="globe-description"
+              ></svg>
+              <p class="map-status" id="map-status" role="status" aria-live="polite">Loading country boundaries...</p>
+            </div>
+            <p class="map-description" id="globe-description">
+              Orthographic world map with country boundaries and optional ADM1 province or state boundaries. Selecting a
+              place updates the ranked issue cards and the data table beside the map. The search field and data tables
+              are the complete non-map path.
+            </p>
 
-          <div class="legend" aria-hidden="true">
-            <span><i class="swatch swatch-country"></i>Country</span>
-            <span><i class="swatch swatch-province"></i>Province or state</span>
-            <span><i class="swatch swatch-selected"></i>Selected</span>
-          </div>
+            <div class="legend" aria-hidden="true">
+              <span><i class="swatch swatch-country"></i>Country</span>
+              <span><i class="swatch swatch-province"></i>Province or state</span>
+              <span><i class="swatch swatch-selected"></i>Selected</span>
+            </div>
+          </details>
         </section>
 
         <aside class="detail-panel" aria-live="polite">
@@ -450,8 +478,8 @@
             <p class="issue-tag">Contact</p>
             <h3>Corrections and source questions</h3>
             <p>
-              Send corrections, source updates, accessibility reports, or governance questions to the project maintainer
-              before reusing sensitive claims in public materials.
+              Send corrections, source updates, accessibility reports, or governance questions through the public
+              project issue tracker before reusing sensitive claims in public materials.
             </p>
           </article>
           <article class="policy-card" id="changelog">
@@ -467,12 +495,12 @@
       </main>
 
       <footer class="source-links">
-        <a href="#privacy">Privacy</a>
-        <a href="#terms">Terms</a>
-        <a href="#accessibility">Accessibility</a>
-        <a href="#editorial-policy">Editorial policy</a>
-        <a href="#contact">Contact</a>
-        <a href="#changelog">Changelog</a>
+        <a href="/policies/privacy/">Privacy</a>
+        <a href="/policies/terms/">Terms</a>
+        <a href="/policies/accessibility/">Accessibility</a>
+        <a href="/policies/editorial-policy/">Editorial policy</a>
+        <a href="/policies/contact/">Contact</a>
+        <a href="/updates/">Changelog</a>
         <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/" target="_blank" rel="noreferrer">Natural Earth Admin 0 countries</a>
         <a href="https://www.geoboundaries.org/api.html" target="_blank" rel="noreferrer">geoBoundaries API</a>
         <a href="https://www.givewell.org/charities/top-charities" target="_blank" rel="noreferrer">GiveWell top charities</a>
