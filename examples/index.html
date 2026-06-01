@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Developer Examples | PainMap</title>
+    <meta name="description" content="PainMap developer examples for loading place profiles, coverage status, schemas, and immutable release artifacts.">
+    <link rel="canonical" href="https://painmap.org/examples/">
+    <meta property="og:title" content="Developer Examples | PainMap">
+    <meta property="og:description" content="PainMap developer examples for loading place profiles, coverage status, schemas, and immutable release artifacts.">
+    <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://painmap.org/examples/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Developer Examples | PainMap">
+    <meta name="twitter:description" content="PainMap developer examples for loading place profiles, coverage status, schemas, and immutable release artifacts.">
+    <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-2ynfUgF7SxQRKHHfmfYE+2xb3kSdLyF50duAGFqsRmDRpDv1UB4GY2ilw7XxzBl0" crossorigin="anonymous">
+      <script type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"TechArticle","@id":"https://painmap.org/examples/#page","name":"Developer Examples | PainMap","url":"https://painmap.org/examples/","description":"PainMap developer examples for loading place profiles, coverage status, schemas, and immutable release artifacts."},{"@type":"BreadcrumbList","@id":"https://painmap.org/examples/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"PainMap","item":"https://painmap.org"},{"@type":"ListItem","position":2,"name":"Developer Examples","item":"https://painmap.org/examples/"}]}]}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/places/">Places</a>
+          <a href="/compare/">Compare</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <main id="main-content" class="route-page">
+        <section class="route-panel route-hero" aria-labelledby="examples-title">
+          <div>
+            <p class="label">Examples</p>
+            <h1 id="examples-title">Reuse PainMap release data.</h1>
+          </div>
+          <p class="route-copy">
+            These examples load public static files only. Keep release ID, source IDs, evidence kind, uncertainty, and license fields attached when copying values.
+          </p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="recipes-title">
+          <div class="section-intro">
+            <p class="label">Recipes</p>
+            <h2 id="recipes-title">Load a place profile</h2>
+          </div>
+          <pre class="code-block"><code>node examples/load-place-profile.mjs IND
+python3 examples/load_place_profile.py IND</code></pre>
+          <div class="route-actions">
+            <a class="ghost-link" href="/examples/README.md">Recipe README</a>
+            <a class="ghost-link" href="/examples/load-place-profile.mjs">Node example</a>
+            <a class="ghost-link" href="/examples/load_place_profile.py">Python example</a>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="client-title">
+          <div class="metadata-grid">
+            <article class="metadata-card">
+              <span class="evidence-badge">TypeScript</span>
+              <h2 id="client-title">Typed browser or Node client</h2>
+              <p>Use the TypeScript client as a small typed wrapper around releases, coverage, place indexes, profiles, and measurement payloads.</p>
+              <p><a href="/clients/typescript/painmap-client.ts">Open TypeScript client</a></p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">Python</span>
+              <h2>Stdlib client</h2>
+              <p>The Python client uses urllib and json only, so notebooks and scripts can fetch release files without extra dependencies.</p>
+              <p><a href="/clients/python/painmap_client.py">Open Python client</a></p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">Schemas</span>
+              <h2>Validate before analysis</h2>
+              <p>Use JSON Schemas and coverage status to distinguish measured places from boundary-only places.</p>
+              <p><a href="/schemas/place-index.schema.json">Open place-index schema</a></p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

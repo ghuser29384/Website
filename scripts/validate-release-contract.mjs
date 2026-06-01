@@ -212,6 +212,11 @@ for (const requiredArtifact of [
   "/data/endpoint-smoke.json",
   "/data/performance-budgets.json",
   "/data/analytics-events.json",
+  "/clients/typescript/painmap-client.ts",
+  "/clients/python/painmap_client.py",
+  "/examples/README.md",
+  "/examples/load-place-profile.mjs",
+  "/examples/load_place_profile.py",
 ]) {
   expect(
     releaseManifest.artifacts?.some((artifact) => artifact.path === requiredArtifact),

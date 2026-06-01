@@ -66,6 +66,11 @@ curl https://painmap.org/schemas/place-index.schema.json</code></pre>
           <p class="route-copy">
             The API has no authentication and no write side. Use immutable release URLs for reproducible work; use latest aliases only when freshness matters more than exact replay. Validate client assumptions against the JSON Schemas and coverage status before treating a place as measured.
           </p>
+          <div class="route-actions">
+            <a class="ghost-link" href="/clients/typescript/painmap-client.ts">TypeScript client</a>
+            <a class="ghost-link" href="/clients/python/painmap_client.py">Python client</a>
+            <a class="ghost-link" href="/examples/">Example recipes</a>
+          </div>
         </section>
 
         <section class="route-panel" aria-labelledby="developer-rules-title">
@@ -89,6 +94,11 @@ curl https://painmap.org/schemas/place-index.schema.json</code></pre>
               <span class="evidence-badge">budgets</span>
               <h2>Field performance</h2>
               <p>LCP, INP, and CLS budgets are published with the release, alongside endpoint smoke targets and telemetry event names.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">reuse</span>
+              <h2>Typed clients</h2>
+              <p>Small TypeScript and Python clients cover releases, coverage, place indexes, place profiles, and measurement payloads.</p>
             </article>
           </div>
           <div class="route-actions">

@@ -20,6 +20,11 @@ const expectedExports = [
   "data/natural-earth-countries.geojson",
   "data/openapi.json",
   "data/dcat.json",
+  "clients/typescript/painmap-client.ts",
+  "clients/python/painmap_client.py",
+  "examples/README.md",
+  "examples/load-place-profile.mjs",
+  "examples/load_place_profile.py",
   "schemas/place-index.schema.json",
   "schemas/place-measurements.schema.json",
   "schemas/coverage.schema.json",
@@ -354,6 +359,12 @@ for (const requiredPath of ["/v1/places/index.json", "/v1/coverage.json", "/sche
     failures.push(`data/openapi.json missing ${requiredPath}`);
   }
 }
+
+expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /export class PainMapClient/, "TypeScript PainMapClient export");
+expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async placeIndex\(\): Promise<PlaceIndex>/, "typed placeIndex client method");
+expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /class PainMapClient:/, "Python PainMapClient class");
+expectPattern("examples/README.md", read("examples/README.md"), /node examples\/load-place-profile\.mjs IND/, "Node example command");
+expectPattern("examples/README.md", read("examples/README.md"), /python3 examples\/load_place_profile\.py IND/, "Python example command");
 
 for (const file of walkFiles(root, (entry) => entry.endsWith(".html"))) {
   const html = read(file);

@@ -15,6 +15,8 @@ PainMap is a public static atlas for pain-source evidence by place. The site sep
 - Static API index: `data/openapi.json`
 - Field budgets: `data/performance-budgets.json`
 - Endpoint smoke manifest: `data/endpoint-smoke.json`
+- Typed clients: `clients/typescript/painmap-client.ts`, `clients/python/painmap_client.py`
+- Example recipes: `examples/README.md`
 
 Run the release artifact builder before checks:
 

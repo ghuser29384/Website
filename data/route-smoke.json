@@ -115,6 +115,14 @@
       "expected_canonical": "https://painmap.org/developers/"
     },
     {
+      "key": "examples",
+      "path": "/examples/",
+      "file": "examples/index.html",
+      "expected_title": "Developer Examples | PainMap",
+      "expected_description": "PainMap developer examples for loading place profiles, coverage status, schemas, and immutable release artifacts.",
+      "expected_canonical": "https://painmap.org/examples/"
+    },
+    {
       "key": "releases",
       "path": "/releases/",
       "file": "releases/index.html",

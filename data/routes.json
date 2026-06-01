@@ -126,6 +126,14 @@
       "jsonLdType": "TechArticle"
     },
     {
+      "path": "/examples/",
+      "file": "examples/index.html",
+      "key": "examples",
+      "title": "Developer Examples | PainMap",
+      "description": "PainMap developer examples for loading place profiles, coverage status, schemas, and immutable release artifacts.",
+      "jsonLdType": "TechArticle"
+    },
+    {
       "path": "/releases/",
       "file": "releases/index.html",
       "key": "releases",

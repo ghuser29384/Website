@@ -176,6 +176,15 @@
       "json_ld_type": "TechArticle"
     },
     {
+      "key": "examples",
+      "path": "/examples/",
+      "file": "examples/index.html",
+      "title": "Developer Examples | PainMap",
+      "description": "PainMap developer examples for loading place profiles, coverage status, schemas, and immutable release artifacts.",
+      "canonical_url": "https://painmap.org/examples/",
+      "json_ld_type": "TechArticle"
+    },
+    {
       "key": "releases",
       "path": "/releases/",
       "file": "releases/index.html",
@@ -343,8 +352,13 @@
     },
     {
       "path": "/developers/index.html",
-      "sha256": "6c86edb9da5414bb7cea7dcc62ac4abe1d729b8e715927cab6cd12062af1062b",
-      "bytes": 5998
+      "sha256": "43b6ecde52e84708225ee200d7effba4b702c54a164c36749a27ad15b84f5f94",
+      "bytes": 6619
+    },
+    {
+      "path": "/examples/index.html",
+      "sha256": "c760d3c02b674ed420422f55c0f9921c1e659466418179e868b918830efda8da",
+      "bytes": 5756
     },
     {
       "path": "/releases/index.html",
@@ -403,13 +417,13 @@
     },
     {
       "path": "/data/routes.json",
-      "sha256": "611bc287182e0ecd77ce74eb97fcaec1f3d72d496c95d386ca1e28c86990cffe",
-      "bytes": 8312
+      "sha256": "35e6b1a631a1111ca452e84d8303c45978b7e052d858db5abc615eb3b88e6667",
+      "bytes": 8634
     },
     {
       "path": "/data/route-smoke.json",
-      "sha256": "3e94a4f8f83fbc92e2c30b0811f5962dfb69f26097ed0b4d829d6b8b68cd4d86",
-      "bytes": 9119
+      "sha256": "d028c2917d4f2f240e25c81ce1599c6af0f78773f6def1c76d1959f9fbbcb254",
+      "bytes": 9485
     },
     {
       "path": "/data/provenance-registry.json",
@@ -443,8 +457,8 @@
     },
     {
       "path": "/data/endpoint-smoke.json",
-      "sha256": "7c668b803ada0c7ecc24b94f9972e1f6420a55cdd22918ab54397eb0731cc704",
-      "bytes": 2354
+      "sha256": "7e04889adfe136ad3f83b17f57426becc29befe5ee03f2a300c63237808a1cab",
+      "bytes": 3085
     },
     {
       "path": "/data/countries-lite.geojson",
@@ -458,13 +472,38 @@
     },
     {
       "path": "/data/dcat.json",
-      "sha256": "0351ef5709a6a384035d4582ef356bda46304df789d6dc2ecad97d1bebdb9daf",
-      "bytes": 4478
+      "sha256": "a6aa31993ede0460ad496a924d17c51a09effc7f34f94fc181c09528a77ffb7a",
+      "bytes": 5031
     },
     {
       "path": "/data/openapi.json",
       "sha256": "a43ee9e540dd743e5da542896663c71598718a2b58ff6e50ed3dc5254fc68359",
       "bytes": 14393
+    },
+    {
+      "path": "/clients/typescript/painmap-client.ts",
+      "sha256": "753d3db95b1408b87029411f8bdf71d095e3b0846d2922f99ffe4079339a98cd",
+      "bytes": 3664
+    },
+    {
+      "path": "/clients/python/painmap_client.py",
+      "sha256": "94597132ea859ce81bab2355d114320b0791b6a5258f2ccff25a9dcba8bc70ea",
+      "bytes": 1493
+    },
+    {
+      "path": "/examples/README.md",
+      "sha256": "da00d2ce2cffc179b87836d63661fbe7f99b1d3929331184534a24447c9b9962",
+      "bytes": 936
+    },
+    {
+      "path": "/examples/load-place-profile.mjs",
+      "sha256": "738ba4328eead2874c3aa5f004cf60cd9a76e018bcf5ce221d6e97fea667ee83",
+      "bytes": 612
+    },
+    {
+      "path": "/examples/load_place_profile.py",
+      "sha256": "f913ce95030d3cb60ff4323df8d5c73580eeda833cb8f1cbf59a02941ac09161",
+      "bytes": 701
     },
     {
       "path": "/schemas/place-index.schema.json",
@@ -553,8 +592,8 @@
     },
     {
       "path": "/sitemap.xml",
-      "sha256": "0db7a16c339a166175f33f0934acfe5e4e739940f6b3607c4dd292b77b4455fd",
-      "bytes": 2586
+      "sha256": "2fa9eab69ad82137bca6ff6497a196e7095d9751718d6797265182df327cd597",
+      "bytes": 2682
     },
     {
       "path": "/robots.txt",
@@ -583,8 +622,8 @@
     },
     {
       "path": "/README.md",
-      "sha256": "6cf84080b9d0ad5e4653abc1e9a681a97957c3fd9987125d50fb8ac9bc031079",
-      "bytes": 3011
+      "sha256": "a27c7d7649f6dd857c86efc755add710cd05c3d85516547e00a2d1288e178682",
+      "bytes": 3143
     },
     {
       "path": "/LICENSE",

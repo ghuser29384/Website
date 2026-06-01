@@ -35,6 +35,14 @@
       "purpose": "Compare route"
     },
     {
+      "path": "/examples/",
+      "url": "https://painmap.org/examples/",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/html",
+      "purpose": "Developer examples route"
+    },
+    {
       "path": "/data/openapi.json",
       "url": "https://painmap.org/data/openapi.json",
       "method": "GET",
@@ -65,6 +73,22 @@
       "expected_status": 200,
       "format": "application/json",
       "purpose": "Release coverage status"
+    },
+    {
+      "path": "/clients/typescript/painmap-client.ts",
+      "url": "https://painmap.org/clients/typescript/painmap-client.ts",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/typescript",
+      "purpose": "TypeScript client"
+    },
+    {
+      "path": "/clients/python/painmap_client.py",
+      "url": "https://painmap.org/clients/python/painmap_client.py",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/x-python",
+      "purpose": "Python client"
     },
     {
       "path": "/releases/2026-05-31/manifest.json",

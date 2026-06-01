@@ -120,6 +120,21 @@
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
           "dcat:downloadURL": "https://painmap.org/data/endpoint-smoke.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "text/typescript",
+          "dcat:downloadURL": "https://painmap.org/clients/typescript/painmap-client.ts"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "text/x-python",
+          "dcat:downloadURL": "https://painmap.org/clients/python/painmap_client.py"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "text/markdown",
+          "dcat:downloadURL": "https://painmap.org/examples/README.md"
         }
       ]
     }
