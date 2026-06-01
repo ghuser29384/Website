@@ -9,6 +9,7 @@
   "data_url": "https://painmap.org/v1/places/WLD.json",
   "compare_url": "https://painmap.org/compare/",
   "measurements_url": "https://painmap.org/v1/places/WLD/measurements.json",
+  "neighbors_url": "https://painmap.org/v1/places/WLD/neighbors.json",
   "evidence_kinds": [
     "proxy"
   ],

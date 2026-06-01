@@ -16,6 +16,7 @@ const measurements = readJson("data/place-measurements.json");
 const countryBoundaries = readJson("data/natural-earth-countries.geojson");
 const releaseId = routes.releaseId;
 const releaseDate = routes.generatedAt;
+const earthRadiusKm = 6371.0088;
 
 function absolute(file) {
   return path.join(root, file);
@@ -44,6 +45,10 @@ function writeText(file, text) {
 
 function writeJson(file, value) {
   writeText(file, `${JSON.stringify(value, null, 2)}\n`);
+}
+
+function writeJsonCompact(file, value) {
+  writeText(file, `${JSON.stringify(value)}\n`);
 }
 
 function hashFile(file, algorithm = "sha256", encoding = "hex") {
@@ -299,11 +304,63 @@ function countryNameFromProperties(properties = {}) {
   return properties.NAME_EN || properties.NAME_LONG || properties.ADMIN || properties.NAME || "Unknown place";
 }
 
+function mergeCountryGeometry(features) {
+  const polygons = [];
+
+  for (const feature of features) {
+    if (feature.geometry?.type === "Polygon") {
+      polygons.push(feature.geometry.coordinates);
+      continue;
+    }
+
+    if (feature.geometry?.type === "MultiPolygon") {
+      polygons.push(...feature.geometry.coordinates);
+    }
+  }
+
+  return {
+    type: "MultiPolygon",
+    coordinates: polygons,
+  };
+}
+
+function representativeCountryFeature(features) {
+  return [...features].sort((left, right) => {
+    const leftPopulation = Number(left.properties?.POP_EST) || 0;
+    const rightPopulation = Number(right.properties?.POP_EST) || 0;
+
+    return rightPopulation - leftPopulation;
+  })[0];
+}
+
 function countryBoundaryFeatures() {
-  return countryBoundaries.features
+  const grouped = new Map();
+
+  for (const entry of countryBoundaries.features
     .filter((feature) => feature.geometry && feature.properties?.CONTINENT !== "Antarctica")
     .map((feature) => ({ feature, iso: countryIsoFromProperties(feature.properties) }))
-    .filter((entry) => entry.iso)
+    .filter((entry) => entry.iso)) {
+    const features = grouped.get(entry.iso) || [];
+    features.push(entry.feature);
+    grouped.set(entry.iso, features);
+  }
+
+  return [...grouped.entries()]
+    .map(([iso, features]) => {
+      const representative = representativeCountryFeature(features);
+
+      return {
+        iso,
+        feature: {
+          type: "Feature",
+          properties: {
+            ...representative.properties,
+            PAINMAP_MERGED_FEATURE_COUNT: features.length,
+          },
+          geometry: mergeCountryGeometry(features),
+        },
+      };
+    })
     .sort((left, right) =>
       countryNameFromProperties(left.feature.properties).localeCompare(countryNameFromProperties(right.feature.properties))
     );
@@ -315,6 +372,109 @@ function measurementRowsForPlace(placeId) {
 
 function uniqueSorted(values) {
   return [...new Set(values.filter(Boolean))].sort();
+}
+
+function roundNumber(value, digits = 6) {
+  return Number(value.toFixed(digits));
+}
+
+function haversineKm(left, right) {
+  const toRadians = (degrees) => (degrees * Math.PI) / 180;
+  const leftLat = toRadians(left[1]);
+  const rightLat = toRadians(right[1]);
+  const deltaLat = toRadians(right[1] - left[1]);
+  const deltaLon = toRadians(right[0] - left[0]);
+  const a =
+    Math.sin(deltaLat / 2) ** 2 +
+    Math.cos(leftLat) * Math.cos(rightLat) * Math.sin(deltaLon / 2) ** 2;
+
+  return earthRadiusKm * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+function coordinateTuples(geometry) {
+  const tuples = [];
+
+  function visit(node) {
+    if (!Array.isArray(node)) {
+      return;
+    }
+
+    if (typeof node[0] === "number" && typeof node[1] === "number") {
+      tuples.push([node[0], node[1]]);
+      return;
+    }
+
+    for (const child of node) {
+      visit(child);
+    }
+  }
+
+  visit(geometry?.coordinates);
+  return tuples;
+}
+
+function featureBbox(feature) {
+  const tuples = coordinateTuples(feature.geometry);
+  const bbox = tuples.reduce(
+    (memo, tuple) => [
+      Math.min(memo[0], tuple[0]),
+      Math.min(memo[1], tuple[1]),
+      Math.max(memo[2], tuple[0]),
+      Math.max(memo[3], tuple[1]),
+    ],
+    [Infinity, Infinity, -Infinity, -Infinity]
+  );
+
+  return bbox.some((value) => !Number.isFinite(value)) ? null : bbox.map((value) => roundNumber(value));
+}
+
+function featureCentroid(feature) {
+  const labelX = Number(feature.properties?.LABEL_X);
+  const labelY = Number(feature.properties?.LABEL_Y);
+
+  if (Number.isFinite(labelX) && Number.isFinite(labelY)) {
+    return [labelX, labelY];
+  }
+
+  const tuples = coordinateTuples(feature.geometry);
+
+  if (!tuples.length) {
+    return null;
+  }
+
+  const [lon, lat] = tuples.reduce((memo, tuple) => [memo[0] + tuple[0], memo[1] + tuple[1]], [0, 0]);
+
+  return [lon / tuples.length, lat / tuples.length];
+}
+
+function featureCoordinateKeys(feature) {
+  return new Set(
+    coordinateTuples(feature.geometry).map((tuple) => `${tuple[0].toFixed(5)},${tuple[1].toFixed(5)}`)
+  );
+}
+
+function collectionBbox(features) {
+  const bboxes = features.map(featureBbox).filter(Boolean);
+
+  if (!bboxes.length) {
+    return null;
+  }
+
+  const bbox = bboxes.reduce(
+    (memo, bboxValue) => [
+      Math.min(memo[0], bboxValue[0]),
+      Math.min(memo[1], bboxValue[1]),
+      Math.max(memo[2], bboxValue[2]),
+      Math.max(memo[3], bboxValue[3]),
+    ],
+    [Infinity, Infinity, -Infinity, -Infinity]
+  );
+
+  return bbox.map((value) => roundNumber(value));
+}
+
+function ogcLink(href, rel, type, title) {
+  return { href, rel, type, title };
 }
 
 function placePageUrl(placeId) {
@@ -339,6 +499,7 @@ function placeSummary(placeId) {
     data_url: `${site}/v1/places/${first.place_id}.json`,
     compare_url: `${site}/compare/`,
     measurements_url: `${site}/v1/places/${first.place_id}/measurements.json`,
+    neighbors_url: `${site}/v1/places/${first.place_id}/neighbors.json`,
     evidence_kinds: evidenceKinds,
     source_ids: sourceIds,
     measurements: rows,
@@ -411,6 +572,7 @@ function buildPlaceIndex() {
       page_url: placePageUrl("WLD"),
       profile_url: `${site}/v1/places/WLD.json`,
       measurements_url: `${site}/v1/places/WLD/measurements.json`,
+      neighbors_url: `${site}/v1/places/WLD/neighbors.json`,
       latest_release_id: releaseId,
     });
   }
@@ -432,6 +594,7 @@ function buildPlaceIndex() {
       page_url: placePageUrl(iso),
       profile_url: rows.length ? `${site}/v1/places/${iso}.json` : null,
       measurements_url: rows.length ? `${site}/v1/places/${iso}/measurements.json` : null,
+      neighbors_url: `${site}/v1/places/${iso}/neighbors.json`,
       latest_release_id: releaseId,
     });
   }
@@ -505,6 +668,266 @@ function buildCoverage() {
         status: "Immutable release artifacts are available; homepage live public-source overlays are labeled separately and remain outside the frozen release rows.",
       },
     ],
+  };
+}
+
+function buildCountryNeighborIndex() {
+  const entries = countryBoundaryFeatures().map(({ feature, iso }) => ({
+    feature,
+    iso,
+    name: countryNameFromProperties(feature.properties),
+    bbox: featureBbox(feature),
+    centroid: featureCentroid(feature),
+    coordinateKeys: featureCoordinateKeys(feature),
+  }));
+  const pointIndex = new Map();
+  const borderCounts = new Map();
+
+  for (const entry of entries) {
+    for (const key of entry.coordinateKeys) {
+      const owners = pointIndex.get(key) || [];
+      owners.push(entry.iso);
+      pointIndex.set(key, owners);
+    }
+  }
+
+  for (const owners of pointIndex.values()) {
+    if (owners.length < 2) {
+      continue;
+    }
+
+    const uniqueOwners = uniqueSorted(owners);
+
+    for (let i = 0; i < uniqueOwners.length; i += 1) {
+      for (let j = i + 1; j < uniqueOwners.length; j += 1) {
+        const key = [uniqueOwners[i], uniqueOwners[j]].join("|");
+        borderCounts.set(key, (borderCounts.get(key) || 0) + 1);
+      }
+    }
+  }
+
+  return { entries, borderCounts };
+}
+
+function neighborPlaceSummary(item) {
+  return {
+    place_id: item.place_id,
+    place_name: item.place_name,
+    geometry_level: item.geometry_level,
+    coverage_status: item.coverage_status,
+    canonical_measurement_count: item.canonical_measurement_count,
+    profile_url: item.profile_url,
+    measurements_url: item.measurements_url,
+    neighbors_url: item.neighbors_url,
+  };
+}
+
+function buildNeighborPayloads() {
+  const placeIndex = buildPlaceIndex();
+  const itemsById = new Map(placeIndex.items.map((item) => [item.place_id, item]));
+  const { entries, borderCounts } = buildCountryNeighborIndex();
+  const entryById = new Map(entries.map((entry) => [entry.iso, entry]));
+  const payloads = new Map();
+
+  for (const item of placeIndex.items) {
+    if (item.place_id === "WLD") {
+      payloads.set(item.place_id, {
+        release_id: releaseId,
+        generated_at: releaseDate,
+        place_id: item.place_id,
+        place_name: item.place_name,
+        geometry_level: item.geometry_level,
+        method: {
+          border_neighbors: "World is the parent collection, so border neighbors are not defined.",
+          nearby_places:
+            "Country payloads include nearest centroid neighbors for geography discovery; use border_neighbors for shared-boundary relationships.",
+        },
+        border_neighbors: [],
+        nearby_places: [],
+        child_places: placeIndex.items
+          .filter((candidate) => candidate.parent_place_id === "WLD" && candidate.boundary_indexed)
+          .map(neighborPlaceSummary),
+        links: [
+          ogcLink(`${site}/v1/places/index.json`, "collection", "application/json", "Place index"),
+          ogcLink(`${site}/ogc/collections/places/items.json`, "alternate", "application/geo+json", "OGC-style place features"),
+        ],
+      });
+      continue;
+    }
+
+    const entry = entryById.get(item.place_id);
+
+    if (!entry) {
+      continue;
+    }
+
+    const borderNeighbors = [...borderCounts.entries()]
+      .filter(([key, count]) => count >= 2 && key.split("|").includes(item.place_id))
+      .map(([key, count]) => {
+        const neighborId = key.split("|").find((id) => id !== item.place_id);
+        const neighbor = itemsById.get(neighborId);
+
+        return {
+          ...neighborPlaceSummary(neighbor),
+          relation: "shared_boundary",
+          shared_boundary_point_count: count,
+        };
+      })
+      .sort((left, right) => left.place_name.localeCompare(right.place_name));
+
+    const nearbyPlaces = entries
+      .filter((candidate) => candidate.iso !== item.place_id && candidate.centroid && entry.centroid)
+      .map((candidate) => {
+        const neighbor = itemsById.get(candidate.iso);
+
+        return {
+          ...neighborPlaceSummary(neighbor),
+          relation: "nearest_centroid",
+          centroid_distance_km: roundNumber(haversineKm(entry.centroid, candidate.centroid), 1),
+        };
+      })
+      .sort((left, right) => left.centroid_distance_km - right.centroid_distance_km)
+      .slice(0, 8);
+
+    payloads.set(item.place_id, {
+      release_id: releaseId,
+      generated_at: releaseDate,
+      place_id: item.place_id,
+      place_name: item.place_name,
+      geometry_level: item.geometry_level,
+      bbox: entry.bbox,
+      centroid: entry.centroid?.map((value) => roundNumber(value)),
+      method: {
+        border_neighbors:
+          "Shared-boundary neighbors are derived from Natural Earth Admin 0 polygon vertices quantized to five decimal places; island states may have no border_neighbors.",
+        nearby_places:
+          "Nearby places are the eight nearest country centroids and are included for geographic discovery, not as a moral ranking.",
+      },
+      border_neighbors: borderNeighbors,
+      nearby_places: nearbyPlaces,
+      links: [
+        ogcLink(`${site}/v1/places/index.json`, "collection", "application/json", "Place index"),
+        ogcLink(`${site}/ogc/collections/places/items.json`, "alternate", "application/geo+json", "OGC-style place features"),
+      ],
+    });
+  }
+
+  return payloads;
+}
+
+function buildOgcPlaceItems() {
+  const placeIndex = buildPlaceIndex();
+  const itemsById = new Map(placeIndex.items.map((item) => [item.place_id, item]));
+  const features = countryBoundaryFeatures().map(({ feature, iso }) => {
+    const item = itemsById.get(iso);
+
+    return {
+      type: "Feature",
+      id: iso,
+      bbox: featureBbox(feature),
+      properties: {
+        place_id: iso,
+        place_name: item?.place_name || countryNameFromProperties(feature.properties),
+        parent_place_id: "WLD",
+        iso3: iso,
+        geometry_level: "country",
+        release_id: releaseId,
+        boundary_indexed: true,
+        coverage_status: item?.coverage_status || "boundary_index_only",
+        canonical_measurement_count: item?.canonical_measurement_count || 0,
+        profile_url: item?.profile_url || null,
+        measurements_url: item?.measurements_url || null,
+        neighbors_url: item?.neighbors_url || `${site}/v1/places/${iso}/neighbors.json`,
+        source_id: "natural-earth-admin0",
+      },
+      geometry: feature.geometry,
+    };
+  });
+
+  return {
+    type: "FeatureCollection",
+    title: "PainMap OGC-style place features",
+    release_id: releaseId,
+    timeStamp: releaseDate,
+    numberMatched: features.length,
+    numberReturned: features.length,
+    bbox: collectionBbox(features),
+    links: [
+      ogcLink(`${site}/ogc/index.json`, "root", "application/json", "OGC landing document"),
+      ogcLink(`${site}/ogc/collections/places/index.json`, "collection", "application/json", "Places collection"),
+      ogcLink(`${site}/v1/places/index.json`, "describedby", "application/json", "PainMap place index"),
+    ],
+    features,
+  };
+}
+
+function buildOgcArtifacts() {
+  const countryFeatures = countryBoundaryFeatures().map((entry) => entry.feature);
+  const placeFeatureCount = countryFeatures.length;
+  const spatialBbox = collectionBbox(countryFeatures);
+  const placeCollectionUrl = `${site}/ogc/collections/places/index.json`;
+  const placeItemsUrl = `${site}/ogc/collections/places/items.json`;
+
+  return {
+    "ogc/index.json": {
+      title: "PainMap OGC API - Features landing document",
+      description:
+        "Static OGC API - Features-style discovery surfaces for PainMap place geometry, coverage status, and release-scoped atlas metadata.",
+      links: [
+        ogcLink(`${site}/ogc/index.json`, "self", "application/json", "This document"),
+        ogcLink(`${site}/ogc/conformance.json`, "conformance", "application/json", "Conformance classes"),
+        ogcLink(`${site}/ogc/collections/index.json`, "data", "application/json", "Collections"),
+        ogcLink(`${site}/data/openapi.json`, "service-desc", "application/vnd.oai.openapi+json;version=3.1", "OpenAPI description"),
+      ],
+    },
+    "ogc/conformance.json": {
+      conformsTo: [
+        "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
+        "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30",
+        "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson",
+      ],
+      note:
+        "PainMap publishes static, release-scoped JSON files that follow OGC API - Features discovery shapes without dynamic query parameters.",
+    },
+    "ogc/collections/index.json": {
+      links: [
+        ogcLink(`${site}/ogc/index.json`, "root", "application/json", "OGC landing document"),
+        ogcLink(placeCollectionUrl, "item", "application/json", "Places collection"),
+      ],
+      collections: [
+        {
+          id: "places",
+          title: "PainMap places",
+          description:
+            "Country boundary features joined to PainMap place index coverage metadata for the immutable atlas release.",
+          itemType: "feature",
+          crs: ["http://www.opengis.net/def/crs/OGC/1.3/CRS84"],
+          extent: {
+            spatial: { bbox: [spatialBbox] },
+            temporal: { interval: [[releaseDate, releaseDate]] },
+          },
+          links: [ogcLink(placeItemsUrl, "items", "application/geo+json", "GeoJSON items")],
+        },
+      ],
+    },
+    "ogc/collections/places/index.json": {
+      id: "places",
+      title: "PainMap places",
+      description:
+        "Release-scoped country features with Natural Earth geometry and PainMap coverage/profile links.",
+      itemType: "feature",
+      crs: ["http://www.opengis.net/def/crs/OGC/1.3/CRS84"],
+      extent: {
+        spatial: { bbox: [spatialBbox] },
+        temporal: { interval: [[releaseDate, releaseDate]] },
+      },
+      links: [
+        ogcLink(`${site}/ogc/collections/index.json`, "collection", "application/json", "Collections"),
+        ogcLink(placeItemsUrl, "items", "application/geo+json", `${placeFeatureCount} place features`),
+        ogcLink(`${site}/v1/places/index.json`, "describedby", "application/json", "Coverage-aware place index"),
+      ],
+    },
+    "ogc/collections/places/items.json": buildOgcPlaceItems(),
   };
 }
 
@@ -606,9 +1029,13 @@ function buildEndpointSmoke() {
       endpoint("/data/dcat.json", "application/ld+json", "DCAT catalog"),
       endpoint("/v1/places/index.json", "application/json", "Full release place index"),
       endpoint("/v1/coverage.json", "application/json", "Release coverage status"),
+      endpoint("/v1/places/BRA/neighbors.json", "application/json", "Brazil geographic neighbor payload"),
+      endpoint("/ogc/index.json", "application/json", "OGC API - Features landing document"),
+      endpoint("/ogc/collections/places/items.json", "application/geo+json", "OGC-style place feature collection"),
       endpoint("/clients/typescript/painmap-client.ts", "text/typescript", "TypeScript client"),
       endpoint("/clients/python/painmap_client.py", "text/x-python", "Python client"),
       endpoint("/releases/2026-05-31/manifest.json", "application/json", "Immutable release manifest"),
+      endpoint("/releases/2026-05-31/diff.json", "application/json", "Release diff artifact"),
       endpoint("/.well-known/security.txt", "text/plain", "Security contact policy"),
     ],
   };
@@ -650,6 +1077,7 @@ function buildJsonSchemas() {
               page_url: { type: ["string", "null"] },
               profile_url: { type: ["string", "null"] },
               measurements_url: { type: ["string", "null"] },
+              neighbors_url: { type: "string" },
               latest_release_id: { type: "string" },
             },
           },
@@ -700,6 +1128,34 @@ function buildJsonSchemas() {
         last_release_date: { type: "string" },
         coverage_status: { type: "object" },
         known_sparse_areas: { type: "array", items: { type: "object" } },
+      },
+    },
+    "schemas/ogc-place-features.schema.json": {
+      ...schemaBase,
+      $id: `${site}/schemas/ogc-place-features.schema.json`,
+      title: "PainMap OGC-style place features",
+      type: "object",
+      required: ["type", "features", "numberMatched", "numberReturned", "links"],
+      properties: {
+        type: { const: "FeatureCollection" },
+        numberMatched: { type: "integer", minimum: 1 },
+        numberReturned: { type: "integer", minimum: 1 },
+        links: { type: "array", items: { type: "object" } },
+        features: {
+          type: "array",
+          items: {
+            type: "object",
+            required: ["type", "id", "properties", "geometry"],
+            properties: {
+              type: { const: "Feature" },
+              id: { type: "string" },
+              properties: {
+                type: "object",
+                required: ["place_id", "place_name", "geometry_level", "coverage_status", "neighbors_url"],
+              },
+            },
+          },
+        },
       },
     },
   };
@@ -826,14 +1282,30 @@ function buildOpenApi() {
           responses: { 200: staticJsonResponse("Place measurements for one place") },
         },
       },
+      "/v1/places/{place_id}/neighbors.json": {
+        get: {
+          summary: "Get geographic neighbor and nearby-place metadata for a place",
+          parameters: [{ name: "place_id", in: "path", required: true, schema: { type: "string" } }],
+          responses: { 200: staticJsonResponse("Place neighbor payload") },
+        },
+      },
       "/v1/places/BRA.json": {
         get: { summary: "Get Brazil place profile", responses: { 200: staticJsonResponse("Place profile JSON") } },
+      },
+      "/v1/places/BRA/neighbors.json": {
+        get: { summary: "Get Brazil neighbor payload", responses: { 200: staticJsonResponse("Place neighbor payload") } },
       },
       "/v1/places/IND.json": {
         get: { summary: "Get India place profile", responses: { 200: staticJsonResponse("Place profile JSON") } },
       },
+      "/v1/places/IND/neighbors.json": {
+        get: { summary: "Get India neighbor payload", responses: { 200: staticJsonResponse("Place neighbor payload") } },
+      },
       "/releases/2026-05-31/manifest.json": {
         get: { summary: "Get immutable release manifest", responses: { 200: staticJsonResponse("Release manifest JSON") } },
+      },
+      "/releases/2026-05-31/diff.json": {
+        get: { summary: "Get release diff artifact", responses: { 200: staticJsonResponse("Release diff JSON") } },
       },
       "/latest/manifest.json": {
         get: { summary: "Get latest release alias manifest", responses: { 200: staticJsonResponse("Latest alias JSON") } },
@@ -875,6 +1347,29 @@ function buildOpenApi() {
       "/data/dcat.json": {
         get: { summary: "Get DCAT-style dataset catalog", responses: { 200: staticJsonResponse("Dataset catalog JSON") } },
       },
+      "/ogc/index.json": {
+        get: { summary: "Get OGC API - Features landing document", responses: { 200: staticJsonResponse("OGC landing document") } },
+      },
+      "/ogc/conformance.json": {
+        get: { summary: "Get OGC conformance classes", responses: { 200: staticJsonResponse("OGC conformance document") } },
+      },
+      "/ogc/collections/index.json": {
+        get: { summary: "Get OGC collection list", responses: { 200: staticJsonResponse("OGC collections document") } },
+      },
+      "/ogc/collections/places/index.json": {
+        get: { summary: "Get OGC places collection metadata", responses: { 200: staticJsonResponse("OGC collection metadata") } },
+      },
+      "/ogc/collections/places/items.json": {
+        get: {
+          summary: "Get OGC-style GeoJSON country place features",
+          responses: {
+            200: {
+              description: "OGC-style GeoJSON feature collection",
+              content: { "application/geo+json": { schema: { $ref: "#/components/schemas/FeatureCollection" } } },
+            },
+          },
+        },
+      },
       "/data/analytics-events.json": {
         get: { summary: "Get privacy-preserving telemetry event vocabulary", responses: { 200: staticJsonResponse("Analytics event contract JSON") } },
       },
@@ -892,6 +1387,9 @@ function buildOpenApi() {
       },
       "/schemas/coverage.schema.json": {
         get: { summary: "Get JSON Schema for coverage status", responses: { 200: staticJsonResponse("Coverage JSON Schema") } },
+      },
+      "/schemas/ogc-place-features.schema.json": {
+        get: { summary: "Get JSON Schema for OGC-style place features", responses: { 200: staticJsonResponse("OGC place features JSON Schema") } },
       },
     },
     components: {
@@ -1008,7 +1506,9 @@ function buildDcat() {
           { "@type": "dcat:Distribution", "dct:format": "application/geo+json", "dcat:downloadURL": `${site}/data/places.geojson` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/places/index.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/coverage.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/places/BRA/neighbors.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/releases/2026-05-31/manifest.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/releases/2026-05-31/diff.json` },
         ],
       },
       {
@@ -1030,6 +1530,8 @@ function buildDcat() {
         "dct:hasVersion": releaseId,
         "dcat:distribution": [
           { "@type": "dcat:Distribution", "dct:format": "application/geo+json", "dcat:downloadURL": `${site}/data/natural-earth-countries.geojson` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:accessURL": `${site}/ogc/index.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/geo+json", "dcat:downloadURL": `${site}/ogc/collections/places/items.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:accessURL": `${site}/v1/sources.json` },
         ],
       },
@@ -1043,6 +1545,7 @@ function buildDcat() {
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/place-index.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/place-measurements.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/coverage.schema.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/ogc-place-features.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/performance-budgets.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/endpoint-smoke.json` },
           { "@type": "dcat:Distribution", "dct:format": "text/typescript", "dcat:downloadURL": `${site}/clients/typescript/painmap-client.ts` },
@@ -1099,10 +1602,125 @@ function writeSecurityTxt() {
   );
 }
 
+function measuredPlaceIds() {
+  return uniqueSorted(measurements.measurements.map((row) => row.place_id));
+}
+
+function releaseArtifactFileCandidates() {
+  const placeIndex = buildPlaceIndex();
+  const measuredPlaces = measuredPlaceIds();
+  const neighborFiles = placeIndex.items.map((item) => `v1/places/${item.place_id}/neighbors.json`);
+  const measuredPlaceFiles = measuredPlaces.flatMap((placeId) => [
+    `v1/places/${placeId}.json`,
+    `v1/places/${placeId}/measurements.json`,
+  ]);
+
+  return [
+    ...routes.routes.map((route) => route.file),
+    "data/routes.json",
+    "data/route-smoke.json",
+    "data/provenance-registry.json",
+    "data/place-measurements.json",
+    "data/place-measurements.csv",
+    "data/places.geojson",
+    "data/analytics-events.json",
+    "data/performance-budgets.json",
+    "data/endpoint-smoke.json",
+    "data/countries-lite.geojson",
+    "data/natural-earth-countries.geojson",
+    "data/dcat.json",
+    "data/openapi.json",
+    "clients/typescript/painmap-client.ts",
+    "clients/python/painmap_client.py",
+    "examples/README.md",
+    "examples/load-place-profile.mjs",
+    "examples/load_place_profile.py",
+    "schemas/place-index.schema.json",
+    "schemas/place-measurements.schema.json",
+    "schemas/coverage.schema.json",
+    "schemas/ogc-place-features.schema.json",
+    "v1/releases.json",
+    "v1/layers.json",
+    "v1/sources.json",
+    "v1/coverage.json",
+    "v1/places/index.json",
+    ...measuredPlaceFiles,
+    ...neighborFiles,
+    "ogc/index.json",
+    "ogc/conformance.json",
+    "ogc/collections/index.json",
+    "ogc/collections/places/index.json",
+    "ogc/collections/places/items.json",
+    "releases/2026-05-31/diff.json",
+    "assets/social-card.svg",
+    "vendor/d3.v7.min.js",
+    "vendor/topojson-client.v3.min.js",
+    "sitemap.xml",
+    "robots.txt",
+    ".nojekyll",
+    "_headers",
+    "vercel.json",
+    ".well-known/security.txt",
+    "README.md",
+    "LICENSE",
+  ];
+}
+
+function buildReleaseDiff() {
+  const placeIndex = buildPlaceIndex();
+  const coverage = buildCoverage();
+
+  return {
+    release_id: releaseId,
+    generated_at: releaseDate,
+    previous_release_id: null,
+    comparison_type: "initial_release_baseline",
+    summary:
+      "This diff records the first release baseline for future comparisons. There is no previous immutable PainMap release in this release series.",
+    current_release: {
+      places_indexed: placeIndex.count,
+      country_boundaries_indexed: coverage.coverage_status.country_boundaries_indexed,
+      canonical_place_profiles: coverage.coverage_status.canonical_place_profiles,
+      release_measurements: coverage.coverage_status.release_measurements,
+      ogc_place_features: countryBoundaryFeatures().length,
+      neighbor_payloads: placeIndex.items.length,
+    },
+    added_contract_surfaces: [
+      "/v1/places/index.json",
+      "/v1/coverage.json",
+      "/v1/places/{place_id}/neighbors.json",
+      "/ogc/index.json",
+      "/ogc/collections/places/items.json",
+      "/schemas/ogc-place-features.schema.json",
+      "/releases/2026-05-31/diff.json",
+    ],
+    notable_changes: [
+      {
+        area: "coverage",
+        change: "Published a full country place index with canonical-measurement and boundary-index-only status.",
+      },
+      {
+        area: "geospatial contract",
+        change: "Added OGC API - Features-style discovery and a GeoJSON country feature collection.",
+      },
+      {
+        area: "place discovery",
+        change: "Added release-scoped neighbor payloads for all indexed places.",
+      },
+      {
+        area: "release QA",
+        change: "Added a diff artifact so later releases can expose added, changed, and removed surfaces.",
+      },
+    ],
+  };
+}
+
 function writeApiArtifacts() {
-  const places = uniqueSorted(measurements.measurements.map((row) => row.place_id));
+  const places = measuredPlaceIds();
   const placeProfiles = places.map(placeSummary);
   const schemas = buildJsonSchemas();
+  const neighborPayloads = buildNeighborPayloads();
+  const ogcArtifacts = buildOgcArtifacts();
 
   writeText("data/place-measurements.csv", measurementCsv());
   writeJson("data/places.geojson", buildPlacesGeojson());
@@ -1113,6 +1731,7 @@ function writeApiArtifacts() {
   writeJson("data/endpoint-smoke.json", buildEndpointSmoke());
   writeJson("data/openapi.json", buildOpenApi());
   writeJson("data/dcat.json", buildDcat());
+  writeJson("releases/2026-05-31/diff.json", buildReleaseDiff());
   writeJson("data/route-smoke.json", {
     release_id: releaseId,
     generated_at: releaseDate,
@@ -1161,58 +1780,26 @@ function writeApiArtifacts() {
     });
   }
 
+  for (const [placeId, payload] of neighborPayloads.entries()) {
+    writeJson(`v1/places/${placeId}/neighbors.json`, payload);
+  }
+
+  for (const [file, artifact] of Object.entries(ogcArtifacts)) {
+    if (file === "ogc/collections/places/items.json") {
+      writeJsonCompact(file, artifact);
+      continue;
+    }
+
+    writeJson(file, artifact);
+  }
+
   for (const [file, schema] of Object.entries(schemas)) {
     writeJson(file, schema);
   }
 }
 
 function buildReleaseManifest() {
-  const artifactFiles = [
-    ...routes.routes.map((route) => route.file),
-    "data/routes.json",
-    "data/route-smoke.json",
-    "data/provenance-registry.json",
-    "data/place-measurements.json",
-    "data/place-measurements.csv",
-    "data/places.geojson",
-    "data/analytics-events.json",
-    "data/performance-budgets.json",
-    "data/endpoint-smoke.json",
-    "data/countries-lite.geojson",
-    "data/natural-earth-countries.geojson",
-    "data/dcat.json",
-    "data/openapi.json",
-    "clients/typescript/painmap-client.ts",
-    "clients/python/painmap_client.py",
-    "examples/README.md",
-    "examples/load-place-profile.mjs",
-    "examples/load_place_profile.py",
-    "schemas/place-index.schema.json",
-    "schemas/place-measurements.schema.json",
-    "schemas/coverage.schema.json",
-    "v1/releases.json",
-    "v1/layers.json",
-    "v1/sources.json",
-    "v1/coverage.json",
-    "v1/places/index.json",
-    "v1/places/WLD.json",
-    "v1/places/WLD/measurements.json",
-    "v1/places/BRA.json",
-    "v1/places/BRA/measurements.json",
-    "v1/places/IND.json",
-    "v1/places/IND/measurements.json",
-    "assets/social-card.svg",
-    "vendor/d3.v7.min.js",
-    "vendor/topojson-client.v3.min.js",
-    "sitemap.xml",
-    "robots.txt",
-    ".nojekyll",
-    "_headers",
-    "vercel.json",
-    ".well-known/security.txt",
-    "README.md",
-    "LICENSE",
-  ].filter((file) => existsSync(absolute(file)));
+  const artifactFiles = releaseArtifactFileCandidates().filter((file) => existsSync(absolute(file)));
 
   return {
     release_id: releaseId,
@@ -1226,6 +1813,8 @@ function buildReleaseManifest() {
       measurements: `${site}/data/place-measurements.json`,
       place_index: `${site}/v1/places/index.json`,
       coverage: `${site}/v1/coverage.json`,
+      ogc_features: `${site}/ogc/collections/places/items.json`,
+      release_diff: `${site}${releasePath}diff.json`,
       provenance: `${site}/data/provenance-registry.json`,
       openapi: `${site}/data/openapi.json`,
       schemas: `${site}/schemas/place-index.schema.json`,

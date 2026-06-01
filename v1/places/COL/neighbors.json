@@ -1,0 +1,195 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "place_id": "COL",
+  "place_name": "Colombia",
+  "geometry_level": "country",
+  "bbox": [
+    -79.025439,
+    -4.235938,
+    -66.876025,
+    12.434375
+  ],
+  "centroid": [
+    -73.174347,
+    3.373111
+  ],
+  "method": {
+    "border_neighbors": "Shared-boundary neighbors are derived from Natural Earth Admin 0 polygon vertices quantized to five decimal places; island states may have no border_neighbors.",
+    "nearby_places": "Nearby places are the eight nearest country centroids and are included for geographic discovery, not as a moral ranking."
+  },
+  "border_neighbors": [
+    {
+      "place_id": "BRA",
+      "place_name": "Brazil",
+      "geometry_level": "country",
+      "coverage_status": "canonical_measurements",
+      "canonical_measurement_count": 3,
+      "profile_url": "https://painmap.org/v1/places/BRA.json",
+      "measurements_url": "https://painmap.org/v1/places/BRA/measurements.json",
+      "neighbors_url": "https://painmap.org/v1/places/BRA/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 130
+    },
+    {
+      "place_id": "ECU",
+      "place_name": "Ecuador",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ECU/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 45
+    },
+    {
+      "place_id": "PAN",
+      "place_name": "Panama",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PAN/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 28
+    },
+    {
+      "place_id": "PER",
+      "place_name": "Peru",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PER/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 111
+    },
+    {
+      "place_id": "VEN",
+      "place_name": "Venezuela",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VEN/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 145
+    }
+  ],
+  "nearby_places": [
+    {
+      "place_id": "ECU",
+      "place_name": "Ecuador",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ECU/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 758.9
+    },
+    {
+      "place_id": "PAN",
+      "place_name": "Panama",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PAN/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 991.6
+    },
+    {
+      "place_id": "VEN",
+      "place_name": "Venezuela",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VEN/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1039.5
+    },
+    {
+      "place_id": "ABW",
+      "place_name": "Aruba",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ABW/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1076.1
+    },
+    {
+      "place_id": "CUW",
+      "place_name": "Curaçao",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CUW/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1081.9
+    },
+    {
+      "place_id": "CRI",
+      "place_name": "Costa Rica",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CRI/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1414.8
+    },
+    {
+      "place_id": "GUY",
+      "place_name": "Guyana",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GUY/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1590
+    },
+    {
+      "place_id": "TTO",
+      "place_name": "Trinidad and Tobago",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TTO/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1595.1
+    }
+  ],
+  "links": [
+    {
+      "href": "https://painmap.org/v1/places/index.json",
+      "rel": "collection",
+      "type": "application/json",
+      "title": "Place index"
+    },
+    {
+      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "rel": "alternate",
+      "type": "application/geo+json",
+      "title": "OGC-style place features"
+    }
+  ]
+}

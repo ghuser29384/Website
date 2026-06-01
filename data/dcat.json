@@ -47,7 +47,17 @@
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/v1/places/BRA/neighbors.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
           "dcat:downloadURL": "https://painmap.org/releases/2026-05-31/manifest.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/releases/2026-05-31/diff.json"
         }
       ]
     },
@@ -85,6 +95,16 @@
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
+          "dcat:accessURL": "https://painmap.org/ogc/index.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/geo+json",
+          "dcat:downloadURL": "https://painmap.org/ogc/collections/places/items.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
           "dcat:accessURL": "https://painmap.org/v1/sources.json"
         }
       ]
@@ -110,6 +130,11 @@
           "@type": "dcat:Distribution",
           "dct:format": "application/schema+json",
           "dcat:downloadURL": "https://painmap.org/schemas/coverage.schema.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/schema+json",
+          "dcat:downloadURL": "https://painmap.org/schemas/ogc-place-features.schema.json"
         },
         {
           "@type": "dcat:Distribution",

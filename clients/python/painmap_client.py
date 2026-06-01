@@ -24,8 +24,17 @@ class PainMapClient:
     def place_measurements(self, place_id: str) -> dict[str, Any]:
         return self._json(f"/v1/places/{quote(place_id)}/measurements.json")
 
+    def place_neighbors(self, place_id: str) -> dict[str, Any]:
+        return self._json(f"/v1/places/{quote(place_id)}/neighbors.json")
+
+    def ogc_place_features(self) -> dict[str, Any]:
+        return self._json("/ogc/collections/places/items.json")
+
     def release_manifest(self, release_date: str = "2026-05-31") -> dict[str, Any]:
         return self._json(f"/releases/{quote(release_date)}/manifest.json")
+
+    def release_diff(self, release_date: str = "2026-05-31") -> dict[str, Any]:
+        return self._json(f"/releases/{quote(release_date)}/diff.json")
 
     def _json(self, pathname: str) -> dict[str, Any]:
         base = self.base_url.rstrip("/") + "/"

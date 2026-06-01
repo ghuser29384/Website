@@ -1,0 +1,134 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "place_id": "ABW",
+  "place_name": "Aruba",
+  "geometry_level": "country",
+  "bbox": [
+    -70.066113,
+    12.422998,
+    -69.895703,
+    12.614111
+  ],
+  "centroid": [
+    -69.972795,
+    12.5174
+  ],
+  "method": {
+    "border_neighbors": "Shared-boundary neighbors are derived from Natural Earth Admin 0 polygon vertices quantized to five decimal places; island states may have no border_neighbors.",
+    "nearby_places": "Nearby places are the eight nearest country centroids and are included for geographic discovery, not as a moral ranking."
+  },
+  "border_neighbors": [],
+  "nearby_places": [
+    {
+      "place_id": "CUW",
+      "place_name": "Curaçao",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CUW/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 121.6
+    },
+    {
+      "place_id": "DOM",
+      "place_name": "Dominican Republic",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/DOM/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 736
+    },
+    {
+      "place_id": "PRI",
+      "place_name": "Puerto Rico",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PRI/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 737.7
+    },
+    {
+      "place_id": "HTI",
+      "place_name": "Haiti",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/HTI/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 787.8
+    },
+    {
+      "place_id": "VIR",
+      "place_name": "United States Virgin Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VIR/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 805.4
+    },
+    {
+      "place_id": "VEN",
+      "place_name": "Venezuela",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VEN/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 835.6
+    },
+    {
+      "place_id": "VGB",
+      "place_name": "British Virgin Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VGB/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 870.9
+    },
+    {
+      "place_id": "GRD",
+      "place_name": "Grenada",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GRD/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 901.9
+    }
+  ],
+  "links": [
+    {
+      "href": "https://painmap.org/v1/places/index.json",
+      "rel": "collection",
+      "type": "application/json",
+      "title": "Place index"
+    },
+    {
+      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "rel": "alternate",
+      "type": "application/geo+json",
+      "title": "OGC-style place features"
+    }
+  ]
+}

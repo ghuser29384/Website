@@ -60,6 +60,7 @@ select {
 
 .shell {
   width: min(1240px, calc(100% - 2rem));
+  min-width: 0;
   margin: 0 auto;
   padding: 1.5rem 0 3rem;
   display: flex;
@@ -1133,11 +1134,13 @@ p {
 .route-page {
   display: grid;
   gap: 1rem;
+  min-width: 0;
 }
 
 .route-panel {
   border: 1px solid var(--line);
   background: var(--panel);
+  min-width: 0;
   padding: 1.4rem;
 }
 
@@ -1390,7 +1393,45 @@ p {
   }
 
   .site-nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     justify-content: start;
+    gap: 0.25rem 0.45rem;
+  }
+
+  .site-nav a {
+    min-width: 0;
+    justify-content: start;
+    white-space: nowrap;
+  }
+
+  .route-table {
+    min-width: 0;
+  }
+
+  .route-table,
+  .route-table tbody,
+  .route-table tr,
+  .route-table th,
+  .route-table td {
+    display: block;
+  }
+
+  .route-table thead {
+    display: none;
+  }
+
+  .route-table tr {
+    border-top: 1px solid var(--line);
+    padding: 0.75rem 0;
+  }
+
+  .route-table th,
+  .route-table td {
+    border-top: 0;
+    padding: 0.18rem 0;
+    overflow-wrap: anywhere;
   }
 
   .hero-section {

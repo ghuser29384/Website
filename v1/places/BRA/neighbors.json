@@ -1,0 +1,255 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "place_id": "BRA",
+  "place_name": "Brazil",
+  "geometry_level": "country",
+  "bbox": [
+    -74.002051,
+    -33.742188,
+    -34.805469,
+    5.257959
+  ],
+  "centroid": [
+    -49.55945,
+    -12.098687
+  ],
+  "method": {
+    "border_neighbors": "Shared-boundary neighbors are derived from Natural Earth Admin 0 polygon vertices quantized to five decimal places; island states may have no border_neighbors.",
+    "nearby_places": "Nearby places are the eight nearest country centroids and are included for geographic discovery, not as a moral ranking."
+  },
+  "border_neighbors": [
+    {
+      "place_id": "ARG",
+      "place_name": "Argentina",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ARG/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 88
+    },
+    {
+      "place_id": "BOL",
+      "place_name": "Bolivia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BOL/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 188
+    },
+    {
+      "place_id": "COL",
+      "place_name": "Colombia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/COL/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 130
+    },
+    {
+      "place_id": "FRA",
+      "place_name": "France",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/FRA/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 58
+    },
+    {
+      "place_id": "GUY",
+      "place_name": "Guyana",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GUY/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 121
+    },
+    {
+      "place_id": "PRY",
+      "place_name": "Paraguay",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PRY/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 119
+    },
+    {
+      "place_id": "PER",
+      "place_name": "Peru",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PER/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 155
+    },
+    {
+      "place_id": "SUR",
+      "place_name": "Suriname",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SUR/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 43
+    },
+    {
+      "place_id": "URY",
+      "place_name": "Uruguay",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/URY/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 71
+    },
+    {
+      "place_id": "VEN",
+      "place_name": "Venezuela",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VEN/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 122
+    }
+  ],
+  "nearby_places": [
+    {
+      "place_id": "PRY",
+      "place_name": "Paraguay",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PRY/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1548.7
+    },
+    {
+      "place_id": "BOL",
+      "place_name": "Bolivia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BOL/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1696.3
+    },
+    {
+      "place_id": "SUR",
+      "place_name": "Suriname",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SUR/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1937.8
+    },
+    {
+      "place_id": "GUY",
+      "place_name": "Guyana",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GUY/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 2178.1
+    },
+    {
+      "place_id": "URY",
+      "place_name": "Uruguay",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/URY/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 2409.8
+    },
+    {
+      "place_id": "PER",
+      "place_name": "Peru",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PER/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 2534.5
+    },
+    {
+      "place_id": "VEN",
+      "place_name": "Venezuela",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VEN/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 2713.2
+    },
+    {
+      "place_id": "ARG",
+      "place_name": "Argentina",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ARG/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 2804.6
+    }
+  ],
+  "links": [
+    {
+      "href": "https://painmap.org/v1/places/index.json",
+      "rel": "collection",
+      "type": "application/json",
+      "title": "Place index"
+    },
+    {
+      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "rel": "alternate",
+      "type": "application/geo+json",
+      "title": "OGC-style place features"
+    }
+  ]
+}

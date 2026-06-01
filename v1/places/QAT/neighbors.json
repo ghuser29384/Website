@@ -1,0 +1,147 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "place_id": "QAT",
+  "place_name": "Qatar",
+  "geometry_level": "country",
+  "bbox": [
+    50.75459,
+    24.564648,
+    51.608887,
+    26.153271
+  ],
+  "centroid": [
+    51.143509,
+    25.237383
+  ],
+  "method": {
+    "border_neighbors": "Shared-boundary neighbors are derived from Natural Earth Admin 0 polygon vertices quantized to five decimal places; island states may have no border_neighbors.",
+    "nearby_places": "Nearby places are the eight nearest country centroids and are included for geographic discovery, not as a moral ranking."
+  },
+  "border_neighbors": [
+    {
+      "place_id": "SAU",
+      "place_name": "Saudi Arabia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SAU/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 8
+    }
+  ],
+  "nearby_places": [
+    {
+      "place_id": "BHR",
+      "place_name": "Bahrain",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BHR/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 108.5
+    },
+    {
+      "place_id": "ARE",
+      "place_name": "United Arab Emirates",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ARE/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 397.1
+    },
+    {
+      "place_id": "KWT",
+      "place_name": "Kuwait",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KWT/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 598.9
+    },
+    {
+      "place_id": "SAU",
+      "place_name": "Saudi Arabia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SAU/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 670.9
+    },
+    {
+      "place_id": "OMN",
+      "place_name": "Oman",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/OMN/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 719.5
+    },
+    {
+      "place_id": "IRN",
+      "place_name": "Iran",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/IRN/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 854.3
+    },
+    {
+      "place_id": "IRQ",
+      "place_name": "Iraq",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/IRQ/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1160.6
+    },
+    {
+      "place_id": "YEM",
+      "place_name": "Yemen",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/YEM/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1230.9
+    }
+  ],
+  "links": [
+    {
+      "href": "https://painmap.org/v1/places/index.json",
+      "rel": "collection",
+      "type": "application/json",
+      "title": "Place index"
+    },
+    {
+      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "rel": "alternate",
+      "type": "application/geo+json",
+      "title": "OGC-style place features"
+    }
+  ]
+}

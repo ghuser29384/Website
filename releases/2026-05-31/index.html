@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="2026-05-31 Release | PainMap">
     <meta name="twitter:description" content="PainMap 2026-05-31 atlas release manifest, checksums, data artifacts, and route inventory.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../../styles.css" integrity="sha384-2ynfUgF7SxQRKHHfmfYE+2xb3kSdLyF50duAGFqsRmDRpDv1UB4GY2ilw7XxzBl0" crossorigin="anonymous">
+<link rel="stylesheet" href="../../styles.css" integrity="sha384-BWDODpsIr6o6AfFZZVKhxUAps0oT8KoiDf+tbFnWkN0wL33ZkxzB8/fBXjL4WR6R" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -27,6 +27,8 @@
         "url": "https://painmap.org/releases/2026-05-31/",
         "distribution": [
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/releases/2026-05-31/manifest.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/releases/2026-05-31/diff.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "https://painmap.org/ogc/collections/places/items.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/place-measurements.json" }
         ]
       }
@@ -61,12 +63,25 @@
         <section class="route-panel">
           <ul class="download-list">
             <li><a href="/releases/2026-05-31/manifest.json">Release manifest JSON</a></li>
+            <li><a href="/releases/2026-05-31/diff.json">Release diff JSON</a></li>
             <li><a href="/v1/releases.json">Release index JSON</a></li>
             <li><a href="/v1/places/BRA.json">Brazil canonical place JSON</a></li>
+            <li><a href="/v1/places/BRA/neighbors.json">Brazil neighbor JSON</a></li>
             <li><a href="/v1/places/IND.json">India canonical place JSON</a></li>
+            <li><a href="/v1/places/IND/neighbors.json">India neighbor JSON</a></li>
+            <li><a href="/ogc/collections/places/items.json">OGC-style place features</a></li>
             <li><a href="/data/place-measurements.json">Canonical measurements JSON</a></li>
             <li><a href="/data/openapi.json">OpenAPI contract</a></li>
           </ul>
+        </section>
+        <section class="route-panel" aria-labelledby="diff-title">
+          <div class="section-intro">
+            <p class="label">Diff</p>
+            <h2 id="diff-title">Initial release baseline</h2>
+          </div>
+          <p class="route-copy">
+            This release now publishes a machine-readable diff baseline. Future releases can compare added, changed, and removed routes, datasets, place features, neighbor payloads, and validation surfaces against this immutable starting point.
+          </p>
         </section>
       </main>
     </div>

@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="Developers | PainMap">
     <meta name="twitter:description" content="Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../styles.css" integrity="sha384-2ynfUgF7SxQRKHHfmfYE+2xb3kSdLyF50duAGFqsRmDRpDv1UB4GY2ilw7XxzBl0" crossorigin="anonymous">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-BWDODpsIr6o6AfFZZVKhxUAps0oT8KoiDf+tbFnWkN0wL33ZkxzB8/fBXjL4WR6R" crossorigin="anonymous">
       <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"TechArticle","name":"Developers | PainMap","url":"https://painmap.org/developers/","description":"Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution."}
     </script>
@@ -59,10 +59,13 @@ curl https://painmap.org/releases/2026-05-31/manifest.json
 curl https://painmap.org/data/openapi.json
 curl https://painmap.org/v1/places/index.json
 curl https://painmap.org/v1/coverage.json
+curl https://painmap.org/v1/places/IND/neighbors.json
+curl https://painmap.org/ogc/collections/places/items.json
 curl https://painmap.org/data/place-measurements.json
 curl https://painmap.org/v1/places/BRA.json
 curl https://painmap.org/data/provenance-registry.json
-curl https://painmap.org/schemas/place-index.schema.json</code></pre>
+curl https://painmap.org/schemas/place-index.schema.json
+curl https://painmap.org/releases/2026-05-31/diff.json</code></pre>
           <p class="route-copy">
             The API has no authentication and no write side. Use immutable release URLs for reproducible work; use latest aliases only when freshness matters more than exact replay. Validate client assumptions against the JSON Schemas and coverage status before treating a place as measured.
           </p>
@@ -99,6 +102,16 @@ curl https://painmap.org/schemas/place-index.schema.json</code></pre>
               <span class="evidence-badge">reuse</span>
               <h2>Typed clients</h2>
               <p>Small TypeScript and Python clients cover releases, coverage, place indexes, place profiles, and measurement payloads.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">geo</span>
+              <h2>OGC-style features</h2>
+              <p>Static OGC API - Features-style JSON exposes country geometry with coverage status, profile links, and neighbor payload links.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">diffs</span>
+              <h2>Release changes</h2>
+              <p>Release diff JSON records the initial baseline now and gives future releases a stable place to report added, changed, and removed surfaces.</p>
             </article>
           </div>
           <div class="route-actions">

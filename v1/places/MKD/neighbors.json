@@ -1,0 +1,195 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "place_id": "MKD",
+  "place_name": "North Macedonia",
+  "geometry_level": "country",
+  "bbox": [
+    20.448633,
+    40.849902,
+    23.005664,
+    42.358154
+  ],
+  "centroid": [
+    21.555839,
+    41.558223
+  ],
+  "method": {
+    "border_neighbors": "Shared-boundary neighbors are derived from Natural Earth Admin 0 polygon vertices quantized to five decimal places; island states may have no border_neighbors.",
+    "nearby_places": "Nearby places are the eight nearest country centroids and are included for geographic discovery, not as a moral ranking."
+  },
+  "border_neighbors": [
+    {
+      "place_id": "ALB",
+      "place_name": "Albania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ALB/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 19
+    },
+    {
+      "place_id": "BGR",
+      "place_name": "Bulgaria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BGR/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 14
+    },
+    {
+      "place_id": "GRC",
+      "place_name": "Greece",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GRC/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 22
+    },
+    {
+      "place_id": "KOS",
+      "place_name": "Kosovo",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KOS/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 17
+    },
+    {
+      "place_id": "SRB",
+      "place_name": "Serbia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SRB/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 13
+    }
+  ],
+  "nearby_places": [
+    {
+      "place_id": "KOS",
+      "place_name": "Kosovo",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KOS/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 128.6
+    },
+    {
+      "place_id": "ALB",
+      "place_name": "Albania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ALB/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 157.1
+    },
+    {
+      "place_id": "GRC",
+      "place_name": "Greece",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GRC/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 230.1
+    },
+    {
+      "place_id": "MNE",
+      "place_name": "Montenegro",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MNE/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 242.2
+    },
+    {
+      "place_id": "SRB",
+      "place_name": "Serbia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SRB/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 299.2
+    },
+    {
+      "place_id": "BGR",
+      "place_name": "Bulgaria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BGR/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 315.6
+    },
+    {
+      "place_id": "BIH",
+      "place_name": "Bosnia and Herzegovina",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BIH/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 400.2
+    },
+    {
+      "place_id": "ROU",
+      "place_name": "Romania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ROU/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 539.4
+    }
+  ],
+  "links": [
+    {
+      "href": "https://painmap.org/v1/places/index.json",
+      "rel": "collection",
+      "type": "application/json",
+      "title": "Place index"
+    },
+    {
+      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "rel": "alternate",
+      "type": "application/geo+json",
+      "title": "OGC-style place features"
+    }
+  ]
+}

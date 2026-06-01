@@ -75,6 +75,30 @@
       "purpose": "Release coverage status"
     },
     {
+      "path": "/v1/places/BRA/neighbors.json",
+      "url": "https://painmap.org/v1/places/BRA/neighbors.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Brazil geographic neighbor payload"
+    },
+    {
+      "path": "/ogc/index.json",
+      "url": "https://painmap.org/ogc/index.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "OGC API - Features landing document"
+    },
+    {
+      "path": "/ogc/collections/places/items.json",
+      "url": "https://painmap.org/ogc/collections/places/items.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/geo+json",
+      "purpose": "OGC-style place feature collection"
+    },
+    {
       "path": "/clients/typescript/painmap-client.ts",
       "url": "https://painmap.org/clients/typescript/painmap-client.ts",
       "method": "GET",
@@ -97,6 +121,14 @@
       "expected_status": 200,
       "format": "application/json",
       "purpose": "Immutable release manifest"
+    },
+    {
+      "path": "/releases/2026-05-31/diff.json",
+      "url": "https://painmap.org/releases/2026-05-31/diff.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Release diff artifact"
     },
     {
       "path": "/.well-known/security.txt",

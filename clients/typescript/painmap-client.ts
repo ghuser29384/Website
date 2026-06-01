@@ -15,6 +15,7 @@ export interface PlaceIndexItem {
   page_url: string | null;
   profile_url: string | null;
   measurements_url: string | null;
+  neighbors_url: string;
   latest_release_id: string;
 }
 
@@ -76,6 +77,7 @@ export interface PlaceProfile {
   data_url: string;
   compare_url: string;
   measurements_url: string;
+  neighbors_url: string;
   evidence_kinds: EvidenceKind[];
   source_ids: string[];
   measurements: PlaceMeasurement[];
@@ -85,6 +87,51 @@ export interface PlaceMeasurementsResponse {
   release_id: string;
   place_id: string;
   measurements: PlaceMeasurement[];
+}
+
+export interface NeighborPlace {
+  place_id: string;
+  place_name: string;
+  geometry_level: GeometryLevel;
+  coverage_status: "canonical_measurements" | "boundary_index_only";
+  canonical_measurement_count: number;
+  profile_url: string | null;
+  measurements_url: string | null;
+  neighbors_url: string;
+  relation?: "shared_boundary" | "nearest_centroid";
+  shared_boundary_point_count?: number;
+  centroid_distance_km?: number;
+}
+
+export interface PlaceNeighbors {
+  release_id: string;
+  generated_at: string;
+  place_id: string;
+  place_name: string;
+  geometry_level: GeometryLevel;
+  border_neighbors: NeighborPlace[];
+  nearby_places: NeighborPlace[];
+  child_places?: NeighborPlace[];
+}
+
+export interface OgcFeatureCollection {
+  type: "FeatureCollection";
+  title?: string;
+  release_id?: string;
+  numberMatched?: number;
+  numberReturned?: number;
+  features: Array<Record<string, unknown>>;
+}
+
+export interface ReleaseDiff {
+  release_id: string;
+  generated_at: string;
+  previous_release_id: string | null;
+  comparison_type: string;
+  summary: string;
+  current_release: Record<string, number>;
+  added_contract_surfaces: string[];
+  notable_changes: Array<Record<string, string>>;
 }
 
 export interface ReleaseManifest {
@@ -123,8 +170,20 @@ export class PainMapClient {
     return this.json<PlaceMeasurementsResponse>(`/v1/places/${encodeURIComponent(placeId)}/measurements.json`);
   }
 
+  async placeNeighbors(placeId: string): Promise<PlaceNeighbors> {
+    return this.json<PlaceNeighbors>(`/v1/places/${encodeURIComponent(placeId)}/neighbors.json`);
+  }
+
+  async ogcPlaceFeatures(): Promise<OgcFeatureCollection> {
+    return this.json<OgcFeatureCollection>("/ogc/collections/places/items.json");
+  }
+
   async releaseManifest(releaseDate = "2026-05-31"): Promise<ReleaseManifest> {
     return this.json<ReleaseManifest>(`/releases/${encodeURIComponent(releaseDate)}/manifest.json`);
+  }
+
+  async releaseDiff(releaseDate = "2026-05-31"): Promise<ReleaseDiff> {
+    return this.json<ReleaseDiff>(`/releases/${encodeURIComponent(releaseDate)}/diff.json`);
   }
 
   private async json<T>(pathname: string): Promise<T> {

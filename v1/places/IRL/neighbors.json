@@ -1,0 +1,147 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "place_id": "IRL",
+  "place_name": "Ireland",
+  "geometry_level": "country",
+  "bbox": [
+    -10.390234,
+    51.47373,
+    -6.027393,
+    55.36582
+  ],
+  "centroid": [
+    -7.798588,
+    53.078726
+  ],
+  "method": {
+    "border_neighbors": "Shared-boundary neighbors are derived from Natural Earth Admin 0 polygon vertices quantized to five decimal places; island states may have no border_neighbors.",
+    "nearby_places": "Nearby places are the eight nearest country centroids and are included for geographic discovery, not as a moral ranking."
+  },
+  "border_neighbors": [
+    {
+      "place_id": "GBR",
+      "place_name": "United Kingdom",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GBR/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 56
+    }
+  ],
+  "nearby_places": [
+    {
+      "place_id": "IMN",
+      "place_name": "Isle of Man",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/IMN/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 250
+    },
+    {
+      "place_id": "GBR",
+      "place_name": "United Kingdom",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GBR/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 401.5
+    },
+    {
+      "place_id": "GGY",
+      "place_name": "Guernsey",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GGY/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 542.2
+    },
+    {
+      "place_id": "JEY",
+      "place_name": "Jersey",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/JEY/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 584.9
+    },
+    {
+      "place_id": "BEL",
+      "place_name": "Belgium",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BEL/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 899.3
+    },
+    {
+      "place_id": "NLD",
+      "place_name": "Netherlands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NLD/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 904.2
+    },
+    {
+      "place_id": "FRO",
+      "place_name": "Faroe Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/FRO/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1013.6
+    },
+    {
+      "place_id": "FRA",
+      "place_name": "France",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/FRA/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1024.6
+    }
+  ],
+  "links": [
+    {
+      "href": "https://painmap.org/v1/places/index.json",
+      "rel": "collection",
+      "type": "application/json",
+      "title": "Place index"
+    },
+    {
+      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "rel": "alternate",
+      "type": "application/geo+json",
+      "title": "OGC-style place features"
+    }
+  ]
+}

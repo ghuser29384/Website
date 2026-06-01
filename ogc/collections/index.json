@@ -1,0 +1,55 @@
+{
+  "links": [
+    {
+      "href": "https://painmap.org/ogc/index.json",
+      "rel": "root",
+      "type": "application/json",
+      "title": "OGC landing document"
+    },
+    {
+      "href": "https://painmap.org/ogc/collections/places/index.json",
+      "rel": "item",
+      "type": "application/json",
+      "title": "Places collection"
+    }
+  ],
+  "collections": [
+    {
+      "id": "places",
+      "title": "PainMap places",
+      "description": "Country boundary features joined to PainMap place index coverage metadata for the immutable atlas release.",
+      "itemType": "feature",
+      "crs": [
+        "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+      ],
+      "extent": {
+        "spatial": {
+          "bbox": [
+            [
+              -180,
+              -58.492285,
+              180,
+              83.599609
+            ]
+          ]
+        },
+        "temporal": {
+          "interval": [
+            [
+              "2026-05-31",
+              "2026-05-31"
+            ]
+          ]
+        }
+      },
+      "links": [
+        {
+          "href": "https://painmap.org/ogc/collections/places/items.json",
+          "rel": "items",
+          "type": "application/geo+json",
+          "title": "GeoJSON items"
+        }
+      ]
+    }
+  ]
+}

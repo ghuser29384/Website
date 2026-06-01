@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="Data | PainMap">
     <meta name="twitter:description" content="PainMap dataset groups, provenance notes, canonical release artifacts, and public source boundaries.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../styles.css" integrity="sha384-2ynfUgF7SxQRKHHfmfYE+2xb3kSdLyF50duAGFqsRmDRpDv1UB4GY2ilw7XxzBl0" crossorigin="anonymous">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-BWDODpsIr6o6AfFZZVKhxUAps0oT8KoiDf+tbFnWkN0wL33ZkxzB8/fBXjL4WR6R" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -35,8 +35,11 @@
           { "@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "https://painmap.org/data/places.geojson" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/v1/places/index.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/v1/coverage.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/v1/places/IND/neighbors.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "https://painmap.org/ogc/collections/places/items.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/openapi.json" },
-          { "@type": "DataDownload", "encodingFormat": "application/ld+json", "contentUrl": "https://painmap.org/data/dcat.json" }
+          { "@type": "DataDownload", "encodingFormat": "application/ld+json", "contentUrl": "https://painmap.org/data/dcat.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/releases/2026-05-31/diff.json" }
         ]
       }
     </script>
@@ -118,7 +121,7 @@
                   <td>Proxy aggregate</td>
                   <td>Immutable 2026-05-31.atlas.2 release artifact</td>
                   <td>Low to very low confidence by layer</td>
-                  <td><a href="/data/place-measurements.json">JSON</a>, <a href="/data/place-measurements.csv">CSV</a>, <a href="/data/places.geojson">GeoJSON</a>, <a href="/v1/places/index.json">place index</a>, <a href="/v1/coverage.json">coverage</a>, <a href="/releases/2026-05-31/manifest.json">manifest</a></td>
+                  <td><a href="/data/place-measurements.json">JSON</a>, <a href="/data/place-measurements.csv">CSV</a>, <a href="/data/places.geojson">GeoJSON</a>, <a href="/v1/places/index.json">place index</a>, <a href="/v1/coverage.json">coverage</a>, <a href="/v1/places/IND/neighbors.json">neighbors</a>, <a href="/releases/2026-05-31/manifest.json">manifest</a></td>
                 </tr>
                 <tr>
                   <th scope="row"><a href="/dataset/provenance-registry/">Provenance registry</a></th>
@@ -139,7 +142,14 @@
                   <td>Documentation</td>
                   <td>2026-05-31 version</td>
                   <td>Contract metadata</td>
-                  <td><a href="/data/openapi.json">OpenAPI 3.1</a>, <a href="/schemas/place-index.schema.json">place schema</a>, <a href="/schemas/place-measurements.schema.json">measurement schema</a>, <a href="/schemas/coverage.schema.json">coverage schema</a></td>
+                  <td><a href="/data/openapi.json">OpenAPI 3.1</a>, <a href="/schemas/place-index.schema.json">place schema</a>, <a href="/schemas/place-measurements.schema.json">measurement schema</a>, <a href="/schemas/coverage.schema.json">coverage schema</a>, <a href="/schemas/ogc-place-features.schema.json">OGC schema</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="/ogc/index.json">OGC-style place features</a></th>
+                  <td>Boundary geometry</td>
+                  <td>2026-05-31.atlas.2</td>
+                  <td>Coverage metadata, not measurement confidence</td>
+                  <td><a href="/ogc/collections/places/items.json">place features</a>, <a href="/ogc/conformance.json">conformance</a>, <a href="/ogc/collections/index.json">collections</a></td>
                 </tr>
                 <tr>
                   <th scope="row"><a href="/v1/layers.json">Layer registry</a></th>
@@ -153,7 +163,7 @@
                   <td>Operational metadata</td>
                   <td>2026-05-31.atlas.2</td>
                   <td>Budget and smoke-test metadata</td>
-                  <td><a href="/data/performance-budgets.json">performance budgets</a>, <a href="/data/endpoint-smoke.json">endpoint smoke</a>, <a href="/data/analytics-events.json">analytics vocabulary</a></td>
+                  <td><a href="/data/performance-budgets.json">performance budgets</a>, <a href="/data/endpoint-smoke.json">endpoint smoke</a>, <a href="/data/analytics-events.json">analytics vocabulary</a>, <a href="/releases/2026-05-31/diff.json">release diff</a></td>
                 </tr>
               </tbody>
             </table>

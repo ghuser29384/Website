@@ -3,8 +3,8 @@
   "generated_at": "2026-05-31",
   "last_release_date": "2026-05-31",
   "coverage_status": {
-    "places_indexed": 242,
-    "country_boundaries_indexed": 241,
+    "places_indexed": 240,
+    "country_boundaries_indexed": 239,
     "adm1_boundaries": {
       "status": "runtime_overlay",
       "release_scoped_count": 0,
@@ -18,13 +18,13 @@
       "modeled": 0,
       "proxy": 6,
       "priority_overlay": 2,
-      "boundary": 241
+      "boundary": 239
     }
   },
   "known_sparse_areas": [
     {
       "area": "Boundary-only countries",
-      "status": "239 country places have Natural Earth boundaries but no canonical measurement rows in this release."
+      "status": "237 country places have Natural Earth boundaries but no canonical measurement rows in this release."
     },
     {
       "area": "ADM1 measurements",

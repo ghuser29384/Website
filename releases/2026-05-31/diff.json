@@ -1,0 +1,42 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "previous_release_id": null,
+  "comparison_type": "initial_release_baseline",
+  "summary": "This diff records the first release baseline for future comparisons. There is no previous immutable PainMap release in this release series.",
+  "current_release": {
+    "places_indexed": 240,
+    "country_boundaries_indexed": 239,
+    "canonical_place_profiles": 3,
+    "release_measurements": 8,
+    "ogc_place_features": 239,
+    "neighbor_payloads": 240
+  },
+  "added_contract_surfaces": [
+    "/v1/places/index.json",
+    "/v1/coverage.json",
+    "/v1/places/{place_id}/neighbors.json",
+    "/ogc/index.json",
+    "/ogc/collections/places/items.json",
+    "/schemas/ogc-place-features.schema.json",
+    "/releases/2026-05-31/diff.json"
+  ],
+  "notable_changes": [
+    {
+      "area": "coverage",
+      "change": "Published a full country place index with canonical-measurement and boundary-index-only status."
+    },
+    {
+      "area": "geospatial contract",
+      "change": "Added OGC API - Features-style discovery and a GeoJSON country feature collection."
+    },
+    {
+      "area": "place discovery",
+      "change": "Added release-scoped neighbor payloads for all indexed places."
+    },
+    {
+      "area": "release QA",
+      "change": "Added a diff artifact so later releases can expose added, changed, and removed surfaces."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "places",
+  "title": "PainMap places",
+  "description": "Release-scoped country features with Natural Earth geometry and PainMap coverage/profile links.",
+  "itemType": "feature",
+  "crs": [
+    "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -180,
+          -58.492285,
+          180,
+          83.599609
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2026-05-31",
+          "2026-05-31"
+        ]
+      ]
+    }
+  },
+  "links": [
+    {
+      "href": "https://painmap.org/ogc/collections/index.json",
+      "rel": "collection",
+      "type": "application/json",
+      "title": "Collections"
+    },
+    {
+      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "rel": "items",
+      "type": "application/geo+json",
+      "title": "239 place features"
+    },
+    {
+      "href": "https://painmap.org/v1/places/index.json",
+      "rel": "describedby",
+      "type": "application/json",
+      "title": "Coverage-aware place index"
+    }
+  ]
+}

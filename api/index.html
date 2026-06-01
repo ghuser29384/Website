@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="API | PainMap">
     <meta name="twitter:description" content="PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, release, and OpenAPI exports.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../styles.css" integrity="sha384-2ynfUgF7SxQRKHHfmfYE+2xb3kSdLyF50duAGFqsRmDRpDv1UB4GY2ilw7XxzBl0" crossorigin="anonymous">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-BWDODpsIr6o6AfFZZVKhxUAps0oT8KoiDf+tbFnWkN0wL33ZkxzB8/fBXjL4WR6R" crossorigin="anonymous">
       <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"TechArticle","name":"API | PainMap","url":"https://painmap.org/api/","description":"PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, release, and OpenAPI exports."}
     </script>
@@ -71,6 +71,9 @@
                 <tr><th scope="row"><a href="/v1/sources.json">/v1/sources.json</a></th><td>JSON</td><td>Source and license registry.</td></tr>
                 <tr><th scope="row"><a href="/v1/places/index.json">/v1/places/index.json</a></th><td>JSON</td><td>Full release place index with coverage status for boundary-only and measured places.</td></tr>
                 <tr><th scope="row"><a href="/v1/coverage.json">/v1/coverage.json</a></th><td>JSON</td><td>Coverage counts, direct-evidence layer coverage, last release date, and known sparse areas.</td></tr>
+                <tr><th scope="row"><a href="/v1/places/BRA/neighbors.json">/v1/places/{place_id}/neighbors.json</a></th><td>JSON</td><td>Release-scoped border neighbors, nearest centroid neighbors, and place discovery links.</td></tr>
+                <tr><th scope="row"><a href="/ogc/index.json">/ogc/index.json</a></th><td>JSON</td><td>Static OGC API - Features-style landing document.</td></tr>
+                <tr><th scope="row"><a href="/ogc/collections/places/items.json">/ogc/collections/places/items.json</a></th><td>GeoJSON</td><td>Country place features joined to coverage, profile, measurement, and neighbor links.</td></tr>
                 <tr><th scope="row"><a href="/v1/places/WLD.json">/v1/places/WLD.json</a></th><td>JSON</td><td>World profile rows in the canonical release.</td></tr>
                 <tr><th scope="row"><a href="/v1/places/BRA.json">/v1/places/BRA.json</a></th><td>JSON</td><td>Canonical place profile example for Brazil.</td></tr>
                 <tr><th scope="row"><a href="/v1/places/IND.json">/v1/places/IND.json</a></th><td>JSON</td><td>Canonical place profile example for India.</td></tr>
@@ -82,6 +85,8 @@
                 <tr><th scope="row"><a href="/schemas/place-index.schema.json">/schemas/place-index.schema.json</a></th><td>JSON Schema</td><td>Validation schema for the place index.</td></tr>
                 <tr><th scope="row"><a href="/schemas/place-measurements.schema.json">/schemas/place-measurements.schema.json</a></th><td>JSON Schema</td><td>Validation schema for canonical measurements.</td></tr>
                 <tr><th scope="row"><a href="/schemas/coverage.schema.json">/schemas/coverage.schema.json</a></th><td>JSON Schema</td><td>Validation schema for coverage status.</td></tr>
+                <tr><th scope="row"><a href="/schemas/ogc-place-features.schema.json">/schemas/ogc-place-features.schema.json</a></th><td>JSON Schema</td><td>Validation schema for OGC-style place features.</td></tr>
+                <tr><th scope="row"><a href="/releases/2026-05-31/diff.json">/releases/2026-05-31/diff.json</a></th><td>JSON</td><td>Release diff baseline for future release comparisons.</td></tr>
                 <tr><th scope="row"><a href="/data/analytics-events.json">/data/analytics-events.json</a></th><td>JSON</td><td>Privacy-preserving telemetry event vocabulary.</td></tr>
                 <tr><th scope="row"><a href="/data/performance-budgets.json">/data/performance-budgets.json</a></th><td>JSON</td><td>Field performance budgets for LCP, INP, and CLS.</td></tr>
                 <tr><th scope="row"><a href="/data/endpoint-smoke.json">/data/endpoint-smoke.json</a></th><td>JSON</td><td>Endpoint smoke-test manifest for static-host checks.</td></tr>

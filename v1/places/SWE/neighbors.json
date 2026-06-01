@@ -1,0 +1,159 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "place_id": "SWE",
+  "place_name": "Sweden",
+  "geometry_level": "country",
+  "bbox": [
+    11.147168,
+    55.346387,
+    24.155469,
+    69.036865
+  ],
+  "centroid": [
+    19.01705,
+    65.85918
+  ],
+  "method": {
+    "border_neighbors": "Shared-boundary neighbors are derived from Natural Earth Admin 0 polygon vertices quantized to five decimal places; island states may have no border_neighbors.",
+    "nearby_places": "Nearby places are the eight nearest country centroids and are included for geographic discovery, not as a moral ranking."
+  },
+  "border_neighbors": [
+    {
+      "place_id": "FIN",
+      "place_name": "Finland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/FIN/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 66
+    },
+    {
+      "place_id": "NOR",
+      "place_name": "Norway",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NOR/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 138
+    }
+  ],
+  "nearby_places": [
+    {
+      "place_id": "FIN",
+      "place_name": "Finland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/FIN/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 489
+    },
+    {
+      "place_id": "ALA",
+      "place_name": "Åland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ALA/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 635.6
+    },
+    {
+      "place_id": "NOR",
+      "place_name": "Norway",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NOR/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 679.5
+    },
+    {
+      "place_id": "EST",
+      "place_name": "Estonia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/EST/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 867.6
+    },
+    {
+      "place_id": "LVA",
+      "place_name": "Latvia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LVA/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1034.5
+    },
+    {
+      "place_id": "DNK",
+      "place_name": "Denmark",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/DNK/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1222.2
+    },
+    {
+      "place_id": "LTU",
+      "place_name": "Lithuania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LTU/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1226.8
+    },
+    {
+      "place_id": "FRO",
+      "place_name": "Faroe Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/FRO/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 1322.8
+    }
+  ],
+  "links": [
+    {
+      "href": "https://painmap.org/v1/places/index.json",
+      "rel": "collection",
+      "type": "application/json",
+      "title": "Place index"
+    },
+    {
+      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "rel": "alternate",
+      "type": "application/geo+json",
+      "title": "OGC-style place features"
+    }
+  ]
+}

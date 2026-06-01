@@ -1,11 +1,11 @@
 {
   "release_id": "2026-05-31.atlas.2",
   "generated_at": "2026-05-31",
-  "count": 242,
+  "count": 240,
   "coverage_summary": {
-    "place_index_count": 242,
+    "place_index_count": 240,
     "world_rows": 2,
-    "country_boundary_indexed": 241,
+    "country_boundary_indexed": 239,
     "adm1_boundary_mode": "runtime_overlay",
     "adm1_release_measurements": 0,
     "canonical_country_profiles": 2,
@@ -15,7 +15,7 @@
     "modeled_place_measurements": 0,
     "proxy_place_measurements": 6,
     "priority_overlay_measurements": 2,
-    "boundary_index_only_places": 239,
+    "boundary_index_only_places": 237,
     "last_release_date": "2026-05-31"
   },
   "items": [
@@ -38,6 +38,7 @@
       "page_url": null,
       "profile_url": "https://painmap.org/v1/places/WLD.json",
       "measurements_url": "https://painmap.org/v1/places/WLD/measurements.json",
+      "neighbors_url": "https://painmap.org/v1/places/WLD/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -54,6 +55,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/AFG/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -70,6 +72,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ALA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -86,6 +89,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ALB/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -102,6 +106,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/DZA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -118,6 +123,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ASM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -134,6 +140,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/AND/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -150,6 +157,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/AGO/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -166,6 +174,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/AIA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -182,6 +191,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ATG/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -198,6 +208,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ARG/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -214,6 +225,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ARM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -230,22 +242,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
-      "latest_release_id": "2026-05-31.atlas.2"
-    },
-    {
-      "place_id": "AUS",
-      "place_name": "Ashmore and Cartier Islands",
-      "parent_place_id": "WLD",
-      "iso3": "AUS",
-      "geometry_level": "country",
-      "boundary_indexed": true,
-      "coverage_status": "boundary_index_only",
-      "canonical_measurement_count": 0,
-      "available_layers": [],
-      "evidence_kinds": [],
-      "page_url": null,
-      "profile_url": null,
-      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ABW/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -262,22 +259,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
-      "latest_release_id": "2026-05-31.atlas.2"
-    },
-    {
-      "place_id": "AUS",
-      "place_name": "Australian Indian Ocean Territories",
-      "parent_place_id": "WLD",
-      "iso3": "AUS",
-      "geometry_level": "country",
-      "boundary_indexed": true,
-      "coverage_status": "boundary_index_only",
-      "canonical_measurement_count": 0,
-      "available_layers": [],
-      "evidence_kinds": [],
-      "page_url": null,
-      "profile_url": null,
-      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/AUS/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -294,6 +276,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/AUT/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -310,6 +293,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/AZE/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -326,6 +310,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BHR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -342,6 +327,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BGD/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -358,6 +344,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BRB/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -374,6 +361,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BLR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -390,6 +378,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BEL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -406,6 +395,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BLZ/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -422,6 +412,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BEN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -438,6 +429,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BMU/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -454,6 +446,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BTN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -470,6 +463,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BOL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -486,6 +480,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BIH/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -502,6 +497,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BWA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -525,6 +521,7 @@
       "page_url": "https://painmap.org/place/BRA/",
       "profile_url": "https://painmap.org/v1/places/BRA.json",
       "measurements_url": "https://painmap.org/v1/places/BRA/measurements.json",
+      "neighbors_url": "https://painmap.org/v1/places/BRA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -541,6 +538,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/IOT/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -557,6 +555,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VGB/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -573,6 +572,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BRN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -589,6 +589,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BGR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -605,6 +606,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BFA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -621,6 +623,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BDI/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -637,6 +640,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KHM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -653,6 +657,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CMR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -669,6 +674,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CAN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -685,6 +691,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CPV/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -701,6 +708,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CYM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -717,6 +725,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CAF/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -733,6 +742,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TCD/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -749,6 +759,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CHL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -765,6 +776,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/COL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -781,6 +793,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/COM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -797,6 +810,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/COK/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -813,6 +827,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CRI/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -829,6 +844,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/HRV/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -845,6 +861,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CUB/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -861,6 +878,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CUW/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -877,6 +895,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CYP/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -893,6 +912,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CZE/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -909,6 +929,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/COD/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -925,6 +946,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/DNK/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -941,6 +963,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/DJI/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -957,6 +980,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/DMA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -973,6 +997,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/DOM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -989,6 +1014,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TLS/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1005,6 +1031,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ECU/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1021,6 +1048,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/EGY/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1037,6 +1065,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SLV/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1053,6 +1082,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GNQ/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1069,6 +1099,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ERI/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1085,6 +1116,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/EST/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1101,6 +1133,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SWZ/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1117,6 +1150,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ETH/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1133,6 +1167,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/FLK/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1149,6 +1184,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/FRO/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1165,6 +1201,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/FSM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1181,6 +1218,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/FJI/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1197,6 +1235,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/FIN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1213,6 +1252,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/FRA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1229,6 +1269,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PYF/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1245,6 +1286,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ATF/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1261,6 +1303,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GAB/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1277,6 +1320,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GEO/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1293,6 +1337,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/DEU/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1309,6 +1354,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GHA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1325,6 +1371,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GRC/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1341,6 +1388,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GRL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1357,6 +1405,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GRD/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1373,6 +1422,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GUM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1389,6 +1439,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GTM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1405,6 +1456,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GGY/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1421,6 +1473,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GIN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1437,6 +1490,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GNB/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1453,6 +1507,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GUY/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1469,6 +1524,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/HTI/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1485,6 +1541,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/HMD/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1501,6 +1558,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/HND/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1517,6 +1575,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/HKG/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1533,6 +1592,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/HUN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1549,6 +1609,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ISL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1572,6 +1633,7 @@
       "page_url": "https://painmap.org/place/IND/",
       "profile_url": "https://painmap.org/v1/places/IND.json",
       "measurements_url": "https://painmap.org/v1/places/IND/measurements.json",
+      "neighbors_url": "https://painmap.org/v1/places/IND/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1588,6 +1650,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/IDN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1604,6 +1667,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/IRN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1620,6 +1684,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/IRQ/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1636,6 +1701,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/IRL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1652,6 +1718,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/IMN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1668,6 +1735,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ISR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1684,6 +1752,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ITA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1700,6 +1769,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CIV/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1716,6 +1786,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/JAM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1732,6 +1803,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/JPN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1748,6 +1820,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/JEY/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1764,6 +1837,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/JOR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1780,6 +1854,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KAZ/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1796,6 +1871,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KEN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1812,6 +1888,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KIR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1828,6 +1905,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KOS/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1844,6 +1922,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KWT/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1860,6 +1939,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KGZ/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1876,6 +1956,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LAO/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1892,6 +1973,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LVA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1908,6 +1990,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LBN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1924,6 +2007,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LSO/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1940,6 +2024,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LBR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1956,6 +2041,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LBY/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1972,6 +2058,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LIE/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -1988,6 +2075,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LTU/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2004,6 +2092,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LUX/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2020,6 +2109,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MAC/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2036,6 +2126,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MDG/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2052,6 +2143,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MWI/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2068,6 +2160,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MYS/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2084,6 +2177,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MDV/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2100,6 +2194,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MLI/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2116,6 +2211,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MLT/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2132,6 +2228,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MHL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2148,6 +2245,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MRT/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2164,6 +2262,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MUS/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2180,6 +2279,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MEX/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2196,6 +2296,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MDA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2212,6 +2313,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MCO/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2228,6 +2330,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MNG/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2244,6 +2347,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MNE/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2260,6 +2364,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MSR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2276,6 +2381,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MAR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2292,6 +2398,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MOZ/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2308,6 +2415,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MMR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2324,6 +2432,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NAM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2340,6 +2449,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NRU/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2356,6 +2466,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NPL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2372,6 +2483,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NLD/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2388,6 +2500,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NCL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2404,6 +2517,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NZL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2420,6 +2534,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NIC/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2436,6 +2551,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NER/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2452,6 +2568,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NGA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2468,6 +2585,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NIU/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2484,6 +2602,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NFK/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2500,6 +2619,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PRK/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2516,6 +2636,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MKD/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2532,6 +2653,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MNP/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2548,6 +2670,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NOR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2564,6 +2687,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/OMN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2580,6 +2704,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PAK/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2596,6 +2721,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PLW/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2612,6 +2738,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PSE/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2628,6 +2755,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PAN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2644,6 +2772,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PNG/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2660,6 +2789,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PRY/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2676,6 +2806,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CHN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2692,6 +2823,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PER/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2708,6 +2840,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PHL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2724,6 +2857,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PCN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2740,6 +2874,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/POL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2756,6 +2891,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PRT/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2772,6 +2908,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PRI/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2788,6 +2925,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/QAT/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2804,6 +2942,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/COG/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2820,6 +2959,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ROU/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2836,6 +2976,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/RUS/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2852,6 +2993,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/RWA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2868,6 +3010,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BLM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2884,6 +3027,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SHN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2900,6 +3044,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KNA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2916,6 +3061,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LCA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2932,6 +3078,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MAF/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2948,6 +3095,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SPM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2964,6 +3112,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VCT/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2980,6 +3129,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/WSM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -2996,6 +3146,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SMR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3012,6 +3163,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/STP/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3028,6 +3180,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SAU/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3044,6 +3197,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SEN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3060,6 +3214,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SRB/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3076,6 +3231,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SYC/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3092,6 +3248,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KAS/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3108,6 +3265,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SLE/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3124,6 +3282,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SGP/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3140,6 +3299,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SXM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3156,6 +3316,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SVK/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3172,6 +3333,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SVN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3188,6 +3350,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SLB/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3204,6 +3367,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SOM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3220,6 +3384,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SOL/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3236,6 +3401,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ZAF/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3252,6 +3418,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SGS/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3268,6 +3435,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/KOR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3284,6 +3452,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SSD/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3300,6 +3469,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ESP/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3316,6 +3486,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LKA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3332,6 +3503,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SDN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3348,6 +3520,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SUR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3364,6 +3537,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SWE/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3380,6 +3554,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CHE/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3396,6 +3571,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SYR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3412,6 +3588,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TWN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3428,6 +3605,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TJK/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3444,6 +3622,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TZA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3460,6 +3639,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/THA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3476,6 +3656,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BHS/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3492,6 +3673,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GMB/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3508,6 +3690,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TGO/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3524,6 +3707,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TON/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3540,6 +3724,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TTO/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3556,6 +3741,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TUN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3572,6 +3758,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TUR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3588,6 +3775,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CYN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3604,6 +3792,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TKM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3620,6 +3809,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TCA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3636,6 +3826,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/TUV/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3652,6 +3843,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/UGA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3668,6 +3860,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/UKR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3684,6 +3877,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ARE/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3700,6 +3894,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GBR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3716,6 +3911,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/USA/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3732,6 +3928,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VIR/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3748,6 +3945,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/URY/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3764,6 +3962,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/UZB/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3780,6 +3979,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VUT/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3796,6 +3996,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VAT/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3812,6 +4013,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VEN/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3828,6 +4030,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/VNM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3844,6 +4047,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/WLF/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3860,6 +4064,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ESH/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3876,6 +4081,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/YEM/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3892,6 +4098,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ZMB/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     },
     {
@@ -3908,6 +4115,7 @@
       "page_url": null,
       "profile_url": null,
       "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ZWE/neighbors.json",
       "latest_release_id": "2026-05-31.atlas.2"
     }
   ]

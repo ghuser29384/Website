@@ -9,6 +9,7 @@
   "data_url": "https://painmap.org/v1/places/IND.json",
   "compare_url": "https://painmap.org/compare/",
   "measurements_url": "https://painmap.org/v1/places/IND/measurements.json",
+  "neighbors_url": "https://painmap.org/v1/places/IND/neighbors.json",
   "evidence_kinds": [
     "priority-overlay",
     "proxy"

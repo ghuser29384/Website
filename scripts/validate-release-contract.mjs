@@ -9,6 +9,7 @@ const schemaTargets = [
   ["schemas/place-index.schema.json", "v1/places/index.json"],
   ["schemas/place-measurements.schema.json", "data/place-measurements.json"],
   ["schemas/coverage.schema.json", "v1/coverage.json"],
+  ["schemas/ogc-place-features.schema.json", "ogc/collections/places/items.json"],
 ];
 
 function absolute(file) {
@@ -147,6 +148,7 @@ for (const item of placeIndex.items) {
     expect(item.coverage_status === "canonical_measurements", `${item.place_id} should be canonical_measurements`);
     expect(Boolean(item.profile_url), `${item.place_id} missing profile_url`);
     expect(Boolean(item.measurements_url), `${item.place_id} missing measurements_url`);
+    expect(Boolean(item.neighbors_url), `${item.place_id} missing neighbors_url`);
     expect(existsSync(absolute(`v1/places/${item.place_id}.json`)), `${item.place_id} profile JSON missing`);
     expect(
       existsSync(absolute(`v1/places/${item.place_id}/measurements.json`)),
@@ -156,6 +158,14 @@ for (const item of placeIndex.items) {
   }
 
   expect(item.coverage_status === "boundary_index_only", `${item.place_id} without rows should be boundary_index_only`);
+  expect(Boolean(item.neighbors_url), `${item.place_id} missing neighbors_url`);
+}
+
+for (const item of placeIndex.items) {
+  expect(
+    existsSync(absolute(`v1/places/${item.place_id}/neighbors.json`)),
+    `${item.place_id} neighbors JSON missing`
+  );
 }
 
 for (const endpoint of endpointSmoke.endpoints) {
@@ -203,15 +213,48 @@ for (const artifact of releaseManifest.artifacts ?? []) {
   expect(artifact.sha256 === sha256(file), `Release manifest sha256 mismatch for ${artifact.path}`);
 }
 
+const ogcItems = readJson("ogc/collections/places/items.json");
+expect(ogcItems.type === "FeatureCollection", "OGC place items must be a FeatureCollection");
+expect(ogcItems.numberReturned === ogcItems.features?.length, "OGC place items numberReturned mismatch");
+expect(ogcItems.features?.length >= 200, "OGC place items must expose broad country feature coverage");
+expect(
+  ogcItems.features?.every((feature) => feature.properties?.neighbors_url),
+  "OGC place features must link neighbor payloads"
+);
+
+const ogcConformance = readJson("ogc/conformance.json");
+expect(
+  ogcConformance.conformsTo?.some((entry) => entry.includes("ogcapi-features-1/1.0/conf/geojson")),
+  "OGC conformance must include GeoJSON conformance"
+);
+
+const releaseDiff = readJson("releases/2026-05-31/diff.json");
+expect(releaseDiff.release_id === placeIndex.release_id, "release diff release_id mismatch");
+expect(releaseDiff.comparison_type === "initial_release_baseline", "release diff should mark this release as the initial baseline");
+expect(
+  releaseDiff.current_release?.neighbor_payloads === placeIndex.items.length,
+  "release diff neighbor payload count mismatch"
+);
+
 for (const requiredArtifact of [
   "/v1/places/index.json",
   "/v1/coverage.json",
   "/schemas/place-index.schema.json",
   "/schemas/place-measurements.schema.json",
   "/schemas/coverage.schema.json",
+  "/schemas/ogc-place-features.schema.json",
   "/data/endpoint-smoke.json",
   "/data/performance-budgets.json",
   "/data/analytics-events.json",
+  "/v1/places/WLD/neighbors.json",
+  "/v1/places/BRA/neighbors.json",
+  "/v1/places/IND/neighbors.json",
+  "/ogc/index.json",
+  "/ogc/conformance.json",
+  "/ogc/collections/index.json",
+  "/ogc/collections/places/index.json",
+  "/ogc/collections/places/items.json",
+  "/releases/2026-05-31/diff.json",
   "/clients/typescript/painmap-client.ts",
   "/clients/python/painmap_client.py",
   "/examples/README.md",

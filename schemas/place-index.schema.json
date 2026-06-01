@@ -101,6 +101,9 @@
               "null"
             ]
           },
+          "neighbors_url": {
+            "type": "string"
+          },
           "latest_release_id": {
             "type": "string"
           }

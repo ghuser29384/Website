@@ -1,0 +1,159 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "place_id": "LIE",
+  "place_name": "Liechtenstein",
+  "geometry_level": "country",
+  "bbox": [
+    9.479492,
+    47.057373,
+    9.610547,
+    47.270752
+  ],
+  "centroid": [
+    9.559439,
+    47.111405
+  ],
+  "method": {
+    "border_neighbors": "Shared-boundary neighbors are derived from Natural Earth Admin 0 polygon vertices quantized to five decimal places; island states may have no border_neighbors.",
+    "nearby_places": "Nearby places are the eight nearest country centroids and are included for geographic discovery, not as a moral ranking."
+  },
+  "border_neighbors": [
+    {
+      "place_id": "AUT",
+      "place_name": "Austria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/AUT/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 10
+    },
+    {
+      "place_id": "CHE",
+      "place_name": "Switzerland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CHE/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 6
+    }
+  ],
+  "nearby_places": [
+    {
+      "place_id": "CHE",
+      "place_name": "Switzerland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CHE/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 165
+    },
+    {
+      "place_id": "ITA",
+      "place_name": "Italy",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ITA/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 289.4
+    },
+    {
+      "place_id": "AUT",
+      "place_name": "Austria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/AUT/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 347.5
+    },
+    {
+      "place_id": "LUX",
+      "place_name": "Luxembourg",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LUX/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 388.6
+    },
+    {
+      "place_id": "MCO",
+      "place_name": "Monaco",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/MCO/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 411.1
+    },
+    {
+      "place_id": "SMR",
+      "place_name": "San Marino",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SMR/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 418.5
+    },
+    {
+      "place_id": "SVN",
+      "place_name": "Slovenia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SVN/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 425.5
+    },
+    {
+      "place_id": "DEU",
+      "place_name": "Germany",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/DEU/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 428.2
+    }
+  ],
+  "links": [
+    {
+      "href": "https://painmap.org/v1/places/index.json",
+      "rel": "collection",
+      "type": "application/json",
+      "title": "Place index"
+    },
+    {
+      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "rel": "alternate",
+      "type": "application/geo+json",
+      "title": "OGC-style place features"
+    }
+  ]
+}

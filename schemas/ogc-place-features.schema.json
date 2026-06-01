@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://painmap.org/schemas/ogc-place-features.schema.json",
+  "title": "PainMap OGC-style place features",
+  "type": "object",
+  "required": [
+    "type",
+    "features",
+    "numberMatched",
+    "numberReturned",
+    "links"
+  ],
+  "properties": {
+    "type": {
+      "const": "FeatureCollection"
+    },
+    "numberMatched": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "numberReturned": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "id",
+          "properties",
+          "geometry"
+        ],
+        "properties": {
+          "type": {
+            "const": "Feature"
+          },
+          "id": {
+            "type": "string"
+          },
+          "properties": {
+            "type": "object",
+            "required": [
+              "place_id",
+              "place_name",
+              "geometry_level",
+              "coverage_status",
+              "neighbors_url"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

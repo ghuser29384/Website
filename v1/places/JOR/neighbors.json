@@ -1,0 +1,195 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "place_id": "JOR",
+  "place_name": "Jordan",
+  "geometry_level": "country",
+  "bbox": [
+    34.950781,
+    29.190479,
+    39.292773,
+    33.372217
+  ],
+  "centroid": [
+    36.375991,
+    30.805025
+  ],
+  "method": {
+    "border_neighbors": "Shared-boundary neighbors are derived from Natural Earth Admin 0 polygon vertices quantized to five decimal places; island states may have no border_neighbors.",
+    "nearby_places": "Nearby places are the eight nearest country centroids and are included for geographic discovery, not as a moral ranking."
+  },
+  "border_neighbors": [
+    {
+      "place_id": "IRQ",
+      "place_name": "Iraq",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/IRQ/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 11
+    },
+    {
+      "place_id": "ISR",
+      "place_name": "Israel",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ISR/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 26
+    },
+    {
+      "place_id": "PSE",
+      "place_name": "Palestine",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PSE/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 8
+    },
+    {
+      "place_id": "SAU",
+      "place_name": "Saudi Arabia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SAU/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 37
+    },
+    {
+      "place_id": "SYR",
+      "place_name": "Syria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SYR/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 17
+    }
+  ],
+  "nearby_places": [
+    {
+      "place_id": "ISR",
+      "place_name": "Israel",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ISR/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 146.3
+    },
+    {
+      "place_id": "PSE",
+      "place_name": "Palestine",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/PSE/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 172.3
+    },
+    {
+      "place_id": "LBN",
+      "place_name": "Lebanon",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LBN/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 371.8
+    },
+    {
+      "place_id": "SYR",
+      "place_name": "Syria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/SYR/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 499.8
+    },
+    {
+      "place_id": "CYP",
+      "place_name": "Cyprus",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CYP/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 550.6
+    },
+    {
+      "place_id": "CYN",
+      "place_name": "Turkish Republic of Northern Cyprus",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CYN/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 550.6
+    },
+    {
+      "place_id": "IRQ",
+      "place_name": "Iraq",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/IRQ/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 697.6
+    },
+    {
+      "place_id": "EGY",
+      "place_name": "Egypt",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/EGY/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 849.6
+    }
+  ],
+  "links": [
+    {
+      "href": "https://painmap.org/v1/places/index.json",
+      "rel": "collection",
+      "type": "application/json",
+      "title": "Place index"
+    },
+    {
+      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "rel": "alternate",
+      "type": "application/geo+json",
+      "title": "OGC-style place features"
+    }
+  ]
+}

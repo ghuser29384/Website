@@ -1,0 +1,8 @@
+{
+  "conformsTo": [
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/core",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/oas30",
+    "http://www.opengis.net/spec/ogcapi-features-1/1.0/conf/geojson"
+  ],
+  "note": "PainMap publishes static, release-scoped JSON files that follow OGC API - Features discovery shapes without dynamic query parameters."
+}

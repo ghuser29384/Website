@@ -1,0 +1,147 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "place_id": "DNK",
+  "place_name": "Denmark",
+  "geometry_level": "country",
+  "bbox": [
+    8.121484,
+    54.628857,
+    15.137109,
+    57.736914
+  ],
+  "centroid": [
+    9.018163,
+    55.966965
+  ],
+  "method": {
+    "border_neighbors": "Shared-boundary neighbors are derived from Natural Earth Admin 0 polygon vertices quantized to five decimal places; island states may have no border_neighbors.",
+    "nearby_places": "Nearby places are the eight nearest country centroids and are included for geographic discovery, not as a moral ranking."
+  },
+  "border_neighbors": [
+    {
+      "place_id": "DEU",
+      "place_name": "Germany",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/DEU/neighbors.json",
+      "relation": "shared_boundary",
+      "shared_boundary_point_count": 12
+    }
+  ],
+  "nearby_places": [
+    {
+      "place_id": "NLD",
+      "place_name": "Netherlands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NLD/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 452.1
+    },
+    {
+      "place_id": "DEU",
+      "place_name": "Germany",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/DEU/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 558.3
+    },
+    {
+      "place_id": "NOR",
+      "place_name": "Norway",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/NOR/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 600.6
+    },
+    {
+      "place_id": "BEL",
+      "place_name": "Belgium",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/BEL/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 640.2
+    },
+    {
+      "place_id": "LUX",
+      "place_name": "Luxembourg",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/LUX/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 720.5
+    },
+    {
+      "place_id": "GBR",
+      "place_name": "United Kingdom",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/GBR/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 727.1
+    },
+    {
+      "place_id": "ALA",
+      "place_name": "Åland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/ALA/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 788.7
+    },
+    {
+      "place_id": "CZE",
+      "place_name": "Czech Republic",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "canonical_measurement_count": 0,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": "https://painmap.org/v1/places/CZE/neighbors.json",
+      "relation": "nearest_centroid",
+      "centroid_distance_km": 798.9
+    }
+  ],
+  "links": [
+    {
+      "href": "https://painmap.org/v1/places/index.json",
+      "rel": "collection",
+      "type": "application/json",
+      "title": "Place index"
+    },
+    {
+      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "rel": "alternate",
+      "type": "application/geo+json",
+      "title": "OGC-style place features"
+    }
+  ]
+}

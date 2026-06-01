@@ -167,12 +167,56 @@
         }
       }
     },
+    "/v1/places/{place_id}/neighbors.json": {
+      "get": {
+        "summary": "Get geographic neighbor and nearby-place metadata for a place",
+        "parameters": [
+          {
+            "name": "place_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Place neighbor payload",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/places/BRA.json": {
       "get": {
         "summary": "Get Brazil place profile",
         "responses": {
           "200": {
             "description": "Place profile JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/places/BRA/neighbors.json": {
+      "get": {
+        "summary": "Get Brazil neighbor payload",
+        "responses": {
+          "200": {
+            "description": "Place neighbor payload",
             "content": {
               "application/json": {
                 "schema": {
@@ -201,12 +245,46 @@
         }
       }
     },
+    "/v1/places/IND/neighbors.json": {
+      "get": {
+        "summary": "Get India neighbor payload",
+        "responses": {
+          "200": {
+            "description": "Place neighbor payload",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/releases/2026-05-31/manifest.json": {
       "get": {
         "summary": "Get immutable release manifest",
         "responses": {
           "200": {
             "description": "Release manifest JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/releases/2026-05-31/diff.json": {
+      "get": {
+        "summary": "Get release diff artifact",
+        "responses": {
+          "200": {
+            "description": "Release diff JSON",
             "content": {
               "application/json": {
                 "schema": {
@@ -320,6 +398,91 @@
         }
       }
     },
+    "/ogc/index.json": {
+      "get": {
+        "summary": "Get OGC API - Features landing document",
+        "responses": {
+          "200": {
+            "description": "OGC landing document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ogc/conformance.json": {
+      "get": {
+        "summary": "Get OGC conformance classes",
+        "responses": {
+          "200": {
+            "description": "OGC conformance document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ogc/collections/index.json": {
+      "get": {
+        "summary": "Get OGC collection list",
+        "responses": {
+          "200": {
+            "description": "OGC collections document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ogc/collections/places/index.json": {
+      "get": {
+        "summary": "Get OGC places collection metadata",
+        "responses": {
+          "200": {
+            "description": "OGC collection metadata",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ogc/collections/places/items.json": {
+      "get": {
+        "summary": "Get OGC-style GeoJSON country place features",
+        "responses": {
+          "200": {
+            "description": "OGC-style GeoJSON feature collection",
+            "content": {
+              "application/geo+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FeatureCollection"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/data/analytics-events.json": {
       "get": {
         "summary": "Get privacy-preserving telemetry event vocabulary",
@@ -411,6 +574,23 @@
         "responses": {
           "200": {
             "description": "Coverage JSON Schema",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/schemas/ogc-place-features.schema.json": {
+      "get": {
+        "summary": "Get JSON Schema for OGC-style place features",
+        "responses": {
+          "200": {
+            "description": "OGC place features JSON Schema",
             "content": {
               "application/json": {
                 "schema": {
