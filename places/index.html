@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Places | PainMap</title>
+    <meta name="description" content="Search PainMap places, inspect coverage status, and open the full place index for atlas release 2026-05-31.atlas.2.">
+    <link rel="canonical" href="https://painmap.org/places/">
+    <meta property="og:title" content="Places | PainMap">
+    <meta property="og:description" content="Search PainMap places, inspect coverage status, and open the full place index for atlas release 2026-05-31.atlas.2.">
+    <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://painmap.org/places/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Places | PainMap">
+    <meta name="twitter:description" content="Search PainMap places, inspect coverage status, and open the full place index for atlas release 2026-05-31.atlas.2.">
+    <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-2ynfUgF7SxQRKHHfmfYE+2xb3kSdLyF50duAGFqsRmDRpDv1UB4GY2ilw7XxzBl0" crossorigin="anonymous">
+      <script type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://painmap.org/places/#page","name":"Places | PainMap","url":"https://painmap.org/places/","description":"Search PainMap places, inspect coverage status, and open the full place index for atlas release 2026-05-31.atlas.2."},{"@type":"BreadcrumbList","@id":"https://painmap.org/places/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"PainMap","item":"https://painmap.org"},{"@type":"ListItem","position":2,"name":"Places","item":"https://painmap.org/places/"}]}]}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/places/">Places</a>
+          <a href="/compare/">Compare</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <main id="main-content" class="route-page">
+        <section class="route-panel route-hero" aria-labelledby="places-title">
+          <div>
+            <p class="label">Places</p>
+            <h1 id="places-title">Atlas coverage by place</h1>
+          </div>
+          <p class="route-copy">
+            PainMap now exposes a full release place index. Boundary coverage is broad; canonical measurement rows remain explicitly labeled so readers can separate indexed places from places with release measurements.
+          </p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="coverage-title">
+          <div class="section-intro">
+            <p class="label">Coverage today</p>
+            <h2 id="coverage-title">What the current release covers</h2>
+          </div>
+          <div class="coverage-grid">
+            <article class="fact-card">
+              <span class="fact-label">Boundary-indexed places</span>
+              <strong>242</strong>
+              <p>World plus 241 Natural Earth country features.</p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">Canonical measurement profiles</span>
+              <strong>2 countries</strong>
+              <p>Brazil and India have country measurement profiles in this release.</p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">Release rows</span>
+              <strong>8 measurements</strong>
+              <p>Proxy, priority-overlay, and world reference rows with confidence bounds and source IDs.</p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">ADM1 status</span>
+              <strong>Runtime boundary overlay</strong>
+              <p>ADM1 geometry is still loaded on demand from geoBoundaries and marked separately from release measurements.</p>
+            </article>
+          </div>
+          <div class="route-actions">
+            <a class="solid-button" href="/v1/places/index.json">Open place index JSON</a>
+            <a class="ghost-link" href="/v1/coverage.json">Open coverage JSON</a>
+            <a class="ghost-link" href="/#explore-country">Search the atlas</a>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="read-places-title">
+          <div class="route-grid">
+            <article class="route-card">
+              <p class="issue-tag">Snapshot</p>
+              <h2 id="read-places-title">Release artifacts are immutable</h2>
+              <p>Use release-scoped JSON when you need a citation or repeatable analysis.</p>
+            </article>
+            <article class="route-card">
+              <p class="issue-tag">Live overlay</p>
+              <h2>Runtime values are labeled</h2>
+              <p>The homepage may refresh public-source context, but visible values keep evidence kind, source vintage, and uncertainty attached.</p>
+            </article>
+            <article class="route-card">
+              <p class="issue-tag">Table first</p>
+              <h2>Search is the complete path</h2>
+              <p>The homepage search and data tables provide the non-map workflow for country and ADM1 context.</p>
+            </article>
+          </div>
+          <div class="route-actions">
+            <a class="ghost-link" href="/place/BRA/">Brazil profile</a>
+            <a class="ghost-link" href="/place/IND/">India profile</a>
+            <a class="ghost-link" href="/dataset/place-measurements/">Review measurements</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="Privacy Policy | PainMap">
     <meta name="twitter:description" content="PainMap privacy policy for the public static research site.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../../styles.css" integrity="sha384-0xu3Ra9QdnFGUIVl4iiG9bxAQPqA1XBDaA6rDWDLI8azV6b0Wm3VfNiQi7XUYkBb" crossorigin="anonymous">
+<link rel="stylesheet" href="../../styles.css" integrity="sha384-2ynfUgF7SxQRKHHfmfYE+2xb3kSdLyF50duAGFqsRmDRpDv1UB4GY2ilw7XxzBl0" crossorigin="anonymous">
       <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"WebPage","name":"Privacy Policy | PainMap","url":"https://painmap.org/policies/privacy/","description":"PainMap privacy policy for the public static research site."}
     </script>
@@ -29,7 +29,7 @@
         <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
         <nav class="site-nav" aria-label="Site sections">
           <a href="/atlas/">Atlas</a>
-          <a href="/countries/">Places</a>
+          <a href="/places/">Places</a>
           <a href="/compare/">Compare</a>
           <a href="/events/">Events</a>
           <a href="/methods/">Methods</a>
@@ -53,8 +53,9 @@
           <ul class="route-list">
             <li>No personal-data workflow is part of this public site.</li>
             <li>No symptom entry, patient account, saved view, form submission, or payment flow is provided.</li>
-            <li>No analytics tracker is currently installed.</li>
-            <li>If privacy-preserving analytics are added later, event names should be limited to route_view, atlas_place_selected, dataset_download, compare_opened, and release_manifest_opened, with no user ids, no precise location, and no personal-health fields.</li>
+            <li>Privacy-preserving telemetry is limited to the public event vocabulary at <a href="/data/analytics-events.json">/data/analytics-events.json</a>.</li>
+            <li>Allowed events include route_view, atlas_place_selected, dataset_download, compare_opened, release_manifest_opened, place_search_started, zero_result_search, data_fetch_timing, and web_vital.</li>
+            <li>Telemetry does not include user ids, precise user location, query strings, personal-health fields, or cross-site tracking. The static site has no default network collector.</li>
             <li>Any future personal-data product should use a separate compliant service boundary and its own policy.</li>
           </ul>
         </section>

@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="Developers | PainMap">
     <meta name="twitter:description" content="Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../styles.css" integrity="sha384-0xu3Ra9QdnFGUIVl4iiG9bxAQPqA1XBDaA6rDWDLI8azV6b0Wm3VfNiQi7XUYkBb" crossorigin="anonymous">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-2ynfUgF7SxQRKHHfmfYE+2xb3kSdLyF50duAGFqsRmDRpDv1UB4GY2ilw7XxzBl0" crossorigin="anonymous">
       <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"TechArticle","name":"Developers | PainMap","url":"https://painmap.org/developers/","description":"Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution."}
     </script>
@@ -29,7 +29,7 @@
         <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
         <nav class="site-nav" aria-label="Site sections">
           <a href="/atlas/">Atlas</a>
-          <a href="/countries/">Places</a>
+          <a href="/places/">Places</a>
           <a href="/compare/">Compare</a>
           <a href="/events/">Events</a>
           <a href="/methods/">Methods</a>
@@ -57,11 +57,14 @@
           <pre class="code-block"><code>curl https://painmap.org/v1/releases.json
 curl https://painmap.org/releases/2026-05-31/manifest.json
 curl https://painmap.org/data/openapi.json
+curl https://painmap.org/v1/places/index.json
+curl https://painmap.org/v1/coverage.json
 curl https://painmap.org/data/place-measurements.json
 curl https://painmap.org/v1/places/BRA.json
-curl https://painmap.org/data/provenance-registry.json</code></pre>
+curl https://painmap.org/data/provenance-registry.json
+curl https://painmap.org/schemas/place-index.schema.json</code></pre>
           <p class="route-copy">
-            The API has no authentication and no write side. Use immutable release URLs for reproducible work; use latest aliases only when freshness matters more than exact replay.
+            The API has no authentication and no write side. Use immutable release URLs for reproducible work; use latest aliases only when freshness matters more than exact replay. Validate client assumptions against the JSON Schemas and coverage status before treating a place as measured.
           </p>
         </section>
 
@@ -81,6 +84,11 @@ curl https://painmap.org/data/provenance-registry.json</code></pre>
               <span class="evidence-badge">security</span>
               <h2>Headers</h2>
               <p>The repository includes a static-host header policy and a Vercel header config for CSP, referrer policy, nosniff, and permissions policy.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">budgets</span>
+              <h2>Field performance</h2>
+              <p>LCP, INP, and CLS budgets are published with the release, alongside endpoint smoke targets and telemetry event names.</p>
             </article>
           </div>
           <div class="route-actions">

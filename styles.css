@@ -172,6 +172,7 @@ article[id] {
 
 .topbar,
 .audience-panel,
+.coverage-panel,
 .globe-panel,
 .detail-panel,
 .pain-panel,
@@ -257,11 +258,13 @@ p {
 }
 
 .audience-panel,
+.coverage-panel,
 .governance-panel {
   padding: 1.4rem;
 }
 
 .audience-grid,
+.coverage-grid,
 .policy-grid,
 .method-grid {
   display: grid;
@@ -271,6 +274,10 @@ p {
 
 .audience-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.coverage-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .method-grid,
@@ -341,6 +348,10 @@ p {
 }
 
 .audience-panel {
+  order: 0;
+}
+
+.coverage-panel {
   order: 0;
 }
 
@@ -1338,6 +1349,7 @@ p {
   .topbar,
   .route-hero,
   .audience-grid,
+  .coverage-grid,
   .layout,
   .pain-head,
   .pain-layout,
@@ -1361,6 +1373,7 @@ p {
 
   .topbar,
   .audience-panel,
+  .coverage-panel,
   .globe-panel,
   .detail-panel,
   .pain-panel,

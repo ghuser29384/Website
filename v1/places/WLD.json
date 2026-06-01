@@ -1,0 +1,90 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "place_id": "WLD",
+  "place_name": "World",
+  "parent_place_id": null,
+  "iso3": "WLD",
+  "geometry_level": "world",
+  "profile_url": null,
+  "data_url": "https://painmap.org/v1/places/WLD.json",
+  "compare_url": "https://painmap.org/compare/",
+  "measurements_url": "https://painmap.org/v1/places/WLD/measurements.json",
+  "evidence_kinds": [
+    "proxy"
+  ],
+  "source_ids": [
+    "fishcount-aquaculture",
+    "owid-livestock",
+    "painmap-welfare-assumptions",
+    "world-bank-land-area"
+  ],
+  "measurements": [
+    {
+      "measurement_id": "2026-05-31.atlas.2:WLD:factory-farmed-animals",
+      "release_id": "2026-05-31.atlas.2",
+      "place_id": "WLD",
+      "place_name": "World",
+      "parent_place_id": null,
+      "iso3": "WLD",
+      "geometry_level": "world",
+      "layer_id": "factory-farmed-animals",
+      "layer_name": "Factory-farmed animals",
+      "evidence_kind": "proxy",
+      "value_type": "normalized_proxy_score",
+      "raw_value": 1,
+      "normalized_value": 1,
+      "display_value": "1.00 global reference proxy",
+      "unit_label": "0-1 normalized proxy score",
+      "ranking_mode": "higher_proxy_score_more_attention",
+      "rank_value": 1,
+      "confidence_low": 0.78,
+      "confidence_high": 1,
+      "uncertainty_class": "low",
+      "source_ids": [
+        "owid-livestock",
+        "fishcount-aquaculture",
+        "painmap-welfare-assumptions"
+      ],
+      "provenance_id": "place-measurements",
+      "source_vintage": "2026-05-31 release; runtime OWID/Fishcount overlay optional",
+      "method_note": "Global reference proxy for slaughter, aquaculture, and standing-population counts weighted by stated welfare-range assumptions.",
+      "license_id": "owid-cc-by",
+      "data_license_uri": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Uses public Our World in Data/Fishcount-style source rows and PainMap stated welfare assumptions.",
+      "download_url": "https://painmap.org/data/place-measurements.json"
+    },
+    {
+      "measurement_id": "2026-05-31.atlas.2:WLD:wild-insects",
+      "release_id": "2026-05-31.atlas.2",
+      "place_id": "WLD",
+      "place_name": "World",
+      "parent_place_id": null,
+      "iso3": "WLD",
+      "geometry_level": "world",
+      "layer_id": "wild-insects",
+      "layer_name": "Wild terrestrial arthropod scale",
+      "evidence_kind": "proxy",
+      "value_type": "normalized_proxy_score",
+      "raw_value": 0.96,
+      "normalized_value": 0.96,
+      "display_value": "0.96 land-area and density proxy",
+      "unit_label": "0-1 normalized proxy score",
+      "ranking_mode": "higher_proxy_score_more_attention",
+      "rank_value": 0.96,
+      "confidence_low": 0.55,
+      "confidence_high": 1,
+      "uncertainty_class": "very-low",
+      "source_ids": [
+        "world-bank-land-area",
+        "painmap-welfare-assumptions"
+      ],
+      "provenance_id": "place-measurements",
+      "source_vintage": "2026-05-31 release",
+      "method_note": "Directional scale context only; uses land area and published density anchors rather than direct welfare measurement.",
+      "license_id": "world-bank-terms",
+      "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "attribution": "Uses public World Bank land-area context and PainMap stated welfare assumptions.",
+      "download_url": "https://painmap.org/data/place-measurements.json"
+    }
+  ]
+}

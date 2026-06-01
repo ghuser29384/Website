@@ -8,6 +8,8 @@ if (!d3 || !topojsonFeature) {
 const COUNTRY_DATA_URL = "data/natural-earth-countries.geojson";
 const COUNTRY_DATA_FALLBACK_URL = "data/countries-lite.geojson";
 const GSAP_ADM1_DATA_URL = "data/gsap-adm1-2023.json";
+const RELEASE_ID = "2026-05-31.atlas.2";
+const TELEMETRY_ENDPOINT = document.documentElement.dataset.telemetryEndpoint || "";
 const GLOBE_ROTATION = [-18, -14, 0];
 const width = 900;
 const height = 900;
@@ -2091,12 +2093,200 @@ function mediaGithubUrl(url) {
   return url;
 }
 
+const TELEMETRY_EVENTS = new Set([
+  "route_view",
+  "atlas_place_selected",
+  "dataset_download",
+  "compare_opened",
+  "release_manifest_opened",
+  "place_search_started",
+  "zero_result_search",
+  "data_fetch_timing",
+  "web_vital",
+]);
+
+function currentRoutePath() {
+  return window.location.pathname || "/";
+}
+
+function telemetryTarget(url) {
+  try {
+    const parsed = new URL(url, window.location.href);
+
+    if (parsed.origin === window.location.origin) {
+      return parsed.pathname;
+    }
+
+    return parsed.hostname;
+  } catch {
+    return "unknown";
+  }
+}
+
+function datasetFormat(pathname) {
+  if (pathname.endsWith(".csv")) {
+    return "csv";
+  }
+
+  if (pathname.endsWith(".geojson")) {
+    return "geojson";
+  }
+
+  if (pathname.endsWith(".json")) {
+    return "json";
+  }
+
+  if (pathname.endsWith(".txt")) {
+    return "txt";
+  }
+
+  return "html";
+}
+
+function recordTelemetry(eventName, fields = {}) {
+  if (!TELEMETRY_EVENTS.has(eventName)) {
+    return;
+  }
+
+  const payload = {
+    event: eventName,
+    release_id: RELEASE_ID,
+    route: currentRoutePath(),
+    timestamp: new Date().toISOString(),
+    ...fields,
+  };
+
+  window.dispatchEvent(new CustomEvent("painmap:telemetry", { detail: payload }));
+
+  if (!TELEMETRY_ENDPOINT || !navigator.sendBeacon) {
+    return;
+  }
+
+  navigator.sendBeacon(TELEMETRY_ENDPOINT, JSON.stringify(payload));
+}
+
+function rateWebVital(metric, value) {
+  if (metric === "LCP") {
+    return value <= 2500 ? "pass" : "over_budget";
+  }
+
+  if (metric === "INP") {
+    return value <= 200 ? "pass" : "over_budget";
+  }
+
+  if (metric === "CLS") {
+    return value <= 0.1 ? "pass" : "over_budget";
+  }
+
+  return "observed";
+}
+
+function recordWebVital(metric, value) {
+  recordTelemetry("web_vital", {
+    metric,
+    value: Number(value.toFixed(metric === "CLS" ? 3 : 0)),
+    rating: rateWebVital(metric, value),
+  });
+}
+
+function initPerformanceTelemetry() {
+  if (!("PerformanceObserver" in window)) {
+    return;
+  }
+
+  try {
+    const lcpObserver = new PerformanceObserver((list) => {
+      const entries = list.getEntries();
+      const latest = entries[entries.length - 1];
+
+      if (latest) {
+        recordWebVital("LCP", latest.startTime);
+      }
+    });
+    lcpObserver.observe({ type: "largest-contentful-paint", buffered: true });
+  } catch {
+    // Some browsers do not expose all performance entry types.
+  }
+
+  try {
+    let cls = 0;
+    const clsObserver = new PerformanceObserver((list) => {
+      for (const entry of list.getEntries()) {
+        if (!entry.hadRecentInput) {
+          cls += entry.value;
+        }
+      }
+
+      recordWebVital("CLS", cls);
+    });
+    clsObserver.observe({ type: "layout-shift", buffered: true });
+  } catch {
+    // Some browsers do not expose all performance entry types.
+  }
+
+  try {
+    const inpObserver = new PerformanceObserver((list) => {
+      for (const entry of list.getEntries()) {
+        if (entry.interactionId && entry.duration) {
+          recordWebVital("INP", entry.duration);
+        }
+      }
+    });
+    inpObserver.observe({ type: "event", buffered: true, durationThreshold: 40 });
+  } catch {
+    // Some browsers do not expose all performance entry types.
+  }
+}
+
+function setupTelemetryClickTracking() {
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest?.("a[href]");
+
+    if (!link) {
+      return;
+    }
+
+    const url = new URL(link.href, window.location.href);
+    const pathname = url.pathname;
+
+    if (pathname === "/compare/" || pathname.startsWith("/compare/")) {
+      recordTelemetry("compare_opened", { route: pathname });
+    }
+
+    if (pathname.endsWith("/manifest.json")) {
+      recordTelemetry("release_manifest_opened", { path: pathname });
+    }
+
+    if (
+      pathname.startsWith("/data/") ||
+      pathname.startsWith("/v1/") ||
+      pathname.startsWith("/schemas/") ||
+      pathname.endsWith(".csv") ||
+      pathname.endsWith(".geojson")
+    ) {
+      recordTelemetry("dataset_download", {
+        path: pathname,
+        format: datasetFormat(pathname),
+      });
+    }
+  });
+}
+
 async function fetchJson(url, timeoutMs = 25000) {
   const controller = new AbortController();
   const timeout = window.setTimeout(() => controller.abort(), timeoutMs);
+  const startedAt = performance.now();
+  let timingRecorded = false;
 
   try {
     const response = await fetch(url, { signal: controller.signal });
+    const duration = Math.round(performance.now() - startedAt);
+    recordTelemetry("data_fetch_timing", {
+      target: telemetryTarget(url),
+      duration_ms: duration,
+      ok: response.ok,
+    });
+    timingRecorded = true;
 
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
@@ -2104,6 +2294,14 @@ async function fetchJson(url, timeoutMs = 25000) {
 
     return await response.json();
   } catch (error) {
+    if (!timingRecorded) {
+      recordTelemetry("data_fetch_timing", {
+        target: telemetryTarget(url),
+        duration_ms: Math.round(performance.now() - startedAt),
+        ok: false,
+      });
+    }
+
     if (error.name === "AbortError") {
       throw new Error("Request timed out");
     }
@@ -4791,6 +4989,11 @@ async function loadCountryIssueData(feature) {
 }
 
 async function selectCountry(feature) {
+  recordTelemetry("atlas_place_selected", {
+    place_id: countryIso(feature.properties) || "unknown",
+    geometry_level: "country",
+    parent_place_id: "WLD",
+  });
   state.selectedCountry = feature;
   state.selectedProvince = null;
   state.countryIssueData = { loading: true };
@@ -4815,10 +5018,18 @@ async function selectProvince(countryFeature, provinceTarget) {
       : state.provinceFeatures.find((feature) => sameProvinceFeature(feature, provinceTarget)) || null;
 
   if (!resolvedProvince) {
+    recordTelemetry("zero_result_search", {
+      query_length: typeof provinceTarget === "string" ? provinceTarget.length : 0,
+    });
     setStatus(`No province or state matched "${typeof provinceTarget === "string" ? provinceTarget : provinceName(provinceTarget)}" inside ${countryName(countryFeature.properties)}.`);
     return;
   }
 
+  recordTelemetry("atlas_place_selected", {
+    place_id: `${targetIso || "unknown"}:${provinceName(resolvedProvince)}`,
+    geometry_level: "adm1",
+    parent_place_id: targetIso || null,
+  });
   state.selectedProvince = resolvedProvince;
   state.provinceIssueData = { loading: true };
   countrySearchInput.value = `${provinceName(resolvedProvince)}, ${countryName(countryFeature.properties)}`;
@@ -4845,6 +5056,8 @@ async function handleCountrySearch(event) {
     return;
   }
 
+  recordTelemetry("place_search_started", { query_length: rawQuery.length });
+
   if (state.selectedCountry && state.provinceFeatures.length) {
     const provinceMatch = findProvince(state.provinceFeatures, rawQuery);
 
@@ -4860,6 +5073,7 @@ async function handleCountrySearch(event) {
     const countryMatch = findCountry(provinceCountryQuery.countryQuery);
 
     if (!countryMatch) {
+      recordTelemetry("zero_result_search", { query_length: rawQuery.length });
       setStatus(`No country matched "${provinceCountryQuery.countryQuery}".`);
       return;
     }
@@ -4871,6 +5085,7 @@ async function handleCountrySearch(event) {
   const match = findCountry(rawQuery);
 
   if (!match) {
+    recordTelemetry("zero_result_search", { query_length: rawQuery.length });
     setStatus(`No country or province matched "${rawQuery}".`);
     return;
   }
@@ -5006,6 +5221,9 @@ function setupInteraction() {
 }
 
 async function init() {
+  recordTelemetry("route_view");
+  initPerformanceTelemetry();
+  setupTelemetryClickTracking();
   setStatus("Loading Natural Earth country boundaries...");
   renderPainVisuals();
   renderMoralWeightNotes();

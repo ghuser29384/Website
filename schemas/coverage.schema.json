@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://painmap.org/schemas/coverage.schema.json",
+  "title": "PainMap release coverage",
+  "type": "object",
+  "required": [
+    "release_id",
+    "generated_at",
+    "coverage_status",
+    "known_sparse_areas"
+  ],
+  "properties": {
+    "release_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "last_release_date": {
+      "type": "string"
+    },
+    "coverage_status": {
+      "type": "object"
+    },
+    "known_sparse_areas": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

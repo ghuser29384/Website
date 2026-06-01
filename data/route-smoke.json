@@ -20,11 +20,19 @@
     },
     {
       "key": "places",
+      "path": "/places/",
+      "file": "places/index.html",
+      "expected_title": "Places | PainMap",
+      "expected_description": "Search PainMap places, inspect coverage status, and open the full place index for atlas release 2026-05-31.atlas.2.",
+      "expected_canonical": "https://painmap.org/places/"
+    },
+    {
+      "key": "legacy-countries",
       "path": "/countries/",
       "file": "countries/index.html",
-      "expected_title": "Places | PainMap",
-      "expected_description": "Search PainMap places as atlas proxy layers with table-first access and an equal-area map view.",
-      "expected_canonical": "https://painmap.org/countries/"
+      "expected_title": "Countries Legacy Route | PainMap",
+      "expected_description": "Legacy alias for PainMap places. Use the canonical /places/ route for place search, coverage status, and place index links.",
+      "expected_canonical": "https://painmap.org/places/"
     },
     {
       "key": "compare",

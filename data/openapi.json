@@ -62,6 +62,111 @@
         }
       }
     },
+    "/v1/places/index.json": {
+      "get": {
+        "summary": "Get full release place index",
+        "responses": {
+          "200": {
+            "description": "Place index JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PlaceIndex"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/coverage.json": {
+      "get": {
+        "summary": "Get release coverage status",
+        "responses": {
+          "200": {
+            "description": "Coverage status JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CoverageStatus"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/places/WLD.json": {
+      "get": {
+        "summary": "Get world place profile",
+        "responses": {
+          "200": {
+            "description": "Place profile JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/places/{place_id}.json": {
+      "get": {
+        "summary": "Get release place profile when canonical measurements exist",
+        "parameters": [
+          {
+            "name": "place_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Place profile JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/places/{place_id}/measurements.json": {
+      "get": {
+        "summary": "Get release measurements for a place profile",
+        "parameters": [
+          {
+            "name": "place_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Place measurements for one place",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/places/BRA.json": {
       "get": {
         "summary": "Get Brazil place profile",
@@ -214,10 +319,129 @@
           }
         }
       }
+    },
+    "/data/analytics-events.json": {
+      "get": {
+        "summary": "Get privacy-preserving telemetry event vocabulary",
+        "responses": {
+          "200": {
+            "description": "Analytics event contract JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/performance-budgets.json": {
+      "get": {
+        "summary": "Get field performance budgets",
+        "responses": {
+          "200": {
+            "description": "Performance budget JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/endpoint-smoke.json": {
+      "get": {
+        "summary": "Get endpoint smoke-test manifest",
+        "responses": {
+          "200": {
+            "description": "Endpoint smoke manifest JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/schemas/place-index.schema.json": {
+      "get": {
+        "summary": "Get JSON Schema for the place index",
+        "responses": {
+          "200": {
+            "description": "Place index JSON Schema",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/schemas/place-measurements.schema.json": {
+      "get": {
+        "summary": "Get JSON Schema for place measurements",
+        "responses": {
+          "200": {
+            "description": "Place measurements JSON Schema",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/schemas/coverage.schema.json": {
+      "get": {
+        "summary": "Get JSON Schema for coverage status",
+        "responses": {
+          "200": {
+            "description": "Coverage JSON Schema",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "PlaceIndex": {
+        "type": "object",
+        "required": [
+          "release_id",
+          "count",
+          "coverage_summary",
+          "items"
+        ]
+      },
+      "CoverageStatus": {
+        "type": "object",
+        "required": [
+          "release_id",
+          "coverage_status",
+          "known_sparse_areas"
+        ]
+      },
       "ProvenanceRegistry": {
         "type": "object",
         "required": [

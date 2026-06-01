@@ -1,0 +1,85 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "collection_mode": "Privacy-preserving first-party event vocabulary. The static site dispatches local painmap:telemetry events and only sends to a collector when a first-party telemetry endpoint is explicitly configured.",
+  "privacy": {
+    "no_user_ids": true,
+    "no_precise_location": true,
+    "no_personal_health_fields": true,
+    "no_query_strings": true,
+    "no_cross_site_tracker": true,
+    "default_network_collection": false
+  },
+  "allowed_events": [
+    {
+      "event": "route_view",
+      "fields": [
+        "route",
+        "release_id"
+      ]
+    },
+    {
+      "event": "atlas_place_selected",
+      "fields": [
+        "place_id",
+        "geometry_level",
+        "parent_place_id",
+        "release_id"
+      ]
+    },
+    {
+      "event": "dataset_download",
+      "fields": [
+        "path",
+        "format",
+        "release_id"
+      ]
+    },
+    {
+      "event": "compare_opened",
+      "fields": [
+        "route",
+        "release_id"
+      ]
+    },
+    {
+      "event": "release_manifest_opened",
+      "fields": [
+        "path",
+        "release_id"
+      ]
+    },
+    {
+      "event": "place_search_started",
+      "fields": [
+        "query_length",
+        "release_id"
+      ]
+    },
+    {
+      "event": "zero_result_search",
+      "fields": [
+        "query_length",
+        "release_id"
+      ]
+    },
+    {
+      "event": "data_fetch_timing",
+      "fields": [
+        "target",
+        "duration_ms",
+        "ok",
+        "release_id"
+      ]
+    },
+    {
+      "event": "web_vital",
+      "fields": [
+        "metric",
+        "value",
+        "rating",
+        "release_id"
+      ]
+    }
+  ]
+}

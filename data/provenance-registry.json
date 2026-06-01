@@ -229,6 +229,14 @@
         {
           "format": "GeoJSON",
           "url": "https://painmap.org/data/places.geojson"
+        },
+        {
+          "format": "JSON",
+          "url": "https://painmap.org/v1/places/index.json"
+        },
+        {
+          "format": "JSON",
+          "url": "https://painmap.org/v1/coverage.json"
         }
       ],
       "sources": ["owid-livestock", "fishcount-aquaculture", "world-bank-indicators", "painmap-welfare-assumptions", "painmap-priority-review"]
@@ -246,7 +254,7 @@
         },
         {
           "format": "HTML",
-          "url": "https://painmap.org/countries/"
+          "url": "https://painmap.org/places/"
         }
       ],
       "sources": ["natural-earth-admin0", "geoboundaries-adm1"]

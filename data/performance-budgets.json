@@ -1,0 +1,17 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "field_budgets": {
+    "largest_contentful_paint_ms": 2500,
+    "interaction_to_next_paint_ms": 200,
+    "cumulative_layout_shift": 0.1
+  },
+  "instrumentation": {
+    "local_event_name": "painmap:telemetry",
+    "collector_endpoint": null,
+    "route_event": "route_view",
+    "fetch_timing_event": "data_fetch_timing",
+    "web_vital_event": "web_vital"
+  },
+  "ci_expectation": "Keep npm run check passing and review these budgets before any release that changes atlas rendering, map data loading, or route-critical assets."
+}

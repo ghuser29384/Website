@@ -37,6 +37,16 @@
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/v1/places/index.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/v1/coverage.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
           "dcat:downloadURL": "https://painmap.org/releases/2026-05-31/manifest.json"
         }
       ]
@@ -76,6 +86,40 @@
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
           "dcat:accessURL": "https://painmap.org/v1/sources.json"
+        }
+      ]
+    },
+    {
+      "@type": "dcat:Dataset",
+      "dct:identifier": "developer-contracts",
+      "dct:title": "PainMap developer contracts and field budgets",
+      "dct:license": "https://painmap.org/policies/terms/",
+      "dct:hasVersion": "2026-05-31.atlas.2",
+      "dcat:distribution": [
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/schema+json",
+          "dcat:downloadURL": "https://painmap.org/schemas/place-index.schema.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/schema+json",
+          "dcat:downloadURL": "https://painmap.org/schemas/place-measurements.schema.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/schema+json",
+          "dcat:downloadURL": "https://painmap.org/schemas/coverage.schema.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/data/performance-budgets.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/data/endpoint-smoke.json"
         }
       ]
     }

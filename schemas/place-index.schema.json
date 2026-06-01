@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://painmap.org/schemas/place-index.schema.json",
+  "title": "PainMap place index",
+  "type": "object",
+  "required": [
+    "release_id",
+    "generated_at",
+    "count",
+    "coverage_summary",
+    "items"
+  ],
+  "properties": {
+    "release_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "coverage_summary": {
+      "type": "object"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "place_id",
+          "place_name",
+          "geometry_level",
+          "coverage_status",
+          "latest_release_id"
+        ],
+        "properties": {
+          "place_id": {
+            "type": "string"
+          },
+          "place_name": {
+            "type": "string"
+          },
+          "parent_place_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "iso3": {
+            "type": "string"
+          },
+          "geometry_level": {
+            "enum": [
+              "world",
+              "country",
+              "adm1"
+            ]
+          },
+          "boundary_indexed": {
+            "type": "boolean"
+          },
+          "coverage_status": {
+            "enum": [
+              "canonical_measurements",
+              "boundary_index_only"
+            ]
+          },
+          "canonical_measurement_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "available_layers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_kinds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "page_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "profile_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "measurements_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "latest_release_id": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "endpoints": [
+    {
+      "path": "/",
+      "url": "https://painmap.org/",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/html",
+      "purpose": "Homepage atlas entry"
+    },
+    {
+      "path": "/places/",
+      "url": "https://painmap.org/places/",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/html",
+      "purpose": "Canonical place index route"
+    },
+    {
+      "path": "/countries/",
+      "url": "https://painmap.org/countries/",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/html",
+      "purpose": "Legacy route alias for places"
+    },
+    {
+      "path": "/compare/",
+      "url": "https://painmap.org/compare/",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/html",
+      "purpose": "Compare route"
+    },
+    {
+      "path": "/data/openapi.json",
+      "url": "https://painmap.org/data/openapi.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "OpenAPI contract"
+    },
+    {
+      "path": "/data/dcat.json",
+      "url": "https://painmap.org/data/dcat.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/ld+json",
+      "purpose": "DCAT catalog"
+    },
+    {
+      "path": "/v1/places/index.json",
+      "url": "https://painmap.org/v1/places/index.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Full release place index"
+    },
+    {
+      "path": "/v1/coverage.json",
+      "url": "https://painmap.org/v1/coverage.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Release coverage status"
+    },
+    {
+      "path": "/releases/2026-05-31/manifest.json",
+      "url": "https://painmap.org/releases/2026-05-31/manifest.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Immutable release manifest"
+    },
+    {
+      "path": "/.well-known/security.txt",
+      "url": "https://painmap.org/.well-known/security.txt",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/plain",
+      "purpose": "Security contact policy"
+    }
+  ]
+}

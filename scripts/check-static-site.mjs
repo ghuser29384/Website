@@ -13,13 +13,23 @@ const expectedExports = [
   "data/place-measurements.json",
   "data/place-measurements.csv",
   "data/places.geojson",
+  "data/analytics-events.json",
+  "data/performance-budgets.json",
+  "data/endpoint-smoke.json",
   "data/countries-lite.geojson",
   "data/natural-earth-countries.geojson",
   "data/openapi.json",
   "data/dcat.json",
+  "schemas/place-index.schema.json",
+  "schemas/place-measurements.schema.json",
+  "schemas/coverage.schema.json",
   "v1/releases.json",
   "v1/layers.json",
   "v1/sources.json",
+  "v1/coverage.json",
+  "v1/places/index.json",
+  "v1/places/WLD.json",
+  "v1/places/WLD/measurements.json",
   "v1/places/BRA.json",
   "v1/places/BRA/measurements.json",
   "v1/places/IND.json",
@@ -110,6 +120,10 @@ function routeUrl(route) {
   return `${site}${route.path}`;
 }
 
+function routeCanonicalUrl(route) {
+  return `${site}${route.canonicalPath || route.path}`;
+}
+
 for (const file of expectedRoutes) {
   if (!existsSync(absolute(file))) {
     failures.push(`Missing route file from data/routes.json: ${file}`);
@@ -147,7 +161,7 @@ for (const route of routeManifest.routes) {
   }
 
   const html = read(file);
-  const canonical = routeUrl(route);
+  const canonical = routeCanonicalUrl(route);
 
   expectPattern(file, html, new RegExp(`<title>${escapeRegExp(route.title)}</title>`), "route-manifest title");
   expectPattern(
@@ -205,6 +219,12 @@ expectPattern(
   "current script.js SRI"
 );
 
+const script = read("script.js");
+expectPattern("script.js", script, /recordTelemetry\("route_view"\)/, "route_view telemetry instrumentation");
+expectPattern("script.js", script, /recordTelemetry\("atlas_place_selected"/, "atlas_place_selected telemetry instrumentation");
+expectPattern("script.js", script, /PerformanceObserver/, "field performance observer instrumentation");
+expectPattern("script.js", script, /TELEMETRY_ENDPOINT = document\.documentElement\.dataset\.telemetryEndpoint \|\| ""/, "no default telemetry collector");
+
 const sitemap = read("sitemap.xml");
 for (const route of routeManifest.routes) {
   const url = routeUrl(route);
@@ -223,8 +243,115 @@ for (const route of routeManifest.routes) {
     continue;
   }
 
-  if (smokeRoute.file !== route.file || smokeRoute.expected_title !== route.title) {
+  if (
+    smokeRoute.file !== route.file ||
+    smokeRoute.expected_title !== route.title ||
+    smokeRoute.expected_canonical !== routeCanonicalUrl(route)
+  ) {
     failures.push(`data/route-smoke.json route mismatch for ${route.path}`);
+  }
+}
+
+if (!routeManifest.navigation.some((entry) => entry.label === "Places" && entry.path === "/places/")) {
+  failures.push("data/routes.json navigation must use canonical /places/ route");
+}
+
+if (!routeManifest.routes.some((entry) => entry.path === "/places/" && entry.file === "places/index.html")) {
+  failures.push("data/routes.json missing canonical /places/ route");
+}
+
+if (!routeManifest.routes.some((entry) => entry.path === "/countries/" && entry.file === "countries/index.html")) {
+  failures.push("data/routes.json missing legacy /countries/ alias route");
+}
+
+const placeIndex = readJson("v1/places/index.json");
+if (placeIndex.count !== placeIndex.items.length) {
+  failures.push("v1/places/index.json count does not match items length");
+}
+
+if (placeIndex.count < 200) {
+  failures.push("v1/places/index.json does not expose broad country coverage");
+}
+
+for (const placeId of ["WLD", "BRA", "IND"]) {
+  if (!placeIndex.items.some((item) => item.place_id === placeId)) {
+    failures.push(`v1/places/index.json missing ${placeId}`);
+  }
+}
+
+for (const placeId of ["BRA", "IND"]) {
+  const item = placeIndex.items.find((entry) => entry.place_id === placeId);
+
+  if (!item || item.coverage_status !== "canonical_measurements" || item.canonical_measurement_count < 1) {
+    failures.push(`v1/places/index.json must mark ${placeId} as canonical measurement coverage`);
+  }
+}
+
+if (!placeIndex.items.some((entry) => entry.coverage_status === "boundary_index_only")) {
+  failures.push("v1/places/index.json must expose boundary-index-only places");
+}
+
+const coverage = readJson("v1/coverage.json");
+if (coverage.coverage_status?.places_indexed !== placeIndex.count) {
+  failures.push("v1/coverage.json places_indexed does not match place index count");
+}
+
+if ((coverage.known_sparse_areas ?? []).length < 3) {
+  failures.push("v1/coverage.json must publish known sparse areas");
+}
+
+if (coverage.coverage_status?.evidence_layer_coverage?.direct !== 0) {
+  failures.push("v1/coverage.json direct evidence place coverage should be explicit for this release");
+}
+
+const analyticsEvents = readJson("data/analytics-events.json");
+for (const eventName of ["route_view", "atlas_place_selected", "dataset_download", "compare_opened", "release_manifest_opened"]) {
+  if (!analyticsEvents.allowed_events?.some((entry) => entry.event === eventName)) {
+    failures.push(`data/analytics-events.json missing required event ${eventName}`);
+  }
+}
+
+if (
+  analyticsEvents.privacy?.no_user_ids !== true ||
+  analyticsEvents.privacy?.no_precise_location !== true ||
+  analyticsEvents.privacy?.no_personal_health_fields !== true ||
+  analyticsEvents.privacy?.default_network_collection !== false
+) {
+  failures.push("data/analytics-events.json privacy controls are incomplete");
+}
+
+const performanceBudgets = readJson("data/performance-budgets.json");
+if (performanceBudgets.field_budgets?.largest_contentful_paint_ms > 2500) {
+  failures.push("LCP budget must be <= 2500ms");
+}
+
+if (performanceBudgets.field_budgets?.interaction_to_next_paint_ms > 200) {
+  failures.push("INP budget must be <= 200ms");
+}
+
+if (performanceBudgets.field_budgets?.cumulative_layout_shift > 0.1) {
+  failures.push("CLS budget must be <= 0.1");
+}
+
+const endpointSmoke = readJson("data/endpoint-smoke.json");
+for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/v1/places/index.json", "/releases/2026-05-31/manifest.json", "/.well-known/security.txt"]) {
+  if (!endpointSmoke.endpoints?.some((entry) => entry.path === requiredPath && entry.expected_status === 200)) {
+    failures.push(`data/endpoint-smoke.json missing required endpoint ${requiredPath}`);
+  }
+}
+
+for (const schemaFile of ["schemas/place-index.schema.json", "schemas/place-measurements.schema.json", "schemas/coverage.schema.json"]) {
+  const schema = readJson(schemaFile);
+
+  if (schema.$schema !== "https://json-schema.org/draft/2020-12/schema") {
+    failures.push(`${schemaFile} must use JSON Schema draft 2020-12`);
+  }
+}
+
+const openapi = readJson("data/openapi.json");
+for (const requiredPath of ["/v1/places/index.json", "/v1/coverage.json", "/schemas/place-index.schema.json"]) {
+  if (!openapi.paths?.[requiredPath]) {
+    failures.push(`data/openapi.json missing ${requiredPath}`);
   }
 }
 

@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="PainMap | Mixed-evidence atlas of pain sources by place">
     <meta name="twitter:description" content="PainMap is a place-first atlas for direct evidence, modeled estimates, proxy aggregates, and priority overlays about pain sources.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="styles.css" integrity="sha384-0xu3Ra9QdnFGUIVl4iiG9bxAQPqA1XBDaA6rDWDLI8azV6b0Wm3VfNiQi7XUYkBb" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css" integrity="sha384-2ynfUgF7SxQRKHHfmfYE+2xb3kSdLyF50duAGFqsRmDRpDv1UB4GY2ilw7XxzBl0" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -61,7 +61,7 @@
         <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
         <nav class="site-nav" aria-label="Site sections">
           <a href="/atlas/">Atlas</a>
-          <a href="/countries/">Places</a>
+          <a href="/places/">Places</a>
           <a href="/compare/">Compare</a>
           <a href="/events/">Events</a>
           <a href="/methods/">Methods</a>
@@ -119,8 +119,42 @@
         </div>
         <div class="trust-strip" aria-label="Site status">
           <span><strong>Scope</strong> Public research visualization, not medical or veterinary advice</span>
-          <span><strong>Data posture</strong> Static public data and runtime public APIs; no personal health data collection</span>
+          <span><strong>Data posture</strong> Immutable release artifacts plus labeled live public-source overlays; no personal health data collection</span>
           <span><strong>Updated</strong> May 31, 2026</span>
+        </div>
+      </section>
+
+      <section class="coverage-panel" aria-labelledby="coverage-title">
+        <div class="section-intro">
+          <p class="label">Release coverage</p>
+          <h2 id="coverage-title">Full place index, explicit sparse areas.</h2>
+        </div>
+        <div class="coverage-grid">
+          <article class="fact-card">
+            <span class="fact-label">Places indexed</span>
+            <strong>242</strong>
+            <p>World plus 241 country boundary features are listed in the release place index.</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Country profiles</span>
+            <strong>2</strong>
+            <p>Brazil and India currently have canonical country measurement profiles.</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Direct place evidence</span>
+            <strong>0 rows</strong>
+            <p>Direct welfare evidence is not yet represented as frozen country or ADM1 measurements.</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Last release</span>
+            <strong>2026-05-31</strong>
+            <p>Release manifests, checksums, schemas, and coverage JSON identify this snapshot.</p>
+          </article>
+        </div>
+        <div class="route-actions">
+          <a class="solid-button" href="/places/">Open places</a>
+          <a class="ghost-link" href="/v1/places/index.json">Place index JSON</a>
+          <a class="ghost-link" href="/v1/coverage.json">Coverage JSON</a>
         </div>
       </section>
 
@@ -470,8 +504,8 @@
             <h3>No personal data collection on this static site</h3>
             <p>
               PainMap is a public, static research visualization. It does not ask for names, emails, health symptoms,
-              accounts, or payment information. If privacy-first analytics are added later, they should be disclosed
-              here before launch.
+              accounts, or payment information. First-party telemetry is limited to route, dataset, place-selection,
+              and performance events listed in the public analytics vocabulary.
             </p>
           </article>
           <article class="policy-card" id="terms">
@@ -587,6 +621,6 @@
     </div>
         <script src="vendor/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
     <script src="vendor/topojson-client.v3.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
-    <script type="module" src="script.js" integrity="sha384-Xj01HS40AcJGOwI+CMyQYCd5dUMjob/xeEHM7sQVP5J88O+mN4Diu1zNsn+DsSfG" crossorigin="anonymous"></script>
+    <script type="module" src="script.js" integrity="sha384-PNZ6r0hEnotT2s+Uatsm5sTnatnM6Ev+LoXfVusu0JqUAB3bYHI1xEhOqiGcenWM" crossorigin="anonymous"></script>
   </body>
 </html>
