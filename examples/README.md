@@ -15,10 +15,12 @@ Both commands print the place name, release ID, measurement count, and layer sum
 
 - `/v1/places/index.json`: full place index and coverage status by place.
 - `/v1/coverage.json`: release coverage counts and known sparse areas.
+- `/data/release-modes.json`: Snapshot and live overlay mode contract with cache and network rules.
 - `/data/place-measurements.json`: canonical measurement rows.
 - `/v1/places/IND/neighbors.json`: release-scoped border neighbors and nearest centroid neighbors for a place.
 - `/ogc/collections/places/items.json`: OGC API - Features-style GeoJSON country feature collection.
 - `/schemas/place-index.schema.json`: JSON Schema for the place index.
+- `/schemas/release-modes.schema.json`: JSON Schema for the release mode contract.
 - `/schemas/ogc-place-features.schema.json`: JSON Schema for the OGC-style place features export.
 - `/releases/2026-05-31/manifest.json`: immutable release artifact manifest.
 - `/releases/2026-05-31/diff.json`: release diff baseline for comparing future releases.

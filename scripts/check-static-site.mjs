@@ -319,8 +319,22 @@ if (coverage.coverage_status?.evidence_layer_coverage?.direct !== 0) {
   failures.push("v1/coverage.json direct evidence place coverage should be explicit for this release");
 }
 
+const releaseModes = readJson("data/release-modes.json");
+if (releaseModes.default_mode !== "snapshot") {
+  failures.push("data/release-modes.json must default to snapshot mode");
+}
+
+for (const modeId of ["snapshot", "live"]) {
+  if (!releaseModes.modes?.some((entry) => entry.id === modeId && entry.cache_rule && entry.network_behavior)) {
+    failures.push(`data/release-modes.json missing ${modeId} mode cache and network rules`);
+  }
+}
+
+expectPattern("index.html", read("index.html"), /id="release-mode-snapshot"/, "snapshot release mode tab");
+expectPattern("index.html", read("index.html"), /id="release-mode-live"/, "live release mode tab");
+
 const analyticsEvents = readJson("data/analytics-events.json");
-for (const eventName of ["route_view", "atlas_place_selected", "dataset_download", "compare_opened", "release_manifest_opened"]) {
+for (const eventName of ["route_view", "atlas_place_selected", "dataset_download", "compare_opened", "release_manifest_opened", "release_mode_selected"]) {
   if (!analyticsEvents.allowed_events?.some((entry) => entry.event === eventName)) {
     failures.push(`data/analytics-events.json missing required event ${eventName}`);
   }
@@ -349,13 +363,13 @@ if (performanceBudgets.field_budgets?.cumulative_layout_shift > 0.1) {
 }
 
 const endpointSmoke = readJson("data/endpoint-smoke.json");
-for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/v1/places/index.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/.well-known/security.txt"]) {
+for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/v1/places/index.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/.well-known/security.txt"]) {
   if (!endpointSmoke.endpoints?.some((entry) => entry.path === requiredPath && entry.expected_status === 200)) {
     failures.push(`data/endpoint-smoke.json missing required endpoint ${requiredPath}`);
   }
 }
 
-for (const schemaFile of ["schemas/place-index.schema.json", "schemas/place-measurements.schema.json", "schemas/coverage.schema.json", "schemas/ogc-place-features.schema.json"]) {
+for (const schemaFile of ["schemas/place-index.schema.json", "schemas/place-measurements.schema.json", "schemas/coverage.schema.json", "schemas/release-modes.schema.json", "schemas/ogc-place-features.schema.json"]) {
   const schema = readJson(schemaFile);
 
   if (schema.$schema !== "https://json-schema.org/draft/2020-12/schema") {
@@ -364,7 +378,7 @@ for (const schemaFile of ["schemas/place-index.schema.json", "schemas/place-meas
 }
 
 const openapi = readJson("data/openapi.json");
-for (const requiredPath of ["/v1/places/index.json", "/v1/coverage.json", "/v1/places/{place_id}/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/releases/2026-05-31/diff.json", "/schemas/place-index.schema.json", "/schemas/ogc-place-features.schema.json"]) {
+for (const requiredPath of ["/v1/places/index.json", "/v1/coverage.json", "/v1/places/{place_id}/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/data/release-modes.json", "/releases/2026-05-31/diff.json", "/schemas/place-index.schema.json", "/schemas/release-modes.schema.json", "/schemas/ogc-place-features.schema.json"]) {
   if (!openapi.paths?.[requiredPath]) {
     failures.push(`data/openapi.json missing ${requiredPath}`);
   }
@@ -372,9 +386,11 @@ for (const requiredPath of ["/v1/places/index.json", "/v1/coverage.json", "/v1/p
 
 expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /export class PainMapClient/, "TypeScript PainMapClient export");
 expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async placeIndex\(\): Promise<PlaceIndex>/, "typed placeIndex client method");
+expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async releaseModes\(\): Promise<ReleaseModes>/, "typed releaseModes client method");
 expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async placeNeighbors\(/, "typed placeNeighbors client method");
 expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async ogcPlaceFeatures\(/, "typed ogcPlaceFeatures client method");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /class PainMapClient:/, "Python PainMapClient class");
+expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def release_modes\(/, "Python release_modes client method");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def place_neighbors\(/, "Python place_neighbors client method");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def ogc_place_features\(/, "Python ogc_place_features client method");
 expectPattern("examples/README.md", read("examples/README.md"), /node examples\/load-place-profile\.mjs IND/, "Node example command");

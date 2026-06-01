@@ -173,6 +173,7 @@ article[id] {
 
 .topbar,
 .audience-panel,
+.release-mode-panel,
 .coverage-panel,
 .globe-panel,
 .detail-panel,
@@ -259,12 +260,14 @@ p {
 }
 
 .audience-panel,
+.release-mode-panel,
 .coverage-panel,
 .governance-panel {
   padding: 1.4rem;
 }
 
 .audience-grid,
+.release-mode-panels,
 .coverage-grid,
 .policy-grid,
 .method-grid {
@@ -336,6 +339,87 @@ p {
   color: var(--text);
 }
 
+.release-mode-switch {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  gap: 0.3rem;
+  margin-top: 1.1rem;
+  border: 1px solid var(--line);
+  background: #eef3f2;
+  padding: 0.25rem;
+}
+
+.release-mode-tab {
+  min-height: 2.5rem;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  padding: 0.55rem 0.85rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.release-mode-tab[aria-selected="true"] {
+  border-color: var(--accent);
+  background: #fff;
+  color: var(--accent-strong);
+}
+
+.release-mode-panels {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.release-mode-card {
+  border-top: 1px solid var(--line);
+  padding-top: 0.95rem;
+}
+
+.release-mode-card[hidden] {
+  display: none;
+}
+
+.release-mode-card h3 {
+  font-size: 1.35rem;
+}
+
+.release-mode-facts {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.85rem 0 0;
+}
+
+.release-mode-facts div {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.release-mode-facts dt {
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.release-mode-facts dd {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.release-mode-status-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.2rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.release-mode-status {
+  max-width: 48rem;
+}
+
 .layout {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.9fr);
@@ -349,6 +433,10 @@ p {
 }
 
 .audience-panel {
+  order: 0;
+}
+
+.release-mode-panel {
   order: 0;
 }
 
@@ -1352,6 +1440,7 @@ p {
   .topbar,
   .route-hero,
   .audience-grid,
+  .release-mode-panels,
   .coverage-grid,
   .layout,
   .pain-head,
@@ -1376,6 +1465,7 @@ p {
 
   .topbar,
   .audience-panel,
+  .release-mode-panel,
   .coverage-panel,
   .globe-panel,
   .detail-panel,
@@ -1384,6 +1474,21 @@ p {
   .sources,
   .governance-panel {
     padding: 1rem;
+  }
+
+  .release-mode-switch,
+  .release-mode-status-row {
+    width: 100%;
+  }
+
+  .release-mode-switch {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .release-mode-status-row {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .site-header {

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://painmap.org/schemas/release-modes.schema.json",
+  "title": "PainMap release modes",
+  "type": "object",
+  "required": [
+    "release_id",
+    "generated_at",
+    "default_mode",
+    "modes",
+    "ui_contract"
+  ],
+  "properties": {
+    "release_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "default_mode": {
+      "enum": [
+        "snapshot",
+        "live"
+      ]
+    },
+    "local_event_name": {
+      "type": "string"
+    },
+    "modes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "badge",
+          "cache_rule",
+          "replay_rule",
+          "network_behavior"
+        ],
+        "properties": {
+          "id": {
+            "enum": [
+              "snapshot",
+              "live"
+            ]
+          },
+          "label": {
+            "type": "string"
+          },
+          "badge": {
+            "type": "string"
+          },
+          "cache_rule": {
+            "type": "string"
+          },
+          "replay_rule": {
+            "type": "string"
+          },
+          "network_behavior": {
+            "type": "string"
+          },
+          "included_surfaces": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "upstream_sources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "ui_contract": {
+      "type": "object"
+    }
+  }
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://api.worldpop.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>API | PainMap</title>
     <meta name="description" content="PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, release, and OpenAPI exports.">
@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="API | PainMap">
     <meta name="twitter:description" content="PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, release, and OpenAPI exports.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../styles.css" integrity="sha384-BWDODpsIr6o6AfFZZVKhxUAps0oT8KoiDf+tbFnWkN0wL33ZkxzB8/fBXjL4WR6R" crossorigin="anonymous">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-eJ+PWgsxxC2HPyzzt2Ls3sPHLf6XLnWQ4gOF9+JXv+OeNAqg+jfq4Ep0QsOGp57Z" crossorigin="anonymous">
       <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"TechArticle","name":"API | PainMap","url":"https://painmap.org/api/","description":"PainMap read-only public API contract for static JSON, CSV, GeoJSON, DCAT, release, and OpenAPI exports."}
     </script>
@@ -69,6 +69,7 @@
                 <tr><th scope="row"><a href="/releases/2026-05-31/manifest.json">/releases/2026-05-31/manifest.json</a></th><td>JSON</td><td>Immutable artifact inventory with SHA-256 checksums.</td></tr>
                 <tr><th scope="row"><a href="/v1/layers.json">/v1/layers.json</a></th><td>JSON</td><td>Layer definitions, evidence kinds, units, and ranking modes.</td></tr>
                 <tr><th scope="row"><a href="/v1/sources.json">/v1/sources.json</a></th><td>JSON</td><td>Source and license registry.</td></tr>
+                <tr><th scope="row"><a href="/data/release-modes.json">/data/release-modes.json</a></th><td>JSON</td><td>Snapshot and live overlay mode contract with cache and network rules.</td></tr>
                 <tr><th scope="row"><a href="/v1/places/index.json">/v1/places/index.json</a></th><td>JSON</td><td>Full release place index with coverage status for boundary-only and measured places.</td></tr>
                 <tr><th scope="row"><a href="/v1/coverage.json">/v1/coverage.json</a></th><td>JSON</td><td>Coverage counts, direct-evidence layer coverage, last release date, and known sparse areas.</td></tr>
                 <tr><th scope="row"><a href="/v1/places/BRA/neighbors.json">/v1/places/{place_id}/neighbors.json</a></th><td>JSON</td><td>Release-scoped border neighbors, nearest centroid neighbors, and place discovery links.</td></tr>
@@ -85,6 +86,7 @@
                 <tr><th scope="row"><a href="/schemas/place-index.schema.json">/schemas/place-index.schema.json</a></th><td>JSON Schema</td><td>Validation schema for the place index.</td></tr>
                 <tr><th scope="row"><a href="/schemas/place-measurements.schema.json">/schemas/place-measurements.schema.json</a></th><td>JSON Schema</td><td>Validation schema for canonical measurements.</td></tr>
                 <tr><th scope="row"><a href="/schemas/coverage.schema.json">/schemas/coverage.schema.json</a></th><td>JSON Schema</td><td>Validation schema for coverage status.</td></tr>
+                <tr><th scope="row"><a href="/schemas/release-modes.schema.json">/schemas/release-modes.schema.json</a></th><td>JSON Schema</td><td>Validation schema for the snapshot/live release-mode contract.</td></tr>
                 <tr><th scope="row"><a href="/schemas/ogc-place-features.schema.json">/schemas/ogc-place-features.schema.json</a></th><td>JSON Schema</td><td>Validation schema for OGC-style place features.</td></tr>
                 <tr><th scope="row"><a href="/releases/2026-05-31/diff.json">/releases/2026-05-31/diff.json</a></th><td>JSON</td><td>Release diff baseline for future release comparisons.</td></tr>
                 <tr><th scope="row"><a href="/data/analytics-events.json">/data/analytics-events.json</a></th><td>JSON</td><td>Privacy-preserving telemetry event vocabulary.</td></tr>

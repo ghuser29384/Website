@@ -59,6 +59,14 @@
       "purpose": "DCAT catalog"
     },
     {
+      "path": "/data/release-modes.json",
+      "url": "https://painmap.org/data/release-modes.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Snapshot and live overlay mode contract"
+    },
+    {
       "path": "/v1/places/index.json",
       "url": "https://painmap.org/v1/places/index.json",
       "method": "GET",

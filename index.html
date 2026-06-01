@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://api.worldpop.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>PainMap | Mixed-evidence atlas of pain sources by place</title>
     <meta name="description" content="PainMap is a place-first atlas for direct evidence, modeled estimates, proxy aggregates, and priority overlays about pain sources.">
@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="PainMap | Mixed-evidence atlas of pain sources by place">
     <meta name="twitter:description" content="PainMap is a place-first atlas for direct evidence, modeled estimates, proxy aggregates, and priority overlays about pain sources.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="styles.css" integrity="sha384-BWDODpsIr6o6AfFZZVKhxUAps0oT8KoiDf+tbFnWkN0wL33ZkxzB8/fBXjL4WR6R" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css" integrity="sha384-eJ+PWgsxxC2HPyzzt2Ls3sPHLf6XLnWQ4gOF9+JXv+OeNAqg+jfq4Ep0QsOGp57Z" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -124,6 +124,89 @@
         </div>
       </section>
 
+      <section class="release-mode-panel" aria-labelledby="release-mode-title">
+        <div class="section-intro">
+          <p class="label">Release mode</p>
+          <h2 id="release-mode-title">Snapshot first, live overlays labeled.</h2>
+          <p>
+            The default view reads the frozen 2026-05-31.atlas.2 release contract. Live overlay mode may query public
+            upstream sources at interaction time and keeps those values outside the immutable release rows.
+          </p>
+        </div>
+        <div class="release-mode-switch" role="tablist" aria-label="Release data mode">
+          <button
+            class="release-mode-tab"
+            id="release-mode-snapshot"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="release-mode-snapshot-panel"
+            data-release-mode="snapshot"
+          >
+            Snapshot
+          </button>
+          <button
+            class="release-mode-tab"
+            id="release-mode-live"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="release-mode-live-panel"
+            data-release-mode="live"
+          >
+            Live overlay
+          </button>
+        </div>
+        <div class="release-mode-panels">
+          <article
+            class="release-mode-card"
+            id="release-mode-snapshot-panel"
+            role="tabpanel"
+            aria-labelledby="release-mode-snapshot"
+            data-release-mode-panel="snapshot"
+          >
+            <span class="evidence-badge">immutable</span>
+            <h3>Frozen release snapshot</h3>
+            <p>
+              Uses static release files, checksums, schemas, coverage status, and cached local boundary assets. No
+              World Bank, OWID, geoBoundaries, or WorldPop request is started for rankings in this mode.
+            </p>
+            <dl class="release-mode-facts">
+              <div><dt>Cache rule</dt><dd>Immutable release artifacts may be cached long term.</dd></div>
+              <div><dt>Replay rule</dt><dd>Cite the release manifest for reproducible analysis.</dd></div>
+            </dl>
+          </article>
+          <article
+            class="release-mode-card"
+            id="release-mode-live-panel"
+            role="tabpanel"
+            aria-labelledby="release-mode-live"
+            data-release-mode-panel="live"
+            hidden
+          >
+            <span class="evidence-badge">not frozen</span>
+            <h3>Fresh public-source overlay</h3>
+            <p>
+              May load current public rows from World Bank, OWID, geoBoundaries, and WorldPop for exploration. These
+              browser-time values are labeled as overlays and are not release measurements.
+            </p>
+            <dl class="release-mode-facts">
+              <div><dt>Cache rule</dt><dd>Short lived, source dependent, and unsuitable for exact replay.</dd></div>
+              <div><dt>Replay rule</dt><dd>Use only as current context unless materialized into a later release.</dd></div>
+            </dl>
+          </article>
+        </div>
+        <div class="release-mode-status-row">
+          <p class="release-mode-status" id="release-mode-status" role="status" aria-live="polite">
+            Snapshot mode is active. The atlas is using immutable release artifacts and local static assets.
+          </p>
+          <div class="route-actions">
+            <a class="ghost-link" href="/data/release-modes.json">Mode contract</a>
+            <a class="ghost-link" href="/data/performance-budgets.json">Cache and field budgets</a>
+          </div>
+        </div>
+      </section>
+
       <section class="coverage-panel" aria-labelledby="coverage-title">
         <div class="section-intro">
           <p class="label">Release coverage</p>
@@ -132,8 +215,8 @@
         <div class="coverage-grid">
           <article class="fact-card">
             <span class="fact-label">Places indexed</span>
-            <strong>242</strong>
-            <p>World plus 241 country boundary features are listed in the release place index.</p>
+            <strong>240</strong>
+            <p>World plus 239 country boundary features are listed in the release place index.</p>
           </article>
           <article class="fact-card">
             <span class="fact-label">Country profiles</span>
@@ -621,6 +704,6 @@
     </div>
         <script src="vendor/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
     <script src="vendor/topojson-client.v3.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
-    <script type="module" src="script.js" integrity="sha384-PNZ6r0hEnotT2s+Uatsm5sTnatnM6Ev+LoXfVusu0JqUAB3bYHI1xEhOqiGcenWM" crossorigin="anonymous"></script>
+    <script type="module" src="script.js" integrity="sha384-OPLmgTfKIoQyyQuRBpsTWurggnDIDVrROZRpTylan8AMd5hZz7gSzdPGrGBA9bui" crossorigin="anonymous"></script>
   </body>
 </html>

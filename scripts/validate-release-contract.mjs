@@ -9,6 +9,7 @@ const schemaTargets = [
   ["schemas/place-index.schema.json", "v1/places/index.json"],
   ["schemas/place-measurements.schema.json", "data/place-measurements.json"],
   ["schemas/coverage.schema.json", "v1/coverage.json"],
+  ["schemas/release-modes.schema.json", "data/release-modes.json"],
   ["schemas/ogc-place-features.schema.json", "ogc/collections/places/items.json"],
 ];
 
@@ -126,6 +127,7 @@ for (const [schemaFile, dataFile] of schemaTargets) {
 
 const placeIndex = readJson("v1/places/index.json");
 const measurements = readJson("data/place-measurements.json");
+const releaseModes = readJson("data/release-modes.json");
 const releaseManifest = readJson("releases/2026-05-31/manifest.json");
 const endpointSmoke = readJson("data/endpoint-smoke.json");
 const measurementRowsByPlace = new Map();
@@ -236,12 +238,24 @@ expect(
   "release diff neighbor payload count mismatch"
 );
 
+expect(releaseModes.default_mode === "snapshot", "release modes must default to snapshot mode");
+expect(
+  releaseModes.modes?.some((mode) => mode.id === "snapshot" && /immutable/i.test(mode.badge)),
+  "release modes must describe an immutable snapshot mode"
+);
+expect(
+  releaseModes.modes?.some((mode) => mode.id === "live" && /World Bank|OWID|geoBoundaries|WorldPop/.test(mode.network_behavior)),
+  "release modes must describe live public-source overlay behavior"
+);
+
 for (const requiredArtifact of [
   "/v1/places/index.json",
   "/v1/coverage.json",
+  "/data/release-modes.json",
   "/schemas/place-index.schema.json",
   "/schemas/place-measurements.schema.json",
   "/schemas/coverage.schema.json",
+  "/schemas/release-modes.schema.json",
   "/schemas/ogc-place-features.schema.json",
   "/data/endpoint-smoke.json",
   "/data/performance-budgets.json",

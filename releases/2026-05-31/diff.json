@@ -18,6 +18,8 @@
     "/v1/places/{place_id}/neighbors.json",
     "/ogc/index.json",
     "/ogc/collections/places/items.json",
+    "/data/release-modes.json",
+    "/schemas/release-modes.schema.json",
     "/schemas/ogc-place-features.schema.json",
     "/releases/2026-05-31/diff.json"
   ],
@@ -37,6 +39,10 @@
     {
       "area": "release QA",
       "change": "Added a diff artifact so later releases can expose added, changed, and removed surfaces."
+    },
+    {
+      "area": "release mode",
+      "change": "Documented the homepage Snapshot and Live overlay split as a static public contract."
     }
   ]
 }

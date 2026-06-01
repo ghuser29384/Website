@@ -8,7 +8,7 @@ const releasePath = "/releases/2026-05-31/";
 const releaseManifestPath = "releases/2026-05-31/manifest.json";
 const socialImage = `${site}/assets/social-card.svg`;
 const csp =
-  "default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests";
+  "default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://api.worldpop.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests";
 
 const routes = readJson("data/routes.json");
 const provenance = readJson("data/provenance-registry.json");
@@ -671,6 +671,50 @@ function buildCoverage() {
   };
 }
 
+function buildReleaseModes() {
+  return {
+    release_id: releaseId,
+    generated_at: releaseDate,
+    default_mode: "snapshot",
+    local_event_name: "release_mode_selected",
+    modes: [
+      {
+        id: "snapshot",
+        label: "Snapshot",
+        badge: "immutable",
+        cache_rule: "Release-scoped static artifacts may use long-lived immutable caching.",
+        replay_rule: "Use the immutable release manifest, checksums, schemas, and release URLs for reproducible analysis.",
+        network_behavior:
+          "The homepage does not start World Bank, OWID, geoBoundaries, or WorldPop ranking requests in this mode.",
+        included_surfaces: [
+          "/v1/places/index.json",
+          "/v1/coverage.json",
+          "/data/place-measurements.json",
+          "/data/provenance-registry.json",
+          "/releases/2026-05-31/manifest.json",
+        ],
+      },
+      {
+        id: "live",
+        label: "Live overlay",
+        badge: "not frozen",
+        cache_rule: "Browser-time public-source overlays are short lived and source dependent.",
+        replay_rule:
+          "Treat live overlay values as current context unless they are materialized into a later immutable release.",
+        network_behavior:
+          "The homepage may query public World Bank, OWID, geoBoundaries, and WorldPop surfaces after the user selects this mode.",
+        upstream_sources: ["world-bank-indicators", "owid-livestock", "geoboundaries-adm1", "worldpop"],
+      },
+    ],
+    ui_contract: {
+      tablist_label: "Release data mode",
+      status_region_id: "release-mode-status",
+      snapshot_tab_id: "release-mode-snapshot",
+      live_tab_id: "release-mode-live",
+    },
+  };
+}
+
 function buildCountryNeighborIndex() {
   const entries = countryBoundaryFeatures().map(({ feature, iso }) => ({
     feature,
@@ -966,6 +1010,10 @@ function buildAnalyticsEvents() {
         fields: ["path", "release_id"],
       },
       {
+        event: "release_mode_selected",
+        fields: ["mode", "release_id"],
+      },
+      {
         event: "place_search_started",
         fields: ["query_length", "release_id"],
       },
@@ -1027,6 +1075,7 @@ function buildEndpointSmoke() {
       endpoint("/examples/", "text/html", "Developer examples route"),
       endpoint("/data/openapi.json", "application/json", "OpenAPI contract"),
       endpoint("/data/dcat.json", "application/ld+json", "DCAT catalog"),
+      endpoint("/data/release-modes.json", "application/json", "Snapshot and live overlay mode contract"),
       endpoint("/v1/places/index.json", "application/json", "Full release place index"),
       endpoint("/v1/coverage.json", "application/json", "Release coverage status"),
       endpoint("/v1/places/BRA/neighbors.json", "application/json", "Brazil geographic neighbor payload"),
@@ -1128,6 +1177,37 @@ function buildJsonSchemas() {
         last_release_date: { type: "string" },
         coverage_status: { type: "object" },
         known_sparse_areas: { type: "array", items: { type: "object" } },
+      },
+    },
+    "schemas/release-modes.schema.json": {
+      ...schemaBase,
+      $id: `${site}/schemas/release-modes.schema.json`,
+      title: "PainMap release modes",
+      type: "object",
+      required: ["release_id", "generated_at", "default_mode", "modes", "ui_contract"],
+      properties: {
+        release_id: { type: "string" },
+        generated_at: { type: "string" },
+        default_mode: { enum: ["snapshot", "live"] },
+        local_event_name: { type: "string" },
+        modes: {
+          type: "array",
+          items: {
+            type: "object",
+            required: ["id", "label", "badge", "cache_rule", "replay_rule", "network_behavior"],
+            properties: {
+              id: { enum: ["snapshot", "live"] },
+              label: { type: "string" },
+              badge: { type: "string" },
+              cache_rule: { type: "string" },
+              replay_rule: { type: "string" },
+              network_behavior: { type: "string" },
+              included_surfaces: { type: "array", items: { type: "string" } },
+              upstream_sources: { type: "array", items: { type: "string" } },
+            },
+          },
+        },
+        ui_contract: { type: "object" },
       },
     },
     "schemas/ogc-place-features.schema.json": {
@@ -1347,6 +1427,12 @@ function buildOpenApi() {
       "/data/dcat.json": {
         get: { summary: "Get DCAT-style dataset catalog", responses: { 200: staticJsonResponse("Dataset catalog JSON") } },
       },
+      "/data/release-modes.json": {
+        get: {
+          summary: "Get snapshot and live overlay release-mode contract",
+          responses: { 200: staticJsonResponse("Release-mode contract JSON", "#/components/schemas/ReleaseModes") },
+        },
+      },
       "/ogc/index.json": {
         get: { summary: "Get OGC API - Features landing document", responses: { 200: staticJsonResponse("OGC landing document") } },
       },
@@ -1388,6 +1474,9 @@ function buildOpenApi() {
       "/schemas/coverage.schema.json": {
         get: { summary: "Get JSON Schema for coverage status", responses: { 200: staticJsonResponse("Coverage JSON Schema") } },
       },
+      "/schemas/release-modes.schema.json": {
+        get: { summary: "Get JSON Schema for release modes", responses: { 200: staticJsonResponse("Release modes JSON Schema") } },
+      },
       "/schemas/ogc-place-features.schema.json": {
         get: { summary: "Get JSON Schema for OGC-style place features", responses: { 200: staticJsonResponse("OGC place features JSON Schema") } },
       },
@@ -1401,6 +1490,10 @@ function buildOpenApi() {
         CoverageStatus: {
           type: "object",
           required: ["release_id", "coverage_status", "known_sparse_areas"],
+        },
+        ReleaseModes: {
+          type: "object",
+          required: ["release_id", "default_mode", "modes", "ui_contract"],
         },
         ProvenanceRegistry: {
           type: "object",
@@ -1506,6 +1599,7 @@ function buildDcat() {
           { "@type": "dcat:Distribution", "dct:format": "application/geo+json", "dcat:downloadURL": `${site}/data/places.geojson` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/places/index.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/coverage.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/release-modes.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/places/BRA/neighbors.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/releases/2026-05-31/manifest.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/releases/2026-05-31/diff.json` },
@@ -1545,6 +1639,7 @@ function buildDcat() {
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/place-index.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/place-measurements.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/coverage.schema.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/release-modes.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/ogc-place-features.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/performance-budgets.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/endpoint-smoke.json` },
@@ -1623,6 +1718,7 @@ function releaseArtifactFileCandidates() {
     "data/place-measurements.json",
     "data/place-measurements.csv",
     "data/places.geojson",
+    "data/release-modes.json",
     "data/analytics-events.json",
     "data/performance-budgets.json",
     "data/endpoint-smoke.json",
@@ -1638,6 +1734,7 @@ function releaseArtifactFileCandidates() {
     "schemas/place-index.schema.json",
     "schemas/place-measurements.schema.json",
     "schemas/coverage.schema.json",
+    "schemas/release-modes.schema.json",
     "schemas/ogc-place-features.schema.json",
     "v1/releases.json",
     "v1/layers.json",
@@ -1691,6 +1788,8 @@ function buildReleaseDiff() {
       "/v1/places/{place_id}/neighbors.json",
       "/ogc/index.json",
       "/ogc/collections/places/items.json",
+      "/data/release-modes.json",
+      "/schemas/release-modes.schema.json",
       "/schemas/ogc-place-features.schema.json",
       "/releases/2026-05-31/diff.json",
     ],
@@ -1711,6 +1810,10 @@ function buildReleaseDiff() {
         area: "release QA",
         change: "Added a diff artifact so later releases can expose added, changed, and removed surfaces.",
       },
+      {
+        area: "release mode",
+        change: "Documented the homepage Snapshot and Live overlay split as a static public contract.",
+      },
     ],
   };
 }
@@ -1726,6 +1829,7 @@ function writeApiArtifacts() {
   writeJson("data/places.geojson", buildPlacesGeojson());
   writeJson("v1/places/index.json", buildPlaceIndex());
   writeJson("v1/coverage.json", buildCoverage());
+  writeJson("data/release-modes.json", buildReleaseModes());
   writeJson("data/analytics-events.json", buildAnalyticsEvents());
   writeJson("data/performance-budgets.json", buildPerformanceBudgets());
   writeJson("data/endpoint-smoke.json", buildEndpointSmoke());
@@ -1813,6 +1917,7 @@ function buildReleaseManifest() {
       measurements: `${site}/data/place-measurements.json`,
       place_index: `${site}/v1/places/index.json`,
       coverage: `${site}/v1/coverage.json`,
+      release_modes: `${site}/data/release-modes.json`,
       ogc_features: `${site}/ogc/collections/places/items.json`,
       release_diff: `${site}${releasePath}diff.json`,
       provenance: `${site}/data/provenance-registry.json`,

@@ -398,6 +398,23 @@
         }
       }
     },
+    "/data/release-modes.json": {
+      "get": {
+        "summary": "Get snapshot and live overlay release-mode contract",
+        "responses": {
+          "200": {
+            "description": "Release-mode contract JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReleaseModes"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/ogc/index.json": {
       "get": {
         "summary": "Get OGC API - Features landing document",
@@ -585,6 +602,23 @@
         }
       }
     },
+    "/schemas/release-modes.schema.json": {
+      "get": {
+        "summary": "Get JSON Schema for release modes",
+        "responses": {
+          "200": {
+            "description": "Release modes JSON Schema",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/schemas/ogc-place-features.schema.json": {
       "get": {
         "summary": "Get JSON Schema for OGC-style place features",
@@ -620,6 +654,15 @@
           "release_id",
           "coverage_status",
           "known_sparse_areas"
+        ]
+      },
+      "ReleaseModes": {
+        "type": "object",
+        "required": [
+          "release_id",
+          "default_mode",
+          "modes",
+          "ui_contract"
         ]
       },
       "ProvenanceRegistry": {

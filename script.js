@@ -10,6 +10,22 @@ const COUNTRY_DATA_FALLBACK_URL = "data/countries-lite.geojson";
 const GSAP_ADM1_DATA_URL = "data/gsap-adm1-2023.json";
 const RELEASE_ID = "2026-05-31.atlas.2";
 const TELEMETRY_ENDPOINT = document.documentElement.dataset.telemetryEndpoint || "";
+const RELEASE_MODES = {
+  snapshot: {
+    label: "Snapshot",
+    status:
+      "Snapshot mode is active. The atlas is using immutable release artifacts and local static assets.",
+    topbarNote:
+      "Snapshot mode reads the frozen release contract first: place index, coverage status, schemas, checksums, and local boundary assets. Live public-source rows stay off until the Live overlay tab is selected.",
+  },
+  live: {
+    label: "Live overlay",
+    status:
+      "Live overlay mode is active. Public upstream rows may load in the browser and remain outside the frozen release measurements.",
+    topbarNote:
+      "Live overlay mode keeps the atlas place-first while adding current public-source context from World Bank, OWID, geoBoundaries, and WorldPop where available. These overlays are labeled separately from release rows.",
+  },
+};
 const GLOBE_ROTATION = [-18, -14, 0];
 const width = 900;
 const height = 900;
@@ -1457,6 +1473,9 @@ const resetButton = document.getElementById("reset-view");
 const mapProjectionModeSelect = document.getElementById("map-projection-mode");
 const mapDisclosureSummary = document.querySelector(".globe-disclosure summary");
 const topbarNote = document.getElementById("topbar-note");
+const releaseModeTabs = Array.from(document.querySelectorAll("[data-release-mode]"));
+const releaseModePanels = Array.from(document.querySelectorAll("[data-release-mode-panel]"));
+const releaseModeStatus = document.getElementById("release-mode-status");
 const selectionMeta = document.getElementById("selection-meta");
 const selectionTitle = document.getElementById("selection-title");
 const selectionSummary = document.getElementById("selection-summary");
@@ -1501,6 +1520,7 @@ const outlinePath = svg.append("path").attr("class", "globe-outline");
 const state = {
   countries: [],
   countryIndex: [],
+  releaseMode: "snapshot",
   globeMode: "suffering",
   rankingMode: "improvement",
   selectedCountry: null,
@@ -1512,6 +1532,7 @@ const state = {
   globalIssueData: { loading: true, error: null, sufferingIssues: [], deathIssues: [] },
   globalContext: { loading: true, error: null, context: null },
 };
+let liveOverlayStarted = false;
 
 const animalDataState = {
   loading: true,
@@ -1572,6 +1593,75 @@ function setStatus(message) {
 function setSearchStatus(message) {
   if (countrySearchStatus) {
     countrySearchStatus.textContent = message;
+  }
+}
+
+function isSnapshotMode() {
+  return state.releaseMode === "snapshot";
+}
+
+function syncReleaseModeUi() {
+  const modeConfig = RELEASE_MODES[state.releaseMode] || RELEASE_MODES.snapshot;
+
+  for (const tab of releaseModeTabs) {
+    const isSelected = tab.dataset.releaseMode === state.releaseMode;
+    tab.setAttribute("aria-selected", String(isSelected));
+    tab.tabIndex = isSelected ? 0 : -1;
+  }
+
+  for (const panel of releaseModePanels) {
+    panel.hidden = panel.dataset.releaseModePanel !== state.releaseMode;
+  }
+
+  if (releaseModeStatus) {
+    releaseModeStatus.textContent = modeConfig.status;
+  }
+}
+
+function startLiveOverlayData() {
+  if (liveOverlayStarted) {
+    return;
+  }
+
+  liveOverlayStarted = true;
+  loadAnimalBurdenData();
+  loadGlobalIssueData();
+  loadGlobalContext();
+  loadGsapAdm1Data();
+}
+
+function setReleaseMode(nextMode, shouldRecord = true) {
+  const mode = RELEASE_MODES[nextMode] ? nextMode : "snapshot";
+
+  if (state.releaseMode === mode) {
+    syncReleaseModeUi();
+    return;
+  }
+
+  state.releaseMode = mode;
+
+  if (isSnapshotMode()) {
+    state.selectedProvince = null;
+    state.provinceIssueData = null;
+    state.provinceMeta = null;
+    state.provinceFeatures = [];
+    populateCountryOptions();
+    renderGlobe();
+  } else {
+    startLiveOverlayData();
+
+    if (state.selectedCountry) {
+      state.countryIssueData = { loading: true };
+      Promise.all([loadAdm1(state.selectedCountry), loadCountryIssueData(state.selectedCountry)]);
+    }
+  }
+
+  syncReleaseModeUi();
+  renderDetails();
+  setStatus(RELEASE_MODES[mode].status);
+
+  if (shouldRecord) {
+    recordTelemetry("release_mode_selected", { mode });
   }
 }
 
@@ -2099,6 +2189,7 @@ const TELEMETRY_EVENTS = new Set([
   "dataset_download",
   "compare_opened",
   "release_manifest_opened",
+  "release_mode_selected",
   "place_search_started",
   "zero_result_search",
   "data_fetch_timing",
@@ -3994,6 +4085,30 @@ function renderMoralWeightNotes() {
 }
 
 function renderIssues(country) {
+  if (isSnapshotMode()) {
+    if (!country) {
+      renderRankedIssues(
+        issuesRoot,
+        issuesTableRoot,
+        "Snapshot whole-world release ranking",
+        STATIC_WORLD_SUFFERING_ISSUES,
+        (issue) => formatWholeWorldRanking(issue, state.rankingMode)
+      );
+      return;
+    }
+
+    const iso = countryIso(country.properties);
+    const name = countryName(country.properties);
+    const hasCanonicalProfile = ["BRA", "IND"].includes(iso);
+    renderIssueStatus(
+      "Snapshot country context",
+      hasCanonicalProfile
+        ? `${name} has frozen country measurement rows in the 2026-05-31.atlas.2 release. Switch to Live overlay for browser-time World Bank, OWID, ADM1, and WorldPop context.`
+        : `${name} is present in the release place index as a boundary-indexed country. This snapshot does not publish canonical measurement rows for this country yet.`
+    );
+    return;
+  }
+
   if (!country) {
     const needsAnimalData = state.globeMode === "suffering" || state.globeMode === "death";
     const isLoading =
@@ -4138,6 +4253,25 @@ function renderAnimalIssues(country) {
   if (!currentGlobeModeConfig().showAnimals || state.selectedProvince) {
     animalIssuesRoot.textContent = "";
     clearTable(animalIssuesTableRoot);
+    return;
+  }
+
+  if (isSnapshotMode()) {
+    if (!country) {
+      renderRankedIssues(
+        animalIssuesRoot,
+        animalIssuesTableRoot,
+        "Snapshot whole-world animal release ranking",
+        STATIC_WORLD_ANIMAL_ISSUES,
+        (issue) => formatAnimalRanking(issue, state.rankingMode)
+      );
+      return;
+    }
+
+    renderAnimalIssueStatus(
+      "Snapshot animal overlay disabled",
+      "Country-level animal buckets that depend on current OWID, Fishcount, WAI, and World Bank rows are live overlays. Switch to Live overlay to load them for the selected country."
+    );
     return;
   }
 
@@ -4451,7 +4585,7 @@ function syncModeUi() {
   const isProvinceView = Boolean(state.selectedProvince);
 
   if (topbarNote) {
-    topbarNote.textContent = globeMode.topbarNote;
+    topbarNote.textContent = isSnapshotMode() ? RELEASE_MODES.snapshot.topbarNote : globeMode.topbarNote;
   }
 
   if (globeModeSelect) {
@@ -4546,8 +4680,29 @@ function syncModeUi() {
 function renderDetails() {
   const globeMode = currentGlobeModeConfig();
   syncModeUi();
+  syncReleaseModeUi();
 
   if (!state.selectedCountry) {
+    if (isSnapshotMode()) {
+      const snapshotIssues = STATIC_WORLD_SUFFERING_ISSUES;
+
+      countrySearchInput.value = "";
+      selectionMeta.textContent = "Atlas context";
+      selectionTitle.textContent = "Release snapshot.";
+      selectionSummary.textContent =
+        "The default atlas view is pinned to the immutable 2026-05-31.atlas.2 release contract, with table equivalents and no live upstream ranking fetches.";
+      selectionFootnote.textContent =
+        "Snapshot mode uses static release artifacts, local boundary files, checksums, schemas, and coverage status. Switch to Live overlay for current public-source context that is not frozen into release rows.";
+      factLocation.textContent = "Whole Earth";
+      factCountrySource.textContent = "Natural Earth Admin 0, 1:50m release asset";
+      factAdminSource.textContent = "ADM1 disabled in snapshot mode";
+      factIssueSource.textContent = "Snapshot: release rows, coverage JSON, and local fallback ranking metadata.";
+      factUnitCount.textContent = formatNumber(snapshotIssues.length);
+      renderIssues(null);
+      renderAnimalIssues(null);
+      return;
+    }
+
     const worldIssues =
       state.globalIssueData.loading ||
       state.globalIssueData.error ||
@@ -4602,6 +4757,25 @@ function renderDetails() {
   countrySearchInput.value = provinceNameLabel ? `${provinceNameLabel}, ${name}` : name;
   selectionMeta.textContent = `${name} · ${subregion}`;
   selectionTitle.textContent = provinceNameLabel || name;
+
+  if (isSnapshotMode()) {
+    const hasCanonicalProfile = ["BRA", "IND"].includes(countryIso(countryProps));
+    selectionSummary.textContent = hasCanonicalProfile
+      ? `${name} is selected from the immutable release. This country has canonical measurement rows in 2026-05-31.atlas.2.`
+      : `${name} is selected from the immutable release boundary index. This country is boundary-only in 2026-05-31.atlas.2.`;
+    selectionFootnote.textContent =
+      "Snapshot mode does not query World Bank, OWID, geoBoundaries, or WorldPop at interaction time. Switch to Live overlay to load ADM1 boundaries and current public-source ranking context.";
+    factLocation.textContent = `${name} · ${iso}`;
+    factCountrySource.textContent = "Natural Earth Admin 0, 1:50m release asset";
+    factAdminSource.textContent = "ADM1 disabled in snapshot mode";
+    factIssueSource.textContent = hasCanonicalProfile
+      ? "Snapshot: canonical country profile rows available."
+      : "Snapshot: boundary-index-only country; no frozen measurement rows.";
+    factUnitCount.textContent = hasCanonicalProfile ? "3" : "0";
+    renderIssues(state.selectedCountry);
+    renderAnimalIssues(state.selectedCountry);
+    return;
+  }
 
   if (!issueData || issueData.loading) {
     selectionSummary.textContent = provinceNameLabel
@@ -4996,15 +5170,29 @@ async function selectCountry(feature) {
   });
   state.selectedCountry = feature;
   state.selectedProvince = null;
-  state.countryIssueData = { loading: true };
+  state.countryIssueData = isSnapshotMode() ? { snapshot: true } : { loading: true };
   state.provinceIssueData = null;
+  state.provinceMeta = null;
+  state.provinceFeatures = [];
   focusCountryView(feature);
   renderDetails();
   renderGlobe();
+
+  if (isSnapshotMode()) {
+    setStatus(`${countryName(feature.properties)} selected in snapshot mode. Switch to Live overlay to load ADM1 and current public-source rankings.`);
+    return;
+  }
+
   await Promise.all([loadAdm1(feature), loadCountryIssueData(feature)]);
 }
 
 async function selectProvince(countryFeature, provinceTarget) {
+  if (isSnapshotMode()) {
+    await selectCountry(countryFeature);
+    setStatus("Province drill-down is a live overlay. Switch to Live overlay before loading ADM1 boundaries.");
+    return;
+  }
+
   const targetIso = countryIso(countryFeature.properties);
   const currentIso = countryIso(state.selectedCountry?.properties);
 
@@ -5201,6 +5389,28 @@ function setupInteraction() {
       closeCountrySearchOptions();
     }
   });
+  releaseModeTabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => setReleaseMode(tab.dataset.releaseMode));
+    tab.addEventListener("keydown", (event) => {
+      if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) {
+        return;
+      }
+
+      event.preventDefault();
+      const lastIndex = releaseModeTabs.length - 1;
+      const nextIndex =
+        event.key === "Home"
+          ? 0
+          : event.key === "End"
+            ? lastIndex
+            : event.key === "ArrowLeft"
+              ? Math.max(0, index - 1)
+              : Math.min(lastIndex, index + 1);
+      const nextTab = releaseModeTabs[nextIndex];
+      nextTab.focus();
+      setReleaseMode(nextTab.dataset.releaseMode);
+    });
+  });
   mapProjectionModeSelect?.addEventListener("change", () => {
     switchMapView(mapProjectionModeSelect.value);
   });
@@ -5227,10 +5437,7 @@ async function init() {
   setStatus("Loading Natural Earth country boundaries...");
   renderPainVisuals();
   renderMoralWeightNotes();
-  loadAnimalBurdenData();
-  loadGlobalIssueData();
-  loadGlobalContext();
-  loadGsapAdm1Data();
+  syncReleaseModeUi();
 
   try {
     let data;

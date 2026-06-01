@@ -35,6 +35,26 @@ export interface Coverage {
   known_sparse_areas: Array<Record<string, string>>;
 }
 
+export interface ReleaseMode {
+  id: "snapshot" | "live";
+  label: string;
+  badge: string;
+  cache_rule: string;
+  replay_rule: string;
+  network_behavior: string;
+  included_surfaces?: string[];
+  upstream_sources?: string[];
+}
+
+export interface ReleaseModes {
+  release_id: string;
+  generated_at: string;
+  default_mode: "snapshot" | "live";
+  local_event_name: string;
+  modes: ReleaseMode[];
+  ui_contract: Record<string, string>;
+}
+
 export interface PlaceMeasurement {
   measurement_id: string;
   release_id: string;
@@ -160,6 +180,10 @@ export class PainMapClient {
 
   async coverage(): Promise<Coverage> {
     return this.json<Coverage>("/v1/coverage.json");
+  }
+
+  async releaseModes(): Promise<ReleaseModes> {
+    return this.json<ReleaseModes>("/data/release-modes.json");
   }
 
   async placeProfile(placeId: string): Promise<PlaceProfile> {

@@ -50,6 +50,13 @@
       ]
     },
     {
+      "event": "release_mode_selected",
+      "fields": [
+        "mode",
+        "release_id"
+      ]
+    },
+    {
       "event": "place_search_started",
       "fields": [
         "query_length",

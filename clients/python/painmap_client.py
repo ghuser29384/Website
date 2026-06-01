@@ -18,6 +18,9 @@ class PainMapClient:
     def coverage(self) -> dict[str, Any]:
         return self._json("/v1/coverage.json")
 
+    def release_modes(self) -> dict[str, Any]:
+        return self._json("/data/release-modes.json")
+
     def place_profile(self, place_id: str) -> dict[str, Any]:
         return self._json(f"/v1/places/{quote(place_id)}.json")
 

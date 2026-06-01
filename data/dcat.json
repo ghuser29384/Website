@@ -47,6 +47,11 @@
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/data/release-modes.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
           "dcat:downloadURL": "https://painmap.org/v1/places/BRA/neighbors.json"
         },
         {
@@ -130,6 +135,11 @@
           "@type": "dcat:Distribution",
           "dct:format": "application/schema+json",
           "dcat:downloadURL": "https://painmap.org/schemas/coverage.schema.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/schema+json",
+          "dcat:downloadURL": "https://painmap.org/schemas/release-modes.schema.json"
         },
         {
           "@type": "dcat:Distribution",

@@ -1,0 +1,43 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "default_mode": "snapshot",
+  "local_event_name": "release_mode_selected",
+  "modes": [
+    {
+      "id": "snapshot",
+      "label": "Snapshot",
+      "badge": "immutable",
+      "cache_rule": "Release-scoped static artifacts may use long-lived immutable caching.",
+      "replay_rule": "Use the immutable release manifest, checksums, schemas, and release URLs for reproducible analysis.",
+      "network_behavior": "The homepage does not start World Bank, OWID, geoBoundaries, or WorldPop ranking requests in this mode.",
+      "included_surfaces": [
+        "/v1/places/index.json",
+        "/v1/coverage.json",
+        "/data/place-measurements.json",
+        "/data/provenance-registry.json",
+        "/releases/2026-05-31/manifest.json"
+      ]
+    },
+    {
+      "id": "live",
+      "label": "Live overlay",
+      "badge": "not frozen",
+      "cache_rule": "Browser-time public-source overlays are short lived and source dependent.",
+      "replay_rule": "Treat live overlay values as current context unless they are materialized into a later immutable release.",
+      "network_behavior": "The homepage may query public World Bank, OWID, geoBoundaries, and WorldPop surfaces after the user selects this mode.",
+      "upstream_sources": [
+        "world-bank-indicators",
+        "owid-livestock",
+        "geoboundaries-adm1",
+        "worldpop"
+      ]
+    }
+  ],
+  "ui_contract": {
+    "tablist_label": "Release data mode",
+    "status_region_id": "release-mode-status",
+    "snapshot_tab_id": "release-mode-snapshot",
+    "live_tab_id": "release-mode-live"
+  }
+}
