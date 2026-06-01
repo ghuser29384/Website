@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "build:data": "node scripts/build-static-artifacts.mjs",
-    "check": "npm run build:data && node scripts/check-static-site.mjs",
+    "validate:release": "node scripts/validate-release-contract.mjs",
+    "check": "npm run build:data && node scripts/check-static-site.mjs && npm run validate:release",
     "serve": "python3 -m http.server 4173"
   }
 }

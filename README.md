@@ -25,6 +25,8 @@ npm run check
 
 The build step generates sitemap entries, route smoke metadata, v1 JSON files, CSV and GeoJSON exports, JSON Schemas, coverage and endpoint manifests, headers, security.txt, social metadata, subresource integrity hashes, and release checksums.
 
+`npm run check` also validates schema targets, endpoint smoke files, place-index measurement counts, release-manifest hashes, and required QA artifacts. Run it in CI before publishing so generated artifacts cannot drift from the committed tree.
+
 ## Data posture
 
 The public site has no accounts, forms, payments, saved views, uploads, or personal-health workflows. Privacy-preserving telemetry is documented in `data/analytics-events.json` and is limited to route, atlas place selection, dataset, manifest, search-status, fetch-timing, and web-vital events. The static site has no default network collector and the event contract forbids user ids, precise user location, query strings, cross-site tracking, and personal-health fields.
