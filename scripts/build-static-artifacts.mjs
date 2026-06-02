@@ -108,6 +108,134 @@ function routeCanonicalUrl(route) {
   return `${site}${route.canonicalPath || route.path}`;
 }
 
+function routeLabel(route) {
+  return route.title.replace(/ \| PainMap$/, "");
+}
+
+function routeForPath(pathValue) {
+  return routes.routes.find((route) => (route.canonicalPath || route.path) === pathValue || route.path === pathValue);
+}
+
+function breadcrumbParentPath(route) {
+  if (route.path === "/") {
+    return null;
+  }
+
+  if (route.path === "/countries/" || route.canonicalPath === "/places/") {
+    return "/places/";
+  }
+
+  if (route.path.startsWith("/dataset/")) {
+    return "/data/";
+  }
+
+  if (route.path.startsWith("/place/")) {
+    return "/places/";
+  }
+
+  if (route.path.startsWith("/releases/") && route.path !== "/releases/") {
+    return "/releases/";
+  }
+
+  if (route.path.startsWith("/policies/") || route.path === "/security/") {
+    return "/about/";
+  }
+
+  if (route.path === "/developers/" || route.path === "/examples/") {
+    return "/api/";
+  }
+
+  if (route.path === "/resources/") {
+    return "/data/";
+  }
+
+  return null;
+}
+
+function dedupeBreadcrumbItems(items) {
+  const deduped = [];
+  const seen = new Set();
+
+  for (const item of items) {
+    if (seen.has(item.url)) {
+      continue;
+    }
+
+    seen.add(item.url);
+    deduped.push(item);
+  }
+
+  return deduped;
+}
+
+function breadcrumbItems(route) {
+  const items = [
+    {
+      name: "PainMap",
+      url: site,
+      path: "/",
+    },
+  ];
+  const parentPath = breadcrumbParentPath(route);
+  const parentRoute = parentPath ? routeForPath(parentPath) : null;
+
+  if (parentRoute) {
+    items.push({
+      name: routeLabel(parentRoute),
+      url: routeCanonicalUrl(parentRoute),
+      path: parentRoute.canonicalPath || parentRoute.path,
+    });
+  }
+
+  items.push({
+    name: routeLabel(route),
+    url: routeUrl(route),
+    path: route.path,
+  });
+
+  return dedupeBreadcrumbItems(items);
+}
+
+function breadcrumbJsonLd(route) {
+  const value = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${routeUrl(route)}#breadcrumbs`,
+    itemListElement: breadcrumbItems(route).map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+
+  return `    <script type="application/ld+json" data-painmap-jsonld="breadcrumbs">\n      ${jsonEscapeForScript(value)}\n    </script>`;
+}
+
+function visibleBreadcrumbHtml(route) {
+  const items = breadcrumbItems(route);
+
+  if (items.length <= 1) {
+    return "";
+  }
+
+  return [
+    '      <nav class="breadcrumbs" aria-label="Breadcrumb">',
+    "        <ol>",
+    ...items.map((item, index) => {
+      const isLast = index === items.length - 1;
+
+      if (isLast) {
+        return `          <li><span aria-current="page">${htmlEscape(item.name)}</span></li>`;
+      }
+
+      return `          <li><a href="${item.path}">${htmlEscape(item.name)}</a></li>`;
+    }),
+    "        </ol>",
+    "      </nav>",
+  ].join("\n");
+}
+
 function ogType(route) {
   return route.path === "/" ? "website" : "article";
 }
@@ -141,7 +269,7 @@ function simpleJsonLd(route) {
           {
             "@type": "ListItem",
             position: 2,
-            name: route.title.replace(/ \| PainMap$/, ""),
+            name: routeLabel(route),
             item: routeCanonicalUrl(route),
           },
         ],
@@ -208,6 +336,25 @@ function syncRouteHtml() {
 
     if (!/type="application\/ld\+json"/.test(html)) {
       html = html.replace("</head>", `${simpleJsonLd(route)}\n  </head>`);
+    }
+
+    html = html.replace(
+      /\s*<script type="application\/ld\+json" data-painmap-jsonld="breadcrumbs">[\s\S]*?<\/script>\n/g,
+      "\n"
+    );
+
+    if (route.path !== "/") {
+      html = html.replace("</head>", `${breadcrumbJsonLd(route)}\n  </head>`);
+    }
+
+    html = html.replace(/\n\s*<nav class="breadcrumbs" aria-label="Breadcrumb">[\s\S]*?<\/nav>\n/g, "\n");
+
+    if (route.path !== "/") {
+      const breadcrumbs = visibleBreadcrumbHtml(route);
+
+      if (breadcrumbs && html.includes("</header>")) {
+        html = html.replace("</header>", `</header>\n${breadcrumbs}`);
+      }
     }
 
     if (file === "index.html") {

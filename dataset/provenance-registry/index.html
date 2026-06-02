@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="Provenance Registry Dataset | PainMap">
     <meta name="twitter:description" content="PainMap provenance registry for dataset sources, licenses, evidence kinds, uncertainty classes, and public distributions.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../../styles.css" integrity="sha384-va7JhN0Vk+rZdfwCGrWS/8rDwaFbH8B+o6xGrma9+okGWiQfR7QpUNTHXMyVpZLz" crossorigin="anonymous">
+<link rel="stylesheet" href="../../styles.css" integrity="sha384-XZH7c5ogFrJb5O6BpuSyObOv4so35zN2jrTh26MlfD9nr7rheORDL55U3k6QqCAu" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -34,6 +34,9 @@
           { "@type": "DataDownload", "encodingFormat": "application/ld+json", "contentUrl": "https://painmap.org/data/dcat.json" }
         ]
       }
+    </script>
+      <script type="application/ld+json" data-painmap-jsonld="breadcrumbs">
+      {"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://painmap.org/dataset/provenance-registry/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"PainMap","item":"https://painmap.org"},{"@type":"ListItem","position":2,"name":"Data","item":"https://painmap.org/data/"},{"@type":"ListItem","position":3,"name":"Provenance Registry Dataset","item":"https://painmap.org/dataset/provenance-registry/"}]}
     </script>
   </head>
   <body>
@@ -52,6 +55,13 @@
           <a href="/about/">About</a>
         </nav>
       </header>
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">PainMap</a></li>
+          <li><a href="/data/">Data</a></li>
+          <li><span aria-current="page">Provenance Registry Dataset</span></li>
+        </ol>
+      </nav>
       <main id="main-content" class="route-page">
         <section class="route-panel route-hero" aria-labelledby="registry-title">
           <div>

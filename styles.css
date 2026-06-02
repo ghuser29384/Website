@@ -1311,6 +1311,42 @@ p {
   min-width: 0;
 }
 
+.breadcrumbs {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  list-style: none;
+  margin: -0.25rem 0 0;
+  padding: 0;
+}
+
+.breadcrumbs li {
+  align-items: center;
+  display: flex;
+  min-width: 0;
+}
+
+.breadcrumbs li + li::before {
+  color: var(--line-strong);
+  content: "/";
+  margin-right: 0.35rem;
+}
+
+.breadcrumbs a {
+  color: var(--accent);
+  text-underline-offset: 0.18em;
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: var(--text);
+}
+
 .route-panel {
   border: 1px solid var(--line);
   background: var(--panel);

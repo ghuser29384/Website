@@ -140,6 +140,10 @@ function routeCanonicalUrl(route) {
   return `${site}${route.canonicalPath || route.path}`;
 }
 
+function routeLabel(route) {
+  return route.title.replace(/ \| PainMap$/, "");
+}
+
 for (const file of expectedRoutes) {
   if (!existsSync(absolute(file))) {
     failures.push(`Missing route file from data/routes.json: ${file}`);
@@ -199,6 +203,19 @@ for (const route of routeManifest.routes) {
   expectPattern(file, html, /<meta name="twitter:card" content="summary_large_image">/, "twitter card metadata");
   expectPattern(file, html, /<meta name="twitter:image" content="https:\/\/painmap\.org\/assets\/social-card\.svg">/, "twitter image metadata");
   expectPattern(file, html, /type="application\/ld\+json"/, "route JSON-LD");
+
+  if (route.path !== "/") {
+    expectPattern(file, html, /<nav class="breadcrumbs" aria-label="Breadcrumb">/, "visible breadcrumb navigation");
+    expectPattern(
+      file,
+      html,
+      new RegExp(`<span aria-current="page">${escapeRegExp(routeLabel(route))}</span>`),
+      "current breadcrumb label"
+    );
+    expectPattern(file, html, /"@type":"BreadcrumbList"/, "BreadcrumbList structured data");
+    expectPattern(file, html, /data-painmap-jsonld="breadcrumbs"/, "managed breadcrumb structured data");
+  }
+
   expectPattern(
     file,
     html,
