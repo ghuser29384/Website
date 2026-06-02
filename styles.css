@@ -679,14 +679,71 @@ p {
   background: var(--country);
 }
 
+.swatch-low-confidence {
+  background: var(--country);
+  border: 2px solid var(--accent-strong);
+}
+
+.swatch-boundary-only {
+  background:
+    repeating-linear-gradient(135deg, #d8e0de 0 4px, #8fa5a2 4px 5px);
+  border-color: #8fa5a2;
+}
+
 .swatch-province {
-  background: var(--province);
+  background:
+    repeating-linear-gradient(135deg, rgba(40, 92, 102, 0.1) 0 4px, rgba(40, 92, 102, 0.42) 4px 5px);
   border-color: var(--province-line);
 }
 
 .swatch-selected {
   background: var(--country-selected);
   border-color: var(--country-selected);
+}
+
+.map-provenance-tray {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  background: #f8fbfb;
+  padding: 0.95rem;
+}
+
+.map-provenance-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.map-provenance-head strong {
+  color: var(--text);
+}
+
+.map-provenance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin: 0.85rem 0 0;
+}
+
+.map-provenance-grid div {
+  border-top: 1px solid var(--line);
+  padding-top: 0.7rem;
+}
+
+.map-provenance-grid dt {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.map-provenance-grid dd {
+  margin: 0.42rem 0 0;
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.45;
 }
 
 .selection-summary {
@@ -1458,11 +1515,25 @@ p {
   stroke: #f7f7f4;
   stroke-width: 0.7;
   cursor: pointer;
-  transition: fill 160ms ease;
+  transition: fill 160ms ease, opacity 160ms ease, stroke 160ms ease;
 }
 
 .country-path:hover {
   fill: var(--country-hover);
+}
+
+.country-path.has-release-measurements {
+  stroke: var(--accent-strong);
+  stroke-width: 0.95;
+}
+
+.country-path.is-boundary-only {
+  fill: url(#boundary-index-hatch);
+  stroke-dasharray: 2.5 1.6;
+}
+
+.country-path.is-boundary-only:hover {
+  fill: url(#boundary-index-hatch-hover);
 }
 
 .country-path:focus,
@@ -1474,22 +1545,36 @@ p {
 
 .country-path.is-selected {
   fill: var(--country-selected);
+  stroke: var(--warn);
+  stroke-width: 1.5;
 }
 
 .country-path.is-muted {
   fill: #d8e0de;
+  opacity: 0.52;
+}
+
+.country-path.is-muted.is-boundary-only {
+  fill: url(#boundary-index-hatch-muted);
+}
+
+.country-path.is-selected.is-boundary-only {
+  fill: url(#selected-boundary-hatch);
+  opacity: 1;
 }
 
 .province-path {
-  fill: var(--province);
+  fill: url(#province-proxy-hatch);
   stroke: var(--province-line);
   stroke-width: 0.7;
+  stroke-dasharray: 3 2;
   cursor: pointer;
 }
 
 .province-path.is-selected {
-  fill: rgba(49, 95, 102, 0.34);
+  fill: url(#selected-province-hatch);
   stroke: var(--country-selected);
+  stroke-dasharray: none;
   stroke-width: 1.05;
 }
 
@@ -1677,6 +1762,15 @@ p {
 
   .place-summary-card {
     grid-template-columns: 1fr;
+  }
+
+  .map-provenance-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-provenance-head {
+    align-items: start;
+    flex-direction: column;
   }
 
   .compare-place-link {

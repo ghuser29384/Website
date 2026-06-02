@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="PainMap | Mixed-evidence atlas of pain sources by place">
     <meta name="twitter:description" content="PainMap is a place-first atlas for direct evidence, modeled estimates, proxy aggregates, and priority overlays about pain sources.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="styles.css" integrity="sha384-fuQsSlW/RDH5IywcfPqMCIpGdI55Ej4LxkYLYSrBPd5raiw7LqQrEDML+vi4YQuO" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css" integrity="sha384-va7JhN0Vk+rZdfwCGrWS/8rDwaFbH8B+o6xGrma9+okGWiQfR7QpUNTHXMyVpZLz" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -317,13 +317,37 @@
             <p class="map-description" id="globe-description">
               Equal Earth thematic map with country boundaries and optional ADM1 province or state boundaries. Switch to
               the globe only when rotation helps exploration. Selecting a place updates the ranked issue cards and the
-              data table beside the map. The search field and data tables are the complete non-map path.
+              data table beside the map. Hatching and dashed outlines identify boundary-only or proxy-overlay states so
+              uncertainty is not encoded by color alone. The search field and data tables are the complete non-map path.
             </p>
 
-            <div class="legend" aria-hidden="true">
-              <span><i class="swatch swatch-country"></i>Country</span>
-              <span><i class="swatch swatch-province"></i>Province or state</span>
+            <div class="legend" aria-label="Map legend">
+              <span><i class="swatch swatch-country"></i>Country boundary</span>
+              <span><i class="swatch swatch-low-confidence"></i>Low-confidence profile</span>
+              <span><i class="swatch swatch-boundary-only"></i>Boundary-only or very-low-confidence</span>
+              <span><i class="swatch swatch-province"></i>Province proxy overlay</span>
               <span><i class="swatch swatch-selected"></i>Selected</span>
+            </div>
+
+            <div class="map-provenance-tray" id="map-provenance-tray" aria-live="polite" aria-labelledby="map-provenance-title">
+              <div class="map-provenance-head">
+                <p class="label" id="map-provenance-title">Map provenance</p>
+                <strong id="map-provenance-place">Whole Earth</strong>
+              </div>
+              <dl class="map-provenance-grid">
+                <div>
+                  <dt>Visible encoding</dt>
+                  <dd id="map-provenance-encoding">Boundary-only countries use diagonal hatching; canonical release profiles use a heavier outline.</dd>
+                </div>
+                <div>
+                  <dt>Source trace</dt>
+                  <dd id="map-provenance-source">Natural Earth Admin 0 local release asset; canonical measurement rows are release-scoped.</dd>
+                </div>
+                <div>
+                  <dt>Uncertainty cue</dt>
+                  <dd id="map-provenance-uncertainty">Color, hatching, and outline style all carry status.</dd>
+                </div>
+              </dl>
             </div>
           </details>
         </section>
@@ -724,6 +748,6 @@
     </div>
         <script src="vendor/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
     <script src="vendor/topojson-client.v3.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
-    <script type="module" src="script.js" integrity="sha384-c0e75zsr/KtxyIxvMTX7QqY2X+i3j6a0hkDtdp0s1z69RmljarJNw6or3F5I0/aP" crossorigin="anonymous"></script>
+    <script type="module" src="script.js" integrity="sha384-hUEyX33vDLzU0EnswpxHR+OV6s8LeTa4xvYvvKoJnSOmcy8VnyDMNSm2zokkM0Dn" crossorigin="anonymous"></script>
   </body>
 </html>

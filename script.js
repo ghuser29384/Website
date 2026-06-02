@@ -98,6 +98,7 @@ const STATIC_WORLD_SUFFERING_ISSUES = [
   },
   ...STATIC_WORLD_ANIMAL_ISSUES,
 ];
+const CANONICAL_PROFILE_COUNTRIES = new Set(["BRA", "IND"]);
 const INSECT_WELFARE_PROXY = {
   sentience: { median: 0.226, low: 0.002, high: 0.573 },
   welfareRange: { median: 0.029, low: 0, high: 0.244 },
@@ -1485,6 +1486,10 @@ const summaryEvidenceMix = document.getElementById("summary-evidence-mix");
 const summaryUncertainty = document.getElementById("summary-uncertainty");
 const summaryLastUpdate = document.getElementById("summary-last-update");
 const comparePlaceLink = document.getElementById("compare-place-link");
+const mapProvenancePlace = document.getElementById("map-provenance-place");
+const mapProvenanceEncoding = document.getElementById("map-provenance-encoding");
+const mapProvenanceSource = document.getElementById("map-provenance-source");
+const mapProvenanceUncertainty = document.getElementById("map-provenance-uncertainty");
 const factLocation = document.getElementById("fact-location");
 const factCountrySource = document.getElementById("fact-country-source");
 const factAdminSource = document.getElementById("fact-admin-source");
@@ -1516,11 +1521,39 @@ let projection = createMapProjection(mapViewMode);
 const path = d3.geoPath(projection);
 const graticule = d3.geoGraticule10();
 
+const defs = svg.append("defs");
 const spherePath = svg.append("path").attr("class", "sphere");
 const graticulePath = svg.append("path").attr("class", "graticule");
 const countriesGroup = svg.append("g");
 const provincesGroup = svg.append("g");
 const outlinePath = svg.append("path").attr("class", "globe-outline");
+
+function addHatchPattern(id, background, stroke, strokeWidth = 1.1) {
+  const pattern = defs
+    .append("pattern")
+    .attr("id", id)
+    .attr("width", 8)
+    .attr("height", 8)
+    .attr("patternUnits", "userSpaceOnUse")
+    .attr("patternTransform", "rotate(135)");
+
+  pattern.append("rect").attr("width", 8).attr("height", 8).attr("fill", background);
+  pattern
+    .append("line")
+    .attr("x1", 0)
+    .attr("y1", 0)
+    .attr("x2", 0)
+    .attr("y2", 8)
+    .attr("stroke", stroke)
+    .attr("stroke-width", strokeWidth);
+}
+
+addHatchPattern("boundary-index-hatch", "#d8e0de", "#8fa5a2");
+addHatchPattern("boundary-index-hatch-hover", "#c7d6d3", "#285c66", 1.3);
+addHatchPattern("boundary-index-hatch-muted", "#eef2f1", "#b7c6c4", 1);
+addHatchPattern("selected-boundary-hatch", "#285c66", "#f6e4df", 1.6);
+addHatchPattern("province-proxy-hatch", "rgba(40, 92, 102, 0.1)", "rgba(40, 92, 102, 0.55)", 1.2);
+addHatchPattern("selected-province-hatch", "rgba(40, 92, 102, 0.28)", "#285c66", 1.4);
 
 const state = {
   countries: [],
@@ -1798,6 +1831,24 @@ function countryIso(properties) {
   return properties.ADM0_A3 || properties.ISO_A3 || properties.ISO_A3_EH || null;
 }
 
+function countryHasCanonicalProfile(feature) {
+  return CANONICAL_PROFILE_COUNTRIES.has(countryIso(feature?.properties));
+}
+
+function countryMapCoverage(feature) {
+  if (countryHasCanonicalProfile(feature)) {
+    return {
+      className: "has-release-measurements is-low-confidence",
+      label: "canonical low-confidence release profile",
+    };
+  }
+
+  return {
+    className: "is-boundary-only is-very-low-confidence",
+    label: "boundary-only release place with very-low-confidence pain measurement coverage",
+  };
+}
+
 function provinceName(feature) {
   const properties = feature.properties || {};
   return (
@@ -1808,6 +1859,13 @@ function provinceName(feature) {
     properties.PROV_NAME ||
     "Unknown ADM1 unit"
   );
+}
+
+function setMapProvenance({ place, encoding, source, uncertainty }) {
+  setSummaryText(mapProvenancePlace, place);
+  setSummaryText(mapProvenanceEncoding, encoding);
+  setSummaryText(mapProvenanceSource, source);
+  setSummaryText(mapProvenanceUncertainty, uncertainty);
 }
 
 function normalizeSearchText(value) {
@@ -4751,6 +4809,14 @@ function renderDetails() {
         placeId: "WLD",
         compareLabel: "Compare whole world",
       });
+      setMapProvenance({
+        place: "Whole Earth",
+        encoding:
+          "Most countries are boundary-only release places and use diagonal hatching; Brazil and India use the low-confidence profile outline.",
+        source: "Natural Earth Admin 0 local release asset plus 2026-05-31.atlas.2 place and coverage artifacts.",
+        uncertainty:
+          "Hatching marks boundary-only or very-low-confidence coverage. Solid outlined countries have canonical low-confidence release rows.",
+      });
       factLocation.textContent = "Whole Earth";
       factCountrySource.textContent = "Natural Earth Admin 0, 1:50m release asset";
       factAdminSource.textContent = "ADM1 disabled in snapshot mode";
@@ -4791,6 +4857,17 @@ function renderDetails() {
       placeId: "WLD",
       compareLabel: "Compare whole world",
     });
+    setMapProvenance({
+      place: "Whole Earth",
+      encoding:
+        "Country boundaries remain release-scoped; live overlay rankings are shown in the cards and tables, not as unlabeled map color.",
+      source:
+        state.globeMode === "death"
+          ? "Natural Earth boundaries with live World Bank WLD and OWID animal-death context."
+          : "Natural Earth boundaries with live World Bank, OWID, RP, WAI, and land-area context.",
+      uncertainty:
+        "Live values are modeled or proxy overlays. Boundary-only and low-confidence release status remains visible through hatching and outlines.",
+    });
     factLocation.textContent = "Whole Earth";
     factCountrySource.textContent = "Natural Earth Admin 0, 1:50m";
     factAdminSource.textContent = "geoBoundaries ADM1 will load on click";
@@ -4825,7 +4902,7 @@ function renderDetails() {
   selectionTitle.textContent = provinceNameLabel || name;
 
   if (isSnapshotMode()) {
-    const hasCanonicalProfile = ["BRA", "IND"].includes(countryIso(countryProps));
+    const hasCanonicalProfile = countryHasCanonicalProfile(state.selectedCountry);
     selectionSummary.textContent = hasCanonicalProfile
       ? `${name} is selected from the immutable release. This country has canonical measurement rows in 2026-05-31.atlas.2.`
       : `${name} is selected from the immutable release boundary index. This country is boundary-only in 2026-05-31.atlas.2.`;
@@ -4838,6 +4915,16 @@ function renderDetails() {
       lastUpdate: "2026-05-31",
       placeId: iso,
       compareLabel: `Compare ${name}`,
+    });
+    setMapProvenance({
+      place: name,
+      encoding: hasCanonicalProfile
+        ? `${name} uses the low-confidence profile outline because canonical release rows exist.`
+        : `${name} remains diagonally hatched because this release has boundary coverage but no canonical measurement rows.`,
+      source: "Natural Earth Admin 0 local release asset plus the release place index and coverage JSON.",
+      uncertainty: hasCanonicalProfile
+        ? "Canonical rows are labeled low confidence; confidence bands remain in the data table and JSON."
+        : "Boundary-only status is not a pain measurement. It is shown with a hatch so sparse coverage is visible on the map.",
     });
     factLocation.textContent = `${name} · ${iso}`;
     factCountrySource.textContent = "Natural Earth Admin 0, 1:50m release asset";
@@ -4939,6 +5026,24 @@ function renderDetails() {
     lastUpdate: "Live public-source overlay",
     placeId: currentComparePlaceId(state.selectedCountry, state.selectedProvince),
     compareLabel: `Compare ${provinceNameLabel || name}`,
+  });
+  setMapProvenance({
+    place: provinceNameLabel ? `${provinceNameLabel}, ${name}` : name,
+    encoding: provinceNameLabel
+      ? "The selected ADM1 overlay uses a hatched proxy fill and solid selected outline; unselected provinces use dashed proxy outlines."
+      : countryHasCanonicalProfile(state.selectedCountry)
+        ? `${name} keeps the low-confidence release outline while live overlay cards update beside the map.`
+        : `${name} keeps the boundary-only hatch while live overlay cards update beside the map.`,
+    source: provinceNameLabel
+      ? state.globeMode === "death"
+        ? "geoBoundaries ADM1 geometry, WorldPop population and age structure, and national WDI death model."
+        : "geoBoundaries ADM1 geometry, WorldPop, GSAP where available, WDI, OWID, RP, and WAI proxy overlay."
+      : state.globeMode === "death"
+        ? "Natural Earth boundary, World Bank WDI death indicators, and live public-source overlay model."
+        : "Natural Earth boundary, World Bank WDI, OWID, RP, WAI, and live public-source overlay model.",
+    uncertainty: provinceNameLabel
+      ? "ADM1 values are modeled or proxy overlays. The hatch and dashed line distinguish them from frozen release measurement rows."
+      : "Live overlay rankings are not frozen release measurements; release coverage status remains visible through map patterning.",
   });
 
   const boundarySource = state.provinceMeta?.boundarySource
@@ -5059,19 +5164,22 @@ function renderGlobe() {
     .attr("class", (feature) => {
       const iso = countryIso(feature.properties);
       const selectedIso = state.selectedCountry ? countryIso(state.selectedCountry.properties) : null;
+      const classes = ["country-path", countryMapCoverage(feature).className];
 
       if (selectedIso && iso === selectedIso) {
-        return "country-path is-selected";
+        classes.push("is-selected");
+        return classes.join(" ");
       }
 
       if (selectedIso) {
-        return "country-path is-muted";
+        classes.push("is-muted");
+        return classes.join(" ");
       }
 
-      return "country-path";
+      return classes.join(" ");
     })
     .attr("d", path)
-    .attr("aria-label", (feature) => countryName(feature.properties))
+    .attr("aria-label", (feature) => `${countryName(feature.properties)}; ${countryMapCoverage(feature).label}`)
     .attr("role", "button")
     .attr("tabindex", 0)
     .on("keydown", (event, feature) => {
@@ -5106,7 +5214,11 @@ function renderGlobe() {
       return isSelected ? "province-path is-selected" : "province-path";
     })
     .attr("d", path)
-    .attr("aria-label", (feature) => `${provinceName(feature)}, ${countryName(state.selectedCountry?.properties)}`)
+    .attr(
+      "aria-label",
+      (feature) =>
+        `${provinceName(feature)}, ${countryName(state.selectedCountry?.properties)}; ADM1 proxy overlay with modeled or proxy uncertainty`
+    )
     .attr("role", "button")
     .attr("tabindex", 0)
     .on("keydown", (event, feature) => {

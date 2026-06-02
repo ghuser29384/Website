@@ -242,6 +242,12 @@ expectPattern("script.js", script, /recordTelemetry\("atlas_place_selected"/, "a
 expectPattern("script.js", script, /PerformanceObserver/, "field performance observer instrumentation");
 expectPattern("script.js", script, /TELEMETRY_ENDPOINT = document\.documentElement\.dataset\.telemetryEndpoint \|\| ""/, "no default telemetry collector");
 expectPattern("index.html", home, /id="compare-place-link" href="\/compare\/\?places=WLD"/, "homepage compare place CTA");
+expectPattern("index.html", home, /id="map-provenance-tray"/, "homepage map provenance tray");
+expectPattern("index.html", home, /swatch-boundary-only/, "non-color boundary-only legend cue");
+expectPattern("script.js", script, /boundary-index-hatch/, "map boundary-only hatch pattern");
+expectPattern("script.js", script, /countryMapCoverage/, "map coverage class helper");
+expectPattern("styles.css", read("styles.css"), /\.country-path\.is-boundary-only/, "boundary-only map uncertainty styling");
+expectPattern("styles.css", read("styles.css"), /\.province-path[\s\S]*stroke-dasharray/, "province proxy dash styling");
 expectPattern("compare/index.html", read("compare/index.html"), /id="compare-requested-list"/, "compare URL requested-place list");
 expectPattern(
   "compare/index.html",
