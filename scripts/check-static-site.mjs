@@ -258,6 +258,13 @@ expectPattern("script.js", script, /recordTelemetry\("route_view"\)/, "route_vie
 expectPattern("script.js", script, /recordTelemetry\("atlas_place_selected"/, "atlas_place_selected telemetry instrumentation");
 expectPattern("script.js", script, /PerformanceObserver/, "field performance observer instrumentation");
 expectPattern("script.js", script, /TELEMETRY_ENDPOINT = document\.documentElement\.dataset\.telemetryEndpoint \|\| ""/, "no default telemetry collector");
+expectPattern("index.html", home, /id="country-search"[\s\S]*?role="combobox"[\s\S]*?aria-autocomplete="list"[\s\S]*?aria-expanded="false"[\s\S]*?aria-controls="country-options"/, "APG-style country search combobox input");
+expectPattern("index.html", home, /id="country-options"[\s\S]*?role="listbox"/, "country search listbox");
+expectPattern("script.js", script, /countrySearchInput\.setAttribute\("aria-expanded", "true"\)/, "combobox expanded state on input");
+expectPattern("script.js", script, /countrySearchInput\.setAttribute\("aria-expanded", "false"\)/, "combobox collapsed state on input");
+expectPattern("script.js", script, /countrySearchInput\.setAttribute\("aria-activedescendant", activeOption\.id\)/, "combobox active descendant management");
+expectPattern("script.js", script, /scrollIntoView\(\{ block: "nearest" \}\)/, "combobox active option scroll management");
+expectPattern("script.js", script, /setSearchStatus\(`\$\{currentCountrySearchOptions\.length\} results available\.`\)/, "combobox result count status announcement");
 expectPattern("index.html", home, /id="compare-place-link" href="\/compare\/\?places=WLD"/, "homepage compare place CTA");
 expectPattern("index.html", home, /id="map-provenance-tray"/, "homepage map provenance tray");
 expectPattern("index.html", home, /swatch-boundary-only/, "non-color boundary-only legend cue");

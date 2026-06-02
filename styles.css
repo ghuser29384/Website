@@ -541,6 +541,7 @@ p {
 }
 
 .country-option[aria-selected="true"],
+.country-option.is-active,
 .country-option:hover {
   background: var(--accent-soft);
 }

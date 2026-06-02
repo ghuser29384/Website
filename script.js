@@ -1464,7 +1464,6 @@ const svg = d3.select("#globe");
 const mapStatus = document.getElementById("map-status");
 const countrySearchForm = document.getElementById("country-search-form");
 const countrySearchInput = document.getElementById("country-search");
-const countrySearchBox = document.querySelector(".country-combobox");
 const countryOptions = document.getElementById("country-options");
 const countrySearchStatus = document.getElementById("country-search-status");
 const zoomOutButton = document.getElementById("zoom-out");
@@ -4472,7 +4471,8 @@ function populateCountryOptions() {
 function buildCountrySearchOptions() {
   const options = [];
   const optionValues = new Set();
-  const optionId = (value) => normalizeSearchText(value).replace(/\s+/g, "-") || "result";
+  const optionId = (type, value) =>
+    `country-search-option-${type}-${normalizeSearchText(value).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "result"}`;
 
   for (const entry of state.countryIndex) {
     if (optionValues.has(entry.name)) {
@@ -4480,7 +4480,7 @@ function buildCountrySearchOptions() {
     }
 
     options.push({
-      id: `country-${optionId(entry.iso || entry.name)}`,
+      id: optionId("country", entry.iso || entry.name),
       type: "country",
       label: entry.name,
       description: entry.iso ? `Country · ${entry.iso}` : "Country",
@@ -4505,7 +4505,7 @@ function buildCountrySearchOptions() {
       }
 
       options.push({
-        id: `province-${optionId(`${iso}-${provinceName(feature)}`)}`,
+        id: optionId("province", `${iso}-${provinceName(feature)}`),
         type: "province",
         label: value,
         description: `Province or state · ${countryEntry.name}`,
@@ -4548,7 +4548,7 @@ function closeCountrySearchOptions() {
   countryOptions.hidden = true;
   countryOptions.textContent = "";
   countrySearchInput.removeAttribute("aria-activedescendant");
-  countrySearchBox?.setAttribute("aria-expanded", "false");
+  countrySearchInput.setAttribute("aria-expanded", "false");
 }
 
 function setActiveCountrySearchOption(index) {
@@ -4562,9 +4562,15 @@ function setActiveCountrySearchOption(index) {
   const activeOption = currentCountrySearchOptions[activeCountrySearchIndex];
   countrySearchInput.setAttribute("aria-activedescendant", activeOption.id);
 
-  countryOptions.querySelectorAll("[role='option']").forEach((option, optionIndex) => {
+  const optionNodes = countryOptions.querySelectorAll("[role='option']");
+
+  optionNodes.forEach((option, optionIndex) => {
     option.setAttribute("aria-selected", String(optionIndex === activeCountrySearchIndex));
+    option.classList.toggle("is-active", optionIndex === activeCountrySearchIndex);
   });
+
+  const activeNode = optionNodes[activeCountrySearchIndex];
+  activeNode?.scrollIntoView({ block: "nearest" });
 }
 
 function renderCountrySearchOptions(query, shouldOpen = true) {
@@ -4608,7 +4614,7 @@ function renderCountrySearchOptions(query, shouldOpen = true) {
 
   countryOptions.appendChild(fragment);
   countryOptions.hidden = false;
-  countrySearchBox?.setAttribute("aria-expanded", "true");
+  countrySearchInput.setAttribute("aria-expanded", "true");
 
   if (activeCountrySearchIndex < 0 || activeCountrySearchIndex >= currentCountrySearchOptions.length) {
     setActiveCountrySearchOption(0);
