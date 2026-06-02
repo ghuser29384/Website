@@ -74,6 +74,8 @@ curl https://painmap.org/v1/coverage.json
 curl https://painmap.org/v1/places/IND/adm1.json
 curl https://painmap.org/v1/places/IND/neighbors.json
 curl https://painmap.org/ogc/collections/places/items.json
+curl https://painmap.org/ogc/collections/places/item-index.json
+curl https://painmap.org/ogc/collections/places/items/IND.json
 curl https://painmap.org/data/place-measurements.json
 curl https://painmap.org/v1/places/BRA.json
 curl https://painmap.org/data/provenance-registry.json
@@ -130,7 +132,7 @@ curl https://painmap.org/releases/2026-05-31/diff.json</code></pre>
             <article class="metadata-card">
               <span class="evidence-badge">geo</span>
               <h2>OGC-style features</h2>
-              <p>Static OGC API - Features-style JSON exposes country geometry with coverage status, profile links, and neighbor payload links.</p>
+              <p>Static OGC API - Features-style JSON exposes both the full country feature collection and per-country item files for partitioned geometry loading.</p>
             </article>
             <article class="metadata-card">
               <span class="evidence-badge">diffs</span>

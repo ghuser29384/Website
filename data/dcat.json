@@ -125,6 +125,16 @@
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
+          "dcat:accessURL": "https://painmap.org/ogc/collections/places/item-index.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/geo+json",
+          "dcat:accessURL": "https://painmap.org/ogc/collections/places/items/IND.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
           "dcat:accessURL": "https://painmap.org/v1/sources.json"
         }
       ]

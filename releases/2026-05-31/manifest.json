@@ -12,6 +12,7 @@
     "coverage": "https://painmap.org/v1/coverage.json",
     "release_modes": "https://painmap.org/data/release-modes.json",
     "ogc_features": "https://painmap.org/ogc/collections/places/items.json",
+    "ogc_feature_item_index": "https://painmap.org/ogc/collections/places/item-index.json",
     "release_diff": "https://painmap.org/releases/2026-05-31/diff.json",
     "provenance": "https://painmap.org/data/provenance-registry.json",
     "openapi": "https://painmap.org/data/openapi.json",
@@ -5348,13 +5349,13 @@
     },
     {
       "path": "/api/index.html",
-      "sha256": "57a1bbe9b9be6cfda6a89edf50f49a7b49c3ad0508ee39b9364b72c9e9d108ee",
-      "bytes": 11941
+      "sha256": "2f6888bea72654281b59b05e1f6e0cb5b9ce45171abe4be5b772a8dde2b22dab",
+      "bytes": 12452
     },
     {
       "path": "/developers/index.html",
-      "sha256": "ade6393cd5c0ec441bc899d0b24e55bdac056de7ad22fb7f2c88dde26d33431c",
-      "bytes": 9060
+      "sha256": "9bf46fdabac4d5521d4fc8d339840ea4f4d1b3527f9844db080e74d30446435e",
+      "bytes": 9207
     },
     {
       "path": "/examples/index.html",
@@ -5463,8 +5464,8 @@
     },
     {
       "path": "/data/endpoint-smoke.json",
-      "sha256": "907ac07cdb6b4f8ce36ee478b99c402c0558630b465fce2205a607bf11ef29c1",
-      "bytes": 4902
+      "sha256": "9fffab7184c007004024cae4fc9704c8b4d1223017d22e467a5598170bc82b88",
+      "bytes": 5486
     },
     {
       "path": "/data/countries-lite.geojson",
@@ -5483,13 +5484,13 @@
     },
     {
       "path": "/data/dcat.json",
-      "sha256": "02bd565f50ba648308ef7f2aa676d5362a88fc9e4899bede85e12634133e6db0",
-      "bytes": 7087
+      "sha256": "a118daa987a75350234bcb3c5d77415060ea52886519698f9000ee965b0540ff",
+      "bytes": 7478
     },
     {
       "path": "/data/openapi.json",
-      "sha256": "f3f88f1f7620d05103bd46a9dac70a9cd3a6a03937c4888599eda29da5c2a544",
-      "bytes": 21593
+      "sha256": "5fcf612dd8fc6134b083858111bde23019c10682699eff372db58ea3d2d8717d",
+      "bytes": 23455
     },
     {
       "path": "/compare.js",
@@ -5498,18 +5499,18 @@
     },
     {
       "path": "/clients/typescript/painmap-client.ts",
-      "sha256": "677440e9957dca89585c44c8740ecb804f043bee76e37069de3a640575be02e1",
-      "bytes": 7117
+      "sha256": "a1dd4fcdab6458ed015bafe6ec209a1d7461d7b34d5c573463129bc7bf926a86",
+      "bytes": 8027
     },
     {
       "path": "/clients/python/painmap_client.py",
-      "sha256": "b91c864bf5e2bed7f55265798886110cd2bef0186036abcec24fd3d156c0cfa3",
-      "bytes": 2245
+      "sha256": "2c80f9cb0d9c3ad3350521f6d6543fa4a841f2dccd9b27e243a30e0a51386360",
+      "bytes": 2519
     },
     {
       "path": "/examples/README.md",
-      "sha256": "e74a08090a97e50291bb06d82733eedf14a447725cad342861fa67ffc1307c62",
-      "bytes": 1690
+      "sha256": "5cadc71571beb61961a0bb15d3624619fdf44b5fcae9adfbb46398381f11d087",
+      "bytes": 1917
     },
     {
       "path": "/examples/load-place-profile.mjs",
@@ -7473,8 +7474,8 @@
     },
     {
       "path": "/ogc/index.json",
-      "sha256": "9b3e4a158797781652b1f9062508f03b70a8a3e98835bce3edacc2f1f91dfefe",
-      "bytes": 907
+      "sha256": "023bf8ed5a65ee96ea385aac7e3bf2530d08723ca0bec1822843721f9e1e8b42",
+      "bytes": 1103
     },
     {
       "path": "/ogc/conformance.json",
@@ -7483,23 +7484,1223 @@
     },
     {
       "path": "/ogc/collections/index.json",
-      "sha256": "c4f98d3141e9c41f78467f6a68b88b2f0fb2b937e699c063ed2c1b2157a488cc",
-      "bytes": 1264
+      "sha256": "46274a320d49cf1d5eea5b2d6176aba6113f806a4f7c93263848362523f19baf",
+      "bytes": 1488
     },
     {
       "path": "/ogc/collections/places/index.json",
-      "sha256": "a62a5b9d512b04cc5f3742e540514495ae24daeb6e44e0aabccb4aee75221938",
-      "bytes": 1078
+      "sha256": "4ddae656637a252ec698736fb944ca952e235336d50b9f6d397ed4667a4dabdb",
+      "bytes": 1471
+    },
+    {
+      "path": "/ogc/collections/places/item-index.json",
+      "sha256": "da8ddbb1f9a01271c06bcca20844c031c5794d95b2f5b764f333cbe7d865846b",
+      "bytes": 104535
     },
     {
       "path": "/ogc/collections/places/items.json",
-      "sha256": "bbfcb7d74f192b964de99bcb473b3fd46c96217cd2419a0c38a7a0645d2c438f",
-      "bytes": 2254558
+      "sha256": "74a9e8ffa051e82655e663bd0a600bdcdd59e79614f1fbda0ff8c9adf0ebd540",
+      "bytes": 2254716
+    },
+    {
+      "path": "/ogc/collections/places/items/AFG.json",
+      "sha256": "d9682840345674d71de22144e094ce77c792e49dc7586e960b895fe680bcc54a",
+      "bytes": 10026
+    },
+    {
+      "path": "/ogc/collections/places/items/ALA.json",
+      "sha256": "7ee5b12a13e641eca1875729548d6fe81a345f28b4a5d96f22bfbc96a4510ca7",
+      "bytes": 2243
+    },
+    {
+      "path": "/ogc/collections/places/items/ALB.json",
+      "sha256": "69dc290e71b9af3f37b65252504f06a2c0cc421c2fba4d70f1d32dbe58b0af71",
+      "bytes": 3569
+    },
+    {
+      "path": "/ogc/collections/places/items/DZA.json",
+      "sha256": "bdb0766cb50012e01190b5675f8fe724b0c11e1221495b6ba0f972651cd61143",
+      "bytes": 9189
+    },
+    {
+      "path": "/ogc/collections/places/items/ASM.json",
+      "sha256": "9f1c6eb42ca4c014aea37f28406906f92e84ee5a12001a5af8dfebebb0d00a48",
+      "bytes": 1328
+    },
+    {
+      "path": "/ogc/collections/places/items/AND.json",
+      "sha256": "7d7b9e0b2690dd0dcdae72270f32b4c6fd9261aaac72b8f68dddedb5ee6617b0",
+      "bytes": 1495
+    },
+    {
+      "path": "/ogc/collections/places/items/AGO.json",
+      "sha256": "c6fb89c0a8d4c99452c6e27c3c01f2824ee4bbea46556b784332797612cc9ea7",
+      "bytes": 8647
+    },
+    {
+      "path": "/ogc/collections/places/items/AIA.json",
+      "sha256": "0cd51b3d51d5ad1c9ae5387db0189d513ddc603d75de3969b38ec44424821493",
+      "bytes": 1243
+    },
+    {
+      "path": "/ogc/collections/places/items/ATG.json",
+      "sha256": "280e6e277bcd87e4d3cdf92779662e425b5fe230b19f4edb0b278ae0c144641c",
+      "bytes": 1651
+    },
+    {
+      "path": "/ogc/collections/places/items/ARG.json",
+      "sha256": "f5564f3b11ef30b7f1ad16b1bf7bb8c8de47a7a19dd76d7a91724e41acf6fba5",
+      "bytes": 25778
+    },
+    {
+      "path": "/ogc/collections/places/items/ARM.json",
+      "sha256": "bb9609068c8457b89efe3fc4af33d73f4d4f27c097af74c8ae0a33640bdedcc1",
+      "bytes": 4293
+    },
+    {
+      "path": "/ogc/collections/places/items/ABW.json",
+      "sha256": "2d2334222c62a4fd188460f4d11ac302b70e207bb057eb139221109fe7f26e02",
+      "bytes": 1329
+    },
+    {
+      "path": "/ogc/collections/places/items/AUS.json",
+      "sha256": "62dda21c2baed79580d63636cdd5bc861f17ec18da1600fad1f070a1a6a14d90",
+      "bytes": 44983
+    },
+    {
+      "path": "/ogc/collections/places/items/AUT.json",
+      "sha256": "4bdfd9b3a53856ec1d0b9795e74b80b4784746c059a76ad8eea5a1f215360fe6",
+      "bytes": 7012
+    },
+    {
+      "path": "/ogc/collections/places/items/AZE.json",
+      "sha256": "4ef78710a631517ab3ae588dbf0c7a8b8386fb28d7cc13f031982ef9cb895803",
+      "bytes": 6874
+    },
+    {
+      "path": "/ogc/collections/places/items/BHR.json",
+      "sha256": "22dc70152b3864ba94fb2d74b8998fc7f7a71de44ee5c59e49700a95bad6d097",
+      "bytes": 1388
+    },
+    {
+      "path": "/ogc/collections/places/items/BGD.json",
+      "sha256": "0f47c24ed6c94f409a134a5cd7181872bdc3cc1f77a47115322839ef800428ca",
+      "bytes": 9488
+    },
+    {
+      "path": "/ogc/collections/places/items/BRB.json",
+      "sha256": "9c8cd97c48b64a3bec86fe196b041f8a55ad70d15a395ff3dd085a65dc5317fb",
+      "bytes": 1313
+    },
+    {
+      "path": "/ogc/collections/places/items/BLR.json",
+      "sha256": "988b27d9c8786ebb3ac3ec14440968cb07bef691e6a0ef0b15f727c0bc43ec1c",
+      "bytes": 8085
+    },
+    {
+      "path": "/ogc/collections/places/items/BEL.json",
+      "sha256": "1e58b5f6b1c72e95ef746c4dbfbc39294c1c4bdb79e52baff984861b31b87b82",
+      "bytes": 4495
+    },
+    {
+      "path": "/ogc/collections/places/items/BLZ.json",
+      "sha256": "e5fff3befee7d952404330d5463275294ab85b38cbc72f75802b771bb2116568",
+      "bytes": 2593
+    },
+    {
+      "path": "/ogc/collections/places/items/BEN.json",
+      "sha256": "9737e28601284d64523def7a301a155c652ccf57b400dc163b0eeb7553d08f8f",
+      "bytes": 4069
+    },
+    {
+      "path": "/ogc/collections/places/items/BMU.json",
+      "sha256": "365ab1e739db24c5f9a877fa319c79de808c640d810db8dde0701ce7aabfbd33",
+      "bytes": 1291
+    },
+    {
+      "path": "/ogc/collections/places/items/BTN.json",
+      "sha256": "d2ba592703835880b01ab0b82e71039ae2d273e5440dcf954d3da7489537da80",
+      "bytes": 3279
+    },
+    {
+      "path": "/ogc/collections/places/items/BOL.json",
+      "sha256": "b5697afaffee29b14ead3148624825ae5fd430a30cc07134b3b12f5d2f0da6e3",
+      "bytes": 11022
+    },
+    {
+      "path": "/ogc/collections/places/items/BIH.json",
+      "sha256": "8639bd49ec06dc966beeb1af9c5b259276866a84c0478025c7d1ce91923be780",
+      "bytes": 4331
+    },
+    {
+      "path": "/ogc/collections/places/items/BWA.json",
+      "sha256": "99433c302329866bc512572292f711287507248c6912c9f70df141fec7c1488b",
+      "bytes": 6149
+    },
+    {
+      "path": "/ogc/collections/places/items/BRA.json",
+      "sha256": "6cefc6168ab47d37eacb4c54edae2f7cf68e66a4db2c14cda2dce087a0983f19",
+      "bytes": 44409
+    },
+    {
+      "path": "/ogc/collections/places/items/IOT.json",
+      "sha256": "35271aed6b2cac51651d7994640525f8b363c837f898176fb5aa67d92c9e4200",
+      "bytes": 1543
+    },
+    {
+      "path": "/ogc/collections/places/items/VGB.json",
+      "sha256": "3772959a439ee9f9e16103032fbbe6c3a1a9e63412f14daa8d381decc86e7d7a",
+      "bytes": 1682
+    },
+    {
+      "path": "/ogc/collections/places/items/BRN.json",
+      "sha256": "10ecc2faee1d40c0c1f3417e99e3e04054170aaf4d9cc1c69fef716dcfb859b6",
+      "bytes": 2321
+    },
+    {
+      "path": "/ogc/collections/places/items/BGR.json",
+      "sha256": "e753b9663608933d92b72556209494f300a613afe0696f4ca4567df83db115fe",
+      "bytes": 4999
+    },
+    {
+      "path": "/ogc/collections/places/items/BFA.json",
+      "sha256": "dc8014f37780eaf13a7b5ca2232d443e2a6d01dd8c14702c1a2bcdb96f18a4ef",
+      "bytes": 6496
+    },
+    {
+      "path": "/ogc/collections/places/items/BDI.json",
+      "sha256": "7f305179a897af97888f973eaff3bfb796c34c1fdae98fd3c2be476133ff3ecf",
+      "bytes": 2803
+    },
+    {
+      "path": "/ogc/collections/places/items/KHM.json",
+      "sha256": "546e228a88c24b00a1c1b1d0c6b81967f7f7eb3a0d9f77b7ac1073750c70bc59",
+      "bytes": 6150
+    },
+    {
+      "path": "/ogc/collections/places/items/CMR.json",
+      "sha256": "3279e3acc87ef496699c7ec08a93def5fc0e2c303b0a4a3b706b0c77b8fa4f65",
+      "bytes": 8343
+    },
+    {
+      "path": "/ogc/collections/places/items/CAN.json",
+      "sha256": "9df1fedc6825d6c34e21572ccf15abf312d1b812a5aedfe6237c5f063f221b10",
+      "bytes": 268564
+    },
+    {
+      "path": "/ogc/collections/places/items/CPV.json",
+      "sha256": "d5730ce317b988c2da85cbc99a28501c25a7b0a09dbb87e5b91be39849b32b2b",
+      "bytes": 3127
+    },
+    {
+      "path": "/ogc/collections/places/items/CYM.json",
+      "sha256": "232ec9c43e2f9b8e0d8be9d23089adba069845a7d82229da0e6131eef20de90d",
+      "bytes": 1962
+    },
+    {
+      "path": "/ogc/collections/places/items/CAF.json",
+      "sha256": "402d400e9e3bffac11290ba42f953e6b7b792c0ac16f58c71df6d1f42d8b1072",
+      "bytes": 7911
+    },
+    {
+      "path": "/ogc/collections/places/items/TCD.json",
+      "sha256": "ff4b834a7ed2f6c6f020a42a96a0015b141d6a83c965d975282824dd43797523",
+      "bytes": 7343
+    },
+    {
+      "path": "/ogc/collections/places/items/CHL.json",
+      "sha256": "8cc7f971d9d33cec8169dd8c4ec5859e20b4aa3209217fcb97077fd7b8403c6b",
+      "bytes": 48871
+    },
+    {
+      "path": "/ogc/collections/places/items/COL.json",
+      "sha256": "6424c079d3485a117256d1a99f88c4696c550cb2a2d8e0fb2be73b815e600abd",
+      "bytes": 14885
+    },
+    {
+      "path": "/ogc/collections/places/items/COM.json",
+      "sha256": "f9e220e07b083cff7975f27a2b1110feb392c3f15c0bc6390de0121efa3553f4",
+      "bytes": 1907
+    },
+    {
+      "path": "/ogc/collections/places/items/COK.json",
+      "sha256": "e674cb9bc48ca13740387105f142a26d2f86647c65ba8d9ec227581682947a63",
+      "bytes": 1396
+    },
+    {
+      "path": "/ogc/collections/places/items/CRI.json",
+      "sha256": "ff21435d177f7b3845a38917165c853c3cca60c4db564cd09c08ed6873412b19",
+      "bytes": 4065
+    },
+    {
+      "path": "/ogc/collections/places/items/HRV.json",
+      "sha256": "987eacb7075b9bf38faa360654155898aebed47de525823a20938dbb350974cb",
+      "bytes": 9281
+    },
+    {
+      "path": "/ogc/collections/places/items/CUB.json",
+      "sha256": "2d944f3e97c37c3cd9ae2867740df0f6f38e32bf10b035793fca415a1f8c55d0",
+      "bytes": 8047
+    },
+    {
+      "path": "/ogc/collections/places/items/CUW.json",
+      "sha256": "82f49f68b27200b302fab42c04761736ee88483531e8d7d76a6c546d5218c394",
+      "bytes": 1339
+    },
+    {
+      "path": "/ogc/collections/places/items/CYP.json",
+      "sha256": "4a0fc9c7eeff775a5d16fb765a4711338ee704ff4968b5219444d41f50b0ad42",
+      "bytes": 2317
+    },
+    {
+      "path": "/ogc/collections/places/items/CZE.json",
+      "sha256": "b74f4faab7e4ffae79a22b107d90673df9497efcc007ceede0f56485e43f3cd0",
+      "bytes": 6355
+    },
+    {
+      "path": "/ogc/collections/places/items/COD.json",
+      "sha256": "d104b8465b92456eceb4854ae647cb19f3300bf154c0cc46024b13536ac61006",
+      "bytes": 14413
+    },
+    {
+      "path": "/ogc/collections/places/items/DNK.json",
+      "sha256": "d6a4fdcf3f068b4ce977391a58ff0cbe494cdc6593d9999d3bc824e96208b508",
+      "bytes": 7542
+    },
+    {
+      "path": "/ogc/collections/places/items/DJI.json",
+      "sha256": "d1a6e6e9592d8c04fe288ff6a10c22f98a892ddd1c1cb962324fc1bf7edd6705",
+      "bytes": 2329
+    },
+    {
+      "path": "/ogc/collections/places/items/DMA.json",
+      "sha256": "8aaa6a34c378558b40cfff126c9eef9581ba4ff4d6c6b9489cf83efcbe3aa4e0",
+      "bytes": 1339
+    },
+    {
+      "path": "/ogc/collections/places/items/DOM.json",
+      "sha256": "d978577b243da4b58d9196dcf38d9807f98a67b00351fa798f8a1c27cc4fe263",
+      "bytes": 3687
+    },
+    {
+      "path": "/ogc/collections/places/items/TLS.json",
+      "sha256": "8455c1d850c21e166d94821d505f7ac84ae267ac824178153971f0ebd53b9288",
+      "bytes": 2718
+    },
+    {
+      "path": "/ogc/collections/places/items/ECU.json",
+      "sha256": "1dfe3afbafe3409dbc6cdba4189aa0f77c4b4fd796aeadf4ed2fa55fcd85fd62",
+      "bytes": 8972
+    },
+    {
+      "path": "/ogc/collections/places/items/EGY.json",
+      "sha256": "0830c23da5b2a4836faf55795d77abebb454dee139663aa948ef23d25661b891",
+      "bytes": 6599
+    },
+    {
+      "path": "/ogc/collections/places/items/SLV.json",
+      "sha256": "e12a9fc6daeece0506b312b94468f7537d733e83fc7d8c71b46b22d7cdf057be",
+      "bytes": 2812
+    },
+    {
+      "path": "/ogc/collections/places/items/GNQ.json",
+      "sha256": "404c2b9e2cd79fca01a106e808cb0d885ef8f800f06c2a4770f7b2d0453877a9",
+      "bytes": 2479
+    },
+    {
+      "path": "/ogc/collections/places/items/ERI.json",
+      "sha256": "4fd034d0d82b4f80fbe3befd2b445f1cb23105701c1f3f99e4ee220c704a84af",
+      "bytes": 5298
+    },
+    {
+      "path": "/ogc/collections/places/items/EST.json",
+      "sha256": "b32e4140b16a9bbc566d0af4830c12c8387e28cb58ec37a66e0da654b8a6cfd6",
+      "bytes": 5351
+    },
+    {
+      "path": "/ogc/collections/places/items/SWZ.json",
+      "sha256": "887905622c0660026c70f3a4bc737a2aed12e0b232c9a2ce010b4d641a4ce671",
+      "bytes": 1969
+    },
+    {
+      "path": "/ogc/collections/places/items/ETH.json",
+      "sha256": "98ac8a4d481178a1065f5b93329f4a0c94feed61c05aace1e5f651a254d02fc5",
+      "bytes": 7515
+    },
+    {
+      "path": "/ogc/collections/places/items/FLK.json",
+      "sha256": "e232f306cec114112e4fbfab4cf9ad1a11397e8de199c5c012c8dbd5127ebbbd",
+      "bytes": 4681
+    },
+    {
+      "path": "/ogc/collections/places/items/FRO.json",
+      "sha256": "9bc9c2b0f54ee552e93eb0c2a055035064cfd8b6868b459fb73797d1605c71a8",
+      "bytes": 2516
+    },
+    {
+      "path": "/ogc/collections/places/items/FSM.json",
+      "sha256": "12fb329a6ff6ce553d20d8823babb149dbebe3fced049f68d365f4ca8dfb4e6b",
+      "bytes": 2257
+    },
+    {
+      "path": "/ogc/collections/places/items/FJI.json",
+      "sha256": "fb8ff88da40ead96e71cdf79eddb3a5dd0796f537927af15f3c3612839acf7de",
+      "bytes": 7850
+    },
+    {
+      "path": "/ogc/collections/places/items/FIN.json",
+      "sha256": "3e7216ad5069f2b14e395a7192d6a07530e57d798565943ec3cefbbd7d23c79a",
+      "bytes": 12433
+    },
+    {
+      "path": "/ogc/collections/places/items/FRA.json",
+      "sha256": "0694c9db6c9e282307fcd98db0e2d6bcdcb7739a4375f09121e4e78ca1f54265",
+      "bytes": 18609
+    },
+    {
+      "path": "/ogc/collections/places/items/PYF.json",
+      "sha256": "3a9dd511d6120423fe91e5b109d1370f0625c6e95771fa1cb8fc3187f67b7c54",
+      "bytes": 5774
+    },
+    {
+      "path": "/ogc/collections/places/items/ATF.json",
+      "sha256": "0b8957f353191dc8bc9f1818ba795c4f1b2bb2bbb9f58bbf16e820b6c167f11c",
+      "bytes": 3909
+    },
+    {
+      "path": "/ogc/collections/places/items/GAB.json",
+      "sha256": "c050a5c8e6239d0ace4c9661b41c1693ec22ca7f81d0be6a31bfb83a6bea80c6",
+      "bytes": 6764
+    },
+    {
+      "path": "/ogc/collections/places/items/GEO.json",
+      "sha256": "3af49b114e77d73001be978869272b5ead643c4dfe121af270d62b33f6550321",
+      "bytes": 4667
+    },
+    {
+      "path": "/ogc/collections/places/items/DEU.json",
+      "sha256": "6c06e699a7dc13a25b0c616b2282dd91202f5dd913eee4411c3d536227a3531d",
+      "bytes": 13076
+    },
+    {
+      "path": "/ogc/collections/places/items/GHA.json",
+      "sha256": "6d1ba91ec0ce5db81cef9627a8e0557e791f3e930029d506878ce7de241fcabb",
+      "bytes": 5486
+    },
+    {
+      "path": "/ogc/collections/places/items/GRC.json",
+      "sha256": "c9cb4c4b5a38e35024671e68bfe8c0704fc18b502ed1c3d45d4cda6c6115a02c",
+      "bytes": 21335
+    },
+    {
+      "path": "/ogc/collections/places/items/GRL.json",
+      "sha256": "c3e72af723dbd8cacad1c0478d3de6c43d58b4df40416bcf10eed3fccebad556",
+      "bytes": 52171
+    },
+    {
+      "path": "/ogc/collections/places/items/GRD.json",
+      "sha256": "39a62b89c73c3f0048cb21b262182d617d854c614af2ba7ae8a54c7eeccc4cf9",
+      "bytes": 1313
+    },
+    {
+      "path": "/ogc/collections/places/items/GUM.json",
+      "sha256": "da6602e62779084f8cdba5326a2696e6c8db1114f2230e7cc9847c6de65b3ab3",
+      "bytes": 1366
+    },
+    {
+      "path": "/ogc/collections/places/items/GTM.json",
+      "sha256": "5a07c26c2ff12c4ee168ec0d9a46dfd704027036e472c404e0fc35ec887a59f5",
+      "bytes": 3731
+    },
+    {
+      "path": "/ogc/collections/places/items/GGY.json",
+      "sha256": "5dc614c8f70a31ad570be9da8a01687dc89591a26bc79355c0e6d1b07da9bcca",
+      "bytes": 1262
+    },
+    {
+      "path": "/ogc/collections/places/items/GIN.json",
+      "sha256": "cdfd5e4561eb83303aa17ef8a6649ec314a6b80c2dd9b4b4538d6376477f9209",
+      "bytes": 8672
+    },
+    {
+      "path": "/ogc/collections/places/items/GNB.json",
+      "sha256": "a3e5f0a0c4909e0ed2830641143bbc2797f66964d99dcfbc479344f1edf5546f",
+      "bytes": 4684
+    },
+    {
+      "path": "/ogc/collections/places/items/GUY.json",
+      "sha256": "88eefb7238572633af46ec8b47e814cf75542fd4c02e4be24933eb8468f6beca",
+      "bytes": 7323
+    },
+    {
+      "path": "/ogc/collections/places/items/HTI.json",
+      "sha256": "b950e69957308987795d437bec1f2b2d692b8d4d99b8e2a4b63ff8fdf0dcbdfe",
+      "bytes": 3651
+    },
+    {
+      "path": "/ogc/collections/places/items/HMD.json",
+      "sha256": "02863bfe91bc6f7896836888a77ed01a19e512d055037791896ec13485a66504",
+      "bytes": 1526
+    },
+    {
+      "path": "/ogc/collections/places/items/HND.json",
+      "sha256": "350a9b30099df161dd3750c58c77edbb6cec07fbcb41759b0a3fd41b6a0b2c54",
+      "bytes": 5843
+    },
+    {
+      "path": "/ogc/collections/places/items/HKG.json",
+      "sha256": "1fbea207af0f7676a1b8016d100fa9a1a48c4f5bffa8c67e3bdd7a4586daf4e2",
+      "bytes": 2007
+    },
+    {
+      "path": "/ogc/collections/places/items/HUN.json",
+      "sha256": "0d6d7c46588f1319df0e640d74da45a3a85d6c30341c005d4e9b43c4786af6c2",
+      "bytes": 5777
+    },
+    {
+      "path": "/ogc/collections/places/items/ISL.json",
+      "sha256": "361a50a0eda3acaf7957ee5bd46fc0ad530637baad4e781a291c6dccb45c6242",
+      "bytes": 11415
+    },
+    {
+      "path": "/ogc/collections/places/items/IND.json",
+      "sha256": "c03a0922e944745623049dc9ee6b1cc5313568e081d11bb3ce0e31ea68ab3843",
+      "bytes": 34142
+    },
+    {
+      "path": "/ogc/collections/places/items/IDN.json",
+      "sha256": "65109cc85f7a144cb366cfe1e0f8ebcfa83a52edcae270b2540d473bcf101d18",
+      "bytes": 85118
+    },
+    {
+      "path": "/ogc/collections/places/items/IRN.json",
+      "sha256": "0d8304926eda86d5efeed009f9aaf577c236faa9c74878dbf7a1896b33d05511",
+      "bytes": 14233
+    },
+    {
+      "path": "/ogc/collections/places/items/IRQ.json",
+      "sha256": "52fe562e126b84b94a5b5f7e6f723ac8d860eb7ba40cec4f477d201e55e736f1",
+      "bytes": 6161
+    },
+    {
+      "path": "/ogc/collections/places/items/IRL.json",
+      "sha256": "fd2ef3d8f60bb6f3264efbecf2871c38dd1cc7e0c1b82d3a1ddfe9ef113b8f8c",
+      "bytes": 7986
+    },
+    {
+      "path": "/ogc/collections/places/items/IMN.json",
+      "sha256": "4e772883f51b36cdbf3827fa063c6a266300e5d7a7a833677b08f69373983932",
+      "bytes": 1445
+    },
+    {
+      "path": "/ogc/collections/places/items/ISR.json",
+      "sha256": "946fbdf59ceddb0b6588f3c313885b064e2162e7b323ef8e41610c5020fa9c5a",
+      "bytes": 3411
+    },
+    {
+      "path": "/ogc/collections/places/items/ITA.json",
+      "sha256": "e93734a392913ec2fd9ef36f2571ecd3d2edb0ad2648a5891a7785261be152e2",
+      "bytes": 14287
+    },
+    {
+      "path": "/ogc/collections/places/items/CIV.json",
+      "sha256": "24d789ad9641ff3fe3459cb963ba1266923116604ddfa7e8ec8b07608df0b640",
+      "bytes": 7285
+    },
+    {
+      "path": "/ogc/collections/places/items/JAM.json",
+      "sha256": "b7125467c18ce797bfaadb8b91e3778dcf3fcc8594e545283792520d67186cf5",
+      "bytes": 2200
+    },
+    {
+      "path": "/ogc/collections/places/items/JPN.json",
+      "sha256": "2fcc4b228f05a97da8adcd53c3538da741181ae30179d949b4f6dfedcfe91cb2",
+      "bytes": 26190
+    },
+    {
+      "path": "/ogc/collections/places/items/JEY.json",
+      "sha256": "a2cc9cd199e8d2b4e3ec715eb3ebe7e495c5bdb1c59e30c9061b5c4e867ebb1b",
+      "bytes": 1295
+    },
+    {
+      "path": "/ogc/collections/places/items/JOR.json",
+      "sha256": "258139c867e7df0c004e8c2a84a79d773e99439e3665c2e8b2894d2aa4505382",
+      "bytes": 3195
+    },
+    {
+      "path": "/ogc/collections/places/items/KAZ.json",
+      "sha256": "e79a3cc071c0667de19a0a164e87accce8ee8075300089d5e32fa79d27da84cd",
+      "bytes": 25940
+    },
+    {
+      "path": "/ogc/collections/places/items/KEN.json",
+      "sha256": "4fc76a10efe143d6cbbd25696f192edd145a8be5ff96e271f398c24bead301c5",
+      "bytes": 5861
+    },
+    {
+      "path": "/ogc/collections/places/items/KIR.json",
+      "sha256": "9877814bea90e42ee192296e3fd4ae0a8c3b688cf45d7312997dc47920da4280",
+      "bytes": 6061
+    },
+    {
+      "path": "/ogc/collections/places/items/KOS.json",
+      "sha256": "75565a9400860d819f73bd0868826adddfe3636d8d61f7bf2c7fe03870e96196",
+      "bytes": 2658
+    },
+    {
+      "path": "/ogc/collections/places/items/KWT.json",
+      "sha256": "93a477ede0759cfca863b9c44b75d63a99017fe4391ee9e3490e121d53ee945d",
+      "bytes": 2559
+    },
+    {
+      "path": "/ogc/collections/places/items/KGZ.json",
+      "sha256": "a664d2f49d906eb331e3b5821898c70c5462efa01ba15907c24e848ba8d2e7c8",
+      "bytes": 9550
+    },
+    {
+      "path": "/ogc/collections/places/items/LAO.json",
+      "sha256": "d627078188f9729b83b9033668ec0d9a9ab7de87007ad2f89cceeef0d98e76e4",
+      "bytes": 9963
+    },
+    {
+      "path": "/ogc/collections/places/items/LVA.json",
+      "sha256": "3c9f4f9523ba6b67cf98839e90cdd37664473a59f3205ef07b46eaf220e25c10",
+      "bytes": 4151
+    },
+    {
+      "path": "/ogc/collections/places/items/LBN.json",
+      "sha256": "3a6953accf2bfc93af54b0096d08b37df70e6427d4740191688dcdca38ab1ec7",
+      "bytes": 2448
+    },
+    {
+      "path": "/ogc/collections/places/items/LSO.json",
+      "sha256": "6d6f45cd30aec36ac62dcfb8379025519378bd424070241242b560723699585f",
+      "bytes": 2860
+    },
+    {
+      "path": "/ogc/collections/places/items/LBR.json",
+      "sha256": "c27187c8661afdb65720cb80a247530d8b549cde5119efa607b1931b5956e3bc",
+      "bytes": 4026
+    },
+    {
+      "path": "/ogc/collections/places/items/LBY.json",
+      "sha256": "2db596ca6c1b835adf0a0c2d7e9002cfee4f90fc263dce7d9d4dfbe74b592ed4",
+      "bytes": 6653
+    },
+    {
+      "path": "/ogc/collections/places/items/LIE.json",
+      "sha256": "da632d3ecd0e06efaf5a8d0ea39d61a1c12fde16e7027821e8dcee576fe86cff",
+      "bytes": 1432
+    },
+    {
+      "path": "/ogc/collections/places/items/LTU.json",
+      "sha256": "b06d123f59c974e8091035fce7ba4e4140d81e4dd9ff0d50995415316d6206f9",
+      "bytes": 4499
+    },
+    {
+      "path": "/ogc/collections/places/items/LUX.json",
+      "sha256": "a15b6e5c55d3e065d84e37355afdb73771df02dea4a1e07aa5df34d2b4be55ed",
+      "bytes": 2062
+    },
+    {
+      "path": "/ogc/collections/places/items/MAC.json",
+      "sha256": "2ea77cf09d09f23a8ae228a3ab18b8d38edb34dfe8e42788774c32812e0470db",
+      "bytes": 1305
+    },
+    {
+      "path": "/ogc/collections/places/items/MDG.json",
+      "sha256": "024b4d131b8280eb0cccfb4c50017f76d40f679c6bd8fa23f3c65628af8ccc42",
+      "bytes": 7162
+    },
+    {
+      "path": "/ogc/collections/places/items/MWI.json",
+      "sha256": "7d318568049e3a9ba5127e40e7c290830f0d2822e700bacf6d17662eb908dafd",
+      "bytes": 6634
+    },
+    {
+      "path": "/ogc/collections/places/items/MYS.json",
+      "sha256": "973a632dd3721aa3f4c342a2a7631f5a55a6eac57ca0de88e3df20d73bec96ec",
+      "bytes": 12169
+    },
+    {
+      "path": "/ogc/collections/places/items/MDV.json",
+      "sha256": "7e4c9f0b0963e91047af5fbc611530682c8eb172e32b35bfb35013d1c7adc7ac",
+      "bytes": 1567
+    },
+    {
+      "path": "/ogc/collections/places/items/MLI.json",
+      "sha256": "8215763d21d26676153c3553cdf6a90f8a634455ceff2725a1e2ddb292f960bf",
+      "bytes": 11411
+    },
+    {
+      "path": "/ogc/collections/places/items/MLT.json",
+      "sha256": "5a401de5492ab777bef48805dfa2ee9d39ac8f1a3252dbc53fbb4df428b6e94f",
+      "bytes": 1449
+    },
+    {
+      "path": "/ogc/collections/places/items/MHL.json",
+      "sha256": "d99e88cb8c6ee5c8c9a391d42bbe321381df44d0a0132f952cf30ff9dd4d74bf",
+      "bytes": 2179
+    },
+    {
+      "path": "/ogc/collections/places/items/MRT.json",
+      "sha256": "b3e5e86dde93bbd6b41ee57e16ef25f938221e2250d47d0cfc7dfc7552573952",
+      "bytes": 8321
+    },
+    {
+      "path": "/ogc/collections/places/items/MUS.json",
+      "sha256": "e19437109be94185be0f25a60f0bc624a53a83b748d2932739e466cb4aafb9fc",
+      "bytes": 1540
+    },
+    {
+      "path": "/ogc/collections/places/items/MEX.json",
+      "sha256": "c3f85ae16a1be1d6a05c14660d7cafa5ee49542cca299dceef4241177e3e83fd",
+      "bytes": 24925
+    },
+    {
+      "path": "/ogc/collections/places/items/MDA.json",
+      "sha256": "bea2812850164256af03fc7d9450a1d620abd9cbc5dffb4d3d71b8bccb63d1bc",
+      "bytes": 4333
+    },
+    {
+      "path": "/ogc/collections/places/items/MCO.json",
+      "sha256": "8a4ce3e02cb020991bf7d4051c92325019292af64301348aebe79baba9b68d5c",
+      "bytes": 1246
+    },
+    {
+      "path": "/ogc/collections/places/items/MNG.json",
+      "sha256": "8011ca286bf92415d912e9928d06aeeec33ef36597ead7b645d088bfa3646535",
+      "bytes": 17524
+    },
+    {
+      "path": "/ogc/collections/places/items/MNE.json",
+      "sha256": "b59b840f829af6ad121caabe2e77eccb3cba8985c71b636e65f3cdf1cdd51151",
+      "bytes": 3117
+    },
+    {
+      "path": "/ogc/collections/places/items/MSR.json",
+      "sha256": "2a2d23180fda0e6837bc524fc9f0e12527d5a6b67127aa182ba83dae2d7a7951",
+      "bytes": 1275
+    },
+    {
+      "path": "/ogc/collections/places/items/MAR.json",
+      "sha256": "4db346e693a476863e7f81ca10c98b9f85a2c93fc93e49761e45213204634d76",
+      "bytes": 9275
+    },
+    {
+      "path": "/ogc/collections/places/items/MOZ.json",
+      "sha256": "707644cc67dafccee390bb7ee12c264595bce3ed80ab5169901614baf17afaf2",
+      "bytes": 11781
+    },
+    {
+      "path": "/ogc/collections/places/items/MMR.json",
+      "sha256": "6bde71f1c681e599de0882895d229fc7932503acb91efdd342d2d2904d70a95e",
+      "bytes": 19546
+    },
+    {
+      "path": "/ogc/collections/places/items/NAM.json",
+      "sha256": "2771c715a1683980a396f5730bcfbc5e3adf95bf8c50a84eee101d6014442d4a",
+      "bytes": 6455
+    },
+    {
+      "path": "/ogc/collections/places/items/NRU.json",
+      "sha256": "af62559e5130a0542d28b682c187d9889f0198c0c9820bdc1bbabd9877aa5ce8",
+      "bytes": 1284
+    },
+    {
+      "path": "/ogc/collections/places/items/NPL.json",
+      "sha256": "f05edb9190de67c3ed904fa1c8f778c80ea5bedf7c682884b5d4a738a56e0022",
+      "bytes": 5496
+    },
+    {
+      "path": "/ogc/collections/places/items/NLD.json",
+      "sha256": "0a76d8cda00408ee05abcfb8f366e7368d821839f16f6b9e8a08b035097a6e71",
+      "bytes": 6634
+    },
+    {
+      "path": "/ogc/collections/places/items/NCL.json",
+      "sha256": "47290814dcd480c368784e19480d36183087d2a7d2003d6050ad6f18969133d9",
+      "bytes": 4157
+    },
+    {
+      "path": "/ogc/collections/places/items/NZL.json",
+      "sha256": "5a7435ee5a3b207046f3338cefda79a1e6a99d0dba02b10d409ce6d802254f9e",
+      "bytes": 19616
+    },
+    {
+      "path": "/ogc/collections/places/items/NIC.json",
+      "sha256": "42ad7dc278c277cb6c9c39f4ee8ebb311914e73a11fb554f2dd17a2546ebdbff",
+      "bytes": 5125
+    },
+    {
+      "path": "/ogc/collections/places/items/NER.json",
+      "sha256": "5858cea0a41e8359aa78b7ae63db1cfb053bf06bac9923427b7b5b29a5fa6f64",
+      "bytes": 6457
+    },
+    {
+      "path": "/ogc/collections/places/items/NGA.json",
+      "sha256": "ce4ad00ce0bbaa28f93ac916031bd2d91fee80b801031f05509f17f5172ab888",
+      "bytes": 8526
+    },
+    {
+      "path": "/ogc/collections/places/items/NIU.json",
+      "sha256": "64f6848f66d297d0aa6752127abbd633c2cac869da6edb2ffd2e217447056fd4",
+      "bytes": 1299
+    },
+    {
+      "path": "/ogc/collections/places/items/NFK.json",
+      "sha256": "e033a3688d3738def8950340e44b3c79f910106adee48e5a3e60f0f64ebadaec",
+      "bytes": 1747
+    },
+    {
+      "path": "/ogc/collections/places/items/PRK.json",
+      "sha256": "2d0c2741777ed5c14c4a579f6a4503892931a35a835c47175cffb6c03e70a33c",
+      "bytes": 6977
+    },
+    {
+      "path": "/ogc/collections/places/items/MKD.json",
+      "sha256": "fb815f58506d8f4af7ca333ff4a3679216799f5304d1210c0f46268e19b3adcc",
+      "bytes": 2882
+    },
+    {
+      "path": "/ogc/collections/places/items/MNP.json",
+      "sha256": "525a6b209606ff61ad222f68002ef9988a7a40391517da4c1f213226d847d03c",
+      "bytes": 2229
+    },
+    {
+      "path": "/ogc/collections/places/items/NOR.json",
+      "sha256": "2d52274db8277152b525d3f359af48f14c2a484356419cd17de9f4941d483c90",
+      "bytes": 44015
+    },
+    {
+      "path": "/ogc/collections/places/items/OMN.json",
+      "sha256": "8bfa344f0df5dafd7234bf28d4a34ac3cad1ec8fbd9ae84c1358d5bfbc05949a",
+      "bytes": 6382
+    },
+    {
+      "path": "/ogc/collections/places/items/PAK.json",
+      "sha256": "6d05ad10865a5e89725bc34c57b960c5e29eaa3ac0eae46d6bf1427c2cbd9614",
+      "bytes": 13539
+    },
+    {
+      "path": "/ogc/collections/places/items/PLW.json",
+      "sha256": "59230336a2ec83a1e90cebd9242f7cb5ae8d74420726535151186d27ead000b6",
+      "bytes": 1559
+    },
+    {
+      "path": "/ogc/collections/places/items/PSE.json",
+      "sha256": "89b5f88345518d3f5de5c9b33541f031c9d4e7b5a013612779f777a12661d238",
+      "bytes": 2197
+    },
+    {
+      "path": "/ogc/collections/places/items/PAN.json",
+      "sha256": "23ff4dc0baaeb0893897f86b83bb5dbf1191f8f98d444e72c8a7a7bd615565f3",
+      "bytes": 6473
+    },
+    {
+      "path": "/ogc/collections/places/items/PNG.json",
+      "sha256": "04ceeaf73651424593f9f46f0e2248432e68e0c6236fa398f5bbf0bf8f75399a",
+      "bytes": 18745
+    },
+    {
+      "path": "/ogc/collections/places/items/PRY.json",
+      "sha256": "5320071a52f970ec9eacdfa7b366343843974d76a18084be39149de485d32a68",
+      "bytes": 7208
+    },
+    {
+      "path": "/ogc/collections/places/items/CHN.json",
+      "sha256": "b4e0ab9bcbdce8f62ba2f36b1953972ea546d381da4b02cd892ffddbcfc43252",
+      "bytes": 60858
+    },
+    {
+      "path": "/ogc/collections/places/items/PER.json",
+      "sha256": "baaf12715e8f3b6321ae1ce19349ddea68cf5fa22ee1acfddd9ccac755a9e578",
+      "bytes": 14675
+    },
+    {
+      "path": "/ogc/collections/places/items/PHL.json",
+      "sha256": "16169ee8710642696be84acc241c465424fa56af98128de9ad3c48c8dabc5d18",
+      "bytes": 29028
+    },
+    {
+      "path": "/ogc/collections/places/items/PCN.json",
+      "sha256": "4824f429548ae7bc06507c4aeab7e95bea77ab2536952239b177bc1961ea0b16",
+      "bytes": 1357
+    },
+    {
+      "path": "/ogc/collections/places/items/POL.json",
+      "sha256": "d0bc346d96432144397e6cc329956b76a4ffdd567396ae9d36741552b87933d5",
+      "bytes": 7968
+    },
+    {
+      "path": "/ogc/collections/places/items/PRT.json",
+      "sha256": "252d60a12c6d5c0edd8ce30149f4f1e6e51490664f29359d6d2c272dd2d23b46",
+      "bytes": 6990
+    },
+    {
+      "path": "/ogc/collections/places/items/PRI.json",
+      "sha256": "5bdc98bf313ab3d2872e0dd4572f86c7789e36767939d8ffe4cf0d6d13293290",
+      "bytes": 2692
+    },
+    {
+      "path": "/ogc/collections/places/items/QAT.json",
+      "sha256": "af449ee347676368b6c1b82753b2d2fdd2e82531a0d81fa5fad0d5c874057f19",
+      "bytes": 1842
+    },
+    {
+      "path": "/ogc/collections/places/items/COG.json",
+      "sha256": "2497c9b0fc3da91cd75947ba354a2400fd9cb0f60c29bc21dff553f9059fe3f1",
+      "bytes": 8024
+    },
+    {
+      "path": "/ogc/collections/places/items/ROU.json",
+      "sha256": "a8441d4e78f59c3504e7c94f5374a151b0dce0456eb715489bf153f6d5179612",
+      "bytes": 7052
+    },
+    {
+      "path": "/ogc/collections/places/items/RUS.json",
+      "sha256": "c16293623fae575f7adf3ce7b85c51b9145085b4e0f5152ae0ecc315815225f8",
+      "bytes": 167291
+    },
+    {
+      "path": "/ogc/collections/places/items/RWA.json",
+      "sha256": "82b2fc387d08609a6776faa26fd8ff4f62320b43de1c3018e42a06108a61ed93",
+      "bytes": 2906
+    },
+    {
+      "path": "/ogc/collections/places/items/BLM.json",
+      "sha256": "45f07a0aa2cbf7649d2b844dcbd97e8c1d39191d56dcc523e32c00a7edbbdf3f",
+      "bytes": 1389
+    },
+    {
+      "path": "/ogc/collections/places/items/SHN.json",
+      "sha256": "1586174ef60055806c4b7079cd1f3d64138bda3433f22d7d390e347c2a8898a1",
+      "bytes": 1533
+    },
+    {
+      "path": "/ogc/collections/places/items/KNA.json",
+      "sha256": "08394adacd1060c24ee857da83b410e8d2e362bb0553f6f973179a7696b3f1f1",
+      "bytes": 1608
+    },
+    {
+      "path": "/ogc/collections/places/items/LCA.json",
+      "sha256": "30bc60f236bcdcfca29111a67c282b5afe01d094682d461641caa2b57f229c05",
+      "bytes": 1347
+    },
+    {
+      "path": "/ogc/collections/places/items/MAF.json",
+      "sha256": "ef3e2cdf05eeaa3e435abc13501dc598e35bd5348dfc53fa3f601202231d0941",
+      "bytes": 1282
+    },
+    {
+      "path": "/ogc/collections/places/items/SPM.json",
+      "sha256": "31fb94d4669b7f46538814e1caba0498b4a0acb1451857c35df4dcd459a9f552",
+      "bytes": 1711
+    },
+    {
+      "path": "/ogc/collections/places/items/VCT.json",
+      "sha256": "c3c0eb731850a586eb262120e8801b32c938da765f5afead3ed6f83e444de5db",
+      "bytes": 2310
+    },
+    {
+      "path": "/ogc/collections/places/items/WSM.json",
+      "sha256": "5b27305d041d04e18d7be647d6a53f8bdfd46cee15087923f32467d740aab4cd",
+      "bytes": 1780
+    },
+    {
+      "path": "/ogc/collections/places/items/SMR.json",
+      "sha256": "f4da81575b13c34897d516ba08c65f38a0da56918b92b02ee4299d256307954a",
+      "bytes": 1267
+    },
+    {
+      "path": "/ogc/collections/places/items/STP.json",
+      "sha256": "b3af6588fc8604e9873ebc493b34fb25ff6315b9aa5002a5fd46e2e82d20cd9c",
+      "bytes": 1592
+    },
+    {
+      "path": "/ogc/collections/places/items/SAU.json",
+      "sha256": "4fd17adc9be2053e4c48c3a6e6671a2eaae1e23d0b05ac462857acf9b9d5b029",
+      "bytes": 10590
+    },
+    {
+      "path": "/ogc/collections/places/items/SEN.json",
+      "sha256": "e8cf3fc78124b2177e63cc16650900f33b8de1ba6a25554466f4b505f953d4bb",
+      "bytes": 6645
+    },
+    {
+      "path": "/ogc/collections/places/items/SRB.json",
+      "sha256": "9a930a2be88ac8beca0ba6d112b75294ad6a8ebdb3ad88ec10afb854d39bbfd6",
+      "bytes": 6896
+    },
+    {
+      "path": "/ogc/collections/places/items/SYC.json",
+      "sha256": "a747b560c0aa2e884eb05f9011b56dd5f080747fc65ffb992a74237ebbdffdcf",
+      "bytes": 1288
+    },
+    {
+      "path": "/ogc/collections/places/items/KAS.json",
+      "sha256": "038f8bdb54f25ffa3f881b9caafb11003c3596e02bfac54cef236f6171db4c08",
+      "bytes": 1589
+    },
+    {
+      "path": "/ogc/collections/places/items/SLE.json",
+      "sha256": "cc929543c2d2ab4de6e94638c719dd71e8f904aa38fe854dc01519a11b6f8ff5",
+      "bytes": 3867
+    },
+    {
+      "path": "/ogc/collections/places/items/SGP.json",
+      "sha256": "258747e8d2038febf0f16adab71d026fcaf05fa7479786abed8f8106bedf9528",
+      "bytes": 1306
+    },
+    {
+      "path": "/ogc/collections/places/items/SXM.json",
+      "sha256": "543207ed9f840f1a90572f169663605750356cbd156d834c48269b0761c03f4f",
+      "bytes": 1281
+    },
+    {
+      "path": "/ogc/collections/places/items/SVK.json",
+      "sha256": "cf7fd6e548749009261c3b18f7266d9e50dc87395b6c8e9c041d3d2bde0a65d0",
+      "bytes": 4266
+    },
+    {
+      "path": "/ogc/collections/places/items/SVN.json",
+      "sha256": "5bd6df12db091453a41816f2165905df2d374a5198ed1e6dd60dc95c1f6edb05",
+      "bytes": 3980
+    },
+    {
+      "path": "/ogc/collections/places/items/SLB.json",
+      "sha256": "7e1320650a674d48dd84e4f8e90c1034f4927add8832d6f6346af01fa0c96a06",
+      "bytes": 8887
+    },
+    {
+      "path": "/ogc/collections/places/items/SOM.json",
+      "sha256": "f2c07649b69108f3d09fa4d5d4fa647dd1aae469ea53f984b3d6c5cccf68234b",
+      "bytes": 4135
+    },
+    {
+      "path": "/ogc/collections/places/items/SOL.json",
+      "sha256": "1e713ac518f9c73a48b027607a893cc3b717dc9909c7a39c0ad9d7160dcb8da3",
+      "bytes": 2793
+    },
+    {
+      "path": "/ogc/collections/places/items/ZAF.json",
+      "sha256": "78eeedc4fbb08e4c98ab85c636d34846631d70afb92d21fb3f2ff9c7d549fba7",
+      "bytes": 11181
+    },
+    {
+      "path": "/ogc/collections/places/items/SGS.json",
+      "sha256": "4f5e65f26d02039e9a4dbf66795b7eabc227cff80d982279aa04f5794443a3d0",
+      "bytes": 2719
+    },
+    {
+      "path": "/ogc/collections/places/items/KOR.json",
+      "sha256": "040731a982229693de249c6062945c153c19829cdad3d17857da50842d80d530",
+      "bytes": 7072
+    },
+    {
+      "path": "/ogc/collections/places/items/SSD.json",
+      "sha256": "bfbf8a8cf68371324726b5406b9f174ceccc6e22383d92ae2beb1ccce5f0d817",
+      "bytes": 7976
+    },
+    {
+      "path": "/ogc/collections/places/items/ESP.json",
+      "sha256": "0618a82e7c0d95c79a284fd46dcd87f749c8ffff765f40a7e0441d552e92fe6e",
+      "bytes": 12805
+    },
+    {
+      "path": "/ogc/collections/places/items/LKA.json",
+      "sha256": "25da85d3cda59d4dc91fe1b76ecc54800141f8e774d284964c9ad9de967fbca0",
+      "bytes": 3023
+    },
+    {
+      "path": "/ogc/collections/places/items/SDN.json",
+      "sha256": "005d08aec085ea1ca72e97e289f9c8a401c1edee88ba3972c04f7d9af073b238",
+      "bytes": 10761
+    },
+    {
+      "path": "/ogc/collections/places/items/SUR.json",
+      "sha256": "ed1054c3b8c6b787d9d598a4e961cbecfbaddfceb610537e78e7e09c72541303",
+      "bytes": 5103
+    },
+    {
+      "path": "/ogc/collections/places/items/SWE.json",
+      "sha256": "0940ca12e85b6c7549f687d0b3d0943e824b3d2b8fc073fb2ec65ff92ab3c454",
+      "bytes": 14008
+    },
+    {
+      "path": "/ogc/collections/places/items/CHE.json",
+      "sha256": "6e7765a20ffc269d20ac761976236cd4bedf974d2bd5df8941232bbe57f548e4",
+      "bytes": 5028
+    },
+    {
+      "path": "/ogc/collections/places/items/SYR.json",
+      "sha256": "610130bf80762571b8e0ce07656a1291b0dd8dfdeadc60d9c233618de9cb5e3c",
+      "bytes": 4868
+    },
+    {
+      "path": "/ogc/collections/places/items/TWN.json",
+      "sha256": "58405338c63d11c6ae43b1f9b3ef530b73bd51f3b31c4143eff4c72d278dfae0",
+      "bytes": 2654
+    },
+    {
+      "path": "/ogc/collections/places/items/TJK.json",
+      "sha256": "2f81b2743573aa27d0fff304a166d03cef533205a0f60841465b9d42ce99ac05",
+      "bytes": 9115
+    },
+    {
+      "path": "/ogc/collections/places/items/TZA.json",
+      "sha256": "0962e4b065ca92593d2eefe18b6bcdabf36d42733c95b93569d235815aac7ebf",
+      "bytes": 9374
+    },
+    {
+      "path": "/ogc/collections/places/items/THA.json",
+      "sha256": "4c2077673c32a0b3c25053bf4e49dfabaf2020769164a20552e3570660157405",
+      "bytes": 13874
+    },
+    {
+      "path": "/ogc/collections/places/items/BHS.json",
+      "sha256": "dffd9e00a157ddd961aada9ca520be5ef35ce93e66287e0132764d1861411a02",
+      "bytes": 7267
+    },
+    {
+      "path": "/ogc/collections/places/items/GMB.json",
+      "sha256": "9f75d4b419c5afa536c6f0afa3438199c18deb0972eb96e2af5a7bb867262522",
+      "bytes": 2774
+    },
+    {
+      "path": "/ogc/collections/places/items/TGO.json",
+      "sha256": "410fe7b1108bcdf03824a41b163669db20611185c62a50726c15b053e1755fa4",
+      "bytes": 3694
+    },
+    {
+      "path": "/ogc/collections/places/items/TON.json",
+      "sha256": "dff717ae9fed6a83c71bdb0cb67d28d57e767b3f40762e39ed0481089996b47f",
+      "bytes": 1912
+    },
+    {
+      "path": "/ogc/collections/places/items/TTO.json",
+      "sha256": "b7d381c442da2e4530c75fd1845c1ca8902540e495c3427890112aabc9c183d2",
+      "bytes": 2013
+    },
+    {
+      "path": "/ogc/collections/places/items/TUN.json",
+      "sha256": "028ceebf450dc7dc78a15ba3274e499e67fcae50fa76250e8f2f44237695b962",
+      "bytes": 5083
+    },
+    {
+      "path": "/ogc/collections/places/items/TUR.json",
+      "sha256": "0d0151728a63544559416f2e807fd7e6dbefd01bfc43e6f0153e587529e4e783",
+      "bytes": 13353
+    },
+    {
+      "path": "/ogc/collections/places/items/CYN.json",
+      "sha256": "da2c83fc65b2cc81379d69f1920da64d2e30775989b0f6e025a6f63633e3dad3",
+      "bytes": 2149
+    },
+    {
+      "path": "/ogc/collections/places/items/TKM.json",
+      "sha256": "5b0ba0dca181f86dd11e942d07cce817cf3f103a203696735bda71a93bc23712",
+      "bytes": 10530
+    },
+    {
+      "path": "/ogc/collections/places/items/TCA.json",
+      "sha256": "277d818b2733eca8b3693b52eccfe535932412a483c94ad90a0a2e47cc67554a",
+      "bytes": 1825
+    },
+    {
+      "path": "/ogc/collections/places/items/TUV.json",
+      "sha256": "459a16962edb64641f5ac0b525cdd03e4f8956fc5df6a8c1dda9138bd2ce8333",
+      "bytes": 1333
+    },
+    {
+      "path": "/ogc/collections/places/items/UGA.json",
+      "sha256": "49888c8691c677abcc9a5e6ffabba49fddacaada2c756a73af7571d86bf8f13f",
+      "bytes": 4893
+    },
+    {
+      "path": "/ogc/collections/places/items/UKR.json",
+      "sha256": "86359b99705a2d4c397a801f0d8186a352f3604e2b3a5655eec5af2da42c32ae",
+      "bytes": 14941
+    },
+    {
+      "path": "/ogc/collections/places/items/ARE.json",
+      "sha256": "eebf7be948010f9999e8f1d34458272078c664379fae921840c121fe7edddd72",
+      "bytes": 5133
+    },
+    {
+      "path": "/ogc/collections/places/items/GBR.json",
+      "sha256": "0b1eeea457dfc49e240c2e7dd0591a75e378bafa1e7eddfed3112183bd27bcdf",
+      "bytes": 22587
+    },
+    {
+      "path": "/ogc/collections/places/items/USA.json",
+      "sha256": "be5669f52b066125ce6edee356d57610e4626efdda6f1eabd184535aa91b8f92",
+      "bytes": 136546
+    },
+    {
+      "path": "/ogc/collections/places/items/VIR.json",
+      "sha256": "368aae87fca91da905c8f1f6cf625dc3092db1d345a7fbda58580782697e7380",
+      "bytes": 1613
+    },
+    {
+      "path": "/ogc/collections/places/items/URY.json",
+      "sha256": "2555e3d90f69976a0de1d2359e141b95b99aff5b2992780e1344ef6964ffe1d6",
+      "bytes": 4514
+    },
+    {
+      "path": "/ogc/collections/places/items/UZB.json",
+      "sha256": "0a853f465366d6a1fd25c21c4de554a96d5e66fbcdfacff8d9594b17cb71d3b2",
+      "bytes": 13805
+    },
+    {
+      "path": "/ogc/collections/places/items/VUT.json",
+      "sha256": "afe83dbdf97299ef851e83a0dd6f12b6578d6786778496cf443cb7e0d4251467",
+      "bytes": 5589
+    },
+    {
+      "path": "/ogc/collections/places/items/VAT.json",
+      "sha256": "7b561eb0d5d3a63da39d4d798b7a451c5c12b47c441c29bbf38f518b8a684880",
+      "bytes": 1249
+    },
+    {
+      "path": "/ogc/collections/places/items/VEN.json",
+      "sha256": "072005994846300ca1a619c136fa69a6ef4379f58acee7a3cbd97ea50a616e1f",
+      "bytes": 13609
+    },
+    {
+      "path": "/ogc/collections/places/items/VNM.json",
+      "sha256": "168a035e1dbfbfdc5c7f1da1f6b161d2fa75f0d45e2a639953a668ac3de6cbe1",
+      "bytes": 15043
+    },
+    {
+      "path": "/ogc/collections/places/items/WLF.json",
+      "sha256": "d7fe3a3cf0131dc990f50f5c1bed0ce5ed96b5290b99ee9204481f339de2ef54",
+      "bytes": 1538
+    },
+    {
+      "path": "/ogc/collections/places/items/ESH.json",
+      "sha256": "f0ca72eebff36554477a570ea23ff6d539e5e83ecfd370accd26e5e99abba9b8",
+      "bytes": 6307
+    },
+    {
+      "path": "/ogc/collections/places/items/YEM.json",
+      "sha256": "316ea0ec0150c91cbf78e996ad86a4ddd9ab3f27e26c92d1dab33f11d5a98f3f",
+      "bytes": 6004
+    },
+    {
+      "path": "/ogc/collections/places/items/ZMB.json",
+      "sha256": "3208dd50dd3d3463d565fea4a2bc287bd0e39715ad153dba1a13167c3a5051dd",
+      "bytes": 9594
+    },
+    {
+      "path": "/ogc/collections/places/items/ZWE.json",
+      "sha256": "5c26046dd0bdbc24536eb3f858cf9aa153c35d2f256b5291464fd0bab007de27",
+      "bytes": 4981
     },
     {
       "path": "/releases/2026-05-31/diff.json",
-      "sha256": "74cc2864cf3e8b1b05c0e861ac4020673a72520a242ef9b396e2fb9f875df203",
-      "bytes": 2000
+      "sha256": "f6f8fdc88df16337d0c3549456402bbbdda659495a57894610fc9dc46badf1e1",
+      "bytes": 2185
     },
     {
       "path": "/assets/social-card.svg",
@@ -7548,8 +8749,8 @@
     },
     {
       "path": "/README.md",
-      "sha256": "dcc8846cbac16c5dc5f55f9fcb1a1668a45816a116a22492f0f96f8b2dd13e51",
-      "bytes": 3985
+      "sha256": "280f84fa07f92422d2a458d83a343e17b7f1c55cac3866a537ecac4c10e989e9",
+      "bytes": 4096
     },
     {
       "path": "/LICENSE",

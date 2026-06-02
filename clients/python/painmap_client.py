@@ -39,6 +39,12 @@ class PainMapClient:
     def ogc_place_features(self) -> dict[str, Any]:
         return self._json("/ogc/collections/places/items.json")
 
+    def ogc_place_item_index(self) -> dict[str, Any]:
+        return self._json("/ogc/collections/places/item-index.json")
+
+    def ogc_place_feature(self, place_id: str) -> dict[str, Any]:
+        return self._json(f"/ogc/collections/places/items/{quote(place_id)}.json")
+
     def release_manifest(self, release_date: str = "2026-05-31") -> dict[str, Any]:
         return self._json(f"/releases/{quote(release_date)}/manifest.json")
 

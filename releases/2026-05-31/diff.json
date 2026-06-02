@@ -12,6 +12,7 @@
     "canonical_place_profiles": 3,
     "release_measurements": 8,
     "ogc_place_features": 239,
+    "ogc_partitioned_country_features": 239,
     "neighbor_payloads": 240
   },
   "added_contract_surfaces": [
@@ -22,6 +23,8 @@
     "/v1/places/{place_id}/neighbors.json",
     "/ogc/index.json",
     "/ogc/collections/places/items.json",
+    "/ogc/collections/places/item-index.json",
+    "/ogc/collections/places/items/{place_id}.json",
     "/data/release-modes.json",
     "/schemas/adm1-context.schema.json",
     "/schemas/release-modes.schema.json",
@@ -35,7 +38,7 @@
     },
     {
       "area": "geospatial contract",
-      "change": "Added OGC API - Features-style discovery and a GeoJSON country feature collection."
+      "change": "Added OGC API - Features-style discovery, a GeoJSON country feature collection, and partitioned per-country feature items."
     },
     {
       "area": "place discovery",

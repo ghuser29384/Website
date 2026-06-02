@@ -173,7 +173,35 @@ export interface OgcFeatureCollection {
   release_id?: string;
   numberMatched?: number;
   numberReturned?: number;
-  features: Array<Record<string, unknown>>;
+  features: OgcFeature[];
+}
+
+export interface OgcFeature {
+  type: "Feature";
+  id: string;
+  bbox?: number[];
+  properties: Record<string, unknown>;
+  geometry: Record<string, unknown>;
+  links?: Array<Record<string, string>>;
+}
+
+export interface OgcItemIndex {
+  release_id: string;
+  generated_at: string;
+  collection_id: "places";
+  count: number;
+  partitioning: string;
+  full_collection_url: string;
+  items: Array<{
+    place_id: string;
+    place_name: string;
+    geometry_level: "country";
+    coverage_status: string;
+    bbox: number[] | null;
+    item_url: string;
+    neighbors_url: string;
+    profile_url: string | null;
+  }>;
 }
 
 export interface ReleaseDiff {
@@ -241,6 +269,14 @@ export class PainMapClient {
 
   async ogcPlaceFeatures(): Promise<OgcFeatureCollection> {
     return this.json<OgcFeatureCollection>("/ogc/collections/places/items.json");
+  }
+
+  async ogcPlaceItemIndex(): Promise<OgcItemIndex> {
+    return this.json<OgcItemIndex>("/ogc/collections/places/item-index.json");
+  }
+
+  async ogcPlaceFeature(placeId: string): Promise<OgcFeature> {
+    return this.json<OgcFeature>(`/ogc/collections/places/items/${encodeURIComponent(placeId)}.json`);
   }
 
   async releaseManifest(releaseDate = "2026-05-31"): Promise<ReleaseManifest> {

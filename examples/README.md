@@ -21,6 +21,8 @@ Both commands print the place name, release ID, measurement count, and layer sum
 - `/data/place-measurements.json`: canonical measurement rows.
 - `/v1/places/IND/neighbors.json`: release-scoped border neighbors and nearest centroid neighbors for a place.
 - `/ogc/collections/places/items.json`: OGC API - Features-style GeoJSON country feature collection.
+- `/ogc/collections/places/item-index.json`: partitioned country feature index for clients that need one place boundary at a time.
+- `/ogc/collections/places/items/IND.json`: single-country OGC-style GeoJSON feature for India.
 - `/schemas/place-index.schema.json`: JSON Schema for the place index.
 - `/schemas/release-modes.schema.json`: JSON Schema for the release mode contract.
 - `/schemas/ogc-place-features.schema.json`: JSON Schema for the OGC-style place features export.

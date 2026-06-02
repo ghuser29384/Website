@@ -235,6 +235,34 @@ expect(
   "OGC place features must link neighbor payloads"
 );
 
+const ogcItemIndex = readJson("ogc/collections/places/item-index.json");
+expect(ogcItemIndex.count === ogcItems.features?.length, "OGC item index count mismatch");
+expect(ogcItemIndex.items?.length === ogcItems.features?.length, "OGC item index item length mismatch");
+expect(
+  ogcItemIndex.items?.some((item) => item.place_id === "IND" && item.item_url === "https://painmap.org/ogc/collections/places/items/IND.json"),
+  "OGC item index missing IND partition URL"
+);
+
+for (const item of ogcItemIndex.items ?? []) {
+  const endpointPath = new URL(item.item_url).pathname;
+  const file = localFileForEndpoint(endpointPath);
+  expect(existsSync(absolute(file)), `${endpointPath} item endpoint points to missing file ${file}`);
+
+  if (!existsSync(absolute(file))) {
+    continue;
+  }
+
+  const feature = readJson(file);
+  expect(feature.type === "Feature", `${file} must be a GeoJSON Feature`);
+  expect(feature.id === item.place_id, `${file} id mismatch`);
+  expect(feature.properties?.neighbors_url === item.neighbors_url, `${file} neighbors_url mismatch`);
+  expect(Boolean(feature.geometry), `${file} missing geometry`);
+  expect(
+    releaseManifest.artifacts?.some((artifact) => artifact.path === endpointPath),
+    `Release manifest missing partitioned OGC item ${endpointPath}`
+  );
+}
+
 const ogcConformance = readJson("ogc/conformance.json");
 expect(
   ogcConformance.conformsTo?.some((entry) => entry.includes("ogcapi-features-1/1.0/conf/geojson")),
@@ -247,6 +275,10 @@ expect(releaseDiff.comparison_type === "initial_release_baseline", "release diff
 expect(
   releaseDiff.current_release?.neighbor_payloads === placeIndex.items.filter((item) => item.neighbors_url).length,
   "release diff neighbor payload count mismatch"
+);
+expect(
+  releaseDiff.current_release?.ogc_partitioned_country_features === ogcItems.features?.length,
+  "release diff partitioned OGC feature count mismatch"
 );
 
 const adm1Index = readJson("v1/adm1/index.json");
@@ -292,7 +324,9 @@ for (const requiredArtifact of [
   "/ogc/conformance.json",
   "/ogc/collections/index.json",
   "/ogc/collections/places/index.json",
+  "/ogc/collections/places/item-index.json",
   "/ogc/collections/places/items.json",
+  "/ogc/collections/places/items/IND.json",
   "/releases/2026-05-31/diff.json",
   "/clients/typescript/painmap-client.ts",
   "/clients/python/painmap_client.py",

@@ -123,6 +123,22 @@
       "purpose": "OGC-style place feature collection"
     },
     {
+      "path": "/ogc/collections/places/item-index.json",
+      "url": "https://painmap.org/ogc/collections/places/item-index.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Partitioned OGC country feature index"
+    },
+    {
+      "path": "/ogc/collections/places/items/IND.json",
+      "url": "https://painmap.org/ogc/collections/places/items/IND.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/geo+json",
+      "purpose": "Partitioned India OGC country feature"
+    },
+    {
       "path": "/clients/typescript/painmap-client.ts",
       "url": "https://painmap.org/clients/typescript/painmap-client.ts",
       "method": "GET",

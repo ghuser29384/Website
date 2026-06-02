@@ -48,6 +48,12 @@
           "rel": "items",
           "type": "application/geo+json",
           "title": "GeoJSON items"
+        },
+        {
+          "href": "https://painmap.org/ogc/collections/places/item-index.json",
+          "rel": "alternate",
+          "type": "application/json",
+          "title": "Partitioned country feature index"
         }
       ]
     }

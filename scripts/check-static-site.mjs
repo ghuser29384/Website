@@ -26,7 +26,9 @@ const expectedExports = [
   "ogc/conformance.json",
   "ogc/collections/index.json",
   "ogc/collections/places/index.json",
+  "ogc/collections/places/item-index.json",
   "ogc/collections/places/items.json",
+  "ogc/collections/places/items/IND.json",
   "clients/typescript/painmap-client.ts",
   "clients/python/painmap_client.py",
   "examples/README.md",
@@ -483,7 +485,7 @@ if (performanceBudgets.field_budgets?.cumulative_layout_shift > 0.1) {
 }
 
 const endpointSmoke = readJson("data/endpoint-smoke.json");
-for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/IND/adm1.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/.well-known/security.txt"]) {
+for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/IND/adm1.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/IND.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/.well-known/security.txt"]) {
   if (!endpointSmoke.endpoints?.some((entry) => entry.path === requiredPath && entry.expected_status === 200)) {
     failures.push(`data/endpoint-smoke.json missing required endpoint ${requiredPath}`);
   }
@@ -498,9 +500,37 @@ for (const schemaFile of ["schemas/place-index.schema.json", "schemas/adm1-conte
 }
 
 const openapi = readJson("data/openapi.json");
-for (const requiredPath of ["/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/{place_id}/adm1.json", "/v1/coverage.json", "/v1/places/{place_id}/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/data/release-modes.json", "/releases/2026-05-31/diff.json", "/schemas/place-index.schema.json", "/schemas/adm1-context.schema.json", "/schemas/release-modes.schema.json", "/schemas/ogc-place-features.schema.json"]) {
+for (const requiredPath of ["/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/{place_id}/adm1.json", "/v1/coverage.json", "/v1/places/{place_id}/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/{place_id}.json", "/data/release-modes.json", "/releases/2026-05-31/diff.json", "/schemas/place-index.schema.json", "/schemas/adm1-context.schema.json", "/schemas/release-modes.schema.json", "/schemas/ogc-place-features.schema.json"]) {
   if (!openapi.paths?.[requiredPath]) {
     failures.push(`data/openapi.json missing ${requiredPath}`);
+  }
+}
+
+const ogcPlaceFeatures = readJson("ogc/collections/places/items.json");
+const ogcItemIndex = readJson("ogc/collections/places/item-index.json");
+if (ogcItemIndex.count !== ogcPlaceFeatures.features?.length || ogcItemIndex.items?.length !== ogcPlaceFeatures.features?.length) {
+  failures.push("ogc/collections/places/item-index.json count must match full OGC feature collection");
+}
+
+if (!ogcItemIndex.items?.some((item) => item.place_id === "IND" && item.item_url === "https://painmap.org/ogc/collections/places/items/IND.json")) {
+  failures.push("ogc/collections/places/item-index.json missing IND item URL");
+}
+
+for (const item of ogcItemIndex.items ?? []) {
+  const file = `ogc/collections/places/items/${item.place_id}.json`;
+
+  if (!existsSync(absolute(file))) {
+    failures.push(`Missing partitioned OGC item file ${file}`);
+    continue;
+  }
+
+  const feature = readJson(file);
+  if (feature.type !== "Feature" || feature.id !== item.place_id || feature.properties?.neighbors_url !== item.neighbors_url) {
+    failures.push(`${file} does not match item-index metadata`);
+  }
+
+  if (!feature.geometry) {
+    failures.push(`${file} missing geometry`);
   }
 }
 
@@ -511,15 +541,21 @@ expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/p
 expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async releaseModes\(\): Promise<ReleaseModes>/, "typed releaseModes client method");
 expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async placeNeighbors\(/, "typed placeNeighbors client method");
 expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async ogcPlaceFeatures\(/, "typed ogcPlaceFeatures client method");
+expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async ogcPlaceItemIndex\(\)/, "typed OGC item index client method");
+expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async ogcPlaceFeature\(/, "typed OGC feature item client method");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /class PainMapClient:/, "Python PainMapClient class");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def adm1_context_index\(/, "Python adm1_context_index client method");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def country_adm1_context\(/, "Python country_adm1_context client method");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def release_modes\(/, "Python release_modes client method");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def place_neighbors\(/, "Python place_neighbors client method");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def ogc_place_features\(/, "Python ogc_place_features client method");
+expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def ogc_place_item_index\(/, "Python ogc_place_item_index client method");
+expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def ogc_place_feature\(/, "Python ogc_place_feature client method");
 expectPattern("examples/README.md", read("examples/README.md"), /node examples\/load-place-profile\.mjs IND/, "Node example command");
 expectPattern("examples/README.md", read("examples/README.md"), /python3 examples\/load_place_profile\.py IND/, "Python example command");
 expectPattern("examples/README.md", read("examples/README.md"), /\/ogc\/collections\/places\/items\.json/, "OGC feature example endpoint");
+expectPattern("examples/README.md", read("examples/README.md"), /\/ogc\/collections\/places\/item-index\.json/, "OGC item index example endpoint");
+expectPattern("examples/README.md", read("examples/README.md"), /\/ogc\/collections\/places\/items\/IND\.json/, "OGC single feature example endpoint");
 expectPattern("examples/README.md", read("examples/README.md"), /\/v1\/adm1\/index\.json/, "ADM1 context example endpoint");
 
 for (const file of walkFiles(root, (entry) => entry.endsWith(".html"))) {

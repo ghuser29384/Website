@@ -1,0 +1,3595 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "collection_id": "places",
+  "count": 239,
+  "partitioning": "One static GeoJSON Feature file per Natural Earth Admin 0 country place. Use these item URLs when a client needs one country boundary instead of the full collection.",
+  "full_collection_url": "https://painmap.org/ogc/collections/places/items.json",
+  "items": [
+    {
+      "place_id": "AFG",
+      "place_name": "Afghanistan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        60.485742,
+        29.391943,
+        74.891309,
+        38.456396
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/AFG.json",
+      "neighbors_url": "https://painmap.org/v1/places/AFG/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ALA",
+      "place_name": "Åland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        19.519043,
+        60.01167,
+        20.611328,
+        60.405811
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ALA.json",
+      "neighbors_url": "https://painmap.org/v1/places/ALA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ALB",
+      "place_name": "Albania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        19.280664,
+        39.653516,
+        21.031055,
+        42.647949
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ALB.json",
+      "neighbors_url": "https://painmap.org/v1/places/ALB/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "DZA",
+      "place_name": "Algeria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -8.68335,
+        18.986621,
+        11.967871,
+        37.092383
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/DZA.json",
+      "neighbors_url": "https://painmap.org/v1/places/DZA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ASM",
+      "place_name": "American Samoa",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -170.820508,
+        -14.359766,
+        -170.568115,
+        -14.257422
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ASM.json",
+      "neighbors_url": "https://painmap.org/v1/places/ASM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "AND",
+      "place_name": "Andorra",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        1.414844,
+        42.434473,
+        1.740234,
+        42.642725
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/AND.json",
+      "neighbors_url": "https://painmap.org/v1/places/AND/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "AGO",
+      "place_name": "Angola",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        11.743066,
+        -18.019727,
+        24.04668,
+        -4.428906
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/AGO.json",
+      "neighbors_url": "https://painmap.org/v1/places/AGO/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "AIA",
+      "place_name": "Anguilla",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -63.16001,
+        18.171387,
+        -62.97959,
+        18.269727
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/AIA.json",
+      "neighbors_url": "https://painmap.org/v1/places/AIA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ATG",
+      "place_name": "Antigua and Barbuda",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -61.887109,
+        16.997168,
+        -61.686035,
+        17.714062
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ATG.json",
+      "neighbors_url": "https://painmap.org/v1/places/ATG/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ARG",
+      "place_name": "Argentina",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -73.57627,
+        -55.032129,
+        -53.668555,
+        -21.802539
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ARG.json",
+      "neighbors_url": "https://painmap.org/v1/places/ARG/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ARM",
+      "place_name": "Armenia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        43.439453,
+        38.869043,
+        46.584766,
+        41.290967
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ARM.json",
+      "neighbors_url": "https://painmap.org/v1/places/ARM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ABW",
+      "place_name": "Aruba",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -70.066113,
+        12.422998,
+        -69.895703,
+        12.614111
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ABW.json",
+      "neighbors_url": "https://painmap.org/v1/places/ABW/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "AUS",
+      "place_name": "Australia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        96.825879,
+        -54.749219,
+        158.958887,
+        -10.051758
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/AUS.json",
+      "neighbors_url": "https://painmap.org/v1/places/AUS/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "AUT",
+      "place_name": "Austria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        9.524023,
+        46.399707,
+        17.147363,
+        49.001123
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/AUT.json",
+      "neighbors_url": "https://painmap.org/v1/places/AUT/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "AZE",
+      "place_name": "Azerbaijan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        44.768262,
+        38.39873,
+        50.365918,
+        41.890967
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/AZE.json",
+      "neighbors_url": "https://painmap.org/v1/places/AZE/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BHR",
+      "place_name": "Bahrain",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        50.452441,
+        25.806787,
+        50.61748,
+        26.246436
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BHR.json",
+      "neighbors_url": "https://painmap.org/v1/places/BHR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BGD",
+      "place_name": "Bangladesh",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        88.023438,
+        20.79043,
+        92.631641,
+        26.571533
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BGD.json",
+      "neighbors_url": "https://painmap.org/v1/places/BGD/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BRB",
+      "place_name": "Barbados",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -59.64668,
+        13.062207,
+        -59.427637,
+        13.317676
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BRB.json",
+      "neighbors_url": "https://painmap.org/v1/places/BRB/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BLR",
+      "place_name": "Belarus",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        23.175098,
+        51.265039,
+        32.710254,
+        56.145801
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BLR.json",
+      "neighbors_url": "https://painmap.org/v1/places/BLR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BEL",
+      "place_name": "Belgium",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        2.524902,
+        49.510889,
+        6.364453,
+        51.491113
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BEL.json",
+      "neighbors_url": "https://painmap.org/v1/places/BEL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BLZ",
+      "place_name": "Belize",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -89.2375,
+        15.888672,
+        -87.788623,
+        18.482324
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BLZ.json",
+      "neighbors_url": "https://painmap.org/v1/places/BLZ/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BEN",
+      "place_name": "Benin",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        0.763379,
+        6.216797,
+        3.834473,
+        12.383838
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BEN.json",
+      "neighbors_url": "https://painmap.org/v1/places/BEN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BMU",
+      "place_name": "Bermuda",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -64.862842,
+        32.259619,
+        -64.668311,
+        32.386914
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BMU.json",
+      "neighbors_url": "https://painmap.org/v1/places/BMU/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BTN",
+      "place_name": "Bhutan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        88.73877,
+        26.701563,
+        92.083398,
+        28.311182
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BTN.json",
+      "neighbors_url": "https://painmap.org/v1/places/BTN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BOL",
+      "place_name": "Bolivia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -69.645703,
+        -22.891699,
+        -57.495654,
+        -9.710449
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BOL.json",
+      "neighbors_url": "https://painmap.org/v1/places/BOL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BIH",
+      "place_name": "Bosnia and Herzegovina",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        15.736621,
+        42.559717,
+        19.583789,
+        45.276562
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BIH.json",
+      "neighbors_url": "https://painmap.org/v1/places/BIH/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BWA",
+      "place_name": "Botswana",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        19.977344,
+        -26.854199,
+        29.364844,
+        -17.787598
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BWA.json",
+      "neighbors_url": "https://painmap.org/v1/places/BWA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BRA",
+      "place_name": "Brazil",
+      "geometry_level": "country",
+      "coverage_status": "canonical_measurements",
+      "bbox": [
+        -74.002051,
+        -33.742188,
+        -34.805469,
+        5.257959
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BRA.json",
+      "neighbors_url": "https://painmap.org/v1/places/BRA/neighbors.json",
+      "profile_url": "https://painmap.org/v1/places/BRA.json"
+    },
+    {
+      "place_id": "IOT",
+      "place_name": "British Indian Ocean Territory",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        72.349707,
+        -7.435352,
+        72.498535,
+        -7.22041
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/IOT.json",
+      "neighbors_url": "https://painmap.org/v1/places/IOT/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "VGB",
+      "place_name": "British Virgin Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -64.695117,
+        18.399121,
+        -64.273584,
+        18.752686
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/VGB.json",
+      "neighbors_url": "https://painmap.org/v1/places/VGB/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BRN",
+      "place_name": "Brunei",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        114.063867,
+        4.023975,
+        115.326758,
+        5.022363
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BRN.json",
+      "neighbors_url": "https://painmap.org/v1/places/BRN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BGR",
+      "place_name": "Bulgaria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        22.344043,
+        41.243555,
+        28.585352,
+        44.237793
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BGR.json",
+      "neighbors_url": "https://painmap.org/v1/places/BGR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BFA",
+      "place_name": "Burkina Faso",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -5.523535,
+        9.424707,
+        2.38916,
+        15.077881
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BFA.json",
+      "neighbors_url": "https://painmap.org/v1/places/BFA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BDI",
+      "place_name": "Burundi",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        29.01416,
+        -4.455859,
+        30.811426,
+        -2.312988
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BDI.json",
+      "neighbors_url": "https://painmap.org/v1/places/BDI/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "KHM",
+      "place_name": "Cambodia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        102.319727,
+        10.41123,
+        107.605469,
+        14.705078
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/KHM.json",
+      "neighbors_url": "https://painmap.org/v1/places/KHM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CMR",
+      "place_name": "Cameroon",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        8.532813,
+        1.676221,
+        16.183398,
+        13.078516
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CMR.json",
+      "neighbors_url": "https://painmap.org/v1/places/CMR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CAN",
+      "place_name": "Canada",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -141.002148,
+        41.674854,
+        -52.653662,
+        83.116113
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CAN.json",
+      "neighbors_url": "https://painmap.org/v1/places/CAN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CPV",
+      "place_name": "Cape Verde",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -25.341553,
+        14.818213,
+        -22.681885,
+        17.193652
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CPV.json",
+      "neighbors_url": "https://painmap.org/v1/places/CPV/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CYM",
+      "place_name": "Cayman Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -81.419092,
+        19.271875,
+        -79.742285,
+        19.765723
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CYM.json",
+      "neighbors_url": "https://painmap.org/v1/places/CYM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CAF",
+      "place_name": "Central African Republic",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        14.431152,
+        2.270068,
+        27.40332,
+        10.99624
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CAF.json",
+      "neighbors_url": "https://painmap.org/v1/places/CAF/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TCD",
+      "place_name": "Chad",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        13.448242,
+        7.475293,
+        23.983398,
+        23.445215
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TCD.json",
+      "neighbors_url": "https://painmap.org/v1/places/TCD/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CHL",
+      "place_name": "Chile",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -109.434131,
+        -55.891699,
+        -66.435791,
+        -17.506055
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CHL.json",
+      "neighbors_url": "https://painmap.org/v1/places/CHL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "COL",
+      "place_name": "Colombia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -79.025439,
+        -4.235938,
+        -66.876025,
+        12.434375
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/COL.json",
+      "neighbors_url": "https://painmap.org/v1/places/COL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "COM",
+      "place_name": "Comoros",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        43.22666,
+        -12.368262,
+        44.526758,
+        -11.368457
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/COM.json",
+      "neighbors_url": "https://painmap.org/v1/places/COM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "COK",
+      "place_name": "Cook Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -159.84248,
+        -21.249512,
+        -159.736865,
+        -21.186426
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/COK.json",
+      "neighbors_url": "https://painmap.org/v1/places/COK/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CRI",
+      "place_name": "Costa Rica",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -85.908008,
+        8.070654,
+        -82.563574,
+        11.189453
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CRI.json",
+      "neighbors_url": "https://painmap.org/v1/places/CRI/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "HRV",
+      "place_name": "Croatia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        13.517188,
+        42.43291,
+        19.400977,
+        46.534619
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/HRV.json",
+      "neighbors_url": "https://painmap.org/v1/places/HRV/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CUB",
+      "place_name": "Cuba",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -84.887207,
+        19.855469,
+        -74.136816,
+        23.19043
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CUB.json",
+      "neighbors_url": "https://painmap.org/v1/places/CUB/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CUW",
+      "place_name": "Curaçao",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -69.158887,
+        12.045459,
+        -68.751074,
+        12.380273
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CUW.json",
+      "neighbors_url": "https://painmap.org/v1/places/CUW/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CYP",
+      "place_name": "Cyprus",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        32.300977,
+        34.56958,
+        34.050195,
+        35.182666
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CYP.json",
+      "neighbors_url": "https://painmap.org/v1/places/CYP/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CZE",
+      "place_name": "Czech Republic",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        12.089746,
+        48.576221,
+        18.832227,
+        51.037793
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CZE.json",
+      "neighbors_url": "https://painmap.org/v1/places/CZE/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "COD",
+      "place_name": "Democratic Republic of the Congo",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        12.213672,
+        -13.453809,
+        31.274023,
+        5.312109
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/COD.json",
+      "neighbors_url": "https://painmap.org/v1/places/COD/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "DNK",
+      "place_name": "Denmark",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        8.121484,
+        54.628857,
+        15.137109,
+        57.736914
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/DNK.json",
+      "neighbors_url": "https://painmap.org/v1/places/DNK/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "DJI",
+      "place_name": "Djibouti",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        41.764648,
+        10.941016,
+        43.409766,
+        12.708594
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/DJI.json",
+      "neighbors_url": "https://painmap.org/v1/places/DJI/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "DMA",
+      "place_name": "Dominica",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -61.481152,
+        15.227295,
+        -61.251074,
+        15.633105
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/DMA.json",
+      "neighbors_url": "https://painmap.org/v1/places/DMA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "DOM",
+      "place_name": "Dominican Republic",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -72.000391,
+        17.635596,
+        -68.33916,
+        19.913965
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/DOM.json",
+      "neighbors_url": "https://painmap.org/v1/places/DOM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TLS",
+      "place_name": "East Timor",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        124.036328,
+        -9.511914,
+        127.296094,
+        -8.139941
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TLS.json",
+      "neighbors_url": "https://painmap.org/v1/places/TLS/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ECU",
+      "place_name": "Ecuador",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -91.65415,
+        -4.990625,
+        -75.249609,
+        1.455371
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ECU.json",
+      "neighbors_url": "https://painmap.org/v1/places/ECU/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "EGY",
+      "place_name": "Egypt",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        24.703223,
+        21.994873,
+        36.871387,
+        31.65498
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/EGY.json",
+      "neighbors_url": "https://painmap.org/v1/places/EGY/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SLV",
+      "place_name": "El Salvador",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -90.105908,
+        13.164014,
+        -87.715332,
+        14.431104
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SLV.json",
+      "neighbors_url": "https://painmap.org/v1/places/SLV/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GNQ",
+      "place_name": "Equatorial Guinea",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        8.434277,
+        0.960107,
+        11.335352,
+        3.758301
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GNQ.json",
+      "neighbors_url": "https://painmap.org/v1/places/GNQ/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ERI",
+      "place_name": "Eritrea",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        36.426758,
+        12.376562,
+        43.116699,
+        18.005078
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ERI.json",
+      "neighbors_url": "https://painmap.org/v1/places/ERI/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "EST",
+      "place_name": "Estonia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        21.854492,
+        57.525488,
+        28.151074,
+        59.639014
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/EST.json",
+      "neighbors_url": "https://painmap.org/v1/places/EST/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SWZ",
+      "place_name": "Eswatini",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        30.7875,
+        -27.309961,
+        32.112891,
+        -25.742969
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SWZ.json",
+      "neighbors_url": "https://painmap.org/v1/places/SWZ/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ETH",
+      "place_name": "Ethiopia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        32.998926,
+        3.456104,
+        47.978223,
+        14.852295
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ETH.json",
+      "neighbors_url": "https://painmap.org/v1/places/ETH/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "FLK",
+      "place_name": "Falkland Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -61.14502,
+        -52.308008,
+        -57.791797,
+        -51.269922
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/FLK.json",
+      "neighbors_url": "https://painmap.org/v1/places/FLK/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "FRO",
+      "place_name": "Faroe Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -7.422607,
+        61.414307,
+        -6.406055,
+        62.355664
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/FRO.json",
+      "neighbors_url": "https://painmap.org/v1/places/FRO/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "FSM",
+      "place_name": "Federated States of Micronesia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        138.061914,
+        5.277246,
+        162.993457,
+        9.593311
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/FSM.json",
+      "neighbors_url": "https://painmap.org/v1/places/FSM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "FJI",
+      "place_name": "Fiji",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -180,
+        -21.705859,
+        180,
+        -12.476953
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/FJI.json",
+      "neighbors_url": "https://painmap.org/v1/places/FJI/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "FIN",
+      "place_name": "Finland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        20.622168,
+        59.816016,
+        31.536523,
+        70.064844
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/FIN.json",
+      "neighbors_url": "https://painmap.org/v1/places/FIN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "FRA",
+      "place_name": "France",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -61.794092,
+        -21.369043,
+        55.839063,
+        51.097119
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/FRA.json",
+      "neighbors_url": "https://painmap.org/v1/places/FRA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PYF",
+      "place_name": "French Polynesia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -151.512402,
+        -20.875879,
+        -136.293896,
+        -8.781543
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PYF.json",
+      "neighbors_url": "https://painmap.org/v1/places/PYF/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ATF",
+      "place_name": "French Southern and Antarctic Lands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        51.659277,
+        -49.709863,
+        70.555469,
+        -46.326855
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ATF.json",
+      "neighbors_url": "https://painmap.org/v1/places/ATF/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GAB",
+      "place_name": "Gabon",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        8.703125,
+        -3.916309,
+        14.480566,
+        2.302197
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GAB.json",
+      "neighbors_url": "https://painmap.org/v1/places/GAB/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GEO",
+      "place_name": "Georgia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        39.97832,
+        41.070215,
+        46.672559,
+        43.569775
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GEO.json",
+      "neighbors_url": "https://painmap.org/v1/places/GEO/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "DEU",
+      "place_name": "Germany",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        5.85752,
+        47.278809,
+        15.016602,
+        55.05874
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/DEU.json",
+      "neighbors_url": "https://painmap.org/v1/places/DEU/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GHA",
+      "place_name": "Ghana",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -3.243896,
+        4.762451,
+        1.187207,
+        11.166895
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GHA.json",
+      "neighbors_url": "https://painmap.org/v1/places/GHA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GRC",
+      "place_name": "Greece",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        19.646484,
+        34.934473,
+        28.231836,
+        41.743799
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GRC.json",
+      "neighbors_url": "https://painmap.org/v1/places/GRC/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GRL",
+      "place_name": "Greenland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -72.818066,
+        59.815479,
+        -11.425537,
+        83.599609
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GRL.json",
+      "neighbors_url": "https://painmap.org/v1/places/GRL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GRD",
+      "place_name": "Grenada",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -61.782178,
+        12.008447,
+        -61.607031,
+        12.237012
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GRD.json",
+      "neighbors_url": "https://painmap.org/v1/places/GRD/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GUM",
+      "place_name": "Guam",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        144.649316,
+        13.25752,
+        144.94082,
+        13.622363
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GUM.json",
+      "neighbors_url": "https://painmap.org/v1/places/GUM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GTM",
+      "place_name": "Guatemala",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -92.235156,
+        13.736523,
+        -88.22832,
+        17.816406
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GTM.json",
+      "neighbors_url": "https://painmap.org/v1/places/GTM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GGY",
+      "place_name": "Guernsey",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -2.646143,
+        49.428711,
+        -2.512305,
+        49.506592
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GGY.json",
+      "neighbors_url": "https://painmap.org/v1/places/GGY/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GIN",
+      "place_name": "Guinea",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -15.051221,
+        7.215918,
+        -7.681201,
+        12.673926
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GIN.json",
+      "neighbors_url": "https://painmap.org/v1/places/GIN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GNB",
+      "place_name": "Guinea-Bissau",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -16.711816,
+        10.940137,
+        -13.673535,
+        12.679932
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GNB.json",
+      "neighbors_url": "https://painmap.org/v1/places/GNB/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GUY",
+      "place_name": "Guyana",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -61.39082,
+        1.201221,
+        -56.482812,
+        8.549316
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GUY.json",
+      "neighbors_url": "https://painmap.org/v1/places/GUY/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "HTI",
+      "place_name": "Haiti",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -74.478125,
+        18.03916,
+        -71.645312,
+        20.093652
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/HTI.json",
+      "neighbors_url": "https://painmap.org/v1/places/HTI/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "HMD",
+      "place_name": "Heard Island and McDonald Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        73.251172,
+        -53.18457,
+        73.837793,
+        -52.966309
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/HMD.json",
+      "neighbors_url": "https://painmap.org/v1/places/HMD/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "HND",
+      "place_name": "Honduras",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -89.362598,
+        12.979248,
+        -83.15752,
+        16.513965
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/HND.json",
+      "neighbors_url": "https://painmap.org/v1/places/HND/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "HKG",
+      "place_name": "Hong Kong",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        113.838867,
+        22.195166,
+        114.335254,
+        22.56499
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/HKG.json",
+      "neighbors_url": "https://painmap.org/v1/places/HKG/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "HUN",
+      "place_name": "Hungary",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        16.093066,
+        45.753027,
+        22.87666,
+        48.553467
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/HUN.json",
+      "neighbors_url": "https://painmap.org/v1/places/HUN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ISL",
+      "place_name": "Iceland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -24.475684,
+        63.406689,
+        -13.556104,
+        66.526074
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ISL.json",
+      "neighbors_url": "https://painmap.org/v1/places/ISL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "IND",
+      "place_name": "India",
+      "geometry_level": "country",
+      "coverage_status": "canonical_measurements",
+      "bbox": [
+        68.165039,
+        6.748682,
+        97.343555,
+        35.495898
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/IND.json",
+      "neighbors_url": "https://painmap.org/v1/places/IND/neighbors.json",
+      "profile_url": "https://painmap.org/v1/places/IND.json"
+    },
+    {
+      "place_id": "IDN",
+      "place_name": "Indonesia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        95.206641,
+        -10.909668,
+        140.976172,
+        5.907031
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/IDN.json",
+      "neighbors_url": "https://painmap.org/v1/places/IDN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "IRN",
+      "place_name": "Iran",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        44.023242,
+        25.1021,
+        63.305176,
+        39.768555
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/IRN.json",
+      "neighbors_url": "https://painmap.org/v1/places/IRN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "IRQ",
+      "place_name": "Iraq",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        38.773535,
+        29.063672,
+        48.546484,
+        37.371875
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/IRQ.json",
+      "neighbors_url": "https://painmap.org/v1/places/IRQ/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "IRL",
+      "place_name": "Ireland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -10.390234,
+        51.47373,
+        -6.027393,
+        55.36582
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/IRL.json",
+      "neighbors_url": "https://painmap.org/v1/places/IRL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "IMN",
+      "place_name": "Isle of Man",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -4.785352,
+        54.058691,
+        -4.337988,
+        54.407178
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/IMN.json",
+      "neighbors_url": "https://painmap.org/v1/places/IMN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ISR",
+      "place_name": "Israel",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        34.245313,
+        29.477344,
+        35.887977,
+        33.415674
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ISR.json",
+      "neighbors_url": "https://painmap.org/v1/places/ISR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ITA",
+      "place_name": "Italy",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        6.627734,
+        36.687842,
+        18.48584,
+        47.082129
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ITA.json",
+      "neighbors_url": "https://painmap.org/v1/places/ITA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CIV",
+      "place_name": "Ivory Coast",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -8.603564,
+        4.351318,
+        -2.505859,
+        10.724072
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CIV.json",
+      "neighbors_url": "https://painmap.org/v1/places/CIV/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "JAM",
+      "place_name": "Jamaica",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -78.339502,
+        17.714941,
+        -76.210791,
+        18.522217
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/JAM.json",
+      "neighbors_url": "https://painmap.org/v1/places/JAM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "JPN",
+      "place_name": "Japan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        123.679785,
+        24.266064,
+        145.833008,
+        45.509521
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/JPN.json",
+      "neighbors_url": "https://painmap.org/v1/places/JPN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "JEY",
+      "place_name": "Jersey",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -2.23584,
+        49.169824,
+        -2.009912,
+        49.266357
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/JEY.json",
+      "neighbors_url": "https://painmap.org/v1/places/JEY/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "JOR",
+      "place_name": "Jordan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        34.950781,
+        29.190479,
+        39.292773,
+        33.372217
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/JOR.json",
+      "neighbors_url": "https://painmap.org/v1/places/JOR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "KAZ",
+      "place_name": "Kazakhstan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        46.60918,
+        40.608643,
+        87.322852,
+        55.3896
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/KAZ.json",
+      "neighbors_url": "https://painmap.org/v1/places/KAZ/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "KEN",
+      "place_name": "Kenya",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        33.9,
+        -4.692383,
+        41.883984,
+        5.492285
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/KEN.json",
+      "neighbors_url": "https://painmap.org/v1/places/KEN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "KIR",
+      "place_name": "Kiribati",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -174.54082,
+        -11.456836,
+        174.778906,
+        3.923535
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/KIR.json",
+      "neighbors_url": "https://painmap.org/v1/places/KIR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "KOS",
+      "place_name": "Kosovo",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        20.029492,
+        41.853809,
+        21.75293,
+        43.261084
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/KOS.json",
+      "neighbors_url": "https://painmap.org/v1/places/KOS/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "KWT",
+      "place_name": "Kuwait",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        46.531445,
+        28.533154,
+        48.44248,
+        30.097314
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/KWT.json",
+      "neighbors_url": "https://painmap.org/v1/places/KWT/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "KGZ",
+      "place_name": "Kyrgyzstan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        69.229102,
+        39.20752,
+        80.246191,
+        43.240381
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/KGZ.json",
+      "neighbors_url": "https://painmap.org/v1/places/KGZ/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "LAO",
+      "place_name": "Laos",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        100.114941,
+        13.921191,
+        107.653125,
+        22.495264
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/LAO.json",
+      "neighbors_url": "https://painmap.org/v1/places/LAO/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "LVA",
+      "place_name": "Latvia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        21.014941,
+        55.667529,
+        28.202051,
+        58.063428
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/LVA.json",
+      "neighbors_url": "https://painmap.org/v1/places/LVA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "LBN",
+      "place_name": "Lebanon",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        35.108594,
+        33.075684,
+        36.584961,
+        34.678711
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/LBN.json",
+      "neighbors_url": "https://painmap.org/v1/places/LBN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "LSO",
+      "place_name": "Lesotho",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        27.051758,
+        -30.642285,
+        29.390723,
+        -28.581738
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/LSO.json",
+      "neighbors_url": "https://painmap.org/v1/places/LSO/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "LBR",
+      "place_name": "Liberia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -11.50752,
+        4.351318,
+        -7.399902,
+        8.537695
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/LBR.json",
+      "neighbors_url": "https://painmap.org/v1/places/LBR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "LBY",
+      "place_name": "Libya",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        9.310254,
+        19.496631,
+        25.150488,
+        33.181934
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/LBY.json",
+      "neighbors_url": "https://painmap.org/v1/places/LBY/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "LIE",
+      "place_name": "Liechtenstein",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        9.479492,
+        47.057373,
+        9.610547,
+        47.270752
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/LIE.json",
+      "neighbors_url": "https://painmap.org/v1/places/LIE/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "LTU",
+      "place_name": "Lithuania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        20.899805,
+        53.892969,
+        26.775684,
+        56.411182
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/LTU.json",
+      "neighbors_url": "https://painmap.org/v1/places/LTU/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "LUX",
+      "place_name": "Luxembourg",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        5.725,
+        49.445459,
+        6.49375,
+        50.167187
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/LUX.json",
+      "neighbors_url": "https://painmap.org/v1/places/LUX/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MAC",
+      "place_name": "Macau",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        113.478906,
+        22.195557,
+        113.548145,
+        22.245947
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MAC.json",
+      "neighbors_url": "https://painmap.org/v1/places/MAC/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MDG",
+      "place_name": "Madagascar",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        43.257129,
+        -25.570508,
+        50.482715,
+        -12.07959
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MDG.json",
+      "neighbors_url": "https://painmap.org/v1/places/MDG/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MWI",
+      "place_name": "Malawi",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        32.67041,
+        -17.131055,
+        35.892773,
+        -9.39502
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MWI.json",
+      "neighbors_url": "https://painmap.org/v1/places/MWI/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MYS",
+      "place_name": "Malaysia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        99.646289,
+        0.861963,
+        119.266309,
+        7.35166
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MYS.json",
+      "neighbors_url": "https://painmap.org/v1/places/MYS/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MDV",
+      "place_name": "Maldives",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        73.382031,
+        3.229395,
+        73.52832,
+        4.247656
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MDV.json",
+      "neighbors_url": "https://painmap.org/v1/places/MDV/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MLI",
+      "place_name": "Mali",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -12.280615,
+        10.143262,
+        4.234668,
+        24.995605
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MLI.json",
+      "neighbors_url": "https://painmap.org/v1/places/MLI/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MLT",
+      "place_name": "Malta",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        14.180371,
+        35.820215,
+        14.566211,
+        36.075781
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MLT.json",
+      "neighbors_url": "https://painmap.org/v1/places/MLT/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MHL",
+      "place_name": "Marshall Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        166.844727,
+        5.799805,
+        171.756836,
+        11.168652
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MHL.json",
+      "neighbors_url": "https://painmap.org/v1/places/MHL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MRT",
+      "place_name": "Mauritania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -17.063965,
+        14.745361,
+        -4.822607,
+        27.285937
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MRT.json",
+      "neighbors_url": "https://painmap.org/v1/places/MRT/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MUS",
+      "place_name": "Mauritius",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        57.317676,
+        -20.513184,
+        57.791992,
+        -19.989941
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MUS.json",
+      "neighbors_url": "https://painmap.org/v1/places/MUS/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MEX",
+      "place_name": "Mexico",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -118.401367,
+        14.54541,
+        -86.696289,
+        32.715332
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MEX.json",
+      "neighbors_url": "https://painmap.org/v1/places/MEX/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MDA",
+      "place_name": "Moldova",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        26.618945,
+        45.450439,
+        30.131055,
+        48.477734
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MDA.json",
+      "neighbors_url": "https://painmap.org/v1/places/MDA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MCO",
+      "place_name": "Monaco",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        7.377734,
+        43.731738,
+        7.438672,
+        43.770898
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MCO.json",
+      "neighbors_url": "https://painmap.org/v1/places/MCO/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MNG",
+      "place_name": "Mongolia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        87.743164,
+        41.595508,
+        119.897852,
+        52.117285
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MNG.json",
+      "neighbors_url": "https://painmap.org/v1/places/MNG/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MNE",
+      "place_name": "Montenegro",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        18.436328,
+        41.869092,
+        20.347656,
+        43.542334
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MNE.json",
+      "neighbors_url": "https://painmap.org/v1/places/MNE/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MSR",
+      "place_name": "Montserrat",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -62.223047,
+        16.681201,
+        -62.148438,
+        16.80957
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MSR.json",
+      "neighbors_url": "https://painmap.org/v1/places/MSR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MAR",
+      "place_name": "Morocco",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -17.003076,
+        21.420703,
+        -1.065527,
+        35.929883
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MAR.json",
+      "neighbors_url": "https://painmap.org/v1/places/MAR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MOZ",
+      "place_name": "Mozambique",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        30.221777,
+        -26.861621,
+        40.844531,
+        -10.464355
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MOZ.json",
+      "neighbors_url": "https://painmap.org/v1/places/MOZ/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MMR",
+      "place_name": "Myanmar",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        92.17959,
+        9.875391,
+        101.147266,
+        28.517041
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MMR.json",
+      "neighbors_url": "https://painmap.org/v1/places/MMR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "NAM",
+      "place_name": "Namibia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        11.72168,
+        -28.93877,
+        25.258789,
+        -16.967676
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/NAM.json",
+      "neighbors_url": "https://painmap.org/v1/places/NAM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "NRU",
+      "place_name": "Nauru",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        166.907031,
+        -0.550781,
+        166.958398,
+        -0.489355
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/NRU.json",
+      "neighbors_url": "https://painmap.org/v1/places/NRU/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "NPL",
+      "place_name": "Nepal",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        80.05166,
+        26.360303,
+        88.161523,
+        30.3875
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/NPL.json",
+      "neighbors_url": "https://painmap.org/v1/places/NPL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "NLD",
+      "place_name": "Netherlands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -68.371094,
+        12.03208,
+        7.197266,
+        53.625488
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/NLD.json",
+      "neighbors_url": "https://painmap.org/v1/places/NLD/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "NCL",
+      "place_name": "New Caledonia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        159.928223,
+        -22.661133,
+        168.139063,
+        -19.114648
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/NCL.json",
+      "neighbors_url": "https://painmap.org/v1/places/NCL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "NZL",
+      "place_name": "New Zealand",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -176.847656,
+        -52.570312,
+        178.53623,
+        -8.546484
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/NZL.json",
+      "neighbors_url": "https://painmap.org/v1/places/NZL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "NIC",
+      "place_name": "Nicaragua",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -87.670166,
+        10.735352,
+        -83.15752,
+        15.008057
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/NIC.json",
+      "neighbors_url": "https://painmap.org/v1/places/NIC/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "NER",
+      "place_name": "Niger",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        0.163867,
+        11.696289,
+        15.963184,
+        23.517871
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/NER.json",
+      "neighbors_url": "https://painmap.org/v1/places/NER/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "NGA",
+      "place_name": "Nigeria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        2.686035,
+        4.277393,
+        14.627148,
+        13.872852
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/NGA.json",
+      "neighbors_url": "https://painmap.org/v1/places/NGA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "NIU",
+      "place_name": "Niue",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -169.94834,
+        -19.137891,
+        -169.793408,
+        -18.966016
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/NIU.json",
+      "neighbors_url": "https://painmap.org/v1/places/NIU/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "NFK",
+      "place_name": "Norfolk Island",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        167.906152,
+        -29.096289,
+        167.99043,
+        -29.013965
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/NFK.json",
+      "neighbors_url": "https://painmap.org/v1/places/NFK/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PRK",
+      "place_name": "North Korea",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        124.348633,
+        37.719043,
+        130.687305,
+        42.998145
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PRK.json",
+      "neighbors_url": "https://painmap.org/v1/places/PRK/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MKD",
+      "place_name": "North Macedonia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        20.448633,
+        40.849902,
+        23.005664,
+        42.358154
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MKD.json",
+      "neighbors_url": "https://painmap.org/v1/places/MKD/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MNP",
+      "place_name": "Northern Mariana Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        145.152148,
+        14.111328,
+        145.835449,
+        18.806787
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MNP.json",
+      "neighbors_url": "https://painmap.org/v1/places/MNP/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "NOR",
+      "place_name": "Norway",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -9.098877,
+        58.020947,
+        33.629297,
+        80.477832
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/NOR.json",
+      "neighbors_url": "https://painmap.org/v1/places/NOR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "OMN",
+      "place_name": "Oman",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        51.977637,
+        16.648389,
+        59.8375,
+        26.356348
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/OMN.json",
+      "neighbors_url": "https://painmap.org/v1/places/OMN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PAK",
+      "place_name": "Pakistan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        60.843359,
+        23.753369,
+        77.048633,
+        37.03667
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PAK.json",
+      "neighbors_url": "https://painmap.org/v1/places/PAK/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PLW",
+      "place_name": "Palau",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        131.134961,
+        3.021875,
+        134.65957,
+        7.712109
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PLW.json",
+      "neighbors_url": "https://painmap.org/v1/places/PLW/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PSE",
+      "place_name": "Palestine",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        34.198145,
+        31.208301,
+        35.57207,
+        32.534424
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PSE.json",
+      "neighbors_url": "https://painmap.org/v1/places/PSE/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PAN",
+      "place_name": "Panama",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -83.027344,
+        7.220068,
+        -77.195996,
+        9.597852
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PAN.json",
+      "neighbors_url": "https://painmap.org/v1/places/PAN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PNG",
+      "place_name": "Papua New Guinea",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        140.862305,
+        -11.630566,
+        155.957617,
+        -1.353223
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PNG.json",
+      "neighbors_url": "https://painmap.org/v1/places/PNG/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PRY",
+      "place_name": "Paraguay",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -62.650977,
+        -27.553809,
+        -54.241797,
+        -19.28623
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PRY.json",
+      "neighbors_url": "https://painmap.org/v1/places/PRY/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CHN",
+      "place_name": "People's Republic of China",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        73.607324,
+        18.218262,
+        134.752344,
+        53.555615
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CHN.json",
+      "neighbors_url": "https://painmap.org/v1/places/CHN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PER",
+      "place_name": "Peru",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -81.336621,
+        -18.345605,
+        -68.685254,
+        -0.041748
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PER.json",
+      "neighbors_url": "https://painmap.org/v1/places/PER/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PHL",
+      "place_name": "Philippines",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        116.969531,
+        5.060205,
+        126.593359,
+        20.84126
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PHL.json",
+      "neighbors_url": "https://painmap.org/v1/places/PHL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PCN",
+      "place_name": "Pitcairn Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -128.350195,
+        -24.412598,
+        -128.290088,
+        -24.323242
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PCN.json",
+      "neighbors_url": "https://painmap.org/v1/places/PCN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "POL",
+      "place_name": "Poland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        14.128613,
+        49.020752,
+        24.105762,
+        54.838184
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/POL.json",
+      "neighbors_url": "https://painmap.org/v1/places/POL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PRT",
+      "place_name": "Portugal",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -31.282959,
+        32.648291,
+        -6.2125,
+        42.137402
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PRT.json",
+      "neighbors_url": "https://painmap.org/v1/places/PRT/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "PRI",
+      "place_name": "Puerto Rico",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -67.937061,
+        17.947266,
+        -65.294873,
+        18.522168
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/PRI.json",
+      "neighbors_url": "https://painmap.org/v1/places/PRI/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "QAT",
+      "place_name": "Qatar",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        50.75459,
+        24.564648,
+        51.608887,
+        26.153271
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/QAT.json",
+      "neighbors_url": "https://painmap.org/v1/places/QAT/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "COG",
+      "place_name": "Republic of the Congo",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        11.130176,
+        -5.004297,
+        18.622168,
+        3.687305
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/COG.json",
+      "neighbors_url": "https://painmap.org/v1/places/COG/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ROU",
+      "place_name": "Romania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        20.241797,
+        43.670801,
+        29.705859,
+        48.263477
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ROU.json",
+      "neighbors_url": "https://painmap.org/v1/places/ROU/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "RUS",
+      "place_name": "Russia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -180,
+        41.199268,
+        180,
+        81.854199
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/RUS.json",
+      "neighbors_url": "https://painmap.org/v1/places/RUS/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "RWA",
+      "place_name": "Rwanda",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        28.857617,
+        -2.808594,
+        30.876563,
+        -1.063086
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/RWA.json",
+      "neighbors_url": "https://painmap.org/v1/places/RWA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BLM",
+      "place_name": "Saint Barthélemy",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -62.875439,
+        17.875195,
+        -62.799707,
+        17.922266
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BLM.json",
+      "neighbors_url": "https://painmap.org/v1/places/BLM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SHN",
+      "place_name": "Saint Helena",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -14.414941,
+        -16.004004,
+        -5.659717,
+        -7.882617
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SHN.json",
+      "neighbors_url": "https://painmap.org/v1/places/SHN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "KNA",
+      "place_name": "Saint Kitts and Nevis",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -62.840479,
+        17.100586,
+        -62.532227,
+        17.402588
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/KNA.json",
+      "neighbors_url": "https://painmap.org/v1/places/KNA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "LCA",
+      "place_name": "Saint Lucia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -61.073145,
+        13.717578,
+        -60.886768,
+        14.093359
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/LCA.json",
+      "neighbors_url": "https://painmap.org/v1/places/LCA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "MAF",
+      "place_name": "Saint Martin",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -63.123047,
+        18.068945,
+        -63.009424,
+        18.115332
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/MAF.json",
+      "neighbors_url": "https://painmap.org/v1/places/MAF/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SPM",
+      "place_name": "Saint Pierre and Miquelon",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -56.386914,
+        46.752832,
+        -56.137354,
+        47.098975
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SPM.json",
+      "neighbors_url": "https://painmap.org/v1/places/SPM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "VCT",
+      "place_name": "Saint Vincent and the Grenadines",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -61.353516,
+        12.694727,
+        -61.124023,
+        13.35874
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/VCT.json",
+      "neighbors_url": "https://painmap.org/v1/places/VCT/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "WSM",
+      "place_name": "Samoa",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -172.778516,
+        -14.047266,
+        -171.449561,
+        -13.465234
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/WSM.json",
+      "neighbors_url": "https://painmap.org/v1/places/WSM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SMR",
+      "place_name": "San Marino",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        12.396875,
+        43.894092,
+        12.514648,
+        43.989746
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SMR.json",
+      "neighbors_url": "https://painmap.org/v1/places/SMR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "STP",
+      "place_name": "São Tomé and Príncipe",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        6.468164,
+        0.047363,
+        7.452344,
+        1.699121
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/STP.json",
+      "neighbors_url": "https://painmap.org/v1/places/STP/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SAU",
+      "place_name": "Saudi Arabia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        34.616211,
+        16.371777,
+        55.641016,
+        32.124512
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SAU.json",
+      "neighbors_url": "https://painmap.org/v1/places/SAU/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SEN",
+      "place_name": "Senegal",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -17.535645,
+        12.328027,
+        -11.382422,
+        16.678906
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SEN.json",
+      "neighbors_url": "https://painmap.org/v1/places/SEN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SRB",
+      "place_name": "Serbia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        18.839063,
+        42.242139,
+        22.976855,
+        46.169189
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SRB.json",
+      "neighbors_url": "https://painmap.org/v1/places/SRB/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SYC",
+      "place_name": "Seychelles",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        55.383398,
+        -4.785547,
+        55.542969,
+        -4.558789
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SYC.json",
+      "neighbors_url": "https://painmap.org/v1/places/SYC/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "KAS",
+      "place_name": "Siachen Glacier",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        76.766895,
+        35.109912,
+        77.799414,
+        35.661719
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/KAS.json",
+      "neighbors_url": "https://painmap.org/v1/places/KAS/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SLE",
+      "place_name": "Sierra Leone",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -13.292676,
+        6.906543,
+        -10.283203,
+        9.996533
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SLE.json",
+      "neighbors_url": "https://painmap.org/v1/places/SLE/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SGP",
+      "place_name": "Singapore",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        103.650195,
+        1.265381,
+        103.996387,
+        1.44707
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SGP.json",
+      "neighbors_url": "https://painmap.org/v1/places/SGP/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SXM",
+      "place_name": "Sint Maarten",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -63.124707,
+        18.019189,
+        -63.011182,
+        18.068945
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SXM.json",
+      "neighbors_url": "https://painmap.org/v1/places/SXM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SVK",
+      "place_name": "Slovakia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        16.862695,
+        47.763428,
+        22.538672,
+        49.597705
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SVK.json",
+      "neighbors_url": "https://painmap.org/v1/places/SVK/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SVN",
+      "place_name": "Slovenia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        13.378223,
+        45.428369,
+        16.516211,
+        46.863281
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SVN.json",
+      "neighbors_url": "https://painmap.org/v1/places/SVN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SLB",
+      "place_name": "Solomon Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        155.677539,
+        -11.832227,
+        166.929199,
+        -6.608887
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SLB.json",
+      "neighbors_url": "https://painmap.org/v1/places/SLB/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SOM",
+      "place_name": "Somalia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        40.964453,
+        -1.695312,
+        51.390234,
+        11.983691
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SOM.json",
+      "neighbors_url": "https://painmap.org/v1/places/SOM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SOL",
+      "place_name": "Somaliland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        42.656445,
+        7.99707,
+        48.938574,
+        11.499805
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SOL.json",
+      "neighbors_url": "https://painmap.org/v1/places/SOL/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ZAF",
+      "place_name": "South Africa",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        16.447559,
+        -46.962891,
+        37.887695,
+        -22.146289
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ZAF.json",
+      "neighbors_url": "https://painmap.org/v1/places/ZAF/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SGS",
+      "place_name": "South Georgia and the South Sandwich Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -38.017432,
+        -58.492285,
+        -26.259863,
+        -53.984082
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SGS.json",
+      "neighbors_url": "https://painmap.org/v1/places/SGS/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "KOR",
+      "place_name": "South Korea",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        126.00752,
+        33.201514,
+        130.934277,
+        38.623437
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/KOR.json",
+      "neighbors_url": "https://painmap.org/v1/places/KOR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SSD",
+      "place_name": "South Sudan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        24.147363,
+        3.490723,
+        35.268359,
+        12.223096
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SSD.json",
+      "neighbors_url": "https://painmap.org/v1/places/SSD/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ESP",
+      "place_name": "Spain",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -18.160547,
+        27.646387,
+        4.32207,
+        43.764551
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ESP.json",
+      "neighbors_url": "https://painmap.org/v1/places/ESP/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "LKA",
+      "place_name": "Sri Lanka",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        79.707812,
+        5.949365,
+        81.876953,
+        9.812695
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/LKA.json",
+      "neighbors_url": "https://painmap.org/v1/places/LKA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SDN",
+      "place_name": "Sudan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        21.825293,
+        8.665625,
+        38.609473,
+        22.202441
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SDN.json",
+      "neighbors_url": "https://painmap.org/v1/places/SDN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SUR",
+      "place_name": "Suriname",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -58.054492,
+        1.842236,
+        -53.990479,
+        5.993457
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SUR.json",
+      "neighbors_url": "https://painmap.org/v1/places/SUR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SWE",
+      "place_name": "Sweden",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        11.147168,
+        55.346387,
+        24.155469,
+        69.036865
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SWE.json",
+      "neighbors_url": "https://painmap.org/v1/places/SWE/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CHE",
+      "place_name": "Switzerland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        5.97002,
+        45.830029,
+        10.45459,
+        47.775635
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CHE.json",
+      "neighbors_url": "https://painmap.org/v1/places/CHE/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "SYR",
+      "place_name": "Syria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        35.764453,
+        32.317285,
+        42.359082,
+        37.297266
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/SYR.json",
+      "neighbors_url": "https://painmap.org/v1/places/SYR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TWN",
+      "place_name": "Taiwan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        118.287305,
+        21.925,
+        121.929004,
+        25.276904
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TWN.json",
+      "neighbors_url": "https://painmap.org/v1/places/TWN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TJK",
+      "place_name": "Tajikistan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        67.349609,
+        36.684033,
+        75.11875,
+        41.035107
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TJK.json",
+      "neighbors_url": "https://painmap.org/v1/places/TJK/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TZA",
+      "place_name": "Tanzania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        29.323438,
+        -11.716211,
+        40.463574,
+        -0.994922
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TZA.json",
+      "neighbors_url": "https://painmap.org/v1/places/TZA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "THA",
+      "place_name": "Thailand",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        97.373926,
+        5.636768,
+        105.641016,
+        20.424414
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/THA.json",
+      "neighbors_url": "https://painmap.org/v1/places/THA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "BHS",
+      "place_name": "The Bahamas",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -78.985645,
+        20.937402,
+        -72.747266,
+        26.940088
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/BHS.json",
+      "neighbors_url": "https://painmap.org/v1/places/BHS/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GMB",
+      "place_name": "The Gambia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -16.824805,
+        13.06416,
+        -13.826709,
+        13.812109
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GMB.json",
+      "neighbors_url": "https://painmap.org/v1/places/GMB/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TGO",
+      "place_name": "Togo",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -0.090186,
+        6.089404,
+        1.77793,
+        11.115625
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TGO.json",
+      "neighbors_url": "https://painmap.org/v1/places/TGO/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TON",
+      "place_name": "Tonga",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -175.362354,
+        -21.450586,
+        -173.921875,
+        -18.565332
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TON.json",
+      "neighbors_url": "https://painmap.org/v1/places/TON/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TTO",
+      "place_name": "Trinidad and Tobago",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -61.906104,
+        10.064648,
+        -60.525488,
+        11.325391
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TTO.json",
+      "neighbors_url": "https://painmap.org/v1/places/TTO/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TUN",
+      "place_name": "Tunisia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        7.495605,
+        30.229395,
+        11.535938,
+        37.340381
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TUN.json",
+      "neighbors_url": "https://painmap.org/v1/places/TUN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TUR",
+      "place_name": "Turkey",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        25.668945,
+        35.831445,
+        44.817188,
+        42.093262
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TUR.json",
+      "neighbors_url": "https://painmap.org/v1/places/TUR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "CYN",
+      "place_name": "Turkish Republic of Northern Cyprus",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        32.712695,
+        35.000342,
+        34.556055,
+        35.662061
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/CYN.json",
+      "neighbors_url": "https://painmap.org/v1/places/CYN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TKM",
+      "place_name": "Turkmenistan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        52.493848,
+        35.170801,
+        66.629297,
+        42.778467
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TKM.json",
+      "neighbors_url": "https://painmap.org/v1/places/TKM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TCA",
+      "place_name": "Turks and Caicos Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -72.342383,
+        21.751709,
+        -71.636914,
+        21.951904
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TCA.json",
+      "neighbors_url": "https://painmap.org/v1/places/TCA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "TUV",
+      "place_name": "Tuvalu",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        179.195703,
+        -8.534961,
+        179.216602,
+        -8.466309
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/TUV.json",
+      "neighbors_url": "https://painmap.org/v1/places/TUV/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "UGA",
+      "place_name": "Uganda",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        29.561914,
+        -1.469922,
+        34.978223,
+        4.220215
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/UGA.json",
+      "neighbors_url": "https://painmap.org/v1/places/UGA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "UKR",
+      "place_name": "Ukraine",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        22.131836,
+        45.234131,
+        40.12832,
+        52.353564
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/UKR.json",
+      "neighbors_url": "https://painmap.org/v1/places/UKR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ARE",
+      "place_name": "United Arab Emirates",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        51.568359,
+        22.621484,
+        56.387988,
+        26.068164
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ARE.json",
+      "neighbors_url": "https://painmap.org/v1/places/ARE/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "GBR",
+      "place_name": "United Kingdom",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -8.144824,
+        50.021387,
+        1.746582,
+        60.831885
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/GBR.json",
+      "neighbors_url": "https://painmap.org/v1/places/GBR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "USA",
+      "place_name": "United States of America",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -178.194531,
+        18.963916,
+        179.77998,
+        71.407666
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/USA.json",
+      "neighbors_url": "https://painmap.org/v1/places/USA/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "VIR",
+      "place_name": "United States Virgin Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -65.023633,
+        17.701709,
+        -64.580469,
+        18.385205
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/VIR.json",
+      "neighbors_url": "https://painmap.org/v1/places/VIR/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "URY",
+      "place_name": "Uruguay",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -58.438135,
+        -34.932813,
+        -53.125586,
+        -30.101074
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/URY.json",
+      "neighbors_url": "https://painmap.org/v1/places/URY/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "UZB",
+      "place_name": "Uzbekistan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        55.975684,
+        37.172217,
+        73.136914,
+        45.555371
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/UZB.json",
+      "neighbors_url": "https://painmap.org/v1/places/UZB/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "VUT",
+      "place_name": "Vanuatu",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        166.526074,
+        -20.241797,
+        169.896289,
+        -13.709473
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/VUT.json",
+      "neighbors_url": "https://painmap.org/v1/places/VUT/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "VAT",
+      "place_name": "Vatican City",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        12.427539,
+        41.897559,
+        12.43916,
+        41.906201
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/VAT.json",
+      "neighbors_url": "https://painmap.org/v1/places/VAT/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "VEN",
+      "place_name": "Venezuela",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -73.366211,
+        0.687988,
+        -59.828906,
+        12.177881
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/VEN.json",
+      "neighbors_url": "https://painmap.org/v1/places/VEN/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "VNM",
+      "place_name": "Vietnam",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        102.127441,
+        8.583252,
+        109.444922,
+        23.345215
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/VNM.json",
+      "neighbors_url": "https://painmap.org/v1/places/VNM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "WLF",
+      "place_name": "Wallis and Futuna",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -178.194385,
+        -14.324902,
+        -176.128076,
+        -13.22168
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/WLF.json",
+      "neighbors_url": "https://painmap.org/v1/places/WLF/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ESH",
+      "place_name": "Western Sahara",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        -17.098779,
+        20.806152,
+        -8.682129,
+        27.656445
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ESH.json",
+      "neighbors_url": "https://painmap.org/v1/places/ESH/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "YEM",
+      "place_name": "Yemen",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        42.549023,
+        12.318994,
+        54.511133,
+        18.996143
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/YEM.json",
+      "neighbors_url": "https://painmap.org/v1/places/YEM/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ZMB",
+      "place_name": "Zambia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        21.978906,
+        -18.041504,
+        33.661523,
+        -8.193652
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ZMB.json",
+      "neighbors_url": "https://painmap.org/v1/places/ZMB/neighbors.json",
+      "profile_url": null
+    },
+    {
+      "place_id": "ZWE",
+      "place_name": "Zimbabwe",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "bbox": [
+        25.224023,
+        -22.402051,
+        33.006738,
+        -15.643066
+      ],
+      "item_url": "https://painmap.org/ogc/collections/places/items/ZWE.json",
+      "neighbors_url": "https://painmap.org/v1/places/ZWE/neighbors.json",
+      "profile_url": null
+    }
+  ]
+}

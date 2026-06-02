@@ -544,6 +544,50 @@
         }
       }
     },
+    "/ogc/collections/places/item-index.json": {
+      "get": {
+        "summary": "Get partitioned OGC country feature index",
+        "responses": {
+          "200": {
+            "description": "Partitioned OGC country feature index",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ogc/collections/places/items/{place_id}.json": {
+      "get": {
+        "summary": "Get one OGC-style GeoJSON country place feature",
+        "parameters": [
+          {
+            "name": "place_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OGC-style GeoJSON country feature",
+            "content": {
+              "application/geo+json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Feature"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/data/analytics-events.json": {
       "get": {
         "summary": "Get privacy-preserving telemetry event vocabulary",
@@ -885,6 +929,41 @@
             "const": "FeatureCollection"
           },
           "features": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "Feature": {
+        "type": "object",
+        "required": [
+          "type",
+          "id",
+          "properties",
+          "geometry"
+        ],
+        "properties": {
+          "type": {
+            "const": "Feature"
+          },
+          "id": {
+            "type": "string"
+          },
+          "bbox": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "properties": {
+            "type": "object"
+          },
+          "geometry": {
+            "type": "object"
+          },
+          "links": {
             "type": "array",
             "items": {
               "type": "object"

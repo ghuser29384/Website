@@ -21,6 +21,12 @@
       "title": "Collections"
     },
     {
+      "href": "https://painmap.org/ogc/collections/places/item-index.json",
+      "rel": "items",
+      "type": "application/json",
+      "title": "Partitioned country feature index"
+    },
+    {
       "href": "https://painmap.org/data/openapi.json",
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.1",

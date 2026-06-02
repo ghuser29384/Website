@@ -11,7 +11,7 @@ PainMap is a public static atlas for pain-source evidence by place. The site sep
 - Coverage status: `v1/coverage.json`
 - Snapshot/live overlay contract: `data/release-modes.json`
 - Per-place geography discovery: `v1/places/{place_id}/neighbors.json`
-- OGC-style place features: `ogc/index.json`, `ogc/collections/places/items.json`
+- OGC-style place features: `ogc/index.json`, `ogc/collections/places/items.json`, `ogc/collections/places/item-index.json`, `ogc/collections/places/items/{place_id}.json`
 - Provenance and license registry: `data/provenance-registry.json`
 - JSON Schemas: `schemas/place-index.schema.json`, `schemas/adm1-context.schema.json`, `schemas/place-measurements.schema.json`, `schemas/coverage.schema.json`, `schemas/release-modes.schema.json`, `schemas/ogc-place-features.schema.json`
 - Release manifest: `releases/2026-05-31/manifest.json`
@@ -30,7 +30,7 @@ npm run build:data
 npm run check
 ```
 
-The build step generates sitemap entries, route smoke metadata, generated country place pages, high-priority ADM1 context pages, v1 JSON files, per-place neighbor payloads, ADM1 context payloads, CSV and GeoJSON exports, OGC-style place features, JSON Schemas, release-mode contracts, coverage and endpoint manifests, release diffs, headers, security.txt, social metadata, subresource integrity hashes, and release checksums.
+The build step generates sitemap entries, route smoke metadata, generated country place pages, high-priority ADM1 context pages, v1 JSON files, per-place neighbor payloads, ADM1 context payloads, CSV and GeoJSON exports, full and per-country OGC-style place features, JSON Schemas, release-mode contracts, coverage and endpoint manifests, release diffs, headers, security.txt, social metadata, subresource integrity hashes, and release checksums.
 
 `npm run check` also validates schema targets, endpoint smoke files, place-index measurement counts, release-manifest hashes, and required QA artifacts. Run it in CI before publishing so generated artifacts cannot drift from the committed tree.
 
