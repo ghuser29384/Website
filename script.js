@@ -1480,6 +1480,11 @@ const selectionMeta = document.getElementById("selection-meta");
 const selectionTitle = document.getElementById("selection-title");
 const selectionSummary = document.getElementById("selection-summary");
 const selectionFootnote = document.getElementById("selection-footnote");
+const summaryTopSource = document.getElementById("summary-top-source");
+const summaryEvidenceMix = document.getElementById("summary-evidence-mix");
+const summaryUncertainty = document.getElementById("summary-uncertainty");
+const summaryLastUpdate = document.getElementById("summary-last-update");
+const comparePlaceLink = document.getElementById("compare-place-link");
 const factLocation = document.getElementById("fact-location");
 const factCountrySource = document.getElementById("fact-country-source");
 const factAdminSource = document.getElementById("fact-admin-source");
@@ -1885,6 +1890,49 @@ function provinceCacheKey(countryFeature, provinceFeature) {
     provinceFeature?.properties?.shapeISO ||
     normalizeSearchText(provinceName(provinceFeature));
   return `${iso}:${provinceId}`;
+}
+
+function setSummaryText(element, value) {
+  if (element) {
+    element.textContent = value;
+  }
+}
+
+function compareUrlForPlace(placeId) {
+  return `/compare/?places=${encodeURIComponent(placeId || "WLD")}`;
+}
+
+function currentComparePlaceId(countryFeature = state.selectedCountry, provinceFeature = state.selectedProvince) {
+  const iso = countryIso(countryFeature?.properties) || "WLD";
+
+  if (provinceFeature) {
+    return `${iso}:${provinceName(provinceFeature)}`;
+  }
+
+  return iso;
+}
+
+function updatePlaceSummary({
+  topSource,
+  evidenceMix,
+  uncertainty,
+  lastUpdate,
+  placeId = "WLD",
+  compareLabel = "Compare this place",
+}) {
+  setSummaryText(summaryTopSource, topSource);
+  setSummaryText(summaryEvidenceMix, evidenceMix);
+  setSummaryText(summaryUncertainty, uncertainty);
+  setSummaryText(summaryLastUpdate, lastUpdate);
+
+  if (!comparePlaceLink) {
+    return;
+  }
+
+  comparePlaceLink.href = compareUrlForPlace(placeId);
+  comparePlaceLink.dataset.placeId = placeId;
+  comparePlaceLink.textContent = compareLabel;
+  comparePlaceLink.setAttribute("aria-label", `${compareLabel} on the compare page`);
 }
 
 function findProvinceGsapRecord(iso, provinceFeature) {
@@ -2341,7 +2389,9 @@ function setupTelemetryClickTracking() {
     const pathname = url.pathname;
 
     if (pathname === "/compare/" || pathname.startsWith("/compare/")) {
-      recordTelemetry("compare_opened", { route: pathname });
+      const placeId = link.dataset.placeId || url.searchParams.get("places") || "";
+      const fields = placeId ? { route: pathname, place_id: placeId } : { route: pathname };
+      recordTelemetry("compare_opened", fields);
     }
 
     if (pathname.endsWith("/manifest.json")) {
@@ -4693,6 +4743,14 @@ function renderDetails() {
         "The default atlas view is pinned to the immutable 2026-05-31.atlas.2 release contract, with table equivalents and no live upstream ranking fetches.";
       selectionFootnote.textContent =
         "Snapshot mode uses static release artifacts, local boundary files, checksums, schemas, and coverage status. Switch to Live overlay for current public-source context that is not frozen into release rows.";
+      updatePlaceSummary({
+        topSource: "Whole-world release snapshot",
+        evidenceMix: "Proxy fallback plus priority overlay",
+        uncertainty: "Low to very low",
+        lastUpdate: "2026-05-31",
+        placeId: "WLD",
+        compareLabel: "Compare whole world",
+      });
       factLocation.textContent = "Whole Earth";
       factCountrySource.textContent = "Natural Earth Admin 0, 1:50m release asset";
       factAdminSource.textContent = "ADM1 disabled in snapshot mode";
@@ -4725,6 +4783,14 @@ function renderDetails() {
       state.globeMode === "death"
         ? "This atlas panel connects place-level context to event-level pain evidence. Whole-world human death causes come from World Bank WLD mortality indicators. Whole-world animal death causes come from OWID global slaughter and aquaculture kill counts plus conservative remaining-life proxies."
         : "This atlas panel connects place-level context to event-level pain evidence. Whole-world human suffering causes come from World Bank WLD burden indicators, while the animal-only ranking below aggregates live OWID and World Bank inputs into factory-farmed animals, non-insect wild animals, and insects.";
+    updatePlaceSummary({
+      topSource: state.globeMode === "death" ? "Live WDI WLD + OWID overlay" : "Live WDI / OWID / RP / WAI overlay",
+      evidenceMix: state.globeMode === "death" ? "Human death indicators plus animal-death proxies" : "Human burden plus animal cause buckets",
+      uncertainty: "Modeled and proxy",
+      lastUpdate: "Live public-source overlay",
+      placeId: "WLD",
+      compareLabel: "Compare whole world",
+    });
     factLocation.textContent = "Whole Earth";
     factCountrySource.textContent = "Natural Earth Admin 0, 1:50m";
     factAdminSource.textContent = "geoBoundaries ADM1 will load on click";
@@ -4765,6 +4831,14 @@ function renderDetails() {
       : `${name} is selected from the immutable release boundary index. This country is boundary-only in 2026-05-31.atlas.2.`;
     selectionFootnote.textContent =
       "Snapshot mode does not query World Bank, OWID, geoBoundaries, or WorldPop at interaction time. Switch to Live overlay to load ADM1 boundaries and current public-source ranking context.";
+    updatePlaceSummary({
+      topSource: hasCanonicalProfile ? "Canonical release profile" : "Boundary-indexed country",
+      evidenceMix: hasCanonicalProfile ? "3 canonical measurement rows" : "Boundary only in this release",
+      uncertainty: hasCanonicalProfile ? "Low confidence" : "Not measured",
+      lastUpdate: "2026-05-31",
+      placeId: iso,
+      compareLabel: `Compare ${name}`,
+    });
     factLocation.textContent = `${name} · ${iso}`;
     factCountrySource.textContent = "Natural Earth Admin 0, 1:50m release asset";
     factAdminSource.textContent = "ADM1 disabled in snapshot mode";
@@ -4834,6 +4908,38 @@ function renderDetails() {
             ? "Human: World Bank WDI. Animals: OWID load failed."
             : "Human: World Bank WDI. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
   }
+
+  const isLoadingLiveSummary =
+    !issueData ||
+    issueData.loading ||
+    (provinceNameLabel && (!provinceIssueData || provinceIssueData.loading));
+  const hasLiveSummaryError = issueData?.error || (provinceNameLabel && provinceIssueData?.error);
+  const liveTopSource = isLoadingLiveSummary
+    ? "Loading live overlay"
+    : hasLiveSummaryError
+      ? provinceNameLabel
+        ? "Province overlay unavailable"
+        : "Country overlay unavailable"
+      : provinceNameLabel
+        ? "Province live overlay"
+        : state.globeMode === "death"
+          ? "Human death indicators"
+          : "Human and animal burden overlay";
+  const liveEvidenceMix = provinceNameLabel
+    ? state.globeMode === "death"
+      ? "WorldPop plus national WDI model"
+      : "WorldPop, GSAP, WDI, OWID, RP, WAI"
+    : state.globeMode === "death"
+      ? "World Bank WDI death indicators"
+      : "WDI, OWID, RP, WAI, cause buckets";
+  updatePlaceSummary({
+    topSource: liveTopSource,
+    evidenceMix: liveEvidenceMix,
+    uncertainty: hasLiveSummaryError ? "Unavailable" : isLoadingLiveSummary ? "Pending" : "Modeled and proxy",
+    lastUpdate: "Live public-source overlay",
+    placeId: currentComparePlaceId(state.selectedCountry, state.selectedProvince),
+    compareLabel: `Compare ${provinceNameLabel || name}`,
+  });
 
   const boundarySource = state.provinceMeta?.boundarySource
     ? `ADM1 source: ${state.provinceMeta.boundarySource}.`

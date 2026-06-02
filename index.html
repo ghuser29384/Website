@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="PainMap | Mixed-evidence atlas of pain sources by place">
     <meta name="twitter:description" content="PainMap is a place-first atlas for direct evidence, modeled estimates, proxy aggregates, and priority overlays about pain sources.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="styles.css" integrity="sha384-eJ+PWgsxxC2HPyzzt2Ls3sPHLf6XLnWQ4gOF9+JXv+OeNAqg+jfq4Ep0QsOGp57Z" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css" integrity="sha384-fuQsSlW/RDH5IywcfPqMCIpGdI55Ej4LxkYLYSrBPd5raiw7LqQrEDML+vi4YQuO" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -335,6 +335,26 @@
             Search or select a place to inspect broader human and animal suffering burdens with source, method,
             vintage, and uncertainty metadata beside the visible rankings.
           </p>
+
+          <div class="place-summary-card" id="place-summary-card" aria-label="Selected place summary">
+            <div class="place-summary-metric">
+              <span class="fact-label">Top source</span>
+              <strong id="summary-top-source">Release snapshot</strong>
+            </div>
+            <div class="place-summary-metric">
+              <span class="fact-label">Evidence mix</span>
+              <strong id="summary-evidence-mix">Proxy aggregate plus priority overlay</strong>
+            </div>
+            <div class="place-summary-metric">
+              <span class="fact-label">Uncertainty</span>
+              <strong id="summary-uncertainty">Low to very low</strong>
+            </div>
+            <div class="place-summary-metric">
+              <span class="fact-label">Last update</span>
+              <strong id="summary-last-update">2026-05-31</strong>
+            </div>
+            <a class="solid-button compare-place-link" id="compare-place-link" href="/compare/?places=WLD" data-place-id="WLD">Compare whole world</a>
+          </div>
 
           <div class="facts">
             <article class="fact-card">
@@ -704,6 +724,6 @@
     </div>
         <script src="vendor/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
     <script src="vendor/topojson-client.v3.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
-    <script type="module" src="script.js" integrity="sha384-OPLmgTfKIoQyyQuRBpsTWurggnDIDVrROZRpTylan8AMd5hZz7gSzdPGrGBA9bui" crossorigin="anonymous"></script>
+    <script type="module" src="script.js" integrity="sha384-c0e75zsr/KtxyIxvMTX7QqY2X+i3j6a0hkDtdp0s1z69RmljarJNw6or3F5I0/aP" crossorigin="anonymous"></script>
   </body>
 </html>

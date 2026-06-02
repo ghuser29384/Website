@@ -39,6 +39,7 @@
       "event": "compare_opened",
       "fields": [
         "route",
+        "place_id",
         "release_id"
       ]
     },

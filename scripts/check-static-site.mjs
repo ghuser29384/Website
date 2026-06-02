@@ -20,6 +20,7 @@ const expectedExports = [
   "data/natural-earth-countries.geojson",
   "data/openapi.json",
   "data/dcat.json",
+  "compare.js",
   "ogc/index.json",
   "ogc/conformance.json",
   "ogc/collections/index.json",
@@ -165,6 +166,7 @@ for (const file of expectedExports.filter((entry) => /\.(json|geojson)$/.test(en
 
 const stylesheetSri = `sha384-${hashFile("styles.css")}`;
 const scriptSri = `sha384-${hashFile("script.js")}`;
+const compareScriptSri = `sha384-${hashFile("compare.js")}`;
 const d3Sri = `sha384-${hashFile("vendor/d3.v7.min.js")}`;
 const topojsonSri = `sha384-${hashFile("vendor/topojson-client.v3.min.js")}`;
 
@@ -239,6 +241,14 @@ expectPattern("script.js", script, /recordTelemetry\("route_view"\)/, "route_vie
 expectPattern("script.js", script, /recordTelemetry\("atlas_place_selected"/, "atlas_place_selected telemetry instrumentation");
 expectPattern("script.js", script, /PerformanceObserver/, "field performance observer instrumentation");
 expectPattern("script.js", script, /TELEMETRY_ENDPOINT = document\.documentElement\.dataset\.telemetryEndpoint \|\| ""/, "no default telemetry collector");
+expectPattern("index.html", home, /id="compare-place-link" href="\/compare\/\?places=WLD"/, "homepage compare place CTA");
+expectPattern("compare/index.html", read("compare/index.html"), /id="compare-requested-list"/, "compare URL requested-place list");
+expectPattern(
+  "compare/index.html",
+  read("compare/index.html"),
+  new RegExp(`<script type="module" src="\\.\\./compare\\.js" integrity="${escapeRegExp(compareScriptSri)}" crossorigin="anonymous"></script>`),
+  "current compare.js SRI"
+);
 
 const sitemap = read("sitemap.xml");
 for (const route of routeManifest.routes) {

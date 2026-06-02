@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="Compare Places | PainMap">
     <meta name="twitter:description" content="Compare places or releases while preserving evidence kind, uncertainty, source vintage, and method notes.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../styles.css" integrity="sha384-eJ+PWgsxxC2HPyzzt2Ls3sPHLf6XLnWQ4gOF9+JXv+OeNAqg+jfq4Ep0QsOGp57Z" crossorigin="anonymous">
+<link rel="stylesheet" href="../styles.css" integrity="sha384-fuQsSlW/RDH5IywcfPqMCIpGdI55Ej4LxkYLYSrBPd5raiw7LqQrEDML+vi4YQuO" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -53,6 +53,16 @@
           <p class="route-copy">
             This static compare view shows how PainMap should compare places and releases: values are useful only when evidence kind, method, vintage, uncertainty, and source links stay attached.
           </p>
+          <div class="compare-url-panel" aria-labelledby="compare-url-title">
+            <h2 id="compare-url-title">Shareable compare URL</h2>
+            <p class="route-copy" id="compare-url-status">
+              Default release example: Brazil and India. Atlas place buttons can open this route with a requested place list.
+            </p>
+            <div class="compare-chip-list" id="compare-requested-list" aria-label="Requested compare places">
+              <a class="compare-chip" href="/place/BRA/">Brazil</a>
+              <a class="compare-chip" href="/place/IND/">India</a>
+            </div>
+          </div>
         </section>
 
         <section class="route-panel" aria-labelledby="comparison-title">
@@ -146,5 +156,6 @@
         </section>
       </main>
     </div>
+    <script type="module" src="../compare.js" integrity="sha384-M48nWyAfnyqfrPxmXTyOROJtkau6GXKgoC1sziMk5KEUdwBJVpoqnfNruO9hGbkt" crossorigin="anonymous"></script>
   </body>
 </html>

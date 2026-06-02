@@ -693,6 +693,35 @@ p {
   margin-top: 1rem;
 }
 
+.place-summary-card {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 0.75rem;
+  margin-top: 1.15rem;
+  border: 1px solid var(--line);
+  background: #f8fbfb;
+  padding: 0.85rem;
+}
+
+.place-summary-metric {
+  min-width: 0;
+}
+
+.place-summary-metric strong {
+  display: block;
+  margin-top: 0.45rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.compare-place-link {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
 .facts {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1324,6 +1353,44 @@ p {
   margin-top: 1.2rem;
 }
 
+.compare-url-panel {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  background: #f8fbfb;
+  padding: 1rem;
+}
+
+.compare-url-panel h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.compare-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.85rem;
+}
+
+.compare-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.35rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+  padding: 0.55rem 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.compare-chip:hover,
+.compare-chip:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
 .download-list {
   display: grid;
   gap: 0.65rem;
@@ -1476,6 +1543,32 @@ p {
     padding: 1rem;
   }
 
+  .layout .globe-panel {
+    display: contents;
+    border: 0;
+    background: transparent;
+    padding: 0;
+  }
+
+  .layout .globe-panel > .panel-head,
+  .layout .globe-panel > .globe-disclosure {
+    border: 1px solid var(--line);
+    background: var(--panel);
+    padding: 1rem;
+  }
+
+  .layout .globe-panel > .panel-head {
+    order: 1;
+  }
+
+  .layout .detail-panel {
+    order: 2;
+  }
+
+  .layout .globe-panel > .globe-disclosure {
+    order: 3;
+  }
+
   .release-mode-switch,
   .release-mode-status-row {
     width: 100%;
@@ -1580,6 +1673,14 @@ p {
 
   .facts {
     grid-template-columns: 1fr;
+  }
+
+  .place-summary-card {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-place-link {
+    width: 100%;
   }
 
   .issue-meta-grid {

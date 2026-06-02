@@ -181,6 +181,7 @@ function managedHeadBlock(route) {
 function syncRouteHtml() {
   const styleSri = `sha384-${hashFile("styles.css", "sha384", "base64")}`;
   const scriptSri = `sha384-${hashFile("script.js", "sha384", "base64")}`;
+  const compareScriptSri = `sha384-${hashFile("compare.js", "sha384", "base64")}`;
   const d3Sri = `sha384-${hashFile("vendor/d3.v7.min.js", "sha384", "base64")}`;
   const topojsonSri = `sha384-${hashFile("vendor/topojson-client.v3.min.js", "sha384", "base64")}`;
 
@@ -229,6 +230,19 @@ function syncRouteHtml() {
         );
       } else {
         html = html.replace("</body>", `${vendorTags}    <script type="module" src="script.js" integrity="${scriptSri}" crossorigin="anonymous"></script>\n  </body>`);
+      }
+    }
+
+    if (file === "compare/index.html") {
+      const compareScriptTag = `    <script type="module" src="../compare.js" integrity="${compareScriptSri}" crossorigin="anonymous"></script>`;
+
+      if (/<script type="module" src="\.\.\/compare\.js"[\s\S]*?><\/script>/.test(html)) {
+        html = html.replace(
+          /<script type="module" src="\.\.\/compare\.js" integrity="sha384-[^"]+" crossorigin="anonymous"><\/script>/,
+          compareScriptTag.trim()
+        );
+      } else {
+        html = html.replace("</body>", `${compareScriptTag}\n  </body>`);
       }
     }
 
@@ -1003,7 +1017,7 @@ function buildAnalyticsEvents() {
       },
       {
         event: "compare_opened",
-        fields: ["route", "release_id"],
+        fields: ["route", "place_id", "release_id"],
       },
       {
         event: "release_manifest_opened",
@@ -1726,6 +1740,7 @@ function releaseArtifactFileCandidates() {
     "data/natural-earth-countries.geojson",
     "data/dcat.json",
     "data/openapi.json",
+    "compare.js",
     "clients/typescript/painmap-client.ts",
     "clients/python/painmap_client.py",
     "examples/README.md",
