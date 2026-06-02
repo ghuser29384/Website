@@ -99,6 +99,1902 @@
       "expected_canonical": "https://painmap.org/place/IND/"
     },
     {
+      "key": "place-afg",
+      "path": "/place/AFG/",
+      "file": "place/AFG/index.html",
+      "expected_title": "Afghanistan Place Profile | PainMap",
+      "expected_description": "Afghanistan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/AFG/"
+    },
+    {
+      "key": "place-ala",
+      "path": "/place/ALA/",
+      "file": "place/ALA/index.html",
+      "expected_title": "Åland Place Profile | PainMap",
+      "expected_description": "Åland place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ALA/"
+    },
+    {
+      "key": "place-alb",
+      "path": "/place/ALB/",
+      "file": "place/ALB/index.html",
+      "expected_title": "Albania Place Profile | PainMap",
+      "expected_description": "Albania place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ALB/"
+    },
+    {
+      "key": "place-dza",
+      "path": "/place/DZA/",
+      "file": "place/DZA/index.html",
+      "expected_title": "Algeria Place Profile | PainMap",
+      "expected_description": "Algeria place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/DZA/"
+    },
+    {
+      "key": "place-asm",
+      "path": "/place/ASM/",
+      "file": "place/ASM/index.html",
+      "expected_title": "American Samoa Place Profile | PainMap",
+      "expected_description": "American Samoa place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ASM/"
+    },
+    {
+      "key": "place-and",
+      "path": "/place/AND/",
+      "file": "place/AND/index.html",
+      "expected_title": "Andorra Place Profile | PainMap",
+      "expected_description": "Andorra place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/AND/"
+    },
+    {
+      "key": "place-ago",
+      "path": "/place/AGO/",
+      "file": "place/AGO/index.html",
+      "expected_title": "Angola Place Profile | PainMap",
+      "expected_description": "Angola place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/AGO/"
+    },
+    {
+      "key": "place-aia",
+      "path": "/place/AIA/",
+      "file": "place/AIA/index.html",
+      "expected_title": "Anguilla Place Profile | PainMap",
+      "expected_description": "Anguilla place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/AIA/"
+    },
+    {
+      "key": "place-atg",
+      "path": "/place/ATG/",
+      "file": "place/ATG/index.html",
+      "expected_title": "Antigua and Barbuda Place Profile | PainMap",
+      "expected_description": "Antigua and Barbuda place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ATG/"
+    },
+    {
+      "key": "place-arg",
+      "path": "/place/ARG/",
+      "file": "place/ARG/index.html",
+      "expected_title": "Argentina Place Profile | PainMap",
+      "expected_description": "Argentina place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ARG/"
+    },
+    {
+      "key": "place-arm",
+      "path": "/place/ARM/",
+      "file": "place/ARM/index.html",
+      "expected_title": "Armenia Place Profile | PainMap",
+      "expected_description": "Armenia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ARM/"
+    },
+    {
+      "key": "place-abw",
+      "path": "/place/ABW/",
+      "file": "place/ABW/index.html",
+      "expected_title": "Aruba Place Profile | PainMap",
+      "expected_description": "Aruba place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ABW/"
+    },
+    {
+      "key": "place-aus",
+      "path": "/place/AUS/",
+      "file": "place/AUS/index.html",
+      "expected_title": "Australia Place Profile | PainMap",
+      "expected_description": "Australia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/AUS/"
+    },
+    {
+      "key": "place-aut",
+      "path": "/place/AUT/",
+      "file": "place/AUT/index.html",
+      "expected_title": "Austria Place Profile | PainMap",
+      "expected_description": "Austria place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/AUT/"
+    },
+    {
+      "key": "place-aze",
+      "path": "/place/AZE/",
+      "file": "place/AZE/index.html",
+      "expected_title": "Azerbaijan Place Profile | PainMap",
+      "expected_description": "Azerbaijan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/AZE/"
+    },
+    {
+      "key": "place-bhr",
+      "path": "/place/BHR/",
+      "file": "place/BHR/index.html",
+      "expected_title": "Bahrain Place Profile | PainMap",
+      "expected_description": "Bahrain place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BHR/"
+    },
+    {
+      "key": "place-bgd",
+      "path": "/place/BGD/",
+      "file": "place/BGD/index.html",
+      "expected_title": "Bangladesh Place Profile | PainMap",
+      "expected_description": "Bangladesh place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BGD/"
+    },
+    {
+      "key": "place-brb",
+      "path": "/place/BRB/",
+      "file": "place/BRB/index.html",
+      "expected_title": "Barbados Place Profile | PainMap",
+      "expected_description": "Barbados place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BRB/"
+    },
+    {
+      "key": "place-blr",
+      "path": "/place/BLR/",
+      "file": "place/BLR/index.html",
+      "expected_title": "Belarus Place Profile | PainMap",
+      "expected_description": "Belarus place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BLR/"
+    },
+    {
+      "key": "place-bel",
+      "path": "/place/BEL/",
+      "file": "place/BEL/index.html",
+      "expected_title": "Belgium Place Profile | PainMap",
+      "expected_description": "Belgium place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BEL/"
+    },
+    {
+      "key": "place-blz",
+      "path": "/place/BLZ/",
+      "file": "place/BLZ/index.html",
+      "expected_title": "Belize Place Profile | PainMap",
+      "expected_description": "Belize place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BLZ/"
+    },
+    {
+      "key": "place-ben",
+      "path": "/place/BEN/",
+      "file": "place/BEN/index.html",
+      "expected_title": "Benin Place Profile | PainMap",
+      "expected_description": "Benin place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BEN/"
+    },
+    {
+      "key": "place-bmu",
+      "path": "/place/BMU/",
+      "file": "place/BMU/index.html",
+      "expected_title": "Bermuda Place Profile | PainMap",
+      "expected_description": "Bermuda place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BMU/"
+    },
+    {
+      "key": "place-btn",
+      "path": "/place/BTN/",
+      "file": "place/BTN/index.html",
+      "expected_title": "Bhutan Place Profile | PainMap",
+      "expected_description": "Bhutan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BTN/"
+    },
+    {
+      "key": "place-bol",
+      "path": "/place/BOL/",
+      "file": "place/BOL/index.html",
+      "expected_title": "Bolivia Place Profile | PainMap",
+      "expected_description": "Bolivia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BOL/"
+    },
+    {
+      "key": "place-bih",
+      "path": "/place/BIH/",
+      "file": "place/BIH/index.html",
+      "expected_title": "Bosnia and Herzegovina Place Profile | PainMap",
+      "expected_description": "Bosnia and Herzegovina place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BIH/"
+    },
+    {
+      "key": "place-bwa",
+      "path": "/place/BWA/",
+      "file": "place/BWA/index.html",
+      "expected_title": "Botswana Place Profile | PainMap",
+      "expected_description": "Botswana place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BWA/"
+    },
+    {
+      "key": "place-iot",
+      "path": "/place/IOT/",
+      "file": "place/IOT/index.html",
+      "expected_title": "British Indian Ocean Territory Place Profile | PainMap",
+      "expected_description": "British Indian Ocean Territory place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/IOT/"
+    },
+    {
+      "key": "place-vgb",
+      "path": "/place/VGB/",
+      "file": "place/VGB/index.html",
+      "expected_title": "British Virgin Islands Place Profile | PainMap",
+      "expected_description": "British Virgin Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/VGB/"
+    },
+    {
+      "key": "place-brn",
+      "path": "/place/BRN/",
+      "file": "place/BRN/index.html",
+      "expected_title": "Brunei Place Profile | PainMap",
+      "expected_description": "Brunei place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BRN/"
+    },
+    {
+      "key": "place-bgr",
+      "path": "/place/BGR/",
+      "file": "place/BGR/index.html",
+      "expected_title": "Bulgaria Place Profile | PainMap",
+      "expected_description": "Bulgaria place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BGR/"
+    },
+    {
+      "key": "place-bfa",
+      "path": "/place/BFA/",
+      "file": "place/BFA/index.html",
+      "expected_title": "Burkina Faso Place Profile | PainMap",
+      "expected_description": "Burkina Faso place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BFA/"
+    },
+    {
+      "key": "place-bdi",
+      "path": "/place/BDI/",
+      "file": "place/BDI/index.html",
+      "expected_title": "Burundi Place Profile | PainMap",
+      "expected_description": "Burundi place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BDI/"
+    },
+    {
+      "key": "place-khm",
+      "path": "/place/KHM/",
+      "file": "place/KHM/index.html",
+      "expected_title": "Cambodia Place Profile | PainMap",
+      "expected_description": "Cambodia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/KHM/"
+    },
+    {
+      "key": "place-cmr",
+      "path": "/place/CMR/",
+      "file": "place/CMR/index.html",
+      "expected_title": "Cameroon Place Profile | PainMap",
+      "expected_description": "Cameroon place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CMR/"
+    },
+    {
+      "key": "place-can",
+      "path": "/place/CAN/",
+      "file": "place/CAN/index.html",
+      "expected_title": "Canada Place Profile | PainMap",
+      "expected_description": "Canada place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CAN/"
+    },
+    {
+      "key": "place-cpv",
+      "path": "/place/CPV/",
+      "file": "place/CPV/index.html",
+      "expected_title": "Cape Verde Place Profile | PainMap",
+      "expected_description": "Cape Verde place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CPV/"
+    },
+    {
+      "key": "place-cym",
+      "path": "/place/CYM/",
+      "file": "place/CYM/index.html",
+      "expected_title": "Cayman Islands Place Profile | PainMap",
+      "expected_description": "Cayman Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CYM/"
+    },
+    {
+      "key": "place-caf",
+      "path": "/place/CAF/",
+      "file": "place/CAF/index.html",
+      "expected_title": "Central African Republic Place Profile | PainMap",
+      "expected_description": "Central African Republic place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CAF/"
+    },
+    {
+      "key": "place-tcd",
+      "path": "/place/TCD/",
+      "file": "place/TCD/index.html",
+      "expected_title": "Chad Place Profile | PainMap",
+      "expected_description": "Chad place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TCD/"
+    },
+    {
+      "key": "place-chl",
+      "path": "/place/CHL/",
+      "file": "place/CHL/index.html",
+      "expected_title": "Chile Place Profile | PainMap",
+      "expected_description": "Chile place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CHL/"
+    },
+    {
+      "key": "place-col",
+      "path": "/place/COL/",
+      "file": "place/COL/index.html",
+      "expected_title": "Colombia Place Profile | PainMap",
+      "expected_description": "Colombia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/COL/"
+    },
+    {
+      "key": "place-com",
+      "path": "/place/COM/",
+      "file": "place/COM/index.html",
+      "expected_title": "Comoros Place Profile | PainMap",
+      "expected_description": "Comoros place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/COM/"
+    },
+    {
+      "key": "place-cok",
+      "path": "/place/COK/",
+      "file": "place/COK/index.html",
+      "expected_title": "Cook Islands Place Profile | PainMap",
+      "expected_description": "Cook Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/COK/"
+    },
+    {
+      "key": "place-cri",
+      "path": "/place/CRI/",
+      "file": "place/CRI/index.html",
+      "expected_title": "Costa Rica Place Profile | PainMap",
+      "expected_description": "Costa Rica place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CRI/"
+    },
+    {
+      "key": "place-hrv",
+      "path": "/place/HRV/",
+      "file": "place/HRV/index.html",
+      "expected_title": "Croatia Place Profile | PainMap",
+      "expected_description": "Croatia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/HRV/"
+    },
+    {
+      "key": "place-cub",
+      "path": "/place/CUB/",
+      "file": "place/CUB/index.html",
+      "expected_title": "Cuba Place Profile | PainMap",
+      "expected_description": "Cuba place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CUB/"
+    },
+    {
+      "key": "place-cuw",
+      "path": "/place/CUW/",
+      "file": "place/CUW/index.html",
+      "expected_title": "Curaçao Place Profile | PainMap",
+      "expected_description": "Curaçao place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CUW/"
+    },
+    {
+      "key": "place-cyp",
+      "path": "/place/CYP/",
+      "file": "place/CYP/index.html",
+      "expected_title": "Cyprus Place Profile | PainMap",
+      "expected_description": "Cyprus place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CYP/"
+    },
+    {
+      "key": "place-cze",
+      "path": "/place/CZE/",
+      "file": "place/CZE/index.html",
+      "expected_title": "Czech Republic Place Profile | PainMap",
+      "expected_description": "Czech Republic place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CZE/"
+    },
+    {
+      "key": "place-cod",
+      "path": "/place/COD/",
+      "file": "place/COD/index.html",
+      "expected_title": "Democratic Republic of the Congo Place Profile | PainMap",
+      "expected_description": "Democratic Republic of the Congo place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/COD/"
+    },
+    {
+      "key": "place-dnk",
+      "path": "/place/DNK/",
+      "file": "place/DNK/index.html",
+      "expected_title": "Denmark Place Profile | PainMap",
+      "expected_description": "Denmark place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/DNK/"
+    },
+    {
+      "key": "place-dji",
+      "path": "/place/DJI/",
+      "file": "place/DJI/index.html",
+      "expected_title": "Djibouti Place Profile | PainMap",
+      "expected_description": "Djibouti place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/DJI/"
+    },
+    {
+      "key": "place-dma",
+      "path": "/place/DMA/",
+      "file": "place/DMA/index.html",
+      "expected_title": "Dominica Place Profile | PainMap",
+      "expected_description": "Dominica place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/DMA/"
+    },
+    {
+      "key": "place-dom",
+      "path": "/place/DOM/",
+      "file": "place/DOM/index.html",
+      "expected_title": "Dominican Republic Place Profile | PainMap",
+      "expected_description": "Dominican Republic place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/DOM/"
+    },
+    {
+      "key": "place-tls",
+      "path": "/place/TLS/",
+      "file": "place/TLS/index.html",
+      "expected_title": "East Timor Place Profile | PainMap",
+      "expected_description": "East Timor place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TLS/"
+    },
+    {
+      "key": "place-ecu",
+      "path": "/place/ECU/",
+      "file": "place/ECU/index.html",
+      "expected_title": "Ecuador Place Profile | PainMap",
+      "expected_description": "Ecuador place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ECU/"
+    },
+    {
+      "key": "place-egy",
+      "path": "/place/EGY/",
+      "file": "place/EGY/index.html",
+      "expected_title": "Egypt Place Profile | PainMap",
+      "expected_description": "Egypt place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/EGY/"
+    },
+    {
+      "key": "place-slv",
+      "path": "/place/SLV/",
+      "file": "place/SLV/index.html",
+      "expected_title": "El Salvador Place Profile | PainMap",
+      "expected_description": "El Salvador place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SLV/"
+    },
+    {
+      "key": "place-gnq",
+      "path": "/place/GNQ/",
+      "file": "place/GNQ/index.html",
+      "expected_title": "Equatorial Guinea Place Profile | PainMap",
+      "expected_description": "Equatorial Guinea place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GNQ/"
+    },
+    {
+      "key": "place-eri",
+      "path": "/place/ERI/",
+      "file": "place/ERI/index.html",
+      "expected_title": "Eritrea Place Profile | PainMap",
+      "expected_description": "Eritrea place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ERI/"
+    },
+    {
+      "key": "place-est",
+      "path": "/place/EST/",
+      "file": "place/EST/index.html",
+      "expected_title": "Estonia Place Profile | PainMap",
+      "expected_description": "Estonia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/EST/"
+    },
+    {
+      "key": "place-swz",
+      "path": "/place/SWZ/",
+      "file": "place/SWZ/index.html",
+      "expected_title": "Eswatini Place Profile | PainMap",
+      "expected_description": "Eswatini place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SWZ/"
+    },
+    {
+      "key": "place-eth",
+      "path": "/place/ETH/",
+      "file": "place/ETH/index.html",
+      "expected_title": "Ethiopia Place Profile | PainMap",
+      "expected_description": "Ethiopia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ETH/"
+    },
+    {
+      "key": "place-flk",
+      "path": "/place/FLK/",
+      "file": "place/FLK/index.html",
+      "expected_title": "Falkland Islands Place Profile | PainMap",
+      "expected_description": "Falkland Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/FLK/"
+    },
+    {
+      "key": "place-fro",
+      "path": "/place/FRO/",
+      "file": "place/FRO/index.html",
+      "expected_title": "Faroe Islands Place Profile | PainMap",
+      "expected_description": "Faroe Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/FRO/"
+    },
+    {
+      "key": "place-fsm",
+      "path": "/place/FSM/",
+      "file": "place/FSM/index.html",
+      "expected_title": "Federated States of Micronesia Place Profile | PainMap",
+      "expected_description": "Federated States of Micronesia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/FSM/"
+    },
+    {
+      "key": "place-fji",
+      "path": "/place/FJI/",
+      "file": "place/FJI/index.html",
+      "expected_title": "Fiji Place Profile | PainMap",
+      "expected_description": "Fiji place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/FJI/"
+    },
+    {
+      "key": "place-fin",
+      "path": "/place/FIN/",
+      "file": "place/FIN/index.html",
+      "expected_title": "Finland Place Profile | PainMap",
+      "expected_description": "Finland place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/FIN/"
+    },
+    {
+      "key": "place-fra",
+      "path": "/place/FRA/",
+      "file": "place/FRA/index.html",
+      "expected_title": "France Place Profile | PainMap",
+      "expected_description": "France place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/FRA/"
+    },
+    {
+      "key": "place-pyf",
+      "path": "/place/PYF/",
+      "file": "place/PYF/index.html",
+      "expected_title": "French Polynesia Place Profile | PainMap",
+      "expected_description": "French Polynesia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PYF/"
+    },
+    {
+      "key": "place-atf",
+      "path": "/place/ATF/",
+      "file": "place/ATF/index.html",
+      "expected_title": "French Southern and Antarctic Lands Place Profile | PainMap",
+      "expected_description": "French Southern and Antarctic Lands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ATF/"
+    },
+    {
+      "key": "place-gab",
+      "path": "/place/GAB/",
+      "file": "place/GAB/index.html",
+      "expected_title": "Gabon Place Profile | PainMap",
+      "expected_description": "Gabon place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GAB/"
+    },
+    {
+      "key": "place-geo",
+      "path": "/place/GEO/",
+      "file": "place/GEO/index.html",
+      "expected_title": "Georgia Place Profile | PainMap",
+      "expected_description": "Georgia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GEO/"
+    },
+    {
+      "key": "place-deu",
+      "path": "/place/DEU/",
+      "file": "place/DEU/index.html",
+      "expected_title": "Germany Place Profile | PainMap",
+      "expected_description": "Germany place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/DEU/"
+    },
+    {
+      "key": "place-gha",
+      "path": "/place/GHA/",
+      "file": "place/GHA/index.html",
+      "expected_title": "Ghana Place Profile | PainMap",
+      "expected_description": "Ghana place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GHA/"
+    },
+    {
+      "key": "place-grc",
+      "path": "/place/GRC/",
+      "file": "place/GRC/index.html",
+      "expected_title": "Greece Place Profile | PainMap",
+      "expected_description": "Greece place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GRC/"
+    },
+    {
+      "key": "place-grl",
+      "path": "/place/GRL/",
+      "file": "place/GRL/index.html",
+      "expected_title": "Greenland Place Profile | PainMap",
+      "expected_description": "Greenland place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GRL/"
+    },
+    {
+      "key": "place-grd",
+      "path": "/place/GRD/",
+      "file": "place/GRD/index.html",
+      "expected_title": "Grenada Place Profile | PainMap",
+      "expected_description": "Grenada place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GRD/"
+    },
+    {
+      "key": "place-gum",
+      "path": "/place/GUM/",
+      "file": "place/GUM/index.html",
+      "expected_title": "Guam Place Profile | PainMap",
+      "expected_description": "Guam place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GUM/"
+    },
+    {
+      "key": "place-gtm",
+      "path": "/place/GTM/",
+      "file": "place/GTM/index.html",
+      "expected_title": "Guatemala Place Profile | PainMap",
+      "expected_description": "Guatemala place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GTM/"
+    },
+    {
+      "key": "place-ggy",
+      "path": "/place/GGY/",
+      "file": "place/GGY/index.html",
+      "expected_title": "Guernsey Place Profile | PainMap",
+      "expected_description": "Guernsey place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GGY/"
+    },
+    {
+      "key": "place-gin",
+      "path": "/place/GIN/",
+      "file": "place/GIN/index.html",
+      "expected_title": "Guinea Place Profile | PainMap",
+      "expected_description": "Guinea place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GIN/"
+    },
+    {
+      "key": "place-gnb",
+      "path": "/place/GNB/",
+      "file": "place/GNB/index.html",
+      "expected_title": "Guinea-Bissau Place Profile | PainMap",
+      "expected_description": "Guinea-Bissau place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GNB/"
+    },
+    {
+      "key": "place-guy",
+      "path": "/place/GUY/",
+      "file": "place/GUY/index.html",
+      "expected_title": "Guyana Place Profile | PainMap",
+      "expected_description": "Guyana place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GUY/"
+    },
+    {
+      "key": "place-hti",
+      "path": "/place/HTI/",
+      "file": "place/HTI/index.html",
+      "expected_title": "Haiti Place Profile | PainMap",
+      "expected_description": "Haiti place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/HTI/"
+    },
+    {
+      "key": "place-hmd",
+      "path": "/place/HMD/",
+      "file": "place/HMD/index.html",
+      "expected_title": "Heard Island and McDonald Islands Place Profile | PainMap",
+      "expected_description": "Heard Island and McDonald Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/HMD/"
+    },
+    {
+      "key": "place-hnd",
+      "path": "/place/HND/",
+      "file": "place/HND/index.html",
+      "expected_title": "Honduras Place Profile | PainMap",
+      "expected_description": "Honduras place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/HND/"
+    },
+    {
+      "key": "place-hkg",
+      "path": "/place/HKG/",
+      "file": "place/HKG/index.html",
+      "expected_title": "Hong Kong Place Profile | PainMap",
+      "expected_description": "Hong Kong place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/HKG/"
+    },
+    {
+      "key": "place-hun",
+      "path": "/place/HUN/",
+      "file": "place/HUN/index.html",
+      "expected_title": "Hungary Place Profile | PainMap",
+      "expected_description": "Hungary place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/HUN/"
+    },
+    {
+      "key": "place-isl",
+      "path": "/place/ISL/",
+      "file": "place/ISL/index.html",
+      "expected_title": "Iceland Place Profile | PainMap",
+      "expected_description": "Iceland place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ISL/"
+    },
+    {
+      "key": "place-idn",
+      "path": "/place/IDN/",
+      "file": "place/IDN/index.html",
+      "expected_title": "Indonesia Place Profile | PainMap",
+      "expected_description": "Indonesia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/IDN/"
+    },
+    {
+      "key": "place-irn",
+      "path": "/place/IRN/",
+      "file": "place/IRN/index.html",
+      "expected_title": "Iran Place Profile | PainMap",
+      "expected_description": "Iran place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/IRN/"
+    },
+    {
+      "key": "place-irq",
+      "path": "/place/IRQ/",
+      "file": "place/IRQ/index.html",
+      "expected_title": "Iraq Place Profile | PainMap",
+      "expected_description": "Iraq place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/IRQ/"
+    },
+    {
+      "key": "place-irl",
+      "path": "/place/IRL/",
+      "file": "place/IRL/index.html",
+      "expected_title": "Ireland Place Profile | PainMap",
+      "expected_description": "Ireland place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/IRL/"
+    },
+    {
+      "key": "place-imn",
+      "path": "/place/IMN/",
+      "file": "place/IMN/index.html",
+      "expected_title": "Isle of Man Place Profile | PainMap",
+      "expected_description": "Isle of Man place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/IMN/"
+    },
+    {
+      "key": "place-isr",
+      "path": "/place/ISR/",
+      "file": "place/ISR/index.html",
+      "expected_title": "Israel Place Profile | PainMap",
+      "expected_description": "Israel place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ISR/"
+    },
+    {
+      "key": "place-ita",
+      "path": "/place/ITA/",
+      "file": "place/ITA/index.html",
+      "expected_title": "Italy Place Profile | PainMap",
+      "expected_description": "Italy place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ITA/"
+    },
+    {
+      "key": "place-civ",
+      "path": "/place/CIV/",
+      "file": "place/CIV/index.html",
+      "expected_title": "Ivory Coast Place Profile | PainMap",
+      "expected_description": "Ivory Coast place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CIV/"
+    },
+    {
+      "key": "place-jam",
+      "path": "/place/JAM/",
+      "file": "place/JAM/index.html",
+      "expected_title": "Jamaica Place Profile | PainMap",
+      "expected_description": "Jamaica place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/JAM/"
+    },
+    {
+      "key": "place-jpn",
+      "path": "/place/JPN/",
+      "file": "place/JPN/index.html",
+      "expected_title": "Japan Place Profile | PainMap",
+      "expected_description": "Japan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/JPN/"
+    },
+    {
+      "key": "place-jey",
+      "path": "/place/JEY/",
+      "file": "place/JEY/index.html",
+      "expected_title": "Jersey Place Profile | PainMap",
+      "expected_description": "Jersey place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/JEY/"
+    },
+    {
+      "key": "place-jor",
+      "path": "/place/JOR/",
+      "file": "place/JOR/index.html",
+      "expected_title": "Jordan Place Profile | PainMap",
+      "expected_description": "Jordan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/JOR/"
+    },
+    {
+      "key": "place-kaz",
+      "path": "/place/KAZ/",
+      "file": "place/KAZ/index.html",
+      "expected_title": "Kazakhstan Place Profile | PainMap",
+      "expected_description": "Kazakhstan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/KAZ/"
+    },
+    {
+      "key": "place-ken",
+      "path": "/place/KEN/",
+      "file": "place/KEN/index.html",
+      "expected_title": "Kenya Place Profile | PainMap",
+      "expected_description": "Kenya place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/KEN/"
+    },
+    {
+      "key": "place-kir",
+      "path": "/place/KIR/",
+      "file": "place/KIR/index.html",
+      "expected_title": "Kiribati Place Profile | PainMap",
+      "expected_description": "Kiribati place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/KIR/"
+    },
+    {
+      "key": "place-kos",
+      "path": "/place/KOS/",
+      "file": "place/KOS/index.html",
+      "expected_title": "Kosovo Place Profile | PainMap",
+      "expected_description": "Kosovo place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/KOS/"
+    },
+    {
+      "key": "place-kwt",
+      "path": "/place/KWT/",
+      "file": "place/KWT/index.html",
+      "expected_title": "Kuwait Place Profile | PainMap",
+      "expected_description": "Kuwait place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/KWT/"
+    },
+    {
+      "key": "place-kgz",
+      "path": "/place/KGZ/",
+      "file": "place/KGZ/index.html",
+      "expected_title": "Kyrgyzstan Place Profile | PainMap",
+      "expected_description": "Kyrgyzstan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/KGZ/"
+    },
+    {
+      "key": "place-lao",
+      "path": "/place/LAO/",
+      "file": "place/LAO/index.html",
+      "expected_title": "Laos Place Profile | PainMap",
+      "expected_description": "Laos place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/LAO/"
+    },
+    {
+      "key": "place-lva",
+      "path": "/place/LVA/",
+      "file": "place/LVA/index.html",
+      "expected_title": "Latvia Place Profile | PainMap",
+      "expected_description": "Latvia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/LVA/"
+    },
+    {
+      "key": "place-lbn",
+      "path": "/place/LBN/",
+      "file": "place/LBN/index.html",
+      "expected_title": "Lebanon Place Profile | PainMap",
+      "expected_description": "Lebanon place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/LBN/"
+    },
+    {
+      "key": "place-lso",
+      "path": "/place/LSO/",
+      "file": "place/LSO/index.html",
+      "expected_title": "Lesotho Place Profile | PainMap",
+      "expected_description": "Lesotho place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/LSO/"
+    },
+    {
+      "key": "place-lbr",
+      "path": "/place/LBR/",
+      "file": "place/LBR/index.html",
+      "expected_title": "Liberia Place Profile | PainMap",
+      "expected_description": "Liberia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/LBR/"
+    },
+    {
+      "key": "place-lby",
+      "path": "/place/LBY/",
+      "file": "place/LBY/index.html",
+      "expected_title": "Libya Place Profile | PainMap",
+      "expected_description": "Libya place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/LBY/"
+    },
+    {
+      "key": "place-lie",
+      "path": "/place/LIE/",
+      "file": "place/LIE/index.html",
+      "expected_title": "Liechtenstein Place Profile | PainMap",
+      "expected_description": "Liechtenstein place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/LIE/"
+    },
+    {
+      "key": "place-ltu",
+      "path": "/place/LTU/",
+      "file": "place/LTU/index.html",
+      "expected_title": "Lithuania Place Profile | PainMap",
+      "expected_description": "Lithuania place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/LTU/"
+    },
+    {
+      "key": "place-lux",
+      "path": "/place/LUX/",
+      "file": "place/LUX/index.html",
+      "expected_title": "Luxembourg Place Profile | PainMap",
+      "expected_description": "Luxembourg place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/LUX/"
+    },
+    {
+      "key": "place-mac",
+      "path": "/place/MAC/",
+      "file": "place/MAC/index.html",
+      "expected_title": "Macau Place Profile | PainMap",
+      "expected_description": "Macau place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MAC/"
+    },
+    {
+      "key": "place-mdg",
+      "path": "/place/MDG/",
+      "file": "place/MDG/index.html",
+      "expected_title": "Madagascar Place Profile | PainMap",
+      "expected_description": "Madagascar place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MDG/"
+    },
+    {
+      "key": "place-mwi",
+      "path": "/place/MWI/",
+      "file": "place/MWI/index.html",
+      "expected_title": "Malawi Place Profile | PainMap",
+      "expected_description": "Malawi place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MWI/"
+    },
+    {
+      "key": "place-mys",
+      "path": "/place/MYS/",
+      "file": "place/MYS/index.html",
+      "expected_title": "Malaysia Place Profile | PainMap",
+      "expected_description": "Malaysia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MYS/"
+    },
+    {
+      "key": "place-mdv",
+      "path": "/place/MDV/",
+      "file": "place/MDV/index.html",
+      "expected_title": "Maldives Place Profile | PainMap",
+      "expected_description": "Maldives place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MDV/"
+    },
+    {
+      "key": "place-mli",
+      "path": "/place/MLI/",
+      "file": "place/MLI/index.html",
+      "expected_title": "Mali Place Profile | PainMap",
+      "expected_description": "Mali place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MLI/"
+    },
+    {
+      "key": "place-mlt",
+      "path": "/place/MLT/",
+      "file": "place/MLT/index.html",
+      "expected_title": "Malta Place Profile | PainMap",
+      "expected_description": "Malta place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MLT/"
+    },
+    {
+      "key": "place-mhl",
+      "path": "/place/MHL/",
+      "file": "place/MHL/index.html",
+      "expected_title": "Marshall Islands Place Profile | PainMap",
+      "expected_description": "Marshall Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MHL/"
+    },
+    {
+      "key": "place-mrt",
+      "path": "/place/MRT/",
+      "file": "place/MRT/index.html",
+      "expected_title": "Mauritania Place Profile | PainMap",
+      "expected_description": "Mauritania place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MRT/"
+    },
+    {
+      "key": "place-mus",
+      "path": "/place/MUS/",
+      "file": "place/MUS/index.html",
+      "expected_title": "Mauritius Place Profile | PainMap",
+      "expected_description": "Mauritius place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MUS/"
+    },
+    {
+      "key": "place-mex",
+      "path": "/place/MEX/",
+      "file": "place/MEX/index.html",
+      "expected_title": "Mexico Place Profile | PainMap",
+      "expected_description": "Mexico place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MEX/"
+    },
+    {
+      "key": "place-mda",
+      "path": "/place/MDA/",
+      "file": "place/MDA/index.html",
+      "expected_title": "Moldova Place Profile | PainMap",
+      "expected_description": "Moldova place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MDA/"
+    },
+    {
+      "key": "place-mco",
+      "path": "/place/MCO/",
+      "file": "place/MCO/index.html",
+      "expected_title": "Monaco Place Profile | PainMap",
+      "expected_description": "Monaco place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MCO/"
+    },
+    {
+      "key": "place-mng",
+      "path": "/place/MNG/",
+      "file": "place/MNG/index.html",
+      "expected_title": "Mongolia Place Profile | PainMap",
+      "expected_description": "Mongolia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MNG/"
+    },
+    {
+      "key": "place-mne",
+      "path": "/place/MNE/",
+      "file": "place/MNE/index.html",
+      "expected_title": "Montenegro Place Profile | PainMap",
+      "expected_description": "Montenegro place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MNE/"
+    },
+    {
+      "key": "place-msr",
+      "path": "/place/MSR/",
+      "file": "place/MSR/index.html",
+      "expected_title": "Montserrat Place Profile | PainMap",
+      "expected_description": "Montserrat place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MSR/"
+    },
+    {
+      "key": "place-mar",
+      "path": "/place/MAR/",
+      "file": "place/MAR/index.html",
+      "expected_title": "Morocco Place Profile | PainMap",
+      "expected_description": "Morocco place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MAR/"
+    },
+    {
+      "key": "place-moz",
+      "path": "/place/MOZ/",
+      "file": "place/MOZ/index.html",
+      "expected_title": "Mozambique Place Profile | PainMap",
+      "expected_description": "Mozambique place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MOZ/"
+    },
+    {
+      "key": "place-mmr",
+      "path": "/place/MMR/",
+      "file": "place/MMR/index.html",
+      "expected_title": "Myanmar Place Profile | PainMap",
+      "expected_description": "Myanmar place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MMR/"
+    },
+    {
+      "key": "place-nam",
+      "path": "/place/NAM/",
+      "file": "place/NAM/index.html",
+      "expected_title": "Namibia Place Profile | PainMap",
+      "expected_description": "Namibia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/NAM/"
+    },
+    {
+      "key": "place-nru",
+      "path": "/place/NRU/",
+      "file": "place/NRU/index.html",
+      "expected_title": "Nauru Place Profile | PainMap",
+      "expected_description": "Nauru place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/NRU/"
+    },
+    {
+      "key": "place-npl",
+      "path": "/place/NPL/",
+      "file": "place/NPL/index.html",
+      "expected_title": "Nepal Place Profile | PainMap",
+      "expected_description": "Nepal place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/NPL/"
+    },
+    {
+      "key": "place-nld",
+      "path": "/place/NLD/",
+      "file": "place/NLD/index.html",
+      "expected_title": "Netherlands Place Profile | PainMap",
+      "expected_description": "Netherlands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/NLD/"
+    },
+    {
+      "key": "place-ncl",
+      "path": "/place/NCL/",
+      "file": "place/NCL/index.html",
+      "expected_title": "New Caledonia Place Profile | PainMap",
+      "expected_description": "New Caledonia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/NCL/"
+    },
+    {
+      "key": "place-nzl",
+      "path": "/place/NZL/",
+      "file": "place/NZL/index.html",
+      "expected_title": "New Zealand Place Profile | PainMap",
+      "expected_description": "New Zealand place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/NZL/"
+    },
+    {
+      "key": "place-nic",
+      "path": "/place/NIC/",
+      "file": "place/NIC/index.html",
+      "expected_title": "Nicaragua Place Profile | PainMap",
+      "expected_description": "Nicaragua place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/NIC/"
+    },
+    {
+      "key": "place-ner",
+      "path": "/place/NER/",
+      "file": "place/NER/index.html",
+      "expected_title": "Niger Place Profile | PainMap",
+      "expected_description": "Niger place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/NER/"
+    },
+    {
+      "key": "place-nga",
+      "path": "/place/NGA/",
+      "file": "place/NGA/index.html",
+      "expected_title": "Nigeria Place Profile | PainMap",
+      "expected_description": "Nigeria place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/NGA/"
+    },
+    {
+      "key": "place-niu",
+      "path": "/place/NIU/",
+      "file": "place/NIU/index.html",
+      "expected_title": "Niue Place Profile | PainMap",
+      "expected_description": "Niue place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/NIU/"
+    },
+    {
+      "key": "place-nfk",
+      "path": "/place/NFK/",
+      "file": "place/NFK/index.html",
+      "expected_title": "Norfolk Island Place Profile | PainMap",
+      "expected_description": "Norfolk Island place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/NFK/"
+    },
+    {
+      "key": "place-prk",
+      "path": "/place/PRK/",
+      "file": "place/PRK/index.html",
+      "expected_title": "North Korea Place Profile | PainMap",
+      "expected_description": "North Korea place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PRK/"
+    },
+    {
+      "key": "place-mkd",
+      "path": "/place/MKD/",
+      "file": "place/MKD/index.html",
+      "expected_title": "North Macedonia Place Profile | PainMap",
+      "expected_description": "North Macedonia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MKD/"
+    },
+    {
+      "key": "place-mnp",
+      "path": "/place/MNP/",
+      "file": "place/MNP/index.html",
+      "expected_title": "Northern Mariana Islands Place Profile | PainMap",
+      "expected_description": "Northern Mariana Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MNP/"
+    },
+    {
+      "key": "place-nor",
+      "path": "/place/NOR/",
+      "file": "place/NOR/index.html",
+      "expected_title": "Norway Place Profile | PainMap",
+      "expected_description": "Norway place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/NOR/"
+    },
+    {
+      "key": "place-omn",
+      "path": "/place/OMN/",
+      "file": "place/OMN/index.html",
+      "expected_title": "Oman Place Profile | PainMap",
+      "expected_description": "Oman place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/OMN/"
+    },
+    {
+      "key": "place-pak",
+      "path": "/place/PAK/",
+      "file": "place/PAK/index.html",
+      "expected_title": "Pakistan Place Profile | PainMap",
+      "expected_description": "Pakistan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PAK/"
+    },
+    {
+      "key": "place-plw",
+      "path": "/place/PLW/",
+      "file": "place/PLW/index.html",
+      "expected_title": "Palau Place Profile | PainMap",
+      "expected_description": "Palau place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PLW/"
+    },
+    {
+      "key": "place-pse",
+      "path": "/place/PSE/",
+      "file": "place/PSE/index.html",
+      "expected_title": "Palestine Place Profile | PainMap",
+      "expected_description": "Palestine place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PSE/"
+    },
+    {
+      "key": "place-pan",
+      "path": "/place/PAN/",
+      "file": "place/PAN/index.html",
+      "expected_title": "Panama Place Profile | PainMap",
+      "expected_description": "Panama place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PAN/"
+    },
+    {
+      "key": "place-png",
+      "path": "/place/PNG/",
+      "file": "place/PNG/index.html",
+      "expected_title": "Papua New Guinea Place Profile | PainMap",
+      "expected_description": "Papua New Guinea place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PNG/"
+    },
+    {
+      "key": "place-pry",
+      "path": "/place/PRY/",
+      "file": "place/PRY/index.html",
+      "expected_title": "Paraguay Place Profile | PainMap",
+      "expected_description": "Paraguay place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PRY/"
+    },
+    {
+      "key": "place-chn",
+      "path": "/place/CHN/",
+      "file": "place/CHN/index.html",
+      "expected_title": "People's Republic of China Place Profile | PainMap",
+      "expected_description": "People's Republic of China place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CHN/"
+    },
+    {
+      "key": "place-per",
+      "path": "/place/PER/",
+      "file": "place/PER/index.html",
+      "expected_title": "Peru Place Profile | PainMap",
+      "expected_description": "Peru place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PER/"
+    },
+    {
+      "key": "place-phl",
+      "path": "/place/PHL/",
+      "file": "place/PHL/index.html",
+      "expected_title": "Philippines Place Profile | PainMap",
+      "expected_description": "Philippines place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PHL/"
+    },
+    {
+      "key": "place-pcn",
+      "path": "/place/PCN/",
+      "file": "place/PCN/index.html",
+      "expected_title": "Pitcairn Islands Place Profile | PainMap",
+      "expected_description": "Pitcairn Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PCN/"
+    },
+    {
+      "key": "place-pol",
+      "path": "/place/POL/",
+      "file": "place/POL/index.html",
+      "expected_title": "Poland Place Profile | PainMap",
+      "expected_description": "Poland place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/POL/"
+    },
+    {
+      "key": "place-prt",
+      "path": "/place/PRT/",
+      "file": "place/PRT/index.html",
+      "expected_title": "Portugal Place Profile | PainMap",
+      "expected_description": "Portugal place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PRT/"
+    },
+    {
+      "key": "place-pri",
+      "path": "/place/PRI/",
+      "file": "place/PRI/index.html",
+      "expected_title": "Puerto Rico Place Profile | PainMap",
+      "expected_description": "Puerto Rico place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/PRI/"
+    },
+    {
+      "key": "place-qat",
+      "path": "/place/QAT/",
+      "file": "place/QAT/index.html",
+      "expected_title": "Qatar Place Profile | PainMap",
+      "expected_description": "Qatar place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/QAT/"
+    },
+    {
+      "key": "place-cog",
+      "path": "/place/COG/",
+      "file": "place/COG/index.html",
+      "expected_title": "Republic of the Congo Place Profile | PainMap",
+      "expected_description": "Republic of the Congo place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/COG/"
+    },
+    {
+      "key": "place-rou",
+      "path": "/place/ROU/",
+      "file": "place/ROU/index.html",
+      "expected_title": "Romania Place Profile | PainMap",
+      "expected_description": "Romania place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ROU/"
+    },
+    {
+      "key": "place-rus",
+      "path": "/place/RUS/",
+      "file": "place/RUS/index.html",
+      "expected_title": "Russia Place Profile | PainMap",
+      "expected_description": "Russia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/RUS/"
+    },
+    {
+      "key": "place-rwa",
+      "path": "/place/RWA/",
+      "file": "place/RWA/index.html",
+      "expected_title": "Rwanda Place Profile | PainMap",
+      "expected_description": "Rwanda place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/RWA/"
+    },
+    {
+      "key": "place-blm",
+      "path": "/place/BLM/",
+      "file": "place/BLM/index.html",
+      "expected_title": "Saint Barthélemy Place Profile | PainMap",
+      "expected_description": "Saint Barthélemy place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BLM/"
+    },
+    {
+      "key": "place-shn",
+      "path": "/place/SHN/",
+      "file": "place/SHN/index.html",
+      "expected_title": "Saint Helena Place Profile | PainMap",
+      "expected_description": "Saint Helena place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SHN/"
+    },
+    {
+      "key": "place-kna",
+      "path": "/place/KNA/",
+      "file": "place/KNA/index.html",
+      "expected_title": "Saint Kitts and Nevis Place Profile | PainMap",
+      "expected_description": "Saint Kitts and Nevis place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/KNA/"
+    },
+    {
+      "key": "place-lca",
+      "path": "/place/LCA/",
+      "file": "place/LCA/index.html",
+      "expected_title": "Saint Lucia Place Profile | PainMap",
+      "expected_description": "Saint Lucia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/LCA/"
+    },
+    {
+      "key": "place-maf",
+      "path": "/place/MAF/",
+      "file": "place/MAF/index.html",
+      "expected_title": "Saint Martin Place Profile | PainMap",
+      "expected_description": "Saint Martin place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/MAF/"
+    },
+    {
+      "key": "place-spm",
+      "path": "/place/SPM/",
+      "file": "place/SPM/index.html",
+      "expected_title": "Saint Pierre and Miquelon Place Profile | PainMap",
+      "expected_description": "Saint Pierre and Miquelon place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SPM/"
+    },
+    {
+      "key": "place-vct",
+      "path": "/place/VCT/",
+      "file": "place/VCT/index.html",
+      "expected_title": "Saint Vincent and the Grenadines Place Profile | PainMap",
+      "expected_description": "Saint Vincent and the Grenadines place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/VCT/"
+    },
+    {
+      "key": "place-wsm",
+      "path": "/place/WSM/",
+      "file": "place/WSM/index.html",
+      "expected_title": "Samoa Place Profile | PainMap",
+      "expected_description": "Samoa place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/WSM/"
+    },
+    {
+      "key": "place-smr",
+      "path": "/place/SMR/",
+      "file": "place/SMR/index.html",
+      "expected_title": "San Marino Place Profile | PainMap",
+      "expected_description": "San Marino place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SMR/"
+    },
+    {
+      "key": "place-stp",
+      "path": "/place/STP/",
+      "file": "place/STP/index.html",
+      "expected_title": "São Tomé and Príncipe Place Profile | PainMap",
+      "expected_description": "São Tomé and Príncipe place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/STP/"
+    },
+    {
+      "key": "place-sau",
+      "path": "/place/SAU/",
+      "file": "place/SAU/index.html",
+      "expected_title": "Saudi Arabia Place Profile | PainMap",
+      "expected_description": "Saudi Arabia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SAU/"
+    },
+    {
+      "key": "place-sen",
+      "path": "/place/SEN/",
+      "file": "place/SEN/index.html",
+      "expected_title": "Senegal Place Profile | PainMap",
+      "expected_description": "Senegal place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SEN/"
+    },
+    {
+      "key": "place-srb",
+      "path": "/place/SRB/",
+      "file": "place/SRB/index.html",
+      "expected_title": "Serbia Place Profile | PainMap",
+      "expected_description": "Serbia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SRB/"
+    },
+    {
+      "key": "place-syc",
+      "path": "/place/SYC/",
+      "file": "place/SYC/index.html",
+      "expected_title": "Seychelles Place Profile | PainMap",
+      "expected_description": "Seychelles place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SYC/"
+    },
+    {
+      "key": "place-kas",
+      "path": "/place/KAS/",
+      "file": "place/KAS/index.html",
+      "expected_title": "Siachen Glacier Place Profile | PainMap",
+      "expected_description": "Siachen Glacier place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/KAS/"
+    },
+    {
+      "key": "place-sle",
+      "path": "/place/SLE/",
+      "file": "place/SLE/index.html",
+      "expected_title": "Sierra Leone Place Profile | PainMap",
+      "expected_description": "Sierra Leone place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SLE/"
+    },
+    {
+      "key": "place-sgp",
+      "path": "/place/SGP/",
+      "file": "place/SGP/index.html",
+      "expected_title": "Singapore Place Profile | PainMap",
+      "expected_description": "Singapore place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SGP/"
+    },
+    {
+      "key": "place-sxm",
+      "path": "/place/SXM/",
+      "file": "place/SXM/index.html",
+      "expected_title": "Sint Maarten Place Profile | PainMap",
+      "expected_description": "Sint Maarten place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SXM/"
+    },
+    {
+      "key": "place-svk",
+      "path": "/place/SVK/",
+      "file": "place/SVK/index.html",
+      "expected_title": "Slovakia Place Profile | PainMap",
+      "expected_description": "Slovakia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SVK/"
+    },
+    {
+      "key": "place-svn",
+      "path": "/place/SVN/",
+      "file": "place/SVN/index.html",
+      "expected_title": "Slovenia Place Profile | PainMap",
+      "expected_description": "Slovenia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SVN/"
+    },
+    {
+      "key": "place-slb",
+      "path": "/place/SLB/",
+      "file": "place/SLB/index.html",
+      "expected_title": "Solomon Islands Place Profile | PainMap",
+      "expected_description": "Solomon Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SLB/"
+    },
+    {
+      "key": "place-som",
+      "path": "/place/SOM/",
+      "file": "place/SOM/index.html",
+      "expected_title": "Somalia Place Profile | PainMap",
+      "expected_description": "Somalia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SOM/"
+    },
+    {
+      "key": "place-sol",
+      "path": "/place/SOL/",
+      "file": "place/SOL/index.html",
+      "expected_title": "Somaliland Place Profile | PainMap",
+      "expected_description": "Somaliland place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SOL/"
+    },
+    {
+      "key": "place-zaf",
+      "path": "/place/ZAF/",
+      "file": "place/ZAF/index.html",
+      "expected_title": "South Africa Place Profile | PainMap",
+      "expected_description": "South Africa place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ZAF/"
+    },
+    {
+      "key": "place-sgs",
+      "path": "/place/SGS/",
+      "file": "place/SGS/index.html",
+      "expected_title": "South Georgia and the South Sandwich Islands Place Profile | PainMap",
+      "expected_description": "South Georgia and the South Sandwich Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SGS/"
+    },
+    {
+      "key": "place-kor",
+      "path": "/place/KOR/",
+      "file": "place/KOR/index.html",
+      "expected_title": "South Korea Place Profile | PainMap",
+      "expected_description": "South Korea place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/KOR/"
+    },
+    {
+      "key": "place-ssd",
+      "path": "/place/SSD/",
+      "file": "place/SSD/index.html",
+      "expected_title": "South Sudan Place Profile | PainMap",
+      "expected_description": "South Sudan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SSD/"
+    },
+    {
+      "key": "place-esp",
+      "path": "/place/ESP/",
+      "file": "place/ESP/index.html",
+      "expected_title": "Spain Place Profile | PainMap",
+      "expected_description": "Spain place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ESP/"
+    },
+    {
+      "key": "place-lka",
+      "path": "/place/LKA/",
+      "file": "place/LKA/index.html",
+      "expected_title": "Sri Lanka Place Profile | PainMap",
+      "expected_description": "Sri Lanka place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/LKA/"
+    },
+    {
+      "key": "place-sdn",
+      "path": "/place/SDN/",
+      "file": "place/SDN/index.html",
+      "expected_title": "Sudan Place Profile | PainMap",
+      "expected_description": "Sudan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SDN/"
+    },
+    {
+      "key": "place-sur",
+      "path": "/place/SUR/",
+      "file": "place/SUR/index.html",
+      "expected_title": "Suriname Place Profile | PainMap",
+      "expected_description": "Suriname place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SUR/"
+    },
+    {
+      "key": "place-swe",
+      "path": "/place/SWE/",
+      "file": "place/SWE/index.html",
+      "expected_title": "Sweden Place Profile | PainMap",
+      "expected_description": "Sweden place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SWE/"
+    },
+    {
+      "key": "place-che",
+      "path": "/place/CHE/",
+      "file": "place/CHE/index.html",
+      "expected_title": "Switzerland Place Profile | PainMap",
+      "expected_description": "Switzerland place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CHE/"
+    },
+    {
+      "key": "place-syr",
+      "path": "/place/SYR/",
+      "file": "place/SYR/index.html",
+      "expected_title": "Syria Place Profile | PainMap",
+      "expected_description": "Syria place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/SYR/"
+    },
+    {
+      "key": "place-twn",
+      "path": "/place/TWN/",
+      "file": "place/TWN/index.html",
+      "expected_title": "Taiwan Place Profile | PainMap",
+      "expected_description": "Taiwan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TWN/"
+    },
+    {
+      "key": "place-tjk",
+      "path": "/place/TJK/",
+      "file": "place/TJK/index.html",
+      "expected_title": "Tajikistan Place Profile | PainMap",
+      "expected_description": "Tajikistan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TJK/"
+    },
+    {
+      "key": "place-tza",
+      "path": "/place/TZA/",
+      "file": "place/TZA/index.html",
+      "expected_title": "Tanzania Place Profile | PainMap",
+      "expected_description": "Tanzania place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TZA/"
+    },
+    {
+      "key": "place-tha",
+      "path": "/place/THA/",
+      "file": "place/THA/index.html",
+      "expected_title": "Thailand Place Profile | PainMap",
+      "expected_description": "Thailand place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/THA/"
+    },
+    {
+      "key": "place-bhs",
+      "path": "/place/BHS/",
+      "file": "place/BHS/index.html",
+      "expected_title": "The Bahamas Place Profile | PainMap",
+      "expected_description": "The Bahamas place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/BHS/"
+    },
+    {
+      "key": "place-gmb",
+      "path": "/place/GMB/",
+      "file": "place/GMB/index.html",
+      "expected_title": "The Gambia Place Profile | PainMap",
+      "expected_description": "The Gambia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GMB/"
+    },
+    {
+      "key": "place-tgo",
+      "path": "/place/TGO/",
+      "file": "place/TGO/index.html",
+      "expected_title": "Togo Place Profile | PainMap",
+      "expected_description": "Togo place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TGO/"
+    },
+    {
+      "key": "place-ton",
+      "path": "/place/TON/",
+      "file": "place/TON/index.html",
+      "expected_title": "Tonga Place Profile | PainMap",
+      "expected_description": "Tonga place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TON/"
+    },
+    {
+      "key": "place-tto",
+      "path": "/place/TTO/",
+      "file": "place/TTO/index.html",
+      "expected_title": "Trinidad and Tobago Place Profile | PainMap",
+      "expected_description": "Trinidad and Tobago place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TTO/"
+    },
+    {
+      "key": "place-tun",
+      "path": "/place/TUN/",
+      "file": "place/TUN/index.html",
+      "expected_title": "Tunisia Place Profile | PainMap",
+      "expected_description": "Tunisia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TUN/"
+    },
+    {
+      "key": "place-tur",
+      "path": "/place/TUR/",
+      "file": "place/TUR/index.html",
+      "expected_title": "Turkey Place Profile | PainMap",
+      "expected_description": "Turkey place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TUR/"
+    },
+    {
+      "key": "place-cyn",
+      "path": "/place/CYN/",
+      "file": "place/CYN/index.html",
+      "expected_title": "Turkish Republic of Northern Cyprus Place Profile | PainMap",
+      "expected_description": "Turkish Republic of Northern Cyprus place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/CYN/"
+    },
+    {
+      "key": "place-tkm",
+      "path": "/place/TKM/",
+      "file": "place/TKM/index.html",
+      "expected_title": "Turkmenistan Place Profile | PainMap",
+      "expected_description": "Turkmenistan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TKM/"
+    },
+    {
+      "key": "place-tca",
+      "path": "/place/TCA/",
+      "file": "place/TCA/index.html",
+      "expected_title": "Turks and Caicos Islands Place Profile | PainMap",
+      "expected_description": "Turks and Caicos Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TCA/"
+    },
+    {
+      "key": "place-tuv",
+      "path": "/place/TUV/",
+      "file": "place/TUV/index.html",
+      "expected_title": "Tuvalu Place Profile | PainMap",
+      "expected_description": "Tuvalu place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/TUV/"
+    },
+    {
+      "key": "place-uga",
+      "path": "/place/UGA/",
+      "file": "place/UGA/index.html",
+      "expected_title": "Uganda Place Profile | PainMap",
+      "expected_description": "Uganda place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/UGA/"
+    },
+    {
+      "key": "place-ukr",
+      "path": "/place/UKR/",
+      "file": "place/UKR/index.html",
+      "expected_title": "Ukraine Place Profile | PainMap",
+      "expected_description": "Ukraine place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/UKR/"
+    },
+    {
+      "key": "place-are",
+      "path": "/place/ARE/",
+      "file": "place/ARE/index.html",
+      "expected_title": "United Arab Emirates Place Profile | PainMap",
+      "expected_description": "United Arab Emirates place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ARE/"
+    },
+    {
+      "key": "place-gbr",
+      "path": "/place/GBR/",
+      "file": "place/GBR/index.html",
+      "expected_title": "United Kingdom Place Profile | PainMap",
+      "expected_description": "United Kingdom place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/GBR/"
+    },
+    {
+      "key": "place-usa",
+      "path": "/place/USA/",
+      "file": "place/USA/index.html",
+      "expected_title": "United States of America Place Profile | PainMap",
+      "expected_description": "United States of America place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/USA/"
+    },
+    {
+      "key": "place-vir",
+      "path": "/place/VIR/",
+      "file": "place/VIR/index.html",
+      "expected_title": "United States Virgin Islands Place Profile | PainMap",
+      "expected_description": "United States Virgin Islands place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/VIR/"
+    },
+    {
+      "key": "place-ury",
+      "path": "/place/URY/",
+      "file": "place/URY/index.html",
+      "expected_title": "Uruguay Place Profile | PainMap",
+      "expected_description": "Uruguay place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/URY/"
+    },
+    {
+      "key": "place-uzb",
+      "path": "/place/UZB/",
+      "file": "place/UZB/index.html",
+      "expected_title": "Uzbekistan Place Profile | PainMap",
+      "expected_description": "Uzbekistan place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/UZB/"
+    },
+    {
+      "key": "place-vut",
+      "path": "/place/VUT/",
+      "file": "place/VUT/index.html",
+      "expected_title": "Vanuatu Place Profile | PainMap",
+      "expected_description": "Vanuatu place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/VUT/"
+    },
+    {
+      "key": "place-vat",
+      "path": "/place/VAT/",
+      "file": "place/VAT/index.html",
+      "expected_title": "Vatican City Place Profile | PainMap",
+      "expected_description": "Vatican City place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/VAT/"
+    },
+    {
+      "key": "place-ven",
+      "path": "/place/VEN/",
+      "file": "place/VEN/index.html",
+      "expected_title": "Venezuela Place Profile | PainMap",
+      "expected_description": "Venezuela place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/VEN/"
+    },
+    {
+      "key": "place-vnm",
+      "path": "/place/VNM/",
+      "file": "place/VNM/index.html",
+      "expected_title": "Vietnam Place Profile | PainMap",
+      "expected_description": "Vietnam place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/VNM/"
+    },
+    {
+      "key": "place-wlf",
+      "path": "/place/WLF/",
+      "file": "place/WLF/index.html",
+      "expected_title": "Wallis and Futuna Place Profile | PainMap",
+      "expected_description": "Wallis and Futuna place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/WLF/"
+    },
+    {
+      "key": "place-esh",
+      "path": "/place/ESH/",
+      "file": "place/ESH/index.html",
+      "expected_title": "Western Sahara Place Profile | PainMap",
+      "expected_description": "Western Sahara place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ESH/"
+    },
+    {
+      "key": "place-yem",
+      "path": "/place/YEM/",
+      "file": "place/YEM/index.html",
+      "expected_title": "Yemen Place Profile | PainMap",
+      "expected_description": "Yemen place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/YEM/"
+    },
+    {
+      "key": "place-zmb",
+      "path": "/place/ZMB/",
+      "file": "place/ZMB/index.html",
+      "expected_title": "Zambia Place Profile | PainMap",
+      "expected_description": "Zambia place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ZMB/"
+    },
+    {
+      "key": "place-zwe",
+      "path": "/place/ZWE/",
+      "file": "place/ZWE/index.html",
+      "expected_title": "Zimbabwe Place Profile | PainMap",
+      "expected_description": "Zimbabwe place profile for PainMap release 2026-05-31.atlas.2, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.",
+      "expected_canonical": "https://painmap.org/place/ZWE/"
+    },
+    {
       "key": "api",
       "path": "/api/",
       "file": "api/index.html",

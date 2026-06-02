@@ -346,6 +346,23 @@ if (!placeIndex.items.some((entry) => entry.coverage_status === "boundary_index_
   failures.push("v1/places/index.json must expose boundary-index-only places");
 }
 
+const countryPlaceItems = placeIndex.items.filter((item) => item.geometry_level === "country");
+const countryPlaceRoutes = routeManifest.routes.filter((route) => /^\/place\/[A-Z0-9]{3}\/$/.test(route.path));
+
+if (countryPlaceRoutes.length !== countryPlaceItems.length) {
+  failures.push("data/routes.json must include one static /place/{ISO}/ route for every indexed country");
+}
+
+for (const item of countryPlaceItems) {
+  if (!routeManifest.routes.some((route) => route.path === `/place/${item.place_id}/` && route.file === `place/${item.place_id}/index.html`)) {
+    failures.push(`data/routes.json missing static place route for ${item.place_id}`);
+  }
+
+  if (!existsSync(absolute(`place/${item.place_id}/index.html`))) {
+    failures.push(`Missing generated country place page for ${item.place_id}`);
+  }
+}
+
 const coverage = readJson("v1/coverage.json");
 if (coverage.coverage_status?.places_indexed !== placeIndex.count) {
   failures.push("v1/coverage.json places_indexed does not match place index count");

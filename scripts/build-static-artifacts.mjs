@@ -640,7 +640,12 @@ function ogcLink(href, rel, type, title) {
 
 function placePageUrl(placeId) {
   const expectedPath = `/place/${placeId}/`;
-  return routes.routes.some((route) => route.path === expectedPath) ? `${site}${expectedPath}` : null;
+
+  if (routes.routes.some((route) => route.path === expectedPath) || (placeId !== "WLD" && /^[A-Z0-9]{3}$/.test(placeId))) {
+    return `${site}${expectedPath}`;
+  }
+
+  return null;
 }
 
 function placeSummary(placeId) {
@@ -874,6 +879,200 @@ function buildReleaseModes() {
       live_tab_id: "release-mode-live",
     },
   };
+}
+
+function generatedCountryRoutes() {
+  const existingPaths = new Set(routes.routes.filter((route) => route.generated !== "country-place").map((route) => route.path));
+
+  return countryBoundaryFeatures()
+    .map(({ feature, iso }) => ({
+      path: `/place/${iso}/`,
+      file: `place/${iso}/index.html`,
+      key: `place-${iso.toLowerCase()}`,
+      title: `${countryNameFromProperties(feature.properties)} Place Profile | PainMap`,
+      description: `${countryNameFromProperties(feature.properties)} place profile for PainMap release ${releaseId}, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.`,
+      jsonLdType: "Place",
+      generated: "country-place",
+    }))
+    .filter((route) => !existingPaths.has(route.path))
+    .sort((left, right) => left.title.localeCompare(right.title));
+}
+
+function syncGeneratedCountryPlaceRoutes() {
+  routes.routes = routes.routes.filter((route) => route.generated !== "country-place");
+
+  const insertIndex = routes.routes.findIndex((route) => route.path === "/api/");
+  const generatedRoutes = generatedCountryRoutes();
+
+  if (insertIndex === -1) {
+    routes.routes.push(...generatedRoutes);
+  } else {
+    routes.routes.splice(insertIndex, 0, ...generatedRoutes);
+  }
+
+  writeJson("data/routes.json", routes);
+}
+
+function coverageLabel(status) {
+  return status === "canonical_measurements" ? "Canonical measurement profile" : "Boundary-index-only profile";
+}
+
+function generatedPlaceJsonLd(item) {
+  const value = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name: item.place_name,
+    identifier: item.place_id,
+    url: `${site}/place/${item.place_id}/`,
+    additionalProperty: [
+      {
+        "@type": "PropertyValue",
+        name: "PainMap coverage status",
+        value: item.coverage_status,
+      },
+      {
+        "@type": "PropertyValue",
+        name: "PainMap release",
+        value: releaseId,
+      },
+    ],
+    subjectOf: {
+      "@type": "Dataset",
+      name: "PainMap place-level pain-source proxy measurements",
+      url: `${site}/dataset/place-measurements/`,
+    },
+  };
+
+  return `    <script type="application/ld+json">\n      ${jsonEscapeForScript(value)}\n    </script>`;
+}
+
+function measurementRowsHtml(rows) {
+  if (!rows.length) {
+    return [
+      '<p class="route-copy">',
+      "This country is present in the release boundary index, but it has no frozen canonical pain measurement rows in this release. Use this page for geography, coverage, neighbors, and release-scoped discovery; do not read boundary presence as a pain estimate.",
+      "</p>",
+    ].join("\n");
+  }
+
+  return [
+    '<div class="data-table-wrap">',
+    '<table class="route-table">',
+    "<caption>Canonical release rows for this place. Runtime overlays on the homepage remain separate from these frozen rows.</caption>",
+    "<thead><tr><th>Layer</th><th>Evidence kind</th><th>Display value</th><th>Uncertainty</th><th>Source vintage</th></tr></thead>",
+    "<tbody>",
+    ...rows.map(
+      (row) =>
+        `<tr><th scope="row">${htmlEscape(row.layer_name)}</th><td>${htmlEscape(row.evidence_kind)}</td><td>${htmlEscape(row.display_value)}</td><td>${htmlEscape(row.uncertainty_class)}</td><td>${htmlEscape(row.source_vintage)}</td></tr>`
+    ),
+    "</tbody>",
+    "</table>",
+    "</div>",
+  ].join("\n");
+}
+
+function generatedCountryPlaceHtml(item) {
+  const file = `place/${item.place_id}/index.html`;
+  const rows = measurementRowsForPlace(item.place_id);
+  const prefix = rootPrefix(file);
+  const measurementLinks = rows.length
+    ? [
+        `<a class="ghost-link" href="/v1/places/${item.place_id}.json">Place JSON</a>`,
+        `<a class="ghost-link" href="/v1/places/${item.place_id}/measurements.json">Measurements JSON</a>`,
+      ]
+    : [];
+  const measurementLinkHtml = measurementLinks.length ? `\n            ${measurementLinks.join("\n            ")}` : "";
+  const comparisonTarget = item.place_id === "IND" ? "BRA" : "IND";
+  const comparisonLabel = item.place_id === "IND" ? "Brazil" : "India";
+
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${htmlEscape(`${item.place_name} Place Profile | PainMap`)}</title>
+    <meta name="description" content="${htmlEscape(`${item.place_name} place profile for PainMap release ${releaseId}, coverage status, boundary source, uncertainty, neighbors, compare links, and public downloads.`)}">
+    <link rel="canonical" href="${site}/place/${item.place_id}/">
+    <link rel="stylesheet" href="${prefix}styles.css" integrity="sha384-placeholder" crossorigin="anonymous">
+${generatedPlaceJsonLd(item)}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/places/">Places</a>
+          <a href="/compare/">Compare</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <main id="main-content" class="route-page">
+        <section class="route-panel route-hero" aria-labelledby="place-title">
+          <div>
+            <p class="label">Place profile</p>
+            <h1 id="place-title">${htmlEscape(item.place_name)}</h1>
+          </div>
+          <p class="route-copy">
+            Static country page for ${htmlEscape(item.place_id)} in release ${htmlEscape(releaseId)}. Coverage status, boundary availability, neighbor discovery, and export links are visible here so the atlas is indexable beyond the canonical examples.
+          </p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="coverage-title">
+          <div class="facts place-facts">
+            <article class="fact-card"><span class="fact-label">Place id</span><strong>${htmlEscape(item.place_id)}</strong></article>
+            <article class="fact-card"><span class="fact-label">Coverage</span><strong>${htmlEscape(coverageLabel(item.coverage_status))}</strong></article>
+            <article class="fact-card"><span class="fact-label">Release rows</span><strong>${item.canonical_measurement_count}</strong></article>
+            <article class="fact-card"><span class="fact-label">Boundary source</span><strong>Natural Earth Admin 0</strong></article>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="measurements-title">
+          <div class="section-intro">
+            <p class="label">Release coverage</p>
+            <h2 id="measurements-title">Measurement status</h2>
+          </div>
+          ${measurementRowsHtml(rows)}
+          <div class="route-actions">
+            <a class="solid-button" href="/compare/?places=${item.place_id},${comparisonTarget}">Compare with ${htmlEscape(comparisonLabel)}</a>${measurementLinkHtml}
+            <a class="ghost-link" href="/v1/places/${item.place_id}/neighbors.json">Neighbors JSON</a>
+            <a class="ghost-link" href="/v1/places/index.json">Place index JSON</a>
+            <a class="ghost-link" href="/ogc/collections/places/items.json">OGC place features</a>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="reuse-title">
+          <div class="section-intro">
+            <p class="label">Reuse</p>
+            <h2 id="reuse-title">How to cite this page</h2>
+          </div>
+          <p class="route-copy">
+            Cite ${htmlEscape(item.place_name)} as a PainMap release-scoped country place page for ${htmlEscape(releaseId)}. Boundary-only pages are geography and coverage surfaces, not direct empirical pain measurements.
+          </p>
+          <div class="route-actions">
+            <a class="ghost-link" href="/releases/2026-05-31/manifest.json">Release manifest</a>
+            <a class="ghost-link" href="/v1/coverage.json">Coverage JSON</a>
+            <a class="ghost-link" href="/dataset/place-measurements/">Dataset page</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+`;
+}
+
+function writeGeneratedCountryPlacePages() {
+  const countryItems = buildPlaceIndex().items.filter((item) => item.geometry_level === "country");
+
+  for (const item of countryItems) {
+    writeText(`place/${item.place_id}/index.html`, generatedCountryPlaceHtml(item));
+  }
 }
 
 function buildCountryNeighborIndex() {
@@ -2104,6 +2303,8 @@ function buildReleaseManifest() {
   };
 }
 
+syncGeneratedCountryPlaceRoutes();
+writeGeneratedCountryPlacePages();
 writeHeaders();
 writeSecurityTxt();
 writeApiArtifacts();

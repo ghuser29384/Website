@@ -19,18 +19,7 @@
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
 <link rel="stylesheet" href="../../styles.css" integrity="sha384-E+oJ/hyX8bmhH3T32g+aO3Y4R+Gs5zXZmEy+iF4j6B00HoeRX2A8AoGLpQQwNoAJ" crossorigin="anonymous">
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Place",
-        "name": "Brazil",
-        "identifier": "BRA",
-        "url": "https://painmap.org/place/BRA/",
-        "subjectOf": {
-          "@type": "Dataset",
-          "name": "PainMap place-level pain-source proxy measurements",
-          "url": "https://painmap.org/dataset/place-measurements/"
-        }
-      }
+      {"@context":"https://schema.org","@type":"Place","name":"Brazil","identifier":"BRA","url":"https://painmap.org/place/BRA/","additionalProperty":[{"@type":"PropertyValue","name":"PainMap coverage status","value":"canonical_measurements"},{"@type":"PropertyValue","name":"PainMap release","value":"2026-05-31.atlas.2"}],"subjectOf":{"@type":"Dataset","name":"PainMap place-level pain-source proxy measurements","url":"https://painmap.org/dataset/place-measurements/"}}
     </script>
       <script type="application/ld+json" data-painmap-jsonld="breadcrumbs">
       {"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://painmap.org/place/BRA/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"PainMap","item":"https://painmap.org"},{"@type":"ListItem","position":2,"name":"Places","item":"https://painmap.org/places/"},{"@type":"ListItem","position":3,"name":"Brazil Place Profile","item":"https://painmap.org/place/BRA/"}]}
@@ -66,101 +55,58 @@
             <h1 id="place-title">Brazil</h1>
           </div>
           <p class="route-copy">
-            Static atlas profile for BRA in release 2026-05-31.atlas.2. The live homepage can refresh country rankings from public APIs, while this route records the stable place-page contract, evidence expectations, and export links.
+            Static country page for BRA in release 2026-05-31.atlas.2. Coverage status, boundary availability, neighbor discovery, and export links are visible here so the atlas is indexable beyond the canonical examples.
           </p>
         </section>
 
-        <section class="route-panel" aria-labelledby="place-summary-title">
+        <section class="route-panel" aria-labelledby="coverage-title">
           <div class="facts place-facts">
-            <article class="fact-card">
-              <span class="fact-label">Place id</span>
-              <strong>BRA</strong>
-            </article>
-            <article class="fact-card">
-              <span class="fact-label">Release</span>
-              <strong>2026-05-31.atlas.2</strong>
-            </article>
-            <article class="fact-card">
-              <span class="fact-label">Evidence kinds</span>
-              <strong>Proxy aggregate, priority overlay, boundary</strong>
-            </article>
-            <article class="fact-card">
-              <span class="fact-label">Downloads</span>
-              <strong>JSON, CSV, GeoJSON, manifest</strong>
-            </article>
+            <article class="fact-card"><span class="fact-label">Place id</span><strong>BRA</strong></article>
+            <article class="fact-card"><span class="fact-label">Coverage</span><strong>Canonical measurement profile</strong></article>
+            <article class="fact-card"><span class="fact-label">Release rows</span><strong>3</strong></article>
+            <article class="fact-card"><span class="fact-label">Boundary source</span><strong>Natural Earth Admin 0</strong></article>
           </div>
         </section>
 
-        <section class="route-panel" aria-labelledby="place-layers-title">
+        <section class="route-panel" aria-labelledby="measurements-title">
           <div class="section-intro">
-            <p class="label">Layers</p>
-            <h2 id="place-layers-title">Pain-source layers available for this place</h2>
+            <p class="label">Release coverage</p>
+            <h2 id="measurements-title">Measurement status</h2>
           </div>
           <div class="data-table-wrap">
-            <table class="route-table">
-              <caption>Canonical Brazil release rows. Runtime values on the homepage expose the same evidence-kind and source fields beside visible rankings.</caption>
-              <thead>
-                <tr>
-                  <th>Layer</th>
-                  <th>Evidence kind</th>
-                  <th>Display value</th>
-                  <th>Uncertainty</th>
-                  <th>Source</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Factory-farmed animals</th>
-                  <td>Proxy aggregate</td>
-                  <td>0.58 normalized burden proxy</td>
-                  <td>Low confidence, 0.44-0.72</td>
-                  <td>OWID/Fishcount-style public rows plus PainMap assumptions</td>
-                </tr>
-                <tr>
-                  <th scope="row">Human burden indicators</th>
-                  <td>Proxy aggregate</td>
-                  <td>0.42 normalized burden proxy</td>
-                  <td>Low confidence, 0.32-0.53</td>
-                  <td>World Bank 2010:2025 indicator window</td>
-                </tr>
-                <tr>
-                  <th scope="row">Animal priority overlay</th>
-                  <td>Priority overlay</td>
-                  <td>0.61 priority overlay</td>
-                  <td>Very low confidence, 0.43-0.77</td>
-                  <td>OWID, Welfare Footprint event context, PainMap priority review</td>
-                </tr>
-                <tr>
-                  <th scope="row">ADM1 boundaries</th>
-                  <td>Boundary layer</td>
-                  <td>Geometry context only</td>
-                  <td>Low confidence</td>
-                  <td>geoBoundaries</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+<table class="route-table">
+<caption>Canonical release rows for this place. Runtime overlays on the homepage remain separate from these frozen rows.</caption>
+<thead><tr><th>Layer</th><th>Evidence kind</th><th>Display value</th><th>Uncertainty</th><th>Source vintage</th></tr></thead>
+<tbody>
+<tr><th scope="row">Factory-farmed animals</th><td>proxy</td><td>0.58 normalized burden proxy</td><td>low</td><td>2026-05-31 release; runtime OWID/Fishcount overlay optional</td></tr>
+<tr><th scope="row">Human burden indicators</th><td>proxy</td><td>0.42 normalized burden proxy</td><td>low</td><td>World Bank 2010:2025 latest non-null indicator window</td></tr>
+<tr><th scope="row">Animal priority overlay</th><td>priority-overlay</td><td>0.61 priority overlay</td><td>very-low</td><td>2026-05-31 release priority overlay</td></tr>
+</tbody>
+</table>
+</div>
           <div class="route-actions">
-            <a class="solid-button" href="/#explore-country">Open live Brazil search</a>
-            <a class="ghost-link" href="/compare/">Compare with India</a>
-            <a class="ghost-link" href="/dataset/place-measurements/">Open dataset page</a>
+            <a class="solid-button" href="/compare/?places=BRA,IND">Compare with India</a>
+            <a class="ghost-link" href="/v1/places/BRA.json">Place JSON</a>
+            <a class="ghost-link" href="/v1/places/BRA/measurements.json">Measurements JSON</a>
+            <a class="ghost-link" href="/v1/places/BRA/neighbors.json">Neighbors JSON</a>
+            <a class="ghost-link" href="/v1/places/index.json">Place index JSON</a>
+            <a class="ghost-link" href="/ogc/collections/places/items.json">OGC place features</a>
           </div>
         </section>
 
-        <section class="route-panel" aria-labelledby="place-downloads-title">
+        <section class="route-panel" aria-labelledby="reuse-title">
           <div class="section-intro">
-            <p class="label">Downloads</p>
-            <h2 id="place-downloads-title">Public exports</h2>
+            <p class="label">Reuse</p>
+            <h2 id="reuse-title">How to cite this page</h2>
           </div>
-          <ul class="download-list">
-            <li><a href="/v1/places/BRA.json">Brazil place JSON</a></li>
-            <li><a href="/v1/places/BRA/measurements.json">Brazil measurements JSON</a></li>
-            <li><a href="/data/place-measurements.json">Canonical place measurements JSON</a></li>
-            <li><a href="/data/place-measurements.csv">Place measurements CSV</a></li>
-            <li><a href="/data/places.geojson">Representative places GeoJSON</a></li>
-            <li><a href="/data/provenance-registry.json">Provenance registry JSON</a></li>
-            <li><a href="/releases/2026-05-31/manifest.json">Release manifest JSON</a></li>
-          </ul>
+          <p class="route-copy">
+            Cite Brazil as a PainMap release-scoped country place page for 2026-05-31.atlas.2. Boundary-only pages are geography and coverage surfaces, not direct empirical pain measurements.
+          </p>
+          <div class="route-actions">
+            <a class="ghost-link" href="/releases/2026-05-31/manifest.json">Release manifest</a>
+            <a class="ghost-link" href="/v1/coverage.json">Coverage JSON</a>
+            <a class="ghost-link" href="/dataset/place-measurements/">Dataset page</a>
+          </div>
         </section>
       </main>
     </div>

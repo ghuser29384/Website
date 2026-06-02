@@ -29,7 +29,7 @@ npm run build:data
 npm run check
 ```
 
-The build step generates sitemap entries, route smoke metadata, v1 JSON files, per-place neighbor payloads, CSV and GeoJSON exports, OGC-style place features, JSON Schemas, release-mode contracts, coverage and endpoint manifests, release diffs, headers, security.txt, social metadata, subresource integrity hashes, and release checksums.
+The build step generates sitemap entries, route smoke metadata, generated country place pages, v1 JSON files, per-place neighbor payloads, CSV and GeoJSON exports, OGC-style place features, JSON Schemas, release-mode contracts, coverage and endpoint manifests, release diffs, headers, security.txt, social metadata, subresource integrity hashes, and release checksums.
 
 `npm run check` also validates schema targets, endpoint smoke files, place-index measurement counts, release-manifest hashes, and required QA artifacts. Run it in CI before publishing so generated artifacts cannot drift from the committed tree.
 
