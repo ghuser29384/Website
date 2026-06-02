@@ -1,0 +1,233 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "URY",
+  "parent_place_name": "Uruguay",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 5,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "URY-ADM1-ARTIGAS-AND-RIVERA-AND-SALTO",
+      "place_name": "Artigas & Rivera & Salto",
+      "parent_place_id": "URY",
+      "parent_place_name": "Uruguay",
+      "iso3": "URY",
+      "source_iso3": "URY",
+      "geometry_level": "adm1",
+      "adm1_key": "artigas and rivera and salto",
+      "adm1_geo_id": "URY_2015_ADMx_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/URY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.21046,
+      "poverty_context": {
+        "poor300_rate": 0.0036,
+        "poor420_rate": 0.0264,
+        "poor830_rate": 0.1631,
+        "prosperity_gap_2021": 2.2104603,
+        "poor300_display": "0.36%",
+        "poor420_display": "2.64%",
+        "poor830_display": "16.3%",
+        "prosperity_gap_display": "2.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1392
+    },
+    {
+      "place_id": "URY-ADM1-CANELONES-AND-COLONIA-AND-MALDONADO-AND-SAN-JOSE",
+      "place_name": "Canelones & Colonia & Maldonado & San Jose",
+      "parent_place_id": "URY",
+      "parent_place_name": "Uruguay",
+      "iso3": "URY",
+      "source_iso3": "URY",
+      "geometry_level": "adm1",
+      "adm1_key": "canelones and colonia and maldonado and san jose",
+      "adm1_geo_id": "URY_2015_ADMx_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/URY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.27963,
+      "poverty_context": {
+        "poor300_rate": 0.0004,
+        "poor420_rate": 0.0011,
+        "poor830_rate": 0.0344,
+        "prosperity_gap_2021": 1.27963,
+        "poor300_display": "0.04%",
+        "poor420_display": "0.11%",
+        "poor830_display": "3.44%",
+        "prosperity_gap_display": "1.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1639
+    },
+    {
+      "place_id": "URY-ADM1-CANELONES-AND-MONTEVIDEO-AND-SAN-JOSE",
+      "place_name": "Canelones & Montevideo & San Jose",
+      "parent_place_id": "URY",
+      "parent_place_name": "Uruguay",
+      "iso3": "URY",
+      "source_iso3": "URY",
+      "geometry_level": "adm1",
+      "adm1_key": "canelones and montevideo and san jose",
+      "adm1_geo_id": "URY_2015_ADMx_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/URY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.309785,
+      "poverty_context": {
+        "poor300_rate": 0.0013,
+        "poor420_rate": 0.0059,
+        "poor830_rate": 0.0538,
+        "prosperity_gap_2021": 1.3097851,
+        "poor300_display": "0.13%",
+        "poor420_display": "0.59%",
+        "poor830_display": "5.38%",
+        "prosperity_gap_display": "1.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1629
+    },
+    {
+      "place_id": "URY-ADM1-CERRO-LARGO-AND-DURAZNO-AND-PAYSANDU-AND-RIO-NEGRO-AND-TACUAREM-7B0A87C9",
+      "place_name": "Cerro Largo & Durazno & Paysandu & Rio Negro & Tacuarembo & Treinta Y Tres",
+      "parent_place_id": "URY",
+      "parent_place_name": "Uruguay",
+      "iso3": "URY",
+      "source_iso3": "URY",
+      "geometry_level": "adm1",
+      "adm1_key": "cerro largo and durazno and paysandu and rio negro and tacuarembo and treinta y tres",
+      "adm1_geo_id": "URY_2015_ADMx_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/URY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.774428,
+      "poverty_context": {
+        "poor300_rate": 0.0037,
+        "poor420_rate": 0.0079,
+        "poor830_rate": 0.0931,
+        "prosperity_gap_2021": 1.7744279,
+        "poor300_display": "0.37%",
+        "poor420_display": "0.79%",
+        "poor830_display": "9.31%",
+        "prosperity_gap_display": "1.77"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1530
+    },
+    {
+      "place_id": "URY-ADM1-FLORES-AND-FLORIDA-AND-LAVALLEJA-AND-ROCHA-AND-SORIANO",
+      "place_name": "Flores & Florida & Lavalleja & Rocha & Soriano",
+      "parent_place_id": "URY",
+      "parent_place_name": "Uruguay",
+      "iso3": "URY",
+      "source_iso3": "URY",
+      "geometry_level": "adm1",
+      "adm1_key": "flores and florida and lavalleja and rocha and soriano",
+      "adm1_geo_id": "URY_2015_ADMx_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/URY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.487809,
+      "poverty_context": {
+        "poor300_rate": 0.0019,
+        "poor420_rate": 0.0095,
+        "poor830_rate": 0.0606,
+        "prosperity_gap_2021": 1.4878092,
+        "poor300_display": "0.19%",
+        "poor420_display": "0.95%",
+        "poor830_display": "6.06%",
+        "prosperity_gap_display": "1.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1598
+    }
+  ]
+}

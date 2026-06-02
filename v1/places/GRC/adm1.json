@@ -1,0 +1,189 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "GRC",
+  "parent_place_name": "Greece",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 4,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "GRC-ADM1-ATTIKI-EL3",
+      "place_name": "Attiki (EL3)",
+      "parent_place_id": "GRC",
+      "parent_place_name": "Greece",
+      "iso3": "GRC",
+      "source_iso3": "GRC",
+      "geometry_level": "adm1",
+      "adm1_key": "attiki el3",
+      "adm1_geo_id": "GRC_2015_ADMx_NUTS_EL3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GRC/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.4421,
+      "poverty_context": {
+        "poor300_rate": 0.0064,
+        "poor420_rate": 0.0074,
+        "poor830_rate": 0.0182,
+        "prosperity_gap_2021": 1.4421002,
+        "poor300_display": "0.64%",
+        "poor420_display": "0.74%",
+        "poor830_display": "1.82%",
+        "prosperity_gap_display": "1.44"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1606
+    },
+    {
+      "place_id": "GRC-ADM1-KENTRIKI-ELL-DA-EL6",
+      "place_name": "Kentriki Elláda (EL6)",
+      "parent_place_id": "GRC",
+      "parent_place_name": "Greece",
+      "iso3": "GRC",
+      "source_iso3": "GRC",
+      "geometry_level": "adm1",
+      "adm1_key": "kentriki ell da el6",
+      "adm1_geo_id": "GRC_2015_ADMx_NUTS_EL6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GRC/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.760034,
+      "poverty_context": {
+        "poor300_rate": 0.0049,
+        "poor420_rate": 0.0075,
+        "poor830_rate": 0.0436,
+        "prosperity_gap_2021": 1.7600337,
+        "poor300_display": "0.49%",
+        "poor420_display": "0.75%",
+        "poor830_display": "4.36%",
+        "prosperity_gap_display": "1.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1536
+    },
+    {
+      "place_id": "GRC-ADM1-NISIA-AIGAIOU-KRITI-EL4",
+      "place_name": "Nisia Aigaiou, Kriti (EL4)",
+      "parent_place_id": "GRC",
+      "parent_place_name": "Greece",
+      "iso3": "GRC",
+      "source_iso3": "GRC",
+      "geometry_level": "adm1",
+      "adm1_key": "nisia aigaiou kriti el4",
+      "adm1_geo_id": "GRC_2015_ADMx_NUTS_EL4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GRC/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.655742,
+      "poverty_context": {
+        "poor300_rate": 0.0047,
+        "poor420_rate": 0.0072,
+        "poor830_rate": 0.0326,
+        "prosperity_gap_2021": 1.6557424,
+        "poor300_display": "0.47%",
+        "poor420_display": "0.72%",
+        "poor830_display": "3.26%",
+        "prosperity_gap_display": "1.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1561
+    },
+    {
+      "place_id": "GRC-ADM1-VOREIA-ELL-DA-EL5",
+      "place_name": "Voreia Elláda (EL5)",
+      "parent_place_id": "GRC",
+      "parent_place_name": "Greece",
+      "iso3": "GRC",
+      "source_iso3": "GRC",
+      "geometry_level": "adm1",
+      "adm1_key": "voreia ell da el5",
+      "adm1_geo_id": "GRC_2015_ADMx_NUTS_EL5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GRC/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.902469,
+      "poverty_context": {
+        "poor300_rate": 0.0058,
+        "poor420_rate": 0.0092,
+        "poor830_rate": 0.0387,
+        "prosperity_gap_2021": 1.9024691,
+        "poor300_display": "0.58%",
+        "poor420_display": "0.92%",
+        "poor830_display": "3.87%",
+        "prosperity_gap_display": "1.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1494
+    }
+  ]
+}

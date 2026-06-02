@@ -1,0 +1,365 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "BOL",
+  "parent_place_name": "Bolivia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 8,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "BOL-ADM1-BENI-AND-PANDO",
+      "place_name": "Beni & Pando",
+      "parent_place_id": "BOL",
+      "parent_place_name": "Bolivia",
+      "iso3": "BOL",
+      "source_iso3": "BOL",
+      "geometry_level": "adm1",
+      "adm1_key": "beni and pando",
+      "adm1_geo_id": "BOL_2015_ADM1_40443_648",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BOL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.621539,
+      "poverty_context": {
+        "poor300_rate": 0.0271,
+        "poor420_rate": 0.0558,
+        "poor830_rate": 0.222,
+        "prosperity_gap_2021": 2.621539,
+        "poor300_display": "2.71%",
+        "poor420_display": "5.58%",
+        "poor830_display": "22.2%",
+        "prosperity_gap_display": "2.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1259
+    },
+    {
+      "place_id": "BOL-ADM1-CHUQUISACA",
+      "place_name": "Chuquisaca",
+      "parent_place_id": "BOL",
+      "parent_place_name": "Bolivia",
+      "iso3": "BOL",
+      "source_iso3": "BOL",
+      "geometry_level": "adm1",
+      "adm1_key": "chuquisaca",
+      "adm1_geo_id": "BOL_2015_ADM1_40444",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BOL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.105014,
+      "poverty_context": {
+        "poor300_rate": 0.116,
+        "poor420_rate": 0.2071,
+        "poor830_rate": 0.3796,
+        "prosperity_gap_2021": 4.105014,
+        "poor300_display": "11.6%",
+        "poor420_display": "20.7%",
+        "poor830_display": "38.0%",
+        "prosperity_gap_display": "4.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 971
+    },
+    {
+      "place_id": "BOL-ADM1-COCHABAMBA",
+      "place_name": "Cochabamba",
+      "parent_place_id": "BOL",
+      "parent_place_name": "Bolivia",
+      "iso3": "BOL",
+      "source_iso3": "BOL",
+      "geometry_level": "adm1",
+      "adm1_key": "cochabamba",
+      "adm1_geo_id": "BOL_2015_ADM1_40445",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BOL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.221289,
+      "poverty_context": {
+        "poor300_rate": 0.017,
+        "poor420_rate": 0.0306,
+        "poor830_rate": 0.1516,
+        "prosperity_gap_2021": 2.2212891,
+        "poor300_display": "1.70%",
+        "poor420_display": "3.06%",
+        "poor830_display": "15.2%",
+        "prosperity_gap_display": "2.22"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1388
+    },
+    {
+      "place_id": "BOL-ADM1-LA-PAZ",
+      "place_name": "La Paz",
+      "parent_place_id": "BOL",
+      "parent_place_name": "Bolivia",
+      "iso3": "BOL",
+      "source_iso3": "BOL",
+      "geometry_level": "adm1",
+      "adm1_key": "la paz",
+      "adm1_geo_id": "BOL_2015_ADM1_40446",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BOL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.276537,
+      "poverty_context": {
+        "poor300_rate": 0.0175,
+        "poor420_rate": 0.0427,
+        "poor830_rate": 0.1728,
+        "prosperity_gap_2021": 2.2765372,
+        "poor300_display": "1.75%",
+        "poor420_display": "4.27%",
+        "poor830_display": "17.3%",
+        "prosperity_gap_display": "2.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1367
+    },
+    {
+      "place_id": "BOL-ADM1-ORURO",
+      "place_name": "Oruro",
+      "parent_place_id": "BOL",
+      "parent_place_name": "Bolivia",
+      "iso3": "BOL",
+      "source_iso3": "BOL",
+      "geometry_level": "adm1",
+      "adm1_key": "oruro",
+      "adm1_geo_id": "BOL_2015_ADM1_40447",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BOL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.001009,
+      "poverty_context": {
+        "poor300_rate": 0.0088,
+        "poor420_rate": 0.0268,
+        "poor830_rate": 0.1169,
+        "prosperity_gap_2021": 2.0010087,
+        "poor300_display": "0.88%",
+        "poor420_display": "2.68%",
+        "poor830_display": "11.7%",
+        "prosperity_gap_display": "2.00"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1468
+    },
+    {
+      "place_id": "BOL-ADM1-POTOSI",
+      "place_name": "Potosi",
+      "parent_place_id": "BOL",
+      "parent_place_name": "Bolivia",
+      "iso3": "BOL",
+      "source_iso3": "BOL",
+      "geometry_level": "adm1",
+      "adm1_key": "potosi",
+      "adm1_geo_id": "BOL_2015_ADM1_40448",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BOL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.388315,
+      "poverty_context": {
+        "poor300_rate": 0.1413,
+        "poor420_rate": 0.1912,
+        "poor830_rate": 0.3476,
+        "prosperity_gap_2021": 4.3883154,
+        "poor300_display": "14.1%",
+        "poor420_display": "19.1%",
+        "poor830_display": "34.8%",
+        "prosperity_gap_display": "4.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 907
+    },
+    {
+      "place_id": "BOL-ADM1-SANTA-CRUZ",
+      "place_name": "Santa Cruz",
+      "parent_place_id": "BOL",
+      "parent_place_name": "Bolivia",
+      "iso3": "BOL",
+      "source_iso3": "BOL",
+      "geometry_level": "adm1",
+      "adm1_key": "santa cruz",
+      "adm1_geo_id": "BOL_2015_ADM1_40449",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BOL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.672829,
+      "poverty_context": {
+        "poor300_rate": 0.0019,
+        "poor420_rate": 0.0087,
+        "poor830_rate": 0.0762,
+        "prosperity_gap_2021": 1.6728291,
+        "poor300_display": "0.19%",
+        "poor420_display": "0.87%",
+        "poor830_display": "7.62%",
+        "prosperity_gap_display": "1.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1557
+    },
+    {
+      "place_id": "BOL-ADM1-TARIJA",
+      "place_name": "Tarija",
+      "parent_place_id": "BOL",
+      "parent_place_name": "Bolivia",
+      "iso3": "BOL",
+      "source_iso3": "BOL",
+      "geometry_level": "adm1",
+      "adm1_key": "tarija",
+      "adm1_geo_id": "BOL_2015_ADM1_40450",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BOL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.252598,
+      "poverty_context": {
+        "poor300_rate": 0.0168,
+        "poor420_rate": 0.0401,
+        "poor830_rate": 0.1536,
+        "prosperity_gap_2021": 2.252598,
+        "poor300_display": "1.68%",
+        "poor420_display": "4.01%",
+        "poor830_display": "15.4%",
+        "prosperity_gap_display": "2.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1373
+    }
+  ]
+}

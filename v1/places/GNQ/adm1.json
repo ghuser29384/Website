@@ -1,0 +1,321 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "GNQ",
+  "parent_place_name": "Equatorial Guinea",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 7,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "GNQ-ADM1-ANNOBON",
+      "place_name": "Annobon",
+      "parent_place_id": "GNQ",
+      "parent_place_name": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "source_iso3": "GNQ",
+      "geometry_level": "adm1",
+      "adm1_key": "annobon",
+      "adm1_geo_id": "GNQ_2015_GAUL1_1198",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.14186,
+      "poverty_context": {
+        "poor300_rate": 0.1433,
+        "poor420_rate": 0.2805,
+        "poor830_rate": 0.6223,
+        "prosperity_gap_2021": 5.1418599,
+        "poor300_display": "14.3%",
+        "poor420_display": "28.1%",
+        "poor830_display": "62.2%",
+        "prosperity_gap_display": "5.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 790
+    },
+    {
+      "place_id": "GNQ-ADM1-BIOKO-NORTE",
+      "place_name": "Bioko Norte",
+      "parent_place_id": "GNQ",
+      "parent_place_name": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "source_iso3": "GNQ",
+      "geometry_level": "adm1",
+      "adm1_key": "bioko norte",
+      "adm1_geo_id": "GNQ_2015_GAUL1_1199",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.225231,
+      "poverty_context": {
+        "poor300_rate": 0.0188,
+        "poor420_rate": 0.0606,
+        "poor830_rate": 0.3673,
+        "prosperity_gap_2021": 3.2252309,
+        "poor300_display": "1.88%",
+        "poor420_display": "6.06%",
+        "poor830_display": "36.7%",
+        "prosperity_gap_display": "3.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1123
+    },
+    {
+      "place_id": "GNQ-ADM1-BIOKO-SUR",
+      "place_name": "Bioko Sur",
+      "parent_place_id": "GNQ",
+      "parent_place_name": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "source_iso3": "GNQ",
+      "geometry_level": "adm1",
+      "adm1_key": "bioko sur",
+      "adm1_geo_id": "GNQ_2015_GAUL1_1200",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.487955,
+      "poverty_context": {
+        "poor300_rate": 0.1196,
+        "poor420_rate": 0.2809,
+        "poor830_rate": 0.7054,
+        "prosperity_gap_2021": 5.4879553,
+        "poor300_display": "12.0%",
+        "poor420_display": "28.1%",
+        "poor830_display": "70.5%",
+        "prosperity_gap_display": "5.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 740
+    },
+    {
+      "place_id": "GNQ-ADM1-CENTRO-SUR",
+      "place_name": "Centro Sur",
+      "parent_place_id": "GNQ",
+      "parent_place_name": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "source_iso3": "GNQ",
+      "geometry_level": "adm1",
+      "adm1_key": "centro sur",
+      "adm1_geo_id": "GNQ_2015_GAUL1_1201",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.098452,
+      "poverty_context": {
+        "poor300_rate": 0.0791,
+        "poor420_rate": 0.2682,
+        "poor830_rate": 0.6888,
+        "prosperity_gap_2021": 5.098452,
+        "poor300_display": "7.91%",
+        "poor420_display": "26.8%",
+        "poor830_display": "68.9%",
+        "prosperity_gap_display": "5.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 795
+    },
+    {
+      "place_id": "GNQ-ADM1-KIENTEM",
+      "place_name": "Kientem",
+      "parent_place_id": "GNQ",
+      "parent_place_name": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "source_iso3": "GNQ",
+      "geometry_level": "adm1",
+      "adm1_key": "kientem",
+      "adm1_geo_id": "GNQ_2015_GAUL1_1202",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.345583,
+      "poverty_context": {
+        "poor300_rate": 0.1039,
+        "poor420_rate": 0.2991,
+        "poor830_rate": 0.6591,
+        "prosperity_gap_2021": 5.3455834,
+        "poor300_display": "10.4%",
+        "poor420_display": "29.9%",
+        "poor830_display": "65.9%",
+        "prosperity_gap_display": "5.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 761
+    },
+    {
+      "place_id": "GNQ-ADM1-LITORAL",
+      "place_name": "Litoral",
+      "parent_place_id": "GNQ",
+      "parent_place_name": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "source_iso3": "GNQ",
+      "geometry_level": "adm1",
+      "adm1_key": "litoral",
+      "adm1_geo_id": "GNQ_2015_GAUL1_1203",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.772349,
+      "poverty_context": {
+        "poor300_rate": 0.0851,
+        "poor420_rate": 0.2104,
+        "poor830_rate": 0.5788,
+        "prosperity_gap_2021": 4.7723492,
+        "poor300_display": "8.51%",
+        "poor420_display": "21.0%",
+        "poor830_display": "57.9%",
+        "prosperity_gap_display": "4.77"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 854
+    },
+    {
+      "place_id": "GNQ-ADM1-WELENZAS",
+      "place_name": "Welenzas",
+      "parent_place_id": "GNQ",
+      "parent_place_name": "Equatorial Guinea",
+      "iso3": "GNQ",
+      "source_iso3": "GNQ",
+      "geometry_level": "adm1",
+      "adm1_key": "welenzas",
+      "adm1_geo_id": "GNQ_2015_GAUL1_1204",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.865197,
+      "poverty_context": {
+        "poor300_rate": 0.173,
+        "poor420_rate": 0.3124,
+        "poor830_rate": 0.7229,
+        "prosperity_gap_2021": 5.8651973,
+        "poor300_display": "17.3%",
+        "poor420_display": "31.2%",
+        "poor830_display": "72.3%",
+        "prosperity_gap_display": "5.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 697
+    }
+  ]
+}

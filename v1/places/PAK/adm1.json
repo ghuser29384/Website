@@ -1,0 +1,189 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "PAK",
+  "parent_place_name": "Pakistan",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 4,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "PAK-ADM1-BALOCHISTAN",
+      "place_name": "Balochistan",
+      "parent_place_id": "PAK",
+      "parent_place_name": "Pakistan",
+      "iso3": "PAK",
+      "source_iso3": "PAK",
+      "geometry_level": "adm1",
+      "adm1_key": "balochistan",
+      "adm1_geo_id": "PAK_2015_ADM1_2272",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAK/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.250474,
+      "poverty_context": {
+        "poor300_rate": 0.3174,
+        "poor420_rate": 0.7099,
+        "poor830_rate": 0.9754,
+        "prosperity_gap_2021": 8.2504735,
+        "poor300_display": "31.7%",
+        "poor420_display": "71.0%",
+        "poor830_display": "97.5%",
+        "prosperity_gap_display": "8.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 481
+    },
+    {
+      "place_id": "PAK-ADM1-NORTH-WEST-FRONTIER-AND-FEDERALLY-ADMINISTERED-TRIBAL-AREAS",
+      "place_name": "North-West Frontier & Federally Administered Tribal Areas",
+      "parent_place_id": "PAK",
+      "parent_place_name": "Pakistan",
+      "iso3": "PAK",
+      "source_iso3": "PAK",
+      "geometry_level": "adm1",
+      "adm1_key": "north west frontier and federally administered tribal areas",
+      "adm1_geo_id": "PAK_2015_ADM1_2275",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAK/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.096919,
+      "poverty_context": {
+        "poor300_rate": 0.1971,
+        "poor420_rate": 0.5256,
+        "poor830_rate": 0.9259,
+        "prosperity_gap_2021": 7.0969191,
+        "poor300_display": "19.7%",
+        "poor420_display": "52.6%",
+        "poor830_display": "92.6%",
+        "prosperity_gap_display": "7.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 581
+    },
+    {
+      "place_id": "PAK-ADM1-PUNJAB-AND-ISLAMABAD",
+      "place_name": "Punjab & Islamabad",
+      "parent_place_id": "PAK",
+      "parent_place_name": "Pakistan",
+      "iso3": "PAK",
+      "source_iso3": "PAK",
+      "geometry_level": "adm1",
+      "adm1_key": "punjab and islamabad",
+      "adm1_geo_id": "PAK_2015_ADM1_2276",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAK/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.923799,
+      "poverty_context": {
+        "poor300_rate": 0.1013,
+        "poor420_rate": 0.3471,
+        "poor830_rate": 0.8402,
+        "prosperity_gap_2021": 5.9237987,
+        "poor300_display": "10.1%",
+        "poor420_display": "34.7%",
+        "poor830_display": "84.0%",
+        "prosperity_gap_display": "5.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 687
+    },
+    {
+      "place_id": "PAK-ADM1-SINDH",
+      "place_name": "Sindh",
+      "parent_place_id": "PAK",
+      "parent_place_name": "Pakistan",
+      "iso3": "PAK",
+      "source_iso3": "PAK",
+      "geometry_level": "adm1",
+      "adm1_key": "sindh",
+      "adm1_geo_id": "PAK_2015_ADM1_2277",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAK/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.589799,
+      "poverty_context": {
+        "poor300_rate": 0.1618,
+        "poor420_rate": 0.4331,
+        "poor830_rate": 0.8824,
+        "prosperity_gap_2021": 6.5897986,
+        "poor300_display": "16.2%",
+        "poor420_display": "43.3%",
+        "poor830_display": "88.2%",
+        "prosperity_gap_display": "6.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 622
+    }
+  ]
+}

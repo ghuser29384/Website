@@ -1,0 +1,1465 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "IDN",
+  "parent_place_name": "Indonesia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 33,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "IDN-ADM1-BALI",
+      "place_name": "Bali",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "bali",
+      "adm1_geo_id": "IDN_2015_ADM1_1513",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.226894,
+      "poverty_context": {
+        "poor300_rate": 0.02,
+        "poor420_rate": 0.1194,
+        "poor830_rate": 0.6186,
+        "prosperity_gap_2021": 4.2268942,
+        "poor300_display": "2.00%",
+        "poor420_display": "11.9%",
+        "poor830_display": "61.9%",
+        "prosperity_gap_display": "4.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 941
+    },
+    {
+      "place_id": "IDN-ADM1-BANGKA-BELITUNG",
+      "place_name": "Bangka Belitung",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "bangka belitung",
+      "adm1_geo_id": "IDN_2015_ADM1_73609",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.138416,
+      "poverty_context": {
+        "poor300_rate": 0.0044,
+        "poor420_rate": 0.0518,
+        "poor830_rate": 0.6923,
+        "prosperity_gap_2021": 4.1384161,
+        "poor300_display": "0.44%",
+        "poor420_display": "5.18%",
+        "poor830_display": "69.2%",
+        "prosperity_gap_display": "4.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 964
+    },
+    {
+      "place_id": "IDN-ADM1-BANTEN",
+      "place_name": "Banten",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "banten",
+      "adm1_geo_id": "IDN_2015_ADM1_73610",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.538131,
+      "poverty_context": {
+        "poor300_rate": 0.0408,
+        "poor420_rate": 0.1559,
+        "poor830_rate": 0.6633,
+        "prosperity_gap_2021": 4.5381305,
+        "poor300_display": "4.08%",
+        "poor420_display": "15.6%",
+        "poor830_display": "66.3%",
+        "prosperity_gap_display": "4.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 888
+    },
+    {
+      "place_id": "IDN-ADM1-BENGKULU",
+      "place_name": "Bengkulu",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "bengkulu",
+      "adm1_geo_id": "IDN_2015_ADM1_1514",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.838307,
+      "poverty_context": {
+        "poor300_rate": 0.0374,
+        "poor420_rate": 0.1736,
+        "poor830_rate": 0.7311,
+        "prosperity_gap_2021": 4.8383071,
+        "poor300_display": "3.74%",
+        "poor420_display": "17.4%",
+        "poor830_display": "73.1%",
+        "prosperity_gap_display": "4.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 841
+    },
+    {
+      "place_id": "IDN-ADM1-DAERAH-ISTIMEWA-YOGYAKARTA",
+      "place_name": "Daerah Istimewa Yogyakarta",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "daerah istimewa yogyakarta",
+      "adm1_geo_id": "IDN_2015_ADM1_1515",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.552886,
+      "poverty_context": {
+        "poor300_rate": 0.0525,
+        "poor420_rate": 0.1917,
+        "poor830_rate": 0.6443,
+        "prosperity_gap_2021": 4.5528859,
+        "poor300_display": "5.25%",
+        "poor420_display": "19.2%",
+        "poor830_display": "64.4%",
+        "prosperity_gap_display": "4.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 886
+    },
+    {
+      "place_id": "IDN-ADM1-DKI-JAKARTA",
+      "place_name": "Dki Jakarta",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "dki jakarta",
+      "adm1_geo_id": "IDN_2015_ADM1_1516",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.800942,
+      "poverty_context": {
+        "poor300_rate": 0.0202,
+        "poor420_rate": 0.0995,
+        "poor830_rate": 0.5243,
+        "prosperity_gap_2021": 3.8009421,
+        "poor300_display": "2.02%",
+        "poor420_display": "9.95%",
+        "poor830_display": "52.4%",
+        "prosperity_gap_display": "3.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1023
+    },
+    {
+      "place_id": "IDN-ADM1-GORONTALO",
+      "place_name": "Gorontalo",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "gorontalo",
+      "adm1_geo_id": "IDN_2015_ADM1_73611",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.880142,
+      "poverty_context": {
+        "poor300_rate": 0.1722,
+        "poor420_rate": 0.3628,
+        "poor830_rate": 0.7117,
+        "prosperity_gap_2021": 5.880142,
+        "poor300_display": "17.2%",
+        "poor420_display": "36.3%",
+        "poor830_display": "71.2%",
+        "prosperity_gap_display": "5.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 694
+    },
+    {
+      "place_id": "IDN-ADM1-JAMBI",
+      "place_name": "Jambi",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "jambi",
+      "adm1_geo_id": "IDN_2015_ADM1_1518",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.673573,
+      "poverty_context": {
+        "poor300_rate": 0.0335,
+        "poor420_rate": 0.1664,
+        "poor830_rate": 0.6987,
+        "prosperity_gap_2021": 4.6735732,
+        "poor300_display": "3.35%",
+        "poor420_display": "16.6%",
+        "poor830_display": "69.9%",
+        "prosperity_gap_display": "4.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 865
+    },
+    {
+      "place_id": "IDN-ADM1-JAWA-BARAT",
+      "place_name": "Jawa Barat",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "jawa barat",
+      "adm1_geo_id": "IDN_2015_ADM1_73613",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.025999,
+      "poverty_context": {
+        "poor300_rate": 0.0782,
+        "poor420_rate": 0.2473,
+        "poor830_rate": 0.684,
+        "prosperity_gap_2021": 5.0259985,
+        "poor300_display": "7.82%",
+        "poor420_display": "24.7%",
+        "poor830_display": "68.4%",
+        "prosperity_gap_display": "5.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 802
+    },
+    {
+      "place_id": "IDN-ADM1-JAWA-TENGAH",
+      "place_name": "Jawa Tengah",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "jawa tengah",
+      "adm1_geo_id": "IDN_2015_ADM1_1520",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.987703,
+      "poverty_context": {
+        "poor300_rate": 0.0741,
+        "poor420_rate": 0.2372,
+        "poor830_rate": 0.6864,
+        "prosperity_gap_2021": 4.9877026,
+        "poor300_display": "7.41%",
+        "poor420_display": "23.7%",
+        "poor830_display": "68.6%",
+        "prosperity_gap_display": "4.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 808
+    },
+    {
+      "place_id": "IDN-ADM1-JAWA-TIMUR",
+      "place_name": "Jawa Timur",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "jawa timur",
+      "adm1_geo_id": "IDN_2015_ADM1_1521",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.781493,
+      "poverty_context": {
+        "poor300_rate": 0.0475,
+        "poor420_rate": 0.1983,
+        "poor830_rate": 0.6902,
+        "prosperity_gap_2021": 4.7814927,
+        "poor300_display": "4.75%",
+        "poor420_display": "19.8%",
+        "poor830_display": "69.0%",
+        "prosperity_gap_display": "4.78"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 852
+    },
+    {
+      "place_id": "IDN-ADM1-KALIMANTAN-BARAT",
+      "place_name": "Kalimantan Barat",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "kalimantan barat",
+      "adm1_geo_id": "IDN_2015_ADM1_1522",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.302656,
+      "poverty_context": {
+        "poor300_rate": 0.0668,
+        "poor420_rate": 0.2513,
+        "poor830_rate": 0.7595,
+        "prosperity_gap_2021": 5.3026557,
+        "poor300_display": "6.68%",
+        "poor420_display": "25.1%",
+        "poor830_display": "75.9%",
+        "prosperity_gap_display": "5.30"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 766
+    },
+    {
+      "place_id": "IDN-ADM1-KALIMANTAN-SELATAN",
+      "place_name": "Kalimantan Selatan",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "kalimantan selatan",
+      "adm1_geo_id": "IDN_2015_ADM1_1523",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.63047,
+      "poverty_context": {
+        "poor300_rate": 0.0227,
+        "poor420_rate": 0.1534,
+        "poor830_rate": 0.7153,
+        "prosperity_gap_2021": 4.63047,
+        "poor300_display": "2.27%",
+        "poor420_display": "15.3%",
+        "poor830_display": "71.5%",
+        "prosperity_gap_display": "4.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 872
+    },
+    {
+      "place_id": "IDN-ADM1-KALIMANTAN-TENGAH",
+      "place_name": "Kalimantan Tengah",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "kalimantan tengah",
+      "adm1_geo_id": "IDN_2015_ADM1_1524",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.864585,
+      "poverty_context": {
+        "poor300_rate": 0.0425,
+        "poor420_rate": 0.2064,
+        "poor830_rate": 0.7006,
+        "prosperity_gap_2021": 4.8645848,
+        "poor300_display": "4.25%",
+        "poor420_display": "20.6%",
+        "poor830_display": "70.1%",
+        "prosperity_gap_display": "4.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 836
+    },
+    {
+      "place_id": "IDN-ADM1-KALIMANTAN-TIMUR",
+      "place_name": "Kalimantan Timur",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "kalimantan timur",
+      "adm1_geo_id": "IDN_2015_ADM1_1525",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.394231,
+      "poverty_context": {
+        "poor300_rate": 0.0249,
+        "poor420_rate": 0.1371,
+        "poor830_rate": 0.6633,
+        "prosperity_gap_2021": 4.3942313,
+        "poor300_display": "2.49%",
+        "poor420_display": "13.7%",
+        "poor830_display": "66.3%",
+        "prosperity_gap_display": "4.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 905
+    },
+    {
+      "place_id": "IDN-ADM1-KEPULAUAN-RIAU",
+      "place_name": "Kepulauan-riau",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "kepulauan riau",
+      "adm1_geo_id": "IDN_2015_ADM1_73614",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.850692,
+      "poverty_context": {
+        "poor300_rate": 0.0139,
+        "poor420_rate": 0.0901,
+        "poor830_rate": 0.543,
+        "prosperity_gap_2021": 3.8506924,
+        "poor300_display": "1.39%",
+        "poor420_display": "9.01%",
+        "poor830_display": "54.3%",
+        "prosperity_gap_display": "3.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1014
+    },
+    {
+      "place_id": "IDN-ADM1-LAMPUNG",
+      "place_name": "Lampung",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "lampung",
+      "adm1_geo_id": "IDN_2015_ADM1_1526",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.89069,
+      "poverty_context": {
+        "poor300_rate": 0.0384,
+        "poor420_rate": 0.1871,
+        "poor830_rate": 0.7267,
+        "prosperity_gap_2021": 4.8906902,
+        "poor300_display": "3.84%",
+        "poor420_display": "18.7%",
+        "poor830_display": "72.7%",
+        "prosperity_gap_display": "4.89"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 829
+    },
+    {
+      "place_id": "IDN-ADM1-MALUKU",
+      "place_name": "Maluku",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "maluku",
+      "adm1_geo_id": "IDN_2015_ADM1_73615",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.61971,
+      "poverty_context": {
+        "poor300_rate": 0.1583,
+        "poor420_rate": 0.4091,
+        "poor830_rate": 0.9042,
+        "prosperity_gap_2021": 6.6197099,
+        "poor300_display": "15.8%",
+        "poor420_display": "40.9%",
+        "poor830_display": "90.4%",
+        "prosperity_gap_display": "6.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 616
+    },
+    {
+      "place_id": "IDN-ADM1-MALUKU-UTARA",
+      "place_name": "Maluku Utara",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "maluku utara",
+      "adm1_geo_id": "IDN_2015_ADM1_73616",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.548341,
+      "poverty_context": {
+        "poor300_rate": 0.143,
+        "poor420_rate": 0.434,
+        "poor830_rate": 0.8668,
+        "prosperity_gap_2021": 6.5483406,
+        "poor300_display": "14.3%",
+        "poor420_display": "43.4%",
+        "poor830_display": "86.7%",
+        "prosperity_gap_display": "6.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 627
+    },
+    {
+      "place_id": "IDN-ADM1-NANGROE-ACEH-DARUSSALAM",
+      "place_name": "Nangroe Aceh Darussalam",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "nangroe aceh darussalam",
+      "adm1_geo_id": "IDN_2015_ADM1_1512",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.883214,
+      "poverty_context": {
+        "poor300_rate": 0.0504,
+        "poor420_rate": 0.1803,
+        "poor830_rate": 0.7251,
+        "prosperity_gap_2021": 4.8832142,
+        "poor300_display": "5.04%",
+        "poor420_display": "18.0%",
+        "poor830_display": "72.5%",
+        "prosperity_gap_display": "4.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 832
+    },
+    {
+      "place_id": "IDN-ADM1-NUSATENGGARA-BARAT",
+      "place_name": "Nusatenggara Barat",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "nusatenggara barat",
+      "adm1_geo_id": "IDN_2015_ADM1_1528",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.786101,
+      "poverty_context": {
+        "poor300_rate": 0.0732,
+        "poor420_rate": 0.2018,
+        "poor830_rate": 0.6418,
+        "prosperity_gap_2021": 4.7861009,
+        "poor300_display": "7.32%",
+        "poor420_display": "20.2%",
+        "poor830_display": "64.2%",
+        "prosperity_gap_display": "4.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 850
+    },
+    {
+      "place_id": "IDN-ADM1-NUSATENGGARA-TIMUR",
+      "place_name": "Nusatenggara Timur",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "nusatenggara timur",
+      "adm1_geo_id": "IDN_2015_ADM1_1529",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.679565,
+      "poverty_context": {
+        "poor300_rate": 0.2628,
+        "poor420_rate": 0.5562,
+        "poor830_rate": 0.8925,
+        "prosperity_gap_2021": 7.6795651,
+        "poor300_display": "26.3%",
+        "poor420_display": "55.6%",
+        "poor830_display": "89.3%",
+        "prosperity_gap_display": "7.68"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 531
+    },
+    {
+      "place_id": "IDN-ADM1-PAPUA",
+      "place_name": "Papua",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "papua",
+      "adm1_geo_id": "IDN_2015_ADM1_73617",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.328247,
+      "poverty_context": {
+        "poor300_rate": 0.3516,
+        "poor420_rate": 0.5337,
+        "poor830_rate": 0.8515,
+        "prosperity_gap_2021": 8.3282472,
+        "poor300_display": "35.2%",
+        "poor420_display": "53.4%",
+        "poor830_display": "85.2%",
+        "prosperity_gap_display": "8.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 475
+    },
+    {
+      "place_id": "IDN-ADM1-PAPUA-BARAT",
+      "place_name": "Papua Barat",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "papua barat",
+      "adm1_geo_id": "IDN_2015_ADM1_73612",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.46854,
+      "poverty_context": {
+        "poor300_rate": 0.203,
+        "poor420_rate": 0.3657,
+        "poor830_rate": 0.7794,
+        "prosperity_gap_2021": 6.4685403,
+        "poor300_display": "20.3%",
+        "poor420_display": "36.6%",
+        "poor830_display": "77.9%",
+        "prosperity_gap_display": "6.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 633
+    },
+    {
+      "place_id": "IDN-ADM1-RIAU",
+      "place_name": "Riau",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "riau",
+      "adm1_geo_id": "IDN_2015_ADM1_73618",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.553077,
+      "poverty_context": {
+        "poor300_rate": 0.0248,
+        "poor420_rate": 0.143,
+        "poor830_rate": 0.7193,
+        "prosperity_gap_2021": 4.5530772,
+        "poor300_display": "2.48%",
+        "poor420_display": "14.3%",
+        "poor830_display": "71.9%",
+        "prosperity_gap_display": "4.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 885
+    },
+    {
+      "place_id": "IDN-ADM1-SULAWESI-BARAT",
+      "place_name": "Sulawesi Barat",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "sulawesi barat",
+      "adm1_geo_id": "IDN_2015_ADM1_73619",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.906137,
+      "poverty_context": {
+        "poor300_rate": 0.1313,
+        "poor420_rate": 0.3547,
+        "poor830_rate": 0.7792,
+        "prosperity_gap_2021": 5.9061372,
+        "poor300_display": "13.1%",
+        "poor420_display": "35.5%",
+        "poor830_display": "77.9%",
+        "prosperity_gap_display": "5.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 690
+    },
+    {
+      "place_id": "IDN-ADM1-SULAWESI-SELATAN",
+      "place_name": "Sulawesi Selatan",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "sulawesi selatan",
+      "adm1_geo_id": "IDN_2015_ADM1_73620",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.382124,
+      "poverty_context": {
+        "poor300_rate": 0.113,
+        "poor420_rate": 0.2833,
+        "poor830_rate": 0.6827,
+        "prosperity_gap_2021": 5.3821245,
+        "poor300_display": "11.3%",
+        "poor420_display": "28.3%",
+        "poor830_display": "68.3%",
+        "prosperity_gap_display": "5.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 753
+    },
+    {
+      "place_id": "IDN-ADM1-SULAWESI-TENGAH",
+      "place_name": "Sulawesi Tengah",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "sulawesi tengah",
+      "adm1_geo_id": "IDN_2015_ADM1_1532",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.472616,
+      "poverty_context": {
+        "poor300_rate": 0.0806,
+        "poor420_rate": 0.2667,
+        "poor830_rate": 0.8029,
+        "prosperity_gap_2021": 5.4726165,
+        "poor300_display": "8.06%",
+        "poor420_display": "26.7%",
+        "poor830_display": "80.3%",
+        "prosperity_gap_display": "5.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 743
+    },
+    {
+      "place_id": "IDN-ADM1-SULAWESI-TENGGARA",
+      "place_name": "Sulawesi Tenggara",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "sulawesi tenggara",
+      "adm1_geo_id": "IDN_2015_ADM1_1533",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.705812,
+      "poverty_context": {
+        "poor300_rate": 0.1391,
+        "poor420_rate": 0.3244,
+        "poor830_rate": 0.7241,
+        "prosperity_gap_2021": 5.7058115,
+        "poor300_display": "13.9%",
+        "poor420_display": "32.4%",
+        "poor830_display": "72.4%",
+        "prosperity_gap_display": "5.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 715
+    },
+    {
+      "place_id": "IDN-ADM1-SULAWESI-UTARA",
+      "place_name": "Sulawesi Utara",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "sulawesi utara",
+      "adm1_geo_id": "IDN_2015_ADM1_73621",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.482821,
+      "poverty_context": {
+        "poor300_rate": 0.1149,
+        "poor420_rate": 0.308,
+        "poor830_rate": 0.707,
+        "prosperity_gap_2021": 5.4828206,
+        "poor300_display": "11.5%",
+        "poor420_display": "30.8%",
+        "poor830_display": "70.7%",
+        "prosperity_gap_display": "5.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 741
+    },
+    {
+      "place_id": "IDN-ADM1-SUMATERA-BARAT",
+      "place_name": "Sumatera Barat",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "sumatera barat",
+      "adm1_geo_id": "IDN_2015_ADM1_1535",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.475983,
+      "poverty_context": {
+        "poor300_rate": 0.0145,
+        "poor420_rate": 0.1134,
+        "poor830_rate": 0.7237,
+        "prosperity_gap_2021": 4.4759834,
+        "poor300_display": "1.45%",
+        "poor420_display": "11.3%",
+        "poor830_display": "72.4%",
+        "prosperity_gap_display": "4.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 897
+    },
+    {
+      "place_id": "IDN-ADM1-SUMATERA-SELATAN",
+      "place_name": "Sumatera Selatan",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "sumatera selatan",
+      "adm1_geo_id": "IDN_2015_ADM1_73622",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.9311,
+      "poverty_context": {
+        "poor300_rate": 0.0542,
+        "poor420_rate": 0.2273,
+        "poor830_rate": 0.6795,
+        "prosperity_gap_2021": 4.9311002,
+        "poor300_display": "5.42%",
+        "poor420_display": "22.7%",
+        "poor830_display": "68.0%",
+        "prosperity_gap_display": "4.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 818
+    },
+    {
+      "place_id": "IDN-ADM1-SUMATERA-UTARA",
+      "place_name": "Sumatera Utara",
+      "parent_place_id": "IDN",
+      "parent_place_name": "Indonesia",
+      "iso3": "IDN",
+      "source_iso3": "IDN",
+      "geometry_level": "adm1",
+      "adm1_key": "sumatera utara",
+      "adm1_geo_id": "IDN_2015_ADM1_1537",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.874015,
+      "poverty_context": {
+        "poor300_rate": 0.0342,
+        "poor420_rate": 0.1659,
+        "poor830_rate": 0.7652,
+        "prosperity_gap_2021": 4.8740146,
+        "poor300_display": "3.42%",
+        "poor420_display": "16.6%",
+        "poor830_display": "76.5%",
+        "prosperity_gap_display": "4.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 833
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "DJI",
+  "parent_place_name": "Djibouti",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 6,
+  "static_page_count": 1,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "DJI-ADM1-ALI-SABIEH",
+      "place_name": "Ali Sabieh",
+      "parent_place_id": "DJI",
+      "parent_place_name": "Djibouti",
+      "iso3": "DJI",
+      "source_iso3": "DJI",
+      "geometry_level": "adm1",
+      "adm1_key": "ali sabieh",
+      "adm1_geo_id": "DJI_2015_DKx_70_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DJI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.105197,
+      "poverty_context": {
+        "poor300_rate": 0.2732,
+        "poor420_rate": 0.4388,
+        "poor830_rate": 0.7786,
+        "prosperity_gap_2021": 8.1051969,
+        "poor300_display": "27.3%",
+        "poor420_display": "43.9%",
+        "poor830_display": "77.9%",
+        "prosperity_gap_display": "8.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 493
+    },
+    {
+      "place_id": "DJI-ADM1-ARTA",
+      "place_name": "Arta",
+      "parent_place_id": "DJI",
+      "parent_place_name": "Djibouti",
+      "iso3": "DJI",
+      "source_iso3": "DJI",
+      "geometry_level": "adm1",
+      "adm1_key": "arta",
+      "adm1_geo_id": "DJI_2015_DKx_70_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DJI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.946198,
+      "poverty_context": {
+        "poor300_rate": 0.3284,
+        "poor420_rate": 0.5634,
+        "poor830_rate": 0.8515,
+        "prosperity_gap_2021": 8.9461979,
+        "poor300_display": "32.8%",
+        "poor420_display": "56.3%",
+        "poor830_display": "85.2%",
+        "prosperity_gap_display": "8.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 422
+    },
+    {
+      "place_id": "DJI-ADM1-DIKHIL",
+      "place_name": "Dikhil",
+      "parent_place_id": "DJI",
+      "parent_place_name": "Djibouti",
+      "iso3": "DJI",
+      "source_iso3": "DJI",
+      "geometry_level": "adm1",
+      "adm1_key": "dikhil",
+      "adm1_geo_id": "DJI_2015_DKx_70_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DJI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.81772,
+      "poverty_context": {
+        "poor300_rate": 0.5326,
+        "poor420_rate": 0.6874,
+        "poor830_rate": 0.927,
+        "prosperity_gap_2021": 13.81772,
+        "poor300_display": "53.3%",
+        "poor420_display": "68.7%",
+        "poor830_display": "92.7%",
+        "prosperity_gap_display": "13.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 160
+    },
+    {
+      "place_id": "DJI-ADM1-DJIBOUTII",
+      "place_name": "Djiboutii",
+      "parent_place_id": "DJI",
+      "parent_place_name": "Djibouti",
+      "iso3": "DJI",
+      "source_iso3": "DJI",
+      "geometry_level": "adm1",
+      "adm1_key": "djiboutii",
+      "adm1_geo_id": "DJI_2015_DKx_70_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DJI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.622422,
+      "poverty_context": {
+        "poor300_rate": 0.1239,
+        "poor420_rate": 0.2827,
+        "poor830_rate": 0.7,
+        "prosperity_gap_2021": 5.6224218,
+        "poor300_display": "12.4%",
+        "poor420_display": "28.3%",
+        "poor830_display": "70.0%",
+        "prosperity_gap_display": "5.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 724
+    },
+    {
+      "place_id": "DJI-ADM1-OBOCK",
+      "place_name": "Obock",
+      "parent_place_id": "DJI",
+      "parent_place_name": "Djibouti",
+      "iso3": "DJI",
+      "source_iso3": "DJI",
+      "geometry_level": "adm1",
+      "adm1_key": "obock",
+      "adm1_geo_id": "DJI_2015_DKx_70_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DJI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.438185,
+      "poverty_context": {
+        "poor300_rate": 0.4221,
+        "poor420_rate": 0.5663,
+        "poor830_rate": 0.812,
+        "prosperity_gap_2021": 9.4381845,
+        "poor300_display": "42.2%",
+        "poor420_display": "56.6%",
+        "poor830_display": "81.2%",
+        "prosperity_gap_display": "9.44"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 388
+    },
+    {
+      "place_id": "DJI-ADM1-TADJOURA",
+      "place_name": "Tadjoura",
+      "parent_place_id": "DJI",
+      "parent_place_name": "Djibouti",
+      "iso3": "DJI",
+      "source_iso3": "DJI",
+      "geometry_level": "adm1",
+      "adm1_key": "tadjoura",
+      "adm1_geo_id": "DJI_2015_DKx_70_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/DJI/adm1/tadjoura/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DJI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.264254,
+      "poverty_context": {
+        "poor300_rate": 0.679,
+        "poor420_rate": 0.7893,
+        "poor830_rate": 0.947,
+        "prosperity_gap_2021": 19.264254,
+        "poor300_display": "67.9%",
+        "poor420_display": "78.9%",
+        "poor830_display": "94.7%",
+        "prosperity_gap_display": "19.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 71
+    }
+  ]
+}

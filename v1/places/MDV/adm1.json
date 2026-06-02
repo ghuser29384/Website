@@ -1,0 +1,805 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "MDV",
+  "parent_place_name": "Maldives",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 18,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "MDV-ADM1-ALIFU-ALIFU",
+      "place_name": "Alifu Alifu",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "alifu alifu",
+      "adm1_geo_id": "MDV_2015_ADM1_1905",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.576113,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1645,
+        "prosperity_gap_2021": 2.5761127,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "16.4%",
+        "prosperity_gap_display": "2.58"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1273
+    },
+    {
+      "place_id": "MDV-ADM1-ALIFU-DHAALU",
+      "place_name": "Alifu Dhaalu",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "alifu dhaalu",
+      "adm1_geo_id": "MDV_2015_ADM1_1906",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.835188,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0362,
+        "prosperity_gap_2021": 1.8351882,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "3.62%",
+        "prosperity_gap_display": "1.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1514
+    },
+    {
+      "place_id": "MDV-ADM1-BAA",
+      "place_name": "Baa",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "baa",
+      "adm1_geo_id": "MDV_2015_ADM1_1907",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.850761,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0298,
+        "prosperity_gap_2021": 1.8507605,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "2.98%",
+        "prosperity_gap_display": "1.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1509
+    },
+    {
+      "place_id": "MDV-ADM1-DHAALU",
+      "place_name": "Dhaalu",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "dhaalu",
+      "adm1_geo_id": "MDV_2015_ADM1_1908",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.111546,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0472,
+        "prosperity_gap_2021": 2.1115459,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "4.72%",
+        "prosperity_gap_display": "2.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1429
+    },
+    {
+      "place_id": "MDV-ADM1-FAAFU",
+      "place_name": "Faafu",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "faafu",
+      "adm1_geo_id": "MDV_2015_ADM1_1909",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.177757,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0816,
+        "prosperity_gap_2021": 2.1777565,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "8.16%",
+        "prosperity_gap_display": "2.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1400
+    },
+    {
+      "place_id": "MDV-ADM1-GAAFU-ALIFU",
+      "place_name": "Gaafu Alifu",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "gaafu alifu",
+      "adm1_geo_id": "MDV_2015_ADM1_1910",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.214429,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1215,
+        "prosperity_gap_2021": 2.2144287,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "12.2%",
+        "prosperity_gap_display": "2.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1389
+    },
+    {
+      "place_id": "MDV-ADM1-GAAFU-DHAALU",
+      "place_name": "Gaafu Dhaalu",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "gaafu dhaalu",
+      "adm1_geo_id": "MDV_2015_ADM1_1911",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.403595,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1683,
+        "prosperity_gap_2021": 2.4035946,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "16.8%",
+        "prosperity_gap_display": "2.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1324
+    },
+    {
+      "place_id": "MDV-ADM1-HAA-ALIFU",
+      "place_name": "Haa Alifu",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "haa alifu",
+      "adm1_geo_id": "MDV_2015_ADM1_1913",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.426298,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1555,
+        "prosperity_gap_2021": 2.4262976,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "15.6%",
+        "prosperity_gap_display": "2.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1316
+    },
+    {
+      "place_id": "MDV-ADM1-HAA-DHAALU",
+      "place_name": "Haa Dhaalu",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "haa dhaalu",
+      "adm1_geo_id": "MDV_2015_ADM1_1914",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.374262,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.14,
+        "prosperity_gap_2021": 2.3742616,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "14.0%",
+        "prosperity_gap_display": "2.37"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1334
+    },
+    {
+      "place_id": "MDV-ADM1-KAAFU",
+      "place_name": "Kaafu",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "kaafu",
+      "adm1_geo_id": "MDV_2015_ADM1_1915",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.192603,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0929,
+        "prosperity_gap_2021": 2.1926034,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "9.29%",
+        "prosperity_gap_display": "2.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1396
+    },
+    {
+      "place_id": "MDV-ADM1-LAAMU",
+      "place_name": "Laamu",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "laamu",
+      "adm1_geo_id": "MDV_2015_ADM1_1916",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.068742,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0812,
+        "prosperity_gap_2021": 2.0687421,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "8.12%",
+        "prosperity_gap_display": "2.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1441
+    },
+    {
+      "place_id": "MDV-ADM1-LHAVIYANI",
+      "place_name": "Lhaviyani",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "lhaviyani",
+      "adm1_geo_id": "MDV_2015_ADM1_1917",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.97307,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0479,
+        "prosperity_gap_2021": 1.9730699,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "4.79%",
+        "prosperity_gap_display": "1.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1479
+    },
+    {
+      "place_id": "MDV-ADM1-MALE",
+      "place_name": "Male'",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "male",
+      "adm1_geo_id": "MDV_2015_ADM1_1918",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.284165,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0104,
+        "prosperity_gap_2021": 1.2841648,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.04%",
+        "prosperity_gap_display": "1.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1637
+    },
+    {
+      "place_id": "MDV-ADM1-RAA",
+      "place_name": "Raa",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "raa",
+      "adm1_geo_id": "MDV_2015_ADM1_1921",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.52541,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.209,
+        "prosperity_gap_2021": 2.52541,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "20.9%",
+        "prosperity_gap_display": "2.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1286
+    },
+    {
+      "place_id": "MDV-ADM1-SEENU",
+      "place_name": "Seenu",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "seenu",
+      "adm1_geo_id": "MDV_2015_ADM1_1922",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.04758,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0687,
+        "prosperity_gap_2021": 2.0475798,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "6.87%",
+        "prosperity_gap_display": "2.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1448
+    },
+    {
+      "place_id": "MDV-ADM1-SHAVIYANI",
+      "place_name": "Shaviyani",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "shaviyani",
+      "adm1_geo_id": "MDV_2015_ADM1_1923",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.045154,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.063,
+        "prosperity_gap_2021": 2.0451542,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "6.30%",
+        "prosperity_gap_display": "2.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1449
+    },
+    {
+      "place_id": "MDV-ADM1-THAA",
+      "place_name": "Thaa",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "thaa",
+      "adm1_geo_id": "MDV_2015_ADM1_1924",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.501834,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1926,
+        "prosperity_gap_2021": 2.5018337,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "19.3%",
+        "prosperity_gap_display": "2.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1297
+    },
+    {
+      "place_id": "MDV-ADM1-VAAVU",
+      "place_name": "Vaavu",
+      "parent_place_id": "MDV",
+      "parent_place_name": "Maldives",
+      "iso3": "MDV",
+      "source_iso3": "MDV",
+      "geometry_level": "adm1",
+      "adm1_key": "vaavu",
+      "adm1_geo_id": "MDV_2015_ADM1_1925",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.977006,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0276,
+        "prosperity_gap_2021": 1.9770059,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "2.76%",
+        "prosperity_gap_display": "1.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1478
+    }
+  ]
+}

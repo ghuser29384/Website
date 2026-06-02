@@ -1,0 +1,321 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "BLR",
+  "parent_place_name": "Belarus",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 7,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "BLR-ADM1-BREST",
+      "place_name": "Brest",
+      "parent_place_id": "BLR",
+      "parent_place_name": "Belarus",
+      "iso3": "BLR",
+      "source_iso3": "BLR",
+      "geometry_level": "adm1",
+      "adm1_key": "brest",
+      "adm1_geo_id": "BLR_2015_ADM1_593",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.526956,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0056,
+        "prosperity_gap_2021": 1.5269559,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.56%",
+        "prosperity_gap_display": "1.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1590
+    },
+    {
+      "place_id": "BLR-ADM1-GOMEL",
+      "place_name": "Gomel",
+      "parent_place_id": "BLR",
+      "parent_place_name": "Belarus",
+      "iso3": "BLR",
+      "source_iso3": "BLR",
+      "geometry_level": "adm1",
+      "adm1_key": "gomel",
+      "adm1_geo_id": "BLR_2015_ADM1_594",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.61174,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0272,
+        "prosperity_gap_2021": 1.6117397,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "2.72%",
+        "prosperity_gap_display": "1.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1567
+    },
+    {
+      "place_id": "BLR-ADM1-GRODNO",
+      "place_name": "Grodno",
+      "parent_place_id": "BLR",
+      "parent_place_name": "Belarus",
+      "iso3": "BLR",
+      "source_iso3": "BLR",
+      "geometry_level": "adm1",
+      "adm1_key": "grodno",
+      "adm1_geo_id": "BLR_2015_ADM1_595",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.475935,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0051,
+        "prosperity_gap_2021": 1.4759353,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.51%",
+        "prosperity_gap_display": "1.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1600
+    },
+    {
+      "place_id": "BLR-ADM1-MINSK",
+      "place_name": "Minsk",
+      "parent_place_id": "BLR",
+      "parent_place_name": "Belarus",
+      "iso3": "BLR",
+      "source_iso3": "BLR",
+      "geometry_level": "adm1",
+      "adm1_key": "minsk",
+      "adm1_geo_id": "BLR_2015_ADM1_596",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.559137,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0026,
+        "poor830_rate": 0.0244,
+        "prosperity_gap_2021": 1.5591371,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.26%",
+        "poor830_display": "2.44%",
+        "prosperity_gap_display": "1.56"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1581
+    },
+    {
+      "place_id": "BLR-ADM1-MINSK-CITY",
+      "place_name": "Minsk City",
+      "parent_place_id": "BLR",
+      "parent_place_name": "Belarus",
+      "iso3": "BLR",
+      "source_iso3": "BLR",
+      "geometry_level": "adm1",
+      "adm1_key": "minsk city",
+      "adm1_geo_id": "BLR_2015_ADM1_597",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.15452,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0011,
+        "prosperity_gap_2021": 1.1545198,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.11%",
+        "prosperity_gap_display": "1.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1682
+    },
+    {
+      "place_id": "BLR-ADM1-MOGILEV",
+      "place_name": "Mogilev",
+      "parent_place_id": "BLR",
+      "parent_place_name": "Belarus",
+      "iso3": "BLR",
+      "source_iso3": "BLR",
+      "geometry_level": "adm1",
+      "adm1_key": "mogilev",
+      "adm1_geo_id": "BLR_2015_ADM1_598",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.679622,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0023,
+        "poor830_rate": 0.0381,
+        "prosperity_gap_2021": 1.6796221,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.23%",
+        "poor830_display": "3.81%",
+        "prosperity_gap_display": "1.68"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1555
+    },
+    {
+      "place_id": "BLR-ADM1-VITEBSK",
+      "place_name": "Vitebsk",
+      "parent_place_id": "BLR",
+      "parent_place_name": "Belarus",
+      "iso3": "BLR",
+      "source_iso3": "BLR",
+      "geometry_level": "adm1",
+      "adm1_key": "vitebsk",
+      "adm1_geo_id": "BLR_2015_ADM1_599",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.534073,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0117,
+        "prosperity_gap_2021": 1.5340727,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.17%",
+        "prosperity_gap_display": "1.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1587
+    }
+  ]
+}

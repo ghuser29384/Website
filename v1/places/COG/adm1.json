@@ -1,0 +1,541 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "COG",
+  "parent_place_name": "Republic of the Congo",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 12,
+  "static_page_count": 9,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "COG-ADM1-BOUENZA",
+      "place_name": "Bouenza",
+      "parent_place_id": "COG",
+      "parent_place_name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_iso3": "COG",
+      "geometry_level": "adm1",
+      "adm1_key": "bouenza",
+      "adm1_geo_id": "COG_2015_ADM1_970",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/COG/adm1/bouenza/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 20.78639,
+      "poverty_context": {
+        "poor300_rate": 0.8279,
+        "poor420_rate": 0.9171,
+        "poor830_rate": 0.9838,
+        "prosperity_gap_2021": 20.78639,
+        "poor300_display": "82.8%",
+        "poor420_display": "91.7%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "20.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 50
+    },
+    {
+      "place_id": "COG-ADM1-BRAZZAVILLE",
+      "place_name": "Brazzaville",
+      "parent_place_id": "COG",
+      "parent_place_name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_iso3": "COG",
+      "geometry_level": "adm1",
+      "adm1_key": "brazzaville",
+      "adm1_geo_id": "COG_2015_ADM1_190432",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.762893,
+      "poverty_context": {
+        "poor300_rate": 0.2669,
+        "poor420_rate": 0.4538,
+        "poor830_rate": 0.8245,
+        "prosperity_gap_2021": 7.762893,
+        "poor300_display": "26.7%",
+        "poor420_display": "45.4%",
+        "poor830_display": "82.5%",
+        "prosperity_gap_display": "7.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 520
+    },
+    {
+      "place_id": "COG-ADM1-CUVETTE",
+      "place_name": "Cuvette",
+      "parent_place_id": "COG",
+      "parent_place_name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_iso3": "COG",
+      "geometry_level": "adm1",
+      "adm1_key": "cuvette",
+      "adm1_geo_id": "COG_2015_ADM1_971",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/COG/adm1/cuvette/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.90896,
+      "poverty_context": {
+        "poor300_rate": 0.7597,
+        "poor420_rate": 0.8495,
+        "poor830_rate": 0.9478,
+        "prosperity_gap_2021": 19.90896,
+        "poor300_display": "76.0%",
+        "poor420_display": "85.0%",
+        "poor830_display": "94.8%",
+        "prosperity_gap_display": "19.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 60
+    },
+    {
+      "place_id": "COG-ADM1-CUVETTE-OUEST",
+      "place_name": "Cuvette-Ouest",
+      "parent_place_id": "COG",
+      "parent_place_name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_iso3": "COG",
+      "geometry_level": "adm1",
+      "adm1_key": "cuvette ouest",
+      "adm1_geo_id": "COG_2015_ADM1_972",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/COG/adm1/cuvette-ouest/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 28.063226,
+      "poverty_context": {
+        "poor300_rate": 0.8537,
+        "poor420_rate": 0.9152,
+        "poor830_rate": 0.9866,
+        "prosperity_gap_2021": 28.063226,
+        "poor300_display": "85.4%",
+        "poor420_display": "91.5%",
+        "poor830_display": "98.7%",
+        "prosperity_gap_display": "28.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 19
+    },
+    {
+      "place_id": "COG-ADM1-KOUILOU",
+      "place_name": "Kouilou",
+      "parent_place_id": "COG",
+      "parent_place_name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_iso3": "COG",
+      "geometry_level": "adm1",
+      "adm1_key": "kouilou",
+      "adm1_geo_id": "COG_2015_ADM1_190433",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.992406,
+      "poverty_context": {
+        "poor300_rate": 0.6477,
+        "poor420_rate": 0.7754,
+        "poor830_rate": 0.9292,
+        "prosperity_gap_2021": 13.992406,
+        "poor300_display": "64.8%",
+        "poor420_display": "77.5%",
+        "poor830_display": "92.9%",
+        "prosperity_gap_display": "13.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 158
+    },
+    {
+      "place_id": "COG-ADM1-LEKOUMOU",
+      "place_name": "Lekoumou",
+      "parent_place_id": "COG",
+      "parent_place_name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_iso3": "COG",
+      "geometry_level": "adm1",
+      "adm1_key": "lekoumou",
+      "adm1_geo_id": "COG_2015_ADM1_974",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/COG/adm1/lekoumou/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 24.716462,
+      "poverty_context": {
+        "poor300_rate": 0.9024,
+        "poor420_rate": 0.9538,
+        "poor830_rate": 0.9929,
+        "prosperity_gap_2021": 24.716462,
+        "poor300_display": "90.2%",
+        "poor420_display": "95.4%",
+        "poor830_display": "99.3%",
+        "prosperity_gap_display": "24.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 28
+    },
+    {
+      "place_id": "COG-ADM1-LIKOUALA",
+      "place_name": "Likouala",
+      "parent_place_id": "COG",
+      "parent_place_name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_iso3": "COG",
+      "geometry_level": "adm1",
+      "adm1_key": "likouala",
+      "adm1_geo_id": "COG_2015_ADM1_975",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/COG/adm1/likouala/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 22.251286,
+      "poverty_context": {
+        "poor300_rate": 0.7654,
+        "poor420_rate": 0.8435,
+        "poor830_rate": 0.9347,
+        "prosperity_gap_2021": 22.251286,
+        "poor300_display": "76.5%",
+        "poor420_display": "84.4%",
+        "poor830_display": "93.5%",
+        "prosperity_gap_display": "22.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 41
+    },
+    {
+      "place_id": "COG-ADM1-NIARI",
+      "place_name": "Niari",
+      "parent_place_id": "COG",
+      "parent_place_name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_iso3": "COG",
+      "geometry_level": "adm1",
+      "adm1_key": "niari",
+      "adm1_geo_id": "COG_2015_ADM1_976",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/COG/adm1/niari/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 20.294139,
+      "poverty_context": {
+        "poor300_rate": 0.7598,
+        "poor420_rate": 0.8833,
+        "poor830_rate": 0.9759,
+        "prosperity_gap_2021": 20.294139,
+        "poor300_display": "76.0%",
+        "poor420_display": "88.3%",
+        "poor830_display": "97.6%",
+        "prosperity_gap_display": "20.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 55
+    },
+    {
+      "place_id": "COG-ADM1-PLATEAUX",
+      "place_name": "Plateaux",
+      "parent_place_id": "COG",
+      "parent_place_name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_iso3": "COG",
+      "geometry_level": "adm1",
+      "adm1_key": "plateaux",
+      "adm1_geo_id": "COG_2015_ADM1_977",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/COG/adm1/plateaux/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 18.629667,
+      "poverty_context": {
+        "poor300_rate": 0.8202,
+        "poor420_rate": 0.9025,
+        "poor830_rate": 0.9835,
+        "prosperity_gap_2021": 18.629667,
+        "poor300_display": "82.0%",
+        "poor420_display": "90.3%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "18.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 80
+    },
+    {
+      "place_id": "COG-ADM1-POINT-NOIRE",
+      "place_name": "Point-Noire",
+      "parent_place_id": "COG",
+      "parent_place_name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_iso3": "COG",
+      "geometry_level": "adm1",
+      "adm1_key": "point noire",
+      "adm1_geo_id": "COG_2015_ADM1_190434",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.558616,
+      "poverty_context": {
+        "poor300_rate": 0.3469,
+        "poor420_rate": 0.5761,
+        "poor830_rate": 0.8628,
+        "prosperity_gap_2021": 8.5586161,
+        "poor300_display": "34.7%",
+        "poor420_display": "57.6%",
+        "poor830_display": "86.3%",
+        "prosperity_gap_display": "8.56"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 451
+    },
+    {
+      "place_id": "COG-ADM1-POOL",
+      "place_name": "Pool",
+      "parent_place_id": "COG",
+      "parent_place_name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_iso3": "COG",
+      "geometry_level": "adm1",
+      "adm1_key": "pool",
+      "adm1_geo_id": "COG_2015_ADM1_190431",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/COG/adm1/pool/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 20.918222,
+      "poverty_context": {
+        "poor300_rate": 0.774,
+        "poor420_rate": 0.882,
+        "poor830_rate": 0.9735,
+        "prosperity_gap_2021": 20.918222,
+        "poor300_display": "77.4%",
+        "poor420_display": "88.2%",
+        "poor830_display": "97.4%",
+        "prosperity_gap_display": "20.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 48
+    },
+    {
+      "place_id": "COG-ADM1-SANGHA",
+      "place_name": "Sangha",
+      "parent_place_id": "COG",
+      "parent_place_name": "Republic of the Congo",
+      "iso3": "COG",
+      "source_iso3": "COG",
+      "geometry_level": "adm1",
+      "adm1_key": "sangha",
+      "adm1_geo_id": "COG_2015_ADM1_979",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/COG/adm1/sangha/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.173268,
+      "poverty_context": {
+        "poor300_rate": 0.7544,
+        "poor420_rate": 0.8631,
+        "poor830_rate": 0.9826,
+        "prosperity_gap_2021": 19.173268,
+        "poor300_display": "75.4%",
+        "poor420_display": "86.3%",
+        "poor830_display": "98.3%",
+        "prosperity_gap_display": "19.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 73
+    }
+  ]
+}

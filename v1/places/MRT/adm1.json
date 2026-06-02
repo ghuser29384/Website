@@ -1,0 +1,585 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "MRT",
+  "parent_place_name": "Mauritania",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 13,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "MRT-ADM1-ADRAR",
+      "place_name": "Adrar",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "adrar",
+      "adm1_geo_id": "MRT_2015_ADM1_2004",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.154643,
+      "poverty_context": {
+        "poor300_rate": 0.0529,
+        "poor420_rate": 0.2339,
+        "poor830_rate": 0.7326,
+        "prosperity_gap_2021": 5.1546427,
+        "poor300_display": "5.29%",
+        "poor420_display": "23.4%",
+        "poor830_display": "73.3%",
+        "prosperity_gap_display": "5.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 788
+    },
+    {
+      "place_id": "MRT-ADM1-ASSABA",
+      "place_name": "Assaba",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "assaba",
+      "adm1_geo_id": "MRT_2015_ADM1_2005",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.177155,
+      "poverty_context": {
+        "poor300_rate": 0.1632,
+        "poor420_rate": 0.3506,
+        "poor830_rate": 0.7343,
+        "prosperity_gap_2021": 6.1771545,
+        "poor300_display": "16.3%",
+        "poor420_display": "35.1%",
+        "poor830_display": "73.4%",
+        "prosperity_gap_display": "6.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 655
+    },
+    {
+      "place_id": "MRT-ADM1-BRAKNA",
+      "place_name": "Brakna",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "brakna",
+      "adm1_geo_id": "MRT_2015_ADM1_2006",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.600037,
+      "poverty_context": {
+        "poor300_rate": 0.1676,
+        "poor420_rate": 0.3716,
+        "poor830_rate": 0.818,
+        "prosperity_gap_2021": 6.600037,
+        "poor300_display": "16.8%",
+        "poor420_display": "37.2%",
+        "poor830_display": "81.8%",
+        "prosperity_gap_display": "6.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 619
+    },
+    {
+      "place_id": "MRT-ADM1-DAKHLET-NOUADHIBOU",
+      "place_name": "Dakhlet-Nouadhibou",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "dakhlet nouadhibou",
+      "adm1_geo_id": "MRT_2015_ADM1_2007",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.592247,
+      "poverty_context": {
+        "poor300_rate": 0.0045,
+        "poor420_rate": 0.0706,
+        "poor830_rate": 0.4559,
+        "prosperity_gap_2021": 3.592247,
+        "poor300_display": "0.45%",
+        "poor420_display": "7.06%",
+        "poor830_display": "45.6%",
+        "prosperity_gap_display": "3.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1056
+    },
+    {
+      "place_id": "MRT-ADM1-GORGOL",
+      "place_name": "Gorgol",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "gorgol",
+      "adm1_geo_id": "MRT_2015_ADM1_2008",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.960342,
+      "poverty_context": {
+        "poor300_rate": 0.0964,
+        "poor420_rate": 0.3107,
+        "poor830_rate": 0.8364,
+        "prosperity_gap_2021": 5.9603418,
+        "poor300_display": "9.64%",
+        "poor420_display": "31.1%",
+        "poor830_display": "83.6%",
+        "prosperity_gap_display": "5.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 684
+    },
+    {
+      "place_id": "MRT-ADM1-GUIDIMAKHA",
+      "place_name": "Guidimakha",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "guidimakha",
+      "adm1_geo_id": "MRT_2015_ADM1_2009",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.639132,
+      "poverty_context": {
+        "poor300_rate": 0.2227,
+        "poor420_rate": 0.465,
+        "poor830_rate": 0.8189,
+        "prosperity_gap_2021": 7.6391319,
+        "poor300_display": "22.3%",
+        "poor420_display": "46.5%",
+        "poor830_display": "81.9%",
+        "prosperity_gap_display": "7.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 534
+    },
+    {
+      "place_id": "MRT-ADM1-HODH-ECH-CHARGI",
+      "place_name": "Hodh Ech Chargi",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "hodh ech chargi",
+      "adm1_geo_id": "MRT_2015_ADM1_2010",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.900308,
+      "poverty_context": {
+        "poor300_rate": 0.0595,
+        "poor420_rate": 0.1976,
+        "poor830_rate": 0.7049,
+        "prosperity_gap_2021": 4.9003078,
+        "poor300_display": "5.95%",
+        "poor420_display": "19.8%",
+        "poor830_display": "70.5%",
+        "prosperity_gap_display": "4.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 827
+    },
+    {
+      "place_id": "MRT-ADM1-HODH-EL-GHARBI",
+      "place_name": "Hodh El Gharbi",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "hodh el gharbi",
+      "adm1_geo_id": "MRT_2015_ADM1_2011",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.610809,
+      "poverty_context": {
+        "poor300_rate": 0.0945,
+        "poor420_rate": 0.2877,
+        "poor830_rate": 0.8046,
+        "prosperity_gap_2021": 5.6108087,
+        "poor300_display": "9.45%",
+        "poor420_display": "28.8%",
+        "poor830_display": "80.5%",
+        "prosperity_gap_display": "5.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 725
+    },
+    {
+      "place_id": "MRT-ADM1-INCHIRI",
+      "place_name": "Inchiri",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "inchiri",
+      "adm1_geo_id": "MRT_2015_ADM1_2012",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.258993,
+      "poverty_context": {
+        "poor300_rate": 0.0289,
+        "poor420_rate": 0.0878,
+        "poor830_rate": 0.6731,
+        "prosperity_gap_2021": 4.2589935,
+        "poor300_display": "2.89%",
+        "poor420_display": "8.78%",
+        "poor830_display": "67.3%",
+        "prosperity_gap_display": "4.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 936
+    },
+    {
+      "place_id": "MRT-ADM1-NOUAKCHOTT",
+      "place_name": "Nouakchott",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "nouakchott",
+      "adm1_geo_id": "MRT_2015_ADM1_2013",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.281731,
+      "poverty_context": {
+        "poor300_rate": 0.0388,
+        "poor420_rate": 0.1105,
+        "poor830_rate": 0.56,
+        "prosperity_gap_2021": 4.2817305,
+        "poor300_display": "3.88%",
+        "poor420_display": "11.1%",
+        "poor830_display": "56.0%",
+        "prosperity_gap_display": "4.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 927
+    },
+    {
+      "place_id": "MRT-ADM1-TAGANT",
+      "place_name": "Tagant",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "tagant",
+      "adm1_geo_id": "MRT_2015_ADM1_2014",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.155423,
+      "poverty_context": {
+        "poor300_rate": 0.1469,
+        "poor420_rate": 0.3706,
+        "poor830_rate": 0.7939,
+        "prosperity_gap_2021": 6.1554229,
+        "poor300_display": "14.7%",
+        "poor420_display": "37.1%",
+        "poor830_display": "79.4%",
+        "prosperity_gap_display": "6.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 659
+    },
+    {
+      "place_id": "MRT-ADM1-TIRIS-ZEMMOUR",
+      "place_name": "Tiris-Zemmour",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "tiris zemmour",
+      "adm1_geo_id": "MRT_2015_ADM1_2015",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.851081,
+      "poverty_context": {
+        "poor300_rate": 0.0415,
+        "poor420_rate": 0.0992,
+        "poor830_rate": 0.4591,
+        "prosperity_gap_2021": 3.851081,
+        "poor300_display": "4.15%",
+        "poor420_display": "9.92%",
+        "poor830_display": "45.9%",
+        "prosperity_gap_display": "3.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1013
+    },
+    {
+      "place_id": "MRT-ADM1-TRARZA",
+      "place_name": "Trarza",
+      "parent_place_id": "MRT",
+      "parent_place_name": "Mauritania",
+      "iso3": "MRT",
+      "source_iso3": "MRT",
+      "geometry_level": "adm1",
+      "adm1_key": "trarza",
+      "adm1_geo_id": "MRT_2015_ADM1_2016",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.1049,
+      "poverty_context": {
+        "poor300_rate": 0.0744,
+        "poor420_rate": 0.2168,
+        "poor830_rate": 0.7094,
+        "prosperity_gap_2021": 5.1048995,
+        "poor300_display": "7.44%",
+        "poor420_display": "21.7%",
+        "poor830_display": "70.9%",
+        "prosperity_gap_display": "5.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 794
+    }
+  ]
+}

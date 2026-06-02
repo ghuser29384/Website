@@ -1,0 +1,2081 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "KEN",
+  "parent_place_name": "Kenya",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 47,
+  "static_page_count": 4,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "KEN-ADM1-BARINGO",
+      "place_name": "Baringo",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "baringo",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.1_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.329862,
+      "poverty_context": {
+        "poor300_rate": 0.5931,
+        "poor420_rate": 0.7866,
+        "poor830_rate": 0.9583,
+        "prosperity_gap_2021": 11.329862,
+        "poor300_display": "59.3%",
+        "poor420_display": "78.7%",
+        "poor830_display": "95.8%",
+        "prosperity_gap_display": "11.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 255
+    },
+    {
+      "place_id": "KEN-ADM1-BOMET",
+      "place_name": "Bomet",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "bomet",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.2_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.290183,
+      "poverty_context": {
+        "poor300_rate": 0.6451,
+        "poor420_rate": 0.802,
+        "poor830_rate": 0.9744,
+        "prosperity_gap_2021": 11.290183,
+        "poor300_display": "64.5%",
+        "poor420_display": "80.2%",
+        "poor830_display": "97.4%",
+        "prosperity_gap_display": "11.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 261
+    },
+    {
+      "place_id": "KEN-ADM1-BUNGOMA",
+      "place_name": "Bungoma",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "bungoma",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.3_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.030279,
+      "poverty_context": {
+        "poor300_rate": 0.6294,
+        "poor420_rate": 0.7818,
+        "poor830_rate": 0.97,
+        "prosperity_gap_2021": 11.030279,
+        "poor300_display": "62.9%",
+        "poor420_display": "78.2%",
+        "poor830_display": "97.0%",
+        "prosperity_gap_display": "11.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 281
+    },
+    {
+      "place_id": "KEN-ADM1-BUSIA",
+      "place_name": "Busia",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "busia",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.4_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.785311,
+      "poverty_context": {
+        "poor300_rate": 0.6224,
+        "poor420_rate": 0.7915,
+        "poor830_rate": 0.9761,
+        "prosperity_gap_2021": 12.785311,
+        "poor300_display": "62.2%",
+        "poor420_display": "79.1%",
+        "poor830_display": "97.6%",
+        "prosperity_gap_display": "12.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 187
+    },
+    {
+      "place_id": "KEN-ADM1-ELGEYO-MARAKWET",
+      "place_name": "Elgeyo-Marakwet",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "elgeyo marakwet",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.5_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.252613,
+      "poverty_context": {
+        "poor300_rate": 0.6828,
+        "poor420_rate": 0.845,
+        "poor830_rate": 0.9711,
+        "prosperity_gap_2021": 12.252613,
+        "poor300_display": "68.3%",
+        "poor420_display": "84.5%",
+        "poor830_display": "97.1%",
+        "prosperity_gap_display": "12.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 203
+    },
+    {
+      "place_id": "KEN-ADM1-EMBU",
+      "place_name": "Embu",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "embu",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.6_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.615066,
+      "poverty_context": {
+        "poor300_rate": 0.3096,
+        "poor420_rate": 0.5874,
+        "poor830_rate": 0.9045,
+        "prosperity_gap_2021": 7.615066,
+        "poor300_display": "31.0%",
+        "poor420_display": "58.7%",
+        "poor830_display": "90.5%",
+        "prosperity_gap_display": "7.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 536
+    },
+    {
+      "place_id": "KEN-ADM1-GARISSA",
+      "place_name": "Garissa",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "garissa",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.7_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.248992,
+      "poverty_context": {
+        "poor300_rate": 0.706,
+        "poor420_rate": 0.8672,
+        "poor830_rate": 0.9941,
+        "prosperity_gap_2021": 15.248992,
+        "poor300_display": "70.6%",
+        "poor420_display": "86.7%",
+        "poor830_display": "99.4%",
+        "prosperity_gap_display": "15.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 131
+    },
+    {
+      "place_id": "KEN-ADM1-HOMA-BAY",
+      "place_name": "Homa Bay",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "homa bay",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.8_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.447059,
+      "poverty_context": {
+        "poor300_rate": 0.4182,
+        "poor420_rate": 0.7169,
+        "poor830_rate": 0.9356,
+        "prosperity_gap_2021": 9.4470592,
+        "poor300_display": "41.8%",
+        "poor420_display": "71.7%",
+        "poor830_display": "93.6%",
+        "prosperity_gap_display": "9.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 387
+    },
+    {
+      "place_id": "KEN-ADM1-ISIOLO",
+      "place_name": "Isiolo",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "isiolo",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.9_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.27326,
+      "poverty_context": {
+        "poor300_rate": 0.5518,
+        "poor420_rate": 0.7695,
+        "poor830_rate": 0.9577,
+        "prosperity_gap_2021": 11.27326,
+        "poor300_display": "55.2%",
+        "poor420_display": "77.0%",
+        "poor830_display": "95.8%",
+        "prosperity_gap_display": "11.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 263
+    },
+    {
+      "place_id": "KEN-ADM1-KAJIADO",
+      "place_name": "Kajiado",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kajiado",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.10_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.902585,
+      "poverty_context": {
+        "poor300_rate": 0.4034,
+        "poor420_rate": 0.6485,
+        "poor830_rate": 0.8801,
+        "prosperity_gap_2021": 8.9025853,
+        "poor300_display": "40.3%",
+        "poor420_display": "64.8%",
+        "poor830_display": "88.0%",
+        "prosperity_gap_display": "8.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 424
+    },
+    {
+      "place_id": "KEN-ADM1-KAKAMEGA",
+      "place_name": "Kakamega",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kakamega",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.11_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.858801,
+      "poverty_context": {
+        "poor300_rate": 0.5169,
+        "poor420_rate": 0.7594,
+        "poor830_rate": 0.9363,
+        "prosperity_gap_2021": 9.8588009,
+        "poor300_display": "51.7%",
+        "poor420_display": "75.9%",
+        "poor830_display": "93.6%",
+        "prosperity_gap_display": "9.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 348
+    },
+    {
+      "place_id": "KEN-ADM1-KERICHO",
+      "place_name": "Kericho",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kericho",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.12_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.852972,
+      "poverty_context": {
+        "poor300_rate": 0.5292,
+        "poor420_rate": 0.771,
+        "poor830_rate": 0.9298,
+        "prosperity_gap_2021": 9.8529719,
+        "poor300_display": "52.9%",
+        "poor420_display": "77.1%",
+        "poor830_display": "93.0%",
+        "prosperity_gap_display": "9.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 350
+    },
+    {
+      "place_id": "KEN-ADM1-KIAMBU",
+      "place_name": "Kiambu",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kiambu",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.13_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.478144,
+      "poverty_context": {
+        "poor300_rate": 0.2003,
+        "poor420_rate": 0.4169,
+        "poor830_rate": 0.7889,
+        "prosperity_gap_2021": 6.4781442,
+        "poor300_display": "20.0%",
+        "poor420_display": "41.7%",
+        "poor830_display": "78.9%",
+        "prosperity_gap_display": "6.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 632
+    },
+    {
+      "place_id": "KEN-ADM1-KILIFI",
+      "place_name": "Kilifi",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kilifi",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.14_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.05939,
+      "poverty_context": {
+        "poor300_rate": 0.5552,
+        "poor420_rate": 0.7083,
+        "poor830_rate": 0.9268,
+        "prosperity_gap_2021": 11.05939,
+        "poor300_display": "55.5%",
+        "poor420_display": "70.8%",
+        "poor830_display": "92.7%",
+        "prosperity_gap_display": "11.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 279
+    },
+    {
+      "place_id": "KEN-ADM1-KIRINYAGA",
+      "place_name": "Kirinyaga",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kirinyaga",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.15_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.782087,
+      "poverty_context": {
+        "poor300_rate": 0.1956,
+        "poor420_rate": 0.4754,
+        "poor830_rate": 0.8379,
+        "prosperity_gap_2021": 6.7820872,
+        "poor300_display": "19.6%",
+        "poor420_display": "47.5%",
+        "poor830_display": "83.8%",
+        "prosperity_gap_display": "6.78"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 602
+    },
+    {
+      "place_id": "KEN-ADM1-KISII",
+      "place_name": "Kisii",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kisii",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.16_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.591523,
+      "poverty_context": {
+        "poor300_rate": 0.4561,
+        "poor420_rate": 0.6827,
+        "poor830_rate": 0.9197,
+        "prosperity_gap_2021": 9.5915228,
+        "poor300_display": "45.6%",
+        "poor420_display": "68.3%",
+        "poor830_display": "92.0%",
+        "prosperity_gap_display": "9.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 375
+    },
+    {
+      "place_id": "KEN-ADM1-KISUMU",
+      "place_name": "Kisumu",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kisumu",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.17_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.048517,
+      "poverty_context": {
+        "poor300_rate": 0.4233,
+        "poor420_rate": 0.6584,
+        "poor830_rate": 0.9243,
+        "prosperity_gap_2021": 9.0485166,
+        "poor300_display": "42.3%",
+        "poor420_display": "65.8%",
+        "poor830_display": "92.4%",
+        "prosperity_gap_display": "9.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 416
+    },
+    {
+      "place_id": "KEN-ADM1-KITUI",
+      "place_name": "Kitui",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kitui",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.18_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.243822,
+      "poverty_context": {
+        "poor300_rate": 0.7077,
+        "poor420_rate": 0.865,
+        "poor830_rate": 0.9769,
+        "prosperity_gap_2021": 12.243822,
+        "poor300_display": "70.8%",
+        "poor420_display": "86.5%",
+        "poor830_display": "97.7%",
+        "prosperity_gap_display": "12.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 205
+    },
+    {
+      "place_id": "KEN-ADM1-KWALE",
+      "place_name": "Kwale",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kwale",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.19_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.174599,
+      "poverty_context": {
+        "poor300_rate": 0.629,
+        "poor420_rate": 0.7792,
+        "poor830_rate": 0.9281,
+        "prosperity_gap_2021": 13.174599,
+        "poor300_display": "62.9%",
+        "poor420_display": "77.9%",
+        "poor830_display": "92.8%",
+        "prosperity_gap_display": "13.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 176
+    },
+    {
+      "place_id": "KEN-ADM1-LAIKIPIA",
+      "place_name": "Laikipia",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "laikipia",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.20_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.748248,
+      "poverty_context": {
+        "poor300_rate": 0.4659,
+        "poor420_rate": 0.6899,
+        "poor830_rate": 0.9107,
+        "prosperity_gap_2021": 9.7482481,
+        "poor300_display": "46.6%",
+        "poor420_display": "69.0%",
+        "poor830_display": "91.1%",
+        "prosperity_gap_display": "9.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 362
+    },
+    {
+      "place_id": "KEN-ADM1-LAMU",
+      "place_name": "Lamu",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "lamu",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.21_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.092913,
+      "poverty_context": {
+        "poor300_rate": 0.3207,
+        "poor420_rate": 0.5601,
+        "poor830_rate": 0.8556,
+        "prosperity_gap_2021": 8.0929125,
+        "poor300_display": "32.1%",
+        "poor420_display": "56.0%",
+        "poor830_display": "85.6%",
+        "prosperity_gap_display": "8.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 495
+    },
+    {
+      "place_id": "KEN-ADM1-MACHAKOS",
+      "place_name": "Machakos",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "machakos",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.22_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.204207,
+      "poverty_context": {
+        "poor300_rate": 0.3842,
+        "poor420_rate": 0.6498,
+        "poor830_rate": 0.919,
+        "prosperity_gap_2021": 8.2042073,
+        "poor300_display": "38.4%",
+        "poor420_display": "65.0%",
+        "poor830_display": "91.9%",
+        "prosperity_gap_display": "8.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 485
+    },
+    {
+      "place_id": "KEN-ADM1-MAKUENI",
+      "place_name": "Makueni",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "makueni",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.23_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.063866,
+      "poverty_context": {
+        "poor300_rate": 0.5577,
+        "poor420_rate": 0.7867,
+        "poor830_rate": 0.9668,
+        "prosperity_gap_2021": 10.063866,
+        "poor300_display": "55.8%",
+        "poor420_display": "78.7%",
+        "poor830_display": "96.7%",
+        "prosperity_gap_display": "10.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 336
+    },
+    {
+      "place_id": "KEN-ADM1-MANDERA",
+      "place_name": "Mandera",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "mandera",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.24_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/KEN/adm1/mandera/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.741399,
+      "poverty_context": {
+        "poor300_rate": 0.8615,
+        "poor420_rate": 0.9735,
+        "poor830_rate": 1,
+        "prosperity_gap_2021": 16.741399,
+        "poor300_display": "86.2%",
+        "poor420_display": "97.4%",
+        "poor830_display": "100.0%",
+        "prosperity_gap_display": "16.74"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 101
+    },
+    {
+      "place_id": "KEN-ADM1-MARSABIT",
+      "place_name": "Marsabit",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "marsabit",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.25_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/KEN/adm1/marsabit/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.251919,
+      "poverty_context": {
+        "poor300_rate": 0.7569,
+        "poor420_rate": 0.8977,
+        "poor830_rate": 0.9815,
+        "prosperity_gap_2021": 16.251919,
+        "poor300_display": "75.7%",
+        "poor420_display": "89.8%",
+        "poor830_display": "98.2%",
+        "prosperity_gap_display": "16.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 107
+    },
+    {
+      "place_id": "KEN-ADM1-MERU",
+      "place_name": "Meru",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "meru",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.26_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.504486,
+      "poverty_context": {
+        "poor300_rate": 0.4822,
+        "poor420_rate": 0.6866,
+        "poor830_rate": 0.9203,
+        "prosperity_gap_2021": 9.504486,
+        "poor300_display": "48.2%",
+        "poor420_display": "68.7%",
+        "poor830_display": "92.0%",
+        "prosperity_gap_display": "9.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 379
+    },
+    {
+      "place_id": "KEN-ADM1-MIGORI",
+      "place_name": "Migori",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "migori",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.27_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.420035,
+      "poverty_context": {
+        "poor300_rate": 0.5694,
+        "poor420_rate": 0.7326,
+        "poor830_rate": 0.9556,
+        "prosperity_gap_2021": 10.420035,
+        "poor300_display": "56.9%",
+        "poor420_display": "73.3%",
+        "poor830_display": "95.6%",
+        "prosperity_gap_display": "10.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 312
+    },
+    {
+      "place_id": "KEN-ADM1-MOMBASA",
+      "place_name": "Mombasa",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "mombasa",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.28_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.822271,
+      "poverty_context": {
+        "poor300_rate": 0.0924,
+        "poor420_rate": 0.3175,
+        "poor830_rate": 0.791,
+        "prosperity_gap_2021": 5.8222708,
+        "poor300_display": "9.24%",
+        "poor420_display": "31.8%",
+        "poor830_display": "79.1%",
+        "prosperity_gap_display": "5.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 701
+    },
+    {
+      "place_id": "KEN-ADM1-MURANG-A",
+      "place_name": "Murang'a",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "murang a",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.29_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.632733,
+      "poverty_context": {
+        "poor300_rate": 0.4133,
+        "poor420_rate": 0.7068,
+        "poor830_rate": 0.9284,
+        "prosperity_gap_2021": 8.6327332,
+        "poor300_display": "41.3%",
+        "poor420_display": "70.7%",
+        "poor830_display": "92.8%",
+        "prosperity_gap_display": "8.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 445
+    },
+    {
+      "place_id": "KEN-ADM1-NAIROBI",
+      "place_name": "Nairobi",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "nairobi",
+      "adm1_geo_id": "KEN_2015_ADM1_51328",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.928046,
+      "poverty_context": {
+        "poor300_rate": 0.0669,
+        "poor420_rate": 0.1883,
+        "poor830_rate": 0.7168,
+        "prosperity_gap_2021": 4.928046,
+        "poor300_display": "6.69%",
+        "poor420_display": "18.8%",
+        "poor830_display": "71.7%",
+        "prosperity_gap_display": "4.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 819
+    },
+    {
+      "place_id": "KEN-ADM1-NAKURU",
+      "place_name": "Nakuru",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "nakuru",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.31_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.955388,
+      "poverty_context": {
+        "poor300_rate": 0.4076,
+        "poor420_rate": 0.631,
+        "poor830_rate": 0.8771,
+        "prosperity_gap_2021": 8.9553881,
+        "poor300_display": "40.8%",
+        "poor420_display": "63.1%",
+        "poor830_display": "87.7%",
+        "prosperity_gap_display": "8.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 421
+    },
+    {
+      "place_id": "KEN-ADM1-NANDI",
+      "place_name": "Nandi",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "nandi",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.32_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.128392,
+      "poverty_context": {
+        "poor300_rate": 0.5192,
+        "poor420_rate": 0.77,
+        "poor830_rate": 0.9313,
+        "prosperity_gap_2021": 10.128392,
+        "poor300_display": "51.9%",
+        "poor420_display": "77.0%",
+        "poor830_display": "93.1%",
+        "prosperity_gap_display": "10.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 330
+    },
+    {
+      "place_id": "KEN-ADM1-NAROK",
+      "place_name": "Narok",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "narok",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.33_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.614766,
+      "poverty_context": {
+        "poor300_rate": 0.4939,
+        "poor420_rate": 0.7441,
+        "poor830_rate": 0.9461,
+        "prosperity_gap_2021": 9.6147663,
+        "poor300_display": "49.4%",
+        "poor420_display": "74.4%",
+        "poor830_display": "94.6%",
+        "prosperity_gap_display": "9.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 374
+    },
+    {
+      "place_id": "KEN-ADM1-NYAMIRA",
+      "place_name": "Nyamira",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "nyamira",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.34_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.224181,
+      "poverty_context": {
+        "poor300_rate": 0.5153,
+        "poor420_rate": 0.7045,
+        "poor830_rate": 0.9434,
+        "prosperity_gap_2021": 10.224181,
+        "poor300_display": "51.5%",
+        "poor420_display": "70.5%",
+        "poor830_display": "94.3%",
+        "prosperity_gap_display": "10.22"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 323
+    },
+    {
+      "place_id": "KEN-ADM1-NYANDARUA",
+      "place_name": "Nyandarua",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "nyandarua",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.35_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.13454,
+      "poverty_context": {
+        "poor300_rate": 0.4526,
+        "poor420_rate": 0.6905,
+        "poor830_rate": 0.9616,
+        "prosperity_gap_2021": 9.1345402,
+        "poor300_display": "45.3%",
+        "poor420_display": "69.0%",
+        "poor830_display": "96.2%",
+        "prosperity_gap_display": "9.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 409
+    },
+    {
+      "place_id": "KEN-ADM1-NYERI",
+      "place_name": "Nyeri",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "nyeri",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.36_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.805286,
+      "poverty_context": {
+        "poor300_rate": 0.2901,
+        "poor420_rate": 0.6031,
+        "poor830_rate": 0.9115,
+        "prosperity_gap_2021": 7.8052857,
+        "poor300_display": "29.0%",
+        "poor420_display": "60.3%",
+        "poor830_display": "91.1%",
+        "prosperity_gap_display": "7.81"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 514
+    },
+    {
+      "place_id": "KEN-ADM1-SAMBURU",
+      "place_name": "Samburu",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "samburu",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.37_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/KEN/adm1/samburu/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 18.07986,
+      "poverty_context": {
+        "poor300_rate": 0.7356,
+        "poor420_rate": 0.8643,
+        "poor830_rate": 0.9581,
+        "prosperity_gap_2021": 18.07986,
+        "poor300_display": "73.6%",
+        "poor420_display": "86.4%",
+        "poor830_display": "95.8%",
+        "prosperity_gap_display": "18.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 83
+    },
+    {
+      "place_id": "KEN-ADM1-SIAYA",
+      "place_name": "Siaya",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "siaya",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.38_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.468938,
+      "poverty_context": {
+        "poor300_rate": 0.4893,
+        "poor420_rate": 0.7343,
+        "poor830_rate": 0.963,
+        "prosperity_gap_2021": 10.468938,
+        "poor300_display": "48.9%",
+        "poor420_display": "73.4%",
+        "poor830_display": "96.3%",
+        "prosperity_gap_display": "10.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 311
+    },
+    {
+      "place_id": "KEN-ADM1-TAITA-TAVETA",
+      "place_name": "Taita Taveta",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "taita taveta",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.39_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.75313,
+      "poverty_context": {
+        "poor300_rate": 0.4342,
+        "poor420_rate": 0.6854,
+        "poor830_rate": 0.894,
+        "prosperity_gap_2021": 8.7531304,
+        "poor300_display": "43.4%",
+        "poor420_display": "68.5%",
+        "poor830_display": "89.4%",
+        "prosperity_gap_display": "8.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 437
+    },
+    {
+      "place_id": "KEN-ADM1-TANA-RIVER",
+      "place_name": "Tana River",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "tana river",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.40_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.542883,
+      "poverty_context": {
+        "poor300_rate": 0.7207,
+        "poor420_rate": 0.8151,
+        "poor830_rate": 0.9844,
+        "prosperity_gap_2021": 13.542883,
+        "poor300_display": "72.1%",
+        "poor420_display": "81.5%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "13.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 166
+    },
+    {
+      "place_id": "KEN-ADM1-THARAKA-NITHI",
+      "place_name": "Tharaka-Nithi",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "tharaka nithi",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.41_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.828991,
+      "poverty_context": {
+        "poor300_rate": 0.3956,
+        "poor420_rate": 0.6291,
+        "poor830_rate": 0.8519,
+        "prosperity_gap_2021": 8.828991,
+        "poor300_display": "39.6%",
+        "poor420_display": "62.9%",
+        "poor830_display": "85.2%",
+        "prosperity_gap_display": "8.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 431
+    },
+    {
+      "place_id": "KEN-ADM1-TRANS-NZOIA",
+      "place_name": "Trans Nzoia",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "trans nzoia",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.42_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.347173,
+      "poverty_context": {
+        "poor300_rate": 0.4644,
+        "poor420_rate": 0.7629,
+        "poor830_rate": 0.93,
+        "prosperity_gap_2021": 10.347173,
+        "poor300_display": "46.4%",
+        "poor420_display": "76.3%",
+        "poor830_display": "93.0%",
+        "prosperity_gap_display": "10.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 318
+    },
+    {
+      "place_id": "KEN-ADM1-TURKANA",
+      "place_name": "Turkana",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "turkana",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.43_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/KEN/adm1/turkana/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 21.07727,
+      "poverty_context": {
+        "poor300_rate": 0.8601,
+        "poor420_rate": 0.9363,
+        "poor830_rate": 0.9833,
+        "prosperity_gap_2021": 21.07727,
+        "poor300_display": "86.0%",
+        "poor420_display": "93.6%",
+        "poor830_display": "98.3%",
+        "prosperity_gap_display": "21.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 45
+    },
+    {
+      "place_id": "KEN-ADM1-UASIN-GISHU",
+      "place_name": "Uasin Gishu",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "uasin gishu",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.44_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.846721,
+      "poverty_context": {
+        "poor300_rate": 0.3715,
+        "poor420_rate": 0.5821,
+        "poor830_rate": 0.8665,
+        "prosperity_gap_2021": 8.8467214,
+        "poor300_display": "37.1%",
+        "poor420_display": "58.2%",
+        "poor830_display": "86.7%",
+        "prosperity_gap_display": "8.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 429
+    },
+    {
+      "place_id": "KEN-ADM1-VIHIGA",
+      "place_name": "Vihiga",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "vihiga",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.45_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.513451,
+      "poverty_context": {
+        "poor300_rate": 0.5326,
+        "poor420_rate": 0.7358,
+        "poor830_rate": 0.9313,
+        "prosperity_gap_2021": 10.513451,
+        "poor300_display": "53.3%",
+        "poor420_display": "73.6%",
+        "poor830_display": "93.1%",
+        "prosperity_gap_display": "10.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 308
+    },
+    {
+      "place_id": "KEN-ADM1-WAJIR",
+      "place_name": "Wajir",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "wajir",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.46_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.644763,
+      "poverty_context": {
+        "poor300_rate": 0.7291,
+        "poor420_rate": 0.8929,
+        "poor830_rate": 0.9787,
+        "prosperity_gap_2021": 14.644763,
+        "poor300_display": "72.9%",
+        "poor420_display": "89.3%",
+        "poor830_display": "97.9%",
+        "prosperity_gap_display": "14.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 144
+    },
+    {
+      "place_id": "KEN-ADM1-WEST-POKOT",
+      "place_name": "West Pokot",
+      "parent_place_id": "KEN",
+      "parent_place_name": "Kenya",
+      "iso3": "KEN",
+      "source_iso3": "KEN",
+      "geometry_level": "adm1",
+      "adm1_key": "west pokot",
+      "adm1_geo_id": "KEN_2015_GADM1_KEN_KEN.47_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.069404,
+      "poverty_context": {
+        "poor300_rate": 0.7518,
+        "poor420_rate": 0.8719,
+        "poor830_rate": 0.9842,
+        "prosperity_gap_2021": 15.069404,
+        "poor300_display": "75.2%",
+        "poor420_display": "87.2%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "15.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 135
+    }
+  ]
+}

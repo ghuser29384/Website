@@ -7,6 +7,7 @@ const failures = [];
 
 const schemaTargets = [
   ["schemas/place-index.schema.json", "v1/places/index.json"],
+  ["schemas/adm1-context.schema.json", "v1/adm1/index.json"],
   ["schemas/place-measurements.schema.json", "data/place-measurements.json"],
   ["schemas/coverage.schema.json", "v1/coverage.json"],
   ["schemas/release-modes.schema.json", "data/release-modes.json"],
@@ -159,11 +160,21 @@ for (const item of placeIndex.items) {
     continue;
   }
 
+  if (item.geometry_level === "adm1") {
+    expect(item.coverage_status === "adm1_context_overlay", `${item.place_id} should be adm1_context_overlay`);
+    expect(Boolean(item.context_url), `${item.place_id} missing context_url`);
+    continue;
+  }
+
   expect(item.coverage_status === "boundary_index_only", `${item.place_id} without rows should be boundary_index_only`);
   expect(Boolean(item.neighbors_url), `${item.place_id} missing neighbors_url`);
 }
 
 for (const item of placeIndex.items) {
+  if (!item.neighbors_url) {
+    continue;
+  }
+
   expect(
     existsSync(absolute(`v1/places/${item.place_id}/neighbors.json`)),
     `${item.place_id} neighbors JSON missing`
@@ -234,8 +245,18 @@ const releaseDiff = readJson("releases/2026-05-31/diff.json");
 expect(releaseDiff.release_id === placeIndex.release_id, "release diff release_id mismatch");
 expect(releaseDiff.comparison_type === "initial_release_baseline", "release diff should mark this release as the initial baseline");
 expect(
-  releaseDiff.current_release?.neighbor_payloads === placeIndex.items.length,
+  releaseDiff.current_release?.neighbor_payloads === placeIndex.items.filter((item) => item.neighbors_url).length,
   "release diff neighbor payload count mismatch"
+);
+
+const adm1Index = readJson("v1/adm1/index.json");
+expect(adm1Index.coverage_status === "adm1_context_overlay", "ADM1 index must be marked as a context overlay");
+expect(adm1Index.count === adm1Index.items?.length, "ADM1 index count mismatch");
+expect(adm1Index.count >= 1000, "ADM1 index should expose broad subnational context coverage");
+expect(adm1Index.static_page_count >= 100, "ADM1 index should expose at least 100 static high-priority ADM1 pages");
+expect(
+  adm1Index.items?.every((item) => item.geometry_level === "adm1" && item.coverage_status === "adm1_context_overlay"),
+  "ADM1 index items must be ADM1 context overlays"
 );
 
 expect(releaseModes.default_mode === "snapshot", "release modes must default to snapshot mode");
@@ -250,9 +271,11 @@ expect(
 
 for (const requiredArtifact of [
   "/v1/places/index.json",
+  "/v1/adm1/index.json",
   "/v1/coverage.json",
   "/data/release-modes.json",
   "/schemas/place-index.schema.json",
+  "/schemas/adm1-context.schema.json",
   "/schemas/place-measurements.schema.json",
   "/schemas/coverage.schema.json",
   "/schemas/release-modes.schema.json",
@@ -260,6 +283,8 @@ for (const requiredArtifact of [
   "/data/endpoint-smoke.json",
   "/data/performance-budgets.json",
   "/data/analytics-events.json",
+  "/data/gsap-adm1-2023.json",
+  "/v1/places/IND/adm1.json",
   "/v1/places/WLD/neighbors.json",
   "/v1/places/BRA/neighbors.json",
   "/v1/places/IND/neighbors.json",

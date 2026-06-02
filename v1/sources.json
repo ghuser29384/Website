@@ -43,6 +43,16 @@
       "attribution_text": "World Bank public indicator API."
     },
     {
+      "source_id": "world-bank-gsap-adm1",
+      "label": "World Bank Global Subnational Poverty Atlas ADM1 poverty context",
+      "publisher": "World Bank",
+      "url": "https://pip.worldbank.org/",
+      "license_id": "world-bank-terms",
+      "evidence_kind": "proxy",
+      "source_vintage": "2023 ADM1 lineup with 2021 PPP poverty-context values",
+      "attribution_text": "World Bank Global Subnational Poverty Atlas ADM1 poverty rows, vendored as subnational context and not as canonical pain measurements."
+    },
+    {
       "source_id": "world-bank-land-area",
       "label": "World Bank land-area context",
       "publisher": "World Bank",

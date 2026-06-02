@@ -1,0 +1,453 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "LSO",
+  "parent_place_name": "Lesotho",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 10,
+  "static_page_count": 1,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "LSO-ADM1-BEREA",
+      "place_name": "Berea",
+      "parent_place_id": "LSO",
+      "parent_place_name": "Lesotho",
+      "iso3": "LSO",
+      "source_iso3": "LSO",
+      "geometry_level": "adm1",
+      "adm1_key": "berea",
+      "adm1_geo_id": "LSO_2015_ADM1_1803",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LSO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.321129,
+      "poverty_context": {
+        "poor300_rate": 0.4194,
+        "poor420_rate": 0.5601,
+        "poor830_rate": 0.8426,
+        "prosperity_gap_2021": 11.321129,
+        "poor300_display": "41.9%",
+        "poor420_display": "56.0%",
+        "poor830_display": "84.3%",
+        "prosperity_gap_display": "11.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 257
+    },
+    {
+      "place_id": "LSO-ADM1-BUTHA-BUTHE",
+      "place_name": "Butha Buthe",
+      "parent_place_id": "LSO",
+      "parent_place_name": "Lesotho",
+      "iso3": "LSO",
+      "source_iso3": "LSO",
+      "geometry_level": "adm1",
+      "adm1_key": "butha buthe",
+      "adm1_geo_id": "LSO_2015_ADM1_1804",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LSO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.333103,
+      "poverty_context": {
+        "poor300_rate": 0.4511,
+        "poor420_rate": 0.6195,
+        "poor830_rate": 0.8526,
+        "prosperity_gap_2021": 12.333103,
+        "poor300_display": "45.1%",
+        "poor420_display": "62.0%",
+        "poor830_display": "85.3%",
+        "prosperity_gap_display": "12.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 197
+    },
+    {
+      "place_id": "LSO-ADM1-LERIBE",
+      "place_name": "Leribe",
+      "parent_place_id": "LSO",
+      "parent_place_name": "Lesotho",
+      "iso3": "LSO",
+      "source_iso3": "LSO",
+      "geometry_level": "adm1",
+      "adm1_key": "leribe",
+      "adm1_geo_id": "LSO_2015_ADM1_1805",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LSO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.087135,
+      "poverty_context": {
+        "poor300_rate": 0.4325,
+        "poor420_rate": 0.5812,
+        "poor830_rate": 0.8589,
+        "prosperity_gap_2021": 11.087135,
+        "poor300_display": "43.3%",
+        "poor420_display": "58.1%",
+        "poor830_display": "85.9%",
+        "prosperity_gap_display": "11.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 276
+    },
+    {
+      "place_id": "LSO-ADM1-MAFETENG",
+      "place_name": "Mafeteng",
+      "parent_place_id": "LSO",
+      "parent_place_name": "Lesotho",
+      "iso3": "LSO",
+      "source_iso3": "LSO",
+      "geometry_level": "adm1",
+      "adm1_key": "mafeteng",
+      "adm1_geo_id": "LSO_2015_ADM1_1806",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LSO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.315397,
+      "poverty_context": {
+        "poor300_rate": 0.4831,
+        "poor420_rate": 0.6315,
+        "poor830_rate": 0.911,
+        "prosperity_gap_2021": 12.315397,
+        "poor300_display": "48.3%",
+        "poor420_display": "63.1%",
+        "poor830_display": "91.1%",
+        "prosperity_gap_display": "12.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 199
+    },
+    {
+      "place_id": "LSO-ADM1-MASERU",
+      "place_name": "Maseru",
+      "parent_place_id": "LSO",
+      "parent_place_name": "Lesotho",
+      "iso3": "LSO",
+      "source_iso3": "LSO",
+      "geometry_level": "adm1",
+      "adm1_key": "maseru",
+      "adm1_geo_id": "LSO_2015_ADM1_1807",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LSO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.501429,
+      "poverty_context": {
+        "poor300_rate": 0.3545,
+        "poor420_rate": 0.4857,
+        "poor830_rate": 0.7867,
+        "prosperity_gap_2021": 9.5014286,
+        "poor300_display": "35.4%",
+        "poor420_display": "48.6%",
+        "poor830_display": "78.7%",
+        "prosperity_gap_display": "9.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 380
+    },
+    {
+      "place_id": "LSO-ADM1-MOHALE-S-HOEK",
+      "place_name": "Mohale's Hoek",
+      "parent_place_id": "LSO",
+      "parent_place_name": "Lesotho",
+      "iso3": "LSO",
+      "source_iso3": "LSO",
+      "geometry_level": "adm1",
+      "adm1_key": "mohale s hoek",
+      "adm1_geo_id": "LSO_2015_ADM1_1808",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LSO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.580518,
+      "poverty_context": {
+        "poor300_rate": 0.5162,
+        "poor420_rate": 0.661,
+        "poor830_rate": 0.9297,
+        "prosperity_gap_2021": 13.580518,
+        "poor300_display": "51.6%",
+        "poor420_display": "66.1%",
+        "poor830_display": "93.0%",
+        "prosperity_gap_display": "13.58"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 165
+    },
+    {
+      "place_id": "LSO-ADM1-MOKHOTLONG",
+      "place_name": "Mokhotlong",
+      "parent_place_id": "LSO",
+      "parent_place_name": "Lesotho",
+      "iso3": "LSO",
+      "source_iso3": "LSO",
+      "geometry_level": "adm1",
+      "adm1_key": "mokhotlong",
+      "adm1_geo_id": "LSO_2015_ADM1_1809",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LSO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.460093,
+      "poverty_context": {
+        "poor300_rate": 0.5742,
+        "poor420_rate": 0.7422,
+        "poor830_rate": 0.9573,
+        "prosperity_gap_2021": 15.460093,
+        "poor300_display": "57.4%",
+        "poor420_display": "74.2%",
+        "poor830_display": "95.7%",
+        "prosperity_gap_display": "15.46"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 125
+    },
+    {
+      "place_id": "LSO-ADM1-QACHA-S-NEK",
+      "place_name": "Qacha's Nek",
+      "parent_place_id": "LSO",
+      "parent_place_name": "Lesotho",
+      "iso3": "LSO",
+      "source_iso3": "LSO",
+      "geometry_level": "adm1",
+      "adm1_key": "qacha s nek",
+      "adm1_geo_id": "LSO_2015_ADM1_1810",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LSO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.168158,
+      "poverty_context": {
+        "poor300_rate": 0.4673,
+        "poor420_rate": 0.6348,
+        "poor830_rate": 0.9293,
+        "prosperity_gap_2021": 12.168158,
+        "poor300_display": "46.7%",
+        "poor420_display": "63.5%",
+        "poor830_display": "92.9%",
+        "prosperity_gap_display": "12.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 208
+    },
+    {
+      "place_id": "LSO-ADM1-QUTHING",
+      "place_name": "Quthing",
+      "parent_place_id": "LSO",
+      "parent_place_name": "Lesotho",
+      "iso3": "LSO",
+      "source_iso3": "LSO",
+      "geometry_level": "adm1",
+      "adm1_key": "quthing",
+      "adm1_geo_id": "LSO_2015_ADM1_1811",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LSO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.236697,
+      "poverty_context": {
+        "poor300_rate": 0.5173,
+        "poor420_rate": 0.6346,
+        "poor830_rate": 0.9138,
+        "prosperity_gap_2021": 13.236697,
+        "poor300_display": "51.7%",
+        "poor420_display": "63.5%",
+        "poor830_display": "91.4%",
+        "prosperity_gap_display": "13.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 174
+    },
+    {
+      "place_id": "LSO-ADM1-THABA-TSEKA",
+      "place_name": "Thaba Tseka",
+      "parent_place_id": "LSO",
+      "parent_place_name": "Lesotho",
+      "iso3": "LSO",
+      "source_iso3": "LSO",
+      "geometry_level": "adm1",
+      "adm1_key": "thaba tseka",
+      "adm1_geo_id": "LSO_2015_ADM1_1812",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/LSO/adm1/thaba-tseka/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LSO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 17.092513,
+      "poverty_context": {
+        "poor300_rate": 0.6946,
+        "poor420_rate": 0.8249,
+        "poor830_rate": 0.9585,
+        "prosperity_gap_2021": 17.092513,
+        "poor300_display": "69.5%",
+        "poor420_display": "82.5%",
+        "poor830_display": "95.9%",
+        "prosperity_gap_display": "17.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 94
+    }
+  ]
+}

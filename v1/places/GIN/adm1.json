@@ -1,0 +1,365 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "GIN",
+  "parent_place_name": "Guinea",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 8,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "GIN-ADM1-BOKE",
+      "place_name": "Boke",
+      "parent_place_id": "GIN",
+      "parent_place_name": "Guinea",
+      "iso3": "GIN",
+      "source_iso3": "GIN",
+      "geometry_level": "adm1",
+      "adm1_key": "boke",
+      "adm1_geo_id": "GIN_2015_ADM1_40700",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GIN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.374172,
+      "poverty_context": {
+        "poor300_rate": 0.085,
+        "poor420_rate": 0.256,
+        "poor830_rate": 0.7755,
+        "prosperity_gap_2021": 5.3741716,
+        "poor300_display": "8.50%",
+        "poor420_display": "25.6%",
+        "poor830_display": "77.5%",
+        "prosperity_gap_display": "5.37"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 756
+    },
+    {
+      "place_id": "GIN-ADM1-CONAKRY",
+      "place_name": "Conakry",
+      "parent_place_id": "GIN",
+      "parent_place_name": "Guinea",
+      "iso3": "GIN",
+      "source_iso3": "GIN",
+      "geometry_level": "adm1",
+      "adm1_key": "conakry",
+      "adm1_geo_id": "GIN_2015_ADM1_40701",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GIN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.986559,
+      "poverty_context": {
+        "poor300_rate": 0.0017,
+        "poor420_rate": 0.0154,
+        "poor830_rate": 0.3199,
+        "prosperity_gap_2021": 2.9865591,
+        "poor300_display": "0.17%",
+        "poor420_display": "1.54%",
+        "poor830_display": "32.0%",
+        "prosperity_gap_display": "2.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1163
+    },
+    {
+      "place_id": "GIN-ADM1-FARANAH",
+      "place_name": "Faranah",
+      "parent_place_id": "GIN",
+      "parent_place_name": "Guinea",
+      "iso3": "GIN",
+      "source_iso3": "GIN",
+      "geometry_level": "adm1",
+      "adm1_key": "faranah",
+      "adm1_geo_id": "GIN_2015_ADM1_40702",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GIN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.707479,
+      "poverty_context": {
+        "poor300_rate": 0.2028,
+        "poor420_rate": 0.4066,
+        "poor830_rate": 0.8976,
+        "prosperity_gap_2021": 6.7074792,
+        "poor300_display": "20.3%",
+        "poor420_display": "40.7%",
+        "poor830_display": "89.8%",
+        "prosperity_gap_display": "6.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 608
+    },
+    {
+      "place_id": "GIN-ADM1-KANKAN",
+      "place_name": "Kankan",
+      "parent_place_id": "GIN",
+      "parent_place_name": "Guinea",
+      "iso3": "GIN",
+      "source_iso3": "GIN",
+      "geometry_level": "adm1",
+      "adm1_key": "kankan",
+      "adm1_geo_id": "GIN_2015_ADM1_40703",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GIN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.277539,
+      "poverty_context": {
+        "poor300_rate": 0.0136,
+        "poor420_rate": 0.1004,
+        "poor830_rate": 0.6634,
+        "prosperity_gap_2021": 4.2775387,
+        "poor300_display": "1.36%",
+        "poor420_display": "10.0%",
+        "poor830_display": "66.3%",
+        "prosperity_gap_display": "4.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 928
+    },
+    {
+      "place_id": "GIN-ADM1-KINDIA",
+      "place_name": "Kindia",
+      "parent_place_id": "GIN",
+      "parent_place_name": "Guinea",
+      "iso3": "GIN",
+      "source_iso3": "GIN",
+      "geometry_level": "adm1",
+      "adm1_key": "kindia",
+      "adm1_geo_id": "GIN_2015_ADM1_40704",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GIN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.232776,
+      "poverty_context": {
+        "poor300_rate": 0.1557,
+        "poor420_rate": 0.3506,
+        "poor830_rate": 0.8276,
+        "prosperity_gap_2021": 6.2327763,
+        "poor300_display": "15.6%",
+        "poor420_display": "35.1%",
+        "poor830_display": "82.8%",
+        "prosperity_gap_display": "6.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 648
+    },
+    {
+      "place_id": "GIN-ADM1-LABE",
+      "place_name": "Labe",
+      "parent_place_id": "GIN",
+      "parent_place_name": "Guinea",
+      "iso3": "GIN",
+      "source_iso3": "GIN",
+      "geometry_level": "adm1",
+      "adm1_key": "labe",
+      "adm1_geo_id": "GIN_2015_ADM1_40705",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GIN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.530531,
+      "poverty_context": {
+        "poor300_rate": 0.2125,
+        "poor420_rate": 0.492,
+        "poor830_rate": 0.8881,
+        "prosperity_gap_2021": 7.5305309,
+        "poor300_display": "21.3%",
+        "poor420_display": "49.2%",
+        "poor830_display": "88.8%",
+        "prosperity_gap_display": "7.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 544
+    },
+    {
+      "place_id": "GIN-ADM1-MAMOU",
+      "place_name": "Mamou",
+      "parent_place_id": "GIN",
+      "parent_place_name": "Guinea",
+      "iso3": "GIN",
+      "source_iso3": "GIN",
+      "geometry_level": "adm1",
+      "adm1_key": "mamou",
+      "adm1_geo_id": "GIN_2015_ADM1_40706",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GIN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.424492,
+      "poverty_context": {
+        "poor300_rate": 0.0822,
+        "poor420_rate": 0.2412,
+        "poor830_rate": 0.8224,
+        "prosperity_gap_2021": 5.4244916,
+        "poor300_display": "8.22%",
+        "poor420_display": "24.1%",
+        "poor830_display": "82.2%",
+        "prosperity_gap_display": "5.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 749
+    },
+    {
+      "place_id": "GIN-ADM1-NZEREKORE",
+      "place_name": "Nzerekore",
+      "parent_place_id": "GIN",
+      "parent_place_name": "Guinea",
+      "iso3": "GIN",
+      "source_iso3": "GIN",
+      "geometry_level": "adm1",
+      "adm1_key": "nzerekore",
+      "adm1_geo_id": "GIN_2015_ADM1_40707",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GIN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.731318,
+      "poverty_context": {
+        "poor300_rate": 0.097,
+        "poor420_rate": 0.2833,
+        "poor830_rate": 0.8278,
+        "prosperity_gap_2021": 5.7313179,
+        "poor300_display": "9.70%",
+        "poor420_display": "28.3%",
+        "poor830_display": "82.8%",
+        "prosperity_gap_display": "5.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 712
+    }
+  ]
+}

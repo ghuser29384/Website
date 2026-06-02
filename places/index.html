@@ -54,7 +54,7 @@
             <h1 id="places-title">Atlas coverage by place</h1>
           </div>
           <p class="route-copy">
-            PainMap now exposes a full release place index. Boundary coverage is broad; canonical measurement rows remain explicitly labeled so readers can separate indexed places from places with release measurements.
+            PainMap now exposes a full release place index with country coverage and ADM1 context overlays. Canonical measurement rows remain explicitly labeled so readers can separate measured places from contextual proxy surfaces.
           </p>
         </section>
 
@@ -65,9 +65,9 @@
           </div>
           <div class="coverage-grid">
             <article class="fact-card">
-              <span class="fact-label">Boundary-indexed places</span>
-              <strong>242</strong>
-              <p>World plus 241 Natural Earth country features.</p>
+              <span class="fact-label">Place index rows</span>
+              <strong>2,114</strong>
+              <p>World, 239 Natural Earth country entries, and 1,874 ADM1 context rows.</p>
             </article>
             <article class="fact-card">
               <span class="fact-label">Canonical measurement profiles</span>
@@ -81,12 +81,13 @@
             </article>
             <article class="fact-card">
               <span class="fact-label">ADM1 status</span>
-              <strong>Runtime boundary overlay</strong>
-              <p>ADM1 geometry is still loaded on demand from geoBoundaries and marked separately from release measurements.</p>
+              <strong>120 static context pages</strong>
+              <p>ADM1 poverty-context rows are indexed as overlays; the highest-priority rows are pre-rendered and remain separate from release measurements.</p>
             </article>
           </div>
           <div class="route-actions">
             <a class="solid-button" href="/v1/places/index.json">Open place index JSON</a>
+            <a class="ghost-link" href="/v1/adm1/index.json">Open ADM1 context JSON</a>
             <a class="ghost-link" href="/v1/coverage.json">Open coverage JSON</a>
             <a class="ghost-link" href="/#explore-country">Search the atlas</a>
           </div>
@@ -107,7 +108,7 @@
             <article class="route-card">
               <p class="issue-tag">Table first</p>
               <h2>Search is the complete path</h2>
-              <p>The homepage search and data tables provide the non-map workflow for country and ADM1 context.</p>
+              <p>The homepage search, ADM1 context index, and data tables provide the non-map workflow for country and subnational context.</p>
             </article>
           </div>
           <div class="route-actions">

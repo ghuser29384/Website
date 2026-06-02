@@ -1,0 +1,585 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "BFA",
+  "parent_place_name": "Burkina Faso",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 13,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "BFA-ADM1-BOUCLE-DU-MOUHOUN",
+      "place_name": "Boucle Du Mouhoun",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "boucle du mouhoun",
+      "adm1_geo_id": "BFA_2015_ADM1_40276",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.52698,
+      "poverty_context": {
+        "poor300_rate": 0.5637,
+        "poor420_rate": 0.8465,
+        "poor830_rate": 0.975,
+        "prosperity_gap_2021": 11.52698,
+        "poor300_display": "56.4%",
+        "poor420_display": "84.7%",
+        "poor830_display": "97.5%",
+        "prosperity_gap_display": "11.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 247
+    },
+    {
+      "place_id": "BFA-ADM1-CASCADES",
+      "place_name": "Cascades",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "cascades",
+      "adm1_geo_id": "BFA_2015_ADM1_40277",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.565972,
+      "poverty_context": {
+        "poor300_rate": 0.371,
+        "poor420_rate": 0.7161,
+        "poor830_rate": 0.9505,
+        "prosperity_gap_2021": 8.5659721,
+        "poor300_display": "37.1%",
+        "poor420_display": "71.6%",
+        "poor830_display": "95.0%",
+        "prosperity_gap_display": "8.57"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 450
+    },
+    {
+      "place_id": "BFA-ADM1-CENTRE",
+      "place_name": "Centre",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "centre",
+      "adm1_geo_id": "BFA_2015_ADM1_40278",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.828635,
+      "poverty_context": {
+        "poor300_rate": 0.0498,
+        "poor420_rate": 0.2137,
+        "poor830_rate": 0.6729,
+        "prosperity_gap_2021": 4.8286354,
+        "poor300_display": "4.98%",
+        "poor420_display": "21.4%",
+        "poor830_display": "67.3%",
+        "prosperity_gap_display": "4.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 842
+    },
+    {
+      "place_id": "BFA-ADM1-CENTRE-EST",
+      "place_name": "Centre-est",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "centre est",
+      "adm1_geo_id": "BFA_2015_ADM1_40279",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.108273,
+      "poverty_context": {
+        "poor300_rate": 0.3351,
+        "poor420_rate": 0.5398,
+        "poor830_rate": 0.8835,
+        "prosperity_gap_2021": 8.1082726,
+        "poor300_display": "33.5%",
+        "poor420_display": "54.0%",
+        "poor830_display": "88.3%",
+        "prosperity_gap_display": "8.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 492
+    },
+    {
+      "place_id": "BFA-ADM1-CENTRE-NORD",
+      "place_name": "Centre-nord",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "centre nord",
+      "adm1_geo_id": "BFA_2015_ADM1_40280",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.749617,
+      "poverty_context": {
+        "poor300_rate": 0.4367,
+        "poor420_rate": 0.6779,
+        "poor830_rate": 0.9309,
+        "prosperity_gap_2021": 9.7496167,
+        "poor300_display": "43.7%",
+        "poor420_display": "67.8%",
+        "poor830_display": "93.1%",
+        "prosperity_gap_display": "9.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 361
+    },
+    {
+      "place_id": "BFA-ADM1-CENTRE-OUEST",
+      "place_name": "Centre-ouest",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "centre ouest",
+      "adm1_geo_id": "BFA_2015_ADM1_40281",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.752211,
+      "poverty_context": {
+        "poor300_rate": 0.4654,
+        "poor420_rate": 0.7161,
+        "poor830_rate": 0.9451,
+        "prosperity_gap_2021": 9.7522105,
+        "poor300_display": "46.5%",
+        "poor420_display": "71.6%",
+        "poor830_display": "94.5%",
+        "prosperity_gap_display": "9.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 360
+    },
+    {
+      "place_id": "BFA-ADM1-CENTRE-SUD",
+      "place_name": "Centre-sud",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "centre sud",
+      "adm1_geo_id": "BFA_2015_ADM1_40282",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.788221,
+      "poverty_context": {
+        "poor300_rate": 0.4325,
+        "poor420_rate": 0.6975,
+        "poor830_rate": 0.9437,
+        "prosperity_gap_2021": 9.7882212,
+        "poor300_display": "43.3%",
+        "poor420_display": "69.8%",
+        "poor830_display": "94.4%",
+        "prosperity_gap_display": "9.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 358
+    },
+    {
+      "place_id": "BFA-ADM1-EST",
+      "place_name": "Est",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "est",
+      "adm1_geo_id": "BFA_2015_ADM1_40283",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.918307,
+      "poverty_context": {
+        "poor300_rate": 0.5285,
+        "poor420_rate": 0.7868,
+        "poor830_rate": 0.985,
+        "prosperity_gap_2021": 10.918307,
+        "poor300_display": "52.8%",
+        "poor420_display": "78.7%",
+        "poor830_display": "98.5%",
+        "prosperity_gap_display": "10.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 289
+    },
+    {
+      "place_id": "BFA-ADM1-HAUTS-BASSINS",
+      "place_name": "Hauts-bassins",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "hauts bassins",
+      "adm1_geo_id": "BFA_2015_ADM1_40284",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.512633,
+      "poverty_context": {
+        "poor300_rate": 0.3758,
+        "poor420_rate": 0.5647,
+        "poor830_rate": 0.8834,
+        "prosperity_gap_2021": 8.5126325,
+        "poor300_display": "37.6%",
+        "poor420_display": "56.5%",
+        "poor830_display": "88.3%",
+        "prosperity_gap_display": "8.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 455
+    },
+    {
+      "place_id": "BFA-ADM1-NORD",
+      "place_name": "Nord",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "nord",
+      "adm1_geo_id": "BFA_2015_ADM1_40285",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.500085,
+      "poverty_context": {
+        "poor300_rate": 0.6586,
+        "poor420_rate": 0.8383,
+        "poor830_rate": 0.9778,
+        "prosperity_gap_2021": 12.500085,
+        "poor300_display": "65.9%",
+        "poor420_display": "83.8%",
+        "poor830_display": "97.8%",
+        "prosperity_gap_display": "12.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 194
+    },
+    {
+      "place_id": "BFA-ADM1-PLATEAU-CENTRAL",
+      "place_name": "Plateau Central",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "plateau central",
+      "adm1_geo_id": "BFA_2015_ADM1_40286",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.834059,
+      "poverty_context": {
+        "poor300_rate": 0.4646,
+        "poor420_rate": 0.7555,
+        "poor830_rate": 0.9707,
+        "prosperity_gap_2021": 9.8340593,
+        "poor300_display": "46.5%",
+        "poor420_display": "75.5%",
+        "poor830_display": "97.1%",
+        "prosperity_gap_display": "9.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 353
+    },
+    {
+      "place_id": "BFA-ADM1-SAHEL",
+      "place_name": "Sahel",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "sahel",
+      "adm1_geo_id": "BFA_2015_ADM1_40287",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.138496,
+      "poverty_context": {
+        "poor300_rate": 0.7278,
+        "poor420_rate": 0.8631,
+        "poor830_rate": 0.9792,
+        "prosperity_gap_2021": 13.138496,
+        "poor300_display": "72.8%",
+        "poor420_display": "86.3%",
+        "poor830_display": "97.9%",
+        "prosperity_gap_display": "13.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 178
+    },
+    {
+      "place_id": "BFA-ADM1-SUD-OUEST",
+      "place_name": "Sud-ouest",
+      "parent_place_id": "BFA",
+      "parent_place_name": "Burkina Faso",
+      "iso3": "BFA",
+      "source_iso3": "BFA",
+      "geometry_level": "adm1",
+      "adm1_key": "sud ouest",
+      "adm1_geo_id": "BFA_2015_ADM1_40288",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BFA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.776958,
+      "poverty_context": {
+        "poor300_rate": 0.4473,
+        "poor420_rate": 0.687,
+        "poor830_rate": 0.9127,
+        "prosperity_gap_2021": 9.7769583,
+        "poor300_display": "44.7%",
+        "poor420_display": "68.7%",
+        "poor830_display": "91.3%",
+        "prosperity_gap_display": "9.78"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 359
+    }
+  ]
+}

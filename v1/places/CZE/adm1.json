@@ -1,0 +1,365 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "CZE",
+  "parent_place_name": "Czech Republic",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 8,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "CZE-ADM1-JIHOV-CHOD-CZ06",
+      "place_name": "Jihovýchod (CZ06)",
+      "parent_place_id": "CZE",
+      "parent_place_name": "Czech Republic",
+      "iso3": "CZE",
+      "source_iso3": "CZE",
+      "geometry_level": "adm1",
+      "adm1_key": "jihov chod cz06",
+      "adm1_geo_id": "CZE_2015_ADMx_NUTS_CZ06",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CZE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.801375,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0069,
+        "prosperity_gap_2021": 0.80137538,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.69%",
+        "prosperity_gap_display": "0.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1806
+    },
+    {
+      "place_id": "CZE-ADM1-JIHOZ-PAD-CZ03",
+      "place_name": "Jihozápad (CZ03)",
+      "parent_place_id": "CZE",
+      "parent_place_name": "Czech Republic",
+      "iso3": "CZE",
+      "source_iso3": "CZE",
+      "geometry_level": "adm1",
+      "adm1_key": "jihoz pad cz03",
+      "adm1_geo_id": "CZE_2015_ADMx_NUTS_CZ03",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CZE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.836477,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0067,
+        "prosperity_gap_2021": 0.83647737,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.67%",
+        "prosperity_gap_display": "0.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1798
+    },
+    {
+      "place_id": "CZE-ADM1-MORAVSKOSLEZSKO-CZ08",
+      "place_name": "Moravskoslezsko (CZ08)",
+      "parent_place_id": "CZE",
+      "parent_place_name": "Czech Republic",
+      "iso3": "CZE",
+      "source_iso3": "CZE",
+      "geometry_level": "adm1",
+      "adm1_key": "moravskoslezsko cz08",
+      "adm1_geo_id": "CZE_2015_ADMx_NUTS_CZ08",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CZE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.950101,
+      "poverty_context": {
+        "poor300_rate": 0.0003,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0162,
+        "prosperity_gap_2021": 0.95010114,
+        "poor300_display": "0.03%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.62%",
+        "prosperity_gap_display": "0.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1758
+    },
+    {
+      "place_id": "CZE-ADM1-PRAHA-CZ01",
+      "place_name": "Praha (CZ01)",
+      "parent_place_id": "CZE",
+      "parent_place_name": "Czech Republic",
+      "iso3": "CZE",
+      "source_iso3": "CZE",
+      "geometry_level": "adm1",
+      "adm1_key": "praha cz01",
+      "adm1_geo_id": "CZE_2015_ADMx_NUTS_CZ01",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CZE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.936108,
+      "poverty_context": {
+        "poor300_rate": 0.0022,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0141,
+        "prosperity_gap_2021": 0.93610785,
+        "poor300_display": "0.22%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.41%",
+        "prosperity_gap_display": "0.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1763
+    },
+    {
+      "place_id": "CZE-ADM1-SEVEROV-CHOD-CZ05",
+      "place_name": "Severovýchod (CZ05)",
+      "parent_place_id": "CZE",
+      "parent_place_name": "Czech Republic",
+      "iso3": "CZE",
+      "source_iso3": "CZE",
+      "geometry_level": "adm1",
+      "adm1_key": "severov chod cz05",
+      "adm1_geo_id": "CZE_2015_ADMx_NUTS_CZ05",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CZE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.869383,
+      "poverty_context": {
+        "poor300_rate": 0.0004,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0084,
+        "prosperity_gap_2021": 0.86938316,
+        "poor300_display": "0.04%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.84%",
+        "prosperity_gap_display": "0.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1785
+    },
+    {
+      "place_id": "CZE-ADM1-SEVEROZ-PAD-CZ04",
+      "place_name": "Severozápad (CZ04)",
+      "parent_place_id": "CZE",
+      "parent_place_name": "Czech Republic",
+      "iso3": "CZE",
+      "source_iso3": "CZE",
+      "geometry_level": "adm1",
+      "adm1_key": "severoz pad cz04",
+      "adm1_geo_id": "CZE_2015_ADMx_NUTS_CZ04",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CZE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.851974,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0051,
+        "prosperity_gap_2021": 0.85197351,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.51%",
+        "prosperity_gap_display": "0.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1790
+    },
+    {
+      "place_id": "CZE-ADM1-ST-EDN-ECHY-CZ02",
+      "place_name": "Střední Čechy (CZ02)",
+      "parent_place_id": "CZE",
+      "parent_place_name": "Czech Republic",
+      "iso3": "CZE",
+      "source_iso3": "CZE",
+      "geometry_level": "adm1",
+      "adm1_key": "st edn echy cz02",
+      "adm1_geo_id": "CZE_2015_ADMx_NUTS_CZ02",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CZE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.869592,
+      "poverty_context": {
+        "poor300_rate": 0.0005,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0055,
+        "prosperity_gap_2021": 0.86959196,
+        "poor300_display": "0.05%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.55%",
+        "prosperity_gap_display": "0.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1784
+    },
+    {
+      "place_id": "CZE-ADM1-ST-EDN-MORAVA-CZ07",
+      "place_name": "Střední Morava (CZ07)",
+      "parent_place_id": "CZE",
+      "parent_place_name": "Czech Republic",
+      "iso3": "CZE",
+      "source_iso3": "CZE",
+      "geometry_level": "adm1",
+      "adm1_key": "st edn morava cz07",
+      "adm1_geo_id": "CZE_2015_ADMx_NUTS_CZ07",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CZE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.965914,
+      "poverty_context": {
+        "poor300_rate": 0.0012,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0043,
+        "prosperity_gap_2021": 0.96591422,
+        "poor300_display": "0.12%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.43%",
+        "prosperity_gap_display": "0.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1753
+    }
+  ]
+}

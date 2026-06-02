@@ -7,12 +7,13 @@ PainMap is a public static atlas for pain-source evidence by place. The site sep
 - Route source of truth: `data/routes.json`
 - Canonical measurements: `data/place-measurements.json`
 - Full place index: `v1/places/index.json`
+- ADM1 context overlay index: `v1/adm1/index.json`
 - Coverage status: `v1/coverage.json`
 - Snapshot/live overlay contract: `data/release-modes.json`
 - Per-place geography discovery: `v1/places/{place_id}/neighbors.json`
 - OGC-style place features: `ogc/index.json`, `ogc/collections/places/items.json`
 - Provenance and license registry: `data/provenance-registry.json`
-- JSON Schemas: `schemas/place-index.schema.json`, `schemas/place-measurements.schema.json`, `schemas/coverage.schema.json`, `schemas/release-modes.schema.json`, `schemas/ogc-place-features.schema.json`
+- JSON Schemas: `schemas/place-index.schema.json`, `schemas/adm1-context.schema.json`, `schemas/place-measurements.schema.json`, `schemas/coverage.schema.json`, `schemas/release-modes.schema.json`, `schemas/ogc-place-features.schema.json`
 - Release manifest: `releases/2026-05-31/manifest.json`
 - Release diff: `releases/2026-05-31/diff.json`
 - Latest alias: `latest/manifest.json`
@@ -29,7 +30,7 @@ npm run build:data
 npm run check
 ```
 
-The build step generates sitemap entries, route smoke metadata, generated country place pages, v1 JSON files, per-place neighbor payloads, CSV and GeoJSON exports, OGC-style place features, JSON Schemas, release-mode contracts, coverage and endpoint manifests, release diffs, headers, security.txt, social metadata, subresource integrity hashes, and release checksums.
+The build step generates sitemap entries, route smoke metadata, generated country place pages, high-priority ADM1 context pages, v1 JSON files, per-place neighbor payloads, ADM1 context payloads, CSV and GeoJSON exports, OGC-style place features, JSON Schemas, release-mode contracts, coverage and endpoint manifests, release diffs, headers, security.txt, social metadata, subresource integrity hashes, and release checksums.
 
 `npm run check` also validates schema targets, endpoint smoke files, place-index measurement counts, release-manifest hashes, and required QA artifacts. Run it in CI before publishing so generated artifacts cannot drift from the committed tree.
 

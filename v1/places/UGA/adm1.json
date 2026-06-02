@@ -1,0 +1,189 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "UGA",
+  "parent_place_name": "Uganda",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 4,
+  "static_page_count": 1,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "UGA-ADM1-ADJUMANI-AND-MOYO-AND-YUMBE-AND-AMOLATAR-AND-KAABONG-AND-KOBOKO-79956900",
+      "place_name": "Adjumani & Moyo & Yumbe & Amolatar & Kaabong & Koboko & Abim & Amuru & Kotido & Maracha & Oyam & Dokolo & Arua & Amudat & Kitgum & Lamwo & Nakapiripirit & Nebbi & Otuke & Zombo & Apac & Kole & Moroto & Napak & Pader & Agago & Alebtong & Gulu & Nwoya & Lira",
+      "parent_place_id": "UGA",
+      "parent_place_name": "Uganda",
+      "iso3": "UGA",
+      "source_iso3": "UGA",
+      "geometry_level": "adm1",
+      "adm1_key": "adjumani and moyo and yumbe and amolatar and kaabong and koboko and abim and amuru and kotido and maracha and oyam and dokolo and arua and amudat and kitgum and lamwo and nakapiripirit and nebbi and otuke and zombo and apac and kole and moroto and napak and pader and agago and alebtong and gulu and nwoya and lira",
+      "adm1_geo_id": "UGA_2015_ADMx_253_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/UGA/adm1/adjumani-and-moyo-and-yumbe-and-amolatar-and-kaabong-and-koboko-79956900/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.908575,
+      "poverty_context": {
+        "poor300_rate": 0.723,
+        "poor420_rate": 0.8618,
+        "poor830_rate": 0.9721,
+        "prosperity_gap_2021": 16.908575,
+        "poor300_display": "72.3%",
+        "poor420_display": "86.2%",
+        "poor830_display": "97.2%",
+        "prosperity_gap_display": "16.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 98
+    },
+    {
+      "place_id": "UGA-ADM1-BUSIA-AND-JINJA-AND-KABERAMAIDO-AND-MAYUGE-AND-AMURIA-AND-BUTAL-7951CA30",
+      "place_name": "Busia & Jinja & Kaberamaido & Mayuge & Amuria & Butaleja & Kaliro & Katakwi & Mbale & Tororo & Budaka & Namutumba & Manafwa & Bukedea & Bududa & Buyende & Kamuli & Bugiri & Bukwo & BulambuliIganga & Kapchorwa & Kween & Luuka & Ngora & Sironko & Soroti & Kibuku & Kumi & Serere & Namayingo & Pallisa",
+      "parent_place_id": "UGA",
+      "parent_place_name": "Uganda",
+      "iso3": "UGA",
+      "source_iso3": "UGA",
+      "geometry_level": "adm1",
+      "adm1_key": "busia and jinja and kaberamaido and mayuge and amuria and butaleja and kaliro and katakwi and mbale and tororo and budaka and namutumba and manafwa and bukedea and bududa and buyende and kamuli and bugiri and bukwo and bulambuliiganga and kapchorwa and kween and luuka and ngora and sironko and soroti and kibuku and kumi and serere and namayingo and pallisa",
+      "adm1_geo_id": "UGA_2015_ADMx_253_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.286788,
+      "poverty_context": {
+        "poor300_rate": 0.6972,
+        "poor420_rate": 0.8472,
+        "poor830_rate": 0.9671,
+        "prosperity_gap_2021": 14.286788,
+        "poor300_display": "69.7%",
+        "poor420_display": "84.7%",
+        "poor830_display": "96.7%",
+        "prosperity_gap_display": "14.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 151
+    },
+    {
+      "place_id": "UGA-ADM1-HOIMA-AND-KABALE-AND-KASESE-AND-KIBAALE-AND-KISORO-AND-NTUNGAMO-2CA235CA",
+      "place_name": "Hoima & Kabale & Kasese & Kibaale & Kisoro & Ntungamo & Kabarole & Kamwenge & Kanungu & Rukungiri & Ibanda & Isingiro & Kiruhura & Mbarara & Buliisa & Kyegegwa & Kyenjojo & Bundibugyo & Bushenyi & Sheema & Masindi & Buhweju & Ntoroko & Rubirizi & Kiryandongo & Mitooma",
+      "parent_place_id": "UGA",
+      "parent_place_name": "Uganda",
+      "iso3": "UGA",
+      "source_iso3": "UGA",
+      "geometry_level": "adm1",
+      "adm1_key": "hoima and kabale and kasese and kibaale and kisoro and ntungamo and kabarole and kamwenge and kanungu and rukungiri and ibanda and isingiro and kiruhura and mbarara and buliisa and kyegegwa and kyenjojo and bundibugyo and bushenyi and sheema and masindi and buhweju and ntoroko and rubirizi and kiryandongo and mitooma",
+      "adm1_geo_id": "UGA_2015_ADMx_253_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.604929,
+      "poverty_context": {
+        "poor300_rate": 0.5623,
+        "poor420_rate": 0.7629,
+        "poor830_rate": 0.9603,
+        "prosperity_gap_2021": 11.604929,
+        "poor300_display": "56.2%",
+        "poor420_display": "76.3%",
+        "poor830_display": "96.0%",
+        "prosperity_gap_display": "11.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 238
+    },
+    {
+      "place_id": "UGA-ADM1-KALANGALA-AND-SSEMBABULE-AND-KAMPALA-AND-KAYUNGA-AND-NAKASONGOL-F25D134D",
+      "place_name": "Kalangala & Ssembabule & Kampala & Kayunga & Nakasongola & Wakiso & Luwero & Mityana & Mubende & Nakaseke & Rakai & Lyantonde & Buikwe & Bukomansimbi & Butambala & Kalungu & Masaka & Buvuma & Gomba & Kiboga & Kyankwanzi & Mpigi & Lwengo & Mukono",
+      "parent_place_id": "UGA",
+      "parent_place_name": "Uganda",
+      "iso3": "UGA",
+      "source_iso3": "UGA",
+      "geometry_level": "adm1",
+      "adm1_key": "kalangala and ssembabule and kampala and kayunga and nakasongola and wakiso and luwero and mityana and mubende and nakaseke and rakai and lyantonde and buikwe and bukomansimbi and butambala and kalungu and masaka and buvuma and gomba and kiboga and kyankwanzi and mpigi and lwengo and mukono",
+      "adm1_geo_id": "UGA_2015_ADMx_253_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.825091,
+      "poverty_context": {
+        "poor300_rate": 0.3599,
+        "poor420_rate": 0.5504,
+        "poor830_rate": 0.8337,
+        "prosperity_gap_2021": 8.8250911,
+        "poor300_display": "36.0%",
+        "poor420_display": "55.0%",
+        "poor830_display": "83.4%",
+        "prosperity_gap_display": "8.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 432
+    }
+  ]
+}

@@ -1,0 +1,3577 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "PHL",
+  "parent_place_name": "Philippines",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 81,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "PHL-ADM1-ABRA",
+      "place_name": "Abra",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "abra",
+      "adm1_geo_id": "PHL_2015_ADM1_24204",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.052345,
+      "poverty_context": {
+        "poor300_rate": 0.0909,
+        "poor420_rate": 0.2914,
+        "poor830_rate": 0.7714,
+        "prosperity_gap_2021": 6.0523446,
+        "poor300_display": "9.09%",
+        "poor420_display": "29.1%",
+        "poor830_display": "77.1%",
+        "prosperity_gap_display": "6.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 675
+    },
+    {
+      "place_id": "PHL-ADM1-AGUSAN-DEL-NORTE",
+      "place_name": "Agusan Del Norte",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "agusan del norte",
+      "adm1_geo_id": "PHL_2015_ADM1_24275",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.528551,
+      "poverty_context": {
+        "poor300_rate": 0.1475,
+        "poor420_rate": 0.3524,
+        "poor830_rate": 0.7673,
+        "prosperity_gap_2021": 6.5285509,
+        "poor300_display": "14.8%",
+        "poor420_display": "35.2%",
+        "poor830_display": "76.7%",
+        "prosperity_gap_display": "6.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 629
+    },
+    {
+      "place_id": "PHL-ADM1-AGUSAN-DEL-SUR",
+      "place_name": "Agusan Del Sur",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "agusan del sur",
+      "adm1_geo_id": "PHL_2015_ADM1_24276",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.93347,
+      "poverty_context": {
+        "poor300_rate": 0.2496,
+        "poor420_rate": 0.5055,
+        "poor830_rate": 0.8726,
+        "prosperity_gap_2021": 7.9334702,
+        "poor300_display": "25.0%",
+        "poor420_display": "50.5%",
+        "poor830_display": "87.3%",
+        "prosperity_gap_display": "7.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 507
+    },
+    {
+      "place_id": "PHL-ADM1-AKLAN",
+      "place_name": "Aklan",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "aklan",
+      "adm1_geo_id": "PHL_2015_ADM1_24246",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.902104,
+      "poverty_context": {
+        "poor300_rate": 0.0159,
+        "poor420_rate": 0.1612,
+        "poor830_rate": 0.7056,
+        "prosperity_gap_2021": 4.902104,
+        "poor300_display": "1.59%",
+        "poor420_display": "16.1%",
+        "poor830_display": "70.6%",
+        "prosperity_gap_display": "4.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 825
+    },
+    {
+      "place_id": "PHL-ADM1-ALBAY",
+      "place_name": "Albay",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "albay",
+      "adm1_geo_id": "PHL_2015_ADM1_24240",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.164485,
+      "poverty_context": {
+        "poor300_rate": 0.1757,
+        "poor420_rate": 0.4443,
+        "poor830_rate": 0.8343,
+        "prosperity_gap_2021": 7.1644849,
+        "poor300_display": "17.6%",
+        "poor420_display": "44.4%",
+        "poor830_display": "83.4%",
+        "prosperity_gap_display": "7.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 575
+    },
+    {
+      "place_id": "PHL-ADM1-ANTIQUE",
+      "place_name": "Antique",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "antique",
+      "adm1_geo_id": "PHL_2015_ADM1_24247",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.328901,
+      "poverty_context": {
+        "poor300_rate": 0.1301,
+        "poor420_rate": 0.3393,
+        "poor830_rate": 0.7661,
+        "prosperity_gap_2021": 6.3289007,
+        "poor300_display": "13.0%",
+        "poor420_display": "33.9%",
+        "poor830_display": "76.6%",
+        "prosperity_gap_display": "6.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 640
+    },
+    {
+      "place_id": "PHL-ADM1-APAYAO",
+      "place_name": "Apayao",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "apayao",
+      "adm1_geo_id": "PHL_2015_ADM1_24205",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.987443,
+      "poverty_context": {
+        "poor300_rate": 0.0271,
+        "poor420_rate": 0.1831,
+        "poor830_rate": 0.6786,
+        "prosperity_gap_2021": 4.9874434,
+        "poor300_display": "2.71%",
+        "poor420_display": "18.3%",
+        "poor830_display": "67.9%",
+        "prosperity_gap_display": "4.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 809
+    },
+    {
+      "place_id": "PHL-ADM1-AURORA",
+      "place_name": "Aurora",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "aurora",
+      "adm1_geo_id": "PHL_2015_ADM1_24226",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.148487,
+      "poverty_context": {
+        "poor300_rate": 0.1049,
+        "poor420_rate": 0.3341,
+        "poor830_rate": 0.7742,
+        "prosperity_gap_2021": 6.1484871,
+        "poor300_display": "10.5%",
+        "poor420_display": "33.4%",
+        "poor830_display": "77.4%",
+        "prosperity_gap_display": "6.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 661
+    },
+    {
+      "place_id": "PHL-ADM1-BASILAN",
+      "place_name": "Basilan",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "basilan",
+      "adm1_geo_id": "PHL_2015_ADM1_24237",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.544404,
+      "poverty_context": {
+        "poor300_rate": 0.2913,
+        "poor420_rate": 0.6123,
+        "poor830_rate": 0.9239,
+        "prosperity_gap_2021": 8.5444041,
+        "poor300_display": "29.1%",
+        "poor420_display": "61.2%",
+        "poor830_display": "92.4%",
+        "prosperity_gap_display": "8.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 453
+    },
+    {
+      "place_id": "PHL-ADM1-BATAAN",
+      "place_name": "Bataan",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "bataan",
+      "adm1_geo_id": "PHL_2015_ADM1_24220",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.174615,
+      "poverty_context": {
+        "poor300_rate": 0.066,
+        "poor420_rate": 0.1983,
+        "poor830_rate": 0.6869,
+        "prosperity_gap_2021": 5.1746146,
+        "poor300_display": "6.60%",
+        "poor420_display": "19.8%",
+        "poor830_display": "68.7%",
+        "prosperity_gap_display": "5.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 784
+    },
+    {
+      "place_id": "PHL-ADM1-BATANES",
+      "place_name": "Batanes",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "batanes",
+      "adm1_geo_id": "PHL_2015_ADM1_24215",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.172928,
+      "poverty_context": {
+        "poor300_rate": 0.0325,
+        "poor420_rate": 0.1117,
+        "poor830_rate": 0.5238,
+        "prosperity_gap_2021": 4.1729283,
+        "poor300_display": "3.25%",
+        "poor420_display": "11.2%",
+        "poor830_display": "52.4%",
+        "prosperity_gap_display": "4.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 954
+    },
+    {
+      "place_id": "PHL-ADM1-BATANGAS",
+      "place_name": "Batangas",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "batangas",
+      "adm1_geo_id": "PHL_2015_ADM1_24227",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.954192,
+      "poverty_context": {
+        "poor300_rate": 0.0528,
+        "poor420_rate": 0.1862,
+        "poor830_rate": 0.6341,
+        "prosperity_gap_2021": 4.9541923,
+        "poor300_display": "5.28%",
+        "poor420_display": "18.6%",
+        "poor830_display": "63.4%",
+        "prosperity_gap_display": "4.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 815
+    },
+    {
+      "place_id": "PHL-ADM1-BENGUET",
+      "place_name": "Benguet",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "benguet",
+      "adm1_geo_id": "PHL_2015_ADM1_24206",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.058634,
+      "poverty_context": {
+        "poor300_rate": 0.0292,
+        "poor420_rate": 0.1069,
+        "poor830_rate": 0.5013,
+        "prosperity_gap_2021": 4.058634,
+        "poor300_display": "2.92%",
+        "poor420_display": "10.7%",
+        "poor830_display": "50.1%",
+        "prosperity_gap_display": "4.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 979
+    },
+    {
+      "place_id": "PHL-ADM1-BILIRAN",
+      "place_name": "Biliran",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "biliran",
+      "adm1_geo_id": "PHL_2015_ADM1_24256",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.734715,
+      "poverty_context": {
+        "poor300_rate": 0.0872,
+        "poor420_rate": 0.2803,
+        "poor830_rate": 0.7443,
+        "prosperity_gap_2021": 5.7347146,
+        "poor300_display": "8.72%",
+        "poor420_display": "28.0%",
+        "poor830_display": "74.4%",
+        "prosperity_gap_display": "5.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 711
+    },
+    {
+      "place_id": "PHL-ADM1-BOHOL",
+      "place_name": "Bohol",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "bohol",
+      "adm1_geo_id": "PHL_2015_ADM1_24252",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.587958,
+      "poverty_context": {
+        "poor300_rate": 0.1429,
+        "poor420_rate": 0.3455,
+        "poor830_rate": 0.783,
+        "prosperity_gap_2021": 6.587958,
+        "poor300_display": "14.3%",
+        "poor420_display": "34.5%",
+        "poor830_display": "78.3%",
+        "prosperity_gap_display": "6.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 623
+    },
+    {
+      "place_id": "PHL-ADM1-BUKIDNON",
+      "place_name": "Bukidnon",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "bukidnon",
+      "adm1_geo_id": "PHL_2015_ADM1_24262",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.493479,
+      "poverty_context": {
+        "poor300_rate": 0.2208,
+        "poor420_rate": 0.4578,
+        "poor830_rate": 0.8505,
+        "prosperity_gap_2021": 7.4934794,
+        "poor300_display": "22.1%",
+        "poor420_display": "45.8%",
+        "poor830_display": "85.0%",
+        "prosperity_gap_display": "7.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 547
+    },
+    {
+      "place_id": "PHL-ADM1-BULACAN",
+      "place_name": "Bulacan",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "bulacan",
+      "adm1_geo_id": "PHL_2015_ADM1_24221",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.565647,
+      "poverty_context": {
+        "poor300_rate": 0.0516,
+        "poor420_rate": 0.2373,
+        "poor830_rate": 0.7719,
+        "prosperity_gap_2021": 5.5656474,
+        "poor300_display": "5.16%",
+        "poor420_display": "23.7%",
+        "poor830_display": "77.2%",
+        "prosperity_gap_display": "5.57"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 730
+    },
+    {
+      "place_id": "PHL-ADM1-CAGAYAN",
+      "place_name": "Cagayan",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "cagayan",
+      "adm1_geo_id": "PHL_2015_ADM1_24216",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.179351,
+      "poverty_context": {
+        "poor300_rate": 0.0555,
+        "poor420_rate": 0.1858,
+        "poor830_rate": 0.7076,
+        "prosperity_gap_2021": 5.1793507,
+        "poor300_display": "5.55%",
+        "poor420_display": "18.6%",
+        "poor830_display": "70.8%",
+        "prosperity_gap_display": "5.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 783
+    },
+    {
+      "place_id": "PHL-ADM1-CAMARINES-NORTE",
+      "place_name": "Camarines Norte",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "camarines norte",
+      "adm1_geo_id": "PHL_2015_ADM1_24241",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.322577,
+      "poverty_context": {
+        "poor300_rate": 0.1745,
+        "poor420_rate": 0.4619,
+        "poor830_rate": 0.8596,
+        "prosperity_gap_2021": 7.3225773,
+        "poor300_display": "17.4%",
+        "poor420_display": "46.2%",
+        "poor830_display": "86.0%",
+        "prosperity_gap_display": "7.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 562
+    },
+    {
+      "place_id": "PHL-ADM1-CAMARINES-SUR",
+      "place_name": "Camarines Sur",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "camarines sur",
+      "adm1_geo_id": "PHL_2015_ADM1_24242",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.668322,
+      "poverty_context": {
+        "poor300_rate": 0.2469,
+        "poor420_rate": 0.4716,
+        "poor830_rate": 0.8196,
+        "prosperity_gap_2021": 7.6683223,
+        "poor300_display": "24.7%",
+        "poor420_display": "47.2%",
+        "poor830_display": "82.0%",
+        "prosperity_gap_display": "7.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 532
+    },
+    {
+      "place_id": "PHL-ADM1-CAMIGUIN",
+      "place_name": "Camiguin",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "camiguin",
+      "adm1_geo_id": "PHL_2015_ADM1_24263",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.970408,
+      "poverty_context": {
+        "poor300_rate": 0.1089,
+        "poor420_rate": 0.3032,
+        "poor830_rate": 0.7594,
+        "prosperity_gap_2021": 5.9704079,
+        "poor300_display": "10.9%",
+        "poor420_display": "30.3%",
+        "poor830_display": "75.9%",
+        "prosperity_gap_display": "5.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 683
+    },
+    {
+      "place_id": "PHL-ADM1-CAPIZ",
+      "place_name": "Capiz",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "capiz",
+      "adm1_geo_id": "PHL_2015_ADM1_24248",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.134733,
+      "poverty_context": {
+        "poor300_rate": 0.0886,
+        "poor420_rate": 0.307,
+        "poor830_rate": 0.8175,
+        "prosperity_gap_2021": 6.134733,
+        "poor300_display": "8.86%",
+        "poor420_display": "30.7%",
+        "poor830_display": "81.8%",
+        "prosperity_gap_display": "6.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 666
+    },
+    {
+      "place_id": "PHL-ADM1-CATANDUANES",
+      "place_name": "Catanduanes",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "catanduanes",
+      "adm1_geo_id": "PHL_2015_ADM1_24243",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.697373,
+      "poverty_context": {
+        "poor300_rate": 0.2416,
+        "poor420_rate": 0.4939,
+        "poor830_rate": 0.8365,
+        "prosperity_gap_2021": 7.6973728,
+        "poor300_display": "24.2%",
+        "poor420_display": "49.4%",
+        "poor830_display": "83.7%",
+        "prosperity_gap_display": "7.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 530
+    },
+    {
+      "place_id": "PHL-ADM1-CAVITE",
+      "place_name": "Cavite",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "cavite",
+      "adm1_geo_id": "PHL_2015_ADM1_24228",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.902726,
+      "poverty_context": {
+        "poor300_rate": 0.0454,
+        "poor420_rate": 0.1748,
+        "poor830_rate": 0.6441,
+        "prosperity_gap_2021": 4.9027258,
+        "poor300_display": "4.54%",
+        "poor420_display": "17.5%",
+        "poor830_display": "64.4%",
+        "prosperity_gap_display": "4.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 824
+    },
+    {
+      "place_id": "PHL-ADM1-CEBU",
+      "place_name": "Cebu",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "cebu",
+      "adm1_geo_id": "PHL_2015_ADM1_24253",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.275924,
+      "poverty_context": {
+        "poor300_rate": 0.1234,
+        "poor420_rate": 0.3152,
+        "poor830_rate": 0.7593,
+        "prosperity_gap_2021": 6.2759244,
+        "poor300_display": "12.3%",
+        "poor420_display": "31.5%",
+        "poor830_display": "75.9%",
+        "prosperity_gap_display": "6.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 644
+    },
+    {
+      "place_id": "PHL-ADM1-COMPOSTELA",
+      "place_name": "Compostela",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "compostela",
+      "adm1_geo_id": "PHL_2015_ADM1_24266",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.816434,
+      "poverty_context": {
+        "poor300_rate": 0.0767,
+        "poor420_rate": 0.2605,
+        "poor830_rate": 0.7903,
+        "prosperity_gap_2021": 5.8164339,
+        "poor300_display": "7.67%",
+        "poor420_display": "26.1%",
+        "poor830_display": "79.0%",
+        "prosperity_gap_display": "5.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 702
+    },
+    {
+      "place_id": "PHL-ADM1-DAVAO-DEL-NORTE",
+      "place_name": "Davao del Norte",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "davao del norte",
+      "adm1_geo_id": "PHL_2015_ADM1_24267",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.666163,
+      "poverty_context": {
+        "poor300_rate": 0.0874,
+        "poor420_rate": 0.2227,
+        "poor830_rate": 0.6858,
+        "prosperity_gap_2021": 5.6661635,
+        "poor300_display": "8.74%",
+        "poor420_display": "22.3%",
+        "poor830_display": "68.6%",
+        "prosperity_gap_display": "5.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 719
+    },
+    {
+      "place_id": "PHL-ADM1-DAVAO-DEL-SUR",
+      "place_name": "Davao Del Sur",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "davao del sur",
+      "adm1_geo_id": "PHL_2015_ADM1_24268",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.512612,
+      "poverty_context": {
+        "poor300_rate": 0.1258,
+        "poor420_rate": 0.3447,
+        "poor830_rate": 0.8061,
+        "prosperity_gap_2021": 6.5126118,
+        "poor300_display": "12.6%",
+        "poor420_display": "34.5%",
+        "poor830_display": "80.6%",
+        "prosperity_gap_display": "6.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 630
+    },
+    {
+      "place_id": "PHL-ADM1-DAVAO-ORIENTAL",
+      "place_name": "Davao Oriental",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "davao oriental",
+      "adm1_geo_id": "PHL_2015_ADM1_24269",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.567893,
+      "poverty_context": {
+        "poor300_rate": 0.2895,
+        "poor420_rate": 0.607,
+        "poor830_rate": 0.9114,
+        "prosperity_gap_2021": 8.567893,
+        "poor300_display": "28.9%",
+        "poor420_display": "60.7%",
+        "poor830_display": "91.1%",
+        "prosperity_gap_display": "8.57"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 449
+    },
+    {
+      "place_id": "PHL-ADM1-DINAGAT",
+      "place_name": "Dinagat",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "dinagat",
+      "adm1_geo_id": "PHL_2015_ADM1_67168",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.72552,
+      "poverty_context": {
+        "poor300_rate": 0.2309,
+        "poor420_rate": 0.481,
+        "poor830_rate": 0.8571,
+        "prosperity_gap_2021": 7.7255204,
+        "poor300_display": "23.1%",
+        "poor420_display": "48.1%",
+        "poor830_display": "85.7%",
+        "prosperity_gap_display": "7.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 527
+    },
+    {
+      "place_id": "PHL-ADM1-EASTERN-SAMAR",
+      "place_name": "Eastern Samar",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "eastern samar",
+      "adm1_geo_id": "PHL_2015_ADM1_24257",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.840895,
+      "poverty_context": {
+        "poor300_rate": 0.2525,
+        "poor420_rate": 0.5135,
+        "poor830_rate": 0.8461,
+        "prosperity_gap_2021": 7.8408953,
+        "poor300_display": "25.3%",
+        "poor420_display": "51.3%",
+        "poor830_display": "84.6%",
+        "prosperity_gap_display": "7.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 510
+    },
+    {
+      "place_id": "PHL-ADM1-GUIMARAS",
+      "place_name": "Guimaras",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "guimaras",
+      "adm1_geo_id": "PHL_2015_ADM1_24249",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.282272,
+      "poverty_context": {
+        "poor300_rate": 0.0253,
+        "poor420_rate": 0.1969,
+        "poor830_rate": 0.7497,
+        "prosperity_gap_2021": 5.2822723,
+        "poor300_display": "2.53%",
+        "poor420_display": "19.7%",
+        "poor830_display": "75.0%",
+        "prosperity_gap_display": "5.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 772
+    },
+    {
+      "place_id": "PHL-ADM1-IFUGAO",
+      "place_name": "Ifugao",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "ifugao",
+      "adm1_geo_id": "PHL_2015_ADM1_24207",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.274896,
+      "poverty_context": {
+        "poor300_rate": 0.0416,
+        "poor420_rate": 0.2025,
+        "poor830_rate": 0.7299,
+        "prosperity_gap_2021": 5.274896,
+        "poor300_display": "4.16%",
+        "poor420_display": "20.3%",
+        "poor830_display": "73.0%",
+        "prosperity_gap_display": "5.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 773
+    },
+    {
+      "place_id": "PHL-ADM1-ILOCOS-NORTE",
+      "place_name": "Ilocos Norte",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "ilocos norte",
+      "adm1_geo_id": "PHL_2015_ADM1_24211",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.625563,
+      "poverty_context": {
+        "poor300_rate": 0.0023,
+        "poor420_rate": 0.0191,
+        "poor830_rate": 0.5037,
+        "prosperity_gap_2021": 3.6255634,
+        "poor300_display": "0.23%",
+        "poor420_display": "1.91%",
+        "poor830_display": "50.4%",
+        "prosperity_gap_display": "3.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1048
+    },
+    {
+      "place_id": "PHL-ADM1-ILOCOS-SUR",
+      "place_name": "Ilocos Sur",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "ilocos sur",
+      "adm1_geo_id": "PHL_2015_ADM1_24212",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.189781,
+      "poverty_context": {
+        "poor300_rate": 0.05,
+        "poor420_rate": 0.1951,
+        "poor830_rate": 0.7054,
+        "prosperity_gap_2021": 5.1897806,
+        "poor300_display": "5.00%",
+        "poor420_display": "19.5%",
+        "poor830_display": "70.5%",
+        "prosperity_gap_display": "5.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 781
+    },
+    {
+      "place_id": "PHL-ADM1-ILOILO",
+      "place_name": "Iloilo",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "iloilo",
+      "adm1_geo_id": "PHL_2015_ADM1_24250",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.924326,
+      "poverty_context": {
+        "poor300_rate": 0.1135,
+        "poor420_rate": 0.3023,
+        "poor830_rate": 0.7267,
+        "prosperity_gap_2021": 5.9243263,
+        "poor300_display": "11.3%",
+        "poor420_display": "30.2%",
+        "poor830_display": "72.7%",
+        "prosperity_gap_display": "5.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 686
+    },
+    {
+      "place_id": "PHL-ADM1-ISABELA",
+      "place_name": "Isabela",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "isabela",
+      "adm1_geo_id": "PHL_2015_ADM1_24217",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.888019,
+      "poverty_context": {
+        "poor300_rate": 0.0902,
+        "poor420_rate": 0.2792,
+        "poor830_rate": 0.7772,
+        "prosperity_gap_2021": 5.8880187,
+        "poor300_display": "9.02%",
+        "poor420_display": "27.9%",
+        "poor830_display": "77.7%",
+        "prosperity_gap_display": "5.89"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 693
+    },
+    {
+      "place_id": "PHL-ADM1-KALINGA",
+      "place_name": "Kalinga",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "kalinga",
+      "adm1_geo_id": "PHL_2015_ADM1_24208",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.674537,
+      "poverty_context": {
+        "poor300_rate": 0.0206,
+        "poor420_rate": 0.1358,
+        "poor830_rate": 0.652,
+        "prosperity_gap_2021": 4.6745371,
+        "poor300_display": "2.06%",
+        "poor420_display": "13.6%",
+        "poor830_display": "65.2%",
+        "prosperity_gap_display": "4.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 864
+    },
+    {
+      "place_id": "PHL-ADM1-LA-UNION",
+      "place_name": "La Union",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "la union",
+      "adm1_geo_id": "PHL_2015_ADM1_24213",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.039735,
+      "poverty_context": {
+        "poor300_rate": 0.0597,
+        "poor420_rate": 0.191,
+        "poor830_rate": 0.6389,
+        "prosperity_gap_2021": 5.0397354,
+        "poor300_display": "5.97%",
+        "poor420_display": "19.1%",
+        "poor830_display": "63.9%",
+        "prosperity_gap_display": "5.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 800
+    },
+    {
+      "place_id": "PHL-ADM1-LAGUNA",
+      "place_name": "Laguna",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "laguna",
+      "adm1_geo_id": "PHL_2015_ADM1_24229",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.896824,
+      "poverty_context": {
+        "poor300_rate": 0.0497,
+        "poor420_rate": 0.1671,
+        "poor830_rate": 0.641,
+        "prosperity_gap_2021": 4.8968241,
+        "poor300_display": "4.97%",
+        "poor420_display": "16.7%",
+        "poor830_display": "64.1%",
+        "prosperity_gap_display": "4.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 828
+    },
+    {
+      "place_id": "PHL-ADM1-LANAO-DEL-NORTE",
+      "place_name": "Lanao Del Norte",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "lanao del norte",
+      "adm1_geo_id": "PHL_2015_ADM1_24272",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.043442,
+      "poverty_context": {
+        "poor300_rate": 0.2734,
+        "poor420_rate": 0.5124,
+        "poor830_rate": 0.8261,
+        "prosperity_gap_2021": 8.0434421,
+        "poor300_display": "27.3%",
+        "poor420_display": "51.2%",
+        "poor830_display": "82.6%",
+        "prosperity_gap_display": "8.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 498
+    },
+    {
+      "place_id": "PHL-ADM1-LANAO-DEL-SUR",
+      "place_name": "Lanao Del Sur",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "lanao del sur",
+      "adm1_geo_id": "PHL_2015_ADM1_24200",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.320703,
+      "poverty_context": {
+        "poor300_rate": 0.0883,
+        "poor420_rate": 0.4985,
+        "poor830_rate": 0.9442,
+        "prosperity_gap_2021": 7.3207033,
+        "poor300_display": "8.83%",
+        "poor420_display": "49.9%",
+        "poor830_display": "94.4%",
+        "prosperity_gap_display": "7.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 563
+    },
+    {
+      "place_id": "PHL-ADM1-LEYTE",
+      "place_name": "Leyte",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "leyte",
+      "adm1_geo_id": "PHL_2015_ADM1_24258",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.421504,
+      "poverty_context": {
+        "poor300_rate": 0.2155,
+        "poor420_rate": 0.4559,
+        "poor830_rate": 0.8272,
+        "prosperity_gap_2021": 7.421504,
+        "poor300_display": "21.6%",
+        "poor420_display": "45.6%",
+        "poor830_display": "82.7%",
+        "prosperity_gap_display": "7.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 553
+    },
+    {
+      "place_id": "PHL-ADM1-MAGUINDANAO",
+      "place_name": "Maguindanao",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "maguindanao",
+      "adm1_geo_id": "PHL_2015_ADM1_67174",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.198429,
+      "poverty_context": {
+        "poor300_rate": 0.3357,
+        "poor420_rate": 0.6462,
+        "poor830_rate": 0.9581,
+        "prosperity_gap_2021": 9.1984289,
+        "poor300_display": "33.6%",
+        "poor420_display": "64.6%",
+        "poor830_display": "95.8%",
+        "prosperity_gap_display": "9.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 405
+    },
+    {
+      "place_id": "PHL-ADM1-MARINDUQUE",
+      "place_name": "Marinduque",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "marinduque",
+      "adm1_geo_id": "PHL_2015_ADM1_24230",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.917523,
+      "poverty_context": {
+        "poor300_rate": 0.0865,
+        "poor420_rate": 0.2893,
+        "poor830_rate": 0.7679,
+        "prosperity_gap_2021": 5.9175226,
+        "poor300_display": "8.65%",
+        "poor420_display": "28.9%",
+        "poor830_display": "76.8%",
+        "prosperity_gap_display": "5.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 688
+    },
+    {
+      "place_id": "PHL-ADM1-MASBATE",
+      "place_name": "Masbate",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "masbate",
+      "adm1_geo_id": "PHL_2015_ADM1_24244",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.703958,
+      "poverty_context": {
+        "poor300_rate": 0.13,
+        "poor420_rate": 0.3886,
+        "poor830_rate": 0.8366,
+        "prosperity_gap_2021": 6.7039578,
+        "poor300_display": "13.0%",
+        "poor420_display": "38.9%",
+        "poor830_display": "83.7%",
+        "prosperity_gap_display": "6.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 609
+    },
+    {
+      "place_id": "PHL-ADM1-METROPOLITAN-MANILA",
+      "place_name": "Metropolitan Manila",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "metropolitan manila",
+      "adm1_geo_id": "PHL_2015_ADM1_24210",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.039768,
+      "poverty_context": {
+        "poor300_rate": 0.0093,
+        "poor420_rate": 0.0761,
+        "poor830_rate": 0.554,
+        "prosperity_gap_2021": 4.0397679,
+        "poor300_display": "0.93%",
+        "poor420_display": "7.61%",
+        "poor830_display": "55.4%",
+        "prosperity_gap_display": "4.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 980
+    },
+    {
+      "place_id": "PHL-ADM1-MINDORO-OCCIDENTAL",
+      "place_name": "Mindoro Occidental",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "mindoro occidental",
+      "adm1_geo_id": "PHL_2015_ADM1_24231",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.843299,
+      "poverty_context": {
+        "poor300_rate": 0.2245,
+        "poor420_rate": 0.4249,
+        "poor830_rate": 0.8144,
+        "prosperity_gap_2021": 7.8432986,
+        "poor300_display": "22.4%",
+        "poor420_display": "42.5%",
+        "poor830_display": "81.4%",
+        "prosperity_gap_display": "7.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 509
+    },
+    {
+      "place_id": "PHL-ADM1-MINDORO-ORIENTAL",
+      "place_name": "Mindoro Oriental",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "mindoro oriental",
+      "adm1_geo_id": "PHL_2015_ADM1_24232",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.068049,
+      "poverty_context": {
+        "poor300_rate": 0.1533,
+        "poor420_rate": 0.3785,
+        "poor830_rate": 0.7944,
+        "prosperity_gap_2021": 7.0680495,
+        "poor300_display": "15.3%",
+        "poor420_display": "37.9%",
+        "poor830_display": "79.4%",
+        "prosperity_gap_display": "7.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 582
+    },
+    {
+      "place_id": "PHL-ADM1-MISAMIS-OCCIDENTAL",
+      "place_name": "Misamis Occidental",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "misamis occidental",
+      "adm1_geo_id": "PHL_2015_ADM1_24264",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.592821,
+      "poverty_context": {
+        "poor300_rate": 0.2294,
+        "poor420_rate": 0.4832,
+        "poor830_rate": 0.8301,
+        "prosperity_gap_2021": 7.592821,
+        "poor300_display": "22.9%",
+        "poor420_display": "48.3%",
+        "poor830_display": "83.0%",
+        "prosperity_gap_display": "7.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 537
+    },
+    {
+      "place_id": "PHL-ADM1-MISAMIS-ORIENTAL",
+      "place_name": "Misamis Oriental",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "misamis oriental",
+      "adm1_geo_id": "PHL_2015_ADM1_24265",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.211063,
+      "poverty_context": {
+        "poor300_rate": 0.1141,
+        "poor420_rate": 0.3251,
+        "poor830_rate": 0.7823,
+        "prosperity_gap_2021": 6.2110626,
+        "poor300_display": "11.4%",
+        "poor420_display": "32.5%",
+        "poor830_display": "78.2%",
+        "prosperity_gap_display": "6.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 649
+    },
+    {
+      "place_id": "PHL-ADM1-MOUNTAIN-PROVINCE",
+      "place_name": "Mountain Province",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "mountain province",
+      "adm1_geo_id": "PHL_2015_ADM1_24209",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.187023,
+      "poverty_context": {
+        "poor300_rate": 0.1103,
+        "poor420_rate": 0.3279,
+        "poor830_rate": 0.7709,
+        "prosperity_gap_2021": 6.1870229,
+        "poor300_display": "11.0%",
+        "poor420_display": "32.8%",
+        "poor830_display": "77.1%",
+        "prosperity_gap_display": "6.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 653
+    },
+    {
+      "place_id": "PHL-ADM1-NEGROS-OCCIDENTAL",
+      "place_name": "Negros Occidental",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "negros occidental",
+      "adm1_geo_id": "PHL_2015_ADM1_24251",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.642325,
+      "poverty_context": {
+        "poor300_rate": 0.2247,
+        "poor420_rate": 0.468,
+        "poor830_rate": 0.845,
+        "prosperity_gap_2021": 7.6423253,
+        "poor300_display": "22.5%",
+        "poor420_display": "46.8%",
+        "poor830_display": "84.5%",
+        "prosperity_gap_display": "7.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 533
+    },
+    {
+      "place_id": "PHL-ADM1-NEGROS-ORIENTAL",
+      "place_name": "Negros Oriental",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "negros oriental",
+      "adm1_geo_id": "PHL_2015_ADM1_24254",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.835296,
+      "poverty_context": {
+        "poor300_rate": 0.2736,
+        "poor420_rate": 0.4694,
+        "poor830_rate": 0.7729,
+        "prosperity_gap_2021": 7.8352963,
+        "poor300_display": "27.4%",
+        "poor420_display": "46.9%",
+        "poor830_display": "77.3%",
+        "prosperity_gap_display": "7.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 511
+    },
+    {
+      "place_id": "PHL-ADM1-NORTH-COTABATO",
+      "place_name": "North Cotabato",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "north cotabato",
+      "adm1_geo_id": "PHL_2015_ADM1_24273",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.001306,
+      "poverty_context": {
+        "poor300_rate": 0.1915,
+        "poor420_rate": 0.3895,
+        "poor830_rate": 0.7761,
+        "prosperity_gap_2021": 7.001306,
+        "poor300_display": "19.1%",
+        "poor420_display": "39.0%",
+        "poor830_display": "77.6%",
+        "prosperity_gap_display": "7.00"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 585
+    },
+    {
+      "place_id": "PHL-ADM1-NORTHERN-SAMAR",
+      "place_name": "Northern Samar",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "northern samar",
+      "adm1_geo_id": "PHL_2015_ADM1_24259",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.543141,
+      "poverty_context": {
+        "poor300_rate": 0.2344,
+        "poor420_rate": 0.4528,
+        "poor830_rate": 0.8391,
+        "prosperity_gap_2021": 7.5431409,
+        "poor300_display": "23.4%",
+        "poor420_display": "45.3%",
+        "poor830_display": "83.9%",
+        "prosperity_gap_display": "7.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 542
+    },
+    {
+      "place_id": "PHL-ADM1-NUEVA-ECIJA",
+      "place_name": "Nueva Ecija",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "nueva ecija",
+      "adm1_geo_id": "PHL_2015_ADM1_24222",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.590844,
+      "poverty_context": {
+        "poor300_rate": 0.0633,
+        "poor420_rate": 0.2349,
+        "poor830_rate": 0.76,
+        "prosperity_gap_2021": 5.5908439,
+        "poor300_display": "6.33%",
+        "poor420_display": "23.5%",
+        "poor830_display": "76.0%",
+        "prosperity_gap_display": "5.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 728
+    },
+    {
+      "place_id": "PHL-ADM1-NUEVA-VIZCAYA",
+      "place_name": "Nueva Vizcaya",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "nueva vizcaya",
+      "adm1_geo_id": "PHL_2015_ADM1_24218",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.553502,
+      "poverty_context": {
+        "poor300_rate": 0.0752,
+        "poor420_rate": 0.2296,
+        "poor830_rate": 0.712,
+        "prosperity_gap_2021": 5.5535022,
+        "poor300_display": "7.52%",
+        "poor420_display": "23.0%",
+        "poor830_display": "71.2%",
+        "prosperity_gap_display": "5.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 732
+    },
+    {
+      "place_id": "PHL-ADM1-PALAWAN",
+      "place_name": "Palawan",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "palawan",
+      "adm1_geo_id": "PHL_2015_ADM1_24233",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.855312,
+      "poverty_context": {
+        "poor300_rate": 0.1532,
+        "poor420_rate": 0.3809,
+        "poor830_rate": 0.8026,
+        "prosperity_gap_2021": 6.8553121,
+        "poor300_display": "15.3%",
+        "poor420_display": "38.1%",
+        "poor830_display": "80.3%",
+        "prosperity_gap_display": "6.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 595
+    },
+    {
+      "place_id": "PHL-ADM1-PAMPANGA",
+      "place_name": "Pampanga",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "pampanga",
+      "adm1_geo_id": "PHL_2015_ADM1_24223",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.501681,
+      "poverty_context": {
+        "poor300_rate": 0.0103,
+        "poor420_rate": 0.0833,
+        "poor830_rate": 0.6715,
+        "prosperity_gap_2021": 4.5016813,
+        "poor300_display": "1.03%",
+        "poor420_display": "8.33%",
+        "poor830_display": "67.2%",
+        "prosperity_gap_display": "4.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 893
+    },
+    {
+      "place_id": "PHL-ADM1-PANGASINAN",
+      "place_name": "Pangasinan",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "pangasinan",
+      "adm1_geo_id": "PHL_2015_ADM1_24214",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.284547,
+      "poverty_context": {
+        "poor300_rate": 0.1122,
+        "poor420_rate": 0.3206,
+        "poor830_rate": 0.7947,
+        "prosperity_gap_2021": 6.2845471,
+        "poor300_display": "11.2%",
+        "poor420_display": "32.1%",
+        "poor830_display": "79.5%",
+        "prosperity_gap_display": "6.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 642
+    },
+    {
+      "place_id": "PHL-ADM1-QUEZON",
+      "place_name": "Quezon",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "quezon",
+      "adm1_geo_id": "PHL_2015_ADM1_24234",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.866543,
+      "poverty_context": {
+        "poor300_rate": 0.0598,
+        "poor420_rate": 0.2737,
+        "poor830_rate": 0.7975,
+        "prosperity_gap_2021": 5.8665425,
+        "poor300_display": "5.98%",
+        "poor420_display": "27.4%",
+        "poor830_display": "79.8%",
+        "prosperity_gap_display": "5.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 695
+    },
+    {
+      "place_id": "PHL-ADM1-QUIRINO",
+      "place_name": "Quirino",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "quirino",
+      "adm1_geo_id": "PHL_2015_ADM1_24219",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.219762,
+      "poverty_context": {
+        "poor300_rate": 0.0607,
+        "poor420_rate": 0.2169,
+        "poor830_rate": 0.6903,
+        "prosperity_gap_2021": 5.2197618,
+        "poor300_display": "6.07%",
+        "poor420_display": "21.7%",
+        "poor830_display": "69.0%",
+        "prosperity_gap_display": "5.22"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 778
+    },
+    {
+      "place_id": "PHL-ADM1-RIZAL",
+      "place_name": "Rizal",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "rizal",
+      "adm1_geo_id": "PHL_2015_ADM1_24235",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.037396,
+      "poverty_context": {
+        "poor300_rate": 0.0673,
+        "poor420_rate": 0.1811,
+        "poor830_rate": 0.6395,
+        "prosperity_gap_2021": 5.0373957,
+        "poor300_display": "6.73%",
+        "poor420_display": "18.1%",
+        "poor830_display": "63.9%",
+        "prosperity_gap_display": "5.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 801
+    },
+    {
+      "place_id": "PHL-ADM1-ROMBLON",
+      "place_name": "Romblon",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "romblon",
+      "adm1_geo_id": "PHL_2015_ADM1_24236",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.763952,
+      "poverty_context": {
+        "poor300_rate": 0.225,
+        "poor420_rate": 0.5236,
+        "poor830_rate": 0.8606,
+        "prosperity_gap_2021": 7.7639524,
+        "poor300_display": "22.5%",
+        "poor420_display": "52.4%",
+        "poor830_display": "86.1%",
+        "prosperity_gap_display": "7.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 519
+    },
+    {
+      "place_id": "PHL-ADM1-SAMAR",
+      "place_name": "Samar",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "samar",
+      "adm1_geo_id": "PHL_2015_ADM1_24261",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.165383,
+      "poverty_context": {
+        "poor300_rate": 0.2636,
+        "poor420_rate": 0.5312,
+        "poor830_rate": 0.8686,
+        "prosperity_gap_2021": 8.1653829,
+        "poor300_display": "26.4%",
+        "poor420_display": "53.1%",
+        "poor830_display": "86.9%",
+        "prosperity_gap_display": "8.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 490
+    },
+    {
+      "place_id": "PHL-ADM1-SARANGGANI",
+      "place_name": "Saranggani",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "saranggani",
+      "adm1_geo_id": "PHL_2015_ADM1_24270",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.095844,
+      "poverty_context": {
+        "poor300_rate": 0.2402,
+        "poor420_rate": 0.476,
+        "poor830_rate": 0.8764,
+        "prosperity_gap_2021": 8.0958438,
+        "poor300_display": "24.0%",
+        "poor420_display": "47.6%",
+        "poor830_display": "87.6%",
+        "prosperity_gap_display": "8.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 494
+    },
+    {
+      "place_id": "PHL-ADM1-SIQUIJOR",
+      "place_name": "Siquijor",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "siquijor",
+      "adm1_geo_id": "PHL_2015_ADM1_24255",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.90099,
+      "poverty_context": {
+        "poor300_rate": 0.0227,
+        "poor420_rate": 0.1851,
+        "poor830_rate": 0.6888,
+        "prosperity_gap_2021": 4.9009901,
+        "poor300_display": "2.27%",
+        "poor420_display": "18.5%",
+        "poor830_display": "68.9%",
+        "prosperity_gap_display": "4.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 826
+    },
+    {
+      "place_id": "PHL-ADM1-SORSOGON",
+      "place_name": "Sorsogon",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "sorsogon",
+      "adm1_geo_id": "PHL_2015_ADM1_24245",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.306682,
+      "poverty_context": {
+        "poor300_rate": 0.2888,
+        "poor420_rate": 0.5795,
+        "poor830_rate": 0.8837,
+        "prosperity_gap_2021": 8.306682,
+        "poor300_display": "28.9%",
+        "poor420_display": "58.0%",
+        "poor830_display": "88.4%",
+        "prosperity_gap_display": "8.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 476
+    },
+    {
+      "place_id": "PHL-ADM1-SOUTH-COTABATO",
+      "place_name": "South Cotabato",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "south cotabato",
+      "adm1_geo_id": "PHL_2015_ADM1_24271",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.857303,
+      "poverty_context": {
+        "poor300_rate": 0.1019,
+        "poor420_rate": 0.2744,
+        "poor830_rate": 0.7241,
+        "prosperity_gap_2021": 5.8573034,
+        "poor300_display": "10.2%",
+        "poor420_display": "27.4%",
+        "poor830_display": "72.4%",
+        "prosperity_gap_display": "5.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 698
+    },
+    {
+      "place_id": "PHL-ADM1-SOUTHERN-LEYTE",
+      "place_name": "Southern Leyte",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "southern leyte",
+      "adm1_geo_id": "PHL_2015_ADM1_24260",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.780393,
+      "poverty_context": {
+        "poor300_rate": 0.0839,
+        "poor420_rate": 0.2708,
+        "poor830_rate": 0.7476,
+        "prosperity_gap_2021": 5.7803935,
+        "poor300_display": "8.39%",
+        "poor420_display": "27.1%",
+        "poor830_display": "74.8%",
+        "prosperity_gap_display": "5.78"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 707
+    },
+    {
+      "place_id": "PHL-ADM1-SULTAN-KUDARAT",
+      "place_name": "Sultan Kudarat",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "sultan kudarat",
+      "adm1_geo_id": "PHL_2015_ADM1_24274",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.296875,
+      "poverty_context": {
+        "poor300_rate": 0.2821,
+        "poor420_rate": 0.5017,
+        "poor830_rate": 0.8408,
+        "prosperity_gap_2021": 8.2968748,
+        "poor300_display": "28.2%",
+        "poor420_display": "50.2%",
+        "poor830_display": "84.1%",
+        "prosperity_gap_display": "8.30"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 477
+    },
+    {
+      "place_id": "PHL-ADM1-SULU",
+      "place_name": "Sulu",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "sulu",
+      "adm1_geo_id": "PHL_2015_ADM1_24202",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.139466,
+      "poverty_context": {
+        "poor300_rate": 0.1497,
+        "poor420_rate": 0.4273,
+        "poor830_rate": 0.911,
+        "prosperity_gap_2021": 7.1394662,
+        "poor300_display": "15.0%",
+        "poor420_display": "42.7%",
+        "poor830_display": "91.1%",
+        "prosperity_gap_display": "7.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 577
+    },
+    {
+      "place_id": "PHL-ADM1-SURIGAO-DEL-NORTE",
+      "place_name": "Surigao Del Norte",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "surigao del norte",
+      "adm1_geo_id": "PHL_2015_ADM1_67169",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.478871,
+      "poverty_context": {
+        "poor300_rate": 0.0661,
+        "poor420_rate": 0.2224,
+        "poor830_rate": 0.734,
+        "prosperity_gap_2021": 5.478871,
+        "poor300_display": "6.61%",
+        "poor420_display": "22.2%",
+        "poor830_display": "73.4%",
+        "prosperity_gap_display": "5.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 742
+    },
+    {
+      "place_id": "PHL-ADM1-SURIGAO-DEL-SUR",
+      "place_name": "Surigao Del Sur",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "surigao del sur",
+      "adm1_geo_id": "PHL_2015_ADM1_24278",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.595051,
+      "poverty_context": {
+        "poor300_rate": 0.111,
+        "poor420_rate": 0.3722,
+        "poor830_rate": 0.8379,
+        "prosperity_gap_2021": 6.5950513,
+        "poor300_display": "11.1%",
+        "poor420_display": "37.2%",
+        "poor830_display": "83.8%",
+        "prosperity_gap_display": "6.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 620
+    },
+    {
+      "place_id": "PHL-ADM1-TARLAC",
+      "place_name": "Tarlac",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "tarlac",
+      "adm1_geo_id": "PHL_2015_ADM1_24224",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.603426,
+      "poverty_context": {
+        "poor300_rate": 0.0705,
+        "poor420_rate": 0.2248,
+        "poor830_rate": 0.7297,
+        "prosperity_gap_2021": 5.6034262,
+        "poor300_display": "7.05%",
+        "poor420_display": "22.5%",
+        "poor830_display": "73.0%",
+        "prosperity_gap_display": "5.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 726
+    },
+    {
+      "place_id": "PHL-ADM1-TAWI-TAWI",
+      "place_name": "Tawi-tawi",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "tawi tawi",
+      "adm1_geo_id": "PHL_2015_ADM1_24203",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.290051,
+      "poverty_context": {
+        "poor300_rate": 0.3279,
+        "poor420_rate": 0.6444,
+        "poor830_rate": 0.9544,
+        "prosperity_gap_2021": 9.2900507,
+        "poor300_display": "32.8%",
+        "poor420_display": "64.4%",
+        "poor830_display": "95.4%",
+        "prosperity_gap_display": "9.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 396
+    },
+    {
+      "place_id": "PHL-ADM1-ZAMBALES",
+      "place_name": "Zambales",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "zambales",
+      "adm1_geo_id": "PHL_2015_ADM1_24225",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.465676,
+      "poverty_context": {
+        "poor300_rate": 0.1271,
+        "poor420_rate": 0.3339,
+        "poor830_rate": 0.8101,
+        "prosperity_gap_2021": 6.4656761,
+        "poor300_display": "12.7%",
+        "poor420_display": "33.4%",
+        "poor830_display": "81.0%",
+        "prosperity_gap_display": "6.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 635
+    },
+    {
+      "place_id": "PHL-ADM1-ZAMBOANGA-DEL-NORTE",
+      "place_name": "Zamboanga Del Norte",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "zamboanga del norte",
+      "adm1_geo_id": "PHL_2015_ADM1_24238",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.621638,
+      "poverty_context": {
+        "poor300_rate": 0.3995,
+        "poor420_rate": 0.6549,
+        "poor830_rate": 0.9117,
+        "prosperity_gap_2021": 9.6216378,
+        "poor300_display": "40.0%",
+        "poor420_display": "65.5%",
+        "poor830_display": "91.2%",
+        "prosperity_gap_display": "9.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 373
+    },
+    {
+      "place_id": "PHL-ADM1-ZAMBOANGA-DEL-SUR",
+      "place_name": "Zamboanga Del Sur",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "zamboanga del sur",
+      "adm1_geo_id": "PHL_2015_ADM1_67164",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.732954,
+      "poverty_context": {
+        "poor300_rate": 0.2161,
+        "poor420_rate": 0.447,
+        "poor830_rate": 0.8489,
+        "prosperity_gap_2021": 7.7329545,
+        "poor300_display": "21.6%",
+        "poor420_display": "44.7%",
+        "poor830_display": "84.9%",
+        "prosperity_gap_display": "7.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 526
+    },
+    {
+      "place_id": "PHL-ADM1-ZAMBOANGA-SIBUGAY",
+      "place_name": "Zamboanga Sibugay",
+      "parent_place_id": "PHL",
+      "parent_place_name": "Philippines",
+      "iso3": "PHL",
+      "source_iso3": "PHL",
+      "geometry_level": "adm1",
+      "adm1_key": "zamboanga sibugay",
+      "adm1_geo_id": "PHL_2015_ADM1_67163",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PHL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.909144,
+      "poverty_context": {
+        "poor300_rate": 0.1734,
+        "poor420_rate": 0.4343,
+        "poor830_rate": 0.8149,
+        "prosperity_gap_2021": 6.9091444,
+        "poor300_display": "17.3%",
+        "poor420_display": "43.4%",
+        "poor830_display": "81.5%",
+        "prosperity_gap_display": "6.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 593
+    }
+  ]
+}

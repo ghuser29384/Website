@@ -1,0 +1,453 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "SLB",
+  "parent_place_name": "Solomon Islands",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 10,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "SLB-ADM1-CENTRAL",
+      "place_name": "Central",
+      "parent_place_id": "SLB",
+      "parent_place_name": "Solomon Islands",
+      "iso3": "SLB",
+      "source_iso3": "SLB",
+      "geometry_level": "adm1",
+      "adm1_key": "central",
+      "adm1_geo_id": "SLB_2018_GADM1_SLB.1_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.199479,
+      "poverty_context": {
+        "poor300_rate": 0.4846,
+        "poor420_rate": 0.7848,
+        "poor830_rate": 0.9783,
+        "prosperity_gap_2021": 10.199479,
+        "poor300_display": "48.5%",
+        "poor420_display": "78.5%",
+        "poor830_display": "97.8%",
+        "prosperity_gap_display": "10.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 326
+    },
+    {
+      "place_id": "SLB-ADM1-CHOISEUL",
+      "place_name": "Choiseul",
+      "parent_place_id": "SLB",
+      "parent_place_name": "Solomon Islands",
+      "iso3": "SLB",
+      "source_iso3": "SLB",
+      "geometry_level": "adm1",
+      "adm1_key": "choiseul",
+      "adm1_geo_id": "SLB_2018_GADM1_SLB.2_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.326439,
+      "poverty_context": {
+        "poor300_rate": 0.5884,
+        "poor420_rate": 0.7374,
+        "poor830_rate": 0.9494,
+        "prosperity_gap_2021": 11.326439,
+        "poor300_display": "58.8%",
+        "poor420_display": "73.7%",
+        "poor830_display": "94.9%",
+        "prosperity_gap_display": "11.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 256
+    },
+    {
+      "place_id": "SLB-ADM1-GUADALCANAL",
+      "place_name": "Guadalcanal",
+      "parent_place_id": "SLB",
+      "parent_place_name": "Solomon Islands",
+      "iso3": "SLB",
+      "source_iso3": "SLB",
+      "geometry_level": "adm1",
+      "adm1_key": "guadalcanal",
+      "adm1_geo_id": "SLB_2018_GADM1_SLB.3_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.091939,
+      "poverty_context": {
+        "poor300_rate": 0.4093,
+        "poor420_rate": 0.649,
+        "poor830_rate": 0.8902,
+        "prosperity_gap_2021": 10.091939,
+        "poor300_display": "40.9%",
+        "poor420_display": "64.9%",
+        "poor830_display": "89.0%",
+        "prosperity_gap_display": "10.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 333
+    },
+    {
+      "place_id": "SLB-ADM1-HONIARA",
+      "place_name": "Honiara",
+      "parent_place_id": "SLB",
+      "parent_place_name": "Solomon Islands",
+      "iso3": "SLB",
+      "source_iso3": "SLB",
+      "geometry_level": "adm1",
+      "adm1_key": "honiara",
+      "adm1_geo_id": "SLB_2018_GADM1_SLB.4_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.187818,
+      "poverty_context": {
+        "poor300_rate": 0.0783,
+        "poor420_rate": 0.2475,
+        "poor830_rate": 0.7192,
+        "prosperity_gap_2021": 5.1878185,
+        "poor300_display": "7.83%",
+        "poor420_display": "24.8%",
+        "poor830_display": "71.9%",
+        "prosperity_gap_display": "5.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 782
+    },
+    {
+      "place_id": "SLB-ADM1-ISABEL",
+      "place_name": "Isabel",
+      "parent_place_id": "SLB",
+      "parent_place_name": "Solomon Islands",
+      "iso3": "SLB",
+      "source_iso3": "SLB",
+      "geometry_level": "adm1",
+      "adm1_key": "isabel",
+      "adm1_geo_id": "SLB_2018_GADM1_SLB.5_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.375639,
+      "poverty_context": {
+        "poor300_rate": 0.4243,
+        "poor420_rate": 0.6891,
+        "poor830_rate": 0.9469,
+        "prosperity_gap_2021": 9.3756385,
+        "poor300_display": "42.4%",
+        "poor420_display": "68.9%",
+        "poor830_display": "94.7%",
+        "prosperity_gap_display": "9.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 389
+    },
+    {
+      "place_id": "SLB-ADM1-MAKIRA-ULAWA",
+      "place_name": "Makira Ulawa",
+      "parent_place_id": "SLB",
+      "parent_place_name": "Solomon Islands",
+      "iso3": "SLB",
+      "source_iso3": "SLB",
+      "geometry_level": "adm1",
+      "adm1_key": "makira ulawa",
+      "adm1_geo_id": "SLB_2018_GADM1_SLB.6_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.610312,
+      "poverty_context": {
+        "poor300_rate": 0.7047,
+        "poor420_rate": 0.8439,
+        "poor830_rate": 0.962,
+        "prosperity_gap_2021": 15.610312,
+        "poor300_display": "70.5%",
+        "poor420_display": "84.4%",
+        "poor830_display": "96.2%",
+        "prosperity_gap_display": "15.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 122
+    },
+    {
+      "place_id": "SLB-ADM1-MALAITA",
+      "place_name": "Malaita",
+      "parent_place_id": "SLB",
+      "parent_place_name": "Solomon Islands",
+      "iso3": "SLB",
+      "source_iso3": "SLB",
+      "geometry_level": "adm1",
+      "adm1_key": "malaita",
+      "adm1_geo_id": "SLB_2018_GADM1_SLB.7_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.232331,
+      "poverty_context": {
+        "poor300_rate": 0.532,
+        "poor420_rate": 0.7832,
+        "poor830_rate": 0.9804,
+        "prosperity_gap_2021": 11.232331,
+        "poor300_display": "53.2%",
+        "poor420_display": "78.3%",
+        "poor830_display": "98.0%",
+        "prosperity_gap_display": "11.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 269
+    },
+    {
+      "place_id": "SLB-ADM1-RENNELL-AND-BELLONA",
+      "place_name": "Rennell and Bellona",
+      "parent_place_id": "SLB",
+      "parent_place_name": "Solomon Islands",
+      "iso3": "SLB",
+      "source_iso3": "SLB",
+      "geometry_level": "adm1",
+      "adm1_key": "rennell and bellona",
+      "adm1_geo_id": "SLB_2018_GADM1_SLB.8_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.031498,
+      "poverty_context": {
+        "poor300_rate": 0.4156,
+        "poor420_rate": 0.6786,
+        "poor830_rate": 0.9259,
+        "prosperity_gap_2021": 9.0314979,
+        "poor300_display": "41.6%",
+        "poor420_display": "67.9%",
+        "poor830_display": "92.6%",
+        "prosperity_gap_display": "9.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 418
+    },
+    {
+      "place_id": "SLB-ADM1-TEMOTU",
+      "place_name": "Temotu",
+      "parent_place_id": "SLB",
+      "parent_place_name": "Solomon Islands",
+      "iso3": "SLB",
+      "source_iso3": "SLB",
+      "geometry_level": "adm1",
+      "adm1_key": "temotu",
+      "adm1_geo_id": "SLB_2018_GADM1_SLB.9_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.660752,
+      "poverty_context": {
+        "poor300_rate": 0.5,
+        "poor420_rate": 0.7404,
+        "poor830_rate": 0.9522,
+        "prosperity_gap_2021": 11.660752,
+        "poor300_display": "50.0%",
+        "poor420_display": "74.0%",
+        "poor830_display": "95.2%",
+        "prosperity_gap_display": "11.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 235
+    },
+    {
+      "place_id": "SLB-ADM1-WESTERN",
+      "place_name": "Western",
+      "parent_place_id": "SLB",
+      "parent_place_name": "Solomon Islands",
+      "iso3": "SLB",
+      "source_iso3": "SLB",
+      "geometry_level": "adm1",
+      "adm1_key": "western",
+      "adm1_geo_id": "SLB_2018_GADM1_SLB.10_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.367385,
+      "poverty_context": {
+        "poor300_rate": 0.4013,
+        "poor420_rate": 0.6355,
+        "poor830_rate": 0.9196,
+        "prosperity_gap_2021": 9.3673846,
+        "poor300_display": "40.1%",
+        "poor420_display": "63.5%",
+        "poor830_display": "92.0%",
+        "prosperity_gap_display": "9.37"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 390
+    }
+  ]
+}

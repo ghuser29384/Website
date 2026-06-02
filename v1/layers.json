@@ -27,6 +27,17 @@
       ]
     },
     {
+      "layer_id": "human-poverty-adm1-context",
+      "label": "ADM1 poverty context overlay",
+      "evidence_kind": "proxy",
+      "value_type": "subnational_poverty_context",
+      "unit_label": "poverty rate and prosperity-gap context",
+      "ranking_mode": "higher_prosperity_gap_more_attention",
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ]
+    },
+    {
       "layer_id": "wild-insects",
       "label": "Wild terrestrial arthropod scale",
       "evidence_kind": "proxy",

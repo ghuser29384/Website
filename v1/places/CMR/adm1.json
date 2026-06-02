@@ -1,0 +1,453 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "CMR",
+  "parent_place_name": "Cameroon",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 10,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "CMR-ADM1-ADAMAOUA",
+      "place_name": "Adamaoua",
+      "parent_place_id": "CMR",
+      "parent_place_name": "Cameroon",
+      "iso3": "CMR",
+      "source_iso3": "CMR",
+      "geometry_level": "adm1",
+      "adm1_key": "adamaoua",
+      "adm1_geo_id": "CMR_2015_ADM1_815",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.166815,
+      "poverty_context": {
+        "poor300_rate": 0.3261,
+        "poor420_rate": 0.5239,
+        "poor830_rate": 0.8717,
+        "prosperity_gap_2021": 8.1668154,
+        "poor300_display": "32.6%",
+        "poor420_display": "52.4%",
+        "poor830_display": "87.2%",
+        "prosperity_gap_display": "8.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 489
+    },
+    {
+      "place_id": "CMR-ADM1-CENTRE",
+      "place_name": "Centre",
+      "parent_place_id": "CMR",
+      "parent_place_name": "Cameroon",
+      "iso3": "CMR",
+      "source_iso3": "CMR",
+      "geometry_level": "adm1",
+      "adm1_key": "centre",
+      "adm1_geo_id": "CMR_2015_ADM1_816",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.164858,
+      "poverty_context": {
+        "poor300_rate": 0.057,
+        "poor420_rate": 0.1485,
+        "poor830_rate": 0.5253,
+        "prosperity_gap_2021": 4.1648581,
+        "poor300_display": "5.70%",
+        "poor420_display": "14.8%",
+        "poor830_display": "52.5%",
+        "prosperity_gap_display": "4.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 957
+    },
+    {
+      "place_id": "CMR-ADM1-EST",
+      "place_name": "Est",
+      "parent_place_id": "CMR",
+      "parent_place_name": "Cameroon",
+      "iso3": "CMR",
+      "source_iso3": "CMR",
+      "geometry_level": "adm1",
+      "adm1_key": "est",
+      "adm1_geo_id": "CMR_2015_ADM1_817",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.423758,
+      "poverty_context": {
+        "poor300_rate": 0.255,
+        "poor420_rate": 0.4636,
+        "poor830_rate": 0.8242,
+        "prosperity_gap_2021": 7.4237583,
+        "poor300_display": "25.5%",
+        "poor420_display": "46.4%",
+        "poor830_display": "82.4%",
+        "prosperity_gap_display": "7.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 552
+    },
+    {
+      "place_id": "CMR-ADM1-EXTR-ME-NORD",
+      "place_name": "Extrême - Nord",
+      "parent_place_id": "CMR",
+      "parent_place_name": "Cameroon",
+      "iso3": "CMR",
+      "source_iso3": "CMR",
+      "geometry_level": "adm1",
+      "adm1_key": "extr me nord",
+      "adm1_geo_id": "CMR_2015_ADM1_818",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.770816,
+      "poverty_context": {
+        "poor300_rate": 0.5629,
+        "poor420_rate": 0.7474,
+        "poor830_rate": 0.9575,
+        "prosperity_gap_2021": 11.770816,
+        "poor300_display": "56.3%",
+        "poor420_display": "74.7%",
+        "poor830_display": "95.8%",
+        "prosperity_gap_display": "11.77"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 229
+    },
+    {
+      "place_id": "CMR-ADM1-LITTORAL",
+      "place_name": "Littoral",
+      "parent_place_id": "CMR",
+      "parent_place_name": "Cameroon",
+      "iso3": "CMR",
+      "source_iso3": "CMR",
+      "geometry_level": "adm1",
+      "adm1_key": "littoral",
+      "adm1_geo_id": "CMR_2015_ADM1_819",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.753451,
+      "poverty_context": {
+        "poor300_rate": 0.031,
+        "poor420_rate": 0.0974,
+        "poor830_rate": 0.4813,
+        "prosperity_gap_2021": 3.7534505,
+        "poor300_display": "3.10%",
+        "poor420_display": "9.74%",
+        "poor830_display": "48.1%",
+        "prosperity_gap_display": "3.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1030
+    },
+    {
+      "place_id": "CMR-ADM1-NORD",
+      "place_name": "Nord",
+      "parent_place_id": "CMR",
+      "parent_place_name": "Cameroon",
+      "iso3": "CMR",
+      "source_iso3": "CMR",
+      "geometry_level": "adm1",
+      "adm1_key": "nord",
+      "adm1_geo_id": "CMR_2015_ADM1_820",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.413679,
+      "poverty_context": {
+        "poor300_rate": 0.4861,
+        "poor420_rate": 0.6903,
+        "poor830_rate": 0.9327,
+        "prosperity_gap_2021": 10.413679,
+        "poor300_display": "48.6%",
+        "poor420_display": "69.0%",
+        "poor830_display": "93.3%",
+        "prosperity_gap_display": "10.41"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 314
+    },
+    {
+      "place_id": "CMR-ADM1-NORD-OUEST",
+      "place_name": "Nord - Ouest",
+      "parent_place_id": "CMR",
+      "parent_place_name": "Cameroon",
+      "iso3": "CMR",
+      "source_iso3": "CMR",
+      "geometry_level": "adm1",
+      "adm1_key": "nord ouest",
+      "adm1_geo_id": "CMR_2015_ADM1_821",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.729503,
+      "poverty_context": {
+        "poor300_rate": 0.5332,
+        "poor420_rate": 0.6927,
+        "poor830_rate": 0.9172,
+        "prosperity_gap_2021": 10.729503,
+        "poor300_display": "53.3%",
+        "poor420_display": "69.3%",
+        "poor830_display": "91.7%",
+        "prosperity_gap_display": "10.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 301
+    },
+    {
+      "place_id": "CMR-ADM1-OUEST",
+      "place_name": "Ouest",
+      "parent_place_id": "CMR",
+      "parent_place_name": "Cameroon",
+      "iso3": "CMR",
+      "source_iso3": "CMR",
+      "geometry_level": "adm1",
+      "adm1_key": "ouest",
+      "adm1_geo_id": "CMR_2015_ADM1_822",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.06725,
+      "poverty_context": {
+        "poor300_rate": 0.1529,
+        "poor420_rate": 0.3481,
+        "poor830_rate": 0.7741,
+        "prosperity_gap_2021": 6.0672497,
+        "poor300_display": "15.3%",
+        "poor420_display": "34.8%",
+        "poor830_display": "77.4%",
+        "prosperity_gap_display": "6.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 673
+    },
+    {
+      "place_id": "CMR-ADM1-SUD",
+      "place_name": "Sud",
+      "parent_place_id": "CMR",
+      "parent_place_name": "Cameroon",
+      "iso3": "CMR",
+      "source_iso3": "CMR",
+      "geometry_level": "adm1",
+      "adm1_key": "sud",
+      "adm1_geo_id": "CMR_2015_ADM1_823",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.42621,
+      "poverty_context": {
+        "poor300_rate": 0.0467,
+        "poor420_rate": 0.1741,
+        "poor830_rate": 0.5944,
+        "prosperity_gap_2021": 4.4262105,
+        "poor300_display": "4.67%",
+        "poor420_display": "17.4%",
+        "poor830_display": "59.4%",
+        "prosperity_gap_display": "4.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 901
+    },
+    {
+      "place_id": "CMR-ADM1-SUD-OUEST",
+      "place_name": "Sud - Ouest",
+      "parent_place_id": "CMR",
+      "parent_place_name": "Cameroon",
+      "iso3": "CMR",
+      "source_iso3": "CMR",
+      "geometry_level": "adm1",
+      "adm1_key": "sud ouest",
+      "adm1_geo_id": "CMR_2015_ADM1_824",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.859659,
+      "poverty_context": {
+        "poor300_rate": 0.0996,
+        "poor420_rate": 0.2011,
+        "poor830_rate": 0.627,
+        "prosperity_gap_2021": 4.8596585,
+        "poor300_display": "9.96%",
+        "poor420_display": "20.1%",
+        "poor830_display": "62.7%",
+        "prosperity_gap_display": "4.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 837
+    }
+  ]
+}

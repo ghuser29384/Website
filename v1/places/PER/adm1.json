@@ -1,0 +1,1113 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "PER",
+  "parent_place_name": "Peru",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 25,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "PER-ADM1-AMAZONAS",
+      "place_name": "Amazonas",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "amazonas",
+      "adm1_geo_id": "PER_2015_ADM1_2328",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.345832,
+      "poverty_context": {
+        "poor300_rate": 0.0717,
+        "poor420_rate": 0.172,
+        "poor830_rate": 0.5137,
+        "prosperity_gap_2021": 4.3458316,
+        "poor300_display": "7.17%",
+        "poor420_display": "17.2%",
+        "poor830_display": "51.4%",
+        "prosperity_gap_display": "4.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 916
+    },
+    {
+      "place_id": "PER-ADM1-ANCASH",
+      "place_name": "Ancash",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "ancash",
+      "adm1_geo_id": "PER_2015_ADM1_2329",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.759592,
+      "poverty_context": {
+        "poor300_rate": 0.0499,
+        "poor420_rate": 0.1072,
+        "poor830_rate": 0.4253,
+        "prosperity_gap_2021": 3.7595917,
+        "poor300_display": "4.99%",
+        "poor420_display": "10.7%",
+        "poor830_display": "42.5%",
+        "prosperity_gap_display": "3.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1029
+    },
+    {
+      "place_id": "PER-ADM1-APUR-MAC",
+      "place_name": "Apurímac",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "apur mac",
+      "adm1_geo_id": "PER_2015_ADM1_2330",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.283452,
+      "poverty_context": {
+        "poor300_rate": 0.0604,
+        "poor420_rate": 0.1662,
+        "poor830_rate": 0.5316,
+        "prosperity_gap_2021": 4.2834523,
+        "poor300_display": "6.04%",
+        "poor420_display": "16.6%",
+        "poor830_display": "53.2%",
+        "prosperity_gap_display": "4.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 926
+    },
+    {
+      "place_id": "PER-ADM1-AREQUIPA",
+      "place_name": "Arequipa",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "arequipa",
+      "adm1_geo_id": "PER_2015_ADM1_2331",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.884434,
+      "poverty_context": {
+        "poor300_rate": 0.0183,
+        "poor420_rate": 0.037,
+        "poor830_rate": 0.2291,
+        "prosperity_gap_2021": 2.8844338,
+        "poor300_display": "1.83%",
+        "poor420_display": "3.70%",
+        "poor830_display": "22.9%",
+        "prosperity_gap_display": "2.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1190
+    },
+    {
+      "place_id": "PER-ADM1-AYACUCHO",
+      "place_name": "Ayacucho",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "ayacucho",
+      "adm1_geo_id": "PER_2015_ADM1_2332",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.293996,
+      "poverty_context": {
+        "poor300_rate": 0.1318,
+        "poor420_rate": 0.2573,
+        "poor830_rate": 0.5889,
+        "prosperity_gap_2021": 5.2939957,
+        "poor300_display": "13.2%",
+        "poor420_display": "25.7%",
+        "poor830_display": "58.9%",
+        "prosperity_gap_display": "5.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 769
+    },
+    {
+      "place_id": "PER-ADM1-CAJAMARCA",
+      "place_name": "Cajamarca",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "cajamarca",
+      "adm1_geo_id": "PER_2015_ADM1_2333",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.624298,
+      "poverty_context": {
+        "poor300_rate": 0.1521,
+        "poor420_rate": 0.2952,
+        "poor830_rate": 0.6331,
+        "prosperity_gap_2021": 5.6242984,
+        "poor300_display": "15.2%",
+        "poor420_display": "29.5%",
+        "poor830_display": "63.3%",
+        "prosperity_gap_display": "5.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 723
+    },
+    {
+      "place_id": "PER-ADM1-CALLAO",
+      "place_name": "Callao",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "callao",
+      "adm1_geo_id": "PER_2015_ADM1_2334",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.032021,
+      "poverty_context": {
+        "poor300_rate": 0.0291,
+        "poor420_rate": 0.0651,
+        "poor830_rate": 0.2715,
+        "prosperity_gap_2021": 3.0320213,
+        "poor300_display": "2.91%",
+        "poor420_display": "6.51%",
+        "poor830_display": "27.2%",
+        "prosperity_gap_display": "3.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1155
+    },
+    {
+      "place_id": "PER-ADM1-CUSCO",
+      "place_name": "Cusco",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "cusco",
+      "adm1_geo_id": "PER_2015_ADM1_2335",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.196275,
+      "poverty_context": {
+        "poor300_rate": 0.0708,
+        "poor420_rate": 0.1605,
+        "poor830_rate": 0.4677,
+        "prosperity_gap_2021": 4.1962748,
+        "poor300_display": "7.08%",
+        "poor420_display": "16.1%",
+        "poor830_display": "46.8%",
+        "prosperity_gap_display": "4.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 948
+    },
+    {
+      "place_id": "PER-ADM1-HUANCAVELICA",
+      "place_name": "Huancavelica",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "huancavelica",
+      "adm1_geo_id": "PER_2015_ADM1_2336",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.785596,
+      "poverty_context": {
+        "poor300_rate": 0.1426,
+        "poor420_rate": 0.2798,
+        "poor830_rate": 0.6288,
+        "prosperity_gap_2021": 5.7855963,
+        "poor300_display": "14.3%",
+        "poor420_display": "28.0%",
+        "poor830_display": "62.9%",
+        "prosperity_gap_display": "5.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 706
+    },
+    {
+      "place_id": "PER-ADM1-HU-NUCO",
+      "place_name": "Huánuco",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "hu nuco",
+      "adm1_geo_id": "PER_2015_ADM1_2337",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.205023,
+      "poverty_context": {
+        "poor300_rate": 0.1155,
+        "poor420_rate": 0.2496,
+        "poor830_rate": 0.632,
+        "prosperity_gap_2021": 5.2050231,
+        "poor300_display": "11.6%",
+        "poor420_display": "25.0%",
+        "poor830_display": "63.2%",
+        "prosperity_gap_display": "5.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 779
+    },
+    {
+      "place_id": "PER-ADM1-ICA",
+      "place_name": "Ica",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "ica",
+      "adm1_geo_id": "PER_2015_ADM1_2338",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.322576,
+      "poverty_context": {
+        "poor300_rate": 0.0027,
+        "poor420_rate": 0.0071,
+        "poor830_rate": 0.1545,
+        "prosperity_gap_2021": 2.3225765,
+        "poor300_display": "0.27%",
+        "poor420_display": "0.71%",
+        "poor830_display": "15.4%",
+        "prosperity_gap_display": "2.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1348
+    },
+    {
+      "place_id": "PER-ADM1-JUN-N",
+      "place_name": "Junín",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "jun n",
+      "adm1_geo_id": "PER_2015_ADM1_2339",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.149574,
+      "poverty_context": {
+        "poor300_rate": 0.0775,
+        "poor420_rate": 0.131,
+        "poor830_rate": 0.4117,
+        "prosperity_gap_2021": 4.1495745,
+        "poor300_display": "7.75%",
+        "poor420_display": "13.1%",
+        "poor830_display": "41.2%",
+        "prosperity_gap_display": "4.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 960
+    },
+    {
+      "place_id": "PER-ADM1-LA-LIBERTAD",
+      "place_name": "La Libertad",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "la libertad",
+      "adm1_geo_id": "PER_2015_ADM1_2340",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.220447,
+      "poverty_context": {
+        "poor300_rate": 0.0727,
+        "poor420_rate": 0.1267,
+        "poor830_rate": 0.4103,
+        "prosperity_gap_2021": 4.2204468,
+        "poor300_display": "7.27%",
+        "poor420_display": "12.7%",
+        "poor830_display": "41.0%",
+        "prosperity_gap_display": "4.22"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 944
+    },
+    {
+      "place_id": "PER-ADM1-LAMBAYEQUE",
+      "place_name": "Lambayeque",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "lambayeque",
+      "adm1_geo_id": "PER_2015_ADM1_2341",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.173591,
+      "poverty_context": {
+        "poor300_rate": 0.0152,
+        "poor420_rate": 0.0533,
+        "poor830_rate": 0.3393,
+        "prosperity_gap_2021": 3.1735913,
+        "poor300_display": "1.52%",
+        "poor420_display": "5.33%",
+        "poor830_display": "33.9%",
+        "prosperity_gap_display": "3.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1132
+    },
+    {
+      "place_id": "PER-ADM1-LIMA",
+      "place_name": "Lima",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "lima",
+      "adm1_geo_id": "PER_2015_ADM1_2342",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.663697,
+      "poverty_context": {
+        "poor300_rate": 0.0161,
+        "poor420_rate": 0.0434,
+        "poor830_rate": 0.2304,
+        "prosperity_gap_2021": 2.6636967,
+        "poor300_display": "1.61%",
+        "poor420_display": "4.34%",
+        "poor830_display": "23.0%",
+        "prosperity_gap_display": "2.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1242
+    },
+    {
+      "place_id": "PER-ADM1-LORETO",
+      "place_name": "Loreto",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "loreto",
+      "adm1_geo_id": "PER_2015_ADM1_2343",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.120589,
+      "poverty_context": {
+        "poor300_rate": 0.1782,
+        "poor420_rate": 0.2804,
+        "poor830_rate": 0.6142,
+        "prosperity_gap_2021": 6.1205889,
+        "poor300_display": "17.8%",
+        "poor420_display": "28.0%",
+        "poor830_display": "61.4%",
+        "prosperity_gap_display": "6.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 667
+    },
+    {
+      "place_id": "PER-ADM1-MADRE-DE-DIOS",
+      "place_name": "Madre de Dios",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "madre de dios",
+      "adm1_geo_id": "PER_2015_ADM1_2344",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.384622,
+      "poverty_context": {
+        "poor300_rate": 0.0415,
+        "poor420_rate": 0.0759,
+        "poor830_rate": 0.2702,
+        "prosperity_gap_2021": 3.3846218,
+        "poor300_display": "4.15%",
+        "poor420_display": "7.59%",
+        "poor830_display": "27.0%",
+        "prosperity_gap_display": "3.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1093
+    },
+    {
+      "place_id": "PER-ADM1-MOQUEGUA",
+      "place_name": "Moquegua",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "moquegua",
+      "adm1_geo_id": "PER_2015_ADM1_2345",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.975931,
+      "poverty_context": {
+        "poor300_rate": 0.0248,
+        "poor420_rate": 0.0597,
+        "poor830_rate": 0.2413,
+        "prosperity_gap_2021": 2.975931,
+        "poor300_display": "2.48%",
+        "poor420_display": "5.97%",
+        "poor830_display": "24.1%",
+        "prosperity_gap_display": "2.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1170
+    },
+    {
+      "place_id": "PER-ADM1-PASCO",
+      "place_name": "Pasco",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "pasco",
+      "adm1_geo_id": "PER_2015_ADM1_2346",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.078049,
+      "poverty_context": {
+        "poor300_rate": 0.1069,
+        "poor420_rate": 0.23,
+        "poor830_rate": 0.5609,
+        "prosperity_gap_2021": 5.0780486,
+        "poor300_display": "10.7%",
+        "poor420_display": "23.0%",
+        "poor830_display": "56.1%",
+        "prosperity_gap_display": "5.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 796
+    },
+    {
+      "place_id": "PER-ADM1-PIURA",
+      "place_name": "Piura",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "piura",
+      "adm1_geo_id": "PER_2015_ADM1_2347",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.842412,
+      "poverty_context": {
+        "poor300_rate": 0.0437,
+        "poor420_rate": 0.0966,
+        "poor830_rate": 0.4404,
+        "prosperity_gap_2021": 3.8424123,
+        "poor300_display": "4.37%",
+        "poor420_display": "9.66%",
+        "poor830_display": "44.0%",
+        "prosperity_gap_display": "3.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1016
+    },
+    {
+      "place_id": "PER-ADM1-PUNO",
+      "place_name": "Puno",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "puno",
+      "adm1_geo_id": "PER_2015_ADM1_2348",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.387983,
+      "poverty_context": {
+        "poor300_rate": 0.2022,
+        "poor420_rate": 0.3109,
+        "poor830_rate": 0.6549,
+        "prosperity_gap_2021": 7.3879827,
+        "poor300_display": "20.2%",
+        "poor420_display": "31.1%",
+        "poor830_display": "65.5%",
+        "prosperity_gap_display": "7.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 557
+    },
+    {
+      "place_id": "PER-ADM1-SAN-MART-N",
+      "place_name": "San Martín",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "san mart n",
+      "adm1_geo_id": "PER_2015_ADM1_2349",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.011838,
+      "poverty_context": {
+        "poor300_rate": 0.0558,
+        "poor420_rate": 0.1209,
+        "poor830_rate": 0.507,
+        "prosperity_gap_2021": 4.0118381,
+        "poor300_display": "5.58%",
+        "poor420_display": "12.1%",
+        "poor830_display": "50.7%",
+        "prosperity_gap_display": "4.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 987
+    },
+    {
+      "place_id": "PER-ADM1-TACNA",
+      "place_name": "Tacna",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "tacna",
+      "adm1_geo_id": "PER_2015_ADM1_2350",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.395199,
+      "poverty_context": {
+        "poor300_rate": 0.0241,
+        "poor420_rate": 0.084,
+        "poor830_rate": 0.3419,
+        "prosperity_gap_2021": 3.3951987,
+        "poor300_display": "2.41%",
+        "poor420_display": "8.40%",
+        "poor830_display": "34.2%",
+        "prosperity_gap_display": "3.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1089
+    },
+    {
+      "place_id": "PER-ADM1-TUMBES",
+      "place_name": "Tumbes",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "tumbes",
+      "adm1_geo_id": "PER_2015_ADM1_2351",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.181458,
+      "poverty_context": {
+        "poor300_rate": 0.0055,
+        "poor420_rate": 0.0239,
+        "poor830_rate": 0.3656,
+        "prosperity_gap_2021": 3.1814579,
+        "poor300_display": "0.55%",
+        "poor420_display": "2.39%",
+        "poor830_display": "36.6%",
+        "prosperity_gap_display": "3.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1129
+    },
+    {
+      "place_id": "PER-ADM1-UCAYALI",
+      "place_name": "Ucayali",
+      "parent_place_id": "PER",
+      "parent_place_name": "Peru",
+      "iso3": "PER",
+      "source_iso3": "PER",
+      "geometry_level": "adm1",
+      "adm1_key": "ucayali",
+      "adm1_geo_id": "PER_2015_ADM1_2352",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PER/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.010059,
+      "poverty_context": {
+        "poor300_rate": 0.0496,
+        "poor420_rate": 0.1057,
+        "poor830_rate": 0.4968,
+        "prosperity_gap_2021": 4.0100588,
+        "poor300_display": "4.96%",
+        "poor420_display": "10.6%",
+        "poor830_display": "49.7%",
+        "prosperity_gap_display": "4.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 989
+    }
+  ]
+}

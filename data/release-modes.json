@@ -13,6 +13,7 @@
       "network_behavior": "The homepage does not start World Bank, OWID, geoBoundaries, or WorldPop ranking requests in this mode.",
       "included_surfaces": [
         "/v1/places/index.json",
+        "/v1/adm1/index.json",
         "/v1/coverage.json",
         "/data/place-measurements.json",
         "/data/provenance-registry.json",

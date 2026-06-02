@@ -1,0 +1,541 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "ALB",
+  "parent_place_name": "Albania",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 12,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "ALB-ADM1-BERAT-AL031",
+      "place_name": "Berat (AL031)",
+      "parent_place_id": "ALB",
+      "parent_place_name": "Albania",
+      "iso3": "ALB",
+      "source_iso3": "ALB",
+      "geometry_level": "adm1",
+      "adm1_key": "berat al031",
+      "adm1_geo_id": "ALB_2015_ADMx_3_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ALB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.034216,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0863,
+        "prosperity_gap_2021": 2.0342157,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "8.63%",
+        "prosperity_gap_display": "2.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1454
+    },
+    {
+      "place_id": "ALB-ADM1-DIB-R-AL011",
+      "place_name": "Dibër (AL011)",
+      "parent_place_id": "ALB",
+      "parent_place_name": "Albania",
+      "iso3": "ALB",
+      "source_iso3": "ALB",
+      "geometry_level": "adm1",
+      "adm1_key": "dib r al011",
+      "adm1_geo_id": "ALB_2015_ADMx_3_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ALB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.72148,
+      "poverty_context": {
+        "poor300_rate": 0.0115,
+        "poor420_rate": 0.0323,
+        "poor830_rate": 0.232,
+        "prosperity_gap_2021": 2.7214795,
+        "poor300_display": "1.15%",
+        "poor420_display": "3.23%",
+        "poor830_display": "23.2%",
+        "prosperity_gap_display": "2.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1229
+    },
+    {
+      "place_id": "ALB-ADM1-DURR-S-AL012",
+      "place_name": "Durrës (AL012)",
+      "parent_place_id": "ALB",
+      "parent_place_name": "Albania",
+      "iso3": "ALB",
+      "source_iso3": "ALB",
+      "geometry_level": "adm1",
+      "adm1_key": "durr s al012",
+      "adm1_geo_id": "ALB_2015_ADMx_3_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ALB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.553836,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0279,
+        "poor830_rate": 0.1969,
+        "prosperity_gap_2021": 2.553836,
+        "poor300_display": "0.00%",
+        "poor420_display": "2.79%",
+        "poor830_display": "19.7%",
+        "prosperity_gap_display": "2.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1280
+    },
+    {
+      "place_id": "ALB-ADM1-ELBASAN-AL021",
+      "place_name": "Elbasan (AL021)",
+      "parent_place_id": "ALB",
+      "parent_place_name": "Albania",
+      "iso3": "ALB",
+      "source_iso3": "ALB",
+      "geometry_level": "adm1",
+      "adm1_key": "elbasan al021",
+      "adm1_geo_id": "ALB_2015_ADMx_3_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ALB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.295144,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0022,
+        "poor830_rate": 0.1484,
+        "prosperity_gap_2021": 2.2951435,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.22%",
+        "poor830_display": "14.8%",
+        "prosperity_gap_display": "2.30"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1360
+    },
+    {
+      "place_id": "ALB-ADM1-FIER-AL032",
+      "place_name": "Fier (AL032)",
+      "parent_place_id": "ALB",
+      "parent_place_name": "Albania",
+      "iso3": "ALB",
+      "source_iso3": "ALB",
+      "geometry_level": "adm1",
+      "adm1_key": "fier al032",
+      "adm1_geo_id": "ALB_2015_ADMx_3_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ALB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.285642,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.014,
+        "poor830_rate": 0.1539,
+        "prosperity_gap_2021": 2.2856421,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.40%",
+        "poor830_display": "15.4%",
+        "prosperity_gap_display": "2.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1363
+    },
+    {
+      "place_id": "ALB-ADM1-GJIROKAST-R-AL033",
+      "place_name": "Gjirokastër (AL033)",
+      "parent_place_id": "ALB",
+      "parent_place_name": "Albania",
+      "iso3": "ALB",
+      "source_iso3": "ALB",
+      "geometry_level": "adm1",
+      "adm1_key": "gjirokast r al033",
+      "adm1_geo_id": "ALB_2015_ADMx_3_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ALB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.797213,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0639,
+        "prosperity_gap_2021": 1.7972125,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "6.39%",
+        "prosperity_gap_display": "1.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1524
+    },
+    {
+      "place_id": "ALB-ADM1-KORC-AL034",
+      "place_name": "Korcë (AL034)",
+      "parent_place_id": "ALB",
+      "parent_place_name": "Albania",
+      "iso3": "ALB",
+      "source_iso3": "ALB",
+      "geometry_level": "adm1",
+      "adm1_key": "korc al034",
+      "adm1_geo_id": "ALB_2015_ADMx_3_7",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ALB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.00927,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0054,
+        "poor830_rate": 0.0993,
+        "prosperity_gap_2021": 2.0092702,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.54%",
+        "poor830_display": "9.93%",
+        "prosperity_gap_display": "2.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1464
+    },
+    {
+      "place_id": "ALB-ADM1-KUK-S-AL013",
+      "place_name": "Kukës (AL013)",
+      "parent_place_id": "ALB",
+      "parent_place_name": "Albania",
+      "iso3": "ALB",
+      "source_iso3": "ALB",
+      "geometry_level": "adm1",
+      "adm1_key": "kuk s al013",
+      "adm1_geo_id": "ALB_2015_ADMx_3_8",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ALB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.838363,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0238,
+        "poor830_rate": 0.2674,
+        "prosperity_gap_2021": 2.8383629,
+        "poor300_display": "0.00%",
+        "poor420_display": "2.38%",
+        "poor830_display": "26.7%",
+        "prosperity_gap_display": "2.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1203
+    },
+    {
+      "place_id": "ALB-ADM1-LEZH-AL014",
+      "place_name": "Lezhë (AL014)",
+      "parent_place_id": "ALB",
+      "parent_place_name": "Albania",
+      "iso3": "ALB",
+      "source_iso3": "ALB",
+      "geometry_level": "adm1",
+      "adm1_key": "lezh al014",
+      "adm1_geo_id": "ALB_2015_ADMx_3_9",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ALB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.238643,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1296,
+        "prosperity_gap_2021": 2.2386435,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "13.0%",
+        "prosperity_gap_display": "2.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1377
+    },
+    {
+      "place_id": "ALB-ADM1-SHKOD-R-AL015",
+      "place_name": "Shkodër (AL015)",
+      "parent_place_id": "ALB",
+      "parent_place_name": "Albania",
+      "iso3": "ALB",
+      "source_iso3": "ALB",
+      "geometry_level": "adm1",
+      "adm1_key": "shkod r al015",
+      "adm1_geo_id": "ALB_2015_ADMx_3_10",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ALB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.635377,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0274,
+        "poor830_rate": 0.246,
+        "prosperity_gap_2021": 2.6353767,
+        "poor300_display": "0.00%",
+        "poor420_display": "2.74%",
+        "poor830_display": "24.6%",
+        "prosperity_gap_display": "2.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1253
+    },
+    {
+      "place_id": "ALB-ADM1-TIRAN-AL022",
+      "place_name": "Tiranë (AL022)",
+      "parent_place_id": "ALB",
+      "parent_place_name": "Albania",
+      "iso3": "ALB",
+      "source_iso3": "ALB",
+      "geometry_level": "adm1",
+      "adm1_key": "tiran al022",
+      "adm1_geo_id": "ALB_2015_ADMx_3_11",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ALB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.950895,
+      "poverty_context": {
+        "poor300_rate": 0.002,
+        "poor420_rate": 0.0061,
+        "poor830_rate": 0.0853,
+        "prosperity_gap_2021": 1.9508952,
+        "poor300_display": "0.20%",
+        "poor420_display": "0.61%",
+        "poor830_display": "8.53%",
+        "prosperity_gap_display": "1.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1487
+    },
+    {
+      "place_id": "ALB-ADM1-VLOR-AL035",
+      "place_name": "Vlorë (AL035)",
+      "parent_place_id": "ALB",
+      "parent_place_name": "Albania",
+      "iso3": "ALB",
+      "source_iso3": "ALB",
+      "geometry_level": "adm1",
+      "adm1_key": "vlor al035",
+      "adm1_geo_id": "ALB_2015_ADMx_3_12",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ALB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.535769,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0348,
+        "poor830_rate": 0.2037,
+        "prosperity_gap_2021": 2.5357688,
+        "poor300_display": "0.00%",
+        "poor420_display": "3.48%",
+        "poor830_display": "20.4%",
+        "prosperity_gap_display": "2.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1285
+    }
+  ]
+}

@@ -1,0 +1,1069 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "COL",
+  "parent_place_name": "Colombia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 24,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "COL-ADM1-ANTIOQUIA",
+      "place_name": "Antioquia",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "antioquia",
+      "adm1_geo_id": "COL_2015_ADM1_935",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.159891,
+      "poverty_context": {
+        "poor300_rate": 0.061,
+        "poor420_rate": 0.1089,
+        "poor830_rate": 0.2966,
+        "prosperity_gap_2021": 4.1598905,
+        "poor300_display": "6.10%",
+        "poor420_display": "10.9%",
+        "poor830_display": "29.7%",
+        "prosperity_gap_display": "4.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 959
+    },
+    {
+      "place_id": "COL-ADM1-ATLANTICO",
+      "place_name": "Atlantico",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "atlantico",
+      "adm1_geo_id": "COL_2015_ADM1_937",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.54222,
+      "poverty_context": {
+        "poor300_rate": 0.0369,
+        "poor420_rate": 0.0856,
+        "poor830_rate": 0.3724,
+        "prosperity_gap_2021": 3.5422199,
+        "poor300_display": "3.69%",
+        "poor420_display": "8.56%",
+        "poor830_display": "37.2%",
+        "prosperity_gap_display": "3.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1063
+    },
+    {
+      "place_id": "COL-ADM1-BOLIVAR",
+      "place_name": "Bolivar",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "bolivar",
+      "adm1_geo_id": "COL_2015_ADM1_938",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.379563,
+      "poverty_context": {
+        "poor300_rate": 0.1065,
+        "poor420_rate": 0.2074,
+        "poor830_rate": 0.5526,
+        "prosperity_gap_2021": 5.3795629,
+        "poor300_display": "10.7%",
+        "poor420_display": "20.7%",
+        "poor830_display": "55.3%",
+        "prosperity_gap_display": "5.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 755
+    },
+    {
+      "place_id": "COL-ADM1-BOYACA",
+      "place_name": "Boyaca",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "boyaca",
+      "adm1_geo_id": "COL_2015_ADM1_939",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.433591,
+      "poverty_context": {
+        "poor300_rate": 0.0782,
+        "poor420_rate": 0.1476,
+        "poor830_rate": 0.4139,
+        "prosperity_gap_2021": 4.4335905,
+        "poor300_display": "7.82%",
+        "poor420_display": "14.8%",
+        "poor830_display": "41.4%",
+        "prosperity_gap_display": "4.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 900
+    },
+    {
+      "place_id": "COL-ADM1-CALDAS",
+      "place_name": "Caldas",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "caldas",
+      "adm1_geo_id": "COL_2015_ADM1_941",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.555895,
+      "poverty_context": {
+        "poor300_rate": 0.0404,
+        "poor420_rate": 0.0825,
+        "poor830_rate": 0.2897,
+        "prosperity_gap_2021": 3.5558954,
+        "poor300_display": "4.04%",
+        "poor420_display": "8.25%",
+        "poor830_display": "29.0%",
+        "prosperity_gap_display": "3.56"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1061
+    },
+    {
+      "place_id": "COL-ADM1-CAQUETA",
+      "place_name": "Caqueta",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "caqueta",
+      "adm1_geo_id": "COL_2015_ADM1_942",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.939501,
+      "poverty_context": {
+        "poor300_rate": 0.0648,
+        "poor420_rate": 0.134,
+        "poor830_rate": 0.4781,
+        "prosperity_gap_2021": 4.939501,
+        "poor300_display": "6.48%",
+        "poor420_display": "13.4%",
+        "poor830_display": "47.8%",
+        "prosperity_gap_display": "4.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 816
+    },
+    {
+      "place_id": "COL-ADM1-CAUCA",
+      "place_name": "Cauca",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "cauca",
+      "adm1_geo_id": "COL_2015_ADM1_944",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.916158,
+      "poverty_context": {
+        "poor300_rate": 0.144,
+        "poor420_rate": 0.2719,
+        "poor830_rate": 0.5957,
+        "prosperity_gap_2021": 5.9161576,
+        "poor300_display": "14.4%",
+        "poor420_display": "27.2%",
+        "poor830_display": "59.6%",
+        "prosperity_gap_display": "5.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 689
+    },
+    {
+      "place_id": "COL-ADM1-CESAR",
+      "place_name": "Cesar",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "cesar",
+      "adm1_geo_id": "COL_2015_ADM1_945",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.840009,
+      "poverty_context": {
+        "poor300_rate": 0.1632,
+        "poor420_rate": 0.2867,
+        "poor830_rate": 0.6124,
+        "prosperity_gap_2021": 6.8400086,
+        "poor300_display": "16.3%",
+        "poor420_display": "28.7%",
+        "poor830_display": "61.2%",
+        "prosperity_gap_display": "6.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 598
+    },
+    {
+      "place_id": "COL-ADM1-CHOCO",
+      "place_name": "Choco",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "choco",
+      "adm1_geo_id": "COL_2015_ADM1_946",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.451154,
+      "poverty_context": {
+        "poor300_rate": 0.3344,
+        "poor420_rate": 0.4502,
+        "poor830_rate": 0.7251,
+        "prosperity_gap_2021": 14.451154,
+        "poor300_display": "33.4%",
+        "poor420_display": "45.0%",
+        "poor830_display": "72.5%",
+        "prosperity_gap_display": "14.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 149
+    },
+    {
+      "place_id": "COL-ADM1-CORDOBA",
+      "place_name": "Cordoba",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "cordoba",
+      "adm1_geo_id": "COL_2015_ADM1_947",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.64884,
+      "poverty_context": {
+        "poor300_rate": 0.1389,
+        "poor420_rate": 0.2747,
+        "poor830_rate": 0.6289,
+        "prosperity_gap_2021": 5.6488396,
+        "poor300_display": "13.9%",
+        "poor420_display": "27.5%",
+        "poor830_display": "62.9%",
+        "prosperity_gap_display": "5.65"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 720
+    },
+    {
+      "place_id": "COL-ADM1-CUNDINAMARCA",
+      "place_name": "Cundinamarca",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "cundinamarca",
+      "adm1_geo_id": "COL_2015_ADM1_948",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.183664,
+      "poverty_context": {
+        "poor300_rate": 0.0592,
+        "poor420_rate": 0.1036,
+        "poor830_rate": 0.2947,
+        "prosperity_gap_2021": 4.1836644,
+        "poor300_display": "5.92%",
+        "poor420_display": "10.4%",
+        "poor830_display": "29.5%",
+        "prosperity_gap_display": "4.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 951
+    },
+    {
+      "place_id": "COL-ADM1-GUAJIRA",
+      "place_name": "Guajira",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "guajira",
+      "adm1_geo_id": "COL_2015_ADM1_950",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.837147,
+      "poverty_context": {
+        "poor300_rate": 0.3578,
+        "poor420_rate": 0.508,
+        "poor830_rate": 0.7671,
+        "prosperity_gap_2021": 11.837147,
+        "poor300_display": "35.8%",
+        "poor420_display": "50.8%",
+        "poor830_display": "76.7%",
+        "prosperity_gap_display": "11.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 225
+    },
+    {
+      "place_id": "COL-ADM1-HUILA",
+      "place_name": "Huila",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "huila",
+      "adm1_geo_id": "COL_2015_ADM1_952",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.673428,
+      "poverty_context": {
+        "poor300_rate": 0.067,
+        "poor420_rate": 0.1436,
+        "poor830_rate": 0.4823,
+        "prosperity_gap_2021": 4.6734284,
+        "poor300_display": "6.70%",
+        "poor420_display": "14.4%",
+        "poor830_display": "48.2%",
+        "prosperity_gap_display": "4.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 866
+    },
+    {
+      "place_id": "COL-ADM1-MAGDALENA",
+      "place_name": "Magdalena",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "magdalena",
+      "adm1_geo_id": "COL_2015_ADM1_953",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.351724,
+      "poverty_context": {
+        "poor300_rate": 0.1092,
+        "poor420_rate": 0.2227,
+        "poor830_rate": 0.591,
+        "prosperity_gap_2021": 5.3517242,
+        "poor300_display": "10.9%",
+        "poor420_display": "22.3%",
+        "poor830_display": "59.1%",
+        "prosperity_gap_display": "5.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 760
+    },
+    {
+      "place_id": "COL-ADM1-META",
+      "place_name": "Meta",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "meta",
+      "adm1_geo_id": "COL_2015_ADM1_954",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.922008,
+      "poverty_context": {
+        "poor300_rate": 0.0534,
+        "poor420_rate": 0.0883,
+        "poor830_rate": 0.311,
+        "prosperity_gap_2021": 4.922008,
+        "poor300_display": "5.34%",
+        "poor420_display": "8.83%",
+        "poor830_display": "31.1%",
+        "prosperity_gap_display": "4.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 821
+    },
+    {
+      "place_id": "COL-ADM1-NARINO",
+      "place_name": "Narino",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "narino",
+      "adm1_geo_id": "COL_2015_ADM1_955",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.133539,
+      "poverty_context": {
+        "poor300_rate": 0.0583,
+        "poor420_rate": 0.1467,
+        "poor830_rate": 0.4813,
+        "prosperity_gap_2021": 4.1335391,
+        "poor300_display": "5.83%",
+        "poor420_display": "14.7%",
+        "poor830_display": "48.1%",
+        "prosperity_gap_display": "4.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 966
+    },
+    {
+      "place_id": "COL-ADM1-NORTE-DE-SANTANDER",
+      "place_name": "Norte De Santander",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "norte de santander",
+      "adm1_geo_id": "COL_2015_ADM1_956",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.804731,
+      "poverty_context": {
+        "poor300_rate": 0.0691,
+        "poor420_rate": 0.1392,
+        "poor830_rate": 0.4761,
+        "prosperity_gap_2021": 4.8047311,
+        "poor300_display": "6.91%",
+        "poor420_display": "13.9%",
+        "poor830_display": "47.6%",
+        "prosperity_gap_display": "4.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 846
+    },
+    {
+      "place_id": "COL-ADM1-QUINDIO",
+      "place_name": "Quindio",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "quindio",
+      "adm1_geo_id": "COL_2015_ADM1_958",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.972391,
+      "poverty_context": {
+        "poor300_rate": 0.0445,
+        "poor420_rate": 0.0791,
+        "poor830_rate": 0.2833,
+        "prosperity_gap_2021": 3.9723912,
+        "poor300_display": "4.45%",
+        "poor420_display": "7.91%",
+        "poor830_display": "28.3%",
+        "prosperity_gap_display": "3.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 996
+    },
+    {
+      "place_id": "COL-ADM1-RISARALDA",
+      "place_name": "Risaralda",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "risaralda",
+      "adm1_geo_id": "COL_2015_ADM1_959",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.767031,
+      "poverty_context": {
+        "poor300_rate": 0.0461,
+        "poor420_rate": 0.08,
+        "poor830_rate": 0.277,
+        "prosperity_gap_2021": 3.7670305,
+        "poor300_display": "4.61%",
+        "poor420_display": "8.00%",
+        "poor830_display": "27.7%",
+        "prosperity_gap_display": "3.77"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1027
+    },
+    {
+      "place_id": "COL-ADM1-SANTAFE-DE-BOGOTA-D-C",
+      "place_name": "Santafe De Bogota D.c.",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "santafe de bogota d c",
+      "adm1_geo_id": "COL_2015_GADM2_53_14_568",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.867933,
+      "poverty_context": {
+        "poor300_rate": 0.0268,
+        "poor420_rate": 0.0412,
+        "poor830_rate": 0.1453,
+        "prosperity_gap_2021": 2.8679333,
+        "poor300_display": "2.68%",
+        "poor420_display": "4.12%",
+        "poor830_display": "14.5%",
+        "prosperity_gap_display": "2.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1192
+    },
+    {
+      "place_id": "COL-ADM1-SANTANDER",
+      "place_name": "Santander",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "santander",
+      "adm1_geo_id": "COL_2015_ADM1_961",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.164224,
+      "poverty_context": {
+        "poor300_rate": 0.0503,
+        "poor420_rate": 0.1002,
+        "poor830_rate": 0.3315,
+        "prosperity_gap_2021": 4.164224,
+        "poor300_display": "5.03%",
+        "poor420_display": "10.0%",
+        "poor830_display": "33.1%",
+        "prosperity_gap_display": "4.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 958
+    },
+    {
+      "place_id": "COL-ADM1-SUCRE",
+      "place_name": "Sucre",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "sucre",
+      "adm1_geo_id": "COL_2015_ADM1_962",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.603164,
+      "poverty_context": {
+        "poor300_rate": 0.1243,
+        "poor420_rate": 0.2744,
+        "poor830_rate": 0.6608,
+        "prosperity_gap_2021": 5.6031636,
+        "poor300_display": "12.4%",
+        "poor420_display": "27.4%",
+        "poor830_display": "66.1%",
+        "prosperity_gap_display": "5.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 727
+    },
+    {
+      "place_id": "COL-ADM1-TOLIMA",
+      "place_name": "Tolima",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "tolima",
+      "adm1_geo_id": "COL_2015_ADM1_963",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.382231,
+      "poverty_context": {
+        "poor300_rate": 0.1117,
+        "poor420_rate": 0.195,
+        "poor830_rate": 0.4891,
+        "prosperity_gap_2021": 6.3822306,
+        "poor300_display": "11.2%",
+        "poor420_display": "19.5%",
+        "poor830_display": "48.9%",
+        "prosperity_gap_display": "6.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 638
+    },
+    {
+      "place_id": "COL-ADM1-VALLE-DEL-CAUCA",
+      "place_name": "Valle Del Cauca",
+      "parent_place_id": "COL",
+      "parent_place_name": "Colombia",
+      "iso3": "COL",
+      "source_iso3": "COL",
+      "geometry_level": "adm1",
+      "adm1_key": "valle del cauca",
+      "adm1_geo_id": "COL_2015_ADM1_964",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.984819,
+      "poverty_context": {
+        "poor300_rate": 0.06,
+        "poor420_rate": 0.0994,
+        "poor830_rate": 0.2961,
+        "prosperity_gap_2021": 3.984819,
+        "poor300_display": "6.00%",
+        "poor420_display": "9.94%",
+        "poor830_display": "29.6%",
+        "prosperity_gap_display": "3.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 995
+    }
+  ]
+}

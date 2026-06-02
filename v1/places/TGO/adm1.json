@@ -1,0 +1,277 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "TGO",
+  "parent_place_name": "Togo",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 6,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "TGO-ADM1-CENTRALE",
+      "place_name": "Centrale",
+      "parent_place_id": "TGO",
+      "parent_place_name": "Togo",
+      "iso3": "TGO",
+      "source_iso3": "TGO",
+      "geometry_level": "adm1",
+      "adm1_key": "centrale",
+      "adm1_geo_id": "TGO_2015_ADM1_2970",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.234053,
+      "poverty_context": {
+        "poor300_rate": 0.4246,
+        "poor420_rate": 0.6482,
+        "poor830_rate": 0.9482,
+        "prosperity_gap_2021": 9.2340535,
+        "poor300_display": "42.5%",
+        "poor420_display": "64.8%",
+        "poor830_display": "94.8%",
+        "prosperity_gap_display": "9.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 402
+    },
+    {
+      "place_id": "TGO-ADM1-GOLFE",
+      "place_name": "Golfe",
+      "parent_place_id": "TGO",
+      "parent_place_name": "Togo",
+      "iso3": "TGO",
+      "source_iso3": "TGO",
+      "geometry_level": "adm1",
+      "adm1_key": "golfe",
+      "adm1_geo_id": "TGO_2015_ADM2_27394",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.585756,
+      "poverty_context": {
+        "poor300_rate": 0.04,
+        "poor420_rate": 0.1777,
+        "poor830_rate": 0.622,
+        "prosperity_gap_2021": 4.5857556,
+        "poor300_display": "4.00%",
+        "poor420_display": "17.8%",
+        "poor830_display": "62.2%",
+        "prosperity_gap_display": "4.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 880
+    },
+    {
+      "place_id": "TGO-ADM1-KARA",
+      "place_name": "Kara",
+      "parent_place_id": "TGO",
+      "parent_place_name": "Togo",
+      "iso3": "TGO",
+      "source_iso3": "TGO",
+      "geometry_level": "adm1",
+      "adm1_key": "kara",
+      "adm1_geo_id": "TGO_2015_ADM1_2971",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.235298,
+      "poverty_context": {
+        "poor300_rate": 0.4541,
+        "poor420_rate": 0.6916,
+        "poor830_rate": 0.9459,
+        "prosperity_gap_2021": 10.235298,
+        "poor300_display": "45.4%",
+        "poor420_display": "69.2%",
+        "poor830_display": "94.6%",
+        "prosperity_gap_display": "10.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 322
+    },
+    {
+      "place_id": "TGO-ADM1-MARITIME",
+      "place_name": "Maritime",
+      "parent_place_id": "TGO",
+      "parent_place_name": "Togo",
+      "iso3": "TGO",
+      "source_iso3": "TGO",
+      "geometry_level": "adm1",
+      "adm1_key": "maritime",
+      "adm1_geo_id": "TGO_2015_ADMx_243_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.726145,
+      "poverty_context": {
+        "poor300_rate": 0.3821,
+        "poor420_rate": 0.6104,
+        "poor830_rate": 0.928,
+        "prosperity_gap_2021": 8.7261447,
+        "poor300_display": "38.2%",
+        "poor420_display": "61.0%",
+        "poor830_display": "92.8%",
+        "prosperity_gap_display": "8.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 439
+    },
+    {
+      "place_id": "TGO-ADM1-PLATEAUX",
+      "place_name": "Plateaux",
+      "parent_place_id": "TGO",
+      "parent_place_name": "Togo",
+      "iso3": "TGO",
+      "source_iso3": "TGO",
+      "geometry_level": "adm1",
+      "adm1_key": "plateaux",
+      "adm1_geo_id": "TGO_2015_ADM1_2973",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.610681,
+      "poverty_context": {
+        "poor300_rate": 0.3437,
+        "poor420_rate": 0.6167,
+        "poor830_rate": 0.9431,
+        "prosperity_gap_2021": 8.610681,
+        "poor300_display": "34.4%",
+        "poor420_display": "61.7%",
+        "poor830_display": "94.3%",
+        "prosperity_gap_display": "8.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 447
+    },
+    {
+      "place_id": "TGO-ADM1-SAVANES",
+      "place_name": "Savanes",
+      "parent_place_id": "TGO",
+      "parent_place_name": "Togo",
+      "iso3": "TGO",
+      "source_iso3": "TGO",
+      "geometry_level": "adm1",
+      "adm1_key": "savanes",
+      "adm1_geo_id": "TGO_2015_ADM1_2974",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.89505,
+      "poverty_context": {
+        "poor300_rate": 0.5875,
+        "poor420_rate": 0.7672,
+        "poor830_rate": 0.9586,
+        "prosperity_gap_2021": 11.89505,
+        "poor300_display": "58.8%",
+        "poor420_display": "76.7%",
+        "poor830_display": "95.9%",
+        "prosperity_gap_display": "11.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 220
+    }
+  ]
+}

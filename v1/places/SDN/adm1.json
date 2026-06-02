@@ -1,0 +1,805 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "SDN",
+  "parent_place_name": "Sudan",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 18,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "SDN-ADM1-AL-JAZIRAH",
+      "place_name": "Al Jazirah",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "al jazirah",
+      "adm1_geo_id": "SDN_2020_ADM1_SD15",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.591632,
+      "poverty_context": {
+        "poor300_rate": 0.2858,
+        "poor420_rate": 0.4915,
+        "poor830_rate": 0.9171,
+        "prosperity_gap_2021": 7.5916318,
+        "poor300_display": "28.6%",
+        "poor420_display": "49.1%",
+        "poor830_display": "91.7%",
+        "prosperity_gap_display": "7.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 538
+    },
+    {
+      "place_id": "SDN-ADM1-AL-QADARIF",
+      "place_name": "Al Qadarif",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "al qadarif",
+      "adm1_geo_id": "SDN_2020_ADM1_SD12",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.426423,
+      "poverty_context": {
+        "poor300_rate": 0.2541,
+        "poor420_rate": 0.4762,
+        "poor830_rate": 0.8859,
+        "prosperity_gap_2021": 7.4264234,
+        "poor300_display": "25.4%",
+        "poor420_display": "47.6%",
+        "poor830_display": "88.6%",
+        "prosperity_gap_display": "7.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 551
+    },
+    {
+      "place_id": "SDN-ADM1-BLUE-NILE",
+      "place_name": "Blue Nile",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "blue nile",
+      "adm1_geo_id": "SDN_2020_ADM1_SD08",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.858548,
+      "poverty_context": {
+        "poor300_rate": 0.3768,
+        "poor420_rate": 0.6828,
+        "poor830_rate": 0.9598,
+        "prosperity_gap_2021": 8.8585484,
+        "poor300_display": "37.7%",
+        "poor420_display": "68.3%",
+        "poor830_display": "96.0%",
+        "prosperity_gap_display": "8.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 428
+    },
+    {
+      "place_id": "SDN-ADM1-CENTRAL-DARFUR",
+      "place_name": "Central Darfur",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "central darfur",
+      "adm1_geo_id": "SDN_2020_ADM1_SD06",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.117141,
+      "poverty_context": {
+        "poor300_rate": 0.5852,
+        "poor420_rate": 0.7638,
+        "poor830_rate": 0.9668,
+        "prosperity_gap_2021": 12.117141,
+        "poor300_display": "58.5%",
+        "poor420_display": "76.4%",
+        "poor830_display": "96.7%",
+        "prosperity_gap_display": "12.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 210
+    },
+    {
+      "place_id": "SDN-ADM1-EAST-DARFUR",
+      "place_name": "East Darfur",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "east darfur",
+      "adm1_geo_id": "SDN_2020_ADM1_SD05",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.714578,
+      "poverty_context": {
+        "poor300_rate": 0.4405,
+        "poor420_rate": 0.6487,
+        "poor830_rate": 0.9437,
+        "prosperity_gap_2021": 9.7145781,
+        "poor300_display": "44.0%",
+        "poor420_display": "64.9%",
+        "poor830_display": "94.4%",
+        "prosperity_gap_display": "9.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 368
+    },
+    {
+      "place_id": "SDN-ADM1-KASSALA",
+      "place_name": "Kassala",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "kassala",
+      "adm1_geo_id": "SDN_2020_ADM1_SD11",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.542232,
+      "poverty_context": {
+        "poor300_rate": 0.2754,
+        "poor420_rate": 0.5264,
+        "poor830_rate": 0.8971,
+        "prosperity_gap_2021": 7.5422321,
+        "poor300_display": "27.5%",
+        "poor420_display": "52.6%",
+        "poor830_display": "89.7%",
+        "prosperity_gap_display": "7.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 543
+    },
+    {
+      "place_id": "SDN-ADM1-KHARTOUM",
+      "place_name": "Khartoum",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "khartoum",
+      "adm1_geo_id": "SDN_2020_ADM1_SD01",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.633294,
+      "poverty_context": {
+        "poor300_rate": 0.2827,
+        "poor420_rate": 0.4839,
+        "poor830_rate": 0.8303,
+        "prosperity_gap_2021": 7.6332938,
+        "poor300_display": "28.3%",
+        "poor420_display": "48.4%",
+        "poor830_display": "83.0%",
+        "prosperity_gap_display": "7.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 535
+    },
+    {
+      "place_id": "SDN-ADM1-NORTH-DARFUR",
+      "place_name": "North Darfur",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "north darfur",
+      "adm1_geo_id": "SDN_2020_ADM1_SD02",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.046078,
+      "poverty_context": {
+        "poor300_rate": 0.4541,
+        "poor420_rate": 0.6812,
+        "poor830_rate": 0.9501,
+        "prosperity_gap_2021": 10.046078,
+        "poor300_display": "45.4%",
+        "poor420_display": "68.1%",
+        "poor830_display": "95.0%",
+        "prosperity_gap_display": "10.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 337
+    },
+    {
+      "place_id": "SDN-ADM1-NORTH-KURDUFAN",
+      "place_name": "North Kurdufan",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "north kurdufan",
+      "adm1_geo_id": "SDN_2020_ADM1_SD13",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.433848,
+      "poverty_context": {
+        "poor300_rate": 0.3147,
+        "poor420_rate": 0.5681,
+        "poor830_rate": 0.8991,
+        "prosperity_gap_2021": 8.4338477,
+        "poor300_display": "31.5%",
+        "poor420_display": "56.8%",
+        "poor830_display": "89.9%",
+        "prosperity_gap_display": "8.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 464
+    },
+    {
+      "place_id": "SDN-ADM1-NORTHERN",
+      "place_name": "Northern",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "northern",
+      "adm1_geo_id": "SDN_2020_ADM1_SD17",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.237183,
+      "poverty_context": {
+        "poor300_rate": 0.1145,
+        "poor420_rate": 0.3608,
+        "poor830_rate": 0.8994,
+        "prosperity_gap_2021": 6.2371826,
+        "poor300_display": "11.5%",
+        "poor420_display": "36.1%",
+        "poor830_display": "89.9%",
+        "prosperity_gap_display": "6.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 647
+    },
+    {
+      "place_id": "SDN-ADM1-RED-SEA",
+      "place_name": "Red Sea",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "red sea",
+      "adm1_geo_id": "SDN_2020_ADM1_SD10",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.865868,
+      "poverty_context": {
+        "poor300_rate": 0.4798,
+        "poor420_rate": 0.7197,
+        "poor830_rate": 0.9545,
+        "prosperity_gap_2021": 9.8658685,
+        "poor300_display": "48.0%",
+        "poor420_display": "72.0%",
+        "poor830_display": "95.5%",
+        "prosperity_gap_display": "9.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 347
+    },
+    {
+      "place_id": "SDN-ADM1-RIVER-NILE",
+      "place_name": "River Nile",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "river nile",
+      "adm1_geo_id": "SDN_2020_ADM1_SD16",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.744595,
+      "poverty_context": {
+        "poor300_rate": 0.174,
+        "poor420_rate": 0.4319,
+        "poor830_rate": 0.8844,
+        "prosperity_gap_2021": 6.7445947,
+        "poor300_display": "17.4%",
+        "poor420_display": "43.2%",
+        "poor830_display": "88.4%",
+        "prosperity_gap_display": "6.74"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 606
+    },
+    {
+      "place_id": "SDN-ADM1-SENNAR",
+      "place_name": "Sennar",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "sennar",
+      "adm1_geo_id": "SDN_2020_ADM1_SD14",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.546545,
+      "poverty_context": {
+        "poor300_rate": 0.2431,
+        "poor420_rate": 0.5024,
+        "poor830_rate": 0.8907,
+        "prosperity_gap_2021": 7.5465452,
+        "poor300_display": "24.3%",
+        "poor420_display": "50.2%",
+        "poor830_display": "89.1%",
+        "prosperity_gap_display": "7.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 541
+    },
+    {
+      "place_id": "SDN-ADM1-SOUTH-DARFUR",
+      "place_name": "South Darfur",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "south darfur",
+      "adm1_geo_id": "SDN_2020_ADM1_SD03",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.109747,
+      "poverty_context": {
+        "poor300_rate": 0.4811,
+        "poor420_rate": 0.7255,
+        "poor830_rate": 0.9509,
+        "prosperity_gap_2021": 10.109747,
+        "poor300_display": "48.1%",
+        "poor420_display": "72.5%",
+        "poor830_display": "95.1%",
+        "prosperity_gap_display": "10.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 331
+    },
+    {
+      "place_id": "SDN-ADM1-SOUTH-KURDUFAN",
+      "place_name": "South Kurdufan",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "south kurdufan",
+      "adm1_geo_id": "SDN_2020_ADM1_SD07",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.094751,
+      "poverty_context": {
+        "poor300_rate": 0.488,
+        "poor420_rate": 0.763,
+        "poor830_rate": 0.9638,
+        "prosperity_gap_2021": 10.094751,
+        "poor300_display": "48.8%",
+        "poor420_display": "76.3%",
+        "poor830_display": "96.4%",
+        "prosperity_gap_display": "10.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 332
+    },
+    {
+      "place_id": "SDN-ADM1-WEST-DARFUR",
+      "place_name": "West Darfur",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "west darfur",
+      "adm1_geo_id": "SDN_2020_ADM1_SD04",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.251704,
+      "poverty_context": {
+        "poor300_rate": 0.4624,
+        "poor420_rate": 0.6525,
+        "poor830_rate": 0.9222,
+        "prosperity_gap_2021": 10.251704,
+        "poor300_display": "46.2%",
+        "poor420_display": "65.3%",
+        "poor830_display": "92.2%",
+        "prosperity_gap_display": "10.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 320
+    },
+    {
+      "place_id": "SDN-ADM1-WEST-KURDUFAN",
+      "place_name": "West Kurdufan",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "west kurdufan",
+      "adm1_geo_id": "SDN_2020_ADM1_SD18",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.805572,
+      "poverty_context": {
+        "poor300_rate": 0.3678,
+        "poor420_rate": 0.6108,
+        "poor830_rate": 0.9382,
+        "prosperity_gap_2021": 8.8055721,
+        "poor300_display": "36.8%",
+        "poor420_display": "61.1%",
+        "poor830_display": "93.8%",
+        "prosperity_gap_display": "8.81"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 434
+    },
+    {
+      "place_id": "SDN-ADM1-WHITE-NILE",
+      "place_name": "White Nile",
+      "parent_place_id": "SDN",
+      "parent_place_name": "Sudan",
+      "iso3": "SDN",
+      "source_iso3": "SDN",
+      "geometry_level": "adm1",
+      "adm1_key": "white nile",
+      "adm1_geo_id": "SDN_2020_ADM1_SD09",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SDN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.408461,
+      "poverty_context": {
+        "poor300_rate": 0.3035,
+        "poor420_rate": 0.5622,
+        "poor830_rate": 0.9178,
+        "prosperity_gap_2021": 8.4084608,
+        "poor300_display": "30.3%",
+        "poor420_display": "56.2%",
+        "poor830_display": "91.8%",
+        "prosperity_gap_display": "8.41"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 467
+    }
+  ]
+}

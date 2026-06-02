@@ -1,0 +1,717 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "DEU",
+  "parent_place_name": "Germany",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 16,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "DEU-ADM1-BADEN-W-RTTEMBERG-DE1",
+      "place_name": "Baden-Württemberg (DE1)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "baden w rttemberg de1",
+      "adm1_geo_id": "DEU_2015_ADM1_1308",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.523001,
+      "poverty_context": {
+        "poor300_rate": 0.0002,
+        "poor420_rate": 0.0004,
+        "poor830_rate": 0.0011,
+        "prosperity_gap_2021": 0.52300095,
+        "poor300_display": "0.02%",
+        "poor420_display": "0.04%",
+        "poor830_display": "0.11%",
+        "prosperity_gap_display": "0.52"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1869
+    },
+    {
+      "place_id": "DEU-ADM1-BAYERN-DE2",
+      "place_name": "Bayern (DE2)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "bayern de2",
+      "adm1_geo_id": "DEU_2015_ADM1_1309",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.639288,
+      "poverty_context": {
+        "poor300_rate": 0.0013,
+        "poor420_rate": 0.0016,
+        "poor830_rate": 0.0038,
+        "prosperity_gap_2021": 0.63928813,
+        "poor300_display": "0.13%",
+        "poor420_display": "0.16%",
+        "poor830_display": "0.38%",
+        "prosperity_gap_display": "0.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1843
+    },
+    {
+      "place_id": "DEU-ADM1-BERLIN-DE3",
+      "place_name": "Berlin (DE3)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "berlin de3",
+      "adm1_geo_id": "DEU_2015_ADM1_1310",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.65896,
+      "poverty_context": {
+        "poor300_rate": 0.0012,
+        "poor420_rate": 0.0018,
+        "poor830_rate": 0.002,
+        "prosperity_gap_2021": 0.65895993,
+        "poor300_display": "0.12%",
+        "poor420_display": "0.18%",
+        "poor830_display": "0.20%",
+        "prosperity_gap_display": "0.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1838
+    },
+    {
+      "place_id": "DEU-ADM1-BRANDENBURG-DE4",
+      "place_name": "Brandenburg (DE4)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "brandenburg de4",
+      "adm1_geo_id": "DEU_2015_ADM1_1311",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.528592,
+      "poverty_context": {
+        "poor300_rate": 0.0001,
+        "poor420_rate": 0.0001,
+        "poor830_rate": 0.0006,
+        "prosperity_gap_2021": 0.52859207,
+        "poor300_display": "0.01%",
+        "poor420_display": "0.01%",
+        "poor830_display": "0.06%",
+        "prosperity_gap_display": "0.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1867
+    },
+    {
+      "place_id": "DEU-ADM1-BREMEN-DE5",
+      "place_name": "Bremen (DE5)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "bremen de5",
+      "adm1_geo_id": "DEU_2015_ADM1_1312",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.708797,
+      "poverty_context": {
+        "poor300_rate": 0.0008,
+        "poor420_rate": 0.0088,
+        "poor830_rate": 0.0188,
+        "prosperity_gap_2021": 0.70879707,
+        "poor300_display": "0.08%",
+        "poor420_display": "0.88%",
+        "poor830_display": "1.88%",
+        "prosperity_gap_display": "0.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1826
+    },
+    {
+      "place_id": "DEU-ADM1-HAMBURG-DE6",
+      "place_name": "Hamburg (DE6)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "hamburg de6",
+      "adm1_geo_id": "DEU_2015_ADM1_1313",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.557591,
+      "poverty_context": {
+        "poor300_rate": 0.0024,
+        "poor420_rate": 0.0024,
+        "poor830_rate": 0.0026,
+        "prosperity_gap_2021": 0.55759071,
+        "poor300_display": "0.24%",
+        "poor420_display": "0.24%",
+        "poor830_display": "0.26%",
+        "prosperity_gap_display": "0.56"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1859
+    },
+    {
+      "place_id": "DEU-ADM1-HESSEN-DE7",
+      "place_name": "Hessen (DE7)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "hessen de7",
+      "adm1_geo_id": "DEU_2015_ADM1_1314",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.607354,
+      "poverty_context": {
+        "poor300_rate": 0.0012,
+        "poor420_rate": 0.0012,
+        "poor830_rate": 0.0048,
+        "prosperity_gap_2021": 0.60735413,
+        "poor300_display": "0.12%",
+        "poor420_display": "0.12%",
+        "poor830_display": "0.48%",
+        "prosperity_gap_display": "0.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1854
+    },
+    {
+      "place_id": "DEU-ADM1-MECKLENBURG-VORPOMMERN-DE8",
+      "place_name": "Mecklenburg-Vorpommern (DE8)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "mecklenburg vorpommern de8",
+      "adm1_geo_id": "DEU_2015_ADM1_1315",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.667869,
+      "poverty_context": {
+        "poor300_rate": 0.0008,
+        "poor420_rate": 0.0008,
+        "poor830_rate": 0.0008,
+        "prosperity_gap_2021": 0.667869,
+        "poor300_display": "0.08%",
+        "poor420_display": "0.08%",
+        "poor830_display": "0.08%",
+        "prosperity_gap_display": "0.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1836
+    },
+    {
+      "place_id": "DEU-ADM1-NIEDERSACHSEN-DE9",
+      "place_name": "Niedersachsen (DE9)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "niedersachsen de9",
+      "adm1_geo_id": "DEU_2015_ADM1_1316",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.620431,
+      "poverty_context": {
+        "poor300_rate": 0.0016,
+        "poor420_rate": 0.0016,
+        "poor830_rate": 0.005,
+        "prosperity_gap_2021": 0.62043066,
+        "poor300_display": "0.16%",
+        "poor420_display": "0.16%",
+        "poor830_display": "0.50%",
+        "prosperity_gap_display": "0.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1847
+    },
+    {
+      "place_id": "DEU-ADM1-NORDRHEIN-WESTFALEN-DEA",
+      "place_name": "Nordrhein-Westfalen (DEA)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "nordrhein westfalen dea",
+      "adm1_geo_id": "DEU_2015_ADM1_1317",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.666662,
+      "poverty_context": {
+        "poor300_rate": 0.0006,
+        "poor420_rate": 0.0013,
+        "poor830_rate": 0.0089,
+        "prosperity_gap_2021": 0.66666215,
+        "poor300_display": "0.06%",
+        "poor420_display": "0.13%",
+        "poor830_display": "0.89%",
+        "prosperity_gap_display": "0.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1837
+    },
+    {
+      "place_id": "DEU-ADM1-RHEINLAND-PFALZ-DEB",
+      "place_name": "Rheinland-Pfalz (DEB)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "rheinland pfalz deb",
+      "adm1_geo_id": "DEU_2015_ADM1_1318",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.718615,
+      "poverty_context": {
+        "poor300_rate": 0.0011,
+        "poor420_rate": 0.0011,
+        "poor830_rate": 0.003,
+        "prosperity_gap_2021": 0.71861454,
+        "poor300_display": "0.11%",
+        "poor420_display": "0.11%",
+        "poor830_display": "0.30%",
+        "prosperity_gap_display": "0.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1822
+    },
+    {
+      "place_id": "DEU-ADM1-SAARLAND-DEC",
+      "place_name": "Saarland (DEC)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "saarland dec",
+      "adm1_geo_id": "DEU_2015_ADM1_1319",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.953306,
+      "poverty_context": {
+        "poor300_rate": 0.0034,
+        "poor420_rate": 0.0034,
+        "poor830_rate": 0.0044,
+        "prosperity_gap_2021": 0.9533063,
+        "poor300_display": "0.34%",
+        "poor420_display": "0.34%",
+        "poor830_display": "0.44%",
+        "prosperity_gap_display": "0.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1757
+    },
+    {
+      "place_id": "DEU-ADM1-SACHSEN-DED",
+      "place_name": "Sachsen (DED)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "sachsen ded",
+      "adm1_geo_id": "DEU_2015_ADM1_1320",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.607783,
+      "poverty_context": {
+        "poor300_rate": 0.0012,
+        "poor420_rate": 0.0014,
+        "poor830_rate": 0.0014,
+        "prosperity_gap_2021": 0.60778337,
+        "poor300_display": "0.12%",
+        "poor420_display": "0.14%",
+        "poor830_display": "0.14%",
+        "prosperity_gap_display": "0.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1852
+    },
+    {
+      "place_id": "DEU-ADM1-SACHSEN-ANHALT-DEE",
+      "place_name": "Sachsen-Anhalt (DEE)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "sachsen anhalt dee",
+      "adm1_geo_id": "DEU_2015_ADM1_1321",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.669569,
+      "poverty_context": {
+        "poor300_rate": 0.001,
+        "poor420_rate": 0.001,
+        "poor830_rate": 0.0045,
+        "prosperity_gap_2021": 0.66956922,
+        "poor300_display": "0.10%",
+        "poor420_display": "0.10%",
+        "poor830_display": "0.45%",
+        "prosperity_gap_display": "0.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1835
+    },
+    {
+      "place_id": "DEU-ADM1-SCHLESWIG-HOLSTEIN-DEF",
+      "place_name": "Schleswig-Holstein (DEF)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "schleswig holstein def",
+      "adm1_geo_id": "DEU_2015_ADM1_1322",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.696083,
+      "poverty_context": {
+        "poor300_rate": 0.001,
+        "poor420_rate": 0.0011,
+        "poor830_rate": 0.004,
+        "prosperity_gap_2021": 0.69608334,
+        "poor300_display": "0.10%",
+        "poor420_display": "0.11%",
+        "poor830_display": "0.40%",
+        "prosperity_gap_display": "0.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1828
+    },
+    {
+      "place_id": "DEU-ADM1-TH-RINGEN-DEG",
+      "place_name": "Thüringen (DEG)",
+      "parent_place_id": "DEU",
+      "parent_place_name": "Germany",
+      "iso3": "DEU",
+      "source_iso3": "DEU",
+      "geometry_level": "adm1",
+      "adm1_key": "th ringen deg",
+      "adm1_geo_id": "DEU_2015_ADM1_1323",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/DEU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.758801,
+      "poverty_context": {
+        "poor300_rate": 0.0002,
+        "poor420_rate": 0.0002,
+        "poor830_rate": 0.0052,
+        "prosperity_gap_2021": 0.75880099,
+        "poor300_display": "0.02%",
+        "poor420_display": "0.02%",
+        "poor830_display": "0.52%",
+        "prosperity_gap_display": "0.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1817
+    }
+  ]
+}

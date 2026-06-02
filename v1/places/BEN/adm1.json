@@ -1,0 +1,541 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "BEN",
+  "parent_place_name": "Benin",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 12,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "BEN-ADM1-ALIBORI",
+      "place_name": "Alibori",
+      "parent_place_id": "BEN",
+      "parent_place_name": "Benin",
+      "iso3": "BEN",
+      "source_iso3": "BEN",
+      "geometry_level": "adm1",
+      "adm1_key": "alibori",
+      "adm1_geo_id": "BEN_2015_ADM1_609",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.244627,
+      "poverty_context": {
+        "poor300_rate": 0.3166,
+        "poor420_rate": 0.6145,
+        "poor830_rate": 0.9421,
+        "prosperity_gap_2021": 8.2446266,
+        "poor300_display": "31.7%",
+        "poor420_display": "61.5%",
+        "poor830_display": "94.2%",
+        "prosperity_gap_display": "8.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 482
+    },
+    {
+      "place_id": "BEN-ADM1-ATAKORA",
+      "place_name": "Atakora",
+      "parent_place_id": "BEN",
+      "parent_place_name": "Benin",
+      "iso3": "BEN",
+      "source_iso3": "BEN",
+      "geometry_level": "adm1",
+      "adm1_key": "atakora",
+      "adm1_geo_id": "BEN_2015_ADM1_610",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.390789,
+      "poverty_context": {
+        "poor300_rate": 0.3902,
+        "poor420_rate": 0.6496,
+        "poor830_rate": 0.8598,
+        "prosperity_gap_2021": 8.3907889,
+        "poor300_display": "39.0%",
+        "poor420_display": "65.0%",
+        "poor830_display": "86.0%",
+        "prosperity_gap_display": "8.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 470
+    },
+    {
+      "place_id": "BEN-ADM1-ATLANTIQUE",
+      "place_name": "Atlantique",
+      "parent_place_id": "BEN",
+      "parent_place_name": "Benin",
+      "iso3": "BEN",
+      "source_iso3": "BEN",
+      "geometry_level": "adm1",
+      "adm1_key": "atlantique",
+      "adm1_geo_id": "BEN_2015_ADM1_611",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.02507,
+      "poverty_context": {
+        "poor300_rate": 0.1417,
+        "poor420_rate": 0.3201,
+        "poor830_rate": 0.7684,
+        "prosperity_gap_2021": 6.0250699,
+        "poor300_display": "14.2%",
+        "poor420_display": "32.0%",
+        "poor830_display": "76.8%",
+        "prosperity_gap_display": "6.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 679
+    },
+    {
+      "place_id": "BEN-ADM1-BORGOU",
+      "place_name": "Borgou",
+      "parent_place_id": "BEN",
+      "parent_place_name": "Benin",
+      "iso3": "BEN",
+      "source_iso3": "BEN",
+      "geometry_level": "adm1",
+      "adm1_key": "borgou",
+      "adm1_geo_id": "BEN_2015_ADM1_612",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.630589,
+      "poverty_context": {
+        "poor300_rate": 0.4056,
+        "poor420_rate": 0.6038,
+        "poor830_rate": 0.9395,
+        "prosperity_gap_2021": 9.6305892,
+        "poor300_display": "40.6%",
+        "poor420_display": "60.4%",
+        "poor830_display": "94.0%",
+        "prosperity_gap_display": "9.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 372
+    },
+    {
+      "place_id": "BEN-ADM1-COLLINES",
+      "place_name": "Collines",
+      "parent_place_id": "BEN",
+      "parent_place_name": "Benin",
+      "iso3": "BEN",
+      "source_iso3": "BEN",
+      "geometry_level": "adm1",
+      "adm1_key": "collines",
+      "adm1_geo_id": "BEN_2015_ADM1_613",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.360187,
+      "poverty_context": {
+        "poor300_rate": 0.1276,
+        "poor420_rate": 0.3703,
+        "poor830_rate": 0.9139,
+        "prosperity_gap_2021": 6.3601867,
+        "poor300_display": "12.8%",
+        "poor420_display": "37.0%",
+        "poor830_display": "91.4%",
+        "prosperity_gap_display": "6.36"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 639
+    },
+    {
+      "place_id": "BEN-ADM1-COUFFO",
+      "place_name": "Couffo",
+      "parent_place_id": "BEN",
+      "parent_place_name": "Benin",
+      "iso3": "BEN",
+      "source_iso3": "BEN",
+      "geometry_level": "adm1",
+      "adm1_key": "couffo",
+      "adm1_geo_id": "BEN_2015_ADM1_614",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.249326,
+      "poverty_context": {
+        "poor300_rate": 0.4105,
+        "poor420_rate": 0.702,
+        "poor830_rate": 0.9692,
+        "prosperity_gap_2021": 9.2493264,
+        "poor300_display": "41.0%",
+        "poor420_display": "70.2%",
+        "poor830_display": "96.9%",
+        "prosperity_gap_display": "9.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 400
+    },
+    {
+      "place_id": "BEN-ADM1-DONGA",
+      "place_name": "Donga",
+      "parent_place_id": "BEN",
+      "parent_place_name": "Benin",
+      "iso3": "BEN",
+      "source_iso3": "BEN",
+      "geometry_level": "adm1",
+      "adm1_key": "donga",
+      "adm1_geo_id": "BEN_2015_ADM1_615",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.350363,
+      "poverty_context": {
+        "poor300_rate": 0.3647,
+        "poor420_rate": 0.6323,
+        "poor830_rate": 0.9593,
+        "prosperity_gap_2021": 9.3503631,
+        "poor300_display": "36.5%",
+        "poor420_display": "63.2%",
+        "poor830_display": "95.9%",
+        "prosperity_gap_display": "9.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 391
+    },
+    {
+      "place_id": "BEN-ADM1-LITTORAL",
+      "place_name": "Littoral",
+      "parent_place_id": "BEN",
+      "parent_place_name": "Benin",
+      "iso3": "BEN",
+      "source_iso3": "BEN",
+      "geometry_level": "adm1",
+      "adm1_key": "littoral",
+      "adm1_geo_id": "BEN_2015_ADM1_616",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.245125,
+      "poverty_context": {
+        "poor300_rate": 0.047,
+        "poor420_rate": 0.1425,
+        "poor830_rate": 0.5899,
+        "prosperity_gap_2021": 4.2451246,
+        "poor300_display": "4.70%",
+        "poor420_display": "14.2%",
+        "poor830_display": "59.0%",
+        "prosperity_gap_display": "4.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 937
+    },
+    {
+      "place_id": "BEN-ADM1-MONO",
+      "place_name": "Mono",
+      "parent_place_id": "BEN",
+      "parent_place_name": "Benin",
+      "iso3": "BEN",
+      "source_iso3": "BEN",
+      "geometry_level": "adm1",
+      "adm1_key": "mono",
+      "adm1_geo_id": "BEN_2015_ADM1_617",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.615348,
+      "poverty_context": {
+        "poor300_rate": 0.3338,
+        "poor420_rate": 0.5926,
+        "poor830_rate": 0.9442,
+        "prosperity_gap_2021": 8.6153475,
+        "poor300_display": "33.4%",
+        "poor420_display": "59.3%",
+        "poor830_display": "94.4%",
+        "prosperity_gap_display": "8.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 446
+    },
+    {
+      "place_id": "BEN-ADM1-OUEME",
+      "place_name": "Oueme",
+      "parent_place_id": "BEN",
+      "parent_place_name": "Benin",
+      "iso3": "BEN",
+      "source_iso3": "BEN",
+      "geometry_level": "adm1",
+      "adm1_key": "oueme",
+      "adm1_geo_id": "BEN_2015_ADM1_618",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.977251,
+      "poverty_context": {
+        "poor300_rate": 0.0797,
+        "poor420_rate": 0.2235,
+        "poor830_rate": 0.6868,
+        "prosperity_gap_2021": 4.9772513,
+        "poor300_display": "7.97%",
+        "poor420_display": "22.4%",
+        "poor830_display": "68.7%",
+        "prosperity_gap_display": "4.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 811
+    },
+    {
+      "place_id": "BEN-ADM1-PLATEAU",
+      "place_name": "Plateau",
+      "parent_place_id": "BEN",
+      "parent_place_name": "Benin",
+      "iso3": "BEN",
+      "source_iso3": "BEN",
+      "geometry_level": "adm1",
+      "adm1_key": "plateau",
+      "adm1_geo_id": "BEN_2015_ADM1_619",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.046871,
+      "poverty_context": {
+        "poor300_rate": 0.2514,
+        "poor420_rate": 0.4566,
+        "poor830_rate": 0.8607,
+        "prosperity_gap_2021": 7.0468713,
+        "poor300_display": "25.1%",
+        "poor420_display": "45.7%",
+        "poor830_display": "86.1%",
+        "prosperity_gap_display": "7.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 584
+    },
+    {
+      "place_id": "BEN-ADM1-ZOU",
+      "place_name": "Zou",
+      "parent_place_id": "BEN",
+      "parent_place_name": "Benin",
+      "iso3": "BEN",
+      "source_iso3": "BEN",
+      "geometry_level": "adm1",
+      "adm1_key": "zou",
+      "adm1_geo_id": "BEN_2015_ADM1_620",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.3685,
+      "poverty_context": {
+        "poor300_rate": 0.2899,
+        "poor420_rate": 0.6089,
+        "poor830_rate": 0.9463,
+        "prosperity_gap_2021": 8.3685003,
+        "poor300_display": "29.0%",
+        "poor420_display": "60.9%",
+        "poor830_display": "94.6%",
+        "prosperity_gap_display": "8.37"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 472
+    }
+  ]
+}

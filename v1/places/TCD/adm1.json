@@ -1,0 +1,937 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "TCD",
+  "parent_place_name": "Chad",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 21,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "TCD-ADM1-BARH-EL-GHAZEL",
+      "place_name": "Barh el Ghazel",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "barh el ghazel",
+      "adm1_geo_id": "TCD_2015_GADM1_47_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.227882,
+      "poverty_context": {
+        "poor300_rate": 0.262,
+        "poor420_rate": 0.477,
+        "poor830_rate": 0.886,
+        "prosperity_gap_2021": 7.2278824,
+        "poor300_display": "26.2%",
+        "poor420_display": "47.7%",
+        "poor830_display": "88.6%",
+        "prosperity_gap_display": "7.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 572
+    },
+    {
+      "place_id": "TCD-ADM1-BATHA",
+      "place_name": "Batha",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "batha",
+      "adm1_geo_id": "TCD_2015_GADM1_47_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.871035,
+      "poverty_context": {
+        "poor300_rate": 0.4373,
+        "poor420_rate": 0.7513,
+        "poor830_rate": 0.9731,
+        "prosperity_gap_2021": 9.8710352,
+        "poor300_display": "43.7%",
+        "poor420_display": "75.1%",
+        "poor830_display": "97.3%",
+        "prosperity_gap_display": "9.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 345
+    },
+    {
+      "place_id": "TCD-ADM1-BOUKOU-AND-TIBESTI",
+      "place_name": "Boukou & Tibesti",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "boukou and tibesti",
+      "adm1_geo_id": "TCD_2015_GADM1_47_3_21",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.754979,
+      "poverty_context": {
+        "poor300_rate": 0.1418,
+        "poor420_rate": 0.3289,
+        "poor830_rate": 0.7282,
+        "prosperity_gap_2021": 5.7549792,
+        "poor300_display": "14.2%",
+        "poor420_display": "32.9%",
+        "poor830_display": "72.8%",
+        "prosperity_gap_display": "5.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 710
+    },
+    {
+      "place_id": "TCD-ADM1-CHARI-BAGUIRMI",
+      "place_name": "Chari-Baguirmi",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "chari baguirmi",
+      "adm1_geo_id": "TCD_2015_GADM1_47_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.499018,
+      "poverty_context": {
+        "poor300_rate": 0.3966,
+        "poor420_rate": 0.6652,
+        "poor830_rate": 0.9536,
+        "prosperity_gap_2021": 9.4990184,
+        "poor300_display": "39.7%",
+        "poor420_display": "66.5%",
+        "poor830_display": "95.4%",
+        "prosperity_gap_display": "9.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 381
+    },
+    {
+      "place_id": "TCD-ADM1-ENNEDI-EST-AND-ENNEDI-OUEST",
+      "place_name": "Ennedi Est & Ennedi Ouest",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "ennedi est and ennedi ouest",
+      "adm1_geo_id": "TCD_2015_GADM1_47_5_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.144423,
+      "poverty_context": {
+        "poor300_rate": 0.1617,
+        "poor420_rate": 0.3269,
+        "poor830_rate": 0.8149,
+        "prosperity_gap_2021": 6.1444227,
+        "poor300_display": "16.2%",
+        "poor420_display": "32.7%",
+        "poor830_display": "81.5%",
+        "prosperity_gap_display": "6.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 662
+    },
+    {
+      "place_id": "TCD-ADM1-GU-RA",
+      "place_name": "Guéra",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "gu ra",
+      "adm1_geo_id": "TCD_2015_GADM1_47_7",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.66465,
+      "poverty_context": {
+        "poor300_rate": 0.4946,
+        "poor420_rate": 0.696,
+        "poor830_rate": 0.9454,
+        "prosperity_gap_2021": 10.66465,
+        "poor300_display": "49.5%",
+        "poor420_display": "69.6%",
+        "poor830_display": "94.5%",
+        "prosperity_gap_display": "10.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 303
+    },
+    {
+      "place_id": "TCD-ADM1-HADJER-LAMIS",
+      "place_name": "Hadjer-Lamis",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "hadjer lamis",
+      "adm1_geo_id": "TCD_2015_GADM1_47_8",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.484879,
+      "poverty_context": {
+        "poor300_rate": 0.4092,
+        "poor420_rate": 0.7,
+        "poor830_rate": 0.9419,
+        "prosperity_gap_2021": 9.4848793,
+        "poor300_display": "40.9%",
+        "poor420_display": "70.0%",
+        "poor830_display": "94.2%",
+        "prosperity_gap_display": "9.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 382
+    },
+    {
+      "place_id": "TCD-ADM1-KANEM",
+      "place_name": "Kanem",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "kanem",
+      "adm1_geo_id": "TCD_2015_GADM1_47_9",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.548512,
+      "poverty_context": {
+        "poor300_rate": 0.3839,
+        "poor420_rate": 0.8153,
+        "poor830_rate": 0.9783,
+        "prosperity_gap_2021": 9.5485121,
+        "poor300_display": "38.4%",
+        "poor420_display": "81.5%",
+        "poor830_display": "97.8%",
+        "prosperity_gap_display": "9.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 378
+    },
+    {
+      "place_id": "TCD-ADM1-LAC",
+      "place_name": "Lac",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "lac",
+      "adm1_geo_id": "TCD_2015_GADM1_47_10",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.8937,
+      "poverty_context": {
+        "poor300_rate": 0.274,
+        "poor420_rate": 0.5923,
+        "poor830_rate": 0.9232,
+        "prosperity_gap_2021": 7.8937,
+        "poor300_display": "27.4%",
+        "poor420_display": "59.2%",
+        "poor830_display": "92.3%",
+        "prosperity_gap_display": "7.89"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 508
+    },
+    {
+      "place_id": "TCD-ADM1-LOGONE-OCCIDENTAL",
+      "place_name": "Logone Occidental",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "logone occidental",
+      "adm1_geo_id": "TCD_2015_GADM1_47_11",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.790114,
+      "poverty_context": {
+        "poor300_rate": 0.5032,
+        "poor420_rate": 0.6997,
+        "poor830_rate": 0.899,
+        "prosperity_gap_2021": 10.790114,
+        "poor300_display": "50.3%",
+        "poor420_display": "70.0%",
+        "poor830_display": "89.9%",
+        "prosperity_gap_display": "10.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 295
+    },
+    {
+      "place_id": "TCD-ADM1-LOGONE-ORIENTAL",
+      "place_name": "Logone Oriental",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "logone oriental",
+      "adm1_geo_id": "TCD_2015_GADM1_47_12",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.845989,
+      "poverty_context": {
+        "poor300_rate": 0.5634,
+        "poor420_rate": 0.7086,
+        "poor830_rate": 0.9201,
+        "prosperity_gap_2021": 12.845989,
+        "poor300_display": "56.3%",
+        "poor420_display": "70.9%",
+        "poor830_display": "92.0%",
+        "prosperity_gap_display": "12.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 186
+    },
+    {
+      "place_id": "TCD-ADM1-MANDOUL",
+      "place_name": "Mandoul",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "mandoul",
+      "adm1_geo_id": "TCD_2015_GADM1_47_13",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.240701,
+      "poverty_context": {
+        "poor300_rate": 0.539,
+        "poor420_rate": 0.7573,
+        "poor830_rate": 0.9733,
+        "prosperity_gap_2021": 13.240701,
+        "poor300_display": "53.9%",
+        "poor420_display": "75.7%",
+        "poor830_display": "97.3%",
+        "prosperity_gap_display": "13.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 173
+    },
+    {
+      "place_id": "TCD-ADM1-MAYO-KEBBI-EST",
+      "place_name": "Mayo-Kebbi Est",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "mayo kebbi est",
+      "adm1_geo_id": "TCD_2015_GADM1_47_14",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.071194,
+      "poverty_context": {
+        "poor300_rate": 0.4493,
+        "poor420_rate": 0.6581,
+        "poor830_rate": 0.9011,
+        "prosperity_gap_2021": 11.071194,
+        "poor300_display": "44.9%",
+        "poor420_display": "65.8%",
+        "poor830_display": "90.1%",
+        "prosperity_gap_display": "11.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 277
+    },
+    {
+      "place_id": "TCD-ADM1-MAYO-KEBBI-OUEST",
+      "place_name": "Mayo-Kebbi Ouest",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "mayo kebbi ouest",
+      "adm1_geo_id": "TCD_2015_GADM1_47_15",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.31211,
+      "poverty_context": {
+        "poor300_rate": 0.5326,
+        "poor420_rate": 0.7234,
+        "poor830_rate": 0.9711,
+        "prosperity_gap_2021": 11.31211,
+        "poor300_display": "53.3%",
+        "poor420_display": "72.3%",
+        "poor830_display": "97.1%",
+        "prosperity_gap_display": "11.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 260
+    },
+    {
+      "place_id": "TCD-ADM1-MOYEN-CHARI",
+      "place_name": "Moyen-Chari",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "moyen chari",
+      "adm1_geo_id": "TCD_2015_GADM1_47_16",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.071401,
+      "poverty_context": {
+        "poor300_rate": 0.443,
+        "poor420_rate": 0.6514,
+        "poor830_rate": 0.9341,
+        "prosperity_gap_2021": 10.071401,
+        "poor300_display": "44.3%",
+        "poor420_display": "65.1%",
+        "poor830_display": "93.4%",
+        "prosperity_gap_display": "10.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 335
+    },
+    {
+      "place_id": "TCD-ADM1-OUADDA",
+      "place_name": "Ouaddaï",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "ouadda",
+      "adm1_geo_id": "TCD_2015_GADM1_47_17",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.554263,
+      "poverty_context": {
+        "poor300_rate": 0.2819,
+        "poor420_rate": 0.505,
+        "poor830_rate": 0.8523,
+        "prosperity_gap_2021": 7.5542632,
+        "poor300_display": "28.2%",
+        "poor420_display": "50.5%",
+        "poor830_display": "85.2%",
+        "prosperity_gap_display": "7.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 539
+    },
+    {
+      "place_id": "TCD-ADM1-SALAMAT",
+      "place_name": "Salamat",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "salamat",
+      "adm1_geo_id": "TCD_2015_GADM1_47_18",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.075279,
+      "poverty_context": {
+        "poor300_rate": 0.2797,
+        "poor420_rate": 0.5327,
+        "poor830_rate": 0.9443,
+        "prosperity_gap_2021": 8.0752786,
+        "poor300_display": "28.0%",
+        "poor420_display": "53.3%",
+        "poor830_display": "94.4%",
+        "prosperity_gap_display": "8.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 496
+    },
+    {
+      "place_id": "TCD-ADM1-SILA",
+      "place_name": "Sila",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "sila",
+      "adm1_geo_id": "TCD_2015_GADM1_47_19",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.543054,
+      "poverty_context": {
+        "poor300_rate": 0.5525,
+        "poor420_rate": 0.8131,
+        "poor830_rate": 0.984,
+        "prosperity_gap_2021": 10.543054,
+        "poor300_display": "55.3%",
+        "poor420_display": "81.3%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "10.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 306
+    },
+    {
+      "place_id": "TCD-ADM1-TANDJIL",
+      "place_name": "Tandjilé",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "tandjil",
+      "adm1_geo_id": "TCD_2015_GADM1_47_20",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.893028,
+      "poverty_context": {
+        "poor300_rate": 0.466,
+        "poor420_rate": 0.7266,
+        "poor830_rate": 0.9598,
+        "prosperity_gap_2021": 9.8930283,
+        "poor300_display": "46.6%",
+        "poor420_display": "72.7%",
+        "poor830_display": "96.0%",
+        "prosperity_gap_display": "9.89"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 343
+    },
+    {
+      "place_id": "TCD-ADM1-VILLE-DE-N-DJAMENA",
+      "place_name": "Ville de N'Djamena",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "ville de n djamena",
+      "adm1_geo_id": "TCD_2015_GADM1_47_22",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.196559,
+      "poverty_context": {
+        "poor300_rate": 0.0562,
+        "poor420_rate": 0.1236,
+        "poor830_rate": 0.5408,
+        "prosperity_gap_2021": 4.1965591,
+        "poor300_display": "5.62%",
+        "poor420_display": "12.4%",
+        "poor830_display": "54.1%",
+        "prosperity_gap_display": "4.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 947
+    },
+    {
+      "place_id": "TCD-ADM1-WADI-FIRA",
+      "place_name": "Wadi Fira",
+      "parent_place_id": "TCD",
+      "parent_place_name": "Chad",
+      "iso3": "TCD",
+      "source_iso3": "TCD",
+      "geometry_level": "adm1",
+      "adm1_key": "wadi fira",
+      "adm1_geo_id": "TCD_2015_GADM1_47_23",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TCD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.420341,
+      "poverty_context": {
+        "poor300_rate": 0.3649,
+        "poor420_rate": 0.5795,
+        "poor830_rate": 0.9288,
+        "prosperity_gap_2021": 8.4203412,
+        "poor300_display": "36.5%",
+        "poor420_display": "58.0%",
+        "poor830_display": "92.9%",
+        "prosperity_gap_display": "8.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 465
+    }
+  ]
+}

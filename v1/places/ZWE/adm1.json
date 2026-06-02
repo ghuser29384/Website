@@ -1,0 +1,453 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "ZWE",
+  "parent_place_name": "Zimbabwe",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 10,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "ZWE-ADM1-BULAWAYO",
+      "place_name": "Bulawayo",
+      "parent_place_id": "ZWE",
+      "parent_place_name": "Zimbabwe",
+      "iso3": "ZWE",
+      "source_iso3": "ZWE",
+      "geometry_level": "adm1",
+      "adm1_key": "bulawayo",
+      "adm1_geo_id": "ZWE_2015_ADM1_3435",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.585416,
+      "poverty_context": {
+        "poor300_rate": 0.1478,
+        "poor420_rate": 0.2891,
+        "poor830_rate": 0.6908,
+        "prosperity_gap_2021": 5.5854158,
+        "poor300_display": "14.8%",
+        "poor420_display": "28.9%",
+        "poor830_display": "69.1%",
+        "prosperity_gap_display": "5.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 729
+    },
+    {
+      "place_id": "ZWE-ADM1-HARARE",
+      "place_name": "Harare",
+      "parent_place_id": "ZWE",
+      "parent_place_name": "Zimbabwe",
+      "iso3": "ZWE",
+      "source_iso3": "ZWE",
+      "geometry_level": "adm1",
+      "adm1_key": "harare",
+      "adm1_geo_id": "ZWE_2015_ADM1_3436",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.769148,
+      "poverty_context": {
+        "poor300_rate": 0.2344,
+        "poor420_rate": 0.3674,
+        "poor830_rate": 0.6947,
+        "prosperity_gap_2021": 6.7691484,
+        "poor300_display": "23.4%",
+        "poor420_display": "36.7%",
+        "poor830_display": "69.5%",
+        "prosperity_gap_display": "6.77"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 604
+    },
+    {
+      "place_id": "ZWE-ADM1-MANICALAND",
+      "place_name": "Manicaland",
+      "parent_place_id": "ZWE",
+      "parent_place_name": "Zimbabwe",
+      "iso3": "ZWE",
+      "source_iso3": "ZWE",
+      "geometry_level": "adm1",
+      "adm1_key": "manicaland",
+      "adm1_geo_id": "ZWE_2015_ADM1_3437",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.786015,
+      "poverty_context": {
+        "poor300_rate": 0.5438,
+        "poor420_rate": 0.7123,
+        "poor830_rate": 0.889,
+        "prosperity_gap_2021": 11.786015,
+        "poor300_display": "54.4%",
+        "poor420_display": "71.2%",
+        "poor830_display": "88.9%",
+        "prosperity_gap_display": "11.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 227
+    },
+    {
+      "place_id": "ZWE-ADM1-MASHONALAND-CENTRAL",
+      "place_name": "Mashonaland Central",
+      "parent_place_id": "ZWE",
+      "parent_place_name": "Zimbabwe",
+      "iso3": "ZWE",
+      "source_iso3": "ZWE",
+      "geometry_level": "adm1",
+      "adm1_key": "mashonaland central",
+      "adm1_geo_id": "ZWE_2015_ADM1_3438",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.700317,
+      "poverty_context": {
+        "poor300_rate": 0.6394,
+        "poor420_rate": 0.7974,
+        "poor830_rate": 0.9339,
+        "prosperity_gap_2021": 13.700317,
+        "poor300_display": "63.9%",
+        "poor420_display": "79.7%",
+        "poor830_display": "93.4%",
+        "prosperity_gap_display": "13.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 162
+    },
+    {
+      "place_id": "ZWE-ADM1-MASHONALAND-EAST",
+      "place_name": "Mashonaland East",
+      "parent_place_id": "ZWE",
+      "parent_place_name": "Zimbabwe",
+      "iso3": "ZWE",
+      "source_iso3": "ZWE",
+      "geometry_level": "adm1",
+      "adm1_key": "mashonaland east",
+      "adm1_geo_id": "ZWE_2015_ADM1_69550",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.31619,
+      "poverty_context": {
+        "poor300_rate": 0.5011,
+        "poor420_rate": 0.6633,
+        "poor830_rate": 0.8842,
+        "prosperity_gap_2021": 11.31619,
+        "poor300_display": "50.1%",
+        "poor420_display": "66.3%",
+        "poor830_display": "88.4%",
+        "prosperity_gap_display": "11.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 259
+    },
+    {
+      "place_id": "ZWE-ADM1-MASHONALAND-WEST",
+      "place_name": "Mashonaland West",
+      "parent_place_id": "ZWE",
+      "parent_place_name": "Zimbabwe",
+      "iso3": "ZWE",
+      "source_iso3": "ZWE",
+      "geometry_level": "adm1",
+      "adm1_key": "mashonaland west",
+      "adm1_geo_id": "ZWE_2015_ADM1_3440",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.585746,
+      "poverty_context": {
+        "poor300_rate": 0.5332,
+        "poor420_rate": 0.6875,
+        "poor830_rate": 0.8857,
+        "prosperity_gap_2021": 11.585746,
+        "poor300_display": "53.3%",
+        "poor420_display": "68.8%",
+        "poor830_display": "88.6%",
+        "prosperity_gap_display": "11.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 241
+    },
+    {
+      "place_id": "ZWE-ADM1-MASVINGO",
+      "place_name": "Masvingo",
+      "parent_place_id": "ZWE",
+      "parent_place_name": "Zimbabwe",
+      "iso3": "ZWE",
+      "source_iso3": "ZWE",
+      "geometry_level": "adm1",
+      "adm1_key": "masvingo",
+      "adm1_geo_id": "ZWE_2015_ADM1_3441",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.461566,
+      "poverty_context": {
+        "poor300_rate": 0.5277,
+        "poor420_rate": 0.705,
+        "poor830_rate": 0.8914,
+        "prosperity_gap_2021": 11.461566,
+        "poor300_display": "52.8%",
+        "poor420_display": "70.5%",
+        "poor830_display": "89.1%",
+        "prosperity_gap_display": "11.46"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 251
+    },
+    {
+      "place_id": "ZWE-ADM1-MATABELELAND-NORTH",
+      "place_name": "Matabeleland North",
+      "parent_place_id": "ZWE",
+      "parent_place_name": "Zimbabwe",
+      "iso3": "ZWE",
+      "source_iso3": "ZWE",
+      "geometry_level": "adm1",
+      "adm1_key": "matabeleland north",
+      "adm1_geo_id": "ZWE_2015_ADM1_69549",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.131887,
+      "poverty_context": {
+        "poor300_rate": 0.6497,
+        "poor420_rate": 0.7703,
+        "poor830_rate": 0.906,
+        "prosperity_gap_2021": 14.131887,
+        "poor300_display": "65.0%",
+        "poor420_display": "77.0%",
+        "poor830_display": "90.6%",
+        "prosperity_gap_display": "14.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 153
+    },
+    {
+      "place_id": "ZWE-ADM1-MATABELELAND-SOUTH",
+      "place_name": "Matabeleland South",
+      "parent_place_id": "ZWE",
+      "parent_place_name": "Zimbabwe",
+      "iso3": "ZWE",
+      "source_iso3": "ZWE",
+      "geometry_level": "adm1",
+      "adm1_key": "matabeleland south",
+      "adm1_geo_id": "ZWE_2015_ADM1_3443",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.284978,
+      "poverty_context": {
+        "poor300_rate": 0.571,
+        "poor420_rate": 0.7326,
+        "poor830_rate": 0.9118,
+        "prosperity_gap_2021": 12.284978,
+        "poor300_display": "57.1%",
+        "poor420_display": "73.3%",
+        "poor830_display": "91.2%",
+        "prosperity_gap_display": "12.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 202
+    },
+    {
+      "place_id": "ZWE-ADM1-MIDLANDS",
+      "place_name": "Midlands",
+      "parent_place_id": "ZWE",
+      "parent_place_name": "Zimbabwe",
+      "iso3": "ZWE",
+      "source_iso3": "ZWE",
+      "geometry_level": "adm1",
+      "adm1_key": "midlands",
+      "adm1_geo_id": "ZWE_2015_ADM1_3444",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.320497,
+      "poverty_context": {
+        "poor300_rate": 0.5102,
+        "poor420_rate": 0.6484,
+        "poor830_rate": 0.8954,
+        "prosperity_gap_2021": 11.320497,
+        "poor300_display": "51.0%",
+        "poor420_display": "64.8%",
+        "poor830_display": "89.5%",
+        "prosperity_gap_display": "11.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 258
+    }
+  ]
+}

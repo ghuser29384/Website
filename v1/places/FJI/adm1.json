@@ -1,0 +1,189 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "FJI",
+  "parent_place_name": "Fiji",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 4,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "FJI-ADM1-CENTRAL",
+      "place_name": "Central",
+      "parent_place_id": "FJI",
+      "parent_place_name": "Fiji",
+      "iso3": "FJI",
+      "source_iso3": "FJI",
+      "geometry_level": "adm1",
+      "adm1_key": "central",
+      "adm1_geo_id": "FJI_2015_ADM1_40187",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/FJI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.911353,
+      "poverty_context": {
+        "poor300_rate": 0.0264,
+        "poor420_rate": 0.1027,
+        "poor830_rate": 0.5313,
+        "prosperity_gap_2021": 3.9113528,
+        "poor300_display": "2.64%",
+        "poor420_display": "10.3%",
+        "poor830_display": "53.1%",
+        "prosperity_gap_display": "3.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1004
+    },
+    {
+      "place_id": "FJI-ADM1-EASTERN",
+      "place_name": "Eastern",
+      "parent_place_id": "FJI",
+      "parent_place_name": "Fiji",
+      "iso3": "FJI",
+      "source_iso3": "FJI",
+      "geometry_level": "adm1",
+      "adm1_key": "eastern",
+      "adm1_geo_id": "FJI_2015_ADM1_40188",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/FJI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.385316,
+      "poverty_context": {
+        "poor300_rate": 0.0902,
+        "poor420_rate": 0.2711,
+        "poor830_rate": 0.7361,
+        "prosperity_gap_2021": 5.3853157,
+        "poor300_display": "9.02%",
+        "poor420_display": "27.1%",
+        "poor830_display": "73.6%",
+        "prosperity_gap_display": "5.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 752
+    },
+    {
+      "place_id": "FJI-ADM1-NORTHERN",
+      "place_name": "Northern",
+      "parent_place_id": "FJI",
+      "parent_place_name": "Fiji",
+      "iso3": "FJI",
+      "source_iso3": "FJI",
+      "geometry_level": "adm1",
+      "adm1_key": "northern",
+      "adm1_geo_id": "FJI_2015_ADM1_40189",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/FJI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.69326,
+      "poverty_context": {
+        "poor300_rate": 0.0489,
+        "poor420_rate": 0.1705,
+        "poor830_rate": 0.6887,
+        "prosperity_gap_2021": 4.6932602,
+        "poor300_display": "4.89%",
+        "poor420_display": "17.1%",
+        "poor830_display": "68.9%",
+        "prosperity_gap_display": "4.69"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 863
+    },
+    {
+      "place_id": "FJI-ADM1-WESTERN",
+      "place_name": "Western",
+      "parent_place_id": "FJI",
+      "parent_place_name": "Fiji",
+      "iso3": "FJI",
+      "source_iso3": "FJI",
+      "geometry_level": "adm1",
+      "adm1_key": "western",
+      "adm1_geo_id": "FJI_2015_ADM1_40190",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/FJI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.411031,
+      "poverty_context": {
+        "poor300_rate": 0.049,
+        "poor420_rate": 0.1478,
+        "poor830_rate": 0.6067,
+        "prosperity_gap_2021": 4.4110309,
+        "poor300_display": "4.90%",
+        "poor420_display": "14.8%",
+        "poor830_display": "60.7%",
+        "prosperity_gap_display": "4.41"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 903
+    }
+  ]
+}

@@ -1,0 +1,805 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "BDI",
+  "parent_place_name": "Burundi",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 18,
+  "static_page_count": 12,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "BDI-ADM1-BUBANZA",
+      "place_name": "Bubanza",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "bubanza",
+      "adm1_geo_id": "BDI_2017_ADM1_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/BDI/adm1/bubanza/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 17.424798,
+      "poverty_context": {
+        "poor300_rate": 0.8521,
+        "poor420_rate": 0.9339,
+        "poor830_rate": 0.9906,
+        "prosperity_gap_2021": 17.424798,
+        "poor300_display": "85.2%",
+        "poor420_display": "93.4%",
+        "poor830_display": "99.1%",
+        "prosperity_gap_display": "17.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 92
+    },
+    {
+      "place_id": "BDI-ADM1-BUJUMBURA-MAIRIE",
+      "place_name": "Bujumbura Mairie",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "bujumbura mairie",
+      "adm1_geo_id": "BDI_2017_ADM1_17",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.974325,
+      "poverty_context": {
+        "poor300_rate": 0.2025,
+        "poor420_rate": 0.3858,
+        "poor830_rate": 0.7994,
+        "prosperity_gap_2021": 6.9743246,
+        "poor300_display": "20.3%",
+        "poor420_display": "38.6%",
+        "poor830_display": "79.9%",
+        "prosperity_gap_display": "6.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 587
+    },
+    {
+      "place_id": "BDI-ADM1-BUJUMBURA-RURAL",
+      "place_name": "Bujumbura Rural",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "bujumbura rural",
+      "adm1_geo_id": "BDI_2017_ADM1_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.763995,
+      "poverty_context": {
+        "poor300_rate": 0.6994,
+        "poor420_rate": 0.8578,
+        "poor830_rate": 0.9851,
+        "prosperity_gap_2021": 14.763995,
+        "poor300_display": "69.9%",
+        "poor420_display": "85.8%",
+        "poor830_display": "98.5%",
+        "prosperity_gap_display": "14.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 141
+    },
+    {
+      "place_id": "BDI-ADM1-BURURI",
+      "place_name": "Bururi",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "bururi",
+      "adm1_geo_id": "BDI_2017_ADM1_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/BDI/adm1/bururi/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.850103,
+      "poverty_context": {
+        "poor300_rate": 0.7478,
+        "poor420_rate": 0.928,
+        "poor830_rate": 0.9832,
+        "prosperity_gap_2021": 15.850103,
+        "poor300_display": "74.8%",
+        "poor420_display": "92.8%",
+        "poor830_display": "98.3%",
+        "prosperity_gap_display": "15.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 116
+    },
+    {
+      "place_id": "BDI-ADM1-BUYENGERO-AND-BURAMBI-AND-RUMONGE-AND-BUGARAMA-AND-MUHUTA",
+      "place_name": "Buyengero & Burambi & Rumonge & Bugarama & Muhuta",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "buyengero and burambi and rumonge and bugarama and muhuta",
+      "adm1_geo_id": "BDI_2017_ADM1_18",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.457931,
+      "poverty_context": {
+        "poor300_rate": 0.7177,
+        "poor420_rate": 0.8986,
+        "poor830_rate": 0.9917,
+        "prosperity_gap_2021": 15.457931,
+        "poor300_display": "71.8%",
+        "poor420_display": "89.9%",
+        "poor830_display": "99.2%",
+        "prosperity_gap_display": "15.46"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 126
+    },
+    {
+      "place_id": "BDI-ADM1-CANKUZO",
+      "place_name": "Cankuzo",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "cankuzo",
+      "adm1_geo_id": "BDI_2017_ADM1_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/BDI/adm1/cankuzo/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.619764,
+      "poverty_context": {
+        "poor300_rate": 0.7436,
+        "poor420_rate": 0.8835,
+        "poor830_rate": 0.9826,
+        "prosperity_gap_2021": 16.619764,
+        "poor300_display": "74.4%",
+        "poor420_display": "88.3%",
+        "poor830_display": "98.3%",
+        "prosperity_gap_display": "16.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 102
+    },
+    {
+      "place_id": "BDI-ADM1-CIBITOKE",
+      "place_name": "Cibitoke",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "cibitoke",
+      "adm1_geo_id": "BDI_2017_ADM1_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/BDI/adm1/cibitoke/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.248016,
+      "poverty_context": {
+        "poor300_rate": 0.7508,
+        "poor420_rate": 0.8878,
+        "poor830_rate": 0.9918,
+        "prosperity_gap_2021": 16.248016,
+        "poor300_display": "75.1%",
+        "poor420_display": "88.8%",
+        "poor830_display": "99.2%",
+        "prosperity_gap_display": "16.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 108
+    },
+    {
+      "place_id": "BDI-ADM1-GITEGA",
+      "place_name": "Gitega",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "gitega",
+      "adm1_geo_id": "BDI_2017_ADM1_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.016398,
+      "poverty_context": {
+        "poor300_rate": 0.709,
+        "poor420_rate": 0.8422,
+        "poor830_rate": 0.9652,
+        "prosperity_gap_2021": 14.016398,
+        "poor300_display": "70.9%",
+        "poor420_display": "84.2%",
+        "poor830_display": "96.5%",
+        "prosperity_gap_display": "14.02"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 157
+    },
+    {
+      "place_id": "BDI-ADM1-KARUZI",
+      "place_name": "Karuzi",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "karuzi",
+      "adm1_geo_id": "BDI_2017_ADM1_7",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/BDI/adm1/karuzi/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.668846,
+      "poverty_context": {
+        "poor300_rate": 0.866,
+        "poor420_rate": 0.9605,
+        "poor830_rate": 0.9933,
+        "prosperity_gap_2021": 19.668846,
+        "poor300_display": "86.6%",
+        "poor420_display": "96.0%",
+        "poor830_display": "99.3%",
+        "prosperity_gap_display": "19.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 64
+    },
+    {
+      "place_id": "BDI-ADM1-KAYANZA",
+      "place_name": "Kayanza",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "kayanza",
+      "adm1_geo_id": "BDI_2017_ADM1_8",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.673003,
+      "poverty_context": {
+        "poor300_rate": 0.655,
+        "poor420_rate": 0.8518,
+        "poor830_rate": 0.9845,
+        "prosperity_gap_2021": 14.673003,
+        "poor300_display": "65.5%",
+        "poor420_display": "85.2%",
+        "poor830_display": "98.5%",
+        "prosperity_gap_display": "14.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 142
+    },
+    {
+      "place_id": "BDI-ADM1-KIRUNDO",
+      "place_name": "Kirundo",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "kirundo",
+      "adm1_geo_id": "BDI_2017_ADM1_9",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/BDI/adm1/kirundo/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.387817,
+      "poverty_context": {
+        "poor300_rate": 0.841,
+        "poor420_rate": 0.9438,
+        "poor830_rate": 0.9939,
+        "prosperity_gap_2021": 19.387817,
+        "poor300_display": "84.1%",
+        "poor420_display": "94.4%",
+        "poor830_display": "99.4%",
+        "prosperity_gap_display": "19.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 70
+    },
+    {
+      "place_id": "BDI-ADM1-MAKAMBA",
+      "place_name": "Makamba",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "makamba",
+      "adm1_geo_id": "BDI_2017_ADM1_10",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.638635,
+      "poverty_context": {
+        "poor300_rate": 0.7399,
+        "poor420_rate": 0.8831,
+        "poor830_rate": 0.9767,
+        "prosperity_gap_2021": 14.638635,
+        "poor300_display": "74.0%",
+        "poor420_display": "88.3%",
+        "poor830_display": "97.7%",
+        "prosperity_gap_display": "14.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 145
+    },
+    {
+      "place_id": "BDI-ADM1-MURAMVYA",
+      "place_name": "Muramvya",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "muramvya",
+      "adm1_geo_id": "BDI_2017_ADM1_11",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/BDI/adm1/muramvya/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.436552,
+      "poverty_context": {
+        "poor300_rate": 0.8786,
+        "poor420_rate": 0.9624,
+        "poor830_rate": 0.9955,
+        "prosperity_gap_2021": 19.436552,
+        "poor300_display": "87.9%",
+        "poor420_display": "96.2%",
+        "poor830_display": "99.6%",
+        "prosperity_gap_display": "19.44"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 69
+    },
+    {
+      "place_id": "BDI-ADM1-MUYINGA",
+      "place_name": "Muyinga",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "muyinga",
+      "adm1_geo_id": "BDI_2017_ADM1_12",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/BDI/adm1/muyinga/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 18.865289,
+      "poverty_context": {
+        "poor300_rate": 0.8181,
+        "poor420_rate": 0.9257,
+        "poor830_rate": 0.9898,
+        "prosperity_gap_2021": 18.865289,
+        "poor300_display": "81.8%",
+        "poor420_display": "92.6%",
+        "poor830_display": "99.0%",
+        "prosperity_gap_display": "18.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 77
+    },
+    {
+      "place_id": "BDI-ADM1-MWARO",
+      "place_name": "Mwaro",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "mwaro",
+      "adm1_geo_id": "BDI_2017_ADM1_13",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/BDI/adm1/mwaro/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.884043,
+      "poverty_context": {
+        "poor300_rate": 0.7627,
+        "poor420_rate": 0.8874,
+        "poor830_rate": 0.9947,
+        "prosperity_gap_2021": 15.884043,
+        "poor300_display": "76.3%",
+        "poor420_display": "88.7%",
+        "poor830_display": "99.5%",
+        "prosperity_gap_display": "15.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 115
+    },
+    {
+      "place_id": "BDI-ADM1-NGOZI",
+      "place_name": "Ngozi",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "ngozi",
+      "adm1_geo_id": "BDI_2017_ADM1_14",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/BDI/adm1/ngozi/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 17.053205,
+      "poverty_context": {
+        "poor300_rate": 0.784,
+        "poor420_rate": 0.8911,
+        "poor830_rate": 0.982,
+        "prosperity_gap_2021": 17.053205,
+        "poor300_display": "78.4%",
+        "poor420_display": "89.1%",
+        "poor830_display": "98.2%",
+        "prosperity_gap_display": "17.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 95
+    },
+    {
+      "place_id": "BDI-ADM1-RUTANA",
+      "place_name": "Rutana",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "rutana",
+      "adm1_geo_id": "BDI_2017_ADM1_15",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/BDI/adm1/rutana/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 20.778509,
+      "poverty_context": {
+        "poor300_rate": 0.8935,
+        "poor420_rate": 0.9445,
+        "poor830_rate": 0.9975,
+        "prosperity_gap_2021": 20.778509,
+        "poor300_display": "89.3%",
+        "poor420_display": "94.5%",
+        "poor830_display": "99.8%",
+        "prosperity_gap_display": "20.78"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 51
+    },
+    {
+      "place_id": "BDI-ADM1-RUYIGI",
+      "place_name": "Ruyigi",
+      "parent_place_id": "BDI",
+      "parent_place_name": "Burundi",
+      "iso3": "BDI",
+      "source_iso3": "BDI",
+      "geometry_level": "adm1",
+      "adm1_key": "ruyigi",
+      "adm1_geo_id": "BDI_2017_ADM1_16",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/BDI/adm1/ruyigi/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BDI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 21.541095,
+      "poverty_context": {
+        "poor300_rate": 0.8963,
+        "poor420_rate": 0.9719,
+        "poor830_rate": 0.9859,
+        "prosperity_gap_2021": 21.541095,
+        "poor300_display": "89.6%",
+        "poor420_display": "97.2%",
+        "poor830_display": "98.6%",
+        "prosperity_gap_display": "21.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 43
+    }
+  ]
+}

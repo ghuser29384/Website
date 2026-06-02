@@ -3,12 +3,14 @@
   "generated_at": "2026-05-31",
   "last_release_date": "2026-05-31",
   "coverage_status": {
-    "places_indexed": 240,
+    "places_indexed": 2114,
     "country_boundaries_indexed": 239,
     "adm1_boundaries": {
-      "status": "runtime_overlay",
+      "status": "runtime_boundary_overlay_with_static_context_index",
       "release_scoped_count": 0,
-      "source": "geoBoundaries ADM1 loaded on demand by selected country"
+      "static_context_count": 1874,
+      "static_page_count": 120,
+      "source": "geoBoundaries ADM1 loaded on demand by selected country; World Bank GSAP ADM1 poverty context is vendored as a static overlay index"
     },
     "canonical_country_profiles": 2,
     "canonical_place_profiles": 3,
@@ -18,7 +20,8 @@
       "modeled": 0,
       "proxy": 6,
       "priority_overlay": 2,
-      "boundary": 239
+      "boundary": 239,
+      "adm1_context_overlay": 1874
     }
   },
   "known_sparse_areas": [
@@ -28,7 +31,7 @@
     },
     {
       "area": "ADM1 measurements",
-      "status": "ADM1 boundaries are available as a labeled runtime overlay, but no ADM1 measurement rows are frozen into the release."
+      "status": "1874 ADM1 poverty-context rows are indexed as a labeled static overlay, and 120 high-priority ADM1 pages are pre-rendered. No ADM1 rows are canonical pain measurements in this release."
     },
     {
       "area": "Direct evidence by place",

@@ -1,0 +1,233 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "LBN",
+  "parent_place_name": "Lebanon",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 5,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "LBN-ADM1-AKKAR",
+      "place_name": "Akkar",
+      "parent_place_id": "LBN",
+      "parent_place_name": "Lebanon",
+      "iso3": "LBN",
+      "source_iso3": "LBN",
+      "geometry_level": "adm1",
+      "adm1_key": "akkar",
+      "adm1_geo_id": "LBN_2015_GAUL2_18797",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.557798,
+      "poverty_context": {
+        "poor300_rate": 0.0794,
+        "poor420_rate": 0.2775,
+        "poor830_rate": 0.8005,
+        "prosperity_gap_2021": 5.5577976,
+        "poor300_display": "7.94%",
+        "poor420_display": "27.8%",
+        "poor830_display": "80.0%",
+        "prosperity_gap_display": "5.56"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 731
+    },
+    {
+      "place_id": "LBN-ADM1-BEIRUT",
+      "place_name": "Beirut",
+      "parent_place_id": "LBN",
+      "parent_place_name": "Lebanon",
+      "iso3": "LBN",
+      "source_iso3": "LBN",
+      "geometry_level": "adm1",
+      "adm1_key": "beirut",
+      "adm1_geo_id": "LBN_2015_GAUL1_1798",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.324161,
+      "poverty_context": {
+        "poor300_rate": 0.0026,
+        "poor420_rate": 0.0314,
+        "poor830_rate": 0.1532,
+        "prosperity_gap_2021": 2.3241608,
+        "poor300_display": "0.26%",
+        "poor420_display": "3.14%",
+        "poor830_display": "15.3%",
+        "prosperity_gap_display": "2.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1347
+    },
+    {
+      "place_id": "LBN-ADM1-BEKAA",
+      "place_name": "Bekaa",
+      "parent_place_id": "LBN",
+      "parent_place_name": "Lebanon",
+      "iso3": "LBN",
+      "source_iso3": "LBN",
+      "geometry_level": "adm1",
+      "adm1_key": "bekaa",
+      "adm1_geo_id": "LBN_2015_GAUL1_1797",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.9086,
+      "poverty_context": {
+        "poor300_rate": 0.0957,
+        "poor420_rate": 0.2408,
+        "poor830_rate": 0.5993,
+        "prosperity_gap_2021": 4.9085997,
+        "poor300_display": "9.57%",
+        "poor420_display": "24.1%",
+        "poor830_display": "59.9%",
+        "prosperity_gap_display": "4.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 823
+    },
+    {
+      "place_id": "LBN-ADM1-MOUNT-LEBANON",
+      "place_name": "Mount Lebanon",
+      "parent_place_id": "LBN",
+      "parent_place_name": "Lebanon",
+      "iso3": "LBN",
+      "source_iso3": "LBN",
+      "geometry_level": "adm1",
+      "adm1_key": "mount lebanon",
+      "adm1_geo_id": "LBN_2015_GAUL1_1801",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.245572,
+      "poverty_context": {
+        "poor300_rate": 0.0213,
+        "poor420_rate": 0.0776,
+        "poor830_rate": 0.3223,
+        "prosperity_gap_2021": 3.2455716,
+        "poor300_display": "2.13%",
+        "poor420_display": "7.76%",
+        "poor830_display": "32.2%",
+        "prosperity_gap_display": "3.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1121
+    },
+    {
+      "place_id": "LBN-ADM1-NORTH",
+      "place_name": "North",
+      "parent_place_id": "LBN",
+      "parent_place_name": "Lebanon",
+      "iso3": "LBN",
+      "source_iso3": "LBN",
+      "geometry_level": "adm1",
+      "adm1_key": "north",
+      "adm1_geo_id": "LBN_2015_GAULx_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.954585,
+      "poverty_context": {
+        "poor300_rate": 0.1021,
+        "poor420_rate": 0.1959,
+        "poor830_rate": 0.6169,
+        "prosperity_gap_2021": 4.954585,
+        "poor300_display": "10.2%",
+        "poor420_display": "19.6%",
+        "poor830_display": "61.7%",
+        "prosperity_gap_display": "4.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 814
+    }
+  ]
+}

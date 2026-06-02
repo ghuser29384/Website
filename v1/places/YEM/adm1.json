@@ -1,0 +1,981 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "YEM",
+  "parent_place_name": "Yemen",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 22,
+  "static_page_count": 9,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "YEM-ADM1-ABYAN",
+      "place_name": "Abyan",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "abyan",
+      "adm1_geo_id": "YEM_2015_ADM1_3407",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.242344,
+      "poverty_context": {
+        "poor300_rate": 0.6981,
+        "poor420_rate": 0.8724,
+        "poor830_rate": 0.99,
+        "prosperity_gap_2021": 13.242344,
+        "poor300_display": "69.8%",
+        "poor420_display": "87.2%",
+        "poor830_display": "99.0%",
+        "prosperity_gap_display": "13.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 172
+    },
+    {
+      "place_id": "YEM-ADM1-ADEN",
+      "place_name": "Aden",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "aden",
+      "adm1_geo_id": "YEM_2015_ADM2_32713",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.461655,
+      "poverty_context": {
+        "poor300_rate": 0.4328,
+        "poor420_rate": 0.6456,
+        "poor830_rate": 0.9361,
+        "prosperity_gap_2021": 9.4616549,
+        "poor300_display": "43.3%",
+        "poor420_display": "64.6%",
+        "poor830_display": "93.6%",
+        "prosperity_gap_display": "9.46"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 386
+    },
+    {
+      "place_id": "YEM-ADM1-AL-BAYDA",
+      "place_name": "Al Bayda",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "al bayda",
+      "adm1_geo_id": "YEM_2015_ADM1_3410",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.376393,
+      "poverty_context": {
+        "poor300_rate": 0.6606,
+        "poor420_rate": 0.856,
+        "poor830_rate": 0.9685,
+        "prosperity_gap_2021": 13.376393,
+        "poor300_display": "66.1%",
+        "poor420_display": "85.6%",
+        "poor830_display": "96.9%",
+        "prosperity_gap_display": "13.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 169
+    },
+    {
+      "place_id": "YEM-ADM1-AL-DHALE-E",
+      "place_name": "Al Dhale'e",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "al dhale e",
+      "adm1_geo_id": "YEM_2015_ADM1_3408",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.653412,
+      "poverty_context": {
+        "poor300_rate": 0.8529,
+        "poor420_rate": 0.9687,
+        "poor830_rate": 0.998,
+        "prosperity_gap_2021": 14.653412,
+        "poor300_display": "85.3%",
+        "poor420_display": "96.9%",
+        "poor830_display": "99.8%",
+        "prosperity_gap_display": "14.65"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 143
+    },
+    {
+      "place_id": "YEM-ADM1-AL-HUDAYDAH",
+      "place_name": "Al Hudaydah",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "al hudaydah",
+      "adm1_geo_id": "YEM_2015_ADM1_3411",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/YEM/adm1/al-hudaydah/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 17.67759,
+      "poverty_context": {
+        "poor300_rate": 0.7649,
+        "poor420_rate": 0.8673,
+        "poor830_rate": 0.977,
+        "prosperity_gap_2021": 17.67759,
+        "poor300_display": "76.5%",
+        "poor420_display": "86.7%",
+        "poor830_display": "97.7%",
+        "prosperity_gap_display": "17.68"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 89
+    },
+    {
+      "place_id": "YEM-ADM1-AL-JAWF",
+      "place_name": "Al Jawf",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "al jawf",
+      "adm1_geo_id": "YEM_2015_ADM1_3412",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.246798,
+      "poverty_context": {
+        "poor300_rate": 0.8128,
+        "poor420_rate": 0.9287,
+        "poor830_rate": 0.9981,
+        "prosperity_gap_2021": 14.246798,
+        "poor300_display": "81.3%",
+        "poor420_display": "92.9%",
+        "poor830_display": "99.8%",
+        "prosperity_gap_display": "14.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 152
+    },
+    {
+      "place_id": "YEM-ADM1-AL-MAHARAH",
+      "place_name": "Al Maharah",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "al maharah",
+      "adm1_geo_id": "YEM_2015_ADM1_3413",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/YEM/adm1/al-maharah/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 18.036369,
+      "poverty_context": {
+        "poor300_rate": 0.7126,
+        "poor420_rate": 0.8446,
+        "poor830_rate": 0.9804,
+        "prosperity_gap_2021": 18.036369,
+        "poor300_display": "71.3%",
+        "poor420_display": "84.5%",
+        "poor830_display": "98.0%",
+        "prosperity_gap_display": "18.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 84
+    },
+    {
+      "place_id": "YEM-ADM1-AL-MAHWIT",
+      "place_name": "Al Mahwit",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "al mahwit",
+      "adm1_geo_id": "YEM_2015_ADM1_3414",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/YEM/adm1/al-mahwit/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.90996,
+      "poverty_context": {
+        "poor300_rate": 0.8179,
+        "poor420_rate": 0.9455,
+        "poor830_rate": 0.9949,
+        "prosperity_gap_2021": 15.90996,
+        "poor300_display": "81.8%",
+        "poor420_display": "94.5%",
+        "poor830_display": "99.5%",
+        "prosperity_gap_display": "15.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 113
+    },
+    {
+      "place_id": "YEM-ADM1-AMANAT-AL-ASIMAH",
+      "place_name": "Amanat Al Asimah",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "amanat al asimah",
+      "adm1_geo_id": "YEM_2015_ADMx_269_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.196674,
+      "poverty_context": {
+        "poor300_rate": 0.3097,
+        "poor420_rate": 0.5113,
+        "poor830_rate": 0.8664,
+        "prosperity_gap_2021": 8.196674,
+        "poor300_display": "31.0%",
+        "poor420_display": "51.1%",
+        "poor830_display": "86.6%",
+        "prosperity_gap_display": "8.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 486
+    },
+    {
+      "place_id": "YEM-ADM1-AMRAN",
+      "place_name": "Amran",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "amran",
+      "adm1_geo_id": "YEM_2015_ADM1_3415",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/YEM/adm1/amran/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 20.595439,
+      "poverty_context": {
+        "poor300_rate": 0.8859,
+        "poor420_rate": 0.9621,
+        "poor830_rate": 0.9951,
+        "prosperity_gap_2021": 20.595439,
+        "poor300_display": "88.6%",
+        "poor420_display": "96.2%",
+        "poor830_display": "99.5%",
+        "prosperity_gap_display": "20.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 52
+    },
+    {
+      "place_id": "YEM-ADM1-DHAMAR",
+      "place_name": "Dhamar",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "dhamar",
+      "adm1_geo_id": "YEM_2015_ADM1_3416",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.339823,
+      "poverty_context": {
+        "poor300_rate": 0.6097,
+        "poor420_rate": 0.7896,
+        "poor830_rate": 0.9708,
+        "prosperity_gap_2021": 11.339823,
+        "poor300_display": "61.0%",
+        "poor420_display": "79.0%",
+        "poor830_display": "97.1%",
+        "prosperity_gap_display": "11.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 253
+    },
+    {
+      "place_id": "YEM-ADM1-HADRAMAUT",
+      "place_name": "Hadramaut",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "hadramaut",
+      "adm1_geo_id": "YEM_2015_ADM1_3417",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/YEM/adm1/hadramaut/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.823967,
+      "poverty_context": {
+        "poor300_rate": 0.8291,
+        "poor420_rate": 0.9217,
+        "poor830_rate": 0.9903,
+        "prosperity_gap_2021": 16.823967,
+        "poor300_display": "82.9%",
+        "poor420_display": "92.2%",
+        "poor830_display": "99.0%",
+        "prosperity_gap_display": "16.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 100
+    },
+    {
+      "place_id": "YEM-ADM1-HAJJAH",
+      "place_name": "Hajjah",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "hajjah",
+      "adm1_geo_id": "YEM_2015_ADM1_3418",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/YEM/adm1/hajjah/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 17.54485,
+      "poverty_context": {
+        "poor300_rate": 0.8212,
+        "poor420_rate": 0.9295,
+        "poor830_rate": 0.9991,
+        "prosperity_gap_2021": 17.54485,
+        "poor300_display": "82.1%",
+        "poor420_display": "93.0%",
+        "poor830_display": "99.9%",
+        "prosperity_gap_display": "17.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 91
+    },
+    {
+      "place_id": "YEM-ADM1-HIDAYBU-AND-QULENSYA-WA-ABD-AL-KURI",
+      "place_name": "Hidaybu & Qulensya Wa Abd Al Kuri",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "hidaybu and qulensya wa abd al kuri",
+      "adm1_geo_id": "YEM_2015_ADMx_269_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.612698,
+      "poverty_context": {
+        "poor300_rate": 0.6998,
+        "poor420_rate": 0.8541,
+        "poor830_rate": 0.984,
+        "prosperity_gap_2021": 13.612698,
+        "poor300_display": "70.0%",
+        "poor420_display": "85.4%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "13.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 164
+    },
+    {
+      "place_id": "YEM-ADM1-IBB",
+      "place_name": "Ibb",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "ibb",
+      "adm1_geo_id": "YEM_2015_ADM1_3419",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.574727,
+      "poverty_context": {
+        "poor300_rate": 0.7985,
+        "poor420_rate": 0.9153,
+        "poor830_rate": 0.985,
+        "prosperity_gap_2021": 15.574727,
+        "poor300_display": "79.8%",
+        "poor420_display": "91.5%",
+        "poor830_display": "98.5%",
+        "prosperity_gap_display": "15.57"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 123
+    },
+    {
+      "place_id": "YEM-ADM1-LAHJ",
+      "place_name": "Lahj",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "lahj",
+      "adm1_geo_id": "YEM_2015_ADM1_3420",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/YEM/adm1/lahj/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 17.682383,
+      "poverty_context": {
+        "poor300_rate": 0.894,
+        "poor420_rate": 0.9526,
+        "poor830_rate": 0.9912,
+        "prosperity_gap_2021": 17.682383,
+        "poor300_display": "89.4%",
+        "poor420_display": "95.3%",
+        "poor830_display": "99.1%",
+        "prosperity_gap_display": "17.68"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 88
+    },
+    {
+      "place_id": "YEM-ADM1-MARIB",
+      "place_name": "Marib",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "marib",
+      "adm1_geo_id": "YEM_2015_ADM1_3421",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.066781,
+      "poverty_context": {
+        "poor300_rate": 0.4942,
+        "poor420_rate": 0.7558,
+        "poor830_rate": 0.9601,
+        "prosperity_gap_2021": 11.066781,
+        "poor300_display": "49.4%",
+        "poor420_display": "75.6%",
+        "poor830_display": "96.0%",
+        "prosperity_gap_display": "11.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 278
+    },
+    {
+      "place_id": "YEM-ADM1-RAYMAH",
+      "place_name": "Raymah",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "raymah",
+      "adm1_geo_id": "YEM_2015_ADMx_269_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/YEM/adm1/raymah/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.90266,
+      "poverty_context": {
+        "poor300_rate": 0.7352,
+        "poor420_rate": 0.8919,
+        "poor830_rate": 0.9823,
+        "prosperity_gap_2021": 15.90266,
+        "poor300_display": "73.5%",
+        "poor420_display": "89.2%",
+        "poor830_display": "98.2%",
+        "prosperity_gap_display": "15.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 114
+    },
+    {
+      "place_id": "YEM-ADM1-SA-ADA",
+      "place_name": "Sa'ada",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "sa ada",
+      "adm1_geo_id": "YEM_2015_ADM1_3422",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/YEM/adm1/sa-ada/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 23.715819,
+      "poverty_context": {
+        "poor300_rate": 0.9377,
+        "poor420_rate": 0.9784,
+        "poor830_rate": 0.9985,
+        "prosperity_gap_2021": 23.715819,
+        "poor300_display": "93.8%",
+        "poor420_display": "97.8%",
+        "poor830_display": "99.9%",
+        "prosperity_gap_display": "23.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 32
+    },
+    {
+      "place_id": "YEM-ADM1-SANA-A",
+      "place_name": "Sana'a",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "sana a",
+      "adm1_geo_id": "YEM_2015_ADMx_269_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.587606,
+      "poverty_context": {
+        "poor300_rate": 0.698,
+        "poor420_rate": 0.9064,
+        "poor830_rate": 1,
+        "prosperity_gap_2021": 12.587606,
+        "poor300_display": "69.8%",
+        "poor420_display": "90.6%",
+        "poor830_display": "100.0%",
+        "prosperity_gap_display": "12.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 192
+    },
+    {
+      "place_id": "YEM-ADM1-SHABWAH",
+      "place_name": "Shabwah",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "shabwah",
+      "adm1_geo_id": "YEM_2015_ADM1_3424",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.65384,
+      "poverty_context": {
+        "poor300_rate": 0.6132,
+        "poor420_rate": 0.844,
+        "poor830_rate": 0.9834,
+        "prosperity_gap_2021": 12.65384,
+        "poor300_display": "61.3%",
+        "poor420_display": "84.4%",
+        "poor830_display": "98.3%",
+        "prosperity_gap_display": "12.65"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 191
+    },
+    {
+      "place_id": "YEM-ADM1-TAIZZ",
+      "place_name": "Taizz",
+      "parent_place_id": "YEM",
+      "parent_place_name": "Yemen",
+      "iso3": "YEM",
+      "source_iso3": "YEM",
+      "geometry_level": "adm1",
+      "adm1_key": "taizz",
+      "adm1_geo_id": "YEM_2015_ADM1_3425",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/YEM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.656211,
+      "poverty_context": {
+        "poor300_rate": 0.6896,
+        "poor420_rate": 0.8371,
+        "poor830_rate": 0.9578,
+        "prosperity_gap_2021": 13.656211,
+        "poor300_display": "69.0%",
+        "poor420_display": "83.7%",
+        "poor830_display": "95.8%",
+        "prosperity_gap_display": "13.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 163
+    }
+  ]
+}

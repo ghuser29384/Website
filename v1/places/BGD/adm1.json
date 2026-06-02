@@ -1,0 +1,321 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "BGD",
+  "parent_place_name": "Bangladesh",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 7,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "BGD-ADM1-BARISAL",
+      "place_name": "Barisal",
+      "parent_place_id": "BGD",
+      "parent_place_name": "Bangladesh",
+      "iso3": "BGD",
+      "source_iso3": "BGD",
+      "geometry_level": "adm1",
+      "adm1_key": "barisal",
+      "adm1_geo_id": "BGD_2015_ADM1_575",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BGD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.544492,
+      "poverty_context": {
+        "poor300_rate": 0.0789,
+        "poor420_rate": 0.2756,
+        "poor830_rate": 0.7907,
+        "prosperity_gap_2021": 5.5444918,
+        "poor300_display": "7.89%",
+        "poor420_display": "27.6%",
+        "poor830_display": "79.1%",
+        "prosperity_gap_display": "5.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 734
+    },
+    {
+      "place_id": "BGD-ADM1-CHITTAGONG",
+      "place_name": "Chittagong",
+      "parent_place_id": "BGD",
+      "parent_place_name": "Bangladesh",
+      "iso3": "BGD",
+      "source_iso3": "BGD",
+      "geometry_level": "adm1",
+      "adm1_key": "chittagong",
+      "adm1_geo_id": "BGD_2015_ADM1_576",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BGD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.605503,
+      "poverty_context": {
+        "poor300_rate": 0.0518,
+        "poor420_rate": 0.1607,
+        "poor830_rate": 0.6465,
+        "prosperity_gap_2021": 4.6055028,
+        "poor300_display": "5.18%",
+        "poor420_display": "16.1%",
+        "poor830_display": "64.6%",
+        "prosperity_gap_display": "4.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 877
+    },
+    {
+      "place_id": "BGD-ADM1-DHAKA",
+      "place_name": "Dhaka",
+      "parent_place_id": "BGD",
+      "parent_place_name": "Bangladesh",
+      "iso3": "BGD",
+      "source_iso3": "BGD",
+      "geometry_level": "adm1",
+      "adm1_key": "dhaka",
+      "adm1_geo_id": "BGD_2015_ADM1_577",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BGD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.697483,
+      "poverty_context": {
+        "poor300_rate": 0.0554,
+        "poor420_rate": 0.1824,
+        "poor830_rate": 0.6747,
+        "prosperity_gap_2021": 4.6974833,
+        "poor300_display": "5.54%",
+        "poor420_display": "18.2%",
+        "poor830_display": "67.5%",
+        "prosperity_gap_display": "4.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 861
+    },
+    {
+      "place_id": "BGD-ADM1-KHULNA",
+      "place_name": "Khulna",
+      "parent_place_id": "BGD",
+      "parent_place_name": "Bangladesh",
+      "iso3": "BGD",
+      "source_iso3": "BGD",
+      "geometry_level": "adm1",
+      "adm1_key": "khulna",
+      "adm1_geo_id": "BGD_2015_ADM1_578",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BGD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.857572,
+      "poverty_context": {
+        "poor300_rate": 0.0477,
+        "poor420_rate": 0.1911,
+        "poor830_rate": 0.7064,
+        "prosperity_gap_2021": 4.8575721,
+        "poor300_display": "4.77%",
+        "poor420_display": "19.1%",
+        "poor830_display": "70.6%",
+        "prosperity_gap_display": "4.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 839
+    },
+    {
+      "place_id": "BGD-ADM1-RAJSHAHI",
+      "place_name": "Rajshahi",
+      "parent_place_id": "BGD",
+      "parent_place_name": "Bangladesh",
+      "iso3": "BGD",
+      "source_iso3": "BGD",
+      "geometry_level": "adm1",
+      "adm1_key": "rajshahi",
+      "adm1_geo_id": "BGD_2015_ADM1_61362",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BGD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.754774,
+      "poverty_context": {
+        "poor300_rate": 0.0348,
+        "poor420_rate": 0.1699,
+        "poor830_rate": 0.7192,
+        "prosperity_gap_2021": 4.7547741,
+        "poor300_display": "3.48%",
+        "poor420_display": "17.0%",
+        "poor830_display": "71.9%",
+        "prosperity_gap_display": "4.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 855
+    },
+    {
+      "place_id": "BGD-ADM1-RANGPUR",
+      "place_name": "Rangpur",
+      "parent_place_id": "BGD",
+      "parent_place_name": "Bangladesh",
+      "iso3": "BGD",
+      "source_iso3": "BGD",
+      "geometry_level": "adm1",
+      "adm1_key": "rangpur",
+      "adm1_geo_id": "BGD_2015_ADM1_61363",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BGD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.367394,
+      "poverty_context": {
+        "poor300_rate": 0.0722,
+        "poor420_rate": 0.253,
+        "poor830_rate": 0.7668,
+        "prosperity_gap_2021": 5.3673938,
+        "poor300_display": "7.22%",
+        "poor420_display": "25.3%",
+        "poor830_display": "76.7%",
+        "prosperity_gap_display": "5.37"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 757
+    },
+    {
+      "place_id": "BGD-ADM1-SYLHET",
+      "place_name": "Sylhet",
+      "parent_place_id": "BGD",
+      "parent_place_name": "Bangladesh",
+      "iso3": "BGD",
+      "source_iso3": "BGD",
+      "geometry_level": "adm1",
+      "adm1_key": "sylhet",
+      "adm1_geo_id": "BGD_2015_ADM1_580",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BGD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.795389,
+      "poverty_context": {
+        "poor300_rate": 0.0391,
+        "poor420_rate": 0.1778,
+        "poor830_rate": 0.718,
+        "prosperity_gap_2021": 4.7953892,
+        "poor300_display": "3.91%",
+        "poor420_display": "17.8%",
+        "poor830_display": "71.8%",
+        "prosperity_gap_display": "4.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 848
+    }
+  ]
+}

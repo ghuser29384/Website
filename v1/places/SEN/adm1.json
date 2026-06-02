@@ -1,0 +1,629 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "SEN",
+  "parent_place_name": "Senegal",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 14,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "SEN-ADM1-DAKAR",
+      "place_name": "Dakar",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "dakar",
+      "adm1_geo_id": "SEN_2015_ADM1_2636",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.276864,
+      "poverty_context": {
+        "poor300_rate": 0.0015,
+        "poor420_rate": 0.0332,
+        "poor830_rate": 0.4263,
+        "prosperity_gap_2021": 3.2768645,
+        "poor300_display": "0.15%",
+        "poor420_display": "3.32%",
+        "poor830_display": "42.6%",
+        "prosperity_gap_display": "3.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1119
+    },
+    {
+      "place_id": "SEN-ADM1-DIOURBEL",
+      "place_name": "Diourbel",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "diourbel",
+      "adm1_geo_id": "SEN_2015_ADM1_47585",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.14055,
+      "poverty_context": {
+        "poor300_rate": 0.1218,
+        "poor420_rate": 0.3397,
+        "poor830_rate": 0.8796,
+        "prosperity_gap_2021": 6.1405498,
+        "poor300_display": "12.2%",
+        "poor420_display": "34.0%",
+        "poor830_display": "88.0%",
+        "prosperity_gap_display": "6.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 664
+    },
+    {
+      "place_id": "SEN-ADM1-FATICK",
+      "place_name": "Fatick",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "fatick",
+      "adm1_geo_id": "SEN_2015_ADM1_47586",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.391407,
+      "poverty_context": {
+        "poor300_rate": 0.2511,
+        "poor420_rate": 0.5483,
+        "poor830_rate": 0.9262,
+        "prosperity_gap_2021": 7.3914075,
+        "poor300_display": "25.1%",
+        "poor420_display": "54.8%",
+        "poor830_display": "92.6%",
+        "prosperity_gap_display": "7.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 556
+    },
+    {
+      "place_id": "SEN-ADM1-KAFFRINE",
+      "place_name": "Kaffrine",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kaffrine",
+      "adm1_geo_id": "SEN_2015_ADM1_1378",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.173459,
+      "poverty_context": {
+        "poor300_rate": 0.3185,
+        "poor420_rate": 0.6216,
+        "poor830_rate": 0.9425,
+        "prosperity_gap_2021": 8.1734585,
+        "poor300_display": "31.9%",
+        "poor420_display": "62.2%",
+        "poor830_display": "94.3%",
+        "prosperity_gap_display": "8.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 488
+    },
+    {
+      "place_id": "SEN-ADM1-KAOLACK",
+      "place_name": "Kaolack",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kaolack",
+      "adm1_geo_id": "SEN_2015_ADM1_1373",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.526027,
+      "poverty_context": {
+        "poor300_rate": 0.2767,
+        "poor420_rate": 0.5026,
+        "poor830_rate": 0.8834,
+        "prosperity_gap_2021": 7.5260272,
+        "poor300_display": "27.7%",
+        "poor420_display": "50.3%",
+        "poor830_display": "88.3%",
+        "prosperity_gap_display": "7.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 545
+    },
+    {
+      "place_id": "SEN-ADM1-KEDOUGOU",
+      "place_name": "Kedougou",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kedougou",
+      "adm1_geo_id": "SEN_2015_ADM1_1374",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.222314,
+      "poverty_context": {
+        "poor300_rate": 0.3549,
+        "poor420_rate": 0.6016,
+        "poor830_rate": 0.8911,
+        "prosperity_gap_2021": 9.2223137,
+        "poor300_display": "35.5%",
+        "poor420_display": "60.2%",
+        "poor830_display": "89.1%",
+        "prosperity_gap_display": "9.22"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 404
+    },
+    {
+      "place_id": "SEN-ADM1-KOLDA",
+      "place_name": "Kolda",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "kolda",
+      "adm1_geo_id": "SEN_2015_ADM1_1375",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.662585,
+      "poverty_context": {
+        "poor300_rate": 0.363,
+        "poor420_rate": 0.6469,
+        "poor830_rate": 0.9365,
+        "prosperity_gap_2021": 8.662585,
+        "poor300_display": "36.3%",
+        "poor420_display": "64.7%",
+        "poor830_display": "93.7%",
+        "prosperity_gap_display": "8.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 442
+    },
+    {
+      "place_id": "SEN-ADM1-LOUGA",
+      "place_name": "Louga",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "louga",
+      "adm1_geo_id": "SEN_2015_ADM1_47587",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.605849,
+      "poverty_context": {
+        "poor300_rate": 0.1796,
+        "poor420_rate": 0.4354,
+        "poor830_rate": 0.8997,
+        "prosperity_gap_2021": 6.6058493,
+        "poor300_display": "18.0%",
+        "poor420_display": "43.5%",
+        "poor830_display": "90.0%",
+        "prosperity_gap_display": "6.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 618
+    },
+    {
+      "place_id": "SEN-ADM1-MATAM",
+      "place_name": "Matam",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "matam",
+      "adm1_geo_id": "SEN_2015_ADM1_47588",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.331145,
+      "poverty_context": {
+        "poor300_rate": 0.2446,
+        "poor420_rate": 0.4689,
+        "poor830_rate": 0.9175,
+        "prosperity_gap_2021": 7.3311455,
+        "poor300_display": "24.5%",
+        "poor420_display": "46.9%",
+        "poor830_display": "91.8%",
+        "prosperity_gap_display": "7.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 561
+    },
+    {
+      "place_id": "SEN-ADM1-SAINT-LOUIS",
+      "place_name": "Saint louis",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "saint louis",
+      "adm1_geo_id": "SEN_2015_ADM1_47589",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.462494,
+      "poverty_context": {
+        "poor300_rate": 0.171,
+        "poor420_rate": 0.3824,
+        "poor830_rate": 0.8546,
+        "prosperity_gap_2021": 6.4624944,
+        "poor300_display": "17.1%",
+        "poor420_display": "38.2%",
+        "poor830_display": "85.5%",
+        "prosperity_gap_display": "6.46"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 636
+    },
+    {
+      "place_id": "SEN-ADM1-SEDHIOU",
+      "place_name": "Sedhiou",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "sedhiou",
+      "adm1_geo_id": "SEN_2015_ADM1_1376",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.257953,
+      "poverty_context": {
+        "poor300_rate": 0.3837,
+        "poor420_rate": 0.686,
+        "poor830_rate": 0.9743,
+        "prosperity_gap_2021": 9.257953,
+        "poor300_display": "38.4%",
+        "poor420_display": "68.6%",
+        "poor830_display": "97.4%",
+        "prosperity_gap_display": "9.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 397
+    },
+    {
+      "place_id": "SEN-ADM1-TAMBACOUNDA",
+      "place_name": "Tambacounda",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "tambacounda",
+      "adm1_geo_id": "SEN_2015_ADM1_1377",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.323947,
+      "poverty_context": {
+        "poor300_rate": 0.4332,
+        "poor420_rate": 0.6771,
+        "poor830_rate": 0.9476,
+        "prosperity_gap_2021": 9.3239475,
+        "poor300_display": "43.3%",
+        "poor420_display": "67.7%",
+        "poor830_display": "94.8%",
+        "prosperity_gap_display": "9.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 393
+    },
+    {
+      "place_id": "SEN-ADM1-THIES",
+      "place_name": "Thies",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "thies",
+      "adm1_geo_id": "SEN_2015_ADM1_2644",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.81314,
+      "poverty_context": {
+        "poor300_rate": 0.1077,
+        "poor420_rate": 0.2705,
+        "poor830_rate": 0.773,
+        "prosperity_gap_2021": 5.8131398,
+        "poor300_display": "10.8%",
+        "poor420_display": "27.1%",
+        "poor830_display": "77.3%",
+        "prosperity_gap_display": "5.81"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 703
+    },
+    {
+      "place_id": "SEN-ADM1-ZIGUINCHOR",
+      "place_name": "Ziguinchor",
+      "parent_place_id": "SEN",
+      "parent_place_name": "Senegal",
+      "iso3": "SEN",
+      "source_iso3": "SEN",
+      "geometry_level": "adm1",
+      "adm1_key": "ziguinchor",
+      "adm1_geo_id": "SEN_2015_ADM1_2645",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SEN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.107478,
+      "poverty_context": {
+        "poor300_rate": 0.164,
+        "poor420_rate": 0.5005,
+        "poor830_rate": 0.9144,
+        "prosperity_gap_2021": 7.107478,
+        "poor300_display": "16.4%",
+        "poor420_display": "50.0%",
+        "poor830_display": "91.4%",
+        "prosperity_gap_display": "7.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 579
+    }
+  ]
+}

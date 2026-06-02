@@ -1,0 +1,277 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "SYC",
+  "parent_place_name": "Seychelles",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 6,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "SYC-ADM1-CENTRAL-1-MAHE",
+      "place_name": "Central 1 Mahe",
+      "parent_place_id": "SYC",
+      "parent_place_name": "Seychelles",
+      "iso3": "SYC",
+      "source_iso3": "SYC",
+      "geometry_level": "adm1",
+      "adm1_key": "central 1 mahe",
+      "adm1_geo_id": "SYC_2015_GADMx_203_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SYC/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.238532,
+      "poverty_context": {
+        "poor300_rate": 0.0151,
+        "poor420_rate": 0.0457,
+        "poor830_rate": 0.1458,
+        "prosperity_gap_2021": 2.2385321,
+        "poor300_display": "1.51%",
+        "poor420_display": "4.57%",
+        "poor830_display": "14.6%",
+        "prosperity_gap_display": "2.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1378
+    },
+    {
+      "place_id": "SYC-ADM1-CENTRAL-2-MAHE",
+      "place_name": "Central 2 Mahe",
+      "parent_place_id": "SYC",
+      "parent_place_name": "Seychelles",
+      "iso3": "SYC",
+      "source_iso3": "SYC",
+      "geometry_level": "adm1",
+      "adm1_key": "central 2 mahe",
+      "adm1_geo_id": "SYC_2015_GADMx_203_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SYC/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.151935,
+      "poverty_context": {
+        "poor300_rate": 0.0099,
+        "poor420_rate": 0.0215,
+        "poor830_rate": 0.1617,
+        "prosperity_gap_2021": 2.151935,
+        "poor300_display": "0.99%",
+        "poor420_display": "2.15%",
+        "poor830_display": "16.2%",
+        "prosperity_gap_display": "2.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1413
+    },
+    {
+      "place_id": "SYC-ADM1-EAST-MAHE",
+      "place_name": "East Mahe",
+      "parent_place_id": "SYC",
+      "parent_place_name": "Seychelles",
+      "iso3": "SYC",
+      "source_iso3": "SYC",
+      "geometry_level": "adm1",
+      "adm1_key": "east mahe",
+      "adm1_geo_id": "SYC_2015_GADMx_203_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SYC/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.916808,
+      "poverty_context": {
+        "poor300_rate": 0.002,
+        "poor420_rate": 0.0112,
+        "poor830_rate": 0.1094,
+        "prosperity_gap_2021": 1.9168078,
+        "poor300_display": "0.20%",
+        "poor420_display": "1.12%",
+        "poor830_display": "10.9%",
+        "prosperity_gap_display": "1.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1491
+    },
+    {
+      "place_id": "SYC-ADM1-NORTH-MAHE",
+      "place_name": "North Mahe",
+      "parent_place_id": "SYC",
+      "parent_place_name": "Seychelles",
+      "iso3": "SYC",
+      "source_iso3": "SYC",
+      "geometry_level": "adm1",
+      "adm1_key": "north mahe",
+      "adm1_geo_id": "SYC_2015_GADMx_203_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SYC/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.533698,
+      "poverty_context": {
+        "poor300_rate": 0.003,
+        "poor420_rate": 0.0109,
+        "poor830_rate": 0.0474,
+        "prosperity_gap_2021": 1.5336979,
+        "poor300_display": "0.30%",
+        "poor420_display": "1.09%",
+        "poor830_display": "4.74%",
+        "prosperity_gap_display": "1.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1588
+    },
+    {
+      "place_id": "SYC-ADM1-PRASLIN-AND-LA-DIGUE",
+      "place_name": "Praslin & La Digue",
+      "parent_place_id": "SYC",
+      "parent_place_name": "Seychelles",
+      "iso3": "SYC",
+      "source_iso3": "SYC",
+      "geometry_level": "adm1",
+      "adm1_key": "praslin and la digue",
+      "adm1_geo_id": "SYC_2015_GADMx_203_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SYC/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.806329,
+      "poverty_context": {
+        "poor300_rate": 0.0064,
+        "poor420_rate": 0.0191,
+        "poor830_rate": 0.0655,
+        "prosperity_gap_2021": 1.8063292,
+        "poor300_display": "0.64%",
+        "poor420_display": "1.91%",
+        "poor830_display": "6.55%",
+        "prosperity_gap_display": "1.81"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1523
+    },
+    {
+      "place_id": "SYC-ADM1-WEST-MAHE",
+      "place_name": "West Mahe",
+      "parent_place_id": "SYC",
+      "parent_place_name": "Seychelles",
+      "iso3": "SYC",
+      "source_iso3": "SYC",
+      "geometry_level": "adm1",
+      "adm1_key": "west mahe",
+      "adm1_geo_id": "SYC_2015_GADMx_203_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SYC/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.985557,
+      "poverty_context": {
+        "poor300_rate": 0.0113,
+        "poor420_rate": 0.0228,
+        "poor830_rate": 0.1011,
+        "prosperity_gap_2021": 1.9855566,
+        "poor300_display": "1.13%",
+        "poor420_display": "2.28%",
+        "poor830_display": "10.1%",
+        "prosperity_gap_display": "1.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1472
+    }
+  ]
+}

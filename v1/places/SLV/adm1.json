@@ -1,0 +1,629 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "SLV",
+  "parent_place_name": "El Salvador",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 14,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "SLV-ADM1-AHUACHAPAN",
+      "place_name": "Ahuachapan",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "ahuachapan",
+      "adm1_geo_id": "SLV_2015_ADM1_1184",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.693784,
+      "poverty_context": {
+        "poor300_rate": 0.0732,
+        "poor420_rate": 0.1264,
+        "poor830_rate": 0.4193,
+        "prosperity_gap_2021": 4.6937845,
+        "poor300_display": "7.32%",
+        "poor420_display": "12.6%",
+        "poor830_display": "41.9%",
+        "prosperity_gap_display": "4.69"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 862
+    },
+    {
+      "place_id": "SLV-ADM1-CABANAS",
+      "place_name": "Cabanas",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "cabanas",
+      "adm1_geo_id": "SLV_2015_ADM1_1185",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.139915,
+      "poverty_context": {
+        "poor300_rate": 0.1,
+        "poor420_rate": 0.1619,
+        "poor830_rate": 0.4244,
+        "prosperity_gap_2021": 5.1399149,
+        "poor300_display": "10.0%",
+        "poor420_display": "16.2%",
+        "poor830_display": "42.4%",
+        "prosperity_gap_display": "5.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 791
+    },
+    {
+      "place_id": "SLV-ADM1-CHALATENANGO",
+      "place_name": "Chalatenango",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "chalatenango",
+      "adm1_geo_id": "SLV_2015_ADM1_1186",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.124398,
+      "poverty_context": {
+        "poor300_rate": 0.0598,
+        "poor420_rate": 0.1161,
+        "poor830_rate": 0.3499,
+        "prosperity_gap_2021": 4.1243983,
+        "poor300_display": "5.98%",
+        "poor420_display": "11.6%",
+        "poor830_display": "35.0%",
+        "prosperity_gap_display": "4.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 967
+    },
+    {
+      "place_id": "SLV-ADM1-CUSCATLAN",
+      "place_name": "Cuscatlan",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "cuscatlan",
+      "adm1_geo_id": "SLV_2015_ADM1_1187",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.236398,
+      "poverty_context": {
+        "poor300_rate": 0.0639,
+        "poor420_rate": 0.1118,
+        "poor830_rate": 0.3672,
+        "prosperity_gap_2021": 4.2363976,
+        "poor300_display": "6.39%",
+        "poor420_display": "11.2%",
+        "poor830_display": "36.7%",
+        "prosperity_gap_display": "4.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 938
+    },
+    {
+      "place_id": "SLV-ADM1-LA-LIBERTAD",
+      "place_name": "La Libertad",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "la libertad",
+      "adm1_geo_id": "SLV_2015_ADM1_1188",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.300057,
+      "poverty_context": {
+        "poor300_rate": 0.0463,
+        "poor420_rate": 0.072,
+        "poor830_rate": 0.2684,
+        "prosperity_gap_2021": 3.3000566,
+        "poor300_display": "4.63%",
+        "poor420_display": "7.20%",
+        "poor830_display": "26.8%",
+        "prosperity_gap_display": "3.30"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1112
+    },
+    {
+      "place_id": "SLV-ADM1-LA-PAZ",
+      "place_name": "La Paz",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "la paz",
+      "adm1_geo_id": "SLV_2015_ADM1_1189",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.621018,
+      "poverty_context": {
+        "poor300_rate": 0.0484,
+        "poor420_rate": 0.09,
+        "poor830_rate": 0.3267,
+        "prosperity_gap_2021": 3.6210178,
+        "poor300_display": "4.84%",
+        "poor420_display": "9.00%",
+        "poor830_display": "32.7%",
+        "prosperity_gap_display": "3.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1049
+    },
+    {
+      "place_id": "SLV-ADM1-LA-UNION",
+      "place_name": "La Union",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "la union",
+      "adm1_geo_id": "SLV_2015_ADM1_1190",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.211403,
+      "poverty_context": {
+        "poor300_rate": 0.0874,
+        "poor420_rate": 0.1437,
+        "poor830_rate": 0.3732,
+        "prosperity_gap_2021": 4.2114034,
+        "poor300_display": "8.74%",
+        "poor420_display": "14.4%",
+        "poor830_display": "37.3%",
+        "prosperity_gap_display": "4.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 946
+    },
+    {
+      "place_id": "SLV-ADM1-MORAZAN",
+      "place_name": "Morazan",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "morazan",
+      "adm1_geo_id": "SLV_2015_ADM1_1191",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.270057,
+      "poverty_context": {
+        "poor300_rate": 0.0686,
+        "poor420_rate": 0.1411,
+        "poor830_rate": 0.425,
+        "prosperity_gap_2021": 4.2700571,
+        "poor300_display": "6.86%",
+        "poor420_display": "14.1%",
+        "poor830_display": "42.5%",
+        "prosperity_gap_display": "4.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 932
+    },
+    {
+      "place_id": "SLV-ADM1-SAN-MIGUEL",
+      "place_name": "San Miguel",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "san miguel",
+      "adm1_geo_id": "SLV_2015_ADM1_1192",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.499275,
+      "poverty_context": {
+        "poor300_rate": 0.044,
+        "poor420_rate": 0.0817,
+        "poor830_rate": 0.3209,
+        "prosperity_gap_2021": 3.4992751,
+        "poor300_display": "4.40%",
+        "poor420_display": "8.17%",
+        "poor830_display": "32.1%",
+        "prosperity_gap_display": "3.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1074
+    },
+    {
+      "place_id": "SLV-ADM1-SAN-SALVADOR",
+      "place_name": "San Salvador",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "san salvador",
+      "adm1_geo_id": "SLV_2015_ADM1_1193",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.509377,
+      "poverty_context": {
+        "poor300_rate": 0.0178,
+        "poor420_rate": 0.0413,
+        "poor830_rate": 0.1915,
+        "prosperity_gap_2021": 2.5093765,
+        "poor300_display": "1.78%",
+        "poor420_display": "4.13%",
+        "poor830_display": "19.1%",
+        "prosperity_gap_display": "2.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1294
+    },
+    {
+      "place_id": "SLV-ADM1-SAN-VICENTE",
+      "place_name": "San Vicente",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "san vicente",
+      "adm1_geo_id": "SLV_2015_ADM1_1194",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.831746,
+      "poverty_context": {
+        "poor300_rate": 0.053,
+        "poor420_rate": 0.1017,
+        "poor830_rate": 0.3583,
+        "prosperity_gap_2021": 3.8317465,
+        "poor300_display": "5.30%",
+        "poor420_display": "10.2%",
+        "poor830_display": "35.8%",
+        "prosperity_gap_display": "3.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1020
+    },
+    {
+      "place_id": "SLV-ADM1-SANTA-ANA",
+      "place_name": "Santa Ana",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "santa ana",
+      "adm1_geo_id": "SLV_2015_ADM1_1195",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.524341,
+      "poverty_context": {
+        "poor300_rate": 0.0416,
+        "poor420_rate": 0.0835,
+        "poor830_rate": 0.3115,
+        "prosperity_gap_2021": 3.524341,
+        "poor300_display": "4.16%",
+        "poor420_display": "8.35%",
+        "poor830_display": "31.1%",
+        "prosperity_gap_display": "3.52"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1068
+    },
+    {
+      "place_id": "SLV-ADM1-SONSONATE",
+      "place_name": "Sonsonate",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "sonsonate",
+      "adm1_geo_id": "SLV_2015_ADM1_1196",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.106485,
+      "poverty_context": {
+        "poor300_rate": 0.0445,
+        "poor420_rate": 0.0929,
+        "poor830_rate": 0.3102,
+        "prosperity_gap_2021": 4.1064855,
+        "poor300_display": "4.45%",
+        "poor420_display": "9.29%",
+        "poor830_display": "31.0%",
+        "prosperity_gap_display": "4.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 970
+    },
+    {
+      "place_id": "SLV-ADM1-USULUTAN",
+      "place_name": "Usulutan",
+      "parent_place_id": "SLV",
+      "parent_place_name": "El Salvador",
+      "iso3": "SLV",
+      "source_iso3": "SLV",
+      "geometry_level": "adm1",
+      "adm1_key": "usulutan",
+      "adm1_geo_id": "SLV_2015_ADM1_1197",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.873053,
+      "poverty_context": {
+        "poor300_rate": 0.0851,
+        "poor420_rate": 0.143,
+        "poor830_rate": 0.4077,
+        "prosperity_gap_2021": 4.8730533,
+        "poor300_display": "8.51%",
+        "poor420_display": "14.3%",
+        "poor830_display": "40.8%",
+        "prosperity_gap_display": "4.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 834
+    }
+  ]
+}

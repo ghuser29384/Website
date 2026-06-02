@@ -34,6 +34,8 @@
           { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://painmap.org/data/place-measurements.csv" },
           { "@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "https://painmap.org/data/places.geojson" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/v1/places/index.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/v1/adm1/index.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/v1/places/IND/adm1.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/v1/coverage.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/release-modes.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/v1/places/IND/neighbors.json" },
@@ -134,6 +136,13 @@
                   <td><a href="/data/place-measurements.json">JSON</a>, <a href="/data/place-measurements.csv">CSV</a>, <a href="/data/places.geojson">GeoJSON</a>, <a href="/v1/places/index.json">place index</a>, <a href="/v1/coverage.json">coverage</a>, <a href="/data/release-modes.json">release modes</a>, <a href="/v1/places/IND/neighbors.json">neighbors</a>, <a href="/releases/2026-05-31/manifest.json">manifest</a></td>
                 </tr>
                 <tr>
+                  <th scope="row"><a href="/v1/adm1/index.json">ADM1 poverty-context overlay</a></th>
+                  <td>Proxy context overlay</td>
+                  <td>World Bank GSAP 2023 ADM1 lineup</td>
+                  <td>Low confidence; not canonical pain measurements</td>
+                  <td><a href="/v1/adm1/index.json">ADM1 index</a>, <a href="/v1/places/IND/adm1.json">India ADM1 rows</a>, <a href="/data/gsap-adm1-2023.json">source table</a>, <a href="/schemas/adm1-context.schema.json">schema</a></td>
+                </tr>
+                <tr>
                   <th scope="row"><a href="/dataset/provenance-registry/">Provenance registry</a></th>
                   <td>Registry</td>
                   <td>2026-05-31 review</td>
@@ -152,7 +161,7 @@
                   <td>Documentation</td>
                   <td>2026-05-31 version</td>
                   <td>Contract metadata</td>
-                  <td><a href="/data/openapi.json">OpenAPI 3.1</a>, <a href="/schemas/place-index.schema.json">place schema</a>, <a href="/schemas/place-measurements.schema.json">measurement schema</a>, <a href="/schemas/coverage.schema.json">coverage schema</a>, <a href="/schemas/release-modes.schema.json">release-mode schema</a>, <a href="/schemas/ogc-place-features.schema.json">OGC schema</a></td>
+                  <td><a href="/data/openapi.json">OpenAPI 3.1</a>, <a href="/schemas/place-index.schema.json">place schema</a>, <a href="/schemas/adm1-context.schema.json">ADM1 schema</a>, <a href="/schemas/place-measurements.schema.json">measurement schema</a>, <a href="/schemas/coverage.schema.json">coverage schema</a>, <a href="/schemas/release-modes.schema.json">release-mode schema</a>, <a href="/schemas/ogc-place-features.schema.json">OGC schema</a></td>
                 </tr>
                 <tr>
                   <th scope="row"><a href="/ogc/index.json">OGC-style place features</a></th>

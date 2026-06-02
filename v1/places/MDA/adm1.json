@@ -1,0 +1,189 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "MDA",
+  "parent_place_name": "Moldova",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 4,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "MDA-ADM1-BALTI-AND-EDINET-AND-SOROCA",
+      "place_name": "Balti & Edinet & Soroca",
+      "parent_place_id": "MDA",
+      "parent_place_name": "Moldova",
+      "iso3": "MDA",
+      "source_iso3": "MDA",
+      "geometry_level": "adm1",
+      "adm1_key": "balti and edinet and soroca",
+      "adm1_geo_id": "MDA_2015_GADMx_147_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.660264,
+      "poverty_context": {
+        "poor300_rate": 0.0032,
+        "poor420_rate": 0.0081,
+        "poor830_rate": 0.1851,
+        "prosperity_gap_2021": 2.6602643,
+        "poor300_display": "0.32%",
+        "poor420_display": "0.81%",
+        "poor830_display": "18.5%",
+        "prosperity_gap_display": "2.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1245
+    },
+    {
+      "place_id": "MDA-ADM1-CAHUL-AND-GAGAUZIA-AND-TIGHINA",
+      "place_name": "Cahul & Gagauzia & Tighina",
+      "parent_place_id": "MDA",
+      "parent_place_name": "Moldova",
+      "iso3": "MDA",
+      "source_iso3": "MDA",
+      "geometry_level": "adm1",
+      "adm1_key": "cahul and gagauzia and tighina",
+      "adm1_geo_id": "MDA_2015_GADMx_147_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.113243,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0214,
+        "poor830_rate": 0.3482,
+        "prosperity_gap_2021": 3.1132427,
+        "poor300_display": "0.00%",
+        "poor420_display": "2.14%",
+        "poor830_display": "34.8%",
+        "prosperity_gap_display": "3.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1143
+    },
+    {
+      "place_id": "MDA-ADM1-CHISINAU",
+      "place_name": "Chisinau",
+      "parent_place_id": "MDA",
+      "parent_place_name": "Moldova",
+      "iso3": "MDA",
+      "source_iso3": "MDA",
+      "geometry_level": "adm1",
+      "adm1_key": "chisinau",
+      "adm1_geo_id": "MDA_2015_GADMx_147_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.831311,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0513,
+        "prosperity_gap_2021": 1.8313109,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "5.13%",
+        "prosperity_gap_display": "1.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1516
+    },
+    {
+      "place_id": "MDA-ADM1-ORHEI-AND-UNGHENI-AND-LAPUSNA",
+      "place_name": "Orhei & Ungheni & Lapusna",
+      "parent_place_id": "MDA",
+      "parent_place_name": "Moldova",
+      "iso3": "MDA",
+      "source_iso3": "MDA",
+      "geometry_level": "adm1",
+      "adm1_key": "orhei and ungheni and lapusna",
+      "adm1_geo_id": "MDA_2015_GADMx_147_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.855597,
+      "poverty_context": {
+        "poor300_rate": 0.003,
+        "poor420_rate": 0.0072,
+        "poor830_rate": 0.2755,
+        "prosperity_gap_2021": 2.8555968,
+        "poor300_display": "0.30%",
+        "poor420_display": "0.72%",
+        "poor830_display": "27.6%",
+        "prosperity_gap_display": "2.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1196
+    }
+  ]
+}

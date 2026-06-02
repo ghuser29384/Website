@@ -1,0 +1,145 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "SWE",
+  "parent_place_name": "Sweden",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 3,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "SWE-ADM1-NORRA-SVERIGE-SE3",
+      "place_name": "Norra Sverige (SE3)",
+      "parent_place_id": "SWE",
+      "parent_place_name": "Sweden",
+      "iso3": "SWE",
+      "source_iso3": "SWE",
+      "geometry_level": "adm1",
+      "adm1_key": "norra sverige se3",
+      "adm1_geo_id": "SWE_2015_ADMx_NUTS_SE3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.434624,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0101,
+        "prosperity_gap_2021": 1.434624,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.01%",
+        "prosperity_gap_display": "1.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1608
+    },
+    {
+      "place_id": "SWE-ADM1-STRA-SVERIGE-SE1",
+      "place_name": "Östra Sverige (SE1)",
+      "parent_place_id": "SWE",
+      "parent_place_name": "Sweden",
+      "iso3": "SWE",
+      "source_iso3": "SWE",
+      "geometry_level": "adm1",
+      "adm1_key": "stra sverige se1",
+      "adm1_geo_id": "SWE_2015_ADMx_NUTS_SE1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.706267,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0183,
+        "prosperity_gap_2021": 1.7062667,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.83%",
+        "prosperity_gap_display": "1.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1545
+    },
+    {
+      "place_id": "SWE-ADM1-S-DRA-SVERIGE-SE2",
+      "place_name": "Södra Sverige (SE2)",
+      "parent_place_id": "SWE",
+      "parent_place_name": "Sweden",
+      "iso3": "SWE",
+      "source_iso3": "SWE",
+      "geometry_level": "adm1",
+      "adm1_key": "s dra sverige se2",
+      "adm1_geo_id": "SWE_2015_ADMx_NUTS_SE2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SWE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.748932,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0128,
+        "prosperity_gap_2021": 1.748932,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.28%",
+        "prosperity_gap_display": "1.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1538
+    }
+  ]
+}

@@ -1,0 +1,1157 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "TZA",
+  "parent_place_name": "Tanzania",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 26,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "TZA-ADM1-ARUSHA",
+      "place_name": "Arusha",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "arusha",
+      "adm1_geo_id": "TZA_2015_ADM1_48357",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.334195,
+      "poverty_context": {
+        "poor300_rate": 0.4484,
+        "poor420_rate": 0.652,
+        "poor830_rate": 0.931,
+        "prosperity_gap_2021": 9.3341953,
+        "poor300_display": "44.8%",
+        "poor420_display": "65.2%",
+        "poor830_display": "93.1%",
+        "prosperity_gap_display": "9.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 392
+    },
+    {
+      "place_id": "TZA-ADM1-DAR-ES-SALAAM",
+      "place_name": "Dar es Salaam",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "dar es salaam",
+      "adm1_geo_id": "TZA_2015_ADM1_48358",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.520981,
+      "poverty_context": {
+        "poor300_rate": 0.1319,
+        "poor420_rate": 0.2624,
+        "poor830_rate": 0.662,
+        "prosperity_gap_2021": 5.5209805,
+        "poor300_display": "13.2%",
+        "poor420_display": "26.2%",
+        "poor830_display": "66.2%",
+        "prosperity_gap_display": "5.52"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 737
+    },
+    {
+      "place_id": "TZA-ADM1-DODOMA",
+      "place_name": "Dodoma",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "dodoma",
+      "adm1_geo_id": "TZA_2015_ADM1_48359",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.479917,
+      "poverty_context": {
+        "poor300_rate": 0.4992,
+        "poor420_rate": 0.694,
+        "poor830_rate": 0.9003,
+        "prosperity_gap_2021": 9.479917,
+        "poor300_display": "49.9%",
+        "poor420_display": "69.4%",
+        "poor830_display": "90.0%",
+        "prosperity_gap_display": "9.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 384
+    },
+    {
+      "place_id": "TZA-ADM1-GEITA",
+      "place_name": "Geita",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "geita",
+      "adm1_geo_id": "TZA_2015_ADM1_115002",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.674494,
+      "poverty_context": {
+        "poor300_rate": 0.6599,
+        "poor420_rate": 0.825,
+        "poor830_rate": 0.9752,
+        "prosperity_gap_2021": 12.674494,
+        "poor300_display": "66.0%",
+        "poor420_display": "82.5%",
+        "poor830_display": "97.5%",
+        "prosperity_gap_display": "12.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 190
+    },
+    {
+      "place_id": "TZA-ADM1-IRINGA",
+      "place_name": "Iringa",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "iringa",
+      "adm1_geo_id": "TZA_2015_ADM1_115003",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.731691,
+      "poverty_context": {
+        "poor300_rate": 0.4401,
+        "poor420_rate": 0.7007,
+        "poor830_rate": 0.947,
+        "prosperity_gap_2021": 9.7316913,
+        "poor300_display": "44.0%",
+        "poor420_display": "70.1%",
+        "poor830_display": "94.7%",
+        "prosperity_gap_display": "9.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 366
+    },
+    {
+      "place_id": "TZA-ADM1-KAGERA",
+      "place_name": "Kagera",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "kagera",
+      "adm1_geo_id": "TZA_2015_ADM1_115004",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.978927,
+      "poverty_context": {
+        "poor300_rate": 0.6537,
+        "poor420_rate": 0.8148,
+        "poor830_rate": 0.9646,
+        "prosperity_gap_2021": 12.978927,
+        "poor300_display": "65.4%",
+        "poor420_display": "81.5%",
+        "poor830_display": "96.5%",
+        "prosperity_gap_display": "12.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 184
+    },
+    {
+      "place_id": "TZA-ADM1-KATAVI",
+      "place_name": "Katavi",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "katavi",
+      "adm1_geo_id": "TZA_2015_ADM1_115005",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.332029,
+      "poverty_context": {
+        "poor300_rate": 0.5781,
+        "poor420_rate": 0.8204,
+        "poor830_rate": 0.9717,
+        "prosperity_gap_2021": 11.332029,
+        "poor300_display": "57.8%",
+        "poor420_display": "82.0%",
+        "poor830_display": "97.2%",
+        "prosperity_gap_display": "11.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 254
+    },
+    {
+      "place_id": "TZA-ADM1-KIGOMA",
+      "place_name": "Kigoma",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "kigoma",
+      "adm1_geo_id": "TZA_2015_ADM1_48362",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.511898,
+      "poverty_context": {
+        "poor300_rate": 0.6753,
+        "poor420_rate": 0.845,
+        "poor830_rate": 0.9771,
+        "prosperity_gap_2021": 14.511898,
+        "poor300_display": "67.5%",
+        "poor420_display": "84.5%",
+        "poor830_display": "97.7%",
+        "prosperity_gap_display": "14.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 147
+    },
+    {
+      "place_id": "TZA-ADM1-KILIMANJARO",
+      "place_name": "Kilimanjaro",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "kilimanjaro",
+      "adm1_geo_id": "TZA_2015_ADM1_48363",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.167529,
+      "poverty_context": {
+        "poor300_rate": 0.2584,
+        "poor420_rate": 0.5025,
+        "poor830_rate": 0.8235,
+        "prosperity_gap_2021": 7.1675288,
+        "poor300_display": "25.8%",
+        "poor420_display": "50.2%",
+        "poor830_display": "82.3%",
+        "prosperity_gap_display": "7.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 574
+    },
+    {
+      "place_id": "TZA-ADM1-LINDI",
+      "place_name": "Lindi",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "lindi",
+      "adm1_geo_id": "TZA_2015_ADM1_48364",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.043887,
+      "poverty_context": {
+        "poor300_rate": 0.615,
+        "poor420_rate": 0.7698,
+        "poor830_rate": 0.9429,
+        "prosperity_gap_2021": 11.043887,
+        "poor300_display": "61.5%",
+        "poor420_display": "77.0%",
+        "poor830_display": "94.3%",
+        "prosperity_gap_display": "11.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 280
+    },
+    {
+      "place_id": "TZA-ADM1-MANYARA",
+      "place_name": "Manyara",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "manyara",
+      "adm1_geo_id": "TZA_2015_ADM1_48365",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.470489,
+      "poverty_context": {
+        "poor300_rate": 0.5306,
+        "poor420_rate": 0.7252,
+        "poor830_rate": 0.9605,
+        "prosperity_gap_2021": 10.470489,
+        "poor300_display": "53.1%",
+        "poor420_display": "72.5%",
+        "poor830_display": "96.0%",
+        "prosperity_gap_display": "10.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 310
+    },
+    {
+      "place_id": "TZA-ADM1-MARA",
+      "place_name": "Mara",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "mara",
+      "adm1_geo_id": "TZA_2015_ADM1_48366",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.0376,
+      "poverty_context": {
+        "poor300_rate": 0.5097,
+        "poor420_rate": 0.7492,
+        "poor830_rate": 0.9442,
+        "prosperity_gap_2021": 10.0376,
+        "poor300_display": "51.0%",
+        "poor420_display": "74.9%",
+        "poor830_display": "94.4%",
+        "prosperity_gap_display": "10.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 338
+    },
+    {
+      "place_id": "TZA-ADM1-MBEYA",
+      "place_name": "Mbeya",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "mbeya",
+      "adm1_geo_id": "TZA_2015_GADMx_243_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.055673,
+      "poverty_context": {
+        "poor300_rate": 0.3552,
+        "poor420_rate": 0.5987,
+        "poor830_rate": 0.9144,
+        "prosperity_gap_2021": 9.0556734,
+        "poor300_display": "35.5%",
+        "poor420_display": "59.9%",
+        "poor830_display": "91.4%",
+        "prosperity_gap_display": "9.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 415
+    },
+    {
+      "place_id": "TZA-ADM1-MOROGORO",
+      "place_name": "Morogoro",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "morogoro",
+      "adm1_geo_id": "TZA_2015_ADM1_48368",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.540551,
+      "poverty_context": {
+        "poor300_rate": 0.3634,
+        "poor420_rate": 0.6124,
+        "poor830_rate": 0.8952,
+        "prosperity_gap_2021": 8.5405512,
+        "poor300_display": "36.3%",
+        "poor420_display": "61.2%",
+        "poor830_display": "89.5%",
+        "prosperity_gap_display": "8.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 454
+    },
+    {
+      "place_id": "TZA-ADM1-MTWARA",
+      "place_name": "Mtwara",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "mtwara",
+      "adm1_geo_id": "TZA_2015_ADM1_48369",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.093332,
+      "poverty_context": {
+        "poor300_rate": 0.4173,
+        "poor420_rate": 0.5529,
+        "poor830_rate": 0.9089,
+        "prosperity_gap_2021": 9.0933324,
+        "poor300_display": "41.7%",
+        "poor420_display": "55.3%",
+        "poor830_display": "90.9%",
+        "prosperity_gap_display": "9.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 412
+    },
+    {
+      "place_id": "TZA-ADM1-MWANZA",
+      "place_name": "Mwanza",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "mwanza",
+      "adm1_geo_id": "TZA_2015_ADM1_115006",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.601231,
+      "poverty_context": {
+        "poor300_rate": 0.6241,
+        "poor420_rate": 0.8151,
+        "poor830_rate": 0.9529,
+        "prosperity_gap_2021": 11.601231,
+        "poor300_display": "62.4%",
+        "poor420_display": "81.5%",
+        "poor830_display": "95.3%",
+        "prosperity_gap_display": "11.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 239
+    },
+    {
+      "place_id": "TZA-ADM1-NJOMBE",
+      "place_name": "Njombe",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "njombe",
+      "adm1_geo_id": "TZA_2015_ADM1_115007",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.383683,
+      "poverty_context": {
+        "poor300_rate": 0.3352,
+        "poor420_rate": 0.6155,
+        "poor830_rate": 0.9029,
+        "prosperity_gap_2021": 8.3836831,
+        "poor300_display": "33.5%",
+        "poor420_display": "61.6%",
+        "poor830_display": "90.3%",
+        "prosperity_gap_display": "8.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 471
+    },
+    {
+      "place_id": "TZA-ADM1-PWANI",
+      "place_name": "Pwani",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "pwani",
+      "adm1_geo_id": "TZA_2015_ADM1_48373",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.483736,
+      "poverty_context": {
+        "poor300_rate": 0.3944,
+        "poor420_rate": 0.5494,
+        "poor830_rate": 0.8377,
+        "prosperity_gap_2021": 9.4837363,
+        "poor300_display": "39.4%",
+        "poor420_display": "54.9%",
+        "poor830_display": "83.8%",
+        "prosperity_gap_display": "9.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 383
+    },
+    {
+      "place_id": "TZA-ADM1-RUKWA",
+      "place_name": "Rukwa",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "rukwa",
+      "adm1_geo_id": "TZA_2015_ADM1_115008",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.075244,
+      "poverty_context": {
+        "poor300_rate": 0.7354,
+        "poor420_rate": 0.8921,
+        "poor830_rate": 0.9812,
+        "prosperity_gap_2021": 14.075244,
+        "poor300_display": "73.5%",
+        "poor420_display": "89.2%",
+        "poor830_display": "98.1%",
+        "prosperity_gap_display": "14.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 156
+    },
+    {
+      "place_id": "TZA-ADM1-RUVUMA",
+      "place_name": "Ruvuma",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "ruvuma",
+      "adm1_geo_id": "TZA_2015_ADM1_48375",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.555923,
+      "poverty_context": {
+        "poor300_rate": 0.4364,
+        "poor420_rate": 0.633,
+        "poor830_rate": 0.8944,
+        "prosperity_gap_2021": 9.5559234,
+        "poor300_display": "43.6%",
+        "poor420_display": "63.3%",
+        "poor830_display": "89.4%",
+        "prosperity_gap_display": "9.56"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 377
+    },
+    {
+      "place_id": "TZA-ADM1-SHINYANGA",
+      "place_name": "Shinyanga",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "shinyanga",
+      "adm1_geo_id": "TZA_2015_ADM1_115009",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.239455,
+      "poverty_context": {
+        "poor300_rate": 0.6203,
+        "poor420_rate": 0.8331,
+        "poor830_rate": 0.9838,
+        "prosperity_gap_2021": 11.239455,
+        "poor300_display": "62.0%",
+        "poor420_display": "83.3%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "11.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 267
+    },
+    {
+      "place_id": "TZA-ADM1-SIMIYU",
+      "place_name": "Simiyu",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "simiyu",
+      "adm1_geo_id": "TZA_2015_ADM1_115010",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.97488,
+      "poverty_context": {
+        "poor300_rate": 0.6436,
+        "poor420_rate": 0.8291,
+        "poor830_rate": 0.9718,
+        "prosperity_gap_2021": 11.97488,
+        "poor300_display": "64.4%",
+        "poor420_display": "82.9%",
+        "poor830_display": "97.2%",
+        "prosperity_gap_display": "11.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 217
+    },
+    {
+      "place_id": "TZA-ADM1-SINGIDA",
+      "place_name": "Singida",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "singida",
+      "adm1_geo_id": "TZA_2015_ADM1_48377",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.444482,
+      "poverty_context": {
+        "poor300_rate": 0.6111,
+        "poor420_rate": 0.8097,
+        "poor830_rate": 0.9907,
+        "prosperity_gap_2021": 11.444482,
+        "poor300_display": "61.1%",
+        "poor420_display": "81.0%",
+        "poor830_display": "99.1%",
+        "prosperity_gap_display": "11.44"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 252
+    },
+    {
+      "place_id": "TZA-ADM1-SONGWE",
+      "place_name": "Songwe",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "songwe",
+      "adm1_geo_id": "TZA_2015_GADMx_243_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.840478,
+      "poverty_context": {
+        "poor300_rate": 0.4681,
+        "poor420_rate": 0.698,
+        "poor830_rate": 0.9308,
+        "prosperity_gap_2021": 9.8404782,
+        "poor300_display": "46.8%",
+        "poor420_display": "69.8%",
+        "poor830_display": "93.1%",
+        "prosperity_gap_display": "9.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 351
+    },
+    {
+      "place_id": "TZA-ADM1-TABORA",
+      "place_name": "Tabora",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "tabora",
+      "adm1_geo_id": "TZA_2015_ADM1_48380",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.049465,
+      "poverty_context": {
+        "poor300_rate": 0.6255,
+        "poor420_rate": 0.8008,
+        "poor830_rate": 0.9434,
+        "prosperity_gap_2021": 12.049465,
+        "poor300_display": "62.5%",
+        "poor420_display": "80.1%",
+        "poor830_display": "94.3%",
+        "prosperity_gap_display": "12.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 215
+    },
+    {
+      "place_id": "TZA-ADM1-TANGA",
+      "place_name": "Tanga",
+      "parent_place_id": "TZA",
+      "parent_place_name": "Tanzania",
+      "iso3": "TZA",
+      "source_iso3": "TZA",
+      "geometry_level": "adm1",
+      "adm1_key": "tanga",
+      "adm1_geo_id": "TZA_2015_ADM1_48381",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TZA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.234604,
+      "poverty_context": {
+        "poor300_rate": 0.4022,
+        "poor420_rate": 0.6298,
+        "poor830_rate": 0.9044,
+        "prosperity_gap_2021": 9.2346044,
+        "poor300_display": "40.2%",
+        "poor420_display": "63.0%",
+        "poor830_display": "90.4%",
+        "prosperity_gap_display": "9.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 401
+    }
+  ]
+}

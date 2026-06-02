@@ -1,0 +1,497 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "MOZ",
+  "parent_place_name": "Mozambique",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 11,
+  "static_page_count": 9,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "MOZ-ADM1-CABO-DELGADO",
+      "place_name": "Cabo Delgado",
+      "parent_place_id": "MOZ",
+      "parent_place_name": "Mozambique",
+      "iso3": "MOZ",
+      "source_iso3": "MOZ",
+      "geometry_level": "adm1",
+      "adm1_key": "cabo delgado",
+      "adm1_geo_id": "MOZ_2015_ADM1_2112",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MOZ/adm1/cabo-delgado/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MOZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 32.638128,
+      "poverty_context": {
+        "poor300_rate": 0.9208,
+        "poor420_rate": 0.9612,
+        "poor830_rate": 0.9878,
+        "prosperity_gap_2021": 32.638128,
+        "poor300_display": "92.1%",
+        "poor420_display": "96.1%",
+        "poor830_display": "98.8%",
+        "prosperity_gap_display": "32.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 6
+    },
+    {
+      "place_id": "MOZ-ADM1-CIDADE-DE-MAPUTO",
+      "place_name": "Cidade de Maputo",
+      "parent_place_id": "MOZ",
+      "parent_place_name": "Mozambique",
+      "iso3": "MOZ",
+      "source_iso3": "MOZ",
+      "geometry_level": "adm1",
+      "adm1_key": "cidade de maputo",
+      "adm1_geo_id": "MOZ_2015_ADM2_41374",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MOZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.914678,
+      "poverty_context": {
+        "poor300_rate": 0.3999,
+        "poor420_rate": 0.5715,
+        "poor830_rate": 0.7996,
+        "prosperity_gap_2021": 9.914678,
+        "poor300_display": "40.0%",
+        "poor420_display": "57.1%",
+        "poor830_display": "80.0%",
+        "prosperity_gap_display": "9.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 341
+    },
+    {
+      "place_id": "MOZ-ADM1-GAZA",
+      "place_name": "Gaza",
+      "parent_place_id": "MOZ",
+      "parent_place_name": "Mozambique",
+      "iso3": "MOZ",
+      "source_iso3": "MOZ",
+      "geometry_level": "adm1",
+      "adm1_key": "gaza",
+      "adm1_geo_id": "MOZ_2015_ADM1_2113",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MOZ/adm1/gaza/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MOZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 17.8806,
+      "poverty_context": {
+        "poor300_rate": 0.7008,
+        "poor420_rate": 0.8157,
+        "poor830_rate": 0.9579,
+        "prosperity_gap_2021": 17.8806,
+        "poor300_display": "70.1%",
+        "poor420_display": "81.6%",
+        "poor830_display": "95.8%",
+        "prosperity_gap_display": "17.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 86
+    },
+    {
+      "place_id": "MOZ-ADM1-INHAMBANE",
+      "place_name": "Inhambane",
+      "parent_place_id": "MOZ",
+      "parent_place_name": "Mozambique",
+      "iso3": "MOZ",
+      "source_iso3": "MOZ",
+      "geometry_level": "adm1",
+      "adm1_key": "inhambane",
+      "adm1_geo_id": "MOZ_2015_ADM1_2114",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MOZ/adm1/inhambane/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MOZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.487109,
+      "poverty_context": {
+        "poor300_rate": 0.7757,
+        "poor420_rate": 0.8727,
+        "poor830_rate": 0.9601,
+        "prosperity_gap_2021": 19.487109,
+        "poor300_display": "77.6%",
+        "poor420_display": "87.3%",
+        "poor830_display": "96.0%",
+        "prosperity_gap_display": "19.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 67
+    },
+    {
+      "place_id": "MOZ-ADM1-MANICA",
+      "place_name": "Manica",
+      "parent_place_id": "MOZ",
+      "parent_place_name": "Mozambique",
+      "iso3": "MOZ",
+      "source_iso3": "MOZ",
+      "geometry_level": "adm1",
+      "adm1_key": "manica",
+      "adm1_geo_id": "MOZ_2015_ADM1_2115",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MOZ/adm1/manica/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MOZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 20.936545,
+      "poverty_context": {
+        "poor300_rate": 0.755,
+        "poor420_rate": 0.865,
+        "poor830_rate": 0.9461,
+        "prosperity_gap_2021": 20.936545,
+        "poor300_display": "75.5%",
+        "poor420_display": "86.5%",
+        "poor830_display": "94.6%",
+        "prosperity_gap_display": "20.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 46
+    },
+    {
+      "place_id": "MOZ-ADM1-MAPUTO",
+      "place_name": "Maputo",
+      "parent_place_id": "MOZ",
+      "parent_place_name": "Mozambique",
+      "iso3": "MOZ",
+      "source_iso3": "MOZ",
+      "geometry_level": "adm1",
+      "adm1_key": "maputo",
+      "adm1_geo_id": "MOZ_2015_ADM1_41373",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MOZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.89194,
+      "poverty_context": {
+        "poor300_rate": 0.492,
+        "poor420_rate": 0.6488,
+        "poor830_rate": 0.8546,
+        "prosperity_gap_2021": 11.89194,
+        "poor300_display": "49.2%",
+        "poor420_display": "64.9%",
+        "poor830_display": "85.5%",
+        "prosperity_gap_display": "11.89"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 221
+    },
+    {
+      "place_id": "MOZ-ADM1-NAMPULA",
+      "place_name": "Nampula",
+      "parent_place_id": "MOZ",
+      "parent_place_name": "Mozambique",
+      "iso3": "MOZ",
+      "source_iso3": "MOZ",
+      "geometry_level": "adm1",
+      "adm1_key": "nampula",
+      "adm1_geo_id": "MOZ_2015_ADM1_2118",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MOZ/adm1/nampula/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MOZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 30.584612,
+      "poverty_context": {
+        "poor300_rate": 0.9163,
+        "poor420_rate": 0.9567,
+        "poor830_rate": 0.9892,
+        "prosperity_gap_2021": 30.584612,
+        "poor300_display": "91.6%",
+        "poor420_display": "95.7%",
+        "poor830_display": "98.9%",
+        "prosperity_gap_display": "30.58"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 9
+    },
+    {
+      "place_id": "MOZ-ADM1-NIASSA",
+      "place_name": "Niassa",
+      "parent_place_id": "MOZ",
+      "parent_place_name": "Mozambique",
+      "iso3": "MOZ",
+      "source_iso3": "MOZ",
+      "geometry_level": "adm1",
+      "adm1_key": "niassa",
+      "adm1_geo_id": "MOZ_2015_ADM1_2119",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MOZ/adm1/niassa/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MOZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 28.539425,
+      "poverty_context": {
+        "poor300_rate": 0.8908,
+        "poor420_rate": 0.949,
+        "poor830_rate": 0.9926,
+        "prosperity_gap_2021": 28.539425,
+        "poor300_display": "89.1%",
+        "poor420_display": "94.9%",
+        "poor830_display": "99.3%",
+        "prosperity_gap_display": "28.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 18
+    },
+    {
+      "place_id": "MOZ-ADM1-SOFALA",
+      "place_name": "Sofala",
+      "parent_place_id": "MOZ",
+      "parent_place_name": "Mozambique",
+      "iso3": "MOZ",
+      "source_iso3": "MOZ",
+      "geometry_level": "adm1",
+      "adm1_key": "sofala",
+      "adm1_geo_id": "MOZ_2015_ADM1_2120",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MOZ/adm1/sofala/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MOZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 22.721264,
+      "poverty_context": {
+        "poor300_rate": 0.7792,
+        "poor420_rate": 0.88,
+        "poor830_rate": 0.9578,
+        "prosperity_gap_2021": 22.721264,
+        "poor300_display": "77.9%",
+        "poor420_display": "88.0%",
+        "poor830_display": "95.8%",
+        "prosperity_gap_display": "22.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 36
+    },
+    {
+      "place_id": "MOZ-ADM1-TETE",
+      "place_name": "Tete",
+      "parent_place_id": "MOZ",
+      "parent_place_name": "Mozambique",
+      "iso3": "MOZ",
+      "source_iso3": "MOZ",
+      "geometry_level": "adm1",
+      "adm1_key": "tete",
+      "adm1_geo_id": "MOZ_2015_ADM1_2121",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MOZ/adm1/tete/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MOZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 22.62215,
+      "poverty_context": {
+        "poor300_rate": 0.8133,
+        "poor420_rate": 0.9057,
+        "poor830_rate": 0.972,
+        "prosperity_gap_2021": 22.62215,
+        "poor300_display": "81.3%",
+        "poor420_display": "90.6%",
+        "poor830_display": "97.2%",
+        "prosperity_gap_display": "22.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 38
+    },
+    {
+      "place_id": "MOZ-ADM1-ZAMBEZIA",
+      "place_name": "Zambezia",
+      "parent_place_id": "MOZ",
+      "parent_place_name": "Mozambique",
+      "iso3": "MOZ",
+      "source_iso3": "MOZ",
+      "geometry_level": "adm1",
+      "adm1_key": "zambezia",
+      "adm1_geo_id": "MOZ_2015_ADM1_2122",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MOZ/adm1/zambezia/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MOZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 24.2967,
+      "poverty_context": {
+        "poor300_rate": 0.8885,
+        "poor420_rate": 0.9446,
+        "poor830_rate": 0.9878,
+        "prosperity_gap_2021": 24.2967,
+        "poor300_display": "88.8%",
+        "poor420_display": "94.5%",
+        "poor830_display": "98.8%",
+        "prosperity_gap_display": "24.30"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 29
+    }
+  ]
+}

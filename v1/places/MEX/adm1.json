@@ -1,0 +1,1421 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "MEX",
+  "parent_place_name": "Mexico",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 32,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "MEX-ADM1-AGUASCALIENTES",
+      "place_name": "Aguascalientes",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "aguascalientes",
+      "adm1_geo_id": "MEX_2015_ADM1_2028",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.34817,
+      "poverty_context": {
+        "poor300_rate": 0.0071,
+        "poor420_rate": 0.0234,
+        "poor830_rate": 0.1987,
+        "prosperity_gap_2021": 2.3481704,
+        "poor300_display": "0.71%",
+        "poor420_display": "2.34%",
+        "poor830_display": "19.9%",
+        "prosperity_gap_display": "2.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1339
+    },
+    {
+      "place_id": "MEX-ADM1-BAJA-CALIFORNIA",
+      "place_name": "Baja California",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "baja california",
+      "adm1_geo_id": "MEX_2015_ADM1_2029",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.688021,
+      "poverty_context": {
+        "poor300_rate": 0.0042,
+        "poor420_rate": 0.0076,
+        "poor830_rate": 0.0674,
+        "prosperity_gap_2021": 1.6880208,
+        "poor300_display": "0.42%",
+        "poor420_display": "0.76%",
+        "poor830_display": "6.74%",
+        "prosperity_gap_display": "1.69"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1554
+    },
+    {
+      "place_id": "MEX-ADM1-BAJA-CALIFORNIA-SUR",
+      "place_name": "Baja California Sur",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "baja california sur",
+      "adm1_geo_id": "MEX_2015_ADM1_2030",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.600611,
+      "poverty_context": {
+        "poor300_rate": 0.0026,
+        "poor420_rate": 0.0073,
+        "poor830_rate": 0.0646,
+        "prosperity_gap_2021": 1.6006111,
+        "poor300_display": "0.26%",
+        "poor420_display": "0.73%",
+        "poor830_display": "6.46%",
+        "prosperity_gap_display": "1.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1571
+    },
+    {
+      "place_id": "MEX-ADM1-CAMPECHE",
+      "place_name": "Campeche",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "campeche",
+      "adm1_geo_id": "MEX_2015_ADM1_2031",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.06646,
+      "poverty_context": {
+        "poor300_rate": 0.0245,
+        "poor420_rate": 0.0583,
+        "poor830_rate": 0.3104,
+        "prosperity_gap_2021": 3.06646,
+        "poor300_display": "2.45%",
+        "poor420_display": "5.83%",
+        "poor830_display": "31.0%",
+        "prosperity_gap_display": "3.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1150
+    },
+    {
+      "place_id": "MEX-ADM1-CHIAPAS",
+      "place_name": "Chiapas",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "chiapas",
+      "adm1_geo_id": "MEX_2015_ADM1_2032",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.018936,
+      "poverty_context": {
+        "poor300_rate": 0.1071,
+        "poor420_rate": 0.2086,
+        "poor830_rate": 0.5544,
+        "prosperity_gap_2021": 5.0189362,
+        "poor300_display": "10.7%",
+        "poor420_display": "20.9%",
+        "poor830_display": "55.4%",
+        "prosperity_gap_display": "5.02"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 803
+    },
+    {
+      "place_id": "MEX-ADM1-CHIHUAHUA",
+      "place_name": "Chihuahua",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "chihuahua",
+      "adm1_geo_id": "MEX_2015_ADM1_2033",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.080824,
+      "poverty_context": {
+        "poor300_rate": 0.0111,
+        "poor420_rate": 0.0275,
+        "poor830_rate": 0.1266,
+        "prosperity_gap_2021": 2.0808242,
+        "poor300_display": "1.11%",
+        "poor420_display": "2.75%",
+        "poor830_display": "12.7%",
+        "prosperity_gap_display": "2.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1437
+    },
+    {
+      "place_id": "MEX-ADM1-COAHUILA",
+      "place_name": "Coahuila",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "coahuila",
+      "adm1_geo_id": "MEX_2015_ADM1_2034",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.136643,
+      "poverty_context": {
+        "poor300_rate": 0.0055,
+        "poor420_rate": 0.0213,
+        "poor830_rate": 0.1493,
+        "prosperity_gap_2021": 2.1366435,
+        "poor300_display": "0.55%",
+        "poor420_display": "2.13%",
+        "poor830_display": "14.9%",
+        "prosperity_gap_display": "2.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1419
+    },
+    {
+      "place_id": "MEX-ADM1-COLIMA",
+      "place_name": "Colima",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "colima",
+      "adm1_geo_id": "MEX_2015_ADM1_2035",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.115791,
+      "poverty_context": {
+        "poor300_rate": 0.0054,
+        "poor420_rate": 0.0174,
+        "poor830_rate": 0.126,
+        "prosperity_gap_2021": 2.1157913,
+        "poor300_display": "0.54%",
+        "poor420_display": "1.74%",
+        "poor830_display": "12.6%",
+        "prosperity_gap_display": "2.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1427
+    },
+    {
+      "place_id": "MEX-ADM1-DISTRITO-FEDERAL",
+      "place_name": "Distrito Federal",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "distrito federal",
+      "adm1_geo_id": "MEX_2015_ADM1_2036",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.036278,
+      "poverty_context": {
+        "poor300_rate": 0.0096,
+        "poor420_rate": 0.0132,
+        "poor830_rate": 0.1174,
+        "prosperity_gap_2021": 2.0362775,
+        "poor300_display": "0.96%",
+        "poor420_display": "1.32%",
+        "poor830_display": "11.7%",
+        "prosperity_gap_display": "2.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1452
+    },
+    {
+      "place_id": "MEX-ADM1-DURANGO",
+      "place_name": "Durango",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "durango",
+      "adm1_geo_id": "MEX_2015_ADM1_2037",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.15624,
+      "poverty_context": {
+        "poor300_rate": 0.0366,
+        "poor420_rate": 0.0732,
+        "poor830_rate": 0.267,
+        "prosperity_gap_2021": 3.1562396,
+        "poor300_display": "3.66%",
+        "poor420_display": "7.32%",
+        "poor830_display": "26.7%",
+        "prosperity_gap_display": "3.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1135
+    },
+    {
+      "place_id": "MEX-ADM1-GUANAJUATO",
+      "place_name": "Guanajuato",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "guanajuato",
+      "adm1_geo_id": "MEX_2015_ADM1_2038",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.685275,
+      "poverty_context": {
+        "poor300_rate": 0.014,
+        "poor420_rate": 0.0271,
+        "poor830_rate": 0.2366,
+        "prosperity_gap_2021": 2.6852746,
+        "poor300_display": "1.40%",
+        "poor420_display": "2.71%",
+        "poor830_display": "23.7%",
+        "prosperity_gap_display": "2.69"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1236
+    },
+    {
+      "place_id": "MEX-ADM1-GUERRERO",
+      "place_name": "Guerrero",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "guerrero",
+      "adm1_geo_id": "MEX_2015_ADM1_2039",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.233718,
+      "poverty_context": {
+        "poor300_rate": 0.0781,
+        "poor420_rate": 0.1585,
+        "poor830_rate": 0.4772,
+        "prosperity_gap_2021": 4.2337176,
+        "poor300_display": "7.81%",
+        "poor420_display": "15.8%",
+        "poor830_display": "47.7%",
+        "prosperity_gap_display": "4.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 939
+    },
+    {
+      "place_id": "MEX-ADM1-HIDALGO",
+      "place_name": "Hidalgo",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "hidalgo",
+      "adm1_geo_id": "MEX_2015_ADM1_2040",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.979941,
+      "poverty_context": {
+        "poor300_rate": 0.0219,
+        "poor420_rate": 0.0551,
+        "poor830_rate": 0.2726,
+        "prosperity_gap_2021": 2.9799406,
+        "poor300_display": "2.19%",
+        "poor420_display": "5.51%",
+        "poor830_display": "27.3%",
+        "prosperity_gap_display": "2.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1167
+    },
+    {
+      "place_id": "MEX-ADM1-JALISCO",
+      "place_name": "Jalisco",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "jalisco",
+      "adm1_geo_id": "MEX_2015_ADM1_2041",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.152612,
+      "poverty_context": {
+        "poor300_rate": 0.0056,
+        "poor420_rate": 0.0159,
+        "poor830_rate": 0.1362,
+        "prosperity_gap_2021": 2.1526118,
+        "poor300_display": "0.56%",
+        "poor420_display": "1.59%",
+        "poor830_display": "13.6%",
+        "prosperity_gap_display": "2.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1411
+    },
+    {
+      "place_id": "MEX-ADM1-MEXICO",
+      "place_name": "Mexico",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "mexico",
+      "adm1_geo_id": "MEX_2015_ADM1_2042",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.807842,
+      "poverty_context": {
+        "poor300_rate": 0.0111,
+        "poor420_rate": 0.0336,
+        "poor830_rate": 0.2947,
+        "prosperity_gap_2021": 2.8078424,
+        "poor300_display": "1.11%",
+        "poor420_display": "3.36%",
+        "poor830_display": "29.5%",
+        "prosperity_gap_display": "2.81"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1208
+    },
+    {
+      "place_id": "MEX-ADM1-MICHOACAN",
+      "place_name": "Michoacan",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "michoacan",
+      "adm1_geo_id": "MEX_2015_ADM1_2043",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.910867,
+      "poverty_context": {
+        "poor300_rate": 0.0205,
+        "poor420_rate": 0.0567,
+        "poor830_rate": 0.2877,
+        "prosperity_gap_2021": 2.9108665,
+        "poor300_display": "2.05%",
+        "poor420_display": "5.67%",
+        "poor830_display": "28.8%",
+        "prosperity_gap_display": "2.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1188
+    },
+    {
+      "place_id": "MEX-ADM1-MORELOS",
+      "place_name": "Morelos",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "morelos",
+      "adm1_geo_id": "MEX_2015_ADM1_2044",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.792428,
+      "poverty_context": {
+        "poor300_rate": 0.0132,
+        "poor420_rate": 0.0433,
+        "poor830_rate": 0.2704,
+        "prosperity_gap_2021": 2.7924284,
+        "poor300_display": "1.32%",
+        "poor420_display": "4.33%",
+        "poor830_display": "27.0%",
+        "prosperity_gap_display": "2.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1216
+    },
+    {
+      "place_id": "MEX-ADM1-NAYARIT",
+      "place_name": "Nayarit",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "nayarit",
+      "adm1_geo_id": "MEX_2015_ADM1_2045",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.980425,
+      "poverty_context": {
+        "poor300_rate": 0.0309,
+        "poor420_rate": 0.0608,
+        "poor830_rate": 0.2234,
+        "prosperity_gap_2021": 2.9804254,
+        "poor300_display": "3.09%",
+        "poor420_display": "6.08%",
+        "poor830_display": "22.3%",
+        "prosperity_gap_display": "2.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1165
+    },
+    {
+      "place_id": "MEX-ADM1-NUEVO-LEON",
+      "place_name": "Nuevo Leon",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "nuevo leon",
+      "adm1_geo_id": "MEX_2015_ADM1_2046",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.900205,
+      "poverty_context": {
+        "poor300_rate": 0.004,
+        "poor420_rate": 0.0107,
+        "poor830_rate": 0.1045,
+        "prosperity_gap_2021": 1.9002053,
+        "poor300_display": "0.40%",
+        "poor420_display": "1.07%",
+        "poor830_display": "10.4%",
+        "prosperity_gap_display": "1.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1496
+    },
+    {
+      "place_id": "MEX-ADM1-OAXACA",
+      "place_name": "Oaxaca",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "oaxaca",
+      "adm1_geo_id": "MEX_2015_ADM1_2047",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.926664,
+      "poverty_context": {
+        "poor300_rate": 0.0591,
+        "poor420_rate": 0.1279,
+        "poor830_rate": 0.437,
+        "prosperity_gap_2021": 3.9266644,
+        "poor300_display": "5.91%",
+        "poor420_display": "12.8%",
+        "poor830_display": "43.7%",
+        "prosperity_gap_display": "3.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1002
+    },
+    {
+      "place_id": "MEX-ADM1-PUEBLA",
+      "place_name": "Puebla",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "puebla",
+      "adm1_geo_id": "MEX_2015_ADM1_2048",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.42863,
+      "poverty_context": {
+        "poor300_rate": 0.0277,
+        "poor420_rate": 0.079,
+        "poor830_rate": 0.389,
+        "prosperity_gap_2021": 3.42863,
+        "poor300_display": "2.77%",
+        "poor420_display": "7.90%",
+        "poor830_display": "38.9%",
+        "prosperity_gap_display": "3.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1081
+    },
+    {
+      "place_id": "MEX-ADM1-QUERETARO",
+      "place_name": "Queretaro",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "queretaro",
+      "adm1_geo_id": "MEX_2015_ADM1_2049",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.081016,
+      "poverty_context": {
+        "poor300_rate": 0.0038,
+        "poor420_rate": 0.0131,
+        "poor830_rate": 0.1342,
+        "prosperity_gap_2021": 2.0810162,
+        "poor300_display": "0.38%",
+        "poor420_display": "1.31%",
+        "poor830_display": "13.4%",
+        "prosperity_gap_display": "2.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1436
+    },
+    {
+      "place_id": "MEX-ADM1-QUINTANA-ROO",
+      "place_name": "Quintana Roo",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "quintana roo",
+      "adm1_geo_id": "MEX_2015_ADM1_2050",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.273145,
+      "poverty_context": {
+        "poor300_rate": 0.0129,
+        "poor420_rate": 0.0279,
+        "poor830_rate": 0.1649,
+        "prosperity_gap_2021": 2.2731454,
+        "poor300_display": "1.29%",
+        "poor420_display": "2.79%",
+        "poor830_display": "16.5%",
+        "prosperity_gap_display": "2.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1368
+    },
+    {
+      "place_id": "MEX-ADM1-SAN-LUIS-POTOSI",
+      "place_name": "San Luis Potosi",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "san luis potosi",
+      "adm1_geo_id": "MEX_2015_ADM1_2051",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.846775,
+      "poverty_context": {
+        "poor300_rate": 0.0163,
+        "poor420_rate": 0.0643,
+        "poor830_rate": 0.2814,
+        "prosperity_gap_2021": 2.846775,
+        "poor300_display": "1.63%",
+        "poor420_display": "6.43%",
+        "poor830_display": "28.1%",
+        "prosperity_gap_display": "2.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1201
+    },
+    {
+      "place_id": "MEX-ADM1-SINALOA",
+      "place_name": "Sinaloa",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "sinaloa",
+      "adm1_geo_id": "MEX_2015_ADM1_2052",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.17967,
+      "poverty_context": {
+        "poor300_rate": 0.0079,
+        "poor420_rate": 0.0183,
+        "poor830_rate": 0.1465,
+        "prosperity_gap_2021": 2.1796705,
+        "poor300_display": "0.79%",
+        "poor420_display": "1.83%",
+        "poor830_display": "14.6%",
+        "prosperity_gap_display": "2.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1398
+    },
+    {
+      "place_id": "MEX-ADM1-SONORA",
+      "place_name": "Sonora",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "sonora",
+      "adm1_geo_id": "MEX_2015_ADM1_2053",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.211956,
+      "poverty_context": {
+        "poor300_rate": 0.0068,
+        "poor420_rate": 0.0202,
+        "poor830_rate": 0.141,
+        "prosperity_gap_2021": 2.2119558,
+        "poor300_display": "0.68%",
+        "poor420_display": "2.02%",
+        "poor830_display": "14.1%",
+        "prosperity_gap_display": "2.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1391
+    },
+    {
+      "place_id": "MEX-ADM1-TABASCO",
+      "place_name": "Tabasco",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "tabasco",
+      "adm1_geo_id": "MEX_2015_ADM1_2054",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.138874,
+      "poverty_context": {
+        "poor300_rate": 0.0255,
+        "poor420_rate": 0.0774,
+        "poor830_rate": 0.3367,
+        "prosperity_gap_2021": 3.1388738,
+        "poor300_display": "2.55%",
+        "poor420_display": "7.74%",
+        "poor830_display": "33.7%",
+        "prosperity_gap_display": "3.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1137
+    },
+    {
+      "place_id": "MEX-ADM1-TAMAULIPAS",
+      "place_name": "Tamaulipas",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "tamaulipas",
+      "adm1_geo_id": "MEX_2015_ADM1_2055",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.45133,
+      "poverty_context": {
+        "poor300_rate": 0.0112,
+        "poor420_rate": 0.03,
+        "poor830_rate": 0.189,
+        "prosperity_gap_2021": 2.4513296,
+        "poor300_display": "1.12%",
+        "poor420_display": "3.00%",
+        "poor830_display": "18.9%",
+        "prosperity_gap_display": "2.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1308
+    },
+    {
+      "place_id": "MEX-ADM1-TLAXCALA",
+      "place_name": "Tlaxcala",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "tlaxcala",
+      "adm1_geo_id": "MEX_2015_ADM1_2056",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.396153,
+      "poverty_context": {
+        "poor300_rate": 0.0217,
+        "poor420_rate": 0.0621,
+        "poor830_rate": 0.408,
+        "prosperity_gap_2021": 3.3961527,
+        "poor300_display": "2.17%",
+        "poor420_display": "6.21%",
+        "poor830_display": "40.8%",
+        "prosperity_gap_display": "3.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1088
+    },
+    {
+      "place_id": "MEX-ADM1-VERACRUZ",
+      "place_name": "Veracruz",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "veracruz",
+      "adm1_geo_id": "MEX_2015_ADM1_2057",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.464494,
+      "poverty_context": {
+        "poor300_rate": 0.0335,
+        "poor420_rate": 0.0884,
+        "poor830_rate": 0.3924,
+        "prosperity_gap_2021": 3.4644938,
+        "poor300_display": "3.35%",
+        "poor420_display": "8.84%",
+        "poor830_display": "39.2%",
+        "prosperity_gap_display": "3.46"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1078
+    },
+    {
+      "place_id": "MEX-ADM1-YUCATAN",
+      "place_name": "Yucatan",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "yucatan",
+      "adm1_geo_id": "MEX_2015_ADM1_2058",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.743429,
+      "poverty_context": {
+        "poor300_rate": 0.0128,
+        "poor420_rate": 0.0423,
+        "poor830_rate": 0.2675,
+        "prosperity_gap_2021": 2.7434292,
+        "poor300_display": "1.28%",
+        "poor420_display": "4.23%",
+        "poor830_display": "26.8%",
+        "prosperity_gap_display": "2.74"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1227
+    },
+    {
+      "place_id": "MEX-ADM1-ZACATECAS",
+      "place_name": "Zacatecas",
+      "parent_place_id": "MEX",
+      "parent_place_name": "Mexico",
+      "iso3": "MEX",
+      "source_iso3": "MEX",
+      "geometry_level": "adm1",
+      "adm1_key": "zacatecas",
+      "adm1_geo_id": "MEX_2015_ADM1_2059",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MEX/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.430665,
+      "poverty_context": {
+        "poor300_rate": 0.0295,
+        "poor420_rate": 0.0785,
+        "poor830_rate": 0.379,
+        "prosperity_gap_2021": 3.4306649,
+        "poor300_display": "2.95%",
+        "poor420_display": "7.85%",
+        "poor830_display": "37.9%",
+        "prosperity_gap_display": "3.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1080
+    }
+  ]
+}

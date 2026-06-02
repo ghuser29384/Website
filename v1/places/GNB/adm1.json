@@ -1,0 +1,409 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "GNB",
+  "parent_place_name": "Guinea-Bissau",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 9,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "GNB-ADM1-BAFATA",
+      "place_name": "Bafata",
+      "parent_place_id": "GNB",
+      "parent_place_name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "source_iso3": "GNB",
+      "geometry_level": "adm1",
+      "adm1_key": "bafata",
+      "adm1_geo_id": "GNB_2015_ADM1_1385",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.856582,
+      "poverty_context": {
+        "poor300_rate": 0.4927,
+        "poor420_rate": 0.7387,
+        "poor830_rate": 0.9709,
+        "prosperity_gap_2021": 9.8565819,
+        "poor300_display": "49.3%",
+        "poor420_display": "73.9%",
+        "poor830_display": "97.1%",
+        "prosperity_gap_display": "9.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 349
+    },
+    {
+      "place_id": "GNB-ADM1-BIOMBO",
+      "place_name": "Biombo",
+      "parent_place_id": "GNB",
+      "parent_place_name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "source_iso3": "GNB",
+      "geometry_level": "adm1",
+      "adm1_key": "biombo",
+      "adm1_geo_id": "GNB_2015_ADM1_1386",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.129127,
+      "poverty_context": {
+        "poor300_rate": 0.409,
+        "poor420_rate": 0.7499,
+        "poor830_rate": 0.9587,
+        "prosperity_gap_2021": 9.129127,
+        "poor300_display": "40.9%",
+        "poor420_display": "75.0%",
+        "poor830_display": "95.9%",
+        "prosperity_gap_display": "9.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 410
+    },
+    {
+      "place_id": "GNB-ADM1-BOLAMA-BIJAGOS",
+      "place_name": "Bolama/bijagos",
+      "parent_place_id": "GNB",
+      "parent_place_name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "source_iso3": "GNB",
+      "geometry_level": "adm1",
+      "adm1_key": "bolama bijagos",
+      "adm1_geo_id": "GNB_2015_ADM1_1387",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.80851,
+      "poverty_context": {
+        "poor300_rate": 0.4865,
+        "poor420_rate": 0.7087,
+        "poor830_rate": 0.9726,
+        "prosperity_gap_2021": 9.8085101,
+        "poor300_display": "48.6%",
+        "poor420_display": "70.9%",
+        "poor830_display": "97.3%",
+        "prosperity_gap_display": "9.81"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 355
+    },
+    {
+      "place_id": "GNB-ADM1-CACHEU",
+      "place_name": "Cacheu",
+      "parent_place_id": "GNB",
+      "parent_place_name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "source_iso3": "GNB",
+      "geometry_level": "adm1",
+      "adm1_key": "cacheu",
+      "adm1_geo_id": "GNB_2015_ADM1_1388",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.195809,
+      "poverty_context": {
+        "poor300_rate": 0.391,
+        "poor420_rate": 0.6811,
+        "poor830_rate": 0.9584,
+        "prosperity_gap_2021": 9.1958092,
+        "poor300_display": "39.1%",
+        "poor420_display": "68.1%",
+        "poor830_display": "95.8%",
+        "prosperity_gap_display": "9.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 406
+    },
+    {
+      "place_id": "GNB-ADM1-GABU",
+      "place_name": "Gabu",
+      "parent_place_id": "GNB",
+      "parent_place_name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "source_iso3": "GNB",
+      "geometry_level": "adm1",
+      "adm1_key": "gabu",
+      "adm1_geo_id": "GNB_2015_ADM1_1389",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.578368,
+      "poverty_context": {
+        "poor300_rate": 0.5739,
+        "poor420_rate": 0.7819,
+        "poor830_rate": 0.9778,
+        "prosperity_gap_2021": 11.578368,
+        "poor300_display": "57.4%",
+        "poor420_display": "78.2%",
+        "poor830_display": "97.8%",
+        "prosperity_gap_display": "11.58"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 242
+    },
+    {
+      "place_id": "GNB-ADM1-OIO",
+      "place_name": "Oio",
+      "parent_place_id": "GNB",
+      "parent_place_name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "source_iso3": "GNB",
+      "geometry_level": "adm1",
+      "adm1_key": "oio",
+      "adm1_geo_id": "GNB_2015_ADM1_1390",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.515561,
+      "poverty_context": {
+        "poor300_rate": 0.6396,
+        "poor420_rate": 0.8494,
+        "poor830_rate": 0.9906,
+        "prosperity_gap_2021": 11.515561,
+        "poor300_display": "64.0%",
+        "poor420_display": "84.9%",
+        "poor830_display": "99.1%",
+        "prosperity_gap_display": "11.52"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 248
+    },
+    {
+      "place_id": "GNB-ADM1-QUINARA",
+      "place_name": "Quinara",
+      "parent_place_id": "GNB",
+      "parent_place_name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "source_iso3": "GNB",
+      "geometry_level": "adm1",
+      "adm1_key": "quinara",
+      "adm1_geo_id": "GNB_2015_ADM1_1391",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.924099,
+      "poverty_context": {
+        "poor300_rate": 0.5635,
+        "poor420_rate": 0.8421,
+        "poor830_rate": 0.9948,
+        "prosperity_gap_2021": 10.924099,
+        "poor300_display": "56.4%",
+        "poor420_display": "84.2%",
+        "poor830_display": "99.5%",
+        "prosperity_gap_display": "10.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 287
+    },
+    {
+      "place_id": "GNB-ADM1-SECTOR-AUTONOMO-DE-BISSAU",
+      "place_name": "Sector Autonomo De Bissau",
+      "parent_place_id": "GNB",
+      "parent_place_name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "source_iso3": "GNB",
+      "geometry_level": "adm1",
+      "adm1_key": "sector autonomo de bissau",
+      "adm1_geo_id": "GNB_2015_ADM1_1392",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.009188,
+      "poverty_context": {
+        "poor300_rate": 0.0365,
+        "poor420_rate": 0.1972,
+        "poor830_rate": 0.7324,
+        "prosperity_gap_2021": 5.0091885,
+        "poor300_display": "3.65%",
+        "poor420_display": "19.7%",
+        "poor830_display": "73.2%",
+        "prosperity_gap_display": "5.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 806
+    },
+    {
+      "place_id": "GNB-ADM1-TOMBALI",
+      "place_name": "Tombali",
+      "parent_place_id": "GNB",
+      "parent_place_name": "Guinea-Bissau",
+      "iso3": "GNB",
+      "source_iso3": "GNB",
+      "geometry_level": "adm1",
+      "adm1_key": "tombali",
+      "adm1_geo_id": "GNB_2015_ADM1_1393",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GNB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.573401,
+      "poverty_context": {
+        "poor300_rate": 0.4601,
+        "poor420_rate": 0.7497,
+        "poor830_rate": 0.975,
+        "prosperity_gap_2021": 9.5734006,
+        "poor300_display": "46.0%",
+        "poor420_display": "75.0%",
+        "poor830_display": "97.5%",
+        "prosperity_gap_display": "9.57"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 376
+    }
+  ]
+}

@@ -1,0 +1,3401 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "THA",
+  "parent_place_name": "Thailand",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 77,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "THA-ADM1-AMNAT-CHAROEN",
+      "place_name": "Amnat Charoen",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "amnat charoen",
+      "adm1_geo_id": "THA_2015_ADM1_2851",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.104537,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1092,
+        "prosperity_gap_2021": 2.1045373,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "10.9%",
+        "prosperity_gap_display": "2.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1431
+    },
+    {
+      "place_id": "THA-ADM1-ANG-THONG",
+      "place_name": "Ang Thong",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "ang thong",
+      "adm1_geo_id": "THA_2015_ADM1_2852",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.20557,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0013,
+        "poor830_rate": 0.1035,
+        "prosperity_gap_2021": 2.2055705,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.13%",
+        "poor830_display": "10.3%",
+        "prosperity_gap_display": "2.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1393
+    },
+    {
+      "place_id": "THA-ADM1-BANGKOK",
+      "place_name": "Bangkok",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "bangkok",
+      "adm1_geo_id": "THA_2015_ADM1_2853",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.13464,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0066,
+        "prosperity_gap_2021": 1.1346398,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.66%",
+        "prosperity_gap_display": "1.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1691
+    },
+    {
+      "place_id": "THA-ADM1-BUNG-KAN-AND-BUNG-KHLA-AND-BUNG-KHONG-LONG-AND-PAK-KHAT-AND-PHO-85A525C8",
+      "place_name": "Bung Kan & Bung Khla & Bung Khong Long & Pak Khat & Phon Charoen & Seka & Si Wichai & So Phisai",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "bung kan and bung khla and bung khong long and pak khat and phon charoen and seka and si wichai and so phisai",
+      "adm1_geo_id": "THA_2015_ADMx_240_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.847641,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0391,
+        "prosperity_gap_2021": 1.847641,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "3.91%",
+        "prosperity_gap_display": "1.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1510
+    },
+    {
+      "place_id": "THA-ADM1-BURIRAM",
+      "place_name": "Buriram",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "buriram",
+      "adm1_geo_id": "THA_2015_ADM1_2854",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.33811,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1246,
+        "prosperity_gap_2021": 2.33811,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "12.5%",
+        "prosperity_gap_display": "2.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1344
+    },
+    {
+      "place_id": "THA-ADM1-CHACHOENGSAO",
+      "place_name": "Chachoengsao",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "chachoengsao",
+      "adm1_geo_id": "THA_2015_ADM1_2855",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.525551,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0191,
+        "prosperity_gap_2021": 1.5255513,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.91%",
+        "prosperity_gap_display": "1.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1591
+    },
+    {
+      "place_id": "THA-ADM1-CHAINAT",
+      "place_name": "Chainat",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "chainat",
+      "adm1_geo_id": "THA_2015_ADM1_2856",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.170086,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1091,
+        "prosperity_gap_2021": 2.1700859,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "10.9%",
+        "prosperity_gap_display": "2.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1403
+    },
+    {
+      "place_id": "THA-ADM1-CHAIYAPHUM",
+      "place_name": "Chaiyaphum",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "chaiyaphum",
+      "adm1_geo_id": "THA_2015_ADM1_2857",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.382756,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1639,
+        "prosperity_gap_2021": 2.3827564,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "16.4%",
+        "prosperity_gap_display": "2.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1330
+    },
+    {
+      "place_id": "THA-ADM1-CHANTHABURI",
+      "place_name": "Chanthaburi",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "chanthaburi",
+      "adm1_geo_id": "THA_2015_ADM1_2858",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.706925,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0011,
+        "poor830_rate": 0.0571,
+        "prosperity_gap_2021": 1.7069247,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.11%",
+        "poor830_display": "5.71%",
+        "prosperity_gap_display": "1.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1544
+    },
+    {
+      "place_id": "THA-ADM1-CHIANG-MAI",
+      "place_name": "Chiang Mai",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "chiang mai",
+      "adm1_geo_id": "THA_2015_ADM1_2859",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.102802,
+      "poverty_context": {
+        "poor300_rate": 0.0016,
+        "poor420_rate": 0.009,
+        "poor830_rate": 0.1581,
+        "prosperity_gap_2021": 2.1028023,
+        "poor300_display": "0.16%",
+        "poor420_display": "0.90%",
+        "poor830_display": "15.8%",
+        "prosperity_gap_display": "2.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1432
+    },
+    {
+      "place_id": "THA-ADM1-CHIANG-RAI",
+      "place_name": "Chiang Rai",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "chiang rai",
+      "adm1_geo_id": "THA_2015_ADM1_2860",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.929542,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.3051,
+        "prosperity_gap_2021": 2.9295419,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "30.5%",
+        "prosperity_gap_display": "2.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1185
+    },
+    {
+      "place_id": "THA-ADM1-CHONBURI",
+      "place_name": "Chonburi",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "chonburi",
+      "adm1_geo_id": "THA_2015_ADM1_2861",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.197262,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0065,
+        "prosperity_gap_2021": 1.1972617,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.65%",
+        "prosperity_gap_display": "1.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1671
+    },
+    {
+      "place_id": "THA-ADM1-CHUMPHON",
+      "place_name": "Chumphon",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "chumphon",
+      "adm1_geo_id": "THA_2015_ADM1_2862",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.753398,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0368,
+        "prosperity_gap_2021": 1.7533981,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "3.68%",
+        "prosperity_gap_display": "1.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1537
+    },
+    {
+      "place_id": "THA-ADM1-KALASIN",
+      "place_name": "Kalasin",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "kalasin",
+      "adm1_geo_id": "THA_2015_ADM1_2863",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.539707,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0046,
+        "poor830_rate": 0.1936,
+        "prosperity_gap_2021": 2.5397071,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.46%",
+        "poor830_display": "19.4%",
+        "prosperity_gap_display": "2.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1283
+    },
+    {
+      "place_id": "THA-ADM1-KAMPAENG-PHET",
+      "place_name": "Kampaeng Phet",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "kampaeng phet",
+      "adm1_geo_id": "THA_2015_ADM1_2864",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.140253,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0997,
+        "prosperity_gap_2021": 2.1402532,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "9.97%",
+        "prosperity_gap_display": "2.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1417
+    },
+    {
+      "place_id": "THA-ADM1-KANCHANABURI",
+      "place_name": "Kanchanaburi",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "kanchanaburi",
+      "adm1_geo_id": "THA_2015_ADM1_2865",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.116661,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1099,
+        "prosperity_gap_2021": 2.116661,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "11.0%",
+        "prosperity_gap_display": "2.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1425
+    },
+    {
+      "place_id": "THA-ADM1-KHON-KAEN",
+      "place_name": "Khon Kaen",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "khon kaen",
+      "adm1_geo_id": "THA_2015_ADM1_2866",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.983411,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0316,
+        "prosperity_gap_2021": 1.9834114,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "3.16%",
+        "prosperity_gap_display": "1.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1473
+    },
+    {
+      "place_id": "THA-ADM1-KRABI",
+      "place_name": "Krabi",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "krabi",
+      "adm1_geo_id": "THA_2015_ADM1_2867",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.990837,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0013,
+        "poor830_rate": 0.0782,
+        "prosperity_gap_2021": 1.9908373,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.13%",
+        "poor830_display": "7.82%",
+        "prosperity_gap_display": "1.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1470
+    },
+    {
+      "place_id": "THA-ADM1-LAMPANG",
+      "place_name": "Lampang",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "lampang",
+      "adm1_geo_id": "THA_2015_ADM1_2868",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.158074,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0021,
+        "poor830_rate": 0.1287,
+        "prosperity_gap_2021": 2.158074,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.21%",
+        "poor830_display": "12.9%",
+        "prosperity_gap_display": "2.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1407
+    },
+    {
+      "place_id": "THA-ADM1-LAMPHUN",
+      "place_name": "Lamphun",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "lamphun",
+      "adm1_geo_id": "THA_2015_ADM1_2869",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.701656,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.025,
+        "prosperity_gap_2021": 1.7016565,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "2.50%",
+        "prosperity_gap_display": "1.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1547
+    },
+    {
+      "place_id": "THA-ADM1-LOEI",
+      "place_name": "Loei",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "loei",
+      "adm1_geo_id": "THA_2015_ADM1_2870",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.039689,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0498,
+        "prosperity_gap_2021": 2.0396894,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "4.98%",
+        "prosperity_gap_display": "2.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1451
+    },
+    {
+      "place_id": "THA-ADM1-LOPBURI",
+      "place_name": "Lopburi",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "lopburi",
+      "adm1_geo_id": "THA_2015_ADM1_2871",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.008206,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0029,
+        "poor830_rate": 0.1001,
+        "prosperity_gap_2021": 2.008206,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.29%",
+        "poor830_display": "10.0%",
+        "prosperity_gap_display": "2.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1465
+    },
+    {
+      "place_id": "THA-ADM1-MAE-HONG-SON",
+      "place_name": "Mae Hong Son",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "mae hong son",
+      "adm1_geo_id": "THA_2015_ADM1_2872",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.962548,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0076,
+        "poor830_rate": 0.3362,
+        "prosperity_gap_2021": 2.9625478,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.76%",
+        "poor830_display": "33.6%",
+        "prosperity_gap_display": "2.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1174
+    },
+    {
+      "place_id": "THA-ADM1-MAHA-SARAKHAM",
+      "place_name": "Maha Sarakham",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "maha sarakham",
+      "adm1_geo_id": "THA_2015_ADM1_2873",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.024981,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0779,
+        "prosperity_gap_2021": 2.0249806,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "7.79%",
+        "prosperity_gap_display": "2.02"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1460
+    },
+    {
+      "place_id": "THA-ADM1-MUANG-NONG-KHAI-AND-PHON-PHISAI-AND-SANGKHOM-AND-SI-CHIANG-MAI-85B07BEE",
+      "place_name": "Muang Nong Khai & Phon Phisai & Sangkhom & Si Chiang Mai & Tha Bo",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "muang nong khai and phon phisai and sangkhom and si chiang mai and tha bo",
+      "adm1_geo_id": "THA_2015_ADMx_240_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.981515,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.071,
+        "prosperity_gap_2021": 1.9815149,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "7.10%",
+        "prosperity_gap_display": "1.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1475
+    },
+    {
+      "place_id": "THA-ADM1-MUKDAHAN",
+      "place_name": "Mukdahan",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "mukdahan",
+      "adm1_geo_id": "THA_2015_ADM1_2874",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.270988,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1313,
+        "prosperity_gap_2021": 2.2709877,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "13.1%",
+        "prosperity_gap_display": "2.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1370
+    },
+    {
+      "place_id": "THA-ADM1-NAKHON-NAYOK",
+      "place_name": "Nakhon Nayok",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "nakhon nayok",
+      "adm1_geo_id": "THA_2015_ADM1_2875",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.816219,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0343,
+        "prosperity_gap_2021": 1.8162187,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "3.43%",
+        "prosperity_gap_display": "1.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1518
+    },
+    {
+      "place_id": "THA-ADM1-NAKHON-PATHOM",
+      "place_name": "Nakhon Pathom",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "nakhon pathom",
+      "adm1_geo_id": "THA_2015_ADM1_2876",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.587624,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0043,
+        "prosperity_gap_2021": 1.5876244,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.43%",
+        "prosperity_gap_display": "1.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1575
+    },
+    {
+      "place_id": "THA-ADM1-NAKHON-PHANOM",
+      "place_name": "Nakhon Phanom",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "nakhon phanom",
+      "adm1_geo_id": "THA_2015_ADM1_2877",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.421232,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1964,
+        "prosperity_gap_2021": 2.4212319,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "19.6%",
+        "prosperity_gap_display": "2.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1318
+    },
+    {
+      "place_id": "THA-ADM1-NAKHON-RATCHASIMA",
+      "place_name": "Nakhon Ratchasima",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "nakhon ratchasima",
+      "adm1_geo_id": "THA_2015_ADM1_2878",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.391851,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0014,
+        "poor830_rate": 0.2178,
+        "prosperity_gap_2021": 2.3918512,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.14%",
+        "poor830_display": "21.8%",
+        "prosperity_gap_display": "2.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1328
+    },
+    {
+      "place_id": "THA-ADM1-NAKHON-SAWAN",
+      "place_name": "Nakhon Sawan",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "nakhon sawan",
+      "adm1_geo_id": "THA_2015_ADM1_2879",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.147711,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0926,
+        "prosperity_gap_2021": 2.1477106,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "9.26%",
+        "prosperity_gap_display": "2.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1414
+    },
+    {
+      "place_id": "THA-ADM1-NAKHON-SI-THAMMARAT",
+      "place_name": "Nakhon Si Thammarat",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "nakhon si thammarat",
+      "adm1_geo_id": "THA_2015_ADM1_2880",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.229325,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0016,
+        "poor830_rate": 0.1314,
+        "prosperity_gap_2021": 2.2293255,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.16%",
+        "poor830_display": "13.1%",
+        "prosperity_gap_display": "2.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1383
+    },
+    {
+      "place_id": "THA-ADM1-NAN",
+      "place_name": "Nan",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "nan",
+      "adm1_geo_id": "THA_2015_ADM1_2881",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.319781,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1498,
+        "prosperity_gap_2021": 2.319781,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "15.0%",
+        "prosperity_gap_display": "2.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1350
+    },
+    {
+      "place_id": "THA-ADM1-NARATHIWAT",
+      "place_name": "Narathiwat",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "narathiwat",
+      "adm1_geo_id": "THA_2015_ADM1_2882",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.79447,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0175,
+        "poor830_rate": 0.2988,
+        "prosperity_gap_2021": 2.7944701,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.75%",
+        "poor830_display": "29.9%",
+        "prosperity_gap_display": "2.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1214
+    },
+    {
+      "place_id": "THA-ADM1-NONG-BUA-LAMPHU",
+      "place_name": "Nong Bua Lamphu",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "nong bua lamphu",
+      "adm1_geo_id": "THA_2015_ADM1_2883",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.597467,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.247,
+        "prosperity_gap_2021": 2.5974667,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "24.7%",
+        "prosperity_gap_display": "2.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1268
+    },
+    {
+      "place_id": "THA-ADM1-NONTHABURI",
+      "place_name": "Nonthaburi",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "nonthaburi",
+      "adm1_geo_id": "THA_2015_ADM1_2885",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.050601,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 1.0506012,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "1.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1721
+    },
+    {
+      "place_id": "THA-ADM1-PATHUM-THANI",
+      "place_name": "Pathum Thani",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "pathum thani",
+      "adm1_geo_id": "THA_2015_ADM1_2886",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.237525,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0145,
+        "prosperity_gap_2021": 1.2375248,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.45%",
+        "prosperity_gap_display": "1.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1652
+    },
+    {
+      "place_id": "THA-ADM1-PATTANI",
+      "place_name": "Pattani",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "pattani",
+      "adm1_geo_id": "THA_2015_ADM1_2887",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.125146,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0184,
+        "poor830_rate": 0.3834,
+        "prosperity_gap_2021": 3.1251457,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.84%",
+        "poor830_display": "38.3%",
+        "prosperity_gap_display": "3.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1139
+    },
+    {
+      "place_id": "THA-ADM1-PHACHINBURI",
+      "place_name": "Phachinburi",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "phachinburi",
+      "adm1_geo_id": "THA_2015_ADM1_2888",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.175912,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0031,
+        "poor830_rate": 0.1315,
+        "prosperity_gap_2021": 2.1759123,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.31%",
+        "poor830_display": "13.2%",
+        "prosperity_gap_display": "2.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1401
+    },
+    {
+      "place_id": "THA-ADM1-PHANGNGA",
+      "place_name": "Phangnga",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "phangnga",
+      "adm1_geo_id": "THA_2015_ADM1_2889",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.029344,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0021,
+        "poor830_rate": 0.121,
+        "prosperity_gap_2021": 2.0293438,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.21%",
+        "poor830_display": "12.1%",
+        "prosperity_gap_display": "2.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1458
+    },
+    {
+      "place_id": "THA-ADM1-PHATTHALUNG",
+      "place_name": "Phatthalung",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "phatthalung",
+      "adm1_geo_id": "THA_2015_ADM1_2890",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.166759,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1152,
+        "prosperity_gap_2021": 2.1667591,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "11.5%",
+        "prosperity_gap_display": "2.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1406
+    },
+    {
+      "place_id": "THA-ADM1-PHAYAO",
+      "place_name": "Phayao",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "phayao",
+      "adm1_geo_id": "THA_2015_ADM1_2891",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.267148,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0944,
+        "prosperity_gap_2021": 2.2671479,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "9.44%",
+        "prosperity_gap_display": "2.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1371
+    },
+    {
+      "place_id": "THA-ADM1-PHETCHABUN",
+      "place_name": "Phetchabun",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "phetchabun",
+      "adm1_geo_id": "THA_2015_ADM1_2892",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.309854,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1501,
+        "prosperity_gap_2021": 2.3098535,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "15.0%",
+        "prosperity_gap_display": "2.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1356
+    },
+    {
+      "place_id": "THA-ADM1-PHETCHABURI",
+      "place_name": "Phetchaburi",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "phetchaburi",
+      "adm1_geo_id": "THA_2015_ADM1_2893",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.953765,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.079,
+        "prosperity_gap_2021": 1.953765,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "7.90%",
+        "prosperity_gap_display": "1.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1486
+    },
+    {
+      "place_id": "THA-ADM1-PHICHIT",
+      "place_name": "Phichit",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "phichit",
+      "adm1_geo_id": "THA_2015_ADM1_2894",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.125913,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0009,
+        "poor830_rate": 0.0506,
+        "prosperity_gap_2021": 2.1259134,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.09%",
+        "poor830_display": "5.06%",
+        "prosperity_gap_display": "2.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1423
+    },
+    {
+      "place_id": "THA-ADM1-PHITSANULOK",
+      "place_name": "Phitsanulok",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "phitsanulok",
+      "adm1_geo_id": "THA_2015_ADM1_2895",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.980452,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0605,
+        "prosperity_gap_2021": 1.9804525,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "6.05%",
+        "prosperity_gap_display": "1.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1476
+    },
+    {
+      "place_id": "THA-ADM1-PHRA-NAKHON-SI-AYUDHYA",
+      "place_name": "Phra Nakhon Si Ayudhya",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "phra nakhon si ayudhya",
+      "adm1_geo_id": "THA_2015_ADM1_2896",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.623507,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0323,
+        "prosperity_gap_2021": 1.6235071,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "3.23%",
+        "prosperity_gap_display": "1.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1564
+    },
+    {
+      "place_id": "THA-ADM1-PHRAE",
+      "place_name": "Phrae",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "phrae",
+      "adm1_geo_id": "THA_2015_ADM1_2897",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.28929,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1532,
+        "prosperity_gap_2021": 2.2892901,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "15.3%",
+        "prosperity_gap_display": "2.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1362
+    },
+    {
+      "place_id": "THA-ADM1-PHUKET",
+      "place_name": "Phuket",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "phuket",
+      "adm1_geo_id": "THA_2015_ADM1_2898",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.141867,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 1.1418666,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "1.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1687
+    },
+    {
+      "place_id": "THA-ADM1-PRACHUAP-KHILIKHAN",
+      "place_name": "Prachuap Khilikhan",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "prachuap khilikhan",
+      "adm1_geo_id": "THA_2015_ADM1_2899",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.725388,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0327,
+        "prosperity_gap_2021": 1.7253879,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "3.27%",
+        "prosperity_gap_display": "1.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1541
+    },
+    {
+      "place_id": "THA-ADM1-RANONG",
+      "place_name": "Ranong",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "ranong",
+      "adm1_geo_id": "THA_2015_ADM1_2900",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.363575,
+      "poverty_context": {
+        "poor300_rate": 0.0054,
+        "poor420_rate": 0.0054,
+        "poor830_rate": 0.1799,
+        "prosperity_gap_2021": 2.3635751,
+        "poor300_display": "0.54%",
+        "poor420_display": "0.54%",
+        "poor830_display": "18.0%",
+        "prosperity_gap_display": "2.36"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1336
+    },
+    {
+      "place_id": "THA-ADM1-RATCHABURI",
+      "place_name": "Ratchaburi",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "ratchaburi",
+      "adm1_geo_id": "THA_2015_ADM1_2901",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.785498,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0019,
+        "poor830_rate": 0.0442,
+        "prosperity_gap_2021": 1.7854977,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.19%",
+        "poor830_display": "4.42%",
+        "prosperity_gap_display": "1.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1527
+    },
+    {
+      "place_id": "THA-ADM1-RAYONG",
+      "place_name": "Rayong",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "rayong",
+      "adm1_geo_id": "THA_2015_ADM1_2902",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.149549,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0087,
+        "prosperity_gap_2021": 1.1495487,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.87%",
+        "prosperity_gap_display": "1.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1683
+    },
+    {
+      "place_id": "THA-ADM1-ROI-ET",
+      "place_name": "Roi Et",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "roi et",
+      "adm1_geo_id": "THA_2015_ADM1_2903",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.068716,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0033,
+        "poor830_rate": 0.083,
+        "prosperity_gap_2021": 2.0687163,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.33%",
+        "poor830_display": "8.30%",
+        "prosperity_gap_display": "2.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1442
+    },
+    {
+      "place_id": "THA-ADM1-SA-KAEO",
+      "place_name": "Sa Kaeo",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "sa kaeo",
+      "adm1_geo_id": "THA_2015_ADM1_2904",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.362619,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.007,
+        "poor830_rate": 0.1663,
+        "prosperity_gap_2021": 2.3626191,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.70%",
+        "poor830_display": "16.6%",
+        "prosperity_gap_display": "2.36"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1337
+    },
+    {
+      "place_id": "THA-ADM1-SAKON-NAKHON",
+      "place_name": "Sakon Nakhon",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "sakon nakhon",
+      "adm1_geo_id": "THA_2015_ADM1_2905",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.472465,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0019,
+        "poor830_rate": 0.1734,
+        "prosperity_gap_2021": 2.4724648,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.19%",
+        "poor830_display": "17.3%",
+        "prosperity_gap_display": "2.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1304
+    },
+    {
+      "place_id": "THA-ADM1-SAMUT-PRAKARN",
+      "place_name": "Samut Prakarn",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "samut prakarn",
+      "adm1_geo_id": "THA_2015_ADM1_2906",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.269387,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0027,
+        "poor830_rate": 0.0059,
+        "prosperity_gap_2021": 1.2693868,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.27%",
+        "poor830_display": "0.59%",
+        "prosperity_gap_display": "1.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1643
+    },
+    {
+      "place_id": "THA-ADM1-SAMUT-SAKHON",
+      "place_name": "Samut Sakhon",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "samut sakhon",
+      "adm1_geo_id": "THA_2015_ADM1_2907",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.706167,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.038,
+        "prosperity_gap_2021": 1.7061668,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "3.80%",
+        "prosperity_gap_display": "1.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1546
+    },
+    {
+      "place_id": "THA-ADM1-SAMUT-SONGKHAM",
+      "place_name": "Samut Songkham",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "samut songkham",
+      "adm1_geo_id": "THA_2015_ADM1_2908",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.888186,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0621,
+        "prosperity_gap_2021": 1.8881864,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "6.21%",
+        "prosperity_gap_display": "1.89"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1502
+    },
+    {
+      "place_id": "THA-ADM1-SARABURI",
+      "place_name": "Saraburi",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "saraburi",
+      "adm1_geo_id": "THA_2015_ADM1_2909",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.587935,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.045,
+        "prosperity_gap_2021": 1.5879345,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "4.50%",
+        "prosperity_gap_display": "1.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1573
+    },
+    {
+      "place_id": "THA-ADM1-SATUN",
+      "place_name": "Satun",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "satun",
+      "adm1_geo_id": "THA_2015_ADM1_2910",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.614486,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0021,
+        "poor830_rate": 0.2133,
+        "prosperity_gap_2021": 2.6144863,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.21%",
+        "poor830_display": "21.3%",
+        "prosperity_gap_display": "2.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1262
+    },
+    {
+      "place_id": "THA-ADM1-SI-SAKET",
+      "place_name": "Si Saket",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "si saket",
+      "adm1_geo_id": "THA_2015_ADM1_2911",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.617819,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.217,
+        "prosperity_gap_2021": 2.6178189,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "21.7%",
+        "prosperity_gap_display": "2.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1261
+    },
+    {
+      "place_id": "THA-ADM1-SINGBURI",
+      "place_name": "Singburi",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "singburi",
+      "adm1_geo_id": "THA_2015_ADM1_2912",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.977168,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.001,
+        "poor830_rate": 0.0873,
+        "prosperity_gap_2021": 1.9771684,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.10%",
+        "poor830_display": "8.73%",
+        "prosperity_gap_display": "1.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1477
+    },
+    {
+      "place_id": "THA-ADM1-SONGKHLA",
+      "place_name": "Songkhla",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "songkhla",
+      "adm1_geo_id": "THA_2015_ADM1_2913",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.831063,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0488,
+        "prosperity_gap_2021": 1.8310627,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "4.88%",
+        "prosperity_gap_display": "1.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1517
+    },
+    {
+      "place_id": "THA-ADM1-SUKHOTHAI",
+      "place_name": "Sukhothai",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "sukhothai",
+      "adm1_geo_id": "THA_2015_ADM1_2914",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.404149,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0021,
+        "poor830_rate": 0.1544,
+        "prosperity_gap_2021": 2.4041492,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.21%",
+        "poor830_display": "15.4%",
+        "prosperity_gap_display": "2.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1323
+    },
+    {
+      "place_id": "THA-ADM1-SUPHANBURI",
+      "place_name": "Suphanburi",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "suphanburi",
+      "adm1_geo_id": "THA_2015_ADM1_2915",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.117885,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0036,
+        "poor830_rate": 0.0769,
+        "prosperity_gap_2021": 2.1178848,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.36%",
+        "poor830_display": "7.69%",
+        "prosperity_gap_display": "2.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1424
+    },
+    {
+      "place_id": "THA-ADM1-SURAT-THANI",
+      "place_name": "Surat Thani",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "surat thani",
+      "adm1_geo_id": "THA_2015_ADM1_2916",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.770161,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0513,
+        "prosperity_gap_2021": 1.770161,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "5.13%",
+        "prosperity_gap_display": "1.77"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1534
+    },
+    {
+      "place_id": "THA-ADM1-SURIN",
+      "place_name": "Surin",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "surin",
+      "adm1_geo_id": "THA_2015_ADM1_2917",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.551124,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.2114,
+        "prosperity_gap_2021": 2.5511245,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "21.1%",
+        "prosperity_gap_display": "2.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1281
+    },
+    {
+      "place_id": "THA-ADM1-TAK",
+      "place_name": "Tak",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "tak",
+      "adm1_geo_id": "THA_2015_ADM1_2918",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.706998,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0058,
+        "poor830_rate": 0.3012,
+        "prosperity_gap_2021": 2.7069982,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.58%",
+        "poor830_display": "30.1%",
+        "prosperity_gap_display": "2.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1234
+    },
+    {
+      "place_id": "THA-ADM1-TRAD",
+      "place_name": "Trad",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "trad",
+      "adm1_geo_id": "THA_2015_ADM1_2919",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.025013,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0035,
+        "poor830_rate": 0.0964,
+        "prosperity_gap_2021": 2.0250131,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.35%",
+        "poor830_display": "9.64%",
+        "prosperity_gap_display": "2.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1459
+    },
+    {
+      "place_id": "THA-ADM1-TRANG",
+      "place_name": "Trang",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "trang",
+      "adm1_geo_id": "THA_2015_ADM1_2920",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.233159,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1415,
+        "prosperity_gap_2021": 2.2331589,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "14.1%",
+        "prosperity_gap_display": "2.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1381
+    },
+    {
+      "place_id": "THA-ADM1-UBON-RATCHATHANI",
+      "place_name": "Ubon Ratchathani",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "ubon ratchathani",
+      "adm1_geo_id": "THA_2015_ADM1_2921",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.822365,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.3196,
+        "prosperity_gap_2021": 2.8223646,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "32.0%",
+        "prosperity_gap_display": "2.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1206
+    },
+    {
+      "place_id": "THA-ADM1-UDON-THANI",
+      "place_name": "Udon Thani",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "udon thani",
+      "adm1_geo_id": "THA_2015_ADM1_2922",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.143817,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0981,
+        "prosperity_gap_2021": 2.1438166,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "9.81%",
+        "prosperity_gap_display": "2.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1415
+    },
+    {
+      "place_id": "THA-ADM1-UTHAI-THANI",
+      "place_name": "Uthai Thani",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "uthai thani",
+      "adm1_geo_id": "THA_2015_ADM1_2923",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.448459,
+      "poverty_context": {
+        "poor300_rate": 0.0056,
+        "poor420_rate": 0.0056,
+        "poor830_rate": 0.1748,
+        "prosperity_gap_2021": 2.4484595,
+        "poor300_display": "0.56%",
+        "poor420_display": "0.56%",
+        "poor830_display": "17.5%",
+        "prosperity_gap_display": "2.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1310
+    },
+    {
+      "place_id": "THA-ADM1-UTTARADIT",
+      "place_name": "Uttaradit",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "uttaradit",
+      "adm1_geo_id": "THA_2015_ADM1_2924",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.43468,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0019,
+        "poor830_rate": 0.193,
+        "prosperity_gap_2021": 2.43468,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.19%",
+        "poor830_display": "19.3%",
+        "prosperity_gap_display": "2.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1315
+    },
+    {
+      "place_id": "THA-ADM1-YALA",
+      "place_name": "Yala",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "yala",
+      "adm1_geo_id": "THA_2015_ADM1_2925",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.473797,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0079,
+        "poor830_rate": 0.1813,
+        "prosperity_gap_2021": 2.4737973,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.79%",
+        "poor830_display": "18.1%",
+        "prosperity_gap_display": "2.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1303
+    },
+    {
+      "place_id": "THA-ADM1-YASOTHON",
+      "place_name": "Yasothon",
+      "parent_place_id": "THA",
+      "parent_place_name": "Thailand",
+      "iso3": "THA",
+      "source_iso3": "THA",
+      "geometry_level": "adm1",
+      "adm1_key": "yasothon",
+      "adm1_geo_id": "THA_2015_ADM1_2926",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/THA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.224137,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.072,
+        "prosperity_gap_2021": 2.2241371,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "7.20%",
+        "prosperity_gap_display": "2.22"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1385
+    }
+  ]
+}

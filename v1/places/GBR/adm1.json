@@ -1,0 +1,541 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "GBR",
+  "parent_place_name": "United Kingdom",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 12,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "GBR-ADM1-EAST-MIDLANDS-ENGLAND-UKF",
+      "place_name": "East Midlands (England) (UKF)",
+      "parent_place_id": "GBR",
+      "parent_place_name": "United Kingdom",
+      "iso3": "GBR",
+      "source_iso3": "GBR",
+      "geometry_level": "adm1",
+      "adm1_key": "east midlands england ukf",
+      "adm1_geo_id": "GBR_2015_ADMx_NUTS_UKF",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.803609,
+      "poverty_context": {
+        "poor300_rate": 0.0002,
+        "poor420_rate": 0.0009,
+        "poor830_rate": 0.009,
+        "prosperity_gap_2021": 0.80360907,
+        "poor300_display": "0.02%",
+        "poor420_display": "0.09%",
+        "poor830_display": "0.90%",
+        "prosperity_gap_display": "0.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1805
+    },
+    {
+      "place_id": "GBR-ADM1-EAST-OF-ENGLAND-UKH",
+      "place_name": "East of England (UKH)",
+      "parent_place_id": "GBR",
+      "parent_place_name": "United Kingdom",
+      "iso3": "GBR",
+      "source_iso3": "GBR",
+      "geometry_level": "adm1",
+      "adm1_key": "east of england ukh",
+      "adm1_geo_id": "GBR_2015_ADMx_NUTS_UKH",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.62941,
+      "poverty_context": {
+        "poor300_rate": 0.0004,
+        "poor420_rate": 0.0004,
+        "poor830_rate": 0.0007,
+        "prosperity_gap_2021": 0.62941043,
+        "poor300_display": "0.04%",
+        "poor420_display": "0.04%",
+        "poor830_display": "0.07%",
+        "prosperity_gap_display": "0.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1846
+    },
+    {
+      "place_id": "GBR-ADM1-LONDON-UKI",
+      "place_name": "London (UKI)",
+      "parent_place_id": "GBR",
+      "parent_place_name": "United Kingdom",
+      "iso3": "GBR",
+      "source_iso3": "GBR",
+      "geometry_level": "adm1",
+      "adm1_key": "london uki",
+      "adm1_geo_id": "GBR_2015_ADMx_NUTS_UKI",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.898821,
+      "poverty_context": {
+        "poor300_rate": 0.0086,
+        "poor420_rate": 0.0087,
+        "poor830_rate": 0.0252,
+        "prosperity_gap_2021": 0.89882077,
+        "poor300_display": "0.86%",
+        "poor420_display": "0.87%",
+        "poor830_display": "2.52%",
+        "prosperity_gap_display": "0.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1775
+    },
+    {
+      "place_id": "GBR-ADM1-NORTH-EAST-ENGLAND-UKC",
+      "place_name": "North East (England) (UKC)",
+      "parent_place_id": "GBR",
+      "parent_place_name": "United Kingdom",
+      "iso3": "GBR",
+      "source_iso3": "GBR",
+      "geometry_level": "adm1",
+      "adm1_key": "north east england ukc",
+      "adm1_geo_id": "GBR_2015_ADMx_NUTS_UKC",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.092776,
+      "poverty_context": {
+        "poor300_rate": 0.0045,
+        "poor420_rate": 0.0045,
+        "poor830_rate": 0.0143,
+        "prosperity_gap_2021": 1.0927756,
+        "poor300_display": "0.45%",
+        "poor420_display": "0.45%",
+        "poor830_display": "1.43%",
+        "prosperity_gap_display": "1.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1708
+    },
+    {
+      "place_id": "GBR-ADM1-NORTH-WEST-ENGLAND-UKD",
+      "place_name": "North West (England) (UKD)",
+      "parent_place_id": "GBR",
+      "parent_place_name": "United Kingdom",
+      "iso3": "GBR",
+      "source_iso3": "GBR",
+      "geometry_level": "adm1",
+      "adm1_key": "north west england ukd",
+      "adm1_geo_id": "GBR_2015_ADMx_NUTS_UKD",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.841302,
+      "poverty_context": {
+        "poor300_rate": 0.0012,
+        "poor420_rate": 0.0012,
+        "poor830_rate": 0.0087,
+        "prosperity_gap_2021": 0.84130233,
+        "poor300_display": "0.12%",
+        "poor420_display": "0.12%",
+        "poor830_display": "0.87%",
+        "prosperity_gap_display": "0.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1795
+    },
+    {
+      "place_id": "GBR-ADM1-NORTHERN-IRELAND-UKN",
+      "place_name": "Northern Ireland (UKN)",
+      "parent_place_id": "GBR",
+      "parent_place_name": "United Kingdom",
+      "iso3": "GBR",
+      "source_iso3": "GBR",
+      "geometry_level": "adm1",
+      "adm1_key": "northern ireland ukn",
+      "adm1_geo_id": "GBR_2015_ADMx_NUTS_UKN",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.794876,
+      "poverty_context": {
+        "poor300_rate": 0.001,
+        "poor420_rate": 0.001,
+        "poor830_rate": 0.0028,
+        "prosperity_gap_2021": 0.79487553,
+        "poor300_display": "0.10%",
+        "poor420_display": "0.10%",
+        "poor830_display": "0.28%",
+        "prosperity_gap_display": "0.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1809
+    },
+    {
+      "place_id": "GBR-ADM1-SCOTLAND-UKM",
+      "place_name": "Scotland (UKM)",
+      "parent_place_id": "GBR",
+      "parent_place_name": "United Kingdom",
+      "iso3": "GBR",
+      "source_iso3": "GBR",
+      "geometry_level": "adm1",
+      "adm1_key": "scotland ukm",
+      "adm1_geo_id": "GBR_2015_ADMx_NUTS_UKM",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.981322,
+      "poverty_context": {
+        "poor300_rate": 0.0033,
+        "poor420_rate": 0.0037,
+        "poor830_rate": 0.0116,
+        "prosperity_gap_2021": 0.98132178,
+        "poor300_display": "0.33%",
+        "poor420_display": "0.37%",
+        "poor830_display": "1.16%",
+        "prosperity_gap_display": "0.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1746
+    },
+    {
+      "place_id": "GBR-ADM1-SOUTH-EAST-ENGLAND-UKJ",
+      "place_name": "South East (England) (UKJ)",
+      "parent_place_id": "GBR",
+      "parent_place_name": "United Kingdom",
+      "iso3": "GBR",
+      "source_iso3": "GBR",
+      "geometry_level": "adm1",
+      "adm1_key": "south east england ukj",
+      "adm1_geo_id": "GBR_2015_ADMx_NUTS_UKJ",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.803811,
+      "poverty_context": {
+        "poor300_rate": 0.0045,
+        "poor420_rate": 0.0051,
+        "poor830_rate": 0.0066,
+        "prosperity_gap_2021": 0.80381135,
+        "poor300_display": "0.45%",
+        "poor420_display": "0.51%",
+        "poor830_display": "0.66%",
+        "prosperity_gap_display": "0.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1804
+    },
+    {
+      "place_id": "GBR-ADM1-SOUTH-WEST-ENGLAND-UKK",
+      "place_name": "South West (England) (UKK)",
+      "parent_place_id": "GBR",
+      "parent_place_name": "United Kingdom",
+      "iso3": "GBR",
+      "source_iso3": "GBR",
+      "geometry_level": "adm1",
+      "adm1_key": "south west england ukk",
+      "adm1_geo_id": "GBR_2015_ADMx_NUTS_UKK",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.793129,
+      "poverty_context": {
+        "poor300_rate": 0.0017,
+        "poor420_rate": 0.0041,
+        "poor830_rate": 0.0097,
+        "prosperity_gap_2021": 0.79312938,
+        "poor300_display": "0.17%",
+        "poor420_display": "0.41%",
+        "poor830_display": "0.97%",
+        "prosperity_gap_display": "0.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1810
+    },
+    {
+      "place_id": "GBR-ADM1-WALES-UKL",
+      "place_name": "Wales (UKL)",
+      "parent_place_id": "GBR",
+      "parent_place_name": "United Kingdom",
+      "iso3": "GBR",
+      "source_iso3": "GBR",
+      "geometry_level": "adm1",
+      "adm1_key": "wales ukl",
+      "adm1_geo_id": "GBR_2015_ADMx_NUTS_UKL",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.845601,
+      "poverty_context": {
+        "poor300_rate": 0.0007,
+        "poor420_rate": 0.0036,
+        "poor830_rate": 0.0036,
+        "prosperity_gap_2021": 0.84560051,
+        "poor300_display": "0.07%",
+        "poor420_display": "0.36%",
+        "poor830_display": "0.36%",
+        "prosperity_gap_display": "0.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1793
+    },
+    {
+      "place_id": "GBR-ADM1-WEST-MIDLANDS-ENGLAND-UKG",
+      "place_name": "West Midlands (England) (UKG)",
+      "parent_place_id": "GBR",
+      "parent_place_name": "United Kingdom",
+      "iso3": "GBR",
+      "source_iso3": "GBR",
+      "geometry_level": "adm1",
+      "adm1_key": "west midlands england ukg",
+      "adm1_geo_id": "GBR_2015_ADMx_NUTS_UKG",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.895819,
+      "poverty_context": {
+        "poor300_rate": 0.0013,
+        "poor420_rate": 0.0016,
+        "poor830_rate": 0.0087,
+        "prosperity_gap_2021": 0.89581914,
+        "poor300_display": "0.13%",
+        "poor420_display": "0.16%",
+        "poor830_display": "0.87%",
+        "prosperity_gap_display": "0.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1776
+    },
+    {
+      "place_id": "GBR-ADM1-YORKSHIRE-AND-THE-HUMBER-UKE",
+      "place_name": "Yorkshire and the Humber (UKE)",
+      "parent_place_id": "GBR",
+      "parent_place_name": "United Kingdom",
+      "iso3": "GBR",
+      "source_iso3": "GBR",
+      "geometry_level": "adm1",
+      "adm1_key": "yorkshire and the humber uke",
+      "adm1_geo_id": "GBR_2015_ADMx_NUTS_UKE",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.938748,
+      "poverty_context": {
+        "poor300_rate": 0.0024,
+        "poor420_rate": 0.0038,
+        "poor830_rate": 0.0041,
+        "prosperity_gap_2021": 0.93874829,
+        "poor300_display": "0.24%",
+        "poor420_display": "0.38%",
+        "poor830_display": "0.41%",
+        "prosperity_gap_display": "0.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1762
+    }
+  ]
+}

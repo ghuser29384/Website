@@ -1,0 +1,321 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "NPL",
+  "parent_place_name": "Nepal",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 7,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "NPL-ADM1-BAGMATI",
+      "place_name": "Bagmati",
+      "parent_place_id": "NPL",
+      "parent_place_name": "Nepal",
+      "iso3": "NPL",
+      "source_iso3": "NPL",
+      "geometry_level": "adm1",
+      "adm1_key": "bagmati",
+      "adm1_geo_id": "NPL_2022_ADM1_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NPL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.341703,
+      "poverty_context": {
+        "poor300_rate": 0.0137,
+        "poor420_rate": 0.0481,
+        "poor830_rate": 0.3915,
+        "prosperity_gap_2021": 3.341703,
+        "poor300_display": "1.37%",
+        "poor420_display": "4.81%",
+        "poor830_display": "39.1%",
+        "prosperity_gap_display": "3.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1099
+    },
+    {
+      "place_id": "NPL-ADM1-GANDAKI",
+      "place_name": "Gandaki",
+      "parent_place_id": "NPL",
+      "parent_place_name": "Nepal",
+      "iso3": "NPL",
+      "source_iso3": "NPL",
+      "geometry_level": "adm1",
+      "adm1_key": "gandaki",
+      "adm1_geo_id": "NPL_2022_ADM1_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NPL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.315078,
+      "poverty_context": {
+        "poor300_rate": 0.0114,
+        "poor420_rate": 0.0449,
+        "poor830_rate": 0.3863,
+        "prosperity_gap_2021": 3.3150776,
+        "poor300_display": "1.14%",
+        "poor420_display": "4.49%",
+        "poor830_display": "38.6%",
+        "prosperity_gap_display": "3.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1109
+    },
+    {
+      "place_id": "NPL-ADM1-KARNALI",
+      "place_name": "Karnali",
+      "parent_place_id": "NPL",
+      "parent_place_name": "Nepal",
+      "iso3": "NPL",
+      "source_iso3": "NPL",
+      "geometry_level": "adm1",
+      "adm1_key": "karnali",
+      "adm1_geo_id": "NPL_2022_ADM1_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NPL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.363899,
+      "poverty_context": {
+        "poor300_rate": 0.0378,
+        "poor420_rate": 0.1224,
+        "poor830_rate": 0.6475,
+        "prosperity_gap_2021": 4.3638995,
+        "poor300_display": "3.78%",
+        "poor420_display": "12.2%",
+        "poor830_display": "64.8%",
+        "prosperity_gap_display": "4.36"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 911
+    },
+    {
+      "place_id": "NPL-ADM1-KOSHI",
+      "place_name": "Koshi",
+      "parent_place_id": "NPL",
+      "parent_place_name": "Nepal",
+      "iso3": "NPL",
+      "source_iso3": "NPL",
+      "geometry_level": "adm1",
+      "adm1_key": "koshi",
+      "adm1_geo_id": "NPL_2022_ADM1_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NPL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.695026,
+      "poverty_context": {
+        "poor300_rate": 0.0186,
+        "poor420_rate": 0.0834,
+        "poor830_rate": 0.4825,
+        "prosperity_gap_2021": 3.6950265,
+        "poor300_display": "1.86%",
+        "poor420_display": "8.34%",
+        "poor830_display": "48.3%",
+        "prosperity_gap_display": "3.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1038
+    },
+    {
+      "place_id": "NPL-ADM1-LUMBINI",
+      "place_name": "Lumbini",
+      "parent_place_id": "NPL",
+      "parent_place_name": "Nepal",
+      "iso3": "NPL",
+      "source_iso3": "NPL",
+      "geometry_level": "adm1",
+      "adm1_key": "lumbini",
+      "adm1_geo_id": "NPL_2022_ADM1_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NPL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.085279,
+      "poverty_context": {
+        "poor300_rate": 0.0361,
+        "poor420_rate": 0.1153,
+        "poor830_rate": 0.5489,
+        "prosperity_gap_2021": 4.0852787,
+        "poor300_display": "3.61%",
+        "poor420_display": "11.5%",
+        "poor830_display": "54.9%",
+        "prosperity_gap_display": "4.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 976
+    },
+    {
+      "place_id": "NPL-ADM1-MADHESH",
+      "place_name": "Madhesh",
+      "parent_place_id": "NPL",
+      "parent_place_name": "Nepal",
+      "iso3": "NPL",
+      "source_iso3": "NPL",
+      "geometry_level": "adm1",
+      "adm1_key": "madhesh",
+      "adm1_geo_id": "NPL_2022_ADM1_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NPL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.030451,
+      "poverty_context": {
+        "poor300_rate": 0.0159,
+        "poor420_rate": 0.0801,
+        "poor830_rate": 0.5704,
+        "prosperity_gap_2021": 4.030451,
+        "poor300_display": "1.59%",
+        "poor420_display": "8.01%",
+        "poor830_display": "57.0%",
+        "prosperity_gap_display": "4.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 983
+    },
+    {
+      "place_id": "NPL-ADM1-SUDURPASHCHIM",
+      "place_name": "Sudurpashchim",
+      "parent_place_id": "NPL",
+      "parent_place_name": "Nepal",
+      "iso3": "NPL",
+      "source_iso3": "NPL",
+      "geometry_level": "adm1",
+      "adm1_key": "sudurpashchim",
+      "adm1_geo_id": "NPL_2022_ADM1_7",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NPL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.780693,
+      "poverty_context": {
+        "poor300_rate": 0.0485,
+        "poor420_rate": 0.1756,
+        "poor830_rate": 0.7319,
+        "prosperity_gap_2021": 4.7806928,
+        "poor300_display": "4.85%",
+        "poor420_display": "17.6%",
+        "poor830_display": "73.2%",
+        "prosperity_gap_display": "4.78"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 853
+    }
+  ]
+}

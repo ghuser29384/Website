@@ -1,0 +1,409 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "PRT",
+  "parent_place_name": "Portugal",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 9,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "PRT-ADM1-ALENTEJO-PT1C",
+      "place_name": "Alentejo (PT1C)",
+      "parent_place_id": "PRT",
+      "parent_place_name": "Portugal",
+      "iso3": "PRT",
+      "source_iso3": "PRT",
+      "geometry_level": "adm1",
+      "adm1_key": "alentejo pt1c",
+      "adm1_geo_id": "PRT_2015_NUTS2_18",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.996399,
+      "poverty_context": {
+        "poor300_rate": 0.0016,
+        "poor420_rate": 0.0024,
+        "poor830_rate": 0.0126,
+        "prosperity_gap_2021": 0.99639864,
+        "poor300_display": "0.16%",
+        "poor420_display": "0.24%",
+        "poor830_display": "1.26%",
+        "prosperity_gap_display": "1.00"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1740
+    },
+    {
+      "place_id": "PRT-ADM1-ALGARVE-PT15",
+      "place_name": "Algarve (PT15)",
+      "parent_place_id": "PRT",
+      "parent_place_name": "Portugal",
+      "iso3": "PRT",
+      "source_iso3": "PRT",
+      "geometry_level": "adm1",
+      "adm1_key": "algarve pt15",
+      "adm1_geo_id": "PRT_2015_NUTS2_15",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.132131,
+      "poverty_context": {
+        "poor300_rate": 0.0092,
+        "poor420_rate": 0.0098,
+        "poor830_rate": 0.0257,
+        "prosperity_gap_2021": 1.1321311,
+        "poor300_display": "0.92%",
+        "poor420_display": "0.98%",
+        "poor830_display": "2.57%",
+        "prosperity_gap_display": "1.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1692
+    },
+    {
+      "place_id": "PRT-ADM1-REA-METROPOLITANA-DE-LISBOA-PT1A",
+      "place_name": "Área Metropolitana de Lisboa (PT1A)",
+      "parent_place_id": "PRT",
+      "parent_place_name": "Portugal",
+      "iso3": "PRT",
+      "source_iso3": "PRT",
+      "geometry_level": "adm1",
+      "adm1_key": "rea metropolitana de lisboa pt1a",
+      "adm1_geo_id": "PRT_2015_NUTS2_17",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.079706,
+      "poverty_context": {
+        "poor300_rate": 0.006,
+        "poor420_rate": 0.0068,
+        "poor830_rate": 0.0201,
+        "prosperity_gap_2021": 1.0797057,
+        "poor300_display": "0.60%",
+        "poor420_display": "0.68%",
+        "poor830_display": "2.01%",
+        "prosperity_gap_display": "1.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1711
+    },
+    {
+      "place_id": "PRT-ADM1-CENTRO-PT-PT19",
+      "place_name": "Centro (PT) (PT19)",
+      "parent_place_id": "PRT",
+      "parent_place_name": "Portugal",
+      "iso3": "PRT",
+      "source_iso3": "PRT",
+      "geometry_level": "adm1",
+      "adm1_key": "centro pt pt19",
+      "adm1_geo_id": "PRT_2015_NUTS2_16",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.054923,
+      "poverty_context": {
+        "poor300_rate": 0.0035,
+        "poor420_rate": 0.0057,
+        "poor830_rate": 0.0139,
+        "prosperity_gap_2021": 1.0549226,
+        "poor300_display": "0.35%",
+        "poor420_display": "0.57%",
+        "poor830_display": "1.39%",
+        "prosperity_gap_display": "1.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1720
+    },
+    {
+      "place_id": "PRT-ADM1-NORTE-PT11",
+      "place_name": "Norte (PT11)",
+      "parent_place_id": "PRT",
+      "parent_place_name": "Portugal",
+      "iso3": "PRT",
+      "source_iso3": "PRT",
+      "geometry_level": "adm1",
+      "adm1_key": "norte pt11",
+      "adm1_geo_id": "PRT_2015_NUTS2_11",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.127517,
+      "poverty_context": {
+        "poor300_rate": 0.0036,
+        "poor420_rate": 0.0076,
+        "poor830_rate": 0.0239,
+        "prosperity_gap_2021": 1.1275172,
+        "poor300_display": "0.36%",
+        "poor420_display": "0.76%",
+        "poor830_display": "2.39%",
+        "prosperity_gap_display": "1.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1697
+    },
+    {
+      "place_id": "PRT-ADM1-OESTE-E-VALE-DO-TEJO-PT1D",
+      "place_name": "Oeste e Vale do Tejo (PT1D)",
+      "parent_place_id": "PRT",
+      "parent_place_name": "Portugal",
+      "iso3": "PRT",
+      "source_iso3": "PRT",
+      "geometry_level": "adm1",
+      "adm1_key": "oeste e vale do tejo pt1d",
+      "adm1_geo_id": "PRT_2024_NUTS2_PT1D",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.07479,
+      "poverty_context": {
+        "poor300_rate": 0.0006,
+        "poor420_rate": 0.0056,
+        "poor830_rate": 0.022,
+        "prosperity_gap_2021": 1.0747899,
+        "poor300_display": "0.06%",
+        "poor420_display": "0.56%",
+        "poor830_display": "2.20%",
+        "prosperity_gap_display": "1.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1712
+    },
+    {
+      "place_id": "PRT-ADM1-PEN-NSULA-DE-SET-BAL-PT1B",
+      "place_name": "Península de Setúbal (PT1B)",
+      "parent_place_id": "PRT",
+      "parent_place_name": "Portugal",
+      "iso3": "PRT",
+      "source_iso3": "PRT",
+      "geometry_level": "adm1",
+      "adm1_key": "pen nsula de set bal pt1b",
+      "adm1_geo_id": "PRT_2024_NUTS2_PT1B",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.074043,
+      "poverty_context": {
+        "poor300_rate": 0.0031,
+        "poor420_rate": 0.0062,
+        "poor830_rate": 0.0292,
+        "prosperity_gap_2021": 1.0740428,
+        "poor300_display": "0.31%",
+        "poor420_display": "0.62%",
+        "poor830_display": "2.92%",
+        "prosperity_gap_display": "1.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1713
+    },
+    {
+      "place_id": "PRT-ADM1-REGI-O-AUT-NOMA-DA-MADEIRA-PT30",
+      "place_name": "Região Autónoma da Madeira (PT30)",
+      "parent_place_id": "PRT",
+      "parent_place_name": "Portugal",
+      "iso3": "PRT",
+      "source_iso3": "PRT",
+      "geometry_level": "adm1",
+      "adm1_key": "regi o aut noma da madeira pt30",
+      "adm1_geo_id": "PRT_2015_NUTS2_30",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.098006,
+      "poverty_context": {
+        "poor300_rate": 0.0023,
+        "poor420_rate": 0.0043,
+        "poor830_rate": 0.0157,
+        "prosperity_gap_2021": 1.0980064,
+        "poor300_display": "0.23%",
+        "poor420_display": "0.43%",
+        "poor830_display": "1.57%",
+        "prosperity_gap_display": "1.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1707
+    },
+    {
+      "place_id": "PRT-ADM1-REGI-O-AUT-NOMA-DOS-A-ORES-PT20",
+      "place_name": "Região Autónoma dos Açores (PT20)",
+      "parent_place_id": "PRT",
+      "parent_place_name": "Portugal",
+      "iso3": "PRT",
+      "source_iso3": "PRT",
+      "geometry_level": "adm1",
+      "adm1_key": "regi o aut noma dos a ores pt20",
+      "adm1_geo_id": "PRT_2015_NUTS2_20",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.407439,
+      "poverty_context": {
+        "poor300_rate": 0.0082,
+        "poor420_rate": 0.0152,
+        "poor830_rate": 0.0372,
+        "prosperity_gap_2021": 1.4074385,
+        "poor300_display": "0.82%",
+        "poor420_display": "1.52%",
+        "poor830_display": "3.72%",
+        "prosperity_gap_display": "1.41"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1611
+    }
+  ]
+}

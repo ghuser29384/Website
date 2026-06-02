@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://painmap.org/schemas/adm1-context.schema.json",
+  "title": "PainMap ADM1 context overlay",
+  "type": "object",
+  "required": [
+    "release_id",
+    "generated_at",
+    "source_id",
+    "coverage_status",
+    "count",
+    "items"
+  ],
+  "properties": {
+    "release_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "coverage_status": {
+      "const": "adm1_context_overlay"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "static_page_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "method": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "place_id",
+          "place_name",
+          "parent_place_id",
+          "geometry_level",
+          "coverage_status",
+          "source_ids",
+          "poverty_context"
+        ],
+        "properties": {
+          "place_id": {
+            "type": "string"
+          },
+          "place_name": {
+            "type": "string"
+          },
+          "parent_place_id": {
+            "type": "string"
+          },
+          "parent_place_name": {
+            "type": "string"
+          },
+          "iso3": {
+            "type": "string"
+          },
+          "geometry_level": {
+            "const": "adm1"
+          },
+          "coverage_status": {
+            "const": "adm1_context_overlay"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "page_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "context_url": {
+            "type": "string"
+          },
+          "relevance_score": {
+            "type": "number"
+          },
+          "poverty_context": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1995,6 +1995,966 @@
       "expected_canonical": "https://painmap.org/place/ZWE/"
     },
     {
+      "key": "place-uga-adm1-adjumani-and-moyo-and-yumbe-and-amolatar-and-kaabong-and-koboko-79956900",
+      "path": "/place/UGA/adm1/adjumani-and-moyo-and-yumbe-and-amolatar-and-kaabong-and-koboko-79956900/",
+      "file": "place/UGA/adm1/adjumani-and-moyo-and-yumbe-and-amolatar-and-kaabong-and-koboko-79956900/index.html",
+      "expected_title": "Adjumani & Moyo & Yumbe & Amolatar & Kaabong & Koboko & Abim & Amuru & Kotido & Maracha & Oyam & Dokolo & Arua & Amudat & Kitgum & Lamwo & Nakapiripirit & Nebbi & Otuke & Zombo & Apac & Kole & Moroto & Napak & Pader & Agago & Alebtong & Gulu & Nwoya & Lira, Uganda ADM1 Context | PainMap",
+      "expected_description": "Adjumani & Moyo & Yumbe & Amolatar & Kaabong & Koboko & Abim & Amuru & Kotido & Maracha & Oyam & Dokolo & Arua & Amudat & Kitgum & Lamwo & Nakapiripirit & Nebbi & Otuke & Zombo & Apac & Kole & Moroto & Napak & Pader & Agago & Alebtong & Gulu & Nwoya & Lira ADM1 poverty-context overlay for Uganda in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/UGA/adm1/adjumani-and-moyo-and-yumbe-and-amolatar-and-kaabong-and-koboko-79956900/"
+    },
+    {
+      "key": "place-yem-adm1-al-hudaydah",
+      "path": "/place/YEM/adm1/al-hudaydah/",
+      "file": "place/YEM/adm1/al-hudaydah/index.html",
+      "expected_title": "Al Hudaydah, Yemen ADM1 Context | PainMap",
+      "expected_description": "Al Hudaydah ADM1 poverty-context overlay for Yemen in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/YEM/adm1/al-hudaydah/"
+    },
+    {
+      "key": "place-yem-adm1-al-maharah",
+      "path": "/place/YEM/adm1/al-maharah/",
+      "file": "place/YEM/adm1/al-maharah/index.html",
+      "expected_title": "Al Maharah, Yemen ADM1 Context | PainMap",
+      "expected_description": "Al Maharah ADM1 poverty-context overlay for Yemen in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/YEM/adm1/al-maharah/"
+    },
+    {
+      "key": "place-yem-adm1-al-mahwit",
+      "path": "/place/YEM/adm1/al-mahwit/",
+      "file": "place/YEM/adm1/al-mahwit/index.html",
+      "expected_title": "Al Mahwit, Yemen ADM1 Context | PainMap",
+      "expected_description": "Al Mahwit ADM1 poverty-context overlay for Yemen in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/YEM/adm1/al-mahwit/"
+    },
+    {
+      "key": "place-mdg-adm1-amoron-i-mania",
+      "path": "/place/MDG/adm1/amoron-i-mania/",
+      "file": "place/MDG/adm1/amoron-i-mania/index.html",
+      "expected_title": "Amoron I Mania, Madagascar ADM1 Context | PainMap",
+      "expected_description": "Amoron I Mania ADM1 poverty-context overlay for Madagascar in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MDG/adm1/amoron-i-mania/"
+    },
+    {
+      "key": "place-yem-adm1-amran",
+      "path": "/place/YEM/adm1/amran/",
+      "file": "place/YEM/adm1/amran/index.html",
+      "expected_title": "Amran, Yemen ADM1 Context | PainMap",
+      "expected_description": "Amran ADM1 poverty-context overlay for Yemen in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/YEM/adm1/amran/"
+    },
+    {
+      "key": "place-mdg-adm1-androy",
+      "path": "/place/MDG/adm1/androy/",
+      "file": "place/MDG/adm1/androy/index.html",
+      "expected_title": "Androy, Madagascar ADM1 Context | PainMap",
+      "expected_description": "Androy ADM1 poverty-context overlay for Madagascar in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MDG/adm1/androy/"
+    },
+    {
+      "key": "place-mdg-adm1-anosy",
+      "path": "/place/MDG/adm1/anosy/",
+      "file": "place/MDG/adm1/anosy/index.html",
+      "expected_title": "Anosy, Madagascar ADM1 Context | PainMap",
+      "expected_description": "Anosy ADM1 poverty-context overlay for Madagascar in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MDG/adm1/anosy/"
+    },
+    {
+      "key": "place-mdg-adm1-atsimo-andrefana",
+      "path": "/place/MDG/adm1/atsimo-andrefana/",
+      "file": "place/MDG/adm1/atsimo-andrefana/index.html",
+      "expected_title": "Atsimo Andrefana, Madagascar ADM1 Context | PainMap",
+      "expected_description": "Atsimo Andrefana ADM1 poverty-context overlay for Madagascar in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MDG/adm1/atsimo-andrefana/"
+    },
+    {
+      "key": "place-mwi-adm1-balaka",
+      "path": "/place/MWI/adm1/balaka/",
+      "file": "place/MWI/adm1/balaka/index.html",
+      "expected_title": "Balaka, Malawi ADM1 Context | PainMap",
+      "expected_description": "Balaka ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/balaka/"
+    },
+    {
+      "key": "place-caf-adm1-bamingui-bangoran-and-haute-kotto-and-vakaga",
+      "path": "/place/CAF/adm1/bamingui-bangoran-and-haute-kotto-and-vakaga/",
+      "file": "place/CAF/adm1/bamingui-bangoran-and-haute-kotto-and-vakaga/index.html",
+      "expected_title": "Bamingui-Bangoran & Haute-Kotto & Vakaga, Central African Republic ADM1 Context | PainMap",
+      "expected_description": "Bamingui-Bangoran & Haute-Kotto & Vakaga ADM1 poverty-context overlay for Central African Republic in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/CAF/adm1/bamingui-bangoran-and-haute-kotto-and-vakaga/"
+    },
+    {
+      "key": "place-cod-adm1-bas-uele",
+      "path": "/place/COD/adm1/bas-uele/",
+      "file": "place/COD/adm1/bas-uele/index.html",
+      "expected_title": "Bas-Uele, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Bas-Uele ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/bas-uele/"
+    },
+    {
+      "key": "place-caf-adm1-basse-kotto-and-haut-mbomou-and-mbomou",
+      "path": "/place/CAF/adm1/basse-kotto-and-haut-mbomou-and-mbomou/",
+      "file": "place/CAF/adm1/basse-kotto-and-haut-mbomou-and-mbomou/index.html",
+      "expected_title": "Basse-Kotto & Haut-Mbomou & Mbomou, Central African Republic ADM1 Context | PainMap",
+      "expected_description": "Basse-Kotto & Haut-Mbomou & Mbomou ADM1 poverty-context overlay for Central African Republic in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/CAF/adm1/basse-kotto-and-haut-mbomou-and-mbomou/"
+    },
+    {
+      "key": "place-nga-adm1-borno",
+      "path": "/place/NGA/adm1/borno/",
+      "file": "place/NGA/adm1/borno/index.html",
+      "expected_title": "Borno, Nigeria ADM1 Context | PainMap",
+      "expected_description": "Borno ADM1 poverty-context overlay for Nigeria in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/NGA/adm1/borno/"
+    },
+    {
+      "key": "place-cog-adm1-bouenza",
+      "path": "/place/COG/adm1/bouenza/",
+      "file": "place/COG/adm1/bouenza/index.html",
+      "expected_title": "Bouenza, Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Bouenza ADM1 poverty-context overlay for Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COG/adm1/bouenza/"
+    },
+    {
+      "key": "place-bdi-adm1-bubanza",
+      "path": "/place/BDI/adm1/bubanza/",
+      "file": "place/BDI/adm1/bubanza/index.html",
+      "expected_title": "Bubanza, Burundi ADM1 Context | PainMap",
+      "expected_description": "Bubanza ADM1 poverty-context overlay for Burundi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/BDI/adm1/bubanza/"
+    },
+    {
+      "key": "place-bdi-adm1-bururi",
+      "path": "/place/BDI/adm1/bururi/",
+      "file": "place/BDI/adm1/bururi/index.html",
+      "expected_title": "Bururi, Burundi ADM1 Context | PainMap",
+      "expected_description": "Bururi ADM1 poverty-context overlay for Burundi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/BDI/adm1/bururi/"
+    },
+    {
+      "key": "place-moz-adm1-cabo-delgado",
+      "path": "/place/MOZ/adm1/cabo-delgado/",
+      "file": "place/MOZ/adm1/cabo-delgado/index.html",
+      "expected_title": "Cabo Delgado, Mozambique ADM1 Context | PainMap",
+      "expected_description": "Cabo Delgado ADM1 poverty-context overlay for Mozambique in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MOZ/adm1/cabo-delgado/"
+    },
+    {
+      "key": "place-bdi-adm1-cankuzo",
+      "path": "/place/BDI/adm1/cankuzo/",
+      "file": "place/BDI/adm1/cankuzo/index.html",
+      "expected_title": "Cankuzo, Burundi ADM1 Context | PainMap",
+      "expected_description": "Cankuzo ADM1 poverty-context overlay for Burundi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/BDI/adm1/cankuzo/"
+    },
+    {
+      "key": "place-zmb-adm1-central",
+      "path": "/place/ZMB/adm1/central/",
+      "file": "place/ZMB/adm1/central/index.html",
+      "expected_title": "Central, Zambia ADM1 Context | PainMap",
+      "expected_description": "Central ADM1 poverty-context overlay for Zambia in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/ZMB/adm1/central/"
+    },
+    {
+      "key": "place-zmb-adm1-chama-and-chinsaliisoka-and-mpika-and-nakonde",
+      "path": "/place/ZMB/adm1/chama-and-chinsaliisoka-and-mpika-and-nakonde/",
+      "file": "place/ZMB/adm1/chama-and-chinsaliisoka-and-mpika-and-nakonde/index.html",
+      "expected_title": "Chama & ChinsaliIsoka & Mpika & Nakonde, Zambia ADM1 Context | PainMap",
+      "expected_description": "Chama & ChinsaliIsoka & Mpika & Nakonde ADM1 poverty-context overlay for Zambia in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/ZMB/adm1/chama-and-chinsaliisoka-and-mpika-and-nakonde/"
+    },
+    {
+      "key": "place-mwi-adm1-chikwawa",
+      "path": "/place/MWI/adm1/chikwawa/",
+      "file": "place/MWI/adm1/chikwawa/index.html",
+      "expected_title": "Chikwawa, Malawi ADM1 Context | PainMap",
+      "expected_description": "Chikwawa ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/chikwawa/"
+    },
+    {
+      "key": "place-bdi-adm1-cibitoke",
+      "path": "/place/BDI/adm1/cibitoke/",
+      "file": "place/BDI/adm1/cibitoke/index.html",
+      "expected_title": "Cibitoke, Burundi ADM1 Context | PainMap",
+      "expected_description": "Cibitoke ADM1 poverty-context overlay for Burundi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/BDI/adm1/cibitoke/"
+    },
+    {
+      "key": "place-ago-adm1-cuanza-sul",
+      "path": "/place/AGO/adm1/cuanza-sul/",
+      "file": "place/AGO/adm1/cuanza-sul/index.html",
+      "expected_title": "Cuanza Sul, Angola ADM1 Context | PainMap",
+      "expected_description": "Cuanza Sul ADM1 poverty-context overlay for Angola in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/AGO/adm1/cuanza-sul/"
+    },
+    {
+      "key": "place-ago-adm1-cunene",
+      "path": "/place/AGO/adm1/cunene/",
+      "file": "place/AGO/adm1/cunene/index.html",
+      "expected_title": "Cunene, Angola ADM1 Context | PainMap",
+      "expected_description": "Cunene ADM1 poverty-context overlay for Angola in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/AGO/adm1/cunene/"
+    },
+    {
+      "key": "place-cog-adm1-cuvette-ouest",
+      "path": "/place/COG/adm1/cuvette-ouest/",
+      "file": "place/COG/adm1/cuvette-ouest/index.html",
+      "expected_title": "Cuvette-Ouest, Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Cuvette-Ouest ADM1 poverty-context overlay for Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COG/adm1/cuvette-ouest/"
+    },
+    {
+      "key": "place-cog-adm1-cuvette",
+      "path": "/place/COG/adm1/cuvette/",
+      "file": "place/COG/adm1/cuvette/index.html",
+      "expected_title": "Cuvette, Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Cuvette ADM1 poverty-context overlay for Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COG/adm1/cuvette/"
+    },
+    {
+      "key": "place-mwi-adm1-dedza",
+      "path": "/place/MWI/adm1/dedza/",
+      "file": "place/MWI/adm1/dedza/index.html",
+      "expected_title": "Dedza, Malawi ADM1 Context | PainMap",
+      "expected_description": "Dedza ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/dedza/"
+    },
+    {
+      "key": "place-mwi-adm1-dowa",
+      "path": "/place/MWI/adm1/dowa/",
+      "file": "place/MWI/adm1/dowa/index.html",
+      "expected_title": "Dowa, Malawi ADM1 Context | PainMap",
+      "expected_description": "Dowa ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/dowa/"
+    },
+    {
+      "key": "place-zmb-adm1-eastern",
+      "path": "/place/ZMB/adm1/eastern/",
+      "file": "place/ZMB/adm1/eastern/index.html",
+      "expected_title": "Eastern, Zambia ADM1 Context | PainMap",
+      "expected_description": "Eastern ADM1 poverty-context overlay for Zambia in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/ZMB/adm1/eastern/"
+    },
+    {
+      "key": "place-cod-adm1-quateur",
+      "path": "/place/COD/adm1/quateur/",
+      "file": "place/COD/adm1/quateur/index.html",
+      "expected_title": "Équateur, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Équateur ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/quateur/"
+    },
+    {
+      "key": "place-moz-adm1-gaza",
+      "path": "/place/MOZ/adm1/gaza/",
+      "file": "place/MOZ/adm1/gaza/index.html",
+      "expected_title": "Gaza, Mozambique ADM1 Context | PainMap",
+      "expected_description": "Gaza ADM1 poverty-context overlay for Mozambique in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MOZ/adm1/gaza/"
+    },
+    {
+      "key": "place-nga-adm1-gombe",
+      "path": "/place/NGA/adm1/gombe/",
+      "file": "place/NGA/adm1/gombe/index.html",
+      "expected_title": "Gombe, Nigeria ADM1 Context | PainMap",
+      "expected_description": "Gombe ADM1 poverty-context overlay for Nigeria in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/NGA/adm1/gombe/"
+    },
+    {
+      "key": "place-yem-adm1-hadramaut",
+      "path": "/place/YEM/adm1/hadramaut/",
+      "file": "place/YEM/adm1/hadramaut/index.html",
+      "expected_title": "Hadramaut, Yemen ADM1 Context | PainMap",
+      "expected_description": "Hadramaut ADM1 poverty-context overlay for Yemen in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/YEM/adm1/hadramaut/"
+    },
+    {
+      "key": "place-yem-adm1-hajjah",
+      "path": "/place/YEM/adm1/hajjah/",
+      "file": "place/YEM/adm1/hajjah/index.html",
+      "expected_title": "Hajjah, Yemen ADM1 Context | PainMap",
+      "expected_description": "Hajjah ADM1 poverty-context overlay for Yemen in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/YEM/adm1/hajjah/"
+    },
+    {
+      "key": "place-cod-adm1-haut-katanga",
+      "path": "/place/COD/adm1/haut-katanga/",
+      "file": "place/COD/adm1/haut-katanga/index.html",
+      "expected_title": "Haut-Katanga, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Haut-Katanga ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/haut-katanga/"
+    },
+    {
+      "key": "place-cod-adm1-haut-lomami",
+      "path": "/place/COD/adm1/haut-lomami/",
+      "file": "place/COD/adm1/haut-lomami/index.html",
+      "expected_title": "Haut-Lomami, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Haut-Lomami ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/haut-lomami/"
+    },
+    {
+      "key": "place-cod-adm1-haut-uele",
+      "path": "/place/COD/adm1/haut-uele/",
+      "file": "place/COD/adm1/haut-uele/index.html",
+      "expected_title": "Haut-Uele, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Haut-Uele ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/haut-uele/"
+    },
+    {
+      "key": "place-mdg-adm1-haute-matsiatra",
+      "path": "/place/MDG/adm1/haute-matsiatra/",
+      "file": "place/MDG/adm1/haute-matsiatra/index.html",
+      "expected_title": "Haute Matsiatra, Madagascar ADM1 Context | PainMap",
+      "expected_description": "Haute Matsiatra ADM1 poverty-context overlay for Madagascar in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MDG/adm1/haute-matsiatra/"
+    },
+    {
+      "key": "place-ago-adm1-huila",
+      "path": "/place/AGO/adm1/huila/",
+      "file": "place/AGO/adm1/huila/index.html",
+      "expected_title": "Huila, Angola ADM1 Context | PainMap",
+      "expected_description": "Huila ADM1 poverty-context overlay for Angola in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/AGO/adm1/huila/"
+    },
+    {
+      "key": "place-moz-adm1-inhambane",
+      "path": "/place/MOZ/adm1/inhambane/",
+      "file": "place/MOZ/adm1/inhambane/index.html",
+      "expected_title": "Inhambane, Mozambique ADM1 Context | PainMap",
+      "expected_description": "Inhambane ADM1 poverty-context overlay for Mozambique in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MOZ/adm1/inhambane/"
+    },
+    {
+      "key": "place-cod-adm1-ituri",
+      "path": "/place/COD/adm1/ituri/",
+      "file": "place/COD/adm1/ituri/index.html",
+      "expected_title": "Ituri, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Ituri ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/ituri/"
+    },
+    {
+      "key": "place-bdi-adm1-karuzi",
+      "path": "/place/BDI/adm1/karuzi/",
+      "file": "place/BDI/adm1/karuzi/index.html",
+      "expected_title": "Karuzi, Burundi ADM1 Context | PainMap",
+      "expected_description": "Karuzi ADM1 poverty-context overlay for Burundi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/BDI/adm1/karuzi/"
+    },
+    {
+      "key": "place-cod-adm1-kasa-central",
+      "path": "/place/COD/adm1/kasa-central/",
+      "file": "place/COD/adm1/kasa-central/index.html",
+      "expected_title": "Kasaï-Central, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Kasaï-Central ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/kasa-central/"
+    },
+    {
+      "key": "place-cod-adm1-kasa-oriental",
+      "path": "/place/COD/adm1/kasa-oriental/",
+      "file": "place/COD/adm1/kasa-oriental/index.html",
+      "expected_title": "Kasaï-Oriental, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Kasaï-Oriental ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/kasa-oriental/"
+    },
+    {
+      "key": "place-cod-adm1-kasa",
+      "path": "/place/COD/adm1/kasa/",
+      "file": "place/COD/adm1/kasa/index.html",
+      "expected_title": "Kasaï, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Kasaï ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/kasa/"
+    },
+    {
+      "key": "place-mwi-adm1-kasungu",
+      "path": "/place/MWI/adm1/kasungu/",
+      "file": "place/MWI/adm1/kasungu/index.html",
+      "expected_title": "Kasungu, Malawi ADM1 Context | PainMap",
+      "expected_description": "Kasungu ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/kasungu/"
+    },
+    {
+      "key": "place-caf-adm1-k-mo-and-nana-gribizi-and-ouaka",
+      "path": "/place/CAF/adm1/k-mo-and-nana-gribizi-and-ouaka/",
+      "file": "place/CAF/adm1/k-mo-and-nana-gribizi-and-ouaka/index.html",
+      "expected_title": "Kémo & Nana-Gribizi & Ouaka, Central African Republic ADM1 Context | PainMap",
+      "expected_description": "Kémo & Nana-Gribizi & Ouaka ADM1 poverty-context overlay for Central African Republic in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/CAF/adm1/k-mo-and-nana-gribizi-and-ouaka/"
+    },
+    {
+      "key": "place-bdi-adm1-kirundo",
+      "path": "/place/BDI/adm1/kirundo/",
+      "file": "place/BDI/adm1/kirundo/index.html",
+      "expected_title": "Kirundo, Burundi ADM1 Context | PainMap",
+      "expected_description": "Kirundo ADM1 poverty-context overlay for Burundi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/BDI/adm1/kirundo/"
+    },
+    {
+      "key": "place-cod-adm1-kongo-central",
+      "path": "/place/COD/adm1/kongo-central/",
+      "file": "place/COD/adm1/kongo-central/index.html",
+      "expected_title": "Kongo-Central, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Kongo-Central ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/kongo-central/"
+    },
+    {
+      "key": "place-cod-adm1-kwango",
+      "path": "/place/COD/adm1/kwango/",
+      "file": "place/COD/adm1/kwango/index.html",
+      "expected_title": "Kwango, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Kwango ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/kwango/"
+    },
+    {
+      "key": "place-cod-adm1-kwilu",
+      "path": "/place/COD/adm1/kwilu/",
+      "file": "place/COD/adm1/kwilu/index.html",
+      "expected_title": "Kwilu, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Kwilu ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/kwilu/"
+    },
+    {
+      "key": "place-yem-adm1-lahj",
+      "path": "/place/YEM/adm1/lahj/",
+      "file": "place/YEM/adm1/lahj/index.html",
+      "expected_title": "Lahj, Yemen ADM1 Context | PainMap",
+      "expected_description": "Lahj ADM1 poverty-context overlay for Yemen in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/YEM/adm1/lahj/"
+    },
+    {
+      "key": "place-cog-adm1-lekoumou",
+      "path": "/place/COG/adm1/lekoumou/",
+      "file": "place/COG/adm1/lekoumou/index.html",
+      "expected_title": "Lekoumou, Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Lekoumou ADM1 poverty-context overlay for Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COG/adm1/lekoumou/"
+    },
+    {
+      "key": "place-cog-adm1-likouala",
+      "path": "/place/COG/adm1/likouala/",
+      "file": "place/COG/adm1/likouala/index.html",
+      "expected_title": "Likouala, Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Likouala ADM1 poverty-context overlay for Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COG/adm1/likouala/"
+    },
+    {
+      "key": "place-caf-adm1-lobaye-and-ombella-m-poko",
+      "path": "/place/CAF/adm1/lobaye-and-ombella-m-poko/",
+      "file": "place/CAF/adm1/lobaye-and-ombella-m-poko/index.html",
+      "expected_title": "Lobaye & Ombella M'Poko, Central African Republic ADM1 Context | PainMap",
+      "expected_description": "Lobaye & Ombella M'Poko ADM1 poverty-context overlay for Central African Republic in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/CAF/adm1/lobaye-and-ombella-m-poko/"
+    },
+    {
+      "key": "place-cod-adm1-lomami",
+      "path": "/place/COD/adm1/lomami/",
+      "file": "place/COD/adm1/lomami/index.html",
+      "expected_title": "Lomami, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Lomami ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/lomami/"
+    },
+    {
+      "key": "place-cod-adm1-lualaba",
+      "path": "/place/COD/adm1/lualaba/",
+      "file": "place/COD/adm1/lualaba/index.html",
+      "expected_title": "Lualaba, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Lualaba ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/lualaba/"
+    },
+    {
+      "key": "place-zmb-adm1-luapula",
+      "path": "/place/ZMB/adm1/luapula/",
+      "file": "place/ZMB/adm1/luapula/index.html",
+      "expected_title": "Luapula, Zambia ADM1 Context | PainMap",
+      "expected_description": "Luapula ADM1 poverty-context overlay for Zambia in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/ZMB/adm1/luapula/"
+    },
+    {
+      "key": "place-ago-adm1-lunda-sul",
+      "path": "/place/AGO/adm1/lunda-sul/",
+      "file": "place/AGO/adm1/lunda-sul/index.html",
+      "expected_title": "Lunda Sul, Angola ADM1 Context | PainMap",
+      "expected_description": "Lunda Sul ADM1 poverty-context overlay for Angola in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/AGO/adm1/lunda-sul/"
+    },
+    {
+      "key": "place-mwi-adm1-machinga",
+      "path": "/place/MWI/adm1/machinga/",
+      "file": "place/MWI/adm1/machinga/index.html",
+      "expected_title": "Machinga, Malawi ADM1 Context | PainMap",
+      "expected_description": "Machinga ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/machinga/"
+    },
+    {
+      "key": "place-cod-adm1-mai-ndombe",
+      "path": "/place/COD/adm1/mai-ndombe/",
+      "file": "place/COD/adm1/mai-ndombe/index.html",
+      "expected_title": "Mai-Ndombe, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Mai-Ndombe ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/mai-ndombe/"
+    },
+    {
+      "key": "place-caf-adm1-mamb-r-kad-and-sangha-mba-r",
+      "path": "/place/CAF/adm1/mamb-r-kad-and-sangha-mba-r/",
+      "file": "place/CAF/adm1/mamb-r-kad-and-sangha-mba-r/index.html",
+      "expected_title": "Mambéré-Kadéï & Sangha-Mbaéré, Central African Republic ADM1 Context | PainMap",
+      "expected_description": "Mambéré-Kadéï & Sangha-Mbaéré ADM1 poverty-context overlay for Central African Republic in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/CAF/adm1/mamb-r-kad-and-sangha-mba-r/"
+    },
+    {
+      "key": "place-ken-adm1-mandera",
+      "path": "/place/KEN/adm1/mandera/",
+      "file": "place/KEN/adm1/mandera/index.html",
+      "expected_title": "Mandera, Kenya ADM1 Context | PainMap",
+      "expected_description": "Mandera ADM1 poverty-context overlay for Kenya in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/KEN/adm1/mandera/"
+    },
+    {
+      "key": "place-mwi-adm1-mangochi",
+      "path": "/place/MWI/adm1/mangochi/",
+      "file": "place/MWI/adm1/mangochi/index.html",
+      "expected_title": "Mangochi, Malawi ADM1 Context | PainMap",
+      "expected_description": "Mangochi ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/mangochi/"
+    },
+    {
+      "key": "place-moz-adm1-manica",
+      "path": "/place/MOZ/adm1/manica/",
+      "file": "place/MOZ/adm1/manica/index.html",
+      "expected_title": "Manica, Mozambique ADM1 Context | PainMap",
+      "expected_description": "Manica ADM1 poverty-context overlay for Mozambique in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MOZ/adm1/manica/"
+    },
+    {
+      "key": "place-ken-adm1-marsabit",
+      "path": "/place/KEN/adm1/marsabit/",
+      "file": "place/KEN/adm1/marsabit/index.html",
+      "expected_title": "Marsabit, Kenya ADM1 Context | PainMap",
+      "expected_description": "Marsabit ADM1 poverty-context overlay for Kenya in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/KEN/adm1/marsabit/"
+    },
+    {
+      "key": "place-mwi-adm1-mchinji",
+      "path": "/place/MWI/adm1/mchinji/",
+      "file": "place/MWI/adm1/mchinji/index.html",
+      "expected_title": "Mchinji, Malawi ADM1 Context | PainMap",
+      "expected_description": "Mchinji ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/mchinji/"
+    },
+    {
+      "key": "place-cod-adm1-mongala",
+      "path": "/place/COD/adm1/mongala/",
+      "file": "place/COD/adm1/mongala/index.html",
+      "expected_title": "Mongala, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Mongala ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/mongala/"
+    },
+    {
+      "key": "place-ago-adm1-moxico",
+      "path": "/place/AGO/adm1/moxico/",
+      "file": "place/AGO/adm1/moxico/index.html",
+      "expected_title": "Moxico, Angola ADM1 Context | PainMap",
+      "expected_description": "Moxico ADM1 poverty-context overlay for Angola in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/AGO/adm1/moxico/"
+    },
+    {
+      "key": "place-mwi-adm1-mulanje",
+      "path": "/place/MWI/adm1/mulanje/",
+      "file": "place/MWI/adm1/mulanje/index.html",
+      "expected_title": "Mulanje, Malawi ADM1 Context | PainMap",
+      "expected_description": "Mulanje ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/mulanje/"
+    },
+    {
+      "key": "place-bdi-adm1-muramvya",
+      "path": "/place/BDI/adm1/muramvya/",
+      "file": "place/BDI/adm1/muramvya/index.html",
+      "expected_title": "Muramvya, Burundi ADM1 Context | PainMap",
+      "expected_description": "Muramvya ADM1 poverty-context overlay for Burundi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/BDI/adm1/muramvya/"
+    },
+    {
+      "key": "place-bdi-adm1-muyinga",
+      "path": "/place/BDI/adm1/muyinga/",
+      "file": "place/BDI/adm1/muyinga/index.html",
+      "expected_title": "Muyinga, Burundi ADM1 Context | PainMap",
+      "expected_description": "Muyinga ADM1 poverty-context overlay for Burundi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/BDI/adm1/muyinga/"
+    },
+    {
+      "key": "place-mwi-adm1-mwanza",
+      "path": "/place/MWI/adm1/mwanza/",
+      "file": "place/MWI/adm1/mwanza/index.html",
+      "expected_title": "Mwanza, Malawi ADM1 Context | PainMap",
+      "expected_description": "Mwanza ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/mwanza/"
+    },
+    {
+      "key": "place-bdi-adm1-mwaro",
+      "path": "/place/BDI/adm1/mwaro/",
+      "file": "place/BDI/adm1/mwaro/index.html",
+      "expected_title": "Mwaro, Burundi ADM1 Context | PainMap",
+      "expected_description": "Mwaro ADM1 poverty-context overlay for Burundi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/BDI/adm1/mwaro/"
+    },
+    {
+      "key": "place-moz-adm1-nampula",
+      "path": "/place/MOZ/adm1/nampula/",
+      "file": "place/MOZ/adm1/nampula/index.html",
+      "expected_title": "Nampula, Mozambique ADM1 Context | PainMap",
+      "expected_description": "Nampula ADM1 poverty-context overlay for Mozambique in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MOZ/adm1/nampula/"
+    },
+    {
+      "key": "place-caf-adm1-nana-mamb-r-and-ouham-and-ouham-pend",
+      "path": "/place/CAF/adm1/nana-mamb-r-and-ouham-and-ouham-pend/",
+      "file": "place/CAF/adm1/nana-mamb-r-and-ouham-and-ouham-pend/index.html",
+      "expected_title": "Nana-Mambéré & Ouham & Ouham Pendé, Central African Republic ADM1 Context | PainMap",
+      "expected_description": "Nana-Mambéré & Ouham & Ouham Pendé ADM1 poverty-context overlay for Central African Republic in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/CAF/adm1/nana-mamb-r-and-ouham-and-ouham-pend/"
+    },
+    {
+      "key": "place-bdi-adm1-ngozi",
+      "path": "/place/BDI/adm1/ngozi/",
+      "file": "place/BDI/adm1/ngozi/index.html",
+      "expected_title": "Ngozi, Burundi ADM1 Context | PainMap",
+      "expected_description": "Ngozi ADM1 poverty-context overlay for Burundi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/BDI/adm1/ngozi/"
+    },
+    {
+      "key": "place-cog-adm1-niari",
+      "path": "/place/COG/adm1/niari/",
+      "file": "place/COG/adm1/niari/index.html",
+      "expected_title": "Niari, Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Niari ADM1 poverty-context overlay for Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COG/adm1/niari/"
+    },
+    {
+      "key": "place-moz-adm1-niassa",
+      "path": "/place/MOZ/adm1/niassa/",
+      "file": "place/MOZ/adm1/niassa/index.html",
+      "expected_title": "Niassa, Mozambique ADM1 Context | PainMap",
+      "expected_description": "Niassa ADM1 poverty-context overlay for Mozambique in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MOZ/adm1/niassa/"
+    },
+    {
+      "key": "place-mwi-adm1-nkhotakota",
+      "path": "/place/MWI/adm1/nkhotakota/",
+      "file": "place/MWI/adm1/nkhotakota/index.html",
+      "expected_title": "Nkhotakota, Malawi ADM1 Context | PainMap",
+      "expected_description": "Nkhotakota ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/nkhotakota/"
+    },
+    {
+      "key": "place-hti-adm1-nord-est",
+      "path": "/place/HTI/adm1/nord-est/",
+      "file": "place/HTI/adm1/nord-est/index.html",
+      "expected_title": "Nord Est, Haiti ADM1 Context | PainMap",
+      "expected_description": "Nord Est ADM1 poverty-context overlay for Haiti in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/HTI/adm1/nord-est/"
+    },
+    {
+      "key": "place-hti-adm1-nord-ouest",
+      "path": "/place/HTI/adm1/nord-ouest/",
+      "file": "place/HTI/adm1/nord-ouest/index.html",
+      "expected_title": "Nord Ouest, Haiti ADM1 Context | PainMap",
+      "expected_description": "Nord Ouest ADM1 poverty-context overlay for Haiti in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/HTI/adm1/nord-ouest/"
+    },
+    {
+      "key": "place-cod-adm1-nord-kivu",
+      "path": "/place/COD/adm1/nord-kivu/",
+      "file": "place/COD/adm1/nord-kivu/index.html",
+      "expected_title": "Nord-Kivu, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Nord-Kivu ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/nord-kivu/"
+    },
+    {
+      "key": "place-cod-adm1-nord-ubangi",
+      "path": "/place/COD/adm1/nord-ubangi/",
+      "file": "place/COD/adm1/nord-ubangi/index.html",
+      "expected_title": "Nord-Ubangi, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Nord-Ubangi ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/nord-ubangi/"
+    },
+    {
+      "key": "place-zmb-adm1-north-western",
+      "path": "/place/ZMB/adm1/north-western/",
+      "file": "place/ZMB/adm1/north-western/index.html",
+      "expected_title": "North-Western, Zambia ADM1 Context | PainMap",
+      "expected_description": "North-Western ADM1 poverty-context overlay for Zambia in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/ZMB/adm1/north-western/"
+    },
+    {
+      "key": "place-gha-adm1-northern",
+      "path": "/place/GHA/adm1/northern/",
+      "file": "place/GHA/adm1/northern/index.html",
+      "expected_title": "Northern, Ghana ADM1 Context | PainMap",
+      "expected_description": "Northern ADM1 poverty-context overlay for Ghana in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/GHA/adm1/northern/"
+    },
+    {
+      "key": "place-zmb-adm1-northern",
+      "path": "/place/ZMB/adm1/northern/",
+      "file": "place/ZMB/adm1/northern/index.html",
+      "expected_title": "Northern, Zambia ADM1 Context | PainMap",
+      "expected_description": "Northern ADM1 poverty-context overlay for Zambia in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/ZMB/adm1/northern/"
+    },
+    {
+      "key": "place-mwi-adm1-nsanje",
+      "path": "/place/MWI/adm1/nsanje/",
+      "file": "place/MWI/adm1/nsanje/index.html",
+      "expected_title": "Nsanje, Malawi ADM1 Context | PainMap",
+      "expected_description": "Nsanje ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/nsanje/"
+    },
+    {
+      "key": "place-mwi-adm1-ntcheu",
+      "path": "/place/MWI/adm1/ntcheu/",
+      "file": "place/MWI/adm1/ntcheu/index.html",
+      "expected_title": "Ntcheu, Malawi ADM1 Context | PainMap",
+      "expected_description": "Ntcheu ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/ntcheu/"
+    },
+    {
+      "key": "place-mwi-adm1-ntchisi",
+      "path": "/place/MWI/adm1/ntchisi/",
+      "file": "place/MWI/adm1/ntchisi/index.html",
+      "expected_title": "Ntchisi, Malawi ADM1 Context | PainMap",
+      "expected_description": "Ntchisi ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/ntchisi/"
+    },
+    {
+      "key": "place-mwi-adm1-phalombe",
+      "path": "/place/MWI/adm1/phalombe/",
+      "file": "place/MWI/adm1/phalombe/index.html",
+      "expected_title": "Phalombe, Malawi ADM1 Context | PainMap",
+      "expected_description": "Phalombe ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/phalombe/"
+    },
+    {
+      "key": "place-cog-adm1-plateaux",
+      "path": "/place/COG/adm1/plateaux/",
+      "file": "place/COG/adm1/plateaux/index.html",
+      "expected_title": "Plateaux, Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Plateaux ADM1 poverty-context overlay for Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COG/adm1/plateaux/"
+    },
+    {
+      "key": "place-cog-adm1-pool",
+      "path": "/place/COG/adm1/pool/",
+      "file": "place/COG/adm1/pool/index.html",
+      "expected_title": "Pool, Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Pool ADM1 poverty-context overlay for Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COG/adm1/pool/"
+    },
+    {
+      "key": "place-yem-adm1-raymah",
+      "path": "/place/YEM/adm1/raymah/",
+      "file": "place/YEM/adm1/raymah/index.html",
+      "expected_title": "Raymah, Yemen ADM1 Context | PainMap",
+      "expected_description": "Raymah ADM1 poverty-context overlay for Yemen in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/YEM/adm1/raymah/"
+    },
+    {
+      "key": "place-bdi-adm1-rutana",
+      "path": "/place/BDI/adm1/rutana/",
+      "file": "place/BDI/adm1/rutana/index.html",
+      "expected_title": "Rutana, Burundi ADM1 Context | PainMap",
+      "expected_description": "Rutana ADM1 poverty-context overlay for Burundi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/BDI/adm1/rutana/"
+    },
+    {
+      "key": "place-bdi-adm1-ruyigi",
+      "path": "/place/BDI/adm1/ruyigi/",
+      "file": "place/BDI/adm1/ruyigi/index.html",
+      "expected_title": "Ruyigi, Burundi ADM1 Context | PainMap",
+      "expected_description": "Ruyigi ADM1 poverty-context overlay for Burundi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/BDI/adm1/ruyigi/"
+    },
+    {
+      "key": "place-yem-adm1-sa-ada",
+      "path": "/place/YEM/adm1/sa-ada/",
+      "file": "place/YEM/adm1/sa-ada/index.html",
+      "expected_title": "Sa'ada, Yemen ADM1 Context | PainMap",
+      "expected_description": "Sa'ada ADM1 poverty-context overlay for Yemen in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/YEM/adm1/sa-ada/"
+    },
+    {
+      "key": "place-mwi-adm1-salima",
+      "path": "/place/MWI/adm1/salima/",
+      "file": "place/MWI/adm1/salima/index.html",
+      "expected_title": "Salima, Malawi ADM1 Context | PainMap",
+      "expected_description": "Salima ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/salima/"
+    },
+    {
+      "key": "place-ken-adm1-samburu",
+      "path": "/place/KEN/adm1/samburu/",
+      "file": "place/KEN/adm1/samburu/index.html",
+      "expected_title": "Samburu, Kenya ADM1 Context | PainMap",
+      "expected_description": "Samburu ADM1 poverty-context overlay for Kenya in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/KEN/adm1/samburu/"
+    },
+    {
+      "key": "place-cog-adm1-sangha",
+      "path": "/place/COG/adm1/sangha/",
+      "file": "place/COG/adm1/sangha/index.html",
+      "expected_title": "Sangha, Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Sangha ADM1 poverty-context overlay for Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COG/adm1/sangha/"
+    },
+    {
+      "key": "place-cod-adm1-sankuru",
+      "path": "/place/COD/adm1/sankuru/",
+      "file": "place/COD/adm1/sankuru/index.html",
+      "expected_title": "Sankuru, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Sankuru ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/sankuru/"
+    },
+    {
+      "key": "place-moz-adm1-sofala",
+      "path": "/place/MOZ/adm1/sofala/",
+      "file": "place/MOZ/adm1/sofala/index.html",
+      "expected_title": "Sofala, Mozambique ADM1 Context | PainMap",
+      "expected_description": "Sofala ADM1 poverty-context overlay for Mozambique in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MOZ/adm1/sofala/"
+    },
+    {
+      "key": "place-zmb-adm1-southern",
+      "path": "/place/ZMB/adm1/southern/",
+      "file": "place/ZMB/adm1/southern/index.html",
+      "expected_title": "Southern, Zambia ADM1 Context | PainMap",
+      "expected_description": "Southern ADM1 poverty-context overlay for Zambia in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/ZMB/adm1/southern/"
+    },
+    {
+      "key": "place-cod-adm1-sud-kivu",
+      "path": "/place/COD/adm1/sud-kivu/",
+      "file": "place/COD/adm1/sud-kivu/index.html",
+      "expected_title": "Sud-Kivu, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Sud-Kivu ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/sud-kivu/"
+    },
+    {
+      "key": "place-cod-adm1-sud-ubangi",
+      "path": "/place/COD/adm1/sud-ubangi/",
+      "file": "place/COD/adm1/sud-ubangi/index.html",
+      "expected_title": "Sud-Ubangi, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Sud-Ubangi ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/sud-ubangi/"
+    },
+    {
+      "key": "place-dji-adm1-tadjoura",
+      "path": "/place/DJI/adm1/tadjoura/",
+      "file": "place/DJI/adm1/tadjoura/index.html",
+      "expected_title": "Tadjoura, Djibouti ADM1 Context | PainMap",
+      "expected_description": "Tadjoura ADM1 poverty-context overlay for Djibouti in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/DJI/adm1/tadjoura/"
+    },
+    {
+      "key": "place-cod-adm1-tanganyika",
+      "path": "/place/COD/adm1/tanganyika/",
+      "file": "place/COD/adm1/tanganyika/index.html",
+      "expected_title": "Tanganyika, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Tanganyika ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/tanganyika/"
+    },
+    {
+      "key": "place-moz-adm1-tete",
+      "path": "/place/MOZ/adm1/tete/",
+      "file": "place/MOZ/adm1/tete/index.html",
+      "expected_title": "Tete, Mozambique ADM1 Context | PainMap",
+      "expected_description": "Tete ADM1 poverty-context overlay for Mozambique in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MOZ/adm1/tete/"
+    },
+    {
+      "key": "place-lso-adm1-thaba-tseka",
+      "path": "/place/LSO/adm1/thaba-tseka/",
+      "file": "place/LSO/adm1/thaba-tseka/index.html",
+      "expected_title": "Thaba Tseka, Lesotho ADM1 Context | PainMap",
+      "expected_description": "Thaba Tseka ADM1 poverty-context overlay for Lesotho in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/LSO/adm1/thaba-tseka/"
+    },
+    {
+      "key": "place-mwi-adm1-thyolo",
+      "path": "/place/MWI/adm1/thyolo/",
+      "file": "place/MWI/adm1/thyolo/index.html",
+      "expected_title": "Thyolo, Malawi ADM1 Context | PainMap",
+      "expected_description": "Thyolo ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/thyolo/"
+    },
+    {
+      "key": "place-cod-adm1-tshopo",
+      "path": "/place/COD/adm1/tshopo/",
+      "file": "place/COD/adm1/tshopo/index.html",
+      "expected_title": "Tshopo, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Tshopo ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/tshopo/"
+    },
+    {
+      "key": "place-cod-adm1-tshuapa",
+      "path": "/place/COD/adm1/tshuapa/",
+      "file": "place/COD/adm1/tshuapa/index.html",
+      "expected_title": "Tshuapa, Democratic Republic of the Congo ADM1 Context | PainMap",
+      "expected_description": "Tshuapa ADM1 poverty-context overlay for Democratic Republic of the Congo in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/COD/adm1/tshuapa/"
+    },
+    {
+      "key": "place-ken-adm1-turkana",
+      "path": "/place/KEN/adm1/turkana/",
+      "file": "place/KEN/adm1/turkana/index.html",
+      "expected_title": "Turkana, Kenya ADM1 Context | PainMap",
+      "expected_description": "Turkana ADM1 poverty-context overlay for Kenya in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/KEN/adm1/turkana/"
+    },
+    {
+      "key": "place-gha-adm1-upper-east",
+      "path": "/place/GHA/adm1/upper-east/",
+      "file": "place/GHA/adm1/upper-east/index.html",
+      "expected_title": "Upper East, Ghana ADM1 Context | PainMap",
+      "expected_description": "Upper East ADM1 poverty-context overlay for Ghana in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/GHA/adm1/upper-east/"
+    },
+    {
+      "key": "place-gha-adm1-upper-west",
+      "path": "/place/GHA/adm1/upper-west/",
+      "file": "place/GHA/adm1/upper-west/index.html",
+      "expected_title": "Upper West, Ghana ADM1 Context | PainMap",
+      "expected_description": "Upper West ADM1 poverty-context overlay for Ghana in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/GHA/adm1/upper-west/"
+    },
+    {
+      "key": "place-mdg-adm1-vatovavy-fitovinany",
+      "path": "/place/MDG/adm1/vatovavy-fitovinany/",
+      "file": "place/MDG/adm1/vatovavy-fitovinany/index.html",
+      "expected_title": "Vatovavy Fitovinany, Madagascar ADM1 Context | PainMap",
+      "expected_description": "Vatovavy Fitovinany ADM1 poverty-context overlay for Madagascar in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MDG/adm1/vatovavy-fitovinany/"
+    },
+    {
+      "key": "place-zmb-adm1-western",
+      "path": "/place/ZMB/adm1/western/",
+      "file": "place/ZMB/adm1/western/index.html",
+      "expected_title": "Western, Zambia ADM1 Context | PainMap",
+      "expected_description": "Western ADM1 poverty-context overlay for Zambia in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/ZMB/adm1/western/"
+    },
+    {
+      "key": "place-moz-adm1-zambezia",
+      "path": "/place/MOZ/adm1/zambezia/",
+      "file": "place/MOZ/adm1/zambezia/index.html",
+      "expected_title": "Zambezia, Mozambique ADM1 Context | PainMap",
+      "expected_description": "Zambezia ADM1 poverty-context overlay for Mozambique in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MOZ/adm1/zambezia/"
+    },
+    {
+      "key": "place-mwi-adm1-zomba",
+      "path": "/place/MWI/adm1/zomba/",
+      "file": "place/MWI/adm1/zomba/index.html",
+      "expected_title": "Zomba, Malawi ADM1 Context | PainMap",
+      "expected_description": "Zomba ADM1 poverty-context overlay for Malawi in PainMap release 2026-05-31.atlas.2, with GSAP source metadata, coverage status, and data export links.",
+      "expected_canonical": "https://painmap.org/place/MWI/adm1/zomba/"
+    },
+    {
       "key": "api",
       "path": "/api/",
       "file": "api/index.html",

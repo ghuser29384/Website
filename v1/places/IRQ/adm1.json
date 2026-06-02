@@ -1,0 +1,805 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "IRQ",
+  "parent_place_name": "Iraq",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 18,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "IRQ-ADM1-ANBAR",
+      "place_name": "Anbar",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "anbar",
+      "adm1_geo_id": "IRQ_2015_ADM1_1564",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.160422,
+      "poverty_context": {
+        "poor300_rate": 0.0056,
+        "poor420_rate": 0.0211,
+        "poor830_rate": 0.354,
+        "prosperity_gap_2021": 3.1604221,
+        "poor300_display": "0.56%",
+        "poor420_display": "2.11%",
+        "poor830_display": "35.4%",
+        "prosperity_gap_display": "3.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1134
+    },
+    {
+      "place_id": "IRQ-ADM1-BABIL",
+      "place_name": "Babil",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "babil",
+      "adm1_geo_id": "IRQ_2015_ADM1_1571",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.652926,
+      "poverty_context": {
+        "poor300_rate": 0.011,
+        "poor420_rate": 0.0605,
+        "poor830_rate": 0.4936,
+        "prosperity_gap_2021": 3.6529265,
+        "poor300_display": "1.10%",
+        "poor420_display": "6.05%",
+        "poor830_display": "49.4%",
+        "prosperity_gap_display": "3.65"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1041
+    },
+    {
+      "place_id": "IRQ-ADM1-BAGHDAD",
+      "place_name": "Baghdad",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "baghdad",
+      "adm1_geo_id": "IRQ_2015_ADM1_1572",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.804119,
+      "poverty_context": {
+        "poor300_rate": 0.0069,
+        "poor420_rate": 0.0189,
+        "poor830_rate": 0.2453,
+        "prosperity_gap_2021": 2.8041191,
+        "poor300_display": "0.69%",
+        "poor420_display": "1.89%",
+        "poor830_display": "24.5%",
+        "prosperity_gap_display": "2.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1209
+    },
+    {
+      "place_id": "IRQ-ADM1-BASRAH",
+      "place_name": "Basrah",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "basrah",
+      "adm1_geo_id": "IRQ_2015_ADM1_1565",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.317042,
+      "poverty_context": {
+        "poor300_rate": 0.0099,
+        "poor420_rate": 0.0408,
+        "poor830_rate": 0.392,
+        "prosperity_gap_2021": 3.3170415,
+        "poor300_display": "0.99%",
+        "poor420_display": "4.08%",
+        "poor830_display": "39.2%",
+        "prosperity_gap_display": "3.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1108
+    },
+    {
+      "place_id": "IRQ-ADM1-DAHUK",
+      "place_name": "Dahuk",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "dahuk",
+      "adm1_geo_id": "IRQ_2015_ADM1_1574",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.66925,
+      "poverty_context": {
+        "poor300_rate": 0.0089,
+        "poor420_rate": 0.0181,
+        "poor830_rate": 0.2397,
+        "prosperity_gap_2021": 2.66925,
+        "poor300_display": "0.89%",
+        "poor420_display": "1.81%",
+        "poor830_display": "24.0%",
+        "prosperity_gap_display": "2.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1240
+    },
+    {
+      "place_id": "IRQ-ADM1-DIYALA",
+      "place_name": "Diyala",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "diyala",
+      "adm1_geo_id": "IRQ_2015_ADM1_1575",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.75643,
+      "poverty_context": {
+        "poor300_rate": 0.0014,
+        "poor420_rate": 0.026,
+        "poor830_rate": 0.2654,
+        "prosperity_gap_2021": 2.7564302,
+        "poor300_display": "0.14%",
+        "poor420_display": "2.60%",
+        "poor830_display": "26.5%",
+        "prosperity_gap_display": "2.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1224
+    },
+    {
+      "place_id": "IRQ-ADM1-ERBIL",
+      "place_name": "Erbil",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "erbil",
+      "adm1_geo_id": "IRQ_2015_ADM1_1569",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.152085,
+      "poverty_context": {
+        "poor300_rate": 0.0033,
+        "poor420_rate": 0.0045,
+        "poor830_rate": 0.1143,
+        "prosperity_gap_2021": 2.1520846,
+        "poor300_display": "0.33%",
+        "poor420_display": "0.45%",
+        "poor830_display": "11.4%",
+        "prosperity_gap_display": "2.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1412
+    },
+    {
+      "place_id": "IRQ-ADM1-KERBALA",
+      "place_name": "Kerbala",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "kerbala",
+      "adm1_geo_id": "IRQ_2015_ADM1_1576",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.08503,
+      "poverty_context": {
+        "poor300_rate": 0.0194,
+        "poor420_rate": 0.0288,
+        "poor830_rate": 0.33,
+        "prosperity_gap_2021": 3.08503,
+        "poor300_display": "1.94%",
+        "poor420_display": "2.88%",
+        "poor830_display": "33.0%",
+        "prosperity_gap_display": "3.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1149
+    },
+    {
+      "place_id": "IRQ-ADM1-KIRKUK",
+      "place_name": "Kirkuk",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "kirkuk",
+      "adm1_geo_id": "IRQ_2015_ADM1_1570",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.38918,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0009,
+        "poor830_rate": 0.1356,
+        "prosperity_gap_2021": 2.3891804,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.09%",
+        "poor830_display": "13.6%",
+        "prosperity_gap_display": "2.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1329
+    },
+    {
+      "place_id": "IRQ-ADM1-MISSAN",
+      "place_name": "Missan",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "missan",
+      "adm1_geo_id": "IRQ_2015_ADM1_1577",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.848153,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0102,
+        "poor830_rate": 0.2694,
+        "prosperity_gap_2021": 2.8481526,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.02%",
+        "poor830_display": "26.9%",
+        "prosperity_gap_display": "2.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1199
+    },
+    {
+      "place_id": "IRQ-ADM1-MUTHANNA",
+      "place_name": "Muthanna",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "muthanna",
+      "adm1_geo_id": "IRQ_2015_ADM1_1566",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.935013,
+      "poverty_context": {
+        "poor300_rate": 0.0166,
+        "poor420_rate": 0.066,
+        "poor830_rate": 0.5804,
+        "prosperity_gap_2021": 3.9350131,
+        "poor300_display": "1.66%",
+        "poor420_display": "6.60%",
+        "poor830_display": "58.0%",
+        "prosperity_gap_display": "3.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1000
+    },
+    {
+      "place_id": "IRQ-ADM1-NAJAF",
+      "place_name": "Najaf",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "najaf",
+      "adm1_geo_id": "IRQ_2015_ADM1_1568",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.244576,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0562,
+        "poor830_rate": 0.4014,
+        "prosperity_gap_2021": 3.2445761,
+        "poor300_display": "0.00%",
+        "poor420_display": "5.62%",
+        "poor830_display": "40.1%",
+        "prosperity_gap_display": "3.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1122
+    },
+    {
+      "place_id": "IRQ-ADM1-NINEWA",
+      "place_name": "Ninewa",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "ninewa",
+      "adm1_geo_id": "IRQ_2015_ADM1_1578",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.596165,
+      "poverty_context": {
+        "poor300_rate": 0.0023,
+        "poor420_rate": 0.0264,
+        "poor830_rate": 0.263,
+        "prosperity_gap_2021": 2.5961653,
+        "poor300_display": "0.23%",
+        "poor420_display": "2.64%",
+        "poor830_display": "26.3%",
+        "prosperity_gap_display": "2.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1269
+    },
+    {
+      "place_id": "IRQ-ADM1-QADISSIYA",
+      "place_name": "Qadissiya",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "qadissiya",
+      "adm1_geo_id": "IRQ_2015_ADM1_1567",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.285842,
+      "poverty_context": {
+        "poor300_rate": 0.0057,
+        "poor420_rate": 0.0197,
+        "poor830_rate": 0.411,
+        "prosperity_gap_2021": 3.2858422,
+        "poor300_display": "0.57%",
+        "poor420_display": "1.97%",
+        "poor830_display": "41.1%",
+        "prosperity_gap_display": "3.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1115
+    },
+    {
+      "place_id": "IRQ-ADM1-SALAH-AL-DIN",
+      "place_name": "Salah al-Din",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "salah al din",
+      "adm1_geo_id": "IRQ_2015_ADM1_1579",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.945096,
+      "poverty_context": {
+        "poor300_rate": 0.0033,
+        "poor420_rate": 0.0177,
+        "poor830_rate": 0.3093,
+        "prosperity_gap_2021": 2.9450964,
+        "poor300_display": "0.33%",
+        "poor420_display": "1.77%",
+        "poor830_display": "30.9%",
+        "prosperity_gap_display": "2.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1179
+    },
+    {
+      "place_id": "IRQ-ADM1-SULAYMANIYAH",
+      "place_name": "Sulaymaniyah",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "sulaymaniyah",
+      "adm1_geo_id": "IRQ_2015_ADM1_1580",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.278297,
+      "poverty_context": {
+        "poor300_rate": 0.0008,
+        "poor420_rate": 0.0056,
+        "poor830_rate": 0.1489,
+        "prosperity_gap_2021": 2.2782967,
+        "poor300_display": "0.08%",
+        "poor420_display": "0.56%",
+        "poor830_display": "14.9%",
+        "prosperity_gap_display": "2.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1365
+    },
+    {
+      "place_id": "IRQ-ADM1-THI-QAR",
+      "place_name": "Thi-Qar",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "thi qar",
+      "adm1_geo_id": "IRQ_2015_ADM1_1573",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.792906,
+      "poverty_context": {
+        "poor300_rate": 0.0017,
+        "poor420_rate": 0.0148,
+        "poor830_rate": 0.2427,
+        "prosperity_gap_2021": 2.7929057,
+        "poor300_display": "0.17%",
+        "poor420_display": "1.48%",
+        "poor830_display": "24.3%",
+        "prosperity_gap_display": "2.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1215
+    },
+    {
+      "place_id": "IRQ-ADM1-WASSIT",
+      "place_name": "Wassit",
+      "parent_place_id": "IRQ",
+      "parent_place_name": "Iraq",
+      "iso3": "IRQ",
+      "source_iso3": "IRQ",
+      "geometry_level": "adm1",
+      "adm1_key": "wassit",
+      "adm1_geo_id": "IRQ_2015_ADM1_1581",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IRQ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.90091,
+      "poverty_context": {
+        "poor300_rate": 0.006,
+        "poor420_rate": 0.0353,
+        "poor830_rate": 0.2887,
+        "prosperity_gap_2021": 2.9009101,
+        "poor300_display": "0.60%",
+        "poor420_display": "3.53%",
+        "poor830_display": "28.9%",
+        "prosperity_gap_display": "2.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1189
+    }
+  ]
+}

@@ -1,0 +1,497 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "ETH",
+  "parent_place_name": "Ethiopia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 11,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "ETH-ADM1-ADDIS-ABABA",
+      "place_name": "Addis Ababa",
+      "parent_place_id": "ETH",
+      "parent_place_name": "Ethiopia",
+      "iso3": "ETH",
+      "source_iso3": "ETH",
+      "geometry_level": "adm1",
+      "adm1_key": "addis ababa",
+      "adm1_geo_id": "ETH_2015_ADM1_1227",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ETH/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.293057,
+      "poverty_context": {
+        "poor300_rate": 0.0212,
+        "poor420_rate": 0.1187,
+        "poor830_rate": 0.6355,
+        "prosperity_gap_2021": 4.2930572,
+        "poor300_display": "2.12%",
+        "poor420_display": "11.9%",
+        "poor830_display": "63.5%",
+        "prosperity_gap_display": "4.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 922
+    },
+    {
+      "place_id": "ETH-ADM1-AFAR",
+      "place_name": "Afar",
+      "parent_place_id": "ETH",
+      "parent_place_name": "Ethiopia",
+      "iso3": "ETH",
+      "source_iso3": "ETH",
+      "geometry_level": "adm1",
+      "adm1_key": "afar",
+      "adm1_geo_id": "ETH_2015_ADM1_1228",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ETH/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.5085,
+      "poverty_context": {
+        "poor300_rate": 0.3503,
+        "poor420_rate": 0.6251,
+        "poor830_rate": 0.9495,
+        "prosperity_gap_2021": 8.5085001,
+        "poor300_display": "35.0%",
+        "poor420_display": "62.5%",
+        "poor830_display": "95.0%",
+        "prosperity_gap_display": "8.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 456
+    },
+    {
+      "place_id": "ETH-ADM1-AMHARA",
+      "place_name": "Amhara",
+      "parent_place_id": "ETH",
+      "parent_place_name": "Ethiopia",
+      "iso3": "ETH",
+      "source_iso3": "ETH",
+      "geometry_level": "adm1",
+      "adm1_key": "amhara",
+      "adm1_geo_id": "ETH_2015_ADM1_1229",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ETH/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.660113,
+      "poverty_context": {
+        "poor300_rate": 0.354,
+        "poor420_rate": 0.633,
+        "poor830_rate": 0.9438,
+        "prosperity_gap_2021": 8.6601128,
+        "poor300_display": "35.4%",
+        "poor420_display": "63.3%",
+        "poor830_display": "94.4%",
+        "prosperity_gap_display": "8.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 443
+    },
+    {
+      "place_id": "ETH-ADM1-BENESHANGUL-GUMU",
+      "place_name": "Beneshangul Gumu",
+      "parent_place_id": "ETH",
+      "parent_place_name": "Ethiopia",
+      "iso3": "ETH",
+      "source_iso3": "ETH",
+      "geometry_level": "adm1",
+      "adm1_key": "beneshangul gumu",
+      "adm1_geo_id": "ETH_2015_ADM1_1230",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ETH/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.696871,
+      "poverty_context": {
+        "poor300_rate": 0.3754,
+        "poor420_rate": 0.6275,
+        "poor830_rate": 0.9269,
+        "prosperity_gap_2021": 8.6968711,
+        "poor300_display": "37.5%",
+        "poor420_display": "62.7%",
+        "poor830_display": "92.7%",
+        "prosperity_gap_display": "8.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 440
+    },
+    {
+      "place_id": "ETH-ADM1-DIRE-DAWA",
+      "place_name": "Dire Dawa",
+      "parent_place_id": "ETH",
+      "parent_place_name": "Ethiopia",
+      "iso3": "ETH",
+      "source_iso3": "ETH",
+      "geometry_level": "adm1",
+      "adm1_key": "dire dawa",
+      "adm1_geo_id": "ETH_2015_ADM1_1231",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ETH/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.684667,
+      "poverty_context": {
+        "poor300_rate": 0.1145,
+        "poor420_rate": 0.2972,
+        "poor830_rate": 0.7812,
+        "prosperity_gap_2021": 5.6846667,
+        "poor300_display": "11.5%",
+        "poor420_display": "29.7%",
+        "poor830_display": "78.1%",
+        "prosperity_gap_display": "5.68"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 718
+    },
+    {
+      "place_id": "ETH-ADM1-GAMBELA",
+      "place_name": "Gambela",
+      "parent_place_id": "ETH",
+      "parent_place_name": "Ethiopia",
+      "iso3": "ETH",
+      "source_iso3": "ETH",
+      "geometry_level": "adm1",
+      "adm1_key": "gambela",
+      "adm1_geo_id": "ETH_2015_ADM1_1232",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ETH/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.938558,
+      "poverty_context": {
+        "poor300_rate": 0.4092,
+        "poor420_rate": 0.6321,
+        "poor830_rate": 0.8978,
+        "prosperity_gap_2021": 8.9385578,
+        "poor300_display": "40.9%",
+        "poor420_display": "63.2%",
+        "poor830_display": "89.8%",
+        "prosperity_gap_display": "8.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 423
+    },
+    {
+      "place_id": "ETH-ADM1-HARERI",
+      "place_name": "Hareri",
+      "parent_place_id": "ETH",
+      "parent_place_name": "Ethiopia",
+      "iso3": "ETH",
+      "source_iso3": "ETH",
+      "geometry_level": "adm1",
+      "adm1_key": "hareri",
+      "adm1_geo_id": "ETH_2015_ADM1_1233",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ETH/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.469781,
+      "poverty_context": {
+        "poor300_rate": 0.0499,
+        "poor420_rate": 0.1574,
+        "poor830_rate": 0.6263,
+        "prosperity_gap_2021": 4.4697813,
+        "poor300_display": "4.99%",
+        "poor420_display": "15.7%",
+        "poor830_display": "62.6%",
+        "prosperity_gap_display": "4.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 898
+    },
+    {
+      "place_id": "ETH-ADM1-OROMIA",
+      "place_name": "Oromia",
+      "parent_place_id": "ETH",
+      "parent_place_name": "Ethiopia",
+      "iso3": "ETH",
+      "source_iso3": "ETH",
+      "geometry_level": "adm1",
+      "adm1_key": "oromia",
+      "adm1_geo_id": "ETH_2015_ADM1_47678",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ETH/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.545439,
+      "poverty_context": {
+        "poor300_rate": 0.3335,
+        "poor420_rate": 0.5955,
+        "poor830_rate": 0.9253,
+        "prosperity_gap_2021": 8.5454386,
+        "poor300_display": "33.4%",
+        "poor420_display": "59.6%",
+        "poor830_display": "92.5%",
+        "prosperity_gap_display": "8.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 452
+    },
+    {
+      "place_id": "ETH-ADM1-SIDAMA",
+      "place_name": "Sidama",
+      "parent_place_id": "ETH",
+      "parent_place_name": "Ethiopia",
+      "iso3": "ETH",
+      "source_iso3": "ETH",
+      "geometry_level": "adm1",
+      "adm1_key": "sidama",
+      "adm1_geo_id": "ETH_2015_ADM2_40838",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ETH/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.075046,
+      "poverty_context": {
+        "poor300_rate": 0.4836,
+        "poor420_rate": 0.7606,
+        "poor830_rate": 0.9736,
+        "prosperity_gap_2021": 10.075046,
+        "poor300_display": "48.4%",
+        "poor420_display": "76.1%",
+        "poor830_display": "97.4%",
+        "prosperity_gap_display": "10.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 334
+    },
+    {
+      "place_id": "ETH-ADM1-SNNPR",
+      "place_name": "SNNPR",
+      "parent_place_id": "ETH",
+      "parent_place_name": "Ethiopia",
+      "iso3": "ETH",
+      "source_iso3": "ETH",
+      "geometry_level": "adm1",
+      "adm1_key": "snnpr",
+      "adm1_geo_id": "ETH_2015_ADM1_1236",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ETH/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.200527,
+      "poverty_context": {
+        "poor300_rate": 0.4605,
+        "poor420_rate": 0.6932,
+        "poor830_rate": 0.9507,
+        "prosperity_gap_2021": 10.200527,
+        "poor300_display": "46.1%",
+        "poor420_display": "69.3%",
+        "poor830_display": "95.1%",
+        "prosperity_gap_display": "10.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 325
+    },
+    {
+      "place_id": "ETH-ADM1-SOMALI",
+      "place_name": "Somali",
+      "parent_place_id": "ETH",
+      "parent_place_name": "Ethiopia",
+      "iso3": "ETH",
+      "source_iso3": "ETH",
+      "geometry_level": "adm1",
+      "adm1_key": "somali",
+      "adm1_geo_id": "ETH_2015_ADM1_47679",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ETH/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.736115,
+      "poverty_context": {
+        "poor300_rate": 0.25,
+        "poor420_rate": 0.507,
+        "poor830_rate": 0.9388,
+        "prosperity_gap_2021": 7.7361153,
+        "poor300_display": "25.0%",
+        "poor420_display": "50.7%",
+        "poor830_display": "93.9%",
+        "prosperity_gap_display": "7.74"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 524
+    }
+  ]
+}

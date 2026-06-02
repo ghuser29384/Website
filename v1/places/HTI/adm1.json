@@ -1,0 +1,453 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "HTI",
+  "parent_place_name": "Haiti",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 10,
+  "static_page_count": 2,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "HTI-ADM1-ARTIBONITE",
+      "place_name": "Artibonite",
+      "parent_place_id": "HTI",
+      "parent_place_name": "Haiti",
+      "iso3": "HTI",
+      "source_iso3": "HTI",
+      "geometry_level": "adm1",
+      "adm1_key": "artibonite",
+      "adm1_geo_id": "HTI_2015_ADM1_1409",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/HTI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.717289,
+      "poverty_context": {
+        "poor300_rate": 0.4478,
+        "poor420_rate": 0.6727,
+        "poor830_rate": 0.9175,
+        "prosperity_gap_2021": 11.717289,
+        "poor300_display": "44.8%",
+        "poor420_display": "67.3%",
+        "poor830_display": "91.8%",
+        "prosperity_gap_display": "11.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 232
+    },
+    {
+      "place_id": "HTI-ADM1-CENTRE",
+      "place_name": "Centre",
+      "parent_place_id": "HTI",
+      "parent_place_name": "Haiti",
+      "iso3": "HTI",
+      "source_iso3": "HTI",
+      "geometry_level": "adm1",
+      "adm1_key": "centre",
+      "adm1_geo_id": "HTI_2015_ADM1_1410",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/HTI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.714634,
+      "poverty_context": {
+        "poor300_rate": 0.635,
+        "poor420_rate": 0.7814,
+        "poor830_rate": 0.9502,
+        "prosperity_gap_2021": 13.714634,
+        "poor300_display": "63.5%",
+        "poor420_display": "78.1%",
+        "poor830_display": "95.0%",
+        "prosperity_gap_display": "13.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 161
+    },
+    {
+      "place_id": "HTI-ADM1-GRANDE-ANSE",
+      "place_name": "Grande Anse",
+      "parent_place_id": "HTI",
+      "parent_place_name": "Haiti",
+      "iso3": "HTI",
+      "source_iso3": "HTI",
+      "geometry_level": "adm1",
+      "adm1_key": "grande anse",
+      "adm1_geo_id": "HTI_2015_ADM1_72911",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/HTI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.578431,
+      "poverty_context": {
+        "poor300_rate": 0.6646,
+        "poor420_rate": 0.8386,
+        "poor830_rate": 0.9713,
+        "prosperity_gap_2021": 14.578431,
+        "poor300_display": "66.5%",
+        "poor420_display": "83.9%",
+        "poor830_display": "97.1%",
+        "prosperity_gap_display": "14.58"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 146
+    },
+    {
+      "place_id": "HTI-ADM1-NIPPES",
+      "place_name": "Nippes",
+      "parent_place_id": "HTI",
+      "parent_place_name": "Haiti",
+      "iso3": "HTI",
+      "source_iso3": "HTI",
+      "geometry_level": "adm1",
+      "adm1_key": "nippes",
+      "adm1_geo_id": "HTI_2015_ADM1_72912",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/HTI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.878522,
+      "poverty_context": {
+        "poor300_rate": 0.5571,
+        "poor420_rate": 0.714,
+        "poor830_rate": 0.9623,
+        "prosperity_gap_2021": 11.878522,
+        "poor300_display": "55.7%",
+        "poor420_display": "71.4%",
+        "poor830_display": "96.2%",
+        "prosperity_gap_display": "11.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 222
+    },
+    {
+      "place_id": "HTI-ADM1-NORD",
+      "place_name": "Nord",
+      "parent_place_id": "HTI",
+      "parent_place_name": "Haiti",
+      "iso3": "HTI",
+      "source_iso3": "HTI",
+      "geometry_level": "adm1",
+      "adm1_key": "nord",
+      "adm1_geo_id": "HTI_2015_ADM1_1412",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/HTI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.338051,
+      "poverty_context": {
+        "poor300_rate": 0.5389,
+        "poor420_rate": 0.7332,
+        "poor830_rate": 0.9397,
+        "prosperity_gap_2021": 13.338051,
+        "poor300_display": "53.9%",
+        "poor420_display": "73.3%",
+        "poor830_display": "94.0%",
+        "prosperity_gap_display": "13.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 170
+    },
+    {
+      "place_id": "HTI-ADM1-NORD-EST",
+      "place_name": "Nord Est",
+      "parent_place_id": "HTI",
+      "parent_place_name": "Haiti",
+      "iso3": "HTI",
+      "source_iso3": "HTI",
+      "geometry_level": "adm1",
+      "adm1_key": "nord est",
+      "adm1_geo_id": "HTI_2015_ADM1_1413",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/HTI/adm1/nord-est/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/HTI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 17.700971,
+      "poverty_context": {
+        "poor300_rate": 0.6616,
+        "poor420_rate": 0.8438,
+        "poor830_rate": 0.9726,
+        "prosperity_gap_2021": 17.700971,
+        "poor300_display": "66.2%",
+        "poor420_display": "84.4%",
+        "poor830_display": "97.3%",
+        "prosperity_gap_display": "17.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 87
+    },
+    {
+      "place_id": "HTI-ADM1-NORD-OUEST",
+      "place_name": "Nord Ouest",
+      "parent_place_id": "HTI",
+      "parent_place_name": "Haiti",
+      "iso3": "HTI",
+      "source_iso3": "HTI",
+      "geometry_level": "adm1",
+      "adm1_key": "nord ouest",
+      "adm1_geo_id": "HTI_2015_ADM1_1414",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/HTI/adm1/nord-ouest/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/HTI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.386856,
+      "poverty_context": {
+        "poor300_rate": 0.6958,
+        "poor420_rate": 0.831,
+        "poor830_rate": 0.972,
+        "prosperity_gap_2021": 16.386856,
+        "poor300_display": "69.6%",
+        "poor420_display": "83.1%",
+        "poor830_display": "97.2%",
+        "prosperity_gap_display": "16.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 105
+    },
+    {
+      "place_id": "HTI-ADM1-OUEST",
+      "place_name": "Ouest",
+      "parent_place_id": "HTI",
+      "parent_place_name": "Haiti",
+      "iso3": "HTI",
+      "source_iso3": "HTI",
+      "geometry_level": "adm1",
+      "adm1_key": "ouest",
+      "adm1_geo_id": "HTI_2015_ADM1_1415",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/HTI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.701895,
+      "poverty_context": {
+        "poor300_rate": 0.2391,
+        "poor420_rate": 0.4527,
+        "poor830_rate": 0.8213,
+        "prosperity_gap_2021": 7.7018949,
+        "poor300_display": "23.9%",
+        "poor420_display": "45.3%",
+        "poor830_display": "82.1%",
+        "prosperity_gap_display": "7.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 529
+    },
+    {
+      "place_id": "HTI-ADM1-SUD",
+      "place_name": "Sud",
+      "parent_place_id": "HTI",
+      "parent_place_name": "Haiti",
+      "iso3": "HTI",
+      "source_iso3": "HTI",
+      "geometry_level": "adm1",
+      "adm1_key": "sud",
+      "adm1_geo_id": "HTI_2015_ADM1_1416",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/HTI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.699419,
+      "poverty_context": {
+        "poor300_rate": 0.528,
+        "poor420_rate": 0.7216,
+        "poor830_rate": 0.9304,
+        "prosperity_gap_2021": 12.699419,
+        "poor300_display": "52.8%",
+        "poor420_display": "72.2%",
+        "poor830_display": "93.0%",
+        "prosperity_gap_display": "12.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 189
+    },
+    {
+      "place_id": "HTI-ADM1-SUD-EST",
+      "place_name": "Sud Est",
+      "parent_place_id": "HTI",
+      "parent_place_name": "Haiti",
+      "iso3": "HTI",
+      "source_iso3": "HTI",
+      "geometry_level": "adm1",
+      "adm1_key": "sud est",
+      "adm1_geo_id": "HTI_2015_ADM1_1417",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/HTI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.840578,
+      "poverty_context": {
+        "poor300_rate": 0.5052,
+        "poor420_rate": 0.6951,
+        "poor830_rate": 0.9284,
+        "prosperity_gap_2021": 11.840578,
+        "poor300_display": "50.5%",
+        "poor420_display": "69.5%",
+        "poor830_display": "92.8%",
+        "prosperity_gap_display": "11.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 224
+    }
+  ]
+}

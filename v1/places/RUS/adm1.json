@@ -1,0 +1,3533 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "RUS",
+  "parent_place_name": "Russia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 80,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "RUS-ADM1-ADYGEYA-REP",
+      "place_name": "Adygeya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "adygeya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2487",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.034599,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0018,
+        "prosperity_gap_2021": 1.0345987,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.18%",
+        "prosperity_gap_display": "1.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1728
+    },
+    {
+      "place_id": "RUS-ADM1-AGINSKIY-BURYATSKIY-A-OKRUG-AND-CHITINSKAYA-OBLAST",
+      "place_name": "Aginskiy Buryatskiy A. Okrug & Chitinskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "aginskiy buryatskiy a okrug and chitinskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADMx_204_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.10328,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0005,
+        "poor830_rate": 0.0101,
+        "prosperity_gap_2021": 1.1032804,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.05%",
+        "poor830_display": "1.01%",
+        "prosperity_gap_display": "1.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1705
+    },
+    {
+      "place_id": "RUS-ADM1-ALTAY-REP",
+      "place_name": "Altay Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "altay rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2489",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.279994,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0176,
+        "prosperity_gap_2021": 1.2799941,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.76%",
+        "prosperity_gap_display": "1.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1638
+    },
+    {
+      "place_id": "RUS-ADM1-ALTAYSKIY-KRAY",
+      "place_name": "Altayskiy Kray",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "altayskiy kray",
+      "adm1_geo_id": "RUS_2015_ADM1_2490",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.392731,
+      "poverty_context": {
+        "poor300_rate": 0.0063,
+        "poor420_rate": 0.0093,
+        "poor830_rate": 0.0546,
+        "prosperity_gap_2021": 1.3927308,
+        "poor300_display": "0.63%",
+        "poor420_display": "0.93%",
+        "poor830_display": "5.46%",
+        "prosperity_gap_display": "1.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1615
+    },
+    {
+      "place_id": "RUS-ADM1-AMURSKAYA-OBLAST",
+      "place_name": "Amurskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "amurskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2491",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.961067,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0043,
+        "prosperity_gap_2021": 0.96106741,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.43%",
+        "prosperity_gap_display": "0.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1755
+    },
+    {
+      "place_id": "RUS-ADM1-ARKHANGELSKAYA-OBLAST-AND-NENETSKIY-OKRUG",
+      "place_name": "Arkhangelskaya Oblast & Nenetskiy Okrug",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "arkhangelskaya oblast and nenetskiy okrug",
+      "adm1_geo_id": "RUS_2015_ADM1_2492",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.877902,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0013,
+        "prosperity_gap_2021": 0.87790248,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.13%",
+        "prosperity_gap_display": "0.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1780
+    },
+    {
+      "place_id": "RUS-ADM1-ASTRAKHANSKAYA-OBLAST",
+      "place_name": "Astrakhanskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "astrakhanskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2493",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.935256,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 0.93525619,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "0.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1765
+    },
+    {
+      "place_id": "RUS-ADM1-BASHKORTOSTAN-REP",
+      "place_name": "Bashkortostan Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "bashkortostan rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2494",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.043775,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0001,
+        "poor830_rate": 0.0028,
+        "prosperity_gap_2021": 1.0437749,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.01%",
+        "poor830_display": "0.28%",
+        "prosperity_gap_display": "1.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1726
+    },
+    {
+      "place_id": "RUS-ADM1-BELGORODSKAYA-OBLAST",
+      "place_name": "Belgorodskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "belgorodskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2495",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.84528,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 0.84528019,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "0.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1794
+    },
+    {
+      "place_id": "RUS-ADM1-BRYANSKAYA-OBLAST",
+      "place_name": "Bryanskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "bryanskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2496",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.042618,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 1.0426183,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "1.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1727
+    },
+    {
+      "place_id": "RUS-ADM1-BURYATIYA-REP",
+      "place_name": "Buryatiya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "buryatiya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2497",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.275552,
+      "poverty_context": {
+        "poor300_rate": 0.0032,
+        "poor420_rate": 0.0044,
+        "poor830_rate": 0.0189,
+        "prosperity_gap_2021": 1.2755521,
+        "poor300_display": "0.32%",
+        "poor420_display": "0.44%",
+        "poor830_display": "1.89%",
+        "prosperity_gap_display": "1.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1641
+    },
+    {
+      "place_id": "RUS-ADM1-CHECHNYA-REP",
+      "place_name": "Chechnya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "chechnya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2498",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.537851,
+      "poverty_context": {
+        "poor300_rate": 0.0037,
+        "poor420_rate": 0.0037,
+        "poor830_rate": 0.0198,
+        "prosperity_gap_2021": 1.537851,
+        "poor300_display": "0.37%",
+        "poor420_display": "0.37%",
+        "poor830_display": "1.98%",
+        "prosperity_gap_display": "1.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1586
+    },
+    {
+      "place_id": "RUS-ADM1-CHELYABINSKAYA-OBLAST",
+      "place_name": "Chelyabinskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "chelyabinskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2499",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.015502,
+      "poverty_context": {
+        "poor300_rate": 0.0026,
+        "poor420_rate": 0.0026,
+        "poor830_rate": 0.0096,
+        "prosperity_gap_2021": 1.0155018,
+        "poor300_display": "0.26%",
+        "poor420_display": "0.26%",
+        "poor830_display": "0.96%",
+        "prosperity_gap_display": "1.02"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1734
+    },
+    {
+      "place_id": "RUS-ADM1-CHUKOTSKIY-OKRUG",
+      "place_name": "Chukotskiy Okrug",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "chukotskiy okrug",
+      "adm1_geo_id": "RUS_2015_ADM1_2501",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.731849,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 0.73184947,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "0.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1820
+    },
+    {
+      "place_id": "RUS-ADM1-CHUVASHIYA-REP",
+      "place_name": "Chuvashiya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "chuvashiya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2502",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.397088,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0172,
+        "prosperity_gap_2021": 1.3970875,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.72%",
+        "prosperity_gap_display": "1.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1613
+    },
+    {
+      "place_id": "RUS-ADM1-DAGESTAN-REP",
+      "place_name": "Dagestan Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "dagestan rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2503",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.191947,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0023,
+        "prosperity_gap_2021": 1.1919472,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.23%",
+        "prosperity_gap_display": "1.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1672
+    },
+    {
+      "place_id": "RUS-ADM1-EVENKIYSKIY-OKRUG-AND-KRASNOYARSKIY-KRAY-AND-TAYMYRSKIY-OKRUG",
+      "place_name": "Evenkiyskiy Okrug & Krasnoyarskiy Kray & Taymyrskiy Okrug",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "evenkiyskiy okrug and krasnoyarskiy kray and taymyrskiy okrug",
+      "adm1_geo_id": "RUS_2015_ADMx_204_7",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.932065,
+      "poverty_context": {
+        "poor300_rate": 0.0002,
+        "poor420_rate": 0.0012,
+        "poor830_rate": 0.0083,
+        "prosperity_gap_2021": 0.93206457,
+        "poor300_display": "0.02%",
+        "poor420_display": "0.12%",
+        "poor830_display": "0.83%",
+        "prosperity_gap_display": "0.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1768
+    },
+    {
+      "place_id": "RUS-ADM1-INGUSHETIYA-REP",
+      "place_name": "Ingushetiya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "ingushetiya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2505",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.160845,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 1.160845,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "1.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1679
+    },
+    {
+      "place_id": "RUS-ADM1-IRKUTSKAYA-OBLAST-AND-USTORDYNSKIY-BURYATSKIY-OKRUG",
+      "place_name": "Irkutskaya Oblast & Ustordynskiy Buryatskiy Okrug",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "irkutskaya oblast and ustordynskiy buryatskiy okrug",
+      "adm1_geo_id": "RUS_2015_ADMx_204_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.140701,
+      "poverty_context": {
+        "poor300_rate": 0.0035,
+        "poor420_rate": 0.0035,
+        "poor830_rate": 0.0294,
+        "prosperity_gap_2021": 1.1407007,
+        "poor300_display": "0.35%",
+        "poor420_display": "0.35%",
+        "poor830_display": "2.94%",
+        "prosperity_gap_display": "1.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1688
+    },
+    {
+      "place_id": "RUS-ADM1-IVANOVSKAYA-OBLAST",
+      "place_name": "Ivanovskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "ivanovskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2507",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.924371,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0003,
+        "prosperity_gap_2021": 0.92437105,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.03%",
+        "prosperity_gap_display": "0.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1769
+    },
+    {
+      "place_id": "RUS-ADM1-KABARDINO-BALKARIYA-REP",
+      "place_name": "Kabardino-balkariya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "kabardino balkariya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2508",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.448048,
+      "poverty_context": {
+        "poor300_rate": 0.0017,
+        "poor420_rate": 0.0017,
+        "poor830_rate": 0.0217,
+        "prosperity_gap_2021": 1.4480476,
+        "poor300_display": "0.17%",
+        "poor420_display": "0.17%",
+        "poor830_display": "2.17%",
+        "prosperity_gap_display": "1.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1602
+    },
+    {
+      "place_id": "RUS-ADM1-KALININGRADSKAYA-OBLAST",
+      "place_name": "Kaliningradskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "kaliningradskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2509",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.091262,
+      "poverty_context": {
+        "poor300_rate": 0.0001,
+        "poor420_rate": 0.0001,
+        "poor830_rate": 0.008,
+        "prosperity_gap_2021": 1.0912622,
+        "poor300_display": "0.01%",
+        "poor420_display": "0.01%",
+        "poor830_display": "0.80%",
+        "prosperity_gap_display": "1.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1709
+    },
+    {
+      "place_id": "RUS-ADM1-KALMYKIYA-REP",
+      "place_name": "Kalmykiya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "kalmykiya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2510",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.351717,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0131,
+        "poor830_rate": 0.0269,
+        "prosperity_gap_2021": 1.3517169,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.31%",
+        "poor830_display": "2.69%",
+        "prosperity_gap_display": "1.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1623
+    },
+    {
+      "place_id": "RUS-ADM1-KALUZHSKAYA-OBLAST",
+      "place_name": "Kaluzhskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "kaluzhskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2511",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.940344,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0001,
+        "prosperity_gap_2021": 0.94034418,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.01%",
+        "prosperity_gap_display": "0.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1761
+    },
+    {
+      "place_id": "RUS-ADM1-KAMCHATSKAYA-OBLAST-AND-KORYAKSKIY-OKRUG",
+      "place_name": "Kamchatskaya Oblast & Koryakskiy Okrug",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "kamchatskaya oblast and koryakskiy okrug",
+      "adm1_geo_id": "RUS_2015_ADMx_204_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.564034,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 0.56403424,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "0.56"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1858
+    },
+    {
+      "place_id": "RUS-ADM1-KARATCHAYEVO-CHERKESIYA-REP",
+      "place_name": "Karatchayevo-cherkesiya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "karatchayevo cherkesiya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2513",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.227035,
+      "poverty_context": {
+        "poor300_rate": 0.0026,
+        "poor420_rate": 0.0051,
+        "poor830_rate": 0.0109,
+        "prosperity_gap_2021": 1.2270346,
+        "poor300_display": "0.26%",
+        "poor420_display": "0.51%",
+        "poor830_display": "1.09%",
+        "prosperity_gap_display": "1.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1658
+    },
+    {
+      "place_id": "RUS-ADM1-KARELYA-REP",
+      "place_name": "Karelya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "karelya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2514",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.933194,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.001,
+        "prosperity_gap_2021": 0.93319403,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.10%",
+        "prosperity_gap_display": "0.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1767
+    },
+    {
+      "place_id": "RUS-ADM1-KEMEROVSKAYA-OBLAST",
+      "place_name": "Kemerovskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "kemerovskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2515",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.20358,
+      "poverty_context": {
+        "poor300_rate": 0.0016,
+        "poor420_rate": 0.0031,
+        "poor830_rate": 0.0228,
+        "prosperity_gap_2021": 1.20358,
+        "poor300_display": "0.16%",
+        "poor420_display": "0.31%",
+        "poor830_display": "2.28%",
+        "prosperity_gap_display": "1.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1670
+    },
+    {
+      "place_id": "RUS-ADM1-KHABAROVSKIY-KRAY",
+      "place_name": "Khabarovskiy Kray",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "khabarovskiy kray",
+      "adm1_geo_id": "RUS_2015_ADM1_2516",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.850081,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0272,
+        "prosperity_gap_2021": 0.8500805,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "2.72%",
+        "prosperity_gap_display": "0.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1791
+    },
+    {
+      "place_id": "RUS-ADM1-KHAKASIYA-REP",
+      "place_name": "Khakasiya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "khakasiya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2517",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.967219,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0049,
+        "prosperity_gap_2021": 0.9672191,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.49%",
+        "prosperity_gap_display": "0.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1751
+    },
+    {
+      "place_id": "RUS-ADM1-KHANTY-MANSYISKIY-OKRUG-AND-TYUMENSKAYA-OBLAST-AND-YAMALO-NENET-9DF14C46",
+      "place_name": "Khanty-mansyiskiy Okrug & Tyumenskaya Oblast & Yamalo-nenetskiy Okrug",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "khanty mansyiskiy okrug and tyumenskaya oblast and yamalo nenetskiy okrug",
+      "adm1_geo_id": "RUS_2015_ADMx_204_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.880732,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0023,
+        "prosperity_gap_2021": 0.88073247,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.23%",
+        "prosperity_gap_display": "0.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1779
+    },
+    {
+      "place_id": "RUS-ADM1-KIROVSKAYA-OBLAST",
+      "place_name": "Kirovskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "kirovskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2519",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.062199,
+      "poverty_context": {
+        "poor300_rate": 0.0003,
+        "poor420_rate": 0.0003,
+        "poor830_rate": 0.0078,
+        "prosperity_gap_2021": 1.0621994,
+        "poor300_display": "0.03%",
+        "poor420_display": "0.03%",
+        "poor830_display": "0.78%",
+        "prosperity_gap_display": "1.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1716
+    },
+    {
+      "place_id": "RUS-ADM1-KOMI-REP",
+      "place_name": "Komi Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "komi rep",
+      "adm1_geo_id": "RUS_2015_ADMx_204_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.004921,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0002,
+        "poor830_rate": 0.0098,
+        "prosperity_gap_2021": 1.0049213,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.02%",
+        "poor830_display": "0.98%",
+        "prosperity_gap_display": "1.00"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1735
+    },
+    {
+      "place_id": "RUS-ADM1-KOMI-PERMYATSKIY-OKRUG-AND-PERMSKAYA-OBLAST",
+      "place_name": "Komi-permyatskiy Okrug & Permskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "komi permyatskiy okrug and permskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2546",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.130317,
+      "poverty_context": {
+        "poor300_rate": 0.0026,
+        "poor420_rate": 0.0037,
+        "poor830_rate": 0.0214,
+        "prosperity_gap_2021": 1.1303167,
+        "poor300_display": "0.26%",
+        "poor420_display": "0.37%",
+        "poor830_display": "2.14%",
+        "prosperity_gap_display": "1.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1695
+    },
+    {
+      "place_id": "RUS-ADM1-KOSTROMSKAYA-OBLAST",
+      "place_name": "Kostromskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "kostromskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2523",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.968571,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 0.96857088,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "0.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1750
+    },
+    {
+      "place_id": "RUS-ADM1-KRASNODARSKIY-KRAY",
+      "place_name": "Krasnodarskiy Kray",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "krasnodarskiy kray",
+      "adm1_geo_id": "RUS_2015_ADM1_2524",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.10563,
+      "poverty_context": {
+        "poor300_rate": 0.0018,
+        "poor420_rate": 0.0072,
+        "poor830_rate": 0.0143,
+        "prosperity_gap_2021": 1.1056303,
+        "poor300_display": "0.18%",
+        "poor420_display": "0.72%",
+        "poor830_display": "1.43%",
+        "prosperity_gap_display": "1.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1701
+    },
+    {
+      "place_id": "RUS-ADM1-KURGANSKAYA-OBLAST",
+      "place_name": "Kurganskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "kurganskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2526",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.104834,
+      "poverty_context": {
+        "poor300_rate": 0.0008,
+        "poor420_rate": 0.0014,
+        "poor830_rate": 0.0065,
+        "prosperity_gap_2021": 1.1048338,
+        "poor300_display": "0.08%",
+        "poor420_display": "0.14%",
+        "poor830_display": "0.65%",
+        "prosperity_gap_display": "1.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1702
+    },
+    {
+      "place_id": "RUS-ADM1-KURSKAYA-OBLAST",
+      "place_name": "Kurskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "kurskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2527",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.962904,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0056,
+        "prosperity_gap_2021": 0.96290438,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.56%",
+        "prosperity_gap_display": "0.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1754
+    },
+    {
+      "place_id": "RUS-ADM1-LENINGRADSKAYA-OBLAST",
+      "place_name": "Leningradskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "leningradskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2529",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.806153,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.001,
+        "prosperity_gap_2021": 0.80615349,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.10%",
+        "prosperity_gap_display": "0.81"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1803
+    },
+    {
+      "place_id": "RUS-ADM1-LIPETSKAYA-OBLAST",
+      "place_name": "Lipetskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "lipetskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2530",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.954928,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 0.95492793,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "0.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1756
+    },
+    {
+      "place_id": "RUS-ADM1-MAGADANSKAYA-OBLAST",
+      "place_name": "Magadanskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "magadanskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2531",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.641195,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 0.64119506,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "0.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1841
+    },
+    {
+      "place_id": "RUS-ADM1-MARIY-EL-REP",
+      "place_name": "Mariy-el Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "mariy el rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2532",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.466269,
+      "poverty_context": {
+        "poor300_rate": 0.0014,
+        "poor420_rate": 0.0025,
+        "poor830_rate": 0.0327,
+        "prosperity_gap_2021": 1.4662694,
+        "poor300_display": "0.14%",
+        "poor420_display": "0.25%",
+        "poor830_display": "3.27%",
+        "prosperity_gap_display": "1.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1601
+    },
+    {
+      "place_id": "RUS-ADM1-MORDOVIYA-REP",
+      "place_name": "Mordoviya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "mordoviya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2533",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.247742,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0229,
+        "prosperity_gap_2021": 1.2477416,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "2.29%",
+        "prosperity_gap_display": "1.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1649
+    },
+    {
+      "place_id": "RUS-ADM1-MOSKOVSKAYA-OBLAST",
+      "place_name": "Moskovskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "moskovskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2534",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.875685,
+      "poverty_context": {
+        "poor300_rate": 0.0007,
+        "poor420_rate": 0.0009,
+        "poor830_rate": 0.0041,
+        "prosperity_gap_2021": 0.87568453,
+        "poor300_display": "0.07%",
+        "poor420_display": "0.09%",
+        "poor830_display": "0.41%",
+        "prosperity_gap_display": "0.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1781
+    },
+    {
+      "place_id": "RUS-ADM1-MOSKVA",
+      "place_name": "Moskva",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "moskva",
+      "adm1_geo_id": "RUS_2015_ADM1_2535",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.580537,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 0.5805365,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "0.58"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1856
+    },
+    {
+      "place_id": "RUS-ADM1-MURMANSKAYA-OBLAST",
+      "place_name": "Murmanskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "murmanskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2536",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.607361,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 0.60736074,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "0.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1853
+    },
+    {
+      "place_id": "RUS-ADM1-NIZHEGORODSKAYA-OBLAST",
+      "place_name": "Nizhegorodskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "nizhegorodskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2539",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.027642,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0017,
+        "prosperity_gap_2021": 1.0276416,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.17%",
+        "prosperity_gap_display": "1.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1730
+    },
+    {
+      "place_id": "RUS-ADM1-NOVGORODSKAYA-OBLAST",
+      "place_name": "Novgorodskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "novgorodskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2540",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.23282,
+      "poverty_context": {
+        "poor300_rate": 0.0089,
+        "poor420_rate": 0.0111,
+        "poor830_rate": 0.0626,
+        "prosperity_gap_2021": 1.2328199,
+        "poor300_display": "0.89%",
+        "poor420_display": "1.11%",
+        "poor830_display": "6.26%",
+        "prosperity_gap_display": "1.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1655
+    },
+    {
+      "place_id": "RUS-ADM1-NOVOSIBIRSKAYA-OBLAST",
+      "place_name": "Novosibirskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "novosibirskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2541",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.277512,
+      "poverty_context": {
+        "poor300_rate": 0.008,
+        "poor420_rate": 0.014,
+        "poor830_rate": 0.0466,
+        "prosperity_gap_2021": 1.2775119,
+        "poor300_display": "0.80%",
+        "poor420_display": "1.40%",
+        "poor830_display": "4.66%",
+        "prosperity_gap_display": "1.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1640
+    },
+    {
+      "place_id": "RUS-ADM1-OMSKAYA-OBLAST",
+      "place_name": "Omskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "omskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2542",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.156229,
+      "poverty_context": {
+        "poor300_rate": 0.0004,
+        "poor420_rate": 0.0004,
+        "poor830_rate": 0.0193,
+        "prosperity_gap_2021": 1.1562288,
+        "poor300_display": "0.04%",
+        "poor420_display": "0.04%",
+        "poor830_display": "1.93%",
+        "prosperity_gap_display": "1.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1681
+    },
+    {
+      "place_id": "RUS-ADM1-ORENBURGSKAYA-OBLAST",
+      "place_name": "Orenburgskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "orenburgskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2543",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.163337,
+      "poverty_context": {
+        "poor300_rate": 0.0018,
+        "poor420_rate": 0.0026,
+        "poor830_rate": 0.0149,
+        "prosperity_gap_2021": 1.1633373,
+        "poor300_display": "0.18%",
+        "poor420_display": "0.26%",
+        "poor830_display": "1.49%",
+        "prosperity_gap_display": "1.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1677
+    },
+    {
+      "place_id": "RUS-ADM1-ORLOVSKAYA-OBLAST",
+      "place_name": "Orlovskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "orlovskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2544",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.103962,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0029,
+        "prosperity_gap_2021": 1.1039617,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.29%",
+        "prosperity_gap_display": "1.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1703
+    },
+    {
+      "place_id": "RUS-ADM1-PENZENSKAYA-OBLAST",
+      "place_name": "Penzenskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "penzenskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2545",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.262564,
+      "poverty_context": {
+        "poor300_rate": 0.0051,
+        "poor420_rate": 0.0062,
+        "poor830_rate": 0.0186,
+        "prosperity_gap_2021": 1.2625636,
+        "poor300_display": "0.51%",
+        "poor420_display": "0.62%",
+        "poor830_display": "1.86%",
+        "prosperity_gap_display": "1.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1645
+    },
+    {
+      "place_id": "RUS-ADM1-PRIMORSKIY-KRAY",
+      "place_name": "Primorskiy Kray",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "primorskiy kray",
+      "adm1_geo_id": "RUS_2015_ADM1_2547",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.820145,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0006,
+        "prosperity_gap_2021": 0.82014484,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.06%",
+        "prosperity_gap_display": "0.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1800
+    },
+    {
+      "place_id": "RUS-ADM1-PSKOVSKAYA-OBLAST",
+      "place_name": "Pskovskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "pskovskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2548",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.227034,
+      "poverty_context": {
+        "poor300_rate": 0.0008,
+        "poor420_rate": 0.001,
+        "poor830_rate": 0.0118,
+        "prosperity_gap_2021": 1.2270342,
+        "poor300_display": "0.08%",
+        "poor420_display": "0.10%",
+        "poor830_display": "1.18%",
+        "prosperity_gap_display": "1.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1659
+    },
+    {
+      "place_id": "RUS-ADM1-ROSTOVSKAYA-OBLAST",
+      "place_name": "Rostovskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "rostovskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2549",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.05596,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0064,
+        "prosperity_gap_2021": 1.0559601,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.64%",
+        "prosperity_gap_display": "1.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1718
+    },
+    {
+      "place_id": "RUS-ADM1-RYAZANSKAYA-OBLAST",
+      "place_name": "Ryazanskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "ryazanskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2550",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.14881,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 1.1488099,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "1.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1684
+    },
+    {
+      "place_id": "RUS-ADM1-SAKHA-REP",
+      "place_name": "Sakha Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "sakha rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2551",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.79991,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0004,
+        "prosperity_gap_2021": 0.79990969,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.04%",
+        "prosperity_gap_display": "0.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1807
+    },
+    {
+      "place_id": "RUS-ADM1-SAKHALINSKAYA-OBLAST",
+      "place_name": "Sakhalinskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "sakhalinskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2552",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.67245,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0009,
+        "prosperity_gap_2021": 0.67244988,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.09%",
+        "prosperity_gap_display": "0.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1834
+    },
+    {
+      "place_id": "RUS-ADM1-SAMARSKAYA-OBLAST",
+      "place_name": "Samarskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "samarskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2553",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.003779,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0001,
+        "poor830_rate": 0.0041,
+        "prosperity_gap_2021": 1.0037791,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.01%",
+        "poor830_display": "0.41%",
+        "prosperity_gap_display": "1.00"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1736
+    },
+    {
+      "place_id": "RUS-ADM1-SANKT-PETERBURG",
+      "place_name": "Sankt-peterburg",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "sankt peterburg",
+      "adm1_geo_id": "RUS_2015_ADM1_2554",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.657851,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0002,
+        "prosperity_gap_2021": 0.65785146,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.02%",
+        "prosperity_gap_display": "0.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1839
+    },
+    {
+      "place_id": "RUS-ADM1-SARATOVSKAYA-OBLAST",
+      "place_name": "Saratovskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "saratovskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2555",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.232732,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.011,
+        "prosperity_gap_2021": 1.2327319,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.10%",
+        "prosperity_gap_display": "1.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1656
+    },
+    {
+      "place_id": "RUS-ADM1-SEVERNAYA-OSETIYA-ALANIYA-REP",
+      "place_name": "Severnaya Osetiya-alaniya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "severnaya osetiya alaniya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2556",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.226249,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0038,
+        "prosperity_gap_2021": 1.226249,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.38%",
+        "prosperity_gap_display": "1.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1660
+    },
+    {
+      "place_id": "RUS-ADM1-SMOLENSKAYA-OBLAST",
+      "place_name": "Smolenskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "smolenskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2557",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.189763,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0132,
+        "prosperity_gap_2021": 1.1897631,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.32%",
+        "prosperity_gap_display": "1.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1673
+    },
+    {
+      "place_id": "RUS-ADM1-STAVROPOLSKIY-KRAY",
+      "place_name": "Stavropolskiy Kray",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "stavropolskiy kray",
+      "adm1_geo_id": "RUS_2015_ADM1_2558",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.212191,
+      "poverty_context": {
+        "poor300_rate": 0.0012,
+        "poor420_rate": 0.0034,
+        "poor830_rate": 0.0254,
+        "prosperity_gap_2021": 1.2121913,
+        "poor300_display": "0.12%",
+        "poor420_display": "0.34%",
+        "poor830_display": "2.54%",
+        "prosperity_gap_display": "1.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1666
+    },
+    {
+      "place_id": "RUS-ADM1-SVERDLOVSKAYA-OBLAST",
+      "place_name": "Sverdlovskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "sverdlovskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2559",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.987226,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0005,
+        "poor830_rate": 0.0052,
+        "prosperity_gap_2021": 0.98722627,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.05%",
+        "poor830_display": "0.52%",
+        "prosperity_gap_display": "0.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1745
+    },
+    {
+      "place_id": "RUS-ADM1-TAMBOVSKAYA-OBLAST",
+      "place_name": "Tambovskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "tambovskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2560",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.236875,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0102,
+        "prosperity_gap_2021": 1.2368752,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.02%",
+        "prosperity_gap_display": "1.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1653
+    },
+    {
+      "place_id": "RUS-ADM1-TATARSTAN-REP",
+      "place_name": "Tatarstan Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "tatarstan rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2561",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.015798,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0007,
+        "prosperity_gap_2021": 1.0157979,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.07%",
+        "prosperity_gap_display": "1.02"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1733
+    },
+    {
+      "place_id": "RUS-ADM1-TOMSKAYA-OBLAST",
+      "place_name": "Tomskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "tomskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2563",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.063647,
+      "poverty_context": {
+        "poor300_rate": 0.0009,
+        "poor420_rate": 0.0094,
+        "poor830_rate": 0.0227,
+        "prosperity_gap_2021": 1.0636466,
+        "poor300_display": "0.09%",
+        "poor420_display": "0.94%",
+        "poor830_display": "2.27%",
+        "prosperity_gap_display": "1.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1715
+    },
+    {
+      "place_id": "RUS-ADM1-TULSKAYA-OBLAST",
+      "place_name": "Tulskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "tulskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2564",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.999399,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0007,
+        "prosperity_gap_2021": 0.99939948,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.07%",
+        "prosperity_gap_display": "1.00"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1739
+    },
+    {
+      "place_id": "RUS-ADM1-TVERSKAYA-OBLAST",
+      "place_name": "Tverskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "tverskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2565",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.048774,
+      "poverty_context": {
+        "poor300_rate": 0.0033,
+        "poor420_rate": 0.0033,
+        "poor830_rate": 0.0093,
+        "prosperity_gap_2021": 1.048774,
+        "poor300_display": "0.33%",
+        "poor420_display": "0.33%",
+        "poor830_display": "0.93%",
+        "prosperity_gap_display": "1.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1724
+    },
+    {
+      "place_id": "RUS-ADM1-TYVA-REP",
+      "place_name": "Tyva Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "tyva rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2567",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.501204,
+      "poverty_context": {
+        "poor300_rate": 0.0044,
+        "poor420_rate": 0.0044,
+        "poor830_rate": 0.0425,
+        "prosperity_gap_2021": 1.5012044,
+        "poor300_display": "0.44%",
+        "poor420_display": "0.44%",
+        "poor830_display": "4.25%",
+        "prosperity_gap_display": "1.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1594
+    },
+    {
+      "place_id": "RUS-ADM1-UDMURTIYA-REP",
+      "place_name": "Udmurtiya Rep.",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "udmurtiya rep",
+      "adm1_geo_id": "RUS_2015_ADM1_2568",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.00345,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0025,
+        "prosperity_gap_2021": 1.0034502,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.25%",
+        "prosperity_gap_display": "1.00"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1737
+    },
+    {
+      "place_id": "RUS-ADM1-ULYANOVSKAYA-OBLAST",
+      "place_name": "Ulyanovskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "ulyanovskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2569",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.289425,
+      "poverty_context": {
+        "poor300_rate": 0.0074,
+        "poor420_rate": 0.0074,
+        "poor830_rate": 0.0199,
+        "prosperity_gap_2021": 1.289425,
+        "poor300_display": "0.74%",
+        "poor420_display": "0.74%",
+        "poor830_display": "1.99%",
+        "prosperity_gap_display": "1.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1635
+    },
+    {
+      "place_id": "RUS-ADM1-VLADIMIRSKAYA-OBLAST",
+      "place_name": "Vladimirskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "vladimirskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2571",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.031345,
+      "poverty_context": {
+        "poor300_rate": 0.0014,
+        "poor420_rate": 0.0014,
+        "poor830_rate": 0.0063,
+        "prosperity_gap_2021": 1.0313449,
+        "poor300_display": "0.14%",
+        "poor420_display": "0.14%",
+        "poor830_display": "0.63%",
+        "prosperity_gap_display": "1.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1729
+    },
+    {
+      "place_id": "RUS-ADM1-VOLGOGRADSKAYA-OBLAST",
+      "place_name": "Volgogradskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "volgogradskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2572",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.025672,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 1.0256717,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "1.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1731
+    },
+    {
+      "place_id": "RUS-ADM1-VOLOGODSKAYA-OBLAST",
+      "place_name": "Vologodskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "vologodskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2573",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.946562,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0042,
+        "prosperity_gap_2021": 0.94656244,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.42%",
+        "prosperity_gap_display": "0.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1760
+    },
+    {
+      "place_id": "RUS-ADM1-VORONEZHSKAYA-OBLAST",
+      "place_name": "Voronezhskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "voronezhskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2574",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.103694,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.003,
+        "poor830_rate": 0.0076,
+        "prosperity_gap_2021": 1.1036936,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.30%",
+        "poor830_display": "0.76%",
+        "prosperity_gap_display": "1.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1704
+    },
+    {
+      "place_id": "RUS-ADM1-YAROSLAVSKAYA-OBLAST",
+      "place_name": "Yaroslavskaya Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "yaroslavskaya oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2576",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.131512,
+      "poverty_context": {
+        "poor300_rate": 0.0021,
+        "poor420_rate": 0.0021,
+        "poor830_rate": 0.0107,
+        "prosperity_gap_2021": 1.1315119,
+        "poor300_display": "0.21%",
+        "poor420_display": "0.21%",
+        "poor830_display": "1.07%",
+        "prosperity_gap_display": "1.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1693
+    },
+    {
+      "place_id": "RUS-ADM1-YEVREYSKAYA-A-OBLAST",
+      "place_name": "Yevreyskaya A. Oblast",
+      "parent_place_id": "RUS",
+      "parent_place_name": "Russia",
+      "iso3": "RUS",
+      "source_iso3": "RUS",
+      "geometry_level": "adm1",
+      "adm1_key": "yevreyskaya a oblast",
+      "adm1_geo_id": "RUS_2015_ADM1_2577",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.990538,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0035,
+        "prosperity_gap_2021": 0.99053776,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.35%",
+        "prosperity_gap_display": "0.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1742
+    }
+  ]
+}

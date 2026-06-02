@@ -1,0 +1,585 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "NAM",
+  "parent_place_name": "Namibia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 13,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "NAM-ADM1-CAPRIVI",
+      "place_name": "Caprivi",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "caprivi",
+      "adm1_geo_id": "NAM_2015_ADM1_2137",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.922763,
+      "poverty_context": {
+        "poor300_rate": 0.432,
+        "poor420_rate": 0.5703,
+        "poor830_rate": 0.7992,
+        "prosperity_gap_2021": 10.922763,
+        "poor300_display": "43.2%",
+        "poor420_display": "57.0%",
+        "poor830_display": "79.9%",
+        "prosperity_gap_display": "10.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 288
+    },
+    {
+      "place_id": "NAM-ADM1-ERONGO",
+      "place_name": "Erongo",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "erongo",
+      "adm1_geo_id": "NAM_2015_ADM1_2138",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.341346,
+      "poverty_context": {
+        "poor300_rate": 0.0472,
+        "poor420_rate": 0.0985,
+        "poor830_rate": 0.3619,
+        "prosperity_gap_2021": 3.3413463,
+        "poor300_display": "4.72%",
+        "poor420_display": "9.85%",
+        "poor830_display": "36.2%",
+        "prosperity_gap_display": "3.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1100
+    },
+    {
+      "place_id": "NAM-ADM1-HARDAP",
+      "place_name": "Hardap",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "hardap",
+      "adm1_geo_id": "NAM_2015_ADM1_2139",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.320448,
+      "poverty_context": {
+        "poor300_rate": 0.1435,
+        "poor420_rate": 0.2855,
+        "poor830_rate": 0.5387,
+        "prosperity_gap_2021": 5.3204477,
+        "poor300_display": "14.3%",
+        "poor420_display": "28.5%",
+        "poor830_display": "53.9%",
+        "prosperity_gap_display": "5.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 764
+    },
+    {
+      "place_id": "NAM-ADM1-KARAS",
+      "place_name": "Karas",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "karas",
+      "adm1_geo_id": "NAM_2015_ADM1_2140",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.245316,
+      "poverty_context": {
+        "poor300_rate": 0.112,
+        "poor420_rate": 0.2326,
+        "poor830_rate": 0.5478,
+        "prosperity_gap_2021": 5.2453161,
+        "poor300_display": "11.2%",
+        "poor420_display": "23.3%",
+        "poor830_display": "54.8%",
+        "prosperity_gap_display": "5.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 776
+    },
+    {
+      "place_id": "NAM-ADM1-KAVANGO",
+      "place_name": "Kavango",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "kavango",
+      "adm1_geo_id": "NAM_2015_ADM1_2141",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.808452,
+      "poverty_context": {
+        "poor300_rate": 0.4511,
+        "poor420_rate": 0.595,
+        "poor830_rate": 0.8274,
+        "prosperity_gap_2021": 11.808452,
+        "poor300_display": "45.1%",
+        "poor420_display": "59.5%",
+        "poor830_display": "82.7%",
+        "prosperity_gap_display": "11.81"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 226
+    },
+    {
+      "place_id": "NAM-ADM1-KHOMAS",
+      "place_name": "Khomas",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "khomas",
+      "adm1_geo_id": "NAM_2015_ADM1_2142",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.514266,
+      "poverty_context": {
+        "poor300_rate": 0.0882,
+        "poor420_rate": 0.1552,
+        "poor830_rate": 0.3239,
+        "prosperity_gap_2021": 3.514266,
+        "poor300_display": "8.82%",
+        "poor420_display": "15.5%",
+        "poor830_display": "32.4%",
+        "prosperity_gap_display": "3.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1070
+    },
+    {
+      "place_id": "NAM-ADM1-KUNENE",
+      "place_name": "Kunene",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "kunene",
+      "adm1_geo_id": "NAM_2015_ADM1_2143",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.900773,
+      "poverty_context": {
+        "poor300_rate": 0.4729,
+        "poor420_rate": 0.6332,
+        "poor830_rate": 0.8261,
+        "prosperity_gap_2021": 11.900773,
+        "poor300_display": "47.3%",
+        "poor420_display": "63.3%",
+        "poor830_display": "82.6%",
+        "prosperity_gap_display": "11.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 219
+    },
+    {
+      "place_id": "NAM-ADM1-OHANGWENA",
+      "place_name": "Ohangwena",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "ohangwena",
+      "adm1_geo_id": "NAM_2015_ADM1_2144",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.680065,
+      "poverty_context": {
+        "poor300_rate": 0.2031,
+        "poor420_rate": 0.3561,
+        "poor830_rate": 0.6865,
+        "prosperity_gap_2021": 6.6800647,
+        "poor300_display": "20.3%",
+        "poor420_display": "35.6%",
+        "poor830_display": "68.7%",
+        "prosperity_gap_display": "6.68"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 611
+    },
+    {
+      "place_id": "NAM-ADM1-OMAHEKE",
+      "place_name": "Omaheke",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "omaheke",
+      "adm1_geo_id": "NAM_2015_ADM1_2145",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.316588,
+      "poverty_context": {
+        "poor300_rate": 0.4018,
+        "poor420_rate": 0.5091,
+        "poor830_rate": 0.7249,
+        "prosperity_gap_2021": 12.316588,
+        "poor300_display": "40.2%",
+        "poor420_display": "50.9%",
+        "poor830_display": "72.5%",
+        "prosperity_gap_display": "12.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 198
+    },
+    {
+      "place_id": "NAM-ADM1-OMUSATI",
+      "place_name": "Omusati",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "omusati",
+      "adm1_geo_id": "NAM_2015_ADM1_2146",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.96102,
+      "poverty_context": {
+        "poor300_rate": 0.2985,
+        "poor420_rate": 0.4605,
+        "poor830_rate": 0.7792,
+        "prosperity_gap_2021": 7.9610203,
+        "poor300_display": "29.8%",
+        "poor420_display": "46.1%",
+        "poor830_display": "77.9%",
+        "prosperity_gap_display": "7.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 503
+    },
+    {
+      "place_id": "NAM-ADM1-OSHANA",
+      "place_name": "Oshana",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "oshana",
+      "adm1_geo_id": "NAM_2015_ADM1_2147",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.288956,
+      "poverty_context": {
+        "poor300_rate": 0.1586,
+        "poor420_rate": 0.2692,
+        "poor830_rate": 0.5636,
+        "prosperity_gap_2021": 5.2889556,
+        "poor300_display": "15.9%",
+        "poor420_display": "26.9%",
+        "poor830_display": "56.4%",
+        "prosperity_gap_display": "5.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 770
+    },
+    {
+      "place_id": "NAM-ADM1-OSHIKOTO",
+      "place_name": "Oshikoto",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "oshikoto",
+      "adm1_geo_id": "NAM_2015_ADM1_2148",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.839402,
+      "poverty_context": {
+        "poor300_rate": 0.21,
+        "poor420_rate": 0.3845,
+        "poor830_rate": 0.7042,
+        "prosperity_gap_2021": 6.8394021,
+        "poor300_display": "21.0%",
+        "poor420_display": "38.5%",
+        "poor830_display": "70.4%",
+        "prosperity_gap_display": "6.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 599
+    },
+    {
+      "place_id": "NAM-ADM1-OTJOZONDJUPA",
+      "place_name": "Otjozondjupa",
+      "parent_place_id": "NAM",
+      "parent_place_name": "Namibia",
+      "iso3": "NAM",
+      "source_iso3": "NAM",
+      "geometry_level": "adm1",
+      "adm1_key": "otjozondjupa",
+      "adm1_geo_id": "NAM_2015_ADM1_2149",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NAM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.995393,
+      "poverty_context": {
+        "poor300_rate": 0.2467,
+        "poor420_rate": 0.3525,
+        "poor830_rate": 0.6359,
+        "prosperity_gap_2021": 7.9953929,
+        "poor300_display": "24.7%",
+        "poor420_display": "35.3%",
+        "poor830_display": "63.6%",
+        "prosperity_gap_display": "8.00"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 501
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "BWA",
+  "parent_place_name": "Botswana",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 7,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "BWA-ADM1-FRANCISTOWN",
+      "place_name": "FRANCISTOWN",
+      "parent_place_id": "BWA",
+      "parent_place_name": "Botswana",
+      "iso3": "BWA",
+      "source_iso3": "BWA",
+      "geometry_level": "adm1",
+      "adm1_key": "francistown",
+      "adm1_geo_id": "BWA_2015_GADM2_ BWA_BWA.3_1_BWA.3.",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.595057,
+      "poverty_context": {
+        "poor300_rate": 0.084,
+        "poor420_rate": 0.1909,
+        "poor830_rate": 0.4732,
+        "prosperity_gap_2021": 4.5950565,
+        "poor300_display": "8.40%",
+        "poor420_display": "19.1%",
+        "poor830_display": "47.3%",
+        "prosperity_gap_display": "4.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 878
+    },
+    {
+      "place_id": "BWA-ADM1-GABORONE",
+      "place_name": "GABORONE",
+      "parent_place_id": "BWA",
+      "parent_place_name": "Botswana",
+      "iso3": "BWA",
+      "source_iso3": "BWA",
+      "geometry_level": "adm1",
+      "adm1_key": "gaborone",
+      "adm1_geo_id": "BWA_2015_GADM2_ BWA_BWA.4_1_BWA.4.",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.554743,
+      "poverty_context": {
+        "poor300_rate": 0.0363,
+        "poor420_rate": 0.0621,
+        "poor830_rate": 0.1741,
+        "prosperity_gap_2021": 2.5547431,
+        "poor300_display": "3.63%",
+        "poor420_display": "6.21%",
+        "poor830_display": "17.4%",
+        "prosperity_gap_display": "2.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1279
+    },
+    {
+      "place_id": "BWA-ADM1-LOBATSE-AND-SELIBE-PHIKWE-AND-ORAPA-AND-JWANENG-AND-SOWA-TOWN",
+      "place_name": "LOBATSE & SELIBE PHIKWE & ORAPA & JWANENG & SOWA TOWN",
+      "parent_place_id": "BWA",
+      "parent_place_name": "Botswana",
+      "iso3": "BWA",
+      "source_iso3": "BWA",
+      "geometry_level": "adm1",
+      "adm1_key": "lobatse and selibe phikwe and orapa and jwaneng and sowa town",
+      "adm1_geo_id": "BWA_2015_GADMx_35_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.370363,
+      "poverty_context": {
+        "poor300_rate": 0.0392,
+        "poor420_rate": 0.1212,
+        "poor830_rate": 0.3678,
+        "prosperity_gap_2021": 3.3703631,
+        "poor300_display": "3.92%",
+        "poor420_display": "12.1%",
+        "poor830_display": "36.8%",
+        "prosperity_gap_display": "3.37"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1097
+    },
+    {
+      "place_id": "BWA-ADM1-NGAMILAND-EAST-AND-NGAMILAND-WEST-AND-NGAMILAND-DELTA-AND-CHOBE",
+      "place_name": "NGAMILAND EAST & NGAMILAND WEST & NGAMILAND DELTA & CHOBE",
+      "parent_place_id": "BWA",
+      "parent_place_name": "Botswana",
+      "iso3": "BWA",
+      "source_iso3": "BWA",
+      "geometry_level": "adm1",
+      "adm1_key": "ngamiland east and ngamiland west and ngamiland delta and chobe",
+      "adm1_geo_id": "BWA_2015_GADMx_35_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.258828,
+      "poverty_context": {
+        "poor300_rate": 0.3457,
+        "poor420_rate": 0.5275,
+        "poor830_rate": 0.8172,
+        "prosperity_gap_2021": 8.2588284,
+        "poor300_display": "34.6%",
+        "poor420_display": "52.8%",
+        "poor830_display": "81.7%",
+        "prosperity_gap_display": "8.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 480
+    },
+    {
+      "place_id": "BWA-ADM1-NGWAKETSE-WEST-AND-KWENENG-WEST-AND-GHANZI-AND-CENTRAL-KGALAGAD-FD49A853",
+      "place_name": "NGWAKETSE WEST & KWENENG WEST & GHANZI & CENTRAL KGALAGADI GAME RESERVE & KGALAGADI SOUTH & KGALAGADI NORTH",
+      "parent_place_id": "BWA",
+      "parent_place_name": "Botswana",
+      "iso3": "BWA",
+      "source_iso3": "BWA",
+      "geometry_level": "adm1",
+      "adm1_key": "ngwaketse west and kweneng west and ghanzi and central kgalagadi game reserve and kgalagadi south and kgalagadi north",
+      "adm1_geo_id": "BWA_2015_GADMx_35_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.353272,
+      "poverty_context": {
+        "poor300_rate": 0.4462,
+        "poor420_rate": 0.604,
+        "poor830_rate": 0.8052,
+        "prosperity_gap_2021": 10.353272,
+        "poor300_display": "44.6%",
+        "poor420_display": "60.4%",
+        "poor830_display": "80.5%",
+        "prosperity_gap_display": "10.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 317
+    },
+    {
+      "place_id": "BWA-ADM1-SEROWE-PALAPYE-AND-MAHALAPYE-AND-BOBONONG-AND-BOTETI-AND-TUTUME-BC347423",
+      "place_name": "SEROWE PALAPYE & MAHALAPYE & BOBONONG & BOTETI & TUTUME & NORTH EAST",
+      "parent_place_id": "BWA",
+      "parent_place_name": "Botswana",
+      "iso3": "BWA",
+      "source_iso3": "BWA",
+      "geometry_level": "adm1",
+      "adm1_key": "serowe palapye and mahalapye and bobonong and boteti and tutume and north east",
+      "adm1_geo_id": "BWA_2015_GADMx_35_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.150052,
+      "poverty_context": {
+        "poor300_rate": 0.186,
+        "poor420_rate": 0.3639,
+        "poor830_rate": 0.6874,
+        "prosperity_gap_2021": 6.1500515,
+        "poor300_display": "18.6%",
+        "poor420_display": "36.4%",
+        "poor830_display": "68.7%",
+        "prosperity_gap_display": "6.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 660
+    },
+    {
+      "place_id": "BWA-ADM1-SOUTHERN-AND-BAROLONG-AND-SOUTH-EAST-AND-KWENENG-EAST-AND-KGATLENG",
+      "place_name": "SOUTHERN & BAROLONG & SOUTH EAST & KWENENG EAST & KGATLENG",
+      "parent_place_id": "BWA",
+      "parent_place_name": "Botswana",
+      "iso3": "BWA",
+      "source_iso3": "BWA",
+      "geometry_level": "adm1",
+      "adm1_key": "southern and barolong and south east and kweneng east and kgatleng",
+      "adm1_geo_id": "BWA_2015_GADMx_35_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.552877,
+      "poverty_context": {
+        "poor300_rate": 0.163,
+        "poor420_rate": 0.3025,
+        "poor830_rate": 0.606,
+        "prosperity_gap_2021": 5.5528769,
+        "poor300_display": "16.3%",
+        "poor420_display": "30.3%",
+        "poor830_display": "60.6%",
+        "prosperity_gap_display": "5.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 733
+    }
+  ]
+}

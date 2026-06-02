@@ -1,0 +1,321 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "CHE",
+  "parent_place_name": "Switzerland",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 7,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "CHE-ADM1-ESPACE-MITTELLAND-CH02",
+      "place_name": "Espace Mittelland (CH02)",
+      "parent_place_id": "CHE",
+      "parent_place_name": "Switzerland",
+      "iso3": "CHE",
+      "source_iso3": "CHE",
+      "geometry_level": "adm1",
+      "adm1_key": "espace mittelland ch02",
+      "adm1_geo_id": "CHE_2021_NUTS2_CH02",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CHE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.686853,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.002,
+        "poor830_rate": 0.002,
+        "prosperity_gap_2021": 0.68685274,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.20%",
+        "poor830_display": "0.20%",
+        "prosperity_gap_display": "0.69"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1830
+    },
+    {
+      "place_id": "CHE-ADM1-NORDWESTSCHWEIZ-CH03",
+      "place_name": "Nordwestschweiz (CH03)",
+      "parent_place_id": "CHE",
+      "parent_place_name": "Switzerland",
+      "iso3": "CHE",
+      "source_iso3": "CHE",
+      "geometry_level": "adm1",
+      "adm1_key": "nordwestschweiz ch03",
+      "adm1_geo_id": "CHE_2021_NUTS2_CH03",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CHE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.681059,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0022,
+        "poor830_rate": 0.0022,
+        "prosperity_gap_2021": 0.68105886,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.22%",
+        "poor830_display": "0.22%",
+        "prosperity_gap_display": "0.68"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1833
+    },
+    {
+      "place_id": "CHE-ADM1-OSTSCHWEIZ-CH05",
+      "place_name": "Ostschweiz (CH05)",
+      "parent_place_id": "CHE",
+      "parent_place_name": "Switzerland",
+      "iso3": "CHE",
+      "source_iso3": "CHE",
+      "geometry_level": "adm1",
+      "adm1_key": "ostschweiz ch05",
+      "adm1_geo_id": "CHE_2021_NUTS2_CH05",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CHE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.509331,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0007,
+        "poor830_rate": 0.0007,
+        "prosperity_gap_2021": 0.50933104,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.07%",
+        "poor830_display": "0.07%",
+        "prosperity_gap_display": "0.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1871
+    },
+    {
+      "place_id": "CHE-ADM1-R-GION-L-MANIQUE-CH01",
+      "place_name": "Région lémanique (CH01)",
+      "parent_place_id": "CHE",
+      "parent_place_name": "Switzerland",
+      "iso3": "CHE",
+      "source_iso3": "CHE",
+      "geometry_level": "adm1",
+      "adm1_key": "r gion l manique ch01",
+      "adm1_geo_id": "CHE_2021_NUTS2_CH01",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CHE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.733141,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0021,
+        "poor830_rate": 0.0021,
+        "prosperity_gap_2021": 0.73314057,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.21%",
+        "poor830_display": "0.21%",
+        "prosperity_gap_display": "0.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1819
+    },
+    {
+      "place_id": "CHE-ADM1-TICINO-CH07",
+      "place_name": "Ticino (CH07)",
+      "parent_place_id": "CHE",
+      "parent_place_name": "Switzerland",
+      "iso3": "CHE",
+      "source_iso3": "CHE",
+      "geometry_level": "adm1",
+      "adm1_key": "ticino ch07",
+      "adm1_geo_id": "CHE_2021_NUTS2_CH07",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CHE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.119545,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0061,
+        "poor830_rate": 0.0061,
+        "prosperity_gap_2021": 1.1195453,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.61%",
+        "poor830_display": "0.61%",
+        "prosperity_gap_display": "1.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1699
+    },
+    {
+      "place_id": "CHE-ADM1-ZENTRALSCHWEIZ-CH06",
+      "place_name": "Zentralschweiz (CH06)",
+      "parent_place_id": "CHE",
+      "parent_place_name": "Switzerland",
+      "iso3": "CHE",
+      "source_iso3": "CHE",
+      "geometry_level": "adm1",
+      "adm1_key": "zentralschweiz ch06",
+      "adm1_geo_id": "CHE_2021_NUTS2_CH06",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CHE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.461048,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0,
+        "prosperity_gap_2021": 0.46104824,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.00%",
+        "prosperity_gap_display": "0.46"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1874
+    },
+    {
+      "place_id": "CHE-ADM1-Z-RICH-CH04",
+      "place_name": "Zürich (CH04)",
+      "parent_place_id": "CHE",
+      "parent_place_name": "Switzerland",
+      "iso3": "CHE",
+      "source_iso3": "CHE",
+      "geometry_level": "adm1",
+      "adm1_key": "z rich ch04",
+      "adm1_geo_id": "CHE_2021_NUTS2_CH04",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CHE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.779254,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0038,
+        "poor830_rate": 0.0038,
+        "prosperity_gap_2021": 0.77925388,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.38%",
+        "poor830_display": "0.38%",
+        "prosperity_gap_display": "0.78"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1813
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "KOS",
+  "parent_place_name": "Kosovo",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 7,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "KOS-ADM1-AKOVICA",
+      "place_name": "Đakovica",
+      "parent_place_id": "KOS",
+      "parent_place_name": "Kosovo",
+      "iso3": "KOS",
+      "source_iso3": "XKX",
+      "geometry_level": "adm1",
+      "adm1_key": "akovica",
+      "adm1_geo_id": "XKX_2015_GADM1_120_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KOS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.512343,
+      "poverty_context": {
+        "poor300_rate": 0.2249,
+        "poor420_rate": 0.2686,
+        "poor830_rate": 0.4829,
+        "prosperity_gap_2021": 12.512343,
+        "poor300_display": "22.5%",
+        "poor420_display": "26.9%",
+        "poor830_display": "48.3%",
+        "prosperity_gap_display": "12.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 193
+    },
+    {
+      "place_id": "KOS-ADM1-GNJILANE",
+      "place_name": "Gnjilane",
+      "parent_place_id": "KOS",
+      "parent_place_name": "Kosovo",
+      "iso3": "KOS",
+      "source_iso3": "XKX",
+      "geometry_level": "adm1",
+      "adm1_key": "gnjilane",
+      "adm1_geo_id": "XKX_2015_GADM1_120_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KOS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.471561,
+      "poverty_context": {
+        "poor300_rate": 0.1089,
+        "poor420_rate": 0.2197,
+        "poor830_rate": 0.4827,
+        "prosperity_gap_2021": 7.4715611,
+        "poor300_display": "10.9%",
+        "poor420_display": "22.0%",
+        "poor830_display": "48.3%",
+        "prosperity_gap_display": "7.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 550
+    },
+    {
+      "place_id": "KOS-ADM1-KOSOVSKA-MITROVICA",
+      "place_name": "Kosovska Mitrovica",
+      "parent_place_id": "KOS",
+      "parent_place_name": "Kosovo",
+      "iso3": "KOS",
+      "source_iso3": "XKX",
+      "geometry_level": "adm1",
+      "adm1_key": "kosovska mitrovica",
+      "adm1_geo_id": "XKX_2015_GADM1_120_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KOS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.777664,
+      "poverty_context": {
+        "poor300_rate": 0.1091,
+        "poor420_rate": 0.2283,
+        "poor830_rate": 0.4067,
+        "prosperity_gap_2021": 7.7776642,
+        "poor300_display": "10.9%",
+        "poor420_display": "22.8%",
+        "poor830_display": "40.7%",
+        "prosperity_gap_display": "7.78"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 516
+    },
+    {
+      "place_id": "KOS-ADM1-PE-KI",
+      "place_name": "Pećki",
+      "parent_place_id": "KOS",
+      "parent_place_name": "Kosovo",
+      "iso3": "KOS",
+      "source_iso3": "XKX",
+      "geometry_level": "adm1",
+      "adm1_key": "pe ki",
+      "adm1_geo_id": "XKX_2015_GADM1_120_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KOS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.190201,
+      "poverty_context": {
+        "poor300_rate": 0.0173,
+        "poor420_rate": 0.0173,
+        "poor830_rate": 0.5951,
+        "prosperity_gap_2021": 4.1902009,
+        "poor300_display": "1.73%",
+        "poor420_display": "1.73%",
+        "poor830_display": "59.5%",
+        "prosperity_gap_display": "4.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 949
+    },
+    {
+      "place_id": "KOS-ADM1-PRISTINA",
+      "place_name": "Pristina",
+      "parent_place_id": "KOS",
+      "parent_place_name": "Kosovo",
+      "iso3": "KOS",
+      "source_iso3": "XKX",
+      "geometry_level": "adm1",
+      "adm1_key": "pristina",
+      "adm1_geo_id": "XKX_2015_GADM1_120_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KOS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.19287,
+      "poverty_context": {
+        "poor300_rate": 0.1236,
+        "poor420_rate": 0.1433,
+        "poor830_rate": 0.3374,
+        "prosperity_gap_2021": 9.19287,
+        "poor300_display": "12.4%",
+        "poor420_display": "14.3%",
+        "poor830_display": "33.7%",
+        "prosperity_gap_display": "9.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 407
+    },
+    {
+      "place_id": "KOS-ADM1-PRIZREN",
+      "place_name": "Prizren",
+      "parent_place_id": "KOS",
+      "parent_place_name": "Kosovo",
+      "iso3": "KOS",
+      "source_iso3": "XKX",
+      "geometry_level": "adm1",
+      "adm1_key": "prizren",
+      "adm1_geo_id": "XKX_2015_GADM1_120_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KOS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.396921,
+      "poverty_context": {
+        "poor300_rate": 0.0187,
+        "poor420_rate": 0.0568,
+        "poor830_rate": 0.2495,
+        "prosperity_gap_2021": 3.3969214,
+        "poor300_display": "1.87%",
+        "poor420_display": "5.68%",
+        "poor830_display": "24.9%",
+        "prosperity_gap_display": "3.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1087
+    },
+    {
+      "place_id": "KOS-ADM1-URO-EVAC",
+      "place_name": "Uroševac",
+      "parent_place_id": "KOS",
+      "parent_place_name": "Kosovo",
+      "iso3": "KOS",
+      "source_iso3": "XKX",
+      "geometry_level": "adm1",
+      "adm1_key": "uro evac",
+      "adm1_geo_id": "XKX_2015_GADM1_120_7",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KOS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.192424,
+      "poverty_context": {
+        "poor300_rate": 0.0526,
+        "poor420_rate": 0.0685,
+        "poor830_rate": 0.1976,
+        "prosperity_gap_2021": 3.192424,
+        "poor300_display": "5.26%",
+        "poor420_display": "6.85%",
+        "poor830_display": "19.8%",
+        "prosperity_gap_display": "3.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1127
+    }
+  ]
+}

@@ -1,0 +1,1333 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "RWA",
+  "parent_place_name": "Rwanda",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 30,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "RWA-ADM1-BUGESERA",
+      "place_name": "Bugesera",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "bugesera",
+      "adm1_geo_id": "RWA_2015_ADM2_21974",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.862541,
+      "poverty_context": {
+        "poor300_rate": 0.3857,
+        "poor420_rate": 0.6242,
+        "poor830_rate": 0.9123,
+        "prosperity_gap_2021": 8.8625413,
+        "poor300_display": "38.6%",
+        "poor420_display": "62.4%",
+        "poor830_display": "91.2%",
+        "prosperity_gap_display": "8.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 427
+    },
+    {
+      "place_id": "RWA-ADM1-BURERA",
+      "place_name": "Burera",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "burera",
+      "adm1_geo_id": "RWA_2015_ADM2_21975",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.178723,
+      "poverty_context": {
+        "poor300_rate": 0.4328,
+        "poor420_rate": 0.7366,
+        "poor830_rate": 0.9852,
+        "prosperity_gap_2021": 9.1787233,
+        "poor300_display": "43.3%",
+        "poor420_display": "73.7%",
+        "poor830_display": "98.5%",
+        "prosperity_gap_display": "9.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 408
+    },
+    {
+      "place_id": "RWA-ADM1-GAKENKE",
+      "place_name": "Gakenke",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "gakenke",
+      "adm1_geo_id": "RWA_2015_ADM2_21976",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.249395,
+      "poverty_context": {
+        "poor300_rate": 0.4005,
+        "poor420_rate": 0.711,
+        "poor830_rate": 0.9678,
+        "prosperity_gap_2021": 9.2493947,
+        "poor300_display": "40.1%",
+        "poor420_display": "71.1%",
+        "poor830_display": "96.8%",
+        "prosperity_gap_display": "9.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 399
+    },
+    {
+      "place_id": "RWA-ADM1-GASABO",
+      "place_name": "Gasabo",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "gasabo",
+      "adm1_geo_id": "RWA_2015_ADM2_21977",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.011898,
+      "poverty_context": {
+        "poor300_rate": 0.1908,
+        "poor420_rate": 0.3373,
+        "poor830_rate": 0.6897,
+        "prosperity_gap_2021": 6.0118976,
+        "poor300_display": "19.1%",
+        "poor420_display": "33.7%",
+        "poor830_display": "69.0%",
+        "prosperity_gap_display": "6.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 681
+    },
+    {
+      "place_id": "RWA-ADM1-GATSIBO",
+      "place_name": "Gatsibo",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "gatsibo",
+      "adm1_geo_id": "RWA_2015_ADM2_21978",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.116442,
+      "poverty_context": {
+        "poor300_rate": 0.3369,
+        "poor420_rate": 0.5443,
+        "poor830_rate": 0.9158,
+        "prosperity_gap_2021": 8.1164421,
+        "poor300_display": "33.7%",
+        "poor420_display": "54.4%",
+        "poor830_display": "91.6%",
+        "prosperity_gap_display": "8.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 491
+    },
+    {
+      "place_id": "RWA-ADM1-GICUMBI",
+      "place_name": "Gicumbi",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "gicumbi",
+      "adm1_geo_id": "RWA_2015_ADM2_21979",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.02931,
+      "poverty_context": {
+        "poor300_rate": 0.3353,
+        "poor420_rate": 0.6133,
+        "poor830_rate": 0.9205,
+        "prosperity_gap_2021": 8.0293097,
+        "poor300_display": "33.5%",
+        "poor420_display": "61.3%",
+        "poor830_display": "92.0%",
+        "prosperity_gap_display": "8.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 500
+    },
+    {
+      "place_id": "RWA-ADM1-GISAGARA",
+      "place_name": "Gisagara",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "gisagara",
+      "adm1_geo_id": "RWA_2015_ADM2_21980",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.724466,
+      "poverty_context": {
+        "poor300_rate": 0.6628,
+        "poor420_rate": 0.877,
+        "poor830_rate": 0.9914,
+        "prosperity_gap_2021": 11.724466,
+        "poor300_display": "66.3%",
+        "poor420_display": "87.7%",
+        "poor830_display": "99.1%",
+        "prosperity_gap_display": "11.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 231
+    },
+    {
+      "place_id": "RWA-ADM1-HUYE",
+      "place_name": "Huye",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "huye",
+      "adm1_geo_id": "RWA_2015_ADM2_21981",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.482939,
+      "poverty_context": {
+        "poor300_rate": 0.4084,
+        "poor420_rate": 0.6196,
+        "poor830_rate": 0.8714,
+        "prosperity_gap_2021": 8.4829391,
+        "poor300_display": "40.8%",
+        "poor420_display": "62.0%",
+        "poor830_display": "87.1%",
+        "prosperity_gap_display": "8.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 459
+    },
+    {
+      "place_id": "RWA-ADM1-KAMONYI",
+      "place_name": "Kamonyi",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "kamonyi",
+      "adm1_geo_id": "RWA_2015_ADM2_21982",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.990828,
+      "poverty_context": {
+        "poor300_rate": 0.5479,
+        "poor420_rate": 0.7651,
+        "poor830_rate": 0.9434,
+        "prosperity_gap_2021": 10.990828,
+        "poor300_display": "54.8%",
+        "poor420_display": "76.5%",
+        "poor830_display": "94.3%",
+        "prosperity_gap_display": "10.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 283
+    },
+    {
+      "place_id": "RWA-ADM1-KARONGI",
+      "place_name": "Karongi",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "karongi",
+      "adm1_geo_id": "RWA_2015_ADM2_21983",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.736644,
+      "poverty_context": {
+        "poor300_rate": 0.5591,
+        "poor420_rate": 0.8245,
+        "poor830_rate": 0.9635,
+        "prosperity_gap_2021": 10.736644,
+        "poor300_display": "55.9%",
+        "poor420_display": "82.5%",
+        "poor830_display": "96.4%",
+        "prosperity_gap_display": "10.74"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 300
+    },
+    {
+      "place_id": "RWA-ADM1-KAYONZA",
+      "place_name": "Kayonza",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "kayonza",
+      "adm1_geo_id": "RWA_2015_ADM2_21984",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.567745,
+      "poverty_context": {
+        "poor300_rate": 0.5112,
+        "poor420_rate": 0.7515,
+        "poor830_rate": 0.949,
+        "prosperity_gap_2021": 10.567745,
+        "poor300_display": "51.1%",
+        "poor420_display": "75.1%",
+        "poor830_display": "94.9%",
+        "prosperity_gap_display": "10.57"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 305
+    },
+    {
+      "place_id": "RWA-ADM1-KICUKIRO",
+      "place_name": "Kicukiro",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "kicukiro",
+      "adm1_geo_id": "RWA_2015_ADM2_21985",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.059774,
+      "poverty_context": {
+        "poor300_rate": 0.1327,
+        "poor420_rate": 0.2547,
+        "poor830_rate": 0.5876,
+        "prosperity_gap_2021": 5.0597743,
+        "poor300_display": "13.3%",
+        "poor420_display": "25.5%",
+        "poor830_display": "58.8%",
+        "prosperity_gap_display": "5.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 797
+    },
+    {
+      "place_id": "RWA-ADM1-KIREHE",
+      "place_name": "Kirehe",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "kirehe",
+      "adm1_geo_id": "RWA_2015_ADM2_21986",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.980822,
+      "poverty_context": {
+        "poor300_rate": 0.3018,
+        "poor420_rate": 0.6266,
+        "poor830_rate": 0.9515,
+        "prosperity_gap_2021": 7.9808215,
+        "poor300_display": "30.2%",
+        "poor420_display": "62.7%",
+        "poor830_display": "95.2%",
+        "prosperity_gap_display": "7.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 502
+    },
+    {
+      "place_id": "RWA-ADM1-MUHANGA",
+      "place_name": "Muhanga",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "muhanga",
+      "adm1_geo_id": "RWA_2015_ADM2_21987",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.827179,
+      "poverty_context": {
+        "poor300_rate": 0.2921,
+        "poor420_rate": 0.5419,
+        "poor830_rate": 0.9215,
+        "prosperity_gap_2021": 7.8271794,
+        "poor300_display": "29.2%",
+        "poor420_display": "54.2%",
+        "poor830_display": "92.2%",
+        "prosperity_gap_display": "7.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 512
+    },
+    {
+      "place_id": "RWA-ADM1-MUSANZE",
+      "place_name": "Musanze",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "musanze",
+      "adm1_geo_id": "RWA_2015_ADM2_21988",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.361118,
+      "poverty_context": {
+        "poor300_rate": 0.3485,
+        "poor420_rate": 0.6073,
+        "poor830_rate": 0.9007,
+        "prosperity_gap_2021": 8.3611183,
+        "poor300_display": "34.8%",
+        "poor420_display": "60.7%",
+        "poor830_display": "90.1%",
+        "prosperity_gap_display": "8.36"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 473
+    },
+    {
+      "place_id": "RWA-ADM1-NGOMA",
+      "place_name": "Ngoma",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "ngoma",
+      "adm1_geo_id": "RWA_2015_ADM2_21989",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.634373,
+      "poverty_context": {
+        "poor300_rate": 0.4869,
+        "poor420_rate": 0.7484,
+        "poor830_rate": 0.9465,
+        "prosperity_gap_2021": 9.634373,
+        "poor300_display": "48.7%",
+        "poor420_display": "74.8%",
+        "poor830_display": "94.7%",
+        "prosperity_gap_display": "9.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 371
+    },
+    {
+      "place_id": "RWA-ADM1-NGORORERO",
+      "place_name": "Ngororero",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "ngororero",
+      "adm1_geo_id": "RWA_2015_ADM2_21990",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.13178,
+      "poverty_context": {
+        "poor300_rate": 0.5062,
+        "poor420_rate": 0.801,
+        "poor830_rate": 0.9839,
+        "prosperity_gap_2021": 10.13178,
+        "poor300_display": "50.6%",
+        "poor420_display": "80.1%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "10.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 329
+    },
+    {
+      "place_id": "RWA-ADM1-NYABIHU",
+      "place_name": "Nyabihu",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "nyabihu",
+      "adm1_geo_id": "RWA_2015_ADM2_21991",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.877756,
+      "poverty_context": {
+        "poor300_rate": 0.3694,
+        "poor420_rate": 0.6795,
+        "poor830_rate": 0.9509,
+        "prosperity_gap_2021": 8.877756,
+        "poor300_display": "36.9%",
+        "poor420_display": "68.0%",
+        "poor830_display": "95.1%",
+        "prosperity_gap_display": "8.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 426
+    },
+    {
+      "place_id": "RWA-ADM1-NYAGATARE",
+      "place_name": "Nyagatare",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "nyagatare",
+      "adm1_geo_id": "RWA_2015_ADM2_21992",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.397866,
+      "poverty_context": {
+        "poor300_rate": 0.5286,
+        "poor420_rate": 0.7531,
+        "poor830_rate": 0.9636,
+        "prosperity_gap_2021": 10.397866,
+        "poor300_display": "52.9%",
+        "poor420_display": "75.3%",
+        "poor830_display": "96.4%",
+        "prosperity_gap_display": "10.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 315
+    },
+    {
+      "place_id": "RWA-ADM1-NYAMAGABE",
+      "place_name": "Nyamagabe",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "nyamagabe",
+      "adm1_geo_id": "RWA_2015_ADM2_21993",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.990575,
+      "poverty_context": {
+        "poor300_rate": 0.7004,
+        "poor420_rate": 0.8743,
+        "poor830_rate": 0.9905,
+        "prosperity_gap_2021": 11.990575,
+        "poor300_display": "70.0%",
+        "poor420_display": "87.4%",
+        "poor830_display": "99.1%",
+        "prosperity_gap_display": "11.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 216
+    },
+    {
+      "place_id": "RWA-ADM1-NYAMASHEKE",
+      "place_name": "Nyamasheke",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "nyamasheke",
+      "adm1_geo_id": "RWA_2015_ADM2_21994",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.494958,
+      "poverty_context": {
+        "poor300_rate": 0.5982,
+        "poor420_rate": 0.8074,
+        "poor830_rate": 0.9661,
+        "prosperity_gap_2021": 11.494958,
+        "poor300_display": "59.8%",
+        "poor420_display": "80.7%",
+        "poor830_display": "96.6%",
+        "prosperity_gap_display": "11.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 249
+    },
+    {
+      "place_id": "RWA-ADM1-NYANZA",
+      "place_name": "Nyanza",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "nyanza",
+      "adm1_geo_id": "RWA_2015_ADM2_21995",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.232486,
+      "poverty_context": {
+        "poor300_rate": 0.6076,
+        "poor420_rate": 0.8221,
+        "poor830_rate": 0.9708,
+        "prosperity_gap_2021": 11.232486,
+        "poor300_display": "60.8%",
+        "poor420_display": "82.2%",
+        "poor830_display": "97.1%",
+        "prosperity_gap_display": "11.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 268
+    },
+    {
+      "place_id": "RWA-ADM1-NYARUGENGE",
+      "place_name": "Nyarugenge",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "nyarugenge",
+      "adm1_geo_id": "RWA_2015_ADM2_21996",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.456247,
+      "poverty_context": {
+        "poor300_rate": 0.143,
+        "poor420_rate": 0.2785,
+        "poor830_rate": 0.6677,
+        "prosperity_gap_2021": 5.456247,
+        "poor300_display": "14.3%",
+        "poor420_display": "27.9%",
+        "poor830_display": "66.8%",
+        "prosperity_gap_display": "5.46"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 745
+    },
+    {
+      "place_id": "RWA-ADM1-NYARUGURU",
+      "place_name": "Nyaruguru",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "nyaruguru",
+      "adm1_geo_id": "RWA_2015_ADM2_21997",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.212995,
+      "poverty_context": {
+        "poor300_rate": 0.6192,
+        "poor420_rate": 0.8781,
+        "poor830_rate": 0.9892,
+        "prosperity_gap_2021": 11.212995,
+        "poor300_display": "61.9%",
+        "poor420_display": "87.8%",
+        "poor830_display": "98.9%",
+        "prosperity_gap_display": "11.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 270
+    },
+    {
+      "place_id": "RWA-ADM1-RUBAVU",
+      "place_name": "Rubavu",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "rubavu",
+      "adm1_geo_id": "RWA_2015_ADM2_21998",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.935301,
+      "poverty_context": {
+        "poor300_rate": 0.5507,
+        "poor420_rate": 0.6987,
+        "poor830_rate": 0.8894,
+        "prosperity_gap_2021": 10.935301,
+        "poor300_display": "55.1%",
+        "poor420_display": "69.9%",
+        "poor830_display": "88.9%",
+        "prosperity_gap_display": "10.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 285
+    },
+    {
+      "place_id": "RWA-ADM1-RUHANGO",
+      "place_name": "Ruhango",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "ruhango",
+      "adm1_geo_id": "RWA_2015_ADM2_21999",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.212959,
+      "poverty_context": {
+        "poor300_rate": 0.3311,
+        "poor420_rate": 0.5771,
+        "poor830_rate": 0.9357,
+        "prosperity_gap_2021": 8.2129586,
+        "poor300_display": "33.1%",
+        "poor420_display": "57.7%",
+        "poor830_display": "93.6%",
+        "prosperity_gap_display": "8.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 484
+    },
+    {
+      "place_id": "RWA-ADM1-RULINDO",
+      "place_name": "Rulindo",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "rulindo",
+      "adm1_geo_id": "RWA_2015_ADM2_22000",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.832943,
+      "poverty_context": {
+        "poor300_rate": 0.3753,
+        "poor420_rate": 0.6435,
+        "poor830_rate": 0.9593,
+        "prosperity_gap_2021": 8.8329433,
+        "poor300_display": "37.5%",
+        "poor420_display": "64.3%",
+        "poor830_display": "95.9%",
+        "prosperity_gap_display": "8.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 430
+    },
+    {
+      "place_id": "RWA-ADM1-RUSIZI",
+      "place_name": "Rusizi",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "rusizi",
+      "adm1_geo_id": "RWA_2015_ADM2_22001",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.591984,
+      "poverty_context": {
+        "poor300_rate": 0.5843,
+        "poor420_rate": 0.767,
+        "poor830_rate": 0.9511,
+        "prosperity_gap_2021": 11.591984,
+        "poor300_display": "58.4%",
+        "poor420_display": "76.7%",
+        "poor830_display": "95.1%",
+        "prosperity_gap_display": "11.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 240
+    },
+    {
+      "place_id": "RWA-ADM1-RUTSIRO",
+      "place_name": "Rutsiro",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "rutsiro",
+      "adm1_geo_id": "RWA_2015_ADM2_22002",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.278455,
+      "poverty_context": {
+        "poor300_rate": 0.5868,
+        "poor420_rate": 0.8405,
+        "poor830_rate": 0.9842,
+        "prosperity_gap_2021": 11.278455,
+        "poor300_display": "58.7%",
+        "poor420_display": "84.0%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "11.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 262
+    },
+    {
+      "place_id": "RWA-ADM1-RWAMAGANA",
+      "place_name": "Rwamagana",
+      "parent_place_id": "RWA",
+      "parent_place_name": "Rwanda",
+      "iso3": "RWA",
+      "source_iso3": "RWA",
+      "geometry_level": "adm1",
+      "adm1_key": "rwamagana",
+      "adm1_geo_id": "RWA_2015_ADM2_22003",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/RWA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.46938,
+      "poverty_context": {
+        "poor300_rate": 0.3487,
+        "poor420_rate": 0.5875,
+        "poor830_rate": 0.8799,
+        "prosperity_gap_2021": 8.4693798,
+        "poor300_display": "34.9%",
+        "poor420_display": "58.8%",
+        "poor830_display": "88.0%",
+        "prosperity_gap_display": "8.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 460
+    }
+  ]
+}

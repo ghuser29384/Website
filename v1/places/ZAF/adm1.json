@@ -1,0 +1,409 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "ZAF",
+  "parent_place_name": "South Africa",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 9,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "ZAF-ADM1-EASTERN-CAPE",
+      "place_name": "Eastern Cape",
+      "parent_place_id": "ZAF",
+      "parent_place_name": "South Africa",
+      "iso3": "ZAF",
+      "source_iso3": "ZAF",
+      "geometry_level": "adm1",
+      "adm1_key": "eastern cape",
+      "adm1_geo_id": "ZAF_2015_ADM1_77310",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.060194,
+      "poverty_context": {
+        "poor300_rate": 0.4978,
+        "poor420_rate": 0.6455,
+        "poor830_rate": 0.8069,
+        "prosperity_gap_2021": 12.060194,
+        "poor300_display": "49.8%",
+        "poor420_display": "64.5%",
+        "poor830_display": "80.7%",
+        "prosperity_gap_display": "12.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 213
+    },
+    {
+      "place_id": "ZAF-ADM1-FREE-STATE",
+      "place_name": "Free State",
+      "parent_place_id": "ZAF",
+      "parent_place_name": "South Africa",
+      "iso3": "ZAF",
+      "source_iso3": "ZAF",
+      "geometry_level": "adm1",
+      "adm1_key": "free state",
+      "adm1_geo_id": "ZAF_2015_ADM1_2707",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.310694,
+      "poverty_context": {
+        "poor300_rate": 0.2785,
+        "poor420_rate": 0.4217,
+        "poor830_rate": 0.681,
+        "prosperity_gap_2021": 7.3106938,
+        "poor300_display": "27.9%",
+        "poor420_display": "42.2%",
+        "poor830_display": "68.1%",
+        "prosperity_gap_display": "7.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 566
+    },
+    {
+      "place_id": "ZAF-ADM1-GAUTENG",
+      "place_name": "Gauteng",
+      "parent_place_id": "ZAF",
+      "parent_place_name": "South Africa",
+      "iso3": "ZAF",
+      "source_iso3": "ZAF",
+      "geometry_level": "adm1",
+      "adm1_key": "gauteng",
+      "adm1_geo_id": "ZAF_2015_ADM1_2708",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.670812,
+      "poverty_context": {
+        "poor300_rate": 0.13,
+        "poor420_rate": 0.2278,
+        "poor830_rate": 0.4646,
+        "prosperity_gap_2021": 4.6708123,
+        "poor300_display": "13.0%",
+        "poor420_display": "22.8%",
+        "poor830_display": "46.5%",
+        "prosperity_gap_display": "4.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 867
+    },
+    {
+      "place_id": "ZAF-ADM1-KWAZULU-NATAL",
+      "place_name": "KwaZulu-Natal",
+      "parent_place_id": "ZAF",
+      "parent_place_name": "South Africa",
+      "iso3": "ZAF",
+      "source_iso3": "ZAF",
+      "geometry_level": "adm1",
+      "adm1_key": "kwazulu natal",
+      "adm1_geo_id": "ZAF_2015_ADM1_77311",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.754945,
+      "poverty_context": {
+        "poor300_rate": 0.4196,
+        "poor420_rate": 0.5784,
+        "poor830_rate": 0.7725,
+        "prosperity_gap_2021": 10.754945,
+        "poor300_display": "42.0%",
+        "poor420_display": "57.8%",
+        "poor830_display": "77.3%",
+        "prosperity_gap_display": "10.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 297
+    },
+    {
+      "place_id": "ZAF-ADM1-LIMPOPO",
+      "place_name": "Limpopo",
+      "parent_place_id": "ZAF",
+      "parent_place_name": "South Africa",
+      "iso3": "ZAF",
+      "source_iso3": "ZAF",
+      "geometry_level": "adm1",
+      "adm1_key": "limpopo",
+      "adm1_geo_id": "ZAF_2015_ADM1_77312",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.251394,
+      "poverty_context": {
+        "poor300_rate": 0.4755,
+        "poor420_rate": 0.621,
+        "poor830_rate": 0.8044,
+        "prosperity_gap_2021": 12.251394,
+        "poor300_display": "47.5%",
+        "poor420_display": "62.1%",
+        "poor830_display": "80.4%",
+        "prosperity_gap_display": "12.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 204
+    },
+    {
+      "place_id": "ZAF-ADM1-MPUMALANGA",
+      "place_name": "Mpumalanga",
+      "parent_place_id": "ZAF",
+      "parent_place_name": "South Africa",
+      "iso3": "ZAF",
+      "source_iso3": "ZAF",
+      "geometry_level": "adm1",
+      "adm1_key": "mpumalanga",
+      "adm1_geo_id": "ZAF_2015_ADM1_77313",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.419193,
+      "poverty_context": {
+        "poor300_rate": 0.3329,
+        "poor420_rate": 0.4773,
+        "poor830_rate": 0.7156,
+        "prosperity_gap_2021": 8.419193,
+        "poor300_display": "33.3%",
+        "poor420_display": "47.7%",
+        "poor830_display": "71.6%",
+        "prosperity_gap_display": "8.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 466
+    },
+    {
+      "place_id": "ZAF-ADM1-NORTH-WEST",
+      "place_name": "North West",
+      "parent_place_id": "ZAF",
+      "parent_place_name": "South Africa",
+      "iso3": "ZAF",
+      "source_iso3": "ZAF",
+      "geometry_level": "adm1",
+      "adm1_key": "north west",
+      "adm1_geo_id": "ZAF_2015_ADM1_77314",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.477611,
+      "poverty_context": {
+        "poor300_rate": 0.3734,
+        "poor420_rate": 0.5132,
+        "poor830_rate": 0.7538,
+        "prosperity_gap_2021": 9.4776107,
+        "poor300_display": "37.3%",
+        "poor420_display": "51.3%",
+        "poor830_display": "75.4%",
+        "prosperity_gap_display": "9.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 385
+    },
+    {
+      "place_id": "ZAF-ADM1-NORTHERN-CAPE",
+      "place_name": "Northern Cape",
+      "parent_place_id": "ZAF",
+      "parent_place_name": "South Africa",
+      "iso3": "ZAF",
+      "source_iso3": "ZAF",
+      "geometry_level": "adm1",
+      "adm1_key": "northern cape",
+      "adm1_geo_id": "ZAF_2015_ADM1_77315",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.272382,
+      "poverty_context": {
+        "poor300_rate": 0.3037,
+        "poor420_rate": 0.4619,
+        "poor830_rate": 0.709,
+        "prosperity_gap_2021": 8.2723816,
+        "poor300_display": "30.4%",
+        "poor420_display": "46.2%",
+        "poor830_display": "70.9%",
+        "prosperity_gap_display": "8.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 478
+    },
+    {
+      "place_id": "ZAF-ADM1-WESTERN-CAPE",
+      "place_name": "Western Cape",
+      "parent_place_id": "ZAF",
+      "parent_place_name": "South Africa",
+      "iso3": "ZAF",
+      "source_iso3": "ZAF",
+      "geometry_level": "adm1",
+      "adm1_key": "western cape",
+      "adm1_geo_id": "ZAF_2015_ADM1_2714",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ZAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.889175,
+      "poverty_context": {
+        "poor300_rate": 0.1466,
+        "poor420_rate": 0.2568,
+        "poor830_rate": 0.5009,
+        "prosperity_gap_2021": 4.8891754,
+        "poor300_display": "14.7%",
+        "poor420_display": "25.7%",
+        "poor830_display": "50.1%",
+        "prosperity_gap_display": "4.89"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 830
+    }
+  ]
+}

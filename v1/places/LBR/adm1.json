@@ -1,0 +1,717 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "LBR",
+  "parent_place_name": "Liberia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 16,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "LBR-ADM1-BOMI",
+      "place_name": "Bomi",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "bomi",
+      "adm1_geo_id": "LBR_2015_ADM1_1814",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.763227,
+      "poverty_context": {
+        "poor300_rate": 0.5214,
+        "poor420_rate": 0.7689,
+        "poor830_rate": 0.9772,
+        "prosperity_gap_2021": 10.763227,
+        "poor300_display": "52.1%",
+        "poor420_display": "76.9%",
+        "poor830_display": "97.7%",
+        "prosperity_gap_display": "10.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 296
+    },
+    {
+      "place_id": "LBR-ADM1-BONG",
+      "place_name": "Bong",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "bong",
+      "adm1_geo_id": "LBR_2015_ADM1_1815",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.47447,
+      "poverty_context": {
+        "poor300_rate": 0.5775,
+        "poor420_rate": 0.8497,
+        "poor830_rate": 0.9838,
+        "prosperity_gap_2021": 11.47447,
+        "poor300_display": "57.8%",
+        "poor420_display": "85.0%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "11.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 250
+    },
+    {
+      "place_id": "LBR-ADM1-GBARPOLU",
+      "place_name": "Gbarpolu",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "gbarpolu",
+      "adm1_geo_id": "LBR_2015_ADM1_1816",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.382454,
+      "poverty_context": {
+        "poor300_rate": 0.4841,
+        "poor420_rate": 0.7575,
+        "poor830_rate": 0.9876,
+        "prosperity_gap_2021": 10.382454,
+        "poor300_display": "48.4%",
+        "poor420_display": "75.8%",
+        "poor830_display": "98.8%",
+        "prosperity_gap_display": "10.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 316
+    },
+    {
+      "place_id": "LBR-ADM1-GRAND-BASSA",
+      "place_name": "Grand Bassa",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "grand bassa",
+      "adm1_geo_id": "LBR_2015_ADM1_1817",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.739673,
+      "poverty_context": {
+        "poor300_rate": 0.5234,
+        "poor420_rate": 0.7236,
+        "poor830_rate": 0.9443,
+        "prosperity_gap_2021": 10.739673,
+        "poor300_display": "52.3%",
+        "poor420_display": "72.4%",
+        "poor830_display": "94.4%",
+        "prosperity_gap_display": "10.74"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 299
+    },
+    {
+      "place_id": "LBR-ADM1-GRAND-CAPE-MOUNT",
+      "place_name": "Grand Cape Mount",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "grand cape mount",
+      "adm1_geo_id": "LBR_2015_ADM1_1818",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.214257,
+      "poverty_context": {
+        "poor300_rate": 0.4044,
+        "poor420_rate": 0.6725,
+        "poor830_rate": 0.977,
+        "prosperity_gap_2021": 10.214257,
+        "poor300_display": "40.4%",
+        "poor420_display": "67.3%",
+        "poor830_display": "97.7%",
+        "prosperity_gap_display": "10.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 324
+    },
+    {
+      "place_id": "LBR-ADM1-GRAND-GEDEH",
+      "place_name": "Grand Gedeh",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "grand gedeh",
+      "adm1_geo_id": "LBR_2015_ADM1_1819",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.492075,
+      "poverty_context": {
+        "poor300_rate": 0.2458,
+        "poor420_rate": 0.5352,
+        "poor830_rate": 0.887,
+        "prosperity_gap_2021": 7.492075,
+        "poor300_display": "24.6%",
+        "poor420_display": "53.5%",
+        "poor830_display": "88.7%",
+        "prosperity_gap_display": "7.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 548
+    },
+    {
+      "place_id": "LBR-ADM1-GRAND-KRU",
+      "place_name": "Grand Kru",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "grand kru",
+      "adm1_geo_id": "LBR_2015_ADM1_1820",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.839774,
+      "poverty_context": {
+        "poor300_rate": 0.4636,
+        "poor420_rate": 0.7505,
+        "poor830_rate": 0.9665,
+        "prosperity_gap_2021": 9.8397737,
+        "poor300_display": "46.4%",
+        "poor420_display": "75.0%",
+        "poor830_display": "96.7%",
+        "prosperity_gap_display": "9.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 352
+    },
+    {
+      "place_id": "LBR-ADM1-GREATER-MONROVIA",
+      "place_name": "Greater Monrovia",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "greater monrovia",
+      "adm1_geo_id": "LBR_2015_ADM2_147290",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.051469,
+      "poverty_context": {
+        "poor300_rate": 0.069,
+        "poor420_rate": 0.2148,
+        "poor830_rate": 0.7134,
+        "prosperity_gap_2021": 5.0514686,
+        "poor300_display": "6.90%",
+        "poor420_display": "21.5%",
+        "poor830_display": "71.3%",
+        "prosperity_gap_display": "5.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 798
+    },
+    {
+      "place_id": "LBR-ADM1-LOFA",
+      "place_name": "Lofa",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "lofa",
+      "adm1_geo_id": "LBR_2015_ADM1_1821",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.159102,
+      "poverty_context": {
+        "poor300_rate": 0.5446,
+        "poor420_rate": 0.7648,
+        "poor830_rate": 0.9943,
+        "prosperity_gap_2021": 11.159102,
+        "poor300_display": "54.5%",
+        "poor420_display": "76.5%",
+        "poor830_display": "99.4%",
+        "prosperity_gap_display": "11.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 272
+    },
+    {
+      "place_id": "LBR-ADM1-MARGIBI",
+      "place_name": "Margibi",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "margibi",
+      "adm1_geo_id": "LBR_2015_ADM1_1822",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.010251,
+      "poverty_context": {
+        "poor300_rate": 0.3916,
+        "poor420_rate": 0.6377,
+        "poor830_rate": 0.9505,
+        "prosperity_gap_2021": 9.0102507,
+        "poor300_display": "39.2%",
+        "poor420_display": "63.8%",
+        "poor830_display": "95.0%",
+        "prosperity_gap_display": "9.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 419
+    },
+    {
+      "place_id": "LBR-ADM1-MARYLAND",
+      "place_name": "Maryland",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "maryland",
+      "adm1_geo_id": "LBR_2015_ADM1_1823",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.156735,
+      "poverty_context": {
+        "poor300_rate": 0.5249,
+        "poor420_rate": 0.7594,
+        "poor830_rate": 0.9769,
+        "prosperity_gap_2021": 11.156735,
+        "poor300_display": "52.5%",
+        "poor420_display": "75.9%",
+        "poor830_display": "97.7%",
+        "prosperity_gap_display": "11.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 273
+    },
+    {
+      "place_id": "LBR-ADM1-MONTSERRADO",
+      "place_name": "Montserrado",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "montserrado",
+      "adm1_geo_id": "LBR_2015_ADM1_1824",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.655443,
+      "poverty_context": {
+        "poor300_rate": 0.2405,
+        "poor420_rate": 0.6929,
+        "poor830_rate": 0.9739,
+        "prosperity_gap_2021": 8.6554434,
+        "poor300_display": "24.1%",
+        "poor420_display": "69.3%",
+        "poor830_display": "97.4%",
+        "prosperity_gap_display": "8.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 444
+    },
+    {
+      "place_id": "LBR-ADM1-NIMBA",
+      "place_name": "Nimba",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "nimba",
+      "adm1_geo_id": "LBR_2015_ADM1_1825",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.261008,
+      "poverty_context": {
+        "poor300_rate": 0.5527,
+        "poor420_rate": 0.7781,
+        "poor830_rate": 0.9865,
+        "prosperity_gap_2021": 11.261008,
+        "poor300_display": "55.3%",
+        "poor420_display": "77.8%",
+        "poor830_display": "98.7%",
+        "prosperity_gap_display": "11.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 265
+    },
+    {
+      "place_id": "LBR-ADM1-RIVER-GEE",
+      "place_name": "River Gee",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "river gee",
+      "adm1_geo_id": "LBR_2015_ADM1_1827",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.867561,
+      "poverty_context": {
+        "poor300_rate": 0.493,
+        "poor420_rate": 0.7217,
+        "poor830_rate": 0.9713,
+        "prosperity_gap_2021": 9.867561,
+        "poor300_display": "49.3%",
+        "poor420_display": "72.2%",
+        "poor830_display": "97.1%",
+        "prosperity_gap_display": "9.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 346
+    },
+    {
+      "place_id": "LBR-ADM1-RIVERCESS",
+      "place_name": "Rivercess",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "rivercess",
+      "adm1_geo_id": "LBR_2015_ADM1_1826",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.914758,
+      "poverty_context": {
+        "poor300_rate": 0.5126,
+        "poor420_rate": 0.7712,
+        "poor830_rate": 0.9845,
+        "prosperity_gap_2021": 10.914758,
+        "poor300_display": "51.3%",
+        "poor420_display": "77.1%",
+        "poor830_display": "98.5%",
+        "prosperity_gap_display": "10.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 290
+    },
+    {
+      "place_id": "LBR-ADM1-SINOE",
+      "place_name": "Sinoe",
+      "parent_place_id": "LBR",
+      "parent_place_name": "Liberia",
+      "iso3": "LBR",
+      "source_iso3": "LBR",
+      "geometry_level": "adm1",
+      "adm1_key": "sinoe",
+      "adm1_geo_id": "LBR_2015_ADM1_1828",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LBR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.227001,
+      "poverty_context": {
+        "poor300_rate": 0.1958,
+        "poor420_rate": 0.5116,
+        "poor830_rate": 0.9396,
+        "prosperity_gap_2021": 7.2270008,
+        "poor300_display": "19.6%",
+        "poor420_display": "51.2%",
+        "poor830_display": "94.0%",
+        "prosperity_gap_display": "7.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 573
+    }
+  ]
+}

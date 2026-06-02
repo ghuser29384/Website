@@ -1,0 +1,717 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "PRY",
+  "parent_place_name": "Paraguay",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 16,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "PRY-ADM1-ALTO-PARANA",
+      "place_name": "Alto Parana",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "alto parana",
+      "adm1_geo_id": "PRY_2015_GAUL1_2312",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.621423,
+      "poverty_context": {
+        "poor300_rate": 0.0158,
+        "poor420_rate": 0.0526,
+        "poor830_rate": 0.2218,
+        "prosperity_gap_2021": 2.6214226,
+        "poor300_display": "1.58%",
+        "poor420_display": "5.26%",
+        "poor830_display": "22.2%",
+        "prosperity_gap_display": "2.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1260
+    },
+    {
+      "place_id": "PRY-ADM1-AMAMBAY",
+      "place_name": "Amambay",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "amambay",
+      "adm1_geo_id": "PRY_2015_GAUL1_2313",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.571698,
+      "poverty_context": {
+        "poor300_rate": 0.0142,
+        "poor420_rate": 0.0401,
+        "poor830_rate": 0.214,
+        "prosperity_gap_2021": 2.5716977,
+        "poor300_display": "1.42%",
+        "poor420_display": "4.01%",
+        "poor830_display": "21.4%",
+        "prosperity_gap_display": "2.57"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1275
+    },
+    {
+      "place_id": "PRY-ADM1-ASUNCION",
+      "place_name": "Asuncion",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "asuncion",
+      "adm1_geo_id": "PRY_2015_GAUL2_23849",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.570982,
+      "poverty_context": {
+        "poor300_rate": 0.0038,
+        "poor420_rate": 0.0079,
+        "poor830_rate": 0.0765,
+        "prosperity_gap_2021": 1.5709821,
+        "poor300_display": "0.38%",
+        "poor420_display": "0.79%",
+        "poor830_display": "7.65%",
+        "prosperity_gap_display": "1.57"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1577
+    },
+    {
+      "place_id": "PRY-ADM1-CAAGUAZU",
+      "place_name": "Caaguazu",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "caaguazu",
+      "adm1_geo_id": "PRY_2015_GAUL1_2315",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.532849,
+      "poverty_context": {
+        "poor300_rate": 0.0491,
+        "poor420_rate": 0.0949,
+        "poor830_rate": 0.345,
+        "prosperity_gap_2021": 3.5328489,
+        "poor300_display": "4.91%",
+        "poor420_display": "9.49%",
+        "poor830_display": "34.5%",
+        "prosperity_gap_display": "3.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1065
+    },
+    {
+      "place_id": "PRY-ADM1-CAAZAPA",
+      "place_name": "Caazapa",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "caazapa",
+      "adm1_geo_id": "PRY_2015_GAUL1_2316",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.601869,
+      "poverty_context": {
+        "poor300_rate": 0.052,
+        "poor420_rate": 0.1193,
+        "poor830_rate": 0.4062,
+        "prosperity_gap_2021": 3.601869,
+        "poor300_display": "5.20%",
+        "poor420_display": "11.9%",
+        "poor830_display": "40.6%",
+        "prosperity_gap_display": "3.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1052
+    },
+    {
+      "place_id": "PRY-ADM1-CANINDEYU",
+      "place_name": "Canindeyu",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "canindeyu",
+      "adm1_geo_id": "PRY_2015_GAUL1_2317",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.671296,
+      "poverty_context": {
+        "poor300_rate": 0.0816,
+        "poor420_rate": 0.1421,
+        "poor830_rate": 0.3519,
+        "prosperity_gap_2021": 3.671296,
+        "poor300_display": "8.16%",
+        "poor420_display": "14.2%",
+        "poor830_display": "35.2%",
+        "prosperity_gap_display": "3.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1040
+    },
+    {
+      "place_id": "PRY-ADM1-CENTRAL",
+      "place_name": "Central",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "central",
+      "adm1_geo_id": "PRY_2015_GAULx_2318",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.003692,
+      "poverty_context": {
+        "poor300_rate": 0.0039,
+        "poor420_rate": 0.0127,
+        "poor830_rate": 0.1183,
+        "prosperity_gap_2021": 2.0036924,
+        "poor300_display": "0.39%",
+        "poor420_display": "1.27%",
+        "poor830_display": "11.8%",
+        "prosperity_gap_display": "2.00"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1467
+    },
+    {
+      "place_id": "PRY-ADM1-CONCEPCION",
+      "place_name": "Concepcion",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "concepcion",
+      "adm1_geo_id": "PRY_2015_GAUL1_2319",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.643253,
+      "poverty_context": {
+        "poor300_rate": 0.0593,
+        "poor420_rate": 0.138,
+        "poor830_rate": 0.3778,
+        "prosperity_gap_2021": 3.6432534,
+        "poor300_display": "5.93%",
+        "poor420_display": "13.8%",
+        "poor830_display": "37.8%",
+        "prosperity_gap_display": "3.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1043
+    },
+    {
+      "place_id": "PRY-ADM1-CORDILLERA",
+      "place_name": "Cordillera",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "cordillera",
+      "adm1_geo_id": "PRY_2015_GAUL1_2320",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.795845,
+      "poverty_context": {
+        "poor300_rate": 0.0248,
+        "poor420_rate": 0.0591,
+        "poor830_rate": 0.2429,
+        "prosperity_gap_2021": 2.7958449,
+        "poor300_display": "2.48%",
+        "poor420_display": "5.91%",
+        "poor830_display": "24.3%",
+        "prosperity_gap_display": "2.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1212
+    },
+    {
+      "place_id": "PRY-ADM1-GUAIRA",
+      "place_name": "Guaira",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "guaira",
+      "adm1_geo_id": "PRY_2015_GAUL1_2321",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.393417,
+      "poverty_context": {
+        "poor300_rate": 0.0357,
+        "poor420_rate": 0.1046,
+        "poor830_rate": 0.3629,
+        "prosperity_gap_2021": 3.3934167,
+        "poor300_display": "3.57%",
+        "poor420_display": "10.5%",
+        "poor830_display": "36.3%",
+        "prosperity_gap_display": "3.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1090
+    },
+    {
+      "place_id": "PRY-ADM1-ITAPUA",
+      "place_name": "Itapua",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "itapua",
+      "adm1_geo_id": "PRY_2015_GAUL1_2322",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.120097,
+      "poverty_context": {
+        "poor300_rate": 0.0311,
+        "poor420_rate": 0.0886,
+        "poor830_rate": 0.3186,
+        "prosperity_gap_2021": 3.1200974,
+        "poor300_display": "3.11%",
+        "poor420_display": "8.86%",
+        "poor830_display": "31.9%",
+        "prosperity_gap_display": "3.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1140
+    },
+    {
+      "place_id": "PRY-ADM1-MISIONES",
+      "place_name": "Misiones",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "misiones",
+      "adm1_geo_id": "PRY_2015_GAUL1_2323",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.932874,
+      "poverty_context": {
+        "poor300_rate": 0.0226,
+        "poor420_rate": 0.064,
+        "poor830_rate": 0.2449,
+        "prosperity_gap_2021": 2.9328743,
+        "poor300_display": "2.26%",
+        "poor420_display": "6.40%",
+        "poor830_display": "24.5%",
+        "prosperity_gap_display": "2.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1183
+    },
+    {
+      "place_id": "PRY-ADM1-NEEMBUCU",
+      "place_name": "Neembucu",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "neembucu",
+      "adm1_geo_id": "PRY_2015_GAUL1_2324",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.663526,
+      "poverty_context": {
+        "poor300_rate": 0.0173,
+        "poor420_rate": 0.0488,
+        "poor830_rate": 0.2413,
+        "prosperity_gap_2021": 2.6635259,
+        "poor300_display": "1.73%",
+        "poor420_display": "4.88%",
+        "poor830_display": "24.1%",
+        "prosperity_gap_display": "2.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1243
+    },
+    {
+      "place_id": "PRY-ADM1-PARAGUARI",
+      "place_name": "Paraguari",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "paraguari",
+      "adm1_geo_id": "PRY_2015_GAUL1_2325",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.406196,
+      "poverty_context": {
+        "poor300_rate": 0.0403,
+        "poor420_rate": 0.0992,
+        "poor830_rate": 0.3428,
+        "prosperity_gap_2021": 3.406196,
+        "poor300_display": "4.03%",
+        "poor420_display": "9.92%",
+        "poor830_display": "34.3%",
+        "prosperity_gap_display": "3.41"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1085
+    },
+    {
+      "place_id": "PRY-ADM1-PRESIDENTE-HAYES",
+      "place_name": "Presidente Hayes",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "presidente hayes",
+      "adm1_geo_id": "PRY_2015_GAUL1_2326",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.33227,
+      "poverty_context": {
+        "poor300_rate": 0.003,
+        "poor420_rate": 0.0291,
+        "poor830_rate": 0.1935,
+        "prosperity_gap_2021": 2.3322696,
+        "poor300_display": "0.30%",
+        "poor420_display": "2.91%",
+        "poor830_display": "19.4%",
+        "prosperity_gap_display": "2.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1346
+    },
+    {
+      "place_id": "PRY-ADM1-SAN-PEDRO",
+      "place_name": "San Pedro",
+      "parent_place_id": "PRY",
+      "parent_place_name": "Paraguay",
+      "iso3": "PRY",
+      "source_iso3": "PRY",
+      "geometry_level": "adm1",
+      "adm1_key": "san pedro",
+      "adm1_geo_id": "PRY_2015_GAUL1_2327",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PRY/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.595981,
+      "poverty_context": {
+        "poor300_rate": 0.0619,
+        "poor420_rate": 0.1293,
+        "poor830_rate": 0.3666,
+        "prosperity_gap_2021": 3.5959808,
+        "poor300_display": "6.19%",
+        "poor420_display": "12.9%",
+        "poor830_display": "36.7%",
+        "prosperity_gap_display": "3.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1054
+    }
+  ]
+}

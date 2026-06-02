@@ -1,0 +1,497 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "GEO",
+  "parent_place_name": "Georgia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 11,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "GEO-ADM1-ADJARA-AUT-REP",
+      "place_name": "Adjara Aut. Rep.",
+      "parent_place_id": "GEO",
+      "parent_place_name": "Georgia",
+      "iso3": "GEO",
+      "source_iso3": "GEO",
+      "geometry_level": "adm1",
+      "adm1_key": "adjara aut rep",
+      "adm1_geo_id": "GEO_2015_ADM1_1297",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GEO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.561148,
+      "poverty_context": {
+        "poor300_rate": 0.0729,
+        "poor420_rate": 0.1554,
+        "poor830_rate": 0.5219,
+        "prosperity_gap_2021": 4.5611483,
+        "poor300_display": "7.29%",
+        "poor420_display": "15.5%",
+        "poor830_display": "52.2%",
+        "prosperity_gap_display": "4.56"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 884
+    },
+    {
+      "place_id": "GEO-ADM1-GURIA",
+      "place_name": "Guria",
+      "parent_place_id": "GEO",
+      "parent_place_name": "Georgia",
+      "iso3": "GEO",
+      "source_iso3": "GEO",
+      "geometry_level": "adm1",
+      "adm1_key": "guria",
+      "adm1_geo_id": "GEO_2015_ADM1_1298",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GEO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.326078,
+      "poverty_context": {
+        "poor300_rate": 0.1719,
+        "poor420_rate": 0.3378,
+        "poor830_rate": 0.7253,
+        "prosperity_gap_2021": 6.3260782,
+        "poor300_display": "17.2%",
+        "poor420_display": "33.8%",
+        "poor830_display": "72.5%",
+        "prosperity_gap_display": "6.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 641
+    },
+    {
+      "place_id": "GEO-ADM1-IMERETI",
+      "place_name": "Imereti",
+      "parent_place_id": "GEO",
+      "parent_place_name": "Georgia",
+      "iso3": "GEO",
+      "source_iso3": "GEO",
+      "geometry_level": "adm1",
+      "adm1_key": "imereti",
+      "adm1_geo_id": "GEO_2015_GAUL1_1299",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GEO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.905797,
+      "poverty_context": {
+        "poor300_rate": 0.057,
+        "poor420_rate": 0.1234,
+        "poor830_rate": 0.4446,
+        "prosperity_gap_2021": 3.9057975,
+        "poor300_display": "5.70%",
+        "poor420_display": "12.3%",
+        "poor830_display": "44.5%",
+        "prosperity_gap_display": "3.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1005
+    },
+    {
+      "place_id": "GEO-ADM1-KAKHETI",
+      "place_name": "Kakheti",
+      "parent_place_id": "GEO",
+      "parent_place_name": "Georgia",
+      "iso3": "GEO",
+      "source_iso3": "GEO",
+      "geometry_level": "adm1",
+      "adm1_key": "kakheti",
+      "adm1_geo_id": "GEO_2015_ADM1_1300",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GEO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.732063,
+      "poverty_context": {
+        "poor300_rate": 0.026,
+        "poor420_rate": 0.1045,
+        "poor830_rate": 0.4601,
+        "prosperity_gap_2021": 3.7320629,
+        "poor300_display": "2.60%",
+        "poor420_display": "10.4%",
+        "poor830_display": "46.0%",
+        "prosperity_gap_display": "3.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1034
+    },
+    {
+      "place_id": "GEO-ADM1-KVEMO-KARTLI",
+      "place_name": "Kvemo Kartli",
+      "parent_place_id": "GEO",
+      "parent_place_name": "Georgia",
+      "iso3": "GEO",
+      "source_iso3": "GEO",
+      "geometry_level": "adm1",
+      "adm1_key": "kvemo kartli",
+      "adm1_geo_id": "GEO_2015_ADM1_1301",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GEO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.856515,
+      "poverty_context": {
+        "poor300_rate": 0.0762,
+        "poor420_rate": 0.2042,
+        "poor830_rate": 0.6478,
+        "prosperity_gap_2021": 4.8565149,
+        "poor300_display": "7.62%",
+        "poor420_display": "20.4%",
+        "poor830_display": "64.8%",
+        "prosperity_gap_display": "4.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 840
+    },
+    {
+      "place_id": "GEO-ADM1-MTSKHETA-MTIANETI",
+      "place_name": "Mtskheta-Mtianeti",
+      "parent_place_id": "GEO",
+      "parent_place_name": "Georgia",
+      "iso3": "GEO",
+      "source_iso3": "GEO",
+      "geometry_level": "adm1",
+      "adm1_key": "mtskheta mtianeti",
+      "adm1_geo_id": "GEO_2015_ADM1_1302",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GEO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.798092,
+      "poverty_context": {
+        "poor300_rate": 0.0589,
+        "poor420_rate": 0.1782,
+        "poor830_rate": 0.6674,
+        "prosperity_gap_2021": 4.7980916,
+        "poor300_display": "5.89%",
+        "poor420_display": "17.8%",
+        "poor830_display": "66.7%",
+        "prosperity_gap_display": "4.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 847
+    },
+    {
+      "place_id": "GEO-ADM1-RACHA-LECHKHUMI-AND-KVEMO-LOWER-SVANETI",
+      "place_name": "Racha-Lechkhumi and Kvemo (lower) Svaneti",
+      "parent_place_id": "GEO",
+      "parent_place_name": "Georgia",
+      "iso3": "GEO",
+      "source_iso3": "GEO",
+      "geometry_level": "adm1",
+      "adm1_key": "racha lechkhumi and kvemo lower svaneti",
+      "adm1_geo_id": "GEO_2015_GAUL1_1303",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GEO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.527068,
+      "poverty_context": {
+        "poor300_rate": 0.0712,
+        "poor420_rate": 0.1533,
+        "poor830_rate": 0.5242,
+        "prosperity_gap_2021": 4.5270679,
+        "poor300_display": "7.12%",
+        "poor420_display": "15.3%",
+        "poor830_display": "52.4%",
+        "prosperity_gap_display": "4.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 889
+    },
+    {
+      "place_id": "GEO-ADM1-SAMERGELO-AND-ZEMO-UPPER-SVANETI",
+      "place_name": "Samergelo and Zemo (upper) Svaneti",
+      "parent_place_id": "GEO",
+      "parent_place_name": "Georgia",
+      "iso3": "GEO",
+      "source_iso3": "GEO",
+      "geometry_level": "adm1",
+      "adm1_key": "samergelo and zemo upper svaneti",
+      "adm1_geo_id": "GEO_2015_ADM1_1304",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GEO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.349643,
+      "poverty_context": {
+        "poor300_rate": 0.053,
+        "poor420_rate": 0.1492,
+        "poor830_rate": 0.5586,
+        "prosperity_gap_2021": 4.3496434,
+        "poor300_display": "5.30%",
+        "poor420_display": "14.9%",
+        "poor830_display": "55.9%",
+        "prosperity_gap_display": "4.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 914
+    },
+    {
+      "place_id": "GEO-ADM1-SAMTSKHE-JAVAKHETI",
+      "place_name": "Samtskhe-Javakheti",
+      "parent_place_id": "GEO",
+      "parent_place_name": "Georgia",
+      "iso3": "GEO",
+      "source_iso3": "GEO",
+      "geometry_level": "adm1",
+      "adm1_key": "samtskhe javakheti",
+      "adm1_geo_id": "GEO_2015_ADM1_1305",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GEO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.523198,
+      "poverty_context": {
+        "poor300_rate": 0.0807,
+        "poor420_rate": 0.1757,
+        "poor830_rate": 0.5157,
+        "prosperity_gap_2021": 4.5231978,
+        "poor300_display": "8.07%",
+        "poor420_display": "17.6%",
+        "poor830_display": "51.6%",
+        "prosperity_gap_display": "4.52"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 890
+    },
+    {
+      "place_id": "GEO-ADM1-SHIDA-KARTLI",
+      "place_name": "Shida Kartli",
+      "parent_place_id": "GEO",
+      "parent_place_name": "Georgia",
+      "iso3": "GEO",
+      "source_iso3": "GEO",
+      "geometry_level": "adm1",
+      "adm1_key": "shida kartli",
+      "adm1_geo_id": "GEO_2015_ADM1_1306",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GEO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.505981,
+      "poverty_context": {
+        "poor300_rate": 0.0814,
+        "poor420_rate": 0.1742,
+        "poor830_rate": 0.5314,
+        "prosperity_gap_2021": 4.5059811,
+        "poor300_display": "8.14%",
+        "poor420_display": "17.4%",
+        "poor830_display": "53.1%",
+        "prosperity_gap_display": "4.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 892
+    },
+    {
+      "place_id": "GEO-ADM1-TBILISI",
+      "place_name": "Tbilisi",
+      "parent_place_id": "GEO",
+      "parent_place_name": "Georgia",
+      "iso3": "GEO",
+      "source_iso3": "GEO",
+      "geometry_level": "adm1",
+      "adm1_key": "tbilisi",
+      "adm1_geo_id": "GEO_2015_ADM1_1307",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GEO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.557833,
+      "poverty_context": {
+        "poor300_rate": 0.0403,
+        "poor420_rate": 0.0954,
+        "poor830_rate": 0.3903,
+        "prosperity_gap_2021": 3.5578327,
+        "poor300_display": "4.03%",
+        "poor420_display": "9.54%",
+        "poor830_display": "39.0%",
+        "prosperity_gap_display": "3.56"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1059
+    }
+  ]
+}

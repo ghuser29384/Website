@@ -1,0 +1,365 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "MKD",
+  "parent_place_name": "North Macedonia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 8,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "MKD-ADM1-ISTO-EN-MK002",
+      "place_name": "Istočen (MK002)",
+      "parent_place_id": "MKD",
+      "parent_place_name": "North Macedonia",
+      "iso3": "MKD",
+      "source_iso3": "MKD",
+      "geometry_level": "adm1",
+      "adm1_key": "isto en mk002",
+      "adm1_geo_id": "MKD_2015_ADM1_40188",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MKD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.651823,
+      "poverty_context": {
+        "poor300_rate": 0.0006,
+        "poor420_rate": 0.0302,
+        "poor830_rate": 0.0622,
+        "prosperity_gap_2021": 1.651823,
+        "poor300_display": "0.06%",
+        "poor420_display": "3.02%",
+        "poor830_display": "6.22%",
+        "prosperity_gap_display": "1.65"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1562
+    },
+    {
+      "place_id": "MKD-ADM1-JUGOISTO-EN-MK004",
+      "place_name": "Jugoistočen (MK004)",
+      "parent_place_id": "MKD",
+      "parent_place_name": "North Macedonia",
+      "iso3": "MKD",
+      "source_iso3": "MKD",
+      "geometry_level": "adm1",
+      "adm1_key": "jugoisto en mk004",
+      "adm1_geo_id": "MKD_2015_ADMx_NUTS_MK003",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MKD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.80737,
+      "poverty_context": {
+        "poor300_rate": 0.0058,
+        "poor420_rate": 0.0208,
+        "poor830_rate": 0.0728,
+        "prosperity_gap_2021": 1.80737,
+        "poor300_display": "0.58%",
+        "poor420_display": "2.08%",
+        "poor830_display": "7.28%",
+        "prosperity_gap_display": "1.81"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1522
+    },
+    {
+      "place_id": "MKD-ADM1-JUGOZAPADEN-MK003",
+      "place_name": "Jugozapaden (MK003)",
+      "parent_place_id": "MKD",
+      "parent_place_name": "North Macedonia",
+      "iso3": "MKD",
+      "source_iso3": "MKD",
+      "geometry_level": "adm1",
+      "adm1_key": "jugozapaden mk003",
+      "adm1_geo_id": "MKD_2015_ADMx_NUTS_MK004",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MKD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.922506,
+      "poverty_context": {
+        "poor300_rate": 0.0195,
+        "poor420_rate": 0.023,
+        "poor830_rate": 0.0961,
+        "prosperity_gap_2021": 1.9225062,
+        "poor300_display": "1.95%",
+        "poor420_display": "2.30%",
+        "poor830_display": "9.61%",
+        "prosperity_gap_display": "1.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1489
+    },
+    {
+      "place_id": "MKD-ADM1-PELAGONISKI-MK005",
+      "place_name": "Pelagoniski (MK005)",
+      "parent_place_id": "MKD",
+      "parent_place_name": "North Macedonia",
+      "iso3": "MKD",
+      "source_iso3": "MKD",
+      "geometry_level": "adm1",
+      "adm1_key": "pelagoniski mk005",
+      "adm1_geo_id": "MKD_2015_ADMx_NUTS_MK005",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MKD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.79661,
+      "poverty_context": {
+        "poor300_rate": 0.004,
+        "poor420_rate": 0.017,
+        "poor830_rate": 0.0372,
+        "prosperity_gap_2021": 1.7966103,
+        "poor300_display": "0.40%",
+        "poor420_display": "1.70%",
+        "poor830_display": "3.72%",
+        "prosperity_gap_display": "1.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1525
+    },
+    {
+      "place_id": "MKD-ADM1-POLO-KI-MK006",
+      "place_name": "Pološki (MK006)",
+      "parent_place_id": "MKD",
+      "parent_place_name": "North Macedonia",
+      "iso3": "MKD",
+      "source_iso3": "MKD",
+      "geometry_level": "adm1",
+      "adm1_key": "polo ki mk006",
+      "adm1_geo_id": "MKD_2015_ADMx_NUTS_MK006",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MKD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.344683,
+      "poverty_context": {
+        "poor300_rate": 0.0703,
+        "poor420_rate": 0.122,
+        "poor830_rate": 0.2789,
+        "prosperity_gap_2021": 4.3446832,
+        "poor300_display": "7.03%",
+        "poor420_display": "12.2%",
+        "poor830_display": "27.9%",
+        "prosperity_gap_display": "4.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 917
+    },
+    {
+      "place_id": "MKD-ADM1-SEVEROISTO-EN-MK007",
+      "place_name": "Severoistočen (MK007)",
+      "parent_place_id": "MKD",
+      "parent_place_name": "North Macedonia",
+      "iso3": "MKD",
+      "source_iso3": "MKD",
+      "geometry_level": "adm1",
+      "adm1_key": "severoisto en mk007",
+      "adm1_geo_id": "MKD_2015_ADM1_51329",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MKD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.74764,
+      "poverty_context": {
+        "poor300_rate": 0.067,
+        "poor420_rate": 0.1102,
+        "poor830_rate": 0.293,
+        "prosperity_gap_2021": 3.7476397,
+        "poor300_display": "6.70%",
+        "poor420_display": "11.0%",
+        "poor830_display": "29.3%",
+        "prosperity_gap_display": "3.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1031
+    },
+    {
+      "place_id": "MKD-ADM1-SKOPSKI-MK008",
+      "place_name": "Skopski (MK008)",
+      "parent_place_id": "MKD",
+      "parent_place_name": "North Macedonia",
+      "iso3": "MKD",
+      "source_iso3": "MKD",
+      "geometry_level": "adm1",
+      "adm1_key": "skopski mk008",
+      "adm1_geo_id": "MKD_2015_ADM1_2948",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MKD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.800681,
+      "poverty_context": {
+        "poor300_rate": 0.0321,
+        "poor420_rate": 0.0651,
+        "poor830_rate": 0.1955,
+        "prosperity_gap_2021": 2.8006813,
+        "poor300_display": "3.21%",
+        "poor420_display": "6.51%",
+        "poor830_display": "19.6%",
+        "prosperity_gap_display": "2.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1211
+    },
+    {
+      "place_id": "MKD-ADM1-VARDARSKI-MK001",
+      "place_name": "Vardarski (MK001)",
+      "parent_place_id": "MKD",
+      "parent_place_name": "North Macedonia",
+      "iso3": "MKD",
+      "source_iso3": "MKD",
+      "geometry_level": "adm1",
+      "adm1_key": "vardarski mk001",
+      "adm1_geo_id": "MKD_2015_ADMx_NUTS_MK001",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MKD/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.663892,
+      "poverty_context": {
+        "poor300_rate": 0.0019,
+        "poor420_rate": 0.0166,
+        "poor830_rate": 0.0586,
+        "prosperity_gap_2021": 1.6638919,
+        "poor300_display": "0.19%",
+        "poor420_display": "1.66%",
+        "poor830_display": "5.86%",
+        "prosperity_gap_display": "1.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1558
+    }
+  ]
+}

@@ -1,0 +1,585 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "PAN",
+  "parent_place_name": "Panama",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 13,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "PAN-ADM1-BALBOA-AND-CHIM-N-AND-SAN-MIGUELITO-AND-TABOGA-AND-CHEPO-AND-PA-D5FD06F3",
+      "place_name": "Balboa & Chimán & San Miguelito & Taboga & Chepo & Panamá & Kuna de Madungandí",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "balboa and chim n and san miguelito and taboga and chepo and panam and kuna de madungand",
+      "adm1_geo_id": "PAN_2015_ADM1_2288",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.609917,
+      "poverty_context": {
+        "poor300_rate": 0.0065,
+        "poor420_rate": 0.0165,
+        "poor830_rate": 0.0756,
+        "prosperity_gap_2021": 1.6099167,
+        "poor300_display": "0.65%",
+        "poor420_display": "1.65%",
+        "poor830_display": "7.56%",
+        "prosperity_gap_display": "1.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1568
+    },
+    {
+      "place_id": "PAN-ADM1-BOCAS-DEL-TORO",
+      "place_name": "Bocas del Toro",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "bocas del toro",
+      "adm1_geo_id": "PAN_2015_ADM1_93668",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.300678,
+      "poverty_context": {
+        "poor300_rate": 0.0465,
+        "poor420_rate": 0.095,
+        "poor830_rate": 0.3903,
+        "prosperity_gap_2021": 3.300678,
+        "poor300_display": "4.65%",
+        "poor420_display": "9.50%",
+        "poor830_display": "39.0%",
+        "prosperity_gap_display": "3.30"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1111
+    },
+    {
+      "place_id": "PAN-ADM1-CAPIRA-AND-CHAME-AND-SAN-CARLOS-AND-ARRAIJ-N-AND-LA-CHORRERA",
+      "place_name": "Capira & Chame & San Carlos & Arraiján & La Chorrera",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "capira and chame and san carlos and arraij n and la chorrera",
+      "adm1_geo_id": "PAN_2015_GADM1_174_11",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.897349,
+      "poverty_context": {
+        "poor300_rate": 0.0111,
+        "poor420_rate": 0.0203,
+        "poor830_rate": 0.1185,
+        "prosperity_gap_2021": 1.8973493,
+        "poor300_display": "1.11%",
+        "poor420_display": "2.03%",
+        "poor830_display": "11.8%",
+        "prosperity_gap_display": "1.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1499
+    },
+    {
+      "place_id": "PAN-ADM1-CHIRIQU",
+      "place_name": "Chiriquí",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "chiriqu",
+      "adm1_geo_id": "PAN_2015_ADM1_93669",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.943092,
+      "poverty_context": {
+        "poor300_rate": 0.0333,
+        "poor420_rate": 0.0746,
+        "poor830_rate": 0.2262,
+        "prosperity_gap_2021": 2.9430924,
+        "poor300_display": "3.33%",
+        "poor420_display": "7.46%",
+        "poor830_display": "22.6%",
+        "prosperity_gap_display": "2.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1180
+    },
+    {
+      "place_id": "PAN-ADM1-COCL",
+      "place_name": "Coclé",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "cocl",
+      "adm1_geo_id": "PAN_2015_ADM1_2282",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.712954,
+      "poverty_context": {
+        "poor300_rate": 0.0445,
+        "poor420_rate": 0.0727,
+        "poor830_rate": 0.2145,
+        "prosperity_gap_2021": 2.7129539,
+        "poor300_display": "4.45%",
+        "poor420_display": "7.27%",
+        "poor830_display": "21.4%",
+        "prosperity_gap_display": "2.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1232
+    },
+    {
+      "place_id": "PAN-ADM1-COL-N",
+      "place_name": "Colón",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "col n",
+      "adm1_geo_id": "PAN_2015_ADM1_2283",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.127004,
+      "poverty_context": {
+        "poor300_rate": 0.0043,
+        "poor420_rate": 0.0268,
+        "poor830_rate": 0.1599,
+        "prosperity_gap_2021": 2.1270038,
+        "poor300_display": "0.43%",
+        "poor420_display": "2.68%",
+        "poor830_display": "16.0%",
+        "prosperity_gap_display": "2.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1422
+    },
+    {
+      "place_id": "PAN-ADM1-DARI-N",
+      "place_name": "Darién",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "dari n",
+      "adm1_geo_id": "PAN_2015_ADM1_93670",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.336842,
+      "poverty_context": {
+        "poor300_rate": 0.0389,
+        "poor420_rate": 0.1181,
+        "poor830_rate": 0.352,
+        "prosperity_gap_2021": 3.3368423,
+        "poor300_display": "3.89%",
+        "poor420_display": "11.8%",
+        "poor830_display": "35.2%",
+        "prosperity_gap_display": "3.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1103
+    },
+    {
+      "place_id": "PAN-ADM1-EMBER",
+      "place_name": "Emberá",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "ember",
+      "adm1_geo_id": "PAN_2015_ADM1_93671",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.694884,
+      "poverty_context": {
+        "poor300_rate": 0.2076,
+        "poor420_rate": 0.3169,
+        "poor830_rate": 0.6676,
+        "prosperity_gap_2021": 5.6948835,
+        "poor300_display": "20.8%",
+        "poor420_display": "31.7%",
+        "poor830_display": "66.8%",
+        "prosperity_gap_display": "5.69"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 716
+    },
+    {
+      "place_id": "PAN-ADM1-HERRERA",
+      "place_name": "Herrera",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "herrera",
+      "adm1_geo_id": "PAN_2015_ADM1_2286",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.728886,
+      "poverty_context": {
+        "poor300_rate": 0.0231,
+        "poor420_rate": 0.0545,
+        "poor830_rate": 0.1947,
+        "prosperity_gap_2021": 2.7288861,
+        "poor300_display": "2.31%",
+        "poor420_display": "5.45%",
+        "poor830_display": "19.5%",
+        "prosperity_gap_display": "2.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1228
+    },
+    {
+      "place_id": "PAN-ADM1-KUNA-YALA",
+      "place_name": "Kuna Yala",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "kuna yala",
+      "adm1_geo_id": "PAN_2015_ADM1_2284",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.261867,
+      "poverty_context": {
+        "poor300_rate": 0.1359,
+        "poor420_rate": 0.3957,
+        "poor830_rate": 0.8528,
+        "prosperity_gap_2021": 6.2618667,
+        "poor300_display": "13.6%",
+        "poor420_display": "39.6%",
+        "poor830_display": "85.3%",
+        "prosperity_gap_display": "6.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 645
+    },
+    {
+      "place_id": "PAN-ADM1-LOS-SANTOS",
+      "place_name": "Los Santos",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "los santos",
+      "adm1_geo_id": "PAN_2015_ADM1_2287",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.831348,
+      "poverty_context": {
+        "poor300_rate": 0.0065,
+        "poor420_rate": 0.0219,
+        "poor830_rate": 0.0881,
+        "prosperity_gap_2021": 1.8313483,
+        "poor300_display": "0.65%",
+        "poor420_display": "2.19%",
+        "poor830_display": "8.81%",
+        "prosperity_gap_display": "1.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1515
+    },
+    {
+      "place_id": "PAN-ADM1-NG-BE-BUGL",
+      "place_name": "Ngöbe Buglé",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "ng be bugl",
+      "adm1_geo_id": "PAN_2015_ADM1_93672",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.697688,
+      "poverty_context": {
+        "poor300_rate": 0.3588,
+        "poor420_rate": 0.5643,
+        "poor830_rate": 0.9205,
+        "prosperity_gap_2021": 9.6976879,
+        "poor300_display": "35.9%",
+        "poor420_display": "56.4%",
+        "poor830_display": "92.0%",
+        "prosperity_gap_display": "9.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 369
+    },
+    {
+      "place_id": "PAN-ADM1-VERAGUAS",
+      "place_name": "Veraguas",
+      "parent_place_id": "PAN",
+      "parent_place_name": "Panama",
+      "iso3": "PAN",
+      "source_iso3": "PAN",
+      "geometry_level": "adm1",
+      "adm1_key": "veraguas",
+      "adm1_geo_id": "PAN_2015_ADM1_93673",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.959566,
+      "poverty_context": {
+        "poor300_rate": 0.0499,
+        "poor420_rate": 0.111,
+        "poor830_rate": 0.2948,
+        "prosperity_gap_2021": 2.9595662,
+        "poor300_display": "4.99%",
+        "poor420_display": "11.1%",
+        "poor830_display": "29.5%",
+        "prosperity_gap_display": "2.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1175
+    }
+  ]
+}

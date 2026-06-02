@@ -1,0 +1,497 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "ARM",
+  "parent_place_name": "Armenia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 11,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "ARM-ADM1-ARAGATSOTN",
+      "place_name": "Aragatsotn",
+      "parent_place_id": "ARM",
+      "parent_place_name": "Armenia",
+      "iso3": "ARM",
+      "source_iso3": "ARM",
+      "geometry_level": "adm1",
+      "adm1_key": "aragatsotn",
+      "adm1_geo_id": "ARM_2015_ADM1_453",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ARM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.338243,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0085,
+        "poor830_rate": 0.4495,
+        "prosperity_gap_2021": 3.3382429,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.85%",
+        "poor830_display": "45.0%",
+        "prosperity_gap_display": "3.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1101
+    },
+    {
+      "place_id": "ARM-ADM1-ARARAT",
+      "place_name": "Ararat",
+      "parent_place_id": "ARM",
+      "parent_place_name": "Armenia",
+      "iso3": "ARM",
+      "source_iso3": "ARM",
+      "geometry_level": "adm1",
+      "adm1_key": "ararat",
+      "adm1_geo_id": "ARM_2015_ADM1_454",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ARM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.147284,
+      "poverty_context": {
+        "poor300_rate": 0.0103,
+        "poor420_rate": 0.0851,
+        "poor830_rate": 0.6208,
+        "prosperity_gap_2021": 4.1472841,
+        "poor300_display": "1.03%",
+        "poor420_display": "8.51%",
+        "poor830_display": "62.1%",
+        "prosperity_gap_display": "4.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 961
+    },
+    {
+      "place_id": "ARM-ADM1-ARMAVIR",
+      "place_name": "Armavir",
+      "parent_place_id": "ARM",
+      "parent_place_name": "Armenia",
+      "iso3": "ARM",
+      "source_iso3": "ARM",
+      "geometry_level": "adm1",
+      "adm1_key": "armavir",
+      "adm1_geo_id": "ARM_2015_ADM1_455",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ARM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.123098,
+      "poverty_context": {
+        "poor300_rate": 0.0131,
+        "poor420_rate": 0.0786,
+        "poor830_rate": 0.6417,
+        "prosperity_gap_2021": 4.1230982,
+        "poor300_display": "1.31%",
+        "poor420_display": "7.86%",
+        "poor830_display": "64.2%",
+        "prosperity_gap_display": "4.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 968
+    },
+    {
+      "place_id": "ARM-ADM1-GERGHARKUNIK",
+      "place_name": "Gergharkunik",
+      "parent_place_id": "ARM",
+      "parent_place_name": "Armenia",
+      "iso3": "ARM",
+      "source_iso3": "ARM",
+      "geometry_level": "adm1",
+      "adm1_key": "gergharkunik",
+      "adm1_geo_id": "ARM_2015_ADM1_456",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ARM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.816801,
+      "poverty_context": {
+        "poor300_rate": 0.0439,
+        "poor420_rate": 0.1757,
+        "poor830_rate": 0.721,
+        "prosperity_gap_2021": 4.8168008,
+        "poor300_display": "4.39%",
+        "poor420_display": "17.6%",
+        "poor830_display": "72.1%",
+        "prosperity_gap_display": "4.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 844
+    },
+    {
+      "place_id": "ARM-ADM1-KOTAYK",
+      "place_name": "Kotayk",
+      "parent_place_id": "ARM",
+      "parent_place_name": "Armenia",
+      "iso3": "ARM",
+      "source_iso3": "ARM",
+      "geometry_level": "adm1",
+      "adm1_key": "kotayk",
+      "adm1_geo_id": "ARM_2015_ADM1_457",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ARM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.847842,
+      "poverty_context": {
+        "poor300_rate": 0.0043,
+        "poor420_rate": 0.0561,
+        "poor830_rate": 0.564,
+        "prosperity_gap_2021": 3.8478424,
+        "poor300_display": "0.43%",
+        "poor420_display": "5.61%",
+        "poor830_display": "56.4%",
+        "prosperity_gap_display": "3.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1015
+    },
+    {
+      "place_id": "ARM-ADM1-LORI",
+      "place_name": "Lori",
+      "parent_place_id": "ARM",
+      "parent_place_name": "Armenia",
+      "iso3": "ARM",
+      "source_iso3": "ARM",
+      "geometry_level": "adm1",
+      "adm1_key": "lori",
+      "adm1_geo_id": "ARM_2015_ADM1_458",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ARM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.832654,
+      "poverty_context": {
+        "poor300_rate": 0.0149,
+        "poor420_rate": 0.0586,
+        "poor830_rate": 0.5247,
+        "prosperity_gap_2021": 3.8326539,
+        "poor300_display": "1.49%",
+        "poor420_display": "5.86%",
+        "poor830_display": "52.5%",
+        "prosperity_gap_display": "3.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1018
+    },
+    {
+      "place_id": "ARM-ADM1-SHIRAK",
+      "place_name": "Shirak",
+      "parent_place_id": "ARM",
+      "parent_place_name": "Armenia",
+      "iso3": "ARM",
+      "source_iso3": "ARM",
+      "geometry_level": "adm1",
+      "adm1_key": "shirak",
+      "adm1_geo_id": "ARM_2015_ADM1_460",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ARM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.258957,
+      "poverty_context": {
+        "poor300_rate": 0.0846,
+        "poor420_rate": 0.2388,
+        "poor830_rate": 0.7496,
+        "prosperity_gap_2021": 5.2589565,
+        "poor300_display": "8.46%",
+        "poor420_display": "23.9%",
+        "poor830_display": "75.0%",
+        "prosperity_gap_display": "5.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 775
+    },
+    {
+      "place_id": "ARM-ADM1-SYUNIK",
+      "place_name": "Syunik",
+      "parent_place_id": "ARM",
+      "parent_place_name": "Armenia",
+      "iso3": "ARM",
+      "source_iso3": "ARM",
+      "geometry_level": "adm1",
+      "adm1_key": "syunik",
+      "adm1_geo_id": "ARM_2015_ADM1_461",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ARM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.613493,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0191,
+        "poor830_rate": 0.5717,
+        "prosperity_gap_2021": 3.6134929,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.91%",
+        "poor830_display": "57.2%",
+        "prosperity_gap_display": "3.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1050
+    },
+    {
+      "place_id": "ARM-ADM1-TAVUSH",
+      "place_name": "Tavush",
+      "parent_place_id": "ARM",
+      "parent_place_name": "Armenia",
+      "iso3": "ARM",
+      "source_iso3": "ARM",
+      "geometry_level": "adm1",
+      "adm1_key": "tavush",
+      "adm1_geo_id": "ARM_2015_ADM1_462",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ARM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.517182,
+      "poverty_context": {
+        "poor300_rate": 0.0305,
+        "poor420_rate": 0.1389,
+        "poor830_rate": 0.6631,
+        "prosperity_gap_2021": 4.5171821,
+        "poor300_display": "3.05%",
+        "poor420_display": "13.9%",
+        "poor830_display": "66.3%",
+        "prosperity_gap_display": "4.52"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 891
+    },
+    {
+      "place_id": "ARM-ADM1-VAYOTS-DZOR",
+      "place_name": "Vayots Dzor",
+      "parent_place_id": "ARM",
+      "parent_place_name": "Armenia",
+      "iso3": "ARM",
+      "source_iso3": "ARM",
+      "geometry_level": "adm1",
+      "adm1_key": "vayots dzor",
+      "adm1_geo_id": "ARM_2015_ADM1_463",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ARM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.290479,
+      "poverty_context": {
+        "poor300_rate": 0.0038,
+        "poor420_rate": 0.0836,
+        "poor830_rate": 0.6699,
+        "prosperity_gap_2021": 4.2904793,
+        "poor300_display": "0.38%",
+        "poor420_display": "8.36%",
+        "poor830_display": "67.0%",
+        "prosperity_gap_display": "4.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 924
+    },
+    {
+      "place_id": "ARM-ADM1-YEREVAN",
+      "place_name": "Yerevan",
+      "parent_place_id": "ARM",
+      "parent_place_name": "Armenia",
+      "iso3": "ARM",
+      "source_iso3": "ARM",
+      "geometry_level": "adm1",
+      "adm1_key": "yerevan",
+      "adm1_geo_id": "ARM_2015_ADM1_464",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ARM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.448311,
+      "poverty_context": {
+        "poor300_rate": 0.009,
+        "poor420_rate": 0.0456,
+        "poor830_rate": 0.4495,
+        "prosperity_gap_2021": 3.4483106,
+        "poor300_display": "0.90%",
+        "poor420_display": "4.56%",
+        "poor830_display": "45.0%",
+        "prosperity_gap_display": "3.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1079
+    }
+  ]
+}

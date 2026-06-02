@@ -1,0 +1,585 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "SLE",
+  "parent_place_name": "Sierra Leone",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 13,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "SLE-ADM1-BO",
+      "place_name": "Bo",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "bo",
+      "adm1_geo_id": "SLE_2015_ADM2_25414",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.96131,
+      "poverty_context": {
+        "poor300_rate": 0.3959,
+        "poor420_rate": 0.6576,
+        "poor830_rate": 0.9342,
+        "prosperity_gap_2021": 8.96131,
+        "poor300_display": "39.6%",
+        "poor420_display": "65.8%",
+        "poor830_display": "93.4%",
+        "prosperity_gap_display": "8.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 420
+    },
+    {
+      "place_id": "SLE-ADM1-BOMBALI",
+      "place_name": "Bombali",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "bombali",
+      "adm1_geo_id": "SLE_2015_ADM2_25409",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.800949,
+      "poverty_context": {
+        "poor300_rate": 0.4747,
+        "poor420_rate": 0.7389,
+        "poor830_rate": 0.9674,
+        "prosperity_gap_2021": 9.8009485,
+        "poor300_display": "47.5%",
+        "poor420_display": "73.9%",
+        "poor830_display": "96.7%",
+        "prosperity_gap_display": "9.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 356
+    },
+    {
+      "place_id": "SLE-ADM1-BONTHE",
+      "place_name": "Bonthe",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "bonthe",
+      "adm1_geo_id": "SLE_2015_ADM2_25415",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.739544,
+      "poverty_context": {
+        "poor300_rate": 0.3437,
+        "poor420_rate": 0.5695,
+        "poor830_rate": 0.9061,
+        "prosperity_gap_2021": 7.7395437,
+        "poor300_display": "34.4%",
+        "poor420_display": "57.0%",
+        "poor830_display": "90.6%",
+        "prosperity_gap_display": "7.74"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 523
+    },
+    {
+      "place_id": "SLE-ADM1-KAILAHUN",
+      "place_name": "Kailahun",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "kailahun",
+      "adm1_geo_id": "SLE_2015_ADM2_25406",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.110078,
+      "poverty_context": {
+        "poor300_rate": 0.4187,
+        "poor420_rate": 0.6217,
+        "poor830_rate": 0.9306,
+        "prosperity_gap_2021": 9.1100778,
+        "poor300_display": "41.9%",
+        "poor420_display": "62.2%",
+        "poor830_display": "93.1%",
+        "prosperity_gap_display": "9.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 411
+    },
+    {
+      "place_id": "SLE-ADM1-KAMBIA",
+      "place_name": "Kambia",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "kambia",
+      "adm1_geo_id": "SLE_2015_ADM2_25410",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.733746,
+      "poverty_context": {
+        "poor300_rate": 0.2428,
+        "poor420_rate": 0.589,
+        "poor830_rate": 0.9795,
+        "prosperity_gap_2021": 7.7337461,
+        "poor300_display": "24.3%",
+        "poor420_display": "58.9%",
+        "poor830_display": "98.0%",
+        "prosperity_gap_display": "7.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 525
+    },
+    {
+      "place_id": "SLE-ADM1-KENEMA",
+      "place_name": "Kenema",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "kenema",
+      "adm1_geo_id": "SLE_2015_ADM2_25407",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.932454,
+      "poverty_context": {
+        "poor300_rate": 0.5465,
+        "poor420_rate": 0.8142,
+        "poor830_rate": 0.9749,
+        "prosperity_gap_2021": 10.932454,
+        "poor300_display": "54.6%",
+        "poor420_display": "81.4%",
+        "poor830_display": "97.5%",
+        "prosperity_gap_display": "10.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 286
+    },
+    {
+      "place_id": "SLE-ADM1-KOINADUGU",
+      "place_name": "Koinadugu",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "koinadugu",
+      "adm1_geo_id": "SLE_2015_ADM2_25411",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.958588,
+      "poverty_context": {
+        "poor300_rate": 0.5167,
+        "poor420_rate": 0.8343,
+        "poor830_rate": 0.9784,
+        "prosperity_gap_2021": 9.9585884,
+        "poor300_display": "51.7%",
+        "poor420_display": "83.4%",
+        "poor830_display": "97.8%",
+        "prosperity_gap_display": "9.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 340
+    },
+    {
+      "place_id": "SLE-ADM1-KONO",
+      "place_name": "Kono",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "kono",
+      "adm1_geo_id": "SLE_2015_ADM2_25408",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.768215,
+      "poverty_context": {
+        "poor300_rate": 0.2936,
+        "poor420_rate": 0.5585,
+        "poor830_rate": 0.9309,
+        "prosperity_gap_2021": 7.768215,
+        "poor300_display": "29.4%",
+        "poor420_display": "55.9%",
+        "poor830_display": "93.1%",
+        "prosperity_gap_display": "7.77"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 518
+    },
+    {
+      "place_id": "SLE-ADM1-MOYAMBA",
+      "place_name": "Moyamba",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "moyamba",
+      "adm1_geo_id": "SLE_2015_ADM2_25416",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.882077,
+      "poverty_context": {
+        "poor300_rate": 0.4854,
+        "poor420_rate": 0.7621,
+        "poor830_rate": 0.9792,
+        "prosperity_gap_2021": 9.882077,
+        "poor300_display": "48.5%",
+        "poor420_display": "76.2%",
+        "poor830_display": "97.9%",
+        "prosperity_gap_display": "9.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 344
+    },
+    {
+      "place_id": "SLE-ADM1-PORT-LOKO",
+      "place_name": "Port Loko",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "port loko",
+      "adm1_geo_id": "SLE_2015_ADM2_25412",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.766403,
+      "poverty_context": {
+        "poor300_rate": 0.3779,
+        "poor420_rate": 0.7034,
+        "poor830_rate": 0.9707,
+        "prosperity_gap_2021": 8.7664033,
+        "poor300_display": "37.8%",
+        "poor420_display": "70.3%",
+        "poor830_display": "97.1%",
+        "prosperity_gap_display": "8.77"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 436
+    },
+    {
+      "place_id": "SLE-ADM1-PUJEHUN",
+      "place_name": "Pujehun",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "pujehun",
+      "adm1_geo_id": "SLE_2015_ADM2_25417",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.690096,
+      "poverty_context": {
+        "poor300_rate": 0.6449,
+        "poor420_rate": 0.8797,
+        "poor830_rate": 0.9869,
+        "prosperity_gap_2021": 11.690096,
+        "poor300_display": "64.5%",
+        "poor420_display": "88.0%",
+        "poor830_display": "98.7%",
+        "prosperity_gap_display": "11.69"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 233
+    },
+    {
+      "place_id": "SLE-ADM1-TONKOLILI",
+      "place_name": "Tonkolili",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "tonkolili",
+      "adm1_geo_id": "SLE_2015_ADM2_25413",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.567724,
+      "poverty_context": {
+        "poor300_rate": 0.6276,
+        "poor420_rate": 0.8856,
+        "poor830_rate": 0.9875,
+        "prosperity_gap_2021": 11.567724,
+        "poor300_display": "62.8%",
+        "poor420_display": "88.6%",
+        "poor830_display": "98.8%",
+        "prosperity_gap_display": "11.57"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 244
+    },
+    {
+      "place_id": "SLE-ADM1-WESTERN-AREA",
+      "place_name": "Western Area",
+      "parent_place_id": "SLE",
+      "parent_place_name": "Sierra Leone",
+      "iso3": "SLE",
+      "source_iso3": "SLE",
+      "geometry_level": "adm1",
+      "adm1_key": "western area",
+      "adm1_geo_id": "SLE_2015_ADMx_221_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SLE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.272596,
+      "poverty_context": {
+        "poor300_rate": 0.0987,
+        "poor420_rate": 0.2538,
+        "poor830_rate": 0.7052,
+        "prosperity_gap_2021": 5.2725961,
+        "poor300_display": "9.87%",
+        "poor420_display": "25.4%",
+        "poor830_display": "70.5%",
+        "prosperity_gap_display": "5.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 774
+    }
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "MAR",
+  "parent_place_name": "Morocco",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 10,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "MAR-ADM1-B-NI-MELLAL-KH-NIFRA",
+      "place_name": "Béni Mellal-Khénifra",
+      "parent_place_id": "MAR",
+      "parent_place_name": "Morocco",
+      "iso3": "MAR",
+      "source_iso3": "MAR",
+      "geometry_level": "adm1",
+      "adm1_key": "b ni mellal kh nifra",
+      "adm1_geo_id": "MAR_2015_DKx_154_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MAR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.339287,
+      "poverty_context": {
+        "poor300_rate": 0.0521,
+        "poor420_rate": 0.1558,
+        "poor830_rate": 0.5751,
+        "prosperity_gap_2021": 4.3392868,
+        "poor300_display": "5.21%",
+        "poor420_display": "15.6%",
+        "poor830_display": "57.5%",
+        "prosperity_gap_display": "4.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 918
+    },
+    {
+      "place_id": "MAR-ADM1-DR-A-TAFILALET",
+      "place_name": "Drâa-Tafilalet",
+      "parent_place_id": "MAR",
+      "parent_place_name": "Morocco",
+      "iso3": "MAR",
+      "source_iso3": "MAR",
+      "geometry_level": "adm1",
+      "adm1_key": "dr a tafilalet",
+      "adm1_geo_id": "MAR_2015_DKx_154_8",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MAR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.011377,
+      "poverty_context": {
+        "poor300_rate": 0.1074,
+        "poor420_rate": 0.2223,
+        "poor830_rate": 0.5683,
+        "prosperity_gap_2021": 5.011377,
+        "poor300_display": "10.7%",
+        "poor420_display": "22.2%",
+        "poor830_display": "56.8%",
+        "prosperity_gap_display": "5.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 805
+    },
+    {
+      "place_id": "MAR-ADM1-F-S-MEKN-S",
+      "place_name": "Fès-Meknès",
+      "parent_place_id": "MAR",
+      "parent_place_name": "Morocco",
+      "iso3": "MAR",
+      "source_iso3": "MAR",
+      "geometry_level": "adm1",
+      "adm1_key": "f s mekn s",
+      "adm1_geo_id": "MAR_2015_DKx_154_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MAR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.707562,
+      "poverty_context": {
+        "poor300_rate": 0.0272,
+        "poor420_rate": 0.0971,
+        "poor830_rate": 0.4752,
+        "prosperity_gap_2021": 3.7075616,
+        "poor300_display": "2.72%",
+        "poor420_display": "9.71%",
+        "poor830_display": "47.5%",
+        "prosperity_gap_display": "3.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1036
+    },
+    {
+      "place_id": "MAR-ADM1-GRAND-CASABLANCA-SETTAT",
+      "place_name": "Grand Casablanca-Settat",
+      "parent_place_id": "MAR",
+      "parent_place_name": "Morocco",
+      "iso3": "MAR",
+      "source_iso3": "MAR",
+      "geometry_level": "adm1",
+      "adm1_key": "grand casablanca settat",
+      "adm1_geo_id": "MAR_2015_DKx_154_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MAR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.942774,
+      "poverty_context": {
+        "poor300_rate": 0.0056,
+        "poor420_rate": 0.0424,
+        "poor830_rate": 0.3211,
+        "prosperity_gap_2021": 2.9427744,
+        "poor300_display": "0.56%",
+        "poor420_display": "4.24%",
+        "poor830_display": "32.1%",
+        "prosperity_gap_display": "2.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1181
+    },
+    {
+      "place_id": "MAR-ADM1-GUELMIM-OUED-NOUN",
+      "place_name": "Guelmim-Oued Noun",
+      "parent_place_id": "MAR",
+      "parent_place_name": "Morocco",
+      "iso3": "MAR",
+      "source_iso3": "MAR",
+      "geometry_level": "adm1",
+      "adm1_key": "guelmim oued noun",
+      "adm1_geo_id": "MAR_2015_DKx_154_10",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MAR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.561298,
+      "poverty_context": {
+        "poor300_rate": 0.0464,
+        "poor420_rate": 0.0815,
+        "poor830_rate": 0.4312,
+        "prosperity_gap_2021": 3.5612977,
+        "poor300_display": "4.64%",
+        "poor420_display": "8.15%",
+        "poor830_display": "43.1%",
+        "prosperity_gap_display": "3.56"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1058
+    },
+    {
+      "place_id": "MAR-ADM1-MARRAKECH-SAFI",
+      "place_name": "Marrakech-Safi",
+      "parent_place_id": "MAR",
+      "parent_place_name": "Morocco",
+      "iso3": "MAR",
+      "source_iso3": "MAR",
+      "geometry_level": "adm1",
+      "adm1_key": "marrakech safi",
+      "adm1_geo_id": "MAR_2015_DKx_154_7",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MAR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.76371,
+      "poverty_context": {
+        "poor300_rate": 0.0316,
+        "poor420_rate": 0.0968,
+        "poor830_rate": 0.4761,
+        "prosperity_gap_2021": 3.7637095,
+        "poor300_display": "3.16%",
+        "poor420_display": "9.68%",
+        "poor830_display": "47.6%",
+        "prosperity_gap_display": "3.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1028
+    },
+    {
+      "place_id": "MAR-ADM1-ORIENTAL",
+      "place_name": "Oriental",
+      "parent_place_id": "MAR",
+      "parent_place_name": "Morocco",
+      "iso3": "MAR",
+      "source_iso3": "MAR",
+      "geometry_level": "adm1",
+      "adm1_key": "oriental",
+      "adm1_geo_id": "MAR_2015_DKx_154_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MAR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.529697,
+      "poverty_context": {
+        "poor300_rate": 0.0295,
+        "poor420_rate": 0.0906,
+        "poor830_rate": 0.4423,
+        "prosperity_gap_2021": 3.5296966,
+        "poor300_display": "2.95%",
+        "poor420_display": "9.06%",
+        "poor830_display": "44.2%",
+        "prosperity_gap_display": "3.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1066
+    },
+    {
+      "place_id": "MAR-ADM1-RABAT-SAL-K-NITRA",
+      "place_name": "Rabat-Salé-Kénitra",
+      "parent_place_id": "MAR",
+      "parent_place_name": "Morocco",
+      "iso3": "MAR",
+      "source_iso3": "MAR",
+      "geometry_level": "adm1",
+      "adm1_key": "rabat sal k nitra",
+      "adm1_geo_id": "MAR_2015_DKx_154_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MAR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.427692,
+      "poverty_context": {
+        "poor300_rate": 0.0173,
+        "poor420_rate": 0.0807,
+        "poor830_rate": 0.4309,
+        "prosperity_gap_2021": 3.4276919,
+        "poor300_display": "1.73%",
+        "poor420_display": "8.07%",
+        "poor830_display": "43.1%",
+        "prosperity_gap_display": "3.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1083
+    },
+    {
+      "place_id": "MAR-ADM1-SOUSS-MASSA",
+      "place_name": "Souss-Massa",
+      "parent_place_id": "MAR",
+      "parent_place_name": "Morocco",
+      "iso3": "MAR",
+      "source_iso3": "MAR",
+      "geometry_level": "adm1",
+      "adm1_key": "souss massa",
+      "adm1_geo_id": "MAR_2015_DKx_154_9",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MAR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.841735,
+      "poverty_context": {
+        "poor300_rate": 0.027,
+        "poor420_rate": 0.1098,
+        "poor830_rate": 0.484,
+        "prosperity_gap_2021": 3.8417346,
+        "poor300_display": "2.70%",
+        "poor420_display": "11.0%",
+        "poor830_display": "48.4%",
+        "prosperity_gap_display": "3.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1017
+    },
+    {
+      "place_id": "MAR-ADM1-TANGER-T-TOUAN-AL-HOCEIMA",
+      "place_name": "Tanger-Tétouan-Al Hoceima",
+      "parent_place_id": "MAR",
+      "parent_place_name": "Morocco",
+      "iso3": "MAR",
+      "source_iso3": "MAR",
+      "geometry_level": "adm1",
+      "adm1_key": "tanger t touan al hoceima",
+      "adm1_geo_id": "MAR_2015_DKx_154_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MAR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.11209,
+      "poverty_context": {
+        "poor300_rate": 0.0136,
+        "poor420_rate": 0.054,
+        "poor830_rate": 0.3498,
+        "prosperity_gap_2021": 3.1120904,
+        "poor300_display": "1.36%",
+        "poor420_display": "5.40%",
+        "poor830_display": "35.0%",
+        "prosperity_gap_display": "3.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1144
+    }
+  ]
+}

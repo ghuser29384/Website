@@ -1,0 +1,277 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "VUT",
+  "parent_place_name": "Vanuatu",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 6,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "VUT-ADM1-MALAMPA",
+      "place_name": "Malampa",
+      "parent_place_id": "VUT",
+      "parent_place_name": "Vanuatu",
+      "iso3": "VUT",
+      "source_iso3": "VUT",
+      "geometry_level": "adm1",
+      "adm1_key": "malampa",
+      "adm1_geo_id": "VUT_2015_ADM1_3296",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/VUT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.238851,
+      "poverty_context": {
+        "poor300_rate": 0.3479,
+        "poor420_rate": 0.5991,
+        "poor830_rate": 0.9452,
+        "prosperity_gap_2021": 8.2388508,
+        "poor300_display": "34.8%",
+        "poor420_display": "59.9%",
+        "poor830_display": "94.5%",
+        "prosperity_gap_display": "8.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 483
+    },
+    {
+      "place_id": "VUT-ADM1-PENAMA",
+      "place_name": "Penama",
+      "parent_place_id": "VUT",
+      "parent_place_name": "Vanuatu",
+      "iso3": "VUT",
+      "source_iso3": "VUT",
+      "geometry_level": "adm1",
+      "adm1_key": "penama",
+      "adm1_geo_id": "VUT_2015_ADM1_3297",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/VUT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.270355,
+      "poverty_context": {
+        "poor300_rate": 0.2185,
+        "poor420_rate": 0.4612,
+        "poor830_rate": 0.8796,
+        "prosperity_gap_2021": 7.2703549,
+        "poor300_display": "21.9%",
+        "poor420_display": "46.1%",
+        "poor830_display": "88.0%",
+        "prosperity_gap_display": "7.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 568
+    },
+    {
+      "place_id": "VUT-ADM1-SANMA",
+      "place_name": "Sanma",
+      "parent_place_id": "VUT",
+      "parent_place_name": "Vanuatu",
+      "iso3": "VUT",
+      "source_iso3": "VUT",
+      "geometry_level": "adm1",
+      "adm1_key": "sanma",
+      "adm1_geo_id": "VUT_2015_ADM1_3298",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/VUT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.121633,
+      "poverty_context": {
+        "poor300_rate": 0.2074,
+        "poor420_rate": 0.4035,
+        "poor830_rate": 0.8506,
+        "prosperity_gap_2021": 7.1216333,
+        "poor300_display": "20.7%",
+        "poor420_display": "40.4%",
+        "poor830_display": "85.1%",
+        "prosperity_gap_display": "7.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 578
+    },
+    {
+      "place_id": "VUT-ADM1-SHEFA",
+      "place_name": "Shefa",
+      "parent_place_id": "VUT",
+      "parent_place_name": "Vanuatu",
+      "iso3": "VUT",
+      "source_iso3": "VUT",
+      "geometry_level": "adm1",
+      "adm1_key": "shefa",
+      "adm1_geo_id": "VUT_2015_ADM1_3299",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/VUT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.163706,
+      "poverty_context": {
+        "poor300_rate": 0.0813,
+        "poor420_rate": 0.2055,
+        "poor830_rate": 0.7477,
+        "prosperity_gap_2021": 5.1637064,
+        "poor300_display": "8.13%",
+        "poor420_display": "20.5%",
+        "poor830_display": "74.8%",
+        "prosperity_gap_display": "5.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 787
+    },
+    {
+      "place_id": "VUT-ADM1-TAFEA",
+      "place_name": "Tafea",
+      "parent_place_id": "VUT",
+      "parent_place_name": "Vanuatu",
+      "iso3": "VUT",
+      "source_iso3": "VUT",
+      "geometry_level": "adm1",
+      "adm1_key": "tafea",
+      "adm1_geo_id": "VUT_2015_ADM1_3300",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/VUT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.606213,
+      "poverty_context": {
+        "poor300_rate": 0.4957,
+        "poor420_rate": 0.6719,
+        "poor830_rate": 0.9278,
+        "prosperity_gap_2021": 10.606213,
+        "poor300_display": "49.6%",
+        "poor420_display": "67.2%",
+        "poor830_display": "92.8%",
+        "prosperity_gap_display": "10.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 304
+    },
+    {
+      "place_id": "VUT-ADM1-TORBA",
+      "place_name": "Torba",
+      "parent_place_id": "VUT",
+      "parent_place_name": "Vanuatu",
+      "iso3": "VUT",
+      "source_iso3": "VUT",
+      "geometry_level": "adm1",
+      "adm1_key": "torba",
+      "adm1_geo_id": "VUT_2015_ADM1_3301",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/VUT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.821055,
+      "poverty_context": {
+        "poor300_rate": 0.402,
+        "poor420_rate": 0.6252,
+        "poor830_rate": 0.9194,
+        "prosperity_gap_2021": 8.821055,
+        "poor300_display": "40.2%",
+        "poor420_display": "62.5%",
+        "poor830_display": "91.9%",
+        "prosperity_gap_display": "8.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 433
+    }
+  ]
+}

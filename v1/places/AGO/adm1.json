@@ -1,0 +1,805 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "AGO",
+  "parent_place_name": "Angola",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 18,
+  "static_page_count": 5,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "AGO-ADM1-BENGO",
+      "place_name": "Bengo",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "bengo",
+      "adm1_geo_id": "AGO_2015_ADM1_398",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.951311,
+      "poverty_context": {
+        "poor300_rate": 0.4777,
+        "poor420_rate": 0.6048,
+        "poor830_rate": 0.7818,
+        "prosperity_gap_2021": 10.951311,
+        "poor300_display": "47.8%",
+        "poor420_display": "60.5%",
+        "poor830_display": "78.2%",
+        "prosperity_gap_display": "10.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 284
+    },
+    {
+      "place_id": "AGO-ADM1-BENGUELA",
+      "place_name": "Benguela",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "benguela",
+      "adm1_geo_id": "AGO_2015_ADM1_399",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.176708,
+      "poverty_context": {
+        "poor300_rate": 0.4728,
+        "poor420_rate": 0.6081,
+        "poor830_rate": 0.8301,
+        "prosperity_gap_2021": 12.176708,
+        "poor300_display": "47.3%",
+        "poor420_display": "60.8%",
+        "poor830_display": "83.0%",
+        "prosperity_gap_display": "12.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 207
+    },
+    {
+      "place_id": "AGO-ADM1-BIE",
+      "place_name": "Bie",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "bie",
+      "adm1_geo_id": "AGO_2015_ADM1_400",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.823901,
+      "poverty_context": {
+        "poor300_rate": 0.546,
+        "poor420_rate": 0.6778,
+        "poor830_rate": 0.8664,
+        "prosperity_gap_2021": 13.823901,
+        "poor300_display": "54.6%",
+        "poor420_display": "67.8%",
+        "poor830_display": "86.6%",
+        "prosperity_gap_display": "13.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 159
+    },
+    {
+      "place_id": "AGO-ADM1-CABINDA",
+      "place_name": "Cabinda",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "cabinda",
+      "adm1_geo_id": "AGO_2015_ADM1_401",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.912562,
+      "poverty_context": {
+        "poor300_rate": 0.2149,
+        "poor420_rate": 0.4067,
+        "poor830_rate": 0.6711,
+        "prosperity_gap_2021": 6.912562,
+        "poor300_display": "21.5%",
+        "poor420_display": "40.7%",
+        "poor830_display": "67.1%",
+        "prosperity_gap_display": "6.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 591
+    },
+    {
+      "place_id": "AGO-ADM1-CUANDO-CUBANGO",
+      "place_name": "Cuando Cubango",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "cuando cubango",
+      "adm1_geo_id": "AGO_2015_ADM1_413",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.897013,
+      "poverty_context": {
+        "poor300_rate": 0.5784,
+        "poor420_rate": 0.7421,
+        "poor830_rate": 0.938,
+        "prosperity_gap_2021": 14.897013,
+        "poor300_display": "57.8%",
+        "poor420_display": "74.2%",
+        "poor830_display": "93.8%",
+        "prosperity_gap_display": "14.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 137
+    },
+    {
+      "place_id": "AGO-ADM1-CUANZA-SUL",
+      "place_name": "Cuanza Sul",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "cuanza sul",
+      "adm1_geo_id": "AGO_2015_ADM1_403",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/AGO/adm1/cuanza-sul/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 17.632277,
+      "poverty_context": {
+        "poor300_rate": 0.6601,
+        "poor420_rate": 0.8097,
+        "poor830_rate": 0.9473,
+        "prosperity_gap_2021": 17.632277,
+        "poor300_display": "66.0%",
+        "poor420_display": "81.0%",
+        "poor830_display": "94.7%",
+        "prosperity_gap_display": "17.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 90
+    },
+    {
+      "place_id": "AGO-ADM1-CUNENE",
+      "place_name": "Cunene",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "cunene",
+      "adm1_geo_id": "AGO_2015_ADM1_404",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/AGO/adm1/cunene/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 18.348822,
+      "poverty_context": {
+        "poor300_rate": 0.6919,
+        "poor420_rate": 0.8147,
+        "poor830_rate": 0.9407,
+        "prosperity_gap_2021": 18.348822,
+        "poor300_display": "69.2%",
+        "poor420_display": "81.5%",
+        "poor830_display": "94.1%",
+        "prosperity_gap_display": "18.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 82
+    },
+    {
+      "place_id": "AGO-ADM1-HUAMBO",
+      "place_name": "Huambo",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "huambo",
+      "adm1_geo_id": "AGO_2015_ADM1_405",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.397529,
+      "poverty_context": {
+        "poor300_rate": 0.6004,
+        "poor420_rate": 0.7455,
+        "poor830_rate": 0.9191,
+        "prosperity_gap_2021": 15.397529,
+        "poor300_display": "60.0%",
+        "poor420_display": "74.6%",
+        "poor830_display": "91.9%",
+        "prosperity_gap_display": "15.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 128
+    },
+    {
+      "place_id": "AGO-ADM1-HUILA",
+      "place_name": "Huila",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "huila",
+      "adm1_geo_id": "AGO_2015_ADM1_404",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/AGO/adm1/huila/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 18.479086,
+      "poverty_context": {
+        "poor300_rate": 0.5533,
+        "poor420_rate": 0.6963,
+        "poor830_rate": 0.872,
+        "prosperity_gap_2021": 18.479086,
+        "poor300_display": "55.3%",
+        "poor420_display": "69.6%",
+        "poor830_display": "87.2%",
+        "prosperity_gap_display": "18.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 81
+    },
+    {
+      "place_id": "AGO-ADM1-KUANZA-NORTE",
+      "place_name": "Kuanza Norte",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "kuanza norte",
+      "adm1_geo_id": "AGO_2015_ADM1_407",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.757807,
+      "poverty_context": {
+        "poor300_rate": 0.5225,
+        "poor420_rate": 0.678,
+        "poor830_rate": 0.9071,
+        "prosperity_gap_2021": 12.757807,
+        "poor300_display": "52.3%",
+        "poor420_display": "67.8%",
+        "poor830_display": "90.7%",
+        "prosperity_gap_display": "12.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 188
+    },
+    {
+      "place_id": "AGO-ADM1-LUANDA",
+      "place_name": "Luanda",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "luanda",
+      "adm1_geo_id": "AGO_2015_ADM1_408",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.191254,
+      "poverty_context": {
+        "poor300_rate": 0.1717,
+        "poor420_rate": 0.3287,
+        "poor830_rate": 0.7194,
+        "prosperity_gap_2021": 6.1912544,
+        "poor300_display": "17.2%",
+        "poor420_display": "32.9%",
+        "poor830_display": "71.9%",
+        "prosperity_gap_display": "6.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 651
+    },
+    {
+      "place_id": "AGO-ADM1-LUNDA-NORTE",
+      "place_name": "Lunda Norte",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "lunda norte",
+      "adm1_geo_id": "AGO_2015_ADM1_409",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.573921,
+      "poverty_context": {
+        "poor300_rate": 0.4325,
+        "poor420_rate": 0.5603,
+        "poor830_rate": 0.8188,
+        "prosperity_gap_2021": 11.573921,
+        "poor300_display": "43.3%",
+        "poor420_display": "56.0%",
+        "poor830_display": "81.9%",
+        "prosperity_gap_display": "11.57"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 243
+    },
+    {
+      "place_id": "AGO-ADM1-LUNDA-SUL",
+      "place_name": "Lunda Sul",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "lunda sul",
+      "adm1_geo_id": "AGO_2015_ADM1_410",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/AGO/adm1/lunda-sul/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.088535,
+      "poverty_context": {
+        "poor300_rate": 0.5536,
+        "poor420_rate": 0.6869,
+        "poor830_rate": 0.8988,
+        "prosperity_gap_2021": 16.088535,
+        "poor300_display": "55.4%",
+        "poor420_display": "68.7%",
+        "poor830_display": "89.9%",
+        "prosperity_gap_display": "16.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 111
+    },
+    {
+      "place_id": "AGO-ADM1-MALANJE",
+      "place_name": "Malanje",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "malanje",
+      "adm1_geo_id": "AGO_2015_ADM1_411",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.419058,
+      "poverty_context": {
+        "poor300_rate": 0.5736,
+        "poor420_rate": 0.7141,
+        "poor830_rate": 0.9091,
+        "prosperity_gap_2021": 15.419058,
+        "poor300_display": "57.4%",
+        "poor420_display": "71.4%",
+        "poor830_display": "90.9%",
+        "prosperity_gap_display": "15.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 127
+    },
+    {
+      "place_id": "AGO-ADM1-MOXICO",
+      "place_name": "Moxico",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "moxico",
+      "adm1_geo_id": "AGO_2015_ADM1_402",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/AGO/adm1/moxico/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.701814,
+      "poverty_context": {
+        "poor300_rate": 0.6546,
+        "poor420_rate": 0.7813,
+        "poor830_rate": 0.9353,
+        "prosperity_gap_2021": 15.701814,
+        "poor300_display": "65.5%",
+        "poor420_display": "78.1%",
+        "poor830_display": "93.5%",
+        "prosperity_gap_display": "15.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 120
+    },
+    {
+      "place_id": "AGO-ADM1-NAMIBE",
+      "place_name": "Namibe",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "namibe",
+      "adm1_geo_id": "AGO_2015_ADM1_413",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.55152,
+      "poverty_context": {
+        "poor300_rate": 0.403,
+        "poor420_rate": 0.6089,
+        "poor830_rate": 0.9007,
+        "prosperity_gap_2021": 11.55152,
+        "poor300_display": "40.3%",
+        "poor420_display": "60.9%",
+        "poor830_display": "90.1%",
+        "prosperity_gap_display": "11.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 245
+    },
+    {
+      "place_id": "AGO-ADM1-UIGE",
+      "place_name": "Uige",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "uige",
+      "adm1_geo_id": "AGO_2015_ADM1_414",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.259006,
+      "poverty_context": {
+        "poor300_rate": 0.5536,
+        "poor420_rate": 0.7181,
+        "poor830_rate": 0.9154,
+        "prosperity_gap_2021": 13.259006,
+        "poor300_display": "55.4%",
+        "poor420_display": "71.8%",
+        "poor830_display": "91.5%",
+        "prosperity_gap_display": "13.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 171
+    },
+    {
+      "place_id": "AGO-ADM1-ZAIRE",
+      "place_name": "Zaire",
+      "parent_place_id": "AGO",
+      "parent_place_name": "Angola",
+      "iso3": "AGO",
+      "source_iso3": "AGO",
+      "geometry_level": "adm1",
+      "adm1_key": "zaire",
+      "adm1_geo_id": "AGO_2015_ADM1_415",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AGO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.402221,
+      "poverty_context": {
+        "poor300_rate": 0.2475,
+        "poor420_rate": 0.3926,
+        "poor830_rate": 0.7262,
+        "prosperity_gap_2021": 7.402221,
+        "poor300_display": "24.8%",
+        "poor420_display": "39.3%",
+        "poor830_display": "72.6%",
+        "prosperity_gap_display": "7.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 554
+    }
+  ]
+}

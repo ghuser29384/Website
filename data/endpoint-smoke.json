@@ -75,12 +75,28 @@
       "purpose": "Full release place index"
     },
     {
+      "path": "/v1/adm1/index.json",
+      "url": "https://painmap.org/v1/adm1/index.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "ADM1 poverty-context overlay index"
+    },
+    {
       "path": "/v1/coverage.json",
       "url": "https://painmap.org/v1/coverage.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
       "purpose": "Release coverage status"
+    },
+    {
+      "path": "/v1/places/IND/adm1.json",
+      "url": "https://painmap.org/v1/places/IND/adm1.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "India ADM1 poverty-context overlay"
     },
     {
       "path": "/v1/places/BRA/neighbors.json",

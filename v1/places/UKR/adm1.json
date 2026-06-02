@@ -1,0 +1,1113 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "UKR",
+  "parent_place_name": "Ukraine",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 25,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "UKR-ADM1-CHERKASY",
+      "place_name": "Cherkasy",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "cherkasy",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.1_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.401962,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1201,
+        "prosperity_gap_2021": 2.4019622,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "12.0%",
+        "prosperity_gap_display": "2.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1325
+    },
+    {
+      "place_id": "UKR-ADM1-CHERNIHIV",
+      "place_name": "Chernihiv",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "chernihiv",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.2_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.84409,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0229,
+        "prosperity_gap_2021": 1.8440903,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "2.29%",
+        "prosperity_gap_display": "1.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1511
+    },
+    {
+      "place_id": "UKR-ADM1-CHERNIVTSI",
+      "place_name": "Chernivtsi",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "chernivtsi",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.3_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.321885,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1465,
+        "prosperity_gap_2021": 2.321885,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "14.6%",
+        "prosperity_gap_display": "2.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1349
+    },
+    {
+      "place_id": "UKR-ADM1-DNIPROPETROVS-K",
+      "place_name": "Dnipropetrovs'k",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "dnipropetrovs k",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.5_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.143178,
+      "poverty_context": {
+        "poor300_rate": 0.0019,
+        "poor420_rate": 0.0176,
+        "poor830_rate": 0.0851,
+        "prosperity_gap_2021": 2.1431785,
+        "poor300_display": "0.19%",
+        "poor420_display": "1.76%",
+        "poor830_display": "8.51%",
+        "prosperity_gap_display": "2.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1416
+    },
+    {
+      "place_id": "UKR-ADM1-DONETS-K",
+      "place_name": "Donets'k",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "donets k",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.6_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.39621,
+      "poverty_context": {
+        "poor300_rate": 0.0017,
+        "poor420_rate": 0.0127,
+        "poor830_rate": 0.1639,
+        "prosperity_gap_2021": 2.3962104,
+        "poor300_display": "0.17%",
+        "poor420_display": "1.27%",
+        "poor830_display": "16.4%",
+        "prosperity_gap_display": "2.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1327
+    },
+    {
+      "place_id": "UKR-ADM1-IVANO-FRANKIVS-K",
+      "place_name": "Ivano-Frankivs'k",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "ivano frankivs k",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.7_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.995453,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0383,
+        "prosperity_gap_2021": 1.9954527,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "3.83%",
+        "prosperity_gap_display": "2.00"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1469
+    },
+    {
+      "place_id": "UKR-ADM1-KHARKIV",
+      "place_name": "Kharkiv",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "kharkiv",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.8_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.214085,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0004,
+        "poor830_rate": 0.1276,
+        "prosperity_gap_2021": 2.2140855,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.04%",
+        "poor830_display": "12.8%",
+        "prosperity_gap_display": "2.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1390
+    },
+    {
+      "place_id": "UKR-ADM1-KHERSON",
+      "place_name": "Kherson",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "kherson",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.9_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.516914,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0173,
+        "poor830_rate": 0.1711,
+        "prosperity_gap_2021": 2.5169142,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.73%",
+        "poor830_display": "17.1%",
+        "prosperity_gap_display": "2.52"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1289
+    },
+    {
+      "place_id": "UKR-ADM1-KHMEL-NYTS-KYY",
+      "place_name": "Khmel'nyts'kyy",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "khmel nyts kyy",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.10_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.491376,
+      "poverty_context": {
+        "poor300_rate": 0.0003,
+        "poor420_rate": 0.0003,
+        "poor830_rate": 0.2282,
+        "prosperity_gap_2021": 2.4913758,
+        "poor300_display": "0.03%",
+        "poor420_display": "0.03%",
+        "poor830_display": "22.8%",
+        "prosperity_gap_display": "2.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1299
+    },
+    {
+      "place_id": "UKR-ADM1-KIEV",
+      "place_name": "Kiev",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "kiev",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.12_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.629347,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.2067,
+        "prosperity_gap_2021": 2.6293471,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "20.7%",
+        "prosperity_gap_display": "2.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1256
+    },
+    {
+      "place_id": "UKR-ADM1-KIEV-CITY",
+      "place_name": "Kiev City",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "kiev city",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.11_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.011769,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0686,
+        "prosperity_gap_2021": 2.011769,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "6.86%",
+        "prosperity_gap_display": "2.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1463
+    },
+    {
+      "place_id": "UKR-ADM1-KIROVOHRAD",
+      "place_name": "Kirovohrad",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "kirovohrad",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.13_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.377601,
+      "poverty_context": {
+        "poor300_rate": 0.0009,
+        "poor420_rate": 0.006,
+        "poor830_rate": 0.1985,
+        "prosperity_gap_2021": 2.3776013,
+        "poor300_display": "0.09%",
+        "poor420_display": "0.60%",
+        "poor830_display": "19.9%",
+        "prosperity_gap_display": "2.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1333
+    },
+    {
+      "place_id": "UKR-ADM1-L-VIV",
+      "place_name": "L'viv",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "l viv",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.14_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.153955,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0943,
+        "prosperity_gap_2021": 2.1539555,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "9.43%",
+        "prosperity_gap_display": "2.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1410
+    },
+    {
+      "place_id": "UKR-ADM1-LUHANS-K",
+      "place_name": "Luhans'k",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "luhans k",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.15_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.351144,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.005,
+        "poor830_rate": 0.1932,
+        "prosperity_gap_2021": 2.351144,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.50%",
+        "poor830_display": "19.3%",
+        "prosperity_gap_display": "2.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1338
+    },
+    {
+      "place_id": "UKR-ADM1-MYKOLAYIV",
+      "place_name": "Mykolayiv",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "mykolayiv",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.16_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.031252,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0407,
+        "prosperity_gap_2021": 2.0312516,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "4.07%",
+        "prosperity_gap_display": "2.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1456
+    },
+    {
+      "place_id": "UKR-ADM1-ODESSA",
+      "place_name": "Odessa",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "odessa",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.17_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.636647,
+      "poverty_context": {
+        "poor300_rate": 0.0004,
+        "poor420_rate": 0.0089,
+        "poor830_rate": 0.1755,
+        "prosperity_gap_2021": 2.6366474,
+        "poor300_display": "0.04%",
+        "poor420_display": "0.89%",
+        "poor830_display": "17.5%",
+        "prosperity_gap_display": "2.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1252
+    },
+    {
+      "place_id": "UKR-ADM1-POLTAVA",
+      "place_name": "Poltava",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "poltava",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.18_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.338598,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1471,
+        "prosperity_gap_2021": 2.3385976,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "14.7%",
+        "prosperity_gap_display": "2.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1343
+    },
+    {
+      "place_id": "UKR-ADM1-RIVNE",
+      "place_name": "Rivne",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "rivne",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.19_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.426293,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0168,
+        "poor830_rate": 0.4506,
+        "prosperity_gap_2021": 3.426293,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.68%",
+        "poor830_display": "45.1%",
+        "prosperity_gap_display": "3.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1084
+    },
+    {
+      "place_id": "UKR-ADM1-SUMY",
+      "place_name": "Sumy",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "sumy",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.21_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.167989,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0004,
+        "poor830_rate": 0.0877,
+        "prosperity_gap_2021": 2.1679894,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.04%",
+        "poor830_display": "8.77%",
+        "prosperity_gap_display": "2.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1404
+    },
+    {
+      "place_id": "UKR-ADM1-TERNOPIL",
+      "place_name": "Ternopil'",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "ternopil",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.22_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.478994,
+      "poverty_context": {
+        "poor300_rate": 0.0009,
+        "poor420_rate": 0.0009,
+        "poor830_rate": 0.1897,
+        "prosperity_gap_2021": 2.4789943,
+        "poor300_display": "0.09%",
+        "poor420_display": "0.09%",
+        "poor830_display": "19.0%",
+        "prosperity_gap_display": "2.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1302
+    },
+    {
+      "place_id": "UKR-ADM1-VINNYTSYA",
+      "place_name": "Vinnytsya",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "vinnytsya",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.24_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.086471,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0047,
+        "poor830_rate": 0.054,
+        "prosperity_gap_2021": 2.0864707,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.47%",
+        "poor830_display": "5.40%",
+        "prosperity_gap_display": "2.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1435
+    },
+    {
+      "place_id": "UKR-ADM1-VOLYN",
+      "place_name": "Volyn",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "volyn",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.25_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.448563,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0019,
+        "poor830_rate": 0.1904,
+        "prosperity_gap_2021": 2.4485626,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.19%",
+        "poor830_display": "19.0%",
+        "prosperity_gap_display": "2.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1309
+    },
+    {
+      "place_id": "UKR-ADM1-ZAKARPATTIA",
+      "place_name": "Zakarpattia",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "zakarpattia",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR23_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.109613,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0444,
+        "prosperity_gap_2021": 2.1096132,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "4.44%",
+        "prosperity_gap_display": "2.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1430
+    },
+    {
+      "place_id": "UKR-ADM1-ZAPORIZHIA",
+      "place_name": "Zaporizhia",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "zaporizhia",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.26_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.02948,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0662,
+        "prosperity_gap_2021": 2.0294797,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "6.62%",
+        "prosperity_gap_display": "2.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1457
+    },
+    {
+      "place_id": "UKR-ADM1-ZHYTOMYR",
+      "place_name": "Zhytomyr",
+      "parent_place_id": "UKR",
+      "parent_place_name": "Ukraine",
+      "iso3": "UKR",
+      "source_iso3": "UKR",
+      "geometry_level": "adm1",
+      "adm1_key": "zhytomyr",
+      "adm1_geo_id": "UKR_2019_GADM1_UKR.27_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UKR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.611613,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0068,
+        "poor830_rate": 0.2654,
+        "prosperity_gap_2021": 2.6116131,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.68%",
+        "poor830_display": "26.5%",
+        "prosperity_gap_display": "2.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1264
+    }
+  ]
+}

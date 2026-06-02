@@ -14,6 +14,8 @@ Both commands print the place name, release ID, measurement count, and layer sum
 ## Useful public entry points
 
 - `/v1/places/index.json`: full place index and coverage status by place.
+- `/v1/adm1/index.json`: ADM1 poverty-context overlay index with the top static-page rows ranked.
+- `/v1/places/IND/adm1.json`: country-scoped ADM1 context rows for India.
 - `/v1/coverage.json`: release coverage counts and known sparse areas.
 - `/data/release-modes.json`: Snapshot and live overlay mode contract with cache and network rules.
 - `/data/place-measurements.json`: canonical measurement rows.

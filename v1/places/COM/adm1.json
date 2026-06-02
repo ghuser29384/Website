@@ -1,0 +1,145 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "COM",
+  "parent_place_name": "Comoros",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 3,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "COM-ADM1-ANJOUAN",
+      "place_name": "Anjouan",
+      "parent_place_id": "COM",
+      "parent_place_name": "Comoros",
+      "iso3": "COM",
+      "source_iso3": "COM",
+      "geometry_level": "adm1",
+      "adm1_key": "anjouan",
+      "adm1_geo_id": "COM_2015_ADM1_967",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.240365,
+      "poverty_context": {
+        "poor300_rate": 0.3926,
+        "poor420_rate": 0.5339,
+        "poor830_rate": 0.7507,
+        "prosperity_gap_2021": 10.240365,
+        "poor300_display": "39.3%",
+        "poor420_display": "53.4%",
+        "poor830_display": "75.1%",
+        "prosperity_gap_display": "10.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 321
+    },
+    {
+      "place_id": "COM-ADM1-MOHELI",
+      "place_name": "Moheli",
+      "parent_place_id": "COM",
+      "parent_place_name": "Comoros",
+      "iso3": "COM",
+      "source_iso3": "COM",
+      "geometry_level": "adm1",
+      "adm1_key": "moheli",
+      "adm1_geo_id": "COM_2015_ADM1_968",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.296722,
+      "poverty_context": {
+        "poor300_rate": 0.3447,
+        "poor420_rate": 0.533,
+        "poor830_rate": 0.8485,
+        "prosperity_gap_2021": 9.296722,
+        "poor300_display": "34.5%",
+        "poor420_display": "53.3%",
+        "poor830_display": "84.9%",
+        "prosperity_gap_display": "9.30"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 395
+    },
+    {
+      "place_id": "COM-ADM1-NGAZIDJA",
+      "place_name": "Ngazidja",
+      "parent_place_id": "COM",
+      "parent_place_name": "Comoros",
+      "iso3": "COM",
+      "source_iso3": "COM",
+      "geometry_level": "adm1",
+      "adm1_key": "ngazidja",
+      "adm1_geo_id": "COM_2015_ADM1_969",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/COM/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.618835,
+      "poverty_context": {
+        "poor300_rate": 0.184,
+        "poor420_rate": 0.3359,
+        "poor830_rate": 0.7143,
+        "prosperity_gap_2021": 6.6188352,
+        "poor300_display": "18.4%",
+        "poor420_display": "33.6%",
+        "poor830_display": "71.4%",
+        "prosperity_gap_display": "6.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 617
+    }
+  ]
+}

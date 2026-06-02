@@ -15,6 +15,12 @@ class PainMapClient:
     def place_index(self) -> dict[str, Any]:
         return self._json("/v1/places/index.json")
 
+    def adm1_context_index(self) -> dict[str, Any]:
+        return self._json("/v1/adm1/index.json")
+
+    def country_adm1_context(self, place_id: str) -> dict[str, Any]:
+        return self._json(f"/v1/places/{quote(place_id)}/adm1.json")
+
     def coverage(self) -> dict[str, Any]:
         return self._json("/v1/coverage.json")
 

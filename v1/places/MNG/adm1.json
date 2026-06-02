@@ -1,0 +1,981 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "MNG",
+  "parent_place_name": "Mongolia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 22,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "MNG-ADM1-ARXANGAI",
+      "place_name": "Arxangai",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "arxangai",
+      "adm1_geo_id": "MNG_2015_ADM1_2075",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.650238,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0045,
+        "poor830_rate": 0.2347,
+        "prosperity_gap_2021": 2.6502376,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.45%",
+        "poor830_display": "23.5%",
+        "prosperity_gap_display": "2.65"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1249
+    },
+    {
+      "place_id": "MNG-ADM1-BAYAN-O-LGII",
+      "place_name": "Bayan-O'lgii",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "bayan o lgii",
+      "adm1_geo_id": "MNG_2015_ADM1_2076",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.978713,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0098,
+        "poor830_rate": 0.3161,
+        "prosperity_gap_2021": 2.9787127,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.98%",
+        "poor830_display": "31.6%",
+        "prosperity_gap_display": "2.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1169
+    },
+    {
+      "place_id": "MNG-ADM1-BAYANXONGOR",
+      "place_name": "Bayanxongor",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "bayanxongor",
+      "adm1_geo_id": "MNG_2015_ADM1_2077",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.114637,
+      "poverty_context": {
+        "poor300_rate": 0.0064,
+        "poor420_rate": 0.0474,
+        "poor830_rate": 0.343,
+        "prosperity_gap_2021": 3.1146371,
+        "poor300_display": "0.64%",
+        "poor420_display": "4.74%",
+        "poor830_display": "34.3%",
+        "prosperity_gap_display": "3.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1142
+    },
+    {
+      "place_id": "MNG-ADM1-BULGAN",
+      "place_name": "Bulgan",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "bulgan",
+      "adm1_geo_id": "MNG_2015_ADM1_2078",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.979809,
+      "poverty_context": {
+        "poor300_rate": 0.0072,
+        "poor420_rate": 0.0485,
+        "poor830_rate": 0.2998,
+        "prosperity_gap_2021": 2.9798095,
+        "poor300_display": "0.72%",
+        "poor420_display": "4.85%",
+        "poor830_display": "30.0%",
+        "prosperity_gap_display": "2.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1168
+    },
+    {
+      "place_id": "MNG-ADM1-DARXAN-UUL",
+      "place_name": "Darxan-Uul",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "darxan uul",
+      "adm1_geo_id": "MNG_2015_ADMx_167_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.316167,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.008,
+        "poor830_rate": 0.1472,
+        "prosperity_gap_2021": 2.316167,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.80%",
+        "poor830_display": "14.7%",
+        "prosperity_gap_display": "2.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1351
+    },
+    {
+      "place_id": "MNG-ADM1-DORNOD",
+      "place_name": "Dornod",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "dornod",
+      "adm1_geo_id": "MNG_2015_ADM1_2081",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.017588,
+      "poverty_context": {
+        "poor300_rate": 0.0047,
+        "poor420_rate": 0.0363,
+        "poor830_rate": 0.3316,
+        "prosperity_gap_2021": 3.0175881,
+        "poor300_display": "0.47%",
+        "poor420_display": "3.63%",
+        "poor830_display": "33.2%",
+        "prosperity_gap_display": "3.02"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1159
+    },
+    {
+      "place_id": "MNG-ADM1-DORNOGOVI",
+      "place_name": "Dornogovi",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "dornogovi",
+      "adm1_geo_id": "MNG_2015_ADM1_2082",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.506802,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.009,
+        "poor830_rate": 0.2043,
+        "prosperity_gap_2021": 2.5068017,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.90%",
+        "poor830_display": "20.4%",
+        "prosperity_gap_display": "2.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1295
+    },
+    {
+      "place_id": "MNG-ADM1-DUNDGOVI",
+      "place_name": "Dundgovi",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "dundgovi",
+      "adm1_geo_id": "MNG_2015_ADM1_2083",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.653249,
+      "poverty_context": {
+        "poor300_rate": 0.0027,
+        "poor420_rate": 0.0261,
+        "poor830_rate": 0.2167,
+        "prosperity_gap_2021": 2.6532494,
+        "poor300_display": "0.27%",
+        "poor420_display": "2.61%",
+        "poor830_display": "21.7%",
+        "prosperity_gap_display": "2.65"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1247
+    },
+    {
+      "place_id": "MNG-ADM1-GOVI-ALTAI",
+      "place_name": "Govi-Altai",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "govi altai",
+      "adm1_geo_id": "MNG_2015_ADM1_2085",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.986029,
+      "poverty_context": {
+        "poor300_rate": 0.0081,
+        "poor420_rate": 0.0316,
+        "poor830_rate": 0.2942,
+        "prosperity_gap_2021": 2.9860289,
+        "poor300_display": "0.81%",
+        "poor420_display": "3.16%",
+        "poor830_display": "29.4%",
+        "prosperity_gap_display": "2.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1164
+    },
+    {
+      "place_id": "MNG-ADM1-GOVISU-MBER",
+      "place_name": "Govisu'mber",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "govisu mber",
+      "adm1_geo_id": "MNG_2015_ADM1_2084",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.239561,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0169,
+        "poor830_rate": 0.1553,
+        "prosperity_gap_2021": 2.2395611,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.69%",
+        "poor830_display": "15.5%",
+        "prosperity_gap_display": "2.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1376
+    },
+    {
+      "place_id": "MNG-ADM1-O-MNOGOVI",
+      "place_name": "O'mnogovi",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "o mnogovi",
+      "adm1_geo_id": "MNG_2015_ADM1_2089",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.416338,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0042,
+        "poor830_rate": 0.155,
+        "prosperity_gap_2021": 2.4163384,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.42%",
+        "poor830_display": "15.5%",
+        "prosperity_gap_display": "2.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1320
+    },
+    {
+      "place_id": "MNG-ADM1-O-VORXANGAI",
+      "place_name": "O'vorxangai",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "o vorxangai",
+      "adm1_geo_id": "MNG_2015_ADM1_2091",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.940879,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0119,
+        "poor830_rate": 0.3086,
+        "prosperity_gap_2021": 2.9408785,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.19%",
+        "poor830_display": "30.9%",
+        "prosperity_gap_display": "2.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1182
+    },
+    {
+      "place_id": "MNG-ADM1-ORXON",
+      "place_name": "Orxon",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "orxon",
+      "adm1_geo_id": "MNG_2015_ADM1_2090",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.221504,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0091,
+        "poor830_rate": 0.1484,
+        "prosperity_gap_2021": 2.2215043,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.91%",
+        "poor830_display": "14.8%",
+        "prosperity_gap_display": "2.22"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1387
+    },
+    {
+      "place_id": "MNG-ADM1-SELENGE",
+      "place_name": "Selenge",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "selenge",
+      "adm1_geo_id": "MNG_2015_ADM1_2092",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.585703,
+      "poverty_context": {
+        "poor300_rate": 0.0149,
+        "poor420_rate": 0.0277,
+        "poor830_rate": 0.1914,
+        "prosperity_gap_2021": 2.5857029,
+        "poor300_display": "1.49%",
+        "poor420_display": "2.77%",
+        "poor830_display": "19.1%",
+        "prosperity_gap_display": "2.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1270
+    },
+    {
+      "place_id": "MNG-ADM1-SU-XBAATAR",
+      "place_name": "Su'xbaatar",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "su xbaatar",
+      "adm1_geo_id": "MNG_2015_ADM1_2093",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.540289,
+      "poverty_context": {
+        "poor300_rate": 0.0019,
+        "poor420_rate": 0.0069,
+        "poor830_rate": 0.1892,
+        "prosperity_gap_2021": 2.5402888,
+        "poor300_display": "0.19%",
+        "poor420_display": "0.69%",
+        "poor830_display": "18.9%",
+        "prosperity_gap_display": "2.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1282
+    },
+    {
+      "place_id": "MNG-ADM1-TO-V",
+      "place_name": "To'v",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "to v",
+      "adm1_geo_id": "MNG_2015_ADM1_2094",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.832624,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0248,
+        "poor830_rate": 0.2873,
+        "prosperity_gap_2021": 2.8326241,
+        "poor300_display": "0.00%",
+        "poor420_display": "2.48%",
+        "poor830_display": "28.7%",
+        "prosperity_gap_display": "2.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1204
+    },
+    {
+      "place_id": "MNG-ADM1-ULAANBAATAR",
+      "place_name": "Ulaanbaatar",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "ulaanbaatar",
+      "adm1_geo_id": "MNG_2015_ADM1_2095",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.34574,
+      "poverty_context": {
+        "poor300_rate": 0.0051,
+        "poor420_rate": 0.0192,
+        "poor830_rate": 0.1786,
+        "prosperity_gap_2021": 2.3457402,
+        "poor300_display": "0.51%",
+        "poor420_display": "1.92%",
+        "poor830_display": "17.9%",
+        "prosperity_gap_display": "2.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1340
+    },
+    {
+      "place_id": "MNG-ADM1-UVS",
+      "place_name": "Uvs",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "uvs",
+      "adm1_geo_id": "MNG_2015_ADM1_2096",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.144204,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0196,
+        "poor830_rate": 0.3533,
+        "prosperity_gap_2021": 3.1442042,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.96%",
+        "poor830_display": "35.3%",
+        "prosperity_gap_display": "3.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1136
+    },
+    {
+      "place_id": "MNG-ADM1-XENTII",
+      "place_name": "Xentii",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "xentii",
+      "adm1_geo_id": "MNG_2015_ADM1_2086",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.039032,
+      "poverty_context": {
+        "poor300_rate": 0.0054,
+        "poor420_rate": 0.0432,
+        "poor830_rate": 0.3224,
+        "prosperity_gap_2021": 3.0390325,
+        "poor300_display": "0.54%",
+        "poor420_display": "4.32%",
+        "poor830_display": "32.2%",
+        "prosperity_gap_display": "3.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1153
+    },
+    {
+      "place_id": "MNG-ADM1-XO-VSGOL",
+      "place_name": "Xo'vsgol",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "xo vsgol",
+      "adm1_geo_id": "MNG_2015_ADM1_2088",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.802625,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0024,
+        "poor830_rate": 0.2686,
+        "prosperity_gap_2021": 2.8026249,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.24%",
+        "poor830_display": "26.9%",
+        "prosperity_gap_display": "2.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1210
+    },
+    {
+      "place_id": "MNG-ADM1-XOVD",
+      "place_name": "Xovd",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "xovd",
+      "adm1_geo_id": "MNG_2015_ADM1_2087",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.980027,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0105,
+        "poor830_rate": 0.3302,
+        "prosperity_gap_2021": 2.9800274,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.05%",
+        "poor830_display": "33.0%",
+        "prosperity_gap_display": "2.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1166
+    },
+    {
+      "place_id": "MNG-ADM1-ZAVXAN",
+      "place_name": "Zavxan",
+      "parent_place_id": "MNG",
+      "parent_place_name": "Mongolia",
+      "iso3": "MNG",
+      "source_iso3": "MNG",
+      "geometry_level": "adm1",
+      "adm1_key": "zavxan",
+      "adm1_geo_id": "MNG_2015_ADM1_2007",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.506586,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0033,
+        "poor830_rate": 0.1623,
+        "prosperity_gap_2021": 2.5065863,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.33%",
+        "poor830_display": "16.2%",
+        "prosperity_gap_display": "2.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1296
+    }
+  ]
+}

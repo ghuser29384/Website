@@ -1,0 +1,761 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "KAZ",
+  "parent_place_name": "Kazakhstan",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 17,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "KAZ-ADM1-AKMOLINSKAYA",
+      "place_name": "Akmolinskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "akmolinskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1714",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.38274,
+      "poverty_context": {
+        "poor300_rate": 0.0031,
+        "poor420_rate": 0.0085,
+        "poor830_rate": 0.1835,
+        "prosperity_gap_2021": 2.3827397,
+        "poor300_display": "0.31%",
+        "poor420_display": "0.85%",
+        "poor830_display": "18.4%",
+        "prosperity_gap_display": "2.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1331
+    },
+    {
+      "place_id": "KAZ-ADM1-AKTYUBINSKAYA",
+      "place_name": "Aktyubinskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "aktyubinskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1715",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.514412,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0013,
+        "poor830_rate": 0.2317,
+        "prosperity_gap_2021": 2.514412,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.13%",
+        "poor830_display": "23.2%",
+        "prosperity_gap_display": "2.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1290
+    },
+    {
+      "place_id": "KAZ-ADM1-ALMATINSKAYA",
+      "place_name": "Almatinskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "almatinskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1716",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.173729,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0016,
+        "poor830_rate": 0.0957,
+        "prosperity_gap_2021": 2.1737292,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.16%",
+        "poor830_display": "9.57%",
+        "prosperity_gap_display": "2.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1402
+    },
+    {
+      "place_id": "KAZ-ADM1-ALMATY-CITY-AREA",
+      "place_name": "Almaty City area",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "almaty city area",
+      "adm1_geo_id": "KAZ_2015_ADM2_37157",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.898962,
+      "poverty_context": {
+        "poor300_rate": 0.0024,
+        "poor420_rate": 0.0048,
+        "poor830_rate": 0.0799,
+        "prosperity_gap_2021": 1.898962,
+        "poor300_display": "0.24%",
+        "poor420_display": "0.48%",
+        "poor830_display": "7.99%",
+        "prosperity_gap_display": "1.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1497
+    },
+    {
+      "place_id": "KAZ-ADM1-ATYRAUSKAYA",
+      "place_name": "Atyrauskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "atyrauskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1717",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.479962,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1577,
+        "prosperity_gap_2021": 2.4799621,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "15.8%",
+        "prosperity_gap_display": "2.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1301
+    },
+    {
+      "place_id": "KAZ-ADM1-JAMBYLSLKAYA",
+      "place_name": "Jambylslkaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "jambylslkaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1718",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.511735,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0025,
+        "poor830_rate": 0.1207,
+        "prosperity_gap_2021": 2.5117354,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.25%",
+        "poor830_display": "12.1%",
+        "prosperity_gap_display": "2.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1292
+    },
+    {
+      "place_id": "KAZ-ADM1-KARAGANDINSKAYA",
+      "place_name": "Karagandinskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "karagandinskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1719",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.073333,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0033,
+        "poor830_rate": 0.1177,
+        "prosperity_gap_2021": 2.0733331,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.33%",
+        "poor830_display": "11.8%",
+        "prosperity_gap_display": "2.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1440
+    },
+    {
+      "place_id": "KAZ-ADM1-KUSTANAYSKAYA",
+      "place_name": "Kustanayskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "kustanayskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1720",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.067274,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0013,
+        "poor830_rate": 0.0803,
+        "prosperity_gap_2021": 2.067274,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.13%",
+        "poor830_display": "8.03%",
+        "prosperity_gap_display": "2.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1443
+    },
+    {
+      "place_id": "KAZ-ADM1-KYZYLORDINSKAYA",
+      "place_name": "Kyzylordinskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "kyzylordinskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1721",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.536457,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0011,
+        "poor830_rate": 0.1807,
+        "prosperity_gap_2021": 2.5364566,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.11%",
+        "poor830_display": "18.1%",
+        "prosperity_gap_display": "2.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1284
+    },
+    {
+      "place_id": "KAZ-ADM1-MANGISTAUSKAYA",
+      "place_name": "Mangistauskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "mangistauskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1724",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.296732,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0477,
+        "prosperity_gap_2021": 2.2967324,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "4.77%",
+        "prosperity_gap_display": "2.30"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1359
+    },
+    {
+      "place_id": "KAZ-ADM1-PAVLODARSKAYA",
+      "place_name": "Pavlodarskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "pavlodarskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1725",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.116659,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.004,
+        "poor830_rate": 0.0841,
+        "prosperity_gap_2021": 2.1166589,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.40%",
+        "poor830_display": "8.41%",
+        "prosperity_gap_display": "2.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1426
+    },
+    {
+      "place_id": "KAZ-ADM1-SEVERO-KAZACHSTANSKAYA",
+      "place_name": "Severo-kazachstanskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "severo kazachstanskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1726",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.040827,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0016,
+        "poor830_rate": 0.1032,
+        "prosperity_gap_2021": 2.0408275,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.16%",
+        "poor830_display": "10.3%",
+        "prosperity_gap_display": "2.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1450
+    },
+    {
+      "place_id": "KAZ-ADM1-SHYMKENT-CITY-AREA",
+      "place_name": "Shymkent City area",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "shymkent city area",
+      "adm1_geo_id": "KAZ_2015_GAUL2_37319",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.773097,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0014,
+        "poor830_rate": 0.1945,
+        "prosperity_gap_2021": 2.7730969,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.14%",
+        "poor830_display": "19.4%",
+        "prosperity_gap_display": "2.77"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1222
+    },
+    {
+      "place_id": "KAZ-ADM1-TSELINOGRAD",
+      "place_name": "Tselinograd",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "tselinograd",
+      "adm1_geo_id": "KAZ_2015_ADM2_37174",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.064622,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0007,
+        "poor830_rate": 0.0566,
+        "prosperity_gap_2021": 2.064622,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.07%",
+        "poor830_display": "5.66%",
+        "prosperity_gap_display": "2.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1445
+    },
+    {
+      "place_id": "KAZ-ADM1-VOSTOCHNO-KAZACHSTANSKAYA",
+      "place_name": "Vostochno-kazachstanskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "vostochno kazachstanskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1727",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.200292,
+      "poverty_context": {
+        "poor300_rate": 0.0004,
+        "poor420_rate": 0.0018,
+        "poor830_rate": 0.1579,
+        "prosperity_gap_2021": 2.2002924,
+        "poor300_display": "0.04%",
+        "poor420_display": "0.18%",
+        "poor830_display": "15.8%",
+        "prosperity_gap_display": "2.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1395
+    },
+    {
+      "place_id": "KAZ-ADM1-YUJNO-KAZACHSTANSKAYA",
+      "place_name": "Yujno-kazachstanskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "yujno kazachstanskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1728",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.824624,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0055,
+        "poor830_rate": 0.2357,
+        "prosperity_gap_2021": 2.8246238,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.55%",
+        "poor830_display": "23.6%",
+        "prosperity_gap_display": "2.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1205
+    },
+    {
+      "place_id": "KAZ-ADM1-ZAPADNO-KAZACHSTANSKAYA",
+      "place_name": "Zapadno-kazachstanskaya",
+      "parent_place_id": "KAZ",
+      "parent_place_name": "Kazakhstan",
+      "iso3": "KAZ",
+      "source_iso3": "KAZ",
+      "geometry_level": "adm1",
+      "adm1_key": "zapadno kazachstanskaya",
+      "adm1_geo_id": "KAZ_2015_ADM1_1729",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KAZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.447692,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0009,
+        "poor830_rate": 0.1332,
+        "prosperity_gap_2021": 2.4476916,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.09%",
+        "poor830_display": "13.3%",
+        "prosperity_gap_display": "2.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1311
+    }
+  ]
+}

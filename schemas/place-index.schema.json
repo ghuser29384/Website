@@ -64,7 +64,8 @@
           "coverage_status": {
             "enum": [
               "canonical_measurements",
-              "boundary_index_only"
+              "boundary_index_only",
+              "adm1_context_overlay"
             ]
           },
           "canonical_measurement_count": {
@@ -102,7 +103,16 @@
             ]
           },
           "neighbors_url": {
-            "type": "string"
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "context_url": {
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "latest_release_id": {
             "type": "string"

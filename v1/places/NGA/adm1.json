@@ -1,0 +1,1553 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "NGA",
+  "parent_place_name": "Nigeria",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 35,
+  "static_page_count": 2,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "NGA-ADM1-ABIA",
+      "place_name": "Abia",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "abia",
+      "adm1_geo_id": "NGA_2015_ADM1_65698",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.312639,
+      "poverty_context": {
+        "poor300_rate": 0.3845,
+        "poor420_rate": 0.675,
+        "poor830_rate": 0.979,
+        "prosperity_gap_2021": 9.3126387,
+        "poor300_display": "38.5%",
+        "poor420_display": "67.5%",
+        "poor830_display": "97.9%",
+        "prosperity_gap_display": "9.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 394
+    },
+    {
+      "place_id": "NGA-ADM1-ABUJA",
+      "place_name": "Abuja",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "abuja",
+      "adm1_geo_id": "NGA_2015_ADM1_2221",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.262734,
+      "poverty_context": {
+        "poor300_rate": 0.2239,
+        "poor420_rate": 0.443,
+        "poor830_rate": 0.8463,
+        "prosperity_gap_2021": 7.2627335,
+        "poor300_display": "22.4%",
+        "poor420_display": "44.3%",
+        "poor830_display": "84.6%",
+        "prosperity_gap_display": "7.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 569
+    },
+    {
+      "place_id": "NGA-ADM1-ADAMAWA",
+      "place_name": "Adamawa",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "adamawa",
+      "adm1_geo_id": "NGA_2015_ADM1_2211",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.78511,
+      "poverty_context": {
+        "poor300_rate": 0.6926,
+        "poor420_rate": 0.8835,
+        "poor830_rate": 0.9884,
+        "prosperity_gap_2021": 11.78511,
+        "poor300_display": "69.3%",
+        "poor420_display": "88.3%",
+        "poor830_display": "98.8%",
+        "prosperity_gap_display": "11.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 228
+    },
+    {
+      "place_id": "NGA-ADM1-AKWA-IBOM",
+      "place_name": "Akwa Ibom",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "akwa ibom",
+      "adm1_geo_id": "NGA_2015_ADM1_2212",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.956471,
+      "poverty_context": {
+        "poor300_rate": 0.1989,
+        "poor420_rate": 0.456,
+        "poor830_rate": 0.851,
+        "prosperity_gap_2021": 6.9564712,
+        "poor300_display": "19.9%",
+        "poor420_display": "45.6%",
+        "poor830_display": "85.1%",
+        "prosperity_gap_display": "6.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 589
+    },
+    {
+      "place_id": "NGA-ADM1-ANAMBRA",
+      "place_name": "Anambra",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "anambra",
+      "adm1_geo_id": "NGA_2015_ADM1_2213",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.050881,
+      "poverty_context": {
+        "poor300_rate": 0.2999,
+        "poor420_rate": 0.5864,
+        "poor830_rate": 0.9414,
+        "prosperity_gap_2021": 8.0508808,
+        "poor300_display": "30.0%",
+        "poor420_display": "58.6%",
+        "poor830_display": "94.1%",
+        "prosperity_gap_display": "8.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 497
+    },
+    {
+      "place_id": "NGA-ADM1-BAUCHI",
+      "place_name": "Bauchi",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "bauchi",
+      "adm1_geo_id": "NGA_2015_ADM1_65699",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.055318,
+      "poverty_context": {
+        "poor300_rate": 0.7708,
+        "poor420_rate": 0.9027,
+        "poor830_rate": 0.9935,
+        "prosperity_gap_2021": 15.055318,
+        "poor300_display": "77.1%",
+        "poor420_display": "90.3%",
+        "poor830_display": "99.4%",
+        "prosperity_gap_display": "15.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 136
+    },
+    {
+      "place_id": "NGA-ADM1-BAYELSA",
+      "place_name": "Bayelsa",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "bayelsa",
+      "adm1_geo_id": "NGA_2015_ADM1_65700",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.252207,
+      "poverty_context": {
+        "poor300_rate": 0.3946,
+        "poor420_rate": 0.6256,
+        "poor830_rate": 0.9405,
+        "prosperity_gap_2021": 9.2522074,
+        "poor300_display": "39.5%",
+        "poor420_display": "62.6%",
+        "poor830_display": "94.0%",
+        "prosperity_gap_display": "9.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 398
+    },
+    {
+      "place_id": "NGA-ADM1-BENUE",
+      "place_name": "Benue",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "benue",
+      "adm1_geo_id": "NGA_2015_ADM1_2215",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.267665,
+      "poverty_context": {
+        "poor300_rate": 0.3525,
+        "poor420_rate": 0.6268,
+        "poor830_rate": 0.9381,
+        "prosperity_gap_2021": 8.2676654,
+        "poor300_display": "35.3%",
+        "poor420_display": "62.7%",
+        "poor830_display": "93.8%",
+        "prosperity_gap_display": "8.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 479
+    },
+    {
+      "place_id": "NGA-ADM1-BORNO",
+      "place_name": "Borno",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "borno",
+      "adm1_geo_id": "NGA_2015_ADM1_2216",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/NGA/adm1/borno/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.015172,
+      "poverty_context": {
+        "poor300_rate": 0.8079,
+        "poor420_rate": 0.88,
+        "poor830_rate": 0.9808,
+        "prosperity_gap_2021": 19.015172,
+        "poor300_display": "80.8%",
+        "poor420_display": "88.0%",
+        "poor830_display": "98.1%",
+        "prosperity_gap_display": "19.02"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 76
+    },
+    {
+      "place_id": "NGA-ADM1-CROSS-RIVER",
+      "place_name": "Cross River",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "cross river",
+      "adm1_geo_id": "NGA_2015_ADM1_2217",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.106638,
+      "poverty_context": {
+        "poor300_rate": 0.2212,
+        "poor420_rate": 0.458,
+        "poor830_rate": 0.8631,
+        "prosperity_gap_2021": 7.1066383,
+        "poor300_display": "22.1%",
+        "poor420_display": "45.8%",
+        "poor830_display": "86.3%",
+        "prosperity_gap_display": "7.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 580
+    },
+    {
+      "place_id": "NGA-ADM1-DELTA",
+      "place_name": "Delta",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "delta",
+      "adm1_geo_id": "NGA_2015_ADM1_2218",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.161808,
+      "poverty_context": {
+        "poor300_rate": 0.1414,
+        "poor420_rate": 0.3453,
+        "poor830_rate": 0.8507,
+        "prosperity_gap_2021": 6.1618076,
+        "poor300_display": "14.1%",
+        "poor420_display": "34.5%",
+        "poor830_display": "85.1%",
+        "prosperity_gap_display": "6.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 658
+    },
+    {
+      "place_id": "NGA-ADM1-EBONYI",
+      "place_name": "Ebonyi",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "ebonyi",
+      "adm1_geo_id": "NGA_2015_ADM1_65701",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.626697,
+      "poverty_context": {
+        "poor300_rate": 0.5647,
+        "poor420_rate": 0.7906,
+        "poor830_rate": 0.9615,
+        "prosperity_gap_2021": 11.626697,
+        "poor300_display": "56.5%",
+        "poor420_display": "79.1%",
+        "poor830_display": "96.2%",
+        "prosperity_gap_display": "11.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 237
+    },
+    {
+      "place_id": "NGA-ADM1-EDO",
+      "place_name": "Edo",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "edo",
+      "adm1_geo_id": "NGA_2015_ADM1_2219",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.136144,
+      "poverty_context": {
+        "poor300_rate": 0.1175,
+        "poor420_rate": 0.3624,
+        "poor830_rate": 0.851,
+        "prosperity_gap_2021": 6.1361437,
+        "poor300_display": "11.8%",
+        "poor420_display": "36.2%",
+        "poor830_display": "85.1%",
+        "prosperity_gap_display": "6.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 665
+    },
+    {
+      "place_id": "NGA-ADM1-EKITI",
+      "place_name": "Ekiti",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "ekiti",
+      "adm1_geo_id": "NGA_2015_ADM1_65702",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.865329,
+      "poverty_context": {
+        "poor300_rate": 0.0989,
+        "poor420_rate": 0.3145,
+        "poor830_rate": 0.8559,
+        "prosperity_gap_2021": 5.8653287,
+        "poor300_display": "9.89%",
+        "poor420_display": "31.4%",
+        "poor830_display": "85.6%",
+        "prosperity_gap_display": "5.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 696
+    },
+    {
+      "place_id": "NGA-ADM1-ENUGU",
+      "place_name": "Enugu",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "enugu",
+      "adm1_geo_id": "NGA_2015_ADM1_65703",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.44596,
+      "poverty_context": {
+        "poor300_rate": 0.3551,
+        "poor420_rate": 0.5738,
+        "poor830_rate": 0.8906,
+        "prosperity_gap_2021": 8.4459599,
+        "poor300_display": "35.5%",
+        "poor420_display": "57.4%",
+        "poor830_display": "89.1%",
+        "prosperity_gap_display": "8.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 462
+    },
+    {
+      "place_id": "NGA-ADM1-GOMBE",
+      "place_name": "Gombe",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "gombe",
+      "adm1_geo_id": "NGA_2015_ADM1_65704",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/NGA/adm1/gombe/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.828111,
+      "poverty_context": {
+        "poor300_rate": 0.697,
+        "poor420_rate": 0.8498,
+        "poor830_rate": 0.9844,
+        "prosperity_gap_2021": 16.828111,
+        "poor300_display": "69.7%",
+        "poor420_display": "85.0%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "16.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 99
+    },
+    {
+      "place_id": "NGA-ADM1-IMO",
+      "place_name": "Imo",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "imo",
+      "adm1_geo_id": "NGA_2015_ADM1_2222",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.721152,
+      "poverty_context": {
+        "poor300_rate": 0.2495,
+        "poor420_rate": 0.5747,
+        "poor830_rate": 0.9607,
+        "prosperity_gap_2021": 7.7211523,
+        "poor300_display": "24.9%",
+        "poor420_display": "57.5%",
+        "poor830_display": "96.1%",
+        "prosperity_gap_display": "7.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 528
+    },
+    {
+      "place_id": "NGA-ADM1-JIGAWA",
+      "place_name": "Jigawa",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "jigawa",
+      "adm1_geo_id": "NGA_2015_ADM1_2223",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.090419,
+      "poverty_context": {
+        "poor300_rate": 0.714,
+        "poor420_rate": 0.9297,
+        "poor830_rate": 0.999,
+        "prosperity_gap_2021": 14.090419,
+        "poor300_display": "71.4%",
+        "poor420_display": "93.0%",
+        "poor830_display": "99.9%",
+        "prosperity_gap_display": "14.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 154
+    },
+    {
+      "place_id": "NGA-ADM1-KADUNA",
+      "place_name": "Kaduna",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "kaduna",
+      "adm1_geo_id": "NGA_2015_ADM1_2224",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.897192,
+      "poverty_context": {
+        "poor300_rate": 0.524,
+        "poor420_rate": 0.7848,
+        "poor830_rate": 0.9612,
+        "prosperity_gap_2021": 10.897192,
+        "poor300_display": "52.4%",
+        "poor420_display": "78.5%",
+        "poor830_display": "96.1%",
+        "prosperity_gap_display": "10.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 291
+    },
+    {
+      "place_id": "NGA-ADM1-KANO",
+      "place_name": "Kano",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "kano",
+      "adm1_geo_id": "NGA_2015_ADM1_2225",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.490596,
+      "poverty_context": {
+        "poor300_rate": 0.536,
+        "poor420_rate": 0.7824,
+        "poor830_rate": 0.9741,
+        "prosperity_gap_2021": 10.490596,
+        "poor300_display": "53.6%",
+        "poor420_display": "78.2%",
+        "poor830_display": "97.4%",
+        "prosperity_gap_display": "10.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 309
+    },
+    {
+      "place_id": "NGA-ADM1-KATSINA",
+      "place_name": "Katsina",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "katsina",
+      "adm1_geo_id": "NGA_2015_ADM1_2226",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.691444,
+      "poverty_context": {
+        "poor300_rate": 0.509,
+        "poor420_rate": 0.835,
+        "poor830_rate": 0.9863,
+        "prosperity_gap_2021": 9.6914443,
+        "poor300_display": "50.9%",
+        "poor420_display": "83.5%",
+        "poor830_display": "98.6%",
+        "prosperity_gap_display": "9.69"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 370
+    },
+    {
+      "place_id": "NGA-ADM1-KEBBI",
+      "place_name": "Kebbi",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "kebbi",
+      "adm1_geo_id": "NGA_2015_ADM1_2227",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.148363,
+      "poverty_context": {
+        "poor300_rate": 0.6778,
+        "poor420_rate": 0.8524,
+        "poor830_rate": 0.9928,
+        "prosperity_gap_2021": 13.148363,
+        "poor300_display": "67.8%",
+        "poor420_display": "85.2%",
+        "poor830_display": "99.3%",
+        "prosperity_gap_display": "13.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 177
+    },
+    {
+      "place_id": "NGA-ADM1-KOGI",
+      "place_name": "Kogi",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "kogi",
+      "adm1_geo_id": "NGA_2015_ADM1_2228",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.062691,
+      "poverty_context": {
+        "poor300_rate": 0.3991,
+        "poor420_rate": 0.6188,
+        "poor830_rate": 0.9616,
+        "prosperity_gap_2021": 9.0626912,
+        "poor300_display": "39.9%",
+        "poor420_display": "61.9%",
+        "poor830_display": "96.2%",
+        "prosperity_gap_display": "9.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 414
+    },
+    {
+      "place_id": "NGA-ADM1-KWARA",
+      "place_name": "Kwara",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "kwara",
+      "adm1_geo_id": "NGA_2015_ADM1_2229",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.392877,
+      "poverty_context": {
+        "poor300_rate": 0.2528,
+        "poor420_rate": 0.4863,
+        "poor830_rate": 0.9348,
+        "prosperity_gap_2021": 7.3928771,
+        "poor300_display": "25.3%",
+        "poor420_display": "48.6%",
+        "poor830_display": "93.5%",
+        "prosperity_gap_display": "7.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 555
+    },
+    {
+      "place_id": "NGA-ADM1-LAGOS",
+      "place_name": "Lagos",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "lagos",
+      "adm1_geo_id": "NGA_2015_ADM1_2230",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.445276,
+      "poverty_context": {
+        "poor300_rate": 0.0794,
+        "poor420_rate": 0.2416,
+        "poor830_rate": 0.7821,
+        "prosperity_gap_2021": 5.4452762,
+        "poor300_display": "7.94%",
+        "poor420_display": "24.2%",
+        "poor830_display": "78.2%",
+        "prosperity_gap_display": "5.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 747
+    },
+    {
+      "place_id": "NGA-ADM1-NASSARAWA",
+      "place_name": "Nassarawa",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "nassarawa",
+      "adm1_geo_id": "NGA_2015_ADM1_65705",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.445008,
+      "poverty_context": {
+        "poor300_rate": 0.3265,
+        "poor420_rate": 0.666,
+        "poor830_rate": 0.9576,
+        "prosperity_gap_2021": 8.4450083,
+        "poor300_display": "32.6%",
+        "poor420_display": "66.6%",
+        "poor830_display": "95.8%",
+        "prosperity_gap_display": "8.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 463
+    },
+    {
+      "place_id": "NGA-ADM1-NIGER",
+      "place_name": "Niger",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "niger",
+      "adm1_geo_id": "NGA_2015_ADM1_2231",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.314358,
+      "poverty_context": {
+        "poor300_rate": 0.7812,
+        "poor420_rate": 0.9138,
+        "poor830_rate": 0.9941,
+        "prosperity_gap_2021": 14.314358,
+        "poor300_display": "78.1%",
+        "poor420_display": "91.4%",
+        "poor830_display": "99.4%",
+        "prosperity_gap_display": "14.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 150
+    },
+    {
+      "place_id": "NGA-ADM1-OGUN",
+      "place_name": "Ogun",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "ogun",
+      "adm1_geo_id": "NGA_2015_ADM1_2232",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.352461,
+      "poverty_context": {
+        "poor300_rate": 0.2298,
+        "poor420_rate": 0.4633,
+        "poor830_rate": 0.8739,
+        "prosperity_gap_2021": 7.3524613,
+        "poor300_display": "23.0%",
+        "poor420_display": "46.3%",
+        "poor830_display": "87.4%",
+        "prosperity_gap_display": "7.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 558
+    },
+    {
+      "place_id": "NGA-ADM1-ONDO",
+      "place_name": "Ondo",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "ondo",
+      "adm1_geo_id": "NGA_2015_ADM1_65706",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.756915,
+      "poverty_context": {
+        "poor300_rate": 0.089,
+        "poor420_rate": 0.2759,
+        "poor830_rate": 0.8389,
+        "prosperity_gap_2021": 5.7569147,
+        "poor300_display": "8.90%",
+        "poor420_display": "27.6%",
+        "poor830_display": "83.9%",
+        "prosperity_gap_display": "5.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 709
+    },
+    {
+      "place_id": "NGA-ADM1-OSUN",
+      "place_name": "Osun",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "osun",
+      "adm1_geo_id": "NGA_2015_ADM1_2234",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.23806,
+      "poverty_context": {
+        "poor300_rate": 0.2224,
+        "poor420_rate": 0.5356,
+        "poor830_rate": 0.9165,
+        "prosperity_gap_2021": 7.2380599,
+        "poor300_display": "22.2%",
+        "poor420_display": "53.6%",
+        "poor830_display": "91.6%",
+        "prosperity_gap_display": "7.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 571
+    },
+    {
+      "place_id": "NGA-ADM1-OYO",
+      "place_name": "Oyo",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "oyo",
+      "adm1_geo_id": "NGA_2015_ADM1_2235",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.148309,
+      "poverty_context": {
+        "poor300_rate": 0.2117,
+        "poor420_rate": 0.4461,
+        "poor830_rate": 0.8954,
+        "prosperity_gap_2021": 7.1483095,
+        "poor300_display": "21.2%",
+        "poor420_display": "44.6%",
+        "poor830_display": "89.5%",
+        "prosperity_gap_display": "7.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 576
+    },
+    {
+      "place_id": "NGA-ADM1-PLATEAU",
+      "place_name": "Plateau",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "plateau",
+      "adm1_geo_id": "NGA_2015_ADM1_65707",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.946959,
+      "poverty_context": {
+        "poor300_rate": 0.6326,
+        "poor420_rate": 0.823,
+        "poor830_rate": 0.9925,
+        "prosperity_gap_2021": 11.946959,
+        "poor300_display": "63.3%",
+        "poor420_display": "82.3%",
+        "poor830_display": "99.3%",
+        "prosperity_gap_display": "11.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 218
+    },
+    {
+      "place_id": "NGA-ADM1-RIVERS",
+      "place_name": "Rivers",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "rivers",
+      "adm1_geo_id": "NGA_2015_ADM1_65708",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.638573,
+      "poverty_context": {
+        "poor300_rate": 0.1759,
+        "poor420_rate": 0.3835,
+        "poor830_rate": 0.8399,
+        "prosperity_gap_2021": 6.6385726,
+        "poor300_display": "17.6%",
+        "poor420_display": "38.4%",
+        "poor830_display": "84.0%",
+        "prosperity_gap_display": "6.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 614
+    },
+    {
+      "place_id": "NGA-ADM1-SOKOTO",
+      "place_name": "Sokoto",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "sokoto",
+      "adm1_geo_id": "NGA_2015_ADM1_65709",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.348513,
+      "poverty_context": {
+        "poor300_rate": 0.6967,
+        "poor420_rate": 0.8836,
+        "poor830_rate": 0.9813,
+        "prosperity_gap_2021": 12.348513,
+        "poor300_display": "69.7%",
+        "poor420_display": "88.4%",
+        "poor830_display": "98.1%",
+        "prosperity_gap_display": "12.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 196
+    },
+    {
+      "place_id": "NGA-ADM1-YOBE",
+      "place_name": "Yobe",
+      "parent_place_id": "NGA",
+      "parent_place_name": "Nigeria",
+      "iso3": "NGA",
+      "source_iso3": "NGA",
+      "geometry_level": "adm1",
+      "adm1_key": "yobe",
+      "adm1_geo_id": "NGA_2015_ADM1_2240",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/NGA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.03263,
+      "poverty_context": {
+        "poor300_rate": 0.6845,
+        "poor420_rate": 0.8816,
+        "poor830_rate": 0.9946,
+        "prosperity_gap_2021": 13.03263,
+        "poor300_display": "68.5%",
+        "poor420_display": "88.2%",
+        "poor830_display": "99.5%",
+        "prosperity_gap_display": "13.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 182
+    }
+  ]
+}

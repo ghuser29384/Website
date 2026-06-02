@@ -1,0 +1,101 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "PSE",
+  "parent_place_name": "Palestine",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 2,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "PSE-ADM1-AL-KHALIL-HEBRON-AND-AL-QUDS-JERUSALEM-AND-ARIHA-JERICHO-AND-BE-2B665781",
+      "place_name": "Al Khalil (Hebron) & Al Quds (Jerusalem) & Ariha (Jericho) & Bethlehem & Jenin & Nablus & Qalqiliya & Ramallah & Salfit & Tubas & Tulkarm",
+      "parent_place_id": "PSE",
+      "parent_place_name": "Palestine",
+      "iso3": "PSE",
+      "source_iso3": "PSE",
+      "geometry_level": "adm1",
+      "adm1_key": "al khalil hebron and al quds jerusalem and ariha jericho and bethlehem and jenin and nablus and qalqiliya and ramallah and salfit and tubas and tulkarm",
+      "adm1_geo_id": "PSE_2015_ADMx_91_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PSE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.982286,
+      "poverty_context": {
+        "poor300_rate": 0.0032,
+        "poor420_rate": 0.007,
+        "poor830_rate": 0.0916,
+        "prosperity_gap_2021": 1.9822857,
+        "poor300_display": "0.32%",
+        "poor420_display": "0.70%",
+        "poor830_display": "9.16%",
+        "prosperity_gap_display": "1.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1474
+    },
+    {
+      "place_id": "PSE-ADM1-DEIR-AL-BALAH-AND-GAZA-AND-JABALYA-AND-KHAN-YUNIS-AND-RAFAH",
+      "place_name": "Deir al Balah & Gaza & Jabalya & Khan Yunis & Rafah",
+      "parent_place_id": "PSE",
+      "parent_place_name": "Palestine",
+      "iso3": "PSE",
+      "source_iso3": "PSE",
+      "geometry_level": "adm1",
+      "adm1_key": "deir al balah and gaza and jabalya and khan yunis and rafah",
+      "adm1_geo_id": "PSE_2015_ADMx_91_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PSE/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.261817,
+      "poverty_context": {
+        "poor300_rate": 0.0463,
+        "poor420_rate": 0.1384,
+        "poor830_rate": 0.5699,
+        "prosperity_gap_2021": 4.2618174,
+        "poor300_display": "4.63%",
+        "poor420_display": "13.8%",
+        "poor830_display": "57.0%",
+        "prosperity_gap_display": "4.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 935
+    }
+  ]
+}

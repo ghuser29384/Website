@@ -1,0 +1,189 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "SWZ",
+  "parent_place_name": "Eswatini",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 4,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "SWZ-ADM1-HHOHHO",
+      "place_name": "Hhohho",
+      "parent_place_id": "SWZ",
+      "parent_place_name": "Eswatini",
+      "iso3": "SWZ",
+      "source_iso3": "SWZ",
+      "geometry_level": "adm1",
+      "adm1_key": "hhohho",
+      "adm1_geo_id": "SWZ_2015_ADM1_2782",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SWZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.722286,
+      "poverty_context": {
+        "poor300_rate": 0.3861,
+        "poor420_rate": 0.52,
+        "poor830_rate": 0.7515,
+        "prosperity_gap_2021": 9.7222862,
+        "poor300_display": "38.6%",
+        "poor420_display": "52.0%",
+        "poor830_display": "75.1%",
+        "prosperity_gap_display": "9.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 367
+    },
+    {
+      "place_id": "SWZ-ADM1-LUBOMBO",
+      "place_name": "Lubombo",
+      "parent_place_id": "SWZ",
+      "parent_place_name": "Eswatini",
+      "iso3": "SWZ",
+      "source_iso3": "SWZ",
+      "geometry_level": "adm1",
+      "adm1_key": "lubombo",
+      "adm1_geo_id": "SWZ_2015_ADM1_2783",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SWZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.21222,
+      "poverty_context": {
+        "poor300_rate": 0.5669,
+        "poor420_rate": 0.6751,
+        "poor830_rate": 0.8513,
+        "prosperity_gap_2021": 13.21222,
+        "poor300_display": "56.7%",
+        "poor420_display": "67.5%",
+        "poor830_display": "85.1%",
+        "prosperity_gap_display": "13.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 175
+    },
+    {
+      "place_id": "SWZ-ADM1-MANZINI",
+      "place_name": "Manzini",
+      "parent_place_id": "SWZ",
+      "parent_place_name": "Eswatini",
+      "iso3": "SWZ",
+      "source_iso3": "SWZ",
+      "geometry_level": "adm1",
+      "adm1_key": "manzini",
+      "adm1_geo_id": "SWZ_2015_ADM1_2784",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SWZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.66621,
+      "poverty_context": {
+        "poor300_rate": 0.3526,
+        "poor420_rate": 0.4951,
+        "poor830_rate": 0.7293,
+        "prosperity_gap_2021": 8.6662103,
+        "poor300_display": "35.3%",
+        "poor420_display": "49.5%",
+        "poor830_display": "72.9%",
+        "prosperity_gap_display": "8.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 441
+    },
+    {
+      "place_id": "SWZ-ADM1-SHISELWENI",
+      "place_name": "Shiselweni",
+      "parent_place_id": "SWZ",
+      "parent_place_name": "Eswatini",
+      "iso3": "SWZ",
+      "source_iso3": "SWZ",
+      "geometry_level": "adm1",
+      "adm1_key": "shiselweni",
+      "adm1_geo_id": "SWZ_2015_ADM1_2785",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/SWZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.731957,
+      "poverty_context": {
+        "poor300_rate": 0.5005,
+        "poor420_rate": 0.6525,
+        "poor830_rate": 0.8701,
+        "prosperity_gap_2021": 11.731957,
+        "poor300_display": "50.0%",
+        "poor420_display": "65.3%",
+        "poor830_display": "87.0%",
+        "prosperity_gap_display": "11.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 230
+    }
+  ]
+}

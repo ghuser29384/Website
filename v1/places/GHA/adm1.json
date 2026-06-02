@@ -1,0 +1,453 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "GHA",
+  "parent_place_name": "Ghana",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 10,
+  "static_page_count": 3,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "GHA-ADM1-ASHANTI",
+      "place_name": "Ashanti",
+      "parent_place_id": "GHA",
+      "parent_place_name": "Ghana",
+      "iso3": "GHA",
+      "source_iso3": "GHA",
+      "geometry_level": "adm1",
+      "adm1_key": "ashanti",
+      "adm1_geo_id": "GHA_2015_ADM1_1324",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GHA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.994631,
+      "poverty_context": {
+        "poor300_rate": 0.2115,
+        "poor420_rate": 0.3934,
+        "poor830_rate": 0.7903,
+        "prosperity_gap_2021": 6.9946312,
+        "poor300_display": "21.1%",
+        "poor420_display": "39.3%",
+        "poor830_display": "79.0%",
+        "prosperity_gap_display": "6.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 586
+    },
+    {
+      "place_id": "GHA-ADM1-BRONG-AHAFO",
+      "place_name": "Brong Ahafo",
+      "parent_place_id": "GHA",
+      "parent_place_name": "Ghana",
+      "iso3": "GHA",
+      "source_iso3": "GHA",
+      "geometry_level": "adm1",
+      "adm1_key": "brong ahafo",
+      "adm1_geo_id": "GHA_2015_ADM1_1325",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GHA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.165784,
+      "poverty_context": {
+        "poor300_rate": 0.4236,
+        "poor420_rate": 0.6436,
+        "poor830_rate": 0.9052,
+        "prosperity_gap_2021": 11.165784,
+        "poor300_display": "42.4%",
+        "poor420_display": "64.4%",
+        "poor830_display": "90.5%",
+        "prosperity_gap_display": "11.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 271
+    },
+    {
+      "place_id": "GHA-ADM1-CENTRAL",
+      "place_name": "Central",
+      "parent_place_id": "GHA",
+      "parent_place_name": "Ghana",
+      "iso3": "GHA",
+      "source_iso3": "GHA",
+      "geometry_level": "adm1",
+      "adm1_key": "central",
+      "adm1_geo_id": "GHA_2015_ADM1_1326",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GHA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.822959,
+      "poverty_context": {
+        "poor300_rate": 0.2813,
+        "poor420_rate": 0.5041,
+        "poor830_rate": 0.8326,
+        "prosperity_gap_2021": 7.8229585,
+        "poor300_display": "28.1%",
+        "poor420_display": "50.4%",
+        "poor830_display": "83.3%",
+        "prosperity_gap_display": "7.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 513
+    },
+    {
+      "place_id": "GHA-ADM1-EASTERN",
+      "place_name": "Eastern",
+      "parent_place_id": "GHA",
+      "parent_place_name": "Ghana",
+      "iso3": "GHA",
+      "source_iso3": "GHA",
+      "geometry_level": "adm1",
+      "adm1_key": "eastern",
+      "adm1_geo_id": "GHA_2015_ADM1_1327",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GHA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.805032,
+      "poverty_context": {
+        "poor300_rate": 0.2657,
+        "poor420_rate": 0.4853,
+        "poor830_rate": 0.8522,
+        "prosperity_gap_2021": 7.8050323,
+        "poor300_display": "26.6%",
+        "poor420_display": "48.5%",
+        "poor830_display": "85.2%",
+        "prosperity_gap_display": "7.81"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 515
+    },
+    {
+      "place_id": "GHA-ADM1-GREATER-ACCRA",
+      "place_name": "Greater Accra",
+      "parent_place_id": "GHA",
+      "parent_place_name": "Ghana",
+      "iso3": "GHA",
+      "source_iso3": "GHA",
+      "geometry_level": "adm1",
+      "adm1_key": "greater accra",
+      "adm1_geo_id": "GHA_2015_ADM1_1328",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GHA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.029467,
+      "poverty_context": {
+        "poor300_rate": 0.0356,
+        "poor420_rate": 0.1009,
+        "poor830_rate": 0.5412,
+        "prosperity_gap_2021": 4.0294675,
+        "poor300_display": "3.56%",
+        "poor420_display": "10.1%",
+        "poor830_display": "54.1%",
+        "prosperity_gap_display": "4.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 984
+    },
+    {
+      "place_id": "GHA-ADM1-NORTHERN",
+      "place_name": "Northern",
+      "parent_place_id": "GHA",
+      "parent_place_name": "Ghana",
+      "iso3": "GHA",
+      "source_iso3": "GHA",
+      "geometry_level": "adm1",
+      "adm1_key": "northern",
+      "adm1_geo_id": "GHA_2015_ADM1_1329",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/GHA/adm1/northern/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GHA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.961413,
+      "poverty_context": {
+        "poor300_rate": 0.7203,
+        "poor420_rate": 0.8386,
+        "poor830_rate": 0.9627,
+        "prosperity_gap_2021": 19.961413,
+        "poor300_display": "72.0%",
+        "poor420_display": "83.9%",
+        "poor830_display": "96.3%",
+        "prosperity_gap_display": "19.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 58
+    },
+    {
+      "place_id": "GHA-ADM1-UPPER-EAST",
+      "place_name": "Upper East",
+      "parent_place_id": "GHA",
+      "parent_place_name": "Ghana",
+      "iso3": "GHA",
+      "source_iso3": "GHA",
+      "geometry_level": "adm1",
+      "adm1_key": "upper east",
+      "adm1_geo_id": "GHA_2015_ADM1_1330",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/GHA/adm1/upper-east/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GHA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 20.499193,
+      "poverty_context": {
+        "poor300_rate": 0.746,
+        "poor420_rate": 0.8831,
+        "poor830_rate": 0.9617,
+        "prosperity_gap_2021": 20.499193,
+        "poor300_display": "74.6%",
+        "poor420_display": "88.3%",
+        "poor830_display": "96.2%",
+        "prosperity_gap_display": "20.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 53
+    },
+    {
+      "place_id": "GHA-ADM1-UPPER-WEST",
+      "place_name": "Upper West",
+      "parent_place_id": "GHA",
+      "parent_place_name": "Ghana",
+      "iso3": "GHA",
+      "source_iso3": "GHA",
+      "geometry_level": "adm1",
+      "adm1_key": "upper west",
+      "adm1_geo_id": "GHA_2015_ADM1_1331",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/GHA/adm1/upper-west/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GHA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 29.312247,
+      "poverty_context": {
+        "poor300_rate": 0.8156,
+        "poor420_rate": 0.8965,
+        "poor830_rate": 0.9784,
+        "prosperity_gap_2021": 29.312247,
+        "poor300_display": "81.6%",
+        "poor420_display": "89.6%",
+        "poor830_display": "97.8%",
+        "prosperity_gap_display": "29.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 16
+    },
+    {
+      "place_id": "GHA-ADM1-VOLTA",
+      "place_name": "Volta",
+      "parent_place_id": "GHA",
+      "parent_place_name": "Ghana",
+      "iso3": "GHA",
+      "source_iso3": "GHA",
+      "geometry_level": "adm1",
+      "adm1_key": "volta",
+      "adm1_geo_id": "GHA_2015_ADM1_1332",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GHA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.059145,
+      "poverty_context": {
+        "poor300_rate": 0.5277,
+        "poor420_rate": 0.7151,
+        "poor830_rate": 0.9368,
+        "prosperity_gap_2021": 13.059145,
+        "poor300_display": "52.8%",
+        "poor420_display": "71.5%",
+        "poor830_display": "93.7%",
+        "prosperity_gap_display": "13.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 181
+    },
+    {
+      "place_id": "GHA-ADM1-WESTERN",
+      "place_name": "Western",
+      "parent_place_id": "GHA",
+      "parent_place_name": "Ghana",
+      "iso3": "GHA",
+      "source_iso3": "GHA",
+      "geometry_level": "adm1",
+      "adm1_key": "western",
+      "adm1_geo_id": "GHA_2015_ADM1_1333",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GHA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.408318,
+      "poverty_context": {
+        "poor300_rate": 0.3387,
+        "poor420_rate": 0.5275,
+        "poor830_rate": 0.8813,
+        "prosperity_gap_2021": 8.4083181,
+        "poor300_display": "33.9%",
+        "poor420_display": "52.8%",
+        "poor830_display": "88.1%",
+        "prosperity_gap_display": "8.41"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 468
+    }
+  ]
+}

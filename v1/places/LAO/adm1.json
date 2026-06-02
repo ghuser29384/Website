@@ -1,0 +1,805 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "LAO",
+  "parent_place_name": "Laos",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 18,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "LAO-ADM1-ATTAPU",
+      "place_name": "Attapu",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "attapu",
+      "adm1_geo_id": "LAO_2018_ADM_17",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.668284,
+      "poverty_context": {
+        "poor300_rate": 0.1911,
+        "poor420_rate": 0.4425,
+        "poor830_rate": 0.8138,
+        "prosperity_gap_2021": 6.6682843,
+        "poor300_display": "19.1%",
+        "poor420_display": "44.3%",
+        "poor830_display": "81.4%",
+        "prosperity_gap_display": "6.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 612
+    },
+    {
+      "place_id": "LAO-ADM1-BOKEO",
+      "place_name": "Bokeo",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "bokeo",
+      "adm1_geo_id": "LAO_2018_ADM_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.167308,
+      "poverty_context": {
+        "poor300_rate": 0.1472,
+        "poor420_rate": 0.3928,
+        "poor830_rate": 0.7883,
+        "prosperity_gap_2021": 6.1673078,
+        "poor300_display": "14.7%",
+        "poor420_display": "39.3%",
+        "poor830_display": "78.8%",
+        "prosperity_gap_display": "6.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 657
+    },
+    {
+      "place_id": "LAO-ADM1-BOLIKHAMXAI",
+      "place_name": "Bolikhamxai",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "bolikhamxai",
+      "adm1_geo_id": "LAO_2018_ADM_11",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.424905,
+      "poverty_context": {
+        "poor300_rate": 0.168,
+        "poor420_rate": 0.3754,
+        "poor830_rate": 0.8247,
+        "prosperity_gap_2021": 6.4249049,
+        "poor300_display": "16.8%",
+        "poor420_display": "37.5%",
+        "poor830_display": "82.5%",
+        "prosperity_gap_display": "6.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 637
+    },
+    {
+      "place_id": "LAO-ADM1-CHAMPASAK",
+      "place_name": "Champasak",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "champasak",
+      "adm1_geo_id": "LAO_2018_ADM_16",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.965372,
+      "poverty_context": {
+        "poor300_rate": 0.0666,
+        "poor420_rate": 0.2143,
+        "poor830_rate": 0.6909,
+        "prosperity_gap_2021": 4.9653723,
+        "poor300_display": "6.66%",
+        "poor420_display": "21.4%",
+        "poor830_display": "69.1%",
+        "prosperity_gap_display": "4.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 812
+    },
+    {
+      "place_id": "LAO-ADM1-HOUAPHAN",
+      "place_name": "Houaphan",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "houaphan",
+      "adm1_geo_id": "LAO_2018_ADM_7",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.776602,
+      "poverty_context": {
+        "poor300_rate": 0.2137,
+        "poor420_rate": 0.4624,
+        "poor830_rate": 0.8206,
+        "prosperity_gap_2021": 6.776602,
+        "poor300_display": "21.4%",
+        "poor420_display": "46.2%",
+        "poor830_display": "82.1%",
+        "prosperity_gap_display": "6.78"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 603
+    },
+    {
+      "place_id": "LAO-ADM1-KHAMMOUAN",
+      "place_name": "Khammouan",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "khammouan",
+      "adm1_geo_id": "LAO_2018_ADM_12",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.850256,
+      "poverty_context": {
+        "poor300_rate": 0.1858,
+        "poor420_rate": 0.4637,
+        "poor830_rate": 0.8872,
+        "prosperity_gap_2021": 6.8502556,
+        "poor300_display": "18.6%",
+        "poor420_display": "46.4%",
+        "poor830_display": "88.7%",
+        "prosperity_gap_display": "6.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 596
+    },
+    {
+      "place_id": "LAO-ADM1-LOUANG-NAMTHA",
+      "place_name": "Louang Namtha",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "louang namtha",
+      "adm1_geo_id": "LAO_2018_ADM_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.65292,
+      "poverty_context": {
+        "poor300_rate": 0.0661,
+        "poor420_rate": 0.2125,
+        "poor830_rate": 0.6089,
+        "prosperity_gap_2021": 4.6529196,
+        "poor300_display": "6.61%",
+        "poor420_display": "21.3%",
+        "poor830_display": "60.9%",
+        "prosperity_gap_display": "4.65"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 869
+    },
+    {
+      "place_id": "LAO-ADM1-LOUANGPHRABANG",
+      "place_name": "Louangphrabang",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "louangphrabang",
+      "adm1_geo_id": "LAO_2018_ADM_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.048881,
+      "poverty_context": {
+        "poor300_rate": 0.1298,
+        "poor420_rate": 0.3874,
+        "poor830_rate": 0.812,
+        "prosperity_gap_2021": 6.0488811,
+        "poor300_display": "13.0%",
+        "poor420_display": "38.7%",
+        "poor830_display": "81.2%",
+        "prosperity_gap_display": "6.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 676
+    },
+    {
+      "place_id": "LAO-ADM1-OUD-MXAI",
+      "place_name": "Oudômxai",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "oud mxai",
+      "adm1_geo_id": "LAO_2018_ADM_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.530977,
+      "poverty_context": {
+        "poor300_rate": 0.2223,
+        "poor420_rate": 0.4273,
+        "poor830_rate": 0.7762,
+        "prosperity_gap_2021": 6.5309766,
+        "poor300_display": "22.2%",
+        "poor420_display": "42.7%",
+        "poor830_display": "77.6%",
+        "prosperity_gap_display": "6.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 628
+    },
+    {
+      "place_id": "LAO-ADM1-PH-NGSALI",
+      "place_name": "Phôngsali",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "ph ngsali",
+      "adm1_geo_id": "LAO_2018_ADM_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.935574,
+      "poverty_context": {
+        "poor300_rate": 0.0364,
+        "poor420_rate": 0.2306,
+        "poor830_rate": 0.6733,
+        "prosperity_gap_2021": 4.9355743,
+        "poor300_display": "3.64%",
+        "poor420_display": "23.1%",
+        "poor830_display": "67.3%",
+        "prosperity_gap_display": "4.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 817
+    },
+    {
+      "place_id": "LAO-ADM1-SARAVAN",
+      "place_name": "Saravan",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "saravan",
+      "adm1_geo_id": "LAO_2018_ADM_14",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.064235,
+      "poverty_context": {
+        "poor300_rate": 0.2061,
+        "poor420_rate": 0.4887,
+        "poor830_rate": 0.9096,
+        "prosperity_gap_2021": 7.064235,
+        "poor300_display": "20.6%",
+        "poor420_display": "48.9%",
+        "poor830_display": "91.0%",
+        "prosperity_gap_display": "7.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 583
+    },
+    {
+      "place_id": "LAO-ADM1-SAVANNAKH-T",
+      "place_name": "Savannakhét",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "savannakh t",
+      "adm1_geo_id": "LAO_2018_ADM_13",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.844962,
+      "poverty_context": {
+        "poor300_rate": 0.2135,
+        "poor420_rate": 0.4268,
+        "poor830_rate": 0.8267,
+        "prosperity_gap_2021": 6.8449621,
+        "poor300_display": "21.3%",
+        "poor420_display": "42.7%",
+        "poor830_display": "82.7%",
+        "prosperity_gap_display": "6.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 597
+    },
+    {
+      "place_id": "LAO-ADM1-VIENTIANE",
+      "place_name": "Vientiane",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "vientiane",
+      "adm1_geo_id": "LAO_2018_ADM_10",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.09537,
+      "poverty_context": {
+        "poor300_rate": 0.0408,
+        "poor420_rate": 0.1094,
+        "poor830_rate": 0.5681,
+        "prosperity_gap_2021": 4.0953697,
+        "poor300_display": "4.08%",
+        "poor420_display": "10.9%",
+        "poor830_display": "56.8%",
+        "prosperity_gap_display": "4.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 973
+    },
+    {
+      "place_id": "LAO-ADM1-VIENTIANE-PREFECTURE",
+      "place_name": "Vientiane [prefecture]",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "vientiane prefecture",
+      "adm1_geo_id": "LAO_2018_ADM_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.595122,
+      "poverty_context": {
+        "poor300_rate": 0.0385,
+        "poor420_rate": 0.0941,
+        "poor830_rate": 0.42,
+        "prosperity_gap_2021": 3.5951218,
+        "poor300_display": "3.85%",
+        "poor420_display": "9.41%",
+        "poor830_display": "42.0%",
+        "prosperity_gap_display": "3.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1055
+    },
+    {
+      "place_id": "LAO-ADM1-XAIGNABOURI",
+      "place_name": "Xaignabouri",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "xaignabouri",
+      "adm1_geo_id": "LAO_2018_ADM_8",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.187249,
+      "poverty_context": {
+        "poor300_rate": 0.1516,
+        "poor420_rate": 0.345,
+        "poor830_rate": 0.8299,
+        "prosperity_gap_2021": 6.1872492,
+        "poor300_display": "15.2%",
+        "poor420_display": "34.5%",
+        "poor830_display": "83.0%",
+        "prosperity_gap_display": "6.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 652
+    },
+    {
+      "place_id": "LAO-ADM1-XAIS-MBOUN",
+      "place_name": "Xaisômboun",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "xais mboun",
+      "adm1_geo_id": "LAO_2018_ADM_18",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.33932,
+      "poverty_context": {
+        "poor300_rate": 0.0584,
+        "poor420_rate": 0.2715,
+        "poor830_rate": 0.8045,
+        "prosperity_gap_2021": 5.3393201,
+        "poor300_display": "5.84%",
+        "poor420_display": "27.2%",
+        "poor830_display": "80.5%",
+        "prosperity_gap_display": "5.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 762
+    },
+    {
+      "place_id": "LAO-ADM1-X-KONG",
+      "place_name": "Xékong",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "x kong",
+      "adm1_geo_id": "LAO_2018_ADM_15",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.791145,
+      "poverty_context": {
+        "poor300_rate": 0.2184,
+        "poor420_rate": 0.4602,
+        "poor830_rate": 0.8282,
+        "prosperity_gap_2021": 6.7911448,
+        "poor300_display": "21.8%",
+        "poor420_display": "46.0%",
+        "poor830_display": "82.8%",
+        "prosperity_gap_display": "6.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 600
+    },
+    {
+      "place_id": "LAO-ADM1-XIANGKHOANG",
+      "place_name": "Xiangkhoang",
+      "parent_place_id": "LAO",
+      "parent_place_name": "Laos",
+      "iso3": "LAO",
+      "source_iso3": "LAO",
+      "geometry_level": "adm1",
+      "adm1_key": "xiangkhoang",
+      "adm1_geo_id": "LAO_2018_ADM_9",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LAO/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.467555,
+      "poverty_context": {
+        "poor300_rate": 0.1914,
+        "poor420_rate": 0.4083,
+        "poor830_rate": 0.755,
+        "prosperity_gap_2021": 6.4675547,
+        "poor300_display": "19.1%",
+        "poor420_display": "40.8%",
+        "poor830_display": "75.5%",
+        "prosperity_gap_display": "6.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 634
+    }
+  ]
+}

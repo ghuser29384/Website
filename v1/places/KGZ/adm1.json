@@ -1,0 +1,409 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "KGZ",
+  "parent_place_name": "Kyrgyzstan",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 9,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "KGZ-ADM1-BATKEN",
+      "place_name": "Batken",
+      "parent_place_id": "KGZ",
+      "parent_place_name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "source_iso3": "KGZ",
+      "geometry_level": "adm1",
+      "adm1_key": "batken",
+      "adm1_geo_id": "KGZ_2015_ADM1_1746",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KGZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.086784,
+      "poverty_context": {
+        "poor300_rate": 0.1229,
+        "poor420_rate": 0.3772,
+        "poor830_rate": 0.8433,
+        "prosperity_gap_2021": 6.0867844,
+        "poor300_display": "12.3%",
+        "poor420_display": "37.7%",
+        "poor830_display": "84.3%",
+        "prosperity_gap_display": "6.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 671
+    },
+    {
+      "place_id": "KGZ-ADM1-BI-KEK",
+      "place_name": "Biškek",
+      "parent_place_id": "KGZ",
+      "parent_place_name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "source_iso3": "KGZ",
+      "geometry_level": "adm1",
+      "adm1_key": "bi kek",
+      "adm1_geo_id": "KGZ_2015_ADM1_147293",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KGZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.394992,
+      "poverty_context": {
+        "poor300_rate": 0.023,
+        "poor420_rate": 0.1579,
+        "poor830_rate": 0.6234,
+        "prosperity_gap_2021": 4.3949917,
+        "poor300_display": "2.30%",
+        "poor420_display": "15.8%",
+        "poor830_display": "62.3%",
+        "prosperity_gap_display": "4.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 904
+    },
+    {
+      "place_id": "KGZ-ADM1-CH-Y",
+      "place_name": "Chüy",
+      "parent_place_id": "KGZ",
+      "parent_place_name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "source_iso3": "KGZ",
+      "geometry_level": "adm1",
+      "adm1_key": "ch y",
+      "adm1_geo_id": "KGZ_2015_ADM1_147294",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KGZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.622105,
+      "poverty_context": {
+        "poor300_rate": 0.023,
+        "poor420_rate": 0.1418,
+        "poor830_rate": 0.7265,
+        "prosperity_gap_2021": 4.6221047,
+        "poor300_display": "2.30%",
+        "poor420_display": "14.2%",
+        "poor830_display": "72.7%",
+        "prosperity_gap_display": "4.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 873
+    },
+    {
+      "place_id": "KGZ-ADM1-JALAL-ABAD",
+      "place_name": "Jalal-Abad",
+      "parent_place_id": "KGZ",
+      "parent_place_name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "source_iso3": "KGZ",
+      "geometry_level": "adm1",
+      "adm1_key": "jalal abad",
+      "adm1_geo_id": "KGZ_2015_ADM1_1748",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KGZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.95882,
+      "poverty_context": {
+        "poor300_rate": 0.0292,
+        "poor420_rate": 0.2104,
+        "poor830_rate": 0.7221,
+        "prosperity_gap_2021": 4.9588202,
+        "poor300_display": "2.92%",
+        "poor420_display": "21.0%",
+        "poor830_display": "72.2%",
+        "prosperity_gap_display": "4.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 813
+    },
+    {
+      "place_id": "KGZ-ADM1-NARYN",
+      "place_name": "Naryn",
+      "parent_place_id": "KGZ",
+      "parent_place_name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "source_iso3": "KGZ",
+      "geometry_level": "adm1",
+      "adm1_key": "naryn",
+      "adm1_geo_id": "KGZ_2015_ADM1_1749",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KGZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.990249,
+      "poverty_context": {
+        "poor300_rate": 0.0369,
+        "poor420_rate": 0.1874,
+        "poor830_rate": 0.7508,
+        "prosperity_gap_2021": 4.9902492,
+        "poor300_display": "3.69%",
+        "poor420_display": "18.7%",
+        "poor830_display": "75.1%",
+        "prosperity_gap_display": "4.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 807
+    },
+    {
+      "place_id": "KGZ-ADM1-OSH",
+      "place_name": "Osh",
+      "parent_place_id": "KGZ",
+      "parent_place_name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "source_iso3": "KGZ",
+      "geometry_level": "adm1",
+      "adm1_key": "osh",
+      "adm1_geo_id": "KGZ_2015_ADM1_1750",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KGZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.581774,
+      "poverty_context": {
+        "poor300_rate": 0.0016,
+        "poor420_rate": 0.0801,
+        "poor830_rate": 0.8064,
+        "prosperity_gap_2021": 4.5817737,
+        "poor300_display": "0.16%",
+        "poor420_display": "8.01%",
+        "poor830_display": "80.6%",
+        "prosperity_gap_display": "4.58"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 881
+    },
+    {
+      "place_id": "KGZ-ADM1-OSH-CITY",
+      "place_name": "Osh (city)",
+      "parent_place_id": "KGZ",
+      "parent_place_name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "source_iso3": "KGZ",
+      "geometry_level": "adm1",
+      "adm1_key": "osh city",
+      "adm1_geo_id": "KGZ_2015_GADM1_122_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KGZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.776316,
+      "poverty_context": {
+        "poor300_rate": 0.0041,
+        "poor420_rate": 0.0751,
+        "poor830_rate": 0.524,
+        "prosperity_gap_2021": 3.7763158,
+        "poor300_display": "0.41%",
+        "poor420_display": "7.51%",
+        "poor830_display": "52.4%",
+        "prosperity_gap_display": "3.78"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1026
+    },
+    {
+      "place_id": "KGZ-ADM1-TALAS",
+      "place_name": "Talas",
+      "parent_place_id": "KGZ",
+      "parent_place_name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "source_iso3": "KGZ",
+      "geometry_level": "adm1",
+      "adm1_key": "talas",
+      "adm1_geo_id": "KGZ_2015_ADM1_1751",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KGZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.367912,
+      "poverty_context": {
+        "poor300_rate": 0.0132,
+        "poor420_rate": 0.1205,
+        "poor830_rate": 0.6912,
+        "prosperity_gap_2021": 4.3679119,
+        "poor300_display": "1.32%",
+        "poor420_display": "12.0%",
+        "poor830_display": "69.1%",
+        "prosperity_gap_display": "4.37"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 910
+    },
+    {
+      "place_id": "KGZ-ADM1-YSYK-K-L",
+      "place_name": "Ysyk-Köl",
+      "parent_place_id": "KGZ",
+      "parent_place_name": "Kyrgyzstan",
+      "iso3": "KGZ",
+      "source_iso3": "KGZ",
+      "geometry_level": "adm1",
+      "adm1_key": "ysyk k l",
+      "adm1_geo_id": "KGZ_2015_ADM1_1752",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/KGZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.617752,
+      "poverty_context": {
+        "poor300_rate": 0.0275,
+        "poor420_rate": 0.1713,
+        "poor830_rate": 0.67,
+        "prosperity_gap_2021": 4.6177519,
+        "poor300_display": "2.75%",
+        "poor420_display": "17.1%",
+        "poor830_display": "67.0%",
+        "prosperity_gap_display": "4.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 874
+    }
+  ]
+}

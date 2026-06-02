@@ -1,0 +1,189 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "FIN",
+  "parent_place_name": "Finland",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 4,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "FIN-ADM1-ETEL-SUOMI-FI1C",
+      "place_name": "Etelä-Suomi (FI1C)",
+      "parent_place_id": "FIN",
+      "parent_place_name": "Finland",
+      "iso3": "FIN",
+      "source_iso3": "FIN",
+      "geometry_level": "adm1",
+      "adm1_key": "etel suomi fi1c",
+      "adm1_geo_id": "FIN_2015_ADMx_NUTS_FI1C",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/FIN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.739988,
+      "poverty_context": {
+        "poor300_rate": 0.0027,
+        "poor420_rate": 0.0036,
+        "poor830_rate": 0.0036,
+        "prosperity_gap_2021": 0.73998756,
+        "poor300_display": "0.27%",
+        "poor420_display": "0.36%",
+        "poor830_display": "0.36%",
+        "prosperity_gap_display": "0.74"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1818
+    },
+    {
+      "place_id": "FIN-ADM1-HELSINKI-UUSIMAA-FI1B",
+      "place_name": "Helsinki-Uusimaa (FI1B)",
+      "parent_place_id": "FIN",
+      "parent_place_name": "Finland",
+      "iso3": "FIN",
+      "source_iso3": "FIN",
+      "geometry_level": "adm1",
+      "adm1_key": "helsinki uusimaa fi1b",
+      "adm1_geo_id": "FIN_2015_ADMx_NUTS_FI1B",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/FIN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.766294,
+      "poverty_context": {
+        "poor300_rate": 0.0026,
+        "poor420_rate": 0.0026,
+        "poor830_rate": 0.0062,
+        "prosperity_gap_2021": 0.76629423,
+        "poor300_display": "0.26%",
+        "poor420_display": "0.26%",
+        "poor830_display": "0.62%",
+        "prosperity_gap_display": "0.77"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1814
+    },
+    {
+      "place_id": "FIN-ADM1-L-NSI-SUOMI-FI19",
+      "place_name": "Länsi-Suomi (FI19)",
+      "parent_place_id": "FIN",
+      "parent_place_name": "Finland",
+      "iso3": "FIN",
+      "source_iso3": "FIN",
+      "geometry_level": "adm1",
+      "adm1_key": "l nsi suomi fi19",
+      "adm1_geo_id": "FIN_2015_ADMx_NUTS_FI19",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/FIN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.640421,
+      "poverty_context": {
+        "poor300_rate": 0.0008,
+        "poor420_rate": 0.0008,
+        "poor830_rate": 0.0034,
+        "prosperity_gap_2021": 0.64042105,
+        "poor300_display": "0.08%",
+        "poor420_display": "0.08%",
+        "poor830_display": "0.34%",
+        "prosperity_gap_display": "0.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1842
+    },
+    {
+      "place_id": "FIN-ADM1-POHJOIS-JA-IT-SUOMI-FI1D",
+      "place_name": "Pohjois- ja Itä-Suomi (FI1D)",
+      "parent_place_id": "FIN",
+      "parent_place_name": "Finland",
+      "iso3": "FIN",
+      "source_iso3": "FIN",
+      "geometry_level": "adm1",
+      "adm1_key": "pohjois ja it suomi fi1d",
+      "adm1_geo_id": "FIN_2015_ADMx_NUTS_FI1D",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/FIN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.762393,
+      "poverty_context": {
+        "poor300_rate": 0.002,
+        "poor420_rate": 0.002,
+        "poor830_rate": 0.0037,
+        "prosperity_gap_2021": 0.76239285,
+        "poor300_display": "0.20%",
+        "poor420_display": "0.20%",
+        "poor830_display": "0.37%",
+        "prosperity_gap_display": "0.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1815
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "ROU",
+  "parent_place_name": "Romania",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 4,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "ROU-ADM1-MACROREGIUNEA-DOI-RO2",
+      "place_name": "Macroregiunea Doi (RO2)",
+      "parent_place_id": "ROU",
+      "parent_place_name": "Romania",
+      "iso3": "ROU",
+      "source_iso3": "ROU",
+      "geometry_level": "adm1",
+      "adm1_key": "macroregiunea doi ro2",
+      "adm1_geo_id": "ROU_2015_ADMx_NUTS_RO2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ROU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.540078,
+      "poverty_context": {
+        "poor300_rate": 0.006,
+        "poor420_rate": 0.0172,
+        "poor830_rate": 0.0767,
+        "prosperity_gap_2021": 1.5400776,
+        "poor300_display": "0.60%",
+        "poor420_display": "1.72%",
+        "poor830_display": "7.67%",
+        "prosperity_gap_display": "1.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1585
+    },
+    {
+      "place_id": "ROU-ADM1-MACROREGIUNEA-PATRU-RO4",
+      "place_name": "Macroregiunea Patru (RO4)",
+      "parent_place_id": "ROU",
+      "parent_place_name": "Romania",
+      "iso3": "ROU",
+      "source_iso3": "ROU",
+      "geometry_level": "adm1",
+      "adm1_key": "macroregiunea patru ro4",
+      "adm1_geo_id": "ROU_2015_ADMx_NUTS_RO4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ROU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.447883,
+      "poverty_context": {
+        "poor300_rate": 0.0112,
+        "poor420_rate": 0.0175,
+        "poor830_rate": 0.0673,
+        "prosperity_gap_2021": 1.4478831,
+        "poor300_display": "1.12%",
+        "poor420_display": "1.75%",
+        "poor830_display": "6.73%",
+        "prosperity_gap_display": "1.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1603
+    },
+    {
+      "place_id": "ROU-ADM1-MACROREGIUNEA-TREI-RO3",
+      "place_name": "Macroregiunea Trei (RO3)",
+      "parent_place_id": "ROU",
+      "parent_place_name": "Romania",
+      "iso3": "ROU",
+      "source_iso3": "ROU",
+      "geometry_level": "adm1",
+      "adm1_key": "macroregiunea trei ro3",
+      "adm1_geo_id": "ROU_2015_ADMx_NUTS_RO3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ROU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.001282,
+      "poverty_context": {
+        "poor300_rate": 0.0005,
+        "poor420_rate": 0.0008,
+        "poor830_rate": 0.0139,
+        "prosperity_gap_2021": 1.0012823,
+        "poor300_display": "0.05%",
+        "poor420_display": "0.08%",
+        "poor830_display": "1.39%",
+        "prosperity_gap_display": "1.00"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1738
+    },
+    {
+      "place_id": "ROU-ADM1-MACROREGIUNEA-UNU-RO1",
+      "place_name": "Macroregiunea Unu (RO1)",
+      "parent_place_id": "ROU",
+      "parent_place_name": "Romania",
+      "iso3": "ROU",
+      "source_iso3": "ROU",
+      "geometry_level": "adm1",
+      "adm1_key": "macroregiunea unu ro1",
+      "adm1_geo_id": "ROU_2015_ADMx_NUTS_RO1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ROU/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.37527,
+      "poverty_context": {
+        "poor300_rate": 0.0118,
+        "poor420_rate": 0.0172,
+        "poor830_rate": 0.0492,
+        "prosperity_gap_2021": 1.3752699,
+        "poor300_display": "1.18%",
+        "poor420_display": "1.72%",
+        "poor830_display": "4.92%",
+        "prosperity_gap_display": "1.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1618
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "BGR",
+  "parent_place_name": "Bulgaria",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 2,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "BGR-ADM1-SEVERNA-I-YUGOIZTOCHNA-BULGARIA-BG3",
+      "place_name": "Severna i Yugoiztochna Bulgaria (BG3)",
+      "parent_place_id": "BGR",
+      "parent_place_name": "Bulgaria",
+      "iso3": "BGR",
+      "source_iso3": "BGR",
+      "geometry_level": "adm1",
+      "adm1_key": "severna i yugoiztochna bulgaria bg3",
+      "adm1_geo_id": "BGR_2015_ADMx_NUTS_BG3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BGR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.595207,
+      "poverty_context": {
+        "poor300_rate": 0.0161,
+        "poor420_rate": 0.0192,
+        "poor830_rate": 0.0459,
+        "prosperity_gap_2021": 1.5952072,
+        "poor300_display": "1.61%",
+        "poor420_display": "1.92%",
+        "poor830_display": "4.59%",
+        "prosperity_gap_display": "1.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1572
+    },
+    {
+      "place_id": "BGR-ADM1-YUGOZAPADNA-I-YUZHNA-TSENTRALNA-BULGARIA-BG4",
+      "place_name": "Yugozapadna i Yuzhna tsentralna Bulgaria (BG4)",
+      "parent_place_id": "BGR",
+      "parent_place_name": "Bulgaria",
+      "iso3": "BGR",
+      "source_iso3": "BGR",
+      "geometry_level": "adm1",
+      "adm1_key": "yugozapadna i yuzhna tsentralna bulgaria bg4",
+      "adm1_geo_id": "BGR_2015_ADMx_NUTS_BG4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BGR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.221849,
+      "poverty_context": {
+        "poor300_rate": 0.0045,
+        "poor420_rate": 0.0126,
+        "poor830_rate": 0.0417,
+        "prosperity_gap_2021": 1.2218486,
+        "poor300_display": "0.45%",
+        "poor420_display": "1.26%",
+        "poor830_display": "4.17%",
+        "prosperity_gap_display": "1.22"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1661
+    }
+  ]
+}

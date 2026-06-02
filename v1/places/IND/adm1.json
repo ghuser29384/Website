@@ -1,0 +1,1597 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "IND",
+  "parent_place_name": "India",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 36,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "IND-ADM1-ANDAMAN-AND-NICOBAR",
+      "place_name": "Andaman and Nicobar",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "andaman and nicobar",
+      "adm1_geo_id": "IND_2015_GAUL1_1484",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.086664,
+      "poverty_context": {
+        "poor300_rate": 0.0005,
+        "poor420_rate": 0.0068,
+        "poor830_rate": 0.3298,
+        "prosperity_gap_2021": 3.0866643,
+        "poor300_display": "0.05%",
+        "poor420_display": "0.68%",
+        "poor830_display": "33.0%",
+        "prosperity_gap_display": "3.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1148
+    },
+    {
+      "place_id": "IND-ADM1-ANDHRA-PRADESH",
+      "place_name": "Andhra Pradesh",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "andhra pradesh",
+      "adm1_geo_id": "IND_2015_GAULx_AP",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.263262,
+      "poverty_context": {
+        "poor300_rate": 0.0104,
+        "poor420_rate": 0.0846,
+        "poor830_rate": 0.6749,
+        "prosperity_gap_2021": 4.2632621,
+        "poor300_display": "1.04%",
+        "poor420_display": "8.46%",
+        "poor830_display": "67.5%",
+        "prosperity_gap_display": "4.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 934
+    },
+    {
+      "place_id": "IND-ADM1-ARUNACHAL-PRADESH",
+      "place_name": "Arunachal Pradesh",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "arunachal pradesh",
+      "adm1_geo_id": "IND_2015_GAUL1_70072",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.287645,
+      "poverty_context": {
+        "poor300_rate": 0.0894,
+        "poor420_rate": 0.2432,
+        "poor830_rate": 0.75,
+        "prosperity_gap_2021": 5.2876452,
+        "poor300_display": "8.94%",
+        "poor420_display": "24.3%",
+        "poor830_display": "75.0%",
+        "prosperity_gap_display": "5.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 771
+    },
+    {
+      "place_id": "IND-ADM1-ASSAM",
+      "place_name": "Assam",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "assam",
+      "adm1_geo_id": "IND_2015_GAUL1_1487",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.117606,
+      "poverty_context": {
+        "poor300_rate": 0.0811,
+        "poor420_rate": 0.3416,
+        "poor830_rate": 0.9229,
+        "prosperity_gap_2021": 6.1176064,
+        "poor300_display": "8.11%",
+        "poor420_display": "34.2%",
+        "poor830_display": "92.3%",
+        "prosperity_gap_display": "6.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 668
+    },
+    {
+      "place_id": "IND-ADM1-BIHAR",
+      "place_name": "Bihar",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "bihar",
+      "adm1_geo_id": "IND_2015_GAUL1_70073",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.045872,
+      "poverty_context": {
+        "poor300_rate": 0.07,
+        "poor420_rate": 0.3245,
+        "poor830_rate": 0.9206,
+        "prosperity_gap_2021": 6.0458721,
+        "poor300_display": "7.00%",
+        "poor420_display": "32.5%",
+        "poor830_display": "92.1%",
+        "prosperity_gap_display": "6.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 677
+    },
+    {
+      "place_id": "IND-ADM1-CHANDIGARH",
+      "place_name": "Chandigarh",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "chandigarh",
+      "adm1_geo_id": "IND_2015_GAUL1_70074",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.277783,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1583,
+        "prosperity_gap_2021": 2.2777832,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "15.8%",
+        "prosperity_gap_display": "2.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1366
+    },
+    {
+      "place_id": "IND-ADM1-CHHATTISGARH",
+      "place_name": "Chhattisgarh",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "chhattisgarh",
+      "adm1_geo_id": "IND_2015_GAUL1_70075",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.755934,
+      "poverty_context": {
+        "poor300_rate": 0.1695,
+        "poor420_rate": 0.4439,
+        "poor830_rate": 0.9193,
+        "prosperity_gap_2021": 6.7559339,
+        "poor300_display": "17.0%",
+        "poor420_display": "44.4%",
+        "poor830_display": "91.9%",
+        "prosperity_gap_display": "6.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 605
+    },
+    {
+      "place_id": "IND-ADM1-DAMAN-AND-DIU-AND-DADRA-AND-NAGAR-HAVELI",
+      "place_name": "Daman and Diu & Dadra and Nagar Haveli",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "daman and diu and dadra and nagar haveli",
+      "adm1_geo_id": "IND_2015_GAULx_DNHDD",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.429409,
+      "poverty_context": {
+        "poor300_rate": 0.0841,
+        "poor420_rate": 0.2054,
+        "poor830_rate": 0.8177,
+        "prosperity_gap_2021": 5.4294088,
+        "poor300_display": "8.41%",
+        "poor420_display": "20.5%",
+        "poor830_display": "81.8%",
+        "prosperity_gap_display": "5.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 748
+    },
+    {
+      "place_id": "IND-ADM1-DELHI",
+      "place_name": "Delhi",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "delhi",
+      "adm1_geo_id": "IND_2015_GAUL1_1489",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.10669,
+      "poverty_context": {
+        "poor300_rate": 0.0084,
+        "poor420_rate": 0.0901,
+        "poor830_rate": 0.6279,
+        "prosperity_gap_2021": 4.1066897,
+        "poor300_display": "0.84%",
+        "poor420_display": "9.01%",
+        "poor830_display": "62.8%",
+        "prosperity_gap_display": "4.11"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 969
+    },
+    {
+      "place_id": "IND-ADM1-GOA",
+      "place_name": "Goa",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "goa",
+      "adm1_geo_id": "IND_2015_GAUL1_1490",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.486166,
+      "poverty_context": {
+        "poor300_rate": 0.004,
+        "poor420_rate": 0.0128,
+        "poor830_rate": 0.5037,
+        "prosperity_gap_2021": 3.4861659,
+        "poor300_display": "0.40%",
+        "poor420_display": "1.28%",
+        "poor830_display": "50.4%",
+        "prosperity_gap_display": "3.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1075
+    },
+    {
+      "place_id": "IND-ADM1-GUJARAT",
+      "place_name": "Gujarat",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "gujarat",
+      "adm1_geo_id": "IND_2015_GAUL1_1491",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.171939,
+      "poverty_context": {
+        "poor300_rate": 0.0305,
+        "poor420_rate": 0.2038,
+        "poor830_rate": 0.8153,
+        "prosperity_gap_2021": 5.1719387,
+        "poor300_display": "3.05%",
+        "poor420_display": "20.4%",
+        "poor830_display": "81.5%",
+        "prosperity_gap_display": "5.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 785
+    },
+    {
+      "place_id": "IND-ADM1-HARYANA",
+      "place_name": "Haryana",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "haryana",
+      "adm1_geo_id": "IND_2015_GAUL1_1492",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.608252,
+      "poverty_context": {
+        "poor300_rate": 0.0342,
+        "poor420_rate": 0.1292,
+        "poor830_rate": 0.7129,
+        "prosperity_gap_2021": 4.608252,
+        "poor300_display": "3.42%",
+        "poor420_display": "12.9%",
+        "poor830_display": "71.3%",
+        "prosperity_gap_display": "4.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 876
+    },
+    {
+      "place_id": "IND-ADM1-HIMACHAL-PRADESH",
+      "place_name": "Himachal Pradesh",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "himachal pradesh",
+      "adm1_geo_id": "IND_2015_GAUL1_1493",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.929449,
+      "poverty_context": {
+        "poor300_rate": 0.0044,
+        "poor420_rate": 0.0478,
+        "poor830_rate": 0.6069,
+        "prosperity_gap_2021": 3.9294489,
+        "poor300_display": "0.44%",
+        "poor420_display": "4.78%",
+        "poor830_display": "60.7%",
+        "prosperity_gap_display": "3.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1001
+    },
+    {
+      "place_id": "IND-ADM1-JAMMU-AND-KASHMIR",
+      "place_name": "Jammu and Kashmir",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "jammu and kashmir",
+      "adm1_geo_id": "IND_2015_GAULx_JK",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.587442,
+      "poverty_context": {
+        "poor300_rate": 0.0103,
+        "poor420_rate": 0.1349,
+        "poor830_rate": 0.7172,
+        "prosperity_gap_2021": 4.5874416,
+        "poor300_display": "1.03%",
+        "poor420_display": "13.5%",
+        "poor830_display": "71.7%",
+        "prosperity_gap_display": "4.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 879
+    },
+    {
+      "place_id": "IND-ADM1-JHARKHAND",
+      "place_name": "Jharkhand",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "jharkhand",
+      "adm1_geo_id": "IND_2015_GAUL1_70078",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.563774,
+      "poverty_context": {
+        "poor300_rate": 0.1571,
+        "poor420_rate": 0.4213,
+        "poor830_rate": 0.8948,
+        "prosperity_gap_2021": 6.5637743,
+        "poor300_display": "15.7%",
+        "poor420_display": "42.1%",
+        "poor830_display": "89.5%",
+        "prosperity_gap_display": "6.56"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 625
+    },
+    {
+      "place_id": "IND-ADM1-KARNATAKA",
+      "place_name": "Karnataka",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "karnataka",
+      "adm1_geo_id": "IND_2015_GAUL1_1494",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.291082,
+      "poverty_context": {
+        "poor300_rate": 0.008,
+        "poor420_rate": 0.0887,
+        "poor830_rate": 0.678,
+        "prosperity_gap_2021": 4.2910822,
+        "poor300_display": "0.80%",
+        "poor420_display": "8.87%",
+        "poor830_display": "67.8%",
+        "prosperity_gap_display": "4.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 923
+    },
+    {
+      "place_id": "IND-ADM1-KERALA",
+      "place_name": "Kerala",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "kerala",
+      "adm1_geo_id": "IND_2015_GAUL1_1495",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.1649,
+      "poverty_context": {
+        "poor300_rate": 0.0109,
+        "poor420_rate": 0.0828,
+        "poor830_rate": 0.6448,
+        "prosperity_gap_2021": 4.1648998,
+        "poor300_display": "1.09%",
+        "poor420_display": "8.28%",
+        "poor830_display": "64.5%",
+        "prosperity_gap_display": "4.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 956
+    },
+    {
+      "place_id": "IND-ADM1-LADAKH",
+      "place_name": "Ladakh",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "ladakh",
+      "adm1_geo_id": "IND_2015_GAULx_Ldk",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.381664,
+      "poverty_context": {
+        "poor300_rate": 0.0783,
+        "poor420_rate": 0.2576,
+        "poor830_rate": 0.815,
+        "prosperity_gap_2021": 5.3816636,
+        "poor300_display": "7.83%",
+        "poor420_display": "25.8%",
+        "poor830_display": "81.5%",
+        "prosperity_gap_display": "5.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 754
+    },
+    {
+      "place_id": "IND-ADM1-LAKSHADWEEP",
+      "place_name": "Lakshadweep",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "lakshadweep",
+      "adm1_geo_id": "IND_2015_GAUL1_1496",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.011808,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0272,
+        "poor830_rate": 0.6809,
+        "prosperity_gap_2021": 4.0118081,
+        "poor300_display": "0.00%",
+        "poor420_display": "2.72%",
+        "poor830_display": "68.1%",
+        "prosperity_gap_display": "4.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 988
+    },
+    {
+      "place_id": "IND-ADM1-MADHYA-PRADESH",
+      "place_name": "Madhya Pradesh",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "madhya pradesh",
+      "adm1_geo_id": "IND_2015_GAUL1_70079",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.471126,
+      "poverty_context": {
+        "poor300_rate": 0.0464,
+        "poor420_rate": 0.2368,
+        "poor830_rate": 0.871,
+        "prosperity_gap_2021": 5.4711259,
+        "poor300_display": "4.64%",
+        "poor420_display": "23.7%",
+        "poor830_display": "87.1%",
+        "prosperity_gap_display": "5.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 744
+    },
+    {
+      "place_id": "IND-ADM1-MAHARASHTRA",
+      "place_name": "Maharashtra",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "maharashtra",
+      "adm1_geo_id": "IND_2015_GAUL1_1498",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.35594,
+      "poverty_context": {
+        "poor300_rate": 0.06,
+        "poor420_rate": 0.2439,
+        "poor830_rate": 0.8072,
+        "prosperity_gap_2021": 5.3559397,
+        "poor300_display": "6.00%",
+        "poor420_display": "24.4%",
+        "poor830_display": "80.7%",
+        "prosperity_gap_display": "5.36"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 758
+    },
+    {
+      "place_id": "IND-ADM1-MANIPUR",
+      "place_name": "Manipur",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "manipur",
+      "adm1_geo_id": "IND_2015_GAUL1_1500",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.928144,
+      "poverty_context": {
+        "poor300_rate": 0.0712,
+        "poor420_rate": 0.3134,
+        "poor830_rate": 0.914,
+        "prosperity_gap_2021": 5.9281442,
+        "poor300_display": "7.12%",
+        "poor420_display": "31.3%",
+        "poor830_display": "91.4%",
+        "prosperity_gap_display": "5.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 685
+    },
+    {
+      "place_id": "IND-ADM1-MEGHALAYA",
+      "place_name": "Meghalaya",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "meghalaya",
+      "adm1_geo_id": "IND_2015_GAUL1_1501",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.901873,
+      "poverty_context": {
+        "poor300_rate": 0.0906,
+        "poor420_rate": 0.3131,
+        "poor830_rate": 0.8958,
+        "prosperity_gap_2021": 5.901873,
+        "poor300_display": "9.06%",
+        "poor420_display": "31.3%",
+        "poor830_display": "89.6%",
+        "prosperity_gap_display": "5.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 691
+    },
+    {
+      "place_id": "IND-ADM1-MIZORAM",
+      "place_name": "Mizoram",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "mizoram",
+      "adm1_geo_id": "IND_2015_GAUL1_1502",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.489543,
+      "poverty_context": {
+        "poor300_rate": 0.0171,
+        "poor420_rate": 0.1041,
+        "poor830_rate": 0.7205,
+        "prosperity_gap_2021": 4.4895427,
+        "poor300_display": "1.71%",
+        "poor420_display": "10.4%",
+        "poor830_display": "72.0%",
+        "prosperity_gap_display": "4.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 896
+    },
+    {
+      "place_id": "IND-ADM1-NAGALAND",
+      "place_name": "Nagaland",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "nagaland",
+      "adm1_geo_id": "IND_2015_GAUL1_1503",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.323728,
+      "poverty_context": {
+        "poor300_rate": 0.0496,
+        "poor420_rate": 0.2293,
+        "poor830_rate": 0.8217,
+        "prosperity_gap_2021": 5.3237279,
+        "poor300_display": "4.96%",
+        "poor420_display": "22.9%",
+        "poor830_display": "82.2%",
+        "prosperity_gap_display": "5.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 763
+    },
+    {
+      "place_id": "IND-ADM1-ORISSA",
+      "place_name": "Orissa",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "orissa",
+      "adm1_geo_id": "IND_2015_GAUL1_1504",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.10061,
+      "poverty_context": {
+        "poor300_rate": 0.0849,
+        "poor420_rate": 0.3554,
+        "poor830_rate": 0.9063,
+        "prosperity_gap_2021": 6.1006099,
+        "poor300_display": "8.49%",
+        "poor420_display": "35.5%",
+        "poor830_display": "90.6%",
+        "prosperity_gap_display": "6.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 669
+    },
+    {
+      "place_id": "IND-ADM1-PUDUCHERRY",
+      "place_name": "Puducherry",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "puducherry",
+      "adm1_geo_id": "IND_2015_GAUL1_70080",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.636505,
+      "poverty_context": {
+        "poor300_rate": 0.0068,
+        "poor420_rate": 0.0381,
+        "poor830_rate": 0.513,
+        "prosperity_gap_2021": 3.6365046,
+        "poor300_display": "0.68%",
+        "poor420_display": "3.81%",
+        "poor830_display": "51.3%",
+        "prosperity_gap_display": "3.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1046
+    },
+    {
+      "place_id": "IND-ADM1-PUNJAB",
+      "place_name": "Punjab",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "punjab",
+      "adm1_geo_id": "IND_2015_GAUL1_1505",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.188142,
+      "poverty_context": {
+        "poor300_rate": 0.0063,
+        "poor420_rate": 0.0698,
+        "poor830_rate": 0.6735,
+        "prosperity_gap_2021": 4.188142,
+        "poor300_display": "0.63%",
+        "poor420_display": "6.98%",
+        "poor830_display": "67.3%",
+        "prosperity_gap_display": "4.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 950
+    },
+    {
+      "place_id": "IND-ADM1-RAJASTHAN",
+      "place_name": "Rajasthan",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "rajasthan",
+      "adm1_geo_id": "IND_2015_GAUL1_1506",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.169135,
+      "poverty_context": {
+        "poor300_rate": 0.0506,
+        "poor420_rate": 0.2083,
+        "poor830_rate": 0.8037,
+        "prosperity_gap_2021": 5.1691348,
+        "poor300_display": "5.06%",
+        "poor420_display": "20.8%",
+        "poor830_display": "80.4%",
+        "prosperity_gap_display": "5.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 786
+    },
+    {
+      "place_id": "IND-ADM1-SIKKIM",
+      "place_name": "Sikkim",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "sikkim",
+      "adm1_geo_id": "IND_2015_GAUL1_1507",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.285634,
+      "poverty_context": {
+        "poor300_rate": 0.0004,
+        "poor420_rate": 0.0188,
+        "poor830_rate": 0.4088,
+        "prosperity_gap_2021": 3.2856341,
+        "poor300_display": "0.04%",
+        "poor420_display": "1.88%",
+        "poor830_display": "40.9%",
+        "prosperity_gap_display": "3.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1116
+    },
+    {
+      "place_id": "IND-ADM1-TAMIL-NADU",
+      "place_name": "Tamil Nadu",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "tamil nadu",
+      "adm1_geo_id": "IND_2015_GAUL1_1508",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.922104,
+      "poverty_context": {
+        "poor300_rate": 0.0056,
+        "poor420_rate": 0.0496,
+        "poor830_rate": 0.603,
+        "prosperity_gap_2021": 3.9221038,
+        "poor300_display": "0.56%",
+        "poor420_display": "4.96%",
+        "poor830_display": "60.3%",
+        "prosperity_gap_display": "3.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1003
+    },
+    {
+      "place_id": "IND-ADM1-TELANGANA",
+      "place_name": "Telangana",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "telangana",
+      "adm1_geo_id": "IND_2015_GAULx_Tel",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.32694,
+      "poverty_context": {
+        "poor300_rate": 0.0076,
+        "poor420_rate": 0.0813,
+        "poor830_rate": 0.7003,
+        "prosperity_gap_2021": 4.3269397,
+        "poor300_display": "0.76%",
+        "poor420_display": "8.13%",
+        "poor830_display": "70.0%",
+        "prosperity_gap_display": "4.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 920
+    },
+    {
+      "place_id": "IND-ADM1-TRIPURA",
+      "place_name": "Tripura",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "tripura",
+      "adm1_geo_id": "IND_2015_GAUL1_1509",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.088137,
+      "poverty_context": {
+        "poor300_rate": 0.0029,
+        "poor420_rate": 0.0479,
+        "poor830_rate": 0.6763,
+        "prosperity_gap_2021": 4.088137,
+        "poor300_display": "0.29%",
+        "poor420_display": "4.79%",
+        "poor830_display": "67.6%",
+        "prosperity_gap_display": "4.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 975
+    },
+    {
+      "place_id": "IND-ADM1-UTTAR-PRADESH",
+      "place_name": "Uttar Pradesh",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "uttar pradesh",
+      "adm1_geo_id": "IND_2015_GAUL1_70081",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.722861,
+      "poverty_context": {
+        "poor300_rate": 0.0503,
+        "poor420_rate": 0.2864,
+        "poor830_rate": 0.8931,
+        "prosperity_gap_2021": 5.7228608,
+        "poor300_display": "5.03%",
+        "poor420_display": "28.6%",
+        "poor830_display": "89.3%",
+        "prosperity_gap_display": "5.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 713
+    },
+    {
+      "place_id": "IND-ADM1-UTTARAKHAND",
+      "place_name": "Uttarakhand",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "uttarakhand",
+      "adm1_geo_id": "IND_2015_GAUL1_70082",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.721179,
+      "poverty_context": {
+        "poor300_rate": 0.0227,
+        "poor420_rate": 0.1482,
+        "poor830_rate": 0.747,
+        "prosperity_gap_2021": 4.7211794,
+        "poor300_display": "2.27%",
+        "poor420_display": "14.8%",
+        "poor830_display": "74.7%",
+        "prosperity_gap_display": "4.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 859
+    },
+    {
+      "place_id": "IND-ADM1-WEST-BENGAL",
+      "place_name": "West Bengal",
+      "parent_place_id": "IND",
+      "parent_place_name": "India",
+      "iso3": "IND",
+      "source_iso3": "IND",
+      "geometry_level": "adm1",
+      "adm1_key": "west bengal",
+      "adm1_geo_id": "IND_2015_GAUL1_1511",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/IND/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.297451,
+      "poverty_context": {
+        "poor300_rate": 0.0329,
+        "poor420_rate": 0.2134,
+        "poor830_rate": 0.8457,
+        "prosperity_gap_2021": 5.2974514,
+        "poor300_display": "3.29%",
+        "poor420_display": "21.3%",
+        "poor830_display": "84.6%",
+        "prosperity_gap_display": "5.30"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 768
+    }
+  ]
+}

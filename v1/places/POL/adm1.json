@@ -1,0 +1,321 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "POL",
+  "parent_place_name": "Poland",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 7,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "POL-ADM1-MAKROREGION-CENTRALNY-PL7",
+      "place_name": "Makroregion centralny (PL7)",
+      "parent_place_id": "POL",
+      "parent_place_name": "Poland",
+      "iso3": "POL",
+      "source_iso3": "POL",
+      "geometry_level": "adm1",
+      "adm1_key": "makroregion centralny pl7",
+      "adm1_geo_id": "POL_2015_ADMx_NUTS_PL7",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/POL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.179161,
+      "poverty_context": {
+        "poor300_rate": 0.0028,
+        "poor420_rate": 0.0031,
+        "poor830_rate": 0.0136,
+        "prosperity_gap_2021": 1.1791611,
+        "poor300_display": "0.28%",
+        "poor420_display": "0.31%",
+        "poor830_display": "1.36%",
+        "prosperity_gap_display": "1.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1674
+    },
+    {
+      "place_id": "POL-ADM1-MAKROREGION-P-NOCNO-ZACHODNI-PL4",
+      "place_name": "Makroregion północno-zachodni (PL4)",
+      "parent_place_id": "POL",
+      "parent_place_name": "Poland",
+      "iso3": "POL",
+      "source_iso3": "POL",
+      "geometry_level": "adm1",
+      "adm1_key": "makroregion p nocno zachodni pl4",
+      "adm1_geo_id": "POL_2015_ADMx_NUTS_PL4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/POL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.974027,
+      "poverty_context": {
+        "poor300_rate": 0.001,
+        "poor420_rate": 0.0025,
+        "poor830_rate": 0.0098,
+        "prosperity_gap_2021": 0.97402718,
+        "poor300_display": "0.10%",
+        "poor420_display": "0.25%",
+        "poor830_display": "0.98%",
+        "prosperity_gap_display": "0.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1748
+    },
+    {
+      "place_id": "POL-ADM1-MAKROREGION-P-NOCNY-PL6",
+      "place_name": "Makroregion północny (PL6)",
+      "parent_place_id": "POL",
+      "parent_place_name": "Poland",
+      "iso3": "POL",
+      "source_iso3": "POL",
+      "geometry_level": "adm1",
+      "adm1_key": "makroregion p nocny pl6",
+      "adm1_geo_id": "POL_2015_ADMx_NUTS_PL6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/POL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.091241,
+      "poverty_context": {
+        "poor300_rate": 0.0017,
+        "poor420_rate": 0.0037,
+        "poor830_rate": 0.0127,
+        "prosperity_gap_2021": 1.0912406,
+        "poor300_display": "0.17%",
+        "poor420_display": "0.37%",
+        "poor830_display": "1.27%",
+        "prosperity_gap_display": "1.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1710
+    },
+    {
+      "place_id": "POL-ADM1-MAKROREGION-PO-UDNIOWO-ZACHODNI-PL5",
+      "place_name": "Makroregion południowo-zachodni (PL5)",
+      "parent_place_id": "POL",
+      "parent_place_name": "Poland",
+      "iso3": "POL",
+      "source_iso3": "POL",
+      "geometry_level": "adm1",
+      "adm1_key": "makroregion po udniowo zachodni pl5",
+      "adm1_geo_id": "POL_2015_ADMx_NUTS_PL5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/POL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.158622,
+      "poverty_context": {
+        "poor300_rate": 0.004,
+        "poor420_rate": 0.0076,
+        "poor830_rate": 0.0087,
+        "prosperity_gap_2021": 1.1586223,
+        "poor300_display": "0.40%",
+        "poor420_display": "0.76%",
+        "poor830_display": "0.87%",
+        "prosperity_gap_display": "1.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1680
+    },
+    {
+      "place_id": "POL-ADM1-MAKROREGION-PO-UDNIOWY-PL2",
+      "place_name": "Makroregion południowy (PL2)",
+      "parent_place_id": "POL",
+      "parent_place_name": "Poland",
+      "iso3": "POL",
+      "source_iso3": "POL",
+      "geometry_level": "adm1",
+      "adm1_key": "makroregion po udniowy pl2",
+      "adm1_geo_id": "POL_2015_ADMx_NUTS_PL2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/POL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.13026,
+      "poverty_context": {
+        "poor300_rate": 0.0038,
+        "poor420_rate": 0.0045,
+        "poor830_rate": 0.0097,
+        "prosperity_gap_2021": 1.1302598,
+        "poor300_display": "0.38%",
+        "poor420_display": "0.45%",
+        "poor830_display": "0.97%",
+        "prosperity_gap_display": "1.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1696
+    },
+    {
+      "place_id": "POL-ADM1-MAKROREGION-WOJEW-DZTWO-MAZOWIECKIE-PL9",
+      "place_name": "Makroregion województwo mazowieckie (PL9)",
+      "parent_place_id": "POL",
+      "parent_place_name": "Poland",
+      "iso3": "POL",
+      "source_iso3": "POL",
+      "geometry_level": "adm1",
+      "adm1_key": "makroregion wojew dztwo mazowieckie pl9",
+      "adm1_geo_id": "POL_2015_ADMx_NUTS_PL9",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/POL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.994471,
+      "poverty_context": {
+        "poor300_rate": 0.0024,
+        "poor420_rate": 0.0034,
+        "poor830_rate": 0.0072,
+        "prosperity_gap_2021": 0.99447097,
+        "poor300_display": "0.24%",
+        "poor420_display": "0.34%",
+        "poor830_display": "0.72%",
+        "prosperity_gap_display": "0.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1741
+    },
+    {
+      "place_id": "POL-ADM1-MAKROREGION-WSCHODNI-PL8",
+      "place_name": "Makroregion wschodni (PL8)",
+      "parent_place_id": "POL",
+      "parent_place_name": "Poland",
+      "iso3": "POL",
+      "source_iso3": "POL",
+      "geometry_level": "adm1",
+      "adm1_key": "makroregion wschodni pl8",
+      "adm1_geo_id": "POL_2015_ADMx_NUTS_PL8",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/POL/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.12662,
+      "poverty_context": {
+        "poor300_rate": 0.0016,
+        "poor420_rate": 0.0063,
+        "poor830_rate": 0.015,
+        "prosperity_gap_2021": 1.1266198,
+        "poor300_display": "0.16%",
+        "poor420_display": "0.63%",
+        "poor830_display": "1.50%",
+        "prosperity_gap_display": "1.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1698
+    }
+  ]
+}

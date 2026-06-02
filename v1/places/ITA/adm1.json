@@ -1,0 +1,233 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "ITA",
+  "parent_place_name": "Italy",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 5,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "ITA-ADM1-CENTRO-IT-ITI",
+      "place_name": "Centro (IT) (ITI)",
+      "parent_place_id": "ITA",
+      "parent_place_name": "Italy",
+      "iso3": "ITA",
+      "source_iso3": "ITA",
+      "geometry_level": "adm1",
+      "adm1_key": "centro it iti",
+      "adm1_geo_id": "ITA_2015_ADMx_NUTS_ITI",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ITA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.724517,
+      "poverty_context": {
+        "poor300_rate": 0.012,
+        "poor420_rate": 0.0143,
+        "poor830_rate": 0.023,
+        "prosperity_gap_2021": 1.7245172,
+        "poor300_display": "1.20%",
+        "poor420_display": "1.43%",
+        "poor830_display": "2.30%",
+        "prosperity_gap_display": "1.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1542
+    },
+    {
+      "place_id": "ITA-ADM1-ISOLE-ITG",
+      "place_name": "Isole (ITG)",
+      "parent_place_id": "ITA",
+      "parent_place_name": "Italy",
+      "iso3": "ITA",
+      "source_iso3": "ITA",
+      "geometry_level": "adm1",
+      "adm1_key": "isole itg",
+      "adm1_geo_id": "ITA_2015_ADMx_NUTS_ITG",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ITA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.132071,
+      "poverty_context": {
+        "poor300_rate": 0.0133,
+        "poor420_rate": 0.0143,
+        "poor830_rate": 0.0289,
+        "prosperity_gap_2021": 2.1320709,
+        "poor300_display": "1.33%",
+        "poor420_display": "1.43%",
+        "poor830_display": "2.89%",
+        "prosperity_gap_display": "2.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1420
+    },
+    {
+      "place_id": "ITA-ADM1-NORD-EST-ITH",
+      "place_name": "Nord-Est (ITH)",
+      "parent_place_id": "ITA",
+      "parent_place_name": "Italy",
+      "iso3": "ITA",
+      "source_iso3": "ITA",
+      "geometry_level": "adm1",
+      "adm1_key": "nord est ith",
+      "adm1_geo_id": "ITA_2015_ADMx_NUTS_ITH",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ITA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.911873,
+      "poverty_context": {
+        "poor300_rate": 0.0047,
+        "poor420_rate": 0.0053,
+        "poor830_rate": 0.0075,
+        "prosperity_gap_2021": 0.9118734,
+        "poor300_display": "0.47%",
+        "poor420_display": "0.53%",
+        "poor830_display": "0.75%",
+        "prosperity_gap_display": "0.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1773
+    },
+    {
+      "place_id": "ITA-ADM1-NORD-OVEST-ITC",
+      "place_name": "Nord-Ovest (ITC)",
+      "parent_place_id": "ITA",
+      "parent_place_name": "Italy",
+      "iso3": "ITA",
+      "source_iso3": "ITA",
+      "geometry_level": "adm1",
+      "adm1_key": "nord ovest itc",
+      "adm1_geo_id": "ITA_2015_ADMx_NUTS_ITC",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ITA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.049995,
+      "poverty_context": {
+        "poor300_rate": 0.0055,
+        "poor420_rate": 0.0056,
+        "poor830_rate": 0.0086,
+        "prosperity_gap_2021": 1.0499954,
+        "poor300_display": "0.55%",
+        "poor420_display": "0.56%",
+        "poor830_display": "0.86%",
+        "prosperity_gap_display": "1.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1722
+    },
+    {
+      "place_id": "ITA-ADM1-SUD-ITF",
+      "place_name": "Sud (ITF)",
+      "parent_place_id": "ITA",
+      "parent_place_name": "Italy",
+      "iso3": "ITA",
+      "source_iso3": "ITA",
+      "geometry_level": "adm1",
+      "adm1_key": "sud itf",
+      "adm1_geo_id": "ITA_2015_ADMx_NUTS_ITF",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ITA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.061588,
+      "poverty_context": {
+        "poor300_rate": 0.0131,
+        "poor420_rate": 0.015,
+        "poor830_rate": 0.0334,
+        "prosperity_gap_2021": 2.0615884,
+        "poor300_display": "1.31%",
+        "poor420_display": "1.50%",
+        "poor830_display": "3.34%",
+        "prosperity_gap_display": "2.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1446
+    }
+  ]
+}

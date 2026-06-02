@@ -18,6 +18,7 @@ const expectedExports = [
   "data/endpoint-smoke.json",
   "data/countries-lite.geojson",
   "data/natural-earth-countries.geojson",
+  "data/gsap-adm1-2023.json",
   "data/openapi.json",
   "data/dcat.json",
   "compare.js",
@@ -32,6 +33,7 @@ const expectedExports = [
   "examples/load-place-profile.mjs",
   "examples/load_place_profile.py",
   "schemas/place-index.schema.json",
+  "schemas/adm1-context.schema.json",
   "schemas/place-measurements.schema.json",
   "schemas/coverage.schema.json",
   "schemas/ogc-place-features.schema.json",
@@ -40,6 +42,8 @@ const expectedExports = [
   "v1/sources.json",
   "v1/coverage.json",
   "v1/places/index.json",
+  "v1/adm1/index.json",
+  "v1/places/IND/adm1.json",
   "v1/places/WLD.json",
   "v1/places/WLD/measurements.json",
   "v1/places/WLD/neighbors.json",
@@ -132,6 +136,14 @@ function expectPattern(file, html, pattern, label) {
   }
 }
 
+function htmlEscape(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+}
+
 function routeUrl(route) {
   return `${site}${route.path}`;
 }
@@ -184,11 +196,11 @@ for (const route of routeManifest.routes) {
   const html = read(file);
   const canonical = routeCanonicalUrl(route);
 
-  expectPattern(file, html, new RegExp(`<title>${escapeRegExp(route.title)}</title>`), "route-manifest title");
+  expectPattern(file, html, new RegExp(`<title>${escapeRegExp(htmlEscape(route.title))}</title>`), "route-manifest title");
   expectPattern(
     file,
     html,
-    new RegExp(`<meta name="description" content="${escapeRegExp(route.description)}">`),
+    new RegExp(`<meta name="description" content="${escapeRegExp(htmlEscape(route.description))}">`),
     "route-manifest description"
   );
   expectPattern(
@@ -209,7 +221,7 @@ for (const route of routeManifest.routes) {
     expectPattern(
       file,
       html,
-      new RegExp(`<span aria-current="page">${escapeRegExp(routeLabel(route))}</span>`),
+      new RegExp(`<span aria-current="page">${escapeRegExp(htmlEscape(routeLabel(route)))}</span>`),
       "current breadcrumb label"
     );
     expectPattern(file, html, /"@type":"BreadcrumbList"/, "BreadcrumbList structured data");
@@ -348,6 +360,9 @@ if (!placeIndex.items.some((entry) => entry.coverage_status === "boundary_index_
 
 const countryPlaceItems = placeIndex.items.filter((item) => item.geometry_level === "country");
 const countryPlaceRoutes = routeManifest.routes.filter((route) => /^\/place\/[A-Z0-9]{3}\/$/.test(route.path));
+const adm1PlaceItems = placeIndex.items.filter((item) => item.geometry_level === "adm1");
+const staticAdm1Items = adm1PlaceItems.filter((item) => item.page_url);
+const adm1PlaceRoutes = routeManifest.routes.filter((route) => route.generated === "adm1-place");
 
 if (countryPlaceRoutes.length !== countryPlaceItems.length) {
   failures.push("data/routes.json must include one static /place/{ISO}/ route for every indexed country");
@@ -363,6 +378,50 @@ for (const item of countryPlaceItems) {
   }
 }
 
+if (adm1PlaceItems.length < 1000) {
+  failures.push("v1/places/index.json must expose broad ADM1 context coverage");
+}
+
+if (staticAdm1Items.length < 100) {
+  failures.push("v1/places/index.json must expose at least 100 static ADM1 context pages");
+}
+
+if (adm1PlaceRoutes.length !== staticAdm1Items.length) {
+  failures.push("data/routes.json must include one static route for every top ADM1 context page");
+}
+
+for (const item of staticAdm1Items) {
+  const url = new URL(item.page_url);
+  const routePath = url.pathname;
+
+  if (!routeManifest.routes.some((route) => route.path === routePath && route.generated === "adm1-place")) {
+    failures.push(`data/routes.json missing static ADM1 route for ${item.place_id}`);
+  }
+
+  const routeFile = routeFileForHref(routePath);
+
+  if (!routeFile || !existsSync(absolute(routeFile))) {
+    failures.push(`Missing generated ADM1 context page for ${item.place_id}`);
+  }
+}
+
+const adm1Index = readJson("v1/adm1/index.json");
+if (adm1Index.coverage_status !== "adm1_context_overlay") {
+  failures.push("v1/adm1/index.json must be labeled adm1_context_overlay");
+}
+
+if (adm1Index.count !== adm1Index.items?.length || adm1Index.count !== adm1PlaceItems.length) {
+  failures.push("v1/adm1/index.json count must match place-index ADM1 rows");
+}
+
+if (adm1Index.static_page_count !== staticAdm1Items.length) {
+  failures.push("v1/adm1/index.json static_page_count mismatch");
+}
+
+if (!adm1Index.items?.every((item) => item.coverage_status === "adm1_context_overlay" && item.geometry_level === "adm1")) {
+  failures.push("v1/adm1/index.json items must be ADM1 context overlays");
+}
+
 const coverage = readJson("v1/coverage.json");
 if (coverage.coverage_status?.places_indexed !== placeIndex.count) {
   failures.push("v1/coverage.json places_indexed does not match place index count");
@@ -374,6 +433,10 @@ if ((coverage.known_sparse_areas ?? []).length < 3) {
 
 if (coverage.coverage_status?.evidence_layer_coverage?.direct !== 0) {
   failures.push("v1/coverage.json direct evidence place coverage should be explicit for this release");
+}
+
+if (coverage.coverage_status?.adm1_boundaries?.static_context_count !== adm1PlaceItems.length) {
+  failures.push("v1/coverage.json ADM1 static context count mismatch");
 }
 
 const releaseModes = readJson("data/release-modes.json");
@@ -420,13 +483,13 @@ if (performanceBudgets.field_budgets?.cumulative_layout_shift > 0.1) {
 }
 
 const endpointSmoke = readJson("data/endpoint-smoke.json");
-for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/v1/places/index.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/.well-known/security.txt"]) {
+for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/IND/adm1.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/.well-known/security.txt"]) {
   if (!endpointSmoke.endpoints?.some((entry) => entry.path === requiredPath && entry.expected_status === 200)) {
     failures.push(`data/endpoint-smoke.json missing required endpoint ${requiredPath}`);
   }
 }
 
-for (const schemaFile of ["schemas/place-index.schema.json", "schemas/place-measurements.schema.json", "schemas/coverage.schema.json", "schemas/release-modes.schema.json", "schemas/ogc-place-features.schema.json"]) {
+for (const schemaFile of ["schemas/place-index.schema.json", "schemas/adm1-context.schema.json", "schemas/place-measurements.schema.json", "schemas/coverage.schema.json", "schemas/release-modes.schema.json", "schemas/ogc-place-features.schema.json"]) {
   const schema = readJson(schemaFile);
 
   if (schema.$schema !== "https://json-schema.org/draft/2020-12/schema") {
@@ -435,7 +498,7 @@ for (const schemaFile of ["schemas/place-index.schema.json", "schemas/place-meas
 }
 
 const openapi = readJson("data/openapi.json");
-for (const requiredPath of ["/v1/places/index.json", "/v1/coverage.json", "/v1/places/{place_id}/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/data/release-modes.json", "/releases/2026-05-31/diff.json", "/schemas/place-index.schema.json", "/schemas/release-modes.schema.json", "/schemas/ogc-place-features.schema.json"]) {
+for (const requiredPath of ["/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/{place_id}/adm1.json", "/v1/coverage.json", "/v1/places/{place_id}/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/data/release-modes.json", "/releases/2026-05-31/diff.json", "/schemas/place-index.schema.json", "/schemas/adm1-context.schema.json", "/schemas/release-modes.schema.json", "/schemas/ogc-place-features.schema.json"]) {
   if (!openapi.paths?.[requiredPath]) {
     failures.push(`data/openapi.json missing ${requiredPath}`);
   }
@@ -443,16 +506,21 @@ for (const requiredPath of ["/v1/places/index.json", "/v1/coverage.json", "/v1/p
 
 expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /export class PainMapClient/, "TypeScript PainMapClient export");
 expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async placeIndex\(\): Promise<PlaceIndex>/, "typed placeIndex client method");
+expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async adm1ContextIndex\(\): Promise<Adm1ContextIndex>/, "typed ADM1 context index client method");
+expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async countryAdm1Context\(/, "typed country ADM1 context client method");
 expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async releaseModes\(\): Promise<ReleaseModes>/, "typed releaseModes client method");
 expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async placeNeighbors\(/, "typed placeNeighbors client method");
 expectPattern("clients/typescript/painmap-client.ts", read("clients/typescript/painmap-client.ts"), /async ogcPlaceFeatures\(/, "typed ogcPlaceFeatures client method");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /class PainMapClient:/, "Python PainMapClient class");
+expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def adm1_context_index\(/, "Python adm1_context_index client method");
+expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def country_adm1_context\(/, "Python country_adm1_context client method");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def release_modes\(/, "Python release_modes client method");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def place_neighbors\(/, "Python place_neighbors client method");
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def ogc_place_features\(/, "Python ogc_place_features client method");
 expectPattern("examples/README.md", read("examples/README.md"), /node examples\/load-place-profile\.mjs IND/, "Node example command");
 expectPattern("examples/README.md", read("examples/README.md"), /python3 examples\/load_place_profile\.py IND/, "Python example command");
 expectPattern("examples/README.md", read("examples/README.md"), /\/ogc\/collections\/places\/items\.json/, "OGC feature example endpoint");
+expectPattern("examples/README.md", read("examples/README.md"), /\/v1\/adm1\/index\.json/, "ADM1 context example endpoint");
 
 for (const file of walkFiles(root, (entry) => entry.endsWith(".html"))) {
   const html = read(file);

@@ -1,0 +1,365 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "GMB",
+  "parent_place_name": "The Gambia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 8,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "GMB-ADM1-BANJUL",
+      "place_name": "Banjul",
+      "parent_place_id": "GMB",
+      "parent_place_name": "The Gambia",
+      "iso3": "GMB",
+      "source_iso3": "GMB",
+      "geometry_level": "adm1",
+      "adm1_key": "banjul",
+      "adm1_geo_id": "GMB_2015_GADM2_GMB_GMB.1_1_GMB.1.1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GMB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.84839,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.004,
+        "poor830_rate": 0.2847,
+        "prosperity_gap_2021": 2.8483902,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.40%",
+        "poor830_display": "28.5%",
+        "prosperity_gap_display": "2.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1198
+    },
+    {
+      "place_id": "GMB-ADM1-KOMBO-SAINT-MARY",
+      "place_name": "Kombo Saint Mary",
+      "parent_place_id": "GMB",
+      "parent_place_name": "The Gambia",
+      "iso3": "GMB",
+      "source_iso3": "GMB",
+      "geometry_level": "adm1",
+      "adm1_key": "kombo saint mary",
+      "adm1_geo_id": "GMB_2015_GADM2_GMB_GMB.1_1_GMB.1.2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GMB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.372158,
+      "poverty_context": {
+        "poor300_rate": 0.0052,
+        "poor420_rate": 0.035,
+        "poor830_rate": 0.3931,
+        "prosperity_gap_2021": 3.3721583,
+        "poor300_display": "0.52%",
+        "poor420_display": "3.50%",
+        "poor830_display": "39.3%",
+        "prosperity_gap_display": "3.37"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1095
+    },
+    {
+      "place_id": "GMB-ADM1-LOWER-RIVER",
+      "place_name": "Lower River",
+      "parent_place_id": "GMB",
+      "parent_place_name": "The Gambia",
+      "iso3": "GMB",
+      "source_iso3": "GMB",
+      "geometry_level": "adm1",
+      "adm1_key": "lower river",
+      "adm1_geo_id": "GMB_2015_GADM1_GMB_GMB.2_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GMB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.312911,
+      "poverty_context": {
+        "poor300_rate": 0.2251,
+        "poor420_rate": 0.4493,
+        "poor830_rate": 0.8855,
+        "prosperity_gap_2021": 7.3129105,
+        "poor300_display": "22.5%",
+        "poor420_display": "44.9%",
+        "poor830_display": "88.5%",
+        "prosperity_gap_display": "7.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 565
+    },
+    {
+      "place_id": "GMB-ADM1-NIAMINA-EAST-AND-NIAMINA-WEST-AND-FULLADU-WEST-AND-JANJANBUREH-0F687290",
+      "place_name": "Niamina East & Niamina West & Fulladu West & Janjanbureh & Niamina Dankunku",
+      "parent_place_id": "GMB",
+      "parent_place_name": "The Gambia",
+      "iso3": "GMB",
+      "source_iso3": "GMB",
+      "geometry_level": "adm1",
+      "adm1_key": "niamina east and niamina west and fulladu west and janjanbureh and niamina dankunku",
+      "adm1_geo_id": "GMB_2015_GADMx_90_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GMB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.491725,
+      "poverty_context": {
+        "poor300_rate": 0.2439,
+        "poor420_rate": 0.4771,
+        "poor830_rate": 0.8975,
+        "prosperity_gap_2021": 7.4917253,
+        "poor300_display": "24.4%",
+        "poor420_display": "47.7%",
+        "poor830_display": "89.8%",
+        "prosperity_gap_display": "7.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 549
+    },
+    {
+      "place_id": "GMB-ADM1-NORTH-BANK",
+      "place_name": "North Bank",
+      "parent_place_id": "GMB",
+      "parent_place_name": "The Gambia",
+      "iso3": "GMB",
+      "source_iso3": "GMB",
+      "geometry_level": "adm1",
+      "adm1_key": "north bank",
+      "adm1_geo_id": "GMB_2015_GADM1_GMB_GMB.4_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GMB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.392006,
+      "poverty_context": {
+        "poor300_rate": 0.2999,
+        "poor420_rate": 0.5627,
+        "poor830_rate": 0.9304,
+        "prosperity_gap_2021": 8.392006,
+        "poor300_display": "30.0%",
+        "poor420_display": "56.3%",
+        "poor830_display": "93.0%",
+        "prosperity_gap_display": "8.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 469
+    },
+    {
+      "place_id": "GMB-ADM1-SAMI-AND-UPPER-SALOUM-AND-NIANI-AND-NIANIJA-AND-LOWER-SALOUM",
+      "place_name": "Sami & Upper Saloum & Niani & Nianija & Lower Saloum",
+      "parent_place_id": "GMB",
+      "parent_place_name": "The Gambia",
+      "iso3": "GMB",
+      "source_iso3": "GMB",
+      "geometry_level": "adm1",
+      "adm1_key": "sami and upper saloum and niani and nianija and lower saloum",
+      "adm1_geo_id": "GMB_2015_GADMx_90_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GMB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.258652,
+      "poverty_context": {
+        "poor300_rate": 0.4859,
+        "poor420_rate": 0.735,
+        "poor830_rate": 0.9614,
+        "prosperity_gap_2021": 10.258652,
+        "poor300_display": "48.6%",
+        "poor420_display": "73.5%",
+        "poor830_display": "96.1%",
+        "prosperity_gap_display": "10.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 319
+    },
+    {
+      "place_id": "GMB-ADM1-UPPER-RIVER",
+      "place_name": "Upper River",
+      "parent_place_id": "GMB",
+      "parent_place_name": "The Gambia",
+      "iso3": "GMB",
+      "source_iso3": "GMB",
+      "geometry_level": "adm1",
+      "adm1_key": "upper river",
+      "adm1_geo_id": "GMB_2015_GADM1_GMB_GMB.5_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GMB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.747696,
+      "poverty_context": {
+        "poor300_rate": 0.2466,
+        "poor420_rate": 0.4946,
+        "poor830_rate": 0.9016,
+        "prosperity_gap_2021": 7.7476965,
+        "poor300_display": "24.7%",
+        "poor420_display": "49.5%",
+        "poor830_display": "90.2%",
+        "prosperity_gap_display": "7.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 522
+    },
+    {
+      "place_id": "GMB-ADM1-WEST-COAST",
+      "place_name": "West Coast",
+      "parent_place_id": "GMB",
+      "parent_place_name": "The Gambia",
+      "iso3": "GMB",
+      "source_iso3": "GMB",
+      "geometry_level": "adm1",
+      "adm1_key": "west coast",
+      "adm1_geo_id": "GMB_2015_GADM1_GMB_GMB.6_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/GMB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.89281,
+      "poverty_context": {
+        "poor300_rate": 0.1446,
+        "poor420_rate": 0.3128,
+        "poor830_rate": 0.7432,
+        "prosperity_gap_2021": 5.8928101,
+        "poor300_display": "14.5%",
+        "poor420_display": "31.3%",
+        "poor830_display": "74.3%",
+        "prosperity_gap_display": "5.89"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 692
+    }
+  ]
+}

@@ -80,7 +80,9 @@
                 <tr><th scope="row"><a href="/v1/sources.json">/v1/sources.json</a></th><td>JSON</td><td>Source and license registry.</td></tr>
                 <tr><th scope="row"><a href="/data/release-modes.json">/data/release-modes.json</a></th><td>JSON</td><td>Snapshot and live overlay mode contract with cache and network rules.</td></tr>
                 <tr><th scope="row"><a href="/v1/places/index.json">/v1/places/index.json</a></th><td>JSON</td><td>Full release place index with coverage status for boundary-only and measured places.</td></tr>
+                <tr><th scope="row"><a href="/v1/adm1/index.json">/v1/adm1/index.json</a></th><td>JSON</td><td>ADM1 poverty-context overlay index with static-page priority ranks.</td></tr>
                 <tr><th scope="row"><a href="/v1/coverage.json">/v1/coverage.json</a></th><td>JSON</td><td>Coverage counts, direct-evidence layer coverage, last release date, and known sparse areas.</td></tr>
+                <tr><th scope="row"><a href="/v1/places/IND/adm1.json">/v1/places/{place_id}/adm1.json</a></th><td>JSON</td><td>Country-scoped ADM1 context rows from the GSAP poverty overlay.</td></tr>
                 <tr><th scope="row"><a href="/v1/places/BRA/neighbors.json">/v1/places/{place_id}/neighbors.json</a></th><td>JSON</td><td>Release-scoped border neighbors, nearest centroid neighbors, and place discovery links.</td></tr>
                 <tr><th scope="row"><a href="/ogc/index.json">/ogc/index.json</a></th><td>JSON</td><td>Static OGC API - Features-style landing document.</td></tr>
                 <tr><th scope="row"><a href="/ogc/collections/places/items.json">/ogc/collections/places/items.json</a></th><td>GeoJSON</td><td>Country place features joined to coverage, profile, measurement, and neighbor links.</td></tr>
@@ -91,8 +93,10 @@
                 <tr><th scope="row"><a href="/data/place-measurements.json">/data/place-measurements.json</a></th><td>JSON</td><td>Canonical release measurements with numeric values, display values, units, source ids, confidence bounds, and release id.</td></tr>
                 <tr><th scope="row"><a href="/data/place-measurements.csv">/data/place-measurements.csv</a></th><td>CSV</td><td>Spreadsheet-friendly measurements export.</td></tr>
                 <tr><th scope="row"><a href="/data/places.geojson">/data/places.geojson</a></th><td>GeoJSON</td><td>Representative features for atlas clients.</td></tr>
+                <tr><th scope="row"><a href="/data/gsap-adm1-2023.json">/data/gsap-adm1-2023.json</a></th><td>JSON</td><td>Vendored World Bank GSAP ADM1 poverty-context source table.</td></tr>
                 <tr><th scope="row"><a href="/data/dcat.json">/data/dcat.json</a></th><td>DCAT JSON</td><td>Catalog metadata for public datasets.</td></tr>
                 <tr><th scope="row"><a href="/schemas/place-index.schema.json">/schemas/place-index.schema.json</a></th><td>JSON Schema</td><td>Validation schema for the place index.</td></tr>
+                <tr><th scope="row"><a href="/schemas/adm1-context.schema.json">/schemas/adm1-context.schema.json</a></th><td>JSON Schema</td><td>Validation schema for the ADM1 context overlay.</td></tr>
                 <tr><th scope="row"><a href="/schemas/place-measurements.schema.json">/schemas/place-measurements.schema.json</a></th><td>JSON Schema</td><td>Validation schema for canonical measurements.</td></tr>
                 <tr><th scope="row"><a href="/schemas/coverage.schema.json">/schemas/coverage.schema.json</a></th><td>JSON Schema</td><td>Validation schema for coverage status.</td></tr>
                 <tr><th scope="row"><a href="/schemas/release-modes.schema.json">/schemas/release-modes.schema.json</a></th><td>JSON Schema</td><td>Validation schema for the snapshot/live release-mode contract.</td></tr>

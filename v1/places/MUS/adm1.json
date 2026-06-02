@@ -1,0 +1,453 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "MUS",
+  "parent_place_name": "Mauritius",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 10,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "MUS-ADM1-ADMINISTRATIVE-UNIT-NOT-AVAILABLE",
+      "place_name": "Administrative unit not available",
+      "parent_place_id": "MUS",
+      "parent_place_name": "Mauritius",
+      "iso3": "MUS",
+      "source_iso3": "MUS",
+      "geometry_level": "adm1",
+      "adm1_key": "administrative unit not available",
+      "adm1_geo_id": "MUS_2015_GADM_MUS.10_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.271715,
+      "poverty_context": {
+        "poor300_rate": 0.0647,
+        "poor420_rate": 0.181,
+        "poor830_rate": 0.5199,
+        "prosperity_gap_2021": 4.2717154,
+        "poor300_display": "6.47%",
+        "poor420_display": "18.1%",
+        "poor830_display": "52.0%",
+        "prosperity_gap_display": "4.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 931
+    },
+    {
+      "place_id": "MUS-ADM1-BLACK-RIVER",
+      "place_name": "Black River",
+      "parent_place_id": "MUS",
+      "parent_place_name": "Mauritius",
+      "iso3": "MUS",
+      "source_iso3": "MUS",
+      "geometry_level": "adm1",
+      "adm1_key": "black river",
+      "adm1_geo_id": "MUS_2015_GADM_MUS.2_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.480412,
+      "poverty_context": {
+        "poor300_rate": 0.0039,
+        "poor420_rate": 0.028,
+        "poor830_rate": 0.2071,
+        "prosperity_gap_2021": 2.4804116,
+        "poor300_display": "0.39%",
+        "poor420_display": "2.80%",
+        "poor830_display": "20.7%",
+        "prosperity_gap_display": "2.48"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1300
+    },
+    {
+      "place_id": "MUS-ADM1-FLACQ",
+      "place_name": "Flacq",
+      "parent_place_id": "MUS",
+      "parent_place_name": "Mauritius",
+      "iso3": "MUS",
+      "source_iso3": "MUS",
+      "geometry_level": "adm1",
+      "adm1_key": "flacq",
+      "adm1_geo_id": "MUS_2015_GADM_MUS.3_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.425198,
+      "poverty_context": {
+        "poor300_rate": 0.0011,
+        "poor420_rate": 0.0144,
+        "poor830_rate": 0.1909,
+        "prosperity_gap_2021": 2.4251983,
+        "poor300_display": "0.11%",
+        "poor420_display": "1.44%",
+        "poor830_display": "19.1%",
+        "prosperity_gap_display": "2.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1317
+    },
+    {
+      "place_id": "MUS-ADM1-GRAND-PORT",
+      "place_name": "Grand Port",
+      "parent_place_id": "MUS",
+      "parent_place_name": "Mauritius",
+      "iso3": "MUS",
+      "source_iso3": "MUS",
+      "geometry_level": "adm1",
+      "adm1_key": "grand port",
+      "adm1_geo_id": "MUS_2015_GADM_MUS.4_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.671388,
+      "poverty_context": {
+        "poor300_rate": 0.0026,
+        "poor420_rate": 0.0252,
+        "poor830_rate": 0.244,
+        "prosperity_gap_2021": 2.6713879,
+        "poor300_display": "0.26%",
+        "poor420_display": "2.52%",
+        "poor830_display": "24.4%",
+        "prosperity_gap_display": "2.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1238
+    },
+    {
+      "place_id": "MUS-ADM1-MOKA",
+      "place_name": "Moka",
+      "parent_place_id": "MUS",
+      "parent_place_name": "Mauritius",
+      "iso3": "MUS",
+      "source_iso3": "MUS",
+      "geometry_level": "adm1",
+      "adm1_key": "moka",
+      "adm1_geo_id": "MUS_2015_GADM_MUS.5_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.311585,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0195,
+        "poor830_rate": 0.1738,
+        "prosperity_gap_2021": 2.3115848,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.95%",
+        "poor830_display": "17.4%",
+        "prosperity_gap_display": "2.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1354
+    },
+    {
+      "place_id": "MUS-ADM1-PAMPLEMOUSSES",
+      "place_name": "Pamplemousses",
+      "parent_place_id": "MUS",
+      "parent_place_name": "Mauritius",
+      "iso3": "MUS",
+      "source_iso3": "MUS",
+      "geometry_level": "adm1",
+      "adm1_key": "pamplemousses",
+      "adm1_geo_id": "MUS_2015_GADM_MUS.6_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.246456,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0159,
+        "poor830_rate": 0.1512,
+        "prosperity_gap_2021": 2.2464563,
+        "poor300_display": "0.00%",
+        "poor420_display": "1.59%",
+        "poor830_display": "15.1%",
+        "prosperity_gap_display": "2.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1374
+    },
+    {
+      "place_id": "MUS-ADM1-PLAINES-WILHEMS",
+      "place_name": "Plaines Wilhems",
+      "parent_place_id": "MUS",
+      "parent_place_name": "Mauritius",
+      "iso3": "MUS",
+      "source_iso3": "MUS",
+      "geometry_level": "adm1",
+      "adm1_key": "plaines wilhems",
+      "adm1_geo_id": "MUS_2015_GADM_MUS.7_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.07786,
+      "poverty_context": {
+        "poor300_rate": 0.0061,
+        "poor420_rate": 0.0124,
+        "poor830_rate": 0.1343,
+        "prosperity_gap_2021": 2.0778601,
+        "poor300_display": "0.61%",
+        "poor420_display": "1.24%",
+        "poor830_display": "13.4%",
+        "prosperity_gap_display": "2.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1438
+    },
+    {
+      "place_id": "MUS-ADM1-PORT-LOUIS",
+      "place_name": "Port Louis",
+      "parent_place_id": "MUS",
+      "parent_place_name": "Mauritius",
+      "iso3": "MUS",
+      "source_iso3": "MUS",
+      "geometry_level": "adm1",
+      "adm1_key": "port louis",
+      "adm1_geo_id": "MUS_2015_GADM_MUS.8_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.601815,
+      "poverty_context": {
+        "poor300_rate": 0.0049,
+        "poor420_rate": 0.024,
+        "poor830_rate": 0.2236,
+        "prosperity_gap_2021": 2.6018154,
+        "poor300_display": "0.49%",
+        "poor420_display": "2.40%",
+        "poor830_display": "22.4%",
+        "prosperity_gap_display": "2.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1267
+    },
+    {
+      "place_id": "MUS-ADM1-RIVIERE-DU-REMPART",
+      "place_name": "Riviere Du Rempart",
+      "parent_place_id": "MUS",
+      "parent_place_name": "Mauritius",
+      "iso3": "MUS",
+      "source_iso3": "MUS",
+      "geometry_level": "adm1",
+      "adm1_key": "riviere du rempart",
+      "adm1_geo_id": "MUS_2015_GADM_MUS.9_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.310922,
+      "poverty_context": {
+        "poor300_rate": 0.0007,
+        "poor420_rate": 0.0072,
+        "poor830_rate": 0.1522,
+        "prosperity_gap_2021": 2.3109219,
+        "poor300_display": "0.07%",
+        "poor420_display": "0.72%",
+        "poor830_display": "15.2%",
+        "prosperity_gap_display": "2.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1355
+    },
+    {
+      "place_id": "MUS-ADM1-SAVANNE",
+      "place_name": "Savanne",
+      "parent_place_id": "MUS",
+      "parent_place_name": "Mauritius",
+      "iso3": "MUS",
+      "source_iso3": "MUS",
+      "geometry_level": "adm1",
+      "adm1_key": "savanne",
+      "adm1_geo_id": "MUS_2015_GADM_MUS.12_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.62667,
+      "poverty_context": {
+        "poor300_rate": 0.0047,
+        "poor420_rate": 0.0207,
+        "poor830_rate": 0.2408,
+        "prosperity_gap_2021": 2.6266704,
+        "poor300_display": "0.47%",
+        "poor420_display": "2.07%",
+        "poor830_display": "24.1%",
+        "prosperity_gap_display": "2.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1258
+    }
+  ]
+}

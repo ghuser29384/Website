@@ -1,0 +1,321 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "CAF",
+  "parent_place_name": "Central African Republic",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 7,
+  "static_page_count": 6,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "CAF-ADM1-BAMINGUI-BANGORAN-AND-HAUTE-KOTTO-AND-VAKAGA",
+      "place_name": "Bamingui-Bangoran & Haute-Kotto & Vakaga",
+      "parent_place_id": "CAF",
+      "parent_place_name": "Central African Republic",
+      "iso3": "CAF",
+      "source_iso3": "CAF",
+      "geometry_level": "adm1",
+      "adm1_key": "bamingui bangoran and haute kotto and vakaga",
+      "adm1_geo_id": "CAF_2015_ADMx_49_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/CAF/adm1/bamingui-bangoran-and-haute-kotto-and-vakaga/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.956332,
+      "poverty_context": {
+        "poor300_rate": 0.7565,
+        "poor420_rate": 0.8903,
+        "poor830_rate": 0.9875,
+        "prosperity_gap_2021": 16.956332,
+        "poor300_display": "75.6%",
+        "poor420_display": "89.0%",
+        "poor830_display": "98.8%",
+        "prosperity_gap_display": "16.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 96
+    },
+    {
+      "place_id": "CAF-ADM1-BANGUI",
+      "place_name": "Bangui",
+      "parent_place_id": "CAF",
+      "parent_place_name": "Central African Republic",
+      "iso3": "CAF",
+      "source_iso3": "CAF",
+      "geometry_level": "adm1",
+      "adm1_key": "bangui",
+      "adm1_geo_id": "CAF_2015_ADMx_49_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.777632,
+      "poverty_context": {
+        "poor300_rate": 0.2744,
+        "poor420_rate": 0.4755,
+        "poor830_rate": 0.827,
+        "prosperity_gap_2021": 7.7776324,
+        "poor300_display": "27.4%",
+        "poor420_display": "47.5%",
+        "poor830_display": "82.7%",
+        "prosperity_gap_display": "7.78"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 517
+    },
+    {
+      "place_id": "CAF-ADM1-BASSE-KOTTO-AND-HAUT-MBOMOU-AND-MBOMOU",
+      "place_name": "Basse-Kotto & Haut-Mbomou & Mbomou",
+      "parent_place_id": "CAF",
+      "parent_place_name": "Central African Republic",
+      "iso3": "CAF",
+      "source_iso3": "CAF",
+      "geometry_level": "adm1",
+      "adm1_key": "basse kotto and haut mbomou and mbomou",
+      "adm1_geo_id": "CAF_2015_ADMx_49_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/CAF/adm1/basse-kotto-and-haut-mbomou-and-mbomou/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 26.030347,
+      "poverty_context": {
+        "poor300_rate": 0.879,
+        "poor420_rate": 0.9398,
+        "poor830_rate": 0.9939,
+        "prosperity_gap_2021": 26.030347,
+        "poor300_display": "87.9%",
+        "poor420_display": "94.0%",
+        "poor830_display": "99.4%",
+        "prosperity_gap_display": "26.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 23
+    },
+    {
+      "place_id": "CAF-ADM1-K-MO-AND-NANA-GRIBIZI-AND-OUAKA",
+      "place_name": "Kémo & Nana-Gribizi & Ouaka",
+      "parent_place_id": "CAF",
+      "parent_place_name": "Central African Republic",
+      "iso3": "CAF",
+      "source_iso3": "CAF",
+      "geometry_level": "adm1",
+      "adm1_key": "k mo and nana gribizi and ouaka",
+      "adm1_geo_id": "CAF_2015_ADMx_49_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/CAF/adm1/k-mo-and-nana-gribizi-and-ouaka/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 21.339216,
+      "poverty_context": {
+        "poor300_rate": 0.834,
+        "poor420_rate": 0.9262,
+        "poor830_rate": 0.9848,
+        "prosperity_gap_2021": 21.339216,
+        "poor300_display": "83.4%",
+        "poor420_display": "92.6%",
+        "poor830_display": "98.5%",
+        "prosperity_gap_display": "21.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 44
+    },
+    {
+      "place_id": "CAF-ADM1-LOBAYE-AND-OMBELLA-M-POKO",
+      "place_name": "Lobaye & Ombella M'Poko",
+      "parent_place_id": "CAF",
+      "parent_place_name": "Central African Republic",
+      "iso3": "CAF",
+      "source_iso3": "CAF",
+      "geometry_level": "adm1",
+      "adm1_key": "lobaye and ombella m poko",
+      "adm1_geo_id": "CAF_2015_ADMx_49_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/CAF/adm1/lobaye-and-ombella-m-poko/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.217118,
+      "poverty_context": {
+        "poor300_rate": 0.7075,
+        "poor420_rate": 0.8499,
+        "poor830_rate": 0.9647,
+        "prosperity_gap_2021": 16.217118,
+        "poor300_display": "70.8%",
+        "poor420_display": "85.0%",
+        "poor830_display": "96.5%",
+        "prosperity_gap_display": "16.22"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 109
+    },
+    {
+      "place_id": "CAF-ADM1-MAMB-R-KAD-AND-SANGHA-MBA-R",
+      "place_name": "Mambéré-Kadéï & Sangha-Mbaéré",
+      "parent_place_id": "CAF",
+      "parent_place_name": "Central African Republic",
+      "iso3": "CAF",
+      "source_iso3": "CAF",
+      "geometry_level": "adm1",
+      "adm1_key": "mamb r kad and sangha mba r",
+      "adm1_geo_id": "CAF_2015_ADMx_49_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/CAF/adm1/mamb-r-kad-and-sangha-mba-r/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.941963,
+      "poverty_context": {
+        "poor300_rate": 0.7282,
+        "poor420_rate": 0.8727,
+        "poor830_rate": 0.976,
+        "prosperity_gap_2021": 15.941963,
+        "poor300_display": "72.8%",
+        "poor420_display": "87.3%",
+        "poor830_display": "97.6%",
+        "prosperity_gap_display": "15.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 112
+    },
+    {
+      "place_id": "CAF-ADM1-NANA-MAMB-R-AND-OUHAM-AND-OUHAM-PEND",
+      "place_name": "Nana-Mambéré & Ouham & Ouham Pendé",
+      "parent_place_id": "CAF",
+      "parent_place_name": "Central African Republic",
+      "iso3": "CAF",
+      "source_iso3": "CAF",
+      "geometry_level": "adm1",
+      "adm1_key": "nana mamb r and ouham and ouham pend",
+      "adm1_geo_id": "CAF_2015_ADMx_49_7",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/CAF/adm1/nana-mamb-r-and-ouham-and-ouham-pend/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAF/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 22.676282,
+      "poverty_context": {
+        "poor300_rate": 0.818,
+        "poor420_rate": 0.9059,
+        "poor830_rate": 0.9913,
+        "prosperity_gap_2021": 22.676282,
+        "poor300_display": "81.8%",
+        "poor420_display": "90.6%",
+        "poor830_display": "99.1%",
+        "prosperity_gap_display": "22.68"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 37
+    }
+  ]
+}

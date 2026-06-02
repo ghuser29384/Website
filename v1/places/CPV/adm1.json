@@ -1,0 +1,409 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "CPV",
+  "parent_place_name": "Cape Verde",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 9,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "CPV-ADM1-BOA-VISTA",
+      "place_name": "Boa Vista",
+      "parent_place_id": "CPV",
+      "parent_place_name": "Cape Verde",
+      "iso3": "CPV",
+      "source_iso3": "CPV",
+      "geometry_level": "adm1",
+      "adm1_key": "boa vista",
+      "adm1_geo_id": "CPV_2022_GADM1_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CPV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.628868,
+      "poverty_context": {
+        "poor300_rate": 0.0129,
+        "poor420_rate": 0.0365,
+        "poor830_rate": 0.2461,
+        "prosperity_gap_2021": 2.6288679,
+        "poor300_display": "1.29%",
+        "poor420_display": "3.65%",
+        "poor830_display": "24.6%",
+        "prosperity_gap_display": "2.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1257
+    },
+    {
+      "place_id": "CPV-ADM1-BRAVA",
+      "place_name": "Brava",
+      "parent_place_id": "CPV",
+      "parent_place_name": "Cape Verde",
+      "iso3": "CPV",
+      "source_iso3": "CPV",
+      "geometry_level": "adm1",
+      "adm1_key": "brava",
+      "adm1_geo_id": "CPV_2022_GADM1_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CPV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.09946,
+      "poverty_context": {
+        "poor300_rate": 0.188,
+        "poor420_rate": 0.3484,
+        "poor830_rate": 0.6848,
+        "prosperity_gap_2021": 6.09946,
+        "poor300_display": "18.8%",
+        "poor420_display": "34.8%",
+        "poor830_display": "68.5%",
+        "prosperity_gap_display": "6.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 670
+    },
+    {
+      "place_id": "CPV-ADM1-FOGO",
+      "place_name": "Fogo",
+      "parent_place_id": "CPV",
+      "parent_place_name": "Cape Verde",
+      "iso3": "CPV",
+      "source_iso3": "CPV",
+      "geometry_level": "adm1",
+      "adm1_key": "fogo",
+      "adm1_geo_id": "CPV_2022_GADMx_4_13_16",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CPV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.50101,
+      "poverty_context": {
+        "poor300_rate": 0.2017,
+        "poor420_rate": 0.3764,
+        "poor830_rate": 0.7314,
+        "prosperity_gap_2021": 6.50101,
+        "poor300_display": "20.2%",
+        "poor420_display": "37.6%",
+        "poor830_display": "73.1%",
+        "prosperity_gap_display": "6.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 631
+    },
+    {
+      "place_id": "CPV-ADM1-MAIO",
+      "place_name": "Maio",
+      "parent_place_id": "CPV",
+      "parent_place_name": "Cape Verde",
+      "iso3": "CPV",
+      "source_iso3": "CPV",
+      "geometry_level": "adm1",
+      "adm1_key": "maio",
+      "adm1_geo_id": "CPV_2022_GADM1_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CPV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.786064,
+      "poverty_context": {
+        "poor300_rate": 0.1109,
+        "poor420_rate": 0.2321,
+        "poor830_rate": 0.5715,
+        "prosperity_gap_2021": 4.7860636,
+        "poor300_display": "11.1%",
+        "poor420_display": "23.2%",
+        "poor830_display": "57.1%",
+        "prosperity_gap_display": "4.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 851
+    },
+    {
+      "place_id": "CPV-ADM1-SAL",
+      "place_name": "Sal",
+      "parent_place_id": "CPV",
+      "parent_place_name": "Cape Verde",
+      "iso3": "CPV",
+      "source_iso3": "CPV",
+      "geometry_level": "adm1",
+      "adm1_key": "sal",
+      "adm1_geo_id": "CPV_2022_GADM1_11",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CPV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.317352,
+      "poverty_context": {
+        "poor300_rate": 0.0171,
+        "poor420_rate": 0.0751,
+        "poor830_rate": 0.4053,
+        "prosperity_gap_2021": 3.3173515,
+        "poor300_display": "1.71%",
+        "poor420_display": "7.51%",
+        "poor830_display": "40.5%",
+        "prosperity_gap_display": "3.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1107
+    },
+    {
+      "place_id": "CPV-ADM1-SANTIAGO",
+      "place_name": "Santiago",
+      "parent_place_id": "CPV",
+      "parent_place_name": "Cape Verde",
+      "iso3": "CPV",
+      "source_iso3": "CPV",
+      "geometry_level": "adm1",
+      "adm1_key": "santiago",
+      "adm1_geo_id": "CPV_2022_GADMx_7_10_12_14_15_17_18_19_21",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CPV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.912554,
+      "poverty_context": {
+        "poor300_rate": 0.1049,
+        "poor420_rate": 0.2279,
+        "poor830_rate": 0.5932,
+        "prosperity_gap_2021": 4.9125538,
+        "poor300_display": "10.5%",
+        "poor420_display": "22.8%",
+        "poor830_display": "59.3%",
+        "prosperity_gap_display": "4.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 822
+    },
+    {
+      "place_id": "CPV-ADM1-SANTO-ANTAO",
+      "place_name": "Santo Antao",
+      "parent_place_id": "CPV",
+      "parent_place_name": "Cape Verde",
+      "iso3": "CPV",
+      "source_iso3": "CPV",
+      "geometry_level": "adm1",
+      "adm1_key": "santo antao",
+      "adm1_geo_id": "CPV_2022_GADMx_5_6_9",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CPV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.030502,
+      "poverty_context": {
+        "poor300_rate": 0.1712,
+        "poor420_rate": 0.3224,
+        "poor830_rate": 0.6825,
+        "prosperity_gap_2021": 6.0305018,
+        "poor300_display": "17.1%",
+        "poor420_display": "32.2%",
+        "poor830_display": "68.3%",
+        "prosperity_gap_display": "6.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 678
+    },
+    {
+      "place_id": "CPV-ADM1-SAO-NICOLAU",
+      "place_name": "Sao Nicolau",
+      "parent_place_id": "CPV",
+      "parent_place_name": "Cape Verde",
+      "iso3": "CPV",
+      "source_iso3": "CPV",
+      "geometry_level": "adm1",
+      "adm1_key": "sao nicolau",
+      "adm1_geo_id": "CPV_2022_GADMx_8_22",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CPV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.850306,
+      "poverty_context": {
+        "poor300_rate": 0.1674,
+        "poor420_rate": 0.37,
+        "poor830_rate": 0.6773,
+        "prosperity_gap_2021": 5.8503063,
+        "poor300_display": "16.7%",
+        "poor420_display": "37.0%",
+        "poor830_display": "67.7%",
+        "prosperity_gap_display": "5.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 699
+    },
+    {
+      "place_id": "CPV-ADM1-SAO-VICENTE",
+      "place_name": "Sao Vicente",
+      "parent_place_id": "CPV",
+      "parent_place_name": "Cape Verde",
+      "iso3": "CPV",
+      "source_iso3": "CPV",
+      "geometry_level": "adm1",
+      "adm1_key": "sao vicente",
+      "adm1_geo_id": "CPV_2022_GADM1_20",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CPV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.98866,
+      "poverty_context": {
+        "poor300_rate": 0.0606,
+        "poor420_rate": 0.1497,
+        "poor830_rate": 0.4756,
+        "prosperity_gap_2021": 3.9886604,
+        "poor300_display": "6.06%",
+        "poor420_display": "15.0%",
+        "poor830_display": "47.6%",
+        "prosperity_gap_display": "3.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 993
+    }
+  ]
+}

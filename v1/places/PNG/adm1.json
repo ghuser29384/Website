@@ -1,0 +1,233 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "PNG",
+  "parent_place_name": "Papua New Guinea",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 5,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "PNG-ADM1-CENTRAL-AND-GULF-AND-MILNE-BAY-AND-NORTHERN-AND-WESTERN",
+      "place_name": "Central & Gulf & Milne Bay & Northern & Western",
+      "parent_place_id": "PNG",
+      "parent_place_name": "Papua New Guinea",
+      "iso3": "PNG",
+      "source_iso3": "PNG",
+      "geometry_level": "adm1",
+      "adm1_key": "central and gulf and milne bay and northern and western",
+      "adm1_geo_id": "PNG_2015_ADMx_192_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.048494,
+      "poverty_context": {
+        "poor300_rate": 0.305,
+        "poor420_rate": 0.5244,
+        "poor830_rate": 0.915,
+        "prosperity_gap_2021": 9.0484938,
+        "poor300_display": "30.5%",
+        "poor420_display": "52.4%",
+        "poor830_display": "91.5%",
+        "prosperity_gap_display": "9.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 417
+    },
+    {
+      "place_id": "PNG-ADM1-CHIMBU-AND-EASTERN-HIGHLANDS-AND-ENGA-AND-SOUTHERN-HIGHLANDS-AN-A97D9E50",
+      "place_name": "Chimbu & Eastern Highlands & Enga & Southern Highlands & Western Highlands",
+      "parent_place_id": "PNG",
+      "parent_place_name": "Papua New Guinea",
+      "iso3": "PNG",
+      "source_iso3": "PNG",
+      "geometry_level": "adm1",
+      "adm1_key": "chimbu and eastern highlands and enga and southern highlands and western highlands",
+      "adm1_geo_id": "PNG_2015_ADMx_192_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.265358,
+      "poverty_context": {
+        "poor300_rate": 0.4874,
+        "poor420_rate": 0.6635,
+        "poor830_rate": 0.8988,
+        "prosperity_gap_2021": 11.265358,
+        "poor300_display": "48.7%",
+        "poor420_display": "66.3%",
+        "poor830_display": "89.9%",
+        "prosperity_gap_display": "11.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 264
+    },
+    {
+      "place_id": "PNG-ADM1-EAST-NEW-BRITAIN-AND-MANUS-AND-NEW-IRELAND-AND-NORTHERN-SOLOMON-D5CFAD72",
+      "place_name": "East New Britain & Manus & New Ireland & Northern Solomons & West New Britain",
+      "parent_place_id": "PNG",
+      "parent_place_name": "Papua New Guinea",
+      "iso3": "PNG",
+      "source_iso3": "PNG",
+      "geometry_level": "adm1",
+      "adm1_key": "east new britain and manus and new ireland and northern solomons and west new britain",
+      "adm1_geo_id": "PNG_2015_ADMx_192_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.064458,
+      "poverty_context": {
+        "poor300_rate": 0.4979,
+        "poor420_rate": 0.6485,
+        "poor830_rate": 0.8938,
+        "prosperity_gap_2021": 13.064458,
+        "poor300_display": "49.8%",
+        "poor420_display": "64.8%",
+        "poor830_display": "89.4%",
+        "prosperity_gap_display": "13.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 180
+    },
+    {
+      "place_id": "PNG-ADM1-EAST-SEPIK-AND-MADANG-AND-MOROBE-AND-WEST-SEPIK",
+      "place_name": "East Sepik & Madang & Morobe & West Sepik",
+      "parent_place_id": "PNG",
+      "parent_place_name": "Papua New Guinea",
+      "iso3": "PNG",
+      "source_iso3": "PNG",
+      "geometry_level": "adm1",
+      "adm1_key": "east sepik and madang and morobe and west sepik",
+      "adm1_geo_id": "PNG_2015_ADMx_192_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.400588,
+      "poverty_context": {
+        "poor300_rate": 0.4746,
+        "poor420_rate": 0.6369,
+        "poor830_rate": 0.877,
+        "prosperity_gap_2021": 13.400588,
+        "poor300_display": "47.5%",
+        "poor420_display": "63.7%",
+        "poor830_display": "87.7%",
+        "prosperity_gap_display": "13.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 168
+    },
+    {
+      "place_id": "PNG-ADM1-NATIONAL-CAPITAL-DISTRICT",
+      "place_name": "National Capital District",
+      "parent_place_id": "PNG",
+      "parent_place_name": "Papua New Guinea",
+      "iso3": "PNG",
+      "source_iso3": "PNG",
+      "geometry_level": "adm1",
+      "adm1_key": "national capital district",
+      "adm1_geo_id": "PNG_2015_ADM1_2301",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/PNG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.091566,
+      "poverty_context": {
+        "poor300_rate": 0.4579,
+        "poor420_rate": 0.6536,
+        "poor830_rate": 0.9072,
+        "prosperity_gap_2021": 12.091566,
+        "poor300_display": "45.8%",
+        "poor420_display": "65.4%",
+        "poor830_display": "90.7%",
+        "prosperity_gap_display": "12.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 212
+    }
+  ]
+}

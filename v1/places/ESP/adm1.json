@@ -1,0 +1,849 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "ESP",
+  "parent_place_name": "Spain",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 19,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "ESP-ADM1-ANDALUC-A-ES61",
+      "place_name": "Andalucía (ES61)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "andaluc a es61",
+      "adm1_geo_id": "ESP_2015_ADM1_2716",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.12705,
+      "poverty_context": {
+        "poor300_rate": 0.0125,
+        "poor420_rate": 0.0144,
+        "poor830_rate": 0.0306,
+        "prosperity_gap_2021": 2.1270498,
+        "poor300_display": "1.25%",
+        "poor420_display": "1.44%",
+        "poor830_display": "3.06%",
+        "prosperity_gap_display": "2.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1421
+    },
+    {
+      "place_id": "ESP-ADM1-ARAG-N-ES24",
+      "place_name": "Aragón (ES24)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "arag n es24",
+      "adm1_geo_id": "ESP_2015_ADM1_2717",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.98842,
+      "poverty_context": {
+        "poor300_rate": 0.0031,
+        "poor420_rate": 0.004,
+        "poor830_rate": 0.0055,
+        "prosperity_gap_2021": 0.9884203,
+        "poor300_display": "0.31%",
+        "poor420_display": "0.40%",
+        "poor830_display": "0.55%",
+        "prosperity_gap_display": "0.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1743
+    },
+    {
+      "place_id": "ESP-ADM1-CANARIAS-ES70",
+      "place_name": "Canarias (ES70)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "canarias es70",
+      "adm1_geo_id": "ESP_2015_ADM1_2720",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.439376,
+      "poverty_context": {
+        "poor300_rate": 0.0062,
+        "poor420_rate": 0.0064,
+        "poor830_rate": 0.0161,
+        "prosperity_gap_2021": 1.4393758,
+        "poor300_display": "0.62%",
+        "poor420_display": "0.64%",
+        "poor830_display": "1.61%",
+        "prosperity_gap_display": "1.44"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1607
+    },
+    {
+      "place_id": "ESP-ADM1-CANTABRIA-ES13",
+      "place_name": "Cantabria (ES13)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "cantabria es13",
+      "adm1_geo_id": "ESP_2015_ADM1_2721",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.049519,
+      "poverty_context": {
+        "poor300_rate": 0.0051,
+        "poor420_rate": 0.0051,
+        "poor830_rate": 0.019,
+        "prosperity_gap_2021": 1.049519,
+        "poor300_display": "0.51%",
+        "poor420_display": "0.51%",
+        "poor830_display": "1.90%",
+        "prosperity_gap_display": "1.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1723
+    },
+    {
+      "place_id": "ESP-ADM1-CASTILLA-Y-LE-N-ES41",
+      "place_name": "Castilla y León (ES41)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "castilla y le n es41",
+      "adm1_geo_id": "ESP_2015_ADM1_2722",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.344809,
+      "poverty_context": {
+        "poor300_rate": 0.0058,
+        "poor420_rate": 0.0076,
+        "poor830_rate": 0.0286,
+        "prosperity_gap_2021": 1.3448093,
+        "poor300_display": "0.58%",
+        "poor420_display": "0.76%",
+        "poor830_display": "2.86%",
+        "prosperity_gap_display": "1.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1624
+    },
+    {
+      "place_id": "ESP-ADM1-CASTILLA-LA-MANCHA-ES42",
+      "place_name": "Castilla-La Mancha (ES42)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "castilla la mancha es42",
+      "adm1_geo_id": "ESP_2015_ADM1_2723",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.960062,
+      "poverty_context": {
+        "poor300_rate": 0.0113,
+        "poor420_rate": 0.0113,
+        "poor830_rate": 0.0342,
+        "prosperity_gap_2021": 1.9600624,
+        "poor300_display": "1.13%",
+        "poor420_display": "1.13%",
+        "poor830_display": "3.42%",
+        "prosperity_gap_display": "1.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1485
+    },
+    {
+      "place_id": "ESP-ADM1-CATALU-A-ES51",
+      "place_name": "Cataluña (ES51)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "catalu a es51",
+      "adm1_geo_id": "ESP_2015_ADM1_2724",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.970937,
+      "poverty_context": {
+        "poor300_rate": 0.0039,
+        "poor420_rate": 0.0051,
+        "poor830_rate": 0.0129,
+        "prosperity_gap_2021": 0.97093712,
+        "poor300_display": "0.39%",
+        "poor420_display": "0.51%",
+        "poor830_display": "1.29%",
+        "prosperity_gap_display": "0.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1749
+    },
+    {
+      "place_id": "ESP-ADM1-CIUDAD-DE-CEUTA-ES63",
+      "place_name": "Ciudad de Ceuta (ES63)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "ciudad de ceuta es63",
+      "adm1_geo_id": "ESP_2015_ADM1_2725",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.308639,
+      "poverty_context": {
+        "poor300_rate": 0.0132,
+        "poor420_rate": 0.0149,
+        "poor830_rate": 0.0201,
+        "prosperity_gap_2021": 2.3086392,
+        "poor300_display": "1.32%",
+        "poor420_display": "1.49%",
+        "poor830_display": "2.01%",
+        "prosperity_gap_display": "2.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1357
+    },
+    {
+      "place_id": "ESP-ADM1-CIUDAD-DE-MELILLA-ES64",
+      "place_name": "Ciudad de Melilla (ES64)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "ciudad de melilla es64",
+      "adm1_geo_id": "ESP_2015_ADM1_2730",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.41545,
+      "poverty_context": {
+        "poor300_rate": 0.0331,
+        "poor420_rate": 0.0339,
+        "poor830_rate": 0.0521,
+        "prosperity_gap_2021": 4.4154499,
+        "poor300_display": "3.31%",
+        "poor420_display": "3.39%",
+        "poor830_display": "5.21%",
+        "prosperity_gap_display": "4.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 902
+    },
+    {
+      "place_id": "ESP-ADM1-COMUNIDAD-DE-MADRID-ES30",
+      "place_name": "Comunidad de Madrid (ES30)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "comunidad de madrid es30",
+      "adm1_geo_id": "ESP_2015_ADM1_2729",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.268293,
+      "poverty_context": {
+        "poor300_rate": 0.009,
+        "poor420_rate": 0.0125,
+        "poor830_rate": 0.0203,
+        "prosperity_gap_2021": 1.268293,
+        "poor300_display": "0.90%",
+        "poor420_display": "1.25%",
+        "poor830_display": "2.03%",
+        "prosperity_gap_display": "1.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1644
+    },
+    {
+      "place_id": "ESP-ADM1-COMUNIDAD-FORAL-DE-NAVARRA-ES22",
+      "place_name": "Comunidad Foral de Navarra (ES22)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "comunidad foral de navarra es22",
+      "adm1_geo_id": "ESP_2015_ADM1_2732",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.334577,
+      "poverty_context": {
+        "poor300_rate": 0.0083,
+        "poor420_rate": 0.0098,
+        "poor830_rate": 0.0217,
+        "prosperity_gap_2021": 1.3345775,
+        "poor300_display": "0.83%",
+        "poor420_display": "0.98%",
+        "poor830_display": "2.17%",
+        "prosperity_gap_display": "1.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1625
+    },
+    {
+      "place_id": "ESP-ADM1-COMUNITAT-VALENCIANA-ES52",
+      "place_name": "Comunitat Valenciana (ES52)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "comunitat valenciana es52",
+      "adm1_geo_id": "ESP_2015_ADM1_2726",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.786707,
+      "poverty_context": {
+        "poor300_rate": 0.009,
+        "poor420_rate": 0.0104,
+        "poor830_rate": 0.0383,
+        "prosperity_gap_2021": 1.7867069,
+        "poor300_display": "0.90%",
+        "poor420_display": "1.04%",
+        "poor830_display": "3.83%",
+        "prosperity_gap_display": "1.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1526
+    },
+    {
+      "place_id": "ESP-ADM1-EXTREMADURA-ES43",
+      "place_name": "Extremadura (ES43)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "extremadura es43",
+      "adm1_geo_id": "ESP_2015_ADM1_2727",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.229758,
+      "poverty_context": {
+        "poor300_rate": 0.0035,
+        "poor420_rate": 0.0041,
+        "poor830_rate": 0.0176,
+        "prosperity_gap_2021": 1.2297583,
+        "poor300_display": "0.35%",
+        "poor420_display": "0.41%",
+        "poor830_display": "1.76%",
+        "prosperity_gap_display": "1.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1657
+    },
+    {
+      "place_id": "ESP-ADM1-GALICIA-ES11",
+      "place_name": "Galicia (ES11)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "galicia es11",
+      "adm1_geo_id": "ESP_2015_ADM1_2728",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.587757,
+      "poverty_context": {
+        "poor300_rate": 0.0094,
+        "poor420_rate": 0.0094,
+        "poor830_rate": 0.0161,
+        "prosperity_gap_2021": 1.5877574,
+        "poor300_display": "0.94%",
+        "poor420_display": "0.94%",
+        "poor830_display": "1.61%",
+        "prosperity_gap_display": "1.59"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1574
+    },
+    {
+      "place_id": "ESP-ADM1-ILLES-BALEARS-ES53",
+      "place_name": "Illes Balears (ES53)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "illes balears es53",
+      "adm1_geo_id": "ESP_2015_ADM1_2719",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.248392,
+      "poverty_context": {
+        "poor300_rate": 0.0108,
+        "poor420_rate": 0.011,
+        "poor830_rate": 0.0146,
+        "prosperity_gap_2021": 1.2483921,
+        "poor300_display": "1.08%",
+        "poor420_display": "1.10%",
+        "poor830_display": "1.46%",
+        "prosperity_gap_display": "1.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1648
+    },
+    {
+      "place_id": "ESP-ADM1-LA-RIOJA-ES23",
+      "place_name": "La Rioja (ES23)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "la rioja es23",
+      "adm1_geo_id": "ESP_2015_ADM1_2734",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.912555,
+      "poverty_context": {
+        "poor300_rate": 0.0012,
+        "poor420_rate": 0.0014,
+        "poor830_rate": 0.0199,
+        "prosperity_gap_2021": 0.9125552,
+        "poor300_display": "0.12%",
+        "poor420_display": "0.14%",
+        "poor830_display": "1.99%",
+        "prosperity_gap_display": "0.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1772
+    },
+    {
+      "place_id": "ESP-ADM1-PA-S-VASCO-ES21",
+      "place_name": "País Vasco (ES21)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "pa s vasco es21",
+      "adm1_geo_id": "ESP_2015_ADM1_2733",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.846433,
+      "poverty_context": {
+        "poor300_rate": 0.0049,
+        "poor420_rate": 0.0053,
+        "poor830_rate": 0.0066,
+        "prosperity_gap_2021": 0.84643256,
+        "poor300_display": "0.49%",
+        "poor420_display": "0.53%",
+        "poor830_display": "0.66%",
+        "prosperity_gap_display": "0.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1792
+    },
+    {
+      "place_id": "ESP-ADM1-PRINCIPADO-DE-ASTURIAS-ES12",
+      "place_name": "Principado de Asturias (ES12)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "principado de asturias es12",
+      "adm1_geo_id": "ESP_2015_ADM1_2718",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.177186,
+      "poverty_context": {
+        "poor300_rate": 0.0052,
+        "poor420_rate": 0.006,
+        "poor830_rate": 0.0159,
+        "prosperity_gap_2021": 1.1771863,
+        "poor300_display": "0.52%",
+        "poor420_display": "0.60%",
+        "poor830_display": "1.59%",
+        "prosperity_gap_display": "1.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1676
+    },
+    {
+      "place_id": "ESP-ADM1-REGI-N-DE-MURCIA-ES62",
+      "place_name": "Región de Murcia (ES62)",
+      "parent_place_id": "ESP",
+      "parent_place_name": "Spain",
+      "iso3": "ESP",
+      "source_iso3": "ESP",
+      "geometry_level": "adm1",
+      "adm1_key": "regi n de murcia es62",
+      "adm1_geo_id": "ESP_2015_ADM1_2731",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/ESP/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.066419,
+      "poverty_context": {
+        "poor300_rate": 0.0123,
+        "poor420_rate": 0.0123,
+        "poor830_rate": 0.0289,
+        "prosperity_gap_2021": 2.0664185,
+        "poor300_display": "1.23%",
+        "poor420_display": "1.23%",
+        "poor830_display": "2.89%",
+        "prosperity_gap_display": "2.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1444
+    }
+  ]
+}

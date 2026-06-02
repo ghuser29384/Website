@@ -1,0 +1,629 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "CIV",
+  "parent_place_name": "Ivory Coast",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 14,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "CIV-ADM1-BAS-SASSANDRA",
+      "place_name": "Bas Sassandra",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "bas sassandra",
+      "adm1_geo_id": "CIV_2015_ADM1_1040",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.912184,
+      "poverty_context": {
+        "poor300_rate": 0.1842,
+        "poor420_rate": 0.4245,
+        "poor830_rate": 0.8915,
+        "prosperity_gap_2021": 6.912184,
+        "poor300_display": "18.4%",
+        "poor420_display": "42.4%",
+        "poor830_display": "89.1%",
+        "prosperity_gap_display": "6.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 592
+    },
+    {
+      "place_id": "CIV-ADM1-COMOE",
+      "place_name": "Comoe",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "comoe",
+      "adm1_geo_id": "CIV_2015_ADM1_16837",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.143696,
+      "poverty_context": {
+        "poor300_rate": 0.1396,
+        "poor420_rate": 0.3765,
+        "poor830_rate": 0.8139,
+        "prosperity_gap_2021": 6.1436964,
+        "poor300_display": "14.0%",
+        "poor420_display": "37.6%",
+        "poor830_display": "81.4%",
+        "prosperity_gap_display": "6.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 663
+    },
+    {
+      "place_id": "CIV-ADM1-DENGUELE",
+      "place_name": "Denguele",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "denguele",
+      "adm1_geo_id": "CIV_2015_ADM1_1041",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.80484,
+      "poverty_context": {
+        "poor300_rate": 0.3336,
+        "poor420_rate": 0.6466,
+        "poor830_rate": 0.952,
+        "prosperity_gap_2021": 8.8048398,
+        "poor300_display": "33.4%",
+        "poor420_display": "64.7%",
+        "poor830_display": "95.2%",
+        "prosperity_gap_display": "8.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 435
+    },
+    {
+      "place_id": "CIV-ADM1-DISTRICT-AUTONOME-DE-ABIDJAN",
+      "place_name": "District autonome de Abidjan",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "district autonome de abidjan",
+      "adm1_geo_id": "CIV_2015_ADM1_16838",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.427992,
+      "poverty_context": {
+        "poor300_rate": 0.0142,
+        "poor420_rate": 0.0501,
+        "poor830_rate": 0.4198,
+        "prosperity_gap_2021": 3.427992,
+        "poor300_display": "1.42%",
+        "poor420_display": "5.01%",
+        "poor830_display": "42.0%",
+        "prosperity_gap_display": "3.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1082
+    },
+    {
+      "place_id": "CIV-ADM1-DISTRICT-AUTONOME-DE-YAMOUSSOUKRO",
+      "place_name": "District autonome de Yamoussoukro",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "district autonome de yamoussoukro",
+      "adm1_geo_id": "CIV_2015_ADM1_16839",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.710792,
+      "poverty_context": {
+        "poor300_rate": 0.0856,
+        "poor420_rate": 0.3046,
+        "poor830_rate": 0.8115,
+        "prosperity_gap_2021": 5.7107916,
+        "poor300_display": "8.56%",
+        "poor420_display": "30.5%",
+        "poor830_display": "81.2%",
+        "prosperity_gap_display": "5.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 714
+    },
+    {
+      "place_id": "CIV-ADM1-G-H-DJIBOUA",
+      "place_name": "Gôh-Djiboua",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "g h djiboua",
+      "adm1_geo_id": "CIV_2015_ADM1_16840",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.31684,
+      "poverty_context": {
+        "poor300_rate": 0.2311,
+        "poor420_rate": 0.4809,
+        "poor830_rate": 0.9001,
+        "prosperity_gap_2021": 7.3168399,
+        "poor300_display": "23.1%",
+        "poor420_display": "48.1%",
+        "poor830_display": "90.0%",
+        "prosperity_gap_display": "7.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 564
+    },
+    {
+      "place_id": "CIV-ADM1-LACS",
+      "place_name": "Lacs",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "lacs",
+      "adm1_geo_id": "CIV_2015_ADM1_16841",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.347888,
+      "poverty_context": {
+        "poor300_rate": 0.2419,
+        "poor420_rate": 0.448,
+        "poor830_rate": 0.8851,
+        "prosperity_gap_2021": 7.3478876,
+        "poor300_display": "24.2%",
+        "poor420_display": "44.8%",
+        "poor830_display": "88.5%",
+        "prosperity_gap_display": "7.35"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 559
+    },
+    {
+      "place_id": "CIV-ADM1-LAGUNES",
+      "place_name": "Lagunes",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "lagunes",
+      "adm1_geo_id": "CIV_2015_ADM1_16842",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.8891,
+      "poverty_context": {
+        "poor300_rate": 0.195,
+        "poor420_rate": 0.4642,
+        "poor830_rate": 0.8715,
+        "prosperity_gap_2021": 6.8890996,
+        "poor300_display": "19.5%",
+        "poor420_display": "46.4%",
+        "poor830_display": "87.2%",
+        "prosperity_gap_display": "6.89"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 594
+    },
+    {
+      "place_id": "CIV-ADM1-MONTAGNES",
+      "place_name": "Montagnes",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "montagnes",
+      "adm1_geo_id": "CIV_2015_ADM1_16843",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.754029,
+      "poverty_context": {
+        "poor300_rate": 0.2926,
+        "poor420_rate": 0.5353,
+        "poor830_rate": 0.9277,
+        "prosperity_gap_2021": 7.7540291,
+        "poor300_display": "29.3%",
+        "poor420_display": "53.5%",
+        "poor830_display": "92.8%",
+        "prosperity_gap_display": "7.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 521
+    },
+    {
+      "place_id": "CIV-ADM1-SASSANDRA-MARAHOUE",
+      "place_name": "Sassandra-Marahoue",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "sassandra marahoue",
+      "adm1_geo_id": "CIV_2015_ADM1_16844",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.551961,
+      "poverty_context": {
+        "poor300_rate": 0.2565,
+        "poor420_rate": 0.5456,
+        "poor830_rate": 0.9183,
+        "prosperity_gap_2021": 7.5519615,
+        "poor300_display": "25.7%",
+        "poor420_display": "54.6%",
+        "poor830_display": "91.8%",
+        "prosperity_gap_display": "7.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 540
+    },
+    {
+      "place_id": "CIV-ADM1-SAVANES",
+      "place_name": "Savanes",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "savanes",
+      "adm1_geo_id": "CIV_2015_ADM1_1048",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.175296,
+      "poverty_context": {
+        "poor300_rate": 0.3485,
+        "poor420_rate": 0.6005,
+        "poor830_rate": 0.9461,
+        "prosperity_gap_2021": 8.1752955,
+        "poor300_display": "34.8%",
+        "poor420_display": "60.1%",
+        "poor830_display": "94.6%",
+        "prosperity_gap_display": "8.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 487
+    },
+    {
+      "place_id": "CIV-ADM1-VALLEE-DU-BANDAMA",
+      "place_name": "Vallee Du Bandama",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "vallee du bandama",
+      "adm1_geo_id": "CIV_2015_ADM1_1051",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.277033,
+      "poverty_context": {
+        "poor300_rate": 0.1417,
+        "poor420_rate": 0.3723,
+        "poor830_rate": 0.8259,
+        "prosperity_gap_2021": 6.2770328,
+        "poor300_display": "14.2%",
+        "poor420_display": "37.2%",
+        "poor830_display": "82.6%",
+        "prosperity_gap_display": "6.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 643
+    },
+    {
+      "place_id": "CIV-ADM1-WOROBA",
+      "place_name": "Woroba",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "woroba",
+      "adm1_geo_id": "CIV_2015_ADM1_16845",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.936943,
+      "poverty_context": {
+        "poor300_rate": 0.253,
+        "poor420_rate": 0.5857,
+        "poor830_rate": 0.9525,
+        "prosperity_gap_2021": 7.9369429,
+        "poor300_display": "25.3%",
+        "poor420_display": "58.6%",
+        "poor830_display": "95.3%",
+        "prosperity_gap_display": "7.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 506
+    },
+    {
+      "place_id": "CIV-ADM1-ZANZAN",
+      "place_name": "Zanzan",
+      "parent_place_id": "CIV",
+      "parent_place_name": "Ivory Coast",
+      "iso3": "CIV",
+      "source_iso3": "CIV",
+      "geometry_level": "adm1",
+      "adm1_key": "zanzan",
+      "adm1_geo_id": "CIV_2015_ADM1_1053",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CIV/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.496047,
+      "poverty_context": {
+        "poor300_rate": 0.3101,
+        "poor420_rate": 0.5507,
+        "poor830_rate": 0.9125,
+        "prosperity_gap_2021": 8.4960474,
+        "poor300_display": "31.0%",
+        "poor420_display": "55.1%",
+        "poor830_display": "91.3%",
+        "prosperity_gap_display": "8.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 457
+    }
+  ]
+}

@@ -1,0 +1,893 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "BTN",
+  "parent_place_name": "Bhutan",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 20,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "BTN-ADM1-BUMTHANG",
+      "place_name": "Bumthang",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "bumthang",
+      "adm1_geo_id": "BTN_2015_ADM1_622",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.900662,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0569,
+        "prosperity_gap_2021": 1.9006618,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "5.69%",
+        "prosperity_gap_display": "1.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1495
+    },
+    {
+      "place_id": "BTN-ADM1-CHHUKHA",
+      "place_name": "Chhukha",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "chhukha",
+      "adm1_geo_id": "BTN_2015_ADM1_623",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.034985,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0032,
+        "poor830_rate": 0.1159,
+        "prosperity_gap_2021": 2.0349848,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.32%",
+        "poor830_display": "11.6%",
+        "prosperity_gap_display": "2.03"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1453
+    },
+    {
+      "place_id": "BTN-ADM1-DAGANA",
+      "place_name": "Dagana",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "dagana",
+      "adm1_geo_id": "BTN_2015_ADM1_41308",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.885208,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0729,
+        "prosperity_gap_2021": 1.8852076,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "7.29%",
+        "prosperity_gap_display": "1.89"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1503
+    },
+    {
+      "place_id": "BTN-ADM1-GASA",
+      "place_name": "Gasa",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "gasa",
+      "adm1_geo_id": "BTN_2015_ADM1_625",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.969041,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0024,
+        "poor830_rate": 0.0811,
+        "prosperity_gap_2021": 1.969041,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.24%",
+        "poor830_display": "8.11%",
+        "prosperity_gap_display": "1.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1481
+    },
+    {
+      "place_id": "BTN-ADM1-HAA",
+      "place_name": "Haa",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "haa",
+      "adm1_geo_id": "BTN_2015_ADM1_41309",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.883829,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0922,
+        "prosperity_gap_2021": 1.8838286,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "9.22%",
+        "prosperity_gap_display": "1.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1504
+    },
+    {
+      "place_id": "BTN-ADM1-LHUENTSE",
+      "place_name": "Lhuentse",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "lhuentse",
+      "adm1_geo_id": "BTN_2015_ADM1_627",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.097244,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0031,
+        "poor830_rate": 0.1043,
+        "prosperity_gap_2021": 2.0972441,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.31%",
+        "poor830_display": "10.4%",
+        "prosperity_gap_display": "2.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1433
+    },
+    {
+      "place_id": "BTN-ADM1-MONGGAR",
+      "place_name": "Monggar",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "monggar",
+      "adm1_geo_id": "BTN_2015_ADM1_628",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.230567,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0026,
+        "poor830_rate": 0.1455,
+        "prosperity_gap_2021": 2.2305671,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.26%",
+        "poor830_display": "14.5%",
+        "prosperity_gap_display": "2.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1382
+    },
+    {
+      "place_id": "BTN-ADM1-PARO",
+      "place_name": "Paro",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "paro",
+      "adm1_geo_id": "BTN_2015_ADM1_629",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.696253,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0022,
+        "poor830_rate": 0.0421,
+        "prosperity_gap_2021": 1.696253,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.22%",
+        "poor830_display": "4.21%",
+        "prosperity_gap_display": "1.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1548
+    },
+    {
+      "place_id": "BTN-ADM1-PEMAGATSHEL",
+      "place_name": "Pemagatshel",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "pemagatshel",
+      "adm1_geo_id": "BTN_2015_ADM1_41310",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.139443,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0015,
+        "poor830_rate": 0.1261,
+        "prosperity_gap_2021": 2.1394434,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.15%",
+        "poor830_display": "12.6%",
+        "prosperity_gap_display": "2.14"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1418
+    },
+    {
+      "place_id": "BTN-ADM1-PUNAKHA",
+      "place_name": "Punakha",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "punakha",
+      "adm1_geo_id": "BTN_2015_ADM1_631",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.614343,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0182,
+        "prosperity_gap_2021": 1.614343,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "1.82%",
+        "prosperity_gap_display": "1.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1566
+    },
+    {
+      "place_id": "BTN-ADM1-SAMDRUPJONGKHAR",
+      "place_name": "Samdrupjongkhar",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "samdrupjongkhar",
+      "adm1_geo_id": "BTN_2015_ADM1_41311",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.263415,
+      "poverty_context": {
+        "poor300_rate": 0.0004,
+        "poor420_rate": 0.0183,
+        "poor830_rate": 0.1572,
+        "prosperity_gap_2021": 2.263415,
+        "poor300_display": "0.04%",
+        "poor420_display": "1.83%",
+        "poor830_display": "15.7%",
+        "prosperity_gap_display": "2.26"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1372
+    },
+    {
+      "place_id": "BTN-ADM1-SAMTSE",
+      "place_name": "Samtse",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "samtse",
+      "adm1_geo_id": "BTN_2015_ADM1_41312",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.292641,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1415,
+        "prosperity_gap_2021": 2.2926414,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "14.1%",
+        "prosperity_gap_display": "2.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1361
+    },
+    {
+      "place_id": "BTN-ADM1-SARPANG",
+      "place_name": "Sarpang",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "sarpang",
+      "adm1_geo_id": "BTN_2015_ADM1_41313",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.660062,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0009,
+        "poor830_rate": 0.0388,
+        "prosperity_gap_2021": 1.660062,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.09%",
+        "poor830_display": "3.88%",
+        "prosperity_gap_display": "1.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1559
+    },
+    {
+      "place_id": "BTN-ADM1-THIMPHU",
+      "place_name": "Thimphu",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "thimphu",
+      "adm1_geo_id": "BTN_2015_ADM1_635",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.524392,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0092,
+        "prosperity_gap_2021": 1.5243921,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.92%",
+        "prosperity_gap_display": "1.52"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1593
+    },
+    {
+      "place_id": "BTN-ADM1-TRASHIGANG",
+      "place_name": "Trashigang",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "trashigang",
+      "adm1_geo_id": "BTN_2015_ADM1_637",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.282074,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0095,
+        "poor830_rate": 0.1647,
+        "prosperity_gap_2021": 2.2820743,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.95%",
+        "poor830_display": "16.5%",
+        "prosperity_gap_display": "2.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1364
+    },
+    {
+      "place_id": "BTN-ADM1-TRASHIYANGTSE",
+      "place_name": "Trashiyangtse",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "trashiyangtse",
+      "adm1_geo_id": "BTN_2015_ADM1_636",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.181866,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1122,
+        "prosperity_gap_2021": 2.1818656,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "11.2%",
+        "prosperity_gap_display": "2.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1397
+    },
+    {
+      "place_id": "BTN-ADM1-TRONGSA",
+      "place_name": "Trongsa",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "trongsa",
+      "adm1_geo_id": "BTN_2015_ADM1_638",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.307831,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.1684,
+        "prosperity_gap_2021": 2.3078309,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "16.8%",
+        "prosperity_gap_display": "2.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1358
+    },
+    {
+      "place_id": "BTN-ADM1-TSIRANG",
+      "place_name": "Tsirang",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "tsirang",
+      "adm1_geo_id": "BTN_2015_ADM1_639",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.381512,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0046,
+        "poor830_rate": 0.152,
+        "prosperity_gap_2021": 2.3815122,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.46%",
+        "poor830_display": "15.2%",
+        "prosperity_gap_display": "2.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1332
+    },
+    {
+      "place_id": "BTN-ADM1-WANGDUEPHODRANG",
+      "place_name": "Wangduephodrang",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "wangduephodrang",
+      "adm1_geo_id": "BTN_2015_ADM1_640",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.155718,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0097,
+        "poor830_rate": 0.1135,
+        "prosperity_gap_2021": 2.1557177,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.97%",
+        "poor830_display": "11.3%",
+        "prosperity_gap_display": "2.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1408
+    },
+    {
+      "place_id": "BTN-ADM1-ZHEMGANG",
+      "place_name": "Zhemgang",
+      "parent_place_id": "BTN",
+      "parent_place_name": "Bhutan",
+      "iso3": "BTN",
+      "source_iso3": "BTN",
+      "geometry_level": "adm1",
+      "adm1_key": "zhemgang",
+      "adm1_geo_id": "BTN_2015_ADM1_41314",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BTN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.118,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0587,
+        "poor830_rate": 0.3623,
+        "prosperity_gap_2021": 3.1180003,
+        "poor300_display": "0.00%",
+        "poor420_display": "5.87%",
+        "poor830_display": "36.2%",
+        "prosperity_gap_display": "3.12"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1141
+    }
+  ]
+}

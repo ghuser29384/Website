@@ -1,0 +1,2257 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "USA",
+  "parent_place_name": "United States of America",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 51,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "USA-ADM1-ALABAMA",
+      "place_name": "Alabama",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "alabama",
+      "adm1_geo_id": "USA_2015_ADM1_3214",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.322718,
+      "poverty_context": {
+        "poor300_rate": 0.0105,
+        "poor420_rate": 0.0106,
+        "poor830_rate": 0.0252,
+        "prosperity_gap_2021": 1.3227178,
+        "poor300_display": "1.05%",
+        "poor420_display": "1.06%",
+        "poor830_display": "2.52%",
+        "prosperity_gap_display": "1.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1627
+    },
+    {
+      "place_id": "USA-ADM1-ALASKA",
+      "place_name": "Alaska",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "alaska",
+      "adm1_geo_id": "USA_2015_ADM1_3215",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.872844,
+      "poverty_context": {
+        "poor300_rate": 0.0058,
+        "poor420_rate": 0.0073,
+        "poor830_rate": 0.0111,
+        "prosperity_gap_2021": 0.8728438,
+        "poor300_display": "0.58%",
+        "poor420_display": "0.73%",
+        "poor830_display": "1.11%",
+        "prosperity_gap_display": "0.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1783
+    },
+    {
+      "place_id": "USA-ADM1-ARIZONA",
+      "place_name": "Arizona",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "arizona",
+      "adm1_geo_id": "USA_2015_ADM1_3216",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.249949,
+      "poverty_context": {
+        "poor300_rate": 0.0082,
+        "poor420_rate": 0.0084,
+        "poor830_rate": 0.0112,
+        "prosperity_gap_2021": 1.2499493,
+        "poor300_display": "0.82%",
+        "poor420_display": "0.84%",
+        "poor830_display": "1.12%",
+        "prosperity_gap_display": "1.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1647
+    },
+    {
+      "place_id": "USA-ADM1-ARKANSAS",
+      "place_name": "Arkansas",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "arkansas",
+      "adm1_geo_id": "USA_2015_ADM1_3217",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.300255,
+      "poverty_context": {
+        "poor300_rate": 0.0099,
+        "poor420_rate": 0.0114,
+        "poor830_rate": 0.0207,
+        "prosperity_gap_2021": 1.3002552,
+        "poor300_display": "0.99%",
+        "poor420_display": "1.14%",
+        "poor830_display": "2.07%",
+        "prosperity_gap_display": "1.30"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1632
+    },
+    {
+      "place_id": "USA-ADM1-CALIFORNIA",
+      "place_name": "California",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "california",
+      "adm1_geo_id": "USA_2015_ADM1_3218",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.416097,
+      "poverty_context": {
+        "poor300_rate": 0.0108,
+        "poor420_rate": 0.0124,
+        "poor830_rate": 0.0182,
+        "prosperity_gap_2021": 1.4160974,
+        "poor300_display": "1.08%",
+        "poor420_display": "1.24%",
+        "poor830_display": "1.82%",
+        "prosperity_gap_display": "1.42"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1609
+    },
+    {
+      "place_id": "USA-ADM1-COLORADO",
+      "place_name": "Colorado",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "colorado",
+      "adm1_geo_id": "USA_2015_ADM1_3219",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.686366,
+      "poverty_context": {
+        "poor300_rate": 0.003,
+        "poor420_rate": 0.0043,
+        "poor830_rate": 0.0108,
+        "prosperity_gap_2021": 0.68636647,
+        "poor300_display": "0.30%",
+        "poor420_display": "0.43%",
+        "poor830_display": "1.08%",
+        "prosperity_gap_display": "0.69"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1831
+    },
+    {
+      "place_id": "USA-ADM1-CONNECTICUT",
+      "place_name": "Connecticut",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "connecticut",
+      "adm1_geo_id": "USA_2015_ADM1_3220",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.553931,
+      "poverty_context": {
+        "poor300_rate": 0.0009,
+        "poor420_rate": 0.0009,
+        "poor830_rate": 0.0072,
+        "prosperity_gap_2021": 0.55393078,
+        "poor300_display": "0.09%",
+        "poor420_display": "0.09%",
+        "poor830_display": "0.72%",
+        "prosperity_gap_display": "0.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1860
+    },
+    {
+      "place_id": "USA-ADM1-DELAWARE",
+      "place_name": "Delaware",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "delaware",
+      "adm1_geo_id": "USA_2015_ADM1_3221",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.048332,
+      "poverty_context": {
+        "poor300_rate": 0.005,
+        "poor420_rate": 0.0119,
+        "poor830_rate": 0.0119,
+        "prosperity_gap_2021": 1.0483324,
+        "poor300_display": "0.50%",
+        "poor420_display": "1.19%",
+        "poor830_display": "1.19%",
+        "prosperity_gap_display": "1.05"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1725
+    },
+    {
+      "place_id": "USA-ADM1-DISTRICT-OF-COLUMBIA",
+      "place_name": "District of Columbia",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "district of columbia",
+      "adm1_geo_id": "USA_2015_ADM1_3222",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.905464,
+      "poverty_context": {
+        "poor300_rate": 0.0057,
+        "poor420_rate": 0.0068,
+        "poor830_rate": 0.0135,
+        "prosperity_gap_2021": 0.90546447,
+        "poor300_display": "0.57%",
+        "poor420_display": "0.68%",
+        "poor830_display": "1.35%",
+        "prosperity_gap_display": "0.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1774
+    },
+    {
+      "place_id": "USA-ADM1-FLORIDA",
+      "place_name": "Florida",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "florida",
+      "adm1_geo_id": "USA_2015_ADM1_3223",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.719631,
+      "poverty_context": {
+        "poor300_rate": 0.0134,
+        "poor420_rate": 0.0157,
+        "poor830_rate": 0.0224,
+        "prosperity_gap_2021": 1.7196312,
+        "poor300_display": "1.34%",
+        "poor420_display": "1.57%",
+        "poor830_display": "2.24%",
+        "prosperity_gap_display": "1.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1543
+    },
+    {
+      "place_id": "USA-ADM1-GEORGIA",
+      "place_name": "Georgia",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "georgia",
+      "adm1_geo_id": "USA_2015_ADM1_3224",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.460322,
+      "poverty_context": {
+        "poor300_rate": 0.0244,
+        "poor420_rate": 0.0277,
+        "poor830_rate": 0.0303,
+        "prosperity_gap_2021": 2.4603216,
+        "poor300_display": "2.44%",
+        "poor420_display": "2.77%",
+        "poor830_display": "3.03%",
+        "prosperity_gap_display": "2.46"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1306
+    },
+    {
+      "place_id": "USA-ADM1-HAWAII",
+      "place_name": "Hawaii",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "hawaii",
+      "adm1_geo_id": "USA_2015_ADM1_3225",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.638502,
+      "poverty_context": {
+        "poor300_rate": 0.0032,
+        "poor420_rate": 0.0041,
+        "poor830_rate": 0.0074,
+        "prosperity_gap_2021": 0.63850224,
+        "poor300_display": "0.32%",
+        "poor420_display": "0.41%",
+        "poor830_display": "0.74%",
+        "prosperity_gap_display": "0.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1844
+    },
+    {
+      "place_id": "USA-ADM1-IDAHO",
+      "place_name": "Idaho",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "idaho",
+      "adm1_geo_id": "USA_2015_ADM1_3226",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.893583,
+      "poverty_context": {
+        "poor300_rate": 0.007,
+        "poor420_rate": 0.007,
+        "poor830_rate": 0.0082,
+        "prosperity_gap_2021": 0.8935834,
+        "poor300_display": "0.70%",
+        "poor420_display": "0.70%",
+        "poor830_display": "0.82%",
+        "prosperity_gap_display": "0.89"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1778
+    },
+    {
+      "place_id": "USA-ADM1-ILLINOIS",
+      "place_name": "Illinois",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "illinois",
+      "adm1_geo_id": "USA_2015_ADM1_3227",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.055465,
+      "poverty_context": {
+        "poor300_rate": 0.0042,
+        "poor420_rate": 0.0046,
+        "poor830_rate": 0.0258,
+        "prosperity_gap_2021": 1.055465,
+        "poor300_display": "0.42%",
+        "poor420_display": "0.46%",
+        "poor830_display": "2.58%",
+        "prosperity_gap_display": "1.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1719
+    },
+    {
+      "place_id": "USA-ADM1-INDIANA",
+      "place_name": "Indiana",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "indiana",
+      "adm1_geo_id": "USA_2015_ADM1_3228",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.788172,
+      "poverty_context": {
+        "poor300_rate": 0.0018,
+        "poor420_rate": 0.0038,
+        "poor830_rate": 0.0123,
+        "prosperity_gap_2021": 0.78817154,
+        "poor300_display": "0.18%",
+        "poor420_display": "0.38%",
+        "poor830_display": "1.23%",
+        "prosperity_gap_display": "0.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1811
+    },
+    {
+      "place_id": "USA-ADM1-IOWA",
+      "place_name": "Iowa",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "iowa",
+      "adm1_geo_id": "USA_2015_ADM1_3229",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.716745,
+      "poverty_context": {
+        "poor300_rate": 0.002,
+        "poor420_rate": 0.002,
+        "poor830_rate": 0.0085,
+        "prosperity_gap_2021": 0.71674505,
+        "poor300_display": "0.20%",
+        "poor420_display": "0.20%",
+        "poor830_display": "0.85%",
+        "prosperity_gap_display": "0.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1823
+    },
+    {
+      "place_id": "USA-ADM1-KANSAS",
+      "place_name": "Kansas",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "kansas",
+      "adm1_geo_id": "USA_2015_ADM1_3230",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.234153,
+      "poverty_context": {
+        "poor300_rate": 0.0247,
+        "poor420_rate": 0.0247,
+        "poor830_rate": 0.0254,
+        "prosperity_gap_2021": 1.234153,
+        "poor300_display": "2.47%",
+        "poor420_display": "2.47%",
+        "poor830_display": "2.54%",
+        "prosperity_gap_display": "1.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1654
+    },
+    {
+      "place_id": "USA-ADM1-KENTUCKY",
+      "place_name": "Kentucky",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "kentucky",
+      "adm1_geo_id": "USA_2015_ADM1_3231",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.67689,
+      "poverty_context": {
+        "poor300_rate": 0.0137,
+        "poor420_rate": 0.0143,
+        "poor830_rate": 0.0316,
+        "prosperity_gap_2021": 1.6768902,
+        "poor300_display": "1.37%",
+        "poor420_display": "1.43%",
+        "poor830_display": "3.16%",
+        "prosperity_gap_display": "1.68"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1556
+    },
+    {
+      "place_id": "USA-ADM1-LOUISIANA",
+      "place_name": "Louisiana",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "louisiana",
+      "adm1_geo_id": "USA_2015_ADM1_3232",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.691193,
+      "poverty_context": {
+        "poor300_rate": 0.038,
+        "poor420_rate": 0.0384,
+        "poor830_rate": 0.0471,
+        "prosperity_gap_2021": 2.6911928,
+        "poor300_display": "3.80%",
+        "poor420_display": "3.84%",
+        "poor830_display": "4.71%",
+        "prosperity_gap_display": "2.69"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1235
+    },
+    {
+      "place_id": "USA-ADM1-MAINE",
+      "place_name": "Maine",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "maine",
+      "adm1_geo_id": "USA_2015_ADM1_3233",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.629585,
+      "poverty_context": {
+        "poor300_rate": 0.0004,
+        "poor420_rate": 0.0004,
+        "poor830_rate": 0.0194,
+        "prosperity_gap_2021": 0.62958486,
+        "poor300_display": "0.04%",
+        "poor420_display": "0.04%",
+        "poor830_display": "1.94%",
+        "prosperity_gap_display": "0.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1845
+    },
+    {
+      "place_id": "USA-ADM1-MARYLAND",
+      "place_name": "Maryland",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "maryland",
+      "adm1_geo_id": "USA_2015_ADM1_3234",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.83993,
+      "poverty_context": {
+        "poor300_rate": 0.0044,
+        "poor420_rate": 0.0044,
+        "poor830_rate": 0.0049,
+        "prosperity_gap_2021": 0.83992988,
+        "poor300_display": "0.44%",
+        "poor420_display": "0.44%",
+        "poor830_display": "0.49%",
+        "prosperity_gap_display": "0.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1796
+    },
+    {
+      "place_id": "USA-ADM1-MASSACHUSETTS",
+      "place_name": "Massachusetts",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "massachusetts",
+      "adm1_geo_id": "USA_2015_ADM1_3235",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.219097,
+      "poverty_context": {
+        "poor300_rate": 0.0078,
+        "poor420_rate": 0.0086,
+        "poor830_rate": 0.0152,
+        "prosperity_gap_2021": 1.2190968,
+        "poor300_display": "0.78%",
+        "poor420_display": "0.86%",
+        "poor830_display": "1.52%",
+        "prosperity_gap_display": "1.22"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1662
+    },
+    {
+      "place_id": "USA-ADM1-MICHIGAN",
+      "place_name": "Michigan",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "michigan",
+      "adm1_geo_id": "USA_2015_ADM1_3236",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.285245,
+      "poverty_context": {
+        "poor300_rate": 0.0122,
+        "poor420_rate": 0.0141,
+        "poor830_rate": 0.0179,
+        "prosperity_gap_2021": 1.2852446,
+        "poor300_display": "1.22%",
+        "poor420_display": "1.41%",
+        "poor830_display": "1.79%",
+        "prosperity_gap_display": "1.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1636
+    },
+    {
+      "place_id": "USA-ADM1-MINNESOTA",
+      "place_name": "Minnesota",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "minnesota",
+      "adm1_geo_id": "USA_2015_ADM1_3237",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.609931,
+      "poverty_context": {
+        "poor300_rate": 0.0006,
+        "poor420_rate": 0.0006,
+        "poor830_rate": 0.0066,
+        "prosperity_gap_2021": 0.60993107,
+        "poor300_display": "0.06%",
+        "poor420_display": "0.06%",
+        "poor830_display": "0.66%",
+        "prosperity_gap_display": "0.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1851
+    },
+    {
+      "place_id": "USA-ADM1-MISSISSIPPI",
+      "place_name": "Mississippi",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "mississippi",
+      "adm1_geo_id": "USA_2015_ADM1_3238",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.235894,
+      "poverty_context": {
+        "poor300_rate": 0.0174,
+        "poor420_rate": 0.0219,
+        "poor830_rate": 0.0367,
+        "prosperity_gap_2021": 2.2358938,
+        "poor300_display": "1.74%",
+        "poor420_display": "2.19%",
+        "poor830_display": "3.67%",
+        "prosperity_gap_display": "2.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1379
+    },
+    {
+      "place_id": "USA-ADM1-MISSOURI",
+      "place_name": "Missouri",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "missouri",
+      "adm1_geo_id": "USA_2015_ADM1_3239",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.491692,
+      "poverty_context": {
+        "poor300_rate": 0.0089,
+        "poor420_rate": 0.0098,
+        "poor830_rate": 0.0154,
+        "prosperity_gap_2021": 1.4916916,
+        "poor300_display": "0.89%",
+        "poor420_display": "0.98%",
+        "poor830_display": "1.54%",
+        "prosperity_gap_display": "1.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1597
+    },
+    {
+      "place_id": "USA-ADM1-MONTANA",
+      "place_name": "Montana",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "montana",
+      "adm1_geo_id": "USA_2015_ADM1_3240",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.829105,
+      "poverty_context": {
+        "poor300_rate": 0.0045,
+        "poor420_rate": 0.0051,
+        "poor830_rate": 0.0059,
+        "prosperity_gap_2021": 0.82910476,
+        "poor300_display": "0.45%",
+        "poor420_display": "0.51%",
+        "poor830_display": "0.59%",
+        "prosperity_gap_display": "0.83"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1799
+    },
+    {
+      "place_id": "USA-ADM1-NEBRASKA",
+      "place_name": "Nebraska",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "nebraska",
+      "adm1_geo_id": "USA_2015_ADM1_3241",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.874208,
+      "poverty_context": {
+        "poor300_rate": 0.0095,
+        "poor420_rate": 0.0095,
+        "poor830_rate": 0.0173,
+        "prosperity_gap_2021": 0.87420784,
+        "poor300_display": "0.95%",
+        "poor420_display": "0.95%",
+        "poor830_display": "1.73%",
+        "prosperity_gap_display": "0.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1782
+    },
+    {
+      "place_id": "USA-ADM1-NEVADA",
+      "place_name": "Nevada",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "nevada",
+      "adm1_geo_id": "USA_2015_ADM1_3242",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.603862,
+      "poverty_context": {
+        "poor300_rate": 0.0106,
+        "poor420_rate": 0.0115,
+        "poor830_rate": 0.02,
+        "prosperity_gap_2021": 1.6038617,
+        "poor300_display": "1.06%",
+        "poor420_display": "1.15%",
+        "poor830_display": "2.00%",
+        "prosperity_gap_display": "1.60"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1570
+    },
+    {
+      "place_id": "USA-ADM1-NEW-HAMPSHIRE",
+      "place_name": "New Hampshire",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "new hampshire",
+      "adm1_geo_id": "USA_2015_ADM1_3243",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.472515,
+      "poverty_context": {
+        "poor300_rate": 0.0002,
+        "poor420_rate": 0.0011,
+        "poor830_rate": 0.0086,
+        "prosperity_gap_2021": 0.47251499,
+        "poor300_display": "0.02%",
+        "poor420_display": "0.11%",
+        "poor830_display": "0.86%",
+        "prosperity_gap_display": "0.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1873
+    },
+    {
+      "place_id": "USA-ADM1-NEW-JERSEY",
+      "place_name": "New Jersey",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "new jersey",
+      "adm1_geo_id": "USA_2015_ADM1_3244",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.404453,
+      "poverty_context": {
+        "poor300_rate": 0.0127,
+        "poor420_rate": 0.0127,
+        "poor830_rate": 0.0173,
+        "prosperity_gap_2021": 1.4044526,
+        "poor300_display": "1.27%",
+        "poor420_display": "1.27%",
+        "poor830_display": "1.73%",
+        "prosperity_gap_display": "1.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1612
+    },
+    {
+      "place_id": "USA-ADM1-NEW-MEXICO",
+      "place_name": "New Mexico",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "new mexico",
+      "adm1_geo_id": "USA_2015_ADM1_3245",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.86237,
+      "poverty_context": {
+        "poor300_rate": 0.0058,
+        "poor420_rate": 0.0088,
+        "poor830_rate": 0.0133,
+        "prosperity_gap_2021": 0.86237036,
+        "poor300_display": "0.58%",
+        "poor420_display": "0.88%",
+        "poor830_display": "1.33%",
+        "prosperity_gap_display": "0.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1787
+    },
+    {
+      "place_id": "USA-ADM1-NEW-YORK",
+      "place_name": "New York",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "new york",
+      "adm1_geo_id": "USA_2015_ADM1_3246",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.056733,
+      "poverty_context": {
+        "poor300_rate": 0.0075,
+        "poor420_rate": 0.008,
+        "poor830_rate": 0.0136,
+        "prosperity_gap_2021": 1.0567332,
+        "poor300_display": "0.75%",
+        "poor420_display": "0.80%",
+        "poor830_display": "1.36%",
+        "prosperity_gap_display": "1.06"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1717
+    },
+    {
+      "place_id": "USA-ADM1-NORTH-CAROLINA",
+      "place_name": "North Carolina",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "north carolina",
+      "adm1_geo_id": "USA_2015_ADM1_3247",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.299861,
+      "poverty_context": {
+        "poor300_rate": 0.009,
+        "poor420_rate": 0.009,
+        "poor830_rate": 0.0194,
+        "prosperity_gap_2021": 1.2998605,
+        "poor300_display": "0.90%",
+        "poor420_display": "0.90%",
+        "poor830_display": "1.94%",
+        "prosperity_gap_display": "1.30"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1634
+    },
+    {
+      "place_id": "USA-ADM1-NORTH-DAKOTA",
+      "place_name": "North Dakota",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "north dakota",
+      "adm1_geo_id": "USA_2015_ADM1_3248",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.71222,
+      "poverty_context": {
+        "poor300_rate": 0.003,
+        "poor420_rate": 0.003,
+        "poor830_rate": 0.0255,
+        "prosperity_gap_2021": 0.71221999,
+        "poor300_display": "0.30%",
+        "poor420_display": "0.30%",
+        "poor830_display": "2.55%",
+        "prosperity_gap_display": "0.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1824
+    },
+    {
+      "place_id": "USA-ADM1-OHIO",
+      "place_name": "Ohio",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "ohio",
+      "adm1_geo_id": "USA_2015_ADM1_3249",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.17782,
+      "poverty_context": {
+        "poor300_rate": 0.0173,
+        "poor420_rate": 0.0183,
+        "poor830_rate": 0.0291,
+        "prosperity_gap_2021": 1.17782,
+        "poor300_display": "1.73%",
+        "poor420_display": "1.83%",
+        "poor830_display": "2.91%",
+        "prosperity_gap_display": "1.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1675
+    },
+    {
+      "place_id": "USA-ADM1-OKLAHOMA",
+      "place_name": "Oklahoma",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "oklahoma",
+      "adm1_geo_id": "USA_2015_ADM1_3250",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.101565,
+      "poverty_context": {
+        "poor300_rate": 0.0046,
+        "poor420_rate": 0.005,
+        "poor830_rate": 0.0074,
+        "prosperity_gap_2021": 1.1015646,
+        "poor300_display": "0.46%",
+        "poor420_display": "0.50%",
+        "poor830_display": "0.74%",
+        "prosperity_gap_display": "1.10"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1706
+    },
+    {
+      "place_id": "USA-ADM1-OREGON",
+      "place_name": "Oregon",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "oregon",
+      "adm1_geo_id": "USA_2015_ADM1_3251",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.211109,
+      "poverty_context": {
+        "poor300_rate": 0.0077,
+        "poor420_rate": 0.0083,
+        "poor830_rate": 0.0158,
+        "prosperity_gap_2021": 1.2111088,
+        "poor300_display": "0.77%",
+        "poor420_display": "0.83%",
+        "poor830_display": "1.58%",
+        "prosperity_gap_display": "1.21"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1667
+    },
+    {
+      "place_id": "USA-ADM1-PENNSYLVANIA",
+      "place_name": "Pennsylvania",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "pennsylvania",
+      "adm1_geo_id": "USA_2015_ADM1_3252",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.866434,
+      "poverty_context": {
+        "poor300_rate": 0.0079,
+        "poor420_rate": 0.008,
+        "poor830_rate": 0.0163,
+        "prosperity_gap_2021": 0.86643414,
+        "poor300_display": "0.79%",
+        "poor420_display": "0.80%",
+        "poor830_display": "1.63%",
+        "prosperity_gap_display": "0.87"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1786
+    },
+    {
+      "place_id": "USA-ADM1-RHODE-ISLAND",
+      "place_name": "Rhode Island",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "rhode island",
+      "adm1_geo_id": "USA_2015_ADM1_3253",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.201039,
+      "poverty_context": {
+        "poor300_rate": 0.0201,
+        "poor420_rate": 0.0201,
+        "poor830_rate": 0.0201,
+        "prosperity_gap_2021": 2.2010386,
+        "poor300_display": "2.01%",
+        "poor420_display": "2.01%",
+        "poor830_display": "2.01%",
+        "prosperity_gap_display": "2.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1394
+    },
+    {
+      "place_id": "USA-ADM1-SOUTH-CAROLINA",
+      "place_name": "South Carolina",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "south carolina",
+      "adm1_geo_id": "USA_2015_ADM1_3254",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.444136,
+      "poverty_context": {
+        "poor300_rate": 0.0127,
+        "poor420_rate": 0.0138,
+        "poor830_rate": 0.0207,
+        "prosperity_gap_2021": 1.4441356,
+        "poor300_display": "1.27%",
+        "poor420_display": "1.38%",
+        "poor830_display": "2.07%",
+        "prosperity_gap_display": "1.44"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1605
+    },
+    {
+      "place_id": "USA-ADM1-SOUTH-DAKOTA",
+      "place_name": "South Dakota",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "south dakota",
+      "adm1_geo_id": "USA_2015_ADM1_3255",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.934557,
+      "poverty_context": {
+        "poor300_rate": 0.0054,
+        "poor420_rate": 0.0054,
+        "poor830_rate": 0.0117,
+        "prosperity_gap_2021": 0.93455659,
+        "poor300_display": "0.54%",
+        "poor420_display": "0.54%",
+        "poor830_display": "1.17%",
+        "prosperity_gap_display": "0.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1766
+    },
+    {
+      "place_id": "USA-ADM1-TENNESSEE",
+      "place_name": "Tennessee",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "tennessee",
+      "adm1_geo_id": "USA_2015_ADM1_3256",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.162408,
+      "poverty_context": {
+        "poor300_rate": 0.0091,
+        "poor420_rate": 0.0094,
+        "poor830_rate": 0.0156,
+        "prosperity_gap_2021": 1.162408,
+        "poor300_display": "0.91%",
+        "poor420_display": "0.94%",
+        "poor830_display": "1.56%",
+        "prosperity_gap_display": "1.16"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1678
+    },
+    {
+      "place_id": "USA-ADM1-TEXAS",
+      "place_name": "Texas",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "texas",
+      "adm1_geo_id": "USA_2015_ADM1_3257",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.393514,
+      "poverty_context": {
+        "poor300_rate": 0.0116,
+        "poor420_rate": 0.015,
+        "poor830_rate": 0.0233,
+        "prosperity_gap_2021": 1.3935145,
+        "poor300_display": "1.16%",
+        "poor420_display": "1.50%",
+        "poor830_display": "2.33%",
+        "prosperity_gap_display": "1.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1614
+    },
+    {
+      "place_id": "USA-ADM1-UTAH",
+      "place_name": "Utah",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "utah",
+      "adm1_geo_id": "USA_2015_ADM1_3258",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.795224,
+      "poverty_context": {
+        "poor300_rate": 0.0041,
+        "poor420_rate": 0.0061,
+        "poor830_rate": 0.0073,
+        "prosperity_gap_2021": 0.79522399,
+        "poor300_display": "0.41%",
+        "poor420_display": "0.61%",
+        "poor830_display": "0.73%",
+        "prosperity_gap_display": "0.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1808
+    },
+    {
+      "place_id": "USA-ADM1-VERMONT",
+      "place_name": "Vermont",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "vermont",
+      "adm1_geo_id": "USA_2015_ADM1_3259",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.655007,
+      "poverty_context": {
+        "poor300_rate": 0.0017,
+        "poor420_rate": 0.0017,
+        "poor830_rate": 0.002,
+        "prosperity_gap_2021": 0.65500682,
+        "poor300_display": "0.17%",
+        "poor420_display": "0.17%",
+        "poor830_display": "0.20%",
+        "prosperity_gap_display": "0.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1840
+    },
+    {
+      "place_id": "USA-ADM1-VIRGINIA",
+      "place_name": "Virginia",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "virginia",
+      "adm1_geo_id": "USA_2015_ADM1_3260",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.134719,
+      "poverty_context": {
+        "poor300_rate": 0.0082,
+        "poor420_rate": 0.0103,
+        "poor830_rate": 0.0106,
+        "prosperity_gap_2021": 1.1347192,
+        "poor300_display": "0.82%",
+        "poor420_display": "1.03%",
+        "poor830_display": "1.06%",
+        "prosperity_gap_display": "1.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1690
+    },
+    {
+      "place_id": "USA-ADM1-WASHINGTON",
+      "place_name": "Washington",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "washington",
+      "adm1_geo_id": "USA_2015_ADM1_3261",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.711008,
+      "poverty_context": {
+        "poor300_rate": 0.0021,
+        "poor420_rate": 0.0021,
+        "poor830_rate": 0.0103,
+        "prosperity_gap_2021": 0.71100765,
+        "poor300_display": "0.21%",
+        "poor420_display": "0.21%",
+        "poor830_display": "1.03%",
+        "prosperity_gap_display": "0.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1825
+    },
+    {
+      "place_id": "USA-ADM1-WEST-VIRGINIA",
+      "place_name": "West Virginia",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "west virginia",
+      "adm1_geo_id": "USA_2015_ADM1_3262",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.554468,
+      "poverty_context": {
+        "poor300_rate": 0.0145,
+        "poor420_rate": 0.0153,
+        "poor830_rate": 0.0172,
+        "prosperity_gap_2021": 1.5544677,
+        "poor300_display": "1.45%",
+        "poor420_display": "1.53%",
+        "poor830_display": "1.72%",
+        "prosperity_gap_display": "1.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1582
+    },
+    {
+      "place_id": "USA-ADM1-WISCONSIN",
+      "place_name": "Wisconsin",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "wisconsin",
+      "adm1_geo_id": "USA_2015_ADM1_3263",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.811709,
+      "poverty_context": {
+        "poor300_rate": 0.0049,
+        "poor420_rate": 0.0049,
+        "poor830_rate": 0.0267,
+        "prosperity_gap_2021": 0.81170896,
+        "poor300_display": "0.49%",
+        "poor420_display": "0.49%",
+        "poor830_display": "2.67%",
+        "prosperity_gap_display": "0.81"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1801
+    },
+    {
+      "place_id": "USA-ADM1-WYOMING",
+      "place_name": "Wyoming",
+      "parent_place_id": "USA",
+      "parent_place_name": "United States of America",
+      "iso3": "USA",
+      "source_iso3": "USA",
+      "geometry_level": "adm1",
+      "adm1_key": "wyoming",
+      "adm1_geo_id": "USA_2015_ADM1_3264",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/USA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.065104,
+      "poverty_context": {
+        "poor300_rate": 0.0079,
+        "poor420_rate": 0.0079,
+        "poor830_rate": 0.0104,
+        "prosperity_gap_2021": 1.0651041,
+        "poor300_display": "0.79%",
+        "poor420_display": "0.79%",
+        "poor830_display": "1.04%",
+        "prosperity_gap_display": "1.07"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1714
+    }
+  ]
+}

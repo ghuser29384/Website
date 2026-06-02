@@ -79,6 +79,23 @@
         }
       }
     },
+    "/v1/adm1/index.json": {
+      "get": {
+        "summary": "Get ADM1 poverty-context overlay index",
+        "responses": {
+          "200": {
+            "description": "ADM1 context JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adm1Context"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/coverage.json": {
       "get": {
         "summary": "Get release coverage status",
@@ -187,6 +204,33 @@
               "application/json": {
                 "schema": {
                   "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/places/{place_id}/adm1.json": {
+      "get": {
+        "summary": "Get ADM1 poverty-context rows for a country",
+        "parameters": [
+          {
+            "name": "place_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Country ADM1 context JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Adm1Context"
                 }
               }
             }
@@ -585,6 +629,23 @@
         }
       }
     },
+    "/schemas/adm1-context.schema.json": {
+      "get": {
+        "summary": "Get JSON Schema for ADM1 context",
+        "responses": {
+          "200": {
+            "description": "ADM1 context JSON Schema",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/schemas/coverage.schema.json": {
       "get": {
         "summary": "Get JSON Schema for coverage status",
@@ -645,6 +706,15 @@
           "release_id",
           "count",
           "coverage_summary",
+          "items"
+        ]
+      },
+      "Adm1Context": {
+        "type": "object",
+        "required": [
+          "release_id",
+          "coverage_status",
+          "count",
           "items"
         ]
       },

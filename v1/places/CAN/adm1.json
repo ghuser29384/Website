@@ -1,0 +1,453 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "CAN",
+  "parent_place_name": "Canada",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 10,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "CAN-ADM1-ALBERTA",
+      "place_name": "Alberta",
+      "parent_place_id": "CAN",
+      "parent_place_name": "Canada",
+      "iso3": "CAN",
+      "source_iso3": "CAN",
+      "geometry_level": "adm1",
+      "adm1_key": "alberta",
+      "adm1_geo_id": "CAN_2015_ADM1_825",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.547823,
+      "poverty_context": {
+        "poor300_rate": 0.0015,
+        "poor420_rate": 0.0016,
+        "poor830_rate": 0.0025,
+        "prosperity_gap_2021": 0.54782271,
+        "poor300_display": "0.15%",
+        "poor420_display": "0.16%",
+        "poor830_display": "0.25%",
+        "prosperity_gap_display": "0.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1863
+    },
+    {
+      "place_id": "CAN-ADM1-BRITISH-COLUMBIA-COLOMBIE-BRITANNIQUE",
+      "place_name": "British Columbia / Colombie-Britannique",
+      "parent_place_id": "CAN",
+      "parent_place_name": "Canada",
+      "iso3": "CAN",
+      "source_iso3": "CAN",
+      "geometry_level": "adm1",
+      "adm1_key": "british columbia colombie britannique",
+      "adm1_geo_id": "CAN_2015_ADM1_826",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.506477,
+      "poverty_context": {
+        "poor300_rate": 0.0011,
+        "poor420_rate": 0.0019,
+        "poor830_rate": 0.0033,
+        "prosperity_gap_2021": 0.50647688,
+        "poor300_display": "0.11%",
+        "poor420_display": "0.19%",
+        "poor830_display": "0.33%",
+        "prosperity_gap_display": "0.51"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1872
+    },
+    {
+      "place_id": "CAN-ADM1-MANITOBA",
+      "place_name": "Manitoba",
+      "parent_place_id": "CAN",
+      "parent_place_name": "Canada",
+      "iso3": "CAN",
+      "source_iso3": "CAN",
+      "geometry_level": "adm1",
+      "adm1_key": "manitoba",
+      "adm1_geo_id": "CAN_2015_ADM1_827",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.616162,
+      "poverty_context": {
+        "poor300_rate": 0.0007,
+        "poor420_rate": 0.0011,
+        "poor830_rate": 0.003,
+        "prosperity_gap_2021": 0.61616221,
+        "poor300_display": "0.07%",
+        "poor420_display": "0.11%",
+        "poor830_display": "0.30%",
+        "prosperity_gap_display": "0.62"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1848
+    },
+    {
+      "place_id": "CAN-ADM1-NEW-BRUNSWICK-NOUVEAU-BRUNSWICK",
+      "place_name": "New Brunswick / Nouveau-Brunswick",
+      "parent_place_id": "CAN",
+      "parent_place_name": "Canada",
+      "iso3": "CAN",
+      "source_iso3": "CAN",
+      "geometry_level": "adm1",
+      "adm1_key": "new brunswick nouveau brunswick",
+      "adm1_geo_id": "CAN_2015_ADM1_828",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.540587,
+      "poverty_context": {
+        "poor300_rate": 0.0005,
+        "poor420_rate": 0.0006,
+        "poor830_rate": 0.0017,
+        "prosperity_gap_2021": 0.54058748,
+        "poor300_display": "0.05%",
+        "poor420_display": "0.06%",
+        "poor830_display": "0.17%",
+        "prosperity_gap_display": "0.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1864
+    },
+    {
+      "place_id": "CAN-ADM1-NEWFOUNDLAND-AND-LABRADOR-TERRE-NEUVE-ET-LABRADOR",
+      "place_name": "Newfoundland and Labrador / Terre-Neuve-et-Labrador",
+      "parent_place_id": "CAN",
+      "parent_place_name": "Canada",
+      "iso3": "CAN",
+      "source_iso3": "CAN",
+      "geometry_level": "adm1",
+      "adm1_key": "newfoundland and labrador terre neuve et labrador",
+      "adm1_geo_id": "CAN_2015_ADM1_829",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.522667,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0,
+        "poor830_rate": 0.0001,
+        "prosperity_gap_2021": 0.5226674,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.00%",
+        "poor830_display": "0.01%",
+        "prosperity_gap_display": "0.52"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1870
+    },
+    {
+      "place_id": "CAN-ADM1-NOVA-SCOTIA-NOUVELLE-COSSE",
+      "place_name": "Nova Scotia / Nouvelle-Écosse",
+      "parent_place_id": "CAN",
+      "parent_place_name": "Canada",
+      "iso3": "CAN",
+      "source_iso3": "CAN",
+      "geometry_level": "adm1",
+      "adm1_key": "nova scotia nouvelle cosse",
+      "adm1_geo_id": "CAN_2015_ADM1_831",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.548263,
+      "poverty_context": {
+        "poor300_rate": 0.0005,
+        "poor420_rate": 0.0005,
+        "poor830_rate": 0.0012,
+        "prosperity_gap_2021": 0.54826303,
+        "poor300_display": "0.05%",
+        "poor420_display": "0.05%",
+        "poor830_display": "0.12%",
+        "prosperity_gap_display": "0.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1862
+    },
+    {
+      "place_id": "CAN-ADM1-ONTARIO",
+      "place_name": "Ontario",
+      "parent_place_id": "CAN",
+      "parent_place_name": "Canada",
+      "iso3": "CAN",
+      "source_iso3": "CAN",
+      "geometry_level": "adm1",
+      "adm1_key": "ontario",
+      "adm1_geo_id": "CAN_2015_ADM1_833",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.524834,
+      "poverty_context": {
+        "poor300_rate": 0.0003,
+        "poor420_rate": 0.0011,
+        "poor830_rate": 0.0021,
+        "prosperity_gap_2021": 0.52483393,
+        "poor300_display": "0.03%",
+        "poor420_display": "0.11%",
+        "poor830_display": "0.21%",
+        "prosperity_gap_display": "0.52"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1868
+    },
+    {
+      "place_id": "CAN-ADM1-PRINCE-EDWARD-ISLAND-LE-DU-PRINCE-DOUARD",
+      "place_name": "Prince Edward Island / Île-du-Prince-Édouard",
+      "parent_place_id": "CAN",
+      "parent_place_name": "Canada",
+      "iso3": "CAN",
+      "source_iso3": "CAN",
+      "geometry_level": "adm1",
+      "adm1_key": "prince edward island le du prince douard",
+      "adm1_geo_id": "CAN_2015_ADM1_834",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.611611,
+      "poverty_context": {
+        "poor300_rate": 0.0021,
+        "poor420_rate": 0.0021,
+        "poor830_rate": 0.0026,
+        "prosperity_gap_2021": 0.61161101,
+        "poor300_display": "0.21%",
+        "poor420_display": "0.21%",
+        "poor830_display": "0.26%",
+        "prosperity_gap_display": "0.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1850
+    },
+    {
+      "place_id": "CAN-ADM1-QUEBEC-QU-BEC",
+      "place_name": "Quebec / Québec",
+      "parent_place_id": "CAN",
+      "parent_place_name": "Canada",
+      "iso3": "CAN",
+      "source_iso3": "CAN",
+      "geometry_level": "adm1",
+      "adm1_key": "quebec qu bec",
+      "adm1_geo_id": "CAN_2015_ADM1_835",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.533329,
+      "poverty_context": {
+        "poor300_rate": 0.0001,
+        "poor420_rate": 0.0005,
+        "poor830_rate": 0.0009,
+        "prosperity_gap_2021": 0.53332893,
+        "poor300_display": "0.01%",
+        "poor420_display": "0.05%",
+        "poor830_display": "0.09%",
+        "prosperity_gap_display": "0.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1865
+    },
+    {
+      "place_id": "CAN-ADM1-SASKATCHEWAN",
+      "place_name": "Saskatchewan",
+      "parent_place_id": "CAN",
+      "parent_place_name": "Canada",
+      "iso3": "CAN",
+      "source_iso3": "CAN",
+      "geometry_level": "adm1",
+      "adm1_key": "saskatchewan",
+      "adm1_geo_id": "CAN_2015_ADM1_836",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/CAN/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.550242,
+      "poverty_context": {
+        "poor300_rate": 0,
+        "poor420_rate": 0.0003,
+        "poor830_rate": 0.0015,
+        "prosperity_gap_2021": 0.55024169,
+        "poor300_display": "0.00%",
+        "poor420_display": "0.03%",
+        "poor830_display": "0.15%",
+        "prosperity_gap_display": "0.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1861
+    }
+  ]
+}

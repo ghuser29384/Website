@@ -1,0 +1,629 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "UZB",
+  "parent_place_name": "Uzbekistan",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 14,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "UZB-ADM1-ANDIJAN",
+      "place_name": "Andijan",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "andijan",
+      "adm1_geo_id": "UZB_2003_ADM1_3284",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.294015,
+      "poverty_context": {
+        "poor300_rate": 0.0407,
+        "poor420_rate": 0.0829,
+        "poor830_rate": 0.2736,
+        "prosperity_gap_2021": 3.2940151,
+        "poor300_display": "4.07%",
+        "poor420_display": "8.29%",
+        "poor830_display": "27.4%",
+        "prosperity_gap_display": "3.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1113
+    },
+    {
+      "place_id": "UZB-ADM1-BUKHARA",
+      "place_name": "Bukhara",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "bukhara",
+      "adm1_geo_id": "UZB_2003_ADM1_3285",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.320365,
+      "poverty_context": {
+        "poor300_rate": 0.049,
+        "poor420_rate": 0.0824,
+        "poor830_rate": 0.26,
+        "prosperity_gap_2021": 3.3203648,
+        "poor300_display": "4.90%",
+        "poor420_display": "8.24%",
+        "poor830_display": "26.0%",
+        "prosperity_gap_display": "3.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1105
+    },
+    {
+      "place_id": "UZB-ADM1-FERGANA",
+      "place_name": "Fergana",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "fergana",
+      "adm1_geo_id": "UZB_2003_ADM1_3286",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.403443,
+      "poverty_context": {
+        "poor300_rate": 0.036,
+        "poor420_rate": 0.0613,
+        "poor830_rate": 0.2967,
+        "prosperity_gap_2021": 3.4034435,
+        "poor300_display": "3.60%",
+        "poor420_display": "6.13%",
+        "poor830_display": "29.7%",
+        "prosperity_gap_display": "3.40"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1086
+    },
+    {
+      "place_id": "UZB-ADM1-JIZZAKH",
+      "place_name": "Jizzakh",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "jizzakh",
+      "adm1_geo_id": "UZB_2003_ADM1_39696",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.319888,
+      "poverty_context": {
+        "poor300_rate": 0.0345,
+        "poor420_rate": 0.0787,
+        "poor830_rate": 0.2784,
+        "prosperity_gap_2021": 3.3198883,
+        "poor300_display": "3.45%",
+        "poor420_display": "7.87%",
+        "poor830_display": "27.8%",
+        "prosperity_gap_display": "3.32"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1106
+    },
+    {
+      "place_id": "UZB-ADM1-KARAKALPAKSTAN",
+      "place_name": "Karakalpakstan",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "karakalpakstan",
+      "adm1_geo_id": "UZB_2003_ADM1_3287",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.722517,
+      "poverty_context": {
+        "poor300_rate": 0.0579,
+        "poor420_rate": 0.0952,
+        "poor830_rate": 0.31,
+        "prosperity_gap_2021": 3.7225169,
+        "poor300_display": "5.79%",
+        "poor420_display": "9.52%",
+        "poor830_display": "31.0%",
+        "prosperity_gap_display": "3.72"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1035
+    },
+    {
+      "place_id": "UZB-ADM1-KASHKADARYA",
+      "place_name": "Kashkadarya",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "kashkadarya",
+      "adm1_geo_id": "UZB_2003_ADM1_3288",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.974315,
+      "poverty_context": {
+        "poor300_rate": 0.0321,
+        "poor420_rate": 0.0737,
+        "poor830_rate": 0.227,
+        "prosperity_gap_2021": 2.9743154,
+        "poor300_display": "3.21%",
+        "poor420_display": "7.37%",
+        "poor830_display": "22.7%",
+        "prosperity_gap_display": "2.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1171
+    },
+    {
+      "place_id": "UZB-ADM1-KHOREZM",
+      "place_name": "Khorezm",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "khorezm",
+      "adm1_geo_id": "UZB_2003_ADM1_3289",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.642954,
+      "poverty_context": {
+        "poor300_rate": 0.0669,
+        "poor420_rate": 0.1053,
+        "poor830_rate": 0.2489,
+        "prosperity_gap_2021": 3.6429539,
+        "poor300_display": "6.69%",
+        "poor420_display": "10.5%",
+        "poor830_display": "24.9%",
+        "prosperity_gap_display": "3.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1044
+    },
+    {
+      "place_id": "UZB-ADM1-NAMANGAN",
+      "place_name": "Namangan",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "namangan",
+      "adm1_geo_id": "UZB_2003_ADM1_3291",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.918697,
+      "poverty_context": {
+        "poor300_rate": 0.0329,
+        "poor420_rate": 0.0644,
+        "poor830_rate": 0.2333,
+        "prosperity_gap_2021": 2.9186968,
+        "poor300_display": "3.29%",
+        "poor420_display": "6.44%",
+        "poor830_display": "23.3%",
+        "prosperity_gap_display": "2.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1186
+    },
+    {
+      "place_id": "UZB-ADM1-NAVOIY",
+      "place_name": "Navoiy",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "navoiy",
+      "adm1_geo_id": "UZB_2003_ADM1_39697",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.665043,
+      "poverty_context": {
+        "poor300_rate": 0.0245,
+        "poor420_rate": 0.0395,
+        "poor830_rate": 0.1633,
+        "prosperity_gap_2021": 2.6650433,
+        "poor300_display": "2.45%",
+        "poor420_display": "3.95%",
+        "poor830_display": "16.3%",
+        "prosperity_gap_display": "2.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1241
+    },
+    {
+      "place_id": "UZB-ADM1-SAMARKAND",
+      "place_name": "Samarkand",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "samarkand",
+      "adm1_geo_id": "UZB_2003_ADM1_3292",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.334537,
+      "poverty_context": {
+        "poor300_rate": 0.0461,
+        "poor420_rate": 0.0759,
+        "poor830_rate": 0.2519,
+        "prosperity_gap_2021": 3.3345373,
+        "poor300_display": "4.61%",
+        "poor420_display": "7.59%",
+        "poor830_display": "25.2%",
+        "prosperity_gap_display": "3.33"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1104
+    },
+    {
+      "place_id": "UZB-ADM1-SIRDARYA",
+      "place_name": "Sirdarya",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "sirdarya",
+      "adm1_geo_id": "UZB_2003_ADM1_3294",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.64882,
+      "poverty_context": {
+        "poor300_rate": 0.0315,
+        "poor420_rate": 0.0735,
+        "poor830_rate": 0.3569,
+        "prosperity_gap_2021": 3.6488197,
+        "poor300_display": "3.15%",
+        "poor420_display": "7.35%",
+        "poor830_display": "35.7%",
+        "prosperity_gap_display": "3.65"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1042
+    },
+    {
+      "place_id": "UZB-ADM1-SURKHANDARYA",
+      "place_name": "Surkhandarya",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "surkhandarya",
+      "adm1_geo_id": "UZB_2003_ADM1_3293",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.185863,
+      "poverty_context": {
+        "poor300_rate": 0.0356,
+        "poor420_rate": 0.0678,
+        "poor830_rate": 0.2135,
+        "prosperity_gap_2021": 3.1858635,
+        "poor300_display": "3.56%",
+        "poor420_display": "6.78%",
+        "poor830_display": "21.3%",
+        "prosperity_gap_display": "3.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1128
+    },
+    {
+      "place_id": "UZB-ADM1-TASHKENT",
+      "place_name": "Tashkent",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "tashkent",
+      "adm1_geo_id": "UZB_2003_ADM1_3295",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.12667,
+      "poverty_context": {
+        "poor300_rate": 0.031,
+        "poor420_rate": 0.0549,
+        "poor830_rate": 0.2545,
+        "prosperity_gap_2021": 3.1266704,
+        "poor300_display": "3.10%",
+        "poor420_display": "5.49%",
+        "poor830_display": "25.4%",
+        "prosperity_gap_display": "3.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1138
+    },
+    {
+      "place_id": "UZB-ADM1-TASHKENT-CITY",
+      "place_name": "Tashkent city",
+      "parent_place_id": "UZB",
+      "parent_place_name": "Uzbekistan",
+      "iso3": "UZB",
+      "source_iso3": "UZB",
+      "geometry_level": "adm1",
+      "adm1_key": "tashkent city",
+      "adm1_geo_id": "UZB_2003_ADM1_39698",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/UZB/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.524381,
+      "poverty_context": {
+        "poor300_rate": 0.0483,
+        "poor420_rate": 0.0664,
+        "poor830_rate": 0.1232,
+        "prosperity_gap_2021": 2.5243806,
+        "poor300_display": "4.83%",
+        "poor420_display": "6.64%",
+        "poor830_display": "12.3%",
+        "prosperity_gap_display": "2.52"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1287
+    }
+  ]
+}

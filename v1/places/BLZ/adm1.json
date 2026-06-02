@@ -1,0 +1,277 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "BLZ",
+  "parent_place_name": "Belize",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 6,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "BLZ-ADM1-BELIZE",
+      "place_name": "Belize",
+      "parent_place_id": "BLZ",
+      "parent_place_name": "Belize",
+      "iso3": "BLZ",
+      "source_iso3": "BLZ",
+      "geometry_level": "adm1",
+      "adm1_key": "belize",
+      "adm1_geo_id": "BLZ_2015_GAUL1_603",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 1.694554,
+      "poverty_context": {
+        "poor300_rate": 0.0019,
+        "poor420_rate": 0.0146,
+        "poor830_rate": 0.0755,
+        "prosperity_gap_2021": 1.6945542,
+        "poor300_display": "0.19%",
+        "poor420_display": "1.46%",
+        "poor830_display": "7.55%",
+        "prosperity_gap_display": "1.69"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1550
+    },
+    {
+      "place_id": "BLZ-ADM1-CAYO",
+      "place_name": "Cayo",
+      "parent_place_id": "BLZ",
+      "parent_place_name": "Belize",
+      "iso3": "BLZ",
+      "source_iso3": "BLZ",
+      "geometry_level": "adm1",
+      "adm1_key": "cayo",
+      "adm1_geo_id": "BLZ_2015_GAUL1_604",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.077756,
+      "poverty_context": {
+        "poor300_rate": 0.001,
+        "poor420_rate": 0.0071,
+        "poor830_rate": 0.1337,
+        "prosperity_gap_2021": 2.0777558,
+        "poor300_display": "0.10%",
+        "poor420_display": "0.71%",
+        "poor830_display": "13.4%",
+        "prosperity_gap_display": "2.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1439
+    },
+    {
+      "place_id": "BLZ-ADM1-COROZAL",
+      "place_name": "Corozal",
+      "parent_place_id": "BLZ",
+      "parent_place_name": "Belize",
+      "iso3": "BLZ",
+      "source_iso3": "BLZ",
+      "geometry_level": "adm1",
+      "adm1_key": "corozal",
+      "adm1_geo_id": "BLZ_2015_GAUL1_605",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.272733,
+      "poverty_context": {
+        "poor300_rate": 0.0098,
+        "poor420_rate": 0.0299,
+        "poor830_rate": 0.1584,
+        "prosperity_gap_2021": 2.272733,
+        "poor300_display": "0.98%",
+        "poor420_display": "2.99%",
+        "poor830_display": "15.8%",
+        "prosperity_gap_display": "2.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1369
+    },
+    {
+      "place_id": "BLZ-ADM1-ORANGE-WALK",
+      "place_name": "Orange Walk",
+      "parent_place_id": "BLZ",
+      "parent_place_name": "Belize",
+      "iso3": "BLZ",
+      "source_iso3": "BLZ",
+      "geometry_level": "adm1",
+      "adm1_key": "orange walk",
+      "adm1_geo_id": "BLZ_2015_GAUL1_606",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.849845,
+      "poverty_context": {
+        "poor300_rate": 0.0167,
+        "poor420_rate": 0.0454,
+        "poor830_rate": 0.3143,
+        "prosperity_gap_2021": 2.8498448,
+        "poor300_display": "1.67%",
+        "poor420_display": "4.54%",
+        "poor830_display": "31.4%",
+        "prosperity_gap_display": "2.85"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1197
+    },
+    {
+      "place_id": "BLZ-ADM1-STANN-CREEK",
+      "place_name": "Stann Creek",
+      "parent_place_id": "BLZ",
+      "parent_place_name": "Belize",
+      "iso3": "BLZ",
+      "source_iso3": "BLZ",
+      "geometry_level": "adm1",
+      "adm1_key": "stann creek",
+      "adm1_geo_id": "BLZ_2015_GAUL1_607",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.088478,
+      "poverty_context": {
+        "poor300_rate": 0.0016,
+        "poor420_rate": 0.0144,
+        "poor830_rate": 0.1512,
+        "prosperity_gap_2021": 2.0884775,
+        "poor300_display": "0.16%",
+        "poor420_display": "1.44%",
+        "poor830_display": "15.1%",
+        "prosperity_gap_display": "2.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1434
+    },
+    {
+      "place_id": "BLZ-ADM1-TOLEDO",
+      "place_name": "Toledo",
+      "parent_place_id": "BLZ",
+      "parent_place_name": "Belize",
+      "iso3": "BLZ",
+      "source_iso3": "BLZ",
+      "geometry_level": "adm1",
+      "adm1_key": "toledo",
+      "adm1_geo_id": "BLZ_2015_GAUL1_608",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/BLZ/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.133611,
+      "poverty_context": {
+        "poor300_rate": 0.0221,
+        "poor420_rate": 0.1325,
+        "poor830_rate": 0.5421,
+        "prosperity_gap_2021": 4.1336112,
+        "poor300_display": "2.21%",
+        "poor420_display": "13.3%",
+        "poor830_display": "54.2%",
+        "prosperity_gap_display": "4.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 965
+    }
+  ]
+}

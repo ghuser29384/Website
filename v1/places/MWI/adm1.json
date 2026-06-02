@@ -1,0 +1,1245 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "MWI",
+  "parent_place_name": "Malawi",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 28,
+  "static_page_count": 18,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "MWI-ADM1-BALAKA",
+      "place_name": "Balaka",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "balaka",
+      "adm1_geo_id": "MWI_2015_ADM2_42174",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/balaka/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.092117,
+      "poverty_context": {
+        "poor300_rate": 0.8395,
+        "poor420_rate": 0.9261,
+        "poor830_rate": 0.9885,
+        "prosperity_gap_2021": 19.092117,
+        "poor300_display": "84.0%",
+        "poor420_display": "92.6%",
+        "poor830_display": "98.9%",
+        "prosperity_gap_display": "19.09"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 74
+    },
+    {
+      "place_id": "MWI-ADM1-BLANTYRE",
+      "place_name": "Blantyre",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "blantyre",
+      "adm1_geo_id": "MWI_2015_ADM2_19321",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.814522,
+      "poverty_context": {
+        "poor300_rate": 0.4634,
+        "poor420_rate": 0.6492,
+        "poor830_rate": 0.8817,
+        "prosperity_gap_2021": 10.814522,
+        "poor300_display": "46.3%",
+        "poor420_display": "64.9%",
+        "poor830_display": "88.2%",
+        "prosperity_gap_display": "10.81"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 294
+    },
+    {
+      "place_id": "MWI-ADM1-CHIKWAWA",
+      "place_name": "Chikwawa",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "chikwawa",
+      "adm1_geo_id": "MWI_2015_ADM2_19322",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/chikwawa/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.035076,
+      "poverty_context": {
+        "poor300_rate": 0.8838,
+        "poor420_rate": 0.9608,
+        "poor830_rate": 0.9939,
+        "prosperity_gap_2021": 19.035076,
+        "poor300_display": "88.4%",
+        "poor420_display": "96.1%",
+        "poor830_display": "99.4%",
+        "prosperity_gap_display": "19.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 75
+    },
+    {
+      "place_id": "MWI-ADM1-CHIRADZULU",
+      "place_name": "Chiradzulu",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "chiradzulu",
+      "adm1_geo_id": "MWI_2015_ADM2_19323",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.2945,
+      "poverty_context": {
+        "poor300_rate": 0.7355,
+        "poor420_rate": 0.8832,
+        "poor830_rate": 0.9851,
+        "prosperity_gap_2021": 15.2945,
+        "poor300_display": "73.6%",
+        "poor420_display": "88.3%",
+        "poor830_display": "98.5%",
+        "prosperity_gap_display": "15.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 130
+    },
+    {
+      "place_id": "MWI-ADM1-CHITIPA",
+      "place_name": "Chitipa",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "chitipa",
+      "adm1_geo_id": "MWI_2015_ADM2_19316",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.180169,
+      "poverty_context": {
+        "poor300_rate": 0.7482,
+        "poor420_rate": 0.9035,
+        "poor830_rate": 0.9914,
+        "prosperity_gap_2021": 15.180169,
+        "poor300_display": "74.8%",
+        "poor420_display": "90.3%",
+        "poor830_display": "99.1%",
+        "prosperity_gap_display": "15.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 134
+    },
+    {
+      "place_id": "MWI-ADM1-DEDZA",
+      "place_name": "Dedza",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "dedza",
+      "adm1_geo_id": "MWI_2015_ADM2_19307",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/dedza/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 20.14642,
+      "poverty_context": {
+        "poor300_rate": 0.8459,
+        "poor420_rate": 0.9347,
+        "poor830_rate": 0.9907,
+        "prosperity_gap_2021": 20.14642,
+        "poor300_display": "84.6%",
+        "poor420_display": "93.5%",
+        "poor830_display": "99.1%",
+        "prosperity_gap_display": "20.15"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 56
+    },
+    {
+      "place_id": "MWI-ADM1-DOWA",
+      "place_name": "Dowa",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "dowa",
+      "adm1_geo_id": "MWI_2015_ADM2_19308",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/dowa/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.965248,
+      "poverty_context": {
+        "poor300_rate": 0.8805,
+        "poor420_rate": 0.9578,
+        "poor830_rate": 0.9928,
+        "prosperity_gap_2021": 19.965248,
+        "poor300_display": "88.0%",
+        "poor420_display": "95.8%",
+        "poor830_display": "99.3%",
+        "prosperity_gap_display": "19.97"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 57
+    },
+    {
+      "place_id": "MWI-ADM1-KARONGA",
+      "place_name": "Karonga",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "karonga",
+      "adm1_geo_id": "MWI_2015_ADM2_19317",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.084161,
+      "poverty_context": {
+        "poor300_rate": 0.7451,
+        "poor420_rate": 0.8604,
+        "poor830_rate": 0.9771,
+        "prosperity_gap_2021": 14.084161,
+        "poor300_display": "74.5%",
+        "poor420_display": "86.0%",
+        "poor830_display": "97.7%",
+        "prosperity_gap_display": "14.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 155
+    },
+    {
+      "place_id": "MWI-ADM1-KASUNGU",
+      "place_name": "Kasungu",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "kasungu",
+      "adm1_geo_id": "MWI_2015_ADM2_19309",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/kasungu/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.248438,
+      "poverty_context": {
+        "poor300_rate": 0.8766,
+        "poor420_rate": 0.9485,
+        "poor830_rate": 0.9959,
+        "prosperity_gap_2021": 19.248438,
+        "poor300_display": "87.7%",
+        "poor420_display": "94.8%",
+        "poor830_display": "99.6%",
+        "prosperity_gap_display": "19.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 72
+    },
+    {
+      "place_id": "MWI-ADM1-LIKOMA",
+      "place_name": "Likoma",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "likoma",
+      "adm1_geo_id": "MWI_2015_M2_42172",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.126386,
+      "poverty_context": {
+        "poor300_rate": 0.5552,
+        "poor420_rate": 0.7948,
+        "poor830_rate": 0.976,
+        "prosperity_gap_2021": 12.126386,
+        "poor300_display": "55.5%",
+        "poor420_display": "79.5%",
+        "poor830_display": "97.6%",
+        "prosperity_gap_display": "12.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 209
+    },
+    {
+      "place_id": "MWI-ADM1-LILONGWE",
+      "place_name": "Lilongwe",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "lilongwe",
+      "adm1_geo_id": "MWI_2015_ADM2_19310",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.666059,
+      "poverty_context": {
+        "poor300_rate": 0.6745,
+        "poor420_rate": 0.8044,
+        "poor830_rate": 0.9454,
+        "prosperity_gap_2021": 15.666059,
+        "poor300_display": "67.5%",
+        "poor420_display": "80.4%",
+        "poor830_display": "94.5%",
+        "prosperity_gap_display": "15.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 121
+    },
+    {
+      "place_id": "MWI-ADM1-MACHINGA",
+      "place_name": "Machinga",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "machinga",
+      "adm1_geo_id": "MWI_2015_ADM2_42175",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/machinga/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.539449,
+      "poverty_context": {
+        "poor300_rate": 0.8586,
+        "poor420_rate": 0.9597,
+        "poor830_rate": 0.9939,
+        "prosperity_gap_2021": 19.539449,
+        "poor300_display": "85.9%",
+        "poor420_display": "96.0%",
+        "poor830_display": "99.4%",
+        "prosperity_gap_display": "19.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 66
+    },
+    {
+      "place_id": "MWI-ADM1-MANGOCHI",
+      "place_name": "Mangochi",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "mangochi",
+      "adm1_geo_id": "MWI_2015_ADM2_19325",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/mangochi/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.930381,
+      "poverty_context": {
+        "poor300_rate": 0.8594,
+        "poor420_rate": 0.9395,
+        "poor830_rate": 0.9921,
+        "prosperity_gap_2021": 19.930381,
+        "poor300_display": "85.9%",
+        "poor420_display": "94.0%",
+        "poor830_display": "99.2%",
+        "prosperity_gap_display": "19.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 59
+    },
+    {
+      "place_id": "MWI-ADM1-MCHINJI",
+      "place_name": "Mchinji",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "mchinji",
+      "adm1_geo_id": "MWI_2015_ADM2_19311",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/mchinji/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 20.877749,
+      "poverty_context": {
+        "poor300_rate": 0.8581,
+        "poor420_rate": 0.9593,
+        "poor830_rate": 0.9969,
+        "prosperity_gap_2021": 20.877749,
+        "poor300_display": "85.8%",
+        "poor420_display": "95.9%",
+        "poor830_display": "99.7%",
+        "prosperity_gap_display": "20.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 49
+    },
+    {
+      "place_id": "MWI-ADM1-MULANJE",
+      "place_name": "Mulanje",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "mulanje",
+      "adm1_geo_id": "MWI_2015_ADM2_42176",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/mulanje/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 17.986728,
+      "poverty_context": {
+        "poor300_rate": 0.8385,
+        "poor420_rate": 0.9302,
+        "poor830_rate": 0.9919,
+        "prosperity_gap_2021": 17.986728,
+        "poor300_display": "83.9%",
+        "poor420_display": "93.0%",
+        "poor830_display": "99.2%",
+        "prosperity_gap_display": "17.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 85
+    },
+    {
+      "place_id": "MWI-ADM1-MWANZA",
+      "place_name": "Mwanza",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "mwanza",
+      "adm1_geo_id": "MWI_2015_ADM2_65271",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/mwanza/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.606194,
+      "poverty_context": {
+        "poor300_rate": 0.8166,
+        "poor420_rate": 0.8914,
+        "poor830_rate": 0.9838,
+        "prosperity_gap_2021": 16.606194,
+        "poor300_display": "81.7%",
+        "poor420_display": "89.1%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "16.61"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 103
+    },
+    {
+      "place_id": "MWI-ADM1-MZIMBA",
+      "place_name": "Mzimba",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "mzimba",
+      "adm1_geo_id": "MWI_2015_ADM2_19318",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.989214,
+      "poverty_context": {
+        "poor300_rate": 0.6047,
+        "poor420_rate": 0.7818,
+        "poor830_rate": 0.9468,
+        "prosperity_gap_2021": 12.989214,
+        "poor300_display": "60.5%",
+        "poor420_display": "78.2%",
+        "poor830_display": "94.7%",
+        "prosperity_gap_display": "12.99"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 183
+    },
+    {
+      "place_id": "MWI-ADM1-NENO",
+      "place_name": "Neno",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "neno",
+      "adm1_geo_id": "MWI_2015_ADM2_65270",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.88143,
+      "poverty_context": {
+        "poor300_rate": 0.779,
+        "poor420_rate": 0.9034,
+        "poor830_rate": 0.9766,
+        "prosperity_gap_2021": 14.88143,
+        "poor300_display": "77.9%",
+        "poor420_display": "90.3%",
+        "poor830_display": "97.7%",
+        "prosperity_gap_display": "14.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 138
+    },
+    {
+      "place_id": "MWI-ADM1-NKHATA-BAY",
+      "place_name": "Nkhata Bay",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "nkhata bay",
+      "adm1_geo_id": "MWI_2015_ADM2_42173",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.746237,
+      "poverty_context": {
+        "poor300_rate": 0.525,
+        "poor420_rate": 0.7732,
+        "poor830_rate": 0.9838,
+        "prosperity_gap_2021": 10.746237,
+        "poor300_display": "52.5%",
+        "poor420_display": "77.3%",
+        "poor830_display": "98.4%",
+        "prosperity_gap_display": "10.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 298
+    },
+    {
+      "place_id": "MWI-ADM1-NKHOTAKOTA",
+      "place_name": "Nkhotakota",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "nkhotakota",
+      "adm1_geo_id": "MWI_2015_ADM2_19312",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/nkhotakota/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.182481,
+      "poverty_context": {
+        "poor300_rate": 0.7778,
+        "poor420_rate": 0.8855,
+        "poor830_rate": 0.9882,
+        "prosperity_gap_2021": 16.182481,
+        "poor300_display": "77.8%",
+        "poor420_display": "88.5%",
+        "poor830_display": "98.8%",
+        "prosperity_gap_display": "16.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 110
+    },
+    {
+      "place_id": "MWI-ADM1-NSANJE",
+      "place_name": "Nsanje",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "nsanje",
+      "adm1_geo_id": "MWI_2015_ADM2_19328",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/nsanje/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 20.485812,
+      "poverty_context": {
+        "poor300_rate": 0.8618,
+        "poor420_rate": 0.9456,
+        "poor830_rate": 0.9896,
+        "prosperity_gap_2021": 20.485812,
+        "poor300_display": "86.2%",
+        "poor420_display": "94.6%",
+        "poor830_display": "99.0%",
+        "prosperity_gap_display": "20.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 54
+    },
+    {
+      "place_id": "MWI-ADM1-NTCHEU",
+      "place_name": "Ntcheu",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "ntcheu",
+      "adm1_geo_id": "MWI_2015_ADM2_19313",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/ntcheu/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 18.856681,
+      "poverty_context": {
+        "poor300_rate": 0.8485,
+        "poor420_rate": 0.9188,
+        "poor830_rate": 0.9963,
+        "prosperity_gap_2021": 18.856681,
+        "poor300_display": "84.9%",
+        "poor420_display": "91.9%",
+        "poor830_display": "99.6%",
+        "prosperity_gap_display": "18.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 78
+    },
+    {
+      "place_id": "MWI-ADM1-NTCHISI",
+      "place_name": "Ntchisi",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "ntchisi",
+      "adm1_geo_id": "MWI_2015_ADM2_19314",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/ntchisi/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.930372,
+      "poverty_context": {
+        "poor300_rate": 0.8164,
+        "poor420_rate": 0.933,
+        "poor830_rate": 0.9971,
+        "prosperity_gap_2021": 16.930372,
+        "poor300_display": "81.6%",
+        "poor420_display": "93.3%",
+        "poor830_display": "99.7%",
+        "prosperity_gap_display": "16.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 97
+    },
+    {
+      "place_id": "MWI-ADM1-PHALOMBE",
+      "place_name": "Phalombe",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "phalombe",
+      "adm1_geo_id": "MWI_2015_ADM2_42177",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/phalombe/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.681686,
+      "poverty_context": {
+        "poor300_rate": 0.8912,
+        "poor420_rate": 0.9532,
+        "poor830_rate": 0.9919,
+        "prosperity_gap_2021": 19.681686,
+        "poor300_display": "89.1%",
+        "poor420_display": "95.3%",
+        "poor830_display": "99.2%",
+        "prosperity_gap_display": "19.68"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 63
+    },
+    {
+      "place_id": "MWI-ADM1-RUMPHI",
+      "place_name": "Rumphi",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "rumphi",
+      "adm1_geo_id": "MWI_2015_ADM2_19320",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.637687,
+      "poverty_context": {
+        "poor300_rate": 0.5699,
+        "poor420_rate": 0.824,
+        "poor830_rate": 0.962,
+        "prosperity_gap_2021": 11.637687,
+        "poor300_display": "57.0%",
+        "poor420_display": "82.4%",
+        "poor830_display": "96.2%",
+        "prosperity_gap_display": "11.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 236
+    },
+    {
+      "place_id": "MWI-ADM1-SALIMA",
+      "place_name": "Salima",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "salima",
+      "adm1_geo_id": "MWI_2015_ADM2_19315",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/salima/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.902457,
+      "poverty_context": {
+        "poor300_rate": 0.8159,
+        "poor420_rate": 0.904,
+        "poor830_rate": 0.9787,
+        "prosperity_gap_2021": 19.902457,
+        "poor300_display": "81.6%",
+        "poor420_display": "90.4%",
+        "poor830_display": "97.9%",
+        "prosperity_gap_display": "19.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 61
+    },
+    {
+      "place_id": "MWI-ADM1-THYOLO",
+      "place_name": "Thyolo",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "thyolo",
+      "adm1_geo_id": "MWI_2015_ADM2_19329",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/thyolo/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 16.310623,
+      "poverty_context": {
+        "poor300_rate": 0.7957,
+        "poor420_rate": 0.9395,
+        "poor830_rate": 0.9955,
+        "prosperity_gap_2021": 16.310623,
+        "poor300_display": "79.6%",
+        "poor420_display": "94.0%",
+        "poor830_display": "99.6%",
+        "prosperity_gap_display": "16.31"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 106
+    },
+    {
+      "place_id": "MWI-ADM1-ZOMBA",
+      "place_name": "Zomba",
+      "parent_place_id": "MWI",
+      "parent_place_name": "Malawi",
+      "iso3": "MWI",
+      "source_iso3": "MWI",
+      "geometry_level": "adm1",
+      "adm1_key": "zomba",
+      "adm1_geo_id": "MWI_2015_GADM1_MWI_MWI.28_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MWI/adm1/zomba/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MWI/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.838407,
+      "poverty_context": {
+        "poor300_rate": 0.7356,
+        "poor420_rate": 0.8641,
+        "poor830_rate": 0.9548,
+        "prosperity_gap_2021": 15.838407,
+        "poor300_display": "73.6%",
+        "poor420_display": "86.4%",
+        "poor830_display": "95.5%",
+        "prosperity_gap_display": "15.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 117
+    }
+  ]
+}

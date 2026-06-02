@@ -1,0 +1,1113 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "LKA",
+  "parent_place_name": "Sri Lanka",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 25,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "LKA-ADM1-AMPARA",
+      "place_name": "Ampara",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "ampara",
+      "adm1_geo_id": "LKA_2015_ADM2_25832",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.747126,
+      "poverty_context": {
+        "poor300_rate": 0.0369,
+        "poor420_rate": 0.1799,
+        "poor830_rate": 0.7096,
+        "prosperity_gap_2021": 4.7471255,
+        "poor300_display": "3.69%",
+        "poor420_display": "18.0%",
+        "poor830_display": "71.0%",
+        "prosperity_gap_display": "4.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 856
+    },
+    {
+      "place_id": "LKA-ADM1-ANURADHAPURA",
+      "place_name": "Anuradhapura",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "anuradhapura",
+      "adm1_geo_id": "LKA_2015_ADM2_25835",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.007205,
+      "poverty_context": {
+        "poor300_rate": 0.0127,
+        "poor420_rate": 0.0867,
+        "poor830_rate": 0.5788,
+        "prosperity_gap_2021": 4.0072045,
+        "poor300_display": "1.27%",
+        "poor420_display": "8.67%",
+        "poor830_display": "57.9%",
+        "prosperity_gap_display": "4.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 991
+    },
+    {
+      "place_id": "LKA-ADM1-BADULLA",
+      "place_name": "Badulla",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "badulla",
+      "adm1_geo_id": "LKA_2015_ADM2_25849",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.52365,
+      "poverty_context": {
+        "poor300_rate": 0.1017,
+        "poor420_rate": 0.3443,
+        "poor830_rate": 0.7443,
+        "prosperity_gap_2021": 5.5236498,
+        "poor300_display": "10.2%",
+        "poor420_display": "34.4%",
+        "poor830_display": "74.4%",
+        "prosperity_gap_display": "5.52"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 736
+    },
+    {
+      "place_id": "LKA-ADM1-BATTICALOA",
+      "place_name": "Batticaloa",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "batticaloa",
+      "adm1_geo_id": "LKA_2015_ADM2_25833",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.23228,
+      "poverty_context": {
+        "poor300_rate": 0.0676,
+        "poor420_rate": 0.2195,
+        "poor830_rate": 0.79,
+        "prosperity_gap_2021": 5.2322804,
+        "poor300_display": "6.76%",
+        "poor420_display": "21.9%",
+        "poor830_display": "79.0%",
+        "prosperity_gap_display": "5.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 777
+    },
+    {
+      "place_id": "LKA-ADM1-COLOMBO",
+      "place_name": "Colombo",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "colombo",
+      "adm1_geo_id": "LKA_2015_ADM2_25851",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 2.750414,
+      "poverty_context": {
+        "poor300_rate": 0.0044,
+        "poor420_rate": 0.0277,
+        "poor830_rate": 0.2887,
+        "prosperity_gap_2021": 2.7504144,
+        "poor300_display": "0.44%",
+        "poor420_display": "2.77%",
+        "poor830_display": "28.9%",
+        "prosperity_gap_display": "2.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1225
+    },
+    {
+      "place_id": "LKA-ADM1-GALLE",
+      "place_name": "Galle",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "galle",
+      "adm1_geo_id": "LKA_2015_ADM2_25846",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.27416,
+      "poverty_context": {
+        "poor300_rate": 0.0373,
+        "poor420_rate": 0.1406,
+        "poor830_rate": 0.5906,
+        "prosperity_gap_2021": 4.2741603,
+        "poor300_display": "3.73%",
+        "poor420_display": "14.1%",
+        "poor830_display": "59.1%",
+        "prosperity_gap_display": "4.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 930
+    },
+    {
+      "place_id": "LKA-ADM1-GAMPAHA",
+      "place_name": "Gampaha",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "gampaha",
+      "adm1_geo_id": "LKA_2015_ADM2_25852",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 3.337569,
+      "poverty_context": {
+        "poor300_rate": 0.0177,
+        "poor420_rate": 0.0613,
+        "poor830_rate": 0.407,
+        "prosperity_gap_2021": 3.3375687,
+        "poor300_display": "1.77%",
+        "poor420_display": "6.13%",
+        "poor830_display": "40.7%",
+        "prosperity_gap_display": "3.34"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1102
+    },
+    {
+      "place_id": "LKA-ADM1-HAMBANTOTA",
+      "place_name": "Hambantota",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "hambantota",
+      "adm1_geo_id": "LKA_2015_ADM2_25847",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.38314,
+      "poverty_context": {
+        "poor300_rate": 0.0197,
+        "poor420_rate": 0.1405,
+        "poor830_rate": 0.6218,
+        "prosperity_gap_2021": 4.3831403,
+        "poor300_display": "1.97%",
+        "poor420_display": "14.1%",
+        "poor830_display": "62.2%",
+        "prosperity_gap_display": "4.38"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 908
+    },
+    {
+      "place_id": "LKA-ADM1-JAFFNA",
+      "place_name": "Jaffna",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "jaffna",
+      "adm1_geo_id": "LKA_2015_ADM2_25839",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.639733,
+      "poverty_context": {
+        "poor300_rate": 0.1085,
+        "poor420_rate": 0.2754,
+        "poor830_rate": 0.7906,
+        "prosperity_gap_2021": 5.6397328,
+        "poor300_display": "10.8%",
+        "poor420_display": "27.5%",
+        "poor830_display": "79.1%",
+        "prosperity_gap_display": "5.64"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 721
+    },
+    {
+      "place_id": "LKA-ADM1-KALUTARA",
+      "place_name": "Kalutara",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "kalutara",
+      "adm1_geo_id": "LKA_2015_ADM2_25853",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.216933,
+      "poverty_context": {
+        "poor300_rate": 0.0303,
+        "poor420_rate": 0.1307,
+        "poor830_rate": 0.5814,
+        "prosperity_gap_2021": 4.2169334,
+        "poor300_display": "3.03%",
+        "poor420_display": "13.1%",
+        "poor830_display": "58.1%",
+        "prosperity_gap_display": "4.22"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 945
+    },
+    {
+      "place_id": "LKA-ADM1-KANDY",
+      "place_name": "Kandy",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "kandy",
+      "adm1_geo_id": "LKA_2015_ADM2_41748",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.277259,
+      "poverty_context": {
+        "poor300_rate": 0.0384,
+        "poor420_rate": 0.1483,
+        "poor830_rate": 0.5857,
+        "prosperity_gap_2021": 4.2772587,
+        "poor300_display": "3.84%",
+        "poor420_display": "14.8%",
+        "poor830_display": "58.6%",
+        "prosperity_gap_display": "4.28"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 929
+    },
+    {
+      "place_id": "LKA-ADM1-KEGALLE",
+      "place_name": "Kegalle",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "kegalle",
+      "adm1_geo_id": "LKA_2015_ADM2_25844",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.018497,
+      "poverty_context": {
+        "poor300_rate": 0.0575,
+        "poor420_rate": 0.2258,
+        "poor830_rate": 0.6984,
+        "prosperity_gap_2021": 5.018497,
+        "poor300_display": "5.75%",
+        "poor420_display": "22.6%",
+        "poor830_display": "69.8%",
+        "prosperity_gap_display": "5.02"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 804
+    },
+    {
+      "place_id": "LKA-ADM1-KILINOCHCHI",
+      "place_name": "Kilinochchi",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "kilinochchi",
+      "adm1_geo_id": "LKA_2015_ADM2_25840",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.802945,
+      "poverty_context": {
+        "poor300_rate": 0.071,
+        "poor420_rate": 0.3068,
+        "poor830_rate": 0.8677,
+        "prosperity_gap_2021": 5.8029454,
+        "poor300_display": "7.10%",
+        "poor420_display": "30.7%",
+        "poor830_display": "86.8%",
+        "prosperity_gap_display": "5.80"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 704
+    },
+    {
+      "place_id": "LKA-ADM1-KURUNEGALA",
+      "place_name": "Kurunegala",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "kurunegala",
+      "adm1_geo_id": "LKA_2015_ADM2_25837",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.179579,
+      "poverty_context": {
+        "poor300_rate": 0.0252,
+        "poor420_rate": 0.1362,
+        "poor830_rate": 0.5847,
+        "prosperity_gap_2021": 4.1795787,
+        "poor300_display": "2.52%",
+        "poor420_display": "13.6%",
+        "poor830_display": "58.5%",
+        "prosperity_gap_display": "4.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 952
+    },
+    {
+      "place_id": "LKA-ADM1-MANNAR",
+      "place_name": "Mannar",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "mannar",
+      "adm1_geo_id": "LKA_2015_ADM2_25841",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.575415,
+      "poverty_context": {
+        "poor300_rate": 0.0132,
+        "poor420_rate": 0.0974,
+        "poor830_rate": 0.753,
+        "prosperity_gap_2021": 4.5754154,
+        "poor300_display": "1.32%",
+        "poor420_display": "9.74%",
+        "poor830_display": "75.3%",
+        "prosperity_gap_display": "4.58"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 882
+    },
+    {
+      "place_id": "LKA-ADM1-MATALE",
+      "place_name": "Matale",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "matale",
+      "adm1_geo_id": "LKA_2015_ADM2_25830",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.884447,
+      "poverty_context": {
+        "poor300_rate": 0.0569,
+        "poor420_rate": 0.1992,
+        "poor830_rate": 0.6835,
+        "prosperity_gap_2021": 4.8844471,
+        "poor300_display": "5.69%",
+        "poor420_display": "19.9%",
+        "poor830_display": "68.3%",
+        "prosperity_gap_display": "4.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 831
+    },
+    {
+      "place_id": "LKA-ADM1-MATARA",
+      "place_name": "Matara",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "matara",
+      "adm1_geo_id": "LKA_2015_ADM2_25848",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.037963,
+      "poverty_context": {
+        "poor300_rate": 0.0302,
+        "poor420_rate": 0.1192,
+        "poor830_rate": 0.55,
+        "prosperity_gap_2021": 4.0379629,
+        "poor300_display": "3.02%",
+        "poor420_display": "11.9%",
+        "poor830_display": "55.0%",
+        "prosperity_gap_display": "4.04"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 982
+    },
+    {
+      "place_id": "LKA-ADM1-MONERAGALA",
+      "place_name": "Moneragala",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "moneragala",
+      "adm1_geo_id": "LKA_2015_ADM2_25850",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.926857,
+      "poverty_context": {
+        "poor300_rate": 0.0672,
+        "poor420_rate": 0.2136,
+        "poor830_rate": 0.6983,
+        "prosperity_gap_2021": 4.9268575,
+        "poor300_display": "6.72%",
+        "poor420_display": "21.4%",
+        "poor830_display": "69.8%",
+        "prosperity_gap_display": "4.93"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 820
+    },
+    {
+      "place_id": "LKA-ADM1-MULLATTIVU",
+      "place_name": "Mullattivu",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "mullattivu",
+      "adm1_geo_id": "LKA_2015_ADM2_25842",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.634912,
+      "poverty_context": {
+        "poor300_rate": 0.2017,
+        "poor420_rate": 0.4591,
+        "poor830_rate": 0.862,
+        "prosperity_gap_2021": 6.6349119,
+        "poor300_display": "20.2%",
+        "poor420_display": "45.9%",
+        "poor830_display": "86.2%",
+        "prosperity_gap_display": "6.63"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 615
+    },
+    {
+      "place_id": "LKA-ADM1-NUWARA-ELIYA",
+      "place_name": "Nuwara Eliya",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "nuwara eliya",
+      "adm1_geo_id": "LKA_2015_ADM2_41749",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.692243,
+      "poverty_context": {
+        "poor300_rate": 0.098,
+        "poor420_rate": 0.2781,
+        "poor830_rate": 0.8509,
+        "prosperity_gap_2021": 5.6922427,
+        "poor300_display": "9.80%",
+        "poor420_display": "27.8%",
+        "poor830_display": "85.1%",
+        "prosperity_gap_display": "5.69"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 717
+    },
+    {
+      "place_id": "LKA-ADM1-POLONNARUWA",
+      "place_name": "Polonnaruwa",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "polonnaruwa",
+      "adm1_geo_id": "LKA_2015_ADM2_25836",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.699922,
+      "poverty_context": {
+        "poor300_rate": 0.0519,
+        "poor420_rate": 0.1922,
+        "poor830_rate": 0.6632,
+        "prosperity_gap_2021": 4.6999216,
+        "poor300_display": "5.19%",
+        "poor420_display": "19.2%",
+        "poor830_display": "66.3%",
+        "prosperity_gap_display": "4.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 860
+    },
+    {
+      "place_id": "LKA-ADM1-PUTTALAM",
+      "place_name": "Puttalam",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "puttalam",
+      "adm1_geo_id": "LKA_2015_ADM2_25838",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.008837,
+      "poverty_context": {
+        "poor300_rate": 0.0202,
+        "poor420_rate": 0.1221,
+        "poor830_rate": 0.5612,
+        "prosperity_gap_2021": 4.0088371,
+        "poor300_display": "2.02%",
+        "poor420_display": "12.2%",
+        "poor830_display": "56.1%",
+        "prosperity_gap_display": "4.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 990
+    },
+    {
+      "place_id": "LKA-ADM1-RATNAPURA",
+      "place_name": "Ratnapura",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "ratnapura",
+      "adm1_geo_id": "LKA_2015_ADM2_25845",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.29793,
+      "poverty_context": {
+        "poor300_rate": 0.0749,
+        "poor420_rate": 0.2592,
+        "poor830_rate": 0.7321,
+        "prosperity_gap_2021": 5.2979298,
+        "poor300_display": "7.49%",
+        "poor420_display": "25.9%",
+        "poor830_display": "73.2%",
+        "prosperity_gap_display": "5.30"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 767
+    },
+    {
+      "place_id": "LKA-ADM1-TRINCOMALEE",
+      "place_name": "Trincomalee",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "trincomalee",
+      "adm1_geo_id": "LKA_2015_ADM2_25834",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.858096,
+      "poverty_context": {
+        "poor300_rate": 0.0408,
+        "poor420_rate": 0.1889,
+        "poor830_rate": 0.7157,
+        "prosperity_gap_2021": 4.8580961,
+        "poor300_display": "4.08%",
+        "poor420_display": "18.9%",
+        "poor830_display": "71.6%",
+        "prosperity_gap_display": "4.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 838
+    },
+    {
+      "place_id": "LKA-ADM1-VAVUNIYA",
+      "place_name": "Vavuniya",
+      "parent_place_id": "LKA",
+      "parent_place_name": "Sri Lanka",
+      "iso3": "LKA",
+      "source_iso3": "LKA",
+      "geometry_level": "adm1",
+      "adm1_key": "vavuniya",
+      "adm1_geo_id": "LKA_2015_ADM2_25843",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/LKA/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.498729,
+      "poverty_context": {
+        "poor300_rate": 0.0637,
+        "poor420_rate": 0.146,
+        "poor830_rate": 0.5655,
+        "prosperity_gap_2021": 4.4987289,
+        "poor300_display": "6.37%",
+        "poor420_display": "14.6%",
+        "poor830_display": "56.5%",
+        "prosperity_gap_display": "4.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 894
+    }
+  ]
+}

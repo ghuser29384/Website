@@ -14,9 +14,11 @@ const routes = readJson("data/routes.json");
 const provenance = readJson("data/provenance-registry.json");
 const measurements = readJson("data/place-measurements.json");
 const countryBoundaries = readJson("data/natural-earth-countries.geojson");
+const adm1Context = readJson("data/gsap-adm1-2023.json");
 const releaseId = routes.releaseId;
 const releaseDate = routes.generatedAt;
 const earthRadiusKm = 6371.0088;
+const adm1StaticPageLimit = 120;
 
 function absolute(file) {
   return path.join(root, file);
@@ -65,6 +67,52 @@ function htmlEscape(value) {
     .replaceAll('"', "&quot;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;");
+}
+
+function slugify(value) {
+  return String(value)
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "") || "place";
+}
+
+function shortHash(value) {
+  return createHash("sha1").update(String(value)).digest("hex").slice(0, 8);
+}
+
+function boundedSlug(value, uniqueSeed, maxLength = 72) {
+  const slug = slugify(value);
+
+  if (slug.length <= maxLength) {
+    return slug;
+  }
+
+  const suffix = shortHash(uniqueSeed);
+  const base = slug.slice(0, Math.max(8, maxLength - suffix.length - 1)).replace(/-+$/g, "");
+
+  return `${base}-${suffix}`;
+}
+
+function percentDisplay(value) {
+  const number = Number(value);
+
+  if (!Number.isFinite(number)) {
+    return "not available";
+  }
+
+  return `${(number * 100).toFixed(number >= 0.1 ? 1 : 2)}%`;
+}
+
+function scoreDisplay(value) {
+  const number = Number(value);
+
+  if (!Number.isFinite(number)) {
+    return "not available";
+  }
+
+  return number.toFixed(2);
 }
 
 function jsonEscapeForScript(value) {
@@ -531,6 +579,156 @@ function measurementRowsForPlace(placeId) {
   return measurements.measurements.filter((row) => row.place_id === placeId);
 }
 
+function countryNameByIso() {
+  return new Map(
+    countryBoundaryFeatures().map(({ feature, iso }) => [iso, countryNameFromProperties(feature.properties)])
+  );
+}
+
+function isNationalAdm1Record(key, record = {}) {
+  return key === "national" || /_WB0$/.test(record.geo || "");
+}
+
+function normalizeAdm1Iso(iso) {
+  return iso === "XKX" ? "KOS" : iso;
+}
+
+function adm1RelevanceScore(record = {}) {
+  const direct = Number(record.prosgap2021);
+
+  if (Number.isFinite(direct)) {
+    return direct;
+  }
+
+  const poor830 = Number(record.poor830);
+  const poor420 = Number(record.poor420);
+  const poor300 = Number(record.poor300);
+
+  return [poor830, poor420, poor300].find(Number.isFinite) ?? 0;
+}
+
+function adm1ContextItems() {
+  const countries = countryNameByIso();
+  const rows = [];
+
+  for (const [sourceIso, records] of Object.entries(adm1Context).sort(([left], [right]) => left.localeCompare(right))) {
+    const iso = normalizeAdm1Iso(sourceIso);
+    const countryName = countries.get(iso) || iso;
+
+    for (const [key, record] of Object.entries(records).sort(([left], [right]) => left.localeCompare(right))) {
+      if (isNationalAdm1Record(key, record)) {
+        continue;
+      }
+
+      const slug = boundedSlug(key || record.name || record.geo, `${sourceIso}:${record.geo || key}`);
+      const placeId = `${iso}-ADM1-${slug.toUpperCase()}`;
+      const relevanceScore = adm1RelevanceScore(record);
+
+      rows.push({
+        place_id: placeId,
+        place_name: record.name || key,
+        parent_place_id: iso,
+        parent_place_name: countryName,
+        iso3: iso,
+        source_iso3: sourceIso,
+        geometry_level: "adm1",
+        adm1_key: key,
+        adm1_geo_id: record.geo || null,
+        boundary_indexed: false,
+        coverage_status: "adm1_context_overlay",
+        canonical_measurement_count: 0,
+        available_layers: ["human-poverty-adm1-context"],
+        evidence_kinds: ["proxy"],
+        source_ids: ["world-bank-gsap-adm1"],
+        source_vintage: "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+        uncertainty_class: "low",
+        page_url: null,
+        profile_url: null,
+        measurements_url: null,
+        neighbors_url: null,
+        context_url: `${site}/v1/places/${iso}/adm1.json`,
+        latest_release_id: releaseId,
+        relevance_score: roundNumber(relevanceScore, 6),
+        poverty_context: {
+          poor300_rate: record.poor300,
+          poor420_rate: record.poor420,
+          poor830_rate: record.poor830,
+          prosperity_gap_2021: record.prosgap2021,
+          poor300_display: percentDisplay(record.poor300),
+          poor420_display: percentDisplay(record.poor420),
+          poor830_display: percentDisplay(record.poor830),
+          prosperity_gap_display: scoreDisplay(record.prosgap2021),
+        },
+        ranking_note:
+          "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      });
+    }
+  }
+
+  const ranked = [...rows].sort((left, right) => {
+    if (right.relevance_score !== left.relevance_score) {
+      return right.relevance_score - left.relevance_score;
+    }
+
+    return `${left.parent_place_name} ${left.place_name}`.localeCompare(`${right.parent_place_name} ${right.place_name}`);
+  });
+  const pageIds = new Set(ranked.slice(0, adm1StaticPageLimit).map((item) => item.place_id));
+  const ranks = new Map(ranked.map((item, index) => [item.place_id, index + 1]));
+
+  return rows
+    .map((item) => ({
+      ...item,
+      adm1_priority_rank: ranks.get(item.place_id),
+      page_url: pageIds.has(item.place_id)
+        ? `${site}/place/${item.iso3}/adm1/${boundedSlug(item.adm1_key || item.place_name, `${item.source_iso3}:${item.adm1_geo_id || item.adm1_key}`)}/`
+        : null,
+    }))
+    .sort((left, right) => {
+      if (left.parent_place_name !== right.parent_place_name) {
+        return left.parent_place_name.localeCompare(right.parent_place_name);
+      }
+
+      return left.place_name.localeCompare(right.place_name);
+    });
+}
+
+function topAdm1ContextItems(limit = adm1StaticPageLimit) {
+  return adm1ContextItems()
+    .filter((item) => item.page_url)
+    .sort((left, right) => left.adm1_priority_rank - right.adm1_priority_rank)
+    .slice(0, limit);
+}
+
+function countryAdm1ContextPayloads() {
+  const payloads = new Map();
+  const items = adm1ContextItems();
+
+  for (const item of items) {
+    const rows = payloads.get(item.iso3) || [];
+    rows.push(item);
+    payloads.set(item.iso3, rows);
+  }
+
+  return new Map(
+    [...payloads.entries()].map(([iso, children]) => [
+      iso,
+      {
+        release_id: releaseId,
+        generated_at: releaseDate,
+        parent_place_id: iso,
+        parent_place_name: children[0]?.parent_place_name || iso,
+        source_id: "world-bank-gsap-adm1",
+        coverage_status: "adm1_context_overlay",
+        count: children.length,
+        static_page_count: children.filter((item) => item.page_url).length,
+        method:
+          "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+        items: children,
+      },
+    ])
+  );
+}
+
 function uniqueSorted(values) {
   return [...new Set(values.filter(Boolean))].sort();
 }
@@ -715,6 +913,7 @@ function buildPlacesGeojson() {
 
 function buildPlaceIndex() {
   const boundaries = countryBoundaryFeatures();
+  const adm1Items = adm1ContextItems();
   const measuredCountryIds = new Set(
     measurements.measurements
       .filter((row) => row.geometry_level === "country")
@@ -745,6 +944,7 @@ function buildPlaceIndex() {
 
   for (const { feature, iso } of boundaries) {
     const rows = measurementRowsForPlace(iso);
+    const childAdm1 = adm1Items.filter((item) => item.parent_place_id === iso);
 
     items.push({
       place_id: iso,
@@ -761,9 +961,14 @@ function buildPlaceIndex() {
       profile_url: rows.length ? `${site}/v1/places/${iso}.json` : null,
       measurements_url: rows.length ? `${site}/v1/places/${iso}/measurements.json` : null,
       neighbors_url: `${site}/v1/places/${iso}/neighbors.json`,
+      adm1_context_url: childAdm1.length ? `${site}/v1/places/${iso}/adm1.json` : null,
+      adm1_context_count: childAdm1.length,
+      adm1_static_page_count: childAdm1.filter((item) => item.page_url).length,
       latest_release_id: releaseId,
     });
   }
+
+  items.push(...adm1Items);
 
   return {
     release_id: releaseId,
@@ -774,6 +979,8 @@ function buildPlaceIndex() {
       world_rows: worldRows.length,
       country_boundary_indexed: boundaries.length,
       adm1_boundary_mode: "runtime_overlay",
+      adm1_context_indexed: adm1Items.length,
+      adm1_static_pages: adm1Items.filter((item) => item.page_url).length,
       adm1_release_measurements: 0,
       canonical_country_profiles: measuredCountryIds.size,
       canonical_place_profiles: uniqueSorted(measurements.measurements.map((row) => row.place_id)).length,
@@ -783,6 +990,7 @@ function buildPlaceIndex() {
       proxy_place_measurements: measurements.measurements.filter((row) => row.evidence_kind === "proxy").length,
       priority_overlay_measurements: measurements.measurements.filter((row) => row.evidence_kind === "priority-overlay").length,
       boundary_index_only_places: items.filter((item) => item.coverage_status === "boundary_index_only").length,
+      adm1_context_overlay_places: adm1Items.length,
       last_release_date: releaseDate,
     },
     items,
@@ -801,9 +1009,11 @@ function buildCoverage() {
       places_indexed: summary.place_index_count,
       country_boundaries_indexed: summary.country_boundary_indexed,
       adm1_boundaries: {
-        status: "runtime_overlay",
+        status: "runtime_boundary_overlay_with_static_context_index",
         release_scoped_count: summary.adm1_release_measurements,
-        source: "geoBoundaries ADM1 loaded on demand by selected country",
+        static_context_count: summary.adm1_context_indexed,
+        static_page_count: summary.adm1_static_pages,
+        source: "geoBoundaries ADM1 loaded on demand by selected country; World Bank GSAP ADM1 poverty context is vendored as a static overlay index",
       },
       canonical_country_profiles: summary.canonical_country_profiles,
       canonical_place_profiles: summary.canonical_place_profiles,
@@ -814,6 +1024,7 @@ function buildCoverage() {
         proxy: summary.proxy_place_measurements,
         priority_overlay: summary.priority_overlay_measurements,
         boundary: summary.country_boundary_indexed,
+        adm1_context_overlay: summary.adm1_context_overlay_places,
       },
     },
     known_sparse_areas: [
@@ -823,7 +1034,7 @@ function buildCoverage() {
       },
       {
         area: "ADM1 measurements",
-        status: "ADM1 boundaries are available as a labeled runtime overlay, but no ADM1 measurement rows are frozen into the release.",
+        status: `${summary.adm1_context_indexed} ADM1 poverty-context rows are indexed as a labeled static overlay, and ${summary.adm1_static_pages} high-priority ADM1 pages are pre-rendered. No ADM1 rows are canonical pain measurements in this release.`,
       },
       {
         area: "Direct evidence by place",
@@ -854,6 +1065,7 @@ function buildReleaseModes() {
           "The homepage does not start World Bank, OWID, geoBoundaries, or WorldPop ranking requests in this mode.",
         included_surfaces: [
           "/v1/places/index.json",
+          "/v1/adm1/index.json",
           "/v1/coverage.json",
           "/data/place-measurements.json",
           "/data/provenance-registry.json",
@@ -882,7 +1094,11 @@ function buildReleaseModes() {
 }
 
 function generatedCountryRoutes() {
-  const existingPaths = new Set(routes.routes.filter((route) => route.generated !== "country-place").map((route) => route.path));
+  const existingPaths = new Set(
+    routes.routes
+      .filter((route) => route.generated !== "country-place" && route.generated !== "adm1-place")
+      .map((route) => route.path)
+  );
 
   return countryBoundaryFeatures()
     .map(({ feature, iso }) => ({
@@ -898,11 +1114,36 @@ function generatedCountryRoutes() {
     .sort((left, right) => left.title.localeCompare(right.title));
 }
 
-function syncGeneratedCountryPlaceRoutes() {
-  routes.routes = routes.routes.filter((route) => route.generated !== "country-place");
+function generatedAdm1Routes() {
+  const existingPaths = new Set(
+    routes.routes
+      .filter((route) => route.generated !== "country-place" && route.generated !== "adm1-place")
+      .map((route) => route.path)
+  );
+
+  return topAdm1ContextItems()
+    .map((item) => {
+      const slug = boundedSlug(item.adm1_key || item.place_name, `${item.source_iso3}:${item.adm1_geo_id || item.adm1_key}`);
+
+      return {
+        path: `/place/${item.iso3}/adm1/${slug}/`,
+        file: `place/${item.iso3}/adm1/${slug}/index.html`,
+        key: `place-${item.iso3.toLowerCase()}-adm1-${slug}`,
+        title: `${item.place_name}, ${item.parent_place_name} ADM1 Context | PainMap`,
+        description: `${item.place_name} ADM1 poverty-context overlay for ${item.parent_place_name} in PainMap release ${releaseId}, with GSAP source metadata, coverage status, and data export links.`,
+        jsonLdType: "Place",
+        generated: "adm1-place",
+      };
+    })
+    .filter((route) => !existingPaths.has(route.path))
+    .sort((left, right) => left.title.localeCompare(right.title));
+}
+
+function syncGeneratedPlaceRoutes() {
+  routes.routes = routes.routes.filter((route) => route.generated !== "country-place" && route.generated !== "adm1-place");
 
   const insertIndex = routes.routes.findIndex((route) => route.path === "/api/");
-  const generatedRoutes = generatedCountryRoutes();
+  const generatedRoutes = [...generatedCountryRoutes(), ...generatedAdm1Routes()];
 
   if (insertIndex === -1) {
     routes.routes.push(...generatedRoutes);
@@ -940,6 +1181,46 @@ function generatedPlaceJsonLd(item) {
       "@type": "Dataset",
       name: "PainMap place-level pain-source proxy measurements",
       url: `${site}/dataset/place-measurements/`,
+    },
+  };
+
+  return `    <script type="application/ld+json">\n      ${jsonEscapeForScript(value)}\n    </script>`;
+}
+
+function generatedAdm1PlaceJsonLd(item) {
+  const value = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name: `${item.place_name}, ${item.parent_place_name}`,
+    identifier: item.place_id,
+    containedInPlace: {
+      "@type": "Place",
+      name: item.parent_place_name,
+      identifier: item.parent_place_id,
+      url: `${site}/place/${item.parent_place_id}/`,
+    },
+    url: item.page_url,
+    additionalProperty: [
+      {
+        "@type": "PropertyValue",
+        name: "PainMap coverage status",
+        value: item.coverage_status,
+      },
+      {
+        "@type": "PropertyValue",
+        name: "PainMap release",
+        value: releaseId,
+      },
+      {
+        "@type": "PropertyValue",
+        name: "GSAP prosperity gap 2021",
+        value: item.poverty_context.prosperity_gap_display,
+      },
+    ],
+    subjectOf: {
+      "@type": "Dataset",
+      name: "PainMap ADM1 poverty-context overlay",
+      url: `${site}/v1/adm1/index.json`,
     },
   };
 
@@ -1072,6 +1353,99 @@ function writeGeneratedCountryPlacePages() {
 
   for (const item of countryItems) {
     writeText(`place/${item.place_id}/index.html`, generatedCountryPlaceHtml(item));
+  }
+}
+
+function generatedAdm1ContextHtml(item) {
+  const slug = boundedSlug(item.adm1_key || item.place_name, `${item.source_iso3}:${item.adm1_geo_id || item.adm1_key}`);
+  const file = `place/${item.iso3}/adm1/${slug}/index.html`;
+  const prefix = rootPrefix(file);
+
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${htmlEscape(`${item.place_name}, ${item.parent_place_name} ADM1 Context | PainMap`)}</title>
+    <meta name="description" content="${htmlEscape(`${item.place_name} ADM1 poverty-context overlay for ${item.parent_place_name} in PainMap release ${releaseId}, with GSAP source metadata, coverage status, and data export links.`)}">
+    <link rel="canonical" href="${item.page_url}">
+    <link rel="stylesheet" href="${prefix}styles.css" integrity="sha384-placeholder" crossorigin="anonymous">
+${generatedAdm1PlaceJsonLd(item)}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/places/">Places</a>
+          <a href="/compare/">Compare</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <main id="main-content" class="route-page">
+        <section class="route-panel route-hero" aria-labelledby="adm1-title">
+          <div>
+            <p class="label">ADM1 context overlay</p>
+            <h1 id="adm1-title">${htmlEscape(item.place_name)}</h1>
+          </div>
+          <p class="route-copy">
+            Static ADM1 context page for ${htmlEscape(item.place_name)} in ${htmlEscape(item.parent_place_name)}. This page is indexed because the GSAP prosperity-gap overlay marks it as a high-priority subnational context row. It is not a canonical pain measurement.
+          </p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="context-title">
+          <div class="facts place-facts">
+            <article class="fact-card"><span class="fact-label">Parent place</span><strong>${htmlEscape(item.parent_place_name)}</strong></article>
+            <article class="fact-card"><span class="fact-label">Coverage</span><strong>ADM1 context overlay</strong></article>
+            <article class="fact-card"><span class="fact-label">Priority rank</span><strong>${item.adm1_priority_rank}</strong></article>
+            <article class="fact-card"><span class="fact-label">GSAP geo id</span><strong>${htmlEscape(item.adm1_geo_id || "not available")}</strong></article>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="poverty-title">
+          <div class="section-intro">
+            <p class="label">World Bank GSAP context</p>
+            <h2 id="poverty-title">Poverty-context values</h2>
+          </div>
+          <div class="data-table-wrap">
+            <table class="route-table">
+              <caption>These values are public-source poverty-context inputs used for subnational atlas discovery. They are not direct pain measurements.</caption>
+              <thead><tr><th>Metric</th><th>Value</th><th>Use in PainMap</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">$3.00/day poverty rate</th><td>${htmlEscape(item.poverty_context.poor300_display)}</td><td>Severe income-poverty context.</td></tr>
+                <tr><th scope="row">$4.20/day poverty rate</th><td>${htmlEscape(item.poverty_context.poor420_display)}</td><td>Lower-middle-income poverty context.</td></tr>
+                <tr><th scope="row">$8.30/day poverty rate</th><td>${htmlEscape(item.poverty_context.poor830_display)}</td><td>Broader income-vulnerability context.</td></tr>
+                <tr><th scope="row">Prosperity gap 2021</th><td>${htmlEscape(item.poverty_context.prosperity_gap_display)}</td><td>Static-page priority ranking signal.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="route-copy">
+            ADM1 context rows are separated from the frozen canonical measurement table. Use them for subnational discovery and hypothesis triage; cite the release page and carry the source, uncertainty, and method note with reuse.
+          </p>
+          <div class="route-actions">
+            <a class="solid-button" href="/place/${item.iso3}/">Open ${htmlEscape(item.parent_place_name)} country page</a>
+            <a class="ghost-link" href="/v1/places/${item.iso3}/adm1.json">Country ADM1 JSON</a>
+            <a class="ghost-link" href="/v1/adm1/index.json">ADM1 context index</a>
+            <a class="ghost-link" href="/v1/coverage.json">Coverage JSON</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+`;
+}
+
+function writeGeneratedAdm1ContextPages() {
+  for (const item of topAdm1ContextItems()) {
+    const slug = boundedSlug(item.adm1_key || item.place_name, `${item.source_iso3}:${item.adm1_geo_id || item.adm1_key}`);
+    writeText(`place/${item.iso3}/adm1/${slug}/index.html`, generatedAdm1ContextHtml(item));
   }
 }
 
@@ -1437,7 +1811,9 @@ function buildEndpointSmoke() {
       endpoint("/data/dcat.json", "application/ld+json", "DCAT catalog"),
       endpoint("/data/release-modes.json", "application/json", "Snapshot and live overlay mode contract"),
       endpoint("/v1/places/index.json", "application/json", "Full release place index"),
+      endpoint("/v1/adm1/index.json", "application/json", "ADM1 poverty-context overlay index"),
       endpoint("/v1/coverage.json", "application/json", "Release coverage status"),
+      endpoint("/v1/places/IND/adm1.json", "application/json", "India ADM1 poverty-context overlay"),
       endpoint("/v1/places/BRA/neighbors.json", "application/json", "Brazil geographic neighbor payload"),
       endpoint("/ogc/index.json", "application/json", "OGC API - Features landing document"),
       endpoint("/ogc/collections/places/items.json", "application/geo+json", "OGC-style place feature collection"),
@@ -1479,15 +1855,61 @@ function buildJsonSchemas() {
               iso3: { type: "string" },
               geometry_level: { enum: ["world", "country", "adm1"] },
               boundary_indexed: { type: "boolean" },
-              coverage_status: { enum: ["canonical_measurements", "boundary_index_only"] },
+              coverage_status: { enum: ["canonical_measurements", "boundary_index_only", "adm1_context_overlay"] },
               canonical_measurement_count: { type: "integer", minimum: 0 },
               available_layers: { type: "array", items: { type: "string" } },
               evidence_kinds: { type: "array", items: { type: "string" } },
               page_url: { type: ["string", "null"] },
               profile_url: { type: ["string", "null"] },
               measurements_url: { type: ["string", "null"] },
-              neighbors_url: { type: "string" },
+              neighbors_url: { type: ["string", "null"] },
+              context_url: { type: ["string", "null"] },
               latest_release_id: { type: "string" },
+            },
+          },
+        },
+      },
+    },
+    "schemas/adm1-context.schema.json": {
+      ...schemaBase,
+      $id: `${site}/schemas/adm1-context.schema.json`,
+      title: "PainMap ADM1 context overlay",
+      type: "object",
+      required: ["release_id", "generated_at", "source_id", "coverage_status", "count", "items"],
+      properties: {
+        release_id: { type: "string" },
+        generated_at: { type: "string" },
+        source_id: { type: "string" },
+        coverage_status: { const: "adm1_context_overlay" },
+        count: { type: "integer", minimum: 1 },
+        static_page_count: { type: "integer", minimum: 0 },
+        method: { type: "string" },
+        items: {
+          type: "array",
+          items: {
+            type: "object",
+            required: [
+              "place_id",
+              "place_name",
+              "parent_place_id",
+              "geometry_level",
+              "coverage_status",
+              "source_ids",
+              "poverty_context",
+            ],
+            properties: {
+              place_id: { type: "string" },
+              place_name: { type: "string" },
+              parent_place_id: { type: "string" },
+              parent_place_name: { type: "string" },
+              iso3: { type: "string" },
+              geometry_level: { const: "adm1" },
+              coverage_status: { const: "adm1_context_overlay" },
+              source_ids: { type: "array", items: { type: "string" } },
+              page_url: { type: ["string", "null"] },
+              context_url: { type: "string" },
+              relevance_score: { type: "number" },
+              poverty_context: { type: "object" },
             },
           },
         },
@@ -1625,6 +2047,15 @@ function buildLayers() {
         source_ids: ["world-bank-indicators"],
       },
       {
+        layer_id: "human-poverty-adm1-context",
+        label: "ADM1 poverty context overlay",
+        evidence_kind: "proxy",
+        value_type: "subnational_poverty_context",
+        unit_label: "poverty rate and prosperity-gap context",
+        ranking_mode: "higher_prosperity_gap_more_attention",
+        source_ids: ["world-bank-gsap-adm1"],
+      },
+      {
         layer_id: "wild-insects",
         label: "Wild terrestrial arthropod scale",
         evidence_kind: "proxy",
@@ -1699,6 +2130,12 @@ function buildOpenApi() {
           responses: { 200: staticJsonResponse("Place index JSON", "#/components/schemas/PlaceIndex") },
         },
       },
+      "/v1/adm1/index.json": {
+        get: {
+          summary: "Get ADM1 poverty-context overlay index",
+          responses: { 200: staticJsonResponse("ADM1 context JSON", "#/components/schemas/Adm1Context") },
+        },
+      },
       "/v1/coverage.json": {
         get: {
           summary: "Get release coverage status",
@@ -1727,6 +2164,13 @@ function buildOpenApi() {
           summary: "Get geographic neighbor and nearby-place metadata for a place",
           parameters: [{ name: "place_id", in: "path", required: true, schema: { type: "string" } }],
           responses: { 200: staticJsonResponse("Place neighbor payload") },
+        },
+      },
+      "/v1/places/{place_id}/adm1.json": {
+        get: {
+          summary: "Get ADM1 poverty-context rows for a country",
+          parameters: [{ name: "place_id", in: "path", required: true, schema: { type: "string" } }],
+          responses: { 200: staticJsonResponse("Country ADM1 context JSON", "#/components/schemas/Adm1Context") },
         },
       },
       "/v1/places/BRA.json": {
@@ -1831,6 +2275,9 @@ function buildOpenApi() {
       "/schemas/place-measurements.schema.json": {
         get: { summary: "Get JSON Schema for place measurements", responses: { 200: staticJsonResponse("Place measurements JSON Schema") } },
       },
+      "/schemas/adm1-context.schema.json": {
+        get: { summary: "Get JSON Schema for ADM1 context", responses: { 200: staticJsonResponse("ADM1 context JSON Schema") } },
+      },
       "/schemas/coverage.schema.json": {
         get: { summary: "Get JSON Schema for coverage status", responses: { 200: staticJsonResponse("Coverage JSON Schema") } },
       },
@@ -1846,6 +2293,10 @@ function buildOpenApi() {
         PlaceIndex: {
           type: "object",
           required: ["release_id", "count", "coverage_summary", "items"],
+        },
+        Adm1Context: {
+          type: "object",
+          required: ["release_id", "coverage_status", "count", "items"],
         },
         CoverageStatus: {
           type: "object",
@@ -1958,6 +2409,8 @@ function buildDcat() {
           { "@type": "dcat:Distribution", "dct:format": "text/csv", "dcat:downloadURL": `${site}/data/place-measurements.csv` },
           { "@type": "dcat:Distribution", "dct:format": "application/geo+json", "dcat:downloadURL": `${site}/data/places.geojson` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/places/index.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/adm1/index.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/places/IND/adm1.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/coverage.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/release-modes.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/places/BRA/neighbors.json` },
@@ -1984,6 +2437,7 @@ function buildDcat() {
         "dct:hasVersion": releaseId,
         "dcat:distribution": [
           { "@type": "dcat:Distribution", "dct:format": "application/geo+json", "dcat:downloadURL": `${site}/data/natural-earth-countries.geojson` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/gsap-adm1-2023.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:accessURL": `${site}/ogc/index.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/geo+json", "dcat:downloadURL": `${site}/ogc/collections/places/items.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:accessURL": `${site}/v1/sources.json` },
@@ -1997,6 +2451,7 @@ function buildDcat() {
         "dct:hasVersion": releaseId,
         "dcat:distribution": [
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/place-index.schema.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/adm1-context.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/place-measurements.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/coverage.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/release-modes.schema.json` },
@@ -2064,7 +2519,10 @@ function measuredPlaceIds() {
 function releaseArtifactFileCandidates() {
   const placeIndex = buildPlaceIndex();
   const measuredPlaces = measuredPlaceIds();
-  const neighborFiles = placeIndex.items.map((item) => `v1/places/${item.place_id}/neighbors.json`);
+  const neighborFiles = placeIndex.items
+    .filter((item) => item.neighbors_url)
+    .map((item) => `v1/places/${item.place_id}/neighbors.json`);
+  const adm1CountryFiles = [...countryAdm1ContextPayloads().keys()].map((iso) => `v1/places/${iso}/adm1.json`);
   const measuredPlaceFiles = measuredPlaces.flatMap((placeId) => [
     `v1/places/${placeId}.json`,
     `v1/places/${placeId}/measurements.json`,
@@ -2084,6 +2542,7 @@ function releaseArtifactFileCandidates() {
     "data/endpoint-smoke.json",
     "data/countries-lite.geojson",
     "data/natural-earth-countries.geojson",
+    "data/gsap-adm1-2023.json",
     "data/dcat.json",
     "data/openapi.json",
     "compare.js",
@@ -2093,6 +2552,7 @@ function releaseArtifactFileCandidates() {
     "examples/load-place-profile.mjs",
     "examples/load_place_profile.py",
     "schemas/place-index.schema.json",
+    "schemas/adm1-context.schema.json",
     "schemas/place-measurements.schema.json",
     "schemas/coverage.schema.json",
     "schemas/release-modes.schema.json",
@@ -2102,8 +2562,10 @@ function releaseArtifactFileCandidates() {
     "v1/sources.json",
     "v1/coverage.json",
     "v1/places/index.json",
+    "v1/adm1/index.json",
     ...measuredPlaceFiles,
     ...neighborFiles,
+    ...adm1CountryFiles,
     "ogc/index.json",
     "ogc/conformance.json",
     "ogc/collections/index.json",
@@ -2127,6 +2589,7 @@ function releaseArtifactFileCandidates() {
 function buildReleaseDiff() {
   const placeIndex = buildPlaceIndex();
   const coverage = buildCoverage();
+  const adm1Items = adm1ContextItems();
 
   return {
     release_id: releaseId,
@@ -2138,18 +2601,23 @@ function buildReleaseDiff() {
     current_release: {
       places_indexed: placeIndex.count,
       country_boundaries_indexed: coverage.coverage_status.country_boundaries_indexed,
+      adm1_context_indexed: adm1Items.length,
+      adm1_static_pages: adm1Items.filter((item) => item.page_url).length,
       canonical_place_profiles: coverage.coverage_status.canonical_place_profiles,
       release_measurements: coverage.coverage_status.release_measurements,
       ogc_place_features: countryBoundaryFeatures().length,
-      neighbor_payloads: placeIndex.items.length,
+      neighbor_payloads: buildNeighborPayloads().size,
     },
     added_contract_surfaces: [
       "/v1/places/index.json",
+      "/v1/adm1/index.json",
+      "/v1/places/{place_id}/adm1.json",
       "/v1/coverage.json",
       "/v1/places/{place_id}/neighbors.json",
       "/ogc/index.json",
       "/ogc/collections/places/items.json",
       "/data/release-modes.json",
+      "/schemas/adm1-context.schema.json",
       "/schemas/release-modes.schema.json",
       "/schemas/ogc-place-features.schema.json",
       "/releases/2026-05-31/diff.json",
@@ -2165,7 +2633,11 @@ function buildReleaseDiff() {
       },
       {
         area: "place discovery",
-        change: "Added release-scoped neighbor payloads for all indexed places.",
+        change: "Added release-scoped neighbor payloads for world and country place entries.",
+      },
+      {
+        area: "subnational discovery",
+        change: "Added an ADM1 poverty-context index and generated static pages for the highest-priority ADM1 context rows.",
       },
       {
         area: "release QA",
@@ -2184,11 +2656,23 @@ function writeApiArtifacts() {
   const placeProfiles = places.map(placeSummary);
   const schemas = buildJsonSchemas();
   const neighborPayloads = buildNeighborPayloads();
+  const adm1Payloads = countryAdm1ContextPayloads();
   const ogcArtifacts = buildOgcArtifacts();
 
   writeText("data/place-measurements.csv", measurementCsv());
   writeJson("data/places.geojson", buildPlacesGeojson());
   writeJson("v1/places/index.json", buildPlaceIndex());
+  writeJson("v1/adm1/index.json", {
+    release_id: releaseId,
+    generated_at: releaseDate,
+    source_id: "world-bank-gsap-adm1",
+    coverage_status: "adm1_context_overlay",
+    count: adm1ContextItems().length,
+    static_page_count: topAdm1ContextItems().length,
+    ranking_method:
+      "Static ADM1 pages are selected by descending World Bank GSAP prosperity-gap context. Rows remain contextual proxy overlays, not canonical PainMap measurements.",
+    items: adm1ContextItems().sort((left, right) => left.adm1_priority_rank - right.adm1_priority_rank),
+  });
   writeJson("v1/coverage.json", buildCoverage());
   writeJson("data/release-modes.json", buildReleaseModes());
   writeJson("data/analytics-events.json", buildAnalyticsEvents());
@@ -2249,6 +2733,10 @@ function writeApiArtifacts() {
     writeJson(`v1/places/${placeId}/neighbors.json`, payload);
   }
 
+  for (const [iso, payload] of adm1Payloads.entries()) {
+    writeJson(`v1/places/${iso}/adm1.json`, payload);
+  }
+
   for (const [file, artifact] of Object.entries(ogcArtifacts)) {
     if (file === "ogc/collections/places/items.json") {
       writeJsonCompact(file, artifact);
@@ -2303,8 +2791,9 @@ function buildReleaseManifest() {
   };
 }
 
-syncGeneratedCountryPlaceRoutes();
+syncGeneratedPlaceRoutes();
 writeGeneratedCountryPlacePages();
+writeGeneratedAdm1ContextPages();
 writeHeaders();
 writeSecurityTxt();
 writeApiArtifacts();

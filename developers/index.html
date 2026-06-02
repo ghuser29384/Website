@@ -69,13 +69,16 @@ curl https://painmap.org/releases/2026-05-31/manifest.json
 curl https://painmap.org/data/openapi.json
 curl https://painmap.org/data/release-modes.json
 curl https://painmap.org/v1/places/index.json
+curl https://painmap.org/v1/adm1/index.json
 curl https://painmap.org/v1/coverage.json
+curl https://painmap.org/v1/places/IND/adm1.json
 curl https://painmap.org/v1/places/IND/neighbors.json
 curl https://painmap.org/ogc/collections/places/items.json
 curl https://painmap.org/data/place-measurements.json
 curl https://painmap.org/v1/places/BRA.json
 curl https://painmap.org/data/provenance-registry.json
 curl https://painmap.org/schemas/place-index.schema.json
+curl https://painmap.org/schemas/adm1-context.schema.json
 curl https://painmap.org/releases/2026-05-31/diff.json</code></pre>
           <p class="route-copy">
             The API has no authentication and no write side. Use immutable release URLs for reproducible work; use latest aliases only when freshness matters more than exact replay. Validate client assumptions against the JSON Schemas and coverage status before treating a place as measured.
@@ -117,7 +120,12 @@ curl https://painmap.org/releases/2026-05-31/diff.json</code></pre>
             <article class="metadata-card">
               <span class="evidence-badge">reuse</span>
               <h2>Typed clients</h2>
-              <p>Small TypeScript and Python clients cover releases, coverage, place indexes, place profiles, and measurement payloads.</p>
+              <p>Small TypeScript and Python clients cover releases, coverage, place indexes, ADM1 context, place profiles, and measurement payloads.</p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">ADM1</span>
+              <h2>Subnational context</h2>
+              <p>ADM1 poverty-context rows are static proxy overlays. They are useful for discovery, but they are not canonical PainMap pain measurements.</p>
             </article>
             <article class="metadata-card">
               <span class="evidence-badge">geo</span>

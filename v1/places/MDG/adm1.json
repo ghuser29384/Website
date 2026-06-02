@@ -1,0 +1,981 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "MDG",
+  "parent_place_name": "Madagascar",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 22,
+  "static_page_count": 6,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "MDG-ADM1-ALAOTRA-MANGORO",
+      "place_name": "Alaotra Mangoro",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "alaotra mangoro",
+      "adm1_geo_id": "MDG_2015_ADM1_41750",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.498946,
+      "poverty_context": {
+        "poor300_rate": 0.7564,
+        "poor420_rate": 0.8893,
+        "poor830_rate": 0.982,
+        "prosperity_gap_2021": 15.498946,
+        "poor300_display": "75.6%",
+        "poor420_display": "88.9%",
+        "poor830_display": "98.2%",
+        "prosperity_gap_display": "15.50"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 124
+    },
+    {
+      "place_id": "MDG-ADM1-AMORON-I-MANIA",
+      "place_name": "Amoron I Mania",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "amoron i mania",
+      "adm1_geo_id": "MDG_2015_ADM1_41751",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MDG/adm1/amoron-i-mania/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.447129,
+      "poverty_context": {
+        "poor300_rate": 0.8437,
+        "poor420_rate": 0.9417,
+        "poor830_rate": 0.9955,
+        "prosperity_gap_2021": 19.447129,
+        "poor300_display": "84.4%",
+        "poor420_display": "94.2%",
+        "poor830_display": "99.6%",
+        "prosperity_gap_display": "19.45"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 68
+    },
+    {
+      "place_id": "MDG-ADM1-ANALAMANGA",
+      "place_name": "Analamanga",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "analamanga",
+      "adm1_geo_id": "MDG_2015_ADM1_41752",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.170034,
+      "poverty_context": {
+        "poor300_rate": 0.4875,
+        "poor420_rate": 0.6705,
+        "poor830_rate": 0.8997,
+        "prosperity_gap_2021": 10.170034,
+        "poor300_display": "48.8%",
+        "poor420_display": "67.0%",
+        "poor830_display": "90.0%",
+        "prosperity_gap_display": "10.17"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 328
+    },
+    {
+      "place_id": "MDG-ADM1-ANALANJIROFO",
+      "place_name": "Analanjirofo",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "analanjirofo",
+      "adm1_geo_id": "MDG_2015_ADM1_41753",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.819624,
+      "poverty_context": {
+        "poor300_rate": 0.5285,
+        "poor420_rate": 0.734,
+        "poor830_rate": 0.9654,
+        "prosperity_gap_2021": 10.819624,
+        "poor300_display": "52.8%",
+        "poor420_display": "73.4%",
+        "poor830_display": "96.5%",
+        "prosperity_gap_display": "10.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 293
+    },
+    {
+      "place_id": "MDG-ADM1-ANDROY",
+      "place_name": "Androy",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "androy",
+      "adm1_geo_id": "MDG_2015_ADM1_41754",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MDG/adm1/androy/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 23.273503,
+      "poverty_context": {
+        "poor300_rate": 0.9274,
+        "poor420_rate": 0.9704,
+        "poor830_rate": 0.9913,
+        "prosperity_gap_2021": 23.273503,
+        "poor300_display": "92.7%",
+        "poor420_display": "97.0%",
+        "poor830_display": "99.1%",
+        "prosperity_gap_display": "23.27"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 35
+    },
+    {
+      "place_id": "MDG-ADM1-ANOSY",
+      "place_name": "Anosy",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "anosy",
+      "adm1_geo_id": "MDG_2015_ADM1_41755",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MDG/adm1/anosy/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.90226,
+      "poverty_context": {
+        "poor300_rate": 0.7652,
+        "poor420_rate": 0.8657,
+        "poor830_rate": 0.961,
+        "prosperity_gap_2021": 19.90226,
+        "poor300_display": "76.5%",
+        "poor420_display": "86.6%",
+        "poor830_display": "96.1%",
+        "prosperity_gap_display": "19.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 62
+    },
+    {
+      "place_id": "MDG-ADM1-ATSIMO-ANDREFANA",
+      "place_name": "Atsimo Andrefana",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "atsimo andrefana",
+      "adm1_geo_id": "MDG_2015_ADM1_41756",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MDG/adm1/atsimo-andrefana/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 19.562609,
+      "poverty_context": {
+        "poor300_rate": 0.761,
+        "poor420_rate": 0.8763,
+        "poor830_rate": 0.9816,
+        "prosperity_gap_2021": 19.562609,
+        "poor300_display": "76.1%",
+        "poor420_display": "87.6%",
+        "poor830_display": "98.2%",
+        "prosperity_gap_display": "19.56"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 65
+    },
+    {
+      "place_id": "MDG-ADM1-ATSIMO-ATSINANANA",
+      "place_name": "Atsimo Atsinanana",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "atsimo atsinanana",
+      "adm1_geo_id": "MDG_2015_ADM1_41757",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.388734,
+      "poverty_context": {
+        "poor300_rate": 0.7866,
+        "poor420_rate": 0.9048,
+        "poor830_rate": 0.9706,
+        "prosperity_gap_2021": 15.388734,
+        "poor300_display": "78.7%",
+        "poor420_display": "90.5%",
+        "poor830_display": "97.1%",
+        "prosperity_gap_display": "15.39"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 129
+    },
+    {
+      "place_id": "MDG-ADM1-ATSINANANA",
+      "place_name": "Atsinanana",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "atsinanana",
+      "adm1_geo_id": "MDG_2015_ADM1_41758",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.864548,
+      "poverty_context": {
+        "poor300_rate": 0.5702,
+        "poor420_rate": 0.7914,
+        "poor830_rate": 0.9531,
+        "prosperity_gap_2021": 10.864548,
+        "poor300_display": "57.0%",
+        "poor420_display": "79.1%",
+        "poor830_display": "95.3%",
+        "prosperity_gap_display": "10.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 292
+    },
+    {
+      "place_id": "MDG-ADM1-BETSIBOKA",
+      "place_name": "Betsiboka",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "betsiboka",
+      "adm1_geo_id": "MDG_2015_ADM1_41759",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.455481,
+      "poverty_context": {
+        "poor300_rate": 0.7843,
+        "poor420_rate": 0.9127,
+        "poor830_rate": 0.9845,
+        "prosperity_gap_2021": 14.455481,
+        "poor300_display": "78.4%",
+        "poor420_display": "91.3%",
+        "poor830_display": "98.5%",
+        "prosperity_gap_display": "14.46"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 148
+    },
+    {
+      "place_id": "MDG-ADM1-BOENY",
+      "place_name": "Boeny",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "boeny",
+      "adm1_geo_id": "MDG_2015_ADM1_41760",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.667107,
+      "poverty_context": {
+        "poor300_rate": 0.5592,
+        "poor420_rate": 0.7769,
+        "poor830_rate": 0.9524,
+        "prosperity_gap_2021": 10.667107,
+        "poor300_display": "55.9%",
+        "poor420_display": "77.7%",
+        "poor830_display": "95.2%",
+        "prosperity_gap_display": "10.67"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 302
+    },
+    {
+      "place_id": "MDG-ADM1-BONGOLAVA",
+      "place_name": "Bongolava",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "bongolava",
+      "adm1_geo_id": "MDG_2015_ADM1_41761",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.860537,
+      "poverty_context": {
+        "poor300_rate": 0.8056,
+        "poor420_rate": 0.9328,
+        "poor830_rate": 0.9859,
+        "prosperity_gap_2021": 14.860537,
+        "poor300_display": "80.6%",
+        "poor420_display": "93.3%",
+        "poor830_display": "98.6%",
+        "prosperity_gap_display": "14.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 139
+    },
+    {
+      "place_id": "MDG-ADM1-DIANA",
+      "place_name": "Diana",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "diana",
+      "adm1_geo_id": "MDG_2015_ADM1_41762",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.541049,
+      "poverty_context": {
+        "poor300_rate": 0.6038,
+        "poor420_rate": 0.7922,
+        "poor830_rate": 0.9664,
+        "prosperity_gap_2021": 11.541049,
+        "poor300_display": "60.4%",
+        "poor420_display": "79.2%",
+        "poor830_display": "96.6%",
+        "prosperity_gap_display": "11.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 246
+    },
+    {
+      "place_id": "MDG-ADM1-HAUTE-MATSIATRA",
+      "place_name": "Haute Matsiatra",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "haute matsiatra",
+      "adm1_geo_id": "MDG_2015_ADM1_41763",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MDG/adm1/haute-matsiatra/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.714165,
+      "poverty_context": {
+        "poor300_rate": 0.7758,
+        "poor420_rate": 0.894,
+        "poor830_rate": 0.9683,
+        "prosperity_gap_2021": 15.714165,
+        "poor300_display": "77.6%",
+        "poor420_display": "89.4%",
+        "poor830_display": "96.8%",
+        "prosperity_gap_display": "15.71"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 119
+    },
+    {
+      "place_id": "MDG-ADM1-IHOROMBE",
+      "place_name": "Ihorombe",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "ihorombe",
+      "adm1_geo_id": "MDG_2015_ADM1_41764",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 15.240036,
+      "poverty_context": {
+        "poor300_rate": 0.7463,
+        "poor420_rate": 0.885,
+        "poor830_rate": 0.9851,
+        "prosperity_gap_2021": 15.240036,
+        "poor300_display": "74.6%",
+        "poor420_display": "88.5%",
+        "poor830_display": "98.5%",
+        "prosperity_gap_display": "15.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 132
+    },
+    {
+      "place_id": "MDG-ADM1-ITASY",
+      "place_name": "Itasy",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "itasy",
+      "adm1_geo_id": "MDG_2015_ADM1_41765",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.126563,
+      "poverty_context": {
+        "poor300_rate": 0.649,
+        "poor420_rate": 0.808,
+        "poor830_rate": 0.9824,
+        "prosperity_gap_2021": 13.126563,
+        "poor300_display": "64.9%",
+        "poor420_display": "80.8%",
+        "poor830_display": "98.2%",
+        "prosperity_gap_display": "13.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 179
+    },
+    {
+      "place_id": "MDG-ADM1-MELAKY",
+      "place_name": "Melaky",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "melaky",
+      "adm1_geo_id": "MDG_2015_ADM1_41766",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.877557,
+      "poverty_context": {
+        "poor300_rate": 0.575,
+        "poor420_rate": 0.7682,
+        "poor830_rate": 0.9526,
+        "prosperity_gap_2021": 11.877557,
+        "poor300_display": "57.5%",
+        "poor420_display": "76.8%",
+        "poor830_display": "95.3%",
+        "prosperity_gap_display": "11.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 223
+    },
+    {
+      "place_id": "MDG-ADM1-MENABE",
+      "place_name": "Menabe",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "menabe",
+      "adm1_geo_id": "MDG_2015_ADM1_41767",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 14.770398,
+      "poverty_context": {
+        "poor300_rate": 0.7324,
+        "poor420_rate": 0.887,
+        "poor830_rate": 0.9828,
+        "prosperity_gap_2021": 14.770398,
+        "poor300_display": "73.2%",
+        "poor420_display": "88.7%",
+        "poor830_display": "98.3%",
+        "prosperity_gap_display": "14.77"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 140
+    },
+    {
+      "place_id": "MDG-ADM1-SAVA",
+      "place_name": "Sava",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "sava",
+      "adm1_geo_id": "MDG_2015_ADM1_41768",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.193704,
+      "poverty_context": {
+        "poor300_rate": 0.6483,
+        "poor420_rate": 0.831,
+        "poor830_rate": 0.9771,
+        "prosperity_gap_2021": 12.193704,
+        "poor300_display": "64.8%",
+        "poor420_display": "83.1%",
+        "poor830_display": "97.7%",
+        "prosperity_gap_display": "12.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 206
+    },
+    {
+      "place_id": "MDG-ADM1-SOFIA",
+      "place_name": "Sofia",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "sofia",
+      "adm1_geo_id": "MDG_2015_ADM1_41769",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 12.286121,
+      "poverty_context": {
+        "poor300_rate": 0.6562,
+        "poor420_rate": 0.8507,
+        "poor830_rate": 0.9807,
+        "prosperity_gap_2021": 12.286121,
+        "poor300_display": "65.6%",
+        "poor420_display": "85.1%",
+        "poor830_display": "98.1%",
+        "prosperity_gap_display": "12.29"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 201
+    },
+    {
+      "place_id": "MDG-ADM1-VAKINANKARATRA",
+      "place_name": "Vakinankaratra",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "vakinankaratra",
+      "adm1_geo_id": "MDG_2015_ADM1_41770",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 13.432438,
+      "poverty_context": {
+        "poor300_rate": 0.67,
+        "poor420_rate": 0.8129,
+        "poor830_rate": 0.9657,
+        "prosperity_gap_2021": 13.432438,
+        "poor300_display": "67.0%",
+        "poor420_display": "81.3%",
+        "poor830_display": "96.6%",
+        "prosperity_gap_display": "13.43"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 167
+    },
+    {
+      "place_id": "MDG-ADM1-VATOVAVY-FITOVINANY",
+      "place_name": "Vatovavy Fitovinany",
+      "parent_place_id": "MDG",
+      "parent_place_name": "Madagascar",
+      "iso3": "MDG",
+      "source_iso3": "MDG",
+      "geometry_level": "adm1",
+      "adm1_key": "vatovavy fitovinany",
+      "adm1_geo_id": "MDG_2015_ADM1_41771",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": "https://painmap.org/place/MDG/adm1/vatovavy-fitovinany/",
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MDG/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 17.176348,
+      "poverty_context": {
+        "poor300_rate": 0.8781,
+        "poor420_rate": 0.9574,
+        "poor830_rate": 0.9911,
+        "prosperity_gap_2021": 17.176348,
+        "poor300_display": "87.8%",
+        "poor420_display": "95.7%",
+        "poor830_display": "99.1%",
+        "prosperity_gap_display": "17.18"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 93
+    }
+  ]
+}

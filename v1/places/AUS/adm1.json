@@ -1,0 +1,365 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "AUS",
+  "parent_place_name": "Australia",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 8,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "AUS-ADM1-AUSTRALIAN-CAPITAL-TERRITORY",
+      "place_name": "Australian Capital Territory",
+      "parent_place_id": "AUS",
+      "parent_place_name": "Australia",
+      "iso3": "AUS",
+      "source_iso3": "AUS",
+      "geometry_level": "adm1",
+      "adm1_key": "australian capital territory",
+      "adm1_geo_id": "AUS_2015_ADM1_468",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.533168,
+      "poverty_context": {
+        "poor300_rate": 0.0004,
+        "poor420_rate": 0.0004,
+        "poor830_rate": 0.0004,
+        "prosperity_gap_2021": 0.53316815,
+        "poor300_display": "0.04%",
+        "poor420_display": "0.04%",
+        "poor830_display": "0.04%",
+        "prosperity_gap_display": "0.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1866
+    },
+    {
+      "place_id": "AUS-ADM1-NEW-SOUTH-WALES",
+      "place_name": "New South Wales",
+      "parent_place_id": "AUS",
+      "parent_place_name": "Australia",
+      "iso3": "AUS",
+      "source_iso3": "AUS",
+      "geometry_level": "adm1",
+      "adm1_key": "new south wales",
+      "adm1_geo_id": "AUS_2015_ADM1_470",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.949183,
+      "poverty_context": {
+        "poor300_rate": 0.0063,
+        "poor420_rate": 0.0063,
+        "poor830_rate": 0.0095,
+        "prosperity_gap_2021": 0.94918299,
+        "poor300_display": "0.63%",
+        "poor420_display": "0.63%",
+        "poor830_display": "0.95%",
+        "prosperity_gap_display": "0.95"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1759
+    },
+    {
+      "place_id": "AUS-ADM1-NORTHERN-TERRITORY",
+      "place_name": "Northern Territory",
+      "parent_place_id": "AUS",
+      "parent_place_name": "Australia",
+      "iso3": "AUS",
+      "source_iso3": "AUS",
+      "geometry_level": "adm1",
+      "adm1_key": "northern territory",
+      "adm1_geo_id": "AUS_2015_ADM1_471_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.682451,
+      "poverty_context": {
+        "poor300_rate": 0.0014,
+        "poor420_rate": 0.0014,
+        "poor830_rate": 0.0196,
+        "prosperity_gap_2021": 0.68245097,
+        "poor300_display": "0.14%",
+        "poor420_display": "0.14%",
+        "poor830_display": "1.96%",
+        "prosperity_gap_display": "0.68"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1832
+    },
+    {
+      "place_id": "AUS-ADM1-QUEENSLAND",
+      "place_name": "Queensland",
+      "parent_place_id": "AUS",
+      "parent_place_name": "Australia",
+      "iso3": "AUS",
+      "source_iso3": "AUS",
+      "geometry_level": "adm1",
+      "adm1_key": "queensland",
+      "adm1_geo_id": "AUS_2015_ADM1_473",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.914896,
+      "poverty_context": {
+        "poor300_rate": 0.0045,
+        "poor420_rate": 0.0048,
+        "poor830_rate": 0.0103,
+        "prosperity_gap_2021": 0.91489626,
+        "poor300_display": "0.45%",
+        "poor420_display": "0.48%",
+        "poor830_display": "1.03%",
+        "prosperity_gap_display": "0.91"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1771
+    },
+    {
+      "place_id": "AUS-ADM1-SOUTH-AUSTRALIA",
+      "place_name": "South Australia",
+      "parent_place_id": "AUS",
+      "parent_place_name": "Australia",
+      "iso3": "AUS",
+      "source_iso3": "AUS",
+      "geometry_level": "adm1",
+      "adm1_key": "south australia",
+      "adm1_geo_id": "AUS_2015_ADM1_474",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.85713,
+      "poverty_context": {
+        "poor300_rate": 0.0028,
+        "poor420_rate": 0.0028,
+        "poor830_rate": 0.0076,
+        "prosperity_gap_2021": 0.85712986,
+        "poor300_display": "0.28%",
+        "poor420_display": "0.28%",
+        "poor830_display": "0.76%",
+        "prosperity_gap_display": "0.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1789
+    },
+    {
+      "place_id": "AUS-ADM1-TASMANIA",
+      "place_name": "Tasmania",
+      "parent_place_id": "AUS",
+      "parent_place_name": "Australia",
+      "iso3": "AUS",
+      "source_iso3": "AUS",
+      "geometry_level": "adm1",
+      "adm1_key": "tasmania",
+      "adm1_geo_id": "AUS_2015_ADM1_475",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.759708,
+      "poverty_context": {
+        "poor300_rate": 0.0011,
+        "poor420_rate": 0.0017,
+        "poor830_rate": 0.0084,
+        "prosperity_gap_2021": 0.75970798,
+        "poor300_display": "0.11%",
+        "poor420_display": "0.17%",
+        "poor830_display": "0.84%",
+        "prosperity_gap_display": "0.76"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1816
+    },
+    {
+      "place_id": "AUS-ADM1-VICTORIA",
+      "place_name": "Victoria",
+      "parent_place_id": "AUS",
+      "parent_place_name": "Australia",
+      "iso3": "AUS",
+      "source_iso3": "AUS",
+      "geometry_level": "adm1",
+      "adm1_key": "victoria",
+      "adm1_geo_id": "AUS_2015_ADM1_476",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.728245,
+      "poverty_context": {
+        "poor300_rate": 0.0018,
+        "poor420_rate": 0.0024,
+        "poor830_rate": 0.01,
+        "prosperity_gap_2021": 0.72824498,
+        "poor300_display": "0.18%",
+        "poor420_display": "0.24%",
+        "poor830_display": "1.00%",
+        "prosperity_gap_display": "0.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1821
+    },
+    {
+      "place_id": "AUS-ADM1-WESTERN-AUSTRALIA",
+      "place_name": "Western Australia",
+      "parent_place_id": "AUS",
+      "parent_place_name": "Australia",
+      "iso3": "AUS",
+      "source_iso3": "AUS",
+      "geometry_level": "adm1",
+      "adm1_key": "western australia",
+      "adm1_geo_id": "AUS_2015_ADM1_477",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AUS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.858389,
+      "poverty_context": {
+        "poor300_rate": 0.0045,
+        "poor420_rate": 0.0061,
+        "poor830_rate": 0.0151,
+        "prosperity_gap_2021": 0.85838907,
+        "poor300_display": "0.45%",
+        "poor420_display": "0.61%",
+        "poor830_display": "1.51%",
+        "prosperity_gap_display": "0.86"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1788
+    }
+  ]
+}

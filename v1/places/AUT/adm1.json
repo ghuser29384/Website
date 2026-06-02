@@ -1,0 +1,145 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "AUT",
+  "parent_place_name": "Austria",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 3,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "AUT-ADM1-OST-STERREICH-AT1",
+      "place_name": "Ostösterreich (AT1)",
+      "parent_place_id": "AUT",
+      "parent_place_name": "Austria",
+      "iso3": "AUT",
+      "source_iso3": "AUT",
+      "geometry_level": "adm1",
+      "adm1_key": "ost sterreich at1",
+      "adm1_geo_id": "AUT_2015_ADMx_NUTS_AT1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AUT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.935391,
+      "poverty_context": {
+        "poor300_rate": 0.0063,
+        "poor420_rate": 0.0064,
+        "poor830_rate": 0.0117,
+        "prosperity_gap_2021": 0.93539146,
+        "poor300_display": "0.63%",
+        "poor420_display": "0.64%",
+        "poor830_display": "1.17%",
+        "prosperity_gap_display": "0.94"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1764
+    },
+    {
+      "place_id": "AUT-ADM1-S-D-STERREICH-AT2",
+      "place_name": "Südösterreich (AT2)",
+      "parent_place_id": "AUT",
+      "parent_place_name": "Austria",
+      "iso3": "AUT",
+      "source_iso3": "AUT",
+      "geometry_level": "adm1",
+      "adm1_key": "s d sterreich at2",
+      "adm1_geo_id": "AUT_2015_ADMx_NUTS_AT2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AUT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.78767,
+      "poverty_context": {
+        "poor300_rate": 0.0046,
+        "poor420_rate": 0.0048,
+        "poor830_rate": 0.0092,
+        "prosperity_gap_2021": 0.78767011,
+        "poor300_display": "0.46%",
+        "poor420_display": "0.48%",
+        "poor830_display": "0.92%",
+        "prosperity_gap_display": "0.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1812
+    },
+    {
+      "place_id": "AUT-ADM1-WEST-STERREICH-AT3",
+      "place_name": "Westösterreich (AT3)",
+      "parent_place_id": "AUT",
+      "parent_place_name": "Austria",
+      "iso3": "AUT",
+      "source_iso3": "AUT",
+      "geometry_level": "adm1",
+      "adm1_key": "west sterreich at3",
+      "adm1_geo_id": "AUT_2015_ADMx_NUTS_AT3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/AUT/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 0.695153,
+      "poverty_context": {
+        "poor300_rate": 0.0042,
+        "poor420_rate": 0.0054,
+        "poor830_rate": 0.0083,
+        "prosperity_gap_2021": 0.69515336,
+        "poor300_display": "0.42%",
+        "poor420_display": "0.54%",
+        "poor830_display": "0.83%",
+        "prosperity_gap_display": "0.70"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 1829
+    }
+  ]
+}

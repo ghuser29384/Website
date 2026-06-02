@@ -8,14 +8,18 @@ export interface PlaceIndexItem {
   iso3: string;
   geometry_level: GeometryLevel;
   boundary_indexed: boolean;
-  coverage_status: "canonical_measurements" | "boundary_index_only";
+  coverage_status: "canonical_measurements" | "boundary_index_only" | "adm1_context_overlay";
   canonical_measurement_count: number;
   available_layers: string[];
   evidence_kinds: EvidenceKind[];
   page_url: string | null;
   profile_url: string | null;
   measurements_url: string | null;
-  neighbors_url: string;
+  neighbors_url: string | null;
+  context_url?: string | null;
+  adm1_context_url?: string | null;
+  adm1_context_count?: number;
+  adm1_static_page_count?: number;
   latest_release_id: string;
 }
 
@@ -53,6 +57,35 @@ export interface ReleaseModes {
   local_event_name: string;
   modes: ReleaseMode[];
   ui_contract: Record<string, string>;
+}
+
+export interface Adm1ContextItem {
+  place_id: string;
+  place_name: string;
+  parent_place_id: string;
+  parent_place_name: string;
+  iso3: string;
+  geometry_level: "adm1";
+  adm1_key: string;
+  adm1_geo_id: string | null;
+  coverage_status: "adm1_context_overlay";
+  page_url: string | null;
+  context_url: string;
+  source_ids: string[];
+  source_vintage: string;
+  relevance_score: number;
+  adm1_priority_rank: number;
+  poverty_context: Record<string, unknown>;
+}
+
+export interface Adm1ContextIndex {
+  release_id: string;
+  generated_at: string;
+  source_id: string;
+  coverage_status: "adm1_context_overlay";
+  count: number;
+  static_page_count: number;
+  items: Adm1ContextItem[];
 }
 
 export interface PlaceMeasurement {
@@ -176,6 +209,14 @@ export class PainMapClient {
 
   async placeIndex(): Promise<PlaceIndex> {
     return this.json<PlaceIndex>("/v1/places/index.json");
+  }
+
+  async adm1ContextIndex(): Promise<Adm1ContextIndex> {
+    return this.json<Adm1ContextIndex>("/v1/adm1/index.json");
+  }
+
+  async countryAdm1Context(placeId: string): Promise<Adm1ContextIndex> {
+    return this.json<Adm1ContextIndex>(`/v1/places/${encodeURIComponent(placeId)}/adm1.json`);
   }
 
   async coverage(): Promise<Coverage> {

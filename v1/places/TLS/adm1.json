@@ -1,0 +1,585 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "TLS",
+  "parent_place_name": "East Timor",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 13,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "TLS-ADM1-AILEU",
+      "place_name": "Aileu",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "aileu",
+      "adm1_geo_id": "TLS_2015_ADM1_2957",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.879823,
+      "poverty_context": {
+        "poor300_rate": 0.3666,
+        "poor420_rate": 0.6836,
+        "poor830_rate": 0.9818,
+        "prosperity_gap_2021": 8.879823,
+        "poor300_display": "36.7%",
+        "poor420_display": "68.4%",
+        "poor830_display": "98.2%",
+        "prosperity_gap_display": "8.88"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 425
+    },
+    {
+      "place_id": "TLS-ADM1-AINARO",
+      "place_name": "Ainaro",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "ainaro",
+      "adm1_geo_id": "TLS_2015_ADM1_2958",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.230741,
+      "poverty_context": {
+        "poor300_rate": 0.4543,
+        "poor420_rate": 0.727,
+        "poor830_rate": 0.9572,
+        "prosperity_gap_2021": 9.2307414,
+        "poor300_display": "45.4%",
+        "poor420_display": "72.7%",
+        "poor830_display": "95.7%",
+        "prosperity_gap_display": "9.23"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 403
+    },
+    {
+      "place_id": "TLS-ADM1-BAUCAU",
+      "place_name": "Baucau",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "baucau",
+      "adm1_geo_id": "TLS_2015_ADM1_2959",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.466533,
+      "poverty_context": {
+        "poor300_rate": 0.3457,
+        "poor420_rate": 0.6637,
+        "poor830_rate": 0.9602,
+        "prosperity_gap_2021": 8.4665326,
+        "poor300_display": "34.6%",
+        "poor420_display": "66.4%",
+        "poor830_display": "96.0%",
+        "prosperity_gap_display": "8.47"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 461
+    },
+    {
+      "place_id": "TLS-ADM1-BOBONARO",
+      "place_name": "Bobonaro",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "bobonaro",
+      "adm1_geo_id": "TLS_2015_ADM1_2960",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 10.199236,
+      "poverty_context": {
+        "poor300_rate": 0.5367,
+        "poor420_rate": 0.8052,
+        "poor830_rate": 0.9761,
+        "prosperity_gap_2021": 10.199236,
+        "poor300_display": "53.7%",
+        "poor420_display": "80.5%",
+        "poor830_display": "97.6%",
+        "prosperity_gap_display": "10.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 327
+    },
+    {
+      "place_id": "TLS-ADM1-COVALIMA",
+      "place_name": "Covalima",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "covalima",
+      "adm1_geo_id": "TLS_2015_ADM1_2961",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.240926,
+      "poverty_context": {
+        "poor300_rate": 0.5362,
+        "poor420_rate": 0.7912,
+        "poor830_rate": 0.9853,
+        "prosperity_gap_2021": 11.240926,
+        "poor300_display": "53.6%",
+        "poor420_display": "79.1%",
+        "poor830_display": "98.5%",
+        "prosperity_gap_display": "11.24"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 266
+    },
+    {
+      "place_id": "TLS-ADM1-DILI",
+      "place_name": "Dili",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "dili",
+      "adm1_geo_id": "TLS_2015_ADM1_2962",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.957813,
+      "poverty_context": {
+        "poor300_rate": 0.3066,
+        "poor420_rate": 0.5975,
+        "poor830_rate": 0.9267,
+        "prosperity_gap_2021": 7.9578128,
+        "poor300_display": "30.7%",
+        "poor420_display": "59.8%",
+        "poor830_display": "92.7%",
+        "prosperity_gap_display": "7.96"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 505
+    },
+    {
+      "place_id": "TLS-ADM1-ERMERA",
+      "place_name": "Ermera",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "ermera",
+      "adm1_geo_id": "TLS_2015_ADM1_2963",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.012402,
+      "poverty_context": {
+        "poor300_rate": 0.5831,
+        "poor420_rate": 0.7971,
+        "poor830_rate": 0.9692,
+        "prosperity_gap_2021": 11.012402,
+        "poor300_display": "58.3%",
+        "poor420_display": "79.7%",
+        "poor830_display": "96.9%",
+        "prosperity_gap_display": "11.01"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 282
+    },
+    {
+      "place_id": "TLS-ADM1-LAUTEM",
+      "place_name": "Lautem",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "lautem",
+      "adm1_geo_id": "TLS_2015_ADM1_2964",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.494899,
+      "poverty_context": {
+        "poor300_rate": 0.3479,
+        "poor420_rate": 0.6666,
+        "poor830_rate": 0.9497,
+        "prosperity_gap_2021": 8.4948993,
+        "poor300_display": "34.8%",
+        "poor420_display": "66.7%",
+        "poor830_display": "95.0%",
+        "prosperity_gap_display": "8.49"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 458
+    },
+    {
+      "place_id": "TLS-ADM1-LIQUICA",
+      "place_name": "Liquica",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "liquica",
+      "adm1_geo_id": "TLS_2015_ADM1_2965",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.90142,
+      "poverty_context": {
+        "poor300_rate": 0.4506,
+        "poor420_rate": 0.7614,
+        "poor830_rate": 0.9743,
+        "prosperity_gap_2021": 9.9014198,
+        "poor300_display": "45.1%",
+        "poor420_display": "76.1%",
+        "poor830_display": "97.4%",
+        "prosperity_gap_display": "9.90"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 342
+    },
+    {
+      "place_id": "TLS-ADM1-MANATUTO",
+      "place_name": "Manatuto",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "manatuto",
+      "adm1_geo_id": "TLS_2015_ADM1_2966",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.075431,
+      "poverty_context": {
+        "poor300_rate": 0.4383,
+        "poor420_rate": 0.7047,
+        "poor830_rate": 0.9701,
+        "prosperity_gap_2021": 9.0754309,
+        "poor300_display": "43.8%",
+        "poor420_display": "70.5%",
+        "poor830_display": "97.0%",
+        "prosperity_gap_display": "9.08"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 413
+    },
+    {
+      "place_id": "TLS-ADM1-MANUFAHI",
+      "place_name": "Manufahi",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "manufahi",
+      "adm1_geo_id": "TLS_2015_ADM1_2967",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.732091,
+      "poverty_context": {
+        "poor300_rate": 0.4889,
+        "poor420_rate": 0.7667,
+        "poor830_rate": 0.9791,
+        "prosperity_gap_2021": 9.7320907,
+        "poor300_display": "48.9%",
+        "poor420_display": "76.7%",
+        "poor830_display": "97.9%",
+        "prosperity_gap_display": "9.73"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 365
+    },
+    {
+      "place_id": "TLS-ADM1-OECUSSI",
+      "place_name": "Oecussi",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "oecussi",
+      "adm1_geo_id": "TLS_2015_ADM1_2968",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 11.661725,
+      "poverty_context": {
+        "poor300_rate": 0.641,
+        "poor420_rate": 0.8245,
+        "poor830_rate": 0.9664,
+        "prosperity_gap_2021": 11.661725,
+        "poor300_display": "64.1%",
+        "poor420_display": "82.5%",
+        "poor830_display": "96.6%",
+        "prosperity_gap_display": "11.66"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 234
+    },
+    {
+      "place_id": "TLS-ADM1-VIQUEQUE",
+      "place_name": "Viqueque",
+      "parent_place_id": "TLS",
+      "parent_place_name": "East Timor",
+      "iso3": "TLS",
+      "source_iso3": "TLS",
+      "geometry_level": "adm1",
+      "adm1_key": "viqueque",
+      "adm1_geo_id": "TLS_2015_ADM1_2969",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/TLS/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 8.751285,
+      "poverty_context": {
+        "poor300_rate": 0.399,
+        "poor420_rate": 0.6759,
+        "poor830_rate": 0.9675,
+        "prosperity_gap_2021": 8.7512854,
+        "poor300_display": "39.9%",
+        "poor420_display": "67.6%",
+        "poor830_display": "96.8%",
+        "prosperity_gap_display": "8.75"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 438
+    }
+  ]
+}

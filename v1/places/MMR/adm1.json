@@ -1,0 +1,673 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "parent_place_id": "MMR",
+  "parent_place_name": "Myanmar",
+  "source_id": "world-bank-gsap-adm1",
+  "coverage_status": "adm1_context_overlay",
+  "count": 15,
+  "static_page_count": 0,
+  "method": "ADM1 context rows are derived from the vendored World Bank GSAP 2023 ADM1 poverty-context table. They are released as contextual proxy overlays and are not canonical pain measurements.",
+  "items": [
+    {
+      "place_id": "MMR-ADM1-AYEYARWADY",
+      "place_name": "Ayeyarwady",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "ayeyarwady",
+      "adm1_geo_id": "MMR_2017_ADM_1",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.649072,
+      "poverty_context": {
+        "poor300_rate": 0.1577,
+        "poor420_rate": 0.4305,
+        "poor830_rate": 0.8849,
+        "prosperity_gap_2021": 6.6490717,
+        "poor300_display": "15.8%",
+        "poor420_display": "43.0%",
+        "poor830_display": "88.5%",
+        "prosperity_gap_display": "6.65"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 613
+    },
+    {
+      "place_id": "MMR-ADM1-BAGO",
+      "place_name": "Bago",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "bago",
+      "adm1_geo_id": "MMR_2017_ADM_2",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.538899,
+      "poverty_context": {
+        "poor300_rate": 0.0955,
+        "poor420_rate": 0.2504,
+        "poor830_rate": 0.7904,
+        "prosperity_gap_2021": 5.5388994,
+        "poor300_display": "9.55%",
+        "poor420_display": "25.0%",
+        "poor830_display": "79.0%",
+        "prosperity_gap_display": "5.54"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 735
+    },
+    {
+      "place_id": "MMR-ADM1-CHIN",
+      "place_name": "Chin",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "chin",
+      "adm1_geo_id": "MMR_2017_ADM_3",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 9.822165,
+      "poverty_context": {
+        "poor300_rate": 0.4411,
+        "poor420_rate": 0.6967,
+        "poor830_rate": 0.9504,
+        "prosperity_gap_2021": 9.8221649,
+        "poor300_display": "44.1%",
+        "poor420_display": "69.7%",
+        "poor830_display": "95.0%",
+        "prosperity_gap_display": "9.82"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 354
+    },
+    {
+      "place_id": "MMR-ADM1-KACHIN",
+      "place_name": "Kachin",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "kachin",
+      "adm1_geo_id": "MMR_2017_ADM_4",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.526015,
+      "poverty_context": {
+        "poor300_rate": 0.2564,
+        "poor420_rate": 0.4785,
+        "poor830_rate": 0.9057,
+        "prosperity_gap_2021": 7.5260149,
+        "poor300_display": "25.6%",
+        "poor420_display": "47.9%",
+        "poor830_display": "90.6%",
+        "prosperity_gap_display": "7.53"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 546
+    },
+    {
+      "place_id": "MMR-ADM1-KAYAH",
+      "place_name": "Kayah",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "kayah",
+      "adm1_geo_id": "MMR_2017_ADM_5",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.924244,
+      "poverty_context": {
+        "poor300_rate": 0.2193,
+        "poor420_rate": 0.4556,
+        "poor830_rate": 0.8694,
+        "prosperity_gap_2021": 6.9242437,
+        "poor300_display": "21.9%",
+        "poor420_display": "45.6%",
+        "poor830_display": "86.9%",
+        "prosperity_gap_display": "6.92"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 590
+    },
+    {
+      "place_id": "MMR-ADM1-KAYIN",
+      "place_name": "Kayin",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "kayin",
+      "adm1_geo_id": "MMR_2017_ADM_6",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.19271,
+      "poverty_context": {
+        "poor300_rate": 0.1387,
+        "poor420_rate": 0.3842,
+        "poor830_rate": 0.8771,
+        "prosperity_gap_2021": 6.1927102,
+        "poor300_display": "13.9%",
+        "poor420_display": "38.4%",
+        "poor830_display": "87.7%",
+        "prosperity_gap_display": "6.19"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 650
+    },
+    {
+      "place_id": "MMR-ADM1-MAGWAY",
+      "place_name": "Magway",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "magway",
+      "adm1_geo_id": "MMR_2017_ADM_7",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.783712,
+      "poverty_context": {
+        "poor300_rate": 0.1871,
+        "poor420_rate": 0.4563,
+        "poor830_rate": 0.8821,
+        "prosperity_gap_2021": 6.7837124,
+        "poor300_display": "18.7%",
+        "poor420_display": "45.6%",
+        "poor830_display": "88.2%",
+        "prosperity_gap_display": "6.78"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 601
+    },
+    {
+      "place_id": "MMR-ADM1-MANDALAY",
+      "place_name": "Mandalay",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "mandalay",
+      "adm1_geo_id": "MMR_2017_ADM_8",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.19932,
+      "poverty_context": {
+        "poor300_rate": 0.0593,
+        "poor420_rate": 0.2288,
+        "poor830_rate": 0.7785,
+        "prosperity_gap_2021": 5.1993201,
+        "poor300_display": "5.93%",
+        "poor420_display": "22.9%",
+        "poor830_display": "77.8%",
+        "prosperity_gap_display": "5.20"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 780
+    },
+    {
+      "place_id": "MMR-ADM1-MON",
+      "place_name": "Mon",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "mon",
+      "adm1_geo_id": "MMR_2017_ADM_9",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.844011,
+      "poverty_context": {
+        "poor300_rate": 0.1004,
+        "poor420_rate": 0.2769,
+        "poor830_rate": 0.8395,
+        "prosperity_gap_2021": 5.8440112,
+        "poor300_display": "10.0%",
+        "poor420_display": "27.7%",
+        "poor830_display": "84.0%",
+        "prosperity_gap_display": "5.84"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 700
+    },
+    {
+      "place_id": "MMR-ADM1-NAYPYITAW",
+      "place_name": "Naypyitaw",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "naypyitaw",
+      "adm1_geo_id": "MMR_2017_ADM_10",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.791497,
+      "poverty_context": {
+        "poor300_rate": 0.1097,
+        "poor420_rate": 0.3235,
+        "poor830_rate": 0.8226,
+        "prosperity_gap_2021": 5.7914968,
+        "poor300_display": "11.0%",
+        "poor420_display": "32.4%",
+        "poor830_display": "82.3%",
+        "prosperity_gap_display": "5.79"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 705
+    },
+    {
+      "place_id": "MMR-ADM1-RAKHINE",
+      "place_name": "Rakhine",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "rakhine",
+      "adm1_geo_id": "MMR_2017_ADM_11",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 7.252505,
+      "poverty_context": {
+        "poor300_rate": 0.1946,
+        "poor420_rate": 0.5763,
+        "poor830_rate": 0.9519,
+        "prosperity_gap_2021": 7.2525051,
+        "poor300_display": "19.5%",
+        "poor420_display": "57.6%",
+        "poor830_display": "95.2%",
+        "prosperity_gap_display": "7.25"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 570
+    },
+    {
+      "place_id": "MMR-ADM1-SAGAING",
+      "place_name": "Sagaing",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "sagaing",
+      "adm1_geo_id": "MMR_2017_ADM_12",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.684115,
+      "poverty_context": {
+        "poor300_rate": 0.1612,
+        "poor420_rate": 0.4283,
+        "poor830_rate": 0.9072,
+        "prosperity_gap_2021": 6.6841148,
+        "poor300_display": "16.1%",
+        "poor420_display": "42.8%",
+        "poor830_display": "90.7%",
+        "prosperity_gap_display": "6.68"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 610
+    },
+    {
+      "place_id": "MMR-ADM1-SHAN",
+      "place_name": "Shan",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "shan",
+      "adm1_geo_id": "MMR_2017_ADM_13",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 6.548506,
+      "poverty_context": {
+        "poor300_rate": 0.1722,
+        "poor420_rate": 0.3875,
+        "poor830_rate": 0.8667,
+        "prosperity_gap_2021": 6.5485064,
+        "poor300_display": "17.2%",
+        "poor420_display": "38.8%",
+        "poor830_display": "86.7%",
+        "prosperity_gap_display": "6.55"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 626
+    },
+    {
+      "place_id": "MMR-ADM1-TANINTHARYI",
+      "place_name": "Tanintharyi",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "tanintharyi",
+      "adm1_geo_id": "MMR_2017_ADM_14",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 5.128337,
+      "poverty_context": {
+        "poor300_rate": 0.0539,
+        "poor420_rate": 0.2157,
+        "poor830_rate": 0.7313,
+        "prosperity_gap_2021": 5.1283371,
+        "poor300_display": "5.39%",
+        "poor420_display": "21.6%",
+        "poor830_display": "73.1%",
+        "prosperity_gap_display": "5.13"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 792
+    },
+    {
+      "place_id": "MMR-ADM1-YANGON",
+      "place_name": "Yangon",
+      "parent_place_id": "MMR",
+      "parent_place_name": "Myanmar",
+      "iso3": "MMR",
+      "source_iso3": "MMR",
+      "geometry_level": "adm1",
+      "adm1_key": "yangon",
+      "adm1_geo_id": "MMR_2017_ADM_15",
+      "boundary_indexed": false,
+      "coverage_status": "adm1_context_overlay",
+      "canonical_measurement_count": 0,
+      "available_layers": [
+        "human-poverty-adm1-context"
+      ],
+      "evidence_kinds": [
+        "proxy"
+      ],
+      "source_ids": [
+        "world-bank-gsap-adm1"
+      ],
+      "source_vintage": "World Bank GSAP 2023 ADM1 lineup with 2021 PPP poverty context",
+      "uncertainty_class": "low",
+      "page_url": null,
+      "profile_url": null,
+      "measurements_url": null,
+      "neighbors_url": null,
+      "context_url": "https://painmap.org/v1/places/MMR/adm1.json",
+      "latest_release_id": "2026-05-31.atlas.2",
+      "relevance_score": 4.979391,
+      "poverty_context": {
+        "poor300_rate": 0.0764,
+        "poor420_rate": 0.2214,
+        "poor830_rate": 0.6922,
+        "prosperity_gap_2021": 4.9793908,
+        "poor300_display": "7.64%",
+        "poor420_display": "22.1%",
+        "poor830_display": "69.2%",
+        "prosperity_gap_display": "4.98"
+      },
+      "ranking_note": "Ranked for static-page selection by World Bank GSAP prosperity-gap context. This is a poverty-context overlay, not a canonical pain measurement.",
+      "adm1_priority_rank": 810
+    }
+  ]
+}
