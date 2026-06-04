@@ -215,6 +215,21 @@
           "@type": "dcat:Distribution",
           "dct:format": "text/markdown",
           "dcat:downloadURL": "https://painmap.org/examples/README.md"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "text/markdown",
+          "dcat:downloadURL": "https://painmap.org/fixtures/README.md"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/fixtures/mock-registry.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/fixtures/place-measurements.fixture.json"
         }
       ]
     }

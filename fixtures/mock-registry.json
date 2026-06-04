@@ -1,0 +1,71 @@
+{
+  "release_id": "preview.fixture.1",
+  "generated_at": "2026-06-04",
+  "site": "https://preview.painmap.local",
+  "places": [
+    {
+      "place_id": "WLD",
+      "place_name": "World",
+      "geometry_level": "world",
+      "parent_place_id": null,
+      "coverage_status": "canonical_measurements"
+    },
+    {
+      "place_id": "TST",
+      "place_name": "Testland",
+      "geometry_level": "country",
+      "parent_place_id": "WLD",
+      "coverage_status": "canonical_measurements"
+    }
+  ],
+  "layers": [
+    {
+      "layer_id": "fixture-human-burden",
+      "label": "Fixture human burden",
+      "evidence_kind": "proxy",
+      "value_type": "normalized_proxy_score",
+      "ranking_mode": "higher_proxy_score_more_attention"
+    },
+    {
+      "layer_id": "fixture-animal-burden",
+      "label": "Fixture animal burden",
+      "evidence_kind": "proxy",
+      "value_type": "normalized_proxy_score",
+      "ranking_mode": "higher_proxy_score_more_attention"
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "fixture-source",
+      "label": "Fixture source",
+      "publisher": "PainMap local fixtures",
+      "license_id": "painmap-mit",
+      "evidence_kind": "proxy",
+      "source_vintage": "preview fixture"
+    }
+  ],
+  "licenses": [
+    {
+      "license_id": "painmap-mit",
+      "label": "PainMap fixture license",
+      "license_uri": "https://opensource.org/license/mit/"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "file": "index.html",
+      "title": "PainMap Preview Fixture"
+    },
+    {
+      "path": "/v1/places/index.json",
+      "file": "v1/places/index.json",
+      "title": "Preview place index"
+    },
+    {
+      "path": "/v1/places/TST.json",
+      "file": "v1/places/TST.json",
+      "title": "Testland preview profile"
+    }
+  ]
+}

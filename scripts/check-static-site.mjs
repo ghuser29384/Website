@@ -40,6 +40,11 @@ const expectedExports = [
   "examples/cite-release.mjs",
   "examples/custom-geography.csv",
   "examples/load_place_profile.py",
+  "fixtures/README.md",
+  "fixtures/mock-registry.json",
+  "fixtures/place-measurements.fixture.json",
+  ".devcontainer/devcontainer.json",
+  "scripts/build-preview-release.mjs",
   "scripts/check-source-freshness.mjs",
   "scripts/check-ui-smoke.mjs",
   "scripts/check-endpoint-smoke.mjs",
@@ -122,7 +127,7 @@ function walkFiles(dir = root, predicate = () => true) {
   const files = [];
 
   for (const entry of readdirSync(dir)) {
-    if (entry === ".git" || entry === "node_modules") {
+    if (entry === ".git" || entry === "node_modules" || entry === "tmp" || entry === ".devcontainer") {
       continue;
     }
 
@@ -291,6 +296,18 @@ if (packageJson.scripts?.["freshness:sources"] !== "node scripts/check-source-fr
   failures.push("package.json must expose freshness:sources for source freshness checks");
 }
 
+if (packageJson.scripts?.["fixtures:check"] !== "node scripts/build-preview-release.mjs --check") {
+  failures.push("package.json must expose fixtures:check for local fixture validation");
+}
+
+if (packageJson.scripts?.["preview:fixture"] !== "node scripts/build-preview-release.mjs") {
+  failures.push("package.json must expose preview:fixture for local preview-release generation");
+}
+
+if (!packageJson.scripts?.check?.includes("npm run fixtures:check")) {
+  failures.push("package.json check script must include fixture validation");
+}
+
 if (packageJson.scripts?.["smoke:ui"] !== "node scripts/check-ui-smoke.mjs") {
   failures.push("package.json must expose smoke:ui for accessibility and visual smoke checks");
 }
@@ -313,6 +330,12 @@ expectPattern("scripts/check-endpoint-smoke.mjs", read("scripts/check-endpoint-s
 expectPattern("scripts/check-endpoint-smoke.mjs", read("scripts/check-endpoint-smoke.mjs"), /well-known\/security\.txt/, "security.txt endpoint assertion");
 expectPattern("scripts/check-source-freshness.mjs", read("scripts/check-source-freshness.mjs"), /data\/source-freshness\.json/, "source freshness manifest reader");
 expectPattern("scripts/check-source-freshness.mjs", read("scripts/check-source-freshness.mjs"), /validation_lanes/, "source freshness validation lane assertions");
+expectPattern("scripts/build-preview-release.mjs", read("scripts/build-preview-release.mjs"), /fixtures\/mock-registry\.json/, "preview release mock registry reader");
+expectPattern("scripts/build-preview-release.mjs", read("scripts/build-preview-release.mjs"), /fixtures\/place-measurements\.fixture\.json/, "preview release measurement fixture reader");
+expectPattern("fixtures/README.md", read("fixtures/README.md"), /npm run preview:fixture/, "fixture preview command docs");
+expectPattern(".devcontainer/devcontainer.json", read(".devcontainer/devcontainer.json"), /npm run check/, "devcontainer post-create checks");
+expectPattern("README.md", read("README.md"), /npm run preview:fixture/, "README fixture preview docs");
+expectPattern("developers/index.html", read("developers/index.html"), /Local preview fixtures[\s\S]*npm run preview:fixture/, "developer fixture preview docs");
 expectPattern("scripts/check-ui-smoke.mjs", read("scripts/check-ui-smoke.mjs"), /data\/ui-smoke\.json/, "UI smoke manifest reader");
 expectPattern("scripts/check-ui-smoke.mjs", read("scripts/check-ui-smoke.mjs"), /aria-\(\?:controls\|describedby/, "UI smoke ARIA reference assertions");
 expectPattern("scripts/check-ui-smoke.mjs", read("scripts/check-ui-smoke.mjs"), /required_components/, "UI smoke visual component assertions");

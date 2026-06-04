@@ -5354,8 +5354,8 @@
     },
     {
       "path": "/developers/index.html",
-      "sha256": "f72fa6c6b9adcc9586866edd1d7179abacf649ae05f58b77791315b0b0a5dc0b",
-      "bytes": 9562
+      "sha256": "faaccd7c5da7fbef842446c66301f21282d87d903773b1dd1dd4891c590f2ea6",
+      "bytes": 10003
     },
     {
       "path": "/examples/index.html",
@@ -5494,8 +5494,8 @@
     },
     {
       "path": "/data/dcat.json",
-      "sha256": "26fcbf540ff5818f30bef788ae180a406192b272a453d969be00b0a57827f40b",
-      "bytes": 8030
+      "sha256": "647fae6fd7a0cfa7ff21eef67982dad5f268ddfe0bcc7b35785d202404564586",
+      "bytes": 8586
     },
     {
       "path": "/data/openapi.json",
@@ -5551,6 +5551,26 @@
       "path": "/examples/load_place_profile.py",
       "sha256": "f913ce95030d3cb60ff4323df8d5c73580eeda833cb8f1cbf59a02941ac09161",
       "bytes": 701
+    },
+    {
+      "path": "/fixtures/README.md",
+      "sha256": "b2250f9074f2ed64c9e69a46df3750239e06c1aeaf5bf936510ccec869807b58",
+      "bytes": 996
+    },
+    {
+      "path": "/fixtures/mock-registry.json",
+      "sha256": "2c841ea3d110a0a64cc4bfaf1f4e008b11acfe764e0a95ba25db65025f35bbb8",
+      "bytes": 1780
+    },
+    {
+      "path": "/fixtures/place-measurements.fixture.json",
+      "sha256": "da56b5ea2bc6115764593cd30ebf262224479d98caa2a25bb1db123e0b19cb0f",
+      "bytes": 3495
+    },
+    {
+      "path": "/scripts/build-preview-release.mjs",
+      "sha256": "6915286b5ea115593ba23f912ad3b187b5aca989654f4d3876391a515356a3de",
+      "bytes": 6502
     },
     {
       "path": "/schemas/place-index.schema.json",
@@ -8729,8 +8749,8 @@
     },
     {
       "path": "/releases/2026-05-31/diff.json",
-      "sha256": "d449f4f46bddc2ff75e4f564b180b52d528b4c5cb141d1f065e2cf866fda882e",
-      "bytes": 2282
+      "sha256": "7284f20e86554d86d97248ffdf6cbb081a653b7a4362b5343505868f7455a137",
+      "bytes": 2558
     },
     {
       "path": "/releases/2026-05-31/migration.json",
@@ -8784,8 +8804,8 @@
     },
     {
       "path": "/README.md",
-      "sha256": "40cc380d77bdc5d5494d95cc9f9ccf5c63d38c7db170eccb1f4e7a9beeac07b6",
-      "bytes": 5217
+      "sha256": "40993c703528be95e88c26a108c764e11b12772bc0e01e9094fb28e9457880aa",
+      "bytes": 5977
     },
     {
       "path": "/LICENSE",

@@ -363,6 +363,10 @@ for (const requiredArtifact of [
   "/examples/README.md",
   "/examples/load-place-profile.mjs",
   "/examples/load_place_profile.py",
+  "/fixtures/README.md",
+  "/fixtures/mock-registry.json",
+  "/fixtures/place-measurements.fixture.json",
+  "/scripts/build-preview-release.mjs",
 ]) {
   expect(
     releaseManifest.artifacts?.some((artifact) => artifact.path === requiredArtifact),

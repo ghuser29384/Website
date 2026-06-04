@@ -1,0 +1,27 @@
+{
+  "name": "PainMap static atlas",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.12"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "github.vscode-github-actions"
+      ]
+    }
+  },
+  "postCreateCommand": "npm run check",
+  "forwardPorts": [
+    4173
+  ],
+  "portsAttributes": {
+    "4173": {
+      "label": "PainMap static preview",
+      "onAutoForward": "notify"
+    }
+  }
+}

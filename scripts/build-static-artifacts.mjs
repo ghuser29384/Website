@@ -2936,6 +2936,9 @@ function buildDcat() {
           { "@type": "dcat:Distribution", "dct:format": "text/typescript", "dcat:downloadURL": `${site}/clients/typescript/painmap-client.ts` },
           { "@type": "dcat:Distribution", "dct:format": "text/x-python", "dcat:downloadURL": `${site}/clients/python/painmap_client.py` },
           { "@type": "dcat:Distribution", "dct:format": "text/markdown", "dcat:downloadURL": `${site}/examples/README.md` },
+          { "@type": "dcat:Distribution", "dct:format": "text/markdown", "dcat:downloadURL": `${site}/fixtures/README.md` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/fixtures/mock-registry.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/fixtures/place-measurements.fixture.json` },
         ],
       },
     ],
@@ -3033,6 +3036,10 @@ function releaseArtifactFileCandidates() {
     "examples/cite-release.mjs",
     "examples/custom-geography.csv",
     "examples/load_place_profile.py",
+    "fixtures/README.md",
+    "fixtures/mock-registry.json",
+    "fixtures/place-measurements.fixture.json",
+    "scripts/build-preview-release.mjs",
     "schemas/place-index.schema.json",
     "schemas/adm1-context.schema.json",
     "schemas/place-measurements.schema.json",
@@ -3094,6 +3101,7 @@ function buildReleaseDiff() {
       ogc_partitioned_country_features: countryBoundaryFeatures().length,
       neighbor_payloads: buildNeighborPayloads().size,
       ui_smoke_routes: buildUiSmoke().routes.length,
+      fixture_preview_inputs: 2,
     },
     added_contract_surfaces: [
       "/v1/places/index.json",
@@ -3107,6 +3115,8 @@ function buildReleaseDiff() {
       "/ogc/collections/places/items/{place_id}.json",
       "/data/release-modes.json",
       "/data/ui-smoke.json",
+      "/fixtures/mock-registry.json",
+      "/fixtures/place-measurements.fixture.json",
       "/schemas/adm1-context.schema.json",
       "/schemas/release-modes.schema.json",
       "/schemas/ogc-place-features.schema.json",
@@ -3132,6 +3142,10 @@ function buildReleaseDiff() {
       {
         area: "release QA",
         change: "Added diff and UI smoke artifacts so later releases can expose changed surfaces and protect core accessibility and visual contracts.",
+      },
+      {
+        area: "developer ergonomics",
+        change: "Added fixture inputs and a preview-release starter script for local release experiments.",
       },
       {
         area: "release mode",
