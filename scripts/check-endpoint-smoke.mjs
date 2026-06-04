@@ -53,6 +53,13 @@ function validateJsonEndpoint(endpoint, json) {
     expect(Array.isArray(json.validation_lanes), "/data/source-freshness.json must include validation_lanes");
   }
 
+  if (endpoint.path === "/data/ui-smoke.json") {
+    expect(json.release_id === releaseSmoke.release_id, "/data/ui-smoke.json release_id mismatch");
+    expect(json.standard === "static_accessibility_visual_smoke", "/data/ui-smoke.json must publish the UI smoke standard");
+    expect(Array.isArray(json.routes), "/data/ui-smoke.json must include route contracts");
+    expect(json.routes?.some((route) => route.path === "/" && route.accessibility?.required_ids?.includes("country-search")), "/data/ui-smoke.json must cover homepage search accessibility");
+  }
+
   if (endpoint.path === "/v1/places/index.json") {
     expect(json.count === json.items?.length, "/v1/places/index.json count must match item length");
     expect(json.items?.some((item) => item.place_id === "IND"), "/v1/places/index.json must include IND");

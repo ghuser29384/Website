@@ -3524,8 +3524,8 @@
     },
     {
       "path": "/compare/index.html",
-      "sha256": "807c1444508e813827cc54f02957416370661cd7757337db1c44879ff8d16a4d",
-      "bytes": 8976
+      "sha256": "eb3337bf770e26463d6ff298b4afb2d045c7dabbddd58e003d04a908c1d66dd7",
+      "bytes": 9009
     },
     {
       "path": "/events/index.html",
@@ -5349,8 +5349,8 @@
     },
     {
       "path": "/api/index.html",
-      "sha256": "a3a4baadda5583472f8e1a324c69df6c16c8cf3bb90b9ff99e382e78ee1dcf28",
-      "bytes": 12934
+      "sha256": "5a21196f055de38345dedb7abe697f9517df93ec44d149c8b219f1cbf53ae3c1",
+      "bytes": 13124
     },
     {
       "path": "/developers/index.html",
@@ -5468,9 +5468,14 @@
       "bytes": 9204
     },
     {
+      "path": "/data/ui-smoke.json",
+      "sha256": "4b884692708174fd573f8b42a93860aedec04b9a8a404a4b5dd1f6101741daa8",
+      "bytes": 7961
+    },
+    {
       "path": "/data/endpoint-smoke.json",
-      "sha256": "99602576956d28003adc341c33e6fc3fbcda61a05c4d5a329be6129482045e22",
-      "bytes": 6047
+      "sha256": "1050fc068feab522ab17f78ca1e73b6a629f9e67285358ec4aee5a81c06233d9",
+      "bytes": 6305
     },
     {
       "path": "/data/countries-lite.geojson",
@@ -5489,13 +5494,13 @@
     },
     {
       "path": "/data/dcat.json",
-      "sha256": "1d3fa4f7fabfaee4627ceea8980c0ab536d72a47e67f53a27262e5060a400b92",
-      "bytes": 7854
+      "sha256": "26fcbf540ff5818f30bef788ae180a406192b272a453d969be00b0a57827f40b",
+      "bytes": 8030
     },
     {
       "path": "/data/openapi.json",
-      "sha256": "cdbeeb4fe7cc6fa3374bd24696a535ea838170baa612d66368baa67c0efe0580",
-      "bytes": 24952
+      "sha256": "3515cb69538e40e2073c29d37e57594faf6ae25fc6c8ce0f2b03825b99bcacee",
+      "bytes": 25371
     },
     {
       "path": "/compare.js",
@@ -8724,13 +8729,13 @@
     },
     {
       "path": "/releases/2026-05-31/diff.json",
-      "sha256": "f6f8fdc88df16337d0c3549456402bbbdda659495a57894610fc9dc46badf1e1",
-      "bytes": 2185
+      "sha256": "d449f4f46bddc2ff75e4f564b180b52d528b4c5cb141d1f065e2cf866fda882e",
+      "bytes": 2282
     },
     {
       "path": "/releases/2026-05-31/migration.json",
-      "sha256": "1c27faad758932528ec1985c7b509621a7441560a99180f224d31f0f01d31951",
-      "bytes": 4086
+      "sha256": "fdad4617fc242adec9c99dcaacea0ccb05981852971d48cb7b24b654e8672479",
+      "bytes": 4113
     },
     {
       "path": "/assets/social-card.svg",
@@ -8779,8 +8784,8 @@
     },
     {
       "path": "/README.md",
-      "sha256": "e3adf48a0748983bd4ec52eb1f71c82525922f368948f73f65c8ea65a5739f47",
-      "bytes": 4946
+      "sha256": "40cc380d77bdc5d5494d95cc9f9ccf5c63d38c7db170eccb1f4e7a9beeac07b6",
+      "bytes": 5217
     },
     {
       "path": "/LICENSE",

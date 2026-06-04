@@ -1,0 +1,280 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "standard": "static_accessibility_visual_smoke",
+  "purpose": "CI manifest for core-route accessibility invariants and static visual contract tokens. It protects landmarks, ARIA wiring, accessible names, and high-level layout components without collecting user data.",
+  "global_assertions": [
+    "Every checked HTML page has a skip link targeting #main-content.",
+    "Every checked HTML page has one main landmark, one h1, primary navigation, canonical metadata, and stylesheet SRI.",
+    "ARIA id references resolve inside the same static page.",
+    "Links, buttons, inputs, and images expose accessible names or alt text.",
+    "Route-specific visual component classes and core copy remain present."
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "file": "index.html",
+      "expected_title": "PainMap | Mixed-evidence atlas of pain sources by place",
+      "expected_canonical": "https://painmap.org/",
+      "requires_breadcrumb": false,
+      "accessibility": {
+        "required_ids": [
+          "country-search",
+          "country-options",
+          "country-search-status",
+          "map-status",
+          "release-mode-status",
+          "map-provenance-tray",
+          "place-summary-card",
+          "compare-place-link"
+        ],
+        "required_live_region_ids": [
+          "country-search-status",
+          "map-status",
+          "release-mode-status",
+          "map-provenance-tray"
+        ],
+        "required_roles": [
+          {
+            "id": "country-search",
+            "role": "combobox"
+          },
+          {
+            "id": "country-options",
+            "role": "listbox"
+          },
+          {
+            "id": "country-search-status",
+            "role": "status"
+          },
+          {
+            "id": "map-status",
+            "role": "status"
+          },
+          {
+            "id": "release-mode-status",
+            "role": "status"
+          }
+        ],
+        "control_relationships": [
+          {
+            "controller_id": "country-search",
+            "controls_id": "country-options"
+          }
+        ]
+      },
+      "visual_contract": {
+        "required_components": [
+          "hero-section",
+          "audience-panel",
+          "release-mode-panel",
+          "coverage-grid",
+          "globe-panel",
+          "map-provenance-tray",
+          "detail-panel",
+          "place-summary-card",
+          "table-equivalent"
+        ],
+        "required_text": [
+          "Mixed-evidence atlas of pain sources by place",
+          "Snapshot first, live overlays labeled.",
+          "Release coverage",
+          "What drives pain here?",
+          "Map provenance"
+        ]
+      }
+    },
+    {
+      "path": "/atlas/",
+      "file": "atlas/index.html",
+      "expected_title": "Atlas | PainMap",
+      "expected_canonical": "https://painmap.org/atlas/",
+      "requires_breadcrumb": true,
+      "accessibility": {
+        "required_ids": [],
+        "required_live_region_ids": [],
+        "required_roles": [],
+        "control_relationships": []
+      },
+      "visual_contract": {
+        "required_components": [
+          "route-panel",
+          "route-hero",
+          "atlas-entry-grid",
+          "metadata-grid",
+          "route-actions"
+        ],
+        "required_text": [
+          "Start with a place.",
+          "What the atlas can compare",
+          "Open the atlas controls"
+        ]
+      }
+    },
+    {
+      "path": "/places/",
+      "file": "places/index.html",
+      "expected_title": "Places | PainMap",
+      "expected_canonical": "https://painmap.org/places/",
+      "requires_breadcrumb": true,
+      "accessibility": {
+        "required_ids": [],
+        "required_live_region_ids": [],
+        "required_roles": [],
+        "control_relationships": []
+      },
+      "visual_contract": {
+        "required_components": [
+          "route-panel",
+          "route-hero",
+          "coverage-grid",
+          "route-actions"
+        ],
+        "required_text": [
+          "Atlas coverage by place",
+          "Coverage today",
+          "Open place index JSON"
+        ]
+      }
+    },
+    {
+      "path": "/compare/",
+      "file": "compare/index.html",
+      "expected_title": "Compare Places | PainMap",
+      "expected_canonical": "https://painmap.org/compare/",
+      "requires_breadcrumb": true,
+      "accessibility": {
+        "required_ids": [
+          "compare-url-status",
+          "compare-requested-list"
+        ],
+        "required_live_region_ids": [
+          "compare-url-status"
+        ],
+        "required_roles": [],
+        "control_relationships": []
+      },
+      "visual_contract": {
+        "required_components": [
+          "route-panel",
+          "route-hero",
+          "compare-url-panel",
+          "compare-grid",
+          "data-table-wrap"
+        ],
+        "required_text": [
+          "Compare places without flattening uncertainty.",
+          "Shareable compare URL",
+          "Canonical release rows"
+        ]
+      }
+    },
+    {
+      "path": "/data/",
+      "file": "data/index.html",
+      "expected_title": "Data | PainMap",
+      "expected_canonical": "https://painmap.org/data/",
+      "requires_breadcrumb": true,
+      "accessibility": {
+        "required_ids": [],
+        "required_live_region_ids": [],
+        "required_roles": [],
+        "control_relationships": []
+      },
+      "visual_contract": {
+        "required_components": [
+          "route-panel",
+          "route-hero",
+          "route-grid",
+          "route-actions",
+          "data-table-wrap",
+          "route-table"
+        ],
+        "required_text": [
+          "Data",
+          "canonical release artifacts",
+          "OpenAPI"
+        ]
+      }
+    },
+    {
+      "path": "/api/",
+      "file": "api/index.html",
+      "expected_title": "API | PainMap",
+      "expected_canonical": "https://painmap.org/api/",
+      "requires_breadcrumb": true,
+      "accessibility": {
+        "required_ids": [],
+        "required_live_region_ids": [],
+        "required_roles": [],
+        "control_relationships": []
+      },
+      "visual_contract": {
+        "required_components": [
+          "route-panel",
+          "route-hero",
+          "data-table-wrap",
+          "route-table"
+        ],
+        "required_text": [
+          "Static URLs",
+          "OpenAPI 3.1 JSON",
+          "Endpoint smoke-test manifest"
+        ]
+      }
+    },
+    {
+      "path": "/releases/2026-05-31/",
+      "file": "releases/2026-05-31/index.html",
+      "expected_title": "2026-05-31 Release | PainMap",
+      "expected_canonical": "https://painmap.org/releases/2026-05-31/",
+      "requires_breadcrumb": true,
+      "accessibility": {
+        "required_ids": [],
+        "required_live_region_ids": [],
+        "required_roles": [],
+        "control_relationships": []
+      },
+      "visual_contract": {
+        "required_components": [
+          "route-panel",
+          "route-hero",
+          "download-list",
+          "data-table-wrap",
+          "route-table"
+        ],
+        "required_text": [
+          "2026-05-31.atlas.2",
+          "Initial release baseline",
+          "Schema and layer baseline"
+        ]
+      }
+    },
+    {
+      "path": "/security/",
+      "file": "security/index.html",
+      "expected_title": "Security | PainMap",
+      "expected_canonical": "https://painmap.org/security/",
+      "requires_breadcrumb": true,
+      "accessibility": {
+        "required_ids": [],
+        "required_live_region_ids": [],
+        "required_roles": [],
+        "control_relationships": []
+      },
+      "visual_contract": {
+        "required_components": [
+          "route-panel",
+          "route-hero",
+          "metadata-grid",
+          "route-actions"
+        ],
+        "required_text": [
+          "Security",
+          "Open security.txt",
+          "Content Security Policy"
+        ]
+      }
+    }
+  ]
+}

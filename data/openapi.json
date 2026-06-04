@@ -656,6 +656,23 @@
         }
       }
     },
+    "/data/ui-smoke.json": {
+      "get": {
+        "summary": "Get accessibility and visual smoke-test manifest",
+        "responses": {
+          "200": {
+            "description": "UI smoke manifest JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/data/endpoint-smoke.json": {
       "get": {
         "summary": "Get endpoint smoke-test manifest",

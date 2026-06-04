@@ -2091,6 +2091,7 @@ function buildEndpointSmoke() {
       endpoint("/data/dcat.json", "application/ld+json", "DCAT catalog"),
       endpoint("/data/release-modes.json", "application/json", "Snapshot and live overlay mode contract"),
       endpoint("/data/source-freshness.json", "application/json", "Source freshness cadence and release-candidate review contract"),
+      endpoint("/data/ui-smoke.json", "application/json", "Accessibility and visual smoke-test manifest"),
       endpoint("/v1/places/index.json", "application/json", "Full release place index"),
       endpoint("/v1/adm1/index.json", "application/json", "ADM1 poverty-context overlay index"),
       endpoint("/v1/coverage.json", "application/json", "Release coverage status"),
@@ -2106,6 +2107,120 @@ function buildEndpointSmoke() {
       endpoint("/releases/2026-05-31/diff.json", "application/json", "Release diff artifact"),
       endpoint("/releases/2026-05-31/migration.json", "application/json", "Release migration notes"),
       endpoint("/.well-known/security.txt", "text/plain", "Security contact policy"),
+    ],
+  };
+}
+
+function uiSmokeRoute(path, { requiredText = [], requiredComponents = [], requiredIds = [], requiredLiveIds = [], requiredRoles = [], controlRelationships = [] } = {}) {
+  const route = routes.routes.find((entry) => entry.path === path);
+
+  if (!route) {
+    throw new Error(`Cannot build UI smoke route for missing route ${path}`);
+  }
+
+  return {
+    path: route.path,
+    file: route.file,
+    expected_title: route.title,
+    expected_canonical: routeCanonicalUrl(route),
+    requires_breadcrumb: route.path !== "/",
+    accessibility: {
+      required_ids: requiredIds,
+      required_live_region_ids: requiredLiveIds,
+      required_roles: requiredRoles,
+      control_relationships: controlRelationships,
+    },
+    visual_contract: {
+      required_components: requiredComponents,
+      required_text: requiredText,
+    },
+  };
+}
+
+function buildUiSmoke() {
+  return {
+    release_id: releaseId,
+    generated_at: releaseDate,
+    standard: "static_accessibility_visual_smoke",
+    purpose:
+      "CI manifest for core-route accessibility invariants and static visual contract tokens. It protects landmarks, ARIA wiring, accessible names, and high-level layout components without collecting user data.",
+    global_assertions: [
+      "Every checked HTML page has a skip link targeting #main-content.",
+      "Every checked HTML page has one main landmark, one h1, primary navigation, canonical metadata, and stylesheet SRI.",
+      "ARIA id references resolve inside the same static page.",
+      "Links, buttons, inputs, and images expose accessible names or alt text.",
+      "Route-specific visual component classes and core copy remain present.",
+    ],
+    routes: [
+      uiSmokeRoute("/", {
+        requiredText: [
+          "Mixed-evidence atlas of pain sources by place",
+          "Snapshot first, live overlays labeled.",
+          "Release coverage",
+          "What drives pain here?",
+          "Map provenance",
+        ],
+        requiredComponents: [
+          "hero-section",
+          "audience-panel",
+          "release-mode-panel",
+          "coverage-grid",
+          "globe-panel",
+          "map-provenance-tray",
+          "detail-panel",
+          "place-summary-card",
+          "table-equivalent",
+        ],
+        requiredIds: [
+          "country-search",
+          "country-options",
+          "country-search-status",
+          "map-status",
+          "release-mode-status",
+          "map-provenance-tray",
+          "place-summary-card",
+          "compare-place-link",
+        ],
+        requiredLiveIds: ["country-search-status", "map-status", "release-mode-status", "map-provenance-tray"],
+        requiredRoles: [
+          { id: "country-search", role: "combobox" },
+          { id: "country-options", role: "listbox" },
+          { id: "country-search-status", role: "status" },
+          { id: "map-status", role: "status" },
+          { id: "release-mode-status", role: "status" },
+        ],
+        controlRelationships: [{ controller_id: "country-search", controls_id: "country-options" }],
+      }),
+      uiSmokeRoute("/atlas/", {
+        requiredText: ["Start with a place.", "What the atlas can compare", "Open the atlas controls"],
+        requiredComponents: ["route-panel", "route-hero", "atlas-entry-grid", "metadata-grid", "route-actions"],
+      }),
+      uiSmokeRoute("/places/", {
+        requiredText: ["Atlas coverage by place", "Coverage today", "Open place index JSON"],
+        requiredComponents: ["route-panel", "route-hero", "coverage-grid", "route-actions"],
+      }),
+      uiSmokeRoute("/compare/", {
+        requiredText: ["Compare places without flattening uncertainty.", "Shareable compare URL", "Canonical release rows"],
+        requiredComponents: ["route-panel", "route-hero", "compare-url-panel", "compare-grid", "data-table-wrap"],
+        requiredIds: ["compare-url-status", "compare-requested-list"],
+        requiredLiveIds: ["compare-url-status"],
+      }),
+      uiSmokeRoute("/data/", {
+        requiredText: ["Data", "canonical release artifacts", "OpenAPI"],
+        requiredComponents: ["route-panel", "route-hero", "route-grid", "route-actions", "data-table-wrap", "route-table"],
+      }),
+      uiSmokeRoute("/api/", {
+        requiredText: ["Static URLs", "OpenAPI 3.1 JSON", "Endpoint smoke-test manifest"],
+        requiredComponents: ["route-panel", "route-hero", "data-table-wrap", "route-table"],
+      }),
+      uiSmokeRoute("/releases/2026-05-31/", {
+        requiredText: ["2026-05-31.atlas.2", "Initial release baseline", "Schema and layer baseline"],
+        requiredComponents: ["route-panel", "route-hero", "download-list", "data-table-wrap", "route-table"],
+      }),
+      uiSmokeRoute("/security/", {
+        requiredText: ["Security", "Open security.txt", "Content Security Policy"],
+        requiredComponents: ["route-panel", "route-hero", "metadata-grid", "route-actions"],
+      }),
     ],
   };
 }
@@ -2596,6 +2711,9 @@ function buildOpenApi() {
       "/data/source-freshness.json": {
         get: { summary: "Get source freshness and scheduled refresh contract", responses: { 200: staticJsonResponse("Source freshness contract JSON") } },
       },
+      "/data/ui-smoke.json": {
+        get: { summary: "Get accessibility and visual smoke-test manifest", responses: { 200: staticJsonResponse("UI smoke manifest JSON") } },
+      },
       "/data/endpoint-smoke.json": {
         get: { summary: "Get endpoint smoke-test manifest", responses: { 200: staticJsonResponse("Endpoint smoke manifest JSON") } },
       },
@@ -2813,6 +2931,7 @@ function buildDcat() {
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/ogc-place-features.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/performance-budgets.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/source-freshness.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/ui-smoke.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/endpoint-smoke.json` },
           { "@type": "dcat:Distribution", "dct:format": "text/typescript", "dcat:downloadURL": `${site}/clients/typescript/painmap-client.ts` },
           { "@type": "dcat:Distribution", "dct:format": "text/x-python", "dcat:downloadURL": `${site}/clients/python/painmap_client.py` },
@@ -2897,6 +3016,7 @@ function releaseArtifactFileCandidates() {
     "data/analytics-events.json",
     "data/performance-budgets.json",
     "data/source-freshness.json",
+    "data/ui-smoke.json",
     "data/endpoint-smoke.json",
     "data/countries-lite.geojson",
     "data/natural-earth-countries.geojson",
@@ -2973,6 +3093,7 @@ function buildReleaseDiff() {
       ogc_place_features: countryBoundaryFeatures().length,
       ogc_partitioned_country_features: countryBoundaryFeatures().length,
       neighbor_payloads: buildNeighborPayloads().size,
+      ui_smoke_routes: buildUiSmoke().routes.length,
     },
     added_contract_surfaces: [
       "/v1/places/index.json",
@@ -2985,6 +3106,7 @@ function buildReleaseDiff() {
       "/ogc/collections/places/item-index.json",
       "/ogc/collections/places/items/{place_id}.json",
       "/data/release-modes.json",
+      "/data/ui-smoke.json",
       "/schemas/adm1-context.schema.json",
       "/schemas/release-modes.schema.json",
       "/schemas/ogc-place-features.schema.json",
@@ -3009,7 +3131,7 @@ function buildReleaseDiff() {
       },
       {
         area: "release QA",
-        change: "Added a diff artifact so later releases can expose added, changed, and removed surfaces.",
+        change: "Added diff and UI smoke artifacts so later releases can expose changed surfaces and protect core accessibility and visual contracts.",
       },
       {
         area: "release mode",
@@ -3088,6 +3210,7 @@ function buildReleaseMigration() {
       "/schemas/release-modes.schema.json",
       "/schemas/ogc-place-features.schema.json",
       "/data/openapi.json",
+      "/data/ui-smoke.json",
       "/releases/2026-05-31/manifest.json",
     ],
   };
@@ -3121,6 +3244,7 @@ function writeApiArtifacts() {
   writeJson("data/analytics-events.json", buildAnalyticsEvents());
   writeJson("data/performance-budgets.json", buildPerformanceBudgets());
   writeJson("data/source-freshness.json", buildSourceFreshness());
+  writeJson("data/ui-smoke.json", buildUiSmoke());
   writeJson("data/endpoint-smoke.json", buildEndpointSmoke());
   writeJson("data/openapi.json", buildOpenApi());
   writeJson("data/dcat.json", buildDcat());

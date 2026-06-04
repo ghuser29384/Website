@@ -75,6 +75,14 @@
       "purpose": "Source freshness cadence and release-candidate review contract"
     },
     {
+      "path": "/data/ui-smoke.json",
+      "url": "https://painmap.org/data/ui-smoke.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Accessibility and visual smoke-test manifest"
+    },
+    {
       "path": "/v1/places/index.json",
       "url": "https://painmap.org/v1/places/index.json",
       "method": "GET",

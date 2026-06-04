@@ -340,6 +340,7 @@ for (const requiredArtifact of [
   "/schemas/release-modes.schema.json",
   "/schemas/ogc-place-features.schema.json",
   "/data/endpoint-smoke.json",
+  "/data/ui-smoke.json",
   "/data/performance-budgets.json",
   "/data/source-freshness.json",
   "/data/analytics-events.json",

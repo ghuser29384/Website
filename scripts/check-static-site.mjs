@@ -16,6 +16,7 @@ const expectedExports = [
   "data/analytics-events.json",
   "data/performance-budgets.json",
   "data/source-freshness.json",
+  "data/ui-smoke.json",
   "data/endpoint-smoke.json",
   "data/countries-lite.geojson",
   "data/natural-earth-countries.geojson",
@@ -40,6 +41,7 @@ const expectedExports = [
   "examples/custom-geography.csv",
   "examples/load_place_profile.py",
   "scripts/check-source-freshness.mjs",
+  "scripts/check-ui-smoke.mjs",
   "scripts/check-endpoint-smoke.mjs",
   ".github/workflows/painmap-static-checks.yml",
   ".github/workflows/painmap-source-freshness.yml",
@@ -289,6 +291,10 @@ if (packageJson.scripts?.["freshness:sources"] !== "node scripts/check-source-fr
   failures.push("package.json must expose freshness:sources for source freshness checks");
 }
 
+if (packageJson.scripts?.["smoke:ui"] !== "node scripts/check-ui-smoke.mjs") {
+  failures.push("package.json must expose smoke:ui for accessibility and visual smoke checks");
+}
+
 for (const workflowPattern of [
   /npm run check/,
   /npm run freshness:sources/,
@@ -307,6 +313,9 @@ expectPattern("scripts/check-endpoint-smoke.mjs", read("scripts/check-endpoint-s
 expectPattern("scripts/check-endpoint-smoke.mjs", read("scripts/check-endpoint-smoke.mjs"), /well-known\/security\.txt/, "security.txt endpoint assertion");
 expectPattern("scripts/check-source-freshness.mjs", read("scripts/check-source-freshness.mjs"), /data\/source-freshness\.json/, "source freshness manifest reader");
 expectPattern("scripts/check-source-freshness.mjs", read("scripts/check-source-freshness.mjs"), /validation_lanes/, "source freshness validation lane assertions");
+expectPattern("scripts/check-ui-smoke.mjs", read("scripts/check-ui-smoke.mjs"), /data\/ui-smoke\.json/, "UI smoke manifest reader");
+expectPattern("scripts/check-ui-smoke.mjs", read("scripts/check-ui-smoke.mjs"), /aria-\(\?:controls\|describedby/, "UI smoke ARIA reference assertions");
+expectPattern("scripts/check-ui-smoke.mjs", read("scripts/check-ui-smoke.mjs"), /required_components/, "UI smoke visual component assertions");
 expectPattern(".github/workflows/painmap-source-freshness.yml", read(".github/workflows/painmap-source-freshness.yml"), /schedule:[\s\S]*cron: "17 9 \* \* 1"/, "scheduled source freshness workflow");
 expectPattern(".github/workflows/painmap-source-freshness.yml", read(".github/workflows/painmap-source-freshness.yml"), /peter-evans\/create-pull-request@v6/, "source freshness release-candidate PR action");
 expectPattern("script.js", script, /recordTelemetry\("route_view"\)/, "route_view telemetry instrumentation");
@@ -525,6 +534,24 @@ if (performanceBudgets.field_budgets?.cumulative_layout_shift > 0.1) {
   failures.push("CLS budget must be <= 0.1");
 }
 
+const uiSmoke = readJson("data/ui-smoke.json");
+if (uiSmoke.release_id !== routeManifest.releaseId || uiSmoke.standard !== "static_accessibility_visual_smoke") {
+  failures.push("data/ui-smoke.json must describe the current static accessibility and visual smoke contract");
+}
+
+for (const requiredPath of ["/", "/atlas/", "/places/", "/compare/", "/data/", "/api/", "/releases/2026-05-31/", "/security/"]) {
+  const entry = uiSmoke.routes?.find((route) => route.path === requiredPath);
+
+  if (!entry) {
+    failures.push(`data/ui-smoke.json missing route ${requiredPath}`);
+    continue;
+  }
+
+  if (!entry.expected_title || !entry.expected_canonical || !entry.visual_contract?.required_components?.length) {
+    failures.push(`data/ui-smoke.json route ${requiredPath} is missing expected title, canonical, or visual components`);
+  }
+}
+
 const sourceFreshness = readJson("data/source-freshness.json");
 if (sourceFreshness.source_count !== readJson("v1/sources.json").sources?.length) {
   failures.push("data/source-freshness.json source_count must match v1/sources.json");
@@ -541,7 +568,7 @@ for (const laneId of ["schema-validity", "release-reproducibility", "domain-sani
 }
 
 const endpointSmoke = readJson("data/endpoint-smoke.json");
-for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/data/source-freshness.json", "/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/IND/adm1.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/IND.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/releases/2026-05-31/migration.json", "/.well-known/security.txt"]) {
+for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/data/source-freshness.json", "/data/ui-smoke.json", "/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/IND/adm1.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/IND.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/releases/2026-05-31/migration.json", "/.well-known/security.txt"]) {
   if (!endpointSmoke.endpoints?.some((entry) => entry.path === requiredPath && entry.expected_status === 200)) {
     failures.push(`data/endpoint-smoke.json missing required endpoint ${requiredPath}`);
   }
@@ -556,7 +583,7 @@ for (const schemaFile of ["schemas/place-index.schema.json", "schemas/adm1-conte
 }
 
 const openapi = readJson("data/openapi.json");
-for (const requiredPath of ["/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/{place_id}/adm1.json", "/v1/coverage.json", "/v1/places/{place_id}/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/{place_id}.json", "/data/release-modes.json", "/data/source-freshness.json", "/releases/2026-05-31/diff.json", "/releases/2026-05-31/migration.json", "/schemas/place-index.schema.json", "/schemas/adm1-context.schema.json", "/schemas/release-modes.schema.json", "/schemas/ogc-place-features.schema.json"]) {
+for (const requiredPath of ["/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/{place_id}/adm1.json", "/v1/coverage.json", "/v1/places/{place_id}/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/{place_id}.json", "/data/release-modes.json", "/data/source-freshness.json", "/data/ui-smoke.json", "/releases/2026-05-31/diff.json", "/releases/2026-05-31/migration.json", "/schemas/place-index.schema.json", "/schemas/adm1-context.schema.json", "/schemas/release-modes.schema.json", "/schemas/ogc-place-features.schema.json"]) {
   if (!openapi.paths?.[requiredPath]) {
     failures.push(`data/openapi.json missing ${requiredPath}`);
   }
