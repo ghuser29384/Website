@@ -614,6 +614,7 @@ expectPattern("examples/README.md", read("examples/README.md"), /node examples\/
 expectPattern("examples/compare-places.mjs", read("examples/compare-places.mjs"), /source_file_checksum/, "compare example preserves lineage checksum");
 expectPattern("examples/join-own-geography.mjs", read("examples/join-own-geography.mjs"), /ogc\/collections\/places\/item-index\.json/, "join example uses OGC item index");
 expectPattern("examples/cite-release.mjs", read("examples/cite-release.mjs"), /release_manifest_sha256/, "citation example reports latest manifest checksum");
+expectPattern("examples/index.html", read("examples/index.html"), /TechArticle[\s\S]*comparing places, joining local geography, citing releases/, "examples structured data description");
 expectPattern("examples/README.md", read("examples/README.md"), /\/ogc\/collections\/places\/items\.json/, "OGC feature example endpoint");
 expectPattern("examples/README.md", read("examples/README.md"), /\/ogc\/collections\/places\/item-index\.json/, "OGC item index example endpoint");
 expectPattern("examples/README.md", read("examples/README.md"), /\/ogc\/collections\/places\/items\/IND\.json/, "OGC single feature example endpoint");
