@@ -314,6 +314,7 @@ for (const requiredArtifact of [
   "/schemas/ogc-place-features.schema.json",
   "/data/endpoint-smoke.json",
   "/data/performance-budgets.json",
+  "/data/source-freshness.json",
   "/data/analytics-events.json",
   "/data/gsap-adm1-2023.json",
   "/v1/places/IND/adm1.json",

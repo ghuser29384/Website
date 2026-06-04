@@ -115,6 +115,12 @@ function scoreDisplay(value) {
   return number.toFixed(2);
 }
 
+function addDays(dateValue, days) {
+  const date = new Date(`${dateValue}T00:00:00Z`);
+  date.setUTCDate(date.getUTCDate() + days);
+  return date.toISOString().slice(0, 10);
+}
+
 function jsonEscapeForScript(value) {
   return JSON.stringify(value).replaceAll("</", "<\\/");
 }
@@ -1850,6 +1856,137 @@ function buildPerformanceBudgets() {
   };
 }
 
+function buildSourceFreshness() {
+  const sourcePolicies = {
+    "welfare-footprint-events": {
+      update_lane: "event-evidence",
+      cadence: "publication_or_quarterly_review",
+      cadence_days: 90,
+      freshness_basis: "Welfare Footprint public reports and charts are reviewed on publication cycles and at least quarterly for the event evidence catalog.",
+      release_candidate_action: "Open a release-candidate PR when new reviewed event evidence or changed source attribution should alter the public catalog.",
+    },
+    "owid-livestock": {
+      update_lane: "country-burden-proxy",
+      cadence: "weekly_runtime_overlay_check",
+      cadence_days: 7,
+      freshness_basis: "OWID animal-production rows can change independently of immutable PainMap releases, so runtime overlay assumptions need weekly freshness checks.",
+      release_candidate_action: "Open a release-candidate PR when frozen animal-production proxy rows should be rematerialized into a new release.",
+    },
+    "fishcount-aquaculture": {
+      update_lane: "country-burden-proxy",
+      cadence: "monthly_proxy_review",
+      cadence_days: 30,
+      freshness_basis: "Fishcount-style aquaculture assumptions are reviewed monthly because they are secondary inputs to individual-animal count proxies.",
+      release_candidate_action: "Open a release-candidate PR when fish-count assumptions or attribution notes change canonical proxy rows.",
+    },
+    "world-bank-indicators": {
+      update_lane: "country-burden-proxy",
+      cadence: "monthly_indicator_check",
+      cadence_days: 30,
+      freshness_basis: "World Bank country indicators are checked monthly and rematerialized only through release artifacts.",
+      release_candidate_action: "Open a release-candidate PR when latest non-null country indicators change frozen human-burden proxy rows.",
+    },
+    "world-bank-gsap-adm1": {
+      update_lane: "adm1-context-overlay",
+      cadence: "quarterly_subnational_review",
+      cadence_days: 90,
+      freshness_basis: "GSAP ADM1 poverty-context rows are static discovery overlays and should be reviewed quarterly or when World Bank publishes a new lineup.",
+      release_candidate_action: "Open a release-candidate PR when ADM1 context rows, source vintage, or static page priorities change.",
+    },
+    "world-bank-land-area": {
+      update_lane: "country-burden-proxy",
+      cadence: "quarterly_context_review",
+      cadence_days: 90,
+      freshness_basis: "Land-area context is slow moving, but still affects wild-animal and insect proxy context.",
+      release_candidate_action: "Open a release-candidate PR when land-area context changes proxy calculations or attribution notes.",
+    },
+    "natural-earth-admin0": {
+      update_lane: "boundary-vendoring",
+      cadence: "semiannual_boundary_review",
+      cadence_days: 180,
+      freshness_basis: "Natural Earth country boundaries are vendored and should advance only through controlled release review.",
+      release_candidate_action: "Open a release-candidate PR when vendored Admin 0 boundaries or geometry simplification outputs change.",
+    },
+    "geoboundaries-adm1": {
+      update_lane: "boundary-vendoring",
+      cadence: "monthly_boundary_check",
+      cadence_days: 30,
+      freshness_basis: "geoBoundaries ADM1 can update independently, so the runtime/current boundary posture needs monthly review.",
+      release_candidate_action: "Open a release-candidate PR when ADM1 boundary source behavior or partitioned geometry outputs change.",
+    },
+    "painmap-welfare-assumptions": {
+      update_lane: "editorial-method-review",
+      cadence: "quarterly_method_review",
+      cadence_days: 90,
+      freshness_basis: "PainMap welfare assumptions need explicit editorial review before they affect visible rankings.",
+      release_candidate_action: "Open a release-candidate PR when method notes, welfare-range assumptions, or caveats change.",
+    },
+    "painmap-priority-review": {
+      update_lane: "editorial-method-review",
+      cadence: "per_release_priority_review",
+      cadence_days: 90,
+      freshness_basis: "Priority overlays should change only when the review logic is rerun and documented in release notes.",
+      release_candidate_action: "Open a release-candidate PR when priority overlay logic, source salience, or ranking notes change.",
+    },
+  };
+
+  return {
+    release_id: releaseId,
+    generated_at: releaseDate,
+    policy_version: "2026-06-source-freshness-1",
+    provenance_registry_sha256: hashFile("data/provenance-registry.json"),
+    schedule: {
+      workflow: ".github/workflows/painmap-source-freshness.yml",
+      cadence: "weekly",
+      cron: "17 9 * * 1",
+      local_command: "npm run freshness:sources",
+      release_candidate_prs: true,
+      default_mode:
+        "Static provenance, cadence, and due-date validation. Live upstream checks should be added only when a source-specific adapter can avoid brittle false positives.",
+    },
+    validation_lanes: [
+      {
+        id: "schema-validity",
+        method: "JSON Schema, OpenAPI, and generated artifact validation in CI",
+      },
+      {
+        id: "release-reproducibility",
+        method: "Release manifest checksums, immutable release URLs, and generated artifact drift detection",
+      },
+      {
+        id: "domain-sanity",
+        method: "Layer-specific bounds, ranking direction, confidence interval, source vintage, and impossible-unit checks",
+      },
+      {
+        id: "editorial-validity",
+        method: "Evidence-kind, caveat, uncertainty, source-vintage, and review-status visibility before publish",
+      },
+    ],
+    source_count: provenance.sources.length,
+    sources: provenance.sources.map((source) => {
+      const policy = sourcePolicies[source.source_id] ?? {
+        update_lane: "manual-review",
+        cadence: "quarterly_review",
+        cadence_days: 90,
+        freshness_basis: "Source requires manual review before release materialization.",
+        release_candidate_action: "Open a release-candidate PR when source metadata or derived rows change.",
+      };
+
+      return {
+        source_id: source.source_id,
+        label: source.label,
+        publisher: source.publisher,
+        evidence_kind: source.evidence_kind,
+        upstream_url: source.url,
+        source_vintage: source.source_vintage,
+        last_review_date: releaseDate,
+        next_review_due: addDays(releaseDate, policy.cadence_days),
+        ...policy,
+      };
+    }),
+  };
+}
+
 function buildEndpointSmoke() {
   const endpoint = (path, format, purpose) => ({
     path,
@@ -1872,6 +2009,7 @@ function buildEndpointSmoke() {
       endpoint("/data/openapi.json", "application/json", "OpenAPI contract"),
       endpoint("/data/dcat.json", "application/ld+json", "DCAT catalog"),
       endpoint("/data/release-modes.json", "application/json", "Snapshot and live overlay mode contract"),
+      endpoint("/data/source-freshness.json", "application/json", "Source freshness cadence and release-candidate review contract"),
       endpoint("/v1/places/index.json", "application/json", "Full release place index"),
       endpoint("/v1/adm1/index.json", "application/json", "ADM1 poverty-context overlay index"),
       endpoint("/v1/coverage.json", "application/json", "Release coverage status"),
@@ -2348,6 +2486,9 @@ function buildOpenApi() {
       "/data/performance-budgets.json": {
         get: { summary: "Get field performance budgets", responses: { 200: staticJsonResponse("Performance budget JSON") } },
       },
+      "/data/source-freshness.json": {
+        get: { summary: "Get source freshness and scheduled refresh contract", responses: { 200: staticJsonResponse("Source freshness contract JSON") } },
+      },
       "/data/endpoint-smoke.json": {
         get: { summary: "Get endpoint smoke-test manifest", responses: { 200: staticJsonResponse("Endpoint smoke manifest JSON") } },
       },
@@ -2553,6 +2694,7 @@ function buildDcat() {
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/release-modes.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/ogc-place-features.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/performance-budgets.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/source-freshness.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/endpoint-smoke.json` },
           { "@type": "dcat:Distribution", "dct:format": "text/typescript", "dcat:downloadURL": `${site}/clients/typescript/painmap-client.ts` },
           { "@type": "dcat:Distribution", "dct:format": "text/x-python", "dcat:downloadURL": `${site}/clients/python/painmap_client.py` },
@@ -2636,6 +2778,7 @@ function releaseArtifactFileCandidates() {
     "data/release-modes.json",
     "data/analytics-events.json",
     "data/performance-budgets.json",
+    "data/source-freshness.json",
     "data/endpoint-smoke.json",
     "data/countries-lite.geojson",
     "data/natural-earth-countries.geojson",
@@ -2779,6 +2922,7 @@ function writeApiArtifacts() {
   writeJson("data/release-modes.json", buildReleaseModes());
   writeJson("data/analytics-events.json", buildAnalyticsEvents());
   writeJson("data/performance-budgets.json", buildPerformanceBudgets());
+  writeJson("data/source-freshness.json", buildSourceFreshness());
   writeJson("data/endpoint-smoke.json", buildEndpointSmoke());
   writeJson("data/openapi.json", buildOpenApi());
   writeJson("data/dcat.json", buildDcat());

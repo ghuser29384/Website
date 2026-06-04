@@ -67,6 +67,14 @@
       "purpose": "Snapshot and live overlay mode contract"
     },
     {
+      "path": "/data/source-freshness.json",
+      "url": "https://painmap.org/data/source-freshness.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Source freshness cadence and release-candidate review contract"
+    },
+    {
       "path": "/v1/places/index.json",
       "url": "https://painmap.org/v1/places/index.json",
       "method": "GET",

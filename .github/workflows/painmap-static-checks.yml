@@ -1,0 +1,58 @@
+name: PainMap static checks
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-contract:
+    name: Static release contract
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate generated static contract
+        run: npm run check
+
+      - name: Check source freshness contract
+        run: npm run freshness:sources
+
+      - name: Fail on generated artifact drift
+        run: git diff --exit-code
+
+      - name: Compile Python examples and client
+        run: python3 -m py_compile clients/python/painmap_client.py examples/load_place_profile.py
+
+      - name: Start local static server
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/painmap-static-server.log 2>&1 &
+          echo "$!" > /tmp/painmap-static-server.pid
+
+      - name: Smoke test static endpoints
+        run: npm run smoke:endpoints
+
+      - name: Stop local static server
+        if: always()
+        run: |
+          if [ -f /tmp/painmap-static-server.pid ]; then
+            kill "$(cat /tmp/painmap-static-server.pid)" || true
+          fi

@@ -1,0 +1,42 @@
+name: PainMap source freshness
+
+on:
+  schedule:
+    - cron: "17 9 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  source-freshness:
+    name: Scheduled source freshness
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Regenerate release artifacts
+        run: npm run build:data
+
+      - name: Check source freshness contract
+        run: npm run freshness:sources
+
+      - name: Open release-candidate PR when freshness artifacts drift
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: codex/painmap-source-freshness
+          commit-message: Refresh PainMap source freshness artifacts
+          title: Refresh PainMap source freshness artifacts
+          body: |
+            Automated weekly source-freshness run.
+
+            This PR is created only when regenerated source cadence, release manifest, or related contract artifacts drift from the committed tree.

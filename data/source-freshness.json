@@ -1,0 +1,185 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "policy_version": "2026-06-source-freshness-1",
+  "provenance_registry_sha256": "7216883d1f1fc423876349da0bfa349c88553a6e8867561d7aefca33b3117956",
+  "schedule": {
+    "workflow": ".github/workflows/painmap-source-freshness.yml",
+    "cadence": "weekly",
+    "cron": "17 9 * * 1",
+    "local_command": "npm run freshness:sources",
+    "release_candidate_prs": true,
+    "default_mode": "Static provenance, cadence, and due-date validation. Live upstream checks should be added only when a source-specific adapter can avoid brittle false positives."
+  },
+  "validation_lanes": [
+    {
+      "id": "schema-validity",
+      "method": "JSON Schema, OpenAPI, and generated artifact validation in CI"
+    },
+    {
+      "id": "release-reproducibility",
+      "method": "Release manifest checksums, immutable release URLs, and generated artifact drift detection"
+    },
+    {
+      "id": "domain-sanity",
+      "method": "Layer-specific bounds, ranking direction, confidence interval, source vintage, and impossible-unit checks"
+    },
+    {
+      "id": "editorial-validity",
+      "method": "Evidence-kind, caveat, uncertainty, source-vintage, and review-status visibility before publish"
+    }
+  ],
+  "source_count": 10,
+  "sources": [
+    {
+      "source_id": "welfare-footprint-events",
+      "label": "Welfare Footprint event estimates",
+      "publisher": "Welfare Footprint Project",
+      "evidence_kind": "modeled",
+      "upstream_url": "https://welfarefootprint.org/",
+      "source_vintage": "2026-05-31 review",
+      "last_review_date": "2026-05-31",
+      "next_review_due": "2026-08-29",
+      "update_lane": "event-evidence",
+      "cadence": "publication_or_quarterly_review",
+      "cadence_days": 90,
+      "freshness_basis": "Welfare Footprint public reports and charts are reviewed on publication cycles and at least quarterly for the event evidence catalog.",
+      "release_candidate_action": "Open a release-candidate PR when new reviewed event evidence or changed source attribution should alter the public catalog."
+    },
+    {
+      "source_id": "owid-livestock",
+      "label": "Our World in Data livestock and animal production tables",
+      "publisher": "Our World in Data",
+      "evidence_kind": "proxy",
+      "upstream_url": "https://ourworldindata.org/",
+      "source_vintage": "Latest public runtime rows where available; frozen release values dated 2026-05-31.",
+      "last_review_date": "2026-05-31",
+      "next_review_due": "2026-06-07",
+      "update_lane": "country-burden-proxy",
+      "cadence": "weekly_runtime_overlay_check",
+      "cadence_days": 7,
+      "freshness_basis": "OWID animal-production rows can change independently of immutable PainMap releases, so runtime overlay assumptions need weekly freshness checks.",
+      "release_candidate_action": "Open a release-candidate PR when frozen animal-production proxy rows should be rematerialized into a new release."
+    },
+    {
+      "source_id": "fishcount-aquaculture",
+      "label": "Fishcount-style aquaculture and farmed-fish context",
+      "publisher": "Fishcount and public aquaculture-data aggregations",
+      "evidence_kind": "proxy",
+      "upstream_url": "http://fishcount.org.uk/",
+      "source_vintage": "2026-05-31 release review",
+      "last_review_date": "2026-05-31",
+      "next_review_due": "2026-06-30",
+      "update_lane": "country-burden-proxy",
+      "cadence": "monthly_proxy_review",
+      "cadence_days": 30,
+      "freshness_basis": "Fishcount-style aquaculture assumptions are reviewed monthly because they are secondary inputs to individual-animal count proxies.",
+      "release_candidate_action": "Open a release-candidate PR when fish-count assumptions or attribution notes change canonical proxy rows."
+    },
+    {
+      "source_id": "world-bank-indicators",
+      "label": "World Bank country indicators",
+      "publisher": "World Bank",
+      "evidence_kind": "proxy",
+      "upstream_url": "https://data.worldbank.org/",
+      "source_vintage": "2010:2025 latest non-null indicator window",
+      "last_review_date": "2026-05-31",
+      "next_review_due": "2026-06-30",
+      "update_lane": "country-burden-proxy",
+      "cadence": "monthly_indicator_check",
+      "cadence_days": 30,
+      "freshness_basis": "World Bank country indicators are checked monthly and rematerialized only through release artifacts.",
+      "release_candidate_action": "Open a release-candidate PR when latest non-null country indicators change frozen human-burden proxy rows."
+    },
+    {
+      "source_id": "world-bank-gsap-adm1",
+      "label": "World Bank Global Subnational Poverty Atlas ADM1 poverty context",
+      "publisher": "World Bank",
+      "evidence_kind": "proxy",
+      "upstream_url": "https://pip.worldbank.org/",
+      "source_vintage": "2023 ADM1 lineup with 2021 PPP poverty-context values",
+      "last_review_date": "2026-05-31",
+      "next_review_due": "2026-08-29",
+      "update_lane": "adm1-context-overlay",
+      "cadence": "quarterly_subnational_review",
+      "cadence_days": 90,
+      "freshness_basis": "GSAP ADM1 poverty-context rows are static discovery overlays and should be reviewed quarterly or when World Bank publishes a new lineup.",
+      "release_candidate_action": "Open a release-candidate PR when ADM1 context rows, source vintage, or static page priorities change."
+    },
+    {
+      "source_id": "world-bank-land-area",
+      "label": "World Bank land-area context",
+      "publisher": "World Bank",
+      "evidence_kind": "proxy",
+      "upstream_url": "https://data.worldbank.org/",
+      "source_vintage": "2026-05-31 release review",
+      "last_review_date": "2026-05-31",
+      "next_review_due": "2026-08-29",
+      "update_lane": "country-burden-proxy",
+      "cadence": "quarterly_context_review",
+      "cadence_days": 90,
+      "freshness_basis": "Land-area context is slow moving, but still affects wild-animal and insect proxy context.",
+      "release_candidate_action": "Open a release-candidate PR when land-area context changes proxy calculations or attribution notes."
+    },
+    {
+      "source_id": "natural-earth-admin0",
+      "label": "Natural Earth Admin 0 countries",
+      "publisher": "Natural Earth",
+      "evidence_kind": "boundary",
+      "upstream_url": "https://www.naturalearthdata.com/",
+      "source_vintage": "Vendored 2026-05-31 release copy",
+      "last_review_date": "2026-05-31",
+      "next_review_due": "2026-11-27",
+      "update_lane": "boundary-vendoring",
+      "cadence": "semiannual_boundary_review",
+      "cadence_days": 180,
+      "freshness_basis": "Natural Earth country boundaries are vendored and should advance only through controlled release review.",
+      "release_candidate_action": "Open a release-candidate PR when vendored Admin 0 boundaries or geometry simplification outputs change."
+    },
+    {
+      "source_id": "geoboundaries-adm1",
+      "label": "geoBoundaries ADM1",
+      "publisher": "geoBoundaries",
+      "evidence_kind": "boundary",
+      "upstream_url": "https://www.geoboundaries.org/",
+      "source_vintage": "Runtime current ADM1 API, converted to media.githubusercontent.com when needed",
+      "last_review_date": "2026-05-31",
+      "next_review_due": "2026-06-30",
+      "update_lane": "boundary-vendoring",
+      "cadence": "monthly_boundary_check",
+      "cadence_days": 30,
+      "freshness_basis": "geoBoundaries ADM1 can update independently, so the runtime/current boundary posture needs monthly review.",
+      "release_candidate_action": "Open a release-candidate PR when ADM1 boundary source behavior or partitioned geometry outputs change."
+    },
+    {
+      "source_id": "painmap-welfare-assumptions",
+      "label": "PainMap welfare and normalization assumptions",
+      "publisher": "PainMap",
+      "evidence_kind": "proxy",
+      "upstream_url": "https://painmap.org/methods/",
+      "source_vintage": "2026-05-31 release",
+      "last_review_date": "2026-05-31",
+      "next_review_due": "2026-08-29",
+      "update_lane": "editorial-method-review",
+      "cadence": "quarterly_method_review",
+      "cadence_days": 90,
+      "freshness_basis": "PainMap welfare assumptions need explicit editorial review before they affect visible rankings.",
+      "release_candidate_action": "Open a release-candidate PR when method notes, welfare-range assumptions, or caveats change."
+    },
+    {
+      "source_id": "painmap-priority-review",
+      "label": "PainMap priority overlay review",
+      "publisher": "PainMap",
+      "evidence_kind": "priority-overlay",
+      "upstream_url": "https://painmap.org/releases/2026-05-31/",
+      "source_vintage": "2026-05-31 release",
+      "last_review_date": "2026-05-31",
+      "next_review_due": "2026-08-29",
+      "update_lane": "editorial-method-review",
+      "cadence": "per_release_priority_review",
+      "cadence_days": 90,
+      "freshness_basis": "Priority overlays should change only when the review logic is rerun and documented in release notes.",
+      "release_candidate_action": "Open a release-candidate PR when priority overlay logic, source salience, or ranking notes change."
+    }
+  ]
+}

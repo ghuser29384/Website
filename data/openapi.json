@@ -622,6 +622,23 @@
         }
       }
     },
+    "/data/source-freshness.json": {
+      "get": {
+        "summary": "Get source freshness and scheduled refresh contract",
+        "responses": {
+          "200": {
+            "description": "Source freshness contract JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/data/endpoint-smoke.json": {
       "get": {
         "summary": "Get endpoint smoke-test manifest",

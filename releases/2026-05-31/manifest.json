@@ -3539,8 +3539,8 @@
     },
     {
       "path": "/data/index.html",
-      "sha256": "23537517f954d414a504f8c63f001f7a96f7552284111b9f3a76da67d0e9edbc",
-      "bytes": 12589
+      "sha256": "3500d38dc1d6b139b67381f34ba216a507e15053786b44b95df5ce7ae8d546ee",
+      "bytes": 12649
     },
     {
       "path": "/dataset/place-measurements/index.html",
@@ -5349,13 +5349,13 @@
     },
     {
       "path": "/api/index.html",
-      "sha256": "2f6888bea72654281b59b05e1f6e0cb5b9ce45171abe4be5b772a8dde2b22dab",
-      "bytes": 12452
+      "sha256": "21445bfd62242c957c67afde2a8fccdd5360f819205f73cbfe5fbebbb69eb305",
+      "bytes": 12682
     },
     {
       "path": "/developers/index.html",
-      "sha256": "9bf46fdabac4d5521d4fc8d339840ea4f4d1b3527f9844db080e74d30446435e",
-      "bytes": 9207
+      "sha256": "20611cdeab57b44a2e48819f3bf5f90f9aedb5760f881eb52d0f1be734b163c6",
+      "bytes": 9553
     },
     {
       "path": "/examples/index.html",
@@ -5463,9 +5463,14 @@
       "bytes": 604
     },
     {
+      "path": "/data/source-freshness.json",
+      "sha256": "7bc6d7a41cf120f259cea3dd0c03818bc47e2c42b67d0d114e2b66e0fc1d9f7e",
+      "bytes": 9204
+    },
+    {
       "path": "/data/endpoint-smoke.json",
-      "sha256": "9fffab7184c007004024cae4fc9704c8b4d1223017d22e467a5598170bc82b88",
-      "bytes": 5486
+      "sha256": "4ddf21773ff6c79e66d95f530173bd47528bbf1cc0711efc676a1a0512190c2d",
+      "bytes": 5778
     },
     {
       "path": "/data/countries-lite.geojson",
@@ -5484,13 +5489,13 @@
     },
     {
       "path": "/data/dcat.json",
-      "sha256": "a118daa987a75350234bcb3c5d77415060ea52886519698f9000ee965b0540ff",
-      "bytes": 7478
+      "sha256": "ff004c62798a50a1d3711621de8e64ff905922b5e01cd1dd9369016f0016e4de",
+      "bytes": 7662
     },
     {
       "path": "/data/openapi.json",
-      "sha256": "5fcf612dd8fc6134b083858111bde23019c10682699eff372db58ea3d2d8717d",
-      "bytes": 23455
+      "sha256": "c2124d2af5baa7af493d13b5e27ece0c386735729c87c4eaa7b38243f1a06798",
+      "bytes": 23893
     },
     {
       "path": "/compare.js",
@@ -8749,8 +8754,8 @@
     },
     {
       "path": "/README.md",
-      "sha256": "280f84fa07f92422d2a458d83a343e17b7f1c55cac3866a537ecac4c10e989e9",
-      "bytes": 4096
+      "sha256": "236e078dad62aa2e75eb9c47addcae0a2dfad2fb9d566e19302affe01a5992df",
+      "bytes": 4769
     },
     {
       "path": "/LICENSE",
