@@ -16,6 +16,7 @@ PainMap is a public static atlas for pain-source evidence by place. The site sep
 - JSON Schemas: `schemas/place-index.schema.json`, `schemas/adm1-context.schema.json`, `schemas/place-measurements.schema.json`, `schemas/coverage.schema.json`, `schemas/release-modes.schema.json`, `schemas/ogc-place-features.schema.json`
 - Release manifest: `releases/2026-05-31/manifest.json`
 - Release diff: `releases/2026-05-31/diff.json`
+- Release migration notes: `releases/2026-05-31/migration.json`
 - Latest alias: `latest/manifest.json`
 - Static API index: `data/openapi.json`
 - Field budgets: `data/performance-budgets.json`
@@ -33,7 +34,7 @@ npm run freshness:sources
 npm run smoke:endpoints
 ```
 
-The build step generates sitemap entries, route smoke metadata, generated country place pages, high-priority ADM1 context pages, v1 JSON files, per-place neighbor payloads, ADM1 context payloads, CSV and GeoJSON exports, full and per-country OGC-style place features, JSON Schemas, release-mode contracts, coverage and endpoint manifests, release diffs, headers, security.txt, social metadata, subresource integrity hashes, and release checksums.
+The build step generates sitemap entries, route smoke metadata, generated country place pages, high-priority ADM1 context pages, v1 JSON files, per-place neighbor payloads, ADM1 context payloads, CSV and GeoJSON exports, full and per-country OGC-style place features, JSON Schemas, release-mode contracts, coverage and endpoint manifests, release diffs, release migration notes, headers, security.txt, social metadata, subresource integrity hashes, and release checksums.
 
 `npm run check` also validates schema targets, endpoint smoke files, place-index measurement counts, release-manifest hashes, source-freshness metadata, and required QA artifacts. `npm run freshness:sources` validates the source cadence policy and scheduled release-candidate workflow. `npm run smoke:endpoints` reads `data/endpoint-smoke.json` against a local static server, checking homepage, places, OpenAPI, DCAT, coverage, OGC, client, release, and `security.txt` endpoints. The GitHub Actions workflow at `.github/workflows/painmap-static-checks.yml` runs these gates on pushes and pull requests before publishing so generated artifacts cannot drift from the committed tree; `.github/workflows/painmap-source-freshness.yml` runs weekly and opens a release-candidate PR when regenerated freshness artifacts drift.
 

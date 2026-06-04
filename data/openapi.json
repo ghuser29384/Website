@@ -340,6 +340,23 @@
         }
       }
     },
+    "/releases/2026-05-31/migration.json": {
+      "get": {
+        "summary": "Get release migration notes",
+        "responses": {
+          "200": {
+            "description": "Release migration JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/latest/manifest.json": {
       "get": {
         "summary": "Get latest release alias manifest",

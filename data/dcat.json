@@ -73,6 +73,11 @@
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
           "dcat:downloadURL": "https://painmap.org/releases/2026-05-31/diff.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/releases/2026-05-31/migration.json"
         }
       ]
     },

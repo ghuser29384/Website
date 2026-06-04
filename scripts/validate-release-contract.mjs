@@ -130,6 +130,7 @@ const placeIndex = readJson("v1/places/index.json");
 const measurements = readJson("data/place-measurements.json");
 const releaseModes = readJson("data/release-modes.json");
 const releaseManifest = readJson("releases/2026-05-31/manifest.json");
+const releaseMigration = readJson("releases/2026-05-31/migration.json");
 const endpointSmoke = readJson("data/endpoint-smoke.json");
 const measurementRowsByPlace = new Map();
 
@@ -293,6 +294,19 @@ expect(
   releaseDiff.current_release?.ogc_partitioned_country_features === ogcItems.features?.length,
   "release diff partitioned OGC feature count mismatch"
 );
+expect(releaseMigration.release_id === placeIndex.release_id, "release migration release_id mismatch");
+expect(releaseMigration.migration_type === "initial_release_baseline", "release migration should mark the initial baseline");
+expect(Array.isArray(releaseMigration.schema_changes) && releaseMigration.schema_changes.length >= 4, "release migration missing schema changes");
+expect(Array.isArray(releaseMigration.renamed_fields) && releaseMigration.renamed_fields.length === 0, "release migration renamed_fields must explicitly be empty");
+expect(Array.isArray(releaseMigration.removed_fields) && releaseMigration.removed_fields.length === 0, "release migration removed_fields must explicitly be empty");
+expect(
+  releaseMigration.schema_changes?.some((change) => change.surface === "/data/place-measurements.json" && change.fields_added?.includes("source_file_checksum")),
+  "release migration missing measurement lineage schema change"
+);
+expect(
+  releaseMigration.new_layer_ids?.some((layer) => layer.layer_id === "human-poverty-adm1-context"),
+  "release migration missing ADM1 layer ID"
+);
 
 const adm1Index = readJson("v1/adm1/index.json");
 expect(adm1Index.coverage_status === "adm1_context_overlay", "ADM1 index must be marked as a context overlay");
@@ -342,6 +356,7 @@ for (const requiredArtifact of [
   "/ogc/collections/places/items.json",
   "/ogc/collections/places/items/IND.json",
   "/releases/2026-05-31/diff.json",
+  "/releases/2026-05-31/migration.json",
   "/clients/typescript/painmap-client.ts",
   "/clients/python/painmap_client.py",
   "/examples/README.md",

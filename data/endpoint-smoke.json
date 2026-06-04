@@ -179,6 +179,14 @@
       "purpose": "Release diff artifact"
     },
     {
+      "path": "/releases/2026-05-31/migration.json",
+      "url": "https://painmap.org/releases/2026-05-31/migration.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Release migration notes"
+    },
+    {
       "path": "/.well-known/security.txt",
       "url": "https://painmap.org/.well-known/security.txt",
       "method": "GET",

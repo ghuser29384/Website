@@ -95,6 +95,13 @@ function validateJsonEndpoint(endpoint, json) {
   if (endpoint.path === "/releases/2026-05-31/diff.json") {
     expect(json.release_id === releaseSmoke.release_id, "/releases/2026-05-31/diff.json release_id mismatch");
   }
+
+  if (endpoint.path === "/releases/2026-05-31/migration.json") {
+    expect(json.release_id === releaseSmoke.release_id, "/releases/2026-05-31/migration.json release_id mismatch");
+    expect(json.migration_type === "initial_release_baseline", "/releases/2026-05-31/migration.json must mark initial baseline");
+    expect(Array.isArray(json.schema_changes), "/releases/2026-05-31/migration.json must include schema_changes");
+    expect(Array.isArray(json.new_layer_ids), "/releases/2026-05-31/migration.json must include new_layer_ids");
+  }
 }
 
 function validateTextEndpoint(endpoint, text) {

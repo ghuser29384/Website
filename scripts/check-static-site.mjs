@@ -66,6 +66,7 @@ const expectedExports = [
   "v1/places/IND/neighbors.json",
   "releases/2026-05-31/manifest.json",
   "releases/2026-05-31/diff.json",
+  "releases/2026-05-31/migration.json",
   "latest/manifest.json",
   "assets/social-card.svg",
   "vendor/d3.v7.min.js",
@@ -540,7 +541,7 @@ for (const laneId of ["schema-validity", "release-reproducibility", "domain-sani
 }
 
 const endpointSmoke = readJson("data/endpoint-smoke.json");
-for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/data/source-freshness.json", "/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/IND/adm1.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/IND.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/.well-known/security.txt"]) {
+for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/data/source-freshness.json", "/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/IND/adm1.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/IND.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/releases/2026-05-31/migration.json", "/.well-known/security.txt"]) {
   if (!endpointSmoke.endpoints?.some((entry) => entry.path === requiredPath && entry.expected_status === 200)) {
     failures.push(`data/endpoint-smoke.json missing required endpoint ${requiredPath}`);
   }
@@ -555,7 +556,7 @@ for (const schemaFile of ["schemas/place-index.schema.json", "schemas/adm1-conte
 }
 
 const openapi = readJson("data/openapi.json");
-for (const requiredPath of ["/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/{place_id}/adm1.json", "/v1/coverage.json", "/v1/places/{place_id}/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/{place_id}.json", "/data/release-modes.json", "/data/source-freshness.json", "/releases/2026-05-31/diff.json", "/schemas/place-index.schema.json", "/schemas/adm1-context.schema.json", "/schemas/release-modes.schema.json", "/schemas/ogc-place-features.schema.json"]) {
+for (const requiredPath of ["/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/{place_id}/adm1.json", "/v1/coverage.json", "/v1/places/{place_id}/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/{place_id}.json", "/data/release-modes.json", "/data/source-freshness.json", "/releases/2026-05-31/diff.json", "/releases/2026-05-31/migration.json", "/schemas/place-index.schema.json", "/schemas/adm1-context.schema.json", "/schemas/release-modes.schema.json", "/schemas/ogc-place-features.schema.json"]) {
   if (!openapi.paths?.[requiredPath]) {
     failures.push(`data/openapi.json missing ${requiredPath}`);
   }
@@ -773,6 +774,25 @@ const releaseManifest = readJson("releases/2026-05-31/manifest.json");
 if (releaseManifest.release_id !== routeManifest.releaseId) {
   failures.push("release manifest release_id does not match data/routes.json");
 }
+
+const releaseMigration = readJson("releases/2026-05-31/migration.json");
+if (releaseMigration.release_id !== routeManifest.releaseId || releaseMigration.migration_type !== "initial_release_baseline") {
+  failures.push("release migration notes must describe the current initial release baseline");
+}
+
+if (!Array.isArray(releaseMigration.schema_changes) || !releaseMigration.schema_changes.some((change) => change.surface === "/data/place-measurements.json" && change.fields_added?.includes("source_file_checksum"))) {
+  failures.push("release migration notes must document measurement lineage schema changes");
+}
+
+if (!Array.isArray(releaseMigration.renamed_fields) || releaseMigration.renamed_fields.length !== 0) {
+  failures.push("release migration notes must explicitly record no renamed fields for the initial baseline");
+}
+
+if (!releaseMigration.new_layer_ids?.some((layer) => layer.layer_id === "animal-priority-overlay")) {
+  failures.push("release migration notes must document new layer IDs");
+}
+
+expectPattern("releases/2026-05-31/index.html", read("releases/2026-05-31/index.html"), /Migration[\s\S]*Schema and layer baseline/, "release page migration section");
 
 for (const artifact of releaseManifest.artifacts ?? []) {
   const file = artifact.path.replace(/^\//, "");

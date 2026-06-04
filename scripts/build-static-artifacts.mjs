@@ -2104,6 +2104,7 @@ function buildEndpointSmoke() {
       endpoint("/clients/python/painmap_client.py", "text/x-python", "Python client"),
       endpoint("/releases/2026-05-31/manifest.json", "application/json", "Immutable release manifest"),
       endpoint("/releases/2026-05-31/diff.json", "application/json", "Release diff artifact"),
+      endpoint("/releases/2026-05-31/migration.json", "application/json", "Release migration notes"),
       endpoint("/.well-known/security.txt", "text/plain", "Security contact policy"),
     ],
   };
@@ -2496,6 +2497,9 @@ function buildOpenApi() {
       "/releases/2026-05-31/diff.json": {
         get: { summary: "Get release diff artifact", responses: { 200: staticJsonResponse("Release diff JSON") } },
       },
+      "/releases/2026-05-31/migration.json": {
+        get: { summary: "Get release migration notes", responses: { 200: staticJsonResponse("Release migration JSON") } },
+      },
       "/latest/manifest.json": {
         get: { summary: "Get latest release alias manifest", responses: { 200: staticJsonResponse("Latest alias JSON") } },
       },
@@ -2764,6 +2768,7 @@ function buildDcat() {
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/places/BRA/neighbors.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/releases/2026-05-31/manifest.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/releases/2026-05-31/diff.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/releases/2026-05-31/migration.json` },
         ],
       },
       {
@@ -2931,6 +2936,7 @@ function releaseArtifactFileCandidates() {
     "ogc/collections/places/items.json",
     ...ogcItemFiles,
     "releases/2026-05-31/diff.json",
+    "releases/2026-05-31/migration.json",
     "assets/social-card.svg",
     "vendor/d3.v7.min.js",
     "vendor/topojson-client.v3.min.js",
@@ -3013,6 +3019,80 @@ function buildReleaseDiff() {
   };
 }
 
+function buildReleaseMigration() {
+  return {
+    release_id: releaseId,
+    generated_at: releaseDate,
+    previous_release_id: null,
+    migration_type: "initial_release_baseline",
+    summary:
+      "This is the first immutable PainMap atlas release in this series. Treat the listed schemas, fields, and layer IDs as the migration baseline for future release comparisons.",
+    schema_changes: [
+      {
+        surface: "/data/place-measurements.json",
+        change_type: "baseline_schema",
+        fields_added: [
+          "extraction_timestamp",
+          "transform_version",
+          "reviewer_status",
+          "source_file_checksum",
+          "source_file_checksum_algorithm",
+          "source_file_checksum_basis",
+        ],
+        downstream_action:
+          "Carry measurement lineage fields with copied values and use /schemas/place-measurements.schema.json for validation.",
+      },
+      {
+        surface: "/v1/places/index.json",
+        change_type: "baseline_schema",
+        fields_added: [
+          "coverage_status",
+          "canonical_measurement_count",
+          "profile_url",
+          "measurements_url",
+          "neighbors_url",
+          "available_layers",
+        ],
+        downstream_action:
+          "Use coverage_status before fetching profile or measurement URLs because boundary-only places do not have canonical measurement rows.",
+      },
+      {
+        surface: "/v1/adm1/index.json",
+        change_type: "baseline_schema",
+        fields_added: ["adm1_priority_rank", "poverty_context", "context_url", "parent_place_id"],
+        downstream_action:
+          "Treat ADM1 rows as poverty-context overlays, not canonical PainMap pain measurements.",
+      },
+      {
+        surface: "/ogc/collections/places/items.json",
+        change_type: "baseline_schema",
+        fields_added: ["coverage_status", "profile_url", "measurements_url", "neighbors_url"],
+        downstream_action:
+          "Join OGC feature properties to the place index when clients need both geometry and release coverage metadata.",
+      },
+    ],
+    renamed_fields: [],
+    removed_fields: [],
+    new_layer_ids: buildLayers().layers.map((layer) => ({
+      layer_id: layer.layer_id,
+      label: layer.label,
+      evidence_kind: layer.evidence_kind,
+      value_type: layer.value_type,
+      ranking_mode: layer.ranking_mode,
+    })),
+    validation_surfaces: [
+      "/schemas/place-index.schema.json",
+      "/schemas/adm1-context.schema.json",
+      "/schemas/place-measurements.schema.json",
+      "/schemas/coverage.schema.json",
+      "/schemas/release-modes.schema.json",
+      "/schemas/ogc-place-features.schema.json",
+      "/data/openapi.json",
+      "/releases/2026-05-31/manifest.json",
+    ],
+  };
+}
+
 function writeApiArtifacts() {
   const places = measuredPlaceIds();
   const placeProfiles = places.map(placeSummary);
@@ -3045,6 +3125,7 @@ function writeApiArtifacts() {
   writeJson("data/openapi.json", buildOpenApi());
   writeJson("data/dcat.json", buildDcat());
   writeJson("releases/2026-05-31/diff.json", buildReleaseDiff());
+  writeJson("releases/2026-05-31/migration.json", buildReleaseMigration());
   writeJson("data/route-smoke.json", {
     release_id: releaseId,
     generated_at: releaseDate,

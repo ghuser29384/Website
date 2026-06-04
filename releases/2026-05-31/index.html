@@ -28,6 +28,7 @@
         "distribution": [
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/releases/2026-05-31/manifest.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/releases/2026-05-31/diff.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/releases/2026-05-31/migration.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/v1/adm1/index.json" },
           { "@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "https://painmap.org/ogc/collections/places/items.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/place-measurements.json" }
@@ -75,6 +76,7 @@
           <ul class="download-list">
             <li><a href="/releases/2026-05-31/manifest.json">Release manifest JSON</a></li>
             <li><a href="/releases/2026-05-31/diff.json">Release diff JSON</a></li>
+            <li><a href="/releases/2026-05-31/migration.json">Release migration notes JSON</a></li>
             <li><a href="/v1/releases.json">Release index JSON</a></li>
             <li><a href="/v1/adm1/index.json">ADM1 context index JSON</a></li>
             <li><a href="/v1/places/IND/adm1.json">India ADM1 context JSON</a></li>
@@ -95,6 +97,31 @@
           <p class="route-copy">
             This release now publishes a machine-readable diff baseline. Future releases can compare added, changed, and removed routes, datasets, place features, neighbor payloads, and validation surfaces against this immutable starting point.
           </p>
+        </section>
+        <section class="route-panel" aria-labelledby="migration-title">
+          <div class="section-intro">
+            <p class="label">Migration</p>
+            <h2 id="migration-title">Schema and layer baseline</h2>
+          </div>
+          <p class="route-copy">
+            This release is the initial atlas migration baseline. There are no renamed or removed fields from a prior immutable release. Downstream users should treat the current schema fields and layer IDs as the comparison point for future releases.
+          </p>
+          <div class="data-table-wrap">
+            <table class="route-table">
+              <thead>
+                <tr>
+                  <th>Area</th>
+                  <th>Migration note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Schema changes</th><td>Place measurements include lineage fields; place index, ADM1 context, release modes, coverage, and OGC-style feature schemas are published as release validation surfaces.</td></tr>
+                <tr><th scope="row">Renamed fields</th><td>None in this initial release baseline.</td></tr>
+                <tr><th scope="row">New layer IDs</th><td><code>factory-farmed-animals</code>, <code>human-burden</code>, <code>human-poverty-adm1-context</code>, <code>wild-insects</code>, <code>animal-priority-overlay</code>, <code>event-evidence</code>, <code>country-boundaries</code>.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p><a href="/releases/2026-05-31/migration.json">Open migration notes JSON</a></p>
         </section>
       </main>
     </div>
