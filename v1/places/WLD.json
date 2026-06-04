@@ -52,7 +52,13 @@
       "license_id": "owid-cc-by",
       "data_license_uri": "https://creativecommons.org/licenses/by/4.0/",
       "attribution": "Uses public Our World in Data/Fishcount-style source rows and PainMap stated welfare assumptions.",
-      "download_url": "https://painmap.org/data/place-measurements.json"
+      "download_url": "https://painmap.org/data/place-measurements.json",
+      "extraction_timestamp": "2026-05-31T00:00:00Z",
+      "transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "reviewer_status": "release-reviewed",
+      "source_file_checksum": "f9c76b9d9e5e3be7c74dd4d12765536e53393d9f5f06cc1b14e19b8bb48c24ca",
+      "source_file_checksum_algorithm": "sha256",
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
     },
     {
       "measurement_id": "2026-05-31.atlas.2:WLD:wild-insects",
@@ -85,7 +91,13 @@
       "license_id": "world-bank-terms",
       "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
       "attribution": "Uses public World Bank land-area context and PainMap stated welfare assumptions.",
-      "download_url": "https://painmap.org/data/place-measurements.json"
+      "download_url": "https://painmap.org/data/place-measurements.json",
+      "extraction_timestamp": "2026-05-31T00:00:00Z",
+      "transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "reviewer_status": "release-reviewed",
+      "source_file_checksum": "ee9954ee726d61174bf40ab7200f2b0930a34a5010b7bcd937467dc8a04232d4",
+      "source_file_checksum_algorithm": "sha256",
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
     }
   ]
 }

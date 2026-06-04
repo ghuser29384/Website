@@ -7,7 +7,10 @@
     "release_path": "/releases/2026-05-31/",
     "mutable_latest_overlay": false,
     "ranking_mode": "higher_proxy_score_more_attention",
-    "note": "Canonical static release artifact for the public atlas contract. Runtime homepage overlays may refresh public source values, but release rows remain immutable."
+    "note": "Canonical static release artifact for the public atlas contract. Runtime homepage overlays may refresh public source values, but release rows remain immutable.",
+    "extraction_timestamp": "2026-05-31T00:00:00Z",
+    "transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+    "reviewer_status": "release-reviewed"
   },
   "measurements": [
     {
@@ -31,14 +34,24 @@
       "confidence_low": 0.78,
       "confidence_high": 1,
       "uncertainty_class": "low",
-      "source_ids": ["owid-livestock", "fishcount-aquaculture", "painmap-welfare-assumptions"],
+      "source_ids": [
+        "owid-livestock",
+        "fishcount-aquaculture",
+        "painmap-welfare-assumptions"
+      ],
       "provenance_id": "place-measurements",
       "source_vintage": "2026-05-31 release; runtime OWID/Fishcount overlay optional",
       "method_note": "Global reference proxy for slaughter, aquaculture, and standing-population counts weighted by stated welfare-range assumptions.",
       "license_id": "owid-cc-by",
       "data_license_uri": "https://creativecommons.org/licenses/by/4.0/",
       "attribution": "Uses public Our World in Data/Fishcount-style source rows and PainMap stated welfare assumptions.",
-      "download_url": "https://painmap.org/data/place-measurements.json"
+      "download_url": "https://painmap.org/data/place-measurements.json",
+      "extraction_timestamp": "2026-05-31T00:00:00Z",
+      "transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "reviewer_status": "release-reviewed",
+      "source_file_checksum": "f9c76b9d9e5e3be7c74dd4d12765536e53393d9f5f06cc1b14e19b8bb48c24ca",
+      "source_file_checksum_algorithm": "sha256",
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
     },
     {
       "measurement_id": "2026-05-31.atlas.2:WLD:wild-insects",
@@ -61,14 +74,23 @@
       "confidence_low": 0.55,
       "confidence_high": 1,
       "uncertainty_class": "very-low",
-      "source_ids": ["world-bank-land-area", "painmap-welfare-assumptions"],
+      "source_ids": [
+        "world-bank-land-area",
+        "painmap-welfare-assumptions"
+      ],
       "provenance_id": "place-measurements",
       "source_vintage": "2026-05-31 release",
       "method_note": "Directional scale context only; uses land area and published density anchors rather than direct welfare measurement.",
       "license_id": "world-bank-terms",
       "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
       "attribution": "Uses public World Bank land-area context and PainMap stated welfare assumptions.",
-      "download_url": "https://painmap.org/data/place-measurements.json"
+      "download_url": "https://painmap.org/data/place-measurements.json",
+      "extraction_timestamp": "2026-05-31T00:00:00Z",
+      "transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "reviewer_status": "release-reviewed",
+      "source_file_checksum": "ee9954ee726d61174bf40ab7200f2b0930a34a5010b7bcd937467dc8a04232d4",
+      "source_file_checksum_algorithm": "sha256",
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
     },
     {
       "measurement_id": "2026-05-31.atlas.2:BRA:factory-farmed-animals",
@@ -91,14 +113,24 @@
       "confidence_low": 0.44,
       "confidence_high": 0.72,
       "uncertainty_class": "low",
-      "source_ids": ["owid-livestock", "fishcount-aquaculture", "painmap-welfare-assumptions"],
+      "source_ids": [
+        "owid-livestock",
+        "fishcount-aquaculture",
+        "painmap-welfare-assumptions"
+      ],
       "provenance_id": "place-measurements",
       "source_vintage": "2026-05-31 release; runtime OWID/Fishcount overlay optional",
       "method_note": "Country production counts are weighted by visible sentience and welfare-range assumptions where available.",
       "license_id": "owid-cc-by",
       "data_license_uri": "https://creativecommons.org/licenses/by/4.0/",
       "attribution": "Uses public Our World in Data/Fishcount-style source rows and PainMap stated welfare assumptions.",
-      "download_url": "https://painmap.org/data/place-measurements.json"
+      "download_url": "https://painmap.org/data/place-measurements.json",
+      "extraction_timestamp": "2026-05-31T00:00:00Z",
+      "transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "reviewer_status": "release-reviewed",
+      "source_file_checksum": "b0b61f5510f8f0f3084383bc9647d3f92c9bcddb6a8f3efa92ec754dfb3ad0bc",
+      "source_file_checksum_algorithm": "sha256",
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
     },
     {
       "measurement_id": "2026-05-31.atlas.2:BRA:human-burden",
@@ -121,14 +153,22 @@
       "confidence_low": 0.32,
       "confidence_high": 0.53,
       "uncertainty_class": "low",
-      "source_ids": ["world-bank-indicators"],
+      "source_ids": [
+        "world-bank-indicators"
+      ],
       "provenance_id": "place-measurements",
       "source_vintage": "World Bank 2010:2025 latest non-null indicator window",
       "method_note": "Uses latest non-null country observations for selected health, poverty, pollution, WASH, and conflict indicators.",
       "license_id": "world-bank-terms",
       "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
       "attribution": "Uses public World Bank indicator API rows.",
-      "download_url": "https://painmap.org/data/place-measurements.json"
+      "download_url": "https://painmap.org/data/place-measurements.json",
+      "extraction_timestamp": "2026-05-31T00:00:00Z",
+      "transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "reviewer_status": "release-reviewed",
+      "source_file_checksum": "aae6f60df4bba074eee0106c530efb6f459a30b5f9c103be88de8fd7ba08f4ea",
+      "source_file_checksum_algorithm": "sha256",
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
     },
     {
       "measurement_id": "2026-05-31.atlas.2:BRA:animal-priority-overlay",
@@ -151,14 +191,24 @@
       "confidence_low": 0.43,
       "confidence_high": 0.77,
       "uncertainty_class": "very-low",
-      "source_ids": ["owid-livestock", "welfare-footprint-events", "painmap-priority-review"],
+      "source_ids": [
+        "owid-livestock",
+        "welfare-footprint-events",
+        "painmap-priority-review"
+      ],
       "provenance_id": "place-measurements",
       "source_vintage": "2026-05-31 release priority overlay",
       "method_note": "Combines farmed-animal proxy scale, event-evidence salience, and tractability notes. It is not a direct suffering estimate.",
       "license_id": "painmap-mit",
       "data_license_uri": "https://painmap.org/LICENSE",
       "attribution": "PainMap priority overlay derived from public source indicators and documented assumptions.",
-      "download_url": "https://painmap.org/data/place-measurements.json"
+      "download_url": "https://painmap.org/data/place-measurements.json",
+      "extraction_timestamp": "2026-05-31T00:00:00Z",
+      "transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "reviewer_status": "release-reviewed",
+      "source_file_checksum": "4bed66c21e7f07e8773926e3aa7f7b7b8947ea087b2946218e7f5a4aeb85be71",
+      "source_file_checksum_algorithm": "sha256",
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
     },
     {
       "measurement_id": "2026-05-31.atlas.2:IND:factory-farmed-animals",
@@ -181,14 +231,24 @@
       "confidence_low": 0.54,
       "confidence_high": 0.86,
       "uncertainty_class": "low",
-      "source_ids": ["owid-livestock", "fishcount-aquaculture", "painmap-welfare-assumptions"],
+      "source_ids": [
+        "owid-livestock",
+        "fishcount-aquaculture",
+        "painmap-welfare-assumptions"
+      ],
       "provenance_id": "place-measurements",
       "source_vintage": "2026-05-31 release; runtime OWID/Fishcount overlay optional",
       "method_note": "Country production counts are weighted by visible sentience and welfare-range assumptions where available.",
       "license_id": "owid-cc-by",
       "data_license_uri": "https://creativecommons.org/licenses/by/4.0/",
       "attribution": "Uses public Our World in Data/Fishcount-style source rows and PainMap stated welfare assumptions.",
-      "download_url": "https://painmap.org/data/place-measurements.json"
+      "download_url": "https://painmap.org/data/place-measurements.json",
+      "extraction_timestamp": "2026-05-31T00:00:00Z",
+      "transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "reviewer_status": "release-reviewed",
+      "source_file_checksum": "30343eabc2f577604c8475ee95141f4fc14a28e6f42e7da72c50bf8b4a44a94f",
+      "source_file_checksum_algorithm": "sha256",
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
     },
     {
       "measurement_id": "2026-05-31.atlas.2:IND:human-burden",
@@ -211,14 +271,22 @@
       "confidence_low": 0.49,
       "confidence_high": 0.78,
       "uncertainty_class": "low",
-      "source_ids": ["world-bank-indicators"],
+      "source_ids": [
+        "world-bank-indicators"
+      ],
       "provenance_id": "place-measurements",
       "source_vintage": "World Bank 2010:2025 latest non-null indicator window",
       "method_note": "Uses latest non-null country observations for selected health, poverty, pollution, WASH, and conflict indicators.",
       "license_id": "world-bank-terms",
       "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
       "attribution": "Uses public World Bank indicator API rows.",
-      "download_url": "https://painmap.org/data/place-measurements.json"
+      "download_url": "https://painmap.org/data/place-measurements.json",
+      "extraction_timestamp": "2026-05-31T00:00:00Z",
+      "transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "reviewer_status": "release-reviewed",
+      "source_file_checksum": "f954fbddca62dab8735bca1f494d27c24ecf282d17f5cc3e445e88ae56e4a9aa",
+      "source_file_checksum_algorithm": "sha256",
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
     },
     {
       "measurement_id": "2026-05-31.atlas.2:IND:animal-priority-overlay",
@@ -241,14 +309,24 @@
       "confidence_low": 0.52,
       "confidence_high": 0.89,
       "uncertainty_class": "very-low",
-      "source_ids": ["owid-livestock", "welfare-footprint-events", "painmap-priority-review"],
+      "source_ids": [
+        "owid-livestock",
+        "welfare-footprint-events",
+        "painmap-priority-review"
+      ],
       "provenance_id": "place-measurements",
       "source_vintage": "2026-05-31 release priority overlay",
       "method_note": "Combines farmed-animal proxy scale, event-evidence salience, and tractability notes. It is not a direct suffering estimate.",
       "license_id": "painmap-mit",
       "data_license_uri": "https://painmap.org/LICENSE",
       "attribution": "PainMap priority overlay derived from public source indicators and documented assumptions.",
-      "download_url": "https://painmap.org/data/place-measurements.json"
+      "download_url": "https://painmap.org/data/place-measurements.json",
+      "extraction_timestamp": "2026-05-31T00:00:00Z",
+      "transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "reviewer_status": "release-reviewed",
+      "source_file_checksum": "d9958dc3768e31d81d3314e8edfa525390e721d878f5d7866b54c2951b2a5f46",
+      "source_file_checksum_algorithm": "sha256",
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
     }
   ]
 }

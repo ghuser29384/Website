@@ -6,16 +6,16 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://api.worldpop.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Place Measurements Dataset | PainMap</title>
-    <meta name="description" content="PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, evidence kind, confidence bounds, source IDs, license, and API links.">
+    <meta name="description" content="PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, measurement lineage, evidence kind, confidence bounds, source IDs, license, and API links.">
     <link rel="canonical" href="https://painmap.org/dataset/place-measurements/">
     <meta property="og:title" content="Place Measurements Dataset | PainMap">
-    <meta property="og:description" content="PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, evidence kind, confidence bounds, source IDs, license, and API links.">
+    <meta property="og:description" content="PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, measurement lineage, evidence kind, confidence bounds, source IDs, license, and API links.">
     <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/dataset/place-measurements/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Place Measurements Dataset | PainMap">
-    <meta name="twitter:description" content="PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, evidence kind, confidence bounds, source IDs, license, and API links.">
+    <meta name="twitter:description" content="PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, measurement lineage, evidence kind, confidence bounds, source IDs, license, and API links.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
 <link rel="stylesheet" href="../../styles.css" integrity="sha384-E+oJ/hyX8bmhH3T32g+aO3Y4R+Gs5zXZmEy+iF4j6B00HoeRX2A8AoGLpQQwNoAJ" crossorigin="anonymous">
     <script type="application/ld+json">
@@ -23,7 +23,7 @@
         "@context": "https://schema.org",
         "@type": "Dataset",
         "name": "PainMap place-level pain-source proxy measurements",
-        "description": "Canonical release artifact for place-level pain-source measurements with typed values, evidence kind, source IDs, confidence bounds, uncertainty, and license fields.",
+        "description": "Canonical release artifact for place-level pain-source measurements with typed values, evidence kind, source IDs, confidence bounds, uncertainty, lineage, and license fields.",
         "url": "https://painmap.org/dataset/place-measurements/",
         "identifier": "place-measurements",
         "license": "https://painmap.org/policies/terms/",
@@ -118,6 +118,10 @@
                 <tr><th scope="row">source_ids</th><td>Array of source pointers into the provenance registry.</td><td>Yes</td></tr>
                 <tr><th scope="row">confidence_low / confidence_high</th><td>Release-scoped numeric bounds for the value.</td><td>Yes</td></tr>
                 <tr><th scope="row">source_vintage</th><td>Dataset date window or review date for the visible value.</td><td>Yes</td></tr>
+                <tr><th scope="row">extraction_timestamp</th><td>Release-scoped timestamp for the source extraction or review cut used to materialize the row.</td><td>Yes</td></tr>
+                <tr><th scope="row">transform_version</th><td>Static transform version that generated the measurement lineage and downstream artifacts.</td><td>Yes</td></tr>
+                <tr><th scope="row">reviewer_status</th><td>Release review state for the measurement row, currently release-reviewed.</td><td>Yes</td></tr>
+                <tr><th scope="row">source_file_checksum</th><td>SHA-256 checksum over the canonical measurement source row and referenced provenance source rows.</td><td>Yes</td></tr>
                 <tr><th scope="row">uncertainty_class</th><td>Moderate, low, or very-low confidence class.</td><td>Yes</td></tr>
                 <tr><th scope="row">license_id</th><td>Pointer into the provenance registry license table.</td><td>Yes</td></tr>
               </tbody>

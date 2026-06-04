@@ -130,7 +130,7 @@
       "path": "/dataset/place-measurements/",
       "file": "dataset/place-measurements/index.html",
       "title": "Place Measurements Dataset | PainMap",
-      "description": "PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, evidence kind, confidence bounds, source IDs, license, and API links.",
+      "description": "PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, measurement lineage, evidence kind, confidence bounds, source IDs, license, and API links.",
       "canonical_url": "https://painmap.org/dataset/place-measurements/",
       "json_ld_type": "Dataset"
     },
@@ -3544,8 +3544,8 @@
     },
     {
       "path": "/dataset/place-measurements/index.html",
-      "sha256": "4be9c2c31d9f0ea87f4c53641824bad908ba559b775bc5759ec08866d30b6414",
-      "bytes": 8674
+      "sha256": "6ca5b204aab0d133bcb00e6ff06c9b6f4f278a142142773efdef086a6a75f808",
+      "bytes": 9442
     },
     {
       "path": "/dataset/provenance-registry/index.html",
@@ -5349,8 +5349,8 @@
     },
     {
       "path": "/api/index.html",
-      "sha256": "21445bfd62242c957c67afde2a8fccdd5360f819205f73cbfe5fbebbb69eb305",
-      "bytes": 12682
+      "sha256": "f00e0742cb62e3fa7eda261da9c5e2bed0309fd04085577a6378998b6a556183",
+      "bytes": 12706
     },
     {
       "path": "/developers/index.html",
@@ -5419,13 +5419,13 @@
     },
     {
       "path": "/data/routes.json",
-      "sha256": "97c5c1096346f0c53efe547122178c5fcc6237b545603dee33be646178c721e7",
-      "bytes": 162118
+      "sha256": "07f8eb3ef97129e77137d222d8ccb75195b61da118a65f655e98f2546d4c41de",
+      "bytes": 162139
     },
     {
       "path": "/data/route-smoke.json",
-      "sha256": "3c3071c9d253b26d912adfd9d99d3d2e29c3af37b77ae1d7a196f36a3b2acc63",
-      "bytes": 170461
+      "sha256": "df370f06f9656b2b1307b13c45acc87f1a51b6bc99fb82549a7e988d4d5d6944",
+      "bytes": 170482
     },
     {
       "path": "/data/provenance-registry.json",
@@ -5434,13 +5434,13 @@
     },
     {
       "path": "/data/place-measurements.json",
-      "sha256": "259da7c4510bd0da71cb4583a12c58fa95b4ceaaaeb1bef830102c79dee35d45",
-      "bytes": 11773
+      "sha256": "a17fc257cb855d9bb1a74a253f6125c5ed0dcf06bcc68f292019dab27e9c7082",
+      "bytes": 16194
     },
     {
       "path": "/data/place-measurements.csv",
-      "sha256": "61c92fe7e59432982d0e367cc5bc4621641cac7a00ae49ca8236afc935ba9f6a",
-      "bytes": 6032
+      "sha256": "91e39ccf56c015930d5f0c5448a476104a5fcdb28072c1966b508e163adfed34",
+      "bytes": 8542
     },
     {
       "path": "/data/places.geojson",
@@ -5494,8 +5494,8 @@
     },
     {
       "path": "/data/openapi.json",
-      "sha256": "c2124d2af5baa7af493d13b5e27ece0c386735729c87c4eaa7b38243f1a06798",
-      "bytes": 23893
+      "sha256": "6d887e33402affea5ea2fd2ea831472143bab7a4ac6e449264fd60bea85f28cf",
+      "bytes": 24538
     },
     {
       "path": "/compare.js",
@@ -5539,8 +5539,8 @@
     },
     {
       "path": "/schemas/place-measurements.schema.json",
-      "sha256": "63d0a6e568b291542e4df560ab852225ef0d6d21556bd93f5cbea53fdca5aa3d",
-      "bytes": 811
+      "sha256": "02ccf2796a4af4fb0705f5768ccdd616c7f356064e622ec8345a6aabf233fcb0",
+      "bytes": 2385
     },
     {
       "path": "/schemas/coverage.schema.json",
@@ -5589,33 +5589,33 @@
     },
     {
       "path": "/v1/places/BRA.json",
-      "sha256": "1f3070a0d7d3e78dc20971676390395a4181393f517a31785cd1e342dbf65a8b",
-      "bytes": 5054
+      "sha256": "cef948e54013941ab4f927f8b272fe5e06b89bc23c9a37eebedecf8b0ecbc624",
+      "bytes": 6563
     },
     {
       "path": "/v1/places/BRA/measurements.json",
-      "sha256": "aa8c2d67f7a39ecb55342452179a4a40fb3d8bbf23e3b4168138b2db031bc665",
-      "bytes": 4385
+      "sha256": "d88a99a68ee2e1f25a414a02c64ba26b570854b5dcb07274805d1fef1d88836e",
+      "bytes": 5894
     },
     {
       "path": "/v1/places/IND.json",
-      "sha256": "ee68bed192538c97ffea8b6856854f20eb46ab357ec80f6ab66dba094eaa03c7",
-      "bytes": 5050
+      "sha256": "9a569304e438f5b42e29b412613906594ed6df2a199529ef119e44773f977795",
+      "bytes": 6559
     },
     {
       "path": "/v1/places/IND/measurements.json",
-      "sha256": "ffcb31f30bbcc139506055b34974230122a0842f75e74ba3161b83fec70fa0f0",
-      "bytes": 4382
+      "sha256": "e5ed0e49eb14ec8190c8e4bd77a1bd631c6a7a7344fb2348d919a4b96c7c2e9e",
+      "bytes": 5891
     },
     {
       "path": "/v1/places/WLD.json",
-      "sha256": "978c752658653fba1ec1251e3340532f313d2666a86d3c3b443026ed0698e08b",
-      "bytes": 3534
+      "sha256": "053a2c5315adea032315c1ef9adbaf5ca8997f12ff09036b9d9487521b67763d",
+      "bytes": 4540
     },
     {
       "path": "/v1/places/WLD/measurements.json",
-      "sha256": "76848b31346a3d84c0cd9a4060c7ffef48d11652e3024feedd72ec6d9e07552f",
-      "bytes": 2985
+      "sha256": "124d2996b2fa033c09b5395043d9318346250e7952338d5c0d5ca0eaa4bd6aaa",
+      "bytes": 3991
     },
     {
       "path": "/v1/places/WLD/neighbors.json",
@@ -8754,8 +8754,8 @@
     },
     {
       "path": "/README.md",
-      "sha256": "236e078dad62aa2e75eb9c47addcae0a2dfad2fb9d566e19302affe01a5992df",
-      "bytes": 4769
+      "sha256": "f415ae9bd3709094e6d0d1b810349f007609804138b20bd04057f15eacca0e02",
+      "bytes": 4857
     },
     {
       "path": "/LICENSE",

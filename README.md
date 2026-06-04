@@ -45,7 +45,7 @@ Field budgets are published in `data/performance-budgets.json`: LCP <= 2500 ms, 
 
 ## Attribution and licenses
 
-PainMap original site code and release metadata are MIT licensed. Data rows retain their source license and attribution pointers in `data/provenance-registry.json`; downstream users should carry `source_ids`, `license_id`, `source_vintage`, `evidence_kind`, `uncertainty_class`, and confidence fields with every copied value.
+PainMap original site code and release metadata are MIT licensed. Data rows retain their source license and attribution pointers in `data/provenance-registry.json`; downstream users should carry `source_ids`, `license_id`, `source_vintage`, `extraction_timestamp`, `transform_version`, `reviewer_status`, `source_file_checksum`, `evidence_kind`, `uncertainty_class`, and confidence fields with every copied value.
 
 Key source families include Welfare Footprint, Our World in Data, World Bank public indicators, Natural Earth, geoBoundaries, and PainMap method notes. See the provenance registry for source URLs and license URIs.
 

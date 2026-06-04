@@ -106,7 +106,7 @@
       "file": "dataset/place-measurements/index.html",
       "key": "dataset-place-measurements",
       "title": "Place Measurements Dataset | PainMap",
-      "description": "PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, evidence kind, confidence bounds, source IDs, license, and API links.",
+      "description": "PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, measurement lineage, evidence kind, confidence bounds, source IDs, license, and API links.",
       "jsonLdType": "Dataset"
     },
     {

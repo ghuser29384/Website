@@ -29,8 +29,73 @@
           "confidence_low",
           "confidence_high",
           "uncertainty_class",
+          "extraction_timestamp",
+          "transform_version",
+          "reviewer_status",
+          "source_file_checksum",
           "license_id"
-        ]
+        ],
+        "properties": {
+          "measurement_id": {
+            "type": "string"
+          },
+          "release_id": {
+            "type": "string"
+          },
+          "place_id": {
+            "type": "string"
+          },
+          "place_name": {
+            "type": "string"
+          },
+          "geometry_level": {
+            "type": "string"
+          },
+          "layer_id": {
+            "type": "string"
+          },
+          "evidence_kind": {
+            "enum": [
+              "direct",
+              "modeled",
+              "proxy",
+              "priority-overlay",
+              "boundary"
+            ]
+          },
+          "raw_value": {
+            "type": "number"
+          },
+          "display_value": {
+            "type": "string"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "extraction_timestamp": {
+            "type": "string"
+          },
+          "transform_version": {
+            "type": "string"
+          },
+          "reviewer_status": {
+            "enum": [
+              "release-reviewed"
+            ]
+          },
+          "source_file_checksum": {
+            "type": "string"
+          },
+          "source_file_checksum_algorithm": {
+            "const": "sha256"
+          },
+          "source_file_checksum_basis": {
+            "type": "string"
+          }
+        }
       }
     }
   }

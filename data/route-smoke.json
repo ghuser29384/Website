@@ -71,7 +71,7 @@
       "path": "/dataset/place-measurements/",
       "file": "dataset/place-measurements/index.html",
       "expected_title": "Place Measurements Dataset | PainMap",
-      "expected_description": "PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, evidence kind, confidence bounds, source IDs, license, and API links.",
+      "expected_description": "PainMap canonical place measurements dataset with JSON, CSV, GeoJSON, source vintage, measurement lineage, evidence kind, confidence bounds, source IDs, license, and API links.",
       "expected_canonical": "https://painmap.org/dataset/place-measurements/"
     },
     {

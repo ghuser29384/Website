@@ -134,6 +134,19 @@ const endpointSmoke = readJson("data/endpoint-smoke.json");
 const measurementRowsByPlace = new Map();
 
 for (const row of measurements.measurements) {
+  expect(
+    /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(row.extraction_timestamp || ""),
+    `${row.measurement_id} missing ISO extraction_timestamp`
+  );
+  expect(
+    String(row.transform_version || "").startsWith("painmap-static-artifacts.measurement-lineage."),
+    `${row.measurement_id} missing measurement lineage transform_version`
+  );
+  expect(row.reviewer_status === "release-reviewed", `${row.measurement_id} reviewer_status must be release-reviewed`);
+  expect(/^[a-f0-9]{64}$/.test(row.source_file_checksum || ""), `${row.measurement_id} source_file_checksum must be sha256 hex`);
+  expect(row.source_file_checksum_algorithm === "sha256", `${row.measurement_id} source_file_checksum_algorithm must be sha256`);
+  expect(Boolean(row.source_file_checksum_basis), `${row.measurement_id} missing source_file_checksum_basis`);
+
   const rows = measurementRowsByPlace.get(row.place_id) || [];
   rows.push(row);
   measurementRowsByPlace.set(row.place_id, rows);

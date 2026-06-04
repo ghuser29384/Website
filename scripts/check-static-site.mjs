@@ -693,10 +693,23 @@ const requiredMeasurementFields = [
   "confidence_high",
   "provenance_id",
   "source_vintage",
+  "extraction_timestamp",
+  "transform_version",
+  "reviewer_status",
+  "source_file_checksum",
+  "source_file_checksum_algorithm",
+  "source_file_checksum_basis",
   "method_note",
   "uncertainty_class",
   "license_id",
 ];
+const placeMeasurementCsvHeader = read("data/place-measurements.csv").split("\n")[0].split(",");
+
+for (const field of requiredMeasurementFields) {
+  if (!placeMeasurementCsvHeader.includes(field)) {
+    failures.push(`data/place-measurements.csv missing canonical field ${field}`);
+  }
+}
 
 for (const measurement of placeMeasurements.measurements) {
   for (const field of requiredMeasurementFields) {
@@ -711,6 +724,26 @@ for (const measurement of placeMeasurements.measurements) {
 
   if (!Array.isArray(measurement.source_ids) || measurement.source_ids.length === 0) {
     failures.push(`${measurement.measurement_id} must include source_ids`);
+  }
+
+  if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(measurement.extraction_timestamp)) {
+    failures.push(`${measurement.measurement_id} must include an ISO extraction_timestamp`);
+  }
+
+  if (!String(measurement.transform_version || "").startsWith("painmap-static-artifacts.measurement-lineage.")) {
+    failures.push(`${measurement.measurement_id} must include the measurement lineage transform version`);
+  }
+
+  if (measurement.reviewer_status !== "release-reviewed") {
+    failures.push(`${measurement.measurement_id} reviewer_status must be release-reviewed`);
+  }
+
+  if (!/^[a-f0-9]{64}$/.test(measurement.source_file_checksum || "")) {
+    failures.push(`${measurement.measurement_id} source_file_checksum must be a sha256 hex digest`);
+  }
+
+  if (measurement.source_file_checksum_algorithm !== "sha256" || !measurement.source_file_checksum_basis) {
+    failures.push(`${measurement.measurement_id} must describe source_file_checksum algorithm and basis`);
   }
 
   if (!["direct", "modeled", "proxy", "priority-overlay", "boundary"].includes(measurement.evidence_kind)) {

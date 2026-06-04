@@ -846,6 +846,10 @@
           "confidence_high",
           "provenance_id",
           "source_vintage",
+          "extraction_timestamp",
+          "transform_version",
+          "reviewer_status",
+          "source_file_checksum",
           "method_note",
           "uncertainty_class",
           "license_id"
@@ -918,6 +922,26 @@
             "type": "string"
           },
           "source_vintage": {
+            "type": "string"
+          },
+          "extraction_timestamp": {
+            "type": "string"
+          },
+          "transform_version": {
+            "type": "string"
+          },
+          "reviewer_status": {
+            "enum": [
+              "release-reviewed"
+            ]
+          },
+          "source_file_checksum": {
+            "type": "string"
+          },
+          "source_file_checksum_algorithm": {
+            "const": "sha256"
+          },
+          "source_file_checksum_basis": {
             "type": "string"
           },
           "method_note": {

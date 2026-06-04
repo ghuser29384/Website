@@ -12,13 +12,24 @@ const csp =
 
 const routes = readJson("data/routes.json");
 const provenance = readJson("data/provenance-registry.json");
-const measurements = readJson("data/place-measurements.json");
 const countryBoundaries = readJson("data/natural-earth-countries.geojson");
 const adm1Context = readJson("data/gsap-adm1-2023.json");
 const releaseId = routes.releaseId;
 const releaseDate = routes.generatedAt;
 const earthRadiusKm = 6371.0088;
 const adm1StaticPageLimit = 120;
+const measurementExtractionTimestamp = `${releaseDate}T00:00:00Z`;
+const measurementTransformVersion = "painmap-static-artifacts.measurement-lineage.2026-06-04.1";
+const measurementReviewerStatus = "release-reviewed";
+const measurementLineageFields = new Set([
+  "extraction_timestamp",
+  "transform_version",
+  "reviewer_status",
+  "source_file_checksum",
+  "source_file_checksum_algorithm",
+  "source_file_checksum_basis",
+]);
+const measurements = normalizeMeasurementLineage(readJson("data/place-measurements.json"));
 
 function absolute(file) {
   return path.join(root, file);
@@ -55,6 +66,70 @@ function writeJsonCompact(file, value) {
 
 function hashFile(file, algorithm = "sha256", encoding = "hex") {
   return createHash(algorithm).update(readFileSync(absolute(file))).digest(encoding);
+}
+
+function stableJson(value) {
+  if (Array.isArray(value)) {
+    return `[${value.map(stableJson).join(",")}]`;
+  }
+
+  if (value && typeof value === "object") {
+    return `{${Object.keys(value)
+      .sort()
+      .map((key) => `${JSON.stringify(key)}:${stableJson(value[key])}`)
+      .join(",")}}`;
+  }
+
+  return JSON.stringify(value);
+}
+
+function stripMeasurementLineage(measurement) {
+  return Object.fromEntries(
+    Object.entries(measurement).filter(([key]) => !measurementLineageFields.has(key))
+  );
+}
+
+function measurementSourceFileChecksum(measurement) {
+  const sourceIds = Array.isArray(measurement.source_ids) ? [...measurement.source_ids].sort() : [];
+  const sourceRegistryRows = sourceIds.map((sourceId) =>
+    provenance.sources.find((source) => source.source_id === sourceId) || { source_id: sourceId, missing: true }
+  );
+  const payload = {
+    measurement_source_file: "data/place-measurements.json",
+    source_registry_file: "data/provenance-registry.json",
+    source_registry_sha256: hashFile("data/provenance-registry.json"),
+    source_ids: sourceIds,
+    source_registry_rows: sourceRegistryRows,
+    measurement_row: stripMeasurementLineage(measurement),
+  };
+
+  return createHash("sha256").update(stableJson(payload)).digest("hex");
+}
+
+function normalizeMeasurementLineage(data) {
+  return {
+    ...data,
+    build: {
+      ...data.build,
+      extraction_timestamp: measurementExtractionTimestamp,
+      transform_version: measurementTransformVersion,
+      reviewer_status: measurementReviewerStatus,
+    },
+    measurements: data.measurements.map((measurement) => {
+      const baseMeasurement = stripMeasurementLineage(measurement);
+
+      return {
+        ...baseMeasurement,
+        extraction_timestamp: measurementExtractionTimestamp,
+        transform_version: measurementTransformVersion,
+        reviewer_status: measurementReviewerStatus,
+        source_file_checksum: measurementSourceFileChecksum(baseMeasurement),
+        source_file_checksum_algorithm: "sha256",
+        source_file_checksum_basis:
+          "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.",
+      };
+    }),
+  };
 }
 
 function sizeBytes(file) {
@@ -476,6 +551,12 @@ function measurementCsv() {
     "source_ids",
     "provenance_id",
     "source_vintage",
+    "extraction_timestamp",
+    "transform_version",
+    "reviewer_status",
+    "source_file_checksum",
+    "source_file_checksum_algorithm",
+    "source_file_checksum_basis",
     "method_note",
     "license_id",
     "data_license_uri",
@@ -2143,8 +2224,30 @@ function buildJsonSchemas() {
               "confidence_low",
               "confidence_high",
               "uncertainty_class",
+              "extraction_timestamp",
+              "transform_version",
+              "reviewer_status",
+              "source_file_checksum",
               "license_id",
             ],
+            properties: {
+              measurement_id: { type: "string" },
+              release_id: { type: "string" },
+              place_id: { type: "string" },
+              place_name: { type: "string" },
+              geometry_level: { type: "string" },
+              layer_id: { type: "string" },
+              evidence_kind: { enum: ["direct", "modeled", "proxy", "priority-overlay", "boundary"] },
+              raw_value: { type: "number" },
+              display_value: { type: "string" },
+              source_ids: { type: "array", items: { type: "string" } },
+              extraction_timestamp: { type: "string" },
+              transform_version: { type: "string" },
+              reviewer_status: { enum: ["release-reviewed"] },
+              source_file_checksum: { type: "string" },
+              source_file_checksum_algorithm: { const: "sha256" },
+              source_file_checksum_basis: { type: "string" },
+            },
           },
         },
       },
@@ -2562,6 +2665,10 @@ function buildOpenApi() {
             "confidence_high",
             "provenance_id",
             "source_vintage",
+            "extraction_timestamp",
+            "transform_version",
+            "reviewer_status",
+            "source_file_checksum",
             "method_note",
             "uncertainty_class",
             "license_id",
@@ -2587,6 +2694,12 @@ function buildOpenApi() {
             confidence_high: { type: "number" },
             provenance_id: { type: "string" },
             source_vintage: { type: "string" },
+            extraction_timestamp: { type: "string" },
+            transform_version: { type: "string" },
+            reviewer_status: { enum: ["release-reviewed"] },
+            source_file_checksum: { type: "string" },
+            source_file_checksum_algorithm: { const: "sha256" },
+            source_file_checksum_basis: { type: "string" },
             method_note: { type: "string" },
             uncertainty_class: { enum: ["moderate", "low", "very-low"] },
             license_id: { type: "string" },
@@ -2904,6 +3017,7 @@ function writeApiArtifacts() {
   const adm1Payloads = countryAdm1ContextPayloads();
   const ogcArtifacts = buildOgcArtifacts();
 
+  writeJson("data/place-measurements.json", measurements);
   writeText("data/place-measurements.csv", measurementCsv());
   writeJson("data/places.geojson", buildPlacesGeojson());
   writeJson("v1/places/index.json", buildPlaceIndex());
