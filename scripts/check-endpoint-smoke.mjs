@@ -118,7 +118,10 @@ function validateTextEndpoint(endpoint, text) {
   }
 
   if (endpoint.path === "/examples/") {
-    expect(text.includes("Load a place profile"), "/examples/ must include place-profile recipe copy");
+    expect(text.includes("Run static-data recipes"), "/examples/ must include the recipe command panel");
+    expect(text.includes("compare-places.mjs"), "/examples/ must include the place comparison recipe");
+    expect(text.includes("join-own-geography.mjs"), "/examples/ must include the custom geography join recipe");
+    expect(text.includes("cite-release.mjs"), "/examples/ must include the release citation recipe");
   }
 
   if (endpoint.path === "/.well-known/security.txt") {

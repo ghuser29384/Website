@@ -1,6 +1,6 @@
 # PainMap examples
 
-These examples use only public static PainMap files. Keep `release_id`, `source_ids`, `evidence_kind`, `uncertainty_class`, and license fields attached when reusing values.
+These examples use only public static PainMap files. Keep `release_id`, `source_ids`, `source_vintage`, `extraction_timestamp`, `transform_version`, `reviewer_status`, `source_file_checksum`, `evidence_kind`, `uncertainty_class`, confidence bounds, attribution, and license fields attached when reusing values.
 
 ## Load a place profile
 
@@ -10,6 +10,30 @@ python3 examples/load_place_profile.py IND
 ```
 
 Both commands print the place name, release ID, measurement count, and layer summaries for a canonical measured place. Boundary-only places appear in `/v1/places/index.json`, but they do not have measurement profiles in this release.
+
+## Compare two places
+
+```sh
+node examples/compare-places.mjs BRA IND
+```
+
+This recipe loads two canonical place profiles, matches shared measured layers, prints each display value, evidence kind, uncertainty class, rank delta, source IDs, and measurement lineage checksums.
+
+## Join with your own geography
+
+```sh
+node examples/join-own-geography.mjs examples/custom-geography.csv
+```
+
+This recipe joins a local CSV keyed by `place_id` to `/v1/places/index.json` and `/ogc/collections/places/item-index.json`, then prints coverage status, measurement URLs, and per-country OGC feature URLs. Use the sample `examples/custom-geography.csv` as the minimum shape for a portfolio, program, or region list.
+
+## Cite a release
+
+```sh
+node examples/cite-release.mjs 2026-05-31
+```
+
+This recipe loads the immutable release manifest and latest alias, then prints a short citation, manifest URL, manifest SHA-256, artifact count, and reuse fields that should travel with copied values.
 
 ## Useful public entry points
 

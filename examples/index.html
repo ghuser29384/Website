@@ -6,16 +6,16 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://api.worldpop.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Developer Examples | PainMap</title>
-    <meta name="description" content="PainMap developer examples for loading place profiles, coverage status, schemas, and immutable release artifacts.">
+    <meta name="description" content="PainMap developer examples for loading place profiles, comparing places, joining local geography, citing releases, coverage status, schemas, and immutable release artifacts.">
     <link rel="canonical" href="https://painmap.org/examples/">
     <meta property="og:title" content="Developer Examples | PainMap">
-    <meta property="og:description" content="PainMap developer examples for loading place profiles, coverage status, schemas, and immutable release artifacts.">
+    <meta property="og:description" content="PainMap developer examples for loading place profiles, comparing places, joining local geography, citing releases, coverage status, schemas, and immutable release artifacts.">
     <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/examples/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Developer Examples | PainMap">
-    <meta name="twitter:description" content="PainMap developer examples for loading place profiles, coverage status, schemas, and immutable release artifacts.">
+    <meta name="twitter:description" content="PainMap developer examples for loading place profiles, comparing places, joining local geography, citing releases, coverage status, schemas, and immutable release artifacts.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
 <link rel="stylesheet" href="../styles.css" integrity="sha384-E+oJ/hyX8bmhH3T32g+aO3Y4R+Gs5zXZmEy+iF4j6B00HoeRX2A8AoGLpQQwNoAJ" crossorigin="anonymous">
       <script type="application/ld+json">
@@ -55,26 +55,50 @@
             <h1 id="examples-title">Reuse PainMap release data.</h1>
           </div>
           <p class="route-copy">
-            These examples load public static files only. Keep release ID, source IDs, evidence kind, uncertainty, and license fields attached when copying values.
+            These examples load public static files only. Keep release ID, source IDs, source vintage, measurement lineage, evidence kind, uncertainty, confidence, attribution, and license fields attached when copying values.
           </p>
         </section>
 
         <section class="route-panel" aria-labelledby="recipes-title">
           <div class="section-intro">
             <p class="label">Recipes</p>
-            <h2 id="recipes-title">Load a place profile</h2>
+            <h2 id="recipes-title">Run static-data recipes</h2>
           </div>
           <pre class="code-block"><code>node examples/load-place-profile.mjs IND
-python3 examples/load_place_profile.py IND</code></pre>
+python3 examples/load_place_profile.py IND
+node examples/compare-places.mjs BRA IND
+node examples/join-own-geography.mjs examples/custom-geography.csv
+node examples/cite-release.mjs 2026-05-31</code></pre>
           <div class="route-actions">
             <a class="ghost-link" href="/examples/README.md">Recipe README</a>
             <a class="ghost-link" href="/examples/load-place-profile.mjs">Node example</a>
+            <a class="ghost-link" href="/examples/compare-places.mjs">Compare example</a>
+            <a class="ghost-link" href="/examples/join-own-geography.mjs">Join example</a>
+            <a class="ghost-link" href="/examples/cite-release.mjs">Citation example</a>
             <a class="ghost-link" href="/examples/load_place_profile.py">Python example</a>
           </div>
         </section>
 
         <section class="route-panel" aria-labelledby="client-title">
           <div class="metadata-grid">
+            <article class="metadata-card">
+              <span class="evidence-badge">Compare</span>
+              <h2>Compare two places</h2>
+              <p>Match shared measured layers, source IDs, uncertainty classes, rank deltas, and lineage checksums for two canonical place profiles.</p>
+              <p><a href="/examples/compare-places.mjs">Open compare recipe</a></p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">Join</span>
+              <h2>Join your geography</h2>
+              <p>Join a local CSV of place IDs to PainMap coverage status, measurement URLs, and partitioned OGC feature URLs.</p>
+              <p><a href="/examples/join-own-geography.mjs">Open join recipe</a></p>
+            </article>
+            <article class="metadata-card">
+              <span class="evidence-badge">Citation</span>
+              <h2>Cite a release</h2>
+              <p>Print a release citation with immutable manifest URL, latest manifest checksum, artifact count, and reuse fields.</p>
+              <p><a href="/examples/cite-release.mjs">Open citation recipe</a></p>
+            </article>
             <article class="metadata-card">
               <span class="evidence-badge">TypeScript</span>
               <h2 id="client-title">Typed browser or Node client</h2>

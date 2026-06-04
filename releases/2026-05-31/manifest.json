@@ -3397,7 +3397,7 @@
       "path": "/examples/",
       "file": "examples/index.html",
       "title": "Developer Examples | PainMap",
-      "description": "PainMap developer examples for loading place profiles, coverage status, schemas, and immutable release artifacts.",
+      "description": "PainMap developer examples for loading place profiles, comparing places, joining local geography, citing releases, coverage status, schemas, and immutable release artifacts.",
       "canonical_url": "https://painmap.org/examples/",
       "json_ld_type": "TechArticle"
     },
@@ -5359,8 +5359,8 @@
     },
     {
       "path": "/examples/index.html",
-      "sha256": "aab0d8adcee802a6f22010258e08bc1c9541dc9c6048d555bef2dd4e6d4925cb",
-      "bytes": 7297
+      "sha256": "7ac81a2d566c9e15482ab945ba1d92b2d1281a5127d57eabdcdb7ed9091e7937",
+      "bytes": 9129
     },
     {
       "path": "/releases/index.html",
@@ -5419,13 +5419,13 @@
     },
     {
       "path": "/data/routes.json",
-      "sha256": "07f8eb3ef97129e77137d222d8ccb75195b61da118a65f655e98f2546d4c41de",
-      "bytes": 162139
+      "sha256": "99b3b7e6f4acfe3cf774d9c2973782f10c7153c4955b0516c8786bb8ff9f738a",
+      "bytes": 162199
     },
     {
       "path": "/data/route-smoke.json",
-      "sha256": "df370f06f9656b2b1307b13c45acc87f1a51b6bc99fb82549a7e988d4d5d6944",
-      "bytes": 170482
+      "sha256": "bd498765a7adeca158a41369802077ee70db3b0b6d265338bbb584cb8b8430f8",
+      "bytes": 170542
     },
     {
       "path": "/data/provenance-registry.json",
@@ -5514,13 +5514,33 @@
     },
     {
       "path": "/examples/README.md",
-      "sha256": "5cadc71571beb61961a0bb15d3624619fdf44b5fcae9adfbb46398381f11d087",
-      "bytes": 1917
+      "sha256": "1785170cc1acc60854dca6aaa5baf87ea66aed913d04e1ff82513536701e1923",
+      "bytes": 3032
     },
     {
       "path": "/examples/load-place-profile.mjs",
       "sha256": "738ba4328eead2874c3aa5f004cf60cd9a76e018bcf5ce221d6e97fea667ee83",
       "bytes": 612
+    },
+    {
+      "path": "/examples/compare-places.mjs",
+      "sha256": "6d1eb26d0b9cf658a6b9cfcd48a3c9a16d1434e1628b4b1c576489177cbca6f0",
+      "bytes": 2410
+    },
+    {
+      "path": "/examples/join-own-geography.mjs",
+      "sha256": "e0e264bae70554edff59acbfab7cc8a6ff25383d7c6caa9e27c8dd574024b29e",
+      "bytes": 1944
+    },
+    {
+      "path": "/examples/cite-release.mjs",
+      "sha256": "93d54276592ab3f0892d12aa3fd90f7edfc70379877037f6b6a2e0939dc1c3d9",
+      "bytes": 1712
+    },
+    {
+      "path": "/examples/custom-geography.csv",
+      "sha256": "8b6ffc8a1b97ceb0347e578dad6be412dc1c90ace934de1215f2365d4ab935c0",
+      "bytes": 184
     },
     {
       "path": "/examples/load_place_profile.py",

@@ -34,6 +34,10 @@ const expectedExports = [
   "clients/python/painmap_client.py",
   "examples/README.md",
   "examples/load-place-profile.mjs",
+  "examples/compare-places.mjs",
+  "examples/join-own-geography.mjs",
+  "examples/cite-release.mjs",
+  "examples/custom-geography.csv",
   "examples/load_place_profile.py",
   "scripts/check-source-freshness.mjs",
   "scripts/check-endpoint-smoke.mjs",
@@ -604,6 +608,12 @@ expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_c
 expectPattern("clients/python/painmap_client.py", read("clients/python/painmap_client.py"), /def ogc_place_feature\(/, "Python ogc_place_feature client method");
 expectPattern("examples/README.md", read("examples/README.md"), /node examples\/load-place-profile\.mjs IND/, "Node example command");
 expectPattern("examples/README.md", read("examples/README.md"), /python3 examples\/load_place_profile\.py IND/, "Python example command");
+expectPattern("examples/README.md", read("examples/README.md"), /node examples\/compare-places\.mjs BRA IND/, "place comparison example command");
+expectPattern("examples/README.md", read("examples/README.md"), /node examples\/join-own-geography\.mjs examples\/custom-geography\.csv/, "custom geography join example command");
+expectPattern("examples/README.md", read("examples/README.md"), /node examples\/cite-release\.mjs 2026-05-31/, "release citation example command");
+expectPattern("examples/compare-places.mjs", read("examples/compare-places.mjs"), /source_file_checksum/, "compare example preserves lineage checksum");
+expectPattern("examples/join-own-geography.mjs", read("examples/join-own-geography.mjs"), /ogc\/collections\/places\/item-index\.json/, "join example uses OGC item index");
+expectPattern("examples/cite-release.mjs", read("examples/cite-release.mjs"), /release_manifest_sha256/, "citation example reports latest manifest checksum");
 expectPattern("examples/README.md", read("examples/README.md"), /\/ogc\/collections\/places\/items\.json/, "OGC feature example endpoint");
 expectPattern("examples/README.md", read("examples/README.md"), /\/ogc\/collections\/places\/item-index\.json/, "OGC item index example endpoint");
 expectPattern("examples/README.md", read("examples/README.md"), /\/ogc\/collections\/places\/items\/IND\.json/, "OGC single feature example endpoint");
