@@ -53,6 +53,35 @@ function validateJsonEndpoint(endpoint, json) {
     expect(Array.isArray(json.validation_lanes), "/data/source-freshness.json must include validation_lanes");
   }
 
+  if (endpoint.path === "/data/third-party-fetches.json") {
+    expect(json.default_network_collection === false, "/data/third-party-fetches.json must disable default network collection");
+    expect(
+      json.snapshot_mode_client_upstream_fetches === false,
+      "/data/third-party-fetches.json must mark snapshot mode as no client upstream fetches"
+    );
+    expect(
+      json.domains?.some((entry) => entry.domain === "api.worldbank.org"),
+      "/data/third-party-fetches.json must document World Bank fetch behavior"
+    );
+    expect(
+      json.domains?.some((entry) => entry.domain === "api.worldpop.org"),
+      "/data/third-party-fetches.json must document WorldPop fetch behavior"
+    );
+  }
+
+  if (endpoint.path === "/data/accessibility-audit.json") {
+    expect(json.standard === "wcag_2_2_aa_audit_matrix", "/data/accessibility-audit.json must publish WCAG audit matrix standard");
+    expect(json.target_conformance === "WCAG 2.2 AA", "/data/accessibility-audit.json must target WCAG 2.2 AA");
+    expect(
+      json.route_matrix?.some((route) => route.path === "/compare/"),
+      "/data/accessibility-audit.json must cover compare route"
+    );
+    expect(
+      json.open_items?.some((item) => /NVDA/.test(item)),
+      "/data/accessibility-audit.json must track NVDA follow-up before a conformance claim"
+    );
+  }
+
   if (endpoint.path === "/data/ui-smoke.json") {
     expect(json.release_id === releaseSmoke.release_id, "/data/ui-smoke.json release_id mismatch");
     expect(json.standard === "static_accessibility_visual_smoke", "/data/ui-smoke.json must publish the UI smoke standard");
@@ -101,6 +130,10 @@ function validateJsonEndpoint(endpoint, json) {
 
   if (endpoint.path === "/releases/2026-05-31/diff.json") {
     expect(json.release_id === releaseSmoke.release_id, "/releases/2026-05-31/diff.json release_id mismatch");
+    expect(
+      json.human_readable_url?.endsWith("/releases/2026-05-31/changes/"),
+      "/releases/2026-05-31/diff.json must link human-readable changes"
+    );
   }
 
   if (endpoint.path === "/releases/2026-05-31/migration.json") {
@@ -136,6 +169,24 @@ function validateTextEndpoint(endpoint, text) {
     expect(text.includes("compare-places.mjs"), "/examples/ must include the place comparison recipe");
     expect(text.includes("join-own-geography.mjs"), "/examples/ must include the custom geography join recipe");
     expect(text.includes("cite-release.mjs"), "/examples/ must include the release citation recipe");
+  }
+
+  if (endpoint.path === "/releases/2026-05-31/changes/") {
+    expect(text.includes("Human-readable release changes"), "/releases/2026-05-31/changes/ must include changes title");
+    expect(text.includes("What changed"), "/releases/2026-05-31/changes/ must include notable changes section");
+    expect(text.includes("/releases/2026-05-31/diff.json"), "/releases/2026-05-31/changes/ must link diff JSON");
+  }
+
+  if (endpoint.path === "/policies/accessibility/audit-2026-06-05/") {
+    expect(text.includes("WCAG audit matrix"), "/policies/accessibility/audit-2026-06-05/ must include audit title");
+    expect(
+      text.includes("No full WCAG conformance claim"),
+      "/policies/accessibility/audit-2026-06-05/ must avoid overclaiming conformance"
+    );
+    expect(
+      text.includes("VoiceOver-and-NVDA-required-before-conformance-claim"),
+      "/policies/accessibility/audit-2026-06-05/ must expose screen-reader follow-up status"
+    );
   }
 
   if (endpoint.path === "/.well-known/security.txt") {

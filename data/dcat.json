@@ -62,6 +62,11 @@
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/data/third-party-fetches.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
           "dcat:downloadURL": "https://painmap.org/v1/places/BRA/neighbors.json"
         },
         {
@@ -190,6 +195,11 @@
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
           "dcat:downloadURL": "https://painmap.org/data/source-freshness.json"
+        },
+        {
+          "@type": "dcat:Distribution",
+          "dct:format": "application/json",
+          "dcat:downloadURL": "https://painmap.org/data/accessibility-audit.json"
         },
         {
           "@type": "dcat:Distribution",

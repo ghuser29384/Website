@@ -251,6 +251,33 @@
       }
     },
     {
+      "path": "/releases/2026-05-31/changes/",
+      "file": "releases/2026-05-31/changes/index.html",
+      "expected_title": "2026-05-31 Release Changes | PainMap",
+      "expected_canonical": "https://painmap.org/releases/2026-05-31/changes/",
+      "requires_breadcrumb": true,
+      "accessibility": {
+        "required_ids": [],
+        "required_live_region_ids": [],
+        "required_roles": [],
+        "control_relationships": []
+      },
+      "visual_contract": {
+        "required_components": [
+          "route-panel",
+          "route-hero",
+          "metadata-grid",
+          "data-table-wrap",
+          "route-actions"
+        ],
+        "required_text": [
+          "Human-readable release changes",
+          "Initial release baseline",
+          "What changed"
+        ]
+      }
+    },
+    {
       "path": "/security/",
       "file": "security/index.html",
       "expected_title": "Security | PainMap",
@@ -273,6 +300,32 @@
           "Security",
           "Open security.txt",
           "Content Security Policy"
+        ]
+      }
+    },
+    {
+      "path": "/policies/accessibility/audit-2026-06-05/",
+      "file": "policies/accessibility/audit-2026-06-05/index.html",
+      "expected_title": "WCAG 2.2 AA Audit Matrix | PainMap",
+      "expected_canonical": "https://painmap.org/policies/accessibility/audit-2026-06-05/",
+      "requires_breadcrumb": true,
+      "accessibility": {
+        "required_ids": [],
+        "required_live_region_ids": [],
+        "required_roles": [],
+        "control_relationships": []
+      },
+      "visual_contract": {
+        "required_components": [
+          "route-panel",
+          "route-hero",
+          "data-table-wrap",
+          "route-actions"
+        ],
+        "required_text": [
+          "WCAG audit matrix",
+          "No full WCAG conformance claim",
+          "VoiceOver-and-NVDA-required-before-conformance-claim"
         ]
       }
     }

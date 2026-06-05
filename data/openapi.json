@@ -656,6 +656,40 @@
         }
       }
     },
+    "/data/third-party-fetches.json": {
+      "get": {
+        "summary": "Get third-party fetch and release-materialization behavior matrix",
+        "responses": {
+          "200": {
+            "description": "Third-party fetch behavior JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ThirdPartyFetches"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/accessibility-audit.json": {
+      "get": {
+        "summary": "Get WCAG 2.2 AA audit evidence matrix",
+        "responses": {
+          "200": {
+            "description": "Accessibility audit JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AccessibilityAudit"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/data/ui-smoke.json": {
       "get": {
         "summary": "Get accessibility and visual smoke-test manifest",
@@ -828,6 +862,27 @@
           "default_mode",
           "modes",
           "ui_contract"
+        ]
+      },
+      "ThirdPartyFetches": {
+        "type": "object",
+        "required": [
+          "release_id",
+          "default_network_collection",
+          "snapshot_mode_client_upstream_fetches",
+          "modes",
+          "domains"
+        ]
+      },
+      "AccessibilityAudit": {
+        "type": "object",
+        "required": [
+          "release_id",
+          "standard",
+          "target_conformance",
+          "conformance_claim",
+          "route_matrix",
+          "open_items"
         ]
       },
       "ProvenanceRegistry": {

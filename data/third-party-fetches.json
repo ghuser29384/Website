@@ -1,0 +1,129 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "policy_version": "2026-06-third-party-fetches-1",
+  "default_network_collection": false,
+  "snapshot_mode_client_upstream_fetches": false,
+  "privacy_summary": "Snapshot mode loads same-origin static release artifacts from painmap.org. Live overlay mode is opt-in and may fetch documented public-source domains for current context rows; the client does not send user ids, precise location, personal-health fields, or typed search strings to those upstream sources.",
+  "connect_src_policy": [
+    "self",
+    "https://www.geoboundaries.org",
+    "https://media.githubusercontent.com",
+    "https://api.worldbank.org",
+    "https://api.worldpop.org",
+    "https://ourworldindata.org"
+  ],
+  "modes": [
+    {
+      "id": "snapshot",
+      "label": "Snapshot",
+      "client_upstream_fetches": false,
+      "materialization": "release-materialized",
+      "trigger": "Default page load and default atlas exploration",
+      "destination": "Same-origin PainMap static release files",
+      "cache_policy": "Immutable release URLs are checksummed in the release manifest and can be replayed from committed artifacts.",
+      "replay_rule": "Use /releases/2026-05-31/manifest.json and artifact SHA-256 values for reproducible citations.",
+      "privacy_note": "No third-party browser request is required for canonical release measurements."
+    },
+    {
+      "id": "live",
+      "label": "Live overlay",
+      "client_upstream_fetches": true,
+      "materialization": "client-live-overlay",
+      "trigger": "User explicitly selects the live overlay or a runtime context surface that needs current public rows",
+      "destination": "Documented public-source domains listed in this artifact",
+      "cache_policy": "Live overlay responses are not canonical release artifacts and must be rematerialized before replacing snapshot rows.",
+      "replay_rule": "Promote current rows through a release-candidate PR, source-freshness review, and a new release manifest.",
+      "privacy_note": "Requests are public data lookups scoped to selected place or layer identifiers, not personal data collection."
+    }
+  ],
+  "domains": [
+    {
+      "id": "painmap-static-release",
+      "domain": "painmap.org",
+      "mode": "release-materialized",
+      "trigger": "Default site and API usage",
+      "destination": "PainMap static hosting",
+      "cache_policy": "Release artifacts are immutable once published and are listed in the release manifest.",
+      "replay_rule": "Replay from committed files, latest/manifest.json, or immutable release manifest checksums.",
+      "privacy_note": "Same-origin static asset and JSON requests do not require a third-party public-source request.",
+      "surfaces": [
+        "/data/place-measurements.json",
+        "/v1/places/index.json",
+        "/v1/coverage.json",
+        "/ogc/collections/places/items.json",
+        "/releases/2026-05-31/manifest.json"
+      ]
+    },
+    {
+      "source_id": "world-bank-indicators",
+      "label": "World Bank country indicators",
+      "publisher": "World Bank",
+      "upstream_url": "https://data.worldbank.org/",
+      "source_vintage": "2010:2025 latest non-null indicator window",
+      "domain": "api.worldbank.org",
+      "mode": "release-materialized-and-client-live-overlay",
+      "trigger": "Canonical release build for frozen indicators; live overlay when current public indicator rows are requested",
+      "destination": "World Bank public indicator API",
+      "cache_policy": "Frozen snapshot values are committed to release artifacts; current overlay checks follow monthly freshness policy.",
+      "replay_rule": "Canonical changes require source-freshness review and a new release candidate before publication.",
+      "privacy_note": "Indicator requests use country and indicator identifiers only; PainMap does not send user ids or typed search strings."
+    },
+    {
+      "source_id": "owid-livestock",
+      "label": "Our World in Data livestock and animal production tables",
+      "publisher": "Our World in Data",
+      "upstream_url": "https://ourworldindata.org/",
+      "source_vintage": "Latest public runtime rows where available; frozen release values dated 2026-05-31.",
+      "domain": "ourworldindata.org",
+      "mode": "release-materialized-and-client-live-overlay",
+      "trigger": "Canonical animal-production proxy materialization; optional live overlay for current OWID grapher rows",
+      "destination": "Our World in Data public grapher CSV endpoints",
+      "cache_policy": "Release values are frozen; live overlay checks are weekly and non-canonical until rematerialized.",
+      "replay_rule": "Promote changed proxy rows through release-candidate QA, provenance review, and release diff publication.",
+      "privacy_note": "Requests identify public grapher datasets and selected place context, not people or personal-health data."
+    },
+    {
+      "source_id": "geoboundaries-adm1",
+      "label": "geoBoundaries ADM1",
+      "publisher": "geoBoundaries",
+      "upstream_url": "https://www.geoboundaries.org/",
+      "source_vintage": "Runtime current ADM1 API, converted to media.githubusercontent.com when needed",
+      "domain": "www.geoboundaries.org",
+      "mode": "client-live-overlay",
+      "trigger": "ADM1 boundary discovery when a user requests current subnational boundary context",
+      "destination": "geoBoundaries public metadata API",
+      "cache_policy": "Runtime metadata is treated as an overlay; canonical boundary behavior must be vendored or partitioned before release.",
+      "replay_rule": "Freeze boundary source metadata and partitioned outputs into a new manifest before treating them as release material.",
+      "privacy_note": "Requests use public ISO place identifiers and do not include user ids, precise location, or query strings."
+    },
+    {
+      "source_id": "geoboundaries-adm1",
+      "label": "geoBoundaries ADM1",
+      "publisher": "geoBoundaries",
+      "upstream_url": "https://www.geoboundaries.org/",
+      "source_vintage": "Runtime current ADM1 API, converted to media.githubusercontent.com when needed",
+      "domain": "media.githubusercontent.com",
+      "mode": "client-live-overlay",
+      "trigger": "Topology download URL returned by the geoBoundaries metadata API",
+      "destination": "GitHub-hosted public geoBoundaries topology file",
+      "cache_policy": "Topology downloads are live overlays unless vendored into a release artifact.",
+      "replay_rule": "Record the fetched source URL and checksum before promotion into release geometry.",
+      "privacy_note": "Downloads are public boundary assets keyed by place selection, not personal data."
+    },
+    {
+      "source_id": "worldpop-context-overlay",
+      "label": "WorldPop population context overlays",
+      "publisher": "WorldPop",
+      "upstream_url": "https://www.worldpop.org/",
+      "source_vintage": "runtime-current",
+      "domain": "api.worldpop.org",
+      "mode": "client-live-overlay",
+      "trigger": "Province context request that computes current WorldPop zonal statistics",
+      "destination": "WorldPop public statistics API",
+      "cache_policy": "Runtime context only; canonical release rows require reviewed materialization before publication.",
+      "replay_rule": "Capture request geometry, upstream response metadata, and checksum before including values in a future release.",
+      "privacy_note": "Requests contain public boundary geometry for selected regions, not user location or health information."
+    }
+  ]
+}

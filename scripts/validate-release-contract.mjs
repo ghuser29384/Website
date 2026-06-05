@@ -129,6 +129,8 @@ for (const [schemaFile, dataFile] of schemaTargets) {
 const placeIndex = readJson("v1/places/index.json");
 const measurements = readJson("data/place-measurements.json");
 const releaseModes = readJson("data/release-modes.json");
+const thirdPartyFetches = readJson("data/third-party-fetches.json");
+const accessibilityAudit = readJson("data/accessibility-audit.json");
 const releaseManifest = readJson("releases/2026-05-31/manifest.json");
 const releaseMigration = readJson("releases/2026-05-31/migration.json");
 const endpointSmoke = readJson("data/endpoint-smoke.json");
@@ -287,12 +289,24 @@ const releaseDiff = readJson("releases/2026-05-31/diff.json");
 expect(releaseDiff.release_id === placeIndex.release_id, "release diff release_id mismatch");
 expect(releaseDiff.comparison_type === "initial_release_baseline", "release diff should mark this release as the initial baseline");
 expect(
+  releaseDiff.human_readable_url === "https://painmap.org/releases/2026-05-31/changes/",
+  "release diff must link human-readable changes page"
+);
+expect(
   releaseDiff.current_release?.neighbor_payloads === placeIndex.items.filter((item) => item.neighbors_url).length,
   "release diff neighbor payload count mismatch"
 );
 expect(
   releaseDiff.current_release?.ogc_partitioned_country_features === ogcItems.features?.length,
   "release diff partitioned OGC feature count mismatch"
+);
+expect(
+  releaseDiff.current_release?.third_party_fetch_domains === thirdPartyFetches.domains?.length,
+  "release diff third-party fetch domain count mismatch"
+);
+expect(
+  releaseDiff.current_release?.accessibility_audit_routes === accessibilityAudit.route_matrix?.length,
+  "release diff accessibility audit route count mismatch"
 );
 expect(releaseMigration.release_id === placeIndex.release_id, "release migration release_id mismatch");
 expect(releaseMigration.migration_type === "initial_release_baseline", "release migration should mark the initial baseline");
@@ -327,6 +341,29 @@ expect(
   releaseModes.modes?.some((mode) => mode.id === "live" && /World Bank|OWID|geoBoundaries|WorldPop/.test(mode.network_behavior)),
   "release modes must describe live public-source overlay behavior"
 );
+expect(thirdPartyFetches.default_network_collection === false, "third-party fetches must disable default network collection");
+expect(
+  thirdPartyFetches.snapshot_mode_client_upstream_fetches === false,
+  "third-party fetches must mark snapshot mode as no client upstream fetches"
+);
+for (const requiredDomain of ["api.worldbank.org", "ourworldindata.org", "www.geoboundaries.org", "media.githubusercontent.com", "api.worldpop.org"]) {
+  expect(
+    thirdPartyFetches.domains?.some((entry) => entry.domain === requiredDomain && entry.replay_rule && entry.privacy_note),
+    `third-party fetches missing ${requiredDomain}`
+  );
+}
+expect(accessibilityAudit.standard === "wcag_2_2_aa_audit_matrix", "accessibility audit must publish WCAG audit matrix standard");
+expect(accessibilityAudit.target_conformance === "WCAG 2.2 AA", "accessibility audit must target WCAG 2.2 AA");
+expect(
+  /No full WCAG conformance claim/.test(accessibilityAudit.conformance_claim || ""),
+  "accessibility audit must avoid an unsupported conformance claim"
+);
+for (const requiredRoute of ["/", "/place/IND/", "/compare/", "/events/"]) {
+  expect(
+    accessibilityAudit.route_matrix?.some((entry) => entry.path === requiredRoute && entry.screen_reader_status),
+    `accessibility audit missing representative route ${requiredRoute}`
+  );
+}
 
 for (const requiredArtifact of [
   "/v1/places/index.json",
@@ -343,6 +380,8 @@ for (const requiredArtifact of [
   "/data/ui-smoke.json",
   "/data/performance-budgets.json",
   "/data/source-freshness.json",
+  "/data/third-party-fetches.json",
+  "/data/accessibility-audit.json",
   "/data/analytics-events.json",
   "/data/gsap-adm1-2023.json",
   "/v1/places/IND/adm1.json",
@@ -357,7 +396,9 @@ for (const requiredArtifact of [
   "/ogc/collections/places/items.json",
   "/ogc/collections/places/items/IND.json",
   "/releases/2026-05-31/diff.json",
+  "/releases/2026-05-31/changes/index.html",
   "/releases/2026-05-31/migration.json",
+  "/policies/accessibility/audit-2026-06-05/index.html",
   "/clients/typescript/painmap-client.ts",
   "/clients/python/painmap_client.py",
   "/examples/README.md",

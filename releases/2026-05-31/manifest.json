@@ -11,6 +11,8 @@
     "place_index": "https://painmap.org/v1/places/index.json",
     "coverage": "https://painmap.org/v1/coverage.json",
     "release_modes": "https://painmap.org/data/release-modes.json",
+    "third_party_fetches": "https://painmap.org/data/third-party-fetches.json",
+    "accessibility_audit": "https://painmap.org/data/accessibility-audit.json",
     "ogc_features": "https://painmap.org/ogc/collections/places/items.json",
     "ogc_feature_item_index": "https://painmap.org/ogc/collections/places/item-index.json",
     "release_diff": "https://painmap.org/releases/2026-05-31/diff.json",
@@ -3420,6 +3422,15 @@
       "json_ld_type": "Dataset"
     },
     {
+      "key": "release-2026-05-31-changes",
+      "path": "/releases/2026-05-31/changes/",
+      "file": "releases/2026-05-31/changes/index.html",
+      "title": "2026-05-31 Release Changes | PainMap",
+      "description": "Human-readable PainMap 2026-05-31 release changes, baseline metrics, added contract surfaces, and companion diff artifacts.",
+      "canonical_url": "https://painmap.org/releases/2026-05-31/changes/",
+      "json_ld_type": "Dataset"
+    },
+    {
       "key": "security",
       "path": "/security/",
       "file": "security/index.html",
@@ -3483,6 +3494,15 @@
       "json_ld_type": "WebPage"
     },
     {
+      "key": "accessibility-audit-2026-06-05",
+      "path": "/policies/accessibility/audit-2026-06-05/",
+      "file": "policies/accessibility/audit-2026-06-05/index.html",
+      "title": "WCAG 2.2 AA Audit Matrix | PainMap",
+      "description": "PainMap WCAG 2.2 AA audit matrix covering automated evidence, manual keyboard scope, VoiceOver/NVDA follow-up, and representative route status.",
+      "canonical_url": "https://painmap.org/policies/accessibility/audit-2026-06-05/",
+      "json_ld_type": "TechArticle"
+    },
+    {
       "key": "editorial",
       "path": "/policies/editorial-policy/",
       "file": "policies/editorial-policy/index.html",
@@ -3539,8 +3559,8 @@
     },
     {
       "path": "/data/index.html",
-      "sha256": "3500d38dc1d6b139b67381f34ba216a507e15053786b44b95df5ce7ae8d546ee",
-      "bytes": 12649
+      "sha256": "9cd90d436275b12c8010085fe17366ec3650c346cf8058a263870c506d9c57a1",
+      "bytes": 12840
     },
     {
       "path": "/dataset/place-measurements/index.html",
@@ -5369,13 +5389,18 @@
     },
     {
       "path": "/releases/2026-05-31/index.html",
-      "sha256": "b78e81a90b4adea383a1347fe81ce4210c3ab7229d45313f6ac4820951858cb7",
-      "bytes": 8398
+      "sha256": "78a74bcc47028c618307bc54f25b5ba9f345242a42a50468e42377bf021d7b28",
+      "bytes": 8745
+    },
+    {
+      "path": "/releases/2026-05-31/changes/index.html",
+      "sha256": "870c44fe0a07ae6ee540333c6448c3ac7dc13aee1e32e104ae1336ffc5e15187",
+      "bytes": 10252
     },
     {
       "path": "/security/index.html",
-      "sha256": "4ec1a04b12362823e4a0836a88f54f3ac50ed335cea4b51fff42d3d478ff1f0a",
-      "bytes": 6397
+      "sha256": "8026f19e39187f4a5c8e48e94786b84ffb85da03ef1698dcce7d6abfcba0b711",
+      "bytes": 6474
     },
     {
       "path": "/resources/index.html",
@@ -5394,8 +5419,8 @@
     },
     {
       "path": "/policies/privacy/index.html",
-      "sha256": "f987f3659908c0ad8985e1f71011445bfa786b747081b94058b5ed2944a07e71",
-      "bytes": 4942
+      "sha256": "78143313fe9d635ffe3ef7c6faa8aa93f527f1d8bb0281b3371f0500eb5a0907",
+      "bytes": 5200
     },
     {
       "path": "/policies/terms/index.html",
@@ -5404,8 +5429,13 @@
     },
     {
       "path": "/policies/accessibility/index.html",
-      "sha256": "b26f297c74d8c22c2c7ee23b5f04a5f034e7ac972e91cd0c1bafaea1b252a7c8",
-      "bytes": 5043
+      "sha256": "4699607615a115b3b1ea6b8001ed580dd87bcd28e6763feb44f5867a84dfc620",
+      "bytes": 5429
+    },
+    {
+      "path": "/policies/accessibility/audit-2026-06-05/index.html",
+      "sha256": "71354ac80454c8672ff7e35be849909ad4d5866e816a439c4b9cf884bc29ebac",
+      "bytes": 10482
     },
     {
       "path": "/policies/editorial-policy/index.html",
@@ -5419,13 +5449,13 @@
     },
     {
       "path": "/data/routes.json",
-      "sha256": "99b3b7e6f4acfe3cf774d9c2973782f10c7153c4955b0516c8786bb8ff9f738a",
-      "bytes": 162199
+      "sha256": "8b0aeed42992049b8142f40b9a89f6a54d40a516ada0563469f4f1f3a9ce6f89",
+      "bytes": 163033
     },
     {
       "path": "/data/route-smoke.json",
-      "sha256": "bd498765a7adeca158a41369802077ee70db3b0b6d265338bbb584cb8b8430f8",
-      "bytes": 170542
+      "sha256": "db59e657759769b74f076bde6555ef795feb5dac2685b2d840c96b071729fc39",
+      "bytes": 171518
     },
     {
       "path": "/data/provenance-registry.json",
@@ -5468,14 +5498,24 @@
       "bytes": 9204
     },
     {
+      "path": "/data/third-party-fetches.json",
+      "sha256": "828bbfd504612952132ab8d5b62d93c7c965e1534df680052c890f9d4a541d9b",
+      "bytes": 7582
+    },
+    {
+      "path": "/data/accessibility-audit.json",
+      "sha256": "2d3cb691122d8df160acf4767d759b57a168b17cfd66f641bbe8fb88277ecdc0",
+      "bytes": 4264
+    },
+    {
       "path": "/data/ui-smoke.json",
-      "sha256": "4b884692708174fd573f8b42a93860aedec04b9a8a404a4b5dd1f6101741daa8",
-      "bytes": 7961
+      "sha256": "45619da383f36f1b731a5d0e49ebe6f78196c2d3eca7c70070a5b42835bb8452",
+      "bytes": 9635
     },
     {
       "path": "/data/endpoint-smoke.json",
-      "sha256": "1050fc068feab522ab17f78ca1e73b6a629f9e67285358ec4aee5a81c06233d9",
-      "bytes": 6305
+      "sha256": "53b512c1ad9ef15773b1defe4cb14aa25a665416f7645948c9b6f8710a8a9283",
+      "bytes": 7413
     },
     {
       "path": "/data/countries-lite.geojson",
@@ -5494,13 +5534,13 @@
     },
     {
       "path": "/data/dcat.json",
-      "sha256": "647fae6fd7a0cfa7ff21eef67982dad5f268ddfe0bcc7b35785d202404564586",
-      "bytes": 8586
+      "sha256": "11e66ec5ab784a39a21f1af78ad85f5398c76f8e43f9e291058a4a17569c8653",
+      "bytes": 8960
     },
     {
       "path": "/data/openapi.json",
-      "sha256": "3515cb69538e40e2073c29d37e57594faf6ae25fc6c8ce0f2b03825b99bcacee",
-      "bytes": 25371
+      "sha256": "8d7611a026e023f23e3540c0e5b7c01c6547820ad94687e656c2968289933439",
+      "bytes": 26818
     },
     {
       "path": "/compare.js",
@@ -8749,13 +8789,23 @@
     },
     {
       "path": "/releases/2026-05-31/diff.json",
-      "sha256": "7284f20e86554d86d97248ffdf6cbb081a653b7a4362b5343505868f7455a137",
-      "bytes": 2558
+      "sha256": "d9af9c5bda0d99521a8e1c633ca6cdca52242739c55f4d3fb6b0f69262e81ef1",
+      "bytes": 3267
+    },
+    {
+      "path": "/releases/2026-05-31/changes/index.html",
+      "sha256": "870c44fe0a07ae6ee540333c6448c3ac7dc13aee1e32e104ae1336ffc5e15187",
+      "bytes": 10252
     },
     {
       "path": "/releases/2026-05-31/migration.json",
-      "sha256": "fdad4617fc242adec9c99dcaacea0ccb05981852971d48cb7b24b654e8672479",
-      "bytes": 4113
+      "sha256": "61b4e96308abf153165340b6729802e97ab19d5988b8b35baedfc895d69d6ebf",
+      "bytes": 4189
+    },
+    {
+      "path": "/policies/accessibility/audit-2026-06-05/index.html",
+      "sha256": "71354ac80454c8672ff7e35be849909ad4d5866e816a439c4b9cf884bc29ebac",
+      "bytes": 10482
     },
     {
       "path": "/assets/social-card.svg",
@@ -8774,8 +8824,8 @@
     },
     {
       "path": "/sitemap.xml",
-      "sha256": "d4ad0370025c3e7bf4c4bfdcbd47dfabc98ddc71bd5e662c037571d501ff6af7",
-      "bytes": 39216
+      "sha256": "f7cd1c1c3856e91a25a3942b39fa8e7a784351aab04c7a6ddfbf31738ad1dde5",
+      "bytes": 39458
     },
     {
       "path": "/robots.txt",
@@ -8804,8 +8854,8 @@
     },
     {
       "path": "/README.md",
-      "sha256": "40993c703528be95e88c26a108c764e11b12772bc0e01e9094fb28e9457880aa",
-      "bytes": 5977
+      "sha256": "1ce38f637ca716640d16fb61dd5a920dbe3aa3661a4a797052865d6144d90bd0",
+      "bytes": 6221
     },
     {
       "path": "/LICENSE",

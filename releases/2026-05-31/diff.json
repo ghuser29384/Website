@@ -4,6 +4,7 @@
   "previous_release_id": null,
   "comparison_type": "initial_release_baseline",
   "summary": "This diff records the first release baseline for future comparisons. There is no previous immutable PainMap release in this release series.",
+  "human_readable_url": "https://painmap.org/releases/2026-05-31/changes/",
   "current_release": {
     "places_indexed": 2114,
     "country_boundaries_indexed": 239,
@@ -14,8 +15,10 @@
     "ogc_place_features": 239,
     "ogc_partitioned_country_features": 239,
     "neighbor_payloads": 240,
-    "ui_smoke_routes": 8,
-    "fixture_preview_inputs": 2
+    "ui_smoke_routes": 10,
+    "fixture_preview_inputs": 2,
+    "third_party_fetch_domains": 6,
+    "accessibility_audit_routes": 4
   },
   "added_contract_surfaces": [
     "/v1/places/index.json",
@@ -28,13 +31,17 @@
     "/ogc/collections/places/item-index.json",
     "/ogc/collections/places/items/{place_id}.json",
     "/data/release-modes.json",
+    "/data/third-party-fetches.json",
+    "/data/accessibility-audit.json",
     "/data/ui-smoke.json",
     "/fixtures/mock-registry.json",
     "/fixtures/place-measurements.fixture.json",
     "/schemas/adm1-context.schema.json",
     "/schemas/release-modes.schema.json",
     "/schemas/ogc-place-features.schema.json",
-    "/releases/2026-05-31/diff.json"
+    "/releases/2026-05-31/diff.json",
+    "/releases/2026-05-31/changes/",
+    "/policies/accessibility/audit-2026-06-05/"
   ],
   "notable_changes": [
     {
@@ -64,6 +71,14 @@
     {
       "area": "release mode",
       "change": "Documented the homepage Snapshot and Live overlay split as a static public contract."
+    },
+    {
+      "area": "privacy and data flow",
+      "change": "Added a third-party fetch matrix that separates release-materialized snapshot requests from opt-in live overlay fetches."
+    },
+    {
+      "area": "accessibility QA",
+      "change": "Published a WCAG 2.2 AA audit matrix that records current CI evidence and required manual screen-reader checks before any conformance claim."
     }
   ]
 }

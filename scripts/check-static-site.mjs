@@ -16,6 +16,8 @@ const expectedExports = [
   "data/analytics-events.json",
   "data/performance-budgets.json",
   "data/source-freshness.json",
+  "data/third-party-fetches.json",
+  "data/accessibility-audit.json",
   "data/ui-smoke.json",
   "data/endpoint-smoke.json",
   "data/countries-lite.geojson",
@@ -73,7 +75,9 @@ const expectedExports = [
   "v1/places/IND/neighbors.json",
   "releases/2026-05-31/manifest.json",
   "releases/2026-05-31/diff.json",
+  "releases/2026-05-31/changes/index.html",
   "releases/2026-05-31/migration.json",
+  "policies/accessibility/audit-2026-06-05/index.html",
   "latest/manifest.json",
   "assets/social-card.svg",
   "vendor/d3.v7.min.js",
@@ -590,8 +594,57 @@ for (const laneId of ["schema-validity", "release-reproducibility", "domain-sani
   }
 }
 
+const thirdPartyFetches = readJson("data/third-party-fetches.json");
+if (
+  thirdPartyFetches.default_network_collection !== false ||
+  thirdPartyFetches.snapshot_mode_client_upstream_fetches !== false
+) {
+  failures.push("data/third-party-fetches.json must document no default third-party collection and no snapshot upstream fetches");
+}
+
+for (const requiredDomain of [
+  "api.worldbank.org",
+  "ourworldindata.org",
+  "www.geoboundaries.org",
+  "media.githubusercontent.com",
+  "api.worldpop.org",
+]) {
+  if (!thirdPartyFetches.domains?.some((entry) => entry.domain === requiredDomain && entry.mode && entry.trigger && entry.privacy_note)) {
+    failures.push(`data/third-party-fetches.json missing required domain behavior for ${requiredDomain}`);
+  }
+}
+
+if (!thirdPartyFetches.modes?.some((entry) => entry.id === "snapshot" && entry.client_upstream_fetches === false)) {
+  failures.push("data/third-party-fetches.json must mark snapshot mode as no client upstream fetches");
+}
+
+if (!thirdPartyFetches.modes?.some((entry) => entry.id === "live" && entry.client_upstream_fetches === true)) {
+  failures.push("data/third-party-fetches.json must mark live mode as opt-in client upstream fetches");
+}
+
+const accessibilityAudit = readJson("data/accessibility-audit.json");
+if (
+  accessibilityAudit.standard !== "wcag_2_2_aa_audit_matrix" ||
+  accessibilityAudit.target_conformance !== "WCAG 2.2 AA" ||
+  !/No full WCAG conformance claim/.test(accessibilityAudit.conformance_claim || "")
+) {
+  failures.push("data/accessibility-audit.json must publish an honest WCAG 2.2 AA audit matrix without overclaiming conformance");
+}
+
+for (const requiredRoute of ["/", "/place/IND/", "/compare/", "/events/"]) {
+  if (!accessibilityAudit.route_matrix?.some((entry) => entry.path === requiredRoute && entry.manual_keyboard_status && entry.screen_reader_status)) {
+    failures.push(`data/accessibility-audit.json missing representative route ${requiredRoute}`);
+  }
+}
+
+for (const method of ["axe browser audit", "manual keyboard audit", "VoiceOver audit", "NVDA audit"]) {
+  if (!accessibilityAudit.scope?.required_methods?.includes(method)) {
+    failures.push(`data/accessibility-audit.json missing required method ${method}`);
+  }
+}
+
 const endpointSmoke = readJson("data/endpoint-smoke.json");
-for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/data/source-freshness.json", "/data/ui-smoke.json", "/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/IND/adm1.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/IND.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/releases/2026-05-31/migration.json", "/.well-known/security.txt"]) {
+for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/data/source-freshness.json", "/data/third-party-fetches.json", "/data/accessibility-audit.json", "/data/ui-smoke.json", "/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/IND/adm1.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/IND.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/releases/2026-05-31/changes/", "/releases/2026-05-31/migration.json", "/policies/accessibility/audit-2026-06-05/", "/.well-known/security.txt"]) {
   if (!endpointSmoke.endpoints?.some((entry) => entry.path === requiredPath && entry.expected_status === 200)) {
     failures.push(`data/endpoint-smoke.json missing required endpoint ${requiredPath}`);
   }
@@ -606,7 +659,7 @@ for (const schemaFile of ["schemas/place-index.schema.json", "schemas/adm1-conte
 }
 
 const openapi = readJson("data/openapi.json");
-for (const requiredPath of ["/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/{place_id}/adm1.json", "/v1/coverage.json", "/v1/places/{place_id}/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/{place_id}.json", "/data/release-modes.json", "/data/source-freshness.json", "/data/ui-smoke.json", "/releases/2026-05-31/diff.json", "/releases/2026-05-31/migration.json", "/schemas/place-index.schema.json", "/schemas/adm1-context.schema.json", "/schemas/release-modes.schema.json", "/schemas/ogc-place-features.schema.json"]) {
+for (const requiredPath of ["/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/{place_id}/adm1.json", "/v1/coverage.json", "/v1/places/{place_id}/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/{place_id}.json", "/data/release-modes.json", "/data/source-freshness.json", "/data/third-party-fetches.json", "/data/accessibility-audit.json", "/data/ui-smoke.json", "/releases/2026-05-31/diff.json", "/releases/2026-05-31/migration.json", "/schemas/place-index.schema.json", "/schemas/adm1-context.schema.json", "/schemas/release-modes.schema.json", "/schemas/ogc-place-features.schema.json"]) {
   if (!openapi.paths?.[requiredPath]) {
     failures.push(`data/openapi.json missing ${requiredPath}`);
   }

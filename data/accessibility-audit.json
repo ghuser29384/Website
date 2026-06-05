@@ -1,0 +1,106 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-05-31",
+  "standard": "wcag_2_2_aa_audit_matrix",
+  "target_conformance": "WCAG 2.2 AA",
+  "conformance_claim": "No full WCAG conformance claim is made by this artifact.",
+  "status": "Static accessibility smoke coverage is wired into CI. Manual keyboard, axe browser, VoiceOver, and NVDA evidence must be completed before publishing a full conformance claim.",
+  "scope": {
+    "representative_routes": [
+      "/",
+      "/place/IND/",
+      "/compare/",
+      "/events/"
+    ],
+    "required_methods": [
+      "static route checks",
+      "axe browser audit",
+      "manual keyboard audit",
+      "VoiceOver audit",
+      "NVDA audit"
+    ],
+    "non_map_parity_requirement": "Map, chart, and ranking experiences need equivalent searchable or tabular routes so users are not forced through pointer-only geography."
+  },
+  "current_evidence": [
+    {
+      "method": "static route checks",
+      "command": "npm run check",
+      "status": "ci-gated",
+      "evidence": "Validates skip links, primary navigation, canonical metadata, stylesheet SRI, ARIA id references, accessible names, reduced-motion CSS, and required route surfaces."
+    },
+    {
+      "method": "UI smoke manifest",
+      "command": "npm run smoke:ui",
+      "status": "ci-gated",
+      "evidence": "Reads /data/ui-smoke.json and checks route-specific landmarks, live-region ids, combobox wiring, accessible names, and visual component tokens."
+    },
+    {
+      "method": "endpoint smoke",
+      "command": "npm run smoke:endpoints",
+      "status": "ci-gated",
+      "evidence": "Verifies that public HTML and JSON endpoints return parseable documents with expected route-level accessibility hooks."
+    }
+  ],
+  "route_matrix": [
+    {
+      "path": "/",
+      "file": "index.html",
+      "included_interactions": [
+        "country search combobox",
+        "release-mode tabs",
+        "map status region",
+        "table-equivalent path"
+      ],
+      "automated_status": "covered-by-static-and-ui-smoke",
+      "manual_keyboard_status": "required-before-conformance-claim",
+      "screen_reader_status": "VoiceOver-and-NVDA-required-before-conformance-claim"
+    },
+    {
+      "path": "/place/IND/",
+      "file": "place/IND/index.html",
+      "included_interactions": [
+        "place facts",
+        "measurement table",
+        "compare link",
+        "download links"
+      ],
+      "automated_status": "covered-by-route-manifest-and-link-checks",
+      "manual_keyboard_status": "required-before-conformance-claim",
+      "screen_reader_status": "VoiceOver-and-NVDA-required-before-conformance-claim"
+    },
+    {
+      "path": "/compare/",
+      "file": "compare/index.html",
+      "included_interactions": [
+        "shareable compare URL",
+        "requested-place list",
+        "comparison tables"
+      ],
+      "automated_status": "covered-by-static-and-ui-smoke",
+      "manual_keyboard_status": "required-before-conformance-claim",
+      "screen_reader_status": "VoiceOver-and-NVDA-required-before-conformance-claim"
+    },
+    {
+      "path": "/events/",
+      "file": "events/index.html",
+      "included_interactions": [
+        "event evidence catalog",
+        "assumption text",
+        "source links"
+      ],
+      "automated_status": "covered-by-static-route-checks",
+      "manual_keyboard_status": "required-before-conformance-claim",
+      "screen_reader_status": "VoiceOver-and-NVDA-required-before-conformance-claim"
+    }
+  ],
+  "open_items": [
+    "Run axe in a browser context on the homepage, /place/IND/, /compare/, and /events/.",
+    "Complete manual keyboard traversal for search, release-mode tabs, compare links, and table/download controls.",
+    "Complete VoiceOver checks on macOS Safari or Chrome for live-region announcements and table navigation.",
+    "Complete NVDA checks on Windows for the combobox, live-region announcements, breadcrumbs, and compare route.",
+    "Attach any failures to release QA before making a WCAG conformance claim."
+  ],
+  "report_url": "https://painmap.org/policies/accessibility/audit-2026-06-05/",
+  "machine_readable_url": "https://painmap.org/data/accessibility-audit.json",
+  "issue_intake_url": "https://painmap.org/policies/contact/"
+}

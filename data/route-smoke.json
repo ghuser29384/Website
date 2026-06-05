@@ -2995,6 +2995,14 @@
       "expected_canonical": "https://painmap.org/releases/2026-05-31/"
     },
     {
+      "key": "release-2026-05-31-changes",
+      "path": "/releases/2026-05-31/changes/",
+      "file": "releases/2026-05-31/changes/index.html",
+      "expected_title": "2026-05-31 Release Changes | PainMap",
+      "expected_description": "Human-readable PainMap 2026-05-31 release changes, baseline metrics, added contract surfaces, and companion diff artifacts.",
+      "expected_canonical": "https://painmap.org/releases/2026-05-31/changes/"
+    },
+    {
       "key": "security",
       "path": "/security/",
       "file": "security/index.html",
@@ -3049,6 +3057,14 @@
       "expected_title": "Accessibility Statement | PainMap",
       "expected_description": "PainMap accessibility statement for maps, charts, tables, keyboard access, and reduced motion.",
       "expected_canonical": "https://painmap.org/policies/accessibility/"
+    },
+    {
+      "key": "accessibility-audit-2026-06-05",
+      "path": "/policies/accessibility/audit-2026-06-05/",
+      "file": "policies/accessibility/audit-2026-06-05/index.html",
+      "expected_title": "WCAG 2.2 AA Audit Matrix | PainMap",
+      "expected_description": "PainMap WCAG 2.2 AA audit matrix covering automated evidence, manual keyboard scope, VoiceOver/NVDA follow-up, and representative route status.",
+      "expected_canonical": "https://painmap.org/policies/accessibility/audit-2026-06-05/"
     },
     {
       "key": "editorial",

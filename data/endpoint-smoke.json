@@ -75,6 +75,22 @@
       "purpose": "Source freshness cadence and release-candidate review contract"
     },
     {
+      "path": "/data/third-party-fetches.json",
+      "url": "https://painmap.org/data/third-party-fetches.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Third-party fetch and release-materialization behavior matrix"
+    },
+    {
+      "path": "/data/accessibility-audit.json",
+      "url": "https://painmap.org/data/accessibility-audit.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "WCAG 2.2 AA audit evidence matrix"
+    },
+    {
       "path": "/data/ui-smoke.json",
       "url": "https://painmap.org/data/ui-smoke.json",
       "method": "GET",
@@ -187,12 +203,28 @@
       "purpose": "Release diff artifact"
     },
     {
+      "path": "/releases/2026-05-31/changes/",
+      "url": "https://painmap.org/releases/2026-05-31/changes/",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/html",
+      "purpose": "Human-readable release changes page"
+    },
+    {
       "path": "/releases/2026-05-31/migration.json",
       "url": "https://painmap.org/releases/2026-05-31/migration.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
       "purpose": "Release migration notes"
+    },
+    {
+      "path": "/policies/accessibility/audit-2026-06-05/",
+      "url": "https://painmap.org/policies/accessibility/audit-2026-06-05/",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/html",
+      "purpose": "WCAG 2.2 AA audit matrix page"
     },
     {
       "path": "/.well-known/security.txt",

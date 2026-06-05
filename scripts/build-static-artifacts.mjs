@@ -1937,6 +1937,139 @@ function buildPerformanceBudgets() {
   };
 }
 
+function sourceFor(sourceId) {
+  const source = provenance.sources.find((entry) => entry.source_id === sourceId);
+
+  if (!source) {
+    throw new Error(`Missing provenance source ${sourceId}`);
+  }
+
+  return source;
+}
+
+function thirdPartyDomain(sourceId, domain, overrides) {
+  const source = sourceFor(sourceId);
+
+  return {
+    source_id: source.source_id,
+    label: source.label,
+    publisher: source.publisher,
+    upstream_url: source.url,
+    source_vintage: source.source_vintage,
+    domain,
+    ...overrides,
+  };
+}
+
+function buildThirdPartyFetches() {
+  return {
+    release_id: releaseId,
+    generated_at: releaseDate,
+    policy_version: "2026-06-third-party-fetches-1",
+    default_network_collection: false,
+    snapshot_mode_client_upstream_fetches: false,
+    privacy_summary:
+      "Snapshot mode loads same-origin static release artifacts from painmap.org. Live overlay mode is opt-in and may fetch documented public-source domains for current context rows; the client does not send user ids, precise location, personal-health fields, or typed search strings to those upstream sources.",
+    connect_src_policy: [
+      "self",
+      "https://www.geoboundaries.org",
+      "https://media.githubusercontent.com",
+      "https://api.worldbank.org",
+      "https://api.worldpop.org",
+      "https://ourworldindata.org",
+    ],
+    modes: [
+      {
+        id: "snapshot",
+        label: "Snapshot",
+        client_upstream_fetches: false,
+        materialization: "release-materialized",
+        trigger: "Default page load and default atlas exploration",
+        destination: "Same-origin PainMap static release files",
+        cache_policy: "Immutable release URLs are checksummed in the release manifest and can be replayed from committed artifacts.",
+        replay_rule: "Use /releases/2026-05-31/manifest.json and artifact SHA-256 values for reproducible citations.",
+        privacy_note: "No third-party browser request is required for canonical release measurements.",
+      },
+      {
+        id: "live",
+        label: "Live overlay",
+        client_upstream_fetches: true,
+        materialization: "client-live-overlay",
+        trigger: "User explicitly selects the live overlay or a runtime context surface that needs current public rows",
+        destination: "Documented public-source domains listed in this artifact",
+        cache_policy: "Live overlay responses are not canonical release artifacts and must be rematerialized before replacing snapshot rows.",
+        replay_rule: "Promote current rows through a release-candidate PR, source-freshness review, and a new release manifest.",
+        privacy_note: "Requests are public data lookups scoped to selected place or layer identifiers, not personal data collection.",
+      },
+    ],
+    domains: [
+      {
+        id: "painmap-static-release",
+        domain: "painmap.org",
+        mode: "release-materialized",
+        trigger: "Default site and API usage",
+        destination: "PainMap static hosting",
+        cache_policy: "Release artifacts are immutable once published and are listed in the release manifest.",
+        replay_rule: "Replay from committed files, latest/manifest.json, or immutable release manifest checksums.",
+        privacy_note: "Same-origin static asset and JSON requests do not require a third-party public-source request.",
+        surfaces: [
+          "/data/place-measurements.json",
+          "/v1/places/index.json",
+          "/v1/coverage.json",
+          "/ogc/collections/places/items.json",
+          "/releases/2026-05-31/manifest.json",
+        ],
+      },
+      thirdPartyDomain("world-bank-indicators", "api.worldbank.org", {
+        mode: "release-materialized-and-client-live-overlay",
+        trigger: "Canonical release build for frozen indicators; live overlay when current public indicator rows are requested",
+        destination: "World Bank public indicator API",
+        cache_policy: "Frozen snapshot values are committed to release artifacts; current overlay checks follow monthly freshness policy.",
+        replay_rule: "Canonical changes require source-freshness review and a new release candidate before publication.",
+        privacy_note: "Indicator requests use country and indicator identifiers only; PainMap does not send user ids or typed search strings.",
+      }),
+      thirdPartyDomain("owid-livestock", "ourworldindata.org", {
+        mode: "release-materialized-and-client-live-overlay",
+        trigger: "Canonical animal-production proxy materialization; optional live overlay for current OWID grapher rows",
+        destination: "Our World in Data public grapher CSV endpoints",
+        cache_policy: "Release values are frozen; live overlay checks are weekly and non-canonical until rematerialized.",
+        replay_rule: "Promote changed proxy rows through release-candidate QA, provenance review, and release diff publication.",
+        privacy_note: "Requests identify public grapher datasets and selected place context, not people or personal-health data.",
+      }),
+      thirdPartyDomain("geoboundaries-adm1", "www.geoboundaries.org", {
+        mode: "client-live-overlay",
+        trigger: "ADM1 boundary discovery when a user requests current subnational boundary context",
+        destination: "geoBoundaries public metadata API",
+        cache_policy: "Runtime metadata is treated as an overlay; canonical boundary behavior must be vendored or partitioned before release.",
+        replay_rule: "Freeze boundary source metadata and partitioned outputs into a new manifest before treating them as release material.",
+        privacy_note: "Requests use public ISO place identifiers and do not include user ids, precise location, or query strings.",
+      }),
+      thirdPartyDomain("geoboundaries-adm1", "media.githubusercontent.com", {
+        mode: "client-live-overlay",
+        trigger: "Topology download URL returned by the geoBoundaries metadata API",
+        destination: "GitHub-hosted public geoBoundaries topology file",
+        cache_policy: "Topology downloads are live overlays unless vendored into a release artifact.",
+        replay_rule: "Record the fetched source URL and checksum before promotion into release geometry.",
+        privacy_note: "Downloads are public boundary assets keyed by place selection, not personal data.",
+      }),
+      {
+        source_id: "worldpop-context-overlay",
+        label: "WorldPop population context overlays",
+        publisher: "WorldPop",
+        upstream_url: "https://www.worldpop.org/",
+        source_vintage: "runtime-current",
+        domain: "api.worldpop.org",
+        mode: "client-live-overlay",
+        trigger: "Province context request that computes current WorldPop zonal statistics",
+        destination: "WorldPop public statistics API",
+        cache_policy: "Runtime context only; canonical release rows require reviewed materialization before publication.",
+        replay_rule: "Capture request geometry, upstream response metadata, and checksum before including values in a future release.",
+        privacy_note: "Requests contain public boundary geometry for selected regions, not user location or health information.",
+      },
+    ],
+  };
+}
+
 function buildSourceFreshness() {
   const sourcePolicies = {
     "welfare-footprint-events": {
@@ -2091,6 +2224,8 @@ function buildEndpointSmoke() {
       endpoint("/data/dcat.json", "application/ld+json", "DCAT catalog"),
       endpoint("/data/release-modes.json", "application/json", "Snapshot and live overlay mode contract"),
       endpoint("/data/source-freshness.json", "application/json", "Source freshness cadence and release-candidate review contract"),
+      endpoint("/data/third-party-fetches.json", "application/json", "Third-party fetch and release-materialization behavior matrix"),
+      endpoint("/data/accessibility-audit.json", "application/json", "WCAG 2.2 AA audit evidence matrix"),
       endpoint("/data/ui-smoke.json", "application/json", "Accessibility and visual smoke-test manifest"),
       endpoint("/v1/places/index.json", "application/json", "Full release place index"),
       endpoint("/v1/adm1/index.json", "application/json", "ADM1 poverty-context overlay index"),
@@ -2105,7 +2240,9 @@ function buildEndpointSmoke() {
       endpoint("/clients/python/painmap_client.py", "text/x-python", "Python client"),
       endpoint("/releases/2026-05-31/manifest.json", "application/json", "Immutable release manifest"),
       endpoint("/releases/2026-05-31/diff.json", "application/json", "Release diff artifact"),
+      endpoint("/releases/2026-05-31/changes/", "text/html", "Human-readable release changes page"),
       endpoint("/releases/2026-05-31/migration.json", "application/json", "Release migration notes"),
+      endpoint("/policies/accessibility/audit-2026-06-05/", "text/html", "WCAG 2.2 AA audit matrix page"),
       endpoint("/.well-known/security.txt", "text/plain", "Security contact policy"),
     ],
   };
@@ -2217,11 +2354,104 @@ function buildUiSmoke() {
         requiredText: ["2026-05-31.atlas.2", "Initial release baseline", "Schema and layer baseline"],
         requiredComponents: ["route-panel", "route-hero", "download-list", "data-table-wrap", "route-table"],
       }),
+      uiSmokeRoute("/releases/2026-05-31/changes/", {
+        requiredText: ["Human-readable release changes", "Initial release baseline", "What changed"],
+        requiredComponents: ["route-panel", "route-hero", "metadata-grid", "data-table-wrap", "route-actions"],
+      }),
       uiSmokeRoute("/security/", {
         requiredText: ["Security", "Open security.txt", "Content Security Policy"],
         requiredComponents: ["route-panel", "route-hero", "metadata-grid", "route-actions"],
       }),
+      uiSmokeRoute("/policies/accessibility/audit-2026-06-05/", {
+        requiredText: ["WCAG audit matrix", "No full WCAG conformance claim", "VoiceOver-and-NVDA-required-before-conformance-claim"],
+        requiredComponents: ["route-panel", "route-hero", "data-table-wrap", "route-actions"],
+      }),
     ],
+  };
+}
+
+function buildAccessibilityAudit() {
+  return {
+    release_id: releaseId,
+    generated_at: releaseDate,
+    standard: "wcag_2_2_aa_audit_matrix",
+    target_conformance: "WCAG 2.2 AA",
+    conformance_claim: "No full WCAG conformance claim is made by this artifact.",
+    status:
+      "Static accessibility smoke coverage is wired into CI. Manual keyboard, axe browser, VoiceOver, and NVDA evidence must be completed before publishing a full conformance claim.",
+    scope: {
+      representative_routes: ["/", "/place/IND/", "/compare/", "/events/"],
+      required_methods: ["static route checks", "axe browser audit", "manual keyboard audit", "VoiceOver audit", "NVDA audit"],
+      non_map_parity_requirement:
+        "Map, chart, and ranking experiences need equivalent searchable or tabular routes so users are not forced through pointer-only geography.",
+    },
+    current_evidence: [
+      {
+        method: "static route checks",
+        command: "npm run check",
+        status: "ci-gated",
+        evidence:
+          "Validates skip links, primary navigation, canonical metadata, stylesheet SRI, ARIA id references, accessible names, reduced-motion CSS, and required route surfaces.",
+      },
+      {
+        method: "UI smoke manifest",
+        command: "npm run smoke:ui",
+        status: "ci-gated",
+        evidence:
+          "Reads /data/ui-smoke.json and checks route-specific landmarks, live-region ids, combobox wiring, accessible names, and visual component tokens.",
+      },
+      {
+        method: "endpoint smoke",
+        command: "npm run smoke:endpoints",
+        status: "ci-gated",
+        evidence:
+          "Verifies that public HTML and JSON endpoints return parseable documents with expected route-level accessibility hooks.",
+      },
+    ],
+    route_matrix: [
+      {
+        path: "/",
+        file: "index.html",
+        included_interactions: ["country search combobox", "release-mode tabs", "map status region", "table-equivalent path"],
+        automated_status: "covered-by-static-and-ui-smoke",
+        manual_keyboard_status: "required-before-conformance-claim",
+        screen_reader_status: "VoiceOver-and-NVDA-required-before-conformance-claim",
+      },
+      {
+        path: "/place/IND/",
+        file: "place/IND/index.html",
+        included_interactions: ["place facts", "measurement table", "compare link", "download links"],
+        automated_status: "covered-by-route-manifest-and-link-checks",
+        manual_keyboard_status: "required-before-conformance-claim",
+        screen_reader_status: "VoiceOver-and-NVDA-required-before-conformance-claim",
+      },
+      {
+        path: "/compare/",
+        file: "compare/index.html",
+        included_interactions: ["shareable compare URL", "requested-place list", "comparison tables"],
+        automated_status: "covered-by-static-and-ui-smoke",
+        manual_keyboard_status: "required-before-conformance-claim",
+        screen_reader_status: "VoiceOver-and-NVDA-required-before-conformance-claim",
+      },
+      {
+        path: "/events/",
+        file: "events/index.html",
+        included_interactions: ["event evidence catalog", "assumption text", "source links"],
+        automated_status: "covered-by-static-route-checks",
+        manual_keyboard_status: "required-before-conformance-claim",
+        screen_reader_status: "VoiceOver-and-NVDA-required-before-conformance-claim",
+      },
+    ],
+    open_items: [
+      "Run axe in a browser context on the homepage, /place/IND/, /compare/, and /events/.",
+      "Complete manual keyboard traversal for search, release-mode tabs, compare links, and table/download controls.",
+      "Complete VoiceOver checks on macOS Safari or Chrome for live-region announcements and table navigation.",
+      "Complete NVDA checks on Windows for the combobox, live-region announcements, breadcrumbs, and compare route.",
+      "Attach any failures to release QA before making a WCAG conformance claim.",
+    ],
+    report_url: `${site}/policies/accessibility/audit-2026-06-05/`,
+    machine_readable_url: `${site}/data/accessibility-audit.json`,
+    issue_intake_url: `${site}/policies/contact/`,
   };
 }
 
@@ -2711,6 +2941,18 @@ function buildOpenApi() {
       "/data/source-freshness.json": {
         get: { summary: "Get source freshness and scheduled refresh contract", responses: { 200: staticJsonResponse("Source freshness contract JSON") } },
       },
+      "/data/third-party-fetches.json": {
+        get: {
+          summary: "Get third-party fetch and release-materialization behavior matrix",
+          responses: { 200: staticJsonResponse("Third-party fetch behavior JSON", "#/components/schemas/ThirdPartyFetches") },
+        },
+      },
+      "/data/accessibility-audit.json": {
+        get: {
+          summary: "Get WCAG 2.2 AA audit evidence matrix",
+          responses: { 200: staticJsonResponse("Accessibility audit JSON", "#/components/schemas/AccessibilityAudit") },
+        },
+      },
       "/data/ui-smoke.json": {
         get: { summary: "Get accessibility and visual smoke-test manifest", responses: { 200: staticJsonResponse("UI smoke manifest JSON") } },
       },
@@ -2753,6 +2995,14 @@ function buildOpenApi() {
         ReleaseModes: {
           type: "object",
           required: ["release_id", "default_mode", "modes", "ui_contract"],
+        },
+        ThirdPartyFetches: {
+          type: "object",
+          required: ["release_id", "default_network_collection", "snapshot_mode_client_upstream_fetches", "modes", "domains"],
+        },
+        AccessibilityAudit: {
+          type: "object",
+          required: ["release_id", "standard", "target_conformance", "conformance_claim", "route_matrix", "open_items"],
         },
         ProvenanceRegistry: {
           type: "object",
@@ -2883,6 +3133,7 @@ function buildDcat() {
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/places/IND/adm1.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/coverage.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/release-modes.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/third-party-fetches.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/v1/places/BRA/neighbors.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/releases/2026-05-31/manifest.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/releases/2026-05-31/diff.json` },
@@ -2931,6 +3182,7 @@ function buildDcat() {
           { "@type": "dcat:Distribution", "dct:format": "application/schema+json", "dcat:downloadURL": `${site}/schemas/ogc-place-features.schema.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/performance-budgets.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/source-freshness.json` },
+          { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/accessibility-audit.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/ui-smoke.json` },
           { "@type": "dcat:Distribution", "dct:format": "application/json", "dcat:downloadURL": `${site}/data/endpoint-smoke.json` },
           { "@type": "dcat:Distribution", "dct:format": "text/typescript", "dcat:downloadURL": `${site}/clients/typescript/painmap-client.ts` },
@@ -3019,6 +3271,8 @@ function releaseArtifactFileCandidates() {
     "data/analytics-events.json",
     "data/performance-budgets.json",
     "data/source-freshness.json",
+    "data/third-party-fetches.json",
+    "data/accessibility-audit.json",
     "data/ui-smoke.json",
     "data/endpoint-smoke.json",
     "data/countries-lite.geojson",
@@ -3063,7 +3317,9 @@ function releaseArtifactFileCandidates() {
     "ogc/collections/places/items.json",
     ...ogcItemFiles,
     "releases/2026-05-31/diff.json",
+    "releases/2026-05-31/changes/index.html",
     "releases/2026-05-31/migration.json",
+    "policies/accessibility/audit-2026-06-05/index.html",
     "assets/social-card.svg",
     "vendor/d3.v7.min.js",
     "vendor/topojson-client.v3.min.js",
@@ -3090,6 +3346,7 @@ function buildReleaseDiff() {
     comparison_type: "initial_release_baseline",
     summary:
       "This diff records the first release baseline for future comparisons. There is no previous immutable PainMap release in this release series.",
+    human_readable_url: `${site}/releases/2026-05-31/changes/`,
     current_release: {
       places_indexed: placeIndex.count,
       country_boundaries_indexed: coverage.coverage_status.country_boundaries_indexed,
@@ -3102,6 +3359,8 @@ function buildReleaseDiff() {
       neighbor_payloads: buildNeighborPayloads().size,
       ui_smoke_routes: buildUiSmoke().routes.length,
       fixture_preview_inputs: 2,
+      third_party_fetch_domains: buildThirdPartyFetches().domains.length,
+      accessibility_audit_routes: buildAccessibilityAudit().route_matrix.length,
     },
     added_contract_surfaces: [
       "/v1/places/index.json",
@@ -3114,6 +3373,8 @@ function buildReleaseDiff() {
       "/ogc/collections/places/item-index.json",
       "/ogc/collections/places/items/{place_id}.json",
       "/data/release-modes.json",
+      "/data/third-party-fetches.json",
+      "/data/accessibility-audit.json",
       "/data/ui-smoke.json",
       "/fixtures/mock-registry.json",
       "/fixtures/place-measurements.fixture.json",
@@ -3121,6 +3382,8 @@ function buildReleaseDiff() {
       "/schemas/release-modes.schema.json",
       "/schemas/ogc-place-features.schema.json",
       "/releases/2026-05-31/diff.json",
+      "/releases/2026-05-31/changes/",
+      "/policies/accessibility/audit-2026-06-05/",
     ],
     notable_changes: [
       {
@@ -3150,6 +3413,14 @@ function buildReleaseDiff() {
       {
         area: "release mode",
         change: "Documented the homepage Snapshot and Live overlay split as a static public contract.",
+      },
+      {
+        area: "privacy and data flow",
+        change: "Added a third-party fetch matrix that separates release-materialized snapshot requests from opt-in live overlay fetches.",
+      },
+      {
+        area: "accessibility QA",
+        change: "Published a WCAG 2.2 AA audit matrix that records current CI evidence and required manual screen-reader checks before any conformance claim.",
       },
     ],
   };
@@ -3224,10 +3495,256 @@ function buildReleaseMigration() {
       "/schemas/release-modes.schema.json",
       "/schemas/ogc-place-features.schema.json",
       "/data/openapi.json",
+      "/data/third-party-fetches.json",
+      "/data/accessibility-audit.json",
       "/data/ui-smoke.json",
       "/releases/2026-05-31/manifest.json",
     ],
   };
+}
+
+function routePageHtml(file, mainHtml) {
+  const route = routes.routes.find((entry) => entry.file === file);
+
+  if (!route) {
+    throw new Error(`Cannot build route page for missing route file ${file}`);
+  }
+
+  const prefix = rootPrefix(file);
+
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${htmlEscape(route.title)}</title>
+    <meta name="description" content="${htmlEscape(route.description)}">
+    <link rel="canonical" href="${routeCanonicalUrl(route)}">
+    <link rel="stylesheet" href="${prefix}styles.css" integrity="sha384-placeholder" crossorigin="anonymous">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home">PainMap</a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/places/">Places</a>
+          <a href="/compare/">Compare</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <main id="main-content" class="route-page">
+${mainHtml}
+      </main>
+    </div>
+  </body>
+</html>
+`;
+}
+
+function labelFromKey(key) {
+  const acronyms = new Map([
+    ["adm1", "ADM1"],
+    ["ogc", "OGC"],
+    ["ui", "UI"],
+    ["qa", "QA"],
+    ["wcag", "WCAG"],
+  ]);
+
+  return key
+    .split("_")
+    .map((part) => {
+      const lower = part.toLowerCase();
+
+      if (acronyms.has(lower)) {
+        return acronyms.get(lower);
+      }
+
+      if (lower === "and") {
+        return "and";
+      }
+
+      return `${part.slice(0, 1).toUpperCase()}${part.slice(1)}`;
+    })
+    .join(" ");
+}
+
+function releaseChangesHtml() {
+  const file = "releases/2026-05-31/changes/index.html";
+  const diff = buildReleaseDiff();
+  const metricRows = Object.entries(diff.current_release)
+    .map(
+      ([key, value]) =>
+        `                <tr><th scope="row">${htmlEscape(labelFromKey(key))}</th><td>${htmlEscape(value)}</td></tr>`
+    )
+    .join("\n");
+  const changeCards = diff.notable_changes
+    .map(
+      (change) => `            <article class="metadata-card">
+              <span class="evidence-badge">${htmlEscape(change.area)}</span>
+              <h2>${htmlEscape(labelFromKey(change.area.replaceAll(" ", "_")))}</h2>
+              <p>${htmlEscape(change.change)}</p>
+            </article>`
+    )
+    .join("\n");
+
+  return routePageHtml(
+    file,
+    `        <section class="route-panel route-hero" aria-labelledby="release-changes-title">
+          <div>
+            <p class="label">Release changes</p>
+            <h1 id="release-changes-title">Human-readable release changes</h1>
+          </div>
+          <p class="route-copy">
+            ${htmlEscape(diff.summary)} This page turns the machine-readable diff into a scannable baseline for researchers, developers, and reviewers.
+          </p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="change-summary-title">
+          <div class="section-intro">
+            <p class="label">Baseline</p>
+            <h2 id="change-summary-title">Initial release baseline</h2>
+          </div>
+          <div class="data-table-wrap">
+            <table class="data-table route-table">
+              <caption>Release ${htmlEscape(diff.release_id)} baseline metrics</caption>
+              <tbody>
+${metricRows}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="notable-changes-title">
+          <div class="section-intro">
+            <p class="label">What changed</p>
+            <h2 id="notable-changes-title">What changed</h2>
+          </div>
+          <div class="metadata-grid">
+${changeCards}
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="machine-readable-title">
+          <div class="section-intro">
+            <p class="label">Reuse</p>
+            <h2 id="machine-readable-title">Machine-readable companion files</h2>
+          </div>
+          <p class="route-copy">
+            Use the JSON diff for automated comparison, the migration file for schema and downstream action notes, and the manifest for checksums.
+          </p>
+          <div class="route-actions">
+            <a class="solid-button" href="/releases/2026-05-31/diff.json">Open diff JSON</a>
+            <a class="ghost-link" href="/releases/2026-05-31/migration.json">Migration JSON</a>
+            <a class="ghost-link" href="/releases/2026-05-31/manifest.json">Release manifest</a>
+          </div>
+        </section>`
+  );
+}
+
+function accessibilityAuditHtml() {
+  const file = "policies/accessibility/audit-2026-06-05/index.html";
+  const audit = buildAccessibilityAudit();
+  const routeRows = audit.route_matrix
+    .map(
+      (route) => `                <tr>
+                  <th scope="row"><a href="${htmlEscape(route.path)}">${htmlEscape(route.path)}</a></th>
+                  <td>${htmlEscape(route.automated_status)}</td>
+                  <td>${htmlEscape(route.manual_keyboard_status)}</td>
+                  <td>${htmlEscape(route.screen_reader_status)}</td>
+                </tr>`
+    )
+    .join("\n");
+  const evidenceItems = audit.current_evidence
+    .map(
+      (item) => `            <article class="metadata-card">
+              <span class="evidence-badge">${htmlEscape(item.status)}</span>
+              <h2>${htmlEscape(item.method)}</h2>
+              <p><code>${htmlEscape(item.command)}</code></p>
+              <p>${htmlEscape(item.evidence)}</p>
+            </article>`
+    )
+    .join("\n");
+  const openItems = audit.open_items.map((item) => `            <li>${htmlEscape(item)}</li>`).join("\n");
+
+  return routePageHtml(
+    file,
+    `        <section class="route-panel route-hero" aria-labelledby="audit-title">
+          <div>
+            <p class="label">Accessibility QA</p>
+            <h1 id="audit-title">WCAG audit matrix</h1>
+          </div>
+          <p class="route-copy">
+            ${htmlEscape(audit.status)}
+          </p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="audit-status-title">
+          <div class="section-intro">
+            <p class="label">Status</p>
+            <h2 id="audit-status-title">Audit status</h2>
+          </div>
+          <div class="facts place-facts">
+            <article class="fact-card"><span class="fact-label">Target</span><strong>${htmlEscape(audit.target_conformance)}</strong></article>
+            <article class="fact-card"><span class="fact-label">Claim</span><strong>No full WCAG conformance claim</strong></article>
+            <article class="fact-card"><span class="fact-label">Routes</span><strong>${audit.route_matrix.length}</strong></article>
+            <article class="fact-card"><span class="fact-label">Standard</span><strong>${htmlEscape(audit.standard)}</strong></article>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="route-matrix-title">
+          <div class="section-intro">
+            <p class="label">Audit scope</p>
+            <h2 id="route-matrix-title">Representative route matrix</h2>
+          </div>
+          <div class="data-table-wrap">
+            <table class="data-table route-table">
+              <caption>WCAG 2.2 AA evidence status for representative routes</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Route</th>
+                  <th scope="col">Automated evidence</th>
+                  <th scope="col">Keyboard evidence</th>
+                  <th scope="col">Screen-reader evidence</th>
+                </tr>
+              </thead>
+              <tbody>
+${routeRows}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="current-evidence-title">
+          <div class="section-intro">
+            <p class="label">Current evidence</p>
+            <h2 id="current-evidence-title">CI-gated checks</h2>
+          </div>
+          <div class="metadata-grid">
+${evidenceItems}
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="open-items-title">
+          <div class="section-intro">
+            <p class="label">Manual checks</p>
+            <h2 id="open-items-title">Open items before conformance claim</h2>
+          </div>
+          <ul class="route-list">
+${openItems}
+          </ul>
+          <div class="route-actions">
+            <a class="solid-button" href="/data/accessibility-audit.json">Open audit JSON</a>
+            <a class="ghost-link" href="/data/ui-smoke.json">UI smoke manifest</a>
+            <a class="ghost-link" href="/policies/contact/">Report an issue</a>
+          </div>
+        </section>`
+  );
 }
 
 function writeApiArtifacts() {
@@ -3258,12 +3775,16 @@ function writeApiArtifacts() {
   writeJson("data/analytics-events.json", buildAnalyticsEvents());
   writeJson("data/performance-budgets.json", buildPerformanceBudgets());
   writeJson("data/source-freshness.json", buildSourceFreshness());
+  writeJson("data/third-party-fetches.json", buildThirdPartyFetches());
+  writeJson("data/accessibility-audit.json", buildAccessibilityAudit());
   writeJson("data/ui-smoke.json", buildUiSmoke());
   writeJson("data/endpoint-smoke.json", buildEndpointSmoke());
   writeJson("data/openapi.json", buildOpenApi());
   writeJson("data/dcat.json", buildDcat());
   writeJson("releases/2026-05-31/diff.json", buildReleaseDiff());
+  writeText("releases/2026-05-31/changes/index.html", releaseChangesHtml());
   writeJson("releases/2026-05-31/migration.json", buildReleaseMigration());
+  writeText("policies/accessibility/audit-2026-06-05/index.html", accessibilityAuditHtml());
   writeJson("data/route-smoke.json", {
     release_id: releaseId,
     generated_at: releaseDate,
@@ -3350,6 +3871,8 @@ function buildReleaseManifest() {
       place_index: `${site}/v1/places/index.json`,
       coverage: `${site}/v1/coverage.json`,
       release_modes: `${site}/data/release-modes.json`,
+      third_party_fetches: `${site}/data/third-party-fetches.json`,
+      accessibility_audit: `${site}/data/accessibility-audit.json`,
       ogc_features: `${site}/ogc/collections/places/items.json`,
       ogc_feature_item_index: `${site}/ogc/collections/places/item-index.json`,
       release_diff: `${site}${releasePath}diff.json`,

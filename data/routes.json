@@ -3387,6 +3387,14 @@
       "jsonLdType": "Dataset"
     },
     {
+      "path": "/releases/2026-05-31/changes/",
+      "file": "releases/2026-05-31/changes/index.html",
+      "key": "release-2026-05-31-changes",
+      "title": "2026-05-31 Release Changes | PainMap",
+      "description": "Human-readable PainMap 2026-05-31 release changes, baseline metrics, added contract surfaces, and companion diff artifacts.",
+      "jsonLdType": "Dataset"
+    },
+    {
       "path": "/security/",
       "file": "security/index.html",
       "key": "security",
@@ -3441,6 +3449,14 @@
       "title": "Accessibility Statement | PainMap",
       "description": "PainMap accessibility statement for maps, charts, tables, keyboard access, and reduced motion.",
       "jsonLdType": "WebPage"
+    },
+    {
+      "path": "/policies/accessibility/audit-2026-06-05/",
+      "file": "policies/accessibility/audit-2026-06-05/index.html",
+      "key": "accessibility-audit-2026-06-05",
+      "title": "WCAG 2.2 AA Audit Matrix | PainMap",
+      "description": "PainMap WCAG 2.2 AA audit matrix covering automated evidence, manual keyboard scope, VoiceOver/NVDA follow-up, and representative route status.",
+      "jsonLdType": "TechArticle"
     },
     {
       "path": "/policies/editorial-policy/",

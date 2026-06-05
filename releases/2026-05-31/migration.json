@@ -115,6 +115,8 @@
     "/schemas/release-modes.schema.json",
     "/schemas/ogc-place-features.schema.json",
     "/data/openapi.json",
+    "/data/third-party-fetches.json",
+    "/data/accessibility-audit.json",
     "/data/ui-smoke.json",
     "/releases/2026-05-31/manifest.json"
   ]
