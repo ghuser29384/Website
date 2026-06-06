@@ -25,6 +25,11 @@
           "map-status",
           "release-mode-status",
           "map-provenance-tray",
+          "atlas-layer-rail",
+          "atlas-layer-explanation",
+          "atlas-layer-uncertainty",
+          "atlas-layer-vintage",
+          "atlas-layer-source-count",
           "place-summary-card",
           "compare-place-link"
         ],
@@ -32,7 +37,8 @@
           "country-search-status",
           "map-status",
           "release-mode-status",
-          "map-provenance-tray"
+          "map-provenance-tray",
+          "atlas-layer-rail"
         ],
         "required_roles": [
           {
@@ -72,6 +78,7 @@
           "globe-panel",
           "map-provenance-tray",
           "detail-panel",
+          "atlas-layer-rail",
           "place-summary-card",
           "table-equivalent"
         ],
@@ -80,7 +87,8 @@
           "Snapshot first, live overlays labeled.",
           "Release coverage",
           "What drives pain here?",
-          "Map provenance"
+          "Map provenance",
+          "Visible atlas layer"
         ]
       }
     },

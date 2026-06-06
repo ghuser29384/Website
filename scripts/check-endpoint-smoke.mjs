@@ -153,6 +153,8 @@ function validateTextEndpoint(endpoint, text) {
   if (endpoint.path === "/") {
     expect(text.includes("Mixed-evidence atlas of pain sources by place"), "/ must include homepage title copy");
     expect(text.includes("Full place index"), "/ must include coverage module copy");
+    expect(text.includes("id=\"atlas-layer-rail\""), "/ must include the persistent atlas layer rail");
+    expect(text.includes("id=\"atlas-layer-source-count\""), "/ must expose atlas layer source count");
   }
 
   if (endpoint.path === "/places/") {

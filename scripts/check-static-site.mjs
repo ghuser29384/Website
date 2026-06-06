@@ -358,6 +358,10 @@ expectPattern("script.js", script, /scrollIntoView\(\{ block: "nearest" \}\)/, "
 expectPattern("script.js", script, /setSearchStatus\(`\$\{currentCountrySearchOptions\.length\} results available\.`\)/, "combobox result count status announcement");
 expectPattern("index.html", home, /id="compare-place-link" href="\/compare\/\?places=WLD"/, "homepage compare place CTA");
 expectPattern("index.html", home, /id="map-provenance-tray"/, "homepage map provenance tray");
+expectPattern("index.html", home, /id="atlas-layer-rail"[\s\S]*aria-live="polite"/, "persistent atlas layer rail live region");
+expectPattern("index.html", home, /id="atlas-layer-source-count"[\s\S]*source families/i, "atlas layer rail source count");
+expectPattern("script.js", script, /function updateAtlasLayerRail/, "atlas layer rail update helper");
+expectPattern("script.js", script, /sourceCount:\s*"6 source families"/, "atlas layer rail dynamic source count");
 expectPattern("index.html", home, /swatch-boundary-only/, "non-color boundary-only legend cue");
 expectPattern("script.js", script, /boundary-index-hatch/, "map boundary-only hatch pattern");
 expectPattern("script.js", script, /countryMapCoverage/, "map coverage class helper");

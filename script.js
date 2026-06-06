@@ -1485,6 +1485,12 @@ const summaryEvidenceMix = document.getElementById("summary-evidence-mix");
 const summaryUncertainty = document.getElementById("summary-uncertainty");
 const summaryLastUpdate = document.getElementById("summary-last-update");
 const comparePlaceLink = document.getElementById("compare-place-link");
+const atlasLayerExplanation = document.getElementById("atlas-layer-explanation");
+const atlasLayerEvidenceKind = document.getElementById("atlas-layer-evidence-kind");
+const atlasLayerUncertainty = document.getElementById("atlas-layer-uncertainty");
+const atlasLayerVintage = document.getElementById("atlas-layer-vintage");
+const atlasLayerSourceCount = document.getElementById("atlas-layer-source-count");
+const atlasLayerSourceList = document.getElementById("atlas-layer-source-list");
 const mapProvenancePlace = document.getElementById("map-provenance-place");
 const mapProvenanceEncoding = document.getElementById("map-provenance-encoding");
 const mapProvenanceSource = document.getElementById("map-provenance-source");
@@ -1865,6 +1871,15 @@ function setMapProvenance({ place, encoding, source, uncertainty }) {
   setSummaryText(mapProvenanceEncoding, encoding);
   setSummaryText(mapProvenanceSource, source);
   setSummaryText(mapProvenanceUncertainty, uncertainty);
+}
+
+function updateAtlasLayerRail({ explanation, evidenceKind, uncertainty, vintage, sourceCount, sourceList }) {
+  setSummaryText(atlasLayerExplanation, explanation);
+  setSummaryText(atlasLayerEvidenceKind, evidenceKind);
+  setSummaryText(atlasLayerUncertainty, uncertainty);
+  setSummaryText(atlasLayerVintage, vintage);
+  setSummaryText(atlasLayerSourceCount, sourceCount);
+  setSummaryText(atlasLayerSourceList, sourceList);
 }
 
 function normalizeSearchText(value) {
@@ -4823,6 +4838,16 @@ function renderDetails() {
         uncertainty:
           "Hatching marks boundary-only or very-low-confidence coverage. Solid outlined countries have canonical low-confidence release rows.",
       });
+      updateAtlasLayerRail({
+        explanation:
+          "Snapshot mode keeps the visible atlas tied to frozen release rows, coverage JSON, and local boundary assets. The ranking cards are static fallback context, not browser-time upstream fetches.",
+        evidenceKind: "Proxy aggregate plus boundary coverage",
+        uncertainty: "Low to very low; boundary-only places are hatched",
+        vintage: "2026-05-31.atlas.2",
+        sourceCount: "6 source families",
+        sourceList:
+          "PainMap release rows, Natural Earth, World Bank indicators, OWID/Fishcount-style animal rows, Rethink Priorities, and Wild Animal Initiative.",
+      });
       factLocation.textContent = "Whole Earth";
       factCountrySource.textContent = "Natural Earth Admin 0, 1:50m release asset";
       factAdminSource.textContent = "ADM1 disabled in snapshot mode";
@@ -4873,6 +4898,20 @@ function renderDetails() {
           : "Natural Earth boundaries with live World Bank, OWID, RP, WAI, and land-area context.",
       uncertainty:
         "Live values are modeled or proxy overlays. Boundary-only and low-confidence release status remains visible through hatching and outlines.",
+    });
+    updateAtlasLayerRail({
+      explanation:
+        state.globeMode === "death"
+          ? "Live death mode keeps the boundary layer release-scoped while the right rail and tables show current mortality context."
+          : "Live suffering mode keeps boundaries release-scoped while the rail and tables show current public-source human and animal burden context.",
+      evidenceKind: state.globeMode === "death" ? "Modeled death proxy plus boundary layer" : "Modeled and proxy overlay plus boundary layer",
+      uncertainty: "Modeled and proxy; release coverage remains hatched or outlined",
+      vintage: state.globeMode === "death" ? `World Bank ${ISSUE_DATA_DATE_RANGE}; live OWID rows where used` : "Live public-source overlay plus 2026-05-31 release context",
+      sourceCount: state.globeMode === "death" ? "3 source families" : "5 source families",
+      sourceList:
+        state.globeMode === "death"
+          ? "Natural Earth, World Bank WLD mortality indicators, and OWID animal-death context."
+          : "Natural Earth, World Bank indicators, OWID rows, Rethink Priorities, and Wild Animal Initiative.",
     });
     factLocation.textContent = "Whole Earth";
     factCountrySource.textContent = "Natural Earth Admin 0, 1:50m";
@@ -4931,6 +4970,18 @@ function renderDetails() {
       uncertainty: hasCanonicalProfile
         ? "Canonical rows are labeled low confidence; confidence bands remain in the data table and JSON."
         : "Boundary-only status is not a pain measurement. It is shown with a hatch so sparse coverage is visible on the map.",
+    });
+    updateAtlasLayerRail({
+      explanation: hasCanonicalProfile
+        ? `${name} has frozen country measurement rows in the release. The rail keeps the layer caveat beside the map before any live overlay is requested.`
+        : `${name} is a boundary-indexed place in this release. The hatch is the visible layer cue that no canonical pain measurement exists for this country yet.`,
+      evidenceKind: hasCanonicalProfile ? "Canonical proxy measurements plus boundary layer" : "Boundary coverage only",
+      uncertainty: hasCanonicalProfile ? "Low confidence release rows" : "Very-low-confidence coverage; not measured",
+      vintage: "2026-05-31.atlas.2",
+      sourceCount: hasCanonicalProfile ? "4 source families" : "2 source families",
+      sourceList: hasCanonicalProfile
+        ? "PainMap release rows, Natural Earth, World Bank indicators, and OWID/Fishcount-style animal rows."
+        : "Natural Earth boundary asset and PainMap release coverage index.",
     });
     factLocation.textContent = `${name} · ${iso}`;
     factCountrySource.textContent = "Natural Earth Admin 0, 1:50m release asset";
@@ -5032,6 +5083,50 @@ function renderDetails() {
     lastUpdate: "Live public-source overlay",
     placeId: currentComparePlaceId(state.selectedCountry, state.selectedProvince),
     compareLabel: `Compare ${provinceNameLabel || name}`,
+  });
+  const liveRailIsDeath = state.globeMode === "death";
+  const liveRailHasGsap = Boolean(provinceNameLabel && provinceIssueData?.context?.povertyRecord);
+  updateAtlasLayerRail({
+    explanation: provinceNameLabel
+      ? liveRailIsDeath
+        ? `${provinceNameLabel} is an ADM1 live overlay. The rail separates the province geometry and WorldPop allocation from the national death model.`
+        : `${provinceNameLabel} is an ADM1 live overlay. The rail separates province geometry, population context, poverty context where available, and distributed animal proxies from frozen release rows.`
+      : liveRailIsDeath
+        ? `${name} is using a live country death layer while the map still shows release-scoped coverage status and boundary uncertainty.`
+        : `${name} is using a live country suffering layer while the map still shows release-scoped coverage status and boundary uncertainty.`,
+    evidenceKind: provinceNameLabel
+      ? liveRailIsDeath
+        ? "ADM1 modeled death overlay"
+        : "ADM1 modeled and proxy overlay"
+      : liveRailIsDeath
+        ? "Country death proxy overlay"
+        : "Country modeled and proxy overlay",
+    uncertainty: hasLiveSummaryError ? "Unavailable" : isLoadingLiveSummary ? "Pending" : provinceNameLabel ? "Modeled ADM1 proxy" : "Modeled and proxy",
+    vintage: provinceNameLabel
+      ? liveRailIsDeath
+        ? `WorldPop ${WORLDPOP_YEAR}; World Bank ${ISSUE_DATA_DATE_RANGE}`
+        : `WorldPop ${WORLDPOP_YEAR}; World Bank ${ISSUE_DATA_DATE_RANGE}; live OWID rows`
+      : liveRailIsDeath
+        ? `World Bank ${ISSUE_DATA_DATE_RANGE}`
+        : `World Bank ${ISSUE_DATA_DATE_RANGE}; live OWID rows where available`,
+    sourceCount: provinceNameLabel
+      ? liveRailIsDeath
+        ? "3 source families"
+        : liveRailHasGsap
+          ? "7 source families"
+          : "6 source families"
+      : liveRailIsDeath
+        ? "2 source families"
+        : "5 source families",
+    sourceList: provinceNameLabel
+      ? liveRailIsDeath
+        ? "geoBoundaries, WorldPop, and World Bank WDI."
+        : liveRailHasGsap
+          ? "geoBoundaries, WorldPop, World Bank GSAP, World Bank WDI, OWID, Rethink Priorities, and Wild Animal Initiative."
+          : "geoBoundaries, WorldPop, World Bank WDI, OWID, Rethink Priorities, and Wild Animal Initiative."
+      : liveRailIsDeath
+        ? "Natural Earth and World Bank WDI mortality indicators."
+        : "Natural Earth, World Bank WDI, OWID, Rethink Priorities, and Wild Animal Initiative.",
   });
   setMapProvenance({
     place: provinceNameLabel ? `${provinceNameLabel}, ${name}` : name,
