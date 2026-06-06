@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="PainMap | Mixed-evidence atlas of pain sources by place">
     <meta name="twitter:description" content="PainMap is a place-first atlas for direct evidence, modeled estimates, proxy aggregates, and priority overlays about pain sources.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="styles.css" integrity="sha384-FFPJ4GWvytQHFtObEUIn5Lc3/SaFV7LJ0bpiD6G3k6HGIuiwHEDy58qOlqjx4OmC" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css" integrity="sha384-247i4QQKs5xcO5DRVdCYNDn8SIksDDkmOncbjyJb10IWhCroxw7XbgJgLD7gwiez" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -78,8 +78,8 @@
           <h1 id="home-title">Mixed-evidence atlas of pain sources by place</h1>
           <div class="hero-actions" aria-label="Primary routes">
             <a class="solid-button" href="#explore-country">Start with a place</a>
-            <a class="ghost-link" href="/atlas/">Browse atlas</a>
-            <a class="ghost-link" href="/methods/">Read methods</a>
+            <a class="ghost-link" href="/compare/">Compare places</a>
+            <a class="ghost-link" href="/data/">Audit data</a>
           </div>
         </div>
         <p class="topbar-note" id="topbar-note">
@@ -286,7 +286,9 @@
                     hidden
                   ></ul>
                 </div>
-                <button class="ghost-button" id="country-search-button" type="submit">Find</button>
+                <button class="ghost-button" id="country-search-button" type="submit">
+                  <span class="button-label">Find</span>
+                </button>
               </form>
               <p class="control-help" id="country-search-help">
                 The search field is the keyboard and screen-reader equivalent for the map.
@@ -378,7 +380,25 @@
               <strong id="summary-last-update">2026-05-31</strong>
             </div>
             <a class="solid-button compare-place-link" id="compare-place-link" href="/compare/?places=WLD" data-place-id="WLD">Compare whole world</a>
+            <button class="ghost-button compare-save-button" id="compare-save-button" type="button" data-place-id="WLD">
+              <span class="button-label">Save for compare</span>
+            </button>
           </div>
+
+          <section class="compare-drawer" id="compare-drawer" aria-labelledby="compare-drawer-title">
+            <div class="compare-drawer-head">
+              <div>
+                <p class="label">Saved compare</p>
+                <h3 id="compare-drawer-title">Compare queue</h3>
+              </div>
+              <a class="ghost-link" id="compare-saved-link" href="/compare/?places=WLD">Open saved compare</a>
+            </div>
+            <p class="compare-drawer-status" id="compare-drawer-status" role="status" aria-live="polite">
+              Save up to four places, then open a shareable compare URL.
+            </p>
+            <div class="compare-drawer-list" id="compare-drawer-list" aria-label="Saved compare places"></div>
+            <button class="ghost-button compare-clear-button" id="compare-clear-button" type="button">Clear saved places</button>
+          </section>
 
           <section class="atlas-layer-rail" id="atlas-layer-rail" aria-live="polite" aria-labelledby="atlas-layer-rail-title">
             <div class="atlas-layer-rail-head">
@@ -779,6 +799,6 @@
     </div>
         <script src="vendor/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
     <script src="vendor/topojson-client.v3.min.js" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
-    <script type="module" src="script.js" integrity="sha384-z22DIRnmMUCocpTvZvdKOEYi3lctipT3OmnN4rxrmcXk9OLctZRq5YKPiLGRSP25" crossorigin="anonymous"></script>
+    <script type="module" src="script.js" integrity="sha384-TrQZ8NNY9ZD7O932ce5XNBJ8/ZMDcq1ZD6CDvxvo7hMs8599ZFFDKBu4mVZZTGSb" crossorigin="anonymous"></script>
   </body>
 </html>

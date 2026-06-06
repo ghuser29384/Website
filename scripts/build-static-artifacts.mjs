@@ -2297,6 +2297,7 @@ function buildUiSmoke() {
           "What drives pain here?",
           "Map provenance",
           "Visible atlas layer",
+          "Saved compare",
         ],
         requiredComponents: [
           "hero-section",
@@ -2308,6 +2309,8 @@ function buildUiSmoke() {
           "detail-panel",
           "atlas-layer-rail",
           "place-summary-card",
+          "compare-drawer",
+          "compare-drawer-list",
           "table-equivalent",
         ],
         requiredIds: [
@@ -2324,8 +2327,20 @@ function buildUiSmoke() {
           "atlas-layer-source-count",
           "place-summary-card",
           "compare-place-link",
+          "compare-save-button",
+          "compare-drawer",
+          "compare-drawer-status",
+          "compare-drawer-list",
+          "compare-saved-link",
         ],
-        requiredLiveIds: ["country-search-status", "map-status", "release-mode-status", "map-provenance-tray", "atlas-layer-rail"],
+        requiredLiveIds: [
+          "country-search-status",
+          "map-status",
+          "release-mode-status",
+          "map-provenance-tray",
+          "atlas-layer-rail",
+          "compare-drawer-status",
+        ],
         requiredRoles: [
           { id: "country-search", role: "combobox" },
           { id: "country-options", role: "listbox" },

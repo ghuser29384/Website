@@ -27,7 +27,7 @@ function fail(file, message) {
 }
 
 function attrValue(tag, attr) {
-  const match = tag.match(new RegExp(`\\b${escapeRegExp(attr)}="([^"]*)"`, "i"));
+  const match = tag.match(new RegExp(`(?:^|\\s)${escapeRegExp(attr)}="([^"]*)"`, "i"));
   return match?.[1] ?? "";
 }
 
@@ -42,7 +42,7 @@ function stripTags(value) {
 }
 
 function idsIn(html) {
-  return [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
+  return [...html.matchAll(/\sid="([^"]+)"/g)].map((match) => match[1]);
 }
 
 function idSet(html) {
@@ -50,7 +50,7 @@ function idSet(html) {
 }
 
 function startTagForId(html, id) {
-  return html.match(new RegExp(`<([a-zA-Z0-9-]+)\\b[^>]*\\bid="${escapeRegExp(id)}"[^>]*>`, "i"))?.[0] ?? "";
+  return html.match(new RegExp(`<([a-zA-Z0-9-]+)\\b[^>]*\\sid="${escapeRegExp(id)}"[^>]*>`, "i"))?.[0] ?? "";
 }
 
 function hasClass(html, className) {

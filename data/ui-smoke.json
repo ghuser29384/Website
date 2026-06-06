@@ -31,14 +31,20 @@
           "atlas-layer-vintage",
           "atlas-layer-source-count",
           "place-summary-card",
-          "compare-place-link"
+          "compare-place-link",
+          "compare-save-button",
+          "compare-drawer",
+          "compare-drawer-status",
+          "compare-drawer-list",
+          "compare-saved-link"
         ],
         "required_live_region_ids": [
           "country-search-status",
           "map-status",
           "release-mode-status",
           "map-provenance-tray",
-          "atlas-layer-rail"
+          "atlas-layer-rail",
+          "compare-drawer-status"
         ],
         "required_roles": [
           {
@@ -80,6 +86,8 @@
           "detail-panel",
           "atlas-layer-rail",
           "place-summary-card",
+          "compare-drawer",
+          "compare-drawer-list",
           "table-equivalent"
         ],
         "required_text": [
@@ -88,7 +96,8 @@
           "Release coverage",
           "What drives pain here?",
           "Map provenance",
-          "Visible atlas layer"
+          "Visible atlas layer",
+          "Saved compare"
         ]
       }
     },

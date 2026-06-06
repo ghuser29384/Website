@@ -1485,6 +1485,11 @@ const summaryEvidenceMix = document.getElementById("summary-evidence-mix");
 const summaryUncertainty = document.getElementById("summary-uncertainty");
 const summaryLastUpdate = document.getElementById("summary-last-update");
 const comparePlaceLink = document.getElementById("compare-place-link");
+const compareSaveButton = document.getElementById("compare-save-button");
+const compareDrawerList = document.getElementById("compare-drawer-list");
+const compareDrawerStatus = document.getElementById("compare-drawer-status");
+const compareSavedLink = document.getElementById("compare-saved-link");
+const compareClearButton = document.getElementById("compare-clear-button");
 const atlasLayerExplanation = document.getElementById("atlas-layer-explanation");
 const atlasLayerEvidenceKind = document.getElementById("atlas-layer-evidence-kind");
 const atlasLayerUncertainty = document.getElementById("atlas-layer-uncertainty");
@@ -1560,9 +1565,13 @@ addHatchPattern("selected-boundary-hatch", "#285c66", "#f6e4df", 1.6);
 addHatchPattern("province-proxy-hatch", "rgba(40, 92, 102, 0.1)", "rgba(40, 92, 102, 0.55)", 1.2);
 addHatchPattern("selected-province-hatch", "rgba(40, 92, 102, 0.28)", "#285c66", 1.4);
 
+const COMPARE_QUEUE_STORAGE_KEY = "painmap.compareQueue.v1";
+const MAX_COMPARE_QUEUE_ITEMS = 4;
+
 const state = {
   countries: [],
   countryIndex: [],
+  compareQueue: readCompareQueue(),
   releaseMode: "snapshot",
   globeMode: "suffering",
   rankingMode: "improvement",
@@ -1974,6 +1983,16 @@ function compareUrlForPlace(placeId) {
   return `/compare/?places=${encodeURIComponent(placeId || "WLD")}`;
 }
 
+function compareUrlForPlaces(placeIds) {
+  const ids = placeIds.filter(Boolean).slice(0, MAX_COMPARE_QUEUE_ITEMS);
+
+  if (!ids.length) {
+    return compareUrlForPlace("WLD");
+  }
+
+  return `/compare/?places=${ids.map((placeId) => encodeURIComponent(placeId)).join(",")}`;
+}
+
 function currentComparePlaceId(countryFeature = state.selectedCountry, provinceFeature = state.selectedProvince) {
   const iso = countryIso(countryFeature?.properties) || "WLD";
 
@@ -1982,6 +2001,151 @@ function currentComparePlaceId(countryFeature = state.selectedCountry, provinceF
   }
 
   return iso;
+}
+
+function normalizeCompareQueueItem(item) {
+  const placeId = String(item?.placeId || "").trim().slice(0, 96);
+  const label = String(item?.label || placeId || "Whole Earth").trim().slice(0, 80);
+
+  if (!placeId) {
+    return null;
+  }
+
+  return { placeId, label };
+}
+
+function readCompareQueue() {
+  try {
+    const parsed = JSON.parse(window.localStorage?.getItem(COMPARE_QUEUE_STORAGE_KEY) || "[]");
+
+    if (!Array.isArray(parsed)) {
+      return [];
+    }
+
+    const seen = new Set();
+    return parsed
+      .map(normalizeCompareQueueItem)
+      .filter(Boolean)
+      .filter((item) => {
+        if (seen.has(item.placeId)) {
+          return false;
+        }
+
+        seen.add(item.placeId);
+        return true;
+      })
+      .slice(0, MAX_COMPARE_QUEUE_ITEMS);
+  } catch {
+    return [];
+  }
+}
+
+function writeCompareQueue() {
+  try {
+    window.localStorage?.setItem(COMPARE_QUEUE_STORAGE_KEY, JSON.stringify(state.compareQueue));
+  } catch {
+    // Local persistence is best effort; the drawer still works for the current page session.
+  }
+}
+
+function compareLabelForPlace(placeId, compareLabel) {
+  if (placeId === "WLD") {
+    return "Whole Earth";
+  }
+
+  const currentId = currentComparePlaceId();
+
+  if (placeId === currentId && state.selectedProvince && state.selectedCountry) {
+    return `${provinceName(state.selectedProvince)}, ${countryName(state.selectedCountry.properties)}`;
+  }
+
+  if (placeId === currentId && state.selectedCountry) {
+    return countryName(state.selectedCountry.properties);
+  }
+
+  const fromButton = String(compareLabel || "").replace(/^Compare\s+/i, "").trim();
+
+  if (fromButton) {
+    return fromButton === "whole world" ? "Whole Earth" : fromButton;
+  }
+
+  return placeId;
+}
+
+function syncCompareSaveControl(placeId, compareLabel) {
+  if (!compareSaveButton) {
+    return;
+  }
+
+  const label = compareLabelForPlace(placeId, compareLabel);
+  compareSaveButton.dataset.placeId = placeId;
+  compareSaveButton.dataset.placeLabel = label;
+  compareSaveButton.setAttribute("aria-label", `Save ${label} to the compare queue`);
+}
+
+function renderCompareDrawer(statusMessage = "") {
+  if (!compareDrawerList || !compareSavedLink || !compareDrawerStatus) {
+    return;
+  }
+
+  const queue = state.compareQueue;
+  compareDrawerList.textContent = "";
+
+  if (!queue.length) {
+    compareDrawerStatus.textContent =
+      statusMessage || "No saved places yet. Save the current place to build a shareable compare URL.";
+    compareSavedLink.href = comparePlaceLink?.href || compareUrlForPlace("WLD");
+    compareSavedLink.textContent = "Open current compare";
+    compareClearButton?.setAttribute("disabled", "");
+    return;
+  }
+
+  compareSavedLink.href = compareUrlForPlaces(queue.map((item) => item.placeId));
+  compareSavedLink.textContent = `Open saved compare (${queue.length})`;
+  compareDrawerStatus.textContent =
+    statusMessage || `${queue.length} saved ${queue.length === 1 ? "place" : "places"}. Share URL keeps evidence, uncertainty, and release context attached.`;
+  compareClearButton?.removeAttribute("disabled");
+
+  for (const item of queue) {
+    const row = document.createElement("div");
+    row.className = "compare-drawer-item";
+
+    const label = document.createElement("strong");
+    label.textContent = item.label;
+
+    const removeButton = document.createElement("button");
+    removeButton.className = "ghost-button compare-remove-button";
+    removeButton.type = "button";
+    removeButton.dataset.removePlaceId = item.placeId;
+    removeButton.textContent = "Remove";
+    removeButton.setAttribute("aria-label", `Remove ${item.label} from the compare queue`);
+
+    row.append(label, removeButton);
+    compareDrawerList.appendChild(row);
+  }
+}
+
+function saveCurrentComparePlace() {
+  const placeId = compareSaveButton?.dataset.placeId || currentComparePlaceId();
+  const label = compareSaveButton?.dataset.placeLabel || compareLabelForPlace(placeId, "");
+  const nextItem = { placeId, label };
+  const withoutDuplicate = state.compareQueue.filter((item) => item.placeId !== placeId);
+  state.compareQueue = [...withoutDuplicate, nextItem].slice(-MAX_COMPARE_QUEUE_ITEMS);
+  writeCompareQueue();
+  renderCompareDrawer(`${label} saved. The compare URL now includes ${state.compareQueue.length} ${state.compareQueue.length === 1 ? "place" : "places"}.`);
+}
+
+function removeComparePlace(placeId) {
+  const removed = state.compareQueue.find((item) => item.placeId === placeId);
+  state.compareQueue = state.compareQueue.filter((item) => item.placeId !== placeId);
+  writeCompareQueue();
+  renderCompareDrawer(removed ? `${removed.label} removed from the compare queue.` : "Compare queue updated.");
+}
+
+function clearCompareQueue() {
+  state.compareQueue = [];
+  writeCompareQueue();
+  renderCompareDrawer("Saved compare places cleared.");
 }
 
 function updatePlaceSummary({
@@ -2005,6 +2169,8 @@ function updatePlaceSummary({
   comparePlaceLink.dataset.placeId = placeId;
   comparePlaceLink.textContent = compareLabel;
   comparePlaceLink.setAttribute("aria-label", `${compareLabel} on the compare page`);
+  syncCompareSaveControl(placeId, compareLabel);
+  renderCompareDrawer();
 }
 
 function findProvinceGsapRecord(iso, provinceFeature) {
@@ -5707,6 +5873,17 @@ function setupInteraction() {
     if (!countrySearchForm.contains(event.target)) {
       closeCountrySearchOptions();
     }
+  });
+  compareSaveButton?.addEventListener("click", saveCurrentComparePlace);
+  compareClearButton?.addEventListener("click", clearCompareQueue);
+  compareDrawerList?.addEventListener("click", (event) => {
+    const removeButton = event.target.closest?.("[data-remove-place-id]");
+
+    if (!removeButton) {
+      return;
+    }
+
+    removeComparePlace(removeButton.dataset.removePlaceId);
   });
   releaseModeTabs.forEach((tab, index) => {
     tab.addEventListener("click", () => setReleaseMode(tab.dataset.releaseMode));

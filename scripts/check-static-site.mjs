@@ -357,6 +357,14 @@ expectPattern("script.js", script, /countrySearchInput\.setAttribute\("aria-acti
 expectPattern("script.js", script, /scrollIntoView\(\{ block: "nearest" \}\)/, "combobox active option scroll management");
 expectPattern("script.js", script, /setSearchStatus\(`\$\{currentCountrySearchOptions\.length\} results available\.`\)/, "combobox result count status announcement");
 expectPattern("index.html", home, /id="compare-place-link" href="\/compare\/\?places=WLD"/, "homepage compare place CTA");
+expectPattern("index.html", home, /id="compare-save-button"[\s\S]*Save for compare/, "homepage save-for-compare button");
+expectPattern("index.html", home, /id="compare-drawer"[\s\S]*id="compare-drawer-status"[\s\S]*aria-live="polite"[\s\S]*id="compare-drawer-list"/, "homepage saved compare drawer");
+expectPattern("script.js", script, /COMPARE_QUEUE_STORAGE_KEY = "painmap\.compareQueue\.v1"/, "compare queue local storage key");
+expectPattern("script.js", script, /MAX_COMPARE_QUEUE_ITEMS = 4/, "compare queue size limit");
+expectPattern("script.js", script, /function saveCurrentComparePlace/, "compare queue save helper");
+expectPattern("script.js", script, /function renderCompareDrawer/, "compare drawer render helper");
+expectPattern("script.js", script, /compareUrlForPlaces\(queue\.map\(\(item\) => item\.placeId\)\)/, "shareable saved compare URL");
+expectPattern("index.html", home, /class="hero-actions"[\s\S]*href="\/compare\/"[\s\S]*Compare places[\s\S]*href="\/data\/"[\s\S]*Audit data/, "homepage funnel compare and data CTAs");
 expectPattern("index.html", home, /id="map-provenance-tray"/, "homepage map provenance tray");
 expectPattern("index.html", home, /id="atlas-layer-rail"[\s\S]*aria-live="polite"/, "persistent atlas layer rail live region");
 expectPattern("index.html", home, /id="atlas-layer-source-count"[\s\S]*source families/i, "atlas layer rail source count");
@@ -367,6 +375,20 @@ expectPattern("script.js", script, /boundary-index-hatch/, "map boundary-only ha
 expectPattern("script.js", script, /countryMapCoverage/, "map coverage class helper");
 expectPattern("styles.css", read("styles.css"), /\.country-path\.is-boundary-only/, "boundary-only map uncertainty styling");
 expectPattern("styles.css", read("styles.css"), /\.province-path[\s\S]*stroke-dasharray/, "province proxy dash styling");
+expectPattern("styles.css", read("styles.css"), /\.hero-section\s*\{[\s\S]*?min-height:\s*min\(44vh,\s*420px\)/, "compact homepage hero before atlas funnel");
+expectPattern("styles.css", read("styles.css"), /\.hero-section \.topbar-note\s*\{[\s\S]*?display:\s*none;/, "mobile hero defers explanatory copy below first viewport");
+expectPattern("styles.css", read("styles.css"), /\.hero-section \.evidence-kind-strip\s*\{[\s\S]*?display:\s*none;/, "mobile hero defers glossary badges below first viewport");
+expectPattern("styles.css", read("styles.css"), /\.search-form\s*\{[\s\S]*?display:\s*grid;[\s\S]*?grid-template-columns:\s*1fr;/, "mobile search controls use non-overflowing grid");
+expectPattern("styles.css", read("styles.css"), /\.zoom-controls\s*\{[\s\S]*?display:\s*grid;[\s\S]*?grid-template-columns:\s*repeat\(2,\s*minmax\(0,\s*1fr\)\);/, "mobile zoom controls use fixed grid tracks");
+expectPattern("styles.css", read("styles.css"), /\.country-options\[hidden\],[\s\S]*?\.country-options:empty\s*\{[\s\S]*?display:\s*none;/, "empty search options cannot cover mobile controls");
+expectPattern("index.html", home, /id="country-search-button"[\s\S]*?<span class="button-label">Find<\/span>/, "mobile search submit keeps visible label");
+expectPattern("styles.css", read("styles.css"), /\.button-label\s*\{[\s\S]*?z-index:\s*1;/, "button labels paint above control backgrounds");
+expectPattern("styles.css", read("styles.css"), /#country-search-button\s*\{[\s\S]*?max-width:\s*calc\(100vw - 3rem\);/, "mobile search submit constrained to viewport");
+expectPattern("styles.css", read("styles.css"), /\.layout\s*\{[\s\S]*?order:\s*1;/, "atlas search layout ordered directly after hero");
+expectPattern("styles.css", read("styles.css"), /\.audience-panel\s*\{[\s\S]*?order:\s*2;/, "audience panel ordered after atlas funnel");
+expectPattern("styles.css", read("styles.css"), /\.release-mode-panel\s*\{[\s\S]*?order:\s*2;/, "release mode panel ordered after atlas funnel");
+expectPattern("styles.css", read("styles.css"), /\.coverage-panel\s*\{[\s\S]*?order:\s*2;/, "coverage panel ordered after atlas funnel");
+expectPattern("styles.css", read("styles.css"), /\.governance-panel\s*\{[\s\S]*?order:\s*6;/, "governance panel ordered after product surfaces");
 expectPattern("compare/index.html", read("compare/index.html"), /id="compare-requested-list"/, "compare URL requested-place list");
 expectPattern(
   "compare/index.html",
