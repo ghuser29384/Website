@@ -707,12 +707,97 @@
         }
       }
     },
+    "/data/claims.json": {
+      "get": {
+        "summary": "Get claim registry and correction workflow",
+        "responses": {
+          "200": {
+            "description": "Claims registry JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Claims"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/data/endpoint-smoke.json": {
       "get": {
         "summary": "Get endpoint smoke-test manifest",
         "responses": {
           "200": {
             "description": "Endpoint smoke manifest JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/source-snapshots.json": {
+      "get": {
+        "summary": "Get source snapshot registry",
+        "responses": {
+          "200": {
+            "description": "Source snapshot registry JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/country-gap-ledger.json": {
+      "get": {
+        "summary": "Get country coverage ledger",
+        "responses": {
+          "200": {
+            "description": "Country coverage ledger JSON",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/country-gap-ledger.csv": {
+      "get": {
+        "summary": "Get country coverage ledger",
+        "responses": {
+          "200": {
+            "description": "Country coverage ledger CSV",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/country-profile-input-spec.json": {
+      "get": {
+        "summary": "Get minimum coverage input spec for country profiles",
+        "responses": {
+          "200": {
+            "description": "Country profile input spec JSON",
             "content": {
               "application/json": {
                 "schema": {
@@ -815,6 +900,40 @@
         "responses": {
           "200": {
             "description": "OGC place features JSON Schema",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/schemas/source-snapshot.schema.json": {
+      "get": {
+        "summary": "Get JSON Schema for source snapshots",
+        "responses": {
+          "200": {
+            "description": "Source snapshot registry schema",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/schemas/country-gap-ledger.schema.json": {
+      "get": {
+        "summary": "Get JSON Schema for country coverage ledger",
+        "responses": {
+          "200": {
+            "description": "Country coverage ledger schema",
             "content": {
               "application/json": {
                 "schema": {
@@ -1098,6 +1217,80 @@
             "items": {
               "type": "object"
             }
+          }
+        }
+      },
+      "Claims": {
+        "type": "object",
+        "required": [
+          "release_id",
+          "generated_at",
+          "count",
+          "claims"
+        ],
+        "properties": {
+          "release_id": {
+            "type": "string"
+          },
+          "generated_at": {
+            "type": "string"
+          },
+          "count": {
+            "type": "number"
+          },
+          "claims": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Claim"
+            }
+          }
+        }
+      },
+      "Claim": {
+        "type": "object",
+        "required": [
+          "claim_id",
+          "release_id",
+          "subject_type",
+          "subject_id",
+          "subject_label",
+          "route",
+          "coverage_status",
+          "context",
+          "correction_url"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "release_id": {
+            "type": "string"
+          },
+          "subject_type": {
+            "enum": [
+              "route",
+              "place",
+              "adm1-place"
+            ]
+          },
+          "subject_id": {
+            "type": "string"
+          },
+          "subject_label": {
+            "type": "string"
+          },
+          "route": {
+            "type": "string"
+          },
+          "coverage_status": {
+            "type": "string"
+          },
+          "context": {
+            "type": "string"
+          },
+          "correction_url": {
+            "type": "string",
+            "format": "uri"
           }
         }
       }

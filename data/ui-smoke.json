@@ -163,26 +163,60 @@
       "accessibility": {
         "required_ids": [
           "compare-url-status",
-          "compare-requested-list"
+          "compare-requested-list",
+          "compare-release-mode-switch",
+          "release-mode-snapshot",
+          "release-mode-live",
+          "release-mode-snapshot-panel",
+          "release-mode-live-panel",
+          "release-mode-status",
+          "compare-coverage-readiness"
         ],
         "required_live_region_ids": [
-          "compare-url-status"
+          "compare-url-status",
+          "compare-coverage-readiness",
+          "release-mode-status"
         ],
-        "required_roles": [],
-        "control_relationships": []
+        "required_roles": [
+          {
+            "id": "release-mode-snapshot",
+            "role": "tab"
+          },
+          {
+            "id": "release-mode-live",
+            "role": "tab"
+          },
+          {
+            "id": "release-mode-status",
+            "role": "status"
+          }
+        ],
+        "control_relationships": [
+          {
+            "controller_id": "release-mode-snapshot",
+            "controls_id": "release-mode-snapshot-panel"
+          },
+          {
+            "controller_id": "release-mode-live",
+            "controls_id": "release-mode-live-panel"
+          }
+        ]
       },
       "visual_contract": {
         "required_components": [
           "route-panel",
           "route-hero",
           "compare-url-panel",
+          "release-mode-panel",
           "compare-grid",
-          "data-table-wrap"
+          "data-table-wrap",
+          "release-mode-switch"
         ],
         "required_text": [
           "Compare places without flattening uncertainty.",
           "Shareable compare URL",
-          "Canonical release rows"
+          "Canonical release rows",
+          "Snapshot first, live overlays labeled."
         ]
       }
     },

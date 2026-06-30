@@ -7,9 +7,50 @@ if (!d3 || !topojsonFeature) {
 
 const COUNTRY_DATA_URL = "data/natural-earth-countries.geojson";
 const COUNTRY_DATA_FALLBACK_URL = "data/countries-lite.geojson";
+const COVERAGE_DATA_URL = "v1/coverage.json";
+const RELEASE_MODES_DATA_URL = "/data/release-modes.json";
+const PLACE_INDEX_URL = "v1/places/index.json";
 const GSAP_ADM1_DATA_URL = "data/gsap-adm1-2023.json";
 const RELEASE_ID = "2026-05-31.atlas.2";
+const ISSUE_TRACKER_TEMPLATE_URL = "https://github.com/ghuser29384/Website/issues/new";
 const TELEMETRY_ENDPOINT = document.documentElement.dataset.telemetryEndpoint || "";
+const reducedMotionMediaQuery = window.matchMedia
+  ? window.matchMedia("(prefers-reduced-motion: reduce)")
+  : null;
+let reducedMotionPreference = Boolean(reducedMotionMediaQuery?.matches);
+
+if (reducedMotionMediaQuery) {
+  document.documentElement.dataset.reducedMotion = reducedMotionPreference ? "reduce" : "no-preference";
+}
+
+const prefersReducedMotion = () => reducedMotionPreference;
+
+const handleReducedMotionPreferenceChange = (event) => {
+  reducedMotionPreference = Boolean(event?.matches);
+  document.documentElement.dataset.reducedMotion = reducedMotionPreference ? "reduce" : "no-preference";
+
+  if (!reducedMotionPreference) {
+    return;
+  }
+
+  if (typeof svg !== "undefined" && svg?.interrupt) {
+    svg.interrupt();
+  }
+
+  if (typeof projection === "object" && projection && typeof projection.rotate === "function" && typeof renderGlobe === "function") {
+    const rotate = projection.rotate();
+    projection.rotate([rotate[0], rotate[1], 0]);
+    renderGlobe();
+  }
+};
+
+if (reducedMotionMediaQuery) {
+  if (typeof reducedMotionMediaQuery.addEventListener === "function") {
+    reducedMotionMediaQuery.addEventListener("change", handleReducedMotionPreferenceChange);
+  } else {
+    reducedMotionMediaQuery.addListener(handleReducedMotionPreferenceChange);
+  }
+}
 const RELEASE_MODES = {
   snapshot: {
     label: "Snapshot",
@@ -26,6 +67,77 @@ const RELEASE_MODES = {
       "Live overlay mode keeps the atlas place-first while adding current public-source context from World Bank, OWID, geoBoundaries, and WorldPop where available. These overlays are labeled separately from release rows.",
   },
 };
+
+function normalizeReleaseMode(value) {
+  return value === "live" ? "live" : "snapshot";
+}
+
+function parseReleaseModesPayload(rawPayload) {
+  if (!rawPayload || typeof rawPayload !== "object") {
+    return null;
+  }
+
+  const modes = {};
+  const list = Array.isArray(rawPayload.modes) ? rawPayload.modes : [];
+
+  for (const mode of list) {
+    if (!mode || typeof mode !== "object") {
+      continue;
+    }
+
+    const modeId = normalizeReleaseMode(mode.id);
+    if (!modeId) {
+      continue;
+    }
+
+    modes[modeId] = {
+      label: String(mode.label || RELEASE_MODES[modeId].label),
+      status: String(mode.status || mode.replay_rule || ""),
+      topbarNote:
+        typeof mode.network_behavior === "string" && mode.network_behavior.trim()
+          ? String(mode.network_behavior)
+          : "Live overlay mode keeps current public-source context separate from frozen release rows.",
+      badge: mode.badge,
+      cache_rule: mode.cache_rule,
+      replay_rule: mode.replay_rule,
+      network_behavior: mode.network_behavior,
+      included_surfaces: mode.included_surfaces || [],
+      upstream_sources: mode.upstream_sources || [],
+    };
+  }
+
+  if (!modes.snapshot) {
+    modes.snapshot = RELEASE_MODES.snapshot;
+  }
+
+  if (!modes.live) {
+    modes.live = RELEASE_MODES.live;
+  }
+
+  return {
+    release_id: String(rawPayload.release_id || RELEASE_ID),
+    generated_at: String(rawPayload.generated_at || ""),
+    default_mode: normalizeReleaseMode(rawPayload.default_mode),
+    local_event_name: rawPayload.local_event_name || "release_mode_selected",
+    modes,
+    ui_contract: rawPayload.ui_contract || null,
+  };
+}
+
+function getReleaseModeConfig(mode) {
+  const key = normalizeReleaseMode(mode);
+  return state.releaseModeContract?.modes?.[key] || RELEASE_MODES[key] || RELEASE_MODES.snapshot;
+}
+
+function isModeContractSupported(mode) {
+  const key = normalizeReleaseMode(mode);
+  return Boolean(state.releaseModeContract?.modes?.[key] || RELEASE_MODES[key]);
+}
+
+function releaseModeTelemetryEventName() {
+  return (state.releaseModeContract?.local_event_name || "release_mode_selected").trim();
+}
+
 const GLOBE_ROTATION = [-18, -14, 0];
 const width = 900;
 const height = 900;
@@ -48,6 +160,7 @@ const GLOBAL_LAND_AREA_SQKM = 1.489e8;
 const GLOBAL_WILD_BIRD_ESTIMATE = 5e10;
 const WILD_BIRDS_PER_SQKM = GLOBAL_WILD_BIRD_ESTIMATE / GLOBAL_LAND_AREA_SQKM;
 const WORLD_RANK_LIMIT = 10;
+const SERVICE_WORKER_SCRIPT = "/service-worker.js";
 const STATIC_WORLD_ANIMAL_ISSUES = [
   {
     id: "fallback-factory-farmed",
@@ -99,6 +212,113 @@ const STATIC_WORLD_SUFFERING_ISSUES = [
   ...STATIC_WORLD_ANIMAL_ISSUES,
 ];
 const CANONICAL_PROFILE_COUNTRIES = new Set(["BRA", "IND"]);
+const COVERAGE_STATUS = {
+  canonicalProfile: "canonical_country_profile",
+  canonicalMeasurement: "canonical_measurements",
+  boundaryOnly: "boundary_index_only",
+  adm1Overlay: "adm1_context_overlay",
+  noData: "no_data",
+};
+const COVERAGE_STATUS_TEXT = {
+  [COVERAGE_STATUS.canonicalProfile]: "canonical profile",
+  [COVERAGE_STATUS.boundaryOnly]: "boundary-only release index",
+  [COVERAGE_STATUS.adm1Overlay]: "ADM1 context overlay",
+  [COVERAGE_STATUS.noData]: "no release coverage",
+};
+const COVERAGE_STATUS_LABEL = {
+  [COVERAGE_STATUS.canonicalProfile]: "canonical country profile (release measurements available)",
+  [COVERAGE_STATUS.boundaryOnly]: "boundary-indexed country; no country measurement rows",
+  [COVERAGE_STATUS.adm1Overlay]: "ADM1 context overlay with release-backed boundary index",
+  [COVERAGE_STATUS.noData]: "release coverage unavailable",
+};
+const COVERAGE_STATUS_BADGE_LABEL = {
+  [COVERAGE_STATUS.canonicalProfile]: "canonical profile",
+  [COVERAGE_STATUS.boundaryOnly]: "boundary-only",
+  [COVERAGE_STATUS.adm1Overlay]: "ADM1 context",
+  [COVERAGE_STATUS.noData]: "no coverage",
+};
+const COVERAGE_STATUS_CLASS = {
+  [COVERAGE_STATUS.canonicalProfile]: "has-release-measurements is-low-confidence",
+  [COVERAGE_STATUS.boundaryOnly]: "is-boundary-only is-very-low-confidence",
+  [COVERAGE_STATUS.adm1Overlay]: "is-boundary-only is-very-low-confidence",
+  [COVERAGE_STATUS.noData]: "is-boundary-only is-very-low-confidence",
+};
+const COVERAGE_MISSING_HINT = {
+  [COVERAGE_STATUS.canonicalProfile]: "Missing inputs: none for current release coverage.",
+  [COVERAGE_STATUS.boundaryOnly]:
+    "Missing canonical country-level measurement rows for this country in this release.",
+  [COVERAGE_STATUS.adm1Overlay]:
+    "Missing canonical country-level measurements; ADM1 context is available only as an overlay.",
+  [COVERAGE_STATUS.noData]: "No indexed rows are available for this place in this release.",
+};
+const COVERAGE_PROMOTION_HINT = {
+  [COVERAGE_STATUS.canonicalProfile]: "Already publishable as a canonical country profile in this snapshot.",
+  [COVERAGE_STATUS.boundaryOnly]:
+    "Add country measurement rows with release-reviewed methods, sources, and provenance to promote.",
+  [COVERAGE_STATUS.adm1Overlay]:
+    "Add country-level measurement rows in a future release to promote beyond ADM1 context coverage.",
+  [COVERAGE_STATUS.noData]:
+    "Create a release-indexed country profile in a future release for this place.",
+};
+
+const RELEASE_COVERAGE_FALLBACK = {
+  release_id: RELEASE_ID,
+  generated_at: "2026-05-31",
+  last_release_date: "2026-05-31",
+  coverage_status: {
+    places_indexed: 2114,
+    country_boundaries_indexed: 239,
+    canonical_country_profiles: 2,
+    canonical_place_profiles: 3,
+    release_measurements: 8,
+    evidence_layer_coverage: {
+      direct: 0,
+      modeled: 0,
+      proxy: 6,
+      priority_overlay: 2,
+      boundary: 239,
+      adm1_context_overlay: 1874,
+      no_data: 0,
+    },
+    adm1_boundaries: {
+      status: "runtime_boundary_overlay_with_static_context_index",
+      release_scoped_count: 0,
+      static_context_count: 1874,
+      static_page_count: 120,
+      source:
+        "geoBoundaries ADM1 loaded on demand by selected country; World Bank GSAP ADM1 poverty context is vendored as a static overlay index",
+    },
+  },
+  known_sparse_areas: [
+    {
+      area: "Boundary-only countries",
+      status: "237 country places have Natural Earth boundaries but no canonical measurement rows in this release.",
+    },
+    {
+      area: "ADM1 measurements",
+      status:
+        "1874 ADM1 poverty-context rows are indexed as a labeled static overlay, and 120 high-priority ADM1 pages are pre-rendered. No ADM1 rows are canonical pain measurements in this release.",
+    },
+    {
+      area: "Direct evidence by place",
+      status:
+        "Direct welfare evidence is not yet represented as country or ADM1 measurement rows; current country rows are proxy and priority-overlay records.",
+    },
+    {
+      area: "Release/live split",
+      status:
+        "Immutable release artifacts are available; homepage live public-source overlays are labeled separately and remain outside the frozen release rows.",
+    },
+  ],
+  default_ranking_readiness: {
+    ready: false,
+    enabled: false,
+    reason:
+      "Coverage is sparse: only 2 canonical country profiles are present across 239 country boundary entries.",
+    release_note_url: "/updates/",
+    rule: "default_ranking_readiness = canonical_country_profiles >= 10 and canonical_ratio >= 0.35 and (direct + proxy + priority_overlay + release_measurements) >= 10",
+  },
+};
 const INSECT_WELFARE_PROXY = {
   sentience: { median: 0.226, low: 0.002, high: 0.573 },
   welfareRange: { median: 0.029, low: 0, high: 0.244 },
@@ -1466,6 +1686,22 @@ const countrySearchForm = document.getElementById("country-search-form");
 const countrySearchInput = document.getElementById("country-search");
 const countryOptions = document.getElementById("country-options");
 const countrySearchStatus = document.getElementById("country-search-status");
+const coveragePlacesIndexed = document.getElementById("coverage-places-indexed");
+const coveragePlacesIndexedDetails = document.getElementById("coverage-places-indexed-details");
+const coverageCountryProfiles = document.getElementById("coverage-country-profiles");
+const coverageCountryProfilesDetails = document.getElementById("coverage-country-profiles-details");
+const coverageDirectEvidence = document.getElementById("coverage-direct-place-evidence");
+const coverageDirectEvidenceDetails = document.getElementById("coverage-direct-place-evidence-details");
+const coverageLastRelease = document.getElementById("coverage-last-release");
+const coverageLastReleaseDetails = document.getElementById("coverage-last-release-details");
+const coverageDefaultRanking = document.getElementById("coverage-default-ranking");
+const coverageDefaultRankingDetails = document.getElementById("coverage-default-ranking-details");
+const coverageSparseAreasList = document.getElementById("coverage-sparse-areas");
+const coverageLegendCanonical = document.getElementById("coverage-legend-canonical");
+const coverageLegendBoundaryOnly = document.getElementById("coverage-legend-boundary-only");
+const coverageLegendNoData = document.getElementById("coverage-legend-no-data");
+const coverageLegendAdm1Rows = document.getElementById("coverage-legend-adm1-rows");
+const coverageLegendRankingMode = document.getElementById("coverage-legend-ranking-mode");
 const zoomOutButton = document.getElementById("zoom-out");
 const zoomInButton = document.getElementById("zoom-in");
 const zoomRange = document.getElementById("zoom-range");
@@ -1503,6 +1739,7 @@ const mapProvenanceUncertainty = document.getElementById("map-provenance-uncerta
 const factLocation = document.getElementById("fact-location");
 const factCountrySource = document.getElementById("fact-country-source");
 const factAdminSource = document.getElementById("fact-admin-source");
+const factCoverageStatus = document.getElementById("fact-coverage-status");
 const factIssueSource = document.getElementById("fact-issue-source");
 const factUnitCount = document.getElementById("fact-unit-count");
 const globeModeSelect = document.getElementById("globe-mode");
@@ -1571,6 +1808,7 @@ const MAX_COMPARE_QUEUE_ITEMS = 4;
 const state = {
   countries: [],
   countryIndex: [],
+  releaseModeContract: null,
   compareQueue: readCompareQueue(),
   releaseMode: "snapshot",
   globeMode: "suffering",
@@ -1583,6 +1821,15 @@ const state = {
   provinceIssueData: null,
   globalIssueData: { loading: true, error: null, sufferingIssues: [], deathIssues: [] },
   globalContext: { loading: true, error: null, context: null },
+  releaseCoverage: RELEASE_COVERAGE_FALLBACK,
+  releaseCoverageLoaded: false,
+  placeIndexCoverageStatusByIso: new Map(),
+  placeIndexCoverageStatusLoading: false,
+  placeIndexCoverageStatusLoaded: false,
+  countryCoverageStatusByIso: new Map(
+    Array.from(CANONICAL_PROFILE_COUNTRIES, (iso) => [iso, COVERAGE_STATUS.canonicalProfile])
+  ),
+  countryCoverageStatusLoading: new Set(),
 };
 let liveOverlayStarted = false;
 
@@ -1607,6 +1854,7 @@ let provinceIssueRequestId = 0;
 let justDragged = false;
 let currentCountrySearchOptions = [];
 let activeCountrySearchIndex = -1;
+let hasExplicitCountrySearchSelection = false;
 
 function createMapProjection(mode) {
   if (mode === "globe") {
@@ -1653,20 +1901,47 @@ function isSnapshotMode() {
 }
 
 function syncReleaseModeUi() {
-  const modeConfig = RELEASE_MODES[state.releaseMode] || RELEASE_MODES.snapshot;
+  const normalizedMode = normalizeReleaseMode(state.releaseMode);
+  const modeConfig = getReleaseModeConfig(normalizedMode);
 
   for (const tab of releaseModeTabs) {
-    const isSelected = tab.dataset.releaseMode === state.releaseMode;
+    const tabMode = normalizeReleaseMode(tab.dataset.releaseMode);
+    const isAvailable = isModeContractSupported(tabMode);
+
+    if (!isAvailable) {
+      tab.hidden = true;
+      continue;
+    }
+
+    tab.hidden = false;
+    const tabConfig = getReleaseModeConfig(tabMode);
+
+    if (tabConfig?.label) {
+      tab.textContent = String(tabConfig.label);
+    }
+
+    const isSelected = tabMode === normalizedMode;
     tab.setAttribute("aria-selected", String(isSelected));
     tab.tabIndex = isSelected ? 0 : -1;
   }
 
   for (const panel of releaseModePanels) {
-    panel.hidden = panel.dataset.releaseModePanel !== state.releaseMode;
+    panel.hidden = normalizeReleaseMode(panel.dataset.releaseModePanel) !== normalizedMode;
   }
 
   if (releaseModeStatus) {
-    releaseModeStatus.textContent = modeConfig.status;
+    releaseModeStatus.textContent = modeConfig.status || modeConfig.replay_rule || `${modeConfig.label || "snapshot"} mode is active.`;
+  }
+
+  const activePanel = releaseModePanels.find(
+    (panel) => normalizeReleaseMode(panel.dataset.releaseModePanel) === normalizedMode
+  );
+  if (activePanel) {
+    const badge = activePanel.querySelector(".evidence-badge");
+
+    if (badge && modeConfig.badge) {
+      badge.textContent = String(modeConfig.badge);
+    }
   }
 }
 
@@ -1683,9 +1958,15 @@ function startLiveOverlayData() {
 }
 
 function setReleaseMode(nextMode, shouldRecord = true) {
-  const mode = RELEASE_MODES[nextMode] ? nextMode : "snapshot";
+  const mode = normalizeReleaseMode(nextMode);
+  const modeConfig = getReleaseModeConfig(mode);
+
+  if (!isModeContractSupported(mode)) {
+    return;
+  }
 
   if (state.releaseMode === mode) {
+    setStatus(modeConfig.status || modeConfig.replay_rule || `${modeConfig.label || "snapshot"} mode is active.`);
     syncReleaseModeUi();
     return;
   }
@@ -1710,10 +1991,11 @@ function setReleaseMode(nextMode, shouldRecord = true) {
 
   syncReleaseModeUi();
   renderDetails();
-  setStatus(RELEASE_MODES[mode].status);
+  setStatus(modeConfig.status || modeConfig.replay_rule || `${modeConfig.label || "snapshot"} mode is active.`);
 
   if (shouldRecord) {
-    recordTelemetry("release_mode_selected", { mode });
+    const eventName = releaseModeTelemetryEventName();
+    recordTelemetry(eventName, { mode });
   }
 }
 
@@ -1845,21 +2127,433 @@ function countryIso(properties) {
   return properties.ADM0_A3 || properties.ISO_A3 || properties.ISO_A3_EH || null;
 }
 
-function countryHasCanonicalProfile(feature) {
-  return CANONICAL_PROFILE_COUNTRIES.has(countryIso(feature?.properties));
+function splitAliasValues(value) {
+  return String(value || "")
+    .split(/[,;/|]/g)
+    .map((entry) => entry.trim())
+    .filter(Boolean);
 }
 
-function countryMapCoverage(feature) {
-  if (countryHasCanonicalProfile(feature)) {
+function countrySearchAliases(feature, primaryName) {
+  const properties = feature?.properties || {};
+  const candidates = [
+    { type: "official", value: properties.FORMAL_EN },
+    { type: "official", value: properties.NAME_FORMAL },
+    { type: "local_common", value: properties.ADMIN },
+    { type: "local_common", value: properties.NAME_LONG },
+    { type: "local_common", value: properties.NAME_EN },
+    { type: "local_common", value: properties.NAME },
+    { type: "sovereign", value: properties.SOVEREIGNT },
+  ];
+  const seen = new Set([normalizeSearchText(primaryName)]);
+  const aliases = [];
+
+  for (const candidate of candidates) {
+    const items = splitAliasValues(candidate.value);
+    for (const item of items) {
+      const normalized = normalizeSearchText(item);
+      if (!normalized) {
+        continue;
+      }
+      if (seen.has(normalized)) {
+        continue;
+      }
+
+      seen.add(normalized);
+      aliases.push({
+        value: item,
+        normalized,
+        type: candidate.type,
+      });
+    }
+  }
+
+  return aliases;
+}
+
+function aliasTypeLabel(aliasType) {
+  const labels = {
+    official: "official name",
+    local_common: "local/common name",
+    sovereign: "sovereign name",
+    iso: "ISO code",
+  };
+
+  return labels[aliasType] || "alias";
+}
+
+function isAliasMatchType(matchType) {
+  return !["exact-name", "iso"].includes(matchType);
+}
+
+function countryMatchEntry(entry, normalized) {
+  if (!entry || !normalized) {
+    return null;
+  }
+
+  const isoLower = entry.isoLower || "";
+  if (isoLower && isoLower === normalized) {
+    return { exact: true, startsWith: false, contains: false, value: entry.iso, type: "iso" };
+  }
+
+  if (entry.nameLower === normalized) {
+    return { exact: true, startsWith: false, contains: false, value: entry.name, type: "exact-name" };
+  }
+
+  const aliases = entry.aliases || [];
+  const aliasExact = aliases.find((alias) => alias.normalized === normalized);
+  if (aliasExact) {
+    return { exact: true, startsWith: false, contains: false, value: aliasExact.value, type: aliasExact.type };
+  }
+
+  const startsWith = aliases.find((alias) => alias.normalized && alias.normalized.startsWith(normalized));
+  if (startsWith) {
     return {
-      className: "has-release-measurements is-low-confidence",
-      label: "canonical low-confidence release profile",
+      exact: false,
+      startsWith: true,
+      contains: false,
+      value: startsWith.value,
+      type: startsWith.type,
     };
   }
 
+  const containsAlias = aliases.find((alias) => alias.normalized.includes(normalized));
+  if (containsAlias) {
+    return {
+      exact: false,
+      startsWith: false,
+      contains: true,
+      value: containsAlias.value,
+      type: containsAlias.type,
+    };
+  }
+
+  if (entry.nameLower.startsWith(normalized)) {
+    return { exact: false, startsWith: true, contains: false, value: entry.name, type: "exact-name" };
+  }
+
+  if (entry.nameLower.includes(normalized)) {
+    return { exact: false, startsWith: false, contains: true, value: entry.name, type: "exact-name" };
+  }
+
+  return null;
+}
+
+function requiresExplicitCountrySelection(match = {}, ambiguousMatchCount = 0) {
+  if (!match || !match.type) {
+    return false;
+  }
+
+  if (!isAliasMatchType(match.type)) {
+    return false;
+  }
+
+  return ambiguousMatchCount > 1;
+}
+
+function bestAliasForCountryOption(entry, match = {}) {
+  const matchType = match?.type;
+  if (matchType && matchType !== "exact-name" && matchType !== "exact-country" && match.value) {
+    return { value: match.value, type: matchType };
+  }
+
+  if (entry.primaryAlias) {
+    return entry.primaryAlias;
+  }
+
+  return entry.aliases?.[0] || null;
+}
+
+function countryRegionLabel(properties = {}) {
+  const rawValues = [properties.CONTINENT, properties.SUBREGION, properties.REGION_UN, properties.REGION_WB];
+  const values = [];
+
+  for (const value of rawValues) {
+    const text = String(value || "").trim();
+
+    if (!text) {
+      continue;
+    }
+
+    if (!values.includes(text)) {
+      values.push(text);
+    }
+  }
+
+  return values.slice(0, 2).join(" / ");
+}
+
+function pickAliasValue(primaryValue, candidates) {
+  const primaryNormalized = normalizeSearchText(primaryValue || "");
+
+  for (const candidate of candidates) {
+    const text = String(candidate || "").trim();
+    if (!text) {
+      continue;
+    }
+
+    if (normalizeSearchText(text) === primaryNormalized) {
+      continue;
+    }
+
+    return text;
+  }
+
+  return "";
+}
+
+function provinceAliasForOption(feature, primaryName) {
+  const properties = feature?.properties || {};
+  return pickAliasValue(primaryName, [
+    properties.VARNAME_1,
+    properties.NAME_1_ALT,
+    properties.NAME_ALT,
+    properties.NAME_LOCAL,
+    properties.NAME_LONG,
+    properties.NAME,
+  ]);
+}
+
+function buildCountrySearchOptionMeta(entry, coverageStatus) {
+  const statusBadge = {
+    type: "node",
+    node: buildCoverageStatusBadge(coverageStatus),
+  };
+  const properties = entry.feature?.properties || {};
+  const match = entry.lastMatch || {};
+  const alias = bestAliasForCountryOption(entry, match);
+  const region = countryRegionLabel(properties);
+  const localCommonAlias = (entry.aliases || []).find((item) => item.type === "local_common")?.value;
+  const missing = countryCoverageMissingText(coverageStatus);
+  const promotion = countryCoveragePromotionText(coverageStatus);
+  const requiresConfirmation = entry.requiresExplicitSelection;
+  const ambiguousMatchCount = Number(entry.ambiguousAliasMatchCount || 0);
+  const details = [
+    statusBadge,
+    " · ",
+    "place level: country",
+    "parent: World",
+    entry.iso ? `iso: ${entry.iso}` : "iso: unavailable",
+  ];
+
+  if (region) {
+    details.push(`region: ${region}`);
+  }
+
+  if (alias) {
+    details.push(`alias type: ${aliasTypeLabel(alias.type)} · ${alias.value}`);
+  }
+
+  if (localCommonAlias && localCommonAlias !== alias?.value) {
+    details.push(`local/common: ${localCommonAlias}`);
+  }
+
+  if (missing) {
+    details.push(`missing: ${missing}`);
+  }
+
+  if (promotion) {
+    details.push(`to promote: ${promotion}`);
+  }
+
+  if (requiresConfirmation) {
+    const aliasType = alias?.type ? aliasTypeLabel(alias.type) : "alias";
+    details.push(
+      `selection: confirm ${aliasType} match from list${ambiguousMatchCount > 1 ? ` (${ambiguousMatchCount} matching aliases)` : ""}`
+    );
+  }
+
+  return details;
+}
+
+function buildProvinceSearchOptionMeta(countryEntry, feature, coverageStatus) {
+  const statusBadge = {
+    type: "node",
+    node: buildCoverageStatusBadge(coverageStatus),
+  };
+  const alias = provinceAliasForOption(feature, provinceName(feature));
+  const missing = countryCoverageMissingText(coverageStatus);
+  const promotion = countryCoveragePromotionText(coverageStatus);
+  const details = [
+    statusBadge,
+    " · ",
+    "place level: ADM1",
+    `parent: ${countryEntry.name}`,
+  ];
+
+  if (alias) {
+    details.push(`alias type: local/common · ${alias}`);
+  }
+
+  if (missing) {
+    details.push(`missing: ${missing}`);
+  }
+
+  if (promotion) {
+    details.push(`to promote: ${promotion}`);
+  }
+
+  return details;
+}
+
+const COVERAGE_STATUS_TERM_LINKS = {
+  [COVERAGE_STATUS.canonicalProfile]: "canonicalProfiles",
+  [COVERAGE_STATUS.boundaryOnly]: "boundaryCoverage",
+  [COVERAGE_STATUS.adm1Overlay]: "adm1Overlay",
+  [COVERAGE_STATUS.noData]: "noData",
+};
+
+function buildCoverageStatusBadge(coverageStatus) {
+  const status = normalizeCoverageStatus(coverageStatus);
+  const badge = document.createElement("span");
+  const link = coverageGlossaryAnchor(COVERAGE_STATUS_TERM_LINKS[status], COVERAGE_STATUS_BADGE_LABEL[status]);
+  badge.className = "evidence-badge search-coverage-chip";
+  badge.appendChild(link);
+  return badge;
+}
+
+function appendSearchOptionMeta(node, part) {
+  if (part == null) {
+    return;
+  }
+
+  if (typeof part === "string" || typeof part === "number") {
+    node.append(String(part));
+    return;
+  }
+
+  if (part && part.type === "node" && part.node?.nodeType === 1) {
+    node.appendChild(part.node);
+    return;
+  }
+
+  if (part?.nodeType === 1) {
+    node.appendChild(part);
+    return;
+  }
+
+  if (part?.type === "glossary") {
+    node.appendChild(coverageGlossaryAnchor(part.key, part.help || ""));
+    if (part.suffix) {
+      node.append(part.suffix);
+    }
+    return;
+  }
+
+  node.append(String(part));
+}
+
+function setCountrySearchOptionMeta(node, parts) {
+  node.textContent = "";
+  const safeParts = Array.isArray(parts) ? parts : [parts];
+  for (const part of safeParts) {
+    appendSearchOptionMeta(node, part);
+  }
+}
+
+function normalizeCoverageStatus(status) {
+  const raw = typeof status === "string" ? status.trim() : "";
+  const normalized = raw.toLowerCase().replace(/[^a-z0-9]+/g, "_");
+  const normalizedAlias = {
+    canonical_country_profile: COVERAGE_STATUS.canonicalProfile,
+    canonical_profile: COVERAGE_STATUS.canonicalProfile,
+    canonical_measurement: COVERAGE_STATUS.canonicalProfile,
+    canonical_measurements: COVERAGE_STATUS.canonicalProfile,
+    boundary_only: COVERAGE_STATUS.boundaryOnly,
+    boundary_index_only: COVERAGE_STATUS.boundaryOnly,
+    adm1_context_overlay: COVERAGE_STATUS.adm1Overlay,
+    adm1_context: COVERAGE_STATUS.adm1Overlay,
+    no_data: COVERAGE_STATUS.noData,
+    no_data_places: COVERAGE_STATUS.noData,
+    no_data_rows: COVERAGE_STATUS.noData,
+    no_release_coverage: COVERAGE_STATUS.noData,
+    no_coverage: COVERAGE_STATUS.noData,
+  };
+
+  if (Object.prototype.hasOwnProperty.call(normalizedAlias, normalized)) {
+    return normalizedAlias[normalized];
+  }
+
+  if (Object.values(COVERAGE_STATUS).includes(raw)) {
+    return raw;
+  }
+
+  return COVERAGE_STATUS.noData;
+}
+
+function getCachedPlaceIndexCoverageStatus(iso) {
+  if (!iso) {
+    return null;
+  }
+
+  const normalizedIso = String(iso).trim().toUpperCase();
+  return state.placeIndexCoverageStatusByIso.get(normalizedIso) || null;
+}
+
+async function loadPlaceIndexCoverageStatuses() {
+  if (state.placeIndexCoverageStatusLoaded || state.placeIndexCoverageStatusLoading) {
+    return;
+  }
+
+  state.placeIndexCoverageStatusLoading = true;
+
+  try {
+    const payload = await fetchJson(PLACE_INDEX_URL, 3000);
+    const items = Array.isArray(payload?.items) ? payload.items : [];
+
+    for (const item of items) {
+      const iso = String(item?.place_id || "").trim().toUpperCase();
+      if (!iso) {
+        continue;
+      }
+
+      const normalized = normalizeCoverageStatus(item?.coverage_status);
+      state.placeIndexCoverageStatusByIso.set(iso, normalized);
+    }
+  } catch (error) {
+    // Keep boundary-first fallback if place index fetch fails.
+  } finally {
+    state.placeIndexCoverageStatusLoaded = true;
+    state.placeIndexCoverageStatusLoading = false;
+  }
+}
+
+function countryCoverageStatus(feature) {
+  const iso = countryIso(feature?.properties);
+
+  if (!iso) {
+    return COVERAGE_STATUS.noData;
+  }
+
+  return normalizeCoverageStatus(state.countryCoverageStatusByIso.get(iso) || COVERAGE_STATUS.boundaryOnly);
+}
+
+function countryHasCanonicalProfile(feature) {
+  return countryCoverageStatus(feature) === COVERAGE_STATUS.canonicalProfile;
+}
+
+function countryCoverageStatusText(status) {
+  return COVERAGE_STATUS_TEXT[status] || COVERAGE_STATUS_TEXT[COVERAGE_STATUS.noData];
+}
+
+function countryCoverageStatusLabel(status) {
+  return COVERAGE_STATUS_LABEL[status] || COVERAGE_STATUS_LABEL[COVERAGE_STATUS.noData];
+}
+
+function countryCoverageMissingText(status) {
+  return COVERAGE_MISSING_HINT[status] || COVERAGE_MISSING_HINT[COVERAGE_STATUS.noData];
+}
+
+function countryCoveragePromotionText(status) {
+  return COVERAGE_PROMOTION_HINT[status] || COVERAGE_PROMOTION_HINT[COVERAGE_STATUS.noData];
+}
+
+function countryMapCoverage(feature) {
+  const status = countryCoverageStatus(feature);
+
   return {
-    className: "is-boundary-only is-very-low-confidence",
-    label: "boundary-only release place with very-low-confidence pain measurement coverage",
+    className: COVERAGE_STATUS_CLASS[status] || COVERAGE_STATUS_CLASS[COVERAGE_STATUS.boundaryOnly],
+    label: countryCoverageStatusLabel(status),
   };
 }
 
@@ -1914,10 +2608,14 @@ function sameProvinceFeature(left, right) {
 }
 
 function findProvince(features, query) {
+  return findProvinceCandidates(features, query)[0] || null;
+}
+
+function findProvinceCandidates(features, query) {
   const normalized = normalizeSearchText(query);
 
   if (!normalized || !features?.length) {
-    return null;
+    return [];
   }
 
   const entries = features.map((feature) => {
@@ -1931,17 +2629,28 @@ function findProvince(features, query) {
     };
   });
 
-  return (
-    entries.find(
-      (entry) =>
-        entry.nameLower === normalized ||
-        entry.shapeId === normalized ||
-        entry.shapeIso === normalized
-    )?.feature ||
-    entries.find((entry) => entry.nameLower.startsWith(normalized))?.feature ||
-    entries.find((entry) => entry.nameLower.includes(normalized))?.feature ||
-    null
-  );
+  const exact = [];
+  const startsWith = [];
+  const contains = [];
+
+  for (const entry of entries) {
+    if (entry.nameLower === normalized || entry.shapeId === normalized || entry.shapeIso === normalized) {
+      exact.push(entry);
+      continue;
+    }
+
+    if (entry.nameLower.startsWith(normalized)) {
+      startsWith.push(entry);
+      continue;
+    }
+
+    if (entry.nameLower.includes(normalized)) {
+      contains.push(entry);
+      continue;
+    }
+  }
+
+  return [...exact, ...startsWith, ...contains].map((entry) => entry.feature);
 }
 
 function parseProvinceCountryQuery(query) {
@@ -1964,6 +2673,37 @@ function parseProvinceCountryQuery(query) {
   return { countryQuery, provinceQuery };
 }
 
+function findCountries(query) {
+  const normalized = normalizeSearchText(query);
+
+  if (!normalized) {
+    return [];
+  }
+
+  const exact = [];
+  const startsWith = [];
+  const contains = [];
+
+  for (const entry of state.countryIndex) {
+    const match = countryMatchEntry(entry, normalized);
+    if (!match) {
+      continue;
+    }
+
+    const withMatch = { ...entry, lastMatch: match };
+
+    if (match.exact) {
+      exact.push(withMatch);
+    } else if (match.startsWith) {
+      startsWith.push(withMatch);
+    } else if (match.contains) {
+      contains.push(withMatch);
+    }
+  }
+
+  return [...exact, ...startsWith, ...contains];
+}
+
 function provinceCacheKey(countryFeature, provinceFeature) {
   const iso = countryIso(countryFeature?.properties) || "UNK";
   const provinceId =
@@ -1978,6 +2718,30 @@ function setSummaryText(element, value) {
     element.textContent = value;
   }
 }
+
+function setFactCoverageStatusText(message, status = null) {
+  if (!factCoverageStatus) {
+    return;
+  }
+
+  const normalizedStatus = normalizeCoverageStatus(status);
+  const glossaryKey = normalizedStatus ? COVERAGE_STATUS_TERM_LINKS[normalizedStatus] : null;
+
+  if (glossaryKey) {
+    const fallback = COVERAGE_STATUS_BADGE_LABEL[normalizedStatus] || String(message || "");
+    factCoverageStatus.textContent = "";
+    factCoverageStatus.appendChild(coverageGlossaryAnchor(glossaryKey, fallback));
+    return;
+  }
+
+  factCoverageStatus.textContent = "";
+  if (message == null) {
+    return;
+  }
+
+  setSummaryText(factCoverageStatus, message);
+}
+
 
 function compareUrlForPlace(placeId) {
   return `/compare/?places=${encodeURIComponent(placeId || "WLD")}`;
@@ -2469,18 +3233,26 @@ function mediaGithubUrl(url) {
   return url;
 }
 
-const TELEMETRY_EVENTS = new Set([
-  "route_view",
-  "atlas_place_selected",
-  "dataset_download",
-  "compare_opened",
-  "release_manifest_opened",
-  "release_mode_selected",
-  "place_search_started",
-  "zero_result_search",
-  "data_fetch_timing",
-  "web_vital",
-]);
+const TELEMETRY_FIELDS_BY_EVENT = {
+  route_view: ["route"],
+  atlas_place_selected: ["place_id", "geometry_level", "parent_place_id"],
+  dataset_download: ["path", "format"],
+  compare_opened: [
+    "route",
+    "requested_places_count",
+    "requested_from_url",
+    "comparable_rows",
+    "has_compatibility_issues",
+    "canonical_place_count",
+  ],
+  release_manifest_opened: ["path"],
+  release_mode_selected: ["mode"],
+  place_search_started: ["query_length"],
+  zero_result_search: ["query_length"],
+  data_fetch_timing: ["target", "duration_ms", "ok"],
+  web_vital: ["metric", "value", "rating"],
+};
+const TELEMETRY_EVENTS = new Set(Object.keys(TELEMETRY_FIELDS_BY_EVENT));
 
 function currentRoutePath() {
   return window.location.pathname || "/";
@@ -2525,14 +3297,27 @@ function recordTelemetry(eventName, fields = {}) {
     return;
   }
 
+  const allowedFields = TELEMETRY_FIELDS_BY_EVENT[eventName] || [];
   const payload = {
     event: eventName,
     release_id: RELEASE_ID,
-    route: currentRoutePath(),
-    timestamp: new Date().toISOString(),
-    ...fields,
   };
 
+  for (const field of allowedFields) {
+    if (Object.prototype.hasOwnProperty.call(fields, field)) {
+      payload[field] = fields[field];
+      continue;
+    }
+
+    if (field === "route") {
+      payload.route = currentRoutePath();
+    }
+  }
+
+  window.__painmapTelemetryEvents = window.__painmapTelemetryEvents || [];
+  window.__painmapTelemetryEvents.push(payload);
+  document.documentElement.dataset.telemetryEvents = String(window.__painmapTelemetryEvents.length);
+  document.documentElement.dataset.telemetryLastEvent = eventName;
   window.dispatchEvent(new CustomEvent("painmap:telemetry", { detail: payload }));
 
   if (!TELEMETRY_ENDPOINT || !navigator.sendBeacon) {
@@ -2615,6 +3400,39 @@ function initPerformanceTelemetry() {
   }
 }
 
+function registerServiceWorker() {
+  if (typeof navigator === "undefined" || !navigator.serviceWorker) {
+    return;
+  }
+
+  if (window.location.protocol === "file:") {
+    return;
+  }
+
+  const isLocalHost =
+    window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1" ||
+    window.location.hostname === "::1";
+
+  if (window.location.protocol !== "https:" && !isLocalHost) {
+    return;
+  }
+
+  const register = () =>
+    navigator.serviceWorker
+      .register(SERVICE_WORKER_SCRIPT, { scope: "/" })
+      .catch(() => void 0);
+
+  if (document.readyState === "loading") {
+    window.addEventListener("load", () => {
+      void register();
+    }, { once: true });
+    return;
+  }
+
+  void register();
+}
+
 function setupTelemetryClickTracking() {
   document.addEventListener("click", (event) => {
     const link = event.target.closest?.("a[href]");
@@ -2625,12 +3443,6 @@ function setupTelemetryClickTracking() {
 
     const url = new URL(link.href, window.location.href);
     const pathname = url.pathname;
-
-    if (pathname === "/compare/" || pathname.startsWith("/compare/")) {
-      const placeId = link.dataset.placeId || url.searchParams.get("places") || "";
-      const fields = placeId ? { route: pathname, place_id: placeId } : { route: pathname };
-      recordTelemetry("compare_opened", fields);
-    }
 
     if (pathname.endsWith("/manifest.json")) {
       recordTelemetry("release_manifest_opened", { path: pathname });
@@ -3874,6 +4686,90 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
+function normalizeClaimToken(value) {
+  return String(value || "unknown")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9._:-]+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function buildClaimId(subjectType, subjectId, releaseId = RELEASE_ID) {
+  const normalizedType = normalizeClaimToken(subjectType || "claim");
+  const normalizedSubject = normalizeClaimToken(subjectId || "unknown");
+  return `claim.${releaseId}.${normalizedType}.${normalizedSubject}`;
+}
+
+function buildIssueClaimContext(issue, fallback = {}) {
+  const releaseId = issue?.releaseId || fallback?.releaseId || RELEASE_ID;
+  const subjectType = issue?.subjectType || fallback?.subjectType || "issue";
+  const subjectId = normalizeClaimToken(
+    issue?.subjectId ||
+      issue?.id ||
+      issue?.title ||
+      fallback?.subjectId ||
+      fallback?.title ||
+      fallback?.subjectLabel ||
+      "issue"
+  );
+  const subjectLabel = issue?.subjectLabel || issue?.title || fallback?.subjectLabel || subjectId;
+  return {
+    claimId: buildClaimId(subjectType, subjectId, releaseId),
+    releaseId,
+    subjectType,
+    subjectId,
+    subjectLabel,
+  };
+}
+
+function buildIssueCorrectionUrl(issue) {
+  const context = buildIssueClaimContext(issue);
+  const route = `${window.location.pathname}${window.location.search}`;
+  const title = `[PainMap correction] ${context.releaseId}: ${context.subjectLabel}`;
+  const body = [
+    `Release: ${context.releaseId}`,
+    `Subject type: ${context.subjectType}`,
+    `Subject id: ${context.subjectId}`,
+    `Claim id: ${context.claimId}`,
+    `Route: ${route}`,
+    issue?.coverage_status ? `Coverage status: ${countryCoverageStatusText(issue.coverage_status)}` : "",
+    issue?.source || issue?.issueSource ? `Issue source: ${issue.source || issue.issueSource}` : "",
+    issue?.coverageReason ? `Coverage reason: ${issue.coverageReason}` : "",
+    issue?.provenance_id || issue?.provenanceId ? `Provenance id: ${issue.provenance_id || issue.provenanceId}` : "",
+    "",
+    "Please include source links, issue scope, and what should be corrected.",
+  ].join("\n");
+
+  const params = new URLSearchParams({ title, body });
+  params.set("labels", "correction");
+  return `${ISSUE_TRACKER_TEMPLATE_URL}?${params.toString()}`;
+}
+
+function createIssueCorrectionLink(issue, options = {}) {
+  const context = buildIssueClaimContext(issue, options);
+  const link = document.createElement("a");
+  link.className = "ghost-link";
+  link.href = buildIssueCorrectionUrl({ ...issue, ...context });
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = "Open correction form";
+  return link;
+}
+
+function appendIssueCorrectionControls(card, issue, options = {}) {
+  const context = buildIssueClaimContext(issue, options);
+  const claim = document.createElement("p");
+  claim.className = "issue-meta";
+  claim.textContent = `Claim: ${context.claimId}`;
+  card.appendChild(claim);
+
+  const actions = document.createElement("div");
+  actions.className = "route-actions";
+  actions.appendChild(createIssueCorrectionLink({ ...issue, ...context }));
+  card.appendChild(actions);
+}
+
 function issueMetadata(issue) {
   const source = issue.source || "";
   const combined = `${issue.tag || ""} ${issue.title || ""} ${source}`.toLowerCase();
@@ -3969,11 +4865,14 @@ function renderIssueTable(root, caption, issues, orderNoteForIssue) {
   ["Rank", "Cause", "Metric", "Evidence kind", "Vintage", "Uncertainty", "Order note", "Source"].forEach((label) =>
     appendTextCell(headerRow, "th", label)
   );
+  appendTextCell(headerRow, "th", "Claim id");
+  appendTextCell(headerRow, "th", "Correction");
   thead.appendChild(headerRow);
 
   const tbody = document.createElement("tbody");
 
   issues.forEach((issue, index) => {
+    const context = buildIssueClaimContext(issue);
     const metadata = issueMetadata(issue);
     const row = document.createElement("tr");
     appendTextCell(row, "td", String(index + 1));
@@ -3985,6 +4884,10 @@ function renderIssueTable(root, caption, issues, orderNoteForIssue) {
     appendTextCell(row, "td", metadata.uncertainty);
     appendTextCell(row, "td", orderNoteForIssue(issue));
     appendTextCell(row, "td", issue.source);
+    appendTextCell(row, "td", context.claimId);
+    const correctionCell = document.createElement("td");
+    correctionCell.appendChild(createIssueCorrectionLink({ ...issue, ...context }));
+    row.appendChild(correctionCell);
     tbody.appendChild(row);
   });
 
@@ -4014,6 +4917,10 @@ function renderIssueStatus(title, body) {
     <h3>${title}</h3>
     <p>${body}</p>
   `;
+  appendIssueCorrectionControls(card, null, {
+    subjectId: `issue-status-${normalizeClaimToken(title)}`,
+    subjectLabel: title,
+  });
   issuesRoot.appendChild(card);
 }
 
@@ -4027,6 +4934,10 @@ function renderAnimalIssueStatus(title, body) {
     <h3>${title}</h3>
     <p>${body}</p>
   `;
+  appendIssueCorrectionControls(card, null, {
+    subjectId: `animal-issue-status-${normalizeClaimToken(title)}`,
+    subjectLabel: title,
+  });
   animalIssuesRoot.appendChild(card);
 }
 
@@ -4052,6 +4963,8 @@ function buildRankedIssueCard(issue, rank, orderNote) {
       <p class="issue-source">${escapeHtml(issue.source)}</p>
     </details>
   `;
+  appendIssueCorrectionControls(card, issue);
+
   return card;
 }
 
@@ -4387,12 +5300,16 @@ function renderIssues(country) {
 
     const iso = countryIso(country.properties);
     const name = countryName(country.properties);
-    const hasCanonicalProfile = ["BRA", "IND"].includes(iso);
+    ensureCountryCoverageStatus(iso).catch(() => {});
+    const coverageStatus = countryCoverageStatus(country);
+    const missingText = countryCoverageMissingText(coverageStatus);
+    const promotionText = countryCoveragePromotionText(coverageStatus);
+
     renderIssueStatus(
       "Snapshot country context",
-      hasCanonicalProfile
-        ? `${name} has frozen country measurement rows in the 2026-05-31.atlas.2 release. Switch to Live overlay for browser-time World Bank, OWID, ADM1, and WorldPop context.`
-        : `${name} is present in the release place index as a boundary-indexed country. This snapshot does not publish canonical measurement rows for this country yet.`
+      coverageStatus === COVERAGE_STATUS.canonicalProfile
+        ? `${name} has frozen country measurement rows in the 2026-05-31.atlas.2 release with ${countryCoverageStatusText(coverageStatus)}. Switch to Live overlay for browser-time World Bank, OWID, ADM1, and WorldPop context.`
+        : `${name} is present in the release place index as ${countryCoverageStatusLabel(coverageStatus)}. ${missingText}. ${promotionText} This snapshot does not publish canonical country rows for this country yet.`
     );
     return;
   }
@@ -4660,13 +5577,16 @@ function buildCountrySearchOptions() {
       continue;
     }
 
+    const coverageStatus = countryCoverageStatus(entry.feature);
     options.push({
       id: optionId("country", entry.iso || entry.name),
       type: "country",
+      countryId: entry.iso || entry.name,
       label: entry.name,
-      description: entry.iso ? `Country · ${entry.iso}` : "Country",
+      description: buildCountrySearchOptionMeta(entry, coverageStatus),
       searchText: normalizeSearchText(`${entry.name} ${entry.iso || ""}`),
       feature: entry.feature,
+      coverageStatus,
     });
     optionValues.add(entry.name);
   }
@@ -4689,10 +5609,11 @@ function buildCountrySearchOptions() {
         id: optionId("province", `${iso}-${provinceName(feature)}`),
         type: "province",
         label: value,
-        description: `Province or state · ${countryEntry.name}`,
+        description: buildProvinceSearchOptionMeta(countryEntry, feature, countryCoverageStatus(countryEntry.feature)),
         searchText: normalizeSearchText(`${value} ${iso}`),
         feature,
         countryFeature: countryEntry.feature,
+        coverageStatus: countryCoverageStatus(countryEntry.feature),
       });
       optionValues.add(value);
     }
@@ -4709,30 +5630,128 @@ function filterCountrySearchOptions(query) {
     return options.slice(0, 12);
   }
 
-  const exact = options.filter((option) => option.searchText === normalized);
-  const startsWith = options.filter(
-    (option) => option.searchText.startsWith(normalized) && !exact.includes(option)
-  );
-  const contains = options.filter(
-    (option) =>
-      option.searchText.includes(normalized) &&
-      !exact.includes(option) &&
-      !startsWith.includes(option)
-  );
+  const countryMatches = findCountries(query);
+  const ambiguousAliasMatchCount = countryMatches.reduce((count, entry) => {
+    return isAliasMatchType(entry?.lastMatch?.type) ? count + 1 : count;
+  }, 0);
+  const countryMatchById = new Map();
+  for (const entry of countryMatches) {
+    const countryId = entry.iso || entry.name;
+    if (!countryId) {
+      continue;
+    }
+    countryMatchById.set(countryId, entry);
+  }
+
+  const exact = [];
+  const startsWith = [];
+  const contains = [];
+
+  for (const option of options) {
+    if (option.type !== "country") {
+      option.lastMatch = {};
+      option.requiresExplicitSelection = false;
+      if (option.searchText === normalized) {
+        exact.push(option);
+      } else if (option.searchText.startsWith(normalized)) {
+        startsWith.push(option);
+      } else if (option.searchText.includes(normalized)) {
+        contains.push(option);
+      }
+      continue;
+    }
+
+    const match = countryMatchById.get(option.countryId) || countryMatchEntry(option, normalized);
+    if (!match) {
+      continue;
+    }
+
+    option.lastMatch = match;
+    option.requiresExplicitSelection = requiresExplicitCountrySelection(match, ambiguousAliasMatchCount);
+    option.ambiguousAliasMatchCount = ambiguousAliasMatchCount;
+    if (match.exact) {
+      exact.push(option);
+      continue;
+    }
+
+    if (match.startsWith) {
+      startsWith.push(option);
+      continue;
+    }
+
+    contains.push(option);
+  }
 
   return [...exact, ...startsWith, ...contains].slice(0, 12);
+}
+
+function countrySearchSelectionRequiresConfirmation(option, options = currentCountrySearchOptions) {
+  if (!option || !option.type) {
+    return false;
+  }
+
+  if (options.length > 1 && !hasExplicitCountrySearchSelection) {
+    return true;
+  }
+
+  if (option.type === "country" && option.requiresExplicitSelection && !hasExplicitCountrySearchSelection) {
+    return true;
+  }
+
+  return false;
+}
+
+function showCountrySearchDisambiguation(option) {
+  const query = countrySearchInput.value.trim();
+
+  if (!option) {
+    setSearchStatus("Select a place result from the list before confirming.");
+    return;
+  }
+
+  if (currentCountrySearchOptions.length > 1) {
+    setSearchStatus(`Multiple matches for "${query}". Select one result from the list before opening it.`);
+    return;
+  }
+
+  if (option.type === "country" && option.lastMatch) {
+    if (option.requiresExplicitSelection) {
+      const aliasType = aliasTypeLabel(option.lastMatch.type);
+      const aliasValue = option.lastMatch.value || option.label;
+      const matchCount = Math.max(1, currentCountrySearchOptions.length);
+      setSearchStatus(
+        `Alias match for "${aliasValue}" (${aliasType}) is ambiguous across ${matchCount} results. Select a single result from the list before opening this place.`
+      );
+      return;
+    }
+
+    const aliasType = aliasTypeLabel(option.lastMatch.type);
+    const aliasValue = option.lastMatch.value || option.label;
+    setSearchStatus(
+      `Alias match for "${aliasValue}": ${aliasType}. Select a single result from the list before opening this place.`
+    );
+    return;
+  }
+
+  if (option.type === "province") {
+    setSearchStatus(`Ambiguous province query "${query}". Select a province result from the list before opening it.`);
+    return;
+  }
+
+  setSearchStatus(`Select "${option.label}" from the list to confirm this match.`);
 }
 
 function closeCountrySearchOptions() {
   currentCountrySearchOptions = [];
   activeCountrySearchIndex = -1;
+  hasExplicitCountrySearchSelection = false;
   countryOptions.hidden = true;
   countryOptions.textContent = "";
   countrySearchInput.removeAttribute("aria-activedescendant");
   countrySearchInput.setAttribute("aria-expanded", "false");
 }
 
-function setActiveCountrySearchOption(index) {
+function setActiveCountrySearchOption(index, isExplicit = false) {
   if (!currentCountrySearchOptions.length) {
     activeCountrySearchIndex = -1;
     countrySearchInput.removeAttribute("aria-activedescendant");
@@ -4740,6 +5759,9 @@ function setActiveCountrySearchOption(index) {
   }
 
   activeCountrySearchIndex = Math.max(0, Math.min(index, currentCountrySearchOptions.length - 1));
+  if (isExplicit) {
+    hasExplicitCountrySearchSelection = true;
+  }
   const activeOption = currentCountrySearchOptions[activeCountrySearchIndex];
   countrySearchInput.setAttribute("aria-activedescendant", activeOption.id);
 
@@ -4760,6 +5782,7 @@ function renderCountrySearchOptions(query, shouldOpen = true) {
   }
 
   currentCountrySearchOptions = filterCountrySearchOptions(query);
+  hasExplicitCountrySearchSelection = false;
   countryOptions.textContent = "";
 
   if (!shouldOpen || !currentCountrySearchOptions.length) {
@@ -4783,12 +5806,16 @@ function renderCountrySearchOptions(query, shouldOpen = true) {
 
     const description = document.createElement("span");
     description.className = "country-option-meta";
-    description.textContent = option.description;
+    setCountrySearchOptionMeta(description, option.description);
 
     item.append(label, description);
     item.addEventListener("mousedown", (event) => {
       event.preventDefault();
-      commitCountrySearchOption(option);
+      // Keep mousedown behavior limited to preventing blur while selection is handled in click.
+    });
+    item.addEventListener("click", (event) => {
+      event.preventDefault();
+      void commitCountrySearchOption(option);
     });
     fragment.appendChild(item);
   });
@@ -4811,6 +5838,11 @@ async function commitCountrySearchOption(option) {
     return;
   }
 
+  if (countrySearchSelectionRequiresConfirmation(option)) {
+    showCountrySearchDisambiguation(option);
+    return;
+  }
+
   countrySearchInput.value = option.label;
   closeCountrySearchOptions();
   setSearchStatus(`${option.label} selected.`);
@@ -4824,20 +5856,7 @@ async function commitCountrySearchOption(option) {
 }
 
 function findCountry(query) {
-  const normalized = normalizeSearchText(query);
-
-  if (!normalized) {
-    return null;
-  }
-
-  return (
-    state.countryIndex.find(
-      (entry) => entry.nameLower === normalized || (entry.iso && entry.iso.toLowerCase() === normalized)
-    ) ||
-    state.countryIndex.find((entry) => entry.nameLower.startsWith(normalized)) ||
-    state.countryIndex.find((entry) => entry.nameLower.includes(normalized)) ||
-    null
-  );
+  return findCountries(query)[0] || null;
 }
 
 function countryFocusScale(feature) {
@@ -4878,9 +5897,15 @@ function syncModeUi() {
   const rankingModes = currentRankingModes();
   const isCountryView = Boolean(state.selectedCountry);
   const isProvinceView = Boolean(state.selectedProvince);
+  const rankingReady = releaseRankingReadiness(state.releaseCoverage);
+  const rankingDisabledForGlobal = !isCountryView && !rankingReady;
+  const activeModeConfig = getReleaseModeConfig(state.releaseMode);
 
   if (topbarNote) {
-    topbarNote.textContent = isSnapshotMode() ? RELEASE_MODES.snapshot.topbarNote : globeMode.topbarNote;
+    topbarNote.textContent =
+      activeModeConfig.topbarNote ||
+      (isSnapshotMode() ? RELEASE_MODES.snapshot.topbarNote : RELEASE_MODES.live.topbarNote) ||
+      "Mode-specific atlas guidance will display here.";
   }
 
   if (globeModeSelect) {
@@ -4935,6 +5960,17 @@ function syncModeUi() {
         option.textContent = rankingModes[option.value].label;
       }
     }
+
+    rankingModeSelect.disabled = rankingDisabledForGlobal;
+    rankingModeSelect.title = rankingDisabledForGlobal
+      ? "Global ranking is disabled in coverage-first mode. Select a country to use country-scoped ranking controls."
+      : "Order the visible atlas context by selected ranking mode.";
+    rankingModeSelect.setAttribute(
+      "aria-label",
+      rankingDisabledForGlobal
+        ? "Ranking mode selector is disabled while release coverage gates are active"
+        : "Ranking mode selector"
+    );
   }
 
   if (rankingCopy) {
@@ -4978,6 +6014,79 @@ function renderDetails() {
   syncReleaseModeUi();
 
   if (!state.selectedCountry) {
+    const rankingReady = releaseRankingReadiness(state.releaseCoverage);
+
+    if (!rankingReady) {
+      const reasons = releaseRankingReadinessReason(state.releaseCoverage);
+      const releaseNoteUrl = releaseRankingReadinessNoteUrl(state.releaseCoverage);
+      const releaseSummary = state.releaseCoverage?.release_id || RELEASE_ID;
+      const releaseDate = state.releaseCoverage?.generated_at || "2026-05-31";
+      const coverage = state.releaseCoverage?.coverage_status || {};
+      const countryBoundaries = Number(coverage.country_boundaries_indexed || 0);
+      const canonicalProfiles = Number(coverage.canonical_country_profiles || 0);
+      const evidenceLayerCoverage = coverage.evidence_layer_coverage || {};
+      const directRows = Number(evidenceLayerCoverage.direct || 0);
+      const priorityRows = Number(evidenceLayerCoverage.priority_overlay || 0);
+
+      countrySearchInput.value = "";
+      selectionMeta.textContent = "Coverage-first atlas";
+      selectionTitle.textContent = "Release visibility";
+      selectionSummary.textContent =
+        `Coverage-first mode is active for ${releaseSummary} because global ranking readiness is not yet met (${reasons}). Review ${releaseNoteUrl} for release-level coverage gate context. Search a country to inspect country profiles and issue cards.`;
+      selectionFootnote.textContent =
+        "The map keeps country and ADM1 coverage states visible through hatch and outline cues. Rankings are not shown here until the release is dense enough for fair global comparison.";
+
+      updatePlaceSummary({
+        topSource: "Coverage summary",
+        evidenceMix: `${formatCoverageSummaryValue(canonicalProfiles)} canonical profiles and ${formatCoverageSummaryValue(
+          directRows + priorityRows
+        )} direct/priority rows`,
+        uncertainty: "Sparse coverage; not globally comparable",
+        lastUpdate: releaseDate,
+        placeId: "WLD",
+        compareLabel: "Compare whole world",
+      });
+
+      setMapProvenance({
+        place: "Whole Earth",
+        encoding: "Boundary and ADM1 state is explicit; map color is not a global ranking claim in this default state.",
+        source: `Natural Earth boundaries and ${releaseSummary} coverage JSON.`,
+        uncertainty: "Coverage status, not ranking precision, is the strongest guarantee in this view.",
+      });
+
+      updateAtlasLayerRail({
+        explanation:
+          "Default global mode now emphasizes release coverage breadth. Select a country to inspect evidence rows, method context, and issue cards.",
+        evidenceKind: `Global coverage matrix (canonical ${formatCoverageSummaryValue(canonicalProfiles)} / ${formatCoverageSummaryValue(
+          countryBoundaries
+        )}`,
+        uncertainty: "High uncertainty on non-canonical rows",
+        vintage: releaseDate,
+        sourceCount: `${formatCoverageSummaryValue(countryBoundaries)} countries, ${formatCoverageSummaryValue(
+          coverage.adm1_boundaries?.static_context_count || 0
+        )} ADM1 context rows`,
+        sourceList: "Natural Earth, Immutable release coverage index, geoBoundaries context overlay, and coverage JSON.",
+      });
+
+      factLocation.textContent = "Whole Earth";
+      factCountrySource.textContent = "Natural Earth Admin 0, 1:50m release asset";
+      factAdminSource.textContent = "ADM1 context and live overlays are deferred to country selection";
+      factIssueSource.textContent = "Global ranking deferred in coverage-first mode.";
+      setFactCoverageStatusText("Coverage-first global atlas view: global ranking disabled until release coverage is dense enough.");
+      factUnitCount.textContent = formatNumber(canonicalProfiles);
+
+      renderIssueStatus(
+        "Global ranking deferred",
+        "Use country search first. The release keeps most rows as sparse context until canonical coverage is expanded."
+      );
+      renderAnimalIssueStatus(
+        "Animal ranking deferred",
+        "Animal rows are held in coverage-first mode until snapshot readiness criteria pass for this release."
+      );
+
+      return;
+    }
+
     if (isSnapshotMode()) {
       const snapshotIssues = STATIC_WORLD_SUFFERING_ISSUES;
 
@@ -5018,6 +6127,7 @@ function renderDetails() {
       factCountrySource.textContent = "Natural Earth Admin 0, 1:50m release asset";
       factAdminSource.textContent = "ADM1 disabled in snapshot mode";
       factIssueSource.textContent = "Snapshot: release rows, coverage JSON, and local fallback ranking metadata.";
+      setFactCoverageStatusText("No place selected · release snapshot coverage.");
       factUnitCount.textContent = formatNumber(snapshotIssues.length);
       renderIssues(null);
       renderAnimalIssues(null);
@@ -5085,16 +6195,17 @@ function renderDetails() {
     factIssueSource.textContent =
       state.globeMode === "death"
         ? state.globalIssueData.loading || animalDataState.loading
-          ? "Atlas layer: loading WDI WLD + OWID animal-death data."
-          : state.globalIssueData.error || animalDataState.error
+            ? "Atlas layer: loading WDI WLD + OWID animal-death data."
+            : state.globalIssueData.error || animalDataState.error
             ? "Atlas layer: using local fallback metadata because one live mixed-species source failed."
             : "Atlas layer: WDI WLD + OWID slaughter and aquaculture data + life-years proxies."
         : state.globalIssueData.loading || animalDataState.loading || state.globalContext.loading
-          ? "Atlas layer: loading WDI WLD + OWID + RP + WAI + land-area context."
-          : state.globalIssueData.error || animalDataState.error || state.globalContext.error
-            ? "Atlas layer: using local fallback metadata because one live suffering source failed."
-            : "Atlas layer: WDI WLD + OWID + World Bank land area + RP + WAI + three animal cause buckets.";
+        ? "Atlas layer: loading WDI WLD + OWID + RP + WAI + land-area context."
+        : state.globalIssueData.error || animalDataState.error || state.globalContext.error
+        ? "Atlas layer: using local fallback metadata because one live suffering source failed."
+        : "Atlas layer: WDI WLD + OWID + World Bank land area + RP + WAI + three animal cause buckets.";
     factUnitCount.textContent = formatNumber(worldIssues.length);
+    setFactCoverageStatusText("Coverage-first global atlas view: live overlays are not release measurements.");
     renderIssues(null);
     renderAnimalIssues(null);
     return;
@@ -5104,6 +6215,8 @@ function renderDetails() {
   const name = countryName(countryProps);
   const iso = countryIso(countryProps) || "Unknown ISO";
   const subregion = countryProps.SUBREGION || countryProps.CONTINENT || "Unknown region";
+  const coverageStatus = countryCoverageStatus(state.selectedCountry);
+  const countryCoverageStatusForCard = countryCoverageStatusLabel(coverageStatus);
   const issueData = state.countryIssueData;
   const provinceNameLabel = state.selectedProvince ? provinceName(state.selectedProvince) : null;
   const provinceIssueData = state.provinceIssueData;
@@ -5113,15 +6226,18 @@ function renderDetails() {
   selectionTitle.textContent = provinceNameLabel || name;
 
   if (isSnapshotMode()) {
-    const hasCanonicalProfile = countryHasCanonicalProfile(state.selectedCountry);
+    const hasCanonicalProfile = coverageStatus === COVERAGE_STATUS.canonicalProfile;
+    const missingText = countryCoverageMissingText(coverageStatus);
+    const promotionText = countryCoveragePromotionText(coverageStatus);
+
     selectionSummary.textContent = hasCanonicalProfile
       ? `${name} is selected from the immutable release. This country has canonical measurement rows in 2026-05-31.atlas.2.`
-      : `${name} is selected from the immutable release boundary index. This country is boundary-only in 2026-05-31.atlas.2.`;
+      : `${name} is selected from the immutable release boundary index. This country is in ${countryCoverageStatusText(coverageStatus)} in 2026-05-31.atlas.2. ${missingText} ${promotionText}`;
     selectionFootnote.textContent =
       "Snapshot mode does not query World Bank, OWID, geoBoundaries, or WorldPop at interaction time. Switch to Live overlay to load ADM1 boundaries and current public-source ranking context.";
     updatePlaceSummary({
       topSource: hasCanonicalProfile ? "Canonical release profile" : "Boundary-indexed country",
-      evidenceMix: hasCanonicalProfile ? "3 canonical measurement rows" : "Boundary only in this release",
+      evidenceMix: hasCanonicalProfile ? "3 canonical measurement rows" : `${missingText} ${promotionText}`,
       uncertainty: hasCanonicalProfile ? "Low confidence" : "Not measured",
       lastUpdate: "2026-05-31",
       placeId: iso,
@@ -5155,6 +6271,7 @@ function renderDetails() {
     factIssueSource.textContent = hasCanonicalProfile
       ? "Snapshot: canonical country profile rows available."
       : "Snapshot: boundary-index-only country; no frozen measurement rows.";
+    setFactCoverageStatusText(countryCoverageStatusForCard, coverageStatus);
     factUnitCount.textContent = hasCanonicalProfile ? "3" : "0";
     renderIssues(state.selectedCountry);
     renderAnimalIssues(state.selectedCountry);
@@ -5172,6 +6289,7 @@ function renderDetails() {
       : animalDataState.loading
         ? "Human: loading WDI. Animals: loading OWID + WDI + RP + WAI + cost-effectiveness anchors."
         : "Human: loading WDI. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
+    setFactCoverageStatusText(countryCoverageStatusForCard, coverageStatus);
   } else if (issueData.error) {
     selectionSummary.textContent = provinceNameLabel
       ? `${provinceNameLabel} is selected inside ${name}. The ADM1 geometry is real, but the province model cannot finish because the country baseline failed to load.`
@@ -5183,6 +6301,7 @@ function renderDetails() {
         : animalDataState.error
           ? "Human: WDI failed. Animals: OWID load failed."
           : "Human: WDI failed. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
+    setFactCoverageStatusText(countryCoverageStatusForCard, coverageStatus);
   } else if (provinceNameLabel && (!provinceIssueData || provinceIssueData.loading)) {
     selectionSummary.textContent =
       state.globeMode === "death"
@@ -5192,12 +6311,14 @@ function renderDetails() {
       state.globeMode === "death"
         ? "Province: loading WorldPop + national WDI death model."
         : "Province: loading WorldPop + GSAP + WDI + OWID province estimate model.";
+    setFactCoverageStatusText(countryCoverageStatusForCard, coverageStatus);
   } else if (provinceNameLabel && provinceIssueData?.error) {
     selectionSummary.textContent = `${provinceNameLabel} is selected inside ${name}, but the province-specific data request failed.`;
     factIssueSource.textContent =
       state.globeMode === "death"
         ? "Province: WorldPop or national death-model allocation failed."
         : "Province: WorldPop, GSAP, or province estimate model failed.";
+    setFactCoverageStatusText(countryCoverageStatusForCard, coverageStatus);
   } else {
     selectionSummary.textContent = provinceNameLabel
       ? state.globeMode === "death"
@@ -5217,6 +6338,7 @@ function renderDetails() {
           : animalDataState.error
             ? "Human: World Bank WDI. Animals: OWID load failed."
             : "Human: World Bank WDI. Animals: OWID + WDI + RP + WAI + cost-effectiveness anchors.";
+    setFactCoverageStatusText(countryCoverageStatusForCard, coverageStatus);
   }
 
   const isLoadingLiveSummary =
@@ -5367,8 +6489,18 @@ function renderDetails() {
 function transitionGlobe(rotate, scale, duration = 900) {
   const startRotate = projection.rotate();
   const endRotate = rotate ?? startRotate;
+  const endScale = clampScale(scale ?? projection.scale());
+
+  if (prefersReducedMotion()) {
+    projection.rotate(endRotate);
+    projection.scale(endScale);
+    updateZoomUi();
+    renderGlobe();
+    return;
+  }
+
   const rotateInterpolator = d3.interpolate(startRotate, endRotate);
-  const scaleInterpolator = d3.interpolateNumber(projection.scale(), clampScale(scale ?? projection.scale()));
+  const scaleInterpolator = d3.interpolateNumber(projection.scale(), endScale);
 
   svg
     .interrupt()
@@ -5654,6 +6786,10 @@ async function selectCountry(feature) {
     parent_place_id: "WLD",
   });
   state.selectedCountry = feature;
+  const iso = countryIso(feature?.properties);
+  if (iso) {
+    ensureCountryCoverageStatus(iso, { render: true }).catch(() => {});
+  }
   state.selectedProvince = null;
   state.countryIssueData = isSnapshotMode() ? { snapshot: true } : { loading: true };
   state.provinceIssueData = null;
@@ -5689,6 +6825,16 @@ async function selectProvince(countryFeature, provinceTarget) {
     typeof provinceTarget === "string"
       ? findProvince(state.provinceFeatures, provinceTarget)
       : state.provinceFeatures.find((feature) => sameProvinceFeature(feature, provinceTarget)) || null;
+
+  if (typeof provinceTarget === "string") {
+    const candidateMatches = findProvinceCandidates(state.provinceFeatures, provinceTarget);
+    if (candidateMatches.length > 1) {
+      setStatus(
+        `Ambiguous province match for "${provinceTarget}" in ${countryName(countryFeature.properties)}. Select one result from the list before opening it.`
+      );
+      return;
+    }
+  }
 
   if (!resolvedProvince) {
     recordTelemetry("zero_result_search", {
@@ -5733,9 +6879,20 @@ async function handleCountrySearch(event) {
 
   if (state.selectedCountry && state.provinceFeatures.length) {
     const provinceMatch = findProvince(state.provinceFeatures, rawQuery);
+    const provinceCandidates = findProvinceCandidates(state.provinceFeatures, rawQuery);
 
     if (provinceMatch) {
       await selectProvince(state.selectedCountry, provinceMatch);
+      return;
+    }
+
+    if (provinceCandidates.length > 1) {
+      const selectedCountryName = state.selectedCountry?.properties
+        ? countryName(state.selectedCountry.properties)
+        : "the selected country";
+      setStatus(
+        `Ambiguous province match for "${rawQuery}" in ${selectedCountryName}. Select one province result from the suggestions before opening it.`
+      );
       return;
     }
   }
@@ -5743,11 +6900,29 @@ async function handleCountrySearch(event) {
   const provinceCountryQuery = parseProvinceCountryQuery(rawQuery);
 
   if (provinceCountryQuery) {
-    const countryMatch = findCountry(provinceCountryQuery.countryQuery);
+    const countryMatches = findCountries(provinceCountryQuery.countryQuery);
 
-    if (!countryMatch) {
+    if (!countryMatches.length) {
       recordTelemetry("zero_result_search", { query_length: rawQuery.length });
       setStatus(`No country matched "${provinceCountryQuery.countryQuery}".`);
+      return;
+    }
+
+    if (countryMatches.length > 1) {
+      renderCountrySearchOptions(rawQuery, true);
+      setSearchStatus(
+        `Disambiguation required for "${provinceCountryQuery.countryQuery}": multiple country matches found. Select one result from the list.`
+      );
+      return;
+    }
+
+    const countryMatch = countryMatches[0];
+    if (requiresExplicitCountrySelection(countryMatch.lastMatch, countryMatches.length)) {
+      renderCountrySearchOptions(rawQuery, true);
+      const aliasType = aliasTypeLabel(countryMatch.lastMatch?.type);
+      setSearchStatus(
+        `Alias match for "${provinceCountryQuery.countryQuery}": ${aliasType} "${countryMatch.lastMatch?.value || countryMatch.name}". Confirm selection from the list before opening province "${provinceCountryQuery.provinceQuery}".`
+      );
       return;
     }
 
@@ -5755,15 +6930,33 @@ async function handleCountrySearch(event) {
     return;
   }
 
-  const match = findCountry(rawQuery);
+  const matches = findCountries(rawQuery);
 
-  if (!match) {
+  if (!matches.length) {
     recordTelemetry("zero_result_search", { query_length: rawQuery.length });
     setStatus(`No country or province matched "${rawQuery}".`);
     return;
   }
 
-  await selectCountry(match.feature);
+  if (matches.length > 1) {
+    renderCountrySearchOptions(rawQuery, true);
+    setSearchStatus(
+      `Disambiguation required for "${rawQuery}": multiple country matches found. Select one result from the list.`
+    );
+    return;
+  }
+
+  const bestMatch = matches[0];
+  if (requiresExplicitCountrySelection(bestMatch.lastMatch, matches.length)) {
+    renderCountrySearchOptions(rawQuery, true);
+    const aliasType = aliasTypeLabel(bestMatch.lastMatch?.type);
+    setSearchStatus(
+      `Alias match for "${rawQuery}": ${aliasType} "${bestMatch.lastMatch?.value || bestMatch.name}". Confirm selection from the list before opening ${bestMatch.name}.`
+    );
+    return;
+  }
+
+  await selectCountry(bestMatch.feature);
 }
 
 function adjustZoom(multiplier) {
@@ -5794,6 +6987,10 @@ function setupInteraction() {
         justDragged = false;
       })
       .on("drag", (event) => {
+        if (prefersReducedMotion()) {
+          return;
+        }
+
         if (mapViewMode !== "globe") {
           justDragged = Math.abs(event.dx) + Math.abs(event.dy) > 2;
           return;
@@ -5811,6 +7008,11 @@ function setupInteraction() {
         renderGlobe();
       })
       .on("end", () => {
+        if (prefersReducedMotion()) {
+          justDragged = false;
+          return;
+        }
+
         window.setTimeout(() => {
           justDragged = false;
         }, 120);
@@ -5820,6 +7022,10 @@ function setupInteraction() {
   svg.node().addEventListener(
     "wheel",
     (event) => {
+      if (prefersReducedMotion()) {
+        return;
+      }
+
       event.preventDefault();
       const nextScale = projection.scale() * Math.exp(-event.deltaY * 0.0015);
       setProjectionScale(nextScale);
@@ -5839,19 +7045,27 @@ function setupInteraction() {
       event.preventDefault();
       if (countryOptions.hidden) {
         renderCountrySearchOptions(countrySearchInput.value, true);
+        hasExplicitCountrySearchSelection = true;
       } else {
-        setActiveCountrySearchOption(activeCountrySearchIndex + 1);
+        setActiveCountrySearchOption(activeCountrySearchIndex + 1, true);
       }
     }
 
     if (event.key === "ArrowUp") {
       event.preventDefault();
-      setActiveCountrySearchOption(activeCountrySearchIndex - 1);
+      setActiveCountrySearchOption(activeCountrySearchIndex - 1, true);
     }
 
     if (event.key === "Enter" && !countryOptions.hidden && currentCountrySearchOptions[activeCountrySearchIndex]) {
       event.preventDefault();
-      commitCountrySearchOption(currentCountrySearchOptions[activeCountrySearchIndex]);
+      const candidate = currentCountrySearchOptions[activeCountrySearchIndex];
+
+      if (countrySearchSelectionRequiresConfirmation(candidate)) {
+        showCountrySearchDisambiguation(candidate);
+        return;
+      }
+
+      commitCountrySearchOption(candidate);
     }
 
     if (event.key === "Escape") {
@@ -5861,8 +7075,16 @@ function setupInteraction() {
   });
   countrySearchForm.addEventListener("submit", async (event) => {
     if (!countryOptions.hidden && currentCountrySearchOptions[activeCountrySearchIndex]) {
+      const candidate = currentCountrySearchOptions[activeCountrySearchIndex];
+
+      if (countrySearchSelectionRequiresConfirmation(candidate)) {
+        event.preventDefault();
+        showCountrySearchDisambiguation(candidate);
+        return;
+      }
+
       event.preventDefault();
-      await commitCountrySearchOption(currentCountrySearchOptions[activeCountrySearchIndex]);
+      await commitCountrySearchOption(candidate);
       return;
     }
 
@@ -5910,11 +7132,15 @@ function setupInteraction() {
   mapProjectionModeSelect?.addEventListener("change", () => {
     switchMapView(mapProjectionModeSelect.value);
   });
-  globeModeSelect.addEventListener("change", () => {
+  globeModeSelect?.addEventListener("change", () => {
     state.globeMode = globeModeSelect.value;
     renderDetails();
   });
-  rankingModeSelect.addEventListener("change", () => {
+  rankingModeSelect?.addEventListener("change", () => {
+    if (rankingModeSelect.disabled) {
+      return;
+    }
+
     state.rankingMode = rankingModeSelect.value;
     renderDetails();
   });
@@ -5926,16 +7152,633 @@ function setupInteraction() {
   resetButton.addEventListener("click", resetView);
 }
 
+async function loadCoverageSummary() {
+  try {
+    const payload = await fetchJson(COVERAGE_DATA_URL, 3000);
+
+    if (payload && payload.coverage_status) {
+      state.releaseCoverage = payload;
+    } else {
+      state.releaseCoverage = RELEASE_COVERAGE_FALLBACK;
+    }
+
+    state.releaseCoverageLoaded = true;
+  } catch (error) {
+    state.releaseCoverage = RELEASE_COVERAGE_FALLBACK;
+    state.releaseCoverageLoaded = false;
+  }
+
+  await loadPlaceIndexCoverageStatuses();
+
+  for (const [iso, status] of state.placeIndexCoverageStatusByIso.entries()) {
+    if (!state.countryCoverageStatusByIso.has(iso) && status === COVERAGE_STATUS.noData) {
+      state.countryCoverageStatusByIso.set(iso, COVERAGE_STATUS.noData);
+    }
+  }
+}
+
+async function loadReleaseModeContract() {
+  try {
+    const payload = await fetchJson(RELEASE_MODES_DATA_URL, 3000);
+    const parsed = parseReleaseModesPayload(payload);
+
+    if (!parsed) {
+      throw new Error("Invalid release mode payload");
+    }
+
+    state.releaseModeContract = parsed;
+    const defaultMode = normalizeReleaseMode(parsed.default_mode);
+
+    if (isModeContractSupported(defaultMode)) {
+      state.releaseMode = defaultMode;
+    }
+
+    if (parsed.ui_contract?.tablist_label) {
+      const tabList = document.querySelector(".release-mode-switch");
+      if (tabList) {
+        tabList.setAttribute("aria-label", String(parsed.ui_contract.tablist_label));
+      }
+    }
+
+    if (parsed.local_event_name && parsed.local_event_name.trim()) {
+      const eventName = parsed.local_event_name.trim();
+      if (!TELEMETRY_EVENTS.has(eventName)) {
+        TELEMETRY_EVENTS.add(eventName);
+        TELEMETRY_FIELDS_BY_EVENT[eventName] = ["mode"];
+      }
+    }
+  } catch (error) {
+    state.releaseModeContract = null;
+  }
+
+  if (!isModeContractSupported(state.releaseMode)) {
+    state.releaseMode = "snapshot";
+  }
+
+  syncReleaseModeUi();
+}
+
+function formatCoverageSummaryValue(value) {
+  if (value == null || value === "") {
+    return "—";
+  }
+
+  const number = Number(value);
+  if (Number.isFinite(number)) {
+    return `${formatNumber(number)}`;
+  }
+
+  const text = String(value).trim();
+  return text || "—";
+}
+
+function summarizeEvidenceLayerCoverage(coverage) {
+  const layerRows = [
+    { label: "direct", value: coverage?.direct },
+    { label: "proxy", value: coverage?.proxy },
+    { label: "priority overlay", value: coverage?.priority_overlay },
+    { label: "boundary", value: coverage?.boundary },
+    { label: "ADM1 context overlay", value: coverage?.adm1_context_overlay },
+  ];
+  const nonZero = layerRows
+    .map((entry) => ({ ...entry, count: Number(entry.value) || 0 }))
+    .filter((entry) => Number.isFinite(entry.count) && entry.count > 0);
+
+  if (!nonZero.length) {
+    return "No evidence-layer rows are listed in this coverage snapshot.";
+  }
+
+  return `Evidence layers present: ${nonZero
+    .map((entry) => `${formatCoverageSummaryValue(entry.count)} ${entry.label}`)
+    .join(", ")}.`;
+}
+
+function summarizeSparseCoverage(summary) {
+  const sparse = Array.isArray(summary?.known_sparse_areas) ? summary.known_sparse_areas : [];
+  const statuses = sparse
+    .map((entry) => entry?.status)
+    .filter((status) => typeof status === "string" && status.trim().length > 0)
+    .map((status) => status.trim());
+
+  if (!statuses.length) {
+    return "No sparse-coverage notes were loaded.";
+  }
+
+  return statuses.join(" · ");
+}
+
+function renderFactList(nodeOrId, items, fallbackText = "No items were found.") {
+  const list = typeof nodeOrId === "string" ? document.getElementById(nodeOrId) : nodeOrId;
+  if (!list) {
+    return;
+  }
+
+  const raw = Array.isArray(items) ? items : [];
+  const normalized = raw
+    .map((entry) => {
+      if (typeof entry === "string") {
+        return entry.trim();
+      }
+
+      if (!entry) {
+        return "";
+      }
+
+      if (typeof entry.status === "string" && entry.status.trim()) {
+        const area = typeof entry.area === "string" && entry.area.trim() ? `${entry.area.trim()}: ` : "";
+        return `${area}${entry.status.trim()}`;
+      }
+
+      return "";
+    })
+    .filter(Boolean);
+
+  list.textContent = "";
+
+  if (!normalized.length) {
+    const item = document.createElement("li");
+    item.textContent = fallbackText;
+    list.appendChild(item);
+    return;
+  }
+
+  for (const text of normalized) {
+    const item = document.createElement("li");
+    item.textContent = text;
+    list.appendChild(item);
+  }
+}
+
+function releaseRankingReadiness(summary = state.releaseCoverage) {
+  const explicit = summary?.default_ranking_readiness;
+
+  if (explicit && typeof explicit === "object" && explicit !== null) {
+    if (typeof explicit.ready === "boolean") {
+      return explicit.ready;
+    }
+
+    if (typeof explicit.enabled === "boolean") {
+      return explicit.enabled;
+    }
+  }
+
+  const coverage = summary?.coverage_status || {};
+  const canonicalProfiles = Number(coverage.canonical_country_profiles || 0);
+  const countryBoundaries = Number(coverage.country_boundaries_indexed || 0);
+  const directEvidence = Number(coverage.evidence_layer_coverage?.direct || 0);
+  const proxyEvidence = Number(coverage.evidence_layer_coverage?.proxy || 0);
+  const priorityEvidence = Number(coverage.evidence_layer_coverage?.priority_overlay || 0);
+  const releaseMeasurements = Number(coverage.release_measurements || 0);
+
+  if (!Number.isFinite(countryBoundaries) || countryBoundaries <= 0) {
+    return false;
+  }
+
+  const coverageRatio = canonicalProfiles / countryBoundaries;
+  return (
+    canonicalProfiles >= 10 &&
+    coverageRatio >= 0.35 &&
+    directEvidence + proxyEvidence + priorityEvidence + releaseMeasurements >= 10
+  );
+}
+
+function releaseRankingReadinessNoteUrl(summary = state.releaseCoverage) {
+  const explicit = summary?.default_ranking_readiness;
+  const rawUrl = explicit?.release_note_url;
+
+  if (typeof rawUrl === "string" && rawUrl.trim()) {
+    return rawUrl.trim();
+  }
+
+  return "/updates/";
+}
+
+function releaseRankingReadinessReason(summary = state.releaseCoverage) {
+  const explicit = summary?.default_ranking_readiness;
+
+  if (explicit && typeof explicit === "object" && explicit !== null) {
+    if (
+      (typeof explicit.ready === "boolean" && !explicit.ready) ||
+      (typeof explicit.enabled === "boolean" && !explicit.enabled)
+    ) {
+      const reason =
+        explicit.reason ||
+        "Release ranking readiness is disabled for this snapshot until coverage checks pass.";
+      return reason.endsWith(".") ? reason : `${reason}.`;
+    }
+  }
+
+  const coverage = summary?.coverage_status || {};
+  const canonicalProfiles = Number(coverage.canonical_country_profiles || 0);
+  const countryBoundaries = Number(coverage.country_boundaries_indexed || 0);
+  const directEvidence = Number(coverage.evidence_layer_coverage?.direct || 0);
+  const proxyEvidence = Number(coverage.evidence_layer_coverage?.proxy || 0);
+  const priorityEvidence = Number(coverage.evidence_layer_coverage?.priority_overlay || 0);
+  const releaseMeasurements = Number(coverage.release_measurements || 0);
+  const evidenceReady = directEvidence + proxyEvidence + priorityEvidence + releaseMeasurements;
+  const reasons = [];
+
+  if (!Number.isFinite(countryBoundaries) || countryBoundaries <= 0) {
+    return "Release coverage counts are incomplete in this snapshot.";
+  }
+
+  if (canonicalProfiles < 10) {
+    reasons.push(`fewer than 10 canonical profiles (${formatCoverageSummaryValue(canonicalProfiles)} found)`);
+  }
+
+  if (countryBoundaries > 0 && canonicalProfiles / countryBoundaries < 0.35) {
+    reasons.push(
+      `only ${formatCoverageSummaryValue(canonicalProfiles)} of ${formatCoverageSummaryValue(
+        countryBoundaries
+      )} indexed countries are canonical`
+    );
+  }
+
+  if (evidenceReady < 10) {
+    reasons.push(`fewer than 10 direct/proxy/priority/release-metric rows (${formatCoverageSummaryValue(evidenceReady)} found)`);
+  }
+
+  if (!reasons.length) {
+    return "Release ranking readiness requires additional release-specific checks to pass.";
+  }
+
+  return reasons.join(" · ");
+}
+
+function releaseRankingReadinessRule(summary = state.releaseCoverage) {
+  const explicit = summary?.default_ranking_readiness;
+  const rule = typeof explicit?.rule === "string" ? explicit.rule.trim() : "";
+
+  return rule || "canonical country profiles, evidence-row, and coverage-ratio thresholds";
+}
+
+const COVERAGE_TERM_LINKS = {
+  canonicalProfiles: {
+    label: "canonical country profiles",
+    href: "#term-canonical-country-profile",
+  },
+  boundaryCoverage: {
+    label: "boundary-only coverage",
+    href: "#term-boundary-only",
+  },
+  adm1Overlay: {
+    label: "ADM1 context",
+    href: "#term-adm1-context",
+  },
+  directEvidence: {
+    label: "direct rows",
+    href: "#term-direct-evidence",
+  },
+  proxy: {
+    label: "proxy",
+    href: "#term-proxy-aggregate",
+  },
+  priorityOverlay: {
+    label: "priority-overlay",
+    href: "#term-priority-overlay",
+  },
+  boundaryLabel: {
+    label: "boundary-context rows",
+    href: "#term-boundary-only",
+  },
+  adm1Label: {
+    label: "ADM1 context-overlay rows",
+    href: "#term-adm1-context",
+  },
+  noData: {
+    label: "no release coverage",
+    href: "#term-no-data",
+  },
+};
+
+function coverageGlossaryAnchor(labelKey, fallback) {
+  const entry = COVERAGE_TERM_LINKS[labelKey] || null;
+
+  if (!entry) {
+    return document.createTextNode(fallback || "");
+  }
+
+  const link = document.createElement("a");
+  link.className = "glossary-term";
+  link.href = entry.href;
+  link.rel = "noopener";
+  link.textContent = entry.label;
+  link.title = fallback || entry.label;
+  link.setAttribute("aria-label", `${entry.label}: ${fallback || "See glossary term."}`);
+  return link;
+}
+
+function appendCoverageText(node, textOrNode) {
+  if (typeof textOrNode === "string") {
+    node.append(textOrNode);
+    return;
+  }
+
+  if (textOrNode?.nodeType === 1) {
+    node.appendChild(textOrNode);
+  }
+}
+
+function setCoverageGridText(nodeOrId, parts) {
+  const node = typeof nodeOrId === "string" ? document.getElementById(nodeOrId) : nodeOrId;
+
+  if (!node) {
+    return;
+  }
+
+  node.textContent = "";
+
+  for (const part of parts) {
+    if (part == null) {
+      continue;
+    }
+
+    if (typeof part === "string") {
+      appendCoverageText(node, part);
+      continue;
+    }
+
+    if (typeof part === "object" && part.type === "glossary") {
+      appendCoverageText(node, coverageGlossaryAnchor(part.key, part.help));
+      if (part.suffix) {
+        appendCoverageText(node, part.suffix);
+      }
+      continue;
+    }
+
+    appendCoverageText(node, String(part));
+  }
+}
+
+function setCoverageGrid() {
+  const summary = state.releaseCoverage || RELEASE_COVERAGE_FALLBACK;
+  const coverage = summary.coverage_status || {};
+
+  const placesIndexed = coverage.places_indexed;
+  const countryProfiles = coverage.canonical_country_profiles || 0;
+  const countryBoundaries = Number(coverage.country_boundaries_indexed || 0);
+  const boundaryOnlyRows = Math.max(0, countryBoundaries - Number(countryProfiles || 0));
+  const evidence = coverage.evidence_layer_coverage || {};
+  const directEvidence = evidence.direct || 0;
+  const directEvidenceCount = Number(directEvidence || 0);
+  const proxyEvidence = evidence.proxy || 0;
+  const priorityOverlayEvidence = evidence.priority_overlay || 0;
+  const boundaryEvidence = evidence.boundary || 0;
+  const adm1ContextEvidence = evidence.adm1_context_overlay || 0;
+  const noDataEvidence = evidence.no_data || 0;
+  const releaseDate = summary.last_release_date || summary.generated_at || summary.release_id?.split(".")[0] || RELEASE_ID;
+  const adm1 = coverage.adm1_boundaries?.static_context_count || 0;
+  const sparseCoverage = summarizeSparseCoverage(summary);
+  const releaseLabel = summary.release_id || RELEASE_ID;
+  const rankingReady = releaseRankingReadiness(summary);
+  const rankingReadinessReason = rankingReady ? "" : releaseRankingReadinessReason(summary);
+  const rankingReadinessNoteUrl = releaseRankingReadinessNoteUrl(summary);
+  const rankingReadinessRule = releaseRankingReadinessRule(summary);
+  const isCoverageFirstMode = !rankingReady;
+
+  if (document.body) {
+    document.body.classList.toggle("coverage-first-mode", isCoverageFirstMode);
+  }
+
+  if (coveragePlacesIndexed) {
+    coveragePlacesIndexed.textContent = formatCoverageSummaryValue(placesIndexed);
+  }
+
+  if (coveragePlacesIndexedDetails) {
+    setCoverageGridText(coveragePlacesIndexedDetails, [
+      `World, ${formatCoverageSummaryValue(countryBoundaries)} `,
+      { type: "glossary", key: "boundaryCoverage", help: "Countries with map boundaries but no canonical rows are boundary-only coverage." },
+      ` entries, and ${formatCoverageSummaryValue(adm1)} `,
+      { type: "glossary", key: "adm1Overlay", help: "ADM1 rows are subnational context rows and may not be direct canonical country comparisons." },
+      " are listed in this release place index.",
+      noDataEvidence > 0 ? ` Plus ${formatCoverageSummaryValue(noDataEvidence)} ` : " ",
+      noDataEvidence > 0
+        ? {
+            type: "glossary",
+            key: "noData",
+            help: "No release rows are currently available for these places.",
+          }
+        : " ",
+      noDataEvidence > 0 ? " rows are not represented in this release snapshot." : "",
+    ]);
+  }
+
+  if (coverageCountryProfiles) {
+    coverageCountryProfiles.textContent = formatCoverageSummaryValue(countryProfiles);
+  }
+
+  if (coverageCountryProfilesDetails) {
+    const placeRows = formatCoverageSummaryValue(placesIndexed);
+    setCoverageGridText(coverageCountryProfilesDetails, [
+      `There are ${placeRows} release place rows total. `,
+      `${formatCoverageSummaryValue(countryProfiles)} countries have `,
+      { type: "glossary", key: "canonicalProfiles", help: "Canonical country profile rows are eligible for country-level comparison." },
+      `. Remaining indexed rows are `,
+      { type: "glossary", key: "boundaryCoverage", help: "Boundary-only rows are map-visible but have no canonical measure rows." },
+      " or ",
+      { type: "glossary", key: "adm1Overlay", help: "ADM1 context rows describe subnational context only unless promoted." },
+      noDataEvidence > 0
+        ? [", and ", { type: "glossary", key: "noData", help: "No indexed release rows are available yet." }, "."]
+        : ".",
+    ]);
+  }
+
+  if (coverageDirectEvidence) {
+    coverageDirectEvidence.textContent = `${formatCoverageSummaryValue(directEvidence)} rows`;
+  }
+
+  if (coverageDirectEvidenceDetails) {
+    setCoverageGridText(coverageDirectEvidenceDetails, [
+      directEvidenceCount > 0 ? `${formatCoverageSummaryValue(directEvidence)} ` : "Direct rows are not yet represented",
+      directEvidenceCount > 0
+        ? {
+            type: "glossary",
+            key: "directEvidence",
+            help: "Observed direct release rows.",
+          }
+        : "",
+      " in this snapshot. This release also includes ",
+      { type: "glossary", key: "proxy", help: "Indicator-derived proxy rows." },
+      ` ${formatCoverageSummaryValue(proxyEvidence)} `,
+      { type: "glossary", key: "priorityOverlay", help: "Priority ranking overlays are not direct comparison rows." },
+      ` ${formatCoverageSummaryValue(priorityOverlayEvidence)} and ${formatCoverageSummaryValue(boundaryEvidence)} `,
+      { type: "glossary", key: "boundaryLabel", help: "Boundary-context rows are not canonical country measurements." },
+      ` and ${formatCoverageSummaryValue(adm1ContextEvidence)} `,
+      { type: "glossary", key: "adm1Label", help: "ADM1 context overlay rows are not direct canonical country measures." },
+      noDataEvidence > 0 ? [", and ", { type: "glossary", key: "noData", help: "No indexed release rows are available for these places." }] : [],
+      ".",
+    ]);
+  }
+
+  if (coverageLastRelease) {
+    coverageLastRelease.textContent = formatCoverageSummaryValue(releaseDate);
+  }
+  if (coverageLastReleaseDetails) {
+    const coverageSummary = `Release ${releaseLabel} is identified by immutable artifacts and checksums. Sparse coverage: ${sparseCoverage}. Evidence split: direct ${formatCoverageSummaryValue(
+      directEvidence
+    )}, proxy ${formatCoverageSummaryValue(proxyEvidence)}, priority overlay ${formatCoverageSummaryValue(
+      priorityOverlayEvidence
+    )}, boundary ${formatCoverageSummaryValue(boundaryEvidence)}, ADM1 context overlay ${formatCoverageSummaryValue(
+      adm1ContextEvidence
+    )}, no coverage ${formatCoverageSummaryValue(noDataEvidence)}.`;
+
+    if (rankingReady) {
+      setCoverageGridText(coverageLastReleaseDetails, [
+        coverageSummary,
+        " Default global ranking is enabled by this release configuration.",
+      ]);
+    } else {
+      const releaseNoteLink = document.createElement("a");
+      releaseNoteLink.className = "glossary-term";
+      releaseNoteLink.href = rankingReadinessNoteUrl;
+      releaseNoteLink.rel = "noopener";
+      releaseNoteLink.textContent = "release note";
+      releaseNoteLink.title = "Coverage gate criteria and rationale";
+      releaseNoteLink.setAttribute("aria-label", "Coverage gate criteria and rationale");
+
+      const normalizedLastReleaseReason = rankingReadinessReason.endsWith(".") ?
+        rankingReadinessReason.slice(0, -1)
+        : rankingReadinessReason;
+
+      setCoverageGridText(coverageLastReleaseDetails, [
+        coverageSummary,
+        ` Default global ranking is not enabled (${normalizedLastReleaseReason}). Gate rule: ${rankingReadinessRule}. See `,
+        releaseNoteLink,
+        ".",
+      ]);
+    }
+  }
+
+  if (coverageDefaultRanking) {
+    coverageDefaultRanking.textContent = rankingReady ? "Enabled" : "Not enabled";
+  }
+
+  if (coverageDefaultRankingDetails) {
+    const releaseNoteLink = document.createElement("a");
+    releaseNoteLink.className = "glossary-term";
+    releaseNoteLink.href = rankingReadinessNoteUrl;
+    releaseNoteLink.rel = "noopener";
+    releaseNoteLink.textContent = "release note";
+    releaseNoteLink.title = "Coverage gate criteria and rationale";
+    releaseNoteLink.setAttribute("aria-label", "Coverage gate criteria and rationale");
+
+    if (rankingReady) {
+      setCoverageGridText(coverageDefaultRankingDetails, ["Default global ranking is enabled by this release configuration."]);
+    } else {
+      const reasonText = rankingReadinessReason || "Sparse coverage keeps ranking in coverage-first mode.";
+      const normalizedReason = reasonText.endsWith(".") ? reasonText.slice(0, -1) : reasonText;
+
+      setCoverageGridText(coverageDefaultRankingDetails, [
+        `Coverage-first mode is active: ${normalizedReason}. See `,
+        releaseNoteLink,
+        ".",
+      ]);
+    }
+  }
+
+  if (coverageLegendAdm1Rows) {
+    coverageLegendAdm1Rows.textContent = formatCoverageSummaryValue(adm1);
+  }
+
+  if (coverageLegendCanonical) {
+    coverageLegendCanonical.textContent = formatCoverageSummaryValue(countryProfiles);
+  }
+
+  if (coverageLegendBoundaryOnly) {
+    coverageLegendBoundaryOnly.textContent = formatCoverageSummaryValue(boundaryOnlyRows);
+  }
+
+  if (coverageLegendNoData) {
+    coverageLegendNoData.textContent = formatCoverageSummaryValue(noDataEvidence);
+  }
+
+  if (coverageLegendRankingMode) {
+    coverageLegendRankingMode.textContent = rankingReady ? "enabled" : "disabled";
+  }
+
+  renderFactList(
+    coverageSparseAreasList,
+    summary?.known_sparse_areas,
+    "No known sparse-coverage areas were reported by this snapshot."
+  );
+}
+
+async function ensureCountryCoverageStatus(iso, options = {}) {
+  if (!iso || state.countryCoverageStatusByIso.has(iso) || state.countryCoverageStatusLoading.has(iso)) {
+    return;
+  }
+
+  await loadPlaceIndexCoverageStatuses();
+  const indexedStatus = getCachedPlaceIndexCoverageStatus(iso);
+  state.countryCoverageStatusLoading.add(iso);
+
+  try {
+    const payload = await fetchJson(`v1/places/${iso}.json`);
+    const measured = Number(payload?.measurements?.length) > 0;
+    const directStatus = normalizeCoverageStatus(payload?.coverage_status);
+
+    if (directStatus === COVERAGE_STATUS.canonicalProfile || measured) {
+      state.countryCoverageStatusByIso.set(iso, COVERAGE_STATUS.canonicalProfile);
+      return;
+    }
+
+    if (directStatus === COVERAGE_STATUS.noData) {
+      state.countryCoverageStatusByIso.set(iso, COVERAGE_STATUS.noData);
+      return;
+    }
+
+    if (directStatus === COVERAGE_STATUS.adm1Overlay) {
+      state.countryCoverageStatusByIso.set(iso, COVERAGE_STATUS.adm1Overlay);
+      return;
+    }
+
+    try {
+      const adm1Payload = await fetchJson(`v1/places/${iso}/adm1.json`, 3000);
+      const adm1Status = normalizeCoverageStatus(adm1Payload?.coverage_status);
+      state.countryCoverageStatusByIso.set(
+        iso,
+        adm1Status === COVERAGE_STATUS.adm1Overlay
+          ? COVERAGE_STATUS.adm1Overlay
+        : COVERAGE_STATUS.boundaryOnly
+      );
+    } catch (adm1Error) {
+      state.countryCoverageStatusByIso.set(
+        iso,
+        indexedStatus === COVERAGE_STATUS.noData ? COVERAGE_STATUS.noData : COVERAGE_STATUS.boundaryOnly
+      );
+    }
+  } catch (error) {
+    state.countryCoverageStatusByIso.set(
+      iso,
+      indexedStatus === COVERAGE_STATUS.noData ? COVERAGE_STATUS.noData : COVERAGE_STATUS.boundaryOnly
+    );
+  } finally {
+    state.countryCoverageStatusLoading.delete(iso);
+
+    if (options?.render) {
+      renderDetails();
+      renderGlobe();
+      populateCountryOptions();
+    }
+  }
+}
+
 async function init() {
   recordTelemetry("route_view");
   initPerformanceTelemetry();
+  registerServiceWorker();
   setupTelemetryClickTracking();
   setStatus("Loading Natural Earth country boundaries...");
   renderPainVisuals();
   renderMoralWeightNotes();
   syncReleaseModeUi();
+  await loadReleaseModeContract();
+  if (state.releaseMode === "live") {
+    startLiveOverlayData();
+  }
 
   try {
+    await loadCoverageSummary();
     let data;
     let boundaryStatus = 'Equal-area atlas view loaded. Search for a country or "Province, Country", zoom the map, or switch to globe explorer.';
 
@@ -5952,12 +7795,20 @@ async function init() {
       (feature) => feature.geometry && countryName(feature.properties) !== "Antarctica"
     );
     state.countryIndex = state.countries
-      .map((feature) => ({
-        feature,
-        name: countryName(feature.properties),
-        nameLower: normalizeSearchText(countryName(feature.properties)),
-        iso: countryIso(feature.properties),
-      }))
+      .map((feature) => {
+        const name = countryName(feature.properties);
+        const iso = countryIso(feature.properties);
+        const aliases = countrySearchAliases(feature, name);
+        return {
+          feature,
+          name,
+          nameLower: normalizeSearchText(name),
+          iso,
+          isoLower: String(iso || "").trim().toLowerCase(),
+          aliases,
+          primaryAlias: aliases[0] || null,
+        };
+      })
       .sort((left, right) => left.name.localeCompare(right.name));
     populateCountryOptions();
     renderDetails();
@@ -5965,6 +7816,7 @@ async function init() {
     renderGlobe();
     setupInteraction();
     setStatus(boundaryStatus);
+    setCoverageGrid();
   } catch (error) {
     setStatus(`Country data failed to load: ${error.message}`);
   }

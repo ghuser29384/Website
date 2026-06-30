@@ -19,6 +19,29 @@
     "last_release_date": {
       "type": "string"
     },
+    "default_ranking_readiness": {
+      "type": "object",
+      "properties": {
+        "ready": {
+          "type": "boolean"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "rule": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "release_note_url": {
+          "type": "string"
+        },
+        "summary_generated_at": {
+          "type": "string"
+        }
+      }
+    },
     "coverage_status": {
       "type": "object"
     },

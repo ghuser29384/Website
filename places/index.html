@@ -3,6 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" as="style" href="/styles.css?v=e56aa75999edbbae">
+    <link rel="preload" as="script" href="/places-coverage.js?v=20260630" integrity="sha384-Noa9h5SvLgf4NZydVKIO7EepOLVrNTTj3PTLUSYKPjAmWkNBVXwG8QYdEDrPoWBx" crossorigin="anonymous">
+    <link rel="modulepreload" href="/script.js?v=610f13a9b104c7c7">
+    <link rel="preconnect" href="https://www.geoboundaries.org" crossorigin>
+    <link rel="preconnect" href="https://api.worldbank.org" crossorigin>
+    <link rel="preconnect" href="https://api.worldpop.org" crossorigin>
+    <link rel="preconnect" href="https://ourworldindata.org" crossorigin>
+    <link rel="preconnect" href="https://media.githubusercontent.com" crossorigin>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://api.worldpop.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Places | PainMap</title>
@@ -17,7 +25,7 @@
     <meta name="twitter:title" content="Places | PainMap">
     <meta name="twitter:description" content="Search PainMap places, inspect coverage status, and open the full place index for atlas release 2026-05-31.atlas.2.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../styles.css" integrity="sha384-247i4QQKs5xcO5DRVdCYNDn8SIksDDkmOncbjyJb10IWhCroxw7XbgJgLD7gwiez" crossorigin="anonymous">
+<link rel="stylesheet" href="../styles.css?v=e56aa75999edbbae" integrity="sha384-skP3aTkTYGWl5T7f7n1CXxDZBeO/ZPfZhkHRpgGs3+8sdQk4L3LMfqTg1h4LCcvg" crossorigin="anonymous">
       <script type="application/ld+json">
       {"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://painmap.org/places/#page","name":"Places | PainMap","url":"https://painmap.org/places/","description":"Search PainMap places, inspect coverage status, and open the full place index for atlas release 2026-05-31.atlas.2."},{"@type":"BreadcrumbList","@id":"https://painmap.org/places/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"PainMap","item":"https://painmap.org"},{"@type":"ListItem","position":2,"name":"Places","item":"https://painmap.org/places/"}]}]}
     </script>
@@ -54,70 +62,199 @@
             <h1 id="places-title">Atlas coverage by place</h1>
           </div>
           <p class="route-copy">
-            PainMap now exposes a full release place index with country coverage and ADM1 context overlays. Canonical measurement rows remain explicitly labeled so readers can separate measured places from contextual proxy surfaces.
+            PainMap exposes a full release place index with explicit coverage status for each country and ADM1 context row.
+            Confirm coverage type first so sparse countries are not read as full canonical profiles.
           </p>
         </section>
 
         <section class="route-panel" aria-labelledby="coverage-title">
           <div class="section-intro">
             <p class="label">Coverage today</p>
-            <h2 id="coverage-title">What the current release covers</h2>
+            <h2 id="coverage-title">What this release currently covers</h2>
           </div>
           <div class="coverage-grid">
             <article class="fact-card">
               <span class="fact-label">Place index rows</span>
-              <strong>2,114</strong>
-              <p>World, 239 Natural Earth country entries, and 1,874 ADM1 context rows.</p>
+              <strong id="coverage-places-indexed">2,114</strong>
+              <p id="coverage-places-indexed-details">World, 239 country boundary entries, and 1,874 ADM1 context rows are indexed. Countries are classified as <a class="glossary-term" href="#term-canonical-country-profile">canonical</a>, <a class="glossary-term" href="#term-boundary-only">boundary-only</a>, or <a class="glossary-term" href="#term-adm1-context">ADM1 overlay</a> coverage.</p>
             </article>
             <article class="fact-card">
               <span class="fact-label">Canonical measurement profiles</span>
-              <strong>2 countries</strong>
-              <p>Brazil and India have country measurement profiles in this release.</p>
+              <strong id="coverage-country-profiles">2</strong>
+              <p id="coverage-country-profiles-details">Brazil and India are the only countries with <a class="glossary-term" href="#term-canonical-country-profile">canonical country profiles</a> in this release.</p>
             </article>
             <article class="fact-card">
-              <span class="fact-label">Release rows</span>
-              <strong>8 measurements</strong>
-              <p>Proxy, priority-overlay, and world reference rows with confidence bounds and source IDs.</p>
+              <span class="fact-label">Evidence-layer rows</span>
+              <strong id="coverage-evidence-rows">8 measurements</strong>
+              <p id="coverage-evidence-rows-details">Direct rows are not yet available; this release includes <a class="glossary-term" href="#term-proxy-aggregate">6 proxy</a> and <a class="glossary-term" href="#term-priority-overlay">2 priority-overlay</a> rows plus 239 boundary and 1,874 ADM1 context-overlay rows.</p>
             </article>
             <article class="fact-card">
               <span class="fact-label">ADM1 status</span>
-              <strong>120 static context pages</strong>
-              <p>ADM1 poverty-context rows are indexed as overlays; the highest-priority rows are pre-rendered and remain separate from release measurements.</p>
+              <strong id="coverage-adm1-context">120 static context pages</strong>
+              <p id="coverage-adm1-context-details">
+                <a class="glossary-term" href="#term-adm1-context">ADM1 poverty-context rows</a> are separate overlay coverage.
+                They are useful for context only and should not be treated as canonical country ranking rows.
+              </p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">Direct place evidence</span>
+              <strong id="coverage-direct-place-evidence">0 rows</strong>
+              <p id="coverage-direct-place-evidence-details">Direct welfare evidence rows are not yet represented as country-level release measurements.</p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">Default global ranking</span>
+              <strong id="coverage-default-ranking">Not enabled</strong>
+              <p>
+                <span id="coverage-default-ranking-details">
+                  Global default rankings are held until coverage checks pass for <a class="glossary-term" href="#term-canonical-country-profile">canonical profiles</a> and <a class="glossary-term" href="#term-direct-evidence">direct</a>/<a class="glossary-term" href="#term-priority-overlay">priority evidence</a> rows in this release snapshot.
+                  See <a href="/updates/" rel="noopener">release notes</a> for the explicit gate criteria and progress rationale.
+                </span>
+              </p>
+            </article>
+            <article class="fact-card">
+              <span class="fact-label">Last release</span>
+              <strong id="coverage-last-release">2026-05-31</strong>
+              <p id="coverage-last-release-details">Release manifests, checksums, schemas, and coverage JSON identify this snapshot.</p>
             </article>
           </div>
+          <ul id="coverage-sparse-areas" class="fact-list">
+            <li>World and country boundaries are mapped, but sparse ranking inputs remain transparent.</li>
+          </ul>
           <div class="route-actions">
             <a class="solid-button" href="/v1/places/index.json">Open place index JSON</a>
-            <a class="ghost-link" href="/v1/adm1/index.json">Open ADM1 context JSON</a>
+            <a class="ghost-link" href="/data/gsap-adm1-2023.json">Open ADM1 context index</a>
             <a class="ghost-link" href="/v1/coverage.json">Open coverage JSON</a>
             <a class="ghost-link" href="/#explore-country">Search the atlas</a>
+            <a
+              class="ghost-link"
+              href="https://github.com/ghuser29384/Website/issues/new?title=%5BPainMap%20correction%5D%202026-05-31.atlas.2%3A%20places%20coverage&body=Release%3A%202026-05-31.atlas.2%0ASubject%20type%3A%20route%0ASubject%20id%3A%20places%0AClaim%20id%3A%20claim.2026-05-31.atlas.2.route.places%0ARoute%3A%20%2Fplaces%2F%0AClaims%20context%3A%20place%20coverage%20index%20and%20sparse-country%20status%0A%0APlease%20paste%20specific%20place%20or%20issue%20rows%20and%20your%20evidence%20if%20you%20found%20a%20possible%20coverage%20gap.%0ADo%20not%20share%20personal%20health%20data%20in%20this%20issue.%0A"
+              target="_blank"
+              rel="noopener"
+            >Open correction form</a>
           </div>
         </section>
 
         <section class="route-panel" aria-labelledby="read-places-title">
           <div class="route-grid">
             <article class="route-card">
-              <p class="issue-tag">Snapshot</p>
-              <h2 id="read-places-title">Release artifacts are immutable</h2>
-              <p>Use release-scoped JSON when you need a citation or repeatable analysis.</p>
+              <p class="issue-tag">Task 1</p>
+              <h2 id="read-places-title">Find a place</h2>
+              <p>Start with the country search path on the homepage, then confirm coverage status in the place summary.</p>
+              <p>
+                The first step is checking whether a place has <strong>canonical</strong>, <strong>boundary-only</strong>, or
+                <strong>ADM1 overlay</strong> status before interpreting any ranking.
+              </p>
             </article>
             <article class="route-card">
-              <p class="issue-tag">Live overlay</p>
-              <h2>Runtime values are labeled</h2>
-              <p>The homepage may refresh public-source context, but visible values keep evidence kind, source vintage, and uncertainty attached.</p>
+              <p class="issue-tag">Task 2</p>
+              <h2>Compare places</h2>
+              <p>Use the compare surface only across compatible coverage modes and keep source-vintage, uncertainty, and method links visible.</p>
             </article>
             <article class="route-card">
-              <p class="issue-tag">Table first</p>
-              <h2>Search is the complete path</h2>
-              <p>The homepage search, ADM1 context index, and data tables provide the non-map workflow for country and subnational context.</p>
+              <p class="issue-tag">Task 3</p>
+              <h2>Download and cite</h2>
+              <p>Use release-scoped JSON and API contracts for analysis, citations, and reproducible exports.</p>
             </article>
           </div>
           <div class="route-actions">
-            <a class="ghost-link" href="/place/BRA/">Brazil profile</a>
-            <a class="ghost-link" href="/place/IND/">India profile</a>
+            <a class="solid-button" href="/#explore-country">Open place search</a>
+            <a class="ghost-link" href="/compare/">Open compare</a>
+            <a class="ghost-link" href="/data/">Download data</a>
             <a class="ghost-link" href="/dataset/place-measurements/">Review measurements</a>
           </div>
         </section>
+
+        <section class="route-panel" aria-labelledby="places-list-title">
+          <div class="section-intro">
+            <p class="label">Coverage rows</p>
+            <h2 id="places-list-title">Place coverage list</h2>
+          </div>
+          <p id="places-list-summary" class="fact-card-note">Loading place coverage rows from release index.</p>
+          <div id="places-list-controls" class="route-actions" aria-label="Place coverage controls">
+            <label for="places-list-status-filter">Coverage status</label>
+            <select id="places-list-status-filter">
+              <option value="all">All</option>
+              <option value="canonical_measurements">Canonical profile</option>
+              <option value="boundary_index_only">Boundary-only</option>
+              <option value="adm1_context_overlay">ADM1 context overlay</option>
+              <option value="no_data">No release coverage</option>
+            </select>
+
+            <label for="places-list-sort">Sort by</label>
+            <select id="places-list-sort">
+              <option value="priority">Coverage first</option>
+              <option value="rows">Release rows</option>
+              <option value="name">Place name</option>
+              <option value="parent">Parent/level</option>
+            </select>
+          </div>
+          <div class="data-table-wrap">
+            <table class="route-table">
+              <caption>Top places in this release, ordered by coverage completeness and name.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Place</th>
+                  <th scope="col">Coverage status</th>
+                  <th scope="col">Release rows</th>
+                  <th scope="col">Missing inputs / notes</th>
+                  <th scope="col">Profile links</th>
+                </tr>
+              </thead>
+              <tbody id="places-list-body">
+                <tr>
+                  <td colspan="5">Loading coverage rows from release index.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="route-actions">
+            <a id="places-list-open-all" class="ghost-link" href="/v1/places/index.json">Open full place index</a>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="places-terms-title">
+          <div class="section-intro">
+            <p class="label">Key terms</p>
+            <h2 id="places-terms-title">Coverage and comparability glossary</h2>
+          </div>
+          <dl class="glossary-list">
+            <dt id="term-canonical-country-profile">Canonical country profile</dt>
+            <dd>Countries with release-scoped measurement rows and rows eligible for direct side-by-side comparison.</dd>
+            <dt id="term-boundary-only">Boundary-only coverage</dt>
+            <dd>Countries shown in the map boundary set without canonical pain values in this release.</dd>
+            <dt id="term-adm1-context">ADM1 context</dt>
+            <dd>Subnational context rows shown for distributional hints, not canonical comparison rows unless explicitly promoted.</dd>
+            <dt id="term-no-data">No release coverage</dt>
+            <dd>Place not currently represented in the active release in a comparable row format.</dd>
+            <dt id="term-proxy-aggregate">Proxy aggregate</dt>
+            <dd>Indicator-derived estimates used where direct evidence rows are not published in the release.</dd>
+            <dt id="term-priority-overlay">Priority overlay</dt>
+            <dd>Attention-first ranked layer used to guide review and action pathways, distinct from direct comparison rows.</dd>
+            <dt id="term-modeled">Modeled estimate</dt>
+            <dd>Computed outputs that rely on transform logic, assumptions, or proxy substitution to estimate place-level burden.</dd>
+            <dt id="term-direct-evidence">Direct place evidence</dt>
+            <dd>Canonical measurements published directly for a place in this release and suitable for direct comparison.</dd>
+            <dt id="term-ranking-mode">Ranking mode</dt>
+            <dd>The ordering contract for a row family, including whether lower is worse, higher is worse, or whether uncertainty changes sort behavior.</dd>
+            <dt id="term-comparability">Not directly comparable</dt>
+            <dd>Rows only compare directly when coverage mode, unit, value model, ranking mode, source vintage, reference period, and method version align.</dd>
+            <dt id="term-coverage-status">Coverage status</dt>
+            <dd>Release-derived state that determines whether a place has canonical rows, context-only rows, or no release rows.</dd>
+            <dt id="term-value-model">Value model</dt>
+            <dd>How a value was represented numerically before ranking (for example, proxy burden, direct estimate, or transformed life-years).</dd>
+            <dt id="term-reference-period">Reference period</dt>
+            <dd>The date window represented by the value row, kept so incomparable time windows are not mixed.</dd>
+            <dt id="term-source-vintage">Source vintage</dt>
+            <dd>The upstream source revision or snapshot date used to generate the release row.</dd>
+            <dt id="term-uncertainty">Uncertainty</dt>
+            <dd>How much confidence and interval width applies to this value; lower precision should not be treated as fixed evidence.</dd>
+            <dt id="term-transform-version">Method version</dt>
+            <dd>The registered transformation method used to convert source data into this release row.</dd>
+          </dl>
+        </section>
       </main>
     </div>
+    <script src="../places-coverage.js?v=20260630" integrity="sha384-Noa9h5SvLgf4NZydVKIO7EepOLVrNTTj3PTLUSYKPjAmWkNBVXwG8QYdEDrPoWBx" crossorigin="anonymous" defer></script>
+  <script src="/route-table-labels.js?v=4fc546df01614183" defer></script>
   </body>
 </html>

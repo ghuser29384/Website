@@ -63,6 +63,27 @@
               "boundary"
             ]
           },
+          "method_id": {
+            "type": "string"
+          },
+          "method_version": {
+            "type": "string"
+          },
+          "reference_period": {
+            "type": "string"
+          },
+          "method_transform_version": {
+            "type": "string"
+          },
+          "source_snapshot_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_vintage": {
+            "type": "string"
+          },
           "raw_value": {
             "type": "number"
           },
@@ -93,6 +114,9 @@
             "const": "sha256"
           },
           "source_file_checksum_basis": {
+            "type": "string"
+          },
+          "method_note": {
             "type": "string"
           }
         }

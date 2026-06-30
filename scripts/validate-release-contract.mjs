@@ -10,6 +10,8 @@ const schemaTargets = [
   ["schemas/adm1-context.schema.json", "v1/adm1/index.json"],
   ["schemas/place-measurements.schema.json", "data/place-measurements.json"],
   ["schemas/coverage.schema.json", "v1/coverage.json"],
+  ["schemas/source-snapshot.schema.json", "data/source-snapshots.json"],
+  ["schemas/country-gap-ledger.schema.json", "data/country-gap-ledger.json"],
   ["schemas/release-modes.schema.json", "data/release-modes.json"],
   ["schemas/ogc-place-features.schema.json", "ogc/collections/places/items.json"],
 ];
@@ -52,6 +54,19 @@ function valueType(value) {
   }
 
   return typeof value;
+}
+
+function parseIsoDate(value) {
+  const asDate = Date.parse(String(value || ""));
+  return Number.isFinite(asDate) ? asDate : null;
+}
+
+function asArray(value) {
+  return Array.isArray(value) ? value : [];
+}
+
+function isPresentValue(value) {
+  return value !== undefined && value !== null && String(value).trim().length > 0;
 }
 
 function matchesType(value, expectedType) {
@@ -130,11 +145,27 @@ const placeIndex = readJson("v1/places/index.json");
 const measurements = readJson("data/place-measurements.json");
 const releaseModes = readJson("data/release-modes.json");
 const thirdPartyFetches = readJson("data/third-party-fetches.json");
+const releaseCoverage = readJson("v1/coverage.json");
+const countryGapLedger = readJson("data/country-gap-ledger.json");
+const sourceSnapshots = readJson("data/source-snapshots.json");
+const countryProfileSpec = readJson("data/country-profile-input-spec.json");
 const accessibilityAudit = readJson("data/accessibility-audit.json");
+const provenanceRegistry = readJson("data/provenance-registry.json");
 const releaseManifest = readJson("releases/2026-05-31/manifest.json");
 const releaseMigration = readJson("releases/2026-05-31/migration.json");
 const endpointSmoke = readJson("data/endpoint-smoke.json");
+const sourceSnapshotById = new Map((sourceSnapshots.source_snapshots || []).map((entry) => [entry.source_snapshot_id, entry]));
+const sourceSnapshotBySourceId = new Map((sourceSnapshots.source_snapshots || []).map((entry) => [entry.source_id, entry.source_snapshot_id]));
+const sourceById = new Map((provenanceRegistry.sources || []).map((entry) => [entry.source_id, entry]));
+const licenseById = new Map((provenanceRegistry.licenses || []).map((entry) => [entry.id, entry]));
+const releaseDate = releaseManifest?.release_date || releaseCoverage?.last_release_date || "";
 const measurementRowsByPlace = new Map();
+const releaseDateMs = parseIsoDate(`${releaseDate}T00:00:00Z`);
+const requiredCoverageFields = asArray(countryProfileSpec?.required_coverage_fields);
+
+function shouldHaveNeighbors(item) {
+  return item.geometry_level !== "adm1";
+}
 
 for (const row of measurements.measurements) {
   expect(
@@ -149,11 +180,114 @@ for (const row of measurements.measurements) {
   expect(/^[a-f0-9]{64}$/.test(row.source_file_checksum || ""), `${row.measurement_id} source_file_checksum must be sha256 hex`);
   expect(row.source_file_checksum_algorithm === "sha256", `${row.measurement_id} source_file_checksum_algorithm must be sha256`);
   expect(Boolean(row.source_file_checksum_basis), `${row.measurement_id} missing source_file_checksum_basis`);
+  expect(Array.isArray(row.source_ids) && row.source_ids.length > 0, `${row.measurement_id} should include source_ids`);
+
+  const sourceSnapshotIds = Array.isArray(row.source_snapshot_ids) ? row.source_snapshot_ids : [];
+  const sourceIds = Array.from(new Set((row.source_ids || []).map((entry) => String(entry))));
+  expect(sourceSnapshotIds.length > 0, `${row.measurement_id} should include source_snapshot_ids`);
+  expect(sourceSnapshotIds.length >= sourceIds.length, `${row.measurement_id} source_snapshot_ids should resolve all source_ids`);
+  expect(sourceIds.every((sourceId) => sourceById.has(sourceId)), `${row.measurement_id} references source_id not found in provenance`);
+  expect(sourceSnapshotIds.every((snapshotId) => sourceSnapshotById.has(snapshotId)), `${row.measurement_id} references missing source_snapshot_id`);
+
+  for (const field of requiredCoverageFields) {
+    if (field === "source_snapshot_ids") {
+      continue;
+    }
+
+    expect(isPresentValue(row[field]), `${row.measurement_id} missing required coverage field ${field}`);
+  }
+
+  for (const sourceId of sourceIds) {
+    const source = sourceById.get(sourceId);
+    expect(Boolean(source?.source_id), `${row.measurement_id} source_id ${sourceId} missing source registry record`);
+    expect(licenseById.has(source?.license_id), `${row.measurement_id} source_id ${sourceId} references unknown license_id ${source?.license_id || "missing"}`);
+    expect(sourceSnapshotIds.includes(sourceSnapshotBySourceId.get(sourceId)), `${row.measurement_id} missing source snapshot for source_id ${sourceId}`);
+  }
+
+  if (row.license_id) {
+    expect(licenseById.has(row.license_id), `${row.measurement_id} measurement license_id is not in provenance registry`);
+  }
+
+  if (releaseDateMs) {
+    for (const snapshotId of sourceSnapshotIds) {
+      const snapshot = sourceSnapshotById.get(snapshotId);
+      expect(snapshot && snapshot.retrieval_timestamp, `${row.measurement_id} source snapshot ${snapshotId} missing retrieval_timestamp`);
+      const snapshotTs = parseIsoDate(snapshot?.retrieval_timestamp);
+      expect(snapshotTs <= releaseDateMs, `${row.measurement_id} source snapshot ${snapshotId} retrieved after release date`);
+    }
+  }
 
   const rows = measurementRowsByPlace.get(row.place_id) || [];
   rows.push(row);
   measurementRowsByPlace.set(row.place_id, rows);
 }
+
+for (const snapshot of sourceSnapshots.source_snapshots || []) {
+  expect(
+    snapshot.retrieval_basis && typeof snapshot.retrieval_basis === "string",
+    `${snapshot.source_snapshot_id} must include retrieval_basis`
+  );
+  expect(snapshot.source_id, `${snapshot.source_snapshot_id} must include source_id`);
+  expect(sourceById.has(snapshot.source_id), `${snapshot.source_snapshot_id} source_id missing from provenance`);
+  expect(/^[a-f0-9]{64}$/.test(snapshot.checksum || ""), `${snapshot.source_snapshot_id} checksum must be sha256`);
+  expect(snapshot.checksum_algorithm === "sha256", `${snapshot.source_snapshot_id} checksum_algorithm must be sha256`);
+  expect(parseIsoDate(snapshot.retrieval_timestamp) !== null, `${snapshot.source_snapshot_id} retrieval_timestamp must be parseable`);
+  if (releaseDateMs) {
+    expect(parseIsoDate(snapshot.retrieval_timestamp) <= releaseDateMs, `${snapshot.source_snapshot_id} retrieval timestamp must not exceed release date`);
+  }
+}
+
+const gapSummary = releaseCoverage?.coverage_status?.country_gap_ledger;
+expect(gapSummary && typeof gapSummary === "object", "v1/coverage.json should include coverage_status.country_gap_ledger");
+
+if (countryGapLedger?.countries) {
+  const observedCountryStatuses = new Map();
+  for (const country of countryGapLedger.countries || []) {
+    expect(Boolean(country.place_id), `${country.place_id || "unknown"} country gap row missing place_id`);
+    expect(country.gap_status, `${country.place_id} country gap row missing gap_status`);
+    expect(Array.isArray(country.missing_inputs), `${country.place_id} country gap row should list missing_inputs`);
+
+    if (country.gap_status === "canonical") {
+      expect(country.eligible_for_promotion === true, `${country.place_id} canonical country should be eligible_for_promotion`);
+      expect(
+        Array.isArray(country.missing_inputs) && country.missing_inputs.length === 0,
+        `${country.place_id} canonical country should not have missing_inputs`
+      );
+    } else {
+      expect(
+        country.eligible_for_promotion === false,
+        `${country.place_id} non-canonical country should not be eligible_for_promotion`
+      );
+    }
+
+    const normalizedStatus = country.gap_status;
+    observedCountryStatuses.set(normalizedStatus, (observedCountryStatuses.get(normalizedStatus) || 0) + 1);
+  }
+
+  for (const status of ["canonical", "boundary_only", "no_data", "stale", "blocked", "excluded_by_policy"]) {
+    const observed = observedCountryStatuses.get(status) || 0;
+    if (gapSummary) {
+      const expected = Number(gapSummary[status === "excluded_by_policy" ? "excluded" : `${status}_countries`]);
+      if (Number.isFinite(expected)) {
+        expect(expected === observed, `v1/coverage.json country_gap_ledger.${status}_countries must equal country ledger count`);
+      }
+    }
+  }
+
+  expect(
+    Number(gapSummary?.country_count) === (countryGapLedger.countries || []).length,
+    "v1/coverage.json country_gap_ledger country_count should match gap ledger rows"
+  );
+}
+
+expect(
+  Array.isArray(countryProfileSpec?.coverage_gate?.minimum_inputs),
+  "data/country-profile-input-spec.json must declare minimum_inputs"
+);
+expect(
+  countryProfileSpec?.release_id === placeIndex.release_id,
+  "data/country-profile-input-spec.json release_id should match place index release_id"
+);
 
 for (const item of placeIndex.items) {
   const rows = measurementRowsByPlace.get(item.place_id) || [];
@@ -167,7 +301,9 @@ for (const item of placeIndex.items) {
     expect(item.coverage_status === "canonical_measurements", `${item.place_id} should be canonical_measurements`);
     expect(Boolean(item.profile_url), `${item.place_id} missing profile_url`);
     expect(Boolean(item.measurements_url), `${item.place_id} missing measurements_url`);
-    expect(Boolean(item.neighbors_url), `${item.place_id} missing neighbors_url`);
+    if (shouldHaveNeighbors(item)) {
+      expect(Boolean(item.neighbors_url), `${item.place_id} missing neighbors_url`);
+    }
     expect(existsSync(absolute(`v1/places/${item.place_id}.json`)), `${item.place_id} profile JSON missing`);
     expect(
       existsSync(absolute(`v1/places/${item.place_id}/measurements.json`)),
@@ -186,8 +322,22 @@ for (const item of placeIndex.items) {
   expect(Boolean(item.neighbors_url), `${item.place_id} missing neighbors_url`);
 }
 
+expect(releaseCoverage.default_ranking_readiness?.rule, "v1/coverage.json must include default_ranking_readiness.rule");
+expect(releaseCoverage.default_ranking_readiness?.reason, "v1/coverage.json must include default_ranking_readiness.reason");
+expect(releaseCoverage.default_ranking_readiness?.release_note_url, "v1/coverage.json must include default_ranking_readiness.release_note_url");
+expect(releaseCoverage.default_ranking_readiness?.summary_generated_at, "v1/coverage.json must include default_ranking_readiness.summary_generated_at");
+expect(
+  typeof releaseCoverage.default_ranking_readiness?.ready === "boolean" ||
+    typeof releaseCoverage.default_ranking_readiness?.enabled === "boolean",
+  "v1/coverage.json default_ranking_readiness must declare ready or enabled as boolean"
+);
+expect(
+  /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(releaseCoverage.default_ranking_readiness?.summary_generated_at || ""),
+  "v1/coverage.json default_ranking_readiness.summary_generated_at must be an ISO timestamp"
+);
+
 for (const item of placeIndex.items) {
-  if (!item.neighbors_url) {
+  if (!shouldHaveNeighbors(item) || !item.neighbors_url) {
     continue;
   }
 
@@ -293,7 +443,7 @@ expect(
   "release diff must link human-readable changes page"
 );
 expect(
-  releaseDiff.current_release?.neighbor_payloads === placeIndex.items.filter((item) => item.neighbors_url).length,
+  releaseDiff.current_release?.neighbor_payloads === placeIndex.items.filter((item) => shouldHaveNeighbors(item) && item.neighbors_url).length,
   "release diff neighbor payload count mismatch"
 );
 expect(
@@ -376,6 +526,8 @@ for (const requiredArtifact of [
   "/schemas/coverage.schema.json",
   "/schemas/release-modes.schema.json",
   "/schemas/ogc-place-features.schema.json",
+  "/offline.html",
+  "/service-worker.js",
   "/data/endpoint-smoke.json",
   "/data/ui-smoke.json",
   "/data/performance-budgets.json",
@@ -398,6 +550,12 @@ for (const requiredArtifact of [
   "/releases/2026-05-31/diff.json",
   "/releases/2026-05-31/changes/index.html",
   "/releases/2026-05-31/migration.json",
+  "/data/source-snapshots.json",
+  "/data/country-gap-ledger.json",
+  "/data/country-gap-ledger.csv",
+  "/data/country-profile-input-spec.json",
+  "/schemas/source-snapshot.schema.json",
+  "/schemas/country-gap-ledger.schema.json",
   "/policies/accessibility/audit-2026-06-05/index.html",
   "/clients/typescript/painmap-client.ts",
   "/clients/python/painmap_client.py",

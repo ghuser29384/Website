@@ -65,7 +65,30 @@
             "enum": [
               "canonical_measurements",
               "boundary_index_only",
-              "adm1_context_overlay"
+              "adm1_context_overlay",
+              "no_data"
+            ]
+          },
+          "coverage_reason": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "missing_inputs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "gap_status": {
+            "enum": [
+              "canonical",
+              "boundary_only",
+              "no_data",
+              "stale",
+              "blocked",
+              "excluded_by_policy"
             ]
           },
           "canonical_measurement_count": {

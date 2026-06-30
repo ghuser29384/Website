@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="refresh" content="30">
+    <title>PainMap is offline</title>
+    <meta name="description" content="PainMap is currently offline. Cached release pages and data are available where possible.">
+    <link rel="canonical" href="/offline.html">
+    <link rel="stylesheet" href="/styles.css?v=e56aa75999edbbae" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: Inter, system-ui, -apple-system, sans-serif;
+        padding: 2rem;
+      }
+      .offline-shell {
+        max-width: 42rem;
+        margin: 2rem auto;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 1.5rem;
+        background: #fff;
+      }
+      .offline-actions {
+        margin-top: 1rem;
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+      .offline-actions a {
+        display: inline-block;
+        padding: 0.5rem 0.85rem;
+        border-radius: 8px;
+        text-decoration: none;
+        border: 1px solid #cbd5e1;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="offline-shell">
+      <h1>PainMap is offline</h1>
+      <p>Some cached pages and release artifacts may still be available. When your connection returns, this page will retry.</p>
+      <p>Try opening:</p>
+      <div class="offline-actions">
+        <a href="/">Home</a>
+        <a href="/places/">Places summary</a>
+        <a href="/compare/">Compare</a>
+        <a href="/v1/coverage.json">Coverage data</a>
+      </div>
+    </main>
+  </body>
+</html>

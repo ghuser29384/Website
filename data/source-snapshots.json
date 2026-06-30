@@ -1,0 +1,119 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-06-30T13:25:27Z",
+  "release_date": "2026-05-31",
+  "source_snapshots": [
+    {
+      "source_snapshot_id": "source-snapshot-2026-05-31.atlas.2-fishcount-aquaculture",
+      "source_id": "fishcount-aquaculture",
+      "upstream_url": "http://fishcount.org.uk/",
+      "retrieval_timestamp": "2026-05-31T00:00:00Z",
+      "source_vintage": "2026-05-31 release review",
+      "media_type": "application/json",
+      "license_id": "owid-cc-by",
+      "retrieval_metadata": {
+        "source_id": "fishcount-aquaculture",
+        "source_url": "http://fishcount.org.uk/"
+      },
+      "checksum_algorithm": "sha256",
+      "retrieval_basis": "2026-05-31.atlas.2|fishcount-aquaculture|http://fishcount.org.uk/|2026-05-31 release review|2026-05-31|",
+      "checksum": "74809e247cb10a18027889e029c26ad6d0ffc95ce259a32c8454ab4c52a2c997"
+    },
+    {
+      "source_snapshot_id": "source-snapshot-2026-05-31.atlas.2-owid-livestock",
+      "source_id": "owid-livestock",
+      "upstream_url": "https://ourworldindata.org/",
+      "retrieval_timestamp": "2026-05-31T00:00:00Z",
+      "source_vintage": "Latest public runtime rows where available; frozen release values dated 2026-05-31.",
+      "media_type": "application/json",
+      "license_id": "owid-cc-by",
+      "retrieval_metadata": {
+        "source_id": "owid-livestock",
+        "source_url": "https://ourworldindata.org/"
+      },
+      "checksum_algorithm": "sha256",
+      "retrieval_basis": "2026-05-31.atlas.2|owid-livestock|https://ourworldindata.org/|Latest public runtime rows where available; frozen release values dated 2026-05-31.|2026-05-31|",
+      "checksum": "239b5a6b48f54ebf9cbb3823ea1cf8059a167a2703ebf035ab08df07f02cd384"
+    },
+    {
+      "source_snapshot_id": "source-snapshot-2026-05-31.atlas.2-painmap-priority-review",
+      "source_id": "painmap-priority-review",
+      "upstream_url": "https://painmap.org/releases/2026-05-31/",
+      "retrieval_timestamp": "2026-05-31T00:00:00Z",
+      "source_vintage": "2026-05-31 release",
+      "media_type": "application/json",
+      "license_id": "painmap-mit",
+      "retrieval_metadata": {
+        "source_id": "painmap-priority-review",
+        "source_url": "https://painmap.org/releases/2026-05-31/"
+      },
+      "checksum_algorithm": "sha256",
+      "retrieval_basis": "2026-05-31.atlas.2|painmap-priority-review|https://painmap.org/releases/2026-05-31/|2026-05-31 release|2026-05-31|",
+      "checksum": "325bfc2c9b0aef12a92790bc45a053674b017550d04a7240276ab0e2fa16eb27"
+    },
+    {
+      "source_snapshot_id": "source-snapshot-2026-05-31.atlas.2-painmap-welfare-assumptions",
+      "source_id": "painmap-welfare-assumptions",
+      "upstream_url": "https://painmap.org/methods/",
+      "retrieval_timestamp": "2026-05-31T00:00:00Z",
+      "source_vintage": "2026-05-31 release",
+      "media_type": "application/json",
+      "license_id": "painmap-mit",
+      "retrieval_metadata": {
+        "source_id": "painmap-welfare-assumptions",
+        "source_url": "https://painmap.org/methods/"
+      },
+      "checksum_algorithm": "sha256",
+      "retrieval_basis": "2026-05-31.atlas.2|painmap-welfare-assumptions|https://painmap.org/methods/|2026-05-31 release|2026-05-31|",
+      "checksum": "f8df064d50967dc43a4c55f133c8610e9c9fecf29b7416d6e62a14b8829b7954"
+    },
+    {
+      "source_snapshot_id": "source-snapshot-2026-05-31.atlas.2-welfare-footprint-events",
+      "source_id": "welfare-footprint-events",
+      "upstream_url": "https://welfarefootprint.org/",
+      "retrieval_timestamp": "2026-05-31T00:00:00Z",
+      "source_vintage": "2026-05-31 review",
+      "media_type": "application/json",
+      "license_id": "welfare-footprint-cc-by",
+      "retrieval_metadata": {
+        "source_id": "welfare-footprint-events",
+        "source_url": "https://welfarefootprint.org/"
+      },
+      "checksum_algorithm": "sha256",
+      "retrieval_basis": "2026-05-31.atlas.2|welfare-footprint-events|https://welfarefootprint.org/|2026-05-31 review|2026-05-31|",
+      "checksum": "99faa5da7969eb3bc65973b85622226a2a151a226eeb359df2a123afc84b4c4e"
+    },
+    {
+      "source_snapshot_id": "source-snapshot-2026-05-31.atlas.2-world-bank-indicators",
+      "source_id": "world-bank-indicators",
+      "upstream_url": "https://data.worldbank.org/",
+      "retrieval_timestamp": "2026-05-31T00:00:00Z",
+      "source_vintage": "2010:2025 latest non-null indicator window",
+      "media_type": "application/json",
+      "license_id": "world-bank-terms",
+      "retrieval_metadata": {
+        "source_id": "world-bank-indicators",
+        "source_url": "https://data.worldbank.org/"
+      },
+      "checksum_algorithm": "sha256",
+      "retrieval_basis": "2026-05-31.atlas.2|world-bank-indicators|https://data.worldbank.org/|2010:2025 latest non-null indicator window|2026-05-31|",
+      "checksum": "63365d36b690eb84919ca0c574664d2c479d8147f6b6e47627a4e4687fb0b965"
+    },
+    {
+      "source_snapshot_id": "source-snapshot-2026-05-31.atlas.2-world-bank-land-area",
+      "source_id": "world-bank-land-area",
+      "upstream_url": "https://data.worldbank.org/",
+      "retrieval_timestamp": "2026-05-31T00:00:00Z",
+      "source_vintage": "2026-05-31 release review",
+      "media_type": "application/json",
+      "license_id": "world-bank-terms",
+      "retrieval_metadata": {
+        "source_id": "world-bank-land-area",
+        "source_url": "https://data.worldbank.org/"
+      },
+      "checksum_algorithm": "sha256",
+      "retrieval_basis": "2026-05-31.atlas.2|world-bank-land-area|https://data.worldbank.org/|2026-05-31 release review|2026-05-31|",
+      "checksum": "682aa1474289e122803eb45de64adc9fac9a87a6b5def8f78f66e6c4f3304d11"
+    }
+  ]
+}

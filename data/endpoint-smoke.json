@@ -98,6 +98,62 @@
       "format": "application/json",
       "purpose": "Accessibility and visual smoke-test manifest"
     },
+  {
+      "path": "/data/claims.json",
+      "url": "https://painmap.org/data/claims.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Claim registry and correction workflow surface"
+    },
+    {
+      "path": "/data/source-snapshots.json",
+      "url": "https://painmap.org/data/source-snapshots.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Immutable source snapshot registry"
+    },
+    {
+      "path": "/data/country-gap-ledger.json",
+      "url": "https://painmap.org/data/country-gap-ledger.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Machine-readable country coverage ledger"
+    },
+    {
+      "path": "/data/country-gap-ledger.csv",
+      "url": "https://painmap.org/data/country-gap-ledger.csv",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/csv",
+      "purpose": "Human-readable country coverage ledger CSV"
+    },
+    {
+      "path": "/data/country-profile-input-spec.json",
+      "url": "https://painmap.org/data/country-profile-input-spec.json",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "application/json",
+      "purpose": "Country coverage gate and minimum input specification"
+    },
+    {
+      "path": "/offline.html",
+      "url": "https://painmap.org/offline.html",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/html",
+      "purpose": "Offline fallback page"
+    },
+    {
+      "path": "/service-worker.js",
+      "url": "https://painmap.org/service-worker.js",
+      "method": "GET",
+      "expected_status": 200,
+      "format": "text/javascript",
+      "purpose": "Service worker cache strategy"
+    },
     {
       "path": "/v1/places/index.json",
       "url": "https://painmap.org/v1/places/index.json",

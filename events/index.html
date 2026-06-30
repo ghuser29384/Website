@@ -3,6 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" as="style" href="/styles.css?v=e56aa75999edbbae">
+    <link rel="modulepreload" href="/script.js?v=610f13a9b104c7c7">
+    <link rel="preconnect" href="https://www.geoboundaries.org" crossorigin>
+    <link rel="preconnect" href="https://api.worldbank.org" crossorigin>
+    <link rel="preconnect" href="https://api.worldpop.org" crossorigin>
+    <link rel="preconnect" href="https://ourworldindata.org" crossorigin>
+    <link rel="preconnect" href="https://media.githubusercontent.com" crossorigin>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://api.worldpop.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Animal Pain Events | PainMap</title>
@@ -17,7 +24,7 @@
     <meta name="twitter:title" content="Animal Pain Events | PainMap">
     <meta name="twitter:description" content="Explore PainMap's event-level animal pain estimates with source type, uncertainty, assumptions, and Welfare Footprint links.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../styles.css" integrity="sha384-247i4QQKs5xcO5DRVdCYNDn8SIksDDkmOncbjyJb10IWhCroxw7XbgJgLD7gwiez" crossorigin="anonymous">
+<link rel="stylesheet" href="../styles.css?v=e56aa75999edbbae" integrity="sha384-skP3aTkTYGWl5T7f7n1CXxDZBeO/ZPfZhkHRpgGs3+8sdQk4L3LMfqTg1h4LCcvg" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -86,7 +93,8 @@
             <h2 id="event-catalog-title">Rows currently exposed in the explorer</h2>
           </div>
           <div class="data-table-wrap">
-            <table class="route-table">
+            <table class="route-table route-table-labeled">
+              <caption>Animal welfare event rows available in this route.</caption>
               <thead>
                 <tr>
                   <th scope="col">Event</th>
@@ -131,9 +139,11 @@
           <div class="route-actions">
             <a class="solid-button" href="/#explore-events">Open interactive event explorer</a>
             <a class="ghost-link" href="/methods/">Read methods caveats</a>
+            <a class="ghost-link" href="https://github.com/ghuser29384/Website/issues/new?title=%5BPainMap+correction%5D+2026-05-31.atlas.2%3A+Events+route&body=Release%3A+2026-05-31.atlas.2%0ASubject+type%3A+route%0ASubject+id%3A+events%0AClaim+id%3A+claim.2026-05-31.atlas.2.route.events%0ARoute%3A+%2Fevents%2F%0AClaims+context%3A+Events+route%0A%0APlease+include+source+links%2C+release+context%2C+and+what+should+be+corrected.&labels=correction">Open correction form</a>
           </div>
         </section>
       </main>
     </div>
+    <script src="/route-table-labels.js?v=4fc546df01614183" defer></script>
   </body>
 </html>

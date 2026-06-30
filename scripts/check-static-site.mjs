@@ -10,6 +10,8 @@ const expectedExports = [
   "data/routes.json",
   "data/route-smoke.json",
   "data/provenance-registry.json",
+  "offline.html",
+  "service-worker.js",
   "data/place-measurements.json",
   "data/place-measurements.csv",
   "data/places.geojson",
@@ -19,7 +21,12 @@ const expectedExports = [
   "data/third-party-fetches.json",
   "data/accessibility-audit.json",
   "data/ui-smoke.json",
+  "data/source-snapshots.json",
+  "data/country-gap-ledger.json",
+  "data/country-gap-ledger.csv",
+  "data/country-profile-input-spec.json",
   "data/endpoint-smoke.json",
+  "data/claims.json",
   "data/countries-lite.geojson",
   "data/natural-earth-countries.geojson",
   "data/gsap-adm1-2023.json",
@@ -56,6 +63,8 @@ const expectedExports = [
   "schemas/adm1-context.schema.json",
   "schemas/place-measurements.schema.json",
   "schemas/coverage.schema.json",
+  "schemas/source-snapshot.schema.json",
+  "schemas/country-gap-ledger.schema.json",
   "schemas/ogc-place-features.schema.json",
   "v1/releases.json",
   "v1/layers.json",
@@ -208,6 +217,15 @@ const scriptSri = `sha384-${hashFile("script.js")}`;
 const compareScriptSri = `sha384-${hashFile("compare.js")}`;
 const d3Sri = `sha384-${hashFile("vendor/d3.v7.min.js")}`;
 const topojsonSri = `sha384-${hashFile("vendor/topojson-client.v3.min.js")}`;
+const stylesheetVersion = hashFile("styles.css", "sha256", "hex").slice(0, 16);
+const scriptVersion = hashFile("script.js", "sha256", "hex").slice(0, 16);
+const compareScriptVersion = hashFile("compare.js", "sha256", "hex").slice(0, 16);
+const d3Version = hashFile("vendor/d3.v7.min.js", "sha256", "hex").slice(0, 16);
+const topojsonVersion = hashFile("vendor/topojson-client.v3.min.js", "sha256", "hex").slice(0, 16);
+
+function countMatches(value, pattern) {
+  return (value.match(pattern) || []).length;
+}
 
 for (const route of routeManifest.routes) {
   const file = route.file;
@@ -234,6 +252,8 @@ for (const route of routeManifest.routes) {
   );
   expectPattern(file, html, /Content-Security-Policy/, "Content-Security-Policy meta tag");
   expectPattern(file, html, /name="referrer" content="strict-origin-when-cross-origin"/, "strict referrer metadata");
+  expectPattern(file, html, /<link rel="preconnect" href="https:\/\/www\.geoboundaries\.org".*?>/, "preconnect to geoboundaries");
+  expectPattern(file, html, /<link rel="preconnect" href="https:\/\/api\.worldbank\.org".*?>/, "preconnect to worldbank");
   expectPattern(file, html, /<meta property="og:image" content="https:\/\/painmap\.org\/assets\/social-card\.svg">/, "og:image metadata");
   expectPattern(file, html, /<meta name="twitter:card" content="summary_large_image">/, "twitter card metadata");
   expectPattern(file, html, /<meta name="twitter:image" content="https:\/\/painmap\.org\/assets\/social-card\.svg">/, "twitter image metadata");
@@ -251,11 +271,27 @@ for (const route of routeManifest.routes) {
     expectPattern(file, html, /data-painmap-jsonld="breadcrumbs"/, "managed breadcrumb structured data");
   }
 
+  if (route.path.startsWith("/place/") || route.generated === "country-place" || route.generated === "adm1-place") {
+    expectPattern(file, html, /Open correction form/, "place route correction form link");
+  }
+
   expectPattern(
     file,
     html,
-    new RegExp(`<link rel="stylesheet" href="[^"]+" integrity="${escapeRegExp(stylesheetSri)}" crossorigin="anonymous">`),
+    new RegExp(`<link rel="stylesheet" href="[^"]*styles\\.css\\?v=${stylesheetVersion}" integrity="${escapeRegExp(stylesheetSri)}" crossorigin="anonymous">`),
     "current stylesheet SRI"
+  );
+  expectPattern(
+    file,
+    html,
+    new RegExp(`<link rel="preload" as="style" href="[^"]*styles\\.css\\?v=${stylesheetVersion}">`),
+    "current stylesheet preload"
+  );
+  expectPattern(
+    file,
+    html,
+    new RegExp(`<link rel="modulepreload" href="/script\\.js\\?v=${scriptVersion}">`),
+    "current modulepreload for script.js"
   );
 
   for (const navItem of routeManifest.navigation) {
@@ -272,23 +308,39 @@ const home = read("index.html");
 expectPattern(
   "index.html",
   home,
-  new RegExp(`<script src="vendor/d3\\.v7\\.min\\.js" integrity="${escapeRegExp(d3Sri)}" crossorigin="anonymous"></script>`),
+  new RegExp(`<script src="vendor/d3\\.v7\\.min\\.js\\?v=${d3Version}" integrity="${escapeRegExp(d3Sri)}" crossorigin="anonymous"></script>`),
   "vendored d3 script with SRI"
 );
 expectPattern(
   "index.html",
   home,
-  new RegExp(`<script src="vendor/topojson-client\\.v3\\.min\\.js" integrity="${escapeRegExp(topojsonSri)}" crossorigin="anonymous"></script>`),
+  new RegExp(`<script src="vendor/topojson-client\\.v3\\.min\\.js\\?v=${topojsonVersion}" integrity="${escapeRegExp(topojsonSri)}" crossorigin="anonymous"></script>`),
   "vendored topojson script with SRI"
 );
 expectPattern(
   "index.html",
   home,
-  new RegExp(`<script type="module" src="script\\.js" integrity="${escapeRegExp(scriptSri)}" crossorigin="anonymous"></script>`),
+  new RegExp(`<script type="module" src="script\\.js\\?v=${scriptVersion}" integrity="${escapeRegExp(scriptSri)}" crossorigin="anonymous"></script>`),
   "current script.js SRI"
 );
+expectPattern("index.html", home, /script\.js\?v=[a-f0-9]{16}/, "homepage script cache fingerprint");
+
+if (countMatches(home, /<script src="vendor\/d3\.v7\.min\.js\?v=/g) !== 1) {
+  failures.push("index.html must include exactly one versioned D3 script");
+}
+
+if (countMatches(home, /<script src="vendor\/topojson-client\.v3\.min\.js\?v=/g) !== 1) {
+  failures.push("index.html must include exactly one versioned TopoJSON script");
+}
+
+if (countMatches(home, /<script type="module" src="script\.js\?v=/g) !== 1) {
+  failures.push("index.html must include exactly one versioned homepage module script");
+}
 
 const script = read("script.js");
+const placesCoverage = read("places-coverage.js");
+const offlinePage = read("offline.html");
+const vercelConfig = read("vercel.json");
 const packageJson = readJson("package.json");
 const workflow = read(".github/workflows/painmap-static-checks.yml");
 
@@ -330,6 +382,7 @@ for (const workflowPattern of [
 }
 
 expectPattern("scripts/check-endpoint-smoke.mjs", read("scripts/check-endpoint-smoke.mjs"), /data\/endpoint-smoke\.json/, "endpoint smoke manifest reader");
+expectPattern("scripts/check-endpoint-smoke.mjs", read("scripts/check-endpoint-smoke.mjs"), /\/data\/claims\.json/, "claims endpoint assertion");
 expectPattern("scripts/check-endpoint-smoke.mjs", read("scripts/check-endpoint-smoke.mjs"), /v1\/places\/index\.json/, "place-index endpoint assertion");
 expectPattern("scripts/check-endpoint-smoke.mjs", read("scripts/check-endpoint-smoke.mjs"), /well-known\/security\.txt/, "security.txt endpoint assertion");
 expectPattern("scripts/check-source-freshness.mjs", read("scripts/check-source-freshness.mjs"), /data\/source-freshness\.json/, "source freshness manifest reader");
@@ -347,8 +400,19 @@ expectPattern(".github/workflows/painmap-source-freshness.yml", read(".github/wo
 expectPattern(".github/workflows/painmap-source-freshness.yml", read(".github/workflows/painmap-source-freshness.yml"), /peter-evans\/create-pull-request@v6/, "source freshness release-candidate PR action");
 expectPattern("script.js", script, /recordTelemetry\("route_view"\)/, "route_view telemetry instrumentation");
 expectPattern("script.js", script, /recordTelemetry\("atlas_place_selected"/, "atlas_place_selected telemetry instrumentation");
+expectPattern("script.js", script, /SERVICE_WORKER_SCRIPT\s*=\s*"\/service-worker\.js"/, "homepage service worker script path");
+expectPattern("script.js", script, /registerServiceWorker\(\);/, "homepage service worker registration call");
 expectPattern("script.js", script, /PerformanceObserver/, "field performance observer instrumentation");
+expectPattern("script.js", script, /__painmapTelemetryEvents/, "homepage in-memory telemetry audit queue");
+expectPattern("script.js", script, /dataset\.telemetryLastEvent = eventName/, "homepage DOM telemetry audit marker");
 expectPattern("script.js", script, /TELEMETRY_ENDPOINT = document\.documentElement\.dataset\.telemetryEndpoint \|\| ""/, "no default telemetry collector");
+expectPattern("places-coverage.js", placesCoverage, /const SERVICE_WORKER_SCRIPT = "\/service-worker\.js"/, "places coverage service worker script path");
+expectPattern("places-coverage.js", placesCoverage, /registerServiceWorker\(\);/, "places coverage service worker registration call");
+expectPattern("offline.html", offlinePage, /PainMap is offline/, "offline fallback page copy");
+expectPattern("offline.html", offlinePage, /meta http-equiv="refresh"/, "offline retry refresh control");
+expectPattern("offline.html", offlinePage, /href="\/places\/"/, "offline fallback places link");
+expectPattern("offline.html", offlinePage, /href="\/v1\/coverage\.json"/, "offline fallback coverage link");
+expectPattern("vercel.json", vercelConfig, /\"source\": \"\/service-worker\.js\"/, "service-worker cache header rule in vercel config");
 expectPattern("index.html", home, /id="country-search"[\s\S]*?role="combobox"[\s\S]*?aria-autocomplete="list"[\s\S]*?aria-expanded="false"[\s\S]*?aria-controls="country-options"/, "APG-style country search combobox input");
 expectPattern("index.html", home, /id="country-options"[\s\S]*?role="listbox"/, "country search listbox");
 expectPattern("script.js", script, /countrySearchInput\.setAttribute\("aria-expanded", "true"\)/, "combobox expanded state on input");
@@ -390,11 +454,24 @@ expectPattern("styles.css", read("styles.css"), /\.release-mode-panel\s*\{[\s\S]
 expectPattern("styles.css", read("styles.css"), /\.coverage-panel\s*\{[\s\S]*?order:\s*2;/, "coverage panel ordered after atlas funnel");
 expectPattern("styles.css", read("styles.css"), /\.governance-panel\s*\{[\s\S]*?order:\s*6;/, "governance panel ordered after product surfaces");
 expectPattern("compare/index.html", read("compare/index.html"), /id="compare-requested-list"/, "compare URL requested-place list");
+expectPattern("compare.js", read("compare.js"), /recordTelemetry\("route_view"\)/, "compare route_view telemetry instrumentation");
+expectPattern("compare.js", read("compare.js"), /recordTelemetry\("compare_opened"[\s\S]*requested_places_count/, "compare opened telemetry instrumentation");
+expectPattern("compare.js", read("compare.js"), /PerformanceObserver/, "compare field performance observer instrumentation");
+expectPattern("compare.js", read("compare.js"), /__painmapTelemetryEvents/, "compare in-memory telemetry audit queue");
+expectPattern("compare.js", read("compare.js"), /dataset\.telemetryLastEvent = eventName/, "compare DOM telemetry audit marker");
+expectPattern("compare.js", read("compare.js"), /TELEMETRY_ENDPOINT = document\.documentElement\.dataset\.telemetryEndpoint \|\| ""/, "compare route has no default telemetry collector");
+expectPattern("compare/index.html", read("compare/index.html"), /compare\.js\?v=[a-f0-9]{16}/, "compare script cache fingerprint");
 expectPattern(
   "compare/index.html",
   read("compare/index.html"),
-  new RegExp(`<script type="module" src="\\.\\./compare\\.js" integrity="${escapeRegExp(compareScriptSri)}" crossorigin="anonymous"></script>`),
+  new RegExp(`<script type="module" src="\\.\\./compare\\.js\\?v=${compareScriptVersion}" integrity="${escapeRegExp(compareScriptSri)}" crossorigin="anonymous"></script>`),
   "current compare.js SRI"
+);
+expectPattern(
+  "compare/index.html",
+  read("compare/index.html"),
+  new RegExp(`<link rel="modulepreload" href="/compare\\.js\\?v=${compareScriptVersion}">`),
+  "current compare.js modulepreload"
 );
 
 const sitemap = read("sitemap.xml");
@@ -468,6 +545,17 @@ const countryPlaceRoutes = routeManifest.routes.filter((route) => /^\/place\/[A-
 const adm1PlaceItems = placeIndex.items.filter((item) => item.geometry_level === "adm1");
 const staticAdm1Items = adm1PlaceItems.filter((item) => item.page_url);
 const adm1PlaceRoutes = routeManifest.routes.filter((route) => route.generated === "adm1-place");
+const allowedCoverageStatuses = new Set([
+  "canonical_measurements",
+  "boundary_index_only",
+  "adm1_context_overlay",
+  "no_data",
+]);
+const noDataPlaceCount = placeIndex.items.filter((item) => item.coverage_status === "no_data").length;
+
+if (placeIndex.items.some((item) => !allowedCoverageStatuses.has(item.coverage_status))) {
+  failures.push("v1/places/index.json contains unrecognized coverage_status values");
+}
 
 if (countryPlaceRoutes.length !== countryPlaceItems.length) {
   failures.push("data/routes.json must include one static /place/{ISO}/ route for every indexed country");
@@ -542,6 +630,45 @@ if (coverage.coverage_status?.evidence_layer_coverage?.direct !== 0) {
 
 if (coverage.coverage_status?.adm1_boundaries?.static_context_count !== adm1PlaceItems.length) {
   failures.push("v1/coverage.json ADM1 static context count mismatch");
+}
+
+if (coverage.coverage_status?.evidence_layer_coverage?.no_data !== noDataPlaceCount) {
+  failures.push("v1/coverage.json no_data count does not match place index");
+}
+
+const defaultRankingReadiness = coverage.default_ranking_readiness;
+if (!defaultRankingReadiness || typeof defaultRankingReadiness !== "object") {
+  failures.push("v1/coverage.json must expose default_ranking_readiness");
+} else {
+  const readinessRule = defaultRankingReadiness.rule;
+  const readinessReason = defaultRankingReadiness.reason;
+  const readinessNote = defaultRankingReadiness.release_note_url;
+
+  if (
+    typeof defaultRankingReadiness.ready !== "boolean" &&
+    typeof defaultRankingReadiness.enabled !== "boolean"
+  ) {
+    failures.push("v1/coverage.json default_ranking_readiness must declare ready or enabled");
+  }
+
+  if (!readinessRule || typeof readinessRule !== "string") {
+    failures.push("v1/coverage.json default_ranking_readiness requires a non-empty rule");
+  }
+
+  if (!readinessReason || typeof readinessReason !== "string") {
+    failures.push("v1/coverage.json default_ranking_readiness requires a reason string");
+  }
+
+  if (!readinessNote || typeof readinessNote !== "string") {
+    failures.push("v1/coverage.json default_ranking_readiness requires a release_note_url");
+  }
+
+  if (
+    !defaultRankingReadiness.summary_generated_at ||
+    !/\d{4}-\d{2}-\d{2}T/.test(defaultRankingReadiness.summary_generated_at)
+  ) {
+    failures.push("v1/coverage.json default_ranking_readiness requires summary_generated_at timestamp");
+  }
 }
 
 const releaseModes = readJson("data/release-modes.json");
@@ -670,9 +797,92 @@ for (const method of ["axe browser audit", "manual keyboard audit", "VoiceOver a
 }
 
 const endpointSmoke = readJson("data/endpoint-smoke.json");
-for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/data/source-freshness.json", "/data/third-party-fetches.json", "/data/accessibility-audit.json", "/data/ui-smoke.json", "/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/IND/adm1.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/IND.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/releases/2026-05-31/changes/", "/releases/2026-05-31/migration.json", "/policies/accessibility/audit-2026-06-05/", "/.well-known/security.txt"]) {
+for (const requiredPath of ["/", "/places/", "/data/openapi.json", "/data/dcat.json", "/data/release-modes.json", "/data/source-freshness.json", "/data/third-party-fetches.json", "/data/accessibility-audit.json", "/data/ui-smoke.json", "/data/claims.json", "/offline.html", "/service-worker.js", "/v1/places/index.json", "/v1/adm1/index.json", "/v1/places/IND/adm1.json", "/v1/places/BRA/neighbors.json", "/ogc/index.json", "/ogc/collections/places/items.json", "/ogc/collections/places/item-index.json", "/ogc/collections/places/items/IND.json", "/releases/2026-05-31/manifest.json", "/releases/2026-05-31/diff.json", "/releases/2026-05-31/changes/", "/releases/2026-05-31/migration.json", "/policies/accessibility/audit-2026-06-05/", "/.well-known/security.txt"]) {
   if (!endpointSmoke.endpoints?.some((entry) => entry.path === requiredPath && entry.expected_status === 200)) {
     failures.push(`data/endpoint-smoke.json missing required endpoint ${requiredPath}`);
+  }
+}
+
+const claims = readJson("data/claims.json");
+if (claims.release_id !== routeManifest.releaseId) {
+  failures.push("data/claims.json release_id mismatch");
+}
+
+if (claims.count !== claims.claims?.length) {
+  failures.push("data/claims.json count must match claims length");
+}
+
+if (!Array.isArray(claims.claims)) {
+  failures.push("data/claims.json must publish a claims array");
+} else {
+  const claimIds = new Set();
+  const routeClaims = claims.claims.filter((claim) => claim.subject_type === "route").length;
+  const placeClaims = claims.claims.filter((claim) => claim.subject_type === "place").length;
+  const adm1Claims = claims.claims.filter((claim) => claim.subject_type === "adm1-place").length;
+  const allowedSubjectTypes = new Set(["route", "place", "adm1-place"]);
+  const claimRoutes = new Set(routeManifest.routes.map((route) => route.path));
+  const countryPlaceClaims = new Map(
+    placeIndex.items.filter((item) => item.geometry_level === "country" && item.page_url).map((item) => [item.place_id, item])
+  );
+  const expectedRouteClaims = routeManifest.routes.length;
+  const expectedPlaceClaims = [...countryPlaceClaims.keys()].length;
+  const expectedAdm1Claims = placeIndex.items.filter((item) => item.geometry_level === "adm1" && item.page_url).length;
+
+  if (routeClaims !== expectedRouteClaims) {
+    failures.push(`data/claims.json route claim count ${routeClaims} should equal route manifest routes ${expectedRouteClaims}`);
+  }
+
+  if (placeClaims !== expectedPlaceClaims) {
+    failures.push(`data/claims.json place claim count ${placeClaims} should equal country pages ${expectedPlaceClaims}`);
+  }
+
+  if (adm1Claims !== expectedAdm1Claims) {
+    failures.push(`data/claims.json adm1-place claim count ${adm1Claims} should equal indexed ADM1 pages ${expectedAdm1Claims}`);
+  }
+
+  for (const claim of claims.claims) {
+    const required = ["claim_id", "release_id", "subject_type", "subject_id", "subject_label", "route", "coverage_status", "context", "correction_url"];
+
+    for (const field of required) {
+      if (!claim || !(field in claim)) {
+        failures.push(`Claim missing required field ${field}`);
+        break;
+      }
+    }
+
+    if (!allowedSubjectTypes.has(claim.subject_type)) {
+      failures.push(`Claim ${claim.claim_id} has unsupported subject_type ${claim.subject_type}`);
+    }
+
+    if (claimIds.has(claim.claim_id)) {
+      failures.push(`Duplicate claim id ${claim.claim_id}`);
+    }
+
+    claimIds.add(claim.claim_id);
+
+    if (!claim.route || !claim.route.startsWith("/")) {
+      failures.push(`Claim ${claim.claim_id} must expose a route path`);
+    } else if (claim.subject_type === "route") {
+      if (!routeManifest.routes.some((route) => route.path === claim.route)) {
+        failures.push(`Route claim ${claim.claim_id} references unknown route ${claim.route}`);
+      }
+    } else if (claim.subject_type === "place") {
+      if (!countryPlaceClaims.has(claim.subject_id)) {
+        failures.push(`Place claim ${claim.claim_id} references unknown country place_id ${claim.subject_id}`);
+      }
+
+      if (claim.route !== `/place/${claim.subject_id}/`) {
+        failures.push(`Place claim ${claim.claim_id} should route to /place/${claim.subject_id}/`);
+      }
+    } else if (claim.subject_type === "adm1-place") {
+      if (!claim.route.startsWith("/place/") || !claim.route.includes("/adm1/") || !claimRoutes.has(claim.route)) {
+        failures.push(`ADM1 claim ${claim.claim_id} references non-adm1 route ${claim.route}`);
+      }
+    }
+
+    if (!/^https:\/\/github\.com\/ghuser29384\/Website\/issues\/new/.test(claim.correction_url)) {
+      failures.push(`Claim ${claim.claim_id} must use the configured GitHub issue tracker URL`);
+    }
   }
 }
 
@@ -689,6 +899,10 @@ for (const requiredPath of ["/v1/places/index.json", "/v1/adm1/index.json", "/v1
   if (!openapi.paths?.[requiredPath]) {
     failures.push(`data/openapi.json missing ${requiredPath}`);
   }
+}
+
+if (!openapi.paths?.["/data/claims.json"]) {
+  failures.push("data/openapi.json missing /data/claims.json");
 }
 
 const ogcPlaceFeatures = readJson("ogc/collections/places/items.json");

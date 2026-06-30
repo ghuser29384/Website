@@ -1,0 +1,88 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-06-30T00:00:00Z",
+  "coverage_gate": {
+    "eligible_input_groups": [
+      "identity",
+      "geometry",
+      "population_denominator",
+      "land_area_context",
+      "core_socioeconomic_proxy",
+      "proxy_inputs",
+      "coverage_reasonability"
+    ],
+    "blocked_input_groups": [
+      "license_missing",
+      "stale_source",
+      "method_incompatible",
+      "no_distributable_snapshot"
+    ],
+    "minimum_inputs": [
+      "identity",
+      "geometry",
+      "population_denominator",
+      "land_area_context",
+      "core_socioeconomic_proxy"
+    ],
+    "input_group_requirements": {
+      "identity": {
+        "required_place_fields": [
+          "iso3",
+          "place_name"
+        ],
+        "minimum_hits": 1
+      },
+      "geometry": {
+        "required_place_fields": [
+          "boundary_indexed"
+        ],
+        "minimum_hits": 1
+      },
+      "population_denominator": {
+        "required_layer_ids": [
+          "human-burden"
+        ],
+        "required_source_ids": [
+          "world-bank-indicators"
+        ],
+        "minimum_hits": 1
+      },
+      "land_area_context": {
+        "required_source_ids": [
+          "world-bank-land-area",
+          "world-bank-indicators"
+        ],
+        "minimum_hits": 1
+      },
+    "core_socioeconomic_proxy": {
+      "required_layer_ids": [
+        "factory-farmed-animals",
+        "human-burden",
+        "animal-priority-overlay",
+        "wild-insects"
+      ],
+      "minimum_hits": 2
+    }
+  }
+  },
+  "required_coverage_fields": [
+    "source_snapshot_ids",
+    "source_vintage",
+    "method_id",
+    "method_version",
+    "transform_version",
+    "comparability_group_id",
+    "evidence_kind",
+    "unit_label",
+    "reference_period"
+  ],
+  "license_requirements": {
+    "must_resolve_to_known_license_id": true,
+    "must_be_documented_in_provenance": true
+  },
+  "publication_requirements": {
+    "newly_promoted_status_note": "new_in_release",
+    "coverage_transparency": true
+  },
+  "generated_by": "painmap-static-artifacts-country-profile-gate"
+}

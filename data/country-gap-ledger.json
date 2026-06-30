@@ -1,0 +1,4380 @@
+{
+  "release_id": "2026-05-31.atlas.2",
+  "generated_at": "2026-06-30T13:25:27Z",
+  "release_date": "2026-05-31",
+  "coverage_gate": {
+    "eligible_input_groups": [
+      "identity",
+      "geometry",
+      "population_denominator",
+      "land_area_context",
+      "core_socioeconomic_proxy",
+      "proxy_inputs",
+      "coverage_reasonability"
+    ],
+    "blocked_input_groups": [
+      "license_missing",
+      "stale_source",
+      "method_incompatible",
+      "no_distributable_snapshot"
+    ],
+    "minimum_inputs": [
+      "identity",
+      "geometry",
+      "population_denominator",
+      "land_area_context",
+      "core_socioeconomic_proxy"
+    ],
+    "input_group_requirements": {
+      "identity": {
+        "required_place_fields": [
+          "iso3",
+          "place_name"
+        ],
+        "minimum_hits": 1,
+        "required_layer_ids": [],
+        "required_source_ids": []
+      },
+      "geometry": {
+        "required_place_fields": [
+          "boundary_indexed"
+        ],
+        "minimum_hits": 1,
+        "required_layer_ids": [],
+        "required_source_ids": []
+      },
+      "population_denominator": {
+        "required_layer_ids": [
+          "human-burden"
+        ],
+        "required_source_ids": [
+          "world-bank-indicators"
+        ],
+        "minimum_hits": 1,
+        "required_place_fields": []
+      },
+      "land_area_context": {
+        "required_source_ids": [
+          "world-bank-land-area",
+          "world-bank-indicators"
+        ],
+        "minimum_hits": 1,
+        "required_place_fields": [],
+        "required_layer_ids": []
+      },
+      "core_socioeconomic_proxy": {
+        "required_layer_ids": [
+          "factory-farmed-animals",
+          "human-burden",
+          "animal-priority-overlay",
+          "wild-insects"
+        ],
+        "minimum_hits": 2,
+        "required_place_fields": [],
+        "required_source_ids": []
+      }
+    }
+  },
+  "summary": {
+    "country_count": 239,
+    "eligible_for_promotion": 2,
+    "canonical_country_profiles": 2,
+    "boundary_only_countries": 237,
+    "no_data_countries": 0,
+    "stale_countries": 0,
+    "blocked_countries": 0,
+    "excluded_countries": 0
+  },
+  "countries": [
+    {
+      "place_id": "AFG",
+      "iso3": "AFG",
+      "place_name": "Afghanistan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ALA",
+      "iso3": "ALA",
+      "place_name": "Åland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ALB",
+      "iso3": "ALB",
+      "place_name": "Albania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "DZA",
+      "iso3": "DZA",
+      "place_name": "Algeria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ASM",
+      "iso3": "ASM",
+      "place_name": "American Samoa",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "AND",
+      "iso3": "AND",
+      "place_name": "Andorra",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "AGO",
+      "iso3": "AGO",
+      "place_name": "Angola",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "AIA",
+      "iso3": "AIA",
+      "place_name": "Anguilla",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ATG",
+      "iso3": "ATG",
+      "place_name": "Antigua and Barbuda",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ARG",
+      "iso3": "ARG",
+      "place_name": "Argentina",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ARM",
+      "iso3": "ARM",
+      "place_name": "Armenia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ABW",
+      "iso3": "ABW",
+      "place_name": "Aruba",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "AUS",
+      "iso3": "AUS",
+      "place_name": "Australia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "AUT",
+      "iso3": "AUT",
+      "place_name": "Austria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "AZE",
+      "iso3": "AZE",
+      "place_name": "Azerbaijan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BHR",
+      "iso3": "BHR",
+      "place_name": "Bahrain",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BGD",
+      "iso3": "BGD",
+      "place_name": "Bangladesh",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BRB",
+      "iso3": "BRB",
+      "place_name": "Barbados",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BLR",
+      "iso3": "BLR",
+      "place_name": "Belarus",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BEL",
+      "iso3": "BEL",
+      "place_name": "Belgium",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BLZ",
+      "iso3": "BLZ",
+      "place_name": "Belize",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BEN",
+      "iso3": "BEN",
+      "place_name": "Benin",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BMU",
+      "iso3": "BMU",
+      "place_name": "Bermuda",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BTN",
+      "iso3": "BTN",
+      "place_name": "Bhutan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BOL",
+      "iso3": "BOL",
+      "place_name": "Bolivia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BIH",
+      "iso3": "BIH",
+      "place_name": "Bosnia and Herzegovina",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BWA",
+      "iso3": "BWA",
+      "place_name": "Botswana",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BRA",
+      "iso3": "BRA",
+      "place_name": "Brazil",
+      "geometry_level": "country",
+      "coverage_status": "canonical_measurements",
+      "gap_status": "canonical",
+      "coverage_reason": "Canonical country profile passed the input-gate and source-provenance checks.",
+      "missing_inputs": [],
+      "eligible_for_promotion": true,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "IOT",
+      "iso3": "IOT",
+      "place_name": "British Indian Ocean Territory",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "VGB",
+      "iso3": "VGB",
+      "place_name": "British Virgin Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BRN",
+      "iso3": "BRN",
+      "place_name": "Brunei",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BGR",
+      "iso3": "BGR",
+      "place_name": "Bulgaria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BFA",
+      "iso3": "BFA",
+      "place_name": "Burkina Faso",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BDI",
+      "iso3": "BDI",
+      "place_name": "Burundi",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "KHM",
+      "iso3": "KHM",
+      "place_name": "Cambodia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CMR",
+      "iso3": "CMR",
+      "place_name": "Cameroon",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CAN",
+      "iso3": "CAN",
+      "place_name": "Canada",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CPV",
+      "iso3": "CPV",
+      "place_name": "Cape Verde",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CYM",
+      "iso3": "CYM",
+      "place_name": "Cayman Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CAF",
+      "iso3": "CAF",
+      "place_name": "Central African Republic",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TCD",
+      "iso3": "TCD",
+      "place_name": "Chad",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CHL",
+      "iso3": "CHL",
+      "place_name": "Chile",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "COL",
+      "iso3": "COL",
+      "place_name": "Colombia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "COM",
+      "iso3": "COM",
+      "place_name": "Comoros",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "COK",
+      "iso3": "COK",
+      "place_name": "Cook Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CRI",
+      "iso3": "CRI",
+      "place_name": "Costa Rica",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "HRV",
+      "iso3": "HRV",
+      "place_name": "Croatia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CUB",
+      "iso3": "CUB",
+      "place_name": "Cuba",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CUW",
+      "iso3": "CUW",
+      "place_name": "Curaçao",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CYP",
+      "iso3": "CYP",
+      "place_name": "Cyprus",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CZE",
+      "iso3": "CZE",
+      "place_name": "Czech Republic",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "COD",
+      "iso3": "COD",
+      "place_name": "Democratic Republic of the Congo",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "DNK",
+      "iso3": "DNK",
+      "place_name": "Denmark",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "DJI",
+      "iso3": "DJI",
+      "place_name": "Djibouti",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "DMA",
+      "iso3": "DMA",
+      "place_name": "Dominica",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "DOM",
+      "iso3": "DOM",
+      "place_name": "Dominican Republic",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TLS",
+      "iso3": "TLS",
+      "place_name": "East Timor",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ECU",
+      "iso3": "ECU",
+      "place_name": "Ecuador",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "EGY",
+      "iso3": "EGY",
+      "place_name": "Egypt",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SLV",
+      "iso3": "SLV",
+      "place_name": "El Salvador",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GNQ",
+      "iso3": "GNQ",
+      "place_name": "Equatorial Guinea",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ERI",
+      "iso3": "ERI",
+      "place_name": "Eritrea",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "EST",
+      "iso3": "EST",
+      "place_name": "Estonia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SWZ",
+      "iso3": "SWZ",
+      "place_name": "Eswatini",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ETH",
+      "iso3": "ETH",
+      "place_name": "Ethiopia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "FLK",
+      "iso3": "FLK",
+      "place_name": "Falkland Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "FRO",
+      "iso3": "FRO",
+      "place_name": "Faroe Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "FSM",
+      "iso3": "FSM",
+      "place_name": "Federated States of Micronesia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "FJI",
+      "iso3": "FJI",
+      "place_name": "Fiji",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "FIN",
+      "iso3": "FIN",
+      "place_name": "Finland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "FRA",
+      "iso3": "FRA",
+      "place_name": "France",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PYF",
+      "iso3": "PYF",
+      "place_name": "French Polynesia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ATF",
+      "iso3": "ATF",
+      "place_name": "French Southern and Antarctic Lands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GAB",
+      "iso3": "GAB",
+      "place_name": "Gabon",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GEO",
+      "iso3": "GEO",
+      "place_name": "Georgia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "DEU",
+      "iso3": "DEU",
+      "place_name": "Germany",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GHA",
+      "iso3": "GHA",
+      "place_name": "Ghana",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GRC",
+      "iso3": "GRC",
+      "place_name": "Greece",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GRL",
+      "iso3": "GRL",
+      "place_name": "Greenland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GRD",
+      "iso3": "GRD",
+      "place_name": "Grenada",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GUM",
+      "iso3": "GUM",
+      "place_name": "Guam",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GTM",
+      "iso3": "GTM",
+      "place_name": "Guatemala",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GGY",
+      "iso3": "GGY",
+      "place_name": "Guernsey",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GIN",
+      "iso3": "GIN",
+      "place_name": "Guinea",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GNB",
+      "iso3": "GNB",
+      "place_name": "Guinea-Bissau",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GUY",
+      "iso3": "GUY",
+      "place_name": "Guyana",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "HTI",
+      "iso3": "HTI",
+      "place_name": "Haiti",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "HMD",
+      "iso3": "HMD",
+      "place_name": "Heard Island and McDonald Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "HND",
+      "iso3": "HND",
+      "place_name": "Honduras",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "HKG",
+      "iso3": "HKG",
+      "place_name": "Hong Kong",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "HUN",
+      "iso3": "HUN",
+      "place_name": "Hungary",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ISL",
+      "iso3": "ISL",
+      "place_name": "Iceland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "IND",
+      "iso3": "IND",
+      "place_name": "India",
+      "geometry_level": "country",
+      "coverage_status": "canonical_measurements",
+      "gap_status": "canonical",
+      "coverage_reason": "Canonical country profile passed the input-gate and source-provenance checks.",
+      "missing_inputs": [],
+      "eligible_for_promotion": true,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "IDN",
+      "iso3": "IDN",
+      "place_name": "Indonesia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "IRN",
+      "iso3": "IRN",
+      "place_name": "Iran",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "IRQ",
+      "iso3": "IRQ",
+      "place_name": "Iraq",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "IRL",
+      "iso3": "IRL",
+      "place_name": "Ireland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "IMN",
+      "iso3": "IMN",
+      "place_name": "Isle of Man",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ISR",
+      "iso3": "ISR",
+      "place_name": "Israel",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ITA",
+      "iso3": "ITA",
+      "place_name": "Italy",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CIV",
+      "iso3": "CIV",
+      "place_name": "Ivory Coast",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "JAM",
+      "iso3": "JAM",
+      "place_name": "Jamaica",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "JPN",
+      "iso3": "JPN",
+      "place_name": "Japan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "JEY",
+      "iso3": "JEY",
+      "place_name": "Jersey",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "JOR",
+      "iso3": "JOR",
+      "place_name": "Jordan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "KAZ",
+      "iso3": "KAZ",
+      "place_name": "Kazakhstan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "KEN",
+      "iso3": "KEN",
+      "place_name": "Kenya",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "KIR",
+      "iso3": "KIR",
+      "place_name": "Kiribati",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "KOS",
+      "iso3": "KOS",
+      "place_name": "Kosovo",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "KWT",
+      "iso3": "KWT",
+      "place_name": "Kuwait",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "KGZ",
+      "iso3": "KGZ",
+      "place_name": "Kyrgyzstan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "LAO",
+      "iso3": "LAO",
+      "place_name": "Laos",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "LVA",
+      "iso3": "LVA",
+      "place_name": "Latvia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "LBN",
+      "iso3": "LBN",
+      "place_name": "Lebanon",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "LSO",
+      "iso3": "LSO",
+      "place_name": "Lesotho",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "LBR",
+      "iso3": "LBR",
+      "place_name": "Liberia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "LBY",
+      "iso3": "LBY",
+      "place_name": "Libya",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "LIE",
+      "iso3": "LIE",
+      "place_name": "Liechtenstein",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "LTU",
+      "iso3": "LTU",
+      "place_name": "Lithuania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "LUX",
+      "iso3": "LUX",
+      "place_name": "Luxembourg",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MAC",
+      "iso3": "MAC",
+      "place_name": "Macau",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MDG",
+      "iso3": "MDG",
+      "place_name": "Madagascar",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MWI",
+      "iso3": "MWI",
+      "place_name": "Malawi",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MYS",
+      "iso3": "MYS",
+      "place_name": "Malaysia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MDV",
+      "iso3": "MDV",
+      "place_name": "Maldives",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MLI",
+      "iso3": "MLI",
+      "place_name": "Mali",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MLT",
+      "iso3": "MLT",
+      "place_name": "Malta",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MHL",
+      "iso3": "MHL",
+      "place_name": "Marshall Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MRT",
+      "iso3": "MRT",
+      "place_name": "Mauritania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MUS",
+      "iso3": "MUS",
+      "place_name": "Mauritius",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MEX",
+      "iso3": "MEX",
+      "place_name": "Mexico",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MDA",
+      "iso3": "MDA",
+      "place_name": "Moldova",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MCO",
+      "iso3": "MCO",
+      "place_name": "Monaco",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MNG",
+      "iso3": "MNG",
+      "place_name": "Mongolia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MNE",
+      "iso3": "MNE",
+      "place_name": "Montenegro",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MSR",
+      "iso3": "MSR",
+      "place_name": "Montserrat",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MAR",
+      "iso3": "MAR",
+      "place_name": "Morocco",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MOZ",
+      "iso3": "MOZ",
+      "place_name": "Mozambique",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MMR",
+      "iso3": "MMR",
+      "place_name": "Myanmar",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "NAM",
+      "iso3": "NAM",
+      "place_name": "Namibia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "NRU",
+      "iso3": "NRU",
+      "place_name": "Nauru",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "NPL",
+      "iso3": "NPL",
+      "place_name": "Nepal",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "NLD",
+      "iso3": "NLD",
+      "place_name": "Netherlands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "NCL",
+      "iso3": "NCL",
+      "place_name": "New Caledonia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "NZL",
+      "iso3": "NZL",
+      "place_name": "New Zealand",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "NIC",
+      "iso3": "NIC",
+      "place_name": "Nicaragua",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "NER",
+      "iso3": "NER",
+      "place_name": "Niger",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "NGA",
+      "iso3": "NGA",
+      "place_name": "Nigeria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "NIU",
+      "iso3": "NIU",
+      "place_name": "Niue",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "NFK",
+      "iso3": "NFK",
+      "place_name": "Norfolk Island",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PRK",
+      "iso3": "PRK",
+      "place_name": "North Korea",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MKD",
+      "iso3": "MKD",
+      "place_name": "North Macedonia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MNP",
+      "iso3": "MNP",
+      "place_name": "Northern Mariana Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "NOR",
+      "iso3": "NOR",
+      "place_name": "Norway",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "OMN",
+      "iso3": "OMN",
+      "place_name": "Oman",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PAK",
+      "iso3": "PAK",
+      "place_name": "Pakistan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PLW",
+      "iso3": "PLW",
+      "place_name": "Palau",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PSE",
+      "iso3": "PSE",
+      "place_name": "Palestine",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PAN",
+      "iso3": "PAN",
+      "place_name": "Panama",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PNG",
+      "iso3": "PNG",
+      "place_name": "Papua New Guinea",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PRY",
+      "iso3": "PRY",
+      "place_name": "Paraguay",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CHN",
+      "iso3": "CHN",
+      "place_name": "People's Republic of China",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PER",
+      "iso3": "PER",
+      "place_name": "Peru",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PHL",
+      "iso3": "PHL",
+      "place_name": "Philippines",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PCN",
+      "iso3": "PCN",
+      "place_name": "Pitcairn Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "POL",
+      "iso3": "POL",
+      "place_name": "Poland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PRT",
+      "iso3": "PRT",
+      "place_name": "Portugal",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "PRI",
+      "iso3": "PRI",
+      "place_name": "Puerto Rico",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "QAT",
+      "iso3": "QAT",
+      "place_name": "Qatar",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "COG",
+      "iso3": "COG",
+      "place_name": "Republic of the Congo",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ROU",
+      "iso3": "ROU",
+      "place_name": "Romania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "RUS",
+      "iso3": "RUS",
+      "place_name": "Russia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "RWA",
+      "iso3": "RWA",
+      "place_name": "Rwanda",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BLM",
+      "iso3": "BLM",
+      "place_name": "Saint Barthélemy",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SHN",
+      "iso3": "SHN",
+      "place_name": "Saint Helena",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "KNA",
+      "iso3": "KNA",
+      "place_name": "Saint Kitts and Nevis",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "LCA",
+      "iso3": "LCA",
+      "place_name": "Saint Lucia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "MAF",
+      "iso3": "MAF",
+      "place_name": "Saint Martin",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SPM",
+      "iso3": "SPM",
+      "place_name": "Saint Pierre and Miquelon",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "VCT",
+      "iso3": "VCT",
+      "place_name": "Saint Vincent and the Grenadines",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "WSM",
+      "iso3": "WSM",
+      "place_name": "Samoa",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SMR",
+      "iso3": "SMR",
+      "place_name": "San Marino",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "STP",
+      "iso3": "STP",
+      "place_name": "São Tomé and Príncipe",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SAU",
+      "iso3": "SAU",
+      "place_name": "Saudi Arabia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SEN",
+      "iso3": "SEN",
+      "place_name": "Senegal",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SRB",
+      "iso3": "SRB",
+      "place_name": "Serbia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SYC",
+      "iso3": "SYC",
+      "place_name": "Seychelles",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "KAS",
+      "iso3": "KAS",
+      "place_name": "Siachen Glacier",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SLE",
+      "iso3": "SLE",
+      "place_name": "Sierra Leone",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SGP",
+      "iso3": "SGP",
+      "place_name": "Singapore",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SXM",
+      "iso3": "SXM",
+      "place_name": "Sint Maarten",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SVK",
+      "iso3": "SVK",
+      "place_name": "Slovakia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SVN",
+      "iso3": "SVN",
+      "place_name": "Slovenia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SLB",
+      "iso3": "SLB",
+      "place_name": "Solomon Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SOM",
+      "iso3": "SOM",
+      "place_name": "Somalia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SOL",
+      "iso3": "SOL",
+      "place_name": "Somaliland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ZAF",
+      "iso3": "ZAF",
+      "place_name": "South Africa",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SGS",
+      "iso3": "SGS",
+      "place_name": "South Georgia and the South Sandwich Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "KOR",
+      "iso3": "KOR",
+      "place_name": "South Korea",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SSD",
+      "iso3": "SSD",
+      "place_name": "South Sudan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ESP",
+      "iso3": "ESP",
+      "place_name": "Spain",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "LKA",
+      "iso3": "LKA",
+      "place_name": "Sri Lanka",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SDN",
+      "iso3": "SDN",
+      "place_name": "Sudan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SUR",
+      "iso3": "SUR",
+      "place_name": "Suriname",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SWE",
+      "iso3": "SWE",
+      "place_name": "Sweden",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CHE",
+      "iso3": "CHE",
+      "place_name": "Switzerland",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "SYR",
+      "iso3": "SYR",
+      "place_name": "Syria",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TWN",
+      "iso3": "TWN",
+      "place_name": "Taiwan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TJK",
+      "iso3": "TJK",
+      "place_name": "Tajikistan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TZA",
+      "iso3": "TZA",
+      "place_name": "Tanzania",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "THA",
+      "iso3": "THA",
+      "place_name": "Thailand",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "BHS",
+      "iso3": "BHS",
+      "place_name": "The Bahamas",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GMB",
+      "iso3": "GMB",
+      "place_name": "The Gambia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TGO",
+      "iso3": "TGO",
+      "place_name": "Togo",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TON",
+      "iso3": "TON",
+      "place_name": "Tonga",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TTO",
+      "iso3": "TTO",
+      "place_name": "Trinidad and Tobago",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TUN",
+      "iso3": "TUN",
+      "place_name": "Tunisia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TUR",
+      "iso3": "TUR",
+      "place_name": "Turkey",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "CYN",
+      "iso3": "CYN",
+      "place_name": "Turkish Republic of Northern Cyprus",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TKM",
+      "iso3": "TKM",
+      "place_name": "Turkmenistan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TCA",
+      "iso3": "TCA",
+      "place_name": "Turks and Caicos Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "TUV",
+      "iso3": "TUV",
+      "place_name": "Tuvalu",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "UGA",
+      "iso3": "UGA",
+      "place_name": "Uganda",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "UKR",
+      "iso3": "UKR",
+      "place_name": "Ukraine",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ARE",
+      "iso3": "ARE",
+      "place_name": "United Arab Emirates",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "GBR",
+      "iso3": "GBR",
+      "place_name": "United Kingdom",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "USA",
+      "iso3": "USA",
+      "place_name": "United States of America",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "VIR",
+      "iso3": "VIR",
+      "place_name": "United States Virgin Islands",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "URY",
+      "iso3": "URY",
+      "place_name": "Uruguay",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "UZB",
+      "iso3": "UZB",
+      "place_name": "Uzbekistan",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "VUT",
+      "iso3": "VUT",
+      "place_name": "Vanuatu",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "VAT",
+      "iso3": "VAT",
+      "place_name": "Vatican City",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "VEN",
+      "iso3": "VEN",
+      "place_name": "Venezuela",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "VNM",
+      "iso3": "VNM",
+      "place_name": "Vietnam",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "WLF",
+      "iso3": "WLF",
+      "place_name": "Wallis and Futuna",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ESH",
+      "iso3": "ESH",
+      "place_name": "Western Sahara",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "YEM",
+      "iso3": "YEM",
+      "place_name": "Yemen",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ZMB",
+      "iso3": "ZMB",
+      "place_name": "Zambia",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    },
+    {
+      "place_id": "ZWE",
+      "iso3": "ZWE",
+      "place_name": "Zimbabwe",
+      "geometry_level": "country",
+      "coverage_status": "boundary_index_only",
+      "gap_status": "boundary_only",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      "missing_inputs": [
+        "identity",
+        "geometry",
+        "population_denominator",
+        "land_area_context",
+        "core_socioeconomic_proxy"
+      ],
+      "eligible_for_promotion": false,
+      "last_seen_in_release": "2026-05-31"
+    }
+  ]
+}

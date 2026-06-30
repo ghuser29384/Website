@@ -39,7 +39,12 @@
       "event": "compare_opened",
       "fields": [
         "route",
-        "place_id",
+        "requested_places_count",
+        "requested_from_url",
+        "comparable_rows",
+        "has_compatibility_issues",
+        "canonical_place_count",
+        "release_mode",
         "release_id"
       ]
     },

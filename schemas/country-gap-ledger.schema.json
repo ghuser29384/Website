@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PainMap country gap ledger",
+  "type": "object",
+  "required": [
+    "release_id",
+    "generated_at",
+    "release_date",
+    "coverage_gate",
+    "summary",
+    "countries"
+  ],
+  "properties": {
+    "release_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "release_date": {
+      "type": "string"
+    },
+    "coverage_gate": {
+      "type": "object",
+      "required": [
+        "eligible_input_groups",
+        "blocked_input_groups",
+        "minimum_inputs"
+      ],
+      "properties": {
+        "eligible_input_groups": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "blocked_input_groups": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "minimum_inputs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "country_count",
+        "eligible_for_promotion",
+        "canonical_country_profiles",
+        "boundary_only_countries",
+        "no_data_countries",
+        "stale_countries",
+        "blocked_countries",
+        "excluded_countries"
+      ],
+      "properties": {
+        "country_count": {
+          "type": "integer"
+        },
+        "eligible_for_promotion": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "canonical_country_profiles": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "boundary_only_countries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "no_data_countries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stale_countries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "blocked_countries": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "excluded_countries": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "countries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "place_id",
+          "iso3",
+          "place_name",
+          "geometry_level",
+          "coverage_status",
+          "gap_status",
+          "eligible_for_promotion",
+          "coverage_reason",
+          "missing_inputs"
+        ],
+        "properties": {
+          "place_id": {
+            "type": "string"
+          },
+          "iso3": {
+            "type": "string"
+          },
+          "place_name": {
+            "type": "string"
+          },
+          "geometry_level": {
+            "type": "string"
+          },
+          "coverage_status": {
+            "type": "string"
+          },
+          "gap_status": {
+            "enum": [
+              "canonical",
+              "boundary_only",
+              "no_data",
+              "stale",
+              "blocked",
+              "excluded_by_policy"
+            ]
+          },
+          "coverage_reason": {
+            "type": "string"
+          },
+          "missing_inputs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "eligible_for_promotion": {
+            "type": "boolean"
+          },
+          "last_seen_in_release": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PainMap source snapshot registry",
+  "type": "object",
+  "required": [
+    "release_id",
+    "generated_at",
+    "release_date",
+    "source_snapshots"
+  ],
+  "properties": {
+    "release_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "release_date": {
+      "type": "string"
+    },
+    "source_snapshots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_snapshot_id",
+          "source_id",
+          "upstream_url",
+          "retrieval_timestamp",
+          "source_vintage",
+          "media_type",
+          "retrieval_metadata",
+          "checksum_algorithm",
+          "checksum",
+          "retrieval_basis"
+        ],
+        "properties": {
+          "source_snapshot_id": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "upstream_url": {
+            "type": "string"
+          },
+          "retrieval_timestamp": {
+            "type": "string"
+          },
+          "source_vintage": {
+            "type": "string"
+          },
+        "media_type": {
+          "type": "string"
+        },
+        "retrieval_metadata": {
+          "type": "object",
+          "required": [
+            "source_id",
+            "source_url"
+          ],
+          "properties": {
+            "source_id": {
+              "type": "string"
+            },
+            "source_url": {
+              "type": "string"
+            }
+          }
+        },
+        "license_id": {
+          "type": "string"
+        },
+          "checksum_algorithm": {
+            "type": "string"
+          },
+          "checksum": {
+            "type": "string"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "retrieval_basis": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

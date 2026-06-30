@@ -3,6 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" as="style" href="/styles.css?v=f577d8bd97529e2d">
+    <link rel="modulepreload" href="/compare.js?v=compare-mode-coverage-first-20260630" integrity="sha384-3+xa0/A+VOGa9q+iMiLkYcwxEuNyJ26bQQi8KYjsk6lynuW700daPszuYf/yKl0b" crossorigin="anonymous">
+    <link rel="preconnect" href="https://www.geoboundaries.org" crossorigin>
+    <link rel="preconnect" href="https://api.worldbank.org" crossorigin>
+    <link rel="preconnect" href="https://api.worldpop.org" crossorigin>
+    <link rel="preconnect" href="https://ourworldindata.org" crossorigin>
+    <link rel="preconnect" href="https://media.githubusercontent.com" crossorigin>
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://api.worldpop.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Compare Places | PainMap</title>
@@ -17,7 +24,7 @@
     <meta name="twitter:title" content="Compare Places | PainMap">
     <meta name="twitter:description" content="Compare places or releases while preserving evidence kind, uncertainty, source vintage, and method notes.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../styles.css" integrity="sha384-247i4QQKs5xcO5DRVdCYNDn8SIksDDkmOncbjyJb10IWhCroxw7XbgJgLD7gwiez" crossorigin="anonymous">
+<link rel="stylesheet" href="../styles.css?v=f577d8bd97529e2d" integrity="sha384-XdgV8OcEiPmilc4PjLuV5FOg0XXB4uQ6g2wtqOPoJ31F2onss7wXtXkIiG4S3HX2" crossorigin="anonymous">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -67,6 +74,12 @@
             <p class="route-copy" id="compare-url-status" role="status" aria-live="polite">
               Default release example: Brazil and India. Atlas place buttons can open this route with a requested place list.
             </p>
+            <p id="compare-coverage-readiness" class="compare-comparability-notice" role="status" aria-live="polite">
+              Loading release coverage gate from 2026-05-31.atlas.2.
+            </p>
+            <ul id="compare-coverage-sparse-areas" class="fact-list" aria-label="Known sparse coverage areas">
+              <li>Known sparse-coverage areas are loaded from the active release metadata.</li>
+            </ul>
             <div class="compare-chip-list" id="compare-requested-list" aria-label="Requested compare places">
               <a class="compare-chip" href="/place/BRA/">Brazil</a>
               <a class="compare-chip" href="/place/IND/">India</a>
@@ -74,35 +87,92 @@
           </div>
         </section>
 
-        <section class="route-panel" aria-labelledby="comparison-title">
-          <div class="compare-grid">
-            <article class="metadata-card">
-              <span class="evidence-badge">BRA</span>
-              <h2 id="comparison-title">Brazil</h2>
-              <p>Release: 2026-05-31.atlas.2</p>
-              <p>Layer mix: proxy aggregate, priority overlay, boundary.</p>
-              <p>Highest uncertainty: low for human and farmed-animal proxy rows.</p>
-              <div class="route-actions">
-                <a class="ghost-link" href="/place/BRA/">Open Brazil</a>
-              </div>
+        <section class="route-panel release-mode-panel" aria-labelledby="compare-release-mode-title">
+          <div class="section-intro">
+            <p class="label">Release mode</p>
+            <h2 id="compare-release-mode-title">Snapshot first, live overlays labeled.</h2>
+            <p>
+              Compare rows are built from frozen release artifacts by default. Live overlay mode may load current
+              public-source context, and those values remain outside the immutable compare rows.
+            </p>
+          </div>
+          <div id="compare-release-mode-switch" class="release-mode-switch" role="tablist" aria-label="Release data mode">
+            <button
+              class="release-mode-tab"
+              id="release-mode-snapshot"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="release-mode-snapshot-panel"
+              data-compare-release-mode="snapshot"
+            >
+              Snapshot
+            </button>
+            <button
+              class="release-mode-tab"
+              id="release-mode-live"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="release-mode-live-panel"
+              data-compare-release-mode="live"
+            >
+              Live overlay
+            </button>
+          </div>
+          <div class="release-mode-panels">
+            <article
+              class="release-mode-card"
+              id="release-mode-snapshot-panel"
+              role="tabpanel"
+              aria-labelledby="release-mode-snapshot"
+              data-compare-release-mode-panel="snapshot"
+            >
+              <span class="evidence-badge">immutable</span>
+              <h3>Frozen compare rows</h3>
+              <p>
+                Rows and status signals are drawn from the active release snapshot and are ranked using the frozen
+                release contract.
+              </p>
+              <dl class="release-mode-facts">
+                <div><dt>Cache rule</dt><dd>Release rows and summary artifacts may use long-lived immutable caching.</dd></div>
+                <div><dt>Replay rule</dt><dd>Cite the release manifest and artifacts for reproducibility.</dd></div>
+              </dl>
             </article>
-            <article class="metadata-card compare-gutter">
-              <span class="evidence-badge">difference</span>
-              <h2>What changes</h2>
-              <p>Both columns are proxy-context examples in this release. Differences should be read as release-scoped directional signals, not direct empirical pain measurements.</p>
-              <p class="issue-source">Use the measurement JSON for raw proxy scores, display values, source ids, confidence bands, and provenance pointers.</p>
-            </article>
-            <article class="metadata-card">
-              <span class="evidence-badge">IND</span>
-              <h2>India</h2>
-              <p>Release: 2026-05-31.atlas.2</p>
-              <p>Layer mix: proxy aggregate, priority overlay, boundary.</p>
-              <p>Highest uncertainty: low for human and farmed-animal proxy rows.</p>
-              <div class="route-actions">
-                <a class="ghost-link" href="/place/IND/">Open India</a>
-              </div>
+            <article
+              class="release-mode-card"
+              id="release-mode-live-panel"
+              role="tabpanel"
+              aria-labelledby="release-mode-live"
+              data-compare-release-mode-panel="live"
+              hidden
+            >
+              <span class="evidence-badge">not frozen</span>
+              <h3>Current public context</h3>
+              <p>
+                Live mode marks non-frozen context values separately for exploration and does not replace canonical
+                release rows.
+              </p>
+              <dl class="release-mode-facts">
+                <div><dt>Cache rule</dt><dd>Short lived and source dependent for exploratory context.</dd></div>
+                <div><dt>Replay rule</dt><dd>Use live context as current evidence unless materialized in a later release.</dd></div>
+              </dl>
             </article>
           </div>
+          <div class="release-mode-status-row">
+            <p class="release-mode-status" id="release-mode-status" role="status" aria-live="polite">
+              Loading compare-mode status.
+            </p>
+            <div class="route-actions">
+              <a class="ghost-link" href="/data/release-modes.json">Mode contract</a>
+              <a class="ghost-link" href="/data/performance-budgets.json">Cache and field budgets</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="comparison-title">
+          <h2 id="comparison-title">Place comparison summaries</h2>
+          <div id="compare-place-grid" class="compare-grid" aria-label="compare place summary"></div>
         </section>
 
         <section class="route-panel" aria-labelledby="compare-table-title">
@@ -110,61 +180,86 @@
             <p class="label">Comparison table</p>
             <h2 id="compare-table-title">Canonical release rows</h2>
           </div>
+          <div id="compare-comparability-notice" class="compare-comparability-notice" role="status" aria-live="polite" aria-atomic="true">
+            <p>Loading compatibility check for requested places.</p>
+          </div>
+          <div id="compare-noncomparable-list" class="compare-notice-list" hidden></div>
+
           <div class="data-table-wrap">
-            <table class="route-table">
+            <table class="route-table compare-table-labeled">
+              <caption>Canonical release rows available for side-by-side comparison.</caption>
               <thead>
                 <tr>
-                  <th>Place</th>
-                  <th>Layer</th>
-                  <th>Evidence kind</th>
-                  <th>Display value</th>
-                  <th>Uncertainty</th>
-                  <th>Source vintage</th>
+                  <th scope="col">Place</th>
+                  <th scope="col">Layer</th>
+                  <th scope="col">Evidence kind</th>
+                  <th scope="col">Value model</th>
+                  <th scope="col">Unit</th>
+                  <th scope="col">Ranking mode</th>
+                  <th scope="col">Reference period</th>
+                  <th scope="col">Display value</th>
+                  <th scope="col">Uncertainty</th>
+                  <th scope="col">Method version</th>
+                  <th scope="col">Source vintage</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody id="compare-table-body">
                 <tr>
-                  <th scope="row">Brazil</th>
-                  <td>Factory-farmed animals</td>
-                  <td>Proxy aggregate</td>
-                  <td>0.58 normalized burden proxy</td>
-                  <td>Low confidence, 0.44-0.72</td>
-                  <td>2026-05-31 release; runtime OWID/Fishcount overlay optional</td>
-                </tr>
-                <tr>
-                  <th scope="row">India</th>
-                  <td>Factory-farmed animals</td>
-                  <td>Proxy aggregate</td>
-                  <td>0.71 normalized burden proxy</td>
-                  <td>Low confidence, 0.54-0.86</td>
-                  <td>2026-05-31 release; runtime OWID/Fishcount overlay optional</td>
-                </tr>
-                <tr>
-                  <th scope="row">Brazil</th>
-                  <td>Human burden indicators</td>
-                  <td>Proxy aggregate</td>
-                  <td>0.42 normalized burden proxy</td>
-                  <td>Low confidence, 0.32-0.53</td>
-                  <td>World Bank 2010:2025 latest non-null indicator window</td>
-                </tr>
-                <tr>
-                  <th scope="row">India</th>
-                  <td>Human burden indicators</td>
-                  <td>Proxy aggregate</td>
-                  <td>0.64 normalized burden proxy</td>
-                  <td>Low confidence, 0.49-0.78</td>
-                  <td>World Bank 2010:2025 latest non-null indicator window</td>
+                  <td colspan="11">Loading compare rows from release artifacts.</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="route-actions">
-            <a class="solid-button" href="/data/place-measurements.json">Open canonical JSON</a>
-            <a class="ghost-link" href="/releases/2026-05-31/">Open release manifest</a>
+        <div class="route-actions">
+          <a class="solid-button" href="/data/place-measurements.json">Open canonical JSON</a>
+          <a class="ghost-link" href="/releases/2026-05-31/">Open release manifest</a>
+            <a
+              class="ghost-link"
+              href="https://github.com/ghuser29384/Website/issues/new?title=%5BPainMap%20correction%5D%202026-05-31.atlas.2%3A%20compare%20surface&body=Release%3A%202026-05-31.atlas.2%0ASubject%20type%3A%20route%0ASubject%20id%3A%20compare%0AClaim%20id%3A%20claim.2026-05-31.atlas.2.route.compare%0ARoute%3A%20%2Fcompare%2F%0AClaims%20context%3A%20compare%20coverage%20readiness%20or%20row%20comparability%0A%0APlease%20paste%20the%20place%20tokens%20and%20your%20evidence%20if%20a%20comparability%20or%20coverage%20claim%20should%20be%20updated.%0ADo%20not%20share%20personal%20health%20data%20in%20this%20issue.%0A"
+              target="_blank"
+              rel="noopener"
+            >Open correction form</a>
+        </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="compare-terms-title">
+          <div class="section-intro">
+            <p class="label">Glossary</p>
+            <h2 id="compare-terms-title">Compare terms</h2>
           </div>
+          <dl class="glossary-list">
+            <dt id="term-canonical-country-profile">Canonical country profile</dt>
+            <dd>Release rows that were explicitly built and scored for country-level comparison.</dd>
+            <dt id="term-boundary-only">Boundary-only coverage</dt>
+            <dd>Map-visible places that still need canonical release rows before rankings can be treated as direct comparison values.</dd>
+            <dt id="term-adm1-context">ADM1 context</dt>
+            <dd>Subnational context rows used for coverage and distributional context, not yet canonical country comparisons.</dd>
+            <dt id="term-no-data">No release coverage</dt>
+            <dd>No release rows are present for the requested place in this snapshot.</dd>
+            <dt id="term-proxy-aggregate">Proxy aggregate</dt>
+            <dd>Modeled aggregate estimate from public indicators; useful for comparison with clear uncertainty signals.</dd>
+            <dt id="term-priority-overlay">Priority overlay</dt>
+            <dd>Priority-visible layer used for allocation/attention framing, not a direct suffering estimate.</dd>
+            <dt id="term-direct-evidence">Direct evidence</dt>
+            <dd>Observed release-linked source output for the place and layer, rather than a proxy pathway.</dd>
+            <dt id="term-ranking-mode">Ranking mode</dt>
+            <dd>How values are transformed into ranks (for example, higher proxy score = higher attention).</dd>
+            <dt id="term-comparability">Not directly comparable</dt>
+            <dd>Rows only remain comparable when layer, value model, unit, ranking mode, reference period, source vintage, and method version align.</dd>
+            <dt id="term-value-model">Value model</dt>
+            <dd>How a value row is numerically defined before ranking, such as proxy burden, life-years, or direct count.</dd>
+            <dt id="term-reference-period">Reference period</dt>
+            <dd>The time window used for the value in this release row.</dd>
+            <dt id="term-source-vintage">Source vintage</dt>
+            <dd>Source dataset revision or timestamp that was used to produce this release row.</dd>
+            <dt id="term-uncertainty">Uncertainty</dt>
+            <dd>How much confidence and interval width applies to the value; lower precision should not be treated as fixed evidence.</dd>
+            <dt id="term-transform-version">Method version</dt>
+            <dd>Registered transformation logic that maps source values into this ranking-compatible release value.</dd>
+          </dl>
         </section>
       </main>
-    </div>
-    <script type="module" src="../compare.js" integrity="sha384-M48nWyAfnyqfrPxmXTyOROJtkau6GXKgoC1sziMk5KEUdwBJVpoqnfNruO9hGbkt" crossorigin="anonymous"></script>
+  </div><script type="module" src="../compare.js?v=compare-mode-coverage-first-20260630" integrity="sha384-3+xa0/A+VOGa9q+iMiLkYcwxEuNyJ26bQQi8KYjsk6lynuW700daPszuYf/yKl0b" crossorigin="anonymous"></script>
+  <script src="/route-table-labels.js?v=4fc546df01614183" defer></script>
   </body>
 </html>

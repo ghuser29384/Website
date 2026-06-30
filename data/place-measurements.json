@@ -51,7 +51,17 @@
       "reviewer_status": "release-reviewed",
       "source_file_checksum": "f9c76b9d9e5e3be7c74dd4d12765536e53393d9f5f06cc1b14e19b8bb48c24ca",
       "source_file_checksum_algorithm": "sha256",
-      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.",
+      "source_snapshot_ids": [
+        "source-snapshot-2026-05-31.atlas.2-fishcount-aquaculture",
+        "source-snapshot-2026-05-31.atlas.2-owid-livestock",
+        "source-snapshot-2026-05-31.atlas.2-painmap-welfare-assumptions"
+      ],
+      "method_id": "method.factory-farmed-animals",
+      "method_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "method_transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "comparability_group_id": "factory-farmed-animals",
+      "reference_period": "release_snapshot"
     },
     {
       "measurement_id": "2026-05-31.atlas.2:WLD:wild-insects",
@@ -90,7 +100,16 @@
       "reviewer_status": "release-reviewed",
       "source_file_checksum": "ee9954ee726d61174bf40ab7200f2b0930a34a5010b7bcd937467dc8a04232d4",
       "source_file_checksum_algorithm": "sha256",
-      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.",
+      "source_snapshot_ids": [
+        "source-snapshot-2026-05-31.atlas.2-painmap-welfare-assumptions",
+        "source-snapshot-2026-05-31.atlas.2-world-bank-land-area"
+      ],
+      "method_id": "method.wild-insects",
+      "method_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "method_transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "comparability_group_id": "wild-insects",
+      "reference_period": "release_snapshot"
     },
     {
       "measurement_id": "2026-05-31.atlas.2:BRA:factory-farmed-animals",
@@ -130,7 +149,17 @@
       "reviewer_status": "release-reviewed",
       "source_file_checksum": "b0b61f5510f8f0f3084383bc9647d3f92c9bcddb6a8f3efa92ec754dfb3ad0bc",
       "source_file_checksum_algorithm": "sha256",
-      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.",
+      "source_snapshot_ids": [
+        "source-snapshot-2026-05-31.atlas.2-fishcount-aquaculture",
+        "source-snapshot-2026-05-31.atlas.2-owid-livestock",
+        "source-snapshot-2026-05-31.atlas.2-painmap-welfare-assumptions"
+      ],
+      "method_id": "method.factory-farmed-animals",
+      "method_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "method_transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "comparability_group_id": "factory-farmed-animals",
+      "reference_period": "release_snapshot"
     },
     {
       "measurement_id": "2026-05-31.atlas.2:BRA:human-burden",
@@ -168,7 +197,15 @@
       "reviewer_status": "release-reviewed",
       "source_file_checksum": "aae6f60df4bba074eee0106c530efb6f459a30b5f9c103be88de8fd7ba08f4ea",
       "source_file_checksum_algorithm": "sha256",
-      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.",
+      "source_snapshot_ids": [
+        "source-snapshot-2026-05-31.atlas.2-world-bank-indicators"
+      ],
+      "method_id": "method.human-burden",
+      "method_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "method_transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "comparability_group_id": "human-burden",
+      "reference_period": "release_snapshot"
     },
     {
       "measurement_id": "2026-05-31.atlas.2:BRA:animal-priority-overlay",
@@ -208,7 +245,17 @@
       "reviewer_status": "release-reviewed",
       "source_file_checksum": "4bed66c21e7f07e8773926e3aa7f7b7b8947ea087b2946218e7f5a4aeb85be71",
       "source_file_checksum_algorithm": "sha256",
-      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.",
+      "source_snapshot_ids": [
+        "source-snapshot-2026-05-31.atlas.2-owid-livestock",
+        "source-snapshot-2026-05-31.atlas.2-painmap-priority-review",
+        "source-snapshot-2026-05-31.atlas.2-welfare-footprint-events"
+      ],
+      "method_id": "method.animal-priority-overlay",
+      "method_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "method_transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "comparability_group_id": "animal-priority-overlay",
+      "reference_period": "release_snapshot"
     },
     {
       "measurement_id": "2026-05-31.atlas.2:IND:factory-farmed-animals",
@@ -248,7 +295,17 @@
       "reviewer_status": "release-reviewed",
       "source_file_checksum": "30343eabc2f577604c8475ee95141f4fc14a28e6f42e7da72c50bf8b4a44a94f",
       "source_file_checksum_algorithm": "sha256",
-      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.",
+      "source_snapshot_ids": [
+        "source-snapshot-2026-05-31.atlas.2-fishcount-aquaculture",
+        "source-snapshot-2026-05-31.atlas.2-owid-livestock",
+        "source-snapshot-2026-05-31.atlas.2-painmap-welfare-assumptions"
+      ],
+      "method_id": "method.factory-farmed-animals",
+      "method_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "method_transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "comparability_group_id": "factory-farmed-animals",
+      "reference_period": "release_snapshot"
     },
     {
       "measurement_id": "2026-05-31.atlas.2:IND:human-burden",
@@ -286,7 +343,15 @@
       "reviewer_status": "release-reviewed",
       "source_file_checksum": "f954fbddca62dab8735bca1f494d27c24ecf282d17f5cc3e445e88ae56e4a9aa",
       "source_file_checksum_algorithm": "sha256",
-      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.",
+      "source_snapshot_ids": [
+        "source-snapshot-2026-05-31.atlas.2-world-bank-indicators"
+      ],
+      "method_id": "method.human-burden",
+      "method_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "method_transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "comparability_group_id": "human-burden",
+      "reference_period": "release_snapshot"
     },
     {
       "measurement_id": "2026-05-31.atlas.2:IND:animal-priority-overlay",
@@ -326,7 +391,17 @@
       "reviewer_status": "release-reviewed",
       "source_file_checksum": "d9958dc3768e31d81d3314e8edfa525390e721d878f5d7866b54c2951b2a5f46",
       "source_file_checksum_algorithm": "sha256",
-      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json."
+      "source_file_checksum_basis": "Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.",
+      "source_snapshot_ids": [
+        "source-snapshot-2026-05-31.atlas.2-owid-livestock",
+        "source-snapshot-2026-05-31.atlas.2-painmap-priority-review",
+        "source-snapshot-2026-05-31.atlas.2-welfare-footprint-events"
+      ],
+      "method_id": "method.animal-priority-overlay",
+      "method_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "method_transform_version": "painmap-static-artifacts.measurement-lineage.2026-06-04.1",
+      "comparability_group_id": "animal-priority-overlay",
+      "reference_period": "release_snapshot"
     }
   ]
 }

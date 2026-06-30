@@ -1,16 +1,15 @@
 {
   "release_id": "2026-05-31.atlas.2",
-  "generated_at": "2026-05-31",
+  "generated_at": "2026-06-30",
   "last_release_date": "2026-05-31",
   "coverage_status": {
     "places_indexed": 2114,
     "country_boundaries_indexed": 239,
     "adm1_boundaries": {
-      "status": "runtime_boundary_overlay_with_static_context_index",
-      "release_scoped_count": 0,
+      "status": "adm1_context_overlay",
+      "release_scoped_count": 1874,
       "static_context_count": 1874,
-      "static_page_count": 120,
-      "source": "geoBoundaries ADM1 loaded on demand by selected country; World Bank GSAP ADM1 poverty context is vendored as a static overlay index"
+      "source": "runtime overlay + static ADM1 context index"
     },
     "canonical_country_profiles": 2,
     "canonical_place_profiles": 3,
@@ -20,8 +19,19 @@
       "modeled": 0,
       "proxy": 6,
       "priority_overlay": 2,
-      "boundary": 239,
-      "adm1_context_overlay": 1874
+      "boundary": 237,
+      "adm1_context_overlay": 1874,
+      "no_data": 0
+    },
+    "country_gap_ledger": {
+      "country_count": 239,
+      "eligible_for_promotion": 2,
+      "canonical_country_profiles": 2,
+      "boundary_only_countries": 237,
+      "no_data_countries": 0,
+      "stale_countries": 0,
+      "blocked_countries": 0,
+      "excluded_countries": 0
     }
   },
   "known_sparse_areas": [
@@ -41,5 +51,13 @@
       "area": "Release/live split",
       "status": "Immutable release artifacts are available; homepage live public-source overlays are labeled separately and remain outside the frozen release rows."
     }
-  ]
+  ],
+  "default_ranking_readiness": {
+    "ready": false,
+    "enabled": false,
+    "rule": "canonical_country_profiles >= 10 and canonical_ratio >= 0.35 and (direct + proxy + priority_overlay + release_measurements) >= 10",
+    "reason": "fewer than 10 canonical country profiles (2) · canonical ratio below minimum threshold (2 canonical profiles across 239 indexed country boundaries)",
+    "release_note_url": "/updates/",
+    "summary_generated_at": "2026-06-30T13:25:27Z"
+  }
 }
