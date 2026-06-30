@@ -52,6 +52,20 @@ function asArray(value) {
   return Array.isArray(value) ? value.map((entry) => String(entry).trim()).filter(Boolean) : [];
 }
 
+function asMappedSet(value, mapValue) {
+  const values = asArray(value);
+  const output = new Set();
+
+  for (const entry of values) {
+    const mapped = String(mapValue ? mapValue(entry) : entry).trim();
+    if (mapped.length > 0) {
+      output.add(mapped);
+    }
+  }
+
+  return output;
+}
+
 function uniqueStrings(values) {
   return Array.from(new Set(values.filter((entry) => String(entry || "").trim()).map((entry) => String(entry).trim())));
 }
@@ -79,6 +93,10 @@ function mergeGroupRequirements(baseRequirement, rawRequirement) {
     required_source_ids: mergeCoverageStrings(
       asArray(baseRequirement?.required_source_ids),
       asArray(rawRequirement?.required_source_ids)
+    ),
+    source_priority_ladder: mergeCoverageStrings(
+      asArray(baseRequirement?.source_priority_ladder),
+      asArray(rawRequirement?.source_priority_ladder)
     ),
   };
 }
@@ -261,6 +279,7 @@ function evaluateGroupCoverage({
   const requiredPlaceFields = asArray(requirement.required_place_fields);
   const requiredLayerIds = asArray(requirement.required_layer_ids);
   const requiredSourceIds = asArray(requirement.required_source_ids);
+  const preferredSourceIds = asArray(requirement.source_priority_ladder);
   const minimumHits = extractNumeric(requirement.minimum_hits || 0, 0) || 1;
   const minimumLayerHits = requiredLayerIds.length ? extractNumeric(requirement.minimum_layer_hits || 0, 0) || 1 : 0;
   const minimumSourceHits = requiredSourceIds.length ? extractNumeric(requirement.minimum_source_hits || 0, 0) || 1 : 0;
@@ -270,6 +289,7 @@ function evaluateGroupCoverage({
   const missing = [];
   const blocked = new Set();
   const stale = new Set();
+  const policy = [];
 
   for (const field of requiredPlaceFields) {
     if (field === "boundary_indexed") {
@@ -286,6 +306,7 @@ function evaluateGroupCoverage({
 
   const matchedLayerIds = requiredLayerIds.filter((layerId) => layerIds.includes(layerId));
   const matchedSourceIds = requiredSourceIds.filter((sourceId) => sourceIds.includes(sourceId));
+  const preferredSourceMatch = preferredSourceIds.filter((sourceId) => sourceIds.includes(sourceId));
 
   if (
     minimumLayerHits > 0 &&
@@ -301,6 +322,10 @@ function evaluateGroupCoverage({
     matchedSourceIds.length < Math.min(minimumSourceHits, requiredSourceIds.length)
   ) {
     missing.push(`${groupId}:source`);
+  }
+
+  if (requiredSourceIds.length > 0 && preferredSourceIds.length > 0 && matchedSourceIds.length > 0 && !preferredSourceMatch.length) {
+    policy.push(`${groupId}:source_priority`);
   }
 
   for (const sourceId of sourceIds) {
@@ -362,6 +387,7 @@ function evaluateGroupCoverage({
 
   return {
     status,
+    policy,
     missing,
     blocked: Array.from(blocked),
     stale: Array.from(stale),
@@ -371,9 +397,59 @@ function evaluateGroupCoverage({
 function classifyCountryCoverage(row, countryRows, inputSpec, sourceFreshnessById, sourceById, layerById, releaseDateMs) {
   const minimumInputs = asArray(inputSpec?.coverage_gate?.minimum_inputs);
   const requirements = inputSpec?.coverage_gate?.input_group_requirements || {};
+  const policyConstraints = inputSpec?.policy_constraints || {};
+  const excludedPlaceIds = asMappedSet(policyConstraints.excluded_place_ids, (value) => `${value}`.toUpperCase());
+  const excludedIso3 = asMappedSet(policyConstraints.excluded_iso3, (value) => `${value}`.toUpperCase());
+  const blockedSourceIds = asMappedSet(policyConstraints.blocked_source_ids, (value) => `${value}`.toLowerCase());
+  const blockedLicenseIds = asMappedSet(policyConstraints.blocked_license_ids, (value) => `${value}`.toLowerCase());
   const blocked = [];
   const stale = [];
   const missing = [];
+  const policySignals = [];
+
+  const placeId = String(row?.place_id || "").toUpperCase();
+  const iso3 = String(row?.iso3 || "").toUpperCase();
+
+  if ((placeId && excludedPlaceIds.has(placeId)) || (iso3 && excludedIso3.has(iso3))) {
+    return {
+      gapStatus: "excluded_by_policy",
+      eligibleForPromotion: false,
+      missingInputs: ["policy_constraint"],
+      coverageReason: `Canonical promotion is policy-excluded for ${placeId || iso3}.`,
+      gateStatus: "excluded",
+    };
+  }
+
+  const policyReasons = new Set();
+  for (const measurementRow of countryRows) {
+    const sourceIds = asArray(measurementRow?.source_ids);
+    for (const sourceId of sourceIds) {
+      const normalizedSourceId = String(sourceId).trim().toLowerCase();
+      if (!normalizedSourceId) {
+        continue;
+      }
+
+      if (blockedSourceIds.has(normalizedSourceId)) {
+        policyReasons.add(`blocked source ${normalizedSourceId}`);
+      }
+
+      const source = sourceById.get(normalizedSourceId);
+      const sourceLicense = String(source?.license_id || "").toLowerCase();
+      if (sourceLicense && blockedLicenseIds.has(sourceLicense)) {
+        policyReasons.add(`blocked license ${sourceLicense}`);
+      }
+    }
+  }
+
+  if (policyReasons.size) {
+    return {
+      gapStatus: "excluded_by_policy",
+      eligibleForPromotion: false,
+      missingInputs: ["policy_constraint", ...Array.from(policyReasons)],
+      coverageReason: `Canonical promotion is policy-excluded due blocked provenance: ${Array.from(policyReasons).join(", ")}.`,
+      gateStatus: "excluded",
+    };
+  }
 
   if (!countryRows.length) {
     if (row.boundary_indexed) {
@@ -408,6 +484,9 @@ function classifyCountryCoverage(row, countryRows, inputSpec, sourceFreshnessByI
     });
 
     if (result.status === "present") {
+      if (result.policy?.length) {
+        policySignals.push(...result.policy);
+      }
       continue;
     }
 
@@ -445,11 +524,15 @@ function classifyCountryCoverage(row, countryRows, inputSpec, sourceFreshnessByI
   }
 
   if (missing.length) {
+    let coverageReason = "Boundary is indexed but minimum canonical profile input gate has not been satisfied.";
+    if (policySignals.length) {
+      coverageReason = `Minimum canonical profile gate has failed with source-priority policy signals: ${policySignals.join(", ")}.`;
+    }
     return {
       gapStatus: "boundary_only",
       eligibleForPromotion: false,
       missingInputs: missing,
-      coverageReason: "Boundary is indexed but minimum canonical profile input gate has not been satisfied.",
+      coverageReason,
       gateStatus: "missing",
     };
   }
@@ -502,10 +585,12 @@ function readCountryInputSpec(defaultReleaseId, placeIndex) {
         population_denominator: {
           required_layer_ids: ["human-burden"],
           required_source_ids: ["world-bank-indicators"],
+          source_priority_ladder: ["world-bank-indicators"],
           minimum_hits: 1,
         },
         land_area_context: {
           required_source_ids: ["world-bank-land-area", "world-bank-indicators"],
+          source_priority_ladder: ["world-bank-indicators", "world-bank-land-area"],
           minimum_hits: 1,
         },
         core_socioeconomic_proxy: {
@@ -518,6 +603,12 @@ function readCountryInputSpec(defaultReleaseId, placeIndex) {
           minimum_hits: 2,
         },
       },
+    },
+    policy_constraints: {
+      excluded_place_ids: [],
+      excluded_iso3: [],
+      blocked_source_ids: [],
+      blocked_license_ids: [],
     },
     required_coverage_fields: [
       "source_snapshot_ids",
@@ -628,6 +719,8 @@ function buildCountryGapRows(placeIndex, byPlaceMeasurementRows, inputSpec, rele
       summary.stale_countries += 1;
     } else if (gapStatus === "blocked") {
       summary.blocked_countries += 1;
+    } else if (gapStatus === "excluded_by_policy") {
+      summary.excluded_countries += 1;
     }
 
     if (Array.isArray(gate.missingInputs) && gate.missingInputs.length) {
@@ -715,6 +808,7 @@ function buildCountryGapLedger(placeIndex, byPlaceMeasurements, inputSpec, relea
         blocked_input_groups: inputSpec?.coverage_gate?.blocked_input_groups || [],
         minimum_inputs: inputSpec?.coverage_gate?.minimum_inputs || [],
         input_group_requirements: inputSpec?.coverage_gate?.input_group_requirements || {},
+        policy_constraints: inputSpec?.policy_constraints || {},
       },
       summary,
       countries: gapRows,

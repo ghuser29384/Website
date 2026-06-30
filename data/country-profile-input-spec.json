@@ -45,6 +45,9 @@
         "required_source_ids": [
           "world-bank-indicators"
         ],
+        "source_priority_ladder": [
+          "world-bank-indicators"
+        ],
         "minimum_hits": 1
       },
       "land_area_context": {
@@ -52,18 +55,28 @@
           "world-bank-land-area",
           "world-bank-indicators"
         ],
+        "source_priority_ladder": [
+          "world-bank-indicators",
+          "world-bank-land-area"
+        ],
         "minimum_hits": 1
       },
-    "core_socioeconomic_proxy": {
-      "required_layer_ids": [
-        "factory-farmed-animals",
-        "human-burden",
-        "animal-priority-overlay",
-        "wild-insects"
-      ],
-      "minimum_hits": 2
+      "core_socioeconomic_proxy": {
+        "required_layer_ids": [
+          "factory-farmed-animals",
+          "human-burden",
+          "animal-priority-overlay",
+          "wild-insects"
+        ],
+        "minimum_hits": 2
+      }
     }
-  }
+  },
+  "policy_constraints": {
+    "excluded_place_ids": [],
+    "excluded_iso3": [],
+    "blocked_source_ids": [],
+    "blocked_license_ids": []
   },
   "required_coverage_fields": [
     "source_snapshot_ids",

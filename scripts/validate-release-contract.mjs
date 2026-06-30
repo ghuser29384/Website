@@ -253,6 +253,12 @@ if (countryGapLedger?.countries) {
         Array.isArray(country.missing_inputs) && country.missing_inputs.length === 0,
         `${country.place_id} canonical country should not have missing_inputs`
       );
+    } else if (country.gap_status === "excluded_by_policy") {
+      expect(country.eligible_for_promotion === false, `${country.place_id} excluded_by_policy country should not be eligible_for_promotion`);
+      expect(
+        Array.isArray(country.missing_inputs) && country.missing_inputs.some((entry) => String(entry).includes("policy")),
+        `${country.place_id} excluded_by_policy country should record policy exclusion reason`
+      );
     } else {
       expect(
         country.eligible_for_promotion === false,
@@ -267,9 +273,13 @@ if (countryGapLedger?.countries) {
   for (const status of ["canonical", "boundary_only", "no_data", "stale", "blocked", "excluded_by_policy"]) {
     const observed = observedCountryStatuses.get(status) || 0;
     if (gapSummary) {
-      const expected = Number(gapSummary[status === "excluded_by_policy" ? "excluded" : `${status}_countries`]);
+      const expectedKey = status === "excluded_by_policy" ? "excluded_countries" : `${status}_countries`;
+      const expected = Number(gapSummary[expectedKey]);
       if (Number.isFinite(expected)) {
-        expect(expected === observed, `v1/coverage.json country_gap_ledger.${status}_countries must equal country ledger count`);
+        expect(
+          expected === observed,
+          `v1/coverage.json country_gap_ledger.${expectedKey} must equal country ledger count for ${status}`
+        );
       }
     }
   }
@@ -283,6 +293,22 @@ if (countryGapLedger?.countries) {
 expect(
   Array.isArray(countryProfileSpec?.coverage_gate?.minimum_inputs),
   "data/country-profile-input-spec.json must declare minimum_inputs"
+);
+expect(
+  Array.isArray(countryProfileSpec?.policy_constraints?.excluded_place_ids),
+  "data/country-profile-input-spec.json must include policy_constraints.excluded_place_ids"
+);
+expect(
+  Array.isArray(countryProfileSpec?.policy_constraints?.blocked_source_ids),
+  "data/country-profile-input-spec.json must include policy_constraints.blocked_source_ids"
+);
+expect(
+  Array.isArray(countryProfileSpec?.policy_constraints?.blocked_license_ids),
+  "data/country-profile-input-spec.json must include policy_constraints.blocked_license_ids"
+);
+expect(
+  Array.isArray(countryProfileSpec?.policy_constraints?.excluded_iso3),
+  "data/country-profile-input-spec.json must include policy_constraints.excluded_iso3"
 );
 expect(
   countryProfileSpec?.release_id === placeIndex.release_id,

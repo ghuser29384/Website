@@ -1,7 +1,7 @@
 {
   "release_id": "2026-05-31.atlas.2",
   "release_date": "2026-05-31",
-  "generated_at": "2026-06-30T13:25:27Z",
+  "generated_at": "2026-06-30T14:03:14Z",
   "immutable": true,
   "site": "https://painmap.org",
   "source_of_truth": {
@@ -3529,8 +3529,8 @@
   "artifacts": [
     {
       "path": "/index.html",
-      "sha256": "3f54da30df2c4d242f62022b48dfa93d5e428081ef5edc5823c1878c3986a8f9",
-      "bytes": 52229
+      "sha256": "d34f6e678879ae6260066b13157ba3aaf10f408fe22a86b082fbb5d657086e90",
+      "bytes": 46768
     },
     {
       "path": "/atlas/index.html",
@@ -5474,13 +5474,13 @@
     },
     {
       "path": "/data/source-snapshots.json",
-      "sha256": "0932823ad6a55ba2231a08e7a7323153187b3bd2f5677452a7c6da1fb7eecb94",
+      "sha256": "4be49ab55ea5cf77ec350c2388eb40603d52f877e8f71cc859b2734fa461dfdd",
       "bytes": 5738
     },
     {
       "path": "/data/country-gap-ledger.json",
-      "sha256": "79914f533521f4ed30e36587b5ed927092d952e7cce6bd8d474a541811d3f779",
-      "bytes": 140768
+      "sha256": "fc6425f191073a073a607a2a07fe302ca19744795593dc0a869cc4668a06787b",
+      "bytes": 141236
     },
     {
       "path": "/data/country-gap-ledger.csv",
@@ -5539,8 +5539,8 @@
     },
     {
       "path": "/data/country-profile-input-spec.json",
-      "sha256": "7937faa061378f763e1bf8e7c0efae90aac5b75dd3fd2074f1ae7a73ea0e81bf",
-      "bytes": 2111
+      "sha256": "ef8156bca24693423dec98b5c22e88ed31f3c62d6531d20314f6a9d07986ed96",
+      "bytes": 2473
     },
     {
       "path": "/data/endpoint-smoke.json",
@@ -5699,7 +5699,7 @@
     },
     {
       "path": "/v1/coverage.json",
-      "sha256": "85aa88da1971e0200dbe59d90ecde717f75629bd828a54073ecbd992bd4784b8",
+      "sha256": "ed10ab25ec058be34e099ff04da9065ce974e64e678a1ea57d588b9195dfaac1",
       "bytes": 2374
     },
     {

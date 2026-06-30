@@ -1,6 +1,6 @@
 {
   "release_id": "2026-05-31.atlas.2",
-  "generated_at": "2026-06-30T13:25:27Z",
+  "generated_at": "2026-06-30T14:03:14Z",
   "release_date": "2026-05-31",
   "coverage_gate": {
     "eligible_input_groups": [
@@ -33,7 +33,8 @@
         ],
         "minimum_hits": 1,
         "required_layer_ids": [],
-        "required_source_ids": []
+        "required_source_ids": [],
+        "source_priority_ladder": []
       },
       "geometry": {
         "required_place_fields": [
@@ -41,13 +42,17 @@
         ],
         "minimum_hits": 1,
         "required_layer_ids": [],
-        "required_source_ids": []
+        "required_source_ids": [],
+        "source_priority_ladder": []
       },
       "population_denominator": {
         "required_layer_ids": [
           "human-burden"
         ],
         "required_source_ids": [
+          "world-bank-indicators"
+        ],
+        "source_priority_ladder": [
           "world-bank-indicators"
         ],
         "minimum_hits": 1,
@@ -57,6 +62,10 @@
         "required_source_ids": [
           "world-bank-land-area",
           "world-bank-indicators"
+        ],
+        "source_priority_ladder": [
+          "world-bank-indicators",
+          "world-bank-land-area"
         ],
         "minimum_hits": 1,
         "required_place_fields": [],
@@ -71,8 +80,15 @@
         ],
         "minimum_hits": 2,
         "required_place_fields": [],
-        "required_source_ids": []
+        "required_source_ids": [],
+        "source_priority_ladder": []
       }
+    },
+    "policy_constraints": {
+      "excluded_place_ids": [],
+      "excluded_iso3": [],
+      "blocked_source_ids": [],
+      "blocked_license_ids": []
     }
   },
   "summary": {
