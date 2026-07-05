@@ -3,6 +3,7 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
+const COUNTRY_DATA_CANDIDATE_DIR = "data/candidates/country-data-expansion";
 
 function absolute(relativePath) {
   return path.join(root, relativePath);
@@ -68,6 +69,109 @@ function asMappedSet(value, mapValue) {
 
 function uniqueStrings(values) {
   return Array.from(new Set(values.filter((entry) => String(entry || "").trim()).map((entry) => String(entry).trim())));
+}
+
+function uniqueSortedStrings(values) {
+  return uniqueStrings(values).sort((a, b) => a.localeCompare(b));
+}
+
+function asObjectRows(value) {
+  return Array.isArray(value) ? value.filter((entry) => entry && typeof entry === "object") : [];
+}
+
+function readCandidateJson(fileName) {
+  return readJsonOptional(`${COUNTRY_DATA_CANDIDATE_DIR}/${fileName}`);
+}
+
+function countBy(rows, fieldName) {
+  const counts = {};
+
+  for (const row of rows || []) {
+    const raw = typeof fieldName === "function" ? fieldName(row) : row?.[fieldName];
+    const key = String(raw ?? "unknown").trim() || "unknown";
+    counts[key] = (counts[key] || 0) + 1;
+  }
+
+  return Object.fromEntries(Object.entries(counts).sort(([a], [b]) => a.localeCompare(b)));
+}
+
+function normalizeIso3(value) {
+  return String(value || "").trim().toUpperCase();
+}
+
+function asReasonList(value) {
+  if (Array.isArray(value)) {
+    return uniqueStrings(value.map((entry) => String(entry || "").trim()));
+  }
+
+  if (typeof value === "string" && value.trim()) {
+    return uniqueStrings(value.split(/[;|]/).map((entry) => entry.trim()));
+  }
+
+  return [];
+}
+
+function hasCandidateValue(value) {
+  return value !== undefined && value !== null && String(value).trim().length > 0;
+}
+
+function candidateMissingInputToken(reason) {
+  const normalized = String(reason || "").toLowerCase();
+
+  if (normalized.includes("source snapshot")) {
+    return "candidate_source_snapshot";
+  }
+
+  if (normalized.includes("license")) {
+    return "candidate_license_review";
+  }
+
+  if (normalized.includes("numeric") || normalized.includes("qa")) {
+    return "candidate_numeric_value_QA";
+  }
+
+  if (normalized.includes("coverage artifact")) {
+    return "candidate_place_registry_mapping";
+  }
+
+  return "candidate_release_review";
+}
+
+function currentCandidateBlockers(reasons) {
+  const blockers = new Set();
+
+  for (const reason of reasons || []) {
+    const normalized = String(reason || "").toLowerCase();
+
+    if (normalized.includes("source snapshot")) {
+      blockers.add("source snapshots not captured");
+    } else if (normalized.includes("license")) {
+      blockers.add("licenses not fully verified");
+    } else if (normalized.includes("numeric") || normalized.includes("qa")) {
+      blockers.add("numeric values not fetched or QAed");
+    }
+  }
+
+  return Array.from(blockers);
+}
+
+function appendSentence(base, addition) {
+  const baseText = String(base || "").trim();
+  const additionText = String(addition || "").trim();
+
+  if (!additionText) {
+    return baseText;
+  }
+
+  if (!baseText) {
+    return additionText;
+  }
+
+  if (baseText.includes(additionText)) {
+    return baseText;
+  }
+
+  return `${baseText} ${additionText}`;
 }
 
 function mergeCoverageStrings(baseValue, rawValue) {
@@ -678,7 +782,223 @@ function readCountryInputSpec(defaultReleaseId, placeIndex) {
   };
 }
 
-function buildCountryGapRows(placeIndex, byPlaceMeasurementRows, inputSpec, releaseDate, sourceFreshnessById, sourceById, layerById) {
+function verifyCandidatePackageFiles(packageManifest) {
+  const rows = asObjectRows(packageManifest?.files);
+  const files = rows.map((row) => {
+    const fileName = String(row.file || "").trim();
+    const relativePath = `${COUNTRY_DATA_CANDIDATE_DIR}/${fileName}`;
+    const exists = Boolean(fileName) && existsSync(absolute(relativePath));
+    const actualSha256 = exists ? sha256(relativePath) : null;
+    const actualBytes = exists ? bytes(relativePath) : null;
+
+    return {
+      file: fileName,
+      expected_sha256: row.sha256 || null,
+      actual_sha256: actualSha256,
+      expected_bytes: Number.isFinite(Number(row.bytes)) ? Number(row.bytes) : null,
+      actual_bytes: actualBytes,
+      ok: exists && actualSha256 === row.sha256 && actualBytes === Number(row.bytes),
+    };
+  });
+
+  return {
+    file_count: files.length,
+    files_verified: files.filter((row) => row.ok).length,
+    missing_files: files.filter((row) => !row.actual_sha256).map((row) => row.file),
+    checksum_mismatches: files.filter((row) => row.actual_sha256 && row.actual_sha256 !== row.expected_sha256).map((row) => row.file),
+    byte_mismatches: files.filter((row) => row.actual_bytes !== null && row.expected_bytes !== null && row.actual_bytes !== row.expected_bytes).map((row) => row.file),
+  };
+}
+
+function buildCountryDataCandidateReview(placeIndex) {
+  const packageManifest = readCandidateJson("package-manifest.json");
+
+  if (!packageManifest) {
+    return {
+      summary: null,
+      decisionsByIso: new Map(),
+    };
+  }
+
+  const candidateGapLedger = readCandidateJson("country-gap-ledger.json") || {};
+  const promotionDecisions = readCandidateJson("country-promotion-decisions.json") || {};
+  const proposedMeasurements = readCandidateJson("proposed-country-measurements.json") || {};
+  const candidateSourceSnapshots = readCandidateJson("source-snapshots.json") || {};
+  const finalReport = existsSync(absolute(`${COUNTRY_DATA_CANDIDATE_DIR}/final-report.md`))
+    ? readFileSync(absolute(`${COUNTRY_DATA_CANDIDATE_DIR}/final-report.md`), "utf8")
+    : "";
+
+  const candidateGapRows = asObjectRows(candidateGapLedger.rows || candidateGapLedger.countries);
+  const promotionRows = asObjectRows(promotionDecisions.rows);
+  const measurementRows = asObjectRows(proposedMeasurements.rows || proposedMeasurements.measurements);
+  const sourceSnapshotRows = asObjectRows(candidateSourceSnapshots.rows || candidateSourceSnapshots.source_snapshots);
+  const packageFileAudit = verifyCandidatePackageFiles(packageManifest);
+
+  const currentIso3 = uniqueSortedStrings(
+    (placeIndex.items || [])
+      .filter((item) => item.geometry_level === "country")
+      .map((item) => item.iso3 || item.place_id)
+  );
+  const candidateIso3 = uniqueSortedStrings([
+    ...candidateGapRows.map((row) => row.iso3),
+    ...promotionRows.map((row) => row.iso3),
+  ].map(normalizeIso3).filter(Boolean));
+  const candidateIsoSet = new Set(candidateIso3);
+  const currentIsoSet = new Set(currentIso3);
+  const matchedCurrentCountries = currentIso3.filter((iso3) => candidateIsoSet.has(iso3));
+  const missingFromCandidate = currentIso3.filter((iso3) => !candidateIsoSet.has(iso3));
+  const extraInCandidate = candidateIso3.filter((iso3) => !currentIsoSet.has(iso3));
+  const measurementRowsWithRawValues = measurementRows.filter((row) => hasCandidateValue(row.raw_value)).length;
+  const measurementRowsWithSourceSnapshots = measurementRows.filter((row) => hasCandidateValue(row.source_snapshot_ids)).length;
+  const capturedSourceSnapshotRows = sourceSnapshotRows.filter((row) =>
+    hasCandidateValue(row.retrieval_timestamp) &&
+    /^[a-f0-9]{64}$/.test(String(row.checksum || "")) &&
+    hasCandidateValue(row.upstream_url)
+  );
+  const sourceSnapshotRowsWithChecksums = sourceSnapshotRows.filter((row) => /^[a-f0-9]{64}$/.test(String(row.checksum || ""))).length;
+  const sourceSnapshotRowsWithRetrievalTimestamps = sourceSnapshotRows.filter((row) => hasCandidateValue(row.retrieval_timestamp)).length;
+  const publicationReadyRows = measurementRows.filter((row) =>
+    hasCandidateValue(row.raw_value) &&
+    hasCandidateValue(row.source_snapshot_ids) &&
+    hasCandidateValue(row.license_id) &&
+    hasCandidateValue(row.reference_period) &&
+    hasCandidateValue(row.source_vintage) &&
+    hasCandidateValue(row.method_id) &&
+    hasCandidateValue(row.method_version) &&
+    hasCandidateValue(row.transform_version)
+  ).length;
+  const promotedDecisionCount = promotionRows.filter((row) => row.promote_to_canonical === true).length;
+  const blockingReasonCounts = {};
+
+  for (const row of promotionRows) {
+    for (const reason of asReasonList(row.blocking_reasons)) {
+      blockingReasonCounts[reason] = (blockingReasonCounts[reason] || 0) + 1;
+    }
+  }
+
+  const sortedBlockingReasonCounts = Object.fromEntries(
+    Object.entries(blockingReasonCounts).sort(([a], [b]) => a.localeCompare(b))
+  );
+
+  const publicationBlocked = capturedSourceSnapshotRows.length === 0 || measurementRowsWithRawValues === 0 || publicationReadyRows === 0;
+  const decisionsByIso = new Map();
+
+  for (const row of promotionRows) {
+    const iso3 = normalizeIso3(row.iso3);
+    if (!iso3) {
+      continue;
+    }
+
+    decisionsByIso.set(iso3, {
+      candidate_status: String(row.candidate_status || "unknown").trim() || "unknown",
+      promote_to_canonical: row.promote_to_canonical === true,
+      blocking_reasons: asReasonList(row.blocking_reasons),
+      next_action: String(row.next_action || "").trim(),
+    });
+  }
+
+  return {
+    decisionsByIso,
+    summary: {
+      candidate_package_present: true,
+      package_path: COUNTRY_DATA_CANDIDATE_DIR,
+      generated_at: packageManifest.generated_at || null,
+      release_candidate_id: candidateGapLedger.release_candidate_id || promotionDecisions.release_candidate_id || proposedMeasurements.release_candidate_id || null,
+      implementation_decision: publicationBlocked ? "staged_only_not_promoted" : "requires_manual_release_review_before_promotion",
+      package_file_audit: packageFileAudit,
+      publication_gate: {
+        status: publicationBlocked ? "blocked" : "manual_review_required",
+        publish_candidate_measurements: false,
+        reason: publicationBlocked
+          ? "Candidate package contains no publishable source-backed measurement rows: source snapshots, verified numeric values, and method QA are incomplete."
+          : "Candidate package contains value-like rows, but release promotion still requires manual source, license, method, and UX review.",
+      },
+      source_snapshots: {
+        planned_count: sourceSnapshotRows.length,
+        captured_count: capturedSourceSnapshotRows.length,
+        with_checksums: sourceSnapshotRowsWithChecksums,
+        with_retrieval_timestamps: sourceSnapshotRowsWithRetrievalTimestamps,
+      },
+      proposed_measurements: {
+        row_count: measurementRows.length,
+        with_raw_values: measurementRowsWithRawValues,
+        with_source_snapshot_ids: measurementRowsWithSourceSnapshots,
+        publication_ready_rows: publicationReadyRows,
+        coverage_status_counts: countBy(measurementRows, "coverage_status"),
+        promotion_decision_counts: countBy(measurementRows, "promotion_decision"),
+        layer_counts: countBy(measurementRows, "layer_id"),
+        metric_counts: countBy(measurementRows, "metric_id"),
+      },
+      promotion_decisions: {
+        row_count: promotionRows.length,
+        promote_to_canonical: promotedDecisionCount,
+        not_promoted: promotionRows.length - promotedDecisionCount,
+        candidate_status_counts: countBy(promotionRows, "candidate_status"),
+        blocking_reason_counts: sortedBlockingReasonCounts,
+      },
+      country_universe: {
+        current_country_count: currentIso3.length,
+        candidate_country_count: candidateIso3.length,
+        matched_current_countries: matchedCurrentCountries.length,
+        current_countries_missing_from_candidate: missingFromCandidate,
+        candidate_countries_outside_current_place_index: extraInCandidate,
+      },
+      package_context_note: finalReport.includes("Machine-readable PainMap coverage artifacts were not fetchable")
+        ? "The package was generated without current PainMap release artifacts; this build maps candidate rows against the local release artifacts instead."
+        : "Candidate package mapped against local release artifacts.",
+    },
+  };
+}
+
+function finalizeCandidateReviewSummary(candidateSummary, countryGapSummary) {
+  if (!candidateSummary) {
+    return null;
+  }
+
+  return {
+    ...candidateSummary,
+    current_release_after_candidate_review: {
+      canonical_country_profiles: countryGapSummary.canonical_country_profiles,
+      boundary_only_countries: countryGapSummary.boundary_only_countries,
+      no_data_countries: countryGapSummary.no_data_countries,
+      stale_countries: countryGapSummary.stale_countries,
+      blocked_countries: countryGapSummary.blocked_countries,
+      excluded_countries: countryGapSummary.excluded_countries,
+      eligible_for_promotion: countryGapSummary.eligible_for_promotion,
+    },
+  };
+}
+
+function compactCandidateReviewSummary(candidateSummary) {
+  if (!candidateSummary) {
+    return null;
+  }
+
+  return {
+    release_candidate_id: candidateSummary.release_candidate_id,
+    status: candidateSummary.publication_gate?.status || "unknown",
+    publish_candidate_measurements: false,
+    proposed_measurements: candidateSummary.proposed_measurements?.row_count ?? 0,
+    proposed_measurements_with_raw_values: candidateSummary.proposed_measurements?.with_raw_values ?? 0,
+    planned_source_snapshots: candidateSummary.source_snapshots?.planned_count ?? 0,
+    captured_source_snapshots: candidateSummary.source_snapshots?.captured_count ?? 0,
+    candidate_promotions: candidateSummary.promotion_decisions?.promote_to_canonical ?? 0,
+    matched_current_countries: candidateSummary.country_universe?.matched_current_countries ?? 0,
+    current_countries_missing_from_candidate: candidateSummary.country_universe?.current_countries_missing_from_candidate?.length ?? 0,
+    candidate_countries_outside_current_place_index: candidateSummary.country_universe?.candidate_countries_outside_current_place_index?.length ?? 0,
+  };
+}
+
+function buildCountryGapRows(
+  placeIndex,
+  byPlaceMeasurementRows,
+  inputSpec,
+  releaseDate,
+  sourceFreshnessById,
+  sourceById,
+  layerById,
+  candidateReviewContext
+) {
   const minimumInputs = asArray(inputSpec?.coverage_gate?.minimum_inputs);
   const releaseDateMs = parseDateMs(`${releaseDate}T00:00:00Z`);
   const countries = (placeIndex.items || []).filter((item) => item.geometry_level === "country");
@@ -731,6 +1051,30 @@ function buildCountryGapRows(placeIndex, byPlaceMeasurementRows, inputSpec, rele
       coverageReason = "Boundary-only or canonical-input gate status is unresolved.";
     }
 
+    const candidateDecision = candidateReviewContext?.decisionsByIso?.get(normalizeIso3(row.iso3 || row.place_id));
+    const candidatePackagePresent = Boolean(candidateReviewContext?.summary?.candidate_package_present);
+    const candidateBlockers = candidateDecision?.blocking_reasons || [];
+
+    if (candidateDecision && gapStatus !== "canonical" && !candidateDecision.promote_to_canonical) {
+      const currentBlockers = currentCandidateBlockers(candidateBlockers);
+      if (currentBlockers.length) {
+        coverageReason = appendSentence(
+          coverageReason,
+          `Candidate expansion remains blocked because ${currentBlockers.join("; ")}.`
+        );
+        missingInputs = uniqueStrings([
+          ...missingInputs,
+          ...currentBlockers.map(candidateMissingInputToken),
+        ]);
+      }
+    } else if (!candidateDecision && candidatePackagePresent && gapStatus !== "canonical") {
+      coverageReason = appendSentence(
+        coverageReason,
+        "Candidate expansion package did not include this PainMap country identifier."
+      );
+      missingInputs = uniqueStrings([...missingInputs, "candidate_place_registry_mapping"]);
+    }
+
     const entry = {
       place_id: row.place_id,
       iso3: row.iso3,
@@ -744,6 +1088,15 @@ function buildCountryGapRows(placeIndex, byPlaceMeasurementRows, inputSpec, rele
       last_seen_in_release: releaseDate,
     };
 
+    if (candidatePackagePresent) {
+      entry.candidate_status = candidateDecision?.candidate_status || "not_in_candidate_package";
+      entry.candidate_promote_to_canonical = Boolean(candidateDecision?.promote_to_canonical);
+      entry.candidate_blocking_reasons = candidateDecision
+        ? candidateBlockers
+        : ["Candidate package has no row for this PainMap place ISO3"];
+      entry.candidate_next_action = candidateDecision?.next_action || "Review candidate country universe mapping before any promotion.";
+    }
+
     rows.push(entry);
     rowsByPlace.set(row.place_id, entry);
   }
@@ -755,7 +1108,16 @@ function buildCountryGapRows(placeIndex, byPlaceMeasurementRows, inputSpec, rele
   };
 }
 
-function buildCountryGapLedger(placeIndex, byPlaceMeasurements, inputSpec, releaseDate, sourceFreshnessById, sourceById, layerById) {
+function buildCountryGapLedger(
+  placeIndex,
+  byPlaceMeasurements,
+  inputSpec,
+  releaseDate,
+  sourceFreshnessById,
+  sourceById,
+  layerById,
+  candidateReviewContext
+) {
   const gap = buildCountryGapRows(
     placeIndex,
     byPlaceMeasurements,
@@ -763,7 +1125,8 @@ function buildCountryGapLedger(placeIndex, byPlaceMeasurements, inputSpec, relea
     releaseDate,
     sourceFreshnessById,
     sourceById,
-    layerById
+    layerById,
+    candidateReviewContext
   );
 
   const gapRows = gap.rows;
@@ -777,6 +1140,10 @@ function buildCountryGapLedger(placeIndex, byPlaceMeasurements, inputSpec, relea
     "eligible_for_promotion",
     "coverage_reason",
     "missing_inputs",
+    "candidate_status",
+    "candidate_promote_to_canonical",
+    "candidate_blocking_reasons",
+    "candidate_next_action",
     "last_seen_in_release",
   ];
 
@@ -792,6 +1159,10 @@ function buildCountryGapLedger(placeIndex, byPlaceMeasurements, inputSpec, relea
       String(row.eligible_for_promotion),
       `"${String(row.coverage_reason).replace(/"/g, '""')}"`,
       `"${row.missing_inputs.join("|").replace(/"/g, '""')}"`,
+      row.candidate_status || "",
+      row.candidate_promote_to_canonical === undefined ? "" : String(row.candidate_promote_to_canonical),
+      `"${(row.candidate_blocking_reasons || []).join("|").replace(/"/g, '""')}"`,
+      `"${String(row.candidate_next_action || "").replace(/"/g, '""')}"`,
       row.last_seen_in_release,
     ].join(",")),
   ];
@@ -810,6 +1181,7 @@ function buildCountryGapLedger(placeIndex, byPlaceMeasurements, inputSpec, relea
         input_group_requirements: inputSpec?.coverage_gate?.input_group_requirements || {},
         policy_constraints: inputSpec?.policy_constraints || {},
       },
+      candidate_review: candidateReviewContext?.summary || null,
       summary,
       countries: gapRows,
     },
@@ -1186,6 +1558,17 @@ function updatePlaceIndexCoverageCounts(placeIndex, byPlaceMeasurements, byPlace
       next.gap_status = gapInfo.gap_status;
       next.coverage_reason = gapInfo.coverage_reason;
       next.missing_inputs = gapInfo.missing_inputs || [];
+
+      for (const candidateField of [
+        "candidate_status",
+        "candidate_promote_to_canonical",
+        "candidate_blocking_reasons",
+        "candidate_next_action",
+      ]) {
+        if (candidateField in gapInfo) {
+          next[candidateField] = gapInfo[candidateField];
+        }
+      }
     }
 
     if (level === "country" && status === "boundary_index_only") {
@@ -1342,6 +1725,7 @@ function main() {
   });
 
   const countryInputSpec = readCountryInputSpec(releaseId, placeIndex);
+  const candidateReviewContext = buildCountryDataCandidateReview(placeIndex);
   const { ledger: countryGapLedger, rowsByPlace: countryGapByPlace, csv: countryGapCsv, summary: countryGapSummary } = buildCountryGapLedger(
     placeIndex,
     byPlaceRows,
@@ -1349,8 +1733,14 @@ function main() {
     releaseDate,
     sourceFreshnessById,
     sourceById,
-    layerById
+    layerById,
+    candidateReviewContext
   );
+  const finalizedCandidateReview = finalizeCandidateReviewSummary(candidateReviewContext.summary, countryGapSummary);
+  if (finalizedCandidateReview) {
+    countryGapLedger.candidate_review = finalizedCandidateReview;
+    countryGapSummary.candidate_review = compactCandidateReviewSummary(finalizedCandidateReview);
+  }
 
   const { snapshots: sourceSnapshots, snapshotIdsBySourceId } = buildSourceSnapshots(measurements, provenance, releaseId, releaseDate);
   const sourceSnapshotPayload = {
@@ -1378,6 +1768,9 @@ function main() {
   writeText("data/country-gap-ledger.csv", countryGapCsv);
   writeJson("data/country-gap-ledger.json", countryGapLedger);
   writeJson("data/place-measurements.json", measurementsWithSourceSnapshots);
+  if (finalizedCandidateReview) {
+    writeJson(`${COUNTRY_DATA_CANDIDATE_DIR}/validation-summary.json`, finalizedCandidateReview);
+  }
 
   const nextPlaceIndex = updatePlaceIndexCoverageCounts(placeIndex, byPlaceMeasurements, byPlaceRows, {
     ...coverageSummary,
@@ -1402,6 +1795,10 @@ function main() {
   console.log(`Boundary-only country entries: ${coverageSummary.boundary_index_only_places ?? coverageSummary.boundaryOnlyRows ?? 0}`);
   console.log(`No-data country entries: ${countryGapSummary.no_data_countries ?? 0}`);
   console.log(`Source snapshots: ${sourceSnapshots.length}`);
+  if (finalizedCandidateReview) {
+    console.log(`Candidate package status: ${finalizedCandidateReview.publication_gate.status}`);
+    console.log(`Candidate measurement rows with raw values: ${finalizedCandidateReview.proposed_measurements.with_raw_values}`);
+  }
   console.log(`Default ranking readiness: ${rankingReadiness.ready ? "enabled" : "disabled"}`);
 }
 

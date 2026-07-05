@@ -1,0 +1,3741 @@
+{
+  "generated_at": "2026-07-04T16:35:05+00:00",
+  "release_candidate_id": "release-candidate-2026-07-country-context-v0",
+  "rows": [
+    {
+      "iso3": "ABW",
+      "display_name": "Aruba",
+      "place_id_candidate": "country:ABW",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "AFG",
+      "display_name": "Afghanistan",
+      "place_id_candidate": "country:AFG",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "AGO",
+      "display_name": "Angola",
+      "place_id_candidate": "country:AGO",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "AIA",
+      "display_name": "Anguilla",
+      "place_id_candidate": "country:AIA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ALA",
+      "display_name": "Åland Islands",
+      "place_id_candidate": "country:ALA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ALB",
+      "display_name": "Albania",
+      "place_id_candidate": "country:ALB",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "AND",
+      "display_name": "Andorra",
+      "place_id_candidate": "country:AND",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ARE",
+      "display_name": "United Arab Emirates",
+      "place_id_candidate": "country:ARE",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ARG",
+      "display_name": "Argentina",
+      "place_id_candidate": "country:ARG",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ARM",
+      "display_name": "Armenia",
+      "place_id_candidate": "country:ARM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ASM",
+      "display_name": "American Samoa",
+      "place_id_candidate": "country:ASM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ATA",
+      "display_name": "Antarctica",
+      "place_id_candidate": "country:ATA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ATF",
+      "display_name": "French Southern Territories",
+      "place_id_candidate": "country:ATF",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ATG",
+      "display_name": "Antigua and Barbuda",
+      "place_id_candidate": "country:ATG",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "AUS",
+      "display_name": "Australia",
+      "place_id_candidate": "country:AUS",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "AUT",
+      "display_name": "Austria",
+      "place_id_candidate": "country:AUT",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "AZE",
+      "display_name": "Azerbaijan",
+      "place_id_candidate": "country:AZE",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BDI",
+      "display_name": "Burundi",
+      "place_id_candidate": "country:BDI",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BEL",
+      "display_name": "Belgium",
+      "place_id_candidate": "country:BEL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BEN",
+      "display_name": "Benin",
+      "place_id_candidate": "country:BEN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BES",
+      "display_name": "Bonaire, Sint Eustatius and Saba",
+      "place_id_candidate": "country:BES",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BFA",
+      "display_name": "Burkina Faso",
+      "place_id_candidate": "country:BFA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BGD",
+      "display_name": "Bangladesh",
+      "place_id_candidate": "country:BGD",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BGR",
+      "display_name": "Bulgaria",
+      "place_id_candidate": "country:BGR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BHR",
+      "display_name": "Bahrain",
+      "place_id_candidate": "country:BHR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BHS",
+      "display_name": "Bahamas",
+      "place_id_candidate": "country:BHS",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BIH",
+      "display_name": "Bosnia and Herzegovina",
+      "place_id_candidate": "country:BIH",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BLM",
+      "display_name": "Saint Barthélemy",
+      "place_id_candidate": "country:BLM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BLR",
+      "display_name": "Belarus",
+      "place_id_candidate": "country:BLR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BLZ",
+      "display_name": "Belize",
+      "place_id_candidate": "country:BLZ",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BMU",
+      "display_name": "Bermuda",
+      "place_id_candidate": "country:BMU",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BOL",
+      "display_name": "Bolivia",
+      "place_id_candidate": "country:BOL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BRA",
+      "display_name": "Brazil",
+      "place_id_candidate": "country:BRA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BRB",
+      "display_name": "Barbados",
+      "place_id_candidate": "country:BRB",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BRN",
+      "display_name": "Brunei Darussalam",
+      "place_id_candidate": "country:BRN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BTN",
+      "display_name": "Bhutan",
+      "place_id_candidate": "country:BTN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BVT",
+      "display_name": "Bouvet Island",
+      "place_id_candidate": "country:BVT",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "BWA",
+      "display_name": "Botswana",
+      "place_id_candidate": "country:BWA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CAF",
+      "display_name": "Central African Republic",
+      "place_id_candidate": "country:CAF",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CAN",
+      "display_name": "Canada",
+      "place_id_candidate": "country:CAN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CCK",
+      "display_name": "Cocos (Keeling) Islands",
+      "place_id_candidate": "country:CCK",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CHE",
+      "display_name": "Switzerland",
+      "place_id_candidate": "country:CHE",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CHL",
+      "display_name": "Chile",
+      "place_id_candidate": "country:CHL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CHN",
+      "display_name": "China",
+      "place_id_candidate": "country:CHN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CIV",
+      "display_name": "Côte d'Ivoire",
+      "place_id_candidate": "country:CIV",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CMR",
+      "display_name": "Cameroon",
+      "place_id_candidate": "country:CMR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "COD",
+      "display_name": "Congo, The Democratic Republic of the",
+      "place_id_candidate": "country:COD",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "COG",
+      "display_name": "Congo",
+      "place_id_candidate": "country:COG",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "COK",
+      "display_name": "Cook Islands",
+      "place_id_candidate": "country:COK",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "COL",
+      "display_name": "Colombia",
+      "place_id_candidate": "country:COL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "COM",
+      "display_name": "Comoros",
+      "place_id_candidate": "country:COM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CPV",
+      "display_name": "Cabo Verde",
+      "place_id_candidate": "country:CPV",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CRI",
+      "display_name": "Costa Rica",
+      "place_id_candidate": "country:CRI",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CUB",
+      "display_name": "Cuba",
+      "place_id_candidate": "country:CUB",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CUW",
+      "display_name": "Curaçao",
+      "place_id_candidate": "country:CUW",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CXR",
+      "display_name": "Christmas Island",
+      "place_id_candidate": "country:CXR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CYM",
+      "display_name": "Cayman Islands",
+      "place_id_candidate": "country:CYM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CYP",
+      "display_name": "Cyprus",
+      "place_id_candidate": "country:CYP",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "CZE",
+      "display_name": "Czechia",
+      "place_id_candidate": "country:CZE",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "DEU",
+      "display_name": "Germany",
+      "place_id_candidate": "country:DEU",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "DJI",
+      "display_name": "Djibouti",
+      "place_id_candidate": "country:DJI",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "DMA",
+      "display_name": "Dominica",
+      "place_id_candidate": "country:DMA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "DNK",
+      "display_name": "Denmark",
+      "place_id_candidate": "country:DNK",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "DOM",
+      "display_name": "Dominican Republic",
+      "place_id_candidate": "country:DOM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "DZA",
+      "display_name": "Algeria",
+      "place_id_candidate": "country:DZA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ECU",
+      "display_name": "Ecuador",
+      "place_id_candidate": "country:ECU",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "EGY",
+      "display_name": "Egypt",
+      "place_id_candidate": "country:EGY",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ERI",
+      "display_name": "Eritrea",
+      "place_id_candidate": "country:ERI",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ESH",
+      "display_name": "Western Sahara",
+      "place_id_candidate": "country:ESH",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ESP",
+      "display_name": "Spain",
+      "place_id_candidate": "country:ESP",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "EST",
+      "display_name": "Estonia",
+      "place_id_candidate": "country:EST",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ETH",
+      "display_name": "Ethiopia",
+      "place_id_candidate": "country:ETH",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "FIN",
+      "display_name": "Finland",
+      "place_id_candidate": "country:FIN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "FJI",
+      "display_name": "Fiji",
+      "place_id_candidate": "country:FJI",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "FLK",
+      "display_name": "Falkland Islands (Malvinas)",
+      "place_id_candidate": "country:FLK",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "FRA",
+      "display_name": "France",
+      "place_id_candidate": "country:FRA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "FRO",
+      "display_name": "Faroe Islands",
+      "place_id_candidate": "country:FRO",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "FSM",
+      "display_name": "Micronesia, Federated States of",
+      "place_id_candidate": "country:FSM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GAB",
+      "display_name": "Gabon",
+      "place_id_candidate": "country:GAB",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GBR",
+      "display_name": "United Kingdom",
+      "place_id_candidate": "country:GBR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GEO",
+      "display_name": "Georgia",
+      "place_id_candidate": "country:GEO",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GGY",
+      "display_name": "Guernsey",
+      "place_id_candidate": "country:GGY",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GHA",
+      "display_name": "Ghana",
+      "place_id_candidate": "country:GHA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GIB",
+      "display_name": "Gibraltar",
+      "place_id_candidate": "country:GIB",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GIN",
+      "display_name": "Guinea",
+      "place_id_candidate": "country:GIN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GLP",
+      "display_name": "Guadeloupe",
+      "place_id_candidate": "country:GLP",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GMB",
+      "display_name": "Gambia",
+      "place_id_candidate": "country:GMB",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GNB",
+      "display_name": "Guinea-Bissau",
+      "place_id_candidate": "country:GNB",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GNQ",
+      "display_name": "Equatorial Guinea",
+      "place_id_candidate": "country:GNQ",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GRC",
+      "display_name": "Greece",
+      "place_id_candidate": "country:GRC",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GRD",
+      "display_name": "Grenada",
+      "place_id_candidate": "country:GRD",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GRL",
+      "display_name": "Greenland",
+      "place_id_candidate": "country:GRL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GTM",
+      "display_name": "Guatemala",
+      "place_id_candidate": "country:GTM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GUF",
+      "display_name": "French Guiana",
+      "place_id_candidate": "country:GUF",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GUM",
+      "display_name": "Guam",
+      "place_id_candidate": "country:GUM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "GUY",
+      "display_name": "Guyana",
+      "place_id_candidate": "country:GUY",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "HKG",
+      "display_name": "Hong Kong",
+      "place_id_candidate": "country:HKG",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "HMD",
+      "display_name": "Heard Island and McDonald Islands",
+      "place_id_candidate": "country:HMD",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "HND",
+      "display_name": "Honduras",
+      "place_id_candidate": "country:HND",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "HRV",
+      "display_name": "Croatia",
+      "place_id_candidate": "country:HRV",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "HTI",
+      "display_name": "Haiti",
+      "place_id_candidate": "country:HTI",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "HUN",
+      "display_name": "Hungary",
+      "place_id_candidate": "country:HUN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "IDN",
+      "display_name": "Indonesia",
+      "place_id_candidate": "country:IDN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "IMN",
+      "display_name": "Isle of Man",
+      "place_id_candidate": "country:IMN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "IND",
+      "display_name": "India",
+      "place_id_candidate": "country:IND",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "IOT",
+      "display_name": "British Indian Ocean Territory",
+      "place_id_candidate": "country:IOT",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "IRL",
+      "display_name": "Ireland",
+      "place_id_candidate": "country:IRL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "IRN",
+      "display_name": "Iran",
+      "place_id_candidate": "country:IRN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "IRQ",
+      "display_name": "Iraq",
+      "place_id_candidate": "country:IRQ",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ISL",
+      "display_name": "Iceland",
+      "place_id_candidate": "country:ISL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ISR",
+      "display_name": "Israel",
+      "place_id_candidate": "country:ISR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ITA",
+      "display_name": "Italy",
+      "place_id_candidate": "country:ITA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "JAM",
+      "display_name": "Jamaica",
+      "place_id_candidate": "country:JAM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "JEY",
+      "display_name": "Jersey",
+      "place_id_candidate": "country:JEY",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "JOR",
+      "display_name": "Jordan",
+      "place_id_candidate": "country:JOR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "JPN",
+      "display_name": "Japan",
+      "place_id_candidate": "country:JPN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "KAZ",
+      "display_name": "Kazakhstan",
+      "place_id_candidate": "country:KAZ",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "KEN",
+      "display_name": "Kenya",
+      "place_id_candidate": "country:KEN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "KGZ",
+      "display_name": "Kyrgyzstan",
+      "place_id_candidate": "country:KGZ",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "KHM",
+      "display_name": "Cambodia",
+      "place_id_candidate": "country:KHM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "KIR",
+      "display_name": "Kiribati",
+      "place_id_candidate": "country:KIR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "KNA",
+      "display_name": "Saint Kitts and Nevis",
+      "place_id_candidate": "country:KNA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "KOR",
+      "display_name": "South Korea",
+      "place_id_candidate": "country:KOR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "KWT",
+      "display_name": "Kuwait",
+      "place_id_candidate": "country:KWT",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "LAO",
+      "display_name": "Laos",
+      "place_id_candidate": "country:LAO",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "LBN",
+      "display_name": "Lebanon",
+      "place_id_candidate": "country:LBN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "LBR",
+      "display_name": "Liberia",
+      "place_id_candidate": "country:LBR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "LBY",
+      "display_name": "Libya",
+      "place_id_candidate": "country:LBY",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "LCA",
+      "display_name": "Saint Lucia",
+      "place_id_candidate": "country:LCA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "LIE",
+      "display_name": "Liechtenstein",
+      "place_id_candidate": "country:LIE",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "LKA",
+      "display_name": "Sri Lanka",
+      "place_id_candidate": "country:LKA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "LSO",
+      "display_name": "Lesotho",
+      "place_id_candidate": "country:LSO",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "LTU",
+      "display_name": "Lithuania",
+      "place_id_candidate": "country:LTU",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "LUX",
+      "display_name": "Luxembourg",
+      "place_id_candidate": "country:LUX",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "LVA",
+      "display_name": "Latvia",
+      "place_id_candidate": "country:LVA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MAC",
+      "display_name": "Macao",
+      "place_id_candidate": "country:MAC",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MAF",
+      "display_name": "Saint Martin (French part)",
+      "place_id_candidate": "country:MAF",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MAR",
+      "display_name": "Morocco",
+      "place_id_candidate": "country:MAR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MCO",
+      "display_name": "Monaco",
+      "place_id_candidate": "country:MCO",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MDA",
+      "display_name": "Moldova",
+      "place_id_candidate": "country:MDA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MDG",
+      "display_name": "Madagascar",
+      "place_id_candidate": "country:MDG",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MDV",
+      "display_name": "Maldives",
+      "place_id_candidate": "country:MDV",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MEX",
+      "display_name": "Mexico",
+      "place_id_candidate": "country:MEX",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MHL",
+      "display_name": "Marshall Islands",
+      "place_id_candidate": "country:MHL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MKD",
+      "display_name": "North Macedonia",
+      "place_id_candidate": "country:MKD",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MLI",
+      "display_name": "Mali",
+      "place_id_candidate": "country:MLI",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MLT",
+      "display_name": "Malta",
+      "place_id_candidate": "country:MLT",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MMR",
+      "display_name": "Myanmar",
+      "place_id_candidate": "country:MMR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MNE",
+      "display_name": "Montenegro",
+      "place_id_candidate": "country:MNE",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MNG",
+      "display_name": "Mongolia",
+      "place_id_candidate": "country:MNG",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MNP",
+      "display_name": "Northern Mariana Islands",
+      "place_id_candidate": "country:MNP",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MOZ",
+      "display_name": "Mozambique",
+      "place_id_candidate": "country:MOZ",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MRT",
+      "display_name": "Mauritania",
+      "place_id_candidate": "country:MRT",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MSR",
+      "display_name": "Montserrat",
+      "place_id_candidate": "country:MSR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MTQ",
+      "display_name": "Martinique",
+      "place_id_candidate": "country:MTQ",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MUS",
+      "display_name": "Mauritius",
+      "place_id_candidate": "country:MUS",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MWI",
+      "display_name": "Malawi",
+      "place_id_candidate": "country:MWI",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MYS",
+      "display_name": "Malaysia",
+      "place_id_candidate": "country:MYS",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "MYT",
+      "display_name": "Mayotte",
+      "place_id_candidate": "country:MYT",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "NAM",
+      "display_name": "Namibia",
+      "place_id_candidate": "country:NAM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "NCL",
+      "display_name": "New Caledonia",
+      "place_id_candidate": "country:NCL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "NER",
+      "display_name": "Niger",
+      "place_id_candidate": "country:NER",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "NFK",
+      "display_name": "Norfolk Island",
+      "place_id_candidate": "country:NFK",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "NGA",
+      "display_name": "Nigeria",
+      "place_id_candidate": "country:NGA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "NIC",
+      "display_name": "Nicaragua",
+      "place_id_candidate": "country:NIC",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "NIU",
+      "display_name": "Niue",
+      "place_id_candidate": "country:NIU",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "NLD",
+      "display_name": "Netherlands",
+      "place_id_candidate": "country:NLD",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "NOR",
+      "display_name": "Norway",
+      "place_id_candidate": "country:NOR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "NPL",
+      "display_name": "Nepal",
+      "place_id_candidate": "country:NPL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "NRU",
+      "display_name": "Nauru",
+      "place_id_candidate": "country:NRU",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "NZL",
+      "display_name": "New Zealand",
+      "place_id_candidate": "country:NZL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "OMN",
+      "display_name": "Oman",
+      "place_id_candidate": "country:OMN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PAK",
+      "display_name": "Pakistan",
+      "place_id_candidate": "country:PAK",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PAN",
+      "display_name": "Panama",
+      "place_id_candidate": "country:PAN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PCN",
+      "display_name": "Pitcairn",
+      "place_id_candidate": "country:PCN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PER",
+      "display_name": "Peru",
+      "place_id_candidate": "country:PER",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PHL",
+      "display_name": "Philippines",
+      "place_id_candidate": "country:PHL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PLW",
+      "display_name": "Palau",
+      "place_id_candidate": "country:PLW",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PNG",
+      "display_name": "Papua New Guinea",
+      "place_id_candidate": "country:PNG",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "POL",
+      "display_name": "Poland",
+      "place_id_candidate": "country:POL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PRI",
+      "display_name": "Puerto Rico",
+      "place_id_candidate": "country:PRI",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PRK",
+      "display_name": "North Korea",
+      "place_id_candidate": "country:PRK",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PRT",
+      "display_name": "Portugal",
+      "place_id_candidate": "country:PRT",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PRY",
+      "display_name": "Paraguay",
+      "place_id_candidate": "country:PRY",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PSE",
+      "display_name": "Palestine, State of",
+      "place_id_candidate": "country:PSE",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "PYF",
+      "display_name": "French Polynesia",
+      "place_id_candidate": "country:PYF",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "QAT",
+      "display_name": "Qatar",
+      "place_id_candidate": "country:QAT",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "REU",
+      "display_name": "Réunion",
+      "place_id_candidate": "country:REU",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ROU",
+      "display_name": "Romania",
+      "place_id_candidate": "country:ROU",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "RUS",
+      "display_name": "Russian Federation",
+      "place_id_candidate": "country:RUS",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "RWA",
+      "display_name": "Rwanda",
+      "place_id_candidate": "country:RWA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SAU",
+      "display_name": "Saudi Arabia",
+      "place_id_candidate": "country:SAU",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SDN",
+      "display_name": "Sudan",
+      "place_id_candidate": "country:SDN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SEN",
+      "display_name": "Senegal",
+      "place_id_candidate": "country:SEN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SGP",
+      "display_name": "Singapore",
+      "place_id_candidate": "country:SGP",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SGS",
+      "display_name": "South Georgia and the South Sandwich Islands",
+      "place_id_candidate": "country:SGS",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SHN",
+      "display_name": "Saint Helena, Ascension and Tristan da Cunha",
+      "place_id_candidate": "country:SHN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SJM",
+      "display_name": "Svalbard and Jan Mayen",
+      "place_id_candidate": "country:SJM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SLB",
+      "display_name": "Solomon Islands",
+      "place_id_candidate": "country:SLB",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SLE",
+      "display_name": "Sierra Leone",
+      "place_id_candidate": "country:SLE",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SLV",
+      "display_name": "El Salvador",
+      "place_id_candidate": "country:SLV",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SMR",
+      "display_name": "San Marino",
+      "place_id_candidate": "country:SMR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SOM",
+      "display_name": "Somalia",
+      "place_id_candidate": "country:SOM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SPM",
+      "display_name": "Saint Pierre and Miquelon",
+      "place_id_candidate": "country:SPM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SRB",
+      "display_name": "Serbia",
+      "place_id_candidate": "country:SRB",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SSD",
+      "display_name": "South Sudan",
+      "place_id_candidate": "country:SSD",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "STP",
+      "display_name": "Sao Tome and Principe",
+      "place_id_candidate": "country:STP",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SUR",
+      "display_name": "Suriname",
+      "place_id_candidate": "country:SUR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SVK",
+      "display_name": "Slovakia",
+      "place_id_candidate": "country:SVK",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SVN",
+      "display_name": "Slovenia",
+      "place_id_candidate": "country:SVN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SWE",
+      "display_name": "Sweden",
+      "place_id_candidate": "country:SWE",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SWZ",
+      "display_name": "Eswatini",
+      "place_id_candidate": "country:SWZ",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SXM",
+      "display_name": "Sint Maarten (Dutch part)",
+      "place_id_candidate": "country:SXM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SYC",
+      "display_name": "Seychelles",
+      "place_id_candidate": "country:SYC",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "SYR",
+      "display_name": "Syria",
+      "place_id_candidate": "country:SYR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TCA",
+      "display_name": "Turks and Caicos Islands",
+      "place_id_candidate": "country:TCA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TCD",
+      "display_name": "Chad",
+      "place_id_candidate": "country:TCD",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TGO",
+      "display_name": "Togo",
+      "place_id_candidate": "country:TGO",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "THA",
+      "display_name": "Thailand",
+      "place_id_candidate": "country:THA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TJK",
+      "display_name": "Tajikistan",
+      "place_id_candidate": "country:TJK",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TKL",
+      "display_name": "Tokelau",
+      "place_id_candidate": "country:TKL",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TKM",
+      "display_name": "Turkmenistan",
+      "place_id_candidate": "country:TKM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TLS",
+      "display_name": "Timor-Leste",
+      "place_id_candidate": "country:TLS",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TON",
+      "display_name": "Tonga",
+      "place_id_candidate": "country:TON",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TTO",
+      "display_name": "Trinidad and Tobago",
+      "place_id_candidate": "country:TTO",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TUN",
+      "display_name": "Tunisia",
+      "place_id_candidate": "country:TUN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TUR",
+      "display_name": "Türkiye",
+      "place_id_candidate": "country:TUR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TUV",
+      "display_name": "Tuvalu",
+      "place_id_candidate": "country:TUV",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TWN",
+      "display_name": "Taiwan",
+      "place_id_candidate": "country:TWN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "TZA",
+      "display_name": "Tanzania",
+      "place_id_candidate": "country:TZA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "UGA",
+      "display_name": "Uganda",
+      "place_id_candidate": "country:UGA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "UKR",
+      "display_name": "Ukraine",
+      "place_id_candidate": "country:UKR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "UMI",
+      "display_name": "United States Minor Outlying Islands",
+      "place_id_candidate": "country:UMI",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "URY",
+      "display_name": "Uruguay",
+      "place_id_candidate": "country:URY",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "USA",
+      "display_name": "United States",
+      "place_id_candidate": "country:USA",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "UZB",
+      "display_name": "Uzbekistan",
+      "place_id_candidate": "country:UZB",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "VAT",
+      "display_name": "Holy See (Vatican City State)",
+      "place_id_candidate": "country:VAT",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "VCT",
+      "display_name": "Saint Vincent and the Grenadines",
+      "place_id_candidate": "country:VCT",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "VEN",
+      "display_name": "Venezuela",
+      "place_id_candidate": "country:VEN",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "VGB",
+      "display_name": "Virgin Islands, British",
+      "place_id_candidate": "country:VGB",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "VIR",
+      "display_name": "Virgin Islands, U.S.",
+      "place_id_candidate": "country:VIR",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "VNM",
+      "display_name": "Vietnam",
+      "place_id_candidate": "country:VNM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "VUT",
+      "display_name": "Vanuatu",
+      "place_id_candidate": "country:VUT",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "WLF",
+      "display_name": "Wallis and Futuna",
+      "place_id_candidate": "country:WLF",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "WSM",
+      "display_name": "Samoa",
+      "place_id_candidate": "country:WSM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "YEM",
+      "display_name": "Yemen",
+      "place_id_candidate": "country:YEM",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ZAF",
+      "display_name": "South Africa",
+      "place_id_candidate": "country:ZAF",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ZMB",
+      "display_name": "Zambia",
+      "place_id_candidate": "country:ZMB",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    },
+    {
+      "iso3": "ZWE",
+      "display_name": "Zimbabwe",
+      "place_id_candidate": "country:ZWE",
+      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
+      "candidate_status": "not_promoted",
+      "promote_to_canonical": false,
+      "blocking_reasons": [
+        "PainMap hidden coverage artifacts not fetched",
+        "source snapshots not captured",
+        "licenses not fully verified",
+        "numeric values not fetched/QAed"
+      ],
+      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+    }
+  ]
+}

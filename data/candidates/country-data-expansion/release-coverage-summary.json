@@ -1,0 +1,21 @@
+{
+  "release_candidate_id": "release-candidate-2026-07-country-context-v0",
+  "generated_at": "2026-07-04T16:35:05+00:00",
+  "country_universe_basis": "pycountry ISO 3166-1; reconcile with PainMap place identity registry before release",
+  "total_country_or_territory_rows": 249,
+  "current_live_site_static_observations": {
+    "painmap_org_homepage_accessible": true,
+    "painmaps_org_accessible": false,
+    "homepage_primary_product_truth": "animal-pain research / Welfare Footprint event-level estimates; country globe is secondary context",
+    "homepage_country_context_sources": "WDI + OWID + RP + WAI proxies; Natural Earth and geoBoundaries for geography",
+    "machine_artifacts_fetched": "no; browser safe URL restrictions and container DNS prevented direct JSON/CSV fetch"
+  },
+  "promoted_to_canonical_in_this_package": 0,
+  "left_partial_or_candidate": 249,
+  "left_boundary_only_no_data_unknown": 249,
+  "blocked_by_missing_source_snapshot_or_unfetched_values": 249,
+  "blocked_by_license_review": "all Fishcount/RP/WAI-derived rows until terms reviewed; OWID third-party provider terms must be verified per dataset",
+  "default_view_recommendation": "coverage-first; do not default to rankings until release coverage summary passes readiness gate",
+  "ready_for_publication": false,
+  "reason_not_ready": "No numeric source snapshots or checksums captured in this browse session; no values invented."
+}

@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-07-04T16:35:05+00:00",
+  "release_candidate_id": "release-candidate-2026-07-country-context-v0",
+  "rows": [
+    {
+      "license_id": "painmap-site-terms-unknown",
+      "label": "PainMap site terms not inspected",
+      "license_uri": "https://painmap.org/",
+      "redistribution_status": "do_not_republish_as_data"
+    },
+    {
+      "license_id": "world-bank-terms",
+      "label": "World Bank terms",
+      "license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "redistribution_status": "verify_before_public_release"
+    },
+    {
+      "license_id": "owid-cc-by-third-party-terms",
+      "label": "OWID CC BY plus third-party source terms",
+      "license_uri": "https://ourworldindata.org/grapher/insecticide-use",
+      "redistribution_status": "verify_original_provider_terms"
+    },
+    {
+      "license_id": "fishcount-permission-needed",
+      "label": "Fishcount copyright / permission needed",
+      "license_uri": "https://fishcount.org.uk/",
+      "redistribution_status": "blocked_until_permission_or_terms_confirmed"
+    },
+    {
+      "license_id": "rp-use-terms-needed",
+      "label": "Rethink Priorities use terms need review",
+      "license_uri": "https://rethinkpriorities.org/research-area/welfare-range-estimates/",
+      "redistribution_status": "assumption_reference_only_until_terms_review"
+    },
+    {
+      "license_id": "wai-use-terms-needed",
+      "label": "Wild Animal Initiative use terms need review",
+      "license_uri": "https://www.wildanimalinitiative.org/",
+      "redistribution_status": "assumption_reference_only_until_terms_review"
+    },
+    {
+      "license_id": "natural-earth-public-domain",
+      "label": "Natural Earth public domain",
+      "license_uri": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "redistribution_status": "likely_ok_verify_snapshot"
+    },
+    {
+      "license_id": "geoboundaries-license-check",
+      "label": "geoBoundaries license check",
+      "license_uri": "https://www.geoboundaries.org/",
+      "redistribution_status": "verify_per_dataset_before_release"
+    }
+  ]
+}

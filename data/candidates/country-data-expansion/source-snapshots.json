@@ -1,0 +1,280 @@
+{
+  "generated_at": "2026-07-04T16:35:05+00:00",
+  "release_candidate_id": "release-candidate-2026-07-country-context-v0",
+  "note": "Planned snapshot manifest. Codex must capture payloads and populate checksums before promotion.",
+  "rows": [
+    {
+      "source_snapshot_id": "snapshot.pending.painmap-live-homepage.2026-07-04",
+      "source_id": "painmap-live-homepage",
+      "upstream_url": "https://painmap.org/",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "2026-07-04 browse",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "painmap-site-terms-unknown",
+      "attribution": "PainMap homepage",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Homepage confirms animal-pain research as primary and country globe as secondary context.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.pending.world-bank-wdi-api.2026-07-04",
+      "source_id": "world-bank-wdi-api",
+      "upstream_url": "https://api.worldbank.org/v2/country/all/indicator/{indicator}",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "latest available per indicator",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "world-bank-terms",
+      "attribution": "World Bank Group, World Development Indicators / Indicators API",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Use for population, land area, agricultural land, poverty/socioeconomic proxies, and related WDI indicators.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.pending.owid-land-animals-slaughtered.2026-07-04",
+      "source_id": "owid-land-animals-slaughtered",
+      "upstream_url": "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "fetch via OWID metadata at build time",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "owid-cc-by-third-party-terms",
+      "attribution": "Our World in Data; cite original data provider as specified in metadata",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Use for factory-farmed land animal country proxy where country rows exist.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.pending.owid-farmed-fish-killed.2026-07-04",
+      "source_id": "owid-farmed-fish-killed",
+      "upstream_url": "https://ourworldindata.org/grapher/farmed-fish-killed",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "fetch via OWID metadata at build time",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "owid-cc-by-third-party-terms",
+      "attribution": "Our World in Data; cite original data provider as specified in metadata",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Use for farmed fish country proxy where country rows exist.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.pending.owid-wild-caught-fish.2026-07-04",
+      "source_id": "owid-wild-caught-fish",
+      "upstream_url": "https://ourworldindata.org/grapher/wild-caught-fish",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "fetch via OWID metadata at build time",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "owid-cc-by-third-party-terms",
+      "attribution": "Our World in Data; cite original data provider as specified in metadata",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Use for wild-caught fish country proxy where country rows exist.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.pending.owid-farmed-crustaceans.2026-07-04",
+      "source_id": "owid-farmed-crustaceans",
+      "upstream_url": "https://ourworldindata.org/grapher/farmed-crustaceans",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "fetch via OWID metadata at build time",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "owid-cc-by-third-party-terms",
+      "attribution": "Our World in Data; cite original data provider as specified in metadata",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Use for farmed crustacean country proxy where country rows exist.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.pending.owid-insecticide-use.2026-07-04",
+      "source_id": "owid-insecticide-use",
+      "upstream_url": "https://ourworldindata.org/grapher/insecticide-use.csv?v=1&csvType=full&useColumnShortNames=false",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "1990-2023 per inspected OWID page",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "owid-cc-by-third-party-terms",
+      "attribution": "Food and Agriculture Organization of the United Nations (2025) – with major processing by Our World in Data",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Use as insect-pressure country proxy; units tonnes; OWID page date range 1990–2023.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.pending.fishcount-farmed-fish-country.2026-07-04",
+      "source_id": "fishcount-farmed-fish-country",
+      "upstream_url": "https://fishcount.org.uk/fish-count-estimates-2/numbers-of-farmed-fish-slaughtered-each-year",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "2022 estimates visible on page",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "fishcount-permission-needed",
+      "attribution": "Fishcount.org.uk",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Use only as referenced-source lineage or after license review.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.pending.fishcount-farmed-decapod-country.2026-07-04",
+      "source_id": "fishcount-farmed-decapod-country",
+      "upstream_url": "https://fishcount.org.uk/fish-count-estimates-2/numbers-of-farmed-decapod-crustaceans",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "2022 estimates visible on page",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "fishcount-permission-needed",
+      "attribution": "Fishcount.org.uk",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Use only after license review; page cites FAO FishstatJ production tonnages and country details links.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.pending.rethink-priorities-welfare-ranges.2026-07-04",
+      "source_id": "rethink-priorities-welfare-ranges",
+      "upstream_url": "https://rethinkpriorities.org/research-area/welfare-range-estimates/",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "2023-01-23 post",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "rp-use-terms-needed",
+      "attribution": "Rethink Priorities Welfare Range Estimates",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Source for welfare-range and sentience caveats; not country-specific data.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.pending.wild-animal-initiative-insect-welfare-proxy.2026-07-04",
+      "source_id": "wild-animal-initiative-insect-welfare-proxy",
+      "upstream_url": "https://www.wildanimalinitiative.org/",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "review at build time",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "wai-use-terms-needed",
+      "attribution": "Wild Animal Initiative",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Use for insect welfare proxy framing; not a country data source by itself.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.pending.natural-earth-admin0.2026-07-04",
+      "source_id": "natural-earth-admin0",
+      "upstream_url": "https://www.naturalearthdata.com/",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "fetch at build time",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "natural-earth-public-domain",
+      "attribution": "Natural Earth",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Live homepage cites Natural Earth Admin 0 for country boundaries.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.pending.geoboundaries-adm1.2026-07-04",
+      "source_id": "geoboundaries-adm1",
+      "upstream_url": "https://www.geoboundaries.org/",
+      "retrieval_timestamp": "",
+      "source_vintage_or_reference_period": "fetch at build time",
+      "media_type": "to_be_detected",
+      "checksum_algorithm": "sha256",
+      "checksum": "",
+      "byte_size": null,
+      "license_id": "geoboundaries-license-check",
+      "attribution": "geoBoundaries",
+      "retrieval_metadata": {
+        "status": "planned_not_captured_in_this_session",
+        "user_agent_required": true
+      },
+      "notes": "Live homepage cites geoBoundaries for ADM1.",
+      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
+      "redistribution_permitted": "unknown_or_verify_before_publication",
+      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    }
+  ]
+}

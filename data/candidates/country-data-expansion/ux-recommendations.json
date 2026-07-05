@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-07-04T16:35:05+00:00",
+  "release_candidate_id": "release-candidate-2026-07-country-context-v0",
+  "homepage_default": "coverage_first_until_release_summary_readiness_gate_passes",
+  "country_cards": "show context/proxy labels; never show top-ranked issue cards for boundary-only or no-data countries",
+  "search_results": [
+    "display coverage status before selection",
+    "show place level and alias provenance",
+    "warn on partial/no-data records"
+  ],
+  "compare_view": "warn or block when layer, unit, evidence kind, ranking mode, comparability group, or reference period differs",
+  "legend_required_fields": [
+    "layer name",
+    "unit",
+    "ranking mode",
+    "evidence kind",
+    "no-data style",
+    "uncertainty encoding",
+    "comparability status"
+  ],
+  "new_release_label": "new in release label for newly promoted countries after source/QA gates pass"
+}

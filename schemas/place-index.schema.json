@@ -91,6 +91,21 @@
               "excluded_by_policy"
             ]
           },
+          "candidate_status": {
+            "type": "string"
+          },
+          "candidate_promote_to_canonical": {
+            "type": "boolean"
+          },
+          "candidate_blocking_reasons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "candidate_next_action": {
+            "type": "string"
+          },
           "canonical_measurement_count": {
             "type": "integer",
             "minimum": 0

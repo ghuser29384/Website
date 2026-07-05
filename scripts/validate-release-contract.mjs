@@ -69,6 +69,26 @@ function isPresentValue(value) {
   return value !== undefined && value !== null && String(value).trim().length > 0;
 }
 
+function readJsonOptional(file) {
+  if (!existsSync(absolute(file))) {
+    return null;
+  }
+
+  return readJson(file);
+}
+
+function asObjectRows(value) {
+  return Array.isArray(value) ? value.filter((entry) => entry && typeof entry === "object") : [];
+}
+
+function normalizeIso3(value) {
+  return String(value || "").trim().toUpperCase();
+}
+
+function hasCandidateValue(value) {
+  return value !== undefined && value !== null && String(value).trim().length > 0;
+}
+
 function matchesType(value, expectedType) {
   const actual = valueType(value);
 
@@ -288,6 +308,144 @@ if (countryGapLedger?.countries) {
     Number(gapSummary?.country_count) === (countryGapLedger.countries || []).length,
     "v1/coverage.json country_gap_ledger country_count should match gap ledger rows"
   );
+}
+
+const countryCandidateDir = "data/candidates/country-data-expansion";
+const countryCandidateManifest = readJsonOptional(`${countryCandidateDir}/package-manifest.json`);
+if (countryCandidateManifest) {
+  const candidateReview = countryGapLedger?.candidate_review;
+  const candidateCoverageSummary = releaseCoverage?.coverage_status?.country_gap_ledger?.candidate_review;
+  const validationSummary = readJsonOptional(`${countryCandidateDir}/validation-summary.json`);
+  const candidatePromotionDecisions = readJson(`${countryCandidateDir}/country-promotion-decisions.json`);
+  const candidateMeasurements = readJson(`${countryCandidateDir}/proposed-country-measurements.json`);
+  const candidateSnapshots = readJson(`${countryCandidateDir}/source-snapshots.json`);
+  const candidatePromotionRows = asObjectRows(candidatePromotionDecisions.rows);
+  const candidateMeasurementRows = asObjectRows(candidateMeasurements.rows || candidateMeasurements.measurements);
+  const candidateSnapshotRows = asObjectRows(candidateSnapshots.rows || candidateSnapshots.source_snapshots);
+  const candidateMeasurementRowsWithRawValues = candidateMeasurementRows.filter((row) => hasCandidateValue(row.raw_value)).length;
+  const candidateMeasurementRowsWithSnapshots = candidateMeasurementRows.filter((row) => hasCandidateValue(row.source_snapshot_ids)).length;
+  const candidateCapturedSnapshotRows = candidateSnapshotRows.filter((row) =>
+    hasCandidateValue(row.retrieval_timestamp) &&
+    /^[a-f0-9]{64}$/.test(String(row.checksum || "")) &&
+    hasCandidateValue(row.upstream_url)
+  );
+  const candidateSnapshotRowsWithChecksums = candidateSnapshotRows.filter((row) => /^[a-f0-9]{64}$/.test(String(row.checksum || ""))).length;
+  const candidateSnapshotRowsWithRetrievalTimestamps = candidateSnapshotRows.filter((row) => hasCandidateValue(row.retrieval_timestamp)).length;
+  const currentCountryIso3 = new Set(
+    placeIndex.items
+      .filter((item) => item.geometry_level === "country")
+      .map((item) => normalizeIso3(item.iso3 || item.place_id))
+      .filter(Boolean)
+  );
+
+  expect(candidateReview?.candidate_package_present === true, "country gap ledger should record the staged country-data candidate package");
+  expect(validationSummary !== null, "country-data candidate package should have a generated validation-summary.json");
+  expect(
+    candidateReview?.publication_gate?.publish_candidate_measurements === false,
+    "country-data candidate package should not publish candidate measurement stubs"
+  );
+  expect(
+    candidateCoverageSummary?.publish_candidate_measurements === false,
+    "v1/coverage.json should expose candidate package as non-published"
+  );
+  expect(
+    candidateReview?.proposed_measurements?.row_count === candidateMeasurementRows.length,
+    "candidate review proposed_measurements.row_count should match staged candidate rows"
+  );
+  expect(
+    candidateReview?.proposed_measurements?.with_raw_values === candidateMeasurementRowsWithRawValues,
+    "candidate review with_raw_values should match staged candidate rows"
+  );
+  expect(
+    candidateReview?.proposed_measurements?.with_source_snapshot_ids === candidateMeasurementRowsWithSnapshots,
+    "candidate review with_source_snapshot_ids should match staged candidate rows"
+  );
+  expect(
+    candidateReview?.source_snapshots?.planned_count === candidateSnapshotRows.length,
+    "candidate review planned source snapshot count should match staged source snapshots"
+  );
+  expect(
+    candidateReview?.source_snapshots?.captured_count === candidateCapturedSnapshotRows.length,
+    "candidate review captured source snapshot count should match staged source snapshots"
+  );
+  expect(
+    candidateReview?.source_snapshots?.with_checksums === candidateSnapshotRowsWithChecksums,
+    "candidate review source snapshot checksum count should match staged source snapshots"
+  );
+  expect(
+    candidateReview?.source_snapshots?.with_retrieval_timestamps === candidateSnapshotRowsWithRetrievalTimestamps,
+    "candidate review source snapshot retrieval timestamp count should match staged source snapshots"
+  );
+  expect(
+    candidateCoverageSummary?.planned_source_snapshots === candidateSnapshotRows.length,
+    "v1/coverage.json compact candidate review should include planned source snapshot count"
+  );
+  expect(
+    candidateCoverageSummary?.captured_source_snapshots === candidateCapturedSnapshotRows.length,
+    "v1/coverage.json compact candidate review should include captured source snapshot count"
+  );
+  expect(
+    candidateReview?.promotion_decisions?.row_count === candidatePromotionRows.length,
+    "candidate review promotion_decisions.row_count should match staged promotion decisions"
+  );
+  expect(
+    candidateReview?.promotion_decisions?.promote_to_canonical === candidatePromotionRows.filter((row) => row.promote_to_canonical === true).length,
+    "candidate review promote_to_canonical count should match staged promotion decisions"
+  );
+  expect(
+    validationSummary?.publication_gate?.status === candidateReview?.publication_gate?.status,
+    "candidate validation summary should match ledger publication gate status"
+  );
+
+  if (candidateCapturedSnapshotRows.length === 0 || candidateMeasurementRowsWithRawValues === 0) {
+    expect(
+      candidateReview?.publication_gate?.status === "blocked",
+      "candidate package with no snapshots or no raw values should stay blocked"
+    );
+  }
+
+  for (const manifestRow of asObjectRows(countryCandidateManifest.files)) {
+    const fileName = String(manifestRow.file || "").trim();
+    const candidateFile = `${countryCandidateDir}/${fileName}`;
+    expect(Boolean(fileName), "candidate package manifest rows should include file names");
+    expect(existsSync(absolute(candidateFile)), `candidate package file ${candidateFile} should exist`);
+    if (fileName && existsSync(absolute(candidateFile))) {
+      expect(sha256(candidateFile) === manifestRow.sha256, `candidate package file ${candidateFile} checksum should match package manifest`);
+      expect(statSync(absolute(candidateFile)).size === Number(manifestRow.bytes), `candidate package file ${candidateFile} byte count should match package manifest`);
+    }
+  }
+
+  for (const row of candidateMeasurementRows) {
+    expect(
+      row.release_id !== placeIndex.release_id,
+      `${row.iso3 || row.place_id || "candidate row"} should remain release-candidate scoped, not active-release scoped`
+    );
+    expect(
+      row.coverage_status !== "canonical_measurements",
+      `${row.iso3 || row.place_id || "candidate row"} should not claim canonical measurement coverage`
+    );
+  }
+
+  for (const row of measurements.measurements || []) {
+    expect(
+      row.release_id === placeIndex.release_id,
+      `${row.measurement_id} should stay scoped to the active release, not the country candidate package`
+    );
+    expect(
+      !String(row.place_id || "").startsWith("country:"),
+      `${row.measurement_id} should not use candidate package country: place identifiers`
+    );
+  }
+
+  for (const country of countryGapLedger.countries || []) {
+    if (currentCountryIso3.has(normalizeIso3(country.iso3 || country.place_id))) {
+      expect(country.candidate_status, `${country.place_id} should record candidate_status`);
+      expect(Array.isArray(country.candidate_blocking_reasons), `${country.place_id} should record candidate_blocking_reasons`);
+      if (country.candidate_status !== "not_in_candidate_package" && country.gap_status !== "canonical") {
+        expect(country.candidate_blocking_reasons.length > 0, `${country.place_id} noncanonical candidate row should keep blocking reasons`);
+      }
+    }
+  }
 }
 
 expect(

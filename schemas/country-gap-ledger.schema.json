@@ -91,6 +91,52 @@
         "excluded_countries": {
           "type": "integer",
           "minimum": 0
+        },
+        "candidate_review": {
+          "type": "object"
+        }
+      }
+    },
+    "candidate_review": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "candidate_package_present": {
+          "type": "boolean"
+        },
+        "release_candidate_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "implementation_decision": {
+          "type": "string"
+        },
+        "publication_gate": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "publish_candidate_measurements": {
+              "type": "boolean"
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        },
+        "proposed_measurements": {
+          "type": "object"
+        },
+        "promotion_decisions": {
+          "type": "object"
+        },
+        "country_universe": {
+          "type": "object"
         }
       }
     },
@@ -148,6 +194,21 @@
             "type": "boolean"
           },
           "last_seen_in_release": {
+            "type": "string"
+          },
+          "candidate_status": {
+            "type": "string"
+          },
+          "candidate_promote_to_canonical": {
+            "type": "boolean"
+          },
+          "candidate_blocking_reasons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "candidate_next_action": {
             "type": "string"
           }
         }
