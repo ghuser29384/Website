@@ -27,7 +27,7 @@
     </noscript>
     <script>
       (() => {
-        fetch("/app.html?v=20260713-map-timeout-fix-3", { cache: "no-store" })
+        fetch("/app.html?v=20260713-map-timeout-fix-4", { cache: "no-store" })
           .then((response) => {
             if (!response.ok) {
               throw new Error(`HTTP ${response.status}`);
@@ -42,7 +42,7 @@
               throw new Error("atlas module was not found");
             }
 
-            atlasModule.src = "/map-bootstrap.js?v=20260713-3";
+            atlasModule.src = "/map-bootstrap-v4.js";
             atlasModule.removeAttribute("integrity");
             atlasModule.removeAttribute("crossorigin");
 
