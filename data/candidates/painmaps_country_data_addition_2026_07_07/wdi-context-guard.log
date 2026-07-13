@@ -1,0 +1,6 @@
+parsed_rows: 639
+coverage_rows: 249
+blocked_rows: 12
+parsed indicators: {'SP.POP.TOTL': 215, 'AG.LND.TOTL.K2': 215, 'AG.LND.AGRI.K2': 209}
+coverage status: {'partial_context_only': 215, 'missing_canonical_country_profile_or_only_boundary_context': 34}
+WDI context-only parse validation passed

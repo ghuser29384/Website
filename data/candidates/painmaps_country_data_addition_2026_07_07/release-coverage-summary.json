@@ -1,0 +1,22 @@
+{
+  "release_id": "release-candidate-2026-07-07.country-context.v0",
+  "generated_at": "2026-07-07T04:52:27.509327+00:00",
+  "live_site_inspection": {
+    "url": "https://painmaps.org/",
+    "places_indexed": 2114,
+    "country_boundary_entries": 239,
+    "adm1_poverty_context_rows": 1874,
+    "canonical_country_profiles": 2,
+    "canonical_country_profile_names": [
+      "Brazil",
+      "India"
+    ],
+    "direct_place_evidence_rows": 0,
+    "last_release": "2026-05-31"
+  },
+  "country_universe_rows": 249,
+  "canonical_country_profiles_current": 2,
+  "missing_or_little_country_data_candidates": 247,
+  "countries_promoted_in_this_package": 0,
+  "why_none_promoted": "The live site was inspected but source datasets and PainMap hidden artifacts could not be fetched from the sandbox; no numeric rows were fabricated. This is a release-candidate staging package."
+}

@@ -1,0 +1,20 @@
+selected_rows: 14
+wrote dbnomics-fao-qcl-series-url-validation.csv
+wrote dbnomics-fao-qcl-series-url-validation.json
+wrote dbnomics-fao-qcl-series-url-validation.md
+metadata_validation_status: {'validated_metadata_only': 4, 'metadata_validation_failed': 10}
+observations_present: {'false': 14}
+1.867.5320 200 validated_metadata_only 1.867.5320 1 867 5320 false
+1.947.5320 404 metadata_validation_failed     false
+1.977.5320 200 validated_metadata_only 1.977.5320 1 977 5320 false
+1.1017.5320 200 validated_metadata_only 1.1017.5320 1 1017 5320 false
+1.1035.5320 200 validated_metadata_only 1.1035.5320 1 1035 5320 false
+1.1058.5320 404 metadata_validation_failed     false
+1.1069.5320 404 metadata_validation_failed     false
+1.1073.5320 404 metadata_validation_failed     false
+1.1080.5320 404 metadata_validation_failed     false
+1.1097.5320 404 metadata_validation_failed     false
+1.1108.5320 404 metadata_validation_failed     false
+1.1111.5320 404 metadata_validation_failed     false
+1.1127.5320 404 metadata_validation_failed     false
+1.1141.5320 404 metadata_validation_failed     false

@@ -1,0 +1,180 @@
+# Iteration 5 repo/compiler discovery
+
+## Git state
+?? .painmaps-iteration/
+?? about/painmap_country_data_addition_package.zip
+?? data/candidates/painmaps_country_data_addition_2026_07_07/
+country-context-release-candidate
+
+## Repo top-level files
+./.DS_Store
+./.devcontainer/devcontainer.json
+./.git/COMMIT_EDITMSG
+./.git/FETCH_HEAD
+./.git/HEAD
+./.git/ORIG_HEAD
+./.git/REBASE_HEAD
+./.git/config
+./.git/description
+./.git/index
+./.git/index 2
+./.git/packed-refs
+./.gitattributes
+./.gitignore
+./.nojekyll
+./.painmaps-iteration/decision-log.md
+./.well-known/security.txt
+./CNAME
+./LICENSE
+./README.md
+./_headers
+./about/index.html
+./about/painmap_country_data_addition_package.zip
+./api/index.html
+./assets/social-card.svg
+./atlas/index.html
+./compare.js
+./compare/index.html
+./countries/index.html
+./data/accessibility-audit.json
+./data/analytics-events.json
+./data/claims.json
+./data/countries-lite.geojson
+./data/country-gap-ledger.csv
+./data/country-gap-ledger.json
+./data/country-profile-input-spec.json
+./data/dcat.json
+./data/endpoint-smoke.json
+./data/gsap-adm1-2023.json
+./data/index.html
+./data/natural-earth-countries.geojson
+./data/openapi.json
+./data/performance-budgets.json
+./data/place-measurements.csv
+./data/place-measurements.json
+./data/places.geojson
+./data/provenance-registry.json
+./data/release-modes.json
+./data/route-smoke.json
+./data/routes.json
+./data/source-freshness.json
+./data/source-snapshots.json
+./data/third-party-fetches.json
+./data/ui-smoke.json
+./developers/index.html
+./events/index.html
+./examples/README.md
+./examples/cite-release.mjs
+./examples/compare-places.mjs
+./examples/custom-geography.csv
+./examples/index.html
+./examples/join-own-geography.mjs
+./examples/load-place-profile.mjs
+./examples/load_place_profile.py
+./fixtures/README.md
+./fixtures/mock-registry.json
+./fixtures/place-measurements.fixture.json
+./index.html
+./latest/manifest.json
+./methods/index.html
+./offline.html
+./ogc/conformance.json
+./ogc/index.json
+./package.json
+./painmap.org improvement plan for Codex GPT-5.5 xhigh reasoning.pdf
+./painmap1.md
+./painmap2.md
+./painmap3.md
+./painmap4.md
+./painmap5.md
+./painmap52.md
+./painmap59.md
+./painmap6.md
+./painmaps-esearch-report-1.md
+./places-coverage.js
+./places/index.html
+./releases/index.html
+./resources/index.html
+./robots.txt
+./route-table-labels.js
+./schemas/adm1-context.schema.json
+./schemas/country-gap-ledger.schema.json
+./schemas/coverage.schema.json
+./schemas/ogc-place-features.schema.json
+./schemas/place-index.schema.json
+./schemas/place-measurements.schema.json
+./schemas/release-modes.schema.json
+./schemas/source-snapshot.schema.json
+./script.js
+./scripts/build-preview-release.mjs
+./scripts/build-static-artifacts.mjs
+./scripts/check-endpoint-smoke.mjs
+./scripts/check-source-freshness.mjs
+./scripts/check-static-site.mjs
+./scripts/check-ui-smoke.mjs
+./scripts/validate-release-contract.mjs
+./security/index.html
+./service-worker.js
+./sitemap.xml
+./styles.css
+./updates/index.html
+./v1/coverage.json
+./v1/layers.json
+./v1/releases.json
+./v1/sources.json
+./vendor/d3.v7.min.js
+./vendor/topojson-client.v3.min.js
+./vercel.json
+
+## Package scripts
+{
+  "build:data": "node scripts/build-static-artifacts.mjs",
+  "validate:release": "node scripts/validate-release-contract.mjs",
+  "check": "npm run build:data && node scripts/check-static-site.mjs && npm run validate:release && npm run smoke:ui && npm run fixtures:check",
+  "fixtures:check": "node scripts/build-preview-release.mjs --check",
+  "freshness:sources": "node scripts/check-source-freshness.mjs",
+  "preview:fixture": "node scripts/build-preview-release.mjs",
+  "smoke:ui": "node scripts/check-ui-smoke.mjs",
+  "smoke:endpoints": "node scripts/check-endpoint-smoke.mjs",
+  "serve": "python3 -m http.server 4173"
+}
+
+## Candidate artifact files
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/blocked-source-decisions.csv
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/blocked-source-decisions.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/codex-pr-checklist.md
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/country-context-layers.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/country-gap-ledger.csv
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/country-gap-ledger.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/country-promotion-decisions.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/country-source-coverage.csv
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/fetch-country-context-sources.log
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/fetched-source-snapshots/snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.1.html
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/fetched-source-snapshots/snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.2.html
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/fetched-source-snapshots/snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.3.html
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/final-report.md
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/license-registry-additions.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/license-registry-additions.wdi-reviewed.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/parse-wdi-country-context.log
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/parsed-wdi-country-context.csv
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/parsed-wdi-country-context.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/proposed-country-measurements.csv
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/proposed-country-measurements.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/raw-snapshot-storage-disposition.csv
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/raw-snapshot-storage-disposition.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/release-coverage-summary.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/schemas/country-gap-ledger.schema.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/schemas/proposed-country-measurements.schema.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/scripts/fetch_country_context_sources.py
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/scripts/parse_wdi_context_snapshots.py
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/snapshot-dependency-impact.csv
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/snapshot-dependency-impact.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/source-license-access-review.csv
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/source-license-access-review.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/source-registry-additions.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/source-registry-additions.wdi-reviewed.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/source-snapshots.fetched.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/source-snapshots.json
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/wdi-context-guard.log
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/wdi-country-context-coverage.csv
+/Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/wdi-country-context-coverage.json

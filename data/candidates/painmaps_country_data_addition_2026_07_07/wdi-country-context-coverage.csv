@@ -1,0 +1,250 @@
+iso3,country_name,has_population_total,population_reference_period,has_land_area,land_area_reference_period,has_agricultural_land,agricultural_land_reference_period,wdi_context_complete,missing_wdi_context_inputs,context_row_count,coverage_status_after_wdi_parse,promotion_decision_after_wdi_parse
+ABW,Aruba,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+AFG,Afghanistan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+AGO,Angola,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+AIA,Anguilla,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+ALA,Åland Islands,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+ALB,Albania,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+AND,Andorra,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ARE,United Arab Emirates,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ARG,Argentina,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ARM,Armenia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ASM,American Samoa,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ATA,Antarctica,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+ATF,French Southern Territories,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+ATG,Antigua and Barbuda,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+AUS,Australia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+AUT,Austria,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+AZE,Azerbaijan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BDI,Burundi,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BEL,Belgium,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BEN,Benin,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BES,"Bonaire, Sint Eustatius and Saba",false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+BFA,Burkina Faso,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BGD,Bangladesh,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BGR,Bulgaria,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BHR,Bahrain,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BHS,Bahamas,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BIH,Bosnia and Herzegovina,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BLM,Saint Barthélemy,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+BLR,Belarus,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BLZ,Belize,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BMU,Bermuda,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BOL,"Bolivia, Plurinational State of",true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BRA,Brazil,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BRB,Barbados,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BRN,Brunei Darussalam,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BTN,Bhutan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+BVT,Bouvet Island,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+BWA,Botswana,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CAF,Central African Republic,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CAN,Canada,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CCK,Cocos (Keeling) Islands,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+CHE,Switzerland,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CHL,Chile,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CHN,China,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CIV,Côte d'Ivoire,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CMR,Cameroon,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+COD,"Congo, The Democratic Republic of the",true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+COG,Congo,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+COK,Cook Islands,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+COL,Colombia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+COM,Comoros,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CPV,Cabo Verde,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CRI,Costa Rica,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CUB,Cuba,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CUW,Curaçao,true,2025,true,2023,false,,false,"[""AG.LND.AGRI.K2""]",2,partial_context_only,not_promoted_context_only
+CXR,Christmas Island,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+CYM,Cayman Islands,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CYP,Cyprus,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+CZE,Czechia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+DEU,Germany,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+DJI,Djibouti,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+DMA,Dominica,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+DNK,Denmark,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+DOM,Dominican Republic,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+DZA,Algeria,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ECU,Ecuador,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+EGY,Egypt,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ERI,Eritrea,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ESH,Western Sahara,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+ESP,Spain,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+EST,Estonia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ETH,Ethiopia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+FIN,Finland,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+FJI,Fiji,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+FLK,Falkland Islands (Malvinas),false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+FRA,France,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+FRO,Faroe Islands,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+FSM,"Micronesia, Federated States of",true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GAB,Gabon,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GBR,United Kingdom,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GEO,Georgia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GGY,Guernsey,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+GHA,Ghana,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GIB,Gibraltar,true,2025,true,2023,false,,false,"[""AG.LND.AGRI.K2""]",2,partial_context_only,not_promoted_context_only
+GIN,Guinea,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GLP,Guadeloupe,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+GMB,Gambia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GNB,Guinea-Bissau,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GNQ,Equatorial Guinea,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GRC,Greece,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GRD,Grenada,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GRL,Greenland,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GTM,Guatemala,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GUF,French Guiana,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+GUM,Guam,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+GUY,Guyana,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+HKG,Hong Kong,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+HMD,Heard Island and McDonald Islands,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+HND,Honduras,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+HRV,Croatia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+HTI,Haiti,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+HUN,Hungary,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+IDN,Indonesia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+IMN,Isle of Man,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+IND,India,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+IOT,British Indian Ocean Territory,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+IRL,Ireland,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+IRN,"Iran, Islamic Republic of",true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+IRQ,Iraq,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ISL,Iceland,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ISR,Israel,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ITA,Italy,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+JAM,Jamaica,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+JEY,Jersey,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+JOR,Jordan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+JPN,Japan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+KAZ,Kazakhstan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+KEN,Kenya,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+KGZ,Kyrgyzstan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+KHM,Cambodia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+KIR,Kiribati,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+KNA,Saint Kitts and Nevis,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+KOR,"Korea, Republic of",true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+KWT,Kuwait,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+LAO,Lao People's Democratic Republic,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+LBN,Lebanon,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+LBR,Liberia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+LBY,Libya,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+LCA,Saint Lucia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+LIE,Liechtenstein,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+LKA,Sri Lanka,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+LSO,Lesotho,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+LTU,Lithuania,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+LUX,Luxembourg,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+LVA,Latvia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MAC,Macao,true,2025,true,2023,false,,false,"[""AG.LND.AGRI.K2""]",2,partial_context_only,not_promoted_context_only
+MAF,Saint Martin (French part),true,2025,true,2023,false,,false,"[""AG.LND.AGRI.K2""]",2,partial_context_only,not_promoted_context_only
+MAR,Morocco,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MCO,Monaco,true,2025,true,2023,false,,false,"[""AG.LND.AGRI.K2""]",2,partial_context_only,not_promoted_context_only
+MDA,"Moldova, Republic of",true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MDG,Madagascar,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MDV,Maldives,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MEX,Mexico,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MHL,Marshall Islands,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MKD,North Macedonia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MLI,Mali,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MLT,Malta,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MMR,Myanmar,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MNE,Montenegro,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MNG,Mongolia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MNP,Northern Mariana Islands,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MOZ,Mozambique,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MRT,Mauritania,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MSR,Montserrat,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+MTQ,Martinique,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+MUS,Mauritius,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MWI,Malawi,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MYS,Malaysia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+MYT,Mayotte,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+NAM,Namibia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+NCL,New Caledonia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+NER,Niger,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+NFK,Norfolk Island,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+NGA,Nigeria,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+NIC,Nicaragua,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+NIU,Niue,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+NLD,Netherlands,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+NOR,Norway,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+NPL,Nepal,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+NRU,Nauru,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+NZL,New Zealand,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+OMN,Oman,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+PAK,Pakistan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+PAN,Panama,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+PCN,Pitcairn,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+PER,Peru,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+PHL,Philippines,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+PLW,Palau,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+PNG,Papua New Guinea,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+POL,Poland,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+PRI,Puerto Rico,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+PRK,"Korea, Democratic People's Republic of",true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+PRT,Portugal,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+PRY,Paraguay,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+PSE,"Palestine, State of",true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+PYF,French Polynesia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+QAT,Qatar,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+REU,Réunion,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+ROU,Romania,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+RUS,Russian Federation,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+RWA,Rwanda,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SAU,Saudi Arabia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SDN,Sudan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SEN,Senegal,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SGP,Singapore,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SGS,South Georgia and the South Sandwich Islands,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+SHN,"Saint Helena, Ascension and Tristan da Cunha",false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+SJM,Svalbard and Jan Mayen,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+SLB,Solomon Islands,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SLE,Sierra Leone,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SLV,El Salvador,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SMR,San Marino,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SOM,Somalia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SPM,Saint Pierre and Miquelon,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+SRB,Serbia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SSD,South Sudan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+STP,Sao Tome and Principe,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SUR,Suriname,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SVK,Slovakia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SVN,Slovenia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SWE,Sweden,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SWZ,Eswatini,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SXM,Sint Maarten (Dutch part),true,2025,true,2023,false,,false,"[""AG.LND.AGRI.K2""]",2,partial_context_only,not_promoted_context_only
+SYC,Seychelles,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+SYR,Syrian Arab Republic,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+TCA,Turks and Caicos Islands,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+TCD,Chad,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+TGO,Togo,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+THA,Thailand,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+TJK,Tajikistan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+TKL,Tokelau,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+TKM,Turkmenistan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+TLS,Timor-Leste,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+TON,Tonga,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+TTO,Trinidad and Tobago,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+TUN,Tunisia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+TUR,Türkiye,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+TUV,Tuvalu,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+TWN,"Taiwan, Province of China",false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+TZA,"Tanzania, United Republic of",true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+UGA,Uganda,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+UKR,Ukraine,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+UMI,United States Minor Outlying Islands,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+URY,Uruguay,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+USA,United States,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+UZB,Uzbekistan,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+VAT,Holy See (Vatican City State),false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+VCT,Saint Vincent and the Grenadines,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+VEN,"Venezuela, Bolivarian Republic of",true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+VGB,"Virgin Islands, British",true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+VIR,"Virgin Islands, U.S.",true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+VNM,Viet Nam,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+VUT,Vanuatu,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+WLF,Wallis and Futuna,false,,false,,false,,false,"[""AG.LND.AGRI.K2"",""AG.LND.TOTL.K2"",""SP.POP.TOTL""]",0,missing_canonical_country_profile_or_only_boundary_context,not_promoted_context_only
+WSM,Samoa,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+YEM,Yemen,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ZAF,South Africa,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ZMB,Zambia,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only
+ZWE,Zimbabwe,true,2025,true,2023,true,2023,true,[],3,partial_context_only,not_promoted_context_only

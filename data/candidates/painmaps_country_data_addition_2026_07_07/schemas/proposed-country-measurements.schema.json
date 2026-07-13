@@ -1,0 +1,21 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "release_id",
+      "place_id",
+      "iso3",
+      "country_name",
+      "layer_id",
+      "metric_id",
+      "evidence_kind",
+      "unit_label",
+      "ranking_mode",
+      "method_id",
+      "method_version",
+      "transform_version",
+      "promotion_decision"
+    ]
+  }
+}

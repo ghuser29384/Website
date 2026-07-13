@@ -1,0 +1,5 @@
+python_executable: /opt/homebrew/opt/python@3.14/bin/python3.14
+python_version: 3.14.4 (main, Apr 30 2026, 15:32:13) [Clang 14.0.3 (clang-1403.0.22.14.1)]
+platform: macOS-13.5.1-arm64-arm-64bit-Mach-O
+openssl: OpenSSL 3.6.2 7 Apr 2026
+default_verify_paths: DefaultVerifyPaths(cafile=None, capath='/opt/homebrew/etc/openssl@3/certs', openssl_cafile_env='SSL_CERT_FILE', openssl_cafile='/opt/homebrew/etc/openssl@3/cert.pem', openssl_capath_env='SSL_CERT_DIR', openssl_capath='/opt/homebrew/etc/openssl@3/certs')

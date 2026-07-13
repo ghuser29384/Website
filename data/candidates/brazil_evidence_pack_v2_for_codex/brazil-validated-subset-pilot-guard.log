@@ -1,0 +1,18 @@
+pilot_rows: 6
+unavailable_rows: 9
+pilot_evidence_kind: {'direct_context': 5, 'proxy_context': 1}
+pilot_promotion_decision: {'not_promoted_candidate_only': 6}
+BRAZIL_VALIDATED_SUBSET_PILOT_FAILED
+('21.867.5320', 'missing raw_value')
+('21.867.5320', 'missing reference_period')
+('21.977.5320', 'missing raw_value')
+('21.977.5320', 'missing reference_period')
+('21.1017.5320', 'missing raw_value')
+('21.1017.5320', 'missing reference_period')
+('21.1035.5320', 'missing raw_value')
+('21.1035.5320', 'missing reference_period')
+('21.1097.5320', 'missing raw_value')
+('21.1097.5320', 'missing reference_period')
+('21.1309.5157', 'missing raw_value')
+('21.1309.5157', 'missing reference_period')
+guard_exit=1

@@ -1,0 +1,108 @@
+# Brazil series metadata validation
+
+- started_at: `2026-07-09T07:54:39.856201Z`
+- finished_at: `2026-07-09T07:55:04.438091Z`
+- row_count: `15`
+- metadata_validation_status: `{'validated_metadata_only': 6, 'metadata_validation_failed': 9}`
+- observations_present: `{'false': 15}`
+
+## Rows
+- `21.867.5320`
+  - status: `validated_metadata_only`
+  - http_status: `200`
+  - dataset/provider: `QCL` / `FAO`
+  - dimensions: area `21`, item `867`, element `5320`
+  - observations_present: `false`
+- `21.947.5320`
+  - status: `metadata_validation_failed`
+  - http_status: `404`
+  - dataset/provider: `` / ``
+  - dimensions: area ``, item ``, element ``
+  - observations_present: `false`
+  - error: `<HTTPError 404: 'NOT FOUND'>; http_status=404; response_dataset_code=''; response_provider_code=''; response_series_code=''; response_dimensions_area=''; response_dimensions_item=''; response_dimensions_element=''`
+- `21.977.5320`
+  - status: `validated_metadata_only`
+  - http_status: `200`
+  - dataset/provider: `QCL` / `FAO`
+  - dimensions: area `21`, item `977`, element `5320`
+  - observations_present: `false`
+- `21.1017.5320`
+  - status: `validated_metadata_only`
+  - http_status: `200`
+  - dataset/provider: `QCL` / `FAO`
+  - dimensions: area `21`, item `1017`, element `5320`
+  - observations_present: `false`
+- `21.1035.5320`
+  - status: `validated_metadata_only`
+  - http_status: `200`
+  - dataset/provider: `QCL` / `FAO`
+  - dimensions: area `21`, item `1035`, element `5320`
+  - observations_present: `false`
+- `21.1058.5320`
+  - status: `metadata_validation_failed`
+  - http_status: `404`
+  - dataset/provider: `` / ``
+  - dimensions: area ``, item ``, element ``
+  - observations_present: `false`
+  - error: `<HTTPError 404: 'NOT FOUND'>; http_status=404; response_dataset_code=''; response_provider_code=''; response_series_code=''; response_dimensions_area=''; response_dimensions_item=''; response_dimensions_element=''`
+- `21.1069.5320`
+  - status: `metadata_validation_failed`
+  - http_status: `404`
+  - dataset/provider: `` / ``
+  - dimensions: area ``, item ``, element ``
+  - observations_present: `false`
+  - error: `<HTTPError 404: 'NOT FOUND'>; http_status=404; response_dataset_code=''; response_provider_code=''; response_series_code=''; response_dimensions_area=''; response_dimensions_item=''; response_dimensions_element=''`
+- `21.1073.5320`
+  - status: `metadata_validation_failed`
+  - http_status: `404`
+  - dataset/provider: `` / ``
+  - dimensions: area ``, item ``, element ``
+  - observations_present: `false`
+  - error: `<HTTPError 404: 'NOT FOUND'>; http_status=404; response_dataset_code=''; response_provider_code=''; response_series_code=''; response_dimensions_area=''; response_dimensions_item=''; response_dimensions_element=''`
+- `21.1080.5320`
+  - status: `metadata_validation_failed`
+  - http_status: `404`
+  - dataset/provider: `` / ``
+  - dimensions: area ``, item ``, element ``
+  - observations_present: `false`
+  - error: `<HTTPError 404: 'NOT FOUND'>; http_status=404; response_dataset_code=''; response_provider_code=''; response_series_code=''; response_dimensions_area=''; response_dimensions_item=''; response_dimensions_element=''`
+- `21.1097.5320`
+  - status: `validated_metadata_only`
+  - http_status: `200`
+  - dataset/provider: `QCL` / `FAO`
+  - dimensions: area `21`, item `1097`, element `5320`
+  - observations_present: `false`
+- `21.1108.5320`
+  - status: `metadata_validation_failed`
+  - http_status: `404`
+  - dataset/provider: `` / ``
+  - dimensions: area ``, item ``, element ``
+  - observations_present: `false`
+  - error: `<HTTPError 404: 'NOT FOUND'>; http_status=404; response_dataset_code=''; response_provider_code=''; response_series_code=''; response_dimensions_area=''; response_dimensions_item=''; response_dimensions_element=''`
+- `21.1111.5320`
+  - status: `metadata_validation_failed`
+  - http_status: `404`
+  - dataset/provider: `` / ``
+  - dimensions: area ``, item ``, element ``
+  - observations_present: `false`
+  - error: `<HTTPError 404: 'NOT FOUND'>; http_status=404; response_dataset_code=''; response_provider_code=''; response_series_code=''; response_dimensions_area=''; response_dimensions_item=''; response_dimensions_element=''`
+- `21.1127.5320`
+  - status: `metadata_validation_failed`
+  - http_status: `404`
+  - dataset/provider: `` / ``
+  - dimensions: area ``, item ``, element ``
+  - observations_present: `false`
+  - error: `<HTTPError 404: 'NOT FOUND'>; http_status=404; response_dataset_code=''; response_provider_code=''; response_series_code=''; response_dimensions_area=''; response_dimensions_item=''; response_dimensions_element=''`
+- `21.1141.5320`
+  - status: `metadata_validation_failed`
+  - http_status: `404`
+  - dataset/provider: `` / ``
+  - dimensions: area ``, item ``, element ``
+  - observations_present: `false`
+  - error: `<HTTPError 404: 'NOT FOUND'>; http_status=404; response_dataset_code=''; response_provider_code=''; response_series_code=''; response_dimensions_area=''; response_dimensions_item=''; response_dimensions_element=''`
+- `21.1309.5157`
+  - status: `validated_metadata_only`
+  - http_status: `200`
+  - dataset/provider: `RP` / `FAO`
+  - dimensions: area `21`, item `1309`, element `5157`
+  - observations_present: `false`

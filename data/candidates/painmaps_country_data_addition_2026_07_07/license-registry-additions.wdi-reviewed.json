@@ -1,0 +1,20 @@
+[
+  {
+    "license_id": "cc-by-4.0-world-bank-wdi",
+    "label": "World Bank WDI CC BY 4.0 with World Bank dataset terms",
+    "status": "reviewed_context_only",
+    "license_uri": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+    "summary_terms_url": "https://data.worldbank.org/summary-terms-of-use",
+    "required_attribution": "The World Bank: World Development Indicators; include data-provider attribution; indicate changes where applicable.",
+    "no_endorsement_caveat": "Do not claim or imply World Bank endorsement and do not use World Bank name, logos, or trademarks to imply endorsement.",
+    "redistribution_storage_note": "Context-only staging rows may be stored and derived from the three reviewed WDI snapshots; production release still needs registry integration review.",
+    "review_evidence": [
+      "World Bank Data indicator page for AG.LND.AGRI.K2 lists FAO as source and License: CC BY-4.0; World Bank summary terms require attribution to The World Bank and data providers; World Bank legal terms prohibit implying endorsement.",
+      "World Bank Data indicator page for AG.LND.TOTL.K2 lists FAOSTAT/FAO as source and License: CC BY-4.0; World Bank summary terms require attribution to The World Bank and data providers; World Bank legal terms prohibit implying endorsement.",
+      "World Bank Data indicator page for SP.POP.TOTL lists License: CC BY-4.0 and source/provider metadata; World Bank summary terms require attribution to The World Bank and data providers; World Bank legal terms prohibit implying endorsement."
+    ],
+    "review_date": "2026-07-07",
+    "next_review_due": "2027-07-07"
+  }
+]

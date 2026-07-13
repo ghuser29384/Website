@@ -1,0 +1,3 @@
+source license/access review validation passed
+rows: 15
+parse_status_counts: {'parse_eligible': 3, 'blocked_license_unclear': 10, 'blocked_unauthorized': 2}

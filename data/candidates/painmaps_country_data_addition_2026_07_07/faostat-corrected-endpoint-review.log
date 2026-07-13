@@ -1,0 +1,11 @@
+wrote faostat-corrected-endpoint-review.csv
+wrote faostat-corrected-endpoint-review.json
+wrote faostat-corrected-endpoint-review.md
+faostat-qcl-production-prefix-normalized 403 false blocked_endpoint_not_found text/html
+faostat-qcl-production-prefix-wide 403 false blocked_endpoint_not_found text/html
+faostat-qcl-no-prefix-normalized 403 false blocked_endpoint_not_found text/html
+faostat-qcl-no-prefix-wide 403 false blocked_endpoint_not_found text/html
+faostat-pesticides-inputs-prefix-normalized 403 false blocked_endpoint_not_found text/html
+faostat-pesticides-inputs-prefix-wide 403 false blocked_endpoint_not_found text/html
+faostat-pesticides-no-prefix-normalized 403 false blocked_endpoint_not_found text/html
+faostat-pesticides-no-prefix-wide 403 false blocked_endpoint_not_found text/html

@@ -1,0 +1,137 @@
+fetched_status_counts: {'ok': 13, 'error': 2}
+planned_snapshot_count: 15
+
+Fetched snapshots:
+- snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.1
+  status: ok
+  url: https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000
+  checksum: sha256 f958560b78db644282c7147853e0d1a7eff6e324625db44dbd719c0571fceaf4
+  bytes: 3512287
+- snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.2
+  status: ok
+  url: https://api.worldbank.org/v2/country/all/indicator/AG.LND.TOTL.K2?format=json&per_page=20000
+  checksum: sha256 fa2511c12343943bacc2bbfe901c64853525a388c599ba0c915a5637a1ae3f80
+  bytes: 3556710
+- snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.3
+  status: ok
+  url: https://api.worldbank.org/v2/country/all/indicator/AG.LND.AGRI.K2?format=json&per_page=20000
+  checksum: sha256 68d32178d5806c1d34cd29f34159fe7742668aea1d981f20d60a045943f24eee
+  bytes: 3696853
+- snapshot.release-candidate-2026-07-07.country-context.v0.owid-land-animals-slaughtered.1
+  status: ok
+  url: https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.csv?csvType=full&useColumnShortNames=false
+  checksum: sha256 1954b498f4cf29e18b5389959da20a13bed22d44a9f658db69e2d4ca6fb0ccdf
+  bytes: 1102112
+- snapshot.release-candidate-2026-07-07.country-context.v0.owid-land-animals-slaughtered.2
+  status: ok
+  url: https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.metadata.json?csvType=full&useColumnShortNames=false
+  checksum: sha256 0bee3e0bb858ebe54b767a3aeccde165808ed5fa4cfe735b4fb6c22c8ad1f116
+  bytes: 11815
+- snapshot.release-candidate-2026-07-07.country-context.v0.owid-farmed-fish-killed.1
+  status: ok
+  url: https://ourworldindata.org/grapher/farmed-fish-killed.csv?csvType=full&useColumnShortNames=false
+  checksum: sha256 cd27b75f61af6fbebb12fed01cda2d1655f0f5d84690299455bb114ffb501354
+  bytes: 29395
+- snapshot.release-candidate-2026-07-07.country-context.v0.owid-farmed-fish-killed.2
+  status: ok
+  url: https://ourworldindata.org/grapher/farmed-fish-killed.metadata.json?csvType=full&useColumnShortNames=false
+  checksum: sha256 3c794f096ce7bacd88119724dd9248523e36ba90a06c2e3d9f3859d2bf7c7e68
+  bytes: 4835
+- snapshot.release-candidate-2026-07-07.country-context.v0.owid-wild-caught-fish.1
+  status: ok
+  url: https://ourworldindata.org/grapher/wild-caught-fish.csv?csvType=full&useColumnShortNames=false
+  checksum: sha256 41c60a6411b644028d7392a5acc98745f0288cc2b6fb8a9cf7172bdf594d84d5
+  bytes: 13475
+- snapshot.release-candidate-2026-07-07.country-context.v0.owid-wild-caught-fish.2
+  status: ok
+  url: https://ourworldindata.org/grapher/wild-caught-fish.metadata.json?csvType=full&useColumnShortNames=false
+  checksum: sha256 9443a464a68a404edcd4266aa014adc9e91054444e7a60e53d2935921a1b63f6
+  bytes: 4006
+- snapshot.release-candidate-2026-07-07.country-context.v0.owid-farmed-crustaceans.1
+  status: ok
+  url: https://ourworldindata.org/grapher/farmed-crustaceans.csv?csvType=full&useColumnShortNames=false
+  checksum: sha256 ec497f2d0d9371c69d54b3d1aad15e376d0966547bbe2e238b9bdea316222906
+  bytes: 14004
+- snapshot.release-candidate-2026-07-07.country-context.v0.owid-farmed-crustaceans.2
+  status: ok
+  url: https://ourworldindata.org/grapher/farmed-crustaceans.metadata.json?csvType=full&useColumnShortNames=false
+  checksum: sha256 acac734f35cb7dfd8eb2eed948a1e2e53e33a40594bc048d3184da4a8e863d04
+  bytes: 3437
+- snapshot.release-candidate-2026-07-07.country-context.v0.owid-insecticide-use-fao.1
+  status: ok
+  url: https://ourworldindata.org/grapher/insecticide-use.csv?v=1&csvType=full&useColumnShortNames=false
+  checksum: sha256 7928a819d2bf54eb9d8373ceed422bf8de149caabb3dcdbf7ef669a590c12651
+  bytes: 197013
+- snapshot.release-candidate-2026-07-07.country-context.v0.owid-insecticide-use-fao.2
+  status: ok
+  url: https://ourworldindata.org/grapher/insecticide-use.metadata.json?v=1&csvType=full&useColumnShortNames=false
+  checksum: sha256 9693fd4135842dc5ba61a9113a7d89b4ad1292bb80772d97d6dee21bf96b1687
+  bytes: 1355
+- snapshot.release-candidate-2026-07-07.country-context.v0.fishcount-farmed-fish.1
+  status: error
+  url: https://fishcount.org.uk/fish-count-estimates-2/numbers-of-farmed-fish-slaughtered-each-year
+  checksum: sha256 PENDING_FETCH
+  bytes: PENDING_FETCH
+  error: <HTTPError 401: 'Unauthorized'>
+- snapshot.release-candidate-2026-07-07.country-context.v0.fishcount-farmed-decapods.1
+  status: error
+  url: https://fishcount.org.uk/fish-count-estimates-2/numbers-of-farmed-decapod-crustaceans
+  checksum: sha256 PENDING_FETCH
+  bytes: PENDING_FETCH
+  error: <HTTPError 401: 'Unauthorized'>
+
+Source registry additions:
+- world-bank-wdi-api | World Bank WDI API | None | license: world-bank-terms-review-required
+  url: None
+  redistribution: None
+  keys: ['attribution', 'label', 'license_id', 'source_id', 'urls']
+- owid-land-animals-slaughtered | OWID land animals slaughtered for meat | None | license: owid-cc-by-with-third-party-terms-review
+  url: None
+  redistribution: None
+  keys: ['attribution', 'label', 'license_id', 'source_id', 'urls']
+- owid-farmed-fish-killed | OWID farmed fish killed | None | license: owid-cc-by-with-third-party-terms-review
+  url: None
+  redistribution: None
+  keys: ['attribution', 'label', 'license_id', 'source_id', 'urls']
+- owid-wild-caught-fish | OWID wild-caught fish | None | license: owid-cc-by-with-third-party-terms-review
+  url: None
+  redistribution: None
+  keys: ['attribution', 'label', 'license_id', 'source_id', 'urls']
+- owid-farmed-crustaceans | OWID farmed crustaceans | None | license: owid-cc-by-with-third-party-terms-review
+  url: None
+  redistribution: None
+  keys: ['attribution', 'label', 'license_id', 'source_id', 'urls']
+- owid-insecticide-use-fao | OWID insecticide use, adapted from FAOSTAT | None | license: owid-cc-by-with-fao-terms-review
+  url: None
+  redistribution: None
+  keys: ['attribution', 'label', 'license_id', 'source_id', 'urls']
+- fishcount-farmed-fish | Fishcount farmed fish slaughtered | None | license: fishcount-terms-review-required
+  url: None
+  redistribution: None
+  keys: ['attribution', 'label', 'license_id', 'source_id', 'urls']
+- fishcount-farmed-decapods | Fishcount farmed decapod crustaceans | None | license: fishcount-terms-review-required
+  url: None
+  redistribution: None
+  keys: ['attribution', 'label', 'license_id', 'source_id', 'urls']
+
+License registry additions:
+- world-bank-terms-review-required | World Bank terms review required before redistribution
+  uri: None
+  attribution: None
+  redistribution: None
+  keys: ['label', 'license_id', 'status']
+- owid-cc-by-with-third-party-terms-review | OWID CC BY where OWID-authored; third-party terms must be checked per grapher metadata
+  uri: None
+  attribution: None
+  redistribution: None
+  keys: ['label', 'license_id', 'status']
+- owid-cc-by-with-fao-terms-review | OWID/FAO derived data; FAOSTAT terms must be verified before redistribution
+  uri: None
+  attribution: None
+  redistribution: None
+  keys: ['label', 'license_id', 'status']
+- fishcount-terms-review-required | Fishcount terms require review before republication
+  uri: None
+  attribution: None
+  redistribution: None
+  keys: ['label', 'license_id', 'status']

@@ -1,0 +1,17 @@
+wrote dbnomics-fao-qcl-slaughter-item-filter-design.csv
+wrote dbnomics-fao-qcl-slaughter-item-filter-design.json
+wrote dbnomics-fao-qcl-series-query-plan.csv
+wrote dbnomics-fao-qcl-series-query-plan.json
+wrote dbnomics-fao-qcl-slaughter-filter-design.md
+dataset_code: QCL
+dataset_name: Production: Crops and livestock products
+element_code: 5320
+element_label: Producing Animals/Slaughtered
+item_rows: 301
+series_rows: 3430
+item_status_counts: {'excluded_non_primary_or_aggregate_or_derivative': 281, 'candidate_primary_meat_item': 14, 'manual_review_required': 6}
+series_area_status_counts: {'all_qcl_area_codes_from_metadata': 3430}
+first_fetch_scope_counts: {'candidate_validation_scope': 14, 'deferred_full_area_scope_after_review': 3416}
+method_status: candidate_filter_design_only_not_parse_eligible
+query_plan_status: candidate_query_plan_only_no_fetch
+allowed_use_scope: filter design only; no numeric parsing; no country promotion

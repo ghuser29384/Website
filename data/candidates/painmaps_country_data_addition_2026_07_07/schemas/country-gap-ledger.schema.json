@@ -1,0 +1,13 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "iso3",
+      "display_name",
+      "current_coverage_status",
+      "proposed_promotion_status_after_research",
+      "reason_if_still_not_promotable"
+    ]
+  }
+}

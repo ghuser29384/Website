@@ -1,0 +1,22 @@
+dbnomics client diagnostic
+import_status: ok
+
+series: FAO/QCL/21.867.5320
+shape: (0, 16)
+columns: ['@frequency', 'provider_code', 'dataset_code', 'dataset_name', 'series_code', 'series_name', 'original_period', 'period', 'original_value', 'value', 'element', 'area', 'item', 'Element', 'Area', 'Item']
+has_period: True
+has_value: True
+head:
+Empty DataFrame
+Columns: [@frequency, provider_code, dataset_code, dataset_name, series_code, series_name, original_period, period, original_value, value, element, area, item, Element, Area, Item]
+Index: []
+
+series: FAO/RP/21.1309.5157
+shape: (0, 16)
+columns: ['@frequency', 'provider_code', 'dataset_code', 'dataset_name', 'series_code', 'series_name', 'original_period', 'period', 'original_value', 'value', 'element', 'area', 'item', 'Element', 'Area', 'Item']
+has_period: True
+has_value: True
+head:
+Empty DataFrame
+Columns: [@frequency, provider_code, dataset_code, dataset_name, series_code, series_name, original_period, period, original_value, value, element, area, item, Element, Area, Item]
+Index: []

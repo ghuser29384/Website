@@ -1,0 +1,21 @@
+# Iteration 7 alternate-source prompt validation
+
+review_csv: data/candidates/painmaps_country_data_addition_2026_07_07/animal-source-unblock-review.csv
+review_rows: 12
+digest_path: data/candidates/painmaps_country_data_addition_2026_07_07/blocked-animal-source-digest.md
+digest_bytes: 8920
+prompt_path: .painmaps-iteration/prompts/iteration-7-alternate-animal-source-discovery.md
+prompt_bytes: 13045
+blocked_provider_terms_unclear_present: True
+blocked_unauthorized_present: True
+digest_inserted_in_prompt: True
+no_placeholder_left: True
+fishcount_bypass_guard_present: True
+no_final_measurements_guard_present: True
+clipboard_status: copied prompt with pbcopy before Chrome attempt
+chrome_handoff_status: attempted supported Chrome runtime twice; both attempts timed out, including a refresh retry; stopped per two-attempt rule
+source_fetching: not performed
+numeric_parsing: not performed
+country_promotion: not performed
+production_release_regeneration: not performed
+raw_snapshot_commit: not performed

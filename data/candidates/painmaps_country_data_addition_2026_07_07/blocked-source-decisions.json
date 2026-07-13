@@ -1,0 +1,134 @@
+[
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.owid-land-animals-slaughtered.1",
+    "source_id": "owid-land-animals-slaughtered",
+    "parse_status": "blocked_license_unclear",
+    "affected_layer_ids": "factory-farmed-animals",
+    "affected_issue_ids": "issue.factory-farmed-animals",
+    "affected_country_count": "249",
+    "affected_measurement_stub_count": "249",
+    "block_reason": "OWID metadata cites third-party/original providers, but candidate registry does not record underlying provider license URI, redistribution terms, and storage permission",
+    "required_to_unblock": "Record underlying provider license URI, redistribution terms, storage permission, and required attribution; then repeat source/license review."
+  },
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.owid-land-animals-slaughtered.2",
+    "source_id": "owid-land-animals-slaughtered",
+    "parse_status": "blocked_license_unclear",
+    "affected_layer_ids": "factory-farmed-animals",
+    "affected_issue_ids": "issue.factory-farmed-animals",
+    "affected_country_count": "249",
+    "affected_measurement_stub_count": "249",
+    "block_reason": "OWID metadata cites third-party/original providers, but candidate registry does not record underlying provider license URI, redistribution terms, and storage permission",
+    "required_to_unblock": "Record underlying provider license URI, redistribution terms, storage permission, and required attribution; then repeat source/license review."
+  },
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.owid-farmed-fish-killed.1",
+    "source_id": "owid-farmed-fish-killed",
+    "parse_status": "blocked_license_unclear",
+    "affected_layer_ids": "farmed-fish",
+    "affected_issue_ids": "issue.farmed-fish",
+    "affected_country_count": "249",
+    "affected_measurement_stub_count": "249",
+    "block_reason": "OWID metadata cites third-party/original providers, but candidate registry does not record underlying provider license URI, redistribution terms, and storage permission",
+    "required_to_unblock": "Record underlying provider license URI, redistribution terms, storage permission, and required attribution; then repeat source/license review."
+  },
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.owid-farmed-fish-killed.2",
+    "source_id": "owid-farmed-fish-killed",
+    "parse_status": "blocked_license_unclear",
+    "affected_layer_ids": "farmed-fish",
+    "affected_issue_ids": "issue.farmed-fish",
+    "affected_country_count": "249",
+    "affected_measurement_stub_count": "249",
+    "block_reason": "OWID metadata cites third-party/original providers, but candidate registry does not record underlying provider license URI, redistribution terms, and storage permission",
+    "required_to_unblock": "Record underlying provider license URI, redistribution terms, storage permission, and required attribution; then repeat source/license review."
+  },
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.owid-wild-caught-fish.1",
+    "source_id": "owid-wild-caught-fish",
+    "parse_status": "blocked_license_unclear",
+    "affected_layer_ids": "wild-caught-fish",
+    "affected_issue_ids": "issue.wild-caught-fish",
+    "affected_country_count": "249",
+    "affected_measurement_stub_count": "249",
+    "block_reason": "OWID metadata cites third-party/original providers, but candidate registry does not record underlying provider license URI, redistribution terms, and storage permission",
+    "required_to_unblock": "Record underlying provider license URI, redistribution terms, storage permission, and required attribution; then repeat source/license review."
+  },
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.owid-wild-caught-fish.2",
+    "source_id": "owid-wild-caught-fish",
+    "parse_status": "blocked_license_unclear",
+    "affected_layer_ids": "wild-caught-fish",
+    "affected_issue_ids": "issue.wild-caught-fish",
+    "affected_country_count": "249",
+    "affected_measurement_stub_count": "249",
+    "block_reason": "OWID metadata cites third-party/original providers, but candidate registry does not record underlying provider license URI, redistribution terms, and storage permission",
+    "required_to_unblock": "Record underlying provider license URI, redistribution terms, storage permission, and required attribution; then repeat source/license review."
+  },
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.owid-farmed-crustaceans.1",
+    "source_id": "owid-farmed-crustaceans",
+    "parse_status": "blocked_license_unclear",
+    "affected_layer_ids": "farmed-crustaceans",
+    "affected_issue_ids": "issue.farmed-crustaceans",
+    "affected_country_count": "249",
+    "affected_measurement_stub_count": "249",
+    "block_reason": "OWID metadata cites third-party/original providers, but candidate registry does not record underlying provider license URI, redistribution terms, and storage permission",
+    "required_to_unblock": "Record underlying provider license URI, redistribution terms, storage permission, and required attribution; then repeat source/license review."
+  },
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.owid-farmed-crustaceans.2",
+    "source_id": "owid-farmed-crustaceans",
+    "parse_status": "blocked_license_unclear",
+    "affected_layer_ids": "farmed-crustaceans",
+    "affected_issue_ids": "issue.farmed-crustaceans",
+    "affected_country_count": "249",
+    "affected_measurement_stub_count": "249",
+    "block_reason": "OWID metadata cites third-party/original providers, but candidate registry does not record underlying provider license URI, redistribution terms, and storage permission",
+    "required_to_unblock": "Record underlying provider license URI, redistribution terms, storage permission, and required attribution; then repeat source/license review."
+  },
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.owid-insecticide-use-fao.1",
+    "source_id": "owid-insecticide-use-fao",
+    "parse_status": "blocked_license_unclear",
+    "affected_layer_ids": "insects-insecticide",
+    "affected_issue_ids": "issue.insect-welfare",
+    "affected_country_count": "249",
+    "affected_measurement_stub_count": "249",
+    "block_reason": "OWID metadata cites third-party/original providers, but candidate registry does not record underlying provider license URI, redistribution terms, and storage permission",
+    "required_to_unblock": "Record underlying provider license URI, redistribution terms, storage permission, and required attribution; then repeat source/license review."
+  },
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.owid-insecticide-use-fao.2",
+    "source_id": "owid-insecticide-use-fao",
+    "parse_status": "blocked_license_unclear",
+    "affected_layer_ids": "insects-insecticide",
+    "affected_issue_ids": "issue.insect-welfare",
+    "affected_country_count": "249",
+    "affected_measurement_stub_count": "249",
+    "block_reason": "OWID metadata cites third-party/original providers, but candidate registry does not record underlying provider license URI, redistribution terms, and storage permission",
+    "required_to_unblock": "Record underlying provider license URI, redistribution terms, storage permission, and required attribution; then repeat source/license review."
+  },
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.fishcount-farmed-fish.1",
+    "source_id": "fishcount-farmed-fish",
+    "parse_status": "blocked_unauthorized",
+    "affected_layer_ids": "farmed-fish",
+    "affected_issue_ids": "issue.farmed-fish",
+    "affected_country_count": "249",
+    "affected_measurement_stub_count": "249",
+    "block_reason": "source fetch returned 401 Unauthorized; do not bypass access controls",
+    "required_to_unblock": "Obtain authorized access or a license-compatible alternate source; do not bypass 401/access controls."
+  },
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.fishcount-farmed-decapods.1",
+    "source_id": "fishcount-farmed-decapods",
+    "parse_status": "blocked_unauthorized",
+    "affected_layer_ids": "farmed-crustaceans",
+    "affected_issue_ids": "issue.farmed-crustaceans",
+    "affected_country_count": "249",
+    "affected_measurement_stub_count": "249",
+    "block_reason": "source fetch returned 401 Unauthorized; do not bypass access controls",
+    "required_to_unblock": "Obtain authorized access or a license-compatible alternate source; do not bypass 401/access controls."
+  }
+]

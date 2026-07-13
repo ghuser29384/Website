@@ -1,0 +1,81 @@
+[
+  {
+    "source_id": "world-bank-wdi-api",
+    "label": "World Bank WDI API",
+    "urls": [
+      "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000",
+      "https://api.worldbank.org/v2/country/all/indicator/AG.LND.TOTL.K2?format=json&per_page=20000",
+      "https://api.worldbank.org/v2/country/all/indicator/AG.LND.AGRI.K2?format=json&per_page=20000"
+    ],
+    "license_id": "world-bank-terms-review-required",
+    "attribution": "World Bank World Development Indicators"
+  },
+  {
+    "source_id": "owid-land-animals-slaughtered",
+    "label": "OWID land animals slaughtered for meat",
+    "urls": [
+      "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.csv?csvType=full&useColumnShortNames=false",
+      "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.metadata.json?csvType=full&useColumnShortNames=false"
+    ],
+    "license_id": "owid-cc-by-with-third-party-terms-review",
+    "attribution": "Our World in Data; original providers as listed in metadata"
+  },
+  {
+    "source_id": "owid-farmed-fish-killed",
+    "label": "OWID farmed fish killed",
+    "urls": [
+      "https://ourworldindata.org/grapher/farmed-fish-killed.csv?csvType=full&useColumnShortNames=false",
+      "https://ourworldindata.org/grapher/farmed-fish-killed.metadata.json?csvType=full&useColumnShortNames=false"
+    ],
+    "license_id": "owid-cc-by-with-third-party-terms-review",
+    "attribution": "Our World in Data; original providers as listed in metadata"
+  },
+  {
+    "source_id": "owid-wild-caught-fish",
+    "label": "OWID wild-caught fish",
+    "urls": [
+      "https://ourworldindata.org/grapher/wild-caught-fish.csv?csvType=full&useColumnShortNames=false",
+      "https://ourworldindata.org/grapher/wild-caught-fish.metadata.json?csvType=full&useColumnShortNames=false"
+    ],
+    "license_id": "owid-cc-by-with-third-party-terms-review",
+    "attribution": "Our World in Data; original providers as listed in metadata"
+  },
+  {
+    "source_id": "owid-farmed-crustaceans",
+    "label": "OWID farmed crustaceans",
+    "urls": [
+      "https://ourworldindata.org/grapher/farmed-crustaceans.csv?csvType=full&useColumnShortNames=false",
+      "https://ourworldindata.org/grapher/farmed-crustaceans.metadata.json?csvType=full&useColumnShortNames=false"
+    ],
+    "license_id": "owid-cc-by-with-third-party-terms-review",
+    "attribution": "Our World in Data; original providers as listed in metadata"
+  },
+  {
+    "source_id": "owid-insecticide-use-fao",
+    "label": "OWID insecticide use, adapted from FAOSTAT",
+    "urls": [
+      "https://ourworldindata.org/grapher/insecticide-use.csv?v=1&csvType=full&useColumnShortNames=false",
+      "https://ourworldindata.org/grapher/insecticide-use.metadata.json?v=1&csvType=full&useColumnShortNames=false"
+    ],
+    "license_id": "owid-cc-by-with-fao-terms-review",
+    "attribution": "Food and Agriculture Organization of the United Nations (2025) with major processing by Our World in Data"
+  },
+  {
+    "source_id": "fishcount-farmed-fish",
+    "label": "Fishcount farmed fish slaughtered",
+    "urls": [
+      "https://fishcount.org.uk/fish-count-estimates-2/numbers-of-farmed-fish-slaughtered-each-year"
+    ],
+    "license_id": "fishcount-terms-review-required",
+    "attribution": "Fishcount"
+  },
+  {
+    "source_id": "fishcount-farmed-decapods",
+    "label": "Fishcount farmed decapod crustaceans",
+    "urls": [
+      "https://fishcount.org.uk/fish-count-estimates-2/numbers-of-farmed-decapod-crustaceans"
+    ],
+    "license_id": "fishcount-terms-review-required",
+    "attribution": "Fishcount"
+  }
+]

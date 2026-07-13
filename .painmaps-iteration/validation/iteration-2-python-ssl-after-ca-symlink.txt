@@ -1,0 +1,3 @@
+default_verify_paths: DefaultVerifyPaths(cafile='/opt/homebrew/etc/openssl@3/cert.pem', capath='/opt/homebrew/etc/openssl@3/certs', openssl_cafile_env='SSL_CERT_FILE', openssl_cafile='/opt/homebrew/etc/openssl@3/cert.pem', openssl_capath_env='SSL_CERT_DIR', openssl_capath='/opt/homebrew/etc/openssl@3/certs')
+DEFAULT_VERIFIED_OK https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=1 200 application/json;charset=utf-8 64
+DEFAULT_VERIFIED_ERROR https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.metadata.json?csvType=full&useColumnShortNames=false <HTTPError 403: 'Forbidden'>

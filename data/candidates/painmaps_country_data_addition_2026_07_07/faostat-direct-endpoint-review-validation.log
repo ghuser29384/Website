@@ -1,0 +1,5 @@
+$ python3 -m json.tool faostat-direct-endpoint-review.json > /tmp/faostat-direct-endpoint-review.pretty.json
+$ python3 - <<'PY'
+rows: 11
+recommended_status: {'metadata_review_required': 3, 'blocked_endpoint_not_found': 8}
+FAOSTAT direct endpoint review validation passed

@@ -1,0 +1,21 @@
+# Iteration 7 current blocker-state handoff validation
+
+generated_at: 2026-07-08T07:47:34Z
+repo: /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando
+candidate_dir: /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07
+handoff_report: /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/.painmaps-iteration/prompts/iteration-7-current-blocker-state-handoff.md
+handoff_bytes: 46473
+animal_review_rows: 12
+recommended_parse_status.blocked_provider_terms_unclear: 10
+recommended_parse_status.blocked_unauthorized: 2
+wdi_context_rows: 639
+wdi_coverage_rows: 249
+source_license_access_review_type: list
+source_license_access_review_count: 15
+required_files_missing: []
+alternate_source_browsing: not performed
+alternate_source_fetching: not performed
+owid_fishcount_numeric_parsing: not performed
+fishcount_retry_or_bypass: not performed
+country_promotion: not performed
+production_release_regeneration: not performed

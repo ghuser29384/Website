@@ -1,0 +1,7 @@
+diagnostic_rows: 42
+http_status: {'200': 42}
+observation_shape_status: {'no_candidate_observation_path_found': 42}
+candidate_observation_path: {}
+wrote dbnomics-observation-shape-diagnostics.csv
+wrote dbnomics-observation-shape-diagnostics.json
+wrote dbnomics-observation-shape-diagnostics.md

@@ -1,0 +1,11 @@
+wrote dbnomics-fao-endpoint-review.csv
+wrote dbnomics-fao-endpoint-review.json
+wrote dbnomics-fao-endpoint-review.md
+dbnomics-fao-provider-page 200 metadata_review_required text/html
+dbnomics-fao-qcl-page 200 metadata_review_required text/html
+dbnomics-fao-rp-page 200 metadata_review_required text/html
+dbnomics-api-docs 200 metadata_review_required text/html; charset=utf-8
+dbnomics-api-fao-qcl-dataset 200 metadata_review_required application/json
+dbnomics-api-fao-rp-dataset 200 metadata_review_required application/json
+dbnomics-api-fao-qcl-slaughter-sample 200 metadata_review_required application/json
+dbnomics-api-fao-rp-insecticides-sample 200 metadata_review_required application/json

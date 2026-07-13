@@ -1,0 +1,12 @@
+snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.1 WDI lastupdated=2026-07-01
+snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.1 parsed_rows=215
+snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.2 WDI lastupdated=2026-07-01
+snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.2 parsed_rows=215
+snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.3 WDI lastupdated=2026-07-01
+snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.3 parsed_rows=209
+parsed_rows: 639
+coverage_rows: 249
+blocked_rows: 12
+parsed indicators: {'SP.POP.TOTL': 215, 'AG.LND.TOTL.K2': 215, 'AG.LND.AGRI.K2': 209}
+coverage status: {'partial_context_only': 215, 'missing_canonical_country_profile_or_only_boundary_context': 34}
+WDI context-only parse completed

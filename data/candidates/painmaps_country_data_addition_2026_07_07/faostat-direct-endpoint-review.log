@@ -1,0 +1,14 @@
+wrote faostat-direct-endpoint-review.csv
+wrote faostat-direct-endpoint-review.json
+wrote faostat-direct-endpoint-review.md
+fao-terms 200 metadata_review_required text/html; charset=utf-8
+faostat-qcl-page 206 metadata_review_required text/html
+faostat-rp-page 206 metadata_review_required text/html
+faostat-api-root 521 blocked_endpoint_not_found text/plain; charset=UTF-8
+faostat-domain-codes 521 blocked_endpoint_not_found text/plain; charset=UTF-8
+faostat-element-codes 521 blocked_endpoint_not_found text/plain; charset=UTF-8
+faostat-item-codes 521 blocked_endpoint_not_found text/plain; charset=UTF-8
+faostat-qcl-bulk-normalized 403 blocked_endpoint_not_found text/html
+faostat-qcl-bulk-wide 403 blocked_endpoint_not_found text/html
+faostat-pesticides-bulk-normalized 403 blocked_endpoint_not_found text/html
+faostat-pesticides-bulk-wide 403 blocked_endpoint_not_found text/html

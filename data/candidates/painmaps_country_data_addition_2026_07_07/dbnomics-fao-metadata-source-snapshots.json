@@ -1,0 +1,65 @@
+[
+  {
+    "source_snapshot_id": "snapshot.release-candidate-2026-07-07.country-context.v0.dbnomics-fao-qcl-dataset-metadata.1",
+    "source_id": "dbnomics-fao-qcl-dataset-metadata",
+    "source_family": "dbnomics-fao-qcl",
+    "upstream_url": "https://api.db.nomics.world/v22/datasets/FAO/QCL",
+    "final_url": "https://api.db.nomics.world/v22/datasets/FAO/QCL",
+    "retrieval_started_at": "2026-07-08T13:32:58.135631Z",
+    "retrieval_timestamp": "2026-07-08T13:33:00.513441Z",
+    "http_status": 200,
+    "content_type": "application/json",
+    "content_length_header": "15175",
+    "media_type": "application/json",
+    "checksum_algorithm": "sha256",
+    "checksum": "ea061d6fc17158a1be7cd28cd562617fa82a39927bae8bd3e14b7a94d4fa04cc",
+    "byte_size": 15175,
+    "local_path": "fetched-source-snapshots/snapshot.release-candidate-2026-07-07.country-context.v0.dbnomics-fao-qcl-dataset-metadata.1.json",
+    "provider": "Food and Agriculture Organization of the United Nations",
+    "distributor": "DBnomics",
+    "provider_terms_url": "https://www.fao.org/contact-us/terms/db-terms-of-use/en/",
+    "provider_license_name": "CC BY 4.0 unless FAO dataset metadata/webpage specifies otherwise",
+    "provider_license_uri": "https://creativecommons.org/licenses/by/4.0/",
+    "distributor_provider_page": "https://db.nomics.world/FAO",
+    "distributor_api_docs": "https://api.db.nomics.world/v22/apidocs",
+    "required_attribution": "At minimum cite FAO as provider and DBnomics as distributor if this mirror is used; preserve FAO attribution and no-endorsement language.",
+    "no_endorsement_caveat": "Do not imply FAO or DBnomics endorsement.",
+    "third_party_exception_possible": true,
+    "storage_status": "stored_local_for_review_not_commit_approved",
+    "parse_status": "metadata_review_required",
+    "allowed_use_scope": "metadata/distribution review only; no numeric parsing; no country promotion",
+    "blocked_layer_ids_it_could_unblock": [
+      "factory-farmed-animals"
+    ],
+    "intended_issue_ids": [
+      "issue.factory-farmed-animals"
+    ],
+    "dataset_code": "QCL",
+    "dataset_name": "Production: Crops and livestock products",
+    "provider_code": "FAO",
+    "provider_name": "Food and Agriculture Organization of the United Nations",
+    "updated_at": "2023-12-18T00:00:00",
+    "indexed_at": "2024-05-09T04:59:03.224Z",
+    "nb_series": 79606,
+    "dimensions_codes_order": [
+      "element",
+      "area",
+      "item"
+    ],
+    "dimensions_labels": {
+      "area": "Area",
+      "element": "Element",
+      "item": "Item"
+    },
+    "has_element_5320_producing_animals_slaughtered": true,
+    "element_5320_label": "Producing Animals/Slaughtered",
+    "area_count": 245,
+    "item_count": 301,
+    "review_notes": [
+      "Snapshot is metadata/distribution evidence only.",
+      "Do not parse observations until source, license, attribution, and series-query design are reviewed.",
+      "DBnomics is a distributor/mirror; FAO remains underlying provider.",
+      "FAO terms and any DBnomics distribution terms must be preserved in source registry before data use."
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+SSL_CERT_FILE: /opt/homebrew/lib/python3.14/site-packages/certifi/cacert.pem
+default_verify_paths: DefaultVerifyPaths(cafile='/opt/homebrew/lib/python3.14/site-packages/certifi/cacert.pem', capath='/opt/homebrew/etc/openssl@3/certs', openssl_cafile_env='SSL_CERT_FILE', openssl_cafile='/opt/homebrew/etc/openssl@3/cert.pem', openssl_capath_env='SSL_CERT_DIR', openssl_capath='/opt/homebrew/etc/openssl@3/certs')
+VERIFIED_OK https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=1 200 application/json;charset=utf-8 64
+VERIFIED_ERROR https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.metadata.json?csvType=full&useColumnShortNames=false <HTTPError 403: 'Forbidden'>
+VERIFIED_ERROR https://fishcount.org.uk/fish-count-estimates-2/numbers-of-farmed-fish-slaughtered-each-year <HTTPError 401: 'Unauthorized'>

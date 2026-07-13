@@ -1,0 +1,27 @@
+[
+  {
+    "source_id": "world-bank-wdi-api",
+    "label": "World Bank World Development Indicators API",
+    "publisher": "World Bank",
+    "provider_detail": [
+      "World Bank Data / FAO electronic files and website",
+      "World Bank Data / FAOSTAT, Food and Agriculture Organization of the United Nations",
+      "World Bank Data / UN Population Division, NSOs, Eurostat, UN Statistics Division"
+    ],
+    "upstream_api_urls": [
+      "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000",
+      "https://api.worldbank.org/v2/country/all/indicator/AG.LND.TOTL.K2?format=json&per_page=20000",
+      "https://api.worldbank.org/v2/country/all/indicator/AG.LND.AGRI.K2?format=json&per_page=20000"
+    ],
+    "terms_url": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+    "summary_terms_url": "https://data.worldbank.org/summary-terms-of-use",
+    "license_id": "cc-by-4.0-world-bank-wdi",
+    "license_uri": "https://creativecommons.org/licenses/by/4.0/",
+    "required_attribution": "The World Bank: World Development Indicators; include data-provider attribution as indicated in indicator metadata; do not imply World Bank endorsement.",
+    "no_endorsement_caveat": "Do not claim or imply that The World Bank endorses Painmaps or this use of WDI data.",
+    "redistribution_storage_note": "Reviewed WDI indicator evidence records CC BY 4.0 and permits storing these reviewed raw snapshots and publishing derived context-only values with attribution and no-endorsement caveat.",
+    "review_date": "2026-07-07",
+    "next_review_due": "2027-07-07",
+    "allowed_use_scope": "Context-only country denominators and land-context layers; not pain/suffering measurements, rankings, or country promotion."
+  }
+]

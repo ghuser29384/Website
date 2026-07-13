@@ -1,0 +1,91 @@
+[
+  {
+    "layer_id": "human-context-denominators",
+    "issue_id": "issue.human-context",
+    "metric_id": "population_land_agriculture_context",
+    "evidence_kind": "context",
+    "unit_label": "people / sq km / hectares",
+    "ranking_mode": "none",
+    "comparability_group_id": "human-context-denominators",
+    "source_groups": [
+      "wdi_population_land_agriculture"
+    ]
+  },
+  {
+    "layer_id": "factory-farmed-animals",
+    "issue_id": "issue.factory-farmed-animals",
+    "metric_id": "land_animals_slaughtered_proxy",
+    "evidence_kind": "proxy",
+    "unit_label": "animals/year or proxy count",
+    "ranking_mode": "total_burden_proxy",
+    "comparability_group_id": "animal-count-proxy-total",
+    "source_groups": [
+      "owid_land_animals_slaughtered"
+    ]
+  },
+  {
+    "layer_id": "farmed-fish",
+    "issue_id": "issue.farmed-fish",
+    "metric_id": "farmed_fish_killed_proxy",
+    "evidence_kind": "proxy",
+    "unit_label": "fish/year estimate or proxy count",
+    "ranking_mode": "total_burden_proxy",
+    "comparability_group_id": "aquatic-animal-count-proxy-total",
+    "source_groups": [
+      "owid_farmed_fish",
+      "fishcount_farmed_fish_terms_review"
+    ]
+  },
+  {
+    "layer_id": "wild-caught-fish",
+    "issue_id": "issue.wild-caught-fish",
+    "metric_id": "wild_caught_fish_proxy",
+    "evidence_kind": "proxy",
+    "unit_label": "fish/year estimate or proxy count",
+    "ranking_mode": "total_burden_proxy",
+    "comparability_group_id": "aquatic-animal-count-proxy-total",
+    "source_groups": [
+      "owid_wild_caught_fish",
+      "fishcount_wild_fish_terms_review"
+    ]
+  },
+  {
+    "layer_id": "farmed-crustaceans",
+    "issue_id": "issue.farmed-crustaceans",
+    "metric_id": "farmed_crustaceans_proxy",
+    "evidence_kind": "proxy",
+    "unit_label": "crustaceans/year estimate or proxy count",
+    "ranking_mode": "total_burden_proxy",
+    "comparability_group_id": "crustacean-count-proxy-total",
+    "source_groups": [
+      "owid_farmed_crustaceans",
+      "fishcount_crustaceans_terms_review"
+    ]
+  },
+  {
+    "layer_id": "insects-insecticide",
+    "issue_id": "issue.insect-welfare",
+    "metric_id": "insecticide_use_proxy",
+    "evidence_kind": "proxy",
+    "unit_label": "tonnes insecticide/year",
+    "ranking_mode": "total_burden_proxy",
+    "comparability_group_id": "insecticide-use-proxy",
+    "source_groups": [
+      "owid_insecticide_use_fao"
+    ]
+  },
+  {
+    "layer_id": "wild-animal-land-proxy",
+    "issue_id": "issue.wild-animals",
+    "metric_id": "land_area_wild_animal_proxy",
+    "evidence_kind": "priority-overlay",
+    "unit_label": "sq km / agricultural land share proxy",
+    "ranking_mode": "priority_overlay",
+    "comparability_group_id": "land-area-wild-animal-context",
+    "source_groups": [
+      "wdi_population_land_agriculture",
+      "wai_assumption_source",
+      "rethink_priorities_welfare_range_assumptions"
+    ]
+  }
+]

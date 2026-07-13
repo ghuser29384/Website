@@ -1,0 +1,22 @@
+[
+  {
+    "license_id": "world-bank-terms-review-required",
+    "label": "World Bank terms review required before redistribution",
+    "status": "blocked_pending_review"
+  },
+  {
+    "license_id": "owid-cc-by-with-third-party-terms-review",
+    "label": "OWID CC BY where OWID-authored; third-party terms must be checked per grapher metadata",
+    "status": "conditional"
+  },
+  {
+    "license_id": "owid-cc-by-with-fao-terms-review",
+    "label": "OWID/FAO derived data; FAOSTAT terms must be verified before redistribution",
+    "status": "conditional"
+  },
+  {
+    "license_id": "fishcount-terms-review-required",
+    "label": "Fishcount terms require review before republication",
+    "status": "blocked_pending_review"
+  }
+]

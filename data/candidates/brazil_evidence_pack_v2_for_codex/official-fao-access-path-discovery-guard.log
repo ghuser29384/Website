@@ -1,0 +1,6 @@
+rows: 207
+recommended_status: {'official_page_only': 5, 'manual_review_required': 118, 'official_metadata_endpoint_candidate': 76, 'official_download_endpoint_candidate_unfetched': 6, 'blocked_unreachable': 2}
+endpoint_type: {'fetched_seed_resource': 9, 'reference': 118, 'page_or_app_reference': 62, 'javascript_reference': 2, 'download_candidate_unfetched': 6, 'api_or_metadata_candidate': 10}
+supports_qcl: {'false': 206, 'true': 1}
+supports_rp: {'true': 24, 'false': 183}
+Official FAO access-path discovery guard passed

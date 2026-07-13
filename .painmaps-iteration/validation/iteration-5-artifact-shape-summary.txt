@@ -1,0 +1,343 @@
+# Artifact shape summary
+repo: /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando
+candidate_dir: /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/parsed-wdi-country-context.csv
+rows: 639
+columns: ['candidate_row_id', 'release_candidate_id', 'release_id', 'place_id', 'iso3', 'country_name', 'layer_id', 'issue_id', 'metric_id', 'indicator_id', 'indicator_name', 'row_role', 'evidence_kind', 'value_type', 'raw_value', 'normalized_value', 'display_value', 'unit_label', 'ranking_mode', 'rank_value', 'reference_period', 'reference_period_semantics', 'source_vintage', 'method_id', 'method_version', 'transform_version', 'source_ids', 'source_snapshot_ids', 'license_id', 'attribution', 'uncertainty_class', 'caveat', 'comparability_group_id', 'evidence_compatibility_rule', 'coverage_status', 'coverage_reason', 'missing_inputs', 'promotion_decision', 'allowed_use_scope', 'source_file_checksum', 'source_file_checksum_algorithm', 'source_file_byte_size', 'retrieval_timestamp']
+sample: {'candidate_row_id': 'wdi-context-abw-sp-pop-totl', 'release_candidate_id': 'release-candidate-2026-07-07.country-context.v0', 'release_id': 'release-candidate-2026-07-07.country-context.v0', 'place_id': 'ABW', 'iso3': 'ABW', 'country_name': 'Aruba', 'layer_id': 'country-context-population', 'issue_id': 'issue.human-context', 'metric_id': 'population_total', 'indicator_id': 'SP.POP.TOTL', 'indicator_name': 'Population, total', 'row_role': 'country_context_denominator', 'evidence_kind': 'direct_context', 'value_type': 'count', 'raw_value': '108785', 'normalized_value': '', 'display_value': '108,785 people', 'unit_label': 'people', 'ranking_mode': 'none', 'rank_value': '', 'reference_period': '2025', 'reference_period_semantics': 'latest_non_null_wdi_year', 'source_vintage': '2025', 'method_id': 'method.wdi-country-context-latest-non-null', 'method_version': 'method.wdi-country-context-latest-non-null.v0', 'transform_version': 'transform.wdi-country-context-latest-non-null.v0', 'source_ids': '["world-bank-wdi-api"]', 'source_snapshot_ids': '["snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.1"]', 'license_id': 'cc-by-4.0-world-bank-wdi', 'attribution': 'The World Bank: World Development Indicators: data source as indicated in indicator metadata; include data-provider attribution; do not imply World Bank endorsement.', 'uncertainty_class': 'context_only', 'caveat': 'Context denominator from World Bank WDI; not a pain/suffering measurement and not sufficient for country profile promotion.', 'comparability_group_id': 'context-denominator-population', 'evidence_compatibility_rule': 'comparable only as WDI country context denominator, not as pain/suffering estimate', 'coverage_status': 'partial_context_only', 'coverage_reason': 'WDI context denominator parsed from latest non-null value; not a canonical pain/suffering profile', 'missing_inputs': '["owid-land-animals-slaughtered","owid-farmed-fish-killed","owid-wild-caught-fish","owid-farmed-crustaceans","owid-insecticide-use-fao","fishcount-farmed-fish","fishcount-farmed-decapods"]', 'promotion_decision': 'not_promoted_context_only', 'allowed_use_scope': 'Context-only parsing for country denominators and land-context layers; not pain/suffering measurements; no country promotion without later normalization and promotion gates.', 'source_file_checksum': 'f958560b78db644282c7147853e0d1a7eff6e324625db44dbd719c0571fceaf4', 'source_file_checksum_algorithm': 'sha256', 'source_file_byte_size': '3512287', 'retrieval_timestamp': '2026-07-07T10:23:47Z'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/wdi-country-context-coverage.csv
+rows: 249
+columns: ['iso3', 'country_name', 'has_population_total', 'population_reference_period', 'has_land_area', 'land_area_reference_period', 'has_agricultural_land', 'agricultural_land_reference_period', 'wdi_context_complete', 'missing_wdi_context_inputs', 'context_row_count', 'coverage_status_after_wdi_parse', 'promotion_decision_after_wdi_parse']
+sample: {'iso3': 'ABW', 'country_name': 'Aruba', 'has_population_total': 'true', 'population_reference_period': '2025', 'has_land_area': 'true', 'land_area_reference_period': '2023', 'has_agricultural_land': 'true', 'agricultural_land_reference_period': '2023', 'wdi_context_complete': 'true', 'missing_wdi_context_inputs': '[]', 'context_row_count': '3', 'coverage_status_after_wdi_parse': 'partial_context_only', 'promotion_decision_after_wdi_parse': 'not_promoted_context_only'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/blocked-source-decisions.csv
+rows: 12
+columns: ['source_snapshot_id', 'source_id', 'parse_status', 'affected_layer_ids', 'affected_issue_ids', 'affected_country_count', 'affected_measurement_stub_count', 'block_reason', 'required_to_unblock']
+sample: {'source_snapshot_id': 'snapshot.release-candidate-2026-07-07.country-context.v0.owid-land-animals-slaughtered.1', 'source_id': 'owid-land-animals-slaughtered', 'parse_status': 'blocked_license_unclear', 'affected_layer_ids': 'factory-farmed-animals', 'affected_issue_ids': 'issue.factory-farmed-animals', 'affected_country_count': '249', 'affected_measurement_stub_count': '249', 'block_reason': 'OWID metadata cites third-party/original providers, but candidate registry does not record underlying provider license URI, redistribution terms, and storage permission', 'required_to_unblock': 'Record underlying provider license URI, redistribution terms, storage permission, and required attribution; then repeat source/license review.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/source-registry-additions.wdi-reviewed.json
+type: list
+count: 1
+sample: {'source_id': 'world-bank-wdi-api', 'label': 'World Bank World Development Indicators API', 'publisher': 'World Bank', 'provider_detail': ['World Bank Data / FAO electronic files and website', 'World Bank Data / FAOSTAT, Food and Agriculture Organization of the United Nations', 'World Bank Data / UN Population Division, NSOs, Eurostat, UN Statistics Division'], 'upstream_api_urls': ['https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000', 'https://api.worldbank.org/v2/country/all/indicator/AG.LND.TOTL.K2?format=json&per_page=20000', 'https://api.worldbank.org/v2/country/all/indicator/AG.LND.AGRI.K2?format=json&per_page=20000'], 'terms_url': 'https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets', 'summary_terms_url': 'https://data.worldbank.org/summary-terms-of-use', 'license_id': 'cc-by-4.0-world-bank-wdi', 'license_uri': 'https://creativecommons.org/licenses/by/4.0/', 'required_attribution': 'The World Bank: World Development Indicators; include data-provider attribution as indicated in indicator metadata; do not imply World Bank endorsement.', 'no_endorsement_caveat': 'Do not claim or imply that The World Bank endorses Painmaps or this use of WDI data.', 'redistribution_storage_note': 'Reviewed WDI indicator evidence records CC BY 4.0 and permits storing these reviewed raw snapshots and publishing derived context-only values with attribution and no-endorsement caveat.', 'review_date': '2026-07-07', 'next_review_due': '2027-07-07', 'allowed_use_scope': 'Context-only country denominators and land-context layers; not pain/suffering measurements, rankings, or country promotion.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/license-registry-additions.wdi-reviewed.json
+type: list
+count: 1
+sample: {'license_id': 'cc-by-4.0-world-bank-wdi', 'label': 'World Bank WDI CC BY 4.0 with World Bank dataset terms', 'status': 'reviewed_context_only', 'license_uri': 'https://creativecommons.org/licenses/by/4.0/', 'terms_url': 'https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets', 'summary_terms_url': 'https://data.worldbank.org/summary-terms-of-use', 'required_attribution': 'The World Bank: World Development Indicators; include data-provider attribution; indicate changes where applicable.', 'no_endorsement_caveat': 'Do not claim or imply World Bank endorsement and do not use World Bank name, logos, or trademarks to imply endorsement.', 'redistribution_storage_note': 'Context-only staging rows may be stored and derived from the three reviewed WDI snapshots; production release still needs registry integration review.', 'review_evidence': ['World Bank Data indicator page for AG.LND.AGRI.K2 lists FAO as source and License: CC BY-4.0; World Bank summary terms require attribution to The World Bank and data providers; World Bank legal terms prohibit implying endorsement.', 'World Bank Data indicator page for AG.LND.TOTL.K2 lists FAOSTAT/FAO as source and License: CC BY-4.0; World Bank summary terms require attribution to The World Bank and data providers; World Bank legal terms prohibit implying endorsement.', 'World Bank Data indicator page for SP.POP.TOTL lists License: CC BY-4.0 and source/provider metadata; World Bank summary terms require attribution to The World Bank and data providers; World Bank legal terms prohibit implying endorsement.'], 'review_date': '2026-07-07', 'next_review_due': '2027-07-07'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/schemas/place-measurements.schema.json
+size: 2966
+json_type: dict
+keys: ['$schema', '$id', 'title', 'type', 'required', 'properties']
+list_key: required count: 2 sample: build
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/fixtures/place-measurements.fixture.json
+size: 3495
+json_type: dict
+keys: ['build', 'measurements']
+dict_key: build keys: ['release_id', 'schema_version', 'generated_at', 'mutable_latest_overlay', 'note']
+list_key: measurements count: 2 sample: {'measurement_id': 'preview.fixture.1:WLD:fixture-human-burden', 'release_id': 'preview.fixture.1', 'place_id': 'WLD', 'place_name': 'World', 'parent_place_id': None, 'iso3': 'WLD', 'geometry_level': 'world', 'layer_id': 'fixture-human-burden', 'layer_name': 'Fixture human burden', 'evidence_kind': 'proxy', 'value_type': 'normalized_proxy_score', 'raw_value': 0.5, 'normalized_value': 0.5, 'display_value': '0.50 fixture proxy', 'unit_label': '0-1 normalized proxy score', 'ranking_mode': 'higher_proxy_score_more_attention', 'rank_value': 0.5, 'confidence_low': 0.4, 'confidence_high': 0.6, 'uncertainty_class': 'low', 'source_ids': ['fixture-source'], 'provenance_id': 'fixture-preview', 'source_vintage': 'preview fixture', 'method_note': 'Synthetic fixture row used to test local preview-release flows.', 'license_id': 'painmap-mit', 'data_license_uri': 'https://opensource.org/license/mit/', 'attribution': 'PainMap local fixture.', 'download_url': 'https://preview.painmap.local/data/place-measurements.json', 'extraction_timestamp': '2026-06-04T00:00:00Z', 'transform_version': 'painmap-preview-fixture.1', 'reviewer_status': 'fixture-reviewed', 'source_file_checksum': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'source_file_checksum_algorithm': 'sha256', 'source_file_checksum_basis': 'Static synthetic fixture checksum.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/place-measurements.json
+size: 20428
+json_type: dict
+keys: ['build', 'measurements']
+dict_key: build keys: ['id', 'release_id', 'schema_version', 'generated_at', 'release_path', 'mutable_latest_overlay', 'ranking_mode', 'note', 'extraction_timestamp', 'transform_version', 'reviewer_status']
+list_key: measurements count: 8 sample: {'measurement_id': '2026-05-31.atlas.2:WLD:factory-farmed-animals', 'release_id': '2026-05-31.atlas.2', 'place_id': 'WLD', 'place_name': 'World', 'parent_place_id': None, 'iso3': 'WLD', 'geometry_level': 'world', 'layer_id': 'factory-farmed-animals', 'layer_name': 'Factory-farmed animals', 'evidence_kind': 'proxy', 'value_type': 'normalized_proxy_score', 'raw_value': 1, 'normalized_value': 1, 'display_value': '1.00 global reference proxy', 'unit_label': '0-1 normalized proxy score', 'ranking_mode': 'higher_proxy_score_more_attention', 'rank_value': 1, 'confidence_low': 0.78, 'confidence_high': 1, 'uncertainty_class': 'low', 'source_ids': ['owid-livestock', 'fishcount-aquaculture', 'painmap-welfare-assumptions'], 'provenance_id': 'place-measurements', 'source_vintage': '2026-05-31 release; runtime OWID/Fishcount overlay optional', 'method_note': 'Global reference proxy for slaughter, aquaculture, and standing-population counts weighted by stated welfare-range assumptions.', 'license_id': 'owid-cc-by', 'data_license_uri': 'https://creativecommons.org/licenses/by/4.0/', 'attribution': 'Uses public Our World in Data/Fishcount-style source rows and PainMap stated welfare assumptions.', 'download_url': 'https://painmap.org/data/place-measurements.json', 'extraction_timestamp': '2026-05-31T00:00:00Z', 'transform_version': 'painmap-static-artifacts.measurement-lineage.2026-06-04.1', 'reviewer_status': 'release-reviewed', 'source_file_checksum': 'f9c76b9d9e5e3be7c74dd4d12765536e53393d9f5f06cc1b14e19b8bb48c24ca', 'source_file_checksum_algorithm': 'sha256', 'source_file_checksum_basis': 'Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.', 'source_snapshot_ids': ['source-snapshot-2026-05-31.atlas.2-fishcount-aquaculture', 'source-snapshot-2026-05-31.atlas.2-owid-livestock', 'source-snapshot-2026-05-31.atlas.2-painmap-welfare-assumptions'], 'method_id': 'method.factory-farmed-animals', 'method_version': 'painmap-static-artifacts.measurement-lineage.2026-06-04.1', 'method_transform_version': 'painmap-static-artifacts.measurement-lineage.2026-06-04.1', 'comparability_group_id': 'factory-farmed-animals', 'reference_period': 'release_snapshot'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/tmp/preview-release/data/place-measurements.json
+size: 3495
+json_type: dict
+keys: ['build', 'measurements']
+dict_key: build keys: ['release_id', 'schema_version', 'generated_at', 'mutable_latest_overlay', 'note']
+list_key: measurements count: 2 sample: {'measurement_id': 'preview.fixture.1:WLD:fixture-human-burden', 'release_id': 'preview.fixture.1', 'place_id': 'WLD', 'place_name': 'World', 'parent_place_id': None, 'iso3': 'WLD', 'geometry_level': 'world', 'layer_id': 'fixture-human-burden', 'layer_name': 'Fixture human burden', 'evidence_kind': 'proxy', 'value_type': 'normalized_proxy_score', 'raw_value': 0.5, 'normalized_value': 0.5, 'display_value': '0.50 fixture proxy', 'unit_label': '0-1 normalized proxy score', 'ranking_mode': 'higher_proxy_score_more_attention', 'rank_value': 0.5, 'confidence_low': 0.4, 'confidence_high': 0.6, 'uncertainty_class': 'low', 'source_ids': ['fixture-source'], 'provenance_id': 'fixture-preview', 'source_vintage': 'preview fixture', 'method_note': 'Synthetic fixture row used to test local preview-release flows.', 'license_id': 'painmap-mit', 'data_license_uri': 'https://opensource.org/license/mit/', 'attribution': 'PainMap local fixture.', 'download_url': 'https://preview.painmap.local/data/place-measurements.json', 'extraction_timestamp': '2026-06-04T00:00:00Z', 'transform_version': 'painmap-preview-fixture.1', 'reviewer_status': 'fixture-reviewed', 'source_file_checksum': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'source_file_checksum_algorithm': 'sha256', 'source_file_checksum_basis': 'Static synthetic fixture checksum.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/proposed-country-measurements.json
+size: 2961715
+json_type: list
+count: 1743
+sample_keys: ['release_id', 'place_id', 'iso3', 'country_name', 'layer_id', 'issue_id', 'metric_id', 'evidence_kind', 'value_type', 'raw_value', 'normalized_value', 'display_value', 'unit_label', 'ranking_mode', 'rank_value', 'reference_period', 'reference_period_semantics', 'source_vintage', 'method_id', 'method_version', 'transform_version', 'source_ids', 'source_snapshot_ids', 'license_id', 'attribution', 'uncertainty_class', 'caveat', 'comparability_group_id', 'evidence_compatibility_rule', 'coverage_status', 'coverage_reason', 'missing_inputs', 'promotion_decision']
+sample: {'release_id': 'release-candidate-2026-07-07.country-context.v0', 'place_id': 'country:ABW', 'iso3': 'ABW', 'country_name': 'Aruba', 'layer_id': 'human-context-denominators', 'issue_id': 'issue.human-context', 'metric_id': 'population_land_agriculture_context', 'evidence_kind': 'context', 'value_type': 'numeric_after_source_snapshot_fetch', 'raw_value': '', 'normalized_value': '', 'display_value': '', 'unit_label': 'people / sq km / hectares', 'ranking_mode': 'none', 'rank_value': '', 'reference_period': '', 'reference_period_semantics': 'must match source metadata before publication', 'source_vintage': '', 'method_id': 'method.population_land_agriculture_context', 'method_version': 'v0-pending-implementation', 'transform_version': 'transform.pending-source-fetch.v0', 'source_ids': '', 'source_snapshot_ids': '', 'license_id': '', 'attribution': '', 'uncertainty_class': 'not_assessed', 'caveat': 'Release-candidate stub only. Do not publish as a value until source snapshots, licenses, reference periods, method transform, comparability, and QA pass.', 'comparability_group_id': 'human-context-denominators', 'evidence_compatibility_rule': 'compare only with same layer, unit, evidence kind, ranking mode, source vintage, reference period, and transform version', 'coverage_status': 'not_promoted', 'coverage_reason': 'no verified raw value in this package', 'missing_inputs': 'source snapshot; checksum; license verification; source vintage; reference period; QA; method review', 'promotion_decision': 'blocked_pending_source_snapshot_and_QA'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/country-data-expansion/proposed-country-measurements.json
+size: 2933484
+json_type: dict
+keys: ['generated_at', 'release_candidate_id', 'warning', 'rows']
+list_key: rows count: 1743 sample: {'release_id': 'release-candidate-2026-07-country-context-v0', 'place_id': 'country:ABW', 'iso3': 'ABW', 'country_name': 'Aruba', 'layer_id': 'human-context-denominators', 'issue_id': 'issue.human-context', 'metric_id': 'population_land_context', 'evidence_kind': 'context', 'value_type': 'numeric_or_display_after_fetch', 'raw_value': '', 'normalized_value': '', 'display_value': '', 'unit_label': 'people / sq km / hectares depending metric', 'ranking_mode': 'none', 'rank_value': '', 'reference_period': '', 'reference_period_semantics': 'must match source metadata before publication', 'source_vintage': '', 'method_id': 'method.population_land_context', 'method_version': 'v0-pending-implementation', 'transform_version': 'transform.pending-source-fetch.v0', 'source_ids': '', 'source_snapshot_ids': '', 'license_id': '', 'attribution': '', 'uncertainty_class': 'not_assessed', 'caveat': 'Release-candidate stub only. Do not publish as a value until source snapshots, licenses, reference periods, and method QA pass.', 'comparability_group_id': 'human-context-denominators', 'evidence_compatibility_rule': 'display-only denominators, not an animal-pain ranking', 'coverage_status': 'not_promoted', 'coverage_reason': 'candidate measurement stub has no verified raw value', 'missing_inputs': 'source snapshot; license verification; source vintage; reference period; QA; method review', 'promotion_decision': 'blocked_pending_source_snapshot_and_QA'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/schemas/proposed-country-measurements.schema.json
+size: 358
+json_type: dict
+keys: ['type', 'items']
+dict_key: items keys: ['type', 'required']
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/v1/places/BRA/measurements.json
+size: 5894
+json_type: dict
+keys: ['release_id', 'place_id', 'measurements']
+list_key: measurements count: 3 sample: {'measurement_id': '2026-05-31.atlas.2:BRA:factory-farmed-animals', 'release_id': '2026-05-31.atlas.2', 'place_id': 'BRA', 'place_name': 'Brazil', 'parent_place_id': 'WLD', 'iso3': 'BRA', 'geometry_level': 'country', 'layer_id': 'factory-farmed-animals', 'layer_name': 'Factory-farmed animals', 'evidence_kind': 'proxy', 'value_type': 'normalized_proxy_score', 'raw_value': 0.58, 'normalized_value': 0.58, 'display_value': '0.58 normalized burden proxy', 'unit_label': '0-1 normalized proxy score', 'ranking_mode': 'higher_proxy_score_more_attention', 'rank_value': 0.58, 'confidence_low': 0.44, 'confidence_high': 0.72, 'uncertainty_class': 'low', 'source_ids': ['owid-livestock', 'fishcount-aquaculture', 'painmap-welfare-assumptions'], 'provenance_id': 'place-measurements', 'source_vintage': '2026-05-31 release; runtime OWID/Fishcount overlay optional', 'method_note': 'Country production counts are weighted by visible sentience and welfare-range assumptions where available.', 'license_id': 'owid-cc-by', 'data_license_uri': 'https://creativecommons.org/licenses/by/4.0/', 'attribution': 'Uses public Our World in Data/Fishcount-style source rows and PainMap stated welfare assumptions.', 'download_url': 'https://painmap.org/data/place-measurements.json', 'extraction_timestamp': '2026-05-31T00:00:00Z', 'transform_version': 'painmap-static-artifacts.measurement-lineage.2026-06-04.1', 'reviewer_status': 'release-reviewed', 'source_file_checksum': 'b0b61f5510f8f0f3084383bc9647d3f92c9bcddb6a8f3efa92ec754dfb3ad0bc', 'source_file_checksum_algorithm': 'sha256', 'source_file_checksum_basis': 'Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/v1/places/IND/measurements.json
+size: 5891
+json_type: dict
+keys: ['release_id', 'place_id', 'measurements']
+list_key: measurements count: 3 sample: {'measurement_id': '2026-05-31.atlas.2:IND:factory-farmed-animals', 'release_id': '2026-05-31.atlas.2', 'place_id': 'IND', 'place_name': 'India', 'parent_place_id': 'WLD', 'iso3': 'IND', 'geometry_level': 'country', 'layer_id': 'factory-farmed-animals', 'layer_name': 'Factory-farmed animals', 'evidence_kind': 'proxy', 'value_type': 'normalized_proxy_score', 'raw_value': 0.71, 'normalized_value': 0.71, 'display_value': '0.71 normalized burden proxy', 'unit_label': '0-1 normalized proxy score', 'ranking_mode': 'higher_proxy_score_more_attention', 'rank_value': 0.71, 'confidence_low': 0.54, 'confidence_high': 0.86, 'uncertainty_class': 'low', 'source_ids': ['owid-livestock', 'fishcount-aquaculture', 'painmap-welfare-assumptions'], 'provenance_id': 'place-measurements', 'source_vintage': '2026-05-31 release; runtime OWID/Fishcount overlay optional', 'method_note': 'Country production counts are weighted by visible sentience and welfare-range assumptions where available.', 'license_id': 'owid-cc-by', 'data_license_uri': 'https://creativecommons.org/licenses/by/4.0/', 'attribution': 'Uses public Our World in Data/Fishcount-style source rows and PainMap stated welfare assumptions.', 'download_url': 'https://painmap.org/data/place-measurements.json', 'extraction_timestamp': '2026-05-31T00:00:00Z', 'transform_version': 'painmap-static-artifacts.measurement-lineage.2026-06-04.1', 'reviewer_status': 'release-reviewed', 'source_file_checksum': '30343eabc2f577604c8475ee95141f4fc14a28e6f42e7da72c50bf8b4a44a94f', 'source_file_checksum_algorithm': 'sha256', 'source_file_checksum_basis': 'Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/v1/places/WLD/measurements.json
+size: 3991
+json_type: dict
+keys: ['release_id', 'place_id', 'measurements']
+list_key: measurements count: 2 sample: {'measurement_id': '2026-05-31.atlas.2:WLD:factory-farmed-animals', 'release_id': '2026-05-31.atlas.2', 'place_id': 'WLD', 'place_name': 'World', 'parent_place_id': None, 'iso3': 'WLD', 'geometry_level': 'world', 'layer_id': 'factory-farmed-animals', 'layer_name': 'Factory-farmed animals', 'evidence_kind': 'proxy', 'value_type': 'normalized_proxy_score', 'raw_value': 1, 'normalized_value': 1, 'display_value': '1.00 global reference proxy', 'unit_label': '0-1 normalized proxy score', 'ranking_mode': 'higher_proxy_score_more_attention', 'rank_value': 1, 'confidence_low': 0.78, 'confidence_high': 1, 'uncertainty_class': 'low', 'source_ids': ['owid-livestock', 'fishcount-aquaculture', 'painmap-welfare-assumptions'], 'provenance_id': 'place-measurements', 'source_vintage': '2026-05-31 release; runtime OWID/Fishcount overlay optional', 'method_note': 'Global reference proxy for slaughter, aquaculture, and standing-population counts weighted by stated welfare-range assumptions.', 'license_id': 'owid-cc-by', 'data_license_uri': 'https://creativecommons.org/licenses/by/4.0/', 'attribution': 'Uses public Our World in Data/Fishcount-style source rows and PainMap stated welfare assumptions.', 'download_url': 'https://painmap.org/data/place-measurements.json', 'extraction_timestamp': '2026-05-31T00:00:00Z', 'transform_version': 'painmap-static-artifacts.measurement-lineage.2026-06-04.1', 'reviewer_status': 'release-reviewed', 'source_file_checksum': 'f9c76b9d9e5e3be7c74dd4d12765536e53393d9f5f06cc1b14e19b8bb48c24ca', 'source_file_checksum_algorithm': 'sha256', 'source_file_checksum_basis': 'Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/place-measurements.csv
+size: 8542
+csv_rows: 8
+columns: ['measurement_id', 'release_id', 'place_id', 'place_name', 'parent_place_id', 'iso3', 'geometry_level', 'layer_id', 'layer_name', 'evidence_kind', 'value_type', 'raw_value', 'normalized_value', 'display_value', 'unit_label', 'ranking_mode', 'rank_value', 'confidence_low', 'confidence_high', 'uncertainty_class', 'source_ids', 'provenance_id', 'source_vintage', 'extraction_timestamp', 'transform_version', 'reviewer_status', 'source_file_checksum', 'source_file_checksum_algorithm', 'source_file_checksum_basis', 'method_note', 'license_id', 'data_license_uri', 'attribution', 'download_url']
+sample: {'measurement_id': '2026-05-31.atlas.2:WLD:factory-farmed-animals', 'release_id': '2026-05-31.atlas.2', 'place_id': 'WLD', 'place_name': 'World', 'parent_place_id': '', 'iso3': 'WLD', 'geometry_level': 'world', 'layer_id': 'factory-farmed-animals', 'layer_name': 'Factory-farmed animals', 'evidence_kind': 'proxy', 'value_type': 'normalized_proxy_score', 'raw_value': '1', 'normalized_value': '1', 'display_value': '1.00 global reference proxy', 'unit_label': '0-1 normalized proxy score', 'ranking_mode': 'higher_proxy_score_more_attention', 'rank_value': '1', 'confidence_low': '0.78', 'confidence_high': '1', 'uncertainty_class': 'low', 'source_ids': 'owid-livestock|fishcount-aquaculture|painmap-welfare-assumptions', 'provenance_id': 'place-measurements', 'source_vintage': '2026-05-31 release; runtime OWID/Fishcount overlay optional', 'extraction_timestamp': '2026-05-31T00:00:00Z', 'transform_version': 'painmap-static-artifacts.measurement-lineage.2026-06-04.1', 'reviewer_status': 'release-reviewed', 'source_file_checksum': 'f9c76b9d9e5e3be7c74dd4d12765536e53393d9f5f06cc1b14e19b8bb48c24ca', 'source_file_checksum_algorithm': 'sha256', 'source_file_checksum_basis': 'Deterministic checksum over the canonical measurement source row plus referenced source rows from data/provenance-registry.json.', 'method_note': 'Global reference proxy for slaughter, aquaculture, and standing-population counts weighted by stated welfare-range assumptions.', 'license_id': 'owid-cc-by', 'data_license_uri': 'https://creativecommons.org/licenses/by/4.0/', 'attribution': 'Uses public Our World in Data/Fishcount-style source rows and PainMap stated welfare assumptions.', 'download_url': 'https://painmap.org/data/place-measurements.json'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/proposed-country-measurements.csv
+size: 1571475
+csv_rows: 1743
+columns: ['release_id', 'place_id', 'iso3', 'country_name', 'layer_id', 'issue_id', 'metric_id', 'evidence_kind', 'value_type', 'raw_value', 'normalized_value', 'display_value', 'unit_label', 'ranking_mode', 'rank_value', 'reference_period', 'reference_period_semantics', 'source_vintage', 'method_id', 'method_version', 'transform_version', 'source_ids', 'source_snapshot_ids', 'license_id', 'attribution', 'uncertainty_class', 'caveat', 'comparability_group_id', 'evidence_compatibility_rule', 'coverage_status', 'coverage_reason', 'missing_inputs', 'promotion_decision']
+sample: {'release_id': 'release-candidate-2026-07-07.country-context.v0', 'place_id': 'country:ABW', 'iso3': 'ABW', 'country_name': 'Aruba', 'layer_id': 'human-context-denominators', 'issue_id': 'issue.human-context', 'metric_id': 'population_land_agriculture_context', 'evidence_kind': 'context', 'value_type': 'numeric_after_source_snapshot_fetch', 'raw_value': '', 'normalized_value': '', 'display_value': '', 'unit_label': 'people / sq km / hectares', 'ranking_mode': 'none', 'rank_value': '', 'reference_period': '', 'reference_period_semantics': 'must match source metadata before publication', 'source_vintage': '', 'method_id': 'method.population_land_agriculture_context', 'method_version': 'v0-pending-implementation', 'transform_version': 'transform.pending-source-fetch.v0', 'source_ids': '', 'source_snapshot_ids': '', 'license_id': '', 'attribution': '', 'uncertainty_class': 'not_assessed', 'caveat': 'Release-candidate stub only. Do not publish as a value until source snapshots, licenses, reference periods, method transform, comparability, and QA pass.', 'comparability_group_id': 'human-context-denominators', 'evidence_compatibility_rule': 'compare only with same layer, unit, evidence kind, ranking mode, source vintage, reference period, and transform version', 'coverage_status': 'not_promoted', 'coverage_reason': 'no verified raw value in this package', 'missing_inputs': 'source snapshot; checksum; license verification; source vintage; reference period; QA; method review', 'promotion_decision': 'blocked_pending_source_snapshot_and_QA'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/country-data-expansion/proposed-country-measurements.csv
+size: 1418891
+csv_rows: 1743
+columns: ['release_id', 'place_id', 'iso3', 'country_name', 'layer_id', 'issue_id', 'metric_id', 'evidence_kind', 'value_type', 'raw_value', 'normalized_value', 'display_value', 'unit_label', 'ranking_mode', 'rank_value', 'reference_period', 'reference_period_semantics', 'source_vintage', 'method_id', 'method_version', 'transform_version', 'source_ids', 'source_snapshot_ids', 'license_id', 'attribution', 'uncertainty_class', 'caveat', 'comparability_group_id', 'evidence_compatibility_rule', 'coverage_status', 'coverage_reason', 'missing_inputs', 'promotion_decision']
+sample: {'release_id': 'release-candidate-2026-07-country-context-v0', 'place_id': 'country:ABW', 'iso3': 'ABW', 'country_name': 'Aruba', 'layer_id': 'human-context-denominators', 'issue_id': 'issue.human-context', 'metric_id': 'population_land_context', 'evidence_kind': 'context', 'value_type': 'numeric_or_display_after_fetch', 'raw_value': '', 'normalized_value': '', 'display_value': '', 'unit_label': 'people / sq km / hectares depending metric', 'ranking_mode': 'none', 'rank_value': '', 'reference_period': '', 'reference_period_semantics': 'must match source metadata before publication', 'source_vintage': '', 'method_id': 'method.population_land_context', 'method_version': 'v0-pending-implementation', 'transform_version': 'transform.pending-source-fetch.v0', 'source_ids': '', 'source_snapshot_ids': '', 'license_id': '', 'attribution': '', 'uncertainty_class': 'not_assessed', 'caveat': 'Release-candidate stub only. Do not publish as a value until source snapshots, licenses, reference periods, and method QA pass.', 'comparability_group_id': 'human-context-denominators', 'evidence_compatibility_rule': 'display-only denominators, not an animal-pain ranking', 'coverage_status': 'not_promoted', 'coverage_reason': 'candidate measurement stub has no verified raw value', 'missing_inputs': 'source snapshot; license verification; source vintage; reference period; QA; method review', 'promotion_decision': 'blocked_pending_source_snapshot_and_QA'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/v1/coverage.json
+size: 2934
+json_type: dict
+keys: ['release_id', 'generated_at', 'last_release_date', 'coverage_status', 'known_sparse_areas', 'default_ranking_readiness']
+dict_key: coverage_status keys: ['places_indexed', 'country_boundaries_indexed', 'adm1_boundaries', 'canonical_country_profiles', 'canonical_place_profiles', 'release_measurements', 'evidence_layer_coverage', 'country_gap_ledger']
+list_key: known_sparse_areas count: 4 sample: {'area': 'Boundary-only countries', 'status': '237 country places have Natural Earth boundaries but no canonical measurement rows in this release.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/schemas/coverage.schema.json
+size: 1102
+json_type: dict
+keys: ['$schema', '$id', 'title', 'type', 'required', 'properties']
+list_key: required count: 4 sample: release_id
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/release-coverage-summary.json
+size: 871
+json_type: dict
+keys: ['release_id', 'generated_at', 'live_site_inspection', 'country_universe_rows', 'canonical_country_profiles_current', 'missing_or_little_country_data_candidates', 'countries_promoted_in_this_package', 'why_none_promoted']
+dict_key: live_site_inspection keys: ['url', 'places_indexed', 'country_boundary_entries', 'adm1_poverty_context_rows', 'canonical_country_profiles', 'canonical_country_profile_names', 'direct_place_evidence_rows', 'last_release']
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/wdi-country-context-coverage.json
+size: 135160
+json_type: list
+count: 249
+sample_keys: ['iso3', 'country_name', 'has_population_total', 'population_reference_period', 'has_land_area', 'land_area_reference_period', 'has_agricultural_land', 'agricultural_land_reference_period', 'wdi_context_complete', 'missing_wdi_context_inputs', 'context_row_count', 'coverage_status_after_wdi_parse', 'promotion_decision_after_wdi_parse']
+sample: {'iso3': 'ABW', 'country_name': 'Aruba', 'has_population_total': True, 'population_reference_period': '2025', 'has_land_area': True, 'land_area_reference_period': '2023', 'has_agricultural_land': True, 'agricultural_land_reference_period': '2023', 'wdi_context_complete': True, 'missing_wdi_context_inputs': [], 'context_row_count': 3, 'coverage_status_after_wdi_parse': 'partial_context_only', 'promotion_decision_after_wdi_parse': 'not_promoted_context_only'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/country-data-expansion/release-coverage-summary.json
+size: 1421
+json_type: dict
+keys: ['release_candidate_id', 'generated_at', 'country_universe_basis', 'total_country_or_territory_rows', 'current_live_site_static_observations', 'promoted_to_canonical_in_this_package', 'left_partial_or_candidate', 'left_boundary_only_no_data_unknown', 'blocked_by_missing_source_snapshot_or_unfetched_values', 'blocked_by_license_review', 'default_view_recommendation', 'ready_for_publication', 'reason_not_ready']
+dict_key: current_live_site_static_observations keys: ['painmap_org_homepage_accessible', 'painmaps_org_accessible', 'homepage_primary_product_truth', 'homepage_country_context_sources', 'machine_artifacts_fetched']
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/country-source-coverage.csv
+size: 549445
+csv_rows: 2490
+columns: ['release_id', 'iso3', 'display_name', 'place_id_candidate', 'source_group', 'required_for_canonical', 'input_status', 'source_ids', 'source_vintage', 'reference_period', 'license_id', 'notes']
+sample: {'release_id': 'release-candidate-2026-07-07.country-context.v0', 'iso3': 'ABW', 'display_name': 'Aruba', 'place_id_candidate': 'country:ABW', 'source_group': 'identity_boundary', 'required_for_canonical': 'True', 'input_status': 'candidate_pending_fetch_snapshot_license_and_QA', 'source_ids': 'natural-earth-admin0;geoboundaries-adm1', 'source_vintage': '', 'reference_period': '', 'license_id': '', 'notes': 'boundaries/context only'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/wdi-country-context-coverage.csv
+size: 29283
+csv_rows: 249
+columns: ['iso3', 'country_name', 'has_population_total', 'population_reference_period', 'has_land_area', 'land_area_reference_period', 'has_agricultural_land', 'agricultural_land_reference_period', 'wdi_context_complete', 'missing_wdi_context_inputs', 'context_row_count', 'coverage_status_after_wdi_parse', 'promotion_decision_after_wdi_parse']
+sample: {'iso3': 'ABW', 'country_name': 'Aruba', 'has_population_total': 'true', 'population_reference_period': '2025', 'has_land_area': 'true', 'land_area_reference_period': '2023', 'has_agricultural_land': 'true', 'agricultural_land_reference_period': '2023', 'wdi_context_complete': 'true', 'missing_wdi_context_inputs': '[]', 'context_row_count': '3', 'coverage_status_after_wdi_parse': 'partial_context_only', 'promotion_decision_after_wdi_parse': 'not_promoted_context_only'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/country-data-expansion/country-source-coverage.csv
+size: 594509
+csv_rows: 2490
+columns: ['release_id', 'iso3', 'display_name', 'place_id_candidate', 'source_group', 'required_for_canonical', 'input_status', 'source_ids', 'layer_ids', 'source_vintage', 'license_id', 'notes']
+sample: {'release_id': 'release-candidate-2026-07-country-context-v0', 'iso3': 'ABW', 'display_name': 'Aruba', 'place_id_candidate': 'country:ABW', 'source_group': 'identity_boundary', 'required_for_canonical': 'True', 'input_status': 'candidate_pending_fetch_snapshot_and_QA', 'source_ids': 'natural-earth-admin0', 'layer_ids': 'country-boundary-context', 'source_vintage': '', 'license_id': '', 'notes': 'country identity/boundary source'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/schemas/ogc-place-features.schema.json
+size: 1254
+json_type: dict
+keys: ['$schema', '$id', 'title', 'type', 'required', 'properties']
+list_key: required count: 5 sample: type
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/schemas/place-index.schema.json
+size: 3572
+json_type: dict
+keys: ['$schema', '$id', 'title', 'type', 'required', 'properties']
+list_key: required count: 5 sample: release_id
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/v1/sources.json
+size: 6176
+json_type: dict
+keys: ['release_id', 'generated_at', 'sources', 'licenses']
+list_key: sources count: 10 sample: {'source_id': 'welfare-footprint-events', 'label': 'Welfare Footprint event estimates', 'publisher': 'Welfare Footprint Project', 'url': 'https://welfarefootprint.org/', 'license_id': 'welfare-footprint-cc-by', 'evidence_kind': 'modeled', 'source_vintage': '2026-05-31 review', 'attribution_text': 'Welfare Footprint Project reports and public charts.'}
+list_key: licenses count: 6 sample: {'id': 'painmap-mit', 'label': 'PainMap site code and original release metadata', 'license': 'MIT', 'licenseUri': 'https://opensource.org/license/mit/', 'url': 'https://painmap.org/LICENSE', 'attribution': 'PainMap contributors'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/schemas/source-snapshot.schema.json
+size: 1995
+json_type: dict
+keys: ['$schema', 'title', 'type', 'required', 'properties']
+list_key: required count: 4 sample: release_id
+dict_key: properties keys: ['release_id', 'generated_at', 'release_date', 'source_snapshots']
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/source-freshness.json
+size: 9204
+json_type: dict
+keys: ['release_id', 'generated_at', 'policy_version', 'provenance_registry_sha256', 'schedule', 'validation_lanes', 'source_count', 'sources']
+dict_key: schedule keys: ['workflow', 'cadence', 'cron', 'local_command', 'release_candidate_prs', 'default_mode']
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/source-snapshots.json
+size: 5738
+json_type: dict
+keys: ['release_id', 'generated_at', 'release_date', 'source_snapshots']
+list_key: source_snapshots count: 7 sample: {'source_snapshot_id': 'source-snapshot-2026-05-31.atlas.2-fishcount-aquaculture', 'source_id': 'fishcount-aquaculture', 'upstream_url': 'http://fishcount.org.uk/', 'retrieval_timestamp': '2026-05-31T00:00:00Z', 'source_vintage': '2026-05-31 release review', 'media_type': 'application/json', 'license_id': 'owid-cc-by', 'retrieval_metadata': {'source_id': 'fishcount-aquaculture', 'source_url': 'http://fishcount.org.uk/'}, 'checksum_algorithm': 'sha256', 'retrieval_basis': '2026-05-31.atlas.2|fishcount-aquaculture|http://fishcount.org.uk/|2026-05-31 release review|2026-05-31|', 'checksum': '74809e247cb10a18027889e029c26ad6d0ffc95ce259a32c8454ab4c52a2c997'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/source-snapshots.fetched.json
+size: 21926
+json_type: list
+count: 15
+sample_keys: ['source_snapshot_id', 'source_id', 'label', 'upstream_url', 'retrieval_timestamp', 'source_vintage', 'reference_period', 'media_type', 'checksum_algorithm', 'checksum', 'byte_size', 'license_id', 'attribution', 'retrieval_metadata', 'redistribution_permitted', 'can_store_snapshot', 'notes', 'local_path', 'fetch_status', 'storage_status']
+sample: {'source_snapshot_id': 'snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.1', 'source_id': 'world-bank-wdi-api', 'label': 'World Bank WDI API', 'upstream_url': 'https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000', 'retrieval_timestamp': '2026-07-07T10:23:47Z', 'source_vintage': 'PENDING_METADATA', 'reference_period': 'PENDING_METADATA', 'media_type': 'application/json_or_text/html', 'checksum_algorithm': 'sha256', 'checksum': 'f958560b78db644282c7147853e0d1a7eff6e324625db44dbd719c0571fceaf4', 'byte_size': 3512287, 'license_id': 'world-bank-terms-review-required', 'attribution': 'World Bank World Development Indicators', 'retrieval_metadata': {'storage_decision': 'store_snapshot_if_terms_allow_else_reference_only', 'user_agent': 'PainMap release compiler'}, 'redistribution_permitted': 'PENDING_TERMS_REVIEW', 'can_store_snapshot': 'PENDING_TERMS_REVIEW', 'notes': 'Do not use for visible measurement until fetched, checksummed, license-reviewed, and parsed.', 'local_path': 'fetched-source-snapshots/snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.1.html', 'fetch_status': 'ok', 'storage_status': 'stored_review_permitted'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/blocked-source-decisions.json
+size: 8829
+json_type: list
+count: 12
+sample_keys: ['source_snapshot_id', 'source_id', 'parse_status', 'affected_layer_ids', 'affected_issue_ids', 'affected_country_count', 'affected_measurement_stub_count', 'block_reason', 'required_to_unblock']
+sample: {'source_snapshot_id': 'snapshot.release-candidate-2026-07-07.country-context.v0.owid-land-animals-slaughtered.1', 'source_id': 'owid-land-animals-slaughtered', 'parse_status': 'blocked_license_unclear', 'affected_layer_ids': 'factory-farmed-animals', 'affected_issue_ids': 'issue.factory-farmed-animals', 'affected_country_count': '249', 'affected_measurement_stub_count': '249', 'block_reason': 'OWID metadata cites third-party/original providers, but candidate registry does not record underlying provider license URI, redistribution terms, and storage permission', 'required_to_unblock': 'Record underlying provider license URI, redistribution terms, storage permission, and required attribution; then repeat source/license review.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/source-registry-additions.json
+size: 3630
+json_type: list
+count: 8
+sample_keys: ['source_id', 'label', 'urls', 'license_id', 'attribution']
+sample: {'source_id': 'world-bank-wdi-api', 'label': 'World Bank WDI API', 'urls': ['https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000', 'https://api.worldbank.org/v2/country/all/indicator/AG.LND.TOTL.K2?format=json&per_page=20000', 'https://api.worldbank.org/v2/country/all/indicator/AG.LND.AGRI.K2?format=json&per_page=20000'], 'license_id': 'world-bank-terms-review-required', 'attribution': 'World Bank World Development Indicators'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/source-license-access-review.json
+size: 38314
+json_type: list
+count: 15
+sample_keys: ['source_snapshot_id', 'source_id', 'upstream_url', 'fetch_status', 'provider', 'license_id', 'license_uri', 'underlying_provider_if_any', 'is_third_party_via_owid', 'can_store_raw_snapshot', 'can_publish_derived_values', 'required_attribution', 'redistribution_note', 'access_status', 'parse_status', 'allowed_use_scope', 'block_reason', 'review_evidence', 'next_action']
+sample: {'source_snapshot_id': 'snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.1', 'source_id': 'world-bank-wdi-api', 'upstream_url': 'https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000', 'fetch_status': 'ok', 'provider': 'World Bank Data / UN Population Division, NSOs, Eurostat, UN Statistics Division', 'license_id': 'cc-by-4.0-world-bank-wdi', 'license_uri': 'https://creativecommons.org/licenses/by/4.0/', 'underlying_provider_if_any': 'UN Population Division, NSOs, Eurostat, UN Statistics Division', 'is_third_party_via_owid': 'false', 'can_store_raw_snapshot': 'true', 'can_publish_derived_values': 'true', 'required_attribution': 'The World Bank: World Development Indicators: data source as indicated in indicator metadata; include data-provider attribution; do not imply World Bank endorsement.', 'redistribution_note': 'World Bank indicator pages reviewed for these WDI indicators list License: CC BY-4.0; World Bank summary/legal terms require attribution and no implied endorsement.', 'access_status': 'ok', 'parse_status': 'parse_eligible', 'allowed_use_scope': 'Context-only parsing for country denominators and land-context layers; not pain/suffering measurements; no country promotion without later normalization and promotion gates.', 'block_reason': '', 'review_evidence': 'World Bank Data indicator page for SP.POP.TOTL lists License: CC BY-4.0 and source/provider metadata; World Bank summary terms require attribution to The World Bank and data providers; World Bank legal terms prohibit implying endorsement.', 'next_action': 'Eligible for context-only parsing after ChatGPT approves exact output schema; update source/license registry terms before production release.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/source-registry-additions.wdi-reviewed.json
+size: 1773
+json_type: list
+count: 1
+sample_keys: ['source_id', 'label', 'publisher', 'provider_detail', 'upstream_api_urls', 'terms_url', 'summary_terms_url', 'license_id', 'license_uri', 'required_attribution', 'no_endorsement_caveat', 'redistribution_storage_note', 'review_date', 'next_review_due', 'allowed_use_scope']
+sample: {'source_id': 'world-bank-wdi-api', 'label': 'World Bank World Development Indicators API', 'publisher': 'World Bank', 'provider_detail': ['World Bank Data / FAO electronic files and website', 'World Bank Data / FAOSTAT, Food and Agriculture Organization of the United Nations', 'World Bank Data / UN Population Division, NSOs, Eurostat, UN Statistics Division'], 'upstream_api_urls': ['https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000', 'https://api.worldbank.org/v2/country/all/indicator/AG.LND.TOTL.K2?format=json&per_page=20000', 'https://api.worldbank.org/v2/country/all/indicator/AG.LND.AGRI.K2?format=json&per_page=20000'], 'terms_url': 'https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets', 'summary_terms_url': 'https://data.worldbank.org/summary-terms-of-use', 'license_id': 'cc-by-4.0-world-bank-wdi', 'license_uri': 'https://creativecommons.org/licenses/by/4.0/', 'required_attribution': 'The World Bank: World Development Indicators; include data-provider attribution as indicated in indicator metadata; do not imply World Bank endorsement.', 'no_endorsement_caveat': 'Do not claim or imply that The World Bank endorses Painmaps or this use of WDI data.', 'redistribution_storage_note': 'Reviewed WDI indicator evidence records CC BY 4.0 and permits storing these reviewed raw snapshots and publishing derived context-only values with attribution and no-endorsement caveat.', 'review_date': '2026-07-07', 'next_review_due': '2027-07-07', 'allowed_use_scope': 'Context-only country denominators and land-context layers; not pain/suffering measurements, rankings, or country promotion.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/source-snapshots.json
+size: 16801
+json_type: list
+count: 15
+sample_keys: ['source_snapshot_id', 'source_id', 'label', 'upstream_url', 'retrieval_timestamp', 'source_vintage', 'reference_period', 'media_type', 'checksum_algorithm', 'checksum', 'byte_size', 'license_id', 'attribution', 'retrieval_metadata', 'redistribution_permitted', 'can_store_snapshot', 'notes']
+sample: {'source_snapshot_id': 'snapshot.release-candidate-2026-07-07.country-context.v0.world-bank-wdi-api.1', 'source_id': 'world-bank-wdi-api', 'label': 'World Bank WDI API', 'upstream_url': 'https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?format=json&per_page=20000', 'retrieval_timestamp': 'PENDING_FETCH', 'source_vintage': 'PENDING_METADATA', 'reference_period': 'PENDING_METADATA', 'media_type': 'application/json_or_text/html', 'checksum_algorithm': 'sha256', 'checksum': 'PENDING_FETCH', 'byte_size': 'PENDING_FETCH', 'license_id': 'world-bank-terms-review-required', 'attribution': 'World Bank World Development Indicators', 'retrieval_metadata': {'storage_decision': 'store_snapshot_if_terms_allow_else_reference_only', 'user_agent': 'PainMap release compiler'}, 'redistribution_permitted': 'PENDING_TERMS_REVIEW', 'can_store_snapshot': 'PENDING_TERMS_REVIEW', 'notes': 'Do not use for visible measurement until fetched, checksummed, license-reviewed, and parsed.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/country-data-expansion/source-registry-additions.json
+size: 10667
+json_type: dict
+keys: ['generated_at', 'release_candidate_id', 'rows']
+list_key: rows count: 13 sample: {'source_id': 'painmap-live-homepage', 'label': 'PainMap live homepage', 'publisher': 'PainMap', 'evidence_kind': 'site_current_state', 'upstream_url': 'https://painmap.org/', 'source_vintage': '2026-07-04 browse', 'license_id': 'painmap-site-terms-unknown', 'attribution': 'PainMap homepage', 'review_cadence': 'per_release', 'last_review_date': '2026-07-04', 'next_review_due': '2026-08-04', 'redistribution_note': 'Use as site-observation evidence only; do not republish site text as data rows.', 'notes': 'Homepage confirms animal-pain research as primary and country globe as secondary context.'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/country-data-expansion/source-snapshots.json
+size: 13955
+json_type: dict
+keys: ['generated_at', 'release_candidate_id', 'note', 'rows']
+list_key: rows count: 13 sample: {'source_snapshot_id': 'snapshot.pending.painmap-live-homepage.2026-07-04', 'source_id': 'painmap-live-homepage', 'upstream_url': 'https://painmap.org/', 'retrieval_timestamp': '', 'source_vintage_or_reference_period': '2026-07-04 browse', 'media_type': 'to_be_detected', 'checksum_algorithm': 'sha256', 'checksum': '', 'byte_size': None, 'license_id': 'painmap-site-terms-unknown', 'attribution': 'PainMap homepage', 'retrieval_metadata': {'status': 'planned_not_captured_in_this_session', 'user_agent_required': True}, 'notes': 'Homepage confirms animal-pain research as primary and country globe as secondary context.', 'reproducible_from_static_url_or_api_query': 'yes_or_verify_at_fetch_time', 'redistribution_permitted': 'unknown_or_verify_before_publication', 'snapshot_can_be_stored_directly_or_only_referenced': 'verify_terms_before_storing'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/license-registry-additions.wdi-reviewed.json
+size: 1722
+json_type: list
+count: 1
+sample_keys: ['license_id', 'label', 'status', 'license_uri', 'terms_url', 'summary_terms_url', 'required_attribution', 'no_endorsement_caveat', 'redistribution_storage_note', 'review_evidence', 'review_date', 'next_review_due']
+sample: {'license_id': 'cc-by-4.0-world-bank-wdi', 'label': 'World Bank WDI CC BY 4.0 with World Bank dataset terms', 'status': 'reviewed_context_only', 'license_uri': 'https://creativecommons.org/licenses/by/4.0/', 'terms_url': 'https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets', 'summary_terms_url': 'https://data.worldbank.org/summary-terms-of-use', 'required_attribution': 'The World Bank: World Development Indicators; include data-provider attribution; indicate changes where applicable.', 'no_endorsement_caveat': 'Do not claim or imply World Bank endorsement and do not use World Bank name, logos, or trademarks to imply endorsement.', 'redistribution_storage_note': 'Context-only staging rows may be stored and derived from the three reviewed WDI snapshots; production release still needs registry integration review.', 'review_evidence': ['World Bank Data indicator page for AG.LND.AGRI.K2 lists FAO as source and License: CC BY-4.0; World Bank summary terms require attribution to The World Bank and data providers; World Bank legal terms prohibit implying endorsement.', 'World Bank Data indicator page for AG.LND.TOTL.K2 lists FAOSTAT/FAO as source and License: CC BY-4.0; World Bank summary terms require attribution to The World Bank and data providers; World Bank legal terms prohibit implying endorsement.', 'World Bank Data indicator page for SP.POP.TOTL lists License: CC BY-4.0 and source/provider metadata; World Bank summary terms require attribution to The World Bank and data providers; World Bank legal terms prohibit implying endorsement.'], 'review_date': '2026-07-07', 'next_review_due': '2027-07-07'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/license-registry-additions.json
+size: 729
+json_type: list
+count: 4
+sample_keys: ['license_id', 'label', 'status']
+sample: {'license_id': 'world-bank-terms-review-required', 'label': 'World Bank terms review required before redistribution', 'status': 'blocked_pending_review'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/country-data-expansion/license-registry-additions.json
+size: 2134
+json_type: dict
+keys: ['generated_at', 'release_candidate_id', 'rows']
+list_key: rows count: 8 sample: {'license_id': 'painmap-site-terms-unknown', 'label': 'PainMap site terms not inspected', 'license_uri': 'https://painmap.org/', 'redistribution_status': 'do_not_republish_as_data'}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/openapi.json
+size: 31427
+json_type: dict
+keys: ['openapi', 'info', 'servers', 'paths', 'components']
+dict_key: info keys: ['title', 'version', 'description']
+list_key: servers count: 1 sample: {'url': 'https://painmap.org'}
+dict_key: paths keys: ['/v1/releases.json', '/v1/layers.json', '/v1/sources.json', '/v1/places/index.json', '/v1/adm1/index.json', '/v1/coverage.json', '/v1/places/WLD.json', '/v1/places/{place_id}.json', '/v1/places/{place_id}/measurements.json', '/v1/places/{place_id}/neighbors.json', '/v1/places/{place_id}/adm1.json', '/v1/places/BRA.json', '/v1/places/BRA/neighbors.json', '/v1/places/IND.json', '/v1/places/IND/neighbors.json', '/releases/2026-05-31/manifest.json', '/releases/2026-05-31/diff.json', '/releases/2026-05-31/migration.json', '/latest/manifest.json', '/data/provenance-registry.json']
+dict_key: components keys: ['schemas']
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/schemas/country-gap-ledger.schema.json
+size: 4889
+json_type: dict
+keys: ['$schema', 'title', 'type', 'required', 'properties']
+list_key: required count: 6 sample: release_id
+dict_key: properties keys: ['release_id', 'generated_at', 'release_date', 'coverage_gate', 'summary', 'candidate_review', 'countries']
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/schemas/adm1-context.schema.json
+size: 2067
+json_type: dict
+keys: ['$schema', '$id', 'title', 'type', 'required', 'properties']
+list_key: required count: 6 sample: release_id
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/schemas/release-modes.schema.json
+size: 1645
+json_type: dict
+keys: ['$schema', '$id', 'title', 'type', 'required', 'properties']
+list_key: required count: 5 sample: release_id
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/painmaps_country_data_addition_2026_07_07/schemas/country-gap-ledger.schema.json
+size: 243
+json_type: dict
+keys: ['type', 'items']
+dict_key: items keys: ['type', 'required']
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/latest/manifest.json
+size: 411
+json_type: dict
+keys: ['latest_release_id', 'release_manifest_url', 'release_manifest_sha256', 'mutable', 'generated_at', 'note']
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/tmp/preview-release/releases/preview/manifest.json
+size: 850
+json_type: dict
+keys: ['release_id', 'generated_at', 'preview_only', 'source_fixture_files', 'artifacts']
+list_key: source_fixture_files count: 2 sample: fixtures/mock-registry.json
+list_key: artifacts count: 4 sample: {'path': '/index.html', 'sha256': 'da9082f6893b71940d0e523a48a1429b21c1120ad6e8a8b557bc7be085d8b768', 'bytes': 621}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/candidates/country-data-expansion/package-manifest.json
+size: 3299
+json_type: dict
+keys: ['generated_at', 'files']
+list_key: files count: 20 sample: {'file': 'README.md', 'sha256': '212e45a3d23e45e004c9be1b49dd798db3a4bf334a7c8940a4e6150fd79a756d', 'bytes': 441}
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/releases/2026-05-31/manifest.json
+size: 353729
+json_type: dict
+keys: ['release_id', 'release_date', 'generated_at', 'immutable', 'site', 'source_of_truth', 'navigation', 'routes', 'artifacts']
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/v1/releases.json
+size: 605
+json_type: dict
+keys: ['latest_release_id', 'generated_at', 'releases', 'latest_alias']
+list_key: releases count: 1 sample: {'release_id': '2026-05-31.atlas.2', 'release_date': '2026-05-31', 'immutable': True, 'path': '/releases/2026-05-31/', 'manifest_url': 'https://painmap.org/releases/2026-05-31/manifest.json', 'data_contract_url': 'https://painmap.org/data/openapi.json'}
+dict_key: latest_alias keys: ['mutable', 'manifest_url', 'note']
+
+## /Users/HenryZhu/Library/Mobile Documents/com~apple~CloudDocs/painmap/bestthingsyoucando/data/release-modes.json
+size: 1679
+json_type: dict
+keys: ['release_id', 'generated_at', 'default_mode', 'local_event_name', 'modes', 'ui_contract']
+list_key: modes count: 2 sample: {'id': 'snapshot', 'label': 'Snapshot', 'badge': 'immutable', 'cache_rule': 'Release-scoped static artifacts may use long-lived immutable caching.', 'replay_rule': 'Use the immutable release manifest, checksums, schemas, and release URLs for reproducible analysis.', 'network_behavior': 'The homepage does not start World Bank, OWID, geoBoundaries, or WorldPop ranking requests in this mode.', 'included_surfaces': ['/v1/places/index.json', '/v1/adm1/index.json', '/v1/coverage.json', '/data/place-measurements.json', '/data/provenance-registry.json', '/releases/2026-05-31/manifest.json']}
+
