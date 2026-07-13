@@ -1,4 +1,4 @@
-const CACHE_NAME = "painmap-emergency-boundaries-v1";
+const CACHE_NAME = "painmap-emergency-boundaries-v2";
 const BOUNDARY_PATHS = new Set([
   "/data/natural-earth-countries.geojson",
   "/data/countries-lite.geojson",
@@ -92,6 +92,21 @@ self.addEventListener("activate", (event) => {
       const keys = await caches.keys();
       await Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)));
       await self.clients.claim();
+
+      const windows = await self.clients.matchAll({
+        type: "window",
+        includeUncontrolled: true,
+      });
+
+      await Promise.all(
+        windows.map(async (client) => {
+          try {
+            await client.navigate(client.url);
+          } catch (_error) {
+            // A closed or cross-origin client does not block activation.
+          }
+        })
+      );
     })()
   );
 });
