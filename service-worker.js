@@ -1,4 +1,4 @@
-const CACHE_VERSION = "painmap-service-worker-v3";
+const CACHE_VERSION = "painmap-service-worker-v4";
 const STATIC_CACHE = `painmap-static-${CACHE_VERSION}`;
 const COUNTRY_BOUNDARY_PATH = "/data/natural-earth-countries.geojson";
 const COUNTRY_BOUNDARY_FALLBACK_PATH = "/data/countries-lite.geojson";
@@ -143,36 +143,34 @@ function isDataRequest(request) {
   return JSON_PATH_PREFIXES.some((prefix) => pathname.startsWith(prefix));
 }
 
-function keepAlive(event, promise) {
-  if (event && typeof event.waitUntil === "function") {
-    event.waitUntil(Promise.resolve(promise).catch(() => undefined));
-  }
+function fetchAndCache(request, cache, cacheKey) {
+  const resultPromise = fetch(request)
+    .then((response) => {
+      const cacheWrite =
+        response && response.ok
+          ? cache.put(cacheKey, response.clone()).catch(() => undefined)
+          : Promise.resolve();
+
+      return { response, cacheWrite };
+    })
+    .catch(() => ({ response: null, cacheWrite: Promise.resolve() }));
+
+  return {
+    response: resultPromise.then((result) => result.response),
+    completion: resultPromise.then((result) => result.cacheWrite).catch(() => undefined),
+  };
 }
 
-async function cacheSuccessfulResponse(cache, cacheKey, response, event) {
-  if (!response || !response.ok) {
-    return response;
-  }
-
-  keepAlive(event, cache.put(cacheKey, response.clone()));
-  return response;
-}
-
-async function countryBoundaryResponse(request, event) {
+async function countryBoundaryResponse(request, backgroundTasks) {
   const cache = await caches.open(STATIC_CACHE);
   const primaryKey = cacheLookupRequest(request);
   const cachedPrimary = await caches.match(primaryKey);
-
-  const refreshPrimary = fetch(request)
-    .then((response) => cacheSuccessfulResponse(cache, primaryKey, response, event))
-    .catch(() => null);
+  const primaryFetch = fetchAndCache(request, cache, primaryKey);
+  backgroundTasks.push(primaryFetch.completion);
 
   if (cachedPrimary) {
-    keepAlive(event, refreshPrimary);
     return cachedPrimary;
   }
-
-  keepAlive(event, refreshPrimary);
 
   const fallbackRequest = new Request(COUNTRY_BOUNDARY_FALLBACK_PATH, { method: "GET" });
   const fallbackKey = cacheLookupRequest(fallbackRequest);
@@ -182,17 +180,15 @@ async function countryBoundaryResponse(request, event) {
     return cachedFallback;
   }
 
-  try {
-    const fallbackResponse = await fetch(fallbackRequest);
-    if (fallbackResponse && fallbackResponse.ok) {
-      await cacheSuccessfulResponse(cache, fallbackKey, fallbackResponse, event);
-      return fallbackResponse;
-    }
-  } catch (_error) {
-    // Fall through to the original full-resolution request.
+  const fallbackFetch = fetchAndCache(fallbackRequest, cache, fallbackKey);
+  backgroundTasks.push(fallbackFetch.completion);
+  const fallbackResponse = await fallbackFetch.response;
+
+  if (fallbackResponse && fallbackResponse.ok) {
+    return fallbackResponse;
   }
 
-  const primaryResponse = await refreshPrimary;
+  const primaryResponse = await primaryFetch.response;
   if (primaryResponse) {
     return primaryResponse;
   }
@@ -206,22 +202,19 @@ async function countryBoundaryResponse(request, event) {
   });
 }
 
-async function staleWhileRevalidate(request, event) {
+async function staleWhileRevalidate(request, backgroundTasks) {
   const cache = await caches.open(STATIC_CACHE);
   const cacheKey = cacheLookupRequest(request);
   const cachePromise = caches.match(cacheKey);
-
-  const networkPromise = fetch(request)
-    .then((response) => cacheSuccessfulResponse(cache, cacheKey, response, event))
-    .catch(() => null);
+  const networkFetch = fetchAndCache(request, cache, cacheKey);
+  backgroundTasks.push(networkFetch.completion);
 
   const cachedResponse = await cachePromise;
   if (cachedResponse) {
-    keepAlive(event, networkPromise);
     return cachedResponse;
   }
 
-  const networkResponse = await networkPromise;
+  const networkResponse = await networkFetch.response;
   if (networkResponse) {
     return networkResponse;
   }
@@ -233,6 +226,19 @@ async function staleWhileRevalidate(request, event) {
       "Cache-Control": "no-store",
     },
   });
+}
+
+function respondWithBackground(event, responseFactory) {
+  const backgroundTasks = [];
+  const responsePromise = Promise.resolve().then(() => responseFactory(backgroundTasks));
+
+  event.respondWith(responsePromise);
+  event.waitUntil(
+    responsePromise
+      .catch(() => undefined)
+      .then(() => Promise.allSettled(backgroundTasks))
+      .then(() => undefined)
+  );
 }
 
 async function networkFirst(request) {
@@ -283,12 +289,16 @@ self.addEventListener("fetch", (event) => {
   }
 
   if (url.origin === self.location.origin && url.pathname === COUNTRY_BOUNDARY_PATH) {
-    event.respondWith(countryBoundaryResponse(request, event));
+    respondWithBackground(event, (backgroundTasks) =>
+      countryBoundaryResponse(request, backgroundTasks)
+    );
     return;
   }
 
   if (isStatic || isJson) {
-    event.respondWith(staleWhileRevalidate(request, event));
+    respondWithBackground(event, (backgroundTasks) =>
+      staleWhileRevalidate(request, backgroundTasks)
+    );
     return;
   }
 });
