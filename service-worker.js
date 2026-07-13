@@ -1,5 +1,7 @@
-const CACHE_VERSION = "painmap-service-worker-v2";
+const CACHE_VERSION = "painmap-service-worker-v3";
 const STATIC_CACHE = `painmap-static-${CACHE_VERSION}`;
+const COUNTRY_BOUNDARY_PATH = "/data/natural-earth-countries.geojson";
+const COUNTRY_BOUNDARY_FALLBACK_PATH = "/data/countries-lite.geojson";
 const CORE_ASSETS = [
   "/",
   "/index.html",
@@ -13,6 +15,7 @@ const CORE_ASSETS = [
   "/v1/coverage.json",
   "/v1/releases.json",
   "/data/release-modes.json",
+  COUNTRY_BOUNDARY_FALLBACK_PATH,
 ];
 const JSON_PATH_PREFIXES = [
   "/v1/",
@@ -128,35 +131,93 @@ function isDataRequest(request) {
   }
 
   const pathname = url.pathname.toLowerCase();
-  if (pathname.endsWith(".json")) {
+  if (pathname.endsWith(".json") || pathname.endsWith(".geojson")) {
     return true;
   }
 
   const accept = request.headers.get("accept") || "";
-  if (accept.includes("application/json")) {
+  if (accept.includes("application/json") || accept.includes("application/geo+json")) {
     return true;
   }
 
   return JSON_PATH_PREFIXES.some((prefix) => pathname.startsWith(prefix));
 }
 
-async function staleWhileRevalidate(request) {
+function keepAlive(event, promise) {
+  if (event && typeof event.waitUntil === "function") {
+    event.waitUntil(Promise.resolve(promise).catch(() => undefined));
+  }
+}
+
+async function cacheSuccessfulResponse(cache, cacheKey, response, event) {
+  if (!response || !response.ok) {
+    return response;
+  }
+
+  keepAlive(event, cache.put(cacheKey, response.clone()));
+  return response;
+}
+
+async function countryBoundaryResponse(request, event) {
+  const cache = await caches.open(STATIC_CACHE);
+  const primaryKey = cacheLookupRequest(request);
+  const cachedPrimary = await caches.match(primaryKey);
+
+  const refreshPrimary = fetch(request)
+    .then((response) => cacheSuccessfulResponse(cache, primaryKey, response, event))
+    .catch(() => null);
+
+  if (cachedPrimary) {
+    keepAlive(event, refreshPrimary);
+    return cachedPrimary;
+  }
+
+  keepAlive(event, refreshPrimary);
+
+  const fallbackRequest = new Request(COUNTRY_BOUNDARY_FALLBACK_PATH, { method: "GET" });
+  const fallbackKey = cacheLookupRequest(fallbackRequest);
+  const cachedFallback = await caches.match(fallbackKey);
+
+  if (cachedFallback) {
+    return cachedFallback;
+  }
+
+  try {
+    const fallbackResponse = await fetch(fallbackRequest);
+    if (fallbackResponse && fallbackResponse.ok) {
+      await cacheSuccessfulResponse(cache, fallbackKey, fallbackResponse, event);
+      return fallbackResponse;
+    }
+  } catch (_error) {
+    // Fall through to the original full-resolution request.
+  }
+
+  const primaryResponse = await refreshPrimary;
+  if (primaryResponse) {
+    return primaryResponse;
+  }
+
+  return new Response("", {
+    status: 503,
+    headers: {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Cache-Control": "no-store",
+    },
+  });
+}
+
+async function staleWhileRevalidate(request, event) {
   const cache = await caches.open(STATIC_CACHE);
   const cacheKey = cacheLookupRequest(request);
   const cachePromise = caches.match(cacheKey);
 
   const networkPromise = fetch(request)
-    .then(async (response) => {
-      if (response && response.ok) {
-        await cache.put(cacheKey, response.clone());
-      }
-      return response;
-    })
+    .then((response) => cacheSuccessfulResponse(cache, cacheKey, response, event))
     .catch(() => null);
 
   const cachedResponse = await cachePromise;
   if (cachedResponse) {
-    void networkPromise;
+    keepAlive(event, networkPromise);
     return cachedResponse;
   }
 
@@ -211,6 +272,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  const url = new URL(request.url);
   const isNavigate = request.mode === "navigate";
   const isStatic = isStaticAssetRequest(request);
   const isJson = isDataRequest(request);
@@ -220,8 +282,13 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
+  if (url.origin === self.location.origin && url.pathname === COUNTRY_BOUNDARY_PATH) {
+    event.respondWith(countryBoundaryResponse(request, event));
+    return;
+  }
+
   if (isStatic || isJson) {
-    event.respondWith(staleWhileRevalidate(request));
+    event.respondWith(staleWhileRevalidate(request, event));
     return;
   }
 });
