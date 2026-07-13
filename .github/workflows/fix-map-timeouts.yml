@@ -125,3 +125,5 @@ jobs:
           git add -A
           git commit -m "Fix cold-load country boundary timeouts"
           git push origin HEAD:main
+
+# Triggered after the workflow was present on the default branch.
