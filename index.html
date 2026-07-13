@@ -27,36 +27,7 @@
     </noscript>
     <script>
       (() => {
-        const nativeFetch = window.fetch.bind(window);
-        const boundaryPaths = new Set([
-          "/data/natural-earth-countries.geojson",
-          "/data/countries-lite.geojson",
-        ]);
-
-        window.fetch = (input, init = {}) => {
-          let url;
-
-          try {
-            const rawUrl = typeof input === "string" || input instanceof URL ? input : input && input.url;
-            url = new URL(rawUrl, window.location.href);
-          } catch (_error) {
-            return nativeFetch(input, init);
-          }
-
-          if (url.origin !== window.location.origin || !boundaryPaths.has(url.pathname)) {
-            return nativeFetch(input, init);
-          }
-
-          const controller = new AbortController();
-          const timeout = window.setTimeout(() => controller.abort(), 30000);
-          const boundaryInit = Object.assign({}, init, { signal: controller.signal });
-
-          return nativeFetch(input, boundaryInit).finally(() => {
-            window.clearTimeout(timeout);
-          });
-        };
-
-        nativeFetch("/app.html?v=20260713-map-timeout-fix", { cache: "no-store" })
+        fetch("/app.html?v=20260713-map-timeout-fix-2", { cache: "no-store" })
           .then((response) => {
             if (!response.ok) {
               throw new Error(`HTTP ${response.status}`);
@@ -64,8 +35,16 @@
             return response.text();
           })
           .then((html) => {
+            const moduleMarker = '<script type="module" src="script.js';
+            if (!html.includes(moduleMarker)) {
+              throw new Error("atlas module marker was not found");
+            }
+
+            const preload = '<script src="/map-timeout-preload.js?v=20260713-2"><\\/script>\n    ';
+            const patchedHtml = html.replace(moduleMarker, preload + moduleMarker);
+
             document.open();
-            document.write(html);
+            document.write(patchedHtml);
             document.close();
           })
           .catch((error) => {
