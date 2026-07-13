@@ -27,7 +27,7 @@
     </noscript>
     <script>
       (() => {
-        fetch("/app.html?v=20260713-map-timeout-fix-2", { cache: "no-store" })
+        fetch("/app.html?v=20260713-map-timeout-fix-3", { cache: "no-store" })
           .then((response) => {
             if (!response.ok) {
               throw new Error(`HTTP ${response.status}`);
@@ -35,14 +35,18 @@
             return response.text();
           })
           .then((html) => {
-            const moduleMarker = '<script type="module" src="script.js';
-            if (!html.includes(moduleMarker)) {
-              throw new Error("atlas module marker was not found");
+            const parsed = new DOMParser().parseFromString(html, "text/html");
+            const atlasModule = parsed.querySelector('script[type="module"][src^="script.js"]');
+
+            if (!atlasModule) {
+              throw new Error("atlas module was not found");
             }
 
-            const preload = '<script src="/map-timeout-preload.js?v=20260713-2"><\\/script>\n    ';
-            const patchedHtml = html.replace(moduleMarker, preload + moduleMarker);
+            atlasModule.src = "/map-bootstrap.js?v=20260713-3";
+            atlasModule.removeAttribute("integrity");
+            atlasModule.removeAttribute("crossorigin");
 
+            const patchedHtml = `<!doctype html>\n${parsed.documentElement.outerHTML}`;
             document.open();
             document.write(patchedHtml);
             document.close();
