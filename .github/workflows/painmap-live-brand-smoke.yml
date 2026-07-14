@@ -1,28 +1,35 @@
-name: PainMap live brand smoke
+name: PainMap live Evidence Contours smoke
 
 on:
-  pull_request:
-    types: [opened, reopened, synchronize]
+  push:
+    branches:
+      - main
     paths:
       - "index.html"
       - "brand.css"
       - "assets/brand/**"
       - "scripts/apply-brand-system.mjs"
-      - "package.json"
+      - ".github/workflows/painmap-live-brand-smoke.yml"
   workflow_dispatch:
 
 permissions:
   contents: read
 
+concurrency:
+  group: painmap-live-brand-smoke
+  cancel-in-progress: true
+
 jobs:
   live-brand-smoke:
-    name: Verify deployed Evidence Field brand
+    name: Verify deployed Evidence Contours brand
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
 
     steps:
       - name: Wait for and verify the live brand
         shell: bash
+        env:
+          CACHE_BUSTER: ${{ github.sha }}
         run: |
           set -u
 
@@ -35,52 +42,55 @@ jobs:
               -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36' \
               -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8' \
               -H 'Cache-Control: no-cache' \
-              -o "$output" -w '%{http_code}' "$url" || true)
+              -o "$output" -w '%{http_code}' "${url}?brand=${CACHE_BUSTER}" || true)
             echo "$label HTTP $code"
             test "$code" = "200"
           }
 
-          for attempt in $(seq 1 8); do
-            echo "Live brand check attempt ${attempt}/8"
+          for attempt in $(seq 1 20); do
+            echo "Live brand check attempt ${attempt}/20"
             root_ok=false
             css_ok=false
-            symbol_ok=false
+            logo_ok=false
 
             if fetch_live "homepage" "https://painmap.org/" /tmp/painmap-live.html; then
-              if grep -q 'data-brand="evidence-field-v1"' /tmp/painmap-live.html \
-                && grep -q 'Map pain.' /tmp/painmap-live.html \
-                && grep -q 'Keep uncertainty visible.' /tmp/painmap-live.html; then
+              if grep -q 'data-brand="evidence-contours-v1"' /tmp/painmap-live.html \
+                && grep -q 'What is known.' /tmp/painmap-live.html \
+                && grep -q 'What is inferred.' /tmp/painmap-live.html \
+                && grep -q 'What is missing.' /tmp/painmap-live.html; then
                 root_ok=true
               else
-                echo "homepage markers not present"
+                echo "homepage Evidence Contours markers not present"
               fi
             fi
 
             if fetch_live "brand.css" "https://painmap.org/brand.css" /tmp/painmap-brand.css; then
-              if grep -q -- '--pm-cobalt:#3154d8' /tmp/painmap-brand.css; then
+              if grep -qi -- '--pm-deep-teal: #174d55' /tmp/painmap-brand.css \
+                && grep -q 'evidence-contours-v1' /tmp/painmap-brand.css; then
                 css_ok=true
               else
-                echo "brand.css token not present"
+                echo "brand.css Evidence Contours tokens not present"
               fi
             fi
 
-            if fetch_live "brand symbol" "https://painmap.org/assets/brand/painmap-symbol-primary.svg" /tmp/painmap-symbol.svg; then
-              if grep -q '#3154D8' /tmp/painmap-symbol.svg; then
-                symbol_ok=true
+            if fetch_live "primary logo" "https://painmap.org/assets/brand/painmap-logo-horizontal-primary.svg" /tmp/painmap-logo.svg; then
+              if grep -qi '#174d55' /tmp/painmap-logo.svg \
+                && grep -qi '#e65b43' /tmp/painmap-logo.svg; then
+                logo_ok=true
               else
-                echo "brand symbol marker not present"
+                echo "primary logo Evidence Contours markers not present"
               fi
             fi
 
-            if $root_ok && $css_ok && $symbol_ok; then
-              echo "PainMap Evidence Field brand is deployed and reachable."
+            if $root_ok && $css_ok && $logo_ok; then
+              echo "PainMap Evidence Contours is deployed and reachable."
               exit 0
             fi
 
             sleep 15
           done
 
-          echo "Live PainMap did not expose the expected brand markers within the retry window."
+          echo "Live PainMap did not expose the expected Evidence Contours markers within the retry window."
           echo "Homepage preview:"
-          sed -n '1,80p' /tmp/painmap-live.html 2>/dev/null || true
+          sed -n '1,100p' /tmp/painmap-live.html 2>/dev/null || true
           exit 1
