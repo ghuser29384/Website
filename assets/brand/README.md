@@ -14,6 +14,6 @@ Core message: **Map pain. Keep uncertainty visible.**
 
 Implementation status: the production workflow applies this system to every generated HTML route before deployment.
 
-Verification branch: exercise the production live-brand smoke test.
+Verification branch: exercise the diagnostic production live-brand smoke test.
 
 Do not embed or redistribute font files. The web implementation uses a resilient stack based on EB Garamond, Inter, and system fallbacks.
