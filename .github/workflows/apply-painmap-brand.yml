@@ -46,7 +46,15 @@ jobs:
           node-version: "22"
 
       - name: Build, brand, and validate the static site
-        run: npm run check
+        shell: bash
+        run: |
+          set -o pipefail
+          if ! npm run check > /tmp/painmap-brand-check.log 2>&1; then
+            echo "PainMap brand validation failed. Final log lines:"
+            tail -n 180 /tmp/painmap-brand-check.log
+            exit 1
+          fi
+          tail -n 80 /tmp/painmap-brand-check.log
 
       - name: Check patch formatting
         run: git diff --check
