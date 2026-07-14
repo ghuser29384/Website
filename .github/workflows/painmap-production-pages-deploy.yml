@@ -1,6 +1,11 @@
 name: PainMap production Pages deploy
 
 on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
   schedule:
     - cron: "*/5 * * * *"
   issues:
@@ -22,7 +27,12 @@ jobs:
     if: >-
       github.event_name == 'schedule' ||
       github.event_name == 'workflow_dispatch' ||
-      github.event.issue.title == '[PainMap Deploy] Publish current main'
+      (github.event_name == 'issues' &&
+       github.event.issue.title == '[PainMap Deploy] Publish current main') ||
+      (github.event_name == 'pull_request' &&
+       github.event.pull_request.title == '[PainMap Deploy] Publish current main via Pages' &&
+       github.event.pull_request.base.ref == 'main' &&
+       github.event.pull_request.head.repo.full_name == github.repository)
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -35,8 +45,34 @@ jobs:
           ref: main
           fetch-depth: 1
 
-      - name: Record deployed revision
-        run: git rev-parse HEAD
+      - name: Validate production data payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rev-parse HEAD
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          context = json.loads(Path('data/pain-driver-context.json').read_text(encoding='utf-8'))
+          summary = json.loads(Path('data/candidates/country-data-expansion/source-backed-country-summary.json').read_text(encoding='utf-8'))
+          index = json.loads(Path('data/pain-drivers.json').read_text(encoding='utf-8'))
+
+          assert context['dataset_id'] == 'painmap-human-mortality-context-v1'
+          assert context['canonical_release'] is False
+          assert len(context['observations']) == 741
+          assert len(context['place_summaries']) == 191
+          assert context['coverage']['indicator_count'] == 4
+          assert context['coverage']['countries_with_all_indicators'] == 183
+          assert summary['measurement_count'] == 24
+          assert summary['country_count'] == 8
+          assert summary['promoted_to_canonical'] == 0
+          assert index['comparison_policy']['overall_cross_domain_ranking_enabled'] is False
+          assert Path('data/pain-drivers/index.html').is_file()
+          assert Path('data/pain-driver-context.csv').is_file()
+          assert Path('schemas/pain-driver-context.schema.json').is_file()
+          print('Validated 741 human context observations and 24 source-backed candidate observations.')
+          PY
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
