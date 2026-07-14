@@ -1,0 +1,119 @@
+name: Codex merge current main into PainMap data branch
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  merge-and-validate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Check out data branch
+        uses: actions/checkout@v4
+        with:
+          ref: codex/add-source-backed-country-data
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Merge current main and resolve bounded integration files
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git fetch origin main
+          git merge --no-commit --no-ff origin/main || true
+
+          conflicts="$(git diff --name-only --diff-filter=U)"
+          unknown="$(printf '%s\n' "$conflicts" | grep -Ev '^(data/index\.html|package\.json|data/country-gap-ledger\.json|data/source-snapshots\.json|latest/manifest\.json)$' || true)"
+          if [ -n "$unknown" ]; then
+            echo "Unexpected merge conflicts:" >&2
+            printf '%s\n' "$unknown" >&2
+            exit 1
+          fi
+
+          for path in data/index.html data/country-gap-ledger.json data/source-snapshots.json latest/manifest.json package.json; do
+            if printf '%s\n' "$conflicts" | grep -Fxq "$path"; then
+              git checkout --theirs -- "$path"
+              git add "$path"
+            fi
+          done
+
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('package.json')
+          package = json.loads(path.read_text(encoding='utf-8'))
+          scripts = package.setdefault('scripts', {})
+          scripts['candidate:data:refresh'] = 'python3 scripts/build-source-backed-country-supplement.py --refresh'
+          scripts['candidate:data:check'] = 'python3 scripts/build-source-backed-country-supplement.py --check'
+          check = scripts.get('check', '')
+          if 'candidate:data:check' not in check:
+              check = check.replace('npm run build:data', 'npm run build:data && npm run candidate:data:check', 1)
+          scripts['check'] = check
+          path.write_text(json.dumps(package, indent=2) + '\n', encoding='utf-8')
+          PY
+          git add package.json
+
+          if git diff --name-only --diff-filter=U | grep -q .; then
+            git diff --name-only --diff-filter=U >&2
+            exit 1
+          fi
+
+      - name: Refresh source-backed data on merged tree
+        run: npm run candidate:data:refresh
+
+      - name: Validate merged static site and data
+        shell: bash
+        run: |
+          npm run check
+          npm run freshness:sources
+          python3 -m py_compile clients/python/painmap_client.py examples/load_place_profile.py scripts/build-source-backed-country-supplement.py
+          git diff --check
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/painmap-static-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 20); do
+            curl --fail --silent http://127.0.0.1:4173/ >/dev/null && break
+            sleep 0.25
+          done
+          npm run smoke:endpoints
+
+      - name: Commit merged validated result
+        shell: bash
+        run: |
+          rm -f .github/workflows/codex-merge-current-main.yml
+          git add -A
+          git status --short
+          git commit -m 'Merge current main and refresh PainMap context data'
+          git push origin HEAD:codex/add-source-backed-country-data
+
+      - name: Upload merged QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: merged-painmap-data-qa
+          path: |
+            data/candidates/country-data-expansion/source-backed-country-summary.json
+            data/candidates/country-data-expansion/validation-summary.json
+            data/candidates/country-data-expansion/source-extracts/
+            data/pain-driver-context.json
+            data/pain-driver-context.csv
+            schemas/pain-driver-context.schema.json
+          if-no-files-found: ignore
+          retention-days: 7
