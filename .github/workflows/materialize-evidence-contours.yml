@@ -1,0 +1,82 @@
+name: Materialize PainMap Evidence Contours
+
+on:
+  push:
+    branches:
+      - brand/evidence-contours-v1-final
+    paths:
+      - data/evidence-contours-materialize-trigger.json
+  pull_request:
+    branches:
+      - main
+    paths:
+      - brand.css
+      - assets/brand/**
+      - scripts/apply-brand-system.mjs
+      - data/evidence-contours-materialize-trigger.json
+      - .github/workflows/materialize-evidence-contours.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: painmap-evidence-contours-materialize
+  cancel-in-progress: false
+
+jobs:
+  materialize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out implementation branch
+        uses: actions/checkout@v4
+        with:
+          ref: brand/evidence-contours-v1-final
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Materialize brand and validate repository contracts
+        run: |
+          set -euo pipefail
+          npm run check
+          npm run freshness:sources
+          git diff --check
+          grep -q 'data-brand="evidence-contours-v1"' index.html
+          grep -q 'What is known\.' index.html
+          grep -q 'Mixed-evidence atlas of pain sources by place' index.html
+          grep -q 'painmap-logo-horizontal-primary.svg' index.html
+          test -f assets/brand/evidence-contours-hero.svg
+
+      - name: Run endpoint smoke checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/painmap-brand-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" || true' EXIT
+          sleep 2
+          npm run smoke:endpoints
+
+      - name: Commit materialized routes and release hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Evidence Contours output is already materialized."
+            exit 0
+          fi
+          git commit -m "Materialize PainMap Evidence Contours across static routes"
+          git push origin HEAD:brand/evidence-contours-v1-final
