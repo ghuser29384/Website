@@ -1,0 +1,318 @@
+name: PainMap publish human health-pressure context now
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/painmap-publish-health-context-now.yml
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: painmap-health-context-production
+  cancel-in-progress: false
+
+jobs:
+  build-validate-commit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    outputs:
+      production_sha: ${{ steps.commit.outputs.sha }}
+      observation_count: ${{ steps.payload.outputs.observations }}
+      country_count: ${{ steps.payload.outputs.countries }}
+      indicator_count: ${{ steps.payload.outputs.indicators }}
+    steps:
+      - name: Check out current production branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build current source-backed health-pressure context
+        shell: bash
+        run: |
+          set -euo pipefail
+          builder='scripts/build-human-health-pressure-context.py'
+          test -f "$builder"
+          help_text="$(python3 "$builder" --help 2>&1 || true)"
+          if grep -q -- '--refresh' <<<"$help_text"; then
+            python3 "$builder" --refresh
+          elif grep -q -- '--publish' <<<"$help_text"; then
+            python3 "$builder" --publish
+          else
+            python3 "$builder"
+          fi
+
+      - name: Validate generated payload contract
+        id: payload
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import csv
+          import json
+          import os
+          from pathlib import Path
+
+          json_path = Path('data/human-health-pressure-context.json')
+          csv_path = Path('data/human-health-pressure-context.csv')
+          schema_path = Path('schemas/human-health-pressure-context.schema.json')
+          route_path = Path('data/health-pressures/index.html')
+          receipt_path = Path('data/source-extracts/world-bank-health-pressure-context.json')
+          index_path = Path('data/pain-drivers.json')
+
+          for path in (json_path, csv_path, schema_path, route_path, receipt_path, index_path):
+              if not path.is_file() or path.stat().st_size < 50:
+                  raise SystemExit(f'Missing or empty generated file: {path}')
+
+          payload = json.loads(json_path.read_text(encoding='utf-8'))
+          schema = json.loads(schema_path.read_text(encoding='utf-8'))
+          receipt = json.loads(receipt_path.read_text(encoding='utf-8'))
+          index = json.loads(index_path.read_text(encoding='utf-8'))
+
+          observations = payload.get('observations') or []
+          place_summaries = payload.get('place_summaries') or payload.get('country_summaries') or []
+          indicators = payload.get('indicators') or payload.get('indicator_registry') or []
+          coverage = payload.get('coverage') or {}
+
+          if len(observations) < 500:
+              raise SystemExit(f'Health-pressure coverage too small: {len(observations)} observations')
+          if len(place_summaries) < 100:
+              raise SystemExit(f'Health-pressure country coverage too small: {len(place_summaries)}')
+          if len(indicators) < 5:
+              raise SystemExit(f'Health-pressure indicator coverage too small: {len(indicators)}')
+          if payload.get('canonical_release') is not False:
+              raise SystemExit('Health-pressure context must remain non-canonical')
+
+          comparison_policy = payload.get('comparison_policy') or index.get('comparison_policy') or {}
+          if comparison_policy.get('overall_cross_domain_ranking_enabled') is not False:
+              raise SystemExit('Cross-domain composite ranking must remain disabled')
+
+          with csv_path.open(newline='', encoding='utf-8') as stream:
+              csv_rows = list(csv.DictReader(stream))
+          if len(csv_rows) != len(observations):
+              raise SystemExit(f'CSV/JSON parity failure: {len(csv_rows)} != {len(observations)}')
+
+          if schema.get('$schema') != 'https://json-schema.org/draft/2020-12/schema':
+              raise SystemExit('Health-pressure schema must use JSON Schema draft 2020-12')
+          if not receipt.get('source_payloads') and not receipt.get('payloads'):
+              raise SystemExit('Source receipt is missing payload metadata')
+
+          dataset_ids = {row.get('dataset_id') for row in index.get('datasets', [])}
+          dataset_id = payload.get('dataset_id')
+          if dataset_id not in dataset_ids:
+              raise SystemExit(f'{dataset_id!r} is missing from data/pain-drivers.json')
+
+          route_html = route_path.read_text(encoding='utf-8')
+          for token in ('Health-pressure', 'uncertainty', 'World Bank'):
+              if token.lower() not in route_html.lower():
+                  raise SystemExit(f'Health-pressure route is missing expected copy: {token}')
+
+          output = os.environ['GITHUB_OUTPUT']
+          with open(output, 'a', encoding='utf-8') as stream:
+              stream.write(f'observations={len(observations)}\n')
+              stream.write(f'countries={len(place_summaries)}\n')
+              stream.write(f'indicators={len(indicators)}\n')
+
+          print(json.dumps({
+              'dataset_id': dataset_id,
+              'observations': len(observations),
+              'countries': len(place_summaries),
+              'indicators': len(indicators),
+              'coverage': coverage,
+          }, indent=2))
+          PY
+
+      - name: Run complete static and release validation
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run check
+          npm run freshness:sources
+          python3 -m py_compile \
+            clients/python/painmap_client.py \
+            examples/load_place_profile.py \
+            scripts/build-human-health-pressure-context.py
+          git diff --check
+
+      - name: Smoke-test all public and new endpoints
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/painmap-health-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 40); do
+            curl --fail --silent --show-error http://127.0.0.1:4173/ >/dev/null && break
+            sleep 0.25
+          done
+          curl --fail --silent --show-error http://127.0.0.1:4173/ >/dev/null
+          npm run smoke:endpoints
+          for path in \
+            /data/health-pressures/ \
+            /data/human-health-pressure-context.json \
+            /data/human-health-pressure-context.csv \
+            /schemas/human-health-pressure-context.schema.json \
+            /data/source-extracts/world-bank-health-pressure-context.json; do
+            curl --fail --silent --show-error "http://127.0.0.1:4173${path}" >/dev/null
+          done
+
+      - name: Remove temporary publication infrastructure
+        shell: bash
+        run: |
+          set -euo pipefail
+          find .github/workflows -maxdepth 1 -type f \
+            \( -name 'painmap-publish-health-context-now.yml' \
+               -o -name '*health-pressure*publish*.yml' \
+               -o -name '*publish*health-pressure*.yml' \
+               -o -name '*nonfatal-pain*.yml' \) \
+            -print -delete
+          rm -f data/pain-data-discovery-trigger.json
+
+      - name: Commit validated production files
+        id: commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git status --short
+          if git diff --cached --quiet; then
+            echo 'No production changes were generated.' >&2
+            exit 1
+          fi
+          git commit -m 'Publish global human health-pressure context data'
+          git push origin HEAD:main
+          production_sha="$(git rev-parse HEAD)"
+          echo "sha=$production_sha" >> "$GITHUB_OUTPUT"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build production Pages artifact
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Upload production Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+      - name: Upload publication evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: painmap-health-pressure-production-evidence
+          path: |
+            data/human-health-pressure-context.json
+            data/human-health-pressure-context.csv
+            schemas/human-health-pressure-context.schema.json
+            data/source-extracts/world-bank-health-pressure-context.json
+            data/health-pressures/index.html
+            data/pain-drivers.json
+          if-no-files-found: warn
+          retention-days: 14
+
+  deploy:
+    needs: build-validate-commit
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy validated Pages artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  report-cleanup:
+    if: always()
+    needs:
+      - build-validate-commit
+      - deploy
+    permissions:
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report production result and close temporary work items
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const buildResult = '${{ needs.build-validate-commit.result }}';
+            const deployResult = '${{ needs.deploy.result }}';
+            const sha = '${{ needs.build-validate-commit.outputs.production_sha }}';
+            const observations = '${{ needs.build-validate-commit.outputs.observation_count }}';
+            const countries = '${{ needs.build-validate-commit.outputs.country_count }}';
+            const indicators = '${{ needs.build-validate-commit.outputs.indicator_count }}';
+            const pageUrl = '${{ needs.deploy.outputs.page_url }}';
+            const success = buildResult === 'success' && deployResult === 'success';
+            const body = [
+              '## PainMap human health-pressure production publication',
+              '',
+              `- Build, data, and release validation: **${buildResult}**`,
+              `- GitHub Pages deployment: **${deployResult}**`,
+              `- Production revision: \`${sha || 'not committed'}\``,
+              `- Observations: **${observations || 'unknown'}**`,
+              `- Countries/place summaries: **${countries || 'unknown'}**`,
+              `- Indicator families: **${indicators || 'unknown'}**`,
+              `- Pages URL: ${pageUrl || 'not available'}`,
+              '',
+              'Production endpoints:',
+              '- https://painmaps.org/data/health-pressures/',
+              '- https://painmaps.org/data/human-health-pressure-context.json',
+              '- https://painmaps.org/data/human-health-pressure-context.csv',
+              '- https://painmaps.org/schemas/human-health-pressure-context.schema.json',
+              '- https://painmaps.org/data/source-extracts/world-bank-health-pressure-context.json',
+            ].join('\n');
+
+            for (const number of [15, 17, 19]) {
+              try {
+                const issue = await github.rest.issues.get({ owner: context.repo.owner, repo: context.repo.repo, issue_number: number });
+                if (number === 19 || issue.data.state === 'open') {
+                  await github.rest.issues.createComment({ owner: context.repo.owner, repo: context.repo.repo, issue_number: number, body });
+                }
+                if (success && issue.data.state === 'open') {
+                  await github.rest.issues.update({ owner: context.repo.owner, repo: context.repo.repo, issue_number: number, state: 'closed', state_reason: 'completed' });
+                }
+              } catch (error) {
+                core.warning(`Could not update issue ${number}: ${error.message}`);
+              }
+            }
+
+            if (success) {
+              try {
+                await github.rest.pulls.update({ owner: context.repo.owner, repo: context.repo.repo, pull_number: 16, state: 'closed', title: '[PainMap Data] Discover nonfatal pain sources — completed' });
+              } catch (error) {
+                core.warning(`Could not close discovery PR: ${error.message}`);
+              }
+            }
+
+            if (!success) {
+              core.setFailed('Health-pressure publication did not complete successfully.');
+            }
