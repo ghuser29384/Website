@@ -16,7 +16,7 @@ jobs:
       github.event_name == 'workflow_dispatch' ||
       github.event.issue.title == '[PainMap Data] Diagnose human health-pressure context'
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - name: Check out production branch
         uses: actions/checkout@v4
@@ -24,23 +24,65 @@ jobs:
           ref: main
           fetch-depth: 1
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Run source refresh and capture diagnostics
+      - name: Run full publication preparation and capture diagnostics
         id: diagnostic
         shell: bash
         run: |
           set +e
-          python3 scripts/build-human-health-pressure-context.py --refresh > diagnostic.log 2>&1
+          : > diagnostic.log
+          phase=refresh
+          python3 scripts/build-human-health-pressure-context.py --refresh >> diagnostic.log 2>&1
           status=$?
+
+          if [ "$status" -eq 0 ]; then
+            phase=static-check
+            npm run check >> diagnostic.log 2>&1
+            status=$?
+          fi
+
+          if [ "$status" -eq 0 ]; then
+            phase=source-freshness
+            npm run freshness:sources >> diagnostic.log 2>&1
+            status=$?
+          fi
+
+          if [ "$status" -eq 0 ]; then
+            phase=python-compile
+            python3 -m py_compile \
+              clients/python/painmap_client.py \
+              examples/load_place_profile.py \
+              scripts/build-source-backed-country-supplement.py \
+              scripts/build-human-health-pressure-context.py >> diagnostic.log 2>&1
+            status=$?
+          fi
+
+          if [ "$status" -eq 0 ]; then
+            phase=diff-check
+            git diff --check >> diagnostic.log 2>&1
+            status=$?
+          fi
+
+          {
+            echo
+            echo "FINAL_PHASE=$phase"
+            echo "FINAL_STATUS=$status"
+          } >> diagnostic.log
           cat diagnostic.log
           {
             echo "status=$status"
+            echo "phase=$phase"
             echo "log<<EOF"
-            tail -n 160 diagnostic.log
+            tail -n 240 diagnostic.log
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
           exit 0
@@ -57,16 +99,18 @@ jobs:
         uses: actions/github-script@v7
         env:
           STATUS: ${{ steps.diagnostic.outputs.status }}
+          PHASE: ${{ steps.diagnostic.outputs.phase }}
           LOG: ${{ steps.diagnostic.outputs.log }}
         with:
           script: |
             const body = [
-              '## PainMap health-pressure refresh diagnostic',
+              '## PainMap health-pressure publication diagnostic',
               '',
+              `- Final phase: **${process.env.PHASE || 'unknown'}**`,
               `- Exit status: \`${process.env.STATUS || 'unknown'}\``,
               '',
               '```text',
-              (process.env.LOG || 'No diagnostic output').slice(-12000),
+              (process.env.LOG || 'No diagnostic output').slice(-18000),
               '```'
             ].join('\n');
             await github.rest.issues.createComment({
