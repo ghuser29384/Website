@@ -1,6 +1,6 @@
 Evidence Contours validation diagnostics
 node_status=0
-check_status=1
+check_status=0
 freshness_status=0
 diff_status=0
 brand_attr_status=0
@@ -45,8 +45,17 @@ Static site check passed for 385 manifest routes and 90 exports.
 > validate:release
 > node scripts/validate-release-contract.mjs
 
-candidate package file data/candidates/country-data-expansion/source-snapshots.json checksum should match package manifest
-candidate package file data/candidates/country-data-expansion/source-snapshots.json byte count should match package manifest
+Release contract validation passed for 8 schemas and 36 smoke endpoints.
+
+> smoke:ui
+> node scripts/check-ui-smoke.mjs
+
+UI smoke check passed for 10 routes.
+
+> fixtures:check
+> node scripts/build-preview-release.mjs --check
+
+Preview fixture check passed for 2 measurements and 2 places.
 
 === freshness ===
 
