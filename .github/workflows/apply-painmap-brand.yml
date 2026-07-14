@@ -1,0 +1,58 @@
+name: Apply PainMap brand system
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "brand.css"
+      - "assets/brand/**"
+      - "scripts/apply-brand-system.mjs"
+      - "package.json"
+      - ".github/workflows/apply-painmap-brand.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: painmap-brand-main
+  cancel-in-progress: false
+
+jobs:
+  apply-brand:
+    name: Generate and commit branded site
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build, brand, and validate the static site
+        run: npm run check
+
+      - name: Check patch formatting
+        run: git diff --check
+
+      - name: Commit generated branded site
+        shell: bash
+        run: |
+          if git diff --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
+            echo "PainMap brand system is already fully applied."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git commit -m "Apply PainMap brand system to generated site"
+          git pull --rebase origin main
+          git push origin HEAD:main
