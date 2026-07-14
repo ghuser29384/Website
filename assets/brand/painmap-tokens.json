@@ -1,30 +1,36 @@
 {
   "meta": {
-    "name": "PainMap Brand System",
-    "version": "1.0",
-    "date": "2026-07-14"
+    "name": "PainMap Evidence Contours Brand System",
+    "version": "1.0.0",
+    "date": "2026-07-14",
+    "brand_id": "evidence-contours-v1"
+  },
+  "messaging": {
+    "promise": "See the evidence. See its limits.",
+    "descriptor": "Animal pain evidence, mapped.",
+    "campaign_line": "What is known. What is inferred. What is missing."
   },
   "color": {
-    "paper": { "value": "#F2F0E8", "type": "color" },
-    "white": { "value": "#FFFFFF", "type": "color" },
-    "ink": { "value": "#141714", "type": "color" },
-    "graphite": { "value": "#5B605A", "type": "color" },
-    "rule": { "value": "#C9CCC3", "type": "color" },
-    "cobalt": { "value": "#3154D8", "type": "color" },
-    "cobalt_dark": { "value": "#20378E", "type": "color" },
-    "cobalt_pale": { "value": "#DDE4FF", "type": "color" },
-    "field": { "value": "#96AA90", "type": "color" },
-    "field_pale": { "value": "#E0E7DD", "type": "color" },
-    "low": { "value": "#B7CC91", "type": "color" },
-    "moderate": { "value": "#E9BE62", "type": "color" },
-    "high": { "value": "#DC7658", "type": "color" },
-    "severe": { "value": "#7E2838", "type": "color" },
-    "unknown": { "value": "#A4A7A1", "type": "color" }
+    "paper": { "value": "#F2EFE7", "type": "color" },
+    "chalk": { "value": "#FFFFFF", "type": "color" },
+    "ink": { "value": "#171A1B", "type": "color" },
+    "deep_teal": { "value": "#174D55", "type": "color" },
+    "signal_coral": { "value": "#E65B43", "type": "color" },
+    "signal_dark": { "value": "#B83E2C", "type": "color" },
+    "mist": { "value": "#DCE8E3", "type": "color" },
+    "stone": { "value": "#626A6A", "type": "color" },
+    "rule": { "value": "#C7CBC5", "type": "color" },
+    "evidence_direct": { "value": "#174D55", "type": "color" },
+    "evidence_modeled": { "value": "#5367A8", "type": "color" },
+    "evidence_proxy": { "value": "#8A5A12", "type": "color" },
+    "evidence_priority": { "value": "#B83E2C", "type": "color" },
+    "evidence_boundary": { "value": "#7F8988", "type": "color" },
+    "evidence_no_data": { "value": "#E1DFD8", "type": "color" }
   },
   "font": {
-    "display": { "value": "EB Garamond, Iowan Old Style, Baskerville, Georgia, serif", "type": "fontFamily" },
-    "interface": { "value": "Inter, Avenir Next, Helvetica Neue, Arial, sans-serif", "type": "fontFamily" },
-    "data": { "value": "SFMono-Regular, Menlo, DejaVu Sans Mono, monospace", "type": "fontFamily" }
+    "display": { "value": "Noto Serif Display, Georgia, Times New Roman, serif", "type": "fontFamily" },
+    "interface": { "value": "Inter, Arial, Helvetica, sans-serif", "type": "fontFamily" },
+    "data": { "value": "PT Mono, Courier New, monospace", "type": "fontFamily" }
   },
   "radius": {
     "none": { "value": "0px" },
@@ -36,16 +42,25 @@
     "brand": { "value": "3px" }
   },
   "space": {
-    "1": { "value": "4px" }, "2": { "value": "8px" }, "3": { "value": "12px" },
-    "4": { "value": "16px" }, "5": { "value": "20px" }, "6": { "value": "24px" },
-    "7": { "value": "28px" }, "8": { "value": "32px" }, "9": { "value": "36px" },
-    "10": { "value": "40px" }, "11": { "value": "44px" }, "12": { "value": "48px" }
+    "1": { "value": "4px" },
+    "2": { "value": "8px" },
+    "3": { "value": "12px" },
+    "4": { "value": "16px" },
+    "5": { "value": "20px" },
+    "6": { "value": "24px" },
+    "7": { "value": "28px" },
+    "8": { "value": "32px" },
+    "9": { "value": "36px" },
+    "10": { "value": "40px" },
+    "11": { "value": "44px" },
+    "12": { "value": "48px" }
   },
   "evidence": {
-    "direct": { "line": "solid", "marker": "filled-circle" },
-    "modeled": { "line": "double", "marker": "ring" },
-    "proxy": { "line": "dashed", "marker": "open-square" },
-    "priority": { "line": "hatched", "marker": "diamond" },
-    "boundaryOnly": { "line": "fine-gray-dash", "marker": "none" }
+    "direct": { "line": "solid", "color": "evidence_direct" },
+    "modeled": { "line": "dashed", "color": "evidence_modeled" },
+    "proxy": { "line": "dot-dash", "color": "evidence_proxy" },
+    "priority": { "line": "hatched", "color": "evidence_priority" },
+    "boundaryOnly": { "line": "neutral-hairline", "color": "evidence_boundary" },
+    "noData": { "line": "open-field", "color": "evidence_no_data" }
   }
 }
