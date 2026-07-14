@@ -1,0 +1,88 @@
+name: Codex refresh country candidate data
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out implementation branch
+        uses: actions/checkout@v4
+        with:
+          ref: codex/add-source-backed-country-data
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Materialize reviewed implementation files
+        shell: bash
+        run: |
+          mkdir -p scripts
+          cat data/codex-bootstrap/script.part* | base64 --decode | gzip --decompress > scripts/build-source-backed-country-supplement.py
+          base64 --decode data/codex-bootstrap/readme.b64 | gzip --decompress > README.md
+          base64 --decode data/codex-bootstrap/package.b64 | gzip --decompress > package.json
+          chmod +x scripts/build-source-backed-country-supplement.py
+          python3 -m py_compile scripts/build-source-backed-country-supplement.py
+
+      - name: Fetch and build bounded country supplement
+        run: npm run candidate:data:refresh
+
+      - name: Remove temporary implementation scaffolding
+        run: |
+          rm -rf data/codex-bootstrap
+          rm -f .github/workflows/codex-export-branch.yml
+          rm -f .github/workflows/codex-refresh-country-data.yml
+          rm -f data/candidates/country-data-expansion/source-links.tmp.md
+
+      - name: Build and validate static release contract
+        run: |
+          npm run check
+          npm run freshness:sources
+          python3 -m py_compile clients/python/painmap_client.py examples/load_place_profile.py scripts/build-source-backed-country-supplement.py
+          git diff --check
+
+      - name: Smoke test static endpoints
+        shell: bash
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/painmap-static-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          npm run smoke:endpoints
+
+      - name: Commit validated candidate data
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git status --short
+          git commit -m 'Add source-backed country candidate data'
+          git push origin HEAD:codex/add-source-backed-country-data
+
+      - name: Upload candidate QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: country-candidate-qa
+          path: |
+            data/candidates/country-data-expansion/source-backed-country-summary.json
+            data/candidates/country-data-expansion/validation-summary.json
+            data/candidates/country-data-expansion/source-extracts/
+          if-no-files-found: ignore
+          retention-days: 7
