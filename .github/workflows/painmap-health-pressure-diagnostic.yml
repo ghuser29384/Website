@@ -1,0 +1,84 @@
+name: PainMap diagnose human health-pressure context
+
+on:
+  issues:
+    types:
+      - opened
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  diagnose:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.issue.title == '[PainMap Data] Diagnose human health-pressure context'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out production branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run source refresh and capture diagnostics
+        id: diagnostic
+        shell: bash
+        run: |
+          set +e
+          python3 scripts/build-human-health-pressure-context.py --refresh > diagnostic.log 2>&1
+          status=$?
+          cat diagnostic.log
+          {
+            echo "status=$status"
+            echo "log<<EOF"
+            tail -n 160 diagnostic.log
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Upload diagnostic output
+        uses: actions/upload-artifact@v4
+        with:
+          name: painmap-health-pressure-diagnostic
+          path: diagnostic.log
+          retention-days: 7
+
+      - name: Report diagnostic result
+        if: github.event_name == 'issues'
+        uses: actions/github-script@v7
+        env:
+          STATUS: ${{ steps.diagnostic.outputs.status }}
+          LOG: ${{ steps.diagnostic.outputs.log }}
+        with:
+          script: |
+            const body = [
+              '## PainMap health-pressure refresh diagnostic',
+              '',
+              `- Exit status: \`${process.env.STATUS || 'unknown'}\``,
+              '',
+              '```text',
+              (process.env.LOG || 'No diagnostic output').slice(-12000),
+              '```'
+            ].join('\n');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'completed'
+            });
