@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="132" viewBox="0 0 620 132" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">PainMap</title>
+  <desc id="desc">Animal pain evidence, mapped.</desc>
+  <g transform="translate(2 2)">
+    <g stroke="#174D55" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 106V20H84"/>
+      <path d="M108 42V108H58"/>
+    </g>
+    <g stroke="#174D55" stroke-width="3.7" stroke-linecap="round" fill="none">
+      <path d="M35 94C43 74 46 54 68 47C82 43 96 49 102 61C108 73 102 86 91 95"/>
+      <path d="M29 102C40 78 35 50 63 35C83 24 106 29 118 45"/>
+      <path d="M24 111C34 88 22 49 55 26C78 10 108 14 125 32"/>
+    </g>
+    <circle cx="35" cy="94" r="6.2" fill="#E65B43"/>
+  </g>
+  <text x="152" y="73" fill="#171A1B" font-family="Noto Serif Display, Georgia, serif" font-size="70" font-weight="600" letter-spacing="-2">PainMap</text>
+  <circle cx="273" cy="22" r="5.5" fill="#E65B43"/>
+  <text x="156" y="110" fill="#626A6A" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="500" letter-spacing="0.2">Animal pain evidence, mapped.</text>
+</svg>
