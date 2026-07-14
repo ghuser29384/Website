@@ -1,0 +1,8 @@
+{
+  "request_id": "painmap-pain-driver-context-live-2026-07-14T13:42Z",
+  "requested_source_branch": "main",
+  "expected_data_commit": "d179cb2607a8c3f0c8917fe4f9723af46a5ca3ae",
+  "expected_trigger_commit": "2ddc61538ba2f9ecb051bb619dd5aa9acf0a2f85",
+  "reason": "Publish the source-backed pain-driver context datasets and public data catalog to the configured GitHub Pages site.",
+  "canonical_release_modified": false
+}
