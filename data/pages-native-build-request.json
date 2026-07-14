@@ -1,0 +1,12 @@
+{
+  "request_id": "painmap-trusted-native-pages-build-v2-2026-07-14T14:18Z",
+  "deploy_ref": "main",
+  "expected_production_head": "ee34df4d9c7cc721d8957931f0d0fd2dc928dcf2",
+  "trigger": "fresh pull_request_target opened event",
+  "validated_observations": {
+    "human_mortality_context": 741,
+    "source_backed_candidate_context": 24
+  },
+  "canonical_release_modified": false,
+  "comparison_policy": "No cross-domain composite ranking."
+}
