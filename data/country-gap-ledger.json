@@ -1,6 +1,6 @@
 {
   "release_id": "2026-05-31.atlas.2",
-  "generated_at": "2026-07-14T15:28:04Z",
+  "generated_at": "2026-07-14T15:28:22Z",
   "release_date": "2026-05-31",
   "coverage_gate": {
     "eligible_input_groups": [
@@ -94,7 +94,7 @@
   "candidate_review": {
     "candidate_package_present": true,
     "package_path": "data/candidates/country-data-expansion",
-    "generated_at": "2026-07-14T15:28:03.339Z",
+    "generated_at": "2026-07-14T15:28:22.092Z",
     "release_candidate_id": "release-candidate-2026-07-country-context-v0",
     "implementation_decision": "staged_only_not_promoted",
     "package_file_audit": {
