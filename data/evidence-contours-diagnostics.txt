@@ -40,7 +40,13 @@ Source snapshots: 7
 Candidate package status: blocked
 Candidate measurement rows with raw values: 0
 Default ranking readiness: disabled
-data/index.html is missing route-manifest description
+Static site check passed for 385 manifest routes and 90 exports.
+
+> validate:release
+> node scripts/validate-release-contract.mjs
+
+candidate package file data/candidates/country-data-expansion/source-snapshots.json checksum should match package manifest
+candidate package file data/candidates/country-data-expansion/source-snapshots.json byte count should match package manifest
 
 === freshness ===
 
