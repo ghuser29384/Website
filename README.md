@@ -27,6 +27,19 @@ PainMap is a public static atlas for pain-source evidence by place. The site sep
 - Typed clients: `clients/typescript/painmap-client.ts`, `clients/python/painmap_client.py`
 - Example recipes: `examples/README.md`
 
+## Pain-driver context supplement
+
+The live site publishes a non-canonical, evidence-preserving supplement for investigating major pain-relevant pressures by place:
+
+- [Human and cross-domain context guide](https://painmaps.org/data/pain-drivers/)
+- [Human mortality-linked context JSON](https://painmaps.org/data/pain-driver-context.json)
+- [Human mortality-linked context CSV](https://painmaps.org/data/pain-driver-context.csv)
+- [JSON Schema](https://painmaps.org/schemas/pain-driver-context.schema.json)
+- [Source-backed candidate summary](https://painmaps.org/data/candidates/country-data-expansion/source-backed-country-summary.json)
+- [Deployment receipt](https://painmaps.org/data/pain-driver-deployment.json)
+
+The supplement currently contains 741 WHO/World Bank mortality-context observations across 191 indexed countries and 24 source-backed animal, insecticide, and land-context candidate observations across eight countries. Comparisons are permitted only within compatible metric, unit, method, and reference-period groups. No cross-domain universal pain ranking is enabled, land area is not classified as a cause of pain, and no candidate rows are promoted into the immutable canonical release.
+
 Run the release artifact builder before checks:
 
 ```sh
