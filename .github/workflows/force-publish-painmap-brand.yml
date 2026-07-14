@@ -1,4 +1,4 @@
-name: Force publish PainMap Evidence Field brand
+name: Force publish PainMap Evidence Contours brand
 
 on:
   workflow_dispatch:
@@ -28,12 +28,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - name: Apply Evidence Field brand
+      - name: Apply Evidence Contours brand
         run: |
           node scripts/apply-brand-system.mjs
-          grep -q "Map pain\." index.html
-          grep -q "brand.css" index.html
-          grep -q "painmap-symbol-primary.svg" index.html
+          grep -q "What is known\." index.html
+          grep -q 'data-brand="evidence-contours-v1"' index.html
+          grep -q "painmap-logo-horizontal-primary.svg" index.html
       - name: Commit generated branded routes
         shell: bash
         run: |
@@ -44,5 +44,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Publish PainMap Evidence Field brand across static routes"
+          git commit -m "Publish PainMap Evidence Contours brand across static routes"
           git push origin HEAD:main
