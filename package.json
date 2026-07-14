@@ -12,7 +12,7 @@
     "smoke:ui": "node scripts/check-ui-smoke.mjs",
     "smoke:endpoints": "node scripts/check-endpoint-smoke.mjs",
     "serve": "python3 -m http.server 4173",
-    "candidate:data:refresh": "python3 scripts/build-source-backed-country-supplement.py --refresh",
+    "candidate:data:refresh": "python3 data/codex-bootstrap/merge-current-main.py && python3 scripts/build-source-backed-country-supplement.py --refresh",
     "candidate:data:check": "python3 scripts/build-source-backed-country-supplement.py --check"
   }
 }
