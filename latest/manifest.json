@@ -1,8 +1,8 @@
 {
   "latest_release_id": "2026-05-31.atlas.2",
   "release_manifest_url": "https://painmap.org/releases/2026-05-31/manifest.json",
-  "release_manifest_sha256": "a051f2bd31506dea78de59310b0cdd6f0194bf389539cc92566d3dcfc9e05c1f",
+  "release_manifest_sha256": "66c05fdd927c37feb6f17a2f34382a32b8d40ffbb1f11c2fc1b5b5be81f22324",
   "mutable": true,
-  "generated_at": "2026-07-05",
+  "generated_at": "2026-07-14",
   "note": "This alias points to the latest PainMap release and may change. Use immutable release URLs for reproducible citations."
 }

@@ -1,0 +1,24 @@
+{
+  "name": "PainMap Brand System",
+  "version": "1.0",
+  "concept": "The Evidence Field",
+  "brand_id": "evidence-field-v1",
+  "applied_at": "2026-07-14",
+  "stylesheets": [
+    {
+      "path": "/brand.css",
+      "version": "2cb1b100c5a8e940",
+      "integrity": "sha384-xDZWchas6IQgiOcloxbhriO2lst0kxyCjuT6IklryzcwBBfTdy23hW0khCOj4DtU"
+    },
+    {
+      "path": "/assets/brand/brand-components.css",
+      "version": "6fa78d873b7e24a7",
+      "integrity": "sha384-1g3zTZ0UzEa5XrGAg8U1zygr+TixbkwDs8CWzt5x1tRgSCSmJc103Ef3opXZuH4d"
+    }
+  ],
+  "assets": {
+    "symbol": "/assets/brand/painmap-symbol-primary.svg",
+    "favicon": "/assets/brand/painmap-favicon.svg",
+    "social_card": "/assets/social-card.svg"
+  }
+}
