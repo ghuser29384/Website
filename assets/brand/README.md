@@ -14,6 +14,6 @@ Core message: **Map pain. Keep uncertainty visible.**
 
 Implementation status: the production workflow applies this system to every generated HTML route before deployment.
 
-Actions probe: verify pull-request generation and validation on the current brand branch.
+Actions probe: verify pull-request generation and validation on the current brand branch, with actionable logs.
 
 Do not embed or redistribute font files. The web implementation uses a resilient stack based on EB Garamond, Inter, and system fallbacks.
