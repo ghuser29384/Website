@@ -14,4 +14,6 @@ Core message: **Map pain. Keep uncertainty visible.**
 
 Implementation status: the production workflow applies this system to every generated HTML route before deployment.
 
+Actions probe: verify pull-request workflows without changing production output.
+
 Do not embed or redistribute font files. The web implementation uses a resilient stack based on EB Garamond, Inter, and system fallbacks.
