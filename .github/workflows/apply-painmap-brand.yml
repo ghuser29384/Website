@@ -10,25 +10,34 @@ on:
       - "scripts/apply-brand-system.mjs"
       - "package.json"
       - ".github/workflows/apply-painmap-brand.yml"
+  pull_request:
+    paths:
+      - "brand.css"
+      - "assets/brand/**"
+      - "scripts/apply-brand-system.mjs"
+      - "package.json"
+      - ".github/workflows/apply-painmap-brand.yml"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: painmap-brand-main
+  group: painmap-brand-${{ github.event_name }}-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: false
 
 jobs:
   apply-brand:
     name: Generate and commit branded site
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
     steps:
-      - name: Check out repository
+      - name: Check out repository branch
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
           fetch-depth: 0
 
       - name: Set up Node.js
@@ -44,6 +53,8 @@ jobs:
 
       - name: Commit generated branded site
         shell: bash
+        env:
+          TARGET_BRANCH: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
         run: |
           if git diff --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
             echo "PainMap brand system is already fully applied."
@@ -54,5 +65,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add --all
           git commit -m "Apply PainMap brand system to generated site"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git pull --rebase origin "$TARGET_BRANCH"
+          git push origin "HEAD:$TARGET_BRANCH"
