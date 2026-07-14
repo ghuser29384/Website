@@ -120,6 +120,16 @@ function applyEvidenceTableCells(html) {
   }, html);
 }
 
+function applyDataRouteMetadata(html, relativePath) {
+  if (relativePath !== "data/index.html") return html;
+
+  const description = "PainMap dataset groups, provenance notes, canonical release artifacts, and public source boundaries.";
+  html = html.replace(/<meta name="description" content="[^"]*">/i, `<meta name="description" content="${description}">`);
+  html = html.replace(/<meta property="og:description" content="[^"]*">/i, `<meta property="og:description" content="${description}">`);
+  html = html.replace(/<meta name="twitter:description" content="[^"]*">/i, `<meta name="twitter:description" content="${description}">`);
+  return html;
+}
+
 function applyHomepageCopy(html, relativePath) {
   if (relativePath !== "index.html") return html;
 
@@ -155,6 +165,7 @@ function transformHtml(html, relativePath, brandLinks, faviconLink, themeColor) 
   next = replaceBrandAnchor(next);
   next = applyEvidenceClasses(next);
   next = applyEvidenceTableCells(next);
+  next = applyDataRouteMetadata(next, relativePath);
   next = applyHomepageCopy(next, relativePath);
   return next;
 }
