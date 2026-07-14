@@ -1,0 +1,67 @@
+Evidence Contours validation diagnostics
+node_status=0
+check_status=0
+freshness_status=0
+diff_status=0
+brand_attr_status=0
+hero_status=0
+descriptor_status=0
+logo_status=0
+asset_status=0
+
+=== node --check ===
+
+=== npm run check ===
+
+> check
+> npm run build:data && node scripts/check-static-site.mjs && npm run validate:release && npm run smoke:ui && npm run fixtures:check
+
+
+> build:data
+> node scripts/build-static-artifacts.mjs && node scripts/apply-brand-system.mjs && node scripts/build-static-artifacts.mjs
+
+Built coverage artifacts from current place and measurement inputs.
+Canonical country profiles: 2
+Countries eligible for canonical promotion: 2
+Boundary-only country entries: 237
+No-data country entries: 0
+Source snapshots: 7
+Candidate package status: blocked
+Candidate measurement rows with raw values: 0
+Default ranking readiness: disabled
+PainMap Evidence Contours brand applied to 387 HTML files.
+Brand stylesheet versions: b4437c8a6880a9db, 0648771439bc1fe1
+Built coverage artifacts from current place and measurement inputs.
+Canonical country profiles: 2
+Countries eligible for canonical promotion: 2
+Boundary-only country entries: 237
+No-data country entries: 0
+Source snapshots: 7
+Candidate package status: blocked
+Candidate measurement rows with raw values: 0
+Default ranking readiness: disabled
+Static site check passed for 385 manifest routes and 90 exports.
+
+> validate:release
+> node scripts/validate-release-contract.mjs
+
+Release contract validation passed for 8 schemas and 36 smoke endpoints.
+
+> smoke:ui
+> node scripts/check-ui-smoke.mjs
+
+UI smoke check passed for 10 routes.
+
+> fixtures:check
+> node scripts/build-preview-release.mjs --check
+
+Preview fixture check passed for 2 measurements and 2 places.
+
+=== freshness ===
+
+> freshness:sources
+> node scripts/check-source-freshness.mjs
+
+Source freshness check passed for 10 sources as of 2026-07-14.
+
+=== git diff --check ===
