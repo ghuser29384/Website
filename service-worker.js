@@ -1,8 +1,11 @@
-const CACHE_NAME = "painmap-emergency-boundaries-v2";
+const CACHE_VERSION = "v3";
+const CACHE_NAME = `painmap-static-${CACHE_VERSION}`;
+const OFFLINE_FALLBACK = "/offline.html";
 const BOUNDARY_PATHS = new Set([
   "/data/natural-earth-countries.geojson",
   "/data/countries-lite.geojson",
 ]);
+const INSTALL_ASSETS = [OFFLINE_FALLBACK, ...BOUNDARY_PATHS];
 
 const EMBEDDED_BOUNDARIES = {
   type: "FeatureCollection",
@@ -82,7 +85,56 @@ function embeddedBoundaryResponse() {
   });
 }
 
-self.addEventListener("install", () => {
+async function staleWhileRevalidate(request, event, fallbackFactory) {
+  const cache = await caches.open(CACHE_NAME);
+  const url = new URL(request.url);
+  const cacheKey = new Request(url.pathname, { method: "GET" });
+  const cached = await cache.match(cacheKey);
+
+  const networkUpdate = fetch(request, { cache: "reload" })
+    .then(async (response) => {
+      if (response && response.ok) {
+        await cache.put(cacheKey, response.clone());
+      }
+      return response;
+    })
+    .catch(() => null);
+
+  event.waitUntil(networkUpdate);
+
+  if (cached) {
+    return cached;
+  }
+
+  const networkResponse = await networkUpdate;
+  if (networkResponse && networkResponse.ok) {
+    return networkResponse;
+  }
+
+  return fallbackFactory();
+}
+
+async function networkFirst(request) {
+  const cache = await caches.open(CACHE_NAME);
+
+  try {
+    const response = await fetch(request);
+    if (response && response.ok) {
+      await cache.put(request, response.clone());
+    }
+    return response;
+  } catch (_error) {
+    return (await cache.match(request)) || (await cache.match(OFFLINE_FALLBACK));
+  }
+}
+
+self.addEventListener("install", (event) => {
+  event.waitUntil(
+    caches
+      .open(CACHE_NAME)
+      .then((cache) => cache.addAll(INSTALL_ASSETS))
+      .catch(() => undefined)
+  );
   self.skipWaiting();
 });
 
@@ -119,31 +171,16 @@ self.addEventListener("fetch", (event) => {
   }
 
   const url = new URL(request.url);
-  if (url.origin !== self.location.origin || !BOUNDARY_PATHS.has(url.pathname)) {
+  if (url.origin !== self.location.origin) {
     return;
   }
 
-  event.respondWith(
-    (async () => {
-      const cache = await caches.open(CACHE_NAME);
-      const cacheKey = new Request(url.pathname, { method: "GET" });
-      const cached = await cache.match(cacheKey);
+  if (request.mode === "navigate") {
+    event.respondWith(networkFirst(request));
+    return;
+  }
 
-      const networkUpdate = fetch(request, { cache: "reload" })
-        .then(async (response) => {
-          if (response && response.ok) {
-            await cache.put(cacheKey, response.clone());
-          }
-        })
-        .catch(() => undefined);
-
-      event.waitUntil(networkUpdate);
-
-      if (cached) {
-        return cached;
-      }
-
-      return embeddedBoundaryResponse();
-    })()
-  );
+  if (BOUNDARY_PATHS.has(url.pathname)) {
+    event.respondWith(staleWhileRevalidate(request, event, embeddedBoundaryResponse));
+  }
 });
