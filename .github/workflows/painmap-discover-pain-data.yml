@@ -4,17 +4,28 @@ on:
   issues:
     types:
       - opened
+  pull_request_target:
+    types:
+      - opened
+      - reopened
+      - synchronize
   workflow_dispatch:
 
 permissions:
   contents: read
   issues: write
+  pull-requests: write
 
 jobs:
   discover:
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      github.event.issue.title == '[PainMap Data] Discover nonfatal pain sources'
+      (github.event_name == 'issues' &&
+       github.event.issue.title == '[PainMap Data] Discover nonfatal pain sources') ||
+      (github.event_name == 'pull_request_target' &&
+       github.event.pull_request.title == '[PainMap Data] Discover nonfatal pain sources' &&
+       github.event.pull_request.base.ref == 'main' &&
+       github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -103,8 +114,6 @@ jobs:
               except Exception as exc:
                   output['errors'].append({'source': 'owid', 'term': term, 'error': repr(exc)})
 
-          # WHO Global Health Observatory OData catalog. Search the indicator registry first;
-          # individual indicator endpoints are fetched only after human review of this discovery report.
           for term in terms:
               safe_term = term.replace("'", "''")
               query = f"contains(tolower(IndicatorName),'{safe_term.lower()}')"
@@ -130,8 +139,6 @@ jobs:
               except Exception as exc:
                   output['errors'].append({'source': 'who_gho', 'term': term, 'error': repr(exc)})
 
-          # Stable World Bank/WHO indicators that can provide broad pain-relevant health context
-          # if direct nonfatal pain series are unavailable or not redistributable.
           wb_codes = [
               'SH.STA.DIAB.ZS',
               'SH.TBS.INCD',
@@ -158,7 +165,6 @@ jobs:
 
           Path('pain-data-discovery.json').write_text(json.dumps(output, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
 
-          # Compact Markdown summary for the issue comment.
           lines = [
               '## PainMap nonfatal-pain data discovery',
               '',
@@ -198,8 +204,8 @@ jobs:
             pain-data-discovery.md
           retention-days: 7
 
-      - name: Report discovery on issue
-        if: github.event_name == 'issues'
+      - name: Report discovery
+        if: github.event_name == 'issues' || github.event_name == 'pull_request_target'
         uses: actions/github-script@v7
         env:
           SUMMARY: ${{ steps.discovery.outputs.summary }}
@@ -211,10 +217,12 @@ jobs:
               issue_number: context.issue.number,
               body: process.env.SUMMARY
             });
-            await github.rest.issues.update({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              state: 'closed',
-              state_reason: 'completed'
-            });
+            if (context.eventName === 'issues') {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                state: 'closed',
+                state_reason: 'completed'
+              });
+            }
