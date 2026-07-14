@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "dataset_id": "painmap-pain-driver-context-index-v1",
+  "title": "PainMap pain-driver context datasets",
+  "generated_at": "2026-07-14T13:20:00Z",
+  "canonical_release": false,
+  "purpose": "Expose additional source-backed evidence relevant to identifying major causes of pain by place without collapsing incompatible evidence into one score.",
+  "comparison_policy": {
+    "overall_cross_domain_ranking_enabled": false,
+    "reason": "Mortality rates, animal counts, insecticide mass, and land area use incompatible units and represent different causal and evidential relationships to pain.",
+    "allowed": [
+      "Within-place comparison among the four human mortality-rate indicators, which share deaths per 100,000 population.",
+      "Within-metric comparison across places when method, unit, and reference-period semantics match."
+    ]
+  },
+  "datasets": [
+    {
+      "dataset_id": "painmap-human-mortality-context-v1",
+      "label": "Human mortality-linked pain-driver context",
+      "evidence_kind": "proxy",
+      "publication_status": "public_context_supplement",
+      "observation_count": 741,
+      "country_count": 191,
+      "indicator_count": 4,
+      "indicators": [
+        "mortality attributed to household and ambient air pollution",
+        "mortality attributed to unsafe water, sanitation and hygiene",
+        "road-traffic mortality",
+        "suicide mortality"
+      ],
+      "unit": "deaths per 100,000 population",
+      "json_url": "https://painmap.org/data/pain-driver-context.json",
+      "csv_url": "https://painmap.org/data/pain-driver-context.csv",
+      "schema_url": "https://painmap.org/schemas/pain-driver-context.schema.json",
+      "source_extract_url": "https://painmap.org/data/candidates/country-data-expansion/source-extracts/world-bank-who-mortality-context.json",
+      "attribution": "World Health Organization, via World Bank Indicators API",
+      "license": "CC BY 4.0",
+      "caveat": "Mortality is a severe-outcome context proxy. It does not measure pain intensity, duration, prevalence, disability, nonfatal suffering, or total welfare burden."
+    },
+    {
+      "dataset_id": "release-candidate-2026-07-country-context-v0",
+      "label": "Source-backed animal, insecticide, and land context",
+      "evidence_kind": "proxy",
+      "publication_status": "candidate_only_manual_review_required",
+      "observation_count": 24,
+      "country_count": 8,
+      "metrics": [
+        "land animals slaughtered annually",
+        "agricultural insecticide use",
+        "land area context"
+      ],
+      "summary_url": "https://painmap.org/data/candidates/country-data-expansion/source-backed-country-summary.json",
+      "source_extract_urls": [
+        "https://painmap.org/data/candidates/country-data-expansion/source-extracts/owid-land-animals-slaughtered.json",
+        "https://painmap.org/data/candidates/country-data-expansion/source-extracts/owid-insecticide-use.json",
+        "https://painmap.org/data/candidates/country-data-expansion/source-extracts/world-bank-land-area.json"
+      ],
+      "validation_url": "https://painmap.org/data/candidates/country-data-expansion/validation-summary.json",
+      "caveat": "These rows are public candidate context, not canonical PainMap measurements. Land area is a denominator, not a cause of pain, and is excluded from cause rankings."
+    }
+  ]
+}

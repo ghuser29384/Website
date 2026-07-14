@@ -15,16 +15,16 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://www.geoboundaries.org https://media.githubusercontent.com https://api.worldbank.org https://api.worldpop.org https://ourworldindata.org; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Data | PainMap</title>
-    <meta name="description" content="PainMap dataset groups, provenance notes, canonical release artifacts, and public source boundaries.">
+    <meta name="description" content="PainMap dataset groups, provenance notes, canonical release artifacts, current pain-driver context supplements, and public source boundaries.">
     <link rel="canonical" href="https://painmap.org/data/">
     <meta property="og:title" content="Data | PainMap">
-    <meta property="og:description" content="PainMap dataset groups, provenance notes, canonical release artifacts, and public source boundaries.">
+    <meta property="og:description" content="PainMap dataset groups, provenance notes, canonical release artifacts, current pain-driver context supplements, and public source boundaries.">
     <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://painmap.org/data/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Data | PainMap">
-    <meta name="twitter:description" content="PainMap dataset groups, provenance notes, canonical release artifacts, and public source boundaries.">
+    <meta name="twitter:description" content="PainMap dataset groups, provenance notes, canonical release artifacts, current pain-driver context supplements, and public source boundaries.">
     <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
 <link rel="stylesheet" href="../styles.css?v=93e0a5d87fc250eb" integrity="sha384-247i4QQKs5xcO5DRVdCYNDn8SIksDDkmOncbjyJb10IWhCroxw7XbgJgLD7gwiez" crossorigin="anonymous">
     <link rel="icon" href="/assets/brand/painmap-favicon.svg" type="image/svg+xml">
@@ -35,13 +35,16 @@
       {
         "@context": "https://schema.org",
         "@type": "Dataset",
-        "name": "PainMap public animal pain and place atlas dataset",
-        "description": "A static public synthesis of Welfare Footprint event estimates, place burden proxies, provenance notes, and public exports.",
+        "name": "PainMap public pain-source and place atlas datasets",
+        "description": "A static public synthesis of event estimates, place burden proxies, current pain-driver context supplements, provenance notes, and public exports.",
         "url": "https://painmap.org/data/",
         "license": "https://painmap.org/policies/terms/",
         "temporalCoverage": "2010/2026",
         "creator": { "@type": "Organization", "name": "PainMap", "url": "https://painmap.org/" },
         "distribution": [
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/pain-drivers.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/pain-driver-context.json" },
+          { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://painmap.org/data/pain-driver-context.csv" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/provenance-registry.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/place-measurements.json" },
           { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://painmap.org/data/place-measurements.csv" },
@@ -93,7 +96,7 @@
           </div>
           <p class="route-copy">
             PainMap groups sources by role: direct or modeled event evidence, proxy aggregates, priority overlays,
-            canonical release artifacts, and geography. This keeps evidence claims auditable without mixing them into one link dump.
+            canonical release artifacts, current context supplements, and geography. This keeps evidence claims auditable without mixing them into one link dump.
           </p>
         </section>
         <section class="route-panel">
@@ -120,7 +123,8 @@
             </article>
           </div>
           <div class="route-actions">
-            <a class="solid-button" href="/dataset/place-measurements/">Open place dataset</a>
+            <a class="solid-button" href="/data/pain-drivers/">Open pain-driver context</a>
+            <a class="ghost-link" href="/dataset/place-measurements/">Open place dataset</a>
             <a class="ghost-link" href="/api/">Open API contract</a>
             <a class="ghost-link" href="https://github.com/ghuser29384/Website/issues/new?title=%5BPainMap+correction%5D+2026-05-31.atlas.2%3A+Data+route&body=Release%3A+2026-05-31.atlas.2%0ASubject+type%3A+route%0ASubject+id%3A+data%0AClaim+id%3A+claim.2026-05-31.atlas.2.route.data%0ARoute%3A+%2Fdata%2F%0AClaims+context%3A+Data+route%0A%0APlease+include+source+links%2C+release+context%2C+and+what+should+be+corrected.&labels=correction">Open correction form</a>
           </div>
@@ -143,6 +147,20 @@
                 </tr>
               </thead>
               <tbody>
+                <tr>
+                  <th scope="row"><a href="/data/pain-drivers/">Human mortality-linked pain-driver context</a></th>
+                  <td>Severe-outcome proxy context</td>
+                  <td>Current public supplement retrieved 2026-07-14</td>
+                  <td>Low confidence for pain inference; mortality is not direct pain measurement</td>
+                  <td><a href="/data/pain-driver-context.json">JSON</a>, <a href="/data/pain-driver-context.csv">CSV</a>, <a href="/schemas/pain-driver-context.schema.json">schema</a>, <a href="/data/candidates/country-data-expansion/source-extracts/world-bank-who-mortality-context.json">source extract</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="/data/pain-drivers/">Animal, insecticide, and land candidate context</a></th>
+                  <td>Source-backed proxy candidate</td>
+                  <td>Source receipts captured 2026-07-14</td>
+                  <td>Very low to low; candidate-only and not canonical</td>
+                  <td><a href="/data/candidates/country-data-expansion/source-backed-country-summary.json">summary</a>, <a href="/data/candidates/country-data-expansion/source-extracts/owid-land-animals-slaughtered.json">animal extract</a>, <a href="/data/candidates/country-data-expansion/source-extracts/owid-insecticide-use.json">insecticide extract</a>, <a href="/data/candidates/country-data-expansion/source-extracts/world-bank-land-area.json">land extract</a>, <a href="/data/candidates/country-data-expansion/validation-summary.json">validation</a></td>
+                </tr>
                 <tr>
                   <th scope="row"><a href="/dataset/place-measurements/">Place measurements</a></th>
                   <td>Proxy aggregate</td>

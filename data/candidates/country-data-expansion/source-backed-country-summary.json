@@ -1,0 +1,56 @@
+{
+  "release_candidate_id": "release-candidate-2026-07-country-context-v0",
+  "generated_at": "2026-07-14T12:47:02Z",
+  "country_count": 8,
+  "measurement_count": 24,
+  "countries": [
+    "USA",
+    "CHN",
+    "JPN",
+    "DEU",
+    "GBR",
+    "RUS",
+    "IDN",
+    "MEX"
+  ],
+  "metrics": [
+    "animals_slaughtered_proxy",
+    "insecticide_tonnes_proxy",
+    "land_area_proxy"
+  ],
+  "source_snapshot_ids": [
+    "snapshot.owid-land-animals-slaughtered.2026-07-14",
+    "snapshot.owid-insecticide-use.2026-07-14",
+    "snapshot.world-bank-wdi-land-area.2026-07-14",
+    "snapshot.world-bank-who-mortality-context.2026-07-14"
+  ],
+  "active_release_modified": false,
+  "promoted_to_canonical": 0,
+  "publication_status": "candidate_only_manual_review_required",
+  "public_context_dataset": {
+    "dataset_id": "painmap-human-mortality-context-v1",
+    "canonical_release": false,
+    "json_path": "data/pain-driver-context.json",
+    "csv_path": "data/pain-driver-context.csv",
+    "schema_path": "schemas/pain-driver-context.schema.json",
+    "painmap_indexed_country_count": 239,
+    "countries_with_any_observation": 191,
+    "countries_with_all_indicators": 183,
+    "countries_ranked_at_latest_common_year": 183,
+    "countries_using_mixed_latest_years": 8,
+    "observation_count": 741,
+    "indicator_count": 4,
+    "coverage_by_indicator": {
+      "air-pollution-mortality": 183,
+      "unsafe-wash-mortality": 183,
+      "road-traffic-mortality": 190,
+      "suicide-mortality": 185
+    },
+    "missing_country_count_by_indicator": {
+      "air-pollution-mortality": 56,
+      "unsafe-wash-mortality": 56,
+      "road-traffic-mortality": 49,
+      "suicide-mortality": 54
+    }
+  }
+}
