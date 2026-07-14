@@ -12,4 +12,6 @@ Run `npm run build:data` to regenerate the static site and apply the brand. The 
 
 Core message: **Map pain. Keep uncertainty visible.**
 
+Implementation status: the production workflow applies this system to every generated HTML route before deployment.
+
 Do not embed or redistribute font files. The web implementation uses a resilient stack based on EB Garamond, Inter, and system fallbacks.
