@@ -46,16 +46,31 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Reconcile the data route metadata contract
+      - name: Reconcile current metadata and candidate-package contracts
         run: |
           node --input-type=module <<'NODE'
-          import { readFileSync, writeFileSync } from "node:fs";
-          const file = "data/routes.json";
-          const manifest = JSON.parse(readFileSync(file, "utf8"));
-          const route = manifest.routes.find((entry) => entry.path === "/data/");
-          if (!route) throw new Error("Missing /data/ route");
-          route.description = "PainMap dataset groups, provenance notes, canonical release artifacts, current pain-driver context supplements, and public source boundaries.";
-          writeFileSync(file, `${JSON.stringify(manifest, null, 2)}\n`);
+          import { createHash } from "node:crypto";
+          import { readFileSync, statSync, writeFileSync } from "node:fs";
+          import path from "node:path";
+
+          const routesFile = "data/routes.json";
+          const routes = JSON.parse(readFileSync(routesFile, "utf8"));
+          const dataRoute = routes.routes.find((entry) => entry.path === "/data/");
+          if (!dataRoute) throw new Error("Missing /data/ route");
+          dataRoute.description = "PainMap dataset groups, provenance notes, canonical release artifacts, current pain-driver context supplements, and public source boundaries.";
+          writeFileSync(routesFile, `${JSON.stringify(routes, null, 2)}\n`);
+
+          const candidateDir = "data/candidates/country-data-expansion";
+          const packageFile = path.join(candidateDir, "package-manifest.json");
+          const packageManifest = JSON.parse(readFileSync(packageFile, "utf8"));
+          for (const row of packageManifest.files || []) {
+            const candidateFile = path.join(candidateDir, row.file);
+            const bytes = readFileSync(candidateFile);
+            row.sha256 = createHash("sha256").update(bytes).digest("hex");
+            row.bytes = statSync(candidateFile).size;
+          }
+          packageManifest.generated_at = new Date().toISOString();
+          writeFileSync(packageFile, `${JSON.stringify(packageManifest, null, 2)}\n`);
           NODE
 
       - name: Collect materialization diagnostics
