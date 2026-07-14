@@ -1,0 +1,73 @@
+name: Publish PainMap Evidence Field brand
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish-painmap-brand.yml"
+      - "data/brand-release-trigger.json"
+      - "brand.css"
+      - "assets/brand/**"
+      - "scripts/apply-brand-system.mjs"
+      - "package.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: painmap-brand-publish
+  cancel-in-progress: false
+
+jobs:
+  publish-brand:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out current main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Apply the brand system to generated routes
+        run: node scripts/apply-brand-system.mjs
+
+      - name: Validate static and accessibility contracts
+        run: |
+          node scripts/check-static-site.mjs
+          npm run validate:release
+          npm run smoke:ui
+          npm run fixtures:check
+          npm run freshness:sources
+          git diff --check
+
+      - name: Commit branded generated output
+        id: commit
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Apply PainMap Evidence Field brand to live static routes"
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Publish summary
+        run: |
+          {
+            echo "## PainMap brand publish"
+            echo
+            echo "Generated routes branded: ${{ steps.commit.outputs.changed }}"
+            echo "Validation completed before commit."
+          } >> "$GITHUB_STEP_SUMMARY"
