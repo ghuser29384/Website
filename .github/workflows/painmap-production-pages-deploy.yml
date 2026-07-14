@@ -1,6 +1,11 @@
 name: PainMap production Pages deploy
 
 on:
+  pull_request_target:
+    types:
+      - opened
+      - reopened
+      - synchronize
   issues:
     types:
       - opened
@@ -21,7 +26,11 @@ jobs:
     if: >-
       github.event_name == 'workflow_dispatch' ||
       (github.event_name == 'issues' &&
-       github.event.issue.title == '[PainMap Deploy] Publish current main')
+       github.event.issue.title == '[PainMap Deploy] Publish current main') ||
+      (github.event_name == 'pull_request_target' &&
+       github.event.pull_request.title == '[PainMap Deploy] Publish current main via Pages' &&
+       github.event.pull_request.base.ref == 'main' &&
+       github.event.pull_request.head.repo.full_name == github.repository)
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -35,10 +44,12 @@ jobs:
           fetch-depth: 1
 
       - name: Validate production data payload
+        id: validation
         shell: bash
         run: |
           set -euo pipefail
-          git rev-parse HEAD
+          deployed_sha="$(git rev-parse HEAD)"
+          echo "sha=$deployed_sha" >> "$GITHUB_OUTPUT"
           python3 - <<'PY'
           import json
           from pathlib import Path
@@ -81,40 +92,26 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Record successful issue-triggered deployment
-        if: github.event_name == 'issues'
+      - name: Report deployment result on trigger PR
+        if: always() && github.event_name == 'pull_request_target'
         uses: actions/github-script@v7
-        env:
-          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
         with:
           script: |
+            const deploymentOutcome = '${{ steps.deployment.outcome }}';
+            const validationOutcome = '${{ steps.validation.outcome }}';
+            const deployedSha = '${{ steps.validation.outputs.sha }}';
+            const pageUrl = '${{ steps.deployment.outputs.page_url }}';
             const body = [
-              'Production deployment completed successfully.',
+              '## PainMap production deployment',
               '',
-              `- Revision: \`${context.sha}\``,
-              `- GitHub Pages URL: ${process.env.PAGE_URL}`,
-              '- Validated: 741 human mortality-context observations',
-              '- Validated: 24 source-backed cross-domain candidate observations',
-              '- Canonical promotions: 0',
-              '',
-              'Verified production endpoints:',
-              '- https://painmaps.org/data/pain-drivers/',
-              '- https://painmaps.org/data/pain-driver-context.json',
-              '- https://painmaps.org/data/pain-driver-context.csv',
-              '- https://painmaps.org/data/pain-driver-deployment.json'
+              `- Validation: **${validationOutcome || 'not-run'}**`,
+              `- Pages deployment: **${deploymentOutcome || 'not-run'}**`,
+              `- Deployed main SHA: \`${deployedSha || 'unknown'}\``,
+              `- Page URL: ${pageUrl || 'not available'}`
             ].join('\n');
-
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
               body
-            });
-
-            await github.rest.issues.update({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              state: 'closed',
-              state_reason: 'completed'
             });
