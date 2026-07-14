@@ -1,7 +1,7 @@
 name: PainMap production Pages deploy
 
 on:
-  pull_request_target:
+  pull_request:
     types:
       - opened
       - reopened
@@ -11,25 +11,22 @@ on:
 permissions:
   contents: read
   pages: write
-  id-token: write
   issues: write
 
 concurrency:
-  group: pages
+  group: painmap-production-pages-build
   cancel-in-progress: false
 
 jobs:
-  build:
+  request-pages-build:
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'pull_request_target' &&
+      (github.event_name == 'pull_request' &&
        github.event.pull_request.title == '[PainMap Deploy] Publish current main via Pages' &&
        github.event.pull_request.base.ref == 'main' &&
        github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    outputs:
-      deployed_sha: ${{ steps.validation.outputs.sha }}
+    timeout-minutes: 20
     steps:
       - name: Check out current production branch
         uses: actions/checkout@v4
@@ -68,59 +65,130 @@ jobs:
           print('Validated 741 human context observations and 24 source-backed candidate observations.')
           PY
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
+      - name: Request and verify native GitHub Pages build
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_SHA: ${{ steps.validation.outputs.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          api="https://api.github.com/repos/${GITHUB_REPOSITORY}"
+          headers=(
+            -H "Accept: application/vnd.github+json"
+            -H "Authorization: Bearer ${GH_TOKEN}"
+            -H "X-GitHub-Api-Version: 2022-11-28"
+          )
 
-      - name: Build static site with Jekyll Pages image
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
+          curl --fail --silent --show-error "${headers[@]}" "${api}/pages" > /tmp/pages-config.json
+          python3 - <<'PY'
+          import json
+          config = json.load(open('/tmp/pages-config.json', encoding='utf-8'))
+          print('Pages configuration:', json.dumps({
+              'status': config.get('status'),
+              'build_type': config.get('build_type'),
+              'source': config.get('source'),
+              'html_url': config.get('html_url'),
+              'cname': config.get('cname'),
+          }, sort_keys=True))
+          source = config.get('source') or {}
+          assert source.get('branch') == 'main', f"Unexpected Pages source branch: {source}"
+          assert source.get('path') in ('/', None), f"Unexpected Pages source path: {source}"
+          PY
 
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
+          request_started="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          http_code="$(curl --silent --show-error -o /tmp/pages-request.json -w '%{http_code}' \
+            -X POST "${headers[@]}" "${api}/pages/builds")"
+          cat /tmp/pages-request.json || true
+          if [ "$http_code" != "201" ]; then
+            echo "Pages build request returned HTTP ${http_code}" >&2
+            exit 1
+          fi
 
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    outputs:
-      page_url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          completed=false
+          for attempt in $(seq 1 90); do
+            sleep 5
+            curl --fail --silent --show-error "${headers[@]}" "${api}/pages/builds/latest" > /tmp/pages-latest.json
+            result="$(python3 - "$EXPECTED_SHA" "$request_started" <<'PY'
+          import json
+          import sys
+          from datetime import datetime, timezone
 
-  report:
-    if: always() && github.event_name == 'pull_request_target'
-    needs:
-      - build
-      - deploy
-    permissions:
-      issues: write
-    runs-on: ubuntu-latest
-    steps:
-      - name: Report production deployment result
+          build = json.load(open('/tmp/pages-latest.json', encoding='utf-8'))
+          expected_sha, requested_at = sys.argv[1:]
+          status = str(build.get('status') or '')
+          commit = str(build.get('commit') or '')
+          created_at = str(build.get('created_at') or '')
+          url = str(build.get('url') or '')
+          print(f"status={status}|commit={commit}|created_at={created_at}|url={url}")
+          PY
+          )"
+            echo "Pages build attempt ${attempt}: ${result}"
+            status="$(printf '%s' "$result" | sed -n 's/^status=\([^|]*\).*/\1/p')"
+            commit="$(printf '%s' "$result" | sed -n 's/.*|commit=\([^|]*\).*/\1/p')"
+            if [ "$status" = "errored" ] && [ "$commit" = "$EXPECTED_SHA" ]; then
+              cat /tmp/pages-latest.json >&2
+              exit 1
+            fi
+            if [ "$status" = "built" ] && [ "$commit" = "$EXPECTED_SHA" ]; then
+              completed=true
+              break
+            fi
+          done
+
+          if [ "$completed" != "true" ]; then
+            echo "Timed out before Pages reported a successful build for ${EXPECTED_SHA}" >&2
+            cat /tmp/pages-latest.json >&2 || true
+            exit 1
+          fi
+
+          page_url="$(python3 - <<'PY'
+          import json
+          config = json.load(open('/tmp/pages-config.json', encoding='utf-8'))
+          print(config.get('html_url') or 'https://painmaps.org')
+          PY
+          )"
+          echo "page_url=$page_url" >> "$GITHUB_OUTPUT"
+          echo "build_sha=$EXPECTED_SHA" >> "$GITHUB_OUTPUT"
+
+      - name: Verify deployed public endpoints
+        env:
+          PAGE_URL: ${{ steps.pages.outputs.page_url }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          origin="${PAGE_URL%/}"
+          for path in \
+            /data/ \
+            /data/pain-drivers/ \
+            /data/pain-drivers.json \
+            /data/pain-driver-context.json \
+            /data/pain-driver-context.csv \
+            /schemas/pain-driver-context.schema.json \
+            /data/candidates/country-data-expansion/source-backed-country-summary.json; do
+            echo "Checking ${origin}${path}"
+            curl --fail --silent --show-error --retry 12 --retry-all-errors --retry-delay 5 \
+              "${origin}${path}" -o "/tmp/$(printf '%s' "$path" | tr '/.' '__')"
+          done
+          curl --fail --silent --show-error "${origin}/data/pain-driver-context.json" \
+            | python3 -c "import json,sys; d=json.load(sys.stdin); assert d['dataset_id']=='painmap-human-mortality-context-v1'; assert len(d['observations'])==741; assert len(d['place_summaries'])==191"
+          curl --fail --silent --show-error "${origin}/data/candidates/country-data-expansion/source-backed-country-summary.json" \
+            | python3 -c "import json,sys; d=json.load(sys.stdin); assert d['measurement_count']==24; assert d['country_count']==8; assert d['promoted_to_canonical']==0"
+
+      - name: Report deployment result
+        if: always() && github.event_name == 'pull_request'
         uses: actions/github-script@v7
         with:
           script: |
-            const buildResult = '${{ needs.build.result }}';
-            const deployResult = '${{ needs.deploy.result }}';
-            const deployedSha = '${{ needs.build.outputs.deployed_sha }}';
-            const pageUrl = '${{ needs.deploy.outputs.page_url }}';
+            const validationOutcome = '${{ steps.validation.outcome }}';
+            const pagesOutcome = '${{ steps.pages.outcome }}';
+            const deployedSha = '${{ steps.pages.outputs.build_sha }}' || '${{ steps.validation.outputs.sha }}';
+            const pageUrl = '${{ steps.pages.outputs.page_url }}';
             const body = [
               '## PainMap production deployment',
               '',
-              `- Build and data validation: **${buildResult}**`,
-              `- Pages deployment: **${deployResult}**`,
+              `- Data validation: **${validationOutcome || 'not-run'}**`,
+              `- Native Pages build and live endpoint checks: **${pagesOutcome || 'not-run'}**`,
               `- Deployed main SHA: \`${deployedSha || 'unknown'}\``,
               `- Page URL: ${pageUrl || 'not available'}`
             ].join('\n');
