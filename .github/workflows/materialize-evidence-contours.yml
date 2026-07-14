@@ -46,6 +46,18 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Reconcile the data route metadata contract
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync, writeFileSync } from "node:fs";
+          const file = "data/routes.json";
+          const manifest = JSON.parse(readFileSync(file, "utf8"));
+          const route = manifest.routes.find((entry) => entry.path === "/data/");
+          if (!route) throw new Error("Missing /data/ route");
+          route.description = "PainMap dataset groups, provenance notes, canonical release artifacts, current pain-driver context supplements, and public source boundaries.";
+          writeFileSync(file, `${JSON.stringify(manifest, null, 2)}\n`);
+          NODE
+
       - name: Collect materialization diagnostics
         id: diagnostics
         shell: bash
@@ -146,6 +158,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -f data/evidence-contours-diagnostics.txt data/evidence-contours-status.env
           git add -A
           if git diff --cached --quiet; then
             echo "Evidence Contours output is already materialized."
