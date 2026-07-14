@@ -6,6 +6,7 @@ on:
       - brand/evidence-contours-v1-final
     paths:
       - data/evidence-contours-materialize-trigger.json
+      - .github/workflows/materialize-evidence-contours.yml
   pull_request:
     branches:
       - main
@@ -46,16 +47,42 @@ jobs:
           python-version: "3.12"
 
       - name: Materialize brand and validate repository contracts
+        shell: bash
         run: |
-          set -euo pipefail
-          npm run check
-          npm run freshness:sources
-          git diff --check
+          set +e
+          node --check scripts/apply-brand-system.mjs > /tmp/node-check.log 2>&1
+          node_status=$?
+          npm run check > /tmp/npm-check.log 2>&1
+          check_status=$?
+          npm run freshness:sources > /tmp/freshness.log 2>&1
+          freshness_status=$?
+          git diff --check > /tmp/diff-check.log 2>&1
+          diff_status=$?
+
+          echo "=== node --check (status ${node_status}) ==="
+          tail -n 80 /tmp/node-check.log
+          echo "=== npm run check (status ${check_status}) ==="
+          tail -n 180 /tmp/npm-check.log
+          echo "=== freshness (status ${freshness_status}) ==="
+          tail -n 80 /tmp/freshness.log
+          echo "=== git diff --check (status ${diff_status}) ==="
+          tail -n 80 /tmp/diff-check.log
+
           grep -q 'data-brand="evidence-contours-v1"' index.html
+          brand_attr_status=$?
           grep -q 'What is known\.' index.html
+          hero_status=$?
           grep -q 'Mixed-evidence atlas of pain sources by place' index.html
+          descriptor_status=$?
           grep -q 'painmap-logo-horizontal-primary.svg' index.html
+          logo_status=$?
           test -f assets/brand/evidence-contours-hero.svg
+          asset_status=$?
+          echo "brand_attr=${brand_attr_status} hero=${hero_status} descriptor=${descriptor_status} logo=${logo_status} asset=${asset_status}"
+
+          if [ "$node_status" -ne 0 ] || [ "$check_status" -ne 0 ] || [ "$freshness_status" -ne 0 ] || [ "$diff_status" -ne 0 ] || [ "$brand_attr_status" -ne 0 ] || [ "$hero_status" -ne 0 ] || [ "$descriptor_status" -ne 0 ] || [ "$logo_status" -ne 0 ] || [ "$asset_status" -ne 0 ]; then
+            exit 1
+          fi
 
       - name: Run endpoint smoke checks
         shell: bash
