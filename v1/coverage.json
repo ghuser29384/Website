@@ -1,6 +1,6 @@
 {
   "release_id": "2026-05-31.atlas.2",
-  "generated_at": "2026-07-05",
+  "generated_at": "2026-07-14",
   "last_release_date": "2026-05-31",
   "coverage_status": {
     "places_indexed": 2114,
@@ -71,6 +71,6 @@
     "rule": "canonical_country_profiles >= 10 and canonical_ratio >= 0.35 and (direct + proxy + priority_overlay + release_measurements) >= 10",
     "reason": "fewer than 10 canonical country profiles (2) · canonical ratio below minimum threshold (2 canonical profiles across 239 indexed country boundaries)",
     "release_note_url": "/updates/",
-    "summary_generated_at": "2026-07-05T07:39:25Z"
+    "summary_generated_at": "2026-07-14T12:20:42Z"
   }
 }

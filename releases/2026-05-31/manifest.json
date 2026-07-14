@@ -1,7 +1,7 @@
 {
   "release_id": "2026-05-31.atlas.2",
   "release_date": "2026-05-31",
-  "generated_at": "2026-07-05T07:39:26Z",
+  "generated_at": "2026-07-14T12:20:43Z",
   "immutable": true,
   "site": "https://painmap.org",
   "source_of_truth": {
@@ -3529,1928 +3529,1928 @@
   "artifacts": [
     {
       "path": "/index.html",
-      "sha256": "417890ef0a78df62fb1ccdd249a9c10fa2c4341d1861b517a28d4a68d675df18",
-      "bytes": 47365
+      "sha256": "0de2beb15c9a90f9bd3e2f076acd43915db927f4f0b0e817e47ae89b6b08aa57",
+      "bytes": 48359
     },
     {
       "path": "/atlas/index.html",
-      "sha256": "73c141682798c74d46fa56e71521f96fe4eec286f206e828bbea765c9a62d028",
-      "bytes": 10041
+      "sha256": "2d320a736a7b64b51857945ab1839c5fdc89bbb0de3e0fe302a3b053f1a06d9c",
+      "bytes": 10830
     },
     {
       "path": "/places/index.html",
-      "sha256": "11f785bae080ab03f8328ecef36db0871e027b8155b9f0ee35002fbd13c34f97",
-      "bytes": 17894
+      "sha256": "d1e69d772224e388c1a0418ee55597707d95c5ff061b49b8f6fd793cbb0e14d4",
+      "bytes": 18658
     },
     {
       "path": "/countries/index.html",
-      "sha256": "dc2a0394cd101e8f6ae8ede63bcd2cd1eb6a4f217a5b9890cf69380914a73e36",
-      "bytes": 6676
+      "sha256": "0a225e381065fff873cd234c254d8e2ced1388e418a95589f7332ce742aecdef",
+      "bytes": 7440
     },
     {
       "path": "/compare/index.html",
-      "sha256": "73cd03caeda52747d52105fc035f470413dc4aad238e3cdde6d7d8f052489a7e",
-      "bytes": 15709
+      "sha256": "5833da858a5ae22ed0ba9a85e50764ea35211f779e92ffd85124b5c1d43f3136",
+      "bytes": 16519
     },
     {
       "path": "/events/index.html",
-      "sha256": "2f8b9d5ad71bed42b2e8c2dcf9d95a495276f76cbdce0a450ad26979e92c349c",
-      "bytes": 8791
+      "sha256": "f2196a6a8d7eae37b9e449353b3574f0acaac81bde1d8d9af6b3a5d3c4e0368d",
+      "bytes": 9555
     },
     {
       "path": "/methods/index.html",
-      "sha256": "d7b34b63469e2aef139312818f32395cbf937c7db70fa99666d4631d8ece058f",
-      "bytes": 6986
+      "sha256": "c82c6571590fa86952cb8dce358b23a9b956fa48e4ee7e885b4e18c4ebebda77",
+      "bytes": 7750
     },
     {
       "path": "/data/index.html",
-      "sha256": "d2e79595c87fd89b5a98813b23e169cf60ac999f28526d1f3e9fa1958b8a39bb",
-      "bytes": 14221
+      "sha256": "3964e5269a536c4c537d92d65175ff6390831aa98862752dd9e23295ba6d59a3",
+      "bytes": 14985
     },
     {
       "path": "/dataset/place-measurements/index.html",
-      "sha256": "53fa6d6b6fcac6c4799273ace36cb6870ebcc1d0e4573ec2eb8731eefb7c5fd0",
-      "bytes": 11001
+      "sha256": "4d4f374ba556f56c399e40bce1dd7c21096856f94b4f7694d775eff4efceb561",
+      "bytes": 11765
     },
     {
       "path": "/dataset/provenance-registry/index.html",
-      "sha256": "e51654aef259b955fd3587139e7de12833781ac276df77b94e1dbf1a6fe6c82c",
-      "bytes": 8534
+      "sha256": "3124d783f8da48b1f014f8575a151c68ba624153e927ffc1a964386225692fb7",
+      "bytes": 9323
     },
     {
       "path": "/place/BRA/index.html",
-      "sha256": "fa1c9aa90aece2cecd8ef1caa576462a0043f3b6688852794c69ed907be100db",
-      "bytes": 8920
+      "sha256": "9768bf2a693a62127b01948cc6ea28544241863ea6a5a88c2c510c7098a77327",
+      "bytes": 9684
     },
     {
       "path": "/place/IND/index.html",
-      "sha256": "5c7a21875342a64ba1651b8d0279b00fa7ed56ac4d6770856d91c7699667a18b",
-      "bytes": 8909
+      "sha256": "4757dabb5749efd6d2c0c4aed7271524a3743519f3ebdf81a0a75aee158b3253",
+      "bytes": 9673
     },
     {
       "path": "/place/AFG/index.html",
-      "sha256": "ec4f64ec6de325f642fd740a29223a74caa9059bf2d6d9b7eeaa1f04c97468f7",
-      "bytes": 8215
+      "sha256": "325e31a884dafb463356c31c2eb82aa51b77f26b1ea523a71a58a335b90fd661",
+      "bytes": 8979
     },
     {
       "path": "/place/ALA/index.html",
-      "sha256": "a6281ca61c0e2e4e84c472fc0bbeb9dccc3c4840f10ef7f8d04f291371c36e92",
-      "bytes": 8159
+      "sha256": "e235d4dc5cb9100d886a883b1b960cc84ef824785cc4eeeb69e64c1f8a5a51d3",
+      "bytes": 8923
     },
     {
       "path": "/place/ALB/index.html",
-      "sha256": "07cc76c37e6d0ac711b0939c0a8b3933a114f39b3e5da6ce137799e2159787a4",
-      "bytes": 8167
+      "sha256": "7a37f6f201b2fc21ec247a5cf4cdec9440bf410adcf275e500fa64b6ff3b4c6d",
+      "bytes": 8931
     },
     {
       "path": "/place/DZA/index.html",
-      "sha256": "9ae506a14139f97e5211cda57f0c67a893541e6925c684fb15d0fde8359fd24a",
-      "bytes": 8167
+      "sha256": "9a14eaa4cbf93be6cdc70492fa0f183a736438c36377f0e15c23c9988c2447eb",
+      "bytes": 8931
     },
     {
       "path": "/place/ASM/index.html",
-      "sha256": "b97b530d662c733e52a742af3f23469c7e51923abd25ba83d3e58fd4142bf55c",
-      "bytes": 8251
+      "sha256": "48952f94d16771efb8dee9928dd66da124b381d8e880483e80583ee86ac8df95",
+      "bytes": 9015
     },
     {
       "path": "/place/AND/index.html",
-      "sha256": "f9b475a78f4b5e11dcdedff9b1de182a6a14a6de5b3634b2f0bff85edc104ac4",
-      "bytes": 8167
+      "sha256": "39aba9e680d79df3a21c5ec7c2ac568b5d150903f03ce40781f86ee5b2280a9e",
+      "bytes": 8931
     },
     {
       "path": "/place/AGO/index.html",
-      "sha256": "972b9429c3a6ea1d405476939de2779a3efc3494e99600bad2e85fcca5ba2198",
-      "bytes": 8155
+      "sha256": "dc1b5e1684c06a7ec51c07f335d610c2e968e199cbc7ccdf5a86c9c8df798c1f",
+      "bytes": 8919
     },
     {
       "path": "/place/AIA/index.html",
-      "sha256": "976dc234e09a8f5cad2414258722ecd9a8ec5ae6aa6880be3c0631916350fb83",
-      "bytes": 8179
+      "sha256": "bfdbfb46b7d599672e245528cd3267be1a5c6039c3ba0a37e3f48ad0ea730ed3",
+      "bytes": 8943
     },
     {
       "path": "/place/ATG/index.html",
-      "sha256": "b58862844bfc736d187fb793b38c50e6b34ad5b7b1384d5a13ce1b2d4126667b",
-      "bytes": 8311
+      "sha256": "7ff79d5e58a9ff65a9d507224aef168f5efa47695ae8c51a910db0b9ca1eec32",
+      "bytes": 9075
     },
     {
       "path": "/place/ARG/index.html",
-      "sha256": "b0ac2b87c5404593beface5a3dfd3b43f8eb78553e8e3dc4e004f961bd0080c1",
-      "bytes": 8191
+      "sha256": "41ca697752e5bc5e975cc3629a1ebe22bffec029320a0c5c06db9133c42a9586",
+      "bytes": 8955
     },
     {
       "path": "/place/ARM/index.html",
-      "sha256": "c07fbea0d703a05e9b0cb44d65022c91e160e38efd6403bc8d3e1b5b32586426",
-      "bytes": 8167
+      "sha256": "1da7d04e5228b59cf98813c73adc6b46cb4a6b1d7b708d9a0e6ef35aff12ba99",
+      "bytes": 8931
     },
     {
       "path": "/place/ABW/index.html",
-      "sha256": "c699ace5272c3872820e8d42be9ed31dedd2396a378cb2e20ff7e2e1f8cbef93",
-      "bytes": 8143
+      "sha256": "a2bb4f5aec4681c3637fcf97bb4879d96bd67ce1504f2df7a648df309929fed5",
+      "bytes": 8907
     },
     {
       "path": "/place/AUS/index.html",
-      "sha256": "9a4317ef41cc28aea7d3dfe329480306729f4ca61b249f68e591a8010483bbda",
-      "bytes": 8191
+      "sha256": "bcd4986d62cfe1824a4998d328fa2b775703c639c9093e0562990501d80cfa3e",
+      "bytes": 8955
     },
     {
       "path": "/place/AUT/index.html",
-      "sha256": "0c42de66059537b5da13ad09567d0dd7fbe40c38f38e391736b881f22d8a163f",
-      "bytes": 8167
+      "sha256": "b27f8781ecf45548b027b1c77f7cd5d7cafe7b964bc47cd129ccd97b96cfab64",
+      "bytes": 8931
     },
     {
       "path": "/place/AZE/index.html",
-      "sha256": "5ebf39e7de22c1fc1c55f7078fa23e8ed6a33c772f9c7b8edc9053dc07d26e84",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/BHR/index.html",
-      "sha256": "4c1a02a6bd939bce9fbfc6a0abd80b214851ac2c6dbe87d55dc60c94c855d54b",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/BGD/index.html",
-      "sha256": "b1d201836d15e89264ecfae7f726b827f3f38ceedf1a7071fbe4bfa2cf26f8dc",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/BRB/index.html",
-      "sha256": "7f4d03b584f8cca01ff8a3471535af327133b0e3b12925214aceb882aa35afe6",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/BLR/index.html",
-      "sha256": "94862f2a6530537d307e612d321326f8d4f3888324fca92f5bd89a41d22dc696",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/BEL/index.html",
-      "sha256": "d9ea589063d13fe0f8f8d7fc8357c3a134da3d87d8c0021d361061b05beda5b8",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/BLZ/index.html",
-      "sha256": "b2424a3d4906b9c62fe5137cc34df532fbcfbd583d2ae448375bd4f8c98885be",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/BEN/index.html",
-      "sha256": "75daed0f404ed19205eca88b749c35f60f41b7af7fa895af9ab6553d7e4cf9cb",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/BMU/index.html",
-      "sha256": "82ef0048a08af4bad020cc3231f590e11c8ed417bf42fa02ee54fdce8e9f2901",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/BTN/index.html",
-      "sha256": "e3da7eacc1d642b1b755d07dd25a47b03a9b379ddeee2d560e3bd46cc6359a96",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/BOL/index.html",
-      "sha256": "dfbb415286caf359c32cc4548ed67e7d756f1a7edbe6e0bc24da2aa70e95d324",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/BIH/index.html",
-      "sha256": "5619905c16448651d8db7613998c03ded3699f5cbaee3b8eb7a06d078f1d22b4",
-      "bytes": 8347
-    },
-    {
-      "path": "/place/BWA/index.html",
-      "sha256": "4c6189eb8405c8c5bc519e588cebf5cab37ee20652a22017eefe9ef35f44ce93",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/IOT/index.html",
-      "sha256": "f6994fa6f24af16d5f6bd975fef85cafab19db01e55330aef89ff6d875c978ed",
-      "bytes": 8443
-    },
-    {
-      "path": "/place/VGB/index.html",
-      "sha256": "6fa2e7fb47cd7d3ed48cb855c5f9a701e74c6d5a1244a629bfc491622df7d7b4",
-      "bytes": 8347
-    },
-    {
-      "path": "/place/BRN/index.html",
-      "sha256": "a1303269d14f61650bfe2f08e58d2a9ca6e6ced01621d404d51164580733b4a2",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/BGR/index.html",
-      "sha256": "f363d6847d8c33972a15e0fa016604140c825d9b9055619fc6b638b406ae481e",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/BFA/index.html",
-      "sha256": "bed5775046efdf161f6fc32591ec23eba05652354a26dddf124aeac8eae12300",
-      "bytes": 8227
-    },
-    {
-      "path": "/place/BDI/index.html",
-      "sha256": "a830e1f97053dcf8fe25cdd19528dee5fadc524c40870b97b20e636037a18309",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/KHM/index.html",
-      "sha256": "c58e79e13b7d308e289f36d27ef7be36d3c25bf92fb85ebb048f9548217fb268",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/CMR/index.html",
-      "sha256": "fca5bbc12e3777f0cc921f71f4654040b633ab51dcec81a4f743aa7b01d03710",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/CAN/index.html",
-      "sha256": "6f723ca7eb793b00608c9e7859ad43bf463df342f2b8bad980863062ab097108",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/CPV/index.html",
-      "sha256": "67d4134b8396e679fb38740bc883ad962b78d9b0592bd9a8ee137745f2651846",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/CYM/index.html",
-      "sha256": "7d12d57eef9a871e80b98741cd1b934a3bc58d992086ecc02e680f5f8479f346",
-      "bytes": 8251
-    },
-    {
-      "path": "/place/CAF/index.html",
-      "sha256": "43dc8ca7cab0d1569b5146a4f1443495dbfa223a3393d88c6d4c67932b2aa250",
-      "bytes": 8371
-    },
-    {
-      "path": "/place/TCD/index.html",
-      "sha256": "bbab09b4872564bc4febbf8926ddff04a373ca31f55693668891427574d70912",
-      "bytes": 8131
-    },
-    {
-      "path": "/place/CHL/index.html",
-      "sha256": "2618c01e52cd2966037328b647ebdb569af0cc1c68a9ea9a1a2f543d43178c53",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/COL/index.html",
-      "sha256": "63ccd9509c5587689258e950d93a470d19056c6851985e185016c1cb77fdcb87",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/COM/index.html",
-      "sha256": "741ffcd1017c1120ccf7a62a939b1a764860d5582f389f89598e188085e9e1fe",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/COK/index.html",
-      "sha256": "3d9ba71992f4a27f505ce2cfb84db2fa0d38890bff8af4a9b57ff9b828c11ad7",
-      "bytes": 8227
-    },
-    {
-      "path": "/place/CRI/index.html",
-      "sha256": "06f46c6fc95ed4cee92ef9231e5c8800c02060221ed8700fd5f1019ab57b03d9",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/HRV/index.html",
-      "sha256": "59a68cf9d1c6245e10bfd1de2c74b8a17568a35a07cb5a4151aff88f6856d669",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/CUB/index.html",
-      "sha256": "edaeb11997814f932fdd27750f8151d43abc70a1c148dd9085f2fc3a4cdf81da",
-      "bytes": 8131
-    },
-    {
-      "path": "/place/CUW/index.html",
-      "sha256": "9e0da289685fc9438d461b9168212372bfa824660405eeaadb1b200a0ee1f052",
-      "bytes": 8183
-    },
-    {
-      "path": "/place/CYP/index.html",
-      "sha256": "fb8702c79df45f7902e6d2ef274ef562a8019bf4ca841090f903d68da165d607",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/CZE/index.html",
-      "sha256": "ec928928233cce2600c7f6cb5999da38aed267675ffc4f90fbc4c60261acadd5",
-      "bytes": 8251
-    },
-    {
-      "path": "/place/COD/index.html",
-      "sha256": "3b93a4a4ef026e706827ebf16f3b92e98908f0ecaa14d936b5edaf2465e75b5e",
-      "bytes": 8467
-    },
-    {
-      "path": "/place/DNK/index.html",
-      "sha256": "82edc8a03e152c3482b74cb86b80eda1e5ba781cca224785cd861f7a18a18b14",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/DJI/index.html",
-      "sha256": "9886dd6e40646c4fb87d64280946dfc1a6f792ecd6e4259025856c05a50a5426",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/DMA/index.html",
-      "sha256": "60752921bcd1a60c4d192b82c2994e324c891538b678ca2bc9f51d1e6c8c393c",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/DOM/index.html",
-      "sha256": "febd03b1d261c10026f7b8d5bcb3d4db3a22760b657a2a1901a4772282f0359e",
-      "bytes": 8299
-    },
-    {
-      "path": "/place/TLS/index.html",
-      "sha256": "efd90ec60a1eeffc7465af837df64df84413301018ce13f221b468f3bc43ccc7",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/ECU/index.html",
-      "sha256": "f0237d1c41c984f3898386a922c6b34163ac64dbe07c53c605a43eea4522c7a4",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/EGY/index.html",
-      "sha256": "582a6aa06659fe388e75a363e6999b5de04f51ca19c18904105595c591be47e6",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/SLV/index.html",
-      "sha256": "14d42727b9736589fe2e15f77b60e911425ec07c826a176c040abec4d706f668",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/GNQ/index.html",
-      "sha256": "66467141bd51cba13d70b438cf94eb5e497aae2962d8093add0f2b612804d24f",
-      "bytes": 8287
-    },
-    {
-      "path": "/place/ERI/index.html",
-      "sha256": "3f6aa0a8d269a8bedf622d1ddd4067f7cac68ba6818aaf41262dcb8db9cd31f2",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/EST/index.html",
-      "sha256": "f15c3a9b058b8c148af23bebdad32bf6aca86206bd3c838cc09cb0fb34314144",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/SWZ/index.html",
-      "sha256": "57b83f130a5a6188a5c34291ed9a0d0674d4fbee9b70148e01ca33bc70df829d",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/ETH/index.html",
-      "sha256": "b99de8712ed20aad891ca85389a31ab828a7d8c9c8f6b81d736f15a731f62b53",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/FLK/index.html",
-      "sha256": "d606cc5f2b8a0197466d4befcf88951ce46c8a5338f9981d9c4392897ba1a6e5",
-      "bytes": 8275
-    },
-    {
-      "path": "/place/FRO/index.html",
-      "sha256": "764f4f84a5bf494c6c95bb21a1ae643bfd9aafbcae43501349d68bd28c1b746f",
-      "bytes": 8239
-    },
-    {
-      "path": "/place/FSM/index.html",
-      "sha256": "0880453619a98823696c76a363af8851eddccd14d33ba869504ca365a7b608ac",
-      "bytes": 8443
-    },
-    {
-      "path": "/place/FJI/index.html",
-      "sha256": "86a20d1b82a31be724e16c39ec1372d9c9156aad14c8e3117e101e9fc08b4d70",
-      "bytes": 8131
-    },
-    {
-      "path": "/place/FIN/index.html",
-      "sha256": "adfa11aa14ce72abb65b8a3aacd22291352c6acfdce85c49e6bf636daf754577",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/FRA/index.html",
-      "sha256": "12e066eaa98c453dbf98690b418a366d42e0a612a03cf3604e768fe4bfe912f7",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/PYF/index.html",
-      "sha256": "03b69a6c679d03e9d1439a5b27ebd50290ac38ba89ef7e708e26248bd01a143b",
-      "bytes": 8275
-    },
-    {
-      "path": "/place/ATF/index.html",
-      "sha256": "aed32b15f954f2b7f87d42128cec201fe392d707deeadadd98e6d235b258c2e1",
-      "bytes": 8503
-    },
-    {
-      "path": "/place/GAB/index.html",
-      "sha256": "7f4e89e457de1f9e47843e593ba70d1df305b76a22cc8d43b48bc1231dbdd44d",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/GEO/index.html",
-      "sha256": "e158dfc37a034eb2c8a6e4a56e21a2b755e5c57d0dad672b8222658695d75131",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/DEU/index.html",
-      "sha256": "fdeed700e7ae11752ee08078458555f559214aee5b99df73bd15f2b61a6d4f33",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/GHA/index.html",
-      "sha256": "be2303eee52ef63061e7a3194786a36a06ac07ee2439e2db6f3fd7e771b764a9",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/GRC/index.html",
-      "sha256": "e775a77cd22d18b164b225269f2e3f6526428ec01195d9a2db5f32e86341d595",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/GRL/index.html",
-      "sha256": "90fee18cc5cb3e3dd6e8129acbb606dc61cd93dafc3b4af06527669c4e7328df",
-      "bytes": 8191
-    },
-    {
-      "path": "/place/GRD/index.html",
-      "sha256": "5daceb7237937d1bbe5acde828c7f19e0d74ee41f725057a69398a9fd9b60cdf",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/GUM/index.html",
-      "sha256": "b9d272a317d41696852742908b211aeab5e1765c44e5c5a120c4ba01738925ee",
-      "bytes": 8131
-    },
-    {
-      "path": "/place/GTM/index.html",
-      "sha256": "6e2f18fbe25889524234716d4c95ee0ad6a4c82b94626034e864bb98423dd365",
-      "bytes": 8191
-    },
-    {
-      "path": "/place/GGY/index.html",
-      "sha256": "0dde3027f6ca4bdf136a975cc6b8bb56d50db19b5ea6c96f6513f1b690368ecf",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/GIN/index.html",
-      "sha256": "34e679aca62c469a85433438954719b2203b1588c6fa62b299de307486106e0f",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/GNB/index.html",
-      "sha256": "8b75cdfeff9d2457bd93a694286f7559e41cfce1f38d8144592b59cfac1bf43e",
-      "bytes": 8239
-    },
-    {
-      "path": "/place/GUY/index.html",
-      "sha256": "a1606f5fe3841c75a74d9357c6bfc0f468e62cb7f11db857ab2c36d6f4e72036",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/HTI/index.html",
-      "sha256": "c0c80e91b09f0829b72bebfdf7c7ff85d378b5fbe0b80bc3ae2a6080de3f1ee2",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/HMD/index.html",
-      "sha256": "d75436d9b518dd1ce18c9120e64d70ebeab935af50b281963b95e821cb1704bb",
-      "bytes": 8479
-    },
-    {
-      "path": "/place/HND/index.html",
-      "sha256": "d4e8f215dd44488ed7393d4f1b8e6864ef2873dc40c29e7d5f10f667b60d473e",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/HKG/index.html",
-      "sha256": "d8ee9c83f135b013230c1b0c1dcb15a3722a5b475aa8b334134b52e865eff964",
-      "bytes": 8191
-    },
-    {
-      "path": "/place/HUN/index.html",
-      "sha256": "e219fd4bf4b77cdebdba756ec85d5eef05a10eff3902289ca3994b5f5fe0b5c7",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/ISL/index.html",
-      "sha256": "e20b5362e3a690a107da066a906ecb46ee9c6ecc45742ecd47a9d84c84db0f66",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/IDN/index.html",
-      "sha256": "440af0b336d5ff1fe5890e67c5133dd89506fcd157024579c67f863382fdfb85",
-      "bytes": 8191
-    },
-    {
-      "path": "/place/IRN/index.html",
-      "sha256": "bb333f10a6660a35d924f0aa3137710844a988d2d52b30abee28b8b050aed673",
-      "bytes": 8131
-    },
-    {
-      "path": "/place/IRQ/index.html",
-      "sha256": "e38453b7bbc05fb79680559b0092c1256473537823b73c09452a5eb62470181c",
-      "bytes": 8131
-    },
-    {
-      "path": "/place/IRL/index.html",
-      "sha256": "6631d50cffa91d7a8533423e99d668d1988d6f8543904b27268ed567edc925af",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/IMN/index.html",
-      "sha256": "30334bf0c4db7fa3b3530529c9377a499228c29edd5cf0b0bbfe74e85d64cc97",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/ISR/index.html",
-      "sha256": "965cd1856852858b9cff83a9ab6af55d8bcbabbb3f847ab91b71f019f3c03203",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/ITA/index.html",
-      "sha256": "c12108a10026ccb1c345e0f43e042b483ea04e30b5bd4ccb5251c86e97c43f3e",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/CIV/index.html",
-      "sha256": "0d3eb3eaa4ec5a242e534d48173351eee81c51e28c370d94cbd835714262d6a7",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/JAM/index.html",
-      "sha256": "8b933fba8d5ad73253c79b601bb437423edd0ee5a9237f591a35765dfd15127a",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/JPN/index.html",
-      "sha256": "e8e0099ce5b4d5eef81da8c7c5b6f70bd8a85cb0620134392d8b9bd8bef366c3",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/JEY/index.html",
-      "sha256": "aa8925fc4b60d150dfba562f8b3e6f92e0e1f7b859b823609d0597f134457eee",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/JOR/index.html",
-      "sha256": "0e733b3bf1f7703c786a350d602ef3fcbfdfb0536f75f8d4a4e8b8f72e9a60d9",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/KAZ/index.html",
-      "sha256": "b5c43d7ca0bb9d77d2ce80adbd2407b45eee89024e872a9a5cb73cbe74345609",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/KEN/index.html",
-      "sha256": "1d60beec1b4825b241265d63ba6b1d1e7178870e77c6246a2a6ca46e6c6a2a3f",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/KIR/index.html",
-      "sha256": "4d0015863a485eedf308d19f06878a0dc43a05bb87b264b84aa132f38393116e",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/KOS/index.html",
-      "sha256": "8a030ca1fccf5e18b458c3bddd5c6df05ccf422b5c3166d0113f3581c4a9f0f7",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/KWT/index.html",
-      "sha256": "8564a7e761e98532407dbf49f84d332a865ac57cb4a4933d6bb2adfdc5bbb2a4",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/KGZ/index.html",
-      "sha256": "26d1bbc9d4dbeeab0df3656764b34c34b94cc6a5fe4320b744d0ac2427ded5ea",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/LAO/index.html",
-      "sha256": "c3e8eeeb2d223ef6e476468da185cd4e3a8a3bc0a2d0f1e53934bc27b4a074ad",
-      "bytes": 8131
-    },
-    {
-      "path": "/place/LVA/index.html",
-      "sha256": "b4f568edc213da8b9a52c890c53a7b9c2dabc549bef69b8cf214f74322acdbab",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/LBN/index.html",
-      "sha256": "b0fe5731fec806a9a8ad7035f6b891dfd0d98eb7a6f96beb35e84bbe75d7acff",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/LSO/index.html",
-      "sha256": "6fdebb73851bf3e2e3ba2a94746b0ac4a6bb9b59c2f98884d2c42929ea8ca2a0",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/LBR/index.html",
-      "sha256": "8fdb74741eeed0228365bf64571e0915533ee0b921a222021f0cc1e0720291ae",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/LBY/index.html",
-      "sha256": "c6dd7d8c3d9ffdac0de17f9a740fb3397d8465c6304912d22c4d537b06d754a5",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/LIE/index.html",
-      "sha256": "0106a2428e9fbd9cd309f3bcd32772eb3c1da913da298996f9ec9d1e31a19885",
-      "bytes": 8239
-    },
-    {
-      "path": "/place/LTU/index.html",
-      "sha256": "784c69bcdc6e57e69f7ba1e912865ab277cf25c1e438d55546bcca99a29b7baa",
-      "bytes": 8191
-    },
-    {
-      "path": "/place/LUX/index.html",
-      "sha256": "aa10dfba8ff732d434a589fb22ee7e56938dcb8f1e4ae11971f0db3ea7238503",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/MAC/index.html",
-      "sha256": "56cfaac46309e907b39c3889bf15c497319090092a79acdd711122aa17bde952",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/MDG/index.html",
-      "sha256": "e3d6a3202fb74035662c1e5a6d0b94a4408b10079cb3dcc14db3e56c0a934048",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/MWI/index.html",
-      "sha256": "39afaf84bd11ebce46417bfc7d08f4f05f3b3bc55871156cef602390975eab31",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/MYS/index.html",
-      "sha256": "4802329d309a2fb85311332eb698b5bf66d8b552117f34d801733fbab48f0174",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/MDV/index.html",
-      "sha256": "f1d9fe5bc458792af2a5cd7256315f937aa4ed672b3c93dc40daeec870ee45f0",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/MLI/index.html",
-      "sha256": "cfda5a4b25ed32f6f6f70e5a7e368afd2f04f27d005847197c805a1dea2f501d",
-      "bytes": 8131
-    },
-    {
-      "path": "/place/MLT/index.html",
-      "sha256": "e925316abab00e3d84fb0ef203c3c4e60e3fb97315e8af8e7eebb4d16ce2c21e",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/MHL/index.html",
-      "sha256": "6849a98cf1481b40f5d6be9b180725b0f2a3df2ef5db7d497e3bca74695c984b",
-      "bytes": 8275
-    },
-    {
-      "path": "/place/MRT/index.html",
-      "sha256": "0ee25e229ae953501402118d4d5d0fc6f953bc5829f8c8f604726924f897a4d3",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/MUS/index.html",
-      "sha256": "28cfbe2c882958be218ff317f0bc507af03b67be0667726316c5005b1ce5e204",
-      "bytes": 8191
-    },
-    {
-      "path": "/place/MEX/index.html",
-      "sha256": "8735b83068294742b5d9d108d9e5f56678ff72be383c85c09b35ca61410d4303",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/MDA/index.html",
-      "sha256": "57183a5f60a25e0c0692aa431952069659807aeba32c9b7648b3aefe63e338a6",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/MCO/index.html",
-      "sha256": "637c280bfd298cc163ea5c70b9f85b991026ada478e3d6c43e89786758d0c48e",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/MNG/index.html",
-      "sha256": "afd8d22217c99904a552973ae392eb308d1b7af527eead7fbbc2e52182b933d7",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/MNE/index.html",
-      "sha256": "5ddc9f7a501643e9e12b01f7bc6c0dc14d54967c05191e2139ba2af06e0fcb35",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/MSR/index.html",
-      "sha256": "0747061c54c514d7fcc5cb4b62960f2b778cc649349566ed60cf351a5486a0ca",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/MAR/index.html",
-      "sha256": "be8f55175faedd6eb7bffd0ef1b3e0e46d9c66f732092702b99eca875733edbd",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/MOZ/index.html",
-      "sha256": "4c1fe2b47296f67fb685dac05534bae56bd7af4ef3cfb0cf34c396e3c2ee4c57",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/MMR/index.html",
-      "sha256": "5522edeb135d18af1ae20a33eb34796282072f2690c4c5a0d307e5136708d410",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/NAM/index.html",
-      "sha256": "82950a8d1630d8a69f5ff0a7ac34f11bef30018e5b0ed7da7b176ccd0bffa54c",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/NRU/index.html",
-      "sha256": "d7a508d58cbd910f3534be061ea1b97509a82016bcb1deceaf82569a95b43e2a",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/NPL/index.html",
-      "sha256": "733d51380c8fb82222992a9181933270c4c0f05d19074a97568758cd2e44a5d5",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/NLD/index.html",
-      "sha256": "0e0c2a40cdd3377d28782212b19a8240017a6be64ebad9b3801be0aa489345fd",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/NCL/index.html",
-      "sha256": "015d26b43db42b453b1d201a33cd2a1f3c61b126d6252670a473eebe34114d2f",
-      "bytes": 8239
-    },
-    {
-      "path": "/place/NZL/index.html",
-      "sha256": "61ad0ce46e24fa36ecf9629a6fe86742d62cb92b2b51ee596803c88fea53ffd4",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/NIC/index.html",
-      "sha256": "d635f9912fbad2bd86ddda0bedc9c7abccffedcc8b0af4fd4135bcdcebce18d9",
-      "bytes": 8191
-    },
-    {
-      "path": "/place/NER/index.html",
-      "sha256": "88fe5f7807fba659602356454c2ad436235b280b872a2bf147a475786d7fdd53",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/NGA/index.html",
-      "sha256": "560a48ea99954076f58afe99006891e1148c5ae132c693a63d8a8c895f8c561e",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/NIU/index.html",
-      "sha256": "0862bfdfb28ea56f22841925a817917c3c16f6f4b3695e8443c4eb7c10ed1c79",
-      "bytes": 8131
-    },
-    {
-      "path": "/place/NFK/index.html",
-      "sha256": "e754f2dc7d3f120fbe77f00dce20b48636cfbb5c6248bf8fc404d92d3381678a",
-      "bytes": 8251
-    },
-    {
-      "path": "/place/PRK/index.html",
-      "sha256": "452abec814ed4fb46ee52ddae89e25345676f103ada25e29ec54677e47920933",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/MKD/index.html",
-      "sha256": "167c085d08550546a16d269cd17546ac39b56911c52790f8d534278ff73e971f",
-      "bytes": 8263
-    },
-    {
-      "path": "/place/MNP/index.html",
-      "sha256": "6b89191ed9f8c545f9ce1425b180fc7d5243e3e9ab11bb990c447455ca6c339c",
-      "bytes": 8371
-    },
-    {
-      "path": "/place/NOR/index.html",
-      "sha256": "8e9491b00966aef47e2372dacc5299601c915602506d0eb80426827b5e18819d",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/OMN/index.html",
-      "sha256": "2739b52333ca70b3bae63f35ed41bf386f9cd7cf912f6fa24974aef7e2a7a6e2",
-      "bytes": 8131
-    },
-    {
-      "path": "/place/PAK/index.html",
-      "sha256": "373428b490bffa91bf6f67ab79f9c544b4f1d56e78fe2abef4b366d71131977d",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/PLW/index.html",
-      "sha256": "75ebf18fbd95b4220d376bc034bd52b9e4e67d0249af5f1cfc073c84fd2ceacb",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/PSE/index.html",
-      "sha256": "6aef1ad1b8c39ad8ff0f71ae8fa97a0ba27bec74b3eb0e7690e19e9ef83daca2",
-      "bytes": 8191
-    },
-    {
-      "path": "/place/PAN/index.html",
-      "sha256": "35d14a319638b29dbd2ce9d44d28b55c69153efc3a154149603619f409100719",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/PNG/index.html",
-      "sha256": "d7a70c7cb6eedbe6a470a4d5b1cb1f3910e3b56fca0d778b211af784e5f9cd82",
-      "bytes": 8275
-    },
-    {
-      "path": "/place/PRY/index.html",
-      "sha256": "d0a05f71fa2d0dd8f599cb6c5965d27fbf83255d8c6d8ade261b56feda634b79",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/CHN/index.html",
-      "sha256": "941872470d2f27e30100708ea772be47967f45a6d17254c73e43d424e658bb08",
-      "bytes": 8397
-    },
-    {
-      "path": "/place/PER/index.html",
-      "sha256": "407d43a7d1980e418eaabdee4003f644a99cd6767bb1ee56d279986388e5debf",
-      "bytes": 8131
-    },
-    {
-      "path": "/place/PHL/index.html",
-      "sha256": "e55614df049c6bc49ef2a992c70361809ec0fcd6651b34c8773ed47ba51eac40",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/PCN/index.html",
-      "sha256": "1dae55d41c35e4e5865840324c99ce614a762bd8c438c7ebad42b47e7c99414e",
-      "bytes": 8275
-    },
-    {
-      "path": "/place/POL/index.html",
-      "sha256": "58b9a9a4d5eec7020f9a08ef3af009fa59d0dc5a561b6107984e0aec19eaf009",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/PRT/index.html",
-      "sha256": "b04659d44bd91e980b440fcda97b9f598c6aac3b789167845daed70793066aa5",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/PRI/index.html",
-      "sha256": "5c019a53404bf7d3fe91f1d88b147da8996f4345831f62018d111d42a52b427e",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/QAT/index.html",
-      "sha256": "e78e19efe0b14b371eecfb50eeeab3d4e51aff5eadde1c94c540059ebd13d01c",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/COG/index.html",
-      "sha256": "2e8338111bffe425126dd558421f9872b3c88a9f3560cb8d58e00d60453f400a",
-      "bytes": 8335
-    },
-    {
-      "path": "/place/ROU/index.html",
-      "sha256": "b87d80a7ba8e6b2beed040cbb0b853f583f7f49d878817fe6b5a9f4620f63902",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/RUS/index.html",
-      "sha256": "2378772408c11aa4793007a975be09a3bbfecd3cc471760d1a96f174ac49f710",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/RWA/index.html",
-      "sha256": "65f9434d01d83a496f01d2d666dc223cd30d3208d285bf17a6e49c4d44553a33",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/BLM/index.html",
-      "sha256": "c7a7ac12f015026d68094a5323d284adfc041cf50268b4227ada37a2c67287c3",
-      "bytes": 8291
-    },
-    {
-      "path": "/place/SHN/index.html",
-      "sha256": "a0cece6309598ea76ff1d66c27570cd5ad00073d2286607ee54fe5f3b22a1bb6",
-      "bytes": 8227
-    },
-    {
-      "path": "/place/KNA/index.html",
-      "sha256": "e4d7b23d79e5a7697a1a76f833324a9ce791fd17f9dadf26275d50c9f0027d6b",
-      "bytes": 8335
-    },
-    {
-      "path": "/place/LCA/index.html",
-      "sha256": "2d0f1f9531597c3edaf7ccd43f87501bd4fc8001a0d5b8beeea6d6cc7c919568",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/MAF/index.html",
-      "sha256": "5b82b0be48fe42c8f3dd7ea46db2ff9e7144e2e38e3adf6f27e351c2da3cbc96",
-      "bytes": 8227
-    },
-    {
-      "path": "/place/SPM/index.html",
-      "sha256": "ed74f706db192a35e020aa06c30040fbcc92fa8b90a8238f340b987b1803e81a",
-      "bytes": 8383
-    },
-    {
-      "path": "/place/VCT/index.html",
-      "sha256": "0438c72b93126c57fb9baee73f3c741cf656f72c28d77172957b1fab126708a4",
-      "bytes": 8467
-    },
-    {
-      "path": "/place/WSM/index.html",
-      "sha256": "68170e2e6d1c1bdf395929738d08243170fcaf6082d8ff6b6044b0914eb02bc5",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/SMR/index.html",
-      "sha256": "893bee31f0b7ddf8003c869b14b4247daf62f9456a0956981827d31bdff436e0",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/STP/index.html",
-      "sha256": "03105cc9695b709f68dd8ca89e6a505961c418b8caf582abd0990aac9240ebb6",
-      "bytes": 8383
-    },
-    {
-      "path": "/place/SAU/index.html",
-      "sha256": "bab7cc6c1cf1787541e8edd3831f1c3526ad1c6accd8d1854c8763359275e78e",
-      "bytes": 8227
-    },
-    {
-      "path": "/place/SEN/index.html",
-      "sha256": "8284df55440e9d13280cba44a5930cf01c4f28d81bc379b4d12f003a7100493c",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/SRB/index.html",
-      "sha256": "3bc8de45e99addd8a6d661890235f9a75061917f3a30f68aac5af957e62d4fdc",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/SYC/index.html",
-      "sha256": "260ab4c2fc0bc0f7a43c32b50a8aa7ef0aa758e2e797a41d2e37eb4ccba71dd1",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/KAS/index.html",
-      "sha256": "9bd7ec665f34169de3ed0a48d6327ed3586beaa6892977a02bab966945f19b57",
-      "bytes": 8263
-    },
-    {
-      "path": "/place/SLE/index.html",
-      "sha256": "189d8bb4678295c6f432219d59dd8790f415bec28c336f5102ac35cb642a55e6",
-      "bytes": 8227
-    },
-    {
-      "path": "/place/SGP/index.html",
-      "sha256": "eb6c6e4f237be6ad2bd33a241843eca4732c374867e63f4eb0d502fabd281ee6",
-      "bytes": 8191
-    },
-    {
-      "path": "/place/SXM/index.html",
-      "sha256": "65f2647b0d73f67195c56285e03e850611fae4dca01a458eff56f3c4eb9dee38",
-      "bytes": 8227
-    },
-    {
-      "path": "/place/SVK/index.html",
-      "sha256": "f3d183e2195dacfcddba1aae61a19ba7a93a0d8d8264a578e9b9f89b72a5b82e",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/SVN/index.html",
-      "sha256": "9bfe58446864c00403cbfe064d0a57494864805c5c3250706788dfacf0362aa2",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/SLB/index.html",
-      "sha256": "ef1fea10a2b16b010d7cb96b3d46499c17dccf31d8ab3e549d94541623801b2e",
-      "bytes": 8263
-    },
-    {
-      "path": "/place/SOM/index.html",
-      "sha256": "e554a850163e56e886c726d21dd56400aee16e1f0b5132fb0e6534c6d84583f3",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/SOL/index.html",
-      "sha256": "20062187cce1d3f41a7c9ef5ddaa76318f7533130c0db04cd04f1967ac8e74ab",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/ZAF/index.html",
-      "sha256": "1659fa792c06ac5c54169606d6fb7a9d62e75048eea168c3aa4800d077bbe1b0",
-      "bytes": 8227
-    },
-    {
-      "path": "/place/SGS/index.html",
-      "sha256": "8b1dccd328d0e66620997bb682205f3d9ffdc6e2fc22b95099da128c5c002769",
-      "bytes": 8611
-    },
-    {
-      "path": "/place/KOR/index.html",
-      "sha256": "4df38d343505694d64451a075a294a32ac96979eb99663dac5b2ba82f3d0b8c6",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/SSD/index.html",
-      "sha256": "637cf0ed04ed6b6c217f9f827cbb84a97721949503aa52ef9f594df87ffa35a8",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/ESP/index.html",
-      "sha256": "fe53a71e852246f3a9ef1cf0b3d03eddd85c1235d5e417314fd96b3ae9766192",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/LKA/index.html",
-      "sha256": "2d8c92da6b650dcad66f70489947e026ecee0850f9d59c676fbebf8945a3d4ee",
-      "bytes": 8191
-    },
-    {
-      "path": "/place/SDN/index.html",
-      "sha256": "fffccb8ef5368d337387c2391a9c1234d5276da04d56ea50442548679126450b",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/SUR/index.html",
-      "sha256": "7936cbe22d52b1f6812d63b09a4c48eb9f4a30cb6ab29fb624711a1cc72e14e4",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/SWE/index.html",
-      "sha256": "472791bb9202cf23e54cf0f19c4b0da8fef61cbe7c065008fdefb7d4c1b18dfd",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/CHE/index.html",
-      "sha256": "c9e8081ce7face7bdd96ca5e8f7709bbb64ced44987117d7128e8308ce4c91ae",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/SYR/index.html",
-      "sha256": "1e33bcf83fb9204ed58011b78db3c8ee774f1d91bdf0b07d753f325ccb62299a",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/TWN/index.html",
-      "sha256": "45b9020a3d14e703b57a56d16bc08d78def1d5ab1fb323ee28473779f5ec61d4",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/TJK/index.html",
-      "sha256": "e1da11e256a4390d3c8ac125afdf56045328c9671722504328376376046dff28",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/TZA/index.html",
-      "sha256": "10c553cc727f5ffcfa66637b3550a9a85f74ef8c24c28f2d6561af4b0b46f4cd",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/THA/index.html",
-      "sha256": "47f0830a9ea3ea34b4451a71ddc832e1139768e8bbad4f4a2cc990b1e3dc48a2",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/BHS/index.html",
-      "sha256": "6f09443ea31c709ae1b4d81a3fd65b747d5f55fd750f1485f2dad9ca2fc321ba",
-      "bytes": 8215
-    },
-    {
-      "path": "/place/GMB/index.html",
-      "sha256": "450565954e0b6bf6ab26417e6bf8e7f74d1bdabe64fc200917dab12bcb586282",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/TGO/index.html",
-      "sha256": "12031fa2d6468ad485b03622bc1584bb487a1ce2641db4cbb8f04c1e1cb74f00",
-      "bytes": 8131
-    },
-    {
-      "path": "/place/TON/index.html",
-      "sha256": "33661ab08ef731118700903db62728fc27d7e7ff2c6a2fca274b3b521f815ab2",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/TTO/index.html",
-      "sha256": "05c5017d41ef6238736c84af6750732383202fc27e1210891f28e4bd6de6fe62",
-      "bytes": 8311
-    },
-    {
-      "path": "/place/TUN/index.html",
-      "sha256": "b6dbc3a0c6e2f73014f7c0fca5acf633ff102120e97aa87dd4141c637a2126d3",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/TUR/index.html",
-      "sha256": "ec398d8ce26aa1403acb6077cf1849e588ab10511b727d74fceba44b825ddfa3",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/CYN/index.html",
-      "sha256": "84343ce9bf6339c0170b3ac8c960b81bbb72d344c63ff99a1c750af90c4c5874",
-      "bytes": 8503
-    },
-    {
-      "path": "/place/TKM/index.html",
-      "sha256": "31652171630082f451b9fd62b003f9eaa7e04ff88315b21f40d7c6d240a80023",
-      "bytes": 8227
-    },
-    {
-      "path": "/place/TCA/index.html",
-      "sha256": "69f6b8b0cc1e2e346dd784c24231aa19953d626a27458d34b4793d18886b8005",
-      "bytes": 8371
-    },
-    {
-      "path": "/place/TUV/index.html",
-      "sha256": "1bfe1d43839c8596e87d3f49521f357e8021a49ba9c0d8e392a775034f4a6dd3",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/UGA/index.html",
-      "sha256": "7c463d22b52162223741aae3ac5aaa16b0b793c459944c1b32c0a98dc6acc603",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/UKR/index.html",
-      "sha256": "70d08e9e77dd05ede618abe03145262eef2024b06027231225a099cdb5ef9cdc",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/ARE/index.html",
-      "sha256": "af507f84cc724a8fbad3f6359e167be74d34f8340334ac3885ae1ca3883e55e1",
-      "bytes": 8323
-    },
-    {
-      "path": "/place/GBR/index.html",
-      "sha256": "9cee18ef8944ef36d18bc1bafac351ccbd2342d4849d56680beafd97e1b53260",
-      "bytes": 8251
-    },
-    {
-      "path": "/place/USA/index.html",
-      "sha256": "e4acbf626c2ae4d59e2824f4647b6aa84e3dc2ca4b7830e06d1643e4361ad396",
-      "bytes": 8371
-    },
-    {
-      "path": "/place/VIR/index.html",
-      "sha256": "aabde77a53078298be6b9c3d1489fefd9825f5ec380345804a4cd1d3abaa597d",
-      "bytes": 8419
-    },
-    {
-      "path": "/place/URY/index.html",
-      "sha256": "8666596589870722c5f68e644cde9f4a73f2dc4b8ca0d8a100bb74a312582d98",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/UZB/index.html",
-      "sha256": "01266735ce2d91d9c773d8c8f6869624210c98e2d1f28d0284d9918f4c75e593",
-      "bytes": 8203
-    },
-    {
-      "path": "/place/VUT/index.html",
-      "sha256": "fd04e387e1c21798896a8761fe86ca64f83bd44c7160e9a4cdc84df2ee4c8ac3",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/VAT/index.html",
-      "sha256": "703960c6b8944b2bc40cda8ca26e8128efb056d89c35ae54cf25f3e4903b7395",
-      "bytes": 8227
-    },
-    {
-      "path": "/place/VEN/index.html",
-      "sha256": "587a24f2c63645cb042f335de9c2acfd07ac83e7a79629d03c72e132c9544b36",
-      "bytes": 8191
-    },
-    {
-      "path": "/place/VNM/index.html",
-      "sha256": "a29f79d4c457550aa1758a29fcf043d534c389aaf0b50614ee9840db457ffdbe",
-      "bytes": 8167
-    },
-    {
-      "path": "/place/WLF/index.html",
-      "sha256": "a779af2fabd3a80dd9f855ea76ae9161e147a0f84f2a2e66e4a75cd99fd34f10",
-      "bytes": 8287
-    },
-    {
-      "path": "/place/ESH/index.html",
-      "sha256": "7e8f8bbde93493f2f0f992c464d0c035ee65b2c7fabab689362257a8c74508f9",
-      "bytes": 8251
-    },
-    {
-      "path": "/place/YEM/index.html",
-      "sha256": "a07198dc6eea8be56367306f42b8ba4b55c3a0ed0809bf2e8ba2bb546104ab48",
-      "bytes": 8143
-    },
-    {
-      "path": "/place/ZMB/index.html",
-      "sha256": "7ef1761f103a3aa129ef5cda576ae355a59f69112aaaedf713e4cd30a5b5a185",
-      "bytes": 8155
-    },
-    {
-      "path": "/place/ZWE/index.html",
-      "sha256": "765c2367985f653076cbb71b221dbe78502366fd4ff41d5a0c7ab7ca61592ea8",
-      "bytes": 8179
-    },
-    {
-      "path": "/place/UGA/adm1/adjumani-and-moyo-and-yumbe-and-amolatar-and-kaabong-and-koboko-79956900/index.html",
-      "sha256": "dfd3419ff27a9fe6624c742e0ae01c41fda59e453e626c64a42f2ca1a6d8dc2b",
-      "bytes": 13280
-    },
-    {
-      "path": "/place/YEM/adm1/al-hudaydah/index.html",
-      "sha256": "40eb21c11f2d473c487c1221ea6927d366c199f2c39858c3daee1642927f30da",
-      "bytes": 8675
-    },
-    {
-      "path": "/place/YEM/adm1/al-maharah/index.html",
-      "sha256": "9b6653e6b3c901830bdef97051138daf42a791da20c4a04304602a1a618f1cfc",
-      "bytes": 8654
-    },
-    {
-      "path": "/place/YEM/adm1/al-mahwit/index.html",
-      "sha256": "1b71af77acaf917dc09ff0ad69fd595a5e19af007ffbb9dc0d914e45c026a3bd",
-      "bytes": 8634
-    },
-    {
-      "path": "/place/MDG/adm1/amoron-i-mania/index.html",
-      "sha256": "b247e891fdd66881179ccecf52fc4ce8b2f740e18462d3bdb96fc807ab24c415",
-      "bytes": 8804
-    },
-    {
-      "path": "/place/YEM/adm1/amran/index.html",
-      "sha256": "bace3c4839823126ffbab92ee0b4f3400ef23f3878ed48040450a47b1b23cc13",
-      "bytes": 8549
-    },
-    {
-      "path": "/place/MDG/adm1/androy/index.html",
-      "sha256": "93ada039c01c83ff72af269e960c3cb37f5bf485dca63faea4c4c091a6ca58c0",
-      "bytes": 8636
-    },
-    {
-      "path": "/place/MDG/adm1/anosy/index.html",
-      "sha256": "37ca33786b035c4acfad44df144b6f34dabc256ff5213746945d28d8c9709e82",
-      "bytes": 8615
-    },
-    {
-      "path": "/place/MDG/adm1/atsimo-andrefana/index.html",
-      "sha256": "dfdf80f8ddd91aa590b9b6c47e316fe36c8c2370533810f12e88cf43f4960e1e",
-      "bytes": 8846
-    },
-    {
-      "path": "/place/MWI/adm1/balaka/index.html",
-      "sha256": "408d280682d306bcd7697cd29f87a1f184da6e14ecfc470bfc116a86f9904a24",
-      "bytes": 8584
-    },
-    {
-      "path": "/place/CAF/adm1/bamingui-bangoran-and-haute-kotto-and-vakaga/index.html",
-      "sha256": "10dec38fdd8c6c6e3b60033096d1f45c600702720bae883b4b11dc9d9feda63a",
-      "bytes": 9643
-    },
-    {
-      "path": "/place/COD/adm1/bas-uele/index.html",
-      "sha256": "9e1b756f0f386b421750f065f2b59fdaaea6fa1e6fe690b569397c3d9d7c3ff5",
-      "bytes": 8966
-    },
-    {
-      "path": "/place/CAF/adm1/basse-kotto-and-haut-mbomou-and-mbomou/index.html",
-      "sha256": "81fd4216924f2fe86d3de0d809d4ea264ba8d97181c7135658cb95cf2d987b05",
-      "bytes": 9517
-    },
-    {
-      "path": "/place/NGA/adm1/borno/index.html",
-      "sha256": "8cfcc4e288000a0572026de0237a54743a517a0590773fc38acf6eb7a1955853",
-      "bytes": 8575
-    },
-    {
-      "path": "/place/COG/adm1/bouenza/index.html",
-      "sha256": "232beddf999ad921cd9b89f50fde23441c5f6775c2f4b3387eeca023dee96e6d",
-      "bytes": 8798
-    },
-    {
-      "path": "/place/BDI/adm1/bubanza/index.html",
-      "sha256": "9c707017ca564a7406083e95afe30a426e96e69466ff5f99472b650d9c28f4fc",
-      "bytes": 8614
-    },
-    {
-      "path": "/place/BDI/adm1/bururi/index.html",
-      "sha256": "1b41a2fedefd30fca5b3b63d7b85d11bab14042005d2bfca54d3400889089ef1",
-      "bytes": 8594
-    },
-    {
-      "path": "/place/MOZ/adm1/cabo-delgado/index.html",
-      "sha256": "ce432b4d652ce41bc5a88540b0a5e6e55f35ced18e164efc699bf95fba43a7aa",
-      "bytes": 8760
-    },
-    {
-      "path": "/place/BDI/adm1/cankuzo/index.html",
-      "sha256": "cce296829971238a1a6337ad24fe6c0c02a1796a65834787652191717cc5da14",
-      "bytes": 8615
-    },
-    {
-      "path": "/place/ZMB/adm1/central/index.html",
-      "sha256": "20d278d452ac1670e82128a450966589ddbc42145f889a9774dc3597bf83f602",
-      "bytes": 8604
-    },
-    {
-      "path": "/place/ZMB/adm1/chama-and-chinsaliisoka-and-mpika-and-nakonde/index.html",
-      "sha256": "5290de5d2c7ba7748c9fab1c786902ef2cb91860e397ad4dc281e6a27a567767",
-      "bytes": 9444
-    },
-    {
-      "path": "/place/MWI/adm1/chikwawa/index.html",
-      "sha256": "f6578bb8c9e6ebfe29820f5a1fa84c685858a98412517c3a9ba39382f2745304",
-      "bytes": 8626
-    },
-    {
-      "path": "/place/BDI/adm1/cibitoke/index.html",
-      "sha256": "0ffb8389d26a0077e74db20687dbd1a4747767aa81e52c1eb2692202dfd4a617",
-      "bytes": 8636
-    },
-    {
-      "path": "/place/AGO/adm1/cuanza-sul/index.html",
-      "sha256": "327e4772f7311040184f8e1afe584834f58e63f4f6fb41ab3741b6bd3175e219",
-      "bytes": 8666
-    },
-    {
-      "path": "/place/AGO/adm1/cunene/index.html",
-      "sha256": "098f8c55bb7ec9aeddcd5ec33816ce385d26a2f576c491be601dc19a6fb0b6e9",
-      "bytes": 8582
-    },
-    {
-      "path": "/place/COG/adm1/cuvette-ouest/index.html",
-      "sha256": "3205ad454c30c281ba2fdb16e76e3bf3d237edcbb5f3781885d88072cc5b9f69",
-      "bytes": 8924
-    },
-    {
-      "path": "/place/COG/adm1/cuvette/index.html",
-      "sha256": "6aa7927ff76736b9b34dd16e681cf2c9e24658d5aa58e5686a98256b848a2c0a",
-      "bytes": 8798
-    },
-    {
-      "path": "/place/MWI/adm1/dedza/index.html",
-      "sha256": "e11df4c77ba758b073161f8f752b948c887b80c20457d417ed40c16c06406e12",
-      "bytes": 8563
-    },
-    {
-      "path": "/place/MWI/adm1/dowa/index.html",
-      "sha256": "8e0352842e8903e213f57c0f3771a4db0bf7aa1cf266c5119be7f3707d570d01",
-      "bytes": 8542
-    },
-    {
-      "path": "/place/ZMB/adm1/eastern/index.html",
-      "sha256": "72fef2c548c2f817ccef45367caaba3627ca8ea0759369cfb806a51ca1818351",
-      "bytes": 8605
-    },
-    {
-      "path": "/place/COD/adm1/quateur/index.html",
-      "sha256": "f6cc6b44384aa2daa1126bd563905ee924cc4ce61f2aa4763d288b917bf09a57",
-      "bytes": 8973
-    },
-    {
-      "path": "/place/MOZ/adm1/gaza/index.html",
-      "sha256": "5def3a51ba43d867e0f89b0dc1a05fb34bc2593a28f7437418a50ef653d094a1",
-      "bytes": 8593
-    },
-    {
-      "path": "/place/NGA/adm1/gombe/index.html",
-      "sha256": "e49d00102fda39d0fa822ce85415d6f199c4b2a96147f6ebc71f096a8211c772",
-      "bytes": 8576
-    },
-    {
-      "path": "/place/YEM/adm1/hadramaut/index.html",
-      "sha256": "65b5067a33e081ea8da1094c3cb8d5f0c3d3e21bd987514d628b5d08048e3fe0",
-      "bytes": 8634
-    },
-    {
-      "path": "/place/YEM/adm1/hajjah/index.html",
-      "sha256": "80dc162a45219923986c94f1f57df2fcb6965f39ca83d8a660d3c4f4d061d316",
-      "bytes": 8570
-    },
-    {
-      "path": "/place/COD/adm1/haut-katanga/index.html",
-      "sha256": "3da2972a3630ddbb766047c9703be935a2bc84057e368f33d75f90e59716dbfb",
-      "bytes": 9050
-    },
-    {
-      "path": "/place/COD/adm1/haut-lomami/index.html",
-      "sha256": "552e3f5f50d95faa6a4efae5da5e72e750c57167d471ec0dd0dfcf785b7629eb",
-      "bytes": 9029
-    },
-    {
-      "path": "/place/COD/adm1/haut-uele/index.html",
-      "sha256": "faf6d9072951bf3302833e6604f586a75b53f208835d8d254e1297055e960c71",
-      "bytes": 8988
-    },
-    {
-      "path": "/place/MDG/adm1/haute-matsiatra/index.html",
-      "sha256": "6346dbb5c8ca1bb431b031403b8004db41e84781945c1efd48bd076bf1ce833b",
-      "bytes": 8826
-    },
-    {
-      "path": "/place/AGO/adm1/huila/index.html",
-      "sha256": "2ee2d4989b5f1d8a625de24ddb1d815ef35e0143669929fdcb5c83fdf01e0b3c",
-      "bytes": 8561
-    },
-    {
-      "path": "/place/MOZ/adm1/inhambane/index.html",
-      "sha256": "7a35a42f3bc53e91f77a874d525d6b550ba4834f3aeb5c6d499dfc65337e499d",
-      "bytes": 8698
-    },
-    {
-      "path": "/place/COD/adm1/ituri/index.html",
-      "sha256": "b3c9de1c4fefb1626597aca1eaf69fb170a405699d348e5f2c858a75086efeae",
-      "bytes": 8903
-    },
-    {
-      "path": "/place/BDI/adm1/karuzi/index.html",
-      "sha256": "008587a495fcfe40fb16fda41fdbec20629dd7f9c264f2613b1f3612181367cd",
-      "bytes": 8593
-    },
-    {
-      "path": "/place/COD/adm1/kasa-central/index.html",
-      "sha256": "10c7b4ee141bec997e62cecaab2290def758b4c1711b440860f6ac1f41f5563c",
-      "bytes": 9079
-    },
-    {
-      "path": "/place/COD/adm1/kasa-oriental/index.html",
-      "sha256": "e0f391ebdb9fe9363fbc86f996b9cfd409d1497ac11ad7a36617108f9be47a52",
-      "bytes": 9100
-    },
-    {
-      "path": "/place/COD/adm1/kasa/index.html",
-      "sha256": "f3c05343003c6182e502fc219c5b48726182dd04dbc25237b44fd5d4d88e90a6",
-      "bytes": 8911
-    },
-    {
-      "path": "/place/MWI/adm1/kasungu/index.html",
-      "sha256": "1217ad649c112431ffab92fcf6d0eb17823dec04e3894e3efadf956f3f6f74cb",
-      "bytes": 8605
-    },
-    {
-      "path": "/place/CAF/adm1/k-mo-and-nana-gribizi-and-ouaka/index.html",
-      "sha256": "89c528f2fc4455aa664e2d1c23bf317869cb6673290f446ee7caaf62e7d2c72b",
-      "bytes": 9386
-    },
-    {
-      "path": "/place/BDI/adm1/kirundo/index.html",
-      "sha256": "ca962647f22fb687e1737ce9aee71c3bad6b9c1cf7116c7c7ac33f287a014181",
-      "bytes": 8614
-    },
-    {
-      "path": "/place/COD/adm1/kongo-central/index.html",
-      "sha256": "bf06034b28788e4d47c126e1096c07d3b5eb57bf5562ad2948569409b95aecf5",
-      "bytes": 9073
-    },
-    {
-      "path": "/place/COD/adm1/kwango/index.html",
-      "sha256": "0b5f3885e1d4388096dfdf6690417ecbb79f45332ad1478d2a677cc46a132d93",
-      "bytes": 8925
-    },
-    {
-      "path": "/place/COD/adm1/kwilu/index.html",
-      "sha256": "a99bf7b0e86ba3d4d71ef52f8dd42ab0411ddeb352d102e9fd25ed7ec2ec718f",
-      "bytes": 8903
-    },
-    {
-      "path": "/place/YEM/adm1/lahj/index.html",
-      "sha256": "f0f713996f22fc058c49f5619879fdb4869b252ac499f0e17f82777d76ac00cf",
-      "bytes": 8528
-    },
-    {
-      "path": "/place/COG/adm1/lekoumou/index.html",
-      "sha256": "a9d3ccaa1806f0ed2d7fa0bc6772c55a6d82ab1e094f842d41abef12bab4af1b",
-      "bytes": 8819
-    },
-    {
-      "path": "/place/COG/adm1/likouala/index.html",
-      "sha256": "1578bda3c88c326182d628160a2760e6323740b6e0e093ee4db19b4b74c2ac40",
-      "bytes": 8819
-    },
-    {
-      "path": "/place/CAF/adm1/lobaye-and-ombella-m-poko/index.html",
-      "sha256": "5d4cf3bfbbc41824dd42c823b8f58c88926943253f3050e3d4d036851f5fa341",
-      "bytes": 9233
-    },
-    {
-      "path": "/place/COD/adm1/lomami/index.html",
-      "sha256": "0130cb884a4adda3ec5810b92dec6354638429dcac77ce619d29809d0213e659",
-      "bytes": 8925
-    },
-    {
-      "path": "/place/COD/adm1/lualaba/index.html",
-      "sha256": "b19f35018f9233f7163cce3a3cc0b5ffd1a4656064daa2080923f6e065f4669f",
-      "bytes": 8946
-    },
-    {
-      "path": "/place/ZMB/adm1/luapula/index.html",
-      "sha256": "ee21b9bd87bedf1b04371710717c38d56327fd8c2ba24838432c47b876bddf89",
-      "bytes": 8604
-    },
-    {
-      "path": "/place/AGO/adm1/lunda-sul/index.html",
-      "sha256": "b57c04392ed374c91c5250954cbe136616ccdbed7c41d6f4fedfcb89b55de065",
-      "bytes": 8646
-    },
-    {
-      "path": "/place/MWI/adm1/machinga/index.html",
-      "sha256": "9a82119e12f65e2cecf93bcbdf2931883bb56c2e313882d9dc55238a651073e9",
-      "bytes": 8626
-    },
-    {
-      "path": "/place/COD/adm1/mai-ndombe/index.html",
-      "sha256": "c26a679b334b8050337c89f759442568a6ff379b2cce31e2f37b702b890041d6",
-      "bytes": 9010
-    },
-    {
-      "path": "/place/CAF/adm1/mamb-r-kad-and-sangha-mba-r/index.html",
-      "sha256": "c98a671b85765d8a6c1a9eece72d630b5045016eb93302a8f620993d2c61f1aa",
-      "bytes": 9417
-    },
-    {
-      "path": "/place/KEN/adm1/mandera/index.html",
-      "sha256": "0a3e12143410343f11bb284b14f1327a069216b4e02eb4df825f0ea570732ed3",
-      "bytes": 8602
-    },
-    {
-      "path": "/place/MWI/adm1/mangochi/index.html",
-      "sha256": "2f28f32b6a3bcb7385c03db535e00a95e52fb6f3843bf324449a8447c13dee18",
-      "bytes": 8626
-    },
-    {
-      "path": "/place/MOZ/adm1/manica/index.html",
-      "sha256": "b1618ac31c3c146678acff8e2db505fe70777b1aa9c8784e4c99c2cd8975bf84",
-      "bytes": 8635
-    },
-    {
-      "path": "/place/KEN/adm1/marsabit/index.html",
-      "sha256": "28e900782d5d2e9b8111c6b3d8608b33772d3bff00e673ce44be9c1c3fd13570",
-      "bytes": 8622
-    },
-    {
-      "path": "/place/MWI/adm1/mchinji/index.html",
-      "sha256": "6ac94b2264457d2787160d23105347d7c4b888ea3af16ebcc4015be1aac8b9ed",
-      "bytes": 8605
-    },
-    {
-      "path": "/place/COD/adm1/mongala/index.html",
-      "sha256": "0dbd3de93514d7253e58a9a30bdb7736c11f4a95e10aab76208b293ea51852d0",
-      "bytes": 8946
-    },
-    {
-      "path": "/place/AGO/adm1/moxico/index.html",
-      "sha256": "761f8057c60e3073aae1287f9b135cc9bb84ccc7dafa131514ad6063a6140aab",
-      "bytes": 8583
-    },
-    {
-      "path": "/place/MWI/adm1/mulanje/index.html",
-      "sha256": "abff9630fb6beb772d9157a04749f9b6b034a65e88c0231cc2cc32eb331a05d5",
-      "bytes": 8605
-    },
-    {
-      "path": "/place/BDI/adm1/muramvya/index.html",
-      "sha256": "5facaeb79dc54776d5f0e6a45673151992f508752486a6ac5f4c980f2656000a",
-      "bytes": 8636
-    },
-    {
-      "path": "/place/BDI/adm1/muyinga/index.html",
-      "sha256": "48986690180299dbf4300c6f6b63484731a694a3eee8d22d75215b3f62c653c8",
-      "bytes": 8615
-    },
-    {
-      "path": "/place/MWI/adm1/mwanza/index.html",
-      "sha256": "402c678cb087b573bdeb239866b6348c7c47673f36cc462bcfd3516efff0a477",
-      "bytes": 8585
-    },
-    {
-      "path": "/place/BDI/adm1/mwaro/index.html",
-      "sha256": "5dacf4a156894ccfdbd70a8f0d55d7be058be953be792b9ac8c97bcb858641fb",
-      "bytes": 8574
-    },
-    {
-      "path": "/place/MOZ/adm1/nampula/index.html",
-      "sha256": "629d2a803f67b044b9a6727ff82063840471712a29058074af0f25cd07ba951d",
-      "bytes": 8655
-    },
-    {
-      "path": "/place/CAF/adm1/nana-mamb-r-and-ouham-and-ouham-pend/index.html",
-      "sha256": "16d8dcfb268f902f378787a39be036ad83607b6a4511d6c7b351bfbd81078296",
-      "bytes": 9547
-    },
-    {
-      "path": "/place/BDI/adm1/ngozi/index.html",
-      "sha256": "773fb5603fb10bbea20c00ce048a08a1b2a0d81b48e30ecc89313549d7912cd4",
-      "bytes": 8573
-    },
-    {
-      "path": "/place/COG/adm1/niari/index.html",
-      "sha256": "b3a3e8c9e0b290a0f9f3ba62e5840fa44bca5b35c71d2098b86ee1f428217838",
-      "bytes": 8756
-    },
-    {
-      "path": "/place/MOZ/adm1/niassa/index.html",
-      "sha256": "20868e529fa04606b1e5d6b2a1d409c6afe5b4bb5de375161752a9ee293990ee",
-      "bytes": 8635
-    },
-    {
-      "path": "/place/MWI/adm1/nkhotakota/index.html",
-      "sha256": "cd3fbb8ca070b3a9ea547129d9d5b892d9fbc815eba915d15412143563585459",
-      "bytes": 8669
-    },
-    {
-      "path": "/place/HTI/adm1/nord-est/index.html",
-      "sha256": "2a003e96d0115fbbc2566216116b6cd40043b3e67f971bfc49702ea978f1f941",
-      "bytes": 8612
-    },
-    {
-      "path": "/place/HTI/adm1/nord-ouest/index.html",
-      "sha256": "7c70fabda2900024868a6d544eba6b1ca863ebdb1092860d1431eca35504b777",
-      "bytes": 8655
-    },
-    {
-      "path": "/place/COD/adm1/nord-kivu/index.html",
-      "sha256": "3254aa5e7e34abda60bfec1a711c942d42ea0b66c4b3eb2f02e0fc0cdd87b601",
-      "bytes": 8988
-    },
-    {
-      "path": "/place/COD/adm1/nord-ubangi/index.html",
-      "sha256": "dd9d0641dcc9b6fcce33d6f91818e6afac039aa8cf66fdab52c42a1a354da92d",
-      "bytes": 9029
-    },
-    {
-      "path": "/place/ZMB/adm1/north-western/index.html",
-      "sha256": "43e0f04de747274b30251ccab3c1f763c90395713f04be9e5a83a9963afe3ec1",
-      "bytes": 8730
-    },
-    {
-      "path": "/place/GHA/adm1/northern/index.html",
-      "sha256": "caee49e54ce8b9bb658604c25b9e372ded539551ef9534312f4326179aafabbc",
-      "bytes": 8612
-    },
-    {
-      "path": "/place/ZMB/adm1/northern/index.html",
-      "sha256": "3b2f64d0ff4f52ad859996585889ffb4718e39d337c7cd5c345d9ba99d46cf85",
-      "bytes": 8626
-    },
-    {
-      "path": "/place/MWI/adm1/nsanje/index.html",
-      "sha256": "72646613df451aa4095a6d050a65c31bfb215cf8d2955bc12ba7837b2f83c51b",
-      "bytes": 8584
-    },
-    {
-      "path": "/place/MWI/adm1/ntcheu/index.html",
-      "sha256": "7e31e653238889119075e381b61b9c38c1ad094dbf1ba2136366e84d102651bc",
-      "bytes": 8584
-    },
-    {
-      "path": "/place/MWI/adm1/ntchisi/index.html",
-      "sha256": "83cb23dd3c54b197afe88a4e0383007270eec33d480e6c5332f452e976817ce5",
-      "bytes": 8605
-    },
-    {
-      "path": "/place/MWI/adm1/phalombe/index.html",
-      "sha256": "bc7b46441e85f1c88d01f35cd0d60b64a1c8b52a38d7866b7dc3d72669df4014",
-      "bytes": 8626
-    },
-    {
-      "path": "/place/COG/adm1/plateaux/index.html",
-      "sha256": "b4202cff8b203bcfdb454d587cd547cad25be5148a1f3eebc91206ffe5112313",
-      "bytes": 8819
-    },
-    {
-      "path": "/place/COG/adm1/pool/index.html",
-      "sha256": "e254364c2d8fe9f423f042349e14d2c8f17698741d24a0a449cd1789b064a8b4",
-      "bytes": 8738
-    },
-    {
-      "path": "/place/YEM/adm1/raymah/index.html",
-      "sha256": "438fe454fa3f3e1ae4c28f7d840a433c46fa96e4745ba28cc10f97eb6beedbe3",
-      "bytes": 8572
-    },
-    {
-      "path": "/place/BDI/adm1/rutana/index.html",
-      "sha256": "3c3dd9ec1ef4c0420ea28575d0401af1173824e526194bffc0dac4548e5cef8c",
-      "bytes": 8594
-    },
-    {
-      "path": "/place/BDI/adm1/ruyigi/index.html",
-      "sha256": "8384a84ca5a8dfaebf36e8205486bcb1a4702467d86e95f16c19fca88079b783",
-      "bytes": 8594
-    },
-    {
-      "path": "/place/YEM/adm1/sa-ada/index.html",
-      "sha256": "c445eaf068ef0a2cf0504767a26e988a34a83f77a54ecbeddf1a8332557f6b0c",
-      "bytes": 8572
-    },
-    {
-      "path": "/place/MWI/adm1/salima/index.html",
-      "sha256": "b11b05b5632dd8849c9a09b02dce3c03175a24ae687408cf485785dfcb068674",
-      "bytes": 8584
-    },
-    {
-      "path": "/place/KEN/adm1/samburu/index.html",
-      "sha256": "fcfebdf05bad039684206adb7f7716cfaba6041c8013e4374d1f1c3319a237fc",
-      "bytes": 8600
-    },
-    {
-      "path": "/place/COG/adm1/sangha/index.html",
-      "sha256": "908c1a59c6734f50a93d672053140f54baa489816a5ae1dbea16ed7f9f846ce7",
-      "bytes": 8777
-    },
-    {
-      "path": "/place/COD/adm1/sankuru/index.html",
-      "sha256": "9d36028bcfd7aa360e3404da5ec83a0c31699ae41bed5b7350e2fdd653597a48",
-      "bytes": 8946
-    },
-    {
-      "path": "/place/MOZ/adm1/sofala/index.html",
-      "sha256": "bdf3ebfb0c7d837e7ca9b23af68df7f41d2e9edc40bccc890b355427b3d71148",
-      "bytes": 8635
-    },
-    {
-      "path": "/place/ZMB/adm1/southern/index.html",
-      "sha256": "ff20dddc20705a9431d634b6ff0dcad966195b4dc19a2458853087459574e5dd",
-      "bytes": 8625
-    },
-    {
-      "path": "/place/COD/adm1/sud-kivu/index.html",
-      "sha256": "256112eb6339f69c8bd310a8c1dc5f4e3c1f9d01b032bf18096b27b606bcc1bf",
+      "sha256": "90f4deafe6c5b181a47c64c21751c38431b456f6df3e1f899584f5f728c513e3",
       "bytes": 8967
     },
     {
+      "path": "/place/BHR/index.html",
+      "sha256": "0ae3145720c244bf3a8beb2bfaca6013896fb9778c0d57878eec4d2495388f89",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/BGD/index.html",
+      "sha256": "1e4d4bb52abfded7b7aa7f395201d550ea50ef9a64b207ca52de9e7d85f9e0ab",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/BRB/index.html",
+      "sha256": "4ddb273f1143c682b402b35512a15f314e427df208c2e3504824d872da9b330c",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/BLR/index.html",
+      "sha256": "02a8bf71f66247570d9652174cf8d0599895a3988bddaf079740537f834f012f",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/BEL/index.html",
+      "sha256": "27e35fab416537da878d793849790bdffdd13eed90563d64b1ef2dba9b284cc6",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/BLZ/index.html",
+      "sha256": "0439807f7d1b7cd7bfd06deb0c6cb0cc3ced2228c96fdea2a58bcb7863e63960",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/BEN/index.html",
+      "sha256": "d2e622601feef430f5b32e750c1cae0aec08bf1583e27636faf4c7e6b087db1b",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/BMU/index.html",
+      "sha256": "6495d6103c21c21f1757169174c63aa548ddfabb63a554f09dcb23a1d91ce79d",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/BTN/index.html",
+      "sha256": "1974feaad8b1dd29407fd2811d7ff9b6c5b53cbcac78412d8b7fc7fadc7dc76e",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/BOL/index.html",
+      "sha256": "e186c9061eabd73eb797bc6f9dc6b0f7583106e238272ac01d2edbf9990b5243",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/BIH/index.html",
+      "sha256": "954405bb6d34563419f287b7d7d215b960c7d43ea4678ff44e0074c0fce4b7f4",
+      "bytes": 9111
+    },
+    {
+      "path": "/place/BWA/index.html",
+      "sha256": "68f9b86dc5319cd2908e9d76962e17c52a9340c7ef1734e673a3e120e3e1edf4",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/IOT/index.html",
+      "sha256": "f7fa590c3e92fc5001caa2d98bde96b096510b0d3036566fe1bd31ee72a3923d",
+      "bytes": 9207
+    },
+    {
+      "path": "/place/VGB/index.html",
+      "sha256": "5656e453dbac22a3d9975594c9e1596b9f357cc9f01d3e80c28147522c7caeae",
+      "bytes": 9111
+    },
+    {
+      "path": "/place/BRN/index.html",
+      "sha256": "3adf5e101b676ff4651b0e148571db70c1a6f9c0c8acd88d9648f0fadec7cdb2",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/BGR/index.html",
+      "sha256": "51803c51e8269e25b6c950aca5de0607c1b8b14562adfe51a7f38690520f4ccc",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/BFA/index.html",
+      "sha256": "a45fa51fc3fdddb6f5f250f0c6d5b26cd46ce75c9bd6401cb62606f85d4f699d",
+      "bytes": 8991
+    },
+    {
+      "path": "/place/BDI/index.html",
+      "sha256": "58944fa71266fae8e01ef3df55b6f459f86879d6c99ece0a675d7831a3de4f31",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/KHM/index.html",
+      "sha256": "75c53d596ef4618699b85f61d185bc9043e0479e27ef5968bc5e059a7bc45e27",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/CMR/index.html",
+      "sha256": "af4ff05a593241420862646b86255bcd9d0699e8fe8d9bbfe2c0a613093cc0f1",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/CAN/index.html",
+      "sha256": "76261870eef68f7e27846e35542f1c99fcd54afe8762b7d169d6439810aebacd",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/CPV/index.html",
+      "sha256": "7ae57a022cf5cabb6b91757c3f299f1cb695bf88fbb71e6a0d7a605ef791eeb6",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/CYM/index.html",
+      "sha256": "2c80ba6d5e850cf823c711ccef2cc6f4fb0b093c88c3ba21a846edfb91f07d9e",
+      "bytes": 9015
+    },
+    {
+      "path": "/place/CAF/index.html",
+      "sha256": "fc570033670ca4b7e9927e42df7f43676497bcb5a70e86443a9b67598edaca5b",
+      "bytes": 9135
+    },
+    {
+      "path": "/place/TCD/index.html",
+      "sha256": "110f598d76bfabc4b99279c801ad6dc2307efbc76f722e99dcc05ea995f1047a",
+      "bytes": 8895
+    },
+    {
+      "path": "/place/CHL/index.html",
+      "sha256": "29ca8054a065ed0393b7b83f3ed72a9892ba7ad9c4c2fb7d58da4ea4ba3c4c38",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/COL/index.html",
+      "sha256": "05030443e1006c69151496886d7b54f60b32d77973b8016b0cd1c903526b6f96",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/COM/index.html",
+      "sha256": "d668743f71c73e089170f5a1f071bcbd0d1280ff8bb224372d3d12c4bd5b1b4e",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/COK/index.html",
+      "sha256": "2fa4a3c67c3ff806f9a27680d56772cf0f63d2a195b98252e3aa3ed56fa06778",
+      "bytes": 8991
+    },
+    {
+      "path": "/place/CRI/index.html",
+      "sha256": "a2be5f9f217bf1debae98146dcccd428c15b8964ed598aa93b990159376c011b",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/HRV/index.html",
+      "sha256": "81d13c29b3b850b6ee228c01ace9363b2ce7c68e1ac82d8f012d44a66e8dc8dc",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/CUB/index.html",
+      "sha256": "f824e2b915043ea774dbea2ea07999178c2bb414f01b1d9018301335ac19dab0",
+      "bytes": 8895
+    },
+    {
+      "path": "/place/CUW/index.html",
+      "sha256": "e84b05f4a792e6630d5929f8eab1e2d2e66fd6d0a09c8b7029c8b951d423db00",
+      "bytes": 8947
+    },
+    {
+      "path": "/place/CYP/index.html",
+      "sha256": "2def76a9a71d0a2242930f14d9fe6c777376de3239f85578a7e8ebfa6322b95d",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/CZE/index.html",
+      "sha256": "4f79f0e31cb8a99b4722ebc580d2685bb474d59095d34e2a25288d876a38dd16",
+      "bytes": 9015
+    },
+    {
+      "path": "/place/COD/index.html",
+      "sha256": "edcab39e7b12a606f61d57357aa54ada61d70aa49e23c89af78b9025d3220038",
+      "bytes": 9231
+    },
+    {
+      "path": "/place/DNK/index.html",
+      "sha256": "ebe28ec75c94efb503f784359dcab158c4109508fea33d9deee65d5f6471a942",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/DJI/index.html",
+      "sha256": "c6afe56883cabaf609cbe1232615421f5b5526b72222f7f11ea564bc0607c0bd",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/DMA/index.html",
+      "sha256": "3dc32f97b7d275c56711cdcf9f35a28b46e92ae57d09ff07f4045a6d9eb97c88",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/DOM/index.html",
+      "sha256": "f0fa4d025c2bf21a5d36d3a7cf0b1cd42d4720e25c3121d55ff4cfe18f7523ee",
+      "bytes": 9063
+    },
+    {
+      "path": "/place/TLS/index.html",
+      "sha256": "bb3b61d4be3ff468e5fef5f63311d7fdf62a237cc0d0f04a36a3191af39df21e",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/ECU/index.html",
+      "sha256": "a6016c457244fd11e9eaa64921450f7c279f4afd7c889c3ab65fd219543028ab",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/EGY/index.html",
+      "sha256": "cd45a5b103405118a3ead277f552c984c7e4be730d184547ef9d3b1d91aa5624",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/SLV/index.html",
+      "sha256": "3e833214981e433fc43ad633b65a323127d5a53adcbb22bbc55ba21b7c520223",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/GNQ/index.html",
+      "sha256": "1537596c2fa4005be58c2b435a35484b430eafeece7af6122062fccbd9ad0911",
+      "bytes": 9051
+    },
+    {
+      "path": "/place/ERI/index.html",
+      "sha256": "7312850812e0b289b490647940baf1c0b1059ff01b7a5d24af55b2c69d121a11",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/EST/index.html",
+      "sha256": "1ee8dfde7f9e23a6375b431ea4ccc9680a4c42e4e4201134c896e1184fe348a1",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/SWZ/index.html",
+      "sha256": "cf44cd268f6c46076ae0a92f08c9fc5edcf502351555e2455885ff5dfa05cff0",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/ETH/index.html",
+      "sha256": "bedade475417a2f4f76c53d8679e19c09a8fba8b12eb69999a06a60bafb5f9b1",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/FLK/index.html",
+      "sha256": "515cf715313b7d7f5804f487e97a07750f52d23591c94928a72767acb56864ba",
+      "bytes": 9039
+    },
+    {
+      "path": "/place/FRO/index.html",
+      "sha256": "026b71ab0b7d126cbf772e9b7747f0010c6a242831a88eb8781b002053afedf7",
+      "bytes": 9003
+    },
+    {
+      "path": "/place/FSM/index.html",
+      "sha256": "c2b7444593f0aa74fcf514b103cea559d0eefad0738e92f07635a8b03ac68f86",
+      "bytes": 9207
+    },
+    {
+      "path": "/place/FJI/index.html",
+      "sha256": "743773e0f355eec1653124935364626a2c766f2ad13d83a2c50e9d40cec67af0",
+      "bytes": 8895
+    },
+    {
+      "path": "/place/FIN/index.html",
+      "sha256": "f5d67c3544e0f53711f5642975c54f882a356ff69ab35bfc20c18a66551d7c68",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/FRA/index.html",
+      "sha256": "db041e14f4aea3a241d4a5f121a87ad44e2719f48d06ba4f8e5fd0bfe12c36c0",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/PYF/index.html",
+      "sha256": "8d4ca5dd3b411a58edce1bfcfb4fdda6b28332133550b19b765c2cb041de6546",
+      "bytes": 9039
+    },
+    {
+      "path": "/place/ATF/index.html",
+      "sha256": "e8b9223e501128cc7d4e229538d08b57f074c8e66bd49ad41c5e985951368e18",
+      "bytes": 9267
+    },
+    {
+      "path": "/place/GAB/index.html",
+      "sha256": "747db1accd59998816ab9d65e1c37c3c40e28a16cb3999dc113ae9cc30d6185e",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/GEO/index.html",
+      "sha256": "30f0e0792055e50b3823f2c51aead1a6d838018bc61586dc8c16b264009530cc",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/DEU/index.html",
+      "sha256": "236c0234781af265471c820568bf31aeb2dc50f609b62ec9b68e2cd8a64f1f34",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/GHA/index.html",
+      "sha256": "d04171e61b47734e1694d52dcb8622ff6e53a754f32773577e6004ba0e3cc2c8",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/GRC/index.html",
+      "sha256": "28a114ff2cd09d294a82481b641eea2b894a18ec6c342165cc9f571db9b34b08",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/GRL/index.html",
+      "sha256": "a9180122e24fa0c15a5628338c7bf0a71a3421e2428a188f92e4ae0f9ebe8b25",
+      "bytes": 8955
+    },
+    {
+      "path": "/place/GRD/index.html",
+      "sha256": "c5361b8b6234e5dbfc60fc1efeee68212dd85c7996bccfcab0f418896f0b086c",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/GUM/index.html",
+      "sha256": "de883bc65df8e45918dceeea5b3422a0cac15f56d6142a1cb99d6b6e447d25a2",
+      "bytes": 8895
+    },
+    {
+      "path": "/place/GTM/index.html",
+      "sha256": "6b2f54e786ee8f3136a70071d865c26de8c8a7d17a51494041ce160cc8fc3b53",
+      "bytes": 8955
+    },
+    {
+      "path": "/place/GGY/index.html",
+      "sha256": "1a6d7848320fb76fc399b82ca642c7b56a2f23353a5832b8f6b7de17a108de6f",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/GIN/index.html",
+      "sha256": "78a59a0fa1102137351aefadb9a341aecaa9257f0c8b8e6ab7e93d4b5fee01c9",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/GNB/index.html",
+      "sha256": "e1db31ae5e766c6e433336dccdd3b3352392cd1357354982894fc803c4d1b010",
+      "bytes": 9003
+    },
+    {
+      "path": "/place/GUY/index.html",
+      "sha256": "798a9434fd548e212c45fb100789702a475e231add6d1a3bb41719be4ce482aa",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/HTI/index.html",
+      "sha256": "77867fa0ecf97874405d322da1aef4042a1fdddf8abfc07fd614097d667ce507",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/HMD/index.html",
+      "sha256": "5972d42c5f6bec1546d8b580a859a7d3dd8573d6b73d2e7ba873bb29d960031f",
+      "bytes": 9243
+    },
+    {
+      "path": "/place/HND/index.html",
+      "sha256": "41e5add5eee340a5d8407caed4de82caad494f8897135f21ab5e0519a92cfc10",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/HKG/index.html",
+      "sha256": "9a644c8f7b7375328d3a99a5c095aab9daef064ee63320ed2f6861766f9ef666",
+      "bytes": 8955
+    },
+    {
+      "path": "/place/HUN/index.html",
+      "sha256": "bd893cd78c931c6418c63bac2e8dfe7fa51dc86eb0f9d58fbb9546ae8686e9aa",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/ISL/index.html",
+      "sha256": "a123cdb576e375dd0779063e564eab1a09c358ba1a63a2593cb93fcf80079e0f",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/IDN/index.html",
+      "sha256": "9d7f3e0ccb15535d1f903e2fecc84f17d8621fef643d8f3e23a27524e50f8c89",
+      "bytes": 8955
+    },
+    {
+      "path": "/place/IRN/index.html",
+      "sha256": "961db53d75568092a938f5382bb916928317fd3018c411ec87bf12f5b455d7bf",
+      "bytes": 8895
+    },
+    {
+      "path": "/place/IRQ/index.html",
+      "sha256": "5c5817c25f9c6d386b59460f6faff47c1aec7b5c3719d739bf408c57e94cc5b8",
+      "bytes": 8895
+    },
+    {
+      "path": "/place/IRL/index.html",
+      "sha256": "8c3db4bac06d19c8bb23a55dd5d353434cf039b61cdc6ac0bac8f94be6fce130",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/IMN/index.html",
+      "sha256": "1650ad9d077fb9095ca660d4af3fff0ef1aa786c857af2511419fe6928cc9151",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/ISR/index.html",
+      "sha256": "ac929d6a18bd0067a3be99fee5f69c470cec85302963834a5645337c7fe48603",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/ITA/index.html",
+      "sha256": "484c2ce8c1ade300ab978fe7b6cbcb4efbc6f996cc099465510b83087af5c3cc",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/CIV/index.html",
+      "sha256": "d59a04c3834a17c8bda0c176106cdb7e88e091fc8910429fb97a021a83237251",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/JAM/index.html",
+      "sha256": "a6a000a149ed0bd47d94ef3748e8c5a036e97727b9832511007baa4bbec7f08d",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/JPN/index.html",
+      "sha256": "79c381cdef6d852dfceee066e832d2a8a3a32435576343446c8ff1bf56d5be15",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/JEY/index.html",
+      "sha256": "5e34e6eef96316a90e7db0901c880eed3f336a6a46725ecc72914ddb0a8271e2",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/JOR/index.html",
+      "sha256": "b5ca37898d6f67e4299d880c2d626f0e2abd35d7f951d6686b3b8ce71b8edccc",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/KAZ/index.html",
+      "sha256": "e582d8a9b973cc3a4dea2ed6aa73d517c15e31fa48e63756fa863bdf2f1f16fc",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/KEN/index.html",
+      "sha256": "5fe5333f8a348fd3a39dca3840e6370bc88c1c25f7d372e1f7d2310d37162dcc",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/KIR/index.html",
+      "sha256": "a71651340949754cd51a80338f04675d15f22aff4bacffa87221a222ac0afbf9",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/KOS/index.html",
+      "sha256": "44f1beb18bfbf7905fcbc31ada463ad8d37f322732eb4ae8845e1b95237385a1",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/KWT/index.html",
+      "sha256": "93834c89564e6e3ca45abc576268a35b60985384f54a91039eb043d7d47e7ccc",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/KGZ/index.html",
+      "sha256": "1473e75c664af6bee15c60cd40774fb2f1f9f4b3282c6c9502f53ed419117042",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/LAO/index.html",
+      "sha256": "10f61c7fd0892431d7e87dd4d0c398db53e1ba1fe79f38f2f006993d4884f9ba",
+      "bytes": 8895
+    },
+    {
+      "path": "/place/LVA/index.html",
+      "sha256": "d28ad0012dfbf2c23dd3845b2949c93e0f787220fa58a619ef7fc0914b916192",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/LBN/index.html",
+      "sha256": "6e0dd86a01fe4308519b4091d26de419e5234f2a53240263c146fc205d5c2701",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/LSO/index.html",
+      "sha256": "2657aa1f0dde1583ef6846d6c662b6fae1d65fa6120d0671c467bb400db490fc",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/LBR/index.html",
+      "sha256": "e847c384fcdd7e661de7f4a782fe7cf12dbb5fedd908801d056803d98128dc0e",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/LBY/index.html",
+      "sha256": "0d19bdadf119d0268a06ae0d386b905c3e5495e88ef2c93c328a7c423be6bb66",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/LIE/index.html",
+      "sha256": "5b08ac1bff125d6f150e5c04150cbd4806e0c81a7a472415b41ad19e88e28101",
+      "bytes": 9003
+    },
+    {
+      "path": "/place/LTU/index.html",
+      "sha256": "629828006d7afd0bd2402f04ed3cb021a0403e77930b8accbdf4ce8feb004834",
+      "bytes": 8955
+    },
+    {
+      "path": "/place/LUX/index.html",
+      "sha256": "782b559572f9bf1c9c4fa418b11d5543cb0985fc7da08678de549bc46cda49ee",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/MAC/index.html",
+      "sha256": "5b6a0fd89d6de8d0c65438683f2e2153709f972e05f4209734d2f73e781e04f4",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/MDG/index.html",
+      "sha256": "fb10b04444e8e4b0d8fda6611277c69bba8eff4cd5710d732d8bf803e023786f",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/MWI/index.html",
+      "sha256": "ebdbcca4b96222b21dfed4d32d5a258c7bac8a9cf92fce3a02499da0993f79f6",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/MYS/index.html",
+      "sha256": "4936123f2e5d92001d9cc636559199c267b93206cc56efc928ec94fe5cdae16e",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/MDV/index.html",
+      "sha256": "90d37d69045919878b999784a35b62b34b9786fbc27bd10d3211ebe684c1ef19",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/MLI/index.html",
+      "sha256": "c1a68c1b76e78aae3679c9ac4fac47dbe496e09e20638d021f095926695cebce",
+      "bytes": 8895
+    },
+    {
+      "path": "/place/MLT/index.html",
+      "sha256": "04dd1332529a2c7f57963909a2d6834ffb2e446c4d50aefab215163b920be3da",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/MHL/index.html",
+      "sha256": "439104ac776cdea75c9cab45d80715193f2a181e6a7d0e68e1f116715a20d80f",
+      "bytes": 9039
+    },
+    {
+      "path": "/place/MRT/index.html",
+      "sha256": "8c6d4225002c40fe6032ca91a12d95f279bc23753d78fd67ac9916a20baae4cb",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/MUS/index.html",
+      "sha256": "1692a71afb42e0c1f2d9b949387647b5e0996e4732c402d2e8f67c527c093ec3",
+      "bytes": 8955
+    },
+    {
+      "path": "/place/MEX/index.html",
+      "sha256": "cd5c28a112d27684e0bf736bca3c437b3f88d618265b8115022b69f89f0536e0",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/MDA/index.html",
+      "sha256": "2cfe3ac0b2cf41f45dbaacbc224f1f85a1e55486e2979c4c71d7cc32eecca70a",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/MCO/index.html",
+      "sha256": "14dc9176b41fb5f8bc112d591ad60c7a50f15636ed21de1e46f716a0264ef8ea",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/MNG/index.html",
+      "sha256": "eb3e3a1d725c88a9fbdbf8028a10e3e2b09822c43299dade41cfa9439ca8a4ca",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/MNE/index.html",
+      "sha256": "f7de76c27842ec395dd90d9f7d57114afaae4d7a3f3b4dce684e354f2d30d3cf",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/MSR/index.html",
+      "sha256": "04725edd703318d2d2c2191e04901c1c889490fecec23011a5430490341f29d1",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/MAR/index.html",
+      "sha256": "0a75ddc2a00f8597b788140902fdbd7ebe8aec0fc48e4cc4dd0ef7aa1ee938c0",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/MOZ/index.html",
+      "sha256": "8201cb7f42b351108a583675e83156552dcd46706a2ff49ef8702a2d86e8f40c",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/MMR/index.html",
+      "sha256": "499ce13c943bab47bae3be8850c8ad5698d67c1409471a8a6f6edf77690e32b3",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/NAM/index.html",
+      "sha256": "606b8782ea18fdf1bbac1b4ff49edfc1aad45e3e878be895d0d7bdfcc7d0e26b",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/NRU/index.html",
+      "sha256": "774a34075cd421cf8177d4a31a15b43de1635b6e9a5981163f0341ecceb5f2bc",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/NPL/index.html",
+      "sha256": "e5979ae5fe93654c275a5d17e8c9795ca504a8cd3f7a7e628385bb029c862c2a",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/NLD/index.html",
+      "sha256": "73d9bdc14b306658f76419eb1f5e310d2e76da487cfdde13399badf897e334ce",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/NCL/index.html",
+      "sha256": "eff3ecbd218863d02aef4f774a3bd850f01cc54b51025dac46f430ed54bbec85",
+      "bytes": 9003
+    },
+    {
+      "path": "/place/NZL/index.html",
+      "sha256": "f3dd1b7a9944659ad96c8ab3996da9d70eee89c68c12f8c3e29c535d91c91aff",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/NIC/index.html",
+      "sha256": "3150f11a2dd108ff791d9a6ec7732adf2980d343053a344fcf4149a6d474b528",
+      "bytes": 8955
+    },
+    {
+      "path": "/place/NER/index.html",
+      "sha256": "13ace0968a598d27630e9cbb96dd6bb08ec13cd7ed5aaabcde3877db5498d10b",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/NGA/index.html",
+      "sha256": "8563c55f660722be917c80f7eefca133b332285113022d04c778d54d99d5c909",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/NIU/index.html",
+      "sha256": "ae84dcceb723033fa30ccd3cee37d1460c0c9e2d65c2a397a4a9dd5941575718",
+      "bytes": 8895
+    },
+    {
+      "path": "/place/NFK/index.html",
+      "sha256": "b2883d648096bb178547700c545e06e937407a2013e82c51faaaa5cdf5c041d7",
+      "bytes": 9015
+    },
+    {
+      "path": "/place/PRK/index.html",
+      "sha256": "c01a423e7b6b6ac3a52df81b9855af6a997065a1f35707e0262af6465bc19a72",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/MKD/index.html",
+      "sha256": "991405a47542ab0fa4d40e36d9b14858ca0e569fa1ff230ff9ff82f676c3dc0b",
+      "bytes": 9027
+    },
+    {
+      "path": "/place/MNP/index.html",
+      "sha256": "4ad6ffea1eff99d81bff7e1ac01751ead525dc425e39ff295ff38ce52e9d47d2",
+      "bytes": 9135
+    },
+    {
+      "path": "/place/NOR/index.html",
+      "sha256": "cae23bbdee67e017c949e5bba4c435e429579419c81ce291a9a592cf9967b145",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/OMN/index.html",
+      "sha256": "44a43a7377524dd05139895deb730e6042c017531983732380f21156ead0bfc9",
+      "bytes": 8895
+    },
+    {
+      "path": "/place/PAK/index.html",
+      "sha256": "9b8e37abc238f19815e85d08ed4a4d97b360e748de7fad1b8a818ef0b9da6c33",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/PLW/index.html",
+      "sha256": "4898ba014f3801c27997ba6286f2662617300784cfdef7b9a6c6e03222aca510",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/PSE/index.html",
+      "sha256": "682a5047dda9d9933c717e9491d844f5f45b83b36bb50a314de87dcfc2791bfe",
+      "bytes": 8955
+    },
+    {
+      "path": "/place/PAN/index.html",
+      "sha256": "1c980a9aa06edad0007fcb758434450304e3cba71a431f8bb493b37a32cc4554",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/PNG/index.html",
+      "sha256": "3f1b4c2cfb0c96b411b3f0fd11a54b9155832d85c7a1f810b877e946281fd9c0",
+      "bytes": 9039
+    },
+    {
+      "path": "/place/PRY/index.html",
+      "sha256": "590e81f77dcca2e4980c55bccda54d8b45c1e297375e4f7ee38e18b41ff951d8",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/CHN/index.html",
+      "sha256": "903fc8c693c74f7e5deac3e4129e400a480f283b7f3db6b278097974312052e3",
+      "bytes": 9161
+    },
+    {
+      "path": "/place/PER/index.html",
+      "sha256": "73a97de43c8e35c7ad85831bbecb6fee550e7a2c86284640910b8d420c4bce8b",
+      "bytes": 8895
+    },
+    {
+      "path": "/place/PHL/index.html",
+      "sha256": "0c32d6f1a4c6d959e354ec26602b906bbc2eeb0cf8b2c91a861e70ba46a2186b",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/PCN/index.html",
+      "sha256": "2d9c2b8f051fdb3273f2338d7c8ab4ea2802482f575e36afc948712014819def",
+      "bytes": 9039
+    },
+    {
+      "path": "/place/POL/index.html",
+      "sha256": "589b607b841749a924cb5fad2ca11d6a7e9d9cce40364a6124f542e455984118",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/PRT/index.html",
+      "sha256": "e3f9858da7873b8c9e5e093675c859258a6cfc12cb25925f3cf2e1d67221f550",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/PRI/index.html",
+      "sha256": "863f9124c249a54a004575723cbb98140966cfc3a287cf89e76460598ef0a1dc",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/QAT/index.html",
+      "sha256": "9a4eb6bc9330f80d7a3b737a2a61dbaff8c9ff515b6078e4c40d4284baa66a76",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/COG/index.html",
+      "sha256": "329241496297c9f222f1633d193cf4b08cce416fabd9e3a8ef043142592eb519",
+      "bytes": 9099
+    },
+    {
+      "path": "/place/ROU/index.html",
+      "sha256": "32f227f4ca56fdc027ba0b6dd44c017f8d4befedb05a88d37f29bced2191eafe",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/RUS/index.html",
+      "sha256": "34ed0df8131812cf42abcf372e925422728c872473893a78ebc3c542035e2d27",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/RWA/index.html",
+      "sha256": "6f90fdc2d8407c85689d73181812c99f16fbabc773380728e939259ad9b66cb2",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/BLM/index.html",
+      "sha256": "2d859dc2fced89ba5e025feddd0aa46b05180862bf76ea027e24ac85c3ba0253",
+      "bytes": 9055
+    },
+    {
+      "path": "/place/SHN/index.html",
+      "sha256": "1c86b0634a3ed91d0654cc0d377eb8a91afc7d1a60064480786f67704d7629bf",
+      "bytes": 8991
+    },
+    {
+      "path": "/place/KNA/index.html",
+      "sha256": "80ae34650e3fdc98136093191186ef0371973d5c3425b589df6a30a0e00ecc7a",
+      "bytes": 9099
+    },
+    {
+      "path": "/place/LCA/index.html",
+      "sha256": "877341c7958771a6b64f3ce1ebb174d085cdf0f727fe07b98048e5a8de033cc4",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/MAF/index.html",
+      "sha256": "3ae3154432760065902d087494b5e62e5f876f7120a9671b6b2081e669c86363",
+      "bytes": 8991
+    },
+    {
+      "path": "/place/SPM/index.html",
+      "sha256": "d664d33d93c2fbe7df1e2b3a27bfb3b5bd8dfa4ccda5a2828f212e1418532f0a",
+      "bytes": 9147
+    },
+    {
+      "path": "/place/VCT/index.html",
+      "sha256": "5b63e0c2dc0c8add808c2b9c82d92b63deb5ebb131cc2b97a486af6693f02159",
+      "bytes": 9231
+    },
+    {
+      "path": "/place/WSM/index.html",
+      "sha256": "f2b82ac66211471044e257ad7f49c5348919ce26933b1c339c14eec6108b6472",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/SMR/index.html",
+      "sha256": "ce5c0148718e27071fc62bc343c3f5c47a694561e1c2f5664334d0402663fd82",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/STP/index.html",
+      "sha256": "46b2232d40a696e9e21bffc89561b58e548f910f1d65763b933a376b8d2fd72b",
+      "bytes": 9147
+    },
+    {
+      "path": "/place/SAU/index.html",
+      "sha256": "3380ebbb1105998b7879c54d5aafc1a1357fcf134c83dc26013bf08c4db91db3",
+      "bytes": 8991
+    },
+    {
+      "path": "/place/SEN/index.html",
+      "sha256": "54725f5fe55f29cad37f1f499fbfc8b2d27cad98364b0de750bb404ff336b9e8",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/SRB/index.html",
+      "sha256": "056ef26c188e7decd918c3ad02b18a360adbc0640ee24d69dfcec5f58ada01e3",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/SYC/index.html",
+      "sha256": "20b10d3540d924fc281e1d0b365ccbca071974b2a877c65af5589a59096f5453",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/KAS/index.html",
+      "sha256": "c11a08f8378de06ea724748654127cb79ff6e97fa46b70ad4157c3bfe855d0e6",
+      "bytes": 9027
+    },
+    {
+      "path": "/place/SLE/index.html",
+      "sha256": "917368e45964d30693c8c7014271bdad226fa25fc7a59e0797368ff654af8440",
+      "bytes": 8991
+    },
+    {
+      "path": "/place/SGP/index.html",
+      "sha256": "52caee65880d9148c2fb1e0fe60d9bc075381f4e8fdd8cdbb678006cc8f61bb4",
+      "bytes": 8955
+    },
+    {
+      "path": "/place/SXM/index.html",
+      "sha256": "a3282fa433270294e58293b33908db1511cf7c134cb100765121f01ae95f7eb6",
+      "bytes": 8991
+    },
+    {
+      "path": "/place/SVK/index.html",
+      "sha256": "0c419f187556fe2c5671ac467eed275cb10faaa0a8053960566a585ca803c839",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/SVN/index.html",
+      "sha256": "3fb28da77226912a24821a5a029c09ca3e3159970b8161b03ed6729c73e0134b",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/SLB/index.html",
+      "sha256": "d0999908f81d4b0ca22c8de5eb09154280a0e3368813078846dcba9de07399c5",
+      "bytes": 9027
+    },
+    {
+      "path": "/place/SOM/index.html",
+      "sha256": "c91043896d27f65688d8c987f856e7dd821d267dbe8f004445f15cf592c2295b",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/SOL/index.html",
+      "sha256": "c2a945922662c61c7737cc22325a0a4eb63727711ced325c15c614b1989785df",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/ZAF/index.html",
+      "sha256": "09c92207c14775b838cecf51328f10897fcfc33a487c4d48c26f6a683d051ddf",
+      "bytes": 8991
+    },
+    {
+      "path": "/place/SGS/index.html",
+      "sha256": "44b3f2cf041d7816022a13bc1226d36eebd935b8cbfbc3b70430e238a7c5049e",
+      "bytes": 9375
+    },
+    {
+      "path": "/place/KOR/index.html",
+      "sha256": "ec69a470a0687922223d6f98a98ac7019aeb0479a5978679236e4b9b523b7f38",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/SSD/index.html",
+      "sha256": "a4b63c5d3036f6b8fc5b9c0d50f499e2e5b93843112779ad167b37e54ffe4980",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/ESP/index.html",
+      "sha256": "ec3d4b6cb7dfbf97008f1c72fb0582806362a07863d9574aeacb9645b9f9696a",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/LKA/index.html",
+      "sha256": "596daed35001fed519e95388e6e4c1169975ba22aa56e4d2b04c7f8519029b6e",
+      "bytes": 8955
+    },
+    {
+      "path": "/place/SDN/index.html",
+      "sha256": "f8556692089e753fb4ad66e70d80af607e011ea99aadc1a24356906b5d0e9d23",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/SUR/index.html",
+      "sha256": "61b007f93f9028e12a3de4b247540fd35f1288eff3141da3b49daf4c85a48767",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/SWE/index.html",
+      "sha256": "fc96c8a6482f34fbf85a63cc96e8ebe3b586b393451faffe982e693da15ffd08",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/CHE/index.html",
+      "sha256": "2a371f61fa608e0ec7d1d0d1b8aada695ebe7a01d0b27fa4f6e9d1ae6a093ff0",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/SYR/index.html",
+      "sha256": "3cda454ec106754af0544e11aeed667e3e0f4445a655d2a6c4733a6be9128935",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/TWN/index.html",
+      "sha256": "2831afc92f9ce0473b4a30495ed5be7e7f28ae1314517679a085392b44055c4f",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/TJK/index.html",
+      "sha256": "e27656a231c81bb957c4bd150eeb0ae4e572fae01f289d12a0a4042b611dc952",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/TZA/index.html",
+      "sha256": "bb87a381d47d55baffb317e205dbbfa418683b5638df9ae775df62db26803139",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/THA/index.html",
+      "sha256": "21cd3f6a7772fbc52cd8bba665d7613b0fbf5e1189fdb8ff2e154ebf6af0ed7a",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/BHS/index.html",
+      "sha256": "5b431dbbc0194d68379f9ab97b399716485527142f869e1f6e4a6e181c800496",
+      "bytes": 8979
+    },
+    {
+      "path": "/place/GMB/index.html",
+      "sha256": "3f26befbf80f6e2da5533c302ed13429bd485f4df9b0e4eb3fa0691b76b399c9",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/TGO/index.html",
+      "sha256": "360a2e116d231617be506c2390467491b829fd9844c805f43a318f0a27724b6b",
+      "bytes": 8895
+    },
+    {
+      "path": "/place/TON/index.html",
+      "sha256": "05e1f2947d59fbf4168db04676b406ca2ddd751ae725db81506526dd9b79964c",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/TTO/index.html",
+      "sha256": "2e2f06ff181a32c02d4f122356ebbd69e2d32e480f1c338b5917043ca14d49a6",
+      "bytes": 9075
+    },
+    {
+      "path": "/place/TUN/index.html",
+      "sha256": "dcfeb4f4e5d0ce5aafcca534e1bdb2205616978091a23c57c6cbea87d3ac849f",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/TUR/index.html",
+      "sha256": "a714dcdf207942773fc10206c98c3a789cc207990282867d391710bb780826f9",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/CYN/index.html",
+      "sha256": "6d25f4ae786b031eb26ff5da7c7db05a98eee391fd1bd888187252ecfafc9ae6",
+      "bytes": 9267
+    },
+    {
+      "path": "/place/TKM/index.html",
+      "sha256": "3e5cffec98cc46762b2d82e3fd411890805980587579a33aec66963942d43af1",
+      "bytes": 8991
+    },
+    {
+      "path": "/place/TCA/index.html",
+      "sha256": "59370e81f1f9d23bc3eb0c724d9f33ad7cdd6397446c70b91af5fb47cb014ea6",
+      "bytes": 9135
+    },
+    {
+      "path": "/place/TUV/index.html",
+      "sha256": "f14714060cba0d444b6a3b829497359bf763f8a71406b8836ef907fbcf220022",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/UGA/index.html",
+      "sha256": "755abc71b299d6a4d60eb38b7696c181b4edaedf7b119ecf7804449561853f96",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/UKR/index.html",
+      "sha256": "3cd2784068c01ec13b876d7624962698e944a241b432f8b3559f69a60a60e6e8",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/ARE/index.html",
+      "sha256": "c1ed0c980d0b2966efcde9a9e64c64ca14d735aa5165cd8a37401ca5b63b624e",
+      "bytes": 9087
+    },
+    {
+      "path": "/place/GBR/index.html",
+      "sha256": "e2b32bf20c7bdd7820dc45b95d22365fe7456cff8c59f7021e767546e742ff29",
+      "bytes": 9015
+    },
+    {
+      "path": "/place/USA/index.html",
+      "sha256": "2a7540d32a2a37f09b30d65e3ad3b3e4e80c392a421c279ff14dbf6911d570ec",
+      "bytes": 9135
+    },
+    {
+      "path": "/place/VIR/index.html",
+      "sha256": "c3d9e5033b708398b6d6b1f912eefa7fb832fd4d2170ba3a620b2303cd9c0f20",
+      "bytes": 9183
+    },
+    {
+      "path": "/place/URY/index.html",
+      "sha256": "150e0fb2756f403034d501155c18de9b80fda57a18b0467f74796b9b11da40e5",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/UZB/index.html",
+      "sha256": "8977924d8afc35942fbd18b1b575ab9a3ffbbe268df1b73a1fb9fa8319a7e4f9",
+      "bytes": 8967
+    },
+    {
+      "path": "/place/VUT/index.html",
+      "sha256": "f07f1c0a4e5f0b00cf1342bb09acd9c6a351559aa1a1aba6c2c6017af98a56cb",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/VAT/index.html",
+      "sha256": "157910819f14ee7f851d4c028079074092fc8dcab4dc8c4f84c171063bccb28b",
+      "bytes": 8991
+    },
+    {
+      "path": "/place/VEN/index.html",
+      "sha256": "cb75e438683b65711eb1fa98994da3c2d44e25643b3eb0b77164f1fb7240c06b",
+      "bytes": 8955
+    },
+    {
+      "path": "/place/VNM/index.html",
+      "sha256": "156714cf691bffe84cd8dd569f9db481f5f70e70ce1b7e43318f8af4c33b287a",
+      "bytes": 8931
+    },
+    {
+      "path": "/place/WLF/index.html",
+      "sha256": "fe9de79c62fb2f00188304f7e19d216155e9ec88c84ee98ba66cd49f054ec8a8",
+      "bytes": 9051
+    },
+    {
+      "path": "/place/ESH/index.html",
+      "sha256": "1566d7491f9580cad83b5861b04073431cb4f8831ef62b9adcaa8831a1b1159c",
+      "bytes": 9015
+    },
+    {
+      "path": "/place/YEM/index.html",
+      "sha256": "8140773cd191d6157dffdbb06c25b0c385c8648a11d2891881641fbcebdf0118",
+      "bytes": 8907
+    },
+    {
+      "path": "/place/ZMB/index.html",
+      "sha256": "c6cb3c9bca823069d2636de99873db114c833c4a04ba3a449c6baebdd96bf79e",
+      "bytes": 8919
+    },
+    {
+      "path": "/place/ZWE/index.html",
+      "sha256": "4321627b152e02a0c65c1e172b3a040511fb43f4ce55fbbae3f8d16cd9c5952a",
+      "bytes": 8943
+    },
+    {
+      "path": "/place/UGA/adm1/adjumani-and-moyo-and-yumbe-and-amolatar-and-kaabong-and-koboko-79956900/index.html",
+      "sha256": "d253ac57243fed245cc445d6c2c8bd178680532e5b7f1f072e05dc842cab0ea7",
+      "bytes": 14044
+    },
+    {
+      "path": "/place/YEM/adm1/al-hudaydah/index.html",
+      "sha256": "7dc369cb712603b1fdb48ba01189031f07334a40b91489f30c387c22aff33e5a",
+      "bytes": 9439
+    },
+    {
+      "path": "/place/YEM/adm1/al-maharah/index.html",
+      "sha256": "1d6f934764a8ccfdcdf29c4748391be523b9c77c4988009c85fa313355b864be",
+      "bytes": 9418
+    },
+    {
+      "path": "/place/YEM/adm1/al-mahwit/index.html",
+      "sha256": "49c8900e304ac481e794573d6e1f5deaea2e32536988b19567fd87453255a0d8",
+      "bytes": 9398
+    },
+    {
+      "path": "/place/MDG/adm1/amoron-i-mania/index.html",
+      "sha256": "546c0010af0dda61b070fcd104f0a04d462c788b246c19af185ae0a06c522b09",
+      "bytes": 9568
+    },
+    {
+      "path": "/place/YEM/adm1/amran/index.html",
+      "sha256": "c0ee06aea7d9d06ef8a661d53d5b0ef511ccee155b64d7a1cc89a6d08d114ab8",
+      "bytes": 9313
+    },
+    {
+      "path": "/place/MDG/adm1/androy/index.html",
+      "sha256": "b37c3d5b02e44da8d4d2fabf824aa7937f0b59fc795ca6005bb144005caf793a",
+      "bytes": 9400
+    },
+    {
+      "path": "/place/MDG/adm1/anosy/index.html",
+      "sha256": "e354aecd0eb926dfb743d154e8915ca57759790de0143af457c91a1669f72d46",
+      "bytes": 9379
+    },
+    {
+      "path": "/place/MDG/adm1/atsimo-andrefana/index.html",
+      "sha256": "bf7c04ec3295d06b74d09a362f637d4d76386d8fae832ad472243b4324d30a30",
+      "bytes": 9610
+    },
+    {
+      "path": "/place/MWI/adm1/balaka/index.html",
+      "sha256": "af38cc590add185cb062d57d74f6c923fb977b9bf241470d25adb446a0aca766",
+      "bytes": 9348
+    },
+    {
+      "path": "/place/CAF/adm1/bamingui-bangoran-and-haute-kotto-and-vakaga/index.html",
+      "sha256": "e1a58acf259741cb01826e2e1fd13a4ac2bc54d8a63af59832ec10b8e81847dd",
+      "bytes": 10407
+    },
+    {
+      "path": "/place/COD/adm1/bas-uele/index.html",
+      "sha256": "0f235491839dbd22fa954b86c1531625b790040e3d9b4af503a4193c45b11e4d",
+      "bytes": 9730
+    },
+    {
+      "path": "/place/CAF/adm1/basse-kotto-and-haut-mbomou-and-mbomou/index.html",
+      "sha256": "2abfa2319d1596f0ca46ebea4e063b97e9c0160dbb4fc6a051d571b743afa112",
+      "bytes": 10281
+    },
+    {
+      "path": "/place/NGA/adm1/borno/index.html",
+      "sha256": "947a782db28d6129c2de6cd794855803884a2b282b91e295a93963ef2df3f9b9",
+      "bytes": 9339
+    },
+    {
+      "path": "/place/COG/adm1/bouenza/index.html",
+      "sha256": "1dc8021de64d8fbb1845b5815c5f96fe311a23a9bbfe57f4585577bd385700f6",
+      "bytes": 9562
+    },
+    {
+      "path": "/place/BDI/adm1/bubanza/index.html",
+      "sha256": "f42d6d651763f569635197528326458dcbec71616dc30686d5daa6ed59337250",
+      "bytes": 9378
+    },
+    {
+      "path": "/place/BDI/adm1/bururi/index.html",
+      "sha256": "261f3388fa3b70cbf39df94fd9e57ca817d1d3695258247744ceb82d8f590c75",
+      "bytes": 9358
+    },
+    {
+      "path": "/place/MOZ/adm1/cabo-delgado/index.html",
+      "sha256": "25a8ffefdce106a2fdd0e0cd4e9c37a25e8e0ac7ac7927508fee6cc52f59b45e",
+      "bytes": 9524
+    },
+    {
+      "path": "/place/BDI/adm1/cankuzo/index.html",
+      "sha256": "50a2cb3a88750b547943015f01868244d0db015526f3dbed794c287d97c6a9d5",
+      "bytes": 9379
+    },
+    {
+      "path": "/place/ZMB/adm1/central/index.html",
+      "sha256": "6cf94afccd51d1607c126998d8a718e3e7e8c980d37ce63eb2189f7f19f0e6fe",
+      "bytes": 9368
+    },
+    {
+      "path": "/place/ZMB/adm1/chama-and-chinsaliisoka-and-mpika-and-nakonde/index.html",
+      "sha256": "4d1b6e63282fa40fbb89b83ab601a0f14a387789101895e2b596abed208c30a3",
+      "bytes": 10208
+    },
+    {
+      "path": "/place/MWI/adm1/chikwawa/index.html",
+      "sha256": "00c74d209bcf9eeeeddffca0a7039dac756ac77bdd070c16641bdba99ffd1956",
+      "bytes": 9390
+    },
+    {
+      "path": "/place/BDI/adm1/cibitoke/index.html",
+      "sha256": "9707b6cf5f5b7c45193eff0fabb3cf3a749640a02d546f8c4722def96c5c4139",
+      "bytes": 9400
+    },
+    {
+      "path": "/place/AGO/adm1/cuanza-sul/index.html",
+      "sha256": "3a4092f0ba0a3bfd7ee1ba7f538bd1886e5653756cd087819c93b5788789ecc0",
+      "bytes": 9430
+    },
+    {
+      "path": "/place/AGO/adm1/cunene/index.html",
+      "sha256": "2e015f957bafe3defe28d13feec84abfc65a5f6e1c0d8e981921ee9c5a87f5a6",
+      "bytes": 9346
+    },
+    {
+      "path": "/place/COG/adm1/cuvette-ouest/index.html",
+      "sha256": "e5e9da9bb9239b9807ae450d861e204ccd4749d50be3644859909f859d388ae4",
+      "bytes": 9688
+    },
+    {
+      "path": "/place/COG/adm1/cuvette/index.html",
+      "sha256": "babb0a0d7d70226d4adc9e7ee9d0e6c1f8dc7c7031cc340262ee1571ae931c99",
+      "bytes": 9562
+    },
+    {
+      "path": "/place/MWI/adm1/dedza/index.html",
+      "sha256": "8785589c8eb8e51ea99f453f0b1cd394617051d42053ffae5753e7c3fa3d5bb0",
+      "bytes": 9327
+    },
+    {
+      "path": "/place/MWI/adm1/dowa/index.html",
+      "sha256": "d27df5596ddf4ccd6b506aa74d8f83903fe8f6fcd8ad01777877938f936834a0",
+      "bytes": 9306
+    },
+    {
+      "path": "/place/ZMB/adm1/eastern/index.html",
+      "sha256": "cf20be0add182024c5b3672a8d1ae7ee44bb3842ca0b62fe7f2e6b7816119081",
+      "bytes": 9369
+    },
+    {
+      "path": "/place/COD/adm1/quateur/index.html",
+      "sha256": "a840f9d16dcecb1ba60aeb4a8353b3fe1ac0da260c8289146e675ba7cdc8ba0a",
+      "bytes": 9737
+    },
+    {
+      "path": "/place/MOZ/adm1/gaza/index.html",
+      "sha256": "731639715e02819e5a302ecbfd3bea136b5b59b1772aa0be2d2bd6a96bc5a266",
+      "bytes": 9357
+    },
+    {
+      "path": "/place/NGA/adm1/gombe/index.html",
+      "sha256": "8b3fc122cb5e09a494b0ad4458ee42b6d8377a260b1b0ca2ff9a99dd480a2616",
+      "bytes": 9340
+    },
+    {
+      "path": "/place/YEM/adm1/hadramaut/index.html",
+      "sha256": "cfe24afed74e6cd539e0105d021a367d375c594875053ce99996cc4d34e5fe7d",
+      "bytes": 9398
+    },
+    {
+      "path": "/place/YEM/adm1/hajjah/index.html",
+      "sha256": "2838722601ca9dbd42f0807ab39978fb1e7ffe2c9e5ab710e27d89dd602c3d8d",
+      "bytes": 9334
+    },
+    {
+      "path": "/place/COD/adm1/haut-katanga/index.html",
+      "sha256": "c08ac48a886c8ddb84e6412990e52b9e0456dc989f31376e780fe7566277cd8a",
+      "bytes": 9814
+    },
+    {
+      "path": "/place/COD/adm1/haut-lomami/index.html",
+      "sha256": "5b257b964b8bfa6d216da9d2d767c40f3727facf57e3907916c99de4c6139f9d",
+      "bytes": 9793
+    },
+    {
+      "path": "/place/COD/adm1/haut-uele/index.html",
+      "sha256": "aea3f7cf62b51f7ddd2d04da44c53c1865f25ab4c297fa5906d910a5a7d46e71",
+      "bytes": 9752
+    },
+    {
+      "path": "/place/MDG/adm1/haute-matsiatra/index.html",
+      "sha256": "ce74cab98cc8ec2b7d834745aa3d152bb9e2c7b1b5ca9aab0d8f82c6b810fe01",
+      "bytes": 9590
+    },
+    {
+      "path": "/place/AGO/adm1/huila/index.html",
+      "sha256": "57d0bc9713f39a41d39660f0c7e76c764ce4ed3b880f9de1c52941a2da3fd008",
+      "bytes": 9325
+    },
+    {
+      "path": "/place/MOZ/adm1/inhambane/index.html",
+      "sha256": "6f835f2f7cd62957731e856310d067e9b9a2060152d308c7b425f302f29071d9",
+      "bytes": 9462
+    },
+    {
+      "path": "/place/COD/adm1/ituri/index.html",
+      "sha256": "3c7feec509d06954105b6e021a301c4ca73c33c5849d7caa23d94c921b95f9e5",
+      "bytes": 9667
+    },
+    {
+      "path": "/place/BDI/adm1/karuzi/index.html",
+      "sha256": "1826d0e9f0ac47f3b05c211fa14826121aaab18a3a6dc37e2ecff5b3c46d33d9",
+      "bytes": 9357
+    },
+    {
+      "path": "/place/COD/adm1/kasa-central/index.html",
+      "sha256": "ffc55175678be8639d2600a4e2d2c5f851ea386d5a5b3c244952da39200e5c0d",
+      "bytes": 9843
+    },
+    {
+      "path": "/place/COD/adm1/kasa-oriental/index.html",
+      "sha256": "f0d01420d3b028821541d7bbba22d31861a8897b7c03e4aa2accad3593ccda5f",
+      "bytes": 9864
+    },
+    {
+      "path": "/place/COD/adm1/kasa/index.html",
+      "sha256": "cfe3b8a1913e6ece926f0572eec3e0843ba0fbe409e80f04d14dcc834fac0fd2",
+      "bytes": 9675
+    },
+    {
+      "path": "/place/MWI/adm1/kasungu/index.html",
+      "sha256": "f54df323faa8cea673d5f718e796fd041309d8483f175910d9e207d464ff7791",
+      "bytes": 9369
+    },
+    {
+      "path": "/place/CAF/adm1/k-mo-and-nana-gribizi-and-ouaka/index.html",
+      "sha256": "c472502cafe99f7734469d3589515fb827bfbfb392cc201e102e51e805789257",
+      "bytes": 10150
+    },
+    {
+      "path": "/place/BDI/adm1/kirundo/index.html",
+      "sha256": "5d36b17efaf5e58763f34c97f56799d39a86ad1ac625a174155dedfe23fd6077",
+      "bytes": 9378
+    },
+    {
+      "path": "/place/COD/adm1/kongo-central/index.html",
+      "sha256": "2634529afbf000d0b4085ffd965def1cb93d0d6d5a6a6b5c7649b2e270b11038",
+      "bytes": 9837
+    },
+    {
+      "path": "/place/COD/adm1/kwango/index.html",
+      "sha256": "13360b712bda383f8f2facf21feb73548bef5e2cc18eab835cfebc5995d9fcae",
+      "bytes": 9689
+    },
+    {
+      "path": "/place/COD/adm1/kwilu/index.html",
+      "sha256": "270c9b9c35a0cfc53c2748528392c9a8a62a0b3ae95d74204bbb82cfe8c1f317",
+      "bytes": 9667
+    },
+    {
+      "path": "/place/YEM/adm1/lahj/index.html",
+      "sha256": "f1e8444eea31f62f0a5b9138f38ad408c533fd9aaae9f625add5bb038e6185ca",
+      "bytes": 9292
+    },
+    {
+      "path": "/place/COG/adm1/lekoumou/index.html",
+      "sha256": "05444b4272d3dfc9f0fb780f45e8910378713f7da4d91efbfe1dab2977ea36b0",
+      "bytes": 9583
+    },
+    {
+      "path": "/place/COG/adm1/likouala/index.html",
+      "sha256": "9bff9a3731b825ee56663f2d81d8528d83c4008382d84c4a4158be66a6f457b5",
+      "bytes": 9583
+    },
+    {
+      "path": "/place/CAF/adm1/lobaye-and-ombella-m-poko/index.html",
+      "sha256": "2d33813b24d3e239dd40c4f73ee1df77103bcdf56c2a377097df30804dce6e5d",
+      "bytes": 9997
+    },
+    {
+      "path": "/place/COD/adm1/lomami/index.html",
+      "sha256": "7ab9437f260d635a82a354521a62264cc2f1b6debb3d6b09b93ddd5e64a627e3",
+      "bytes": 9689
+    },
+    {
+      "path": "/place/COD/adm1/lualaba/index.html",
+      "sha256": "e9a067b7fa59f28a674959d470dd6acec9361404161d13ae6341cf190ee53bb1",
+      "bytes": 9710
+    },
+    {
+      "path": "/place/ZMB/adm1/luapula/index.html",
+      "sha256": "2782ce2a0f6e5045e581d1e048ef3ba4317c66eea61bae10414dbe242262122b",
+      "bytes": 9368
+    },
+    {
+      "path": "/place/AGO/adm1/lunda-sul/index.html",
+      "sha256": "7af9589266c46a6ff6a8a686cdc8c328752c153f2cedc51aed23f67f0bbda3db",
+      "bytes": 9410
+    },
+    {
+      "path": "/place/MWI/adm1/machinga/index.html",
+      "sha256": "473bfce7bf0a1be5e004ac7ab2f31aa108825af372f6d4c3707da9e18aea4e79",
+      "bytes": 9390
+    },
+    {
+      "path": "/place/COD/adm1/mai-ndombe/index.html",
+      "sha256": "9ddb5434de339d98c5c2e3a7fd019dcc18b91469709cb04f41876718fbcb15fe",
+      "bytes": 9774
+    },
+    {
+      "path": "/place/CAF/adm1/mamb-r-kad-and-sangha-mba-r/index.html",
+      "sha256": "3441487683be3f1dcf6b25005fa00f3844db4d58331497e486e21362a58198cf",
+      "bytes": 10181
+    },
+    {
+      "path": "/place/KEN/adm1/mandera/index.html",
+      "sha256": "9d1747fc25174b4461b1631feea46d951a5dbd2fa1be5729bda0e2a1889ff822",
+      "bytes": 9366
+    },
+    {
+      "path": "/place/MWI/adm1/mangochi/index.html",
+      "sha256": "ff5a4393be44d6794d3ee1d86210378507e84090c0e3ba2df7d44e35224469d7",
+      "bytes": 9390
+    },
+    {
+      "path": "/place/MOZ/adm1/manica/index.html",
+      "sha256": "bbace983ebb817c5396765cdc757502d3ec4490bcd6f893c1f57536564617d91",
+      "bytes": 9399
+    },
+    {
+      "path": "/place/KEN/adm1/marsabit/index.html",
+      "sha256": "bf8fde6b693c04f9a34b84dde0a3b40c8dfb759cf2a8e0718c3fb001dee0cd81",
+      "bytes": 9386
+    },
+    {
+      "path": "/place/MWI/adm1/mchinji/index.html",
+      "sha256": "ca890129a87c5b377e845298516cd401523baf4c9cfcf459dcf506dd6c8a054b",
+      "bytes": 9369
+    },
+    {
+      "path": "/place/COD/adm1/mongala/index.html",
+      "sha256": "a0103889fa178397332668c5ca116f71058f2e2a2ebfb6a6cf0d35eaa36c2cd5",
+      "bytes": 9710
+    },
+    {
+      "path": "/place/AGO/adm1/moxico/index.html",
+      "sha256": "33c676e3b5a2a03dac1a028345098128294541485b76f6b0cfee27845d7e2fb7",
+      "bytes": 9347
+    },
+    {
+      "path": "/place/MWI/adm1/mulanje/index.html",
+      "sha256": "b4eda6c804db63f68dddcc36cb8bf574ec06d909306635700e630b1f82c1fd7d",
+      "bytes": 9369
+    },
+    {
+      "path": "/place/BDI/adm1/muramvya/index.html",
+      "sha256": "26826c8cfbea14851b8a12f8d4451670f3238cdd82e5ff371e22641801736552",
+      "bytes": 9400
+    },
+    {
+      "path": "/place/BDI/adm1/muyinga/index.html",
+      "sha256": "7b2a72698d31e2740d98918cb4bf72774e67b56cd1d81ea74ecc89ae04c876fe",
+      "bytes": 9379
+    },
+    {
+      "path": "/place/MWI/adm1/mwanza/index.html",
+      "sha256": "2829452728624efc3458fb0abfd53f6bc4d9aad27bb28498d8b56eee69988e6b",
+      "bytes": 9349
+    },
+    {
+      "path": "/place/BDI/adm1/mwaro/index.html",
+      "sha256": "16a24e5abe2d017c5b3c99f9485f99c9558732196fc147c45d3613e38254e61a",
+      "bytes": 9338
+    },
+    {
+      "path": "/place/MOZ/adm1/nampula/index.html",
+      "sha256": "f41f12de28a314eea83ea63717da8639be0c7361777c55524bdb42a13cf3e2d8",
+      "bytes": 9419
+    },
+    {
+      "path": "/place/CAF/adm1/nana-mamb-r-and-ouham-and-ouham-pend/index.html",
+      "sha256": "33e6d713d61ce3b7a9941da0386df597ba350fc5ef4b64f60c6d7a46fbdb813e",
+      "bytes": 10311
+    },
+    {
+      "path": "/place/BDI/adm1/ngozi/index.html",
+      "sha256": "5fefe9d52861944d1eb02893d2e08314e72bfdaf5d1b71113829514aa5a739ea",
+      "bytes": 9337
+    },
+    {
+      "path": "/place/COG/adm1/niari/index.html",
+      "sha256": "8a0818d755ada6db9a82b59f092cbb8ef2ba0d8328ce233b4d29eef5200fe219",
+      "bytes": 9520
+    },
+    {
+      "path": "/place/MOZ/adm1/niassa/index.html",
+      "sha256": "108789765fdc3b46dce9b8afb9578134a8f6e4a1157e13180d79c7a3609db515",
+      "bytes": 9399
+    },
+    {
+      "path": "/place/MWI/adm1/nkhotakota/index.html",
+      "sha256": "f38a034ae691b2008efc0cf67e8c0e582069e9c5387a0d6be0508dfd3f63bad2",
+      "bytes": 9433
+    },
+    {
+      "path": "/place/HTI/adm1/nord-est/index.html",
+      "sha256": "597f08f1e4793cd26bc10748499089c85e15c37ed7c8ee7b308f1f08b5d19dd1",
+      "bytes": 9376
+    },
+    {
+      "path": "/place/HTI/adm1/nord-ouest/index.html",
+      "sha256": "04b55c864dad593407f12f690ee88b42475a3d46e66bceb6ce1de7472fa05b47",
+      "bytes": 9419
+    },
+    {
+      "path": "/place/COD/adm1/nord-kivu/index.html",
+      "sha256": "eb7087d30582b64b7d50d7f15e06b59627b79f8137347262fbcfd2cf9280c5dd",
+      "bytes": 9752
+    },
+    {
+      "path": "/place/COD/adm1/nord-ubangi/index.html",
+      "sha256": "e175c658d9a40a2db77c246f4684e0e0d212662f6bc106381b39820c13149b2a",
+      "bytes": 9793
+    },
+    {
+      "path": "/place/ZMB/adm1/north-western/index.html",
+      "sha256": "b5ac640a6f4039a832b8781a9d6ca727af2a73e20a4a56fa850d267f869aa3c0",
+      "bytes": 9494
+    },
+    {
+      "path": "/place/GHA/adm1/northern/index.html",
+      "sha256": "aa8b902fcaf3393be74f02fc44d435997729d161a8ea3cc253d7fb938145e879",
+      "bytes": 9376
+    },
+    {
+      "path": "/place/ZMB/adm1/northern/index.html",
+      "sha256": "25b1aa12ebaf347bd861241487be2f84aa41e4afe84ed56e0c58490e759f6eb2",
+      "bytes": 9390
+    },
+    {
+      "path": "/place/MWI/adm1/nsanje/index.html",
+      "sha256": "5d7a2e24c231783cfac8806248c6db1e28abde4170014e0f87750b4c8c28908d",
+      "bytes": 9348
+    },
+    {
+      "path": "/place/MWI/adm1/ntcheu/index.html",
+      "sha256": "0bf6b1b7dada30363b3f88dfa667a66defe6e50e530e2a436d1e81114c3cd322",
+      "bytes": 9348
+    },
+    {
+      "path": "/place/MWI/adm1/ntchisi/index.html",
+      "sha256": "5a613031db30f9fbe6519c760c34ae6b9799d52a42e957e0c2c3530a22345f53",
+      "bytes": 9369
+    },
+    {
+      "path": "/place/MWI/adm1/phalombe/index.html",
+      "sha256": "0a4f643234e63dd2e7c80a90eab068a9f0eb39968210e36667a49924b6860de7",
+      "bytes": 9390
+    },
+    {
+      "path": "/place/COG/adm1/plateaux/index.html",
+      "sha256": "eb1b674d9854c98c7195c2b6f00c4b9c8cc450c4d712e2acf3fd3c37ac1c6f64",
+      "bytes": 9583
+    },
+    {
+      "path": "/place/COG/adm1/pool/index.html",
+      "sha256": "a2fe382ac4d1894a26bc1db6fa2c18c1194146d282671cca2e4a668c76bc7e31",
+      "bytes": 9502
+    },
+    {
+      "path": "/place/YEM/adm1/raymah/index.html",
+      "sha256": "456ee03ddd9894aa7516b933574132b5b05f6946fa7c9f1aab024152fc0a07bd",
+      "bytes": 9336
+    },
+    {
+      "path": "/place/BDI/adm1/rutana/index.html",
+      "sha256": "fdaca0a6855263a3dcdd8233af8e2257c7499c87e903450804bcf5c4a13f0890",
+      "bytes": 9358
+    },
+    {
+      "path": "/place/BDI/adm1/ruyigi/index.html",
+      "sha256": "34942e2943ef359a0034f941399b031e1bbd5c267ed568c9db86f002a982b438",
+      "bytes": 9358
+    },
+    {
+      "path": "/place/YEM/adm1/sa-ada/index.html",
+      "sha256": "3a69e24d158f6bcbd42c25041b69ae8612962557c55f211547a70ab80d4d72ab",
+      "bytes": 9336
+    },
+    {
+      "path": "/place/MWI/adm1/salima/index.html",
+      "sha256": "79d6b61f1d768e3ed68f90c2d0d0477968d329aaa494d83f4f03cce2fc03ed93",
+      "bytes": 9348
+    },
+    {
+      "path": "/place/KEN/adm1/samburu/index.html",
+      "sha256": "7651a50edab39c84072f25a2f1b6601342c5be62dd48aeb121ba56626d57772d",
+      "bytes": 9364
+    },
+    {
+      "path": "/place/COG/adm1/sangha/index.html",
+      "sha256": "f7a8400d68debc82e2d422ee2651e842505a8d3e0d8fab3b0301859f1b244c89",
+      "bytes": 9541
+    },
+    {
+      "path": "/place/COD/adm1/sankuru/index.html",
+      "sha256": "353deccbad6a652c57ac2b6e756315a3b3edcf8517d433c3924d68cb2998ccac",
+      "bytes": 9710
+    },
+    {
+      "path": "/place/MOZ/adm1/sofala/index.html",
+      "sha256": "7cc2833c2282c9821b080fb0b6571c6a5eb6daf1f443c0d5e9ab6b7181699f8f",
+      "bytes": 9399
+    },
+    {
+      "path": "/place/ZMB/adm1/southern/index.html",
+      "sha256": "e11ea1bc348b1907f264848ec9478934142d5094f3f5f13ff2f40942d273faf8",
+      "bytes": 9389
+    },
+    {
+      "path": "/place/COD/adm1/sud-kivu/index.html",
+      "sha256": "5a5c357dc4e461166d0a28aa1894509e923b36234539eba561d5ccddb6080633",
+      "bytes": 9731
+    },
+    {
       "path": "/place/COD/adm1/sud-ubangi/index.html",
-      "sha256": "224027aa7adebc59547b846109acfaeb55bea903feeb8b96e7349f62e4aa6ba4",
-      "bytes": 9008
+      "sha256": "9b8dc8814e32d455fd87ba8a054e574024bd5e11e9a331ad2fa559fc4dceec84",
+      "bytes": 9772
     },
     {
       "path": "/place/DJI/adm1/tadjoura/index.html",
-      "sha256": "8d2eb12269ad772431e3cfa9f908afb18ffe9e27ac9bab8e4e363bbd441ec151",
-      "bytes": 8650
+      "sha256": "1637de5572f71f84df4446c150c22735c0bd08a78d2eccab326f90716139c582",
+      "bytes": 9414
     },
     {
       "path": "/place/COD/adm1/tanganyika/index.html",
-      "sha256": "366c8574c34dbd2eb8536c3233090c28d417db52396b7fa02dc6258b90f35ae9",
-      "bytes": 9010
+      "sha256": "4e39d8413a2929ef5437992dda24a7b18d30a8715c20b281ac677009a025f492",
+      "bytes": 9774
     },
     {
       "path": "/place/MOZ/adm1/tete/index.html",
-      "sha256": "18dfffe8c019676814480f588b961d65eed7b31609274d69bc6656c36650b915",
-      "bytes": 8593
+      "sha256": "011e72dca6c5604e0ac62b7ae3184bf3cbffbaa5fd09e884caca9817ace4189d",
+      "bytes": 9357
     },
     {
       "path": "/place/LSO/adm1/thaba-tseka/index.html",
-      "sha256": "f4cea19bae0d4582a61eb84a6df4f20cc6023243994cc5a5c46d0b8e4cae55d1",
-      "bytes": 8701
+      "sha256": "caf11a4cd0f6eb9297b5c18112aa543f004a5d924981cc8b6992513c103805fe",
+      "bytes": 9465
     },
     {
       "path": "/place/MWI/adm1/thyolo/index.html",
-      "sha256": "e4ea67c4a41d69cd23e1401f45692475e9b90bea79366218d06caf7cd9794cd8",
-      "bytes": 8585
+      "sha256": "7f58b3fb712eeb64e50e30e49c07af8062a26eefbb3042d3b41b8a184d0ec5db",
+      "bytes": 9349
     },
     {
       "path": "/place/COD/adm1/tshopo/index.html",
-      "sha256": "68db1c0a935a6c7f5c8597e0ada466f6c91661eb39a76f4b741e40ad0bb2eb8a",
-      "bytes": 8925
+      "sha256": "76db9ed70c7a678bb2a68760f5f5d62c823a1488cd3a21ba67a34935830bd726",
+      "bytes": 9689
     },
     {
       "path": "/place/COD/adm1/tshuapa/index.html",
-      "sha256": "88001f12950aaa54c899c9b65089046d089e7364ee0f1afa90e360f0907f33ef",
-      "bytes": 8945
+      "sha256": "a17aed90c565f18ef1938784dbfc2d020e911e14dcd49706a515a7664ccde2d5",
+      "bytes": 9709
     },
     {
       "path": "/place/KEN/adm1/turkana/index.html",
-      "sha256": "4a21d146c1fd2aee29f2b21e4c5c9cd330df487548d520b3e14de136cc79bd9c",
-      "bytes": 8600
+      "sha256": "77898f9bd6835749e6ed8481f76c5f029f2421cd0e4758a39c1cc2971c087acd",
+      "bytes": 9364
     },
     {
       "path": "/place/GHA/adm1/upper-east/index.html",
-      "sha256": "76930d1ccbd149671e6041b1971d00bdc0cdfceb2ea7e583a270b82ed0244ea0",
-      "bytes": 8654
+      "sha256": "1047acad59093f4a1d3a42869699500a38768abb31bb8610f8c3cf576b7c1535",
+      "bytes": 9418
     },
     {
       "path": "/place/GHA/adm1/upper-west/index.html",
-      "sha256": "a50749cdc19626d1af7ce6242c73585699788e620c48fbcba5a7a40c0a8dfa66",
-      "bytes": 8654
+      "sha256": "20bf7d03592f141359d944e014a11da07d3822610203621f1284f70304473b38",
+      "bytes": 9418
     },
     {
       "path": "/place/MDG/adm1/vatovavy-fitovinany/index.html",
-      "sha256": "93c8277dd8f796640677880cdf786160e519b1c360c2172b2ac38f18aa6325a1",
-      "bytes": 8909
+      "sha256": "ae00283b71c910e86b3a07935b87c6dd0a60c3111aa2368ca8fb62b2a222a183",
+      "bytes": 9673
     },
     {
       "path": "/place/ZMB/adm1/western/index.html",
-      "sha256": "c493db4568b5b7069ad85c18161dc1d7d639a3cf5eafba1c6555c3e4821eae25",
-      "bytes": 8603
+      "sha256": "a394ce0c8aba2760c4b62f5d258aa5cb47fb12a68e07d51643dbeddffca5b85a",
+      "bytes": 9367
     },
     {
       "path": "/place/MOZ/adm1/zambezia/index.html",
-      "sha256": "fcb4f106d4f4a8943f2bdb604c9f0bddb7630939e281f86bd6a31da3e95970c2",
-      "bytes": 8677
+      "sha256": "8d4a463d8a61b1bcc6665ccafe7604305442e8bfb96625d87bde090c174e6aa7",
+      "bytes": 9441
     },
     {
       "path": "/place/MWI/adm1/zomba/index.html",
-      "sha256": "472ad95184f7beb4236d059789b2ef324937292a917a191197caf3ba5be66775",
-      "bytes": 8572
+      "sha256": "afa4acecac51f41ebe10cb113a3348fa5f4e25f70bd2b9def5be3469fd0d8885",
+      "bytes": 9336
     },
     {
       "path": "/api/index.html",
-      "sha256": "1f03ef4ac3a30279b0a45240e15bcc495d500ff7dd8199ba646343bbb7f51f90",
-      "bytes": 14497
+      "sha256": "d9801ed8eb701cd620a5efc86557d8a41587624f34fd8c4309dd682ed4b23486",
+      "bytes": 15261
     },
     {
       "path": "/developers/index.html",
-      "sha256": "0cd215bdb55dcc8b98971bb56baa7fb9450e89abb6bc4683765164da48abe490",
-      "bytes": 11168
+      "sha256": "5183a69095c8b67e513ab0e23d2199f5e2a0df8edb5cfac0c1d9bc47b6a7aa98",
+      "bytes": 11932
     },
     {
       "path": "/examples/index.html",
-      "sha256": "6c3ee7391b9a2afb83176e3b6562172c7132f4b82f3187028b77e4ce6053d758",
-      "bytes": 10364
+      "sha256": "ef9b1b9fbb7ff452da4337cc561b68ef62d308ab1f42da393f258426c4b96c0d",
+      "bytes": 11128
     },
     {
       "path": "/releases/index.html",
-      "sha256": "956f3b59568dd8cc7833776e62ebedfb40d9b58445b1316ed3dfc3400b160fd7",
-      "bytes": 5711
+      "sha256": "d0d4ce30334be8d8cb6f8b93438560d5096381f94543857eb15978bb6a8706b1",
+      "bytes": 6475
     },
     {
       "path": "/releases/2026-05-31/index.html",
-      "sha256": "1b0496bf047b476577306aacbf54a92fb70dc351a02c1d72406cdcab5ec31b8d",
-      "bytes": 10038
+      "sha256": "751b5aa7ad52c510b42f4ef52af71c53418e00c0b74f48c9291e19ed5638c289",
+      "bytes": 10802
     },
     {
       "path": "/releases/2026-05-31/changes/index.html",
-      "sha256": "32d816fdb64ed2f1790b614128c7b69129aa5603bc716e73a674c0b3e60d2d97",
-      "bytes": 11502
+      "sha256": "db38907cd043865eb0a69da73b6ab226413c790a687712eb2b6820ed228ddf91",
+      "bytes": 12266
     },
     {
       "path": "/security/index.html",
-      "sha256": "49072db6d93ef4602534de46d2640c712fe5ffbfc9658c9d5e92a087ad54ecd2",
-      "bytes": 7629
+      "sha256": "b73de4022c932e5f6ca3862e75a28bcc15820cf4faa3e0b7de5b7f8b06eb9f93",
+      "bytes": 8393
     },
     {
       "path": "/resources/index.html",
-      "sha256": "1a0f758ce67926137360beaf4f06716050fac27fec921128a43db8365bc58d39",
-      "bytes": 6004
+      "sha256": "9621c3afce9f153d23992834b77e4fae50d613bf0f43f412028bc8a3f25de16a",
+      "bytes": 6768
     },
     {
       "path": "/about/index.html",
-      "sha256": "0fe11e73d4bf5a8eb386f95e7df471187f0bdc9609dba5ecce6879603b1fedc4",
-      "bytes": 6301
+      "sha256": "fed5d412a51f18288f9964204867dfa7e881af3460570204743f6af5111aa683",
+      "bytes": 7065
     },
     {
       "path": "/updates/index.html",
-      "sha256": "0f945a86dcc6763981f69ddbd4c9880b0d386aa2e433a25fb4dfba13adb1eefe",
-      "bytes": 5839
+      "sha256": "40103405d0376ad86a18eb6803685ca096c1cf59a359a13cb17036f96f2ff361",
+      "bytes": 6603
     },
     {
       "path": "/policies/privacy/index.html",
-      "sha256": "57cfa70835051fcf7264f68706a71322379ba633641449830be27c8c1b5c9354",
-      "bytes": 6486
+      "sha256": "36ea3ed07468676828152f92bd11ade212460b2ae4bf199885a1ebb6217cdb74",
+      "bytes": 7250
     },
     {
       "path": "/policies/terms/index.html",
-      "sha256": "2979d4a1111ad7a2252d32c17bdba9f60c2771fc46345c9b78e3f06845df9966",
-      "bytes": 5652
+      "sha256": "fdf4770fc1e2c3b6926888fcc871702200da17b6c73187b7c7ffb3696e0832af",
+      "bytes": 6416
     },
     {
       "path": "/policies/accessibility/index.html",
-      "sha256": "64b30bb54b678989243308d6a663c8c348ff51ff27736049e3412ee725703aaf",
-      "bytes": 6640
+      "sha256": "347e90bb2034618c9e2ad70694e575be00456668303a1295bf83b1fb4cef8141",
+      "bytes": 7404
     },
     {
       "path": "/policies/accessibility/audit-2026-06-05/index.html",
-      "sha256": "55a128ac940626be0a243091d655a217c810931ebf7d01417f6ad9f285b5d5ba",
-      "bytes": 11748
+      "sha256": "066cbfcc96a03807726ccb36f4aece0d2b5dcd9385288a43e586ea92054ce54b",
+      "bytes": 12512
     },
     {
       "path": "/policies/editorial-policy/index.html",
-      "sha256": "c7ef3f85d532dcef16a5c681a13cf8b1f3b20d162dcae2c93e75a0fb58a703b0",
-      "bytes": 5891
+      "sha256": "4a575c9f95999f427adf2085f9a47eb0ceec024192bc4286a896295ff956add3",
+      "bytes": 6655
     },
     {
       "path": "/policies/contact/index.html",
-      "sha256": "f34fcce6979a72419606fb7e318ebbc42ed536dcbf8abba5f095df6d5a154c79",
-      "bytes": 5779
+      "sha256": "551b968e3e9046770ca9129f31e1ebccfa6be76e3a9c891bbb400a873abc54f3",
+      "bytes": 6543
     },
     {
       "path": "/data/routes.json",
@@ -5474,12 +5474,12 @@
     },
     {
       "path": "/data/source-snapshots.json",
-      "sha256": "e08096fe8bd3a823f3338fb52b1ad6a89ad183230b44168397cbc88c5395dbd0",
+      "sha256": "4d4e31bc373f4fec012d5a3c5ff6a8b4b854f3a5333b6c4fbe164291866ab10b",
       "bytes": 5738
     },
     {
       "path": "/data/country-gap-ledger.json",
-      "sha256": "7aa52e9426ebbe87523b9fa21988c6851d8464e99295c28fa9d4ef47725b3b94",
+      "sha256": "c61b082e1bae6d1625e92acbfab60748736d6060cab40704e8e3c75130ab6026",
       "bytes": 315499
     },
     {
@@ -5699,12 +5699,12 @@
     },
     {
       "path": "/v1/coverage.json",
-      "sha256": "17558680d4140a1baf941e197346422d68b4e65de68c0348cca3058632ce2ac1",
+      "sha256": "01059673cad889082c38cad7423db7ab4e4b0f42e9235508a89066d8b665a81f",
       "bytes": 2934
     },
     {
       "path": "/v1/places/index.json",
-      "sha256": "1567246924a2cdab14627f534598651a3c06951748e8053b0253570b356dddad",
+      "sha256": "3fc3c19dc66602db93f9ca8ce370bde160a16fb83ea8ff4d4ff1922c269b5b47",
       "bytes": 3312798
     },
     {
@@ -8834,8 +8834,8 @@
     },
     {
       "path": "/releases/2026-05-31/changes/index.html",
-      "sha256": "32d816fdb64ed2f1790b614128c7b69129aa5603bc716e73a674c0b3e60d2d97",
-      "bytes": 11502
+      "sha256": "db38907cd043865eb0a69da73b6ab226413c790a687712eb2b6820ed228ddf91",
+      "bytes": 12266
     },
     {
       "path": "/releases/2026-05-31/migration.json",
@@ -8844,13 +8844,13 @@
     },
     {
       "path": "/policies/accessibility/audit-2026-06-05/index.html",
-      "sha256": "55a128ac940626be0a243091d655a217c810931ebf7d01417f6ad9f285b5d5ba",
-      "bytes": 11748
+      "sha256": "066cbfcc96a03807726ccb36f4aece0d2b5dcd9385288a43e586ea92054ce54b",
+      "bytes": 12512
     },
     {
       "path": "/assets/social-card.svg",
-      "sha256": "11e8a8e6da79c96e2cd91c3bfed1e3887448fb1b130352a0b527b3a55d70c5f7",
-      "bytes": 1719
+      "sha256": "b392abc813c9a7e9923912167fda27fb0844b1b2bc682aaf78dd9a4cae52d27c",
+      "bytes": 2856
     },
     {
       "path": "/vendor/d3.v7.min.js",
@@ -8904,13 +8904,13 @@
     },
     {
       "path": "/offline.html",
-      "sha256": "b3ae55567bfa2c53423fc5554df3567d2b8ea7161fa90c0eb864b6f3604fbecd",
-      "bytes": 1707
+      "sha256": "719b7f7f572380dfd95da1296f64453f20ed15d13a9de33e05ec21e8bcd74bc7",
+      "bytes": 2357
     },
     {
       "path": "/service-worker.js",
-      "sha256": "3382151145070b02fc62b186ff50590329450fa95b39a5a1a5683e69d9d97999",
-      "bytes": 4954
+      "sha256": "8cd077b98012bd6dbd7db2064eed6bf3d98ebbcb7ce543f5e0a0ac96ae7e88d8",
+      "bytes": 3908
     }
   ]
 }
