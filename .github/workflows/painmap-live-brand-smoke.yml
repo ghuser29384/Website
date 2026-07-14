@@ -1,0 +1,48 @@
+name: PainMap live brand smoke
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    paths:
+      - "index.html"
+      - "brand.css"
+      - "assets/brand/**"
+      - "scripts/apply-brand-system.mjs"
+      - "package.json"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  live-brand-smoke:
+    name: Verify deployed Evidence Field brand
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - name: Wait for and verify the live brand
+        shell: bash
+        env:
+          SMOKE_TOKEN: ${{ github.run_id }}-${{ github.run_attempt }}
+        run: |
+          set -euo pipefail
+          for attempt in $(seq 1 18); do
+            echo "Live brand check attempt ${attempt}/18"
+            if curl -fsSL --max-time 30 "https://painmap.org/?brand-smoke=${SMOKE_TOKEN}-${attempt}" -o /tmp/painmap-live.html \
+              && grep -q 'data-brand="evidence-field-v1"' /tmp/painmap-live.html \
+              && grep -q 'Map pain.' /tmp/painmap-live.html \
+              && grep -q 'Keep uncertainty visible.' /tmp/painmap-live.html \
+              && curl -fsSL --max-time 30 "https://painmap.org/brand.css?brand-smoke=${SMOKE_TOKEN}-${attempt}" -o /tmp/painmap-brand.css \
+              && grep -q -- '--pm-cobalt:#3154d8' /tmp/painmap-brand.css \
+              && curl -fsSL --max-time 30 "https://painmap.org/assets/brand/painmap-symbol-primary.svg?brand-smoke=${SMOKE_TOKEN}-${attempt}" -o /tmp/painmap-symbol.svg \
+              && grep -q '#3154D8' /tmp/painmap-symbol.svg; then
+              echo "PainMap Evidence Field brand is deployed and reachable."
+              exit 0
+            fi
+            sleep 15
+          done
+
+          echo "Live PainMap did not expose the expected brand markers within the retry window."
+          sed -n '1,140p' /tmp/painmap-live.html 2>/dev/null || true
+          exit 1
