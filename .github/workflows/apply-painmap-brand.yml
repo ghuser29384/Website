@@ -57,12 +57,16 @@ jobs:
           tail -n 80 /tmp/painmap-brand-check.log
           exit 0
 
-      - name: Upload brand validation log
+      - name: Upload brand validation evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: painmap-brand-validation-${{ github.run_id }}
-          path: /tmp/painmap-brand-check.log
+          path: |
+            /tmp/painmap-brand-check.log
+            index.html
+            data/index.html
+            data/brand-system.json
           if-no-files-found: error
           retention-days: 3
 
