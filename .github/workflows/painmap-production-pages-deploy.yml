@@ -1,7 +1,7 @@
 name: PainMap production Pages deploy
 
 on:
-  pull_request:
+  pull_request_target:
     types:
       - opened
       - reopened
@@ -21,14 +21,14 @@ jobs:
   request-pages-build:
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'pull_request' &&
+      (github.event_name == 'pull_request_target' &&
        github.event.pull_request.title == '[PainMap Deploy] Publish current main via Pages' &&
        github.event.pull_request.base.ref == 'main' &&
        github.event.pull_request.head.repo.full_name == github.repository)
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Check out current production branch
+      - name: Check out current production branch only
         uses: actions/checkout@v4
         with:
           ref: main
@@ -84,19 +84,19 @@ jobs:
           python3 - <<'PY'
           import json
           config = json.load(open('/tmp/pages-config.json', encoding='utf-8'))
-          print('Pages configuration:', json.dumps({
+          visible = {
               'status': config.get('status'),
               'build_type': config.get('build_type'),
               'source': config.get('source'),
               'html_url': config.get('html_url'),
               'cname': config.get('cname'),
-          }, sort_keys=True))
+          }
+          print('Pages configuration:', json.dumps(visible, sort_keys=True))
           source = config.get('source') or {}
           assert source.get('branch') == 'main', f"Unexpected Pages source branch: {source}"
           assert source.get('path') in ('/', None), f"Unexpected Pages source path: {source}"
           PY
 
-          request_started="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
           http_code="$(curl --silent --show-error -o /tmp/pages-request.json -w '%{http_code}' \
             -X POST "${headers[@]}" "${api}/pages/builds")"
           cat /tmp/pages-request.json || true
@@ -109,13 +109,9 @@ jobs:
           for attempt in $(seq 1 90); do
             sleep 5
             curl --fail --silent --show-error "${headers[@]}" "${api}/pages/builds/latest" > /tmp/pages-latest.json
-            result="$(python3 - "$EXPECTED_SHA" "$request_started" <<'PY'
+            result="$(python3 - <<'PY'
           import json
-          import sys
-          from datetime import datetime, timezone
-
           build = json.load(open('/tmp/pages-latest.json', encoding='utf-8'))
-          expected_sha, requested_at = sys.argv[1:]
           status = str(build.get('status') or '')
           commit = str(build.get('commit') or '')
           created_at = str(build.get('created_at') or '')
@@ -152,6 +148,7 @@ jobs:
           echo "build_sha=$EXPECTED_SHA" >> "$GITHUB_OUTPUT"
 
       - name: Verify deployed public endpoints
+        id: live
         env:
           PAGE_URL: ${{ steps.pages.outputs.page_url }}
         shell: bash
@@ -176,19 +173,21 @@ jobs:
             | python3 -c "import json,sys; d=json.load(sys.stdin); assert d['measurement_count']==24; assert d['country_count']==8; assert d['promoted_to_canonical']==0"
 
       - name: Report deployment result
-        if: always() && github.event_name == 'pull_request'
+        if: always() && github.event_name == 'pull_request_target'
         uses: actions/github-script@v7
         with:
           script: |
             const validationOutcome = '${{ steps.validation.outcome }}';
             const pagesOutcome = '${{ steps.pages.outcome }}';
+            const liveOutcome = '${{ steps.live.outcome }}';
             const deployedSha = '${{ steps.pages.outputs.build_sha }}' || '${{ steps.validation.outputs.sha }}';
             const pageUrl = '${{ steps.pages.outputs.page_url }}';
             const body = [
               '## PainMap production deployment',
               '',
               `- Data validation: **${validationOutcome || 'not-run'}**`,
-              `- Native Pages build and live endpoint checks: **${pagesOutcome || 'not-run'}**`,
+              `- Native Pages build: **${pagesOutcome || 'not-run'}**`,
+              `- Live endpoint verification: **${liveOutcome || 'not-run'}**`,
               `- Deployed main SHA: \`${deployedSha || 'unknown'}\``,
               `- Page URL: ${pageUrl || 'not available'}`
             ].join('\n');
