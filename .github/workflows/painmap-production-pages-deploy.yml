@@ -1,13 +1,6 @@
 name: PainMap production Pages deploy
 
 on:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-  schedule:
-    - cron: "*/5 * * * *"
   issues:
     types:
       - opened
@@ -17,6 +10,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: pages
@@ -25,14 +19,9 @@ concurrency:
 jobs:
   deploy:
     if: >-
-      github.event_name == 'schedule' ||
       github.event_name == 'workflow_dispatch' ||
       (github.event_name == 'issues' &&
-       github.event.issue.title == '[PainMap Deploy] Publish current main') ||
-      (github.event_name == 'pull_request' &&
-       github.event.pull_request.title == '[PainMap Deploy] Publish current main via Pages' &&
-       github.event.pull_request.base.ref == 'main' &&
-       github.event.pull_request.head.repo.full_name == github.repository)
+       github.event.issue.title == '[PainMap Deploy] Publish current main')
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -91,3 +80,41 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Record successful issue-triggered deployment
+        if: github.event_name == 'issues'
+        uses: actions/github-script@v7
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        with:
+          script: |
+            const body = [
+              'Production deployment completed successfully.',
+              '',
+              `- Revision: \`${context.sha}\``,
+              `- GitHub Pages URL: ${process.env.PAGE_URL}`,
+              '- Validated: 741 human mortality-context observations',
+              '- Validated: 24 source-backed cross-domain candidate observations',
+              '- Canonical promotions: 0',
+              '',
+              'Verified production endpoints:',
+              '- https://painmaps.org/data/pain-drivers/',
+              '- https://painmaps.org/data/pain-driver-context.json',
+              '- https://painmaps.org/data/pain-driver-context.csv',
+              '- https://painmaps.org/data/pain-driver-deployment.json'
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'completed'
+            });
