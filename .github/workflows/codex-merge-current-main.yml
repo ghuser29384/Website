@@ -1,9 +1,9 @@
 name: Codex merge current main into PainMap data branch
 
 on:
-  pull_request:
+  push:
     branches:
-      - main
+      - codex/add-source-backed-country-data
 
 permissions:
   contents: write
