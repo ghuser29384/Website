@@ -1,7 +1,7 @@
 {
   "release_id": "2026-05-31.atlas.2",
   "release_date": "2026-05-31",
-  "generated_at": "2026-07-14T12:29:44Z",
+  "generated_at": "2026-07-14T12:37:02Z",
   "immutable": true,
   "site": "https://painmap.org",
   "source_of_truth": {
@@ -5474,12 +5474,12 @@
     },
     {
       "path": "/data/source-snapshots.json",
-      "sha256": "8fd44b8a30c569d247086151d299fe95d7d719b1ae0af4c1f9ec1fc62857564f",
+      "sha256": "640c41e98dd38093c836e3954d2d554691e595b5a88736eb633e89c2a9c0f371",
       "bytes": 5738
     },
     {
       "path": "/data/country-gap-ledger.json",
-      "sha256": "89b11f42bae80309cf0408c69d7d5d50aa537038890a4f352c7778e5209696a3",
+      "sha256": "3cbaca1e9bdabceffa41c85eb596cc979c7aa5cdc139aa264aa0349357802131",
       "bytes": 315499
     },
     {
@@ -5699,7 +5699,7 @@
     },
     {
       "path": "/v1/coverage.json",
-      "sha256": "e811c8dde38bb2d2ae9dd65cfec687415ae0ab06e0aebf922d044c01b00ff0a6",
+      "sha256": "86f17013b4e60f6c4ef63cc36972b4ba3f4f37aac9be94cd7e7f27762fd16762",
       "bytes": 2934
     },
     {
