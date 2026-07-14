@@ -5,12 +5,14 @@
   "scripts": {
     "build:data": "node scripts/build-static-artifacts.mjs",
     "validate:release": "node scripts/validate-release-contract.mjs",
-    "check": "npm run build:data && node scripts/check-static-site.mjs && npm run validate:release && npm run smoke:ui && npm run fixtures:check",
+    "check": "npm run build:data && npm run candidate:data:check && node scripts/check-static-site.mjs && npm run validate:release && npm run smoke:ui && npm run fixtures:check",
     "fixtures:check": "node scripts/build-preview-release.mjs --check",
     "freshness:sources": "node scripts/check-source-freshness.mjs",
     "preview:fixture": "node scripts/build-preview-release.mjs",
     "smoke:ui": "node scripts/check-ui-smoke.mjs",
     "smoke:endpoints": "node scripts/check-endpoint-smoke.mjs",
-    "serve": "python3 -m http.server 4173"
+    "serve": "python3 -m http.server 4173",
+    "candidate:data:refresh": "python3 scripts/build-source-backed-country-supplement.py --refresh",
+    "candidate:data:check": "python3 scripts/build-source-backed-country-supplement.py --check"
   }
 }

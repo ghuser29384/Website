@@ -1,6 +1,6 @@
 {
   "release_id": "2026-05-31.atlas.2",
-  "generated_at": "2026-07-05",
+  "generated_at": "2026-07-14",
   "last_release_date": "2026-05-31",
   "coverage_status": {
     "places_indexed": 2114,
@@ -34,12 +34,12 @@
       "excluded_countries": 0,
       "candidate_review": {
         "release_candidate_id": "release-candidate-2026-07-country-context-v0",
-        "status": "blocked",
+        "status": "manual_review_required",
         "publish_candidate_measurements": false,
         "proposed_measurements": 1743,
-        "proposed_measurements_with_raw_values": 0,
-        "planned_source_snapshots": 13,
-        "captured_source_snapshots": 0,
+        "proposed_measurements_with_raw_values": 24,
+        "planned_source_snapshots": 14,
+        "captured_source_snapshots": 4,
         "candidate_promotions": 0,
         "matched_current_countries": 235,
         "current_countries_missing_from_candidate": 4,
@@ -71,6 +71,6 @@
     "rule": "canonical_country_profiles >= 10 and canonical_ratio >= 0.35 and (direct + proxy + priority_overlay + release_measurements) >= 10",
     "reason": "fewer than 10 canonical country profiles (2) · canonical ratio below minimum threshold (2 canonical profiles across 239 indexed country boundaries)",
     "release_note_url": "/updates/",
-    "summary_generated_at": "2026-07-05T07:39:25Z"
+    "summary_generated_at": "2026-07-14T12:47:07Z"
   }
 }

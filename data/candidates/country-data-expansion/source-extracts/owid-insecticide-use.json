@@ -1,0 +1,137 @@
+{
+  "generated_at": "2026-07-14T12:47:02Z",
+  "release_candidate_id": "release-candidate-2026-07-country-context-v0",
+  "source_id": "owid-insecticide-use",
+  "selection_rule": "Latest positive agricultural insecticide-use observation in tonnes per PainMap ISO3.",
+  "source_payloads": [
+    {
+      "url": "https://ourworldindata.org/grapher/insecticide-use.csv",
+      "sha256": "7928a819d2bf54eb9d8373ceed422bf8de149caabb3dcdbf7ef669a590c12651",
+      "byte_size": 197013,
+      "response_headers": {
+        "content-type": "text/csv",
+        "content-length": "197013",
+        "last-modified": "Tue, 14 Jul 2026 12:47:05 GMT"
+      }
+    },
+    {
+      "url": "https://ourworldindata.org/grapher/insecticide-use.metadata.json",
+      "sha256": "d41343295b8a5b3bcab7cdaadb51a18efb254b579866a19ac2ebe15fef52dd5b",
+      "byte_size": 1293,
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "1293"
+      }
+    }
+  ],
+  "source_payload_composite_sha256": "de44dcb904023295065eae85e9e1953869234eb1bf27dfba259380fb0139edfd",
+  "source_payload_total_bytes": 198306,
+  "metadata_summary": {
+    "chart": {
+      "title": "Insecticide use",
+      "subtitle": "Annual quantity of insecticides used in agriculture, measured as the tonnes of active ingredient per year.",
+      "citation": "Food and Agriculture Organization of the United Nations (2025)",
+      "originalChartUrl": "https://ourworldindata.org/grapher/insecticide-use",
+      "selection": [
+        "Belgium",
+        "Netherlands",
+        "United Kingdom",
+        "Brazil",
+        "Indonesia"
+      ]
+    },
+    "dataset": {},
+    "columns": {
+      "Insecticides | 00001309 || Agricultural use | 005157 || tonnes": {
+        "titleShort": "Insecticide use",
+        "titleLong": "Insecticide use - UN FAO",
+        "shortUnit": "t",
+        "unit": "tonnes",
+        "timespan": "1990-2023",
+        "type": "Integer",
+        "owidVariableId": 1195847,
+        "shortName": "insecticides__00001309__agricultural_use__005157__tonnes",
+        "lastUpdated": "2026-02-25",
+        "nextUpdate": "2027-02-25",
+        "citationShort": "Food and Agriculture Organization of the United Nations (2025) – with major processing by Our World in Data",
+        "citationLong": "Food and Agriculture Organization of the United Nations (2025) – with major processing by Our World in Data. “Insecticide use – UN FAO” [dataset]. Food and Agriculture Organization of the United Nations, “Land, Inputs and Sustainability: Pesticides Use” [original data].",
+        "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1195847.metadata.json"
+      }
+    }
+  },
+  "target_country_count": 8,
+  "rows": [
+    {
+      "iso3": "USA",
+      "country_name": "United States",
+      "reference_year": 2023,
+      "raw_value": 7489,
+      "components": {
+        "Insecticides - Agricultural use (tonnes)": 7489
+      }
+    },
+    {
+      "iso3": "CHN",
+      "country_name": "China",
+      "reference_year": 2023,
+      "raw_value": 58756,
+      "components": {
+        "Insecticides - Agricultural use (tonnes)": 58756
+      }
+    },
+    {
+      "iso3": "JPN",
+      "country_name": "Japan",
+      "reference_year": 2023,
+      "raw_value": 13382,
+      "components": {
+        "Insecticides - Agricultural use (tonnes)": 13382
+      }
+    },
+    {
+      "iso3": "DEU",
+      "country_name": "Germany",
+      "reference_year": 2023,
+      "raw_value": 16113,
+      "components": {
+        "Insecticides - Agricultural use (tonnes)": 16113
+      }
+    },
+    {
+      "iso3": "GBR",
+      "country_name": "United Kingdom",
+      "reference_year": 2023,
+      "raw_value": 330,
+      "components": {
+        "Insecticides - Agricultural use (tonnes)": 330
+      }
+    },
+    {
+      "iso3": "RUS",
+      "country_name": "Russia",
+      "reference_year": 2023,
+      "raw_value": 14274,
+      "components": {
+        "Insecticides - Agricultural use (tonnes)": 14274
+      }
+    },
+    {
+      "iso3": "IDN",
+      "country_name": "Indonesia",
+      "reference_year": 2023,
+      "raw_value": 171568,
+      "components": {
+        "Insecticides - Agricultural use (tonnes)": 171568
+      }
+    },
+    {
+      "iso3": "MEX",
+      "country_name": "Mexico",
+      "reference_year": 2023,
+      "raw_value": 8536,
+      "components": {
+        "Insecticides - Agricultural use (tonnes)": 8536
+      }
+    }
+  ]
+}

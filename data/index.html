@@ -51,6 +51,8 @@
           { "@type": "DataDownload", "encodingFormat": "application/geo+json", "contentUrl": "https://painmap.org/ogc/collections/places/items.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/openapi.json" },
           { "@type": "DataDownload", "encodingFormat": "application/ld+json", "contentUrl": "https://painmap.org/data/dcat.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/pain-driver-context.json" },
+          { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://painmap.org/data/pain-driver-context.csv" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/releases/2026-05-31/diff.json" }
         ]
       }
@@ -145,6 +147,13 @@
                   <td>Immutable 2026-05-31.atlas.2 release artifact</td>
                   <td>Low to very low confidence by layer</td>
                   <td><a href="/data/place-measurements.json">JSON</a>, <a href="/data/place-measurements.csv">CSV</a>, <a href="/data/places.geojson">GeoJSON</a>, <a href="/v1/places/index.json">place index</a>, <a href="/v1/coverage.json">coverage</a>, <a href="/data/release-modes.json">release modes</a>, <a href="/v1/places/IND/neighbors.json">neighbors</a>, <a href="/releases/2026-05-31/manifest.json">manifest</a></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="/data/pain-driver-context.json">Human mortality-linked context</a></th>
+                  <td>Proxy context; within-family ranking only</td>
+                  <td>WHO estimates via World Bank API; refreshed 2026-07-14</td>
+                  <td>Low confidence for pain inference; mortality does not measure pain intensity or duration</td>
+                  <td><a href="/data/pain-driver-context.json">JSON</a>, <a href="/data/pain-driver-context.csv">CSV</a>, <a href="/schemas/pain-driver-context.schema.json">schema</a></td>
                 </tr>
                 <tr>
                   <th scope="row"><a href="/v1/adm1/index.json">ADM1 poverty-context overlay</a></th>

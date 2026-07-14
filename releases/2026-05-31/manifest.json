@@ -1,7 +1,7 @@
 {
   "release_id": "2026-05-31.atlas.2",
   "release_date": "2026-05-31",
-  "generated_at": "2026-07-05T07:39:26Z",
+  "generated_at": "2026-07-14T12:47:07Z",
   "immutable": true,
   "site": "https://painmap.org",
   "source_of_truth": {
@@ -3564,8 +3564,8 @@
     },
     {
       "path": "/data/index.html",
-      "sha256": "d2e79595c87fd89b5a98813b23e169cf60ac999f28526d1f3e9fa1958b8a39bb",
-      "bytes": 14221
+      "sha256": "e2fe5bfc619a2a6aed91c331cb2ef183c1419f13c40a3e2d746e667be98dfa00",
+      "bytes": 15114
     },
     {
       "path": "/dataset/place-measurements/index.html",
@@ -5474,18 +5474,18 @@
     },
     {
       "path": "/data/source-snapshots.json",
-      "sha256": "e08096fe8bd3a823f3338fb52b1ad6a89ad183230b44168397cbc88c5395dbd0",
+      "sha256": "18d1cae58fa72045e50581dd1bda130f08a14f1d6bf9e9c06a3ebd86d1ed0097",
       "bytes": 5738
     },
     {
       "path": "/data/country-gap-ledger.json",
-      "sha256": "7aa52e9426ebbe87523b9fa21988c6851d8464e99295c28fa9d4ef47725b3b94",
-      "bytes": 315499
+      "sha256": "2f7a79da48a782efe785ddf562acef697cb1fe77378f590892c0692ba5d8e5ca",
+      "bytes": 316084
     },
     {
       "path": "/data/country-gap-ledger.csv",
-      "sha256": "bba204e7252b6eae8724f2b3c44b6c2a82f4f61752a4062cf7daaafcf3d7c178",
-      "bytes": 177476
+      "sha256": "6acfc1f2bd08916aac0c3dc476e433a6a5dd92df80deb4b771b30ccd2270e7e4",
+      "bytes": 177836
     },
     {
       "path": "/data/place-measurements.json",
@@ -5699,13 +5699,13 @@
     },
     {
       "path": "/v1/coverage.json",
-      "sha256": "17558680d4140a1baf941e197346422d68b4e65de68c0348cca3058632ce2ac1",
-      "bytes": 2934
+      "sha256": "a5602dc04893895b496b35efd050daa7644793998027a440a30f6e8cac96d01d",
+      "bytes": 2950
     },
     {
       "path": "/v1/places/index.json",
-      "sha256": "1567246924a2cdab14627f534598651a3c06951748e8053b0253570b356dddad",
-      "bytes": 3312798
+      "sha256": "632371980606dfb55c20ff9e91840a4e36b86b3b9b796c1173781f704d007b2c",
+      "bytes": 3312998
     },
     {
       "path": "/v1/adm1/index.json",
@@ -8894,8 +8894,8 @@
     },
     {
       "path": "/README.md",
-      "sha256": "1ce38f637ca716640d16fb61dd5a920dbe3aa3661a4a797052865d6144d90bd0",
-      "bytes": 6221
+      "sha256": "7a906a4441ff767072e6dea39be343421f8f46234799e1545f2df10f1a3b9cf3",
+      "bytes": 6898
     },
     {
       "path": "/LICENSE",
@@ -8909,8 +8909,8 @@
     },
     {
       "path": "/service-worker.js",
-      "sha256": "3382151145070b02fc62b186ff50590329450fa95b39a5a1a5683e69d9d97999",
-      "bytes": 4954
+      "sha256": "8cd077b98012bd6dbd7db2064eed6bf3d98ebbcb7ce543f5e0a0ac96ae7e88d8",
+      "bytes": 3908
     }
   ]
 }

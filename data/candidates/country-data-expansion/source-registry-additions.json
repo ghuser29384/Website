@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T16:35:05+00:00",
+  "generated_at": "2026-07-14T12:47:02Z",
   "release_candidate_id": "release-candidate-2026-07-country-context-v0",
   "rows": [
     {
@@ -23,13 +23,13 @@
       "publisher": "World Bank Group",
       "evidence_kind": "authoritative_international_dataset",
       "upstream_url": "https://api.worldbank.org/v2/country/all/indicator/{indicator}",
-      "source_vintage": "latest available per indicator",
+      "source_vintage": "AG.LND.TOTL.K2 latest target-country observations through 2023; captured 2026-07-14",
       "license_id": "world-bank-terms",
       "attribution": "World Bank Group, World Development Indicators / Indicators API",
       "review_cadence": "monthly",
-      "last_review_date": "2026-07-04",
+      "last_review_date": "2026-07-14",
       "next_review_due": "2026-08-04",
-      "redistribution_note": "Verify World Bank data terms before redistributing compiled values; API access requires no key per documentation.",
+      "redistribution_note": "Compact selected-row extract and API payload checksum captured under the existing World Bank terms reference.",
       "notes": "Use for population, land area, agricultural land, poverty/socioeconomic proxies, and related WDI indicators."
     },
     {
@@ -38,13 +38,13 @@
       "publisher": "Our World in Data / source providers",
       "evidence_kind": "derived_structured_dataset",
       "upstream_url": "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat",
-      "source_vintage": "fetch via OWID metadata at build time",
+      "source_vintage": "latest target-country observations through 2024; captured 2026-07-14",
       "license_id": "owid-cc-by-third-party-terms",
       "attribution": "Our World in Data; cite original data provider as specified in metadata",
       "review_cadence": "quarterly",
-      "last_review_date": "2026-07-04",
+      "last_review_date": "2026-07-14",
       "next_review_due": "2026-10-04",
-      "redistribution_note": "OWID-authored work is CC BY; underlying third-party data may have additional terms. Verify metadata before release.",
+      "redistribution_note": "Compact selected-row extract and upstream payload checksum captured. Final release still requires original FAO/OWID provider-terms review.",
       "notes": "Use for factory-farmed land animal country proxy where country rows exist."
     },
     {
@@ -98,13 +98,13 @@
       "publisher": "FAO via Our World in Data",
       "evidence_kind": "derived_structured_dataset",
       "upstream_url": "https://ourworldindata.org/grapher/insecticide-use.csv?v=1&csvType=full&useColumnShortNames=false",
-      "source_vintage": "1990-2023 per inspected OWID page",
+      "source_vintage": "latest target-country observations through 2023; captured 2026-07-14",
       "license_id": "owid-cc-by-third-party-terms",
       "attribution": "Food and Agriculture Organization of the United Nations (2025) – with major processing by Our World in Data",
       "review_cadence": "annual",
-      "last_review_date": "2026-07-04",
+      "last_review_date": "2026-07-14",
       "next_review_due": "2027-02-25",
-      "redistribution_note": "OWID page says OWID-authored work is CC BY, while third-party data are subject to provider terms; verify before release.",
+      "redistribution_note": "Compact selected-row extract and upstream payload checksum captured. Final release still requires original FAO/OWID provider-terms review.",
       "notes": "Use as insect-pressure country proxy; units tonnes; OWID page date range 1990–2023."
     },
     {
@@ -196,6 +196,21 @@
       "next_review_due": "2026-10-04",
       "redistribution_note": "Use for ADM1 boundaries only; verify per-release license/attribution.",
       "notes": "Live homepage cites geoBoundaries for ADM1."
+    },
+    {
+      "source_id": "world-bank-who-mortality-context",
+      "label": "WHO mortality indicators via World Bank Indicators API",
+      "publisher": "World Bank / World Health Organization",
+      "evidence_kind": "authoritative_international_dataset_proxy_context",
+      "upstream_url": "https://api.worldbank.org/v2/country/all/indicator/{indicator}",
+      "source_vintage": "latest common country year where available; captured 2026-07-14",
+      "license_id": "cc-by-4.0",
+      "attribution": "World Health Organization, via World Bank Indicators API",
+      "review_cadence": "annual",
+      "last_review_date": "2026-07-14",
+      "next_review_due": "2027-07-14",
+      "redistribution_note": "Indicator pages identify the dataset license as CC BY 4.0. Preserve WHO and World Bank attribution and the indicator-level source links.",
+      "notes": "Public non-canonical context supplement with 741 observations across 191 PainMap-indexed countries. Mortality is not a direct pain measure."
     }
   ]
 }
