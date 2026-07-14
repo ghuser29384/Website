@@ -46,15 +46,33 @@ jobs:
           node-version: "22"
 
       - name: Build, brand, and validate the static site
+        id: brand_check
+        continue-on-error: true
         shell: bash
         run: |
-          set -o pipefail
-          if ! npm run check > /tmp/painmap-brand-check.log 2>&1; then
-            echo "PainMap brand validation failed. Final log lines:"
-            tail -n 180 /tmp/painmap-brand-check.log
-            exit 1
-          fi
+          set +e
+          npm run check > /tmp/painmap-brand-check.log 2>&1
+          status=$?
+          echo "status=$status" >> "$GITHUB_OUTPUT"
           tail -n 80 /tmp/painmap-brand-check.log
+          exit 0
+
+      - name: Upload brand validation log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: painmap-brand-validation-${{ github.run_id }}
+          path: /tmp/painmap-brand-check.log
+          if-no-files-found: error
+          retention-days: 3
+
+      - name: Fail when brand validation fails
+        if: steps.brand_check.outputs.status != '0'
+        shell: bash
+        run: |
+          echo "PainMap brand validation failed."
+          tail -n 180 /tmp/painmap-brand-check.log
+          exit 1
 
       - name: Check patch formatting
         run: git diff --check
