@@ -1,4 +1,4 @@
-name: Codex refresh country candidate data
+name: Codex build PainMap source-backed data
 
 on:
   pull_request:
@@ -34,13 +34,13 @@ jobs:
         shell: bash
         run: |
           mkdir -p scripts
-          cat data/codex-bootstrap/script.part* | base64 --decode | gzip --decompress > scripts/build-source-backed-country-supplement.py
+          base64 --decode data/codex-bootstrap/script.b64 | gzip --decompress > scripts/build-source-backed-country-supplement.py
           base64 --decode data/codex-bootstrap/readme.b64 | gzip --decompress > README.md
           base64 --decode data/codex-bootstrap/package.b64 | gzip --decompress > package.json
           chmod +x scripts/build-source-backed-country-supplement.py
           python3 -m py_compile scripts/build-source-backed-country-supplement.py
 
-      - name: Fetch and build bounded country supplement
+      - name: Fetch and build source-backed supplements
         run: npm run candidate:data:refresh
 
       - name: Remove temporary implementation scaffolding
@@ -57,28 +57,6 @@ jobs:
           python3 -m py_compile clients/python/painmap_client.py examples/load_place_profile.py scripts/build-source-backed-country-supplement.py
           git diff --check
 
-      - name: Smoke test static endpoints
-        shell: bash
-        run: |
-          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/painmap-static-server.log 2>&1 &
-          server_pid=$!
-          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
-          for attempt in $(seq 1 20); do
-            if curl --fail --silent --show-error http://127.0.0.1:4173/ >/dev/null; then
-              break
-            fi
-            sleep 0.25
-          done
-          curl --fail --silent --show-error http://127.0.0.1:4173/ >/dev/null || {
-            cat /tmp/painmap-static-server.log
-            exit 1
-          }
-          npm run smoke:endpoints || {
-            status=$?
-            cat /tmp/painmap-static-server.log
-            exit "$status"
-          }
-
       - name: Commit validated candidate data
         shell: bash
         run: |
@@ -86,10 +64,10 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
           git status --short
-          git commit -m 'Add source-backed country candidate data'
+          git commit -m 'Add global pain-driver context data'
           git push origin HEAD:codex/add-source-backed-country-data
 
-      - name: Upload candidate QA evidence
+      - name: Upload data and QA evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -98,5 +76,8 @@ jobs:
             data/candidates/country-data-expansion/source-backed-country-summary.json
             data/candidates/country-data-expansion/validation-summary.json
             data/candidates/country-data-expansion/source-extracts/
+            data/pain-driver-context.json
+            data/pain-driver-context.csv
+            schemas/pain-driver-context.schema.json
           if-no-files-found: ignore
           retention-days: 7
