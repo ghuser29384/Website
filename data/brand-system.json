@@ -9,6 +9,18 @@
     "descriptor": "Animal pain evidence, mapped.",
     "campaign_line": "What is known. What is inferred. What is missing."
   },
+  "stylesheets": [
+    {
+      "path": "/brand.css",
+      "version": "b4437c8a6880a9db",
+      "integrity": "sha384-aKQU6+swZjdKXXFiseMfeFq1e7jA92cn0QMdJ9hAaMSqZIFwZZSxAduv3XOe4WKD"
+    },
+    {
+      "path": "/assets/brand/brand-components.css",
+      "version": "0648771439bc1fe1",
+      "integrity": "sha384-eNpvS+YcbYTTrF1/VrQOBDSAZgoK5AwO7G8lSdhNRfNvfQRT4eTqMr2+VJ+NDHnc"
+    }
+  ],
   "assets": {
     "logo": "/assets/brand/painmap-logo-horizontal-primary.svg",
     "symbol": "/assets/brand/painmap-symbol-primary.svg",
