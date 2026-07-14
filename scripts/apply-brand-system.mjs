@@ -129,7 +129,7 @@ function applyHomepageCopy(html, relativePath) {
 
   html = html.replace(
     /<div class="hero-actions"[^>]*>[\s\S]*?<\/div>/i,
-    `<div class="hero-actions" aria-label="Primary routes">\n            <a class="solid-button" href="/atlas/">Open the atlas</a>\n            <a class="ghost-link" href="/methods/">Read the method</a>\n            <a class="ghost-link" href="/data/">Audit the data</a>\n          </div>`,
+    `<div class="hero-actions" aria-label="Primary routes">\n            <a class="solid-button" href="/atlas/">Open the atlas</a>\n            <a class="ghost-link" href="/compare/">Compare places</a>\n            <a class="ghost-link" href="/methods/">Read the method</a>\n            <a class="ghost-link" href="/data/">Audit the data</a>\n          </div>`,
   );
 
   html = html.replace(
