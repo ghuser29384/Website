@@ -1,4 +1,4 @@
-name: Verify PainMap Evidence Field deployment
+name: Verify PainMap Evidence Contours deployment
 
 on:
   workflow_dispatch:
@@ -30,11 +30,16 @@ jobs:
           node-version: "22"
       - name: Confirm generated brand output
         run: |
-          grep -q "Map pain\." index.html
+          grep -q "What is known\." index.html
+          grep -q "What is inferred\." index.html
+          grep -q "What is missing\." index.html
+          grep -q 'data-brand="evidence-contours-v1"' index.html
           grep -q "brand.css" index.html
-          grep -q "painmap-symbol-primary.svg" index.html
+          grep -q "painmap-logo-horizontal-primary.svg" index.html
+          test -f assets/brand/painmap-logo-horizontal-primary.svg
           test -f assets/brand/painmap-symbol-primary.svg
           test -f assets/brand/painmap-favicon.svg
+          test -f assets/brand/evidence-contours-hero.svg
           test -f assets/brand/painmap-social-card.svg
       - name: Run production validation
         run: |
@@ -49,7 +54,8 @@ jobs:
         run: |
           cat > data/brand-deployment-status.json <<JSON
           {
-            "brand_system": "PainMap Brand System v1.0 — The Evidence Field",
+            "brand_system": "PainMap Brand System v1.0 — Evidence Contours",
+            "brand_id": "evidence-contours-v1",
             "verified": true,
             "verified_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
             "source_commit": "${GITHUB_SHA}",
@@ -70,5 +76,5 @@ jobs:
           if git diff --cached --quiet; then
             exit 0
           fi
-          git commit -m "Record verified PainMap brand deployment"
+          git commit -m "Record verified PainMap Evidence Contours deployment"
           git push origin HEAD:main
