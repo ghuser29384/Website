@@ -1,0 +1,12 @@
+{
+  "request_id": "painmap-native-pages-build-clean-2026-07-14T14:11Z",
+  "deploy_ref": "main",
+  "expected_production_head": "9cfe80638f8bfad84fea2136c22945c25e4b92fc",
+  "trigger": "clean pull_request synchronize using native Pages build API",
+  "validated_observations": {
+    "human_mortality_context": 741,
+    "source_backed_candidate_context": 24
+  },
+  "canonical_release_modified": false,
+  "comparison_policy": "No cross-domain composite ranking."
+}
