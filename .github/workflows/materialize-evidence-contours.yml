@@ -46,7 +46,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Materialize brand and validate repository contracts
+      - name: Collect materialization diagnostics
+        id: diagnostics
         shell: bash
         run: |
           set +e
@@ -59,15 +60,6 @@ jobs:
           git diff --check > /tmp/diff-check.log 2>&1
           diff_status=$?
 
-          echo "=== node --check (status ${node_status}) ==="
-          tail -n 80 /tmp/node-check.log
-          echo "=== npm run check (status ${check_status}) ==="
-          tail -n 180 /tmp/npm-check.log
-          echo "=== freshness (status ${freshness_status}) ==="
-          tail -n 80 /tmp/freshness.log
-          echo "=== git diff --check (status ${diff_status}) ==="
-          tail -n 80 /tmp/diff-check.log
-
           grep -q 'data-brand="evidence-contours-v1"' index.html
           brand_attr_status=$?
           grep -q 'What is known\.' index.html
@@ -78,11 +70,65 @@ jobs:
           logo_status=$?
           test -f assets/brand/evidence-contours-hero.svg
           asset_status=$?
-          echo "brand_attr=${brand_attr_status} hero=${hero_status} descriptor=${descriptor_status} logo=${logo_status} asset=${asset_status}"
 
-          if [ "$node_status" -ne 0 ] || [ "$check_status" -ne 0 ] || [ "$freshness_status" -ne 0 ] || [ "$diff_status" -ne 0 ] || [ "$brand_attr_status" -ne 0 ] || [ "$hero_status" -ne 0 ] || [ "$descriptor_status" -ne 0 ] || [ "$logo_status" -ne 0 ] || [ "$asset_status" -ne 0 ]; then
-            exit 1
+          {
+            echo "Evidence Contours validation diagnostics"
+            echo "node_status=${node_status}"
+            echo "check_status=${check_status}"
+            echo "freshness_status=${freshness_status}"
+            echo "diff_status=${diff_status}"
+            echo "brand_attr_status=${brand_attr_status}"
+            echo "hero_status=${hero_status}"
+            echo "descriptor_status=${descriptor_status}"
+            echo "logo_status=${logo_status}"
+            echo "asset_status=${asset_status}"
+            echo
+            echo "=== node --check ==="
+            cat /tmp/node-check.log
+            echo
+            echo "=== npm run check ==="
+            tail -n 300 /tmp/npm-check.log
+            echo
+            echo "=== freshness ==="
+            tail -n 160 /tmp/freshness.log
+            echo
+            echo "=== git diff --check ==="
+            cat /tmp/diff-check.log
+          } > data/evidence-contours-diagnostics.txt
+
+          {
+            echo "node_status=${node_status}"
+            echo "check_status=${check_status}"
+            echo "freshness_status=${freshness_status}"
+            echo "diff_status=${diff_status}"
+            echo "brand_attr_status=${brand_attr_status}"
+            echo "hero_status=${hero_status}"
+            echo "descriptor_status=${descriptor_status}"
+            echo "logo_status=${logo_status}"
+            echo "asset_status=${asset_status}"
+          } > data/evidence-contours-status.env
+
+      - name: Commit diagnostics
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/evidence-contours-diagnostics.txt data/evidence-contours-status.env
+          if git diff --cached --quiet; then
+            exit 0
           fi
+          git commit -m "Record Evidence Contours validation diagnostics"
+          git push origin HEAD:brand/evidence-contours-v1-final
+
+      - name: Fail when validation failed
+        shell: bash
+        run: |
+          set -euo pipefail
+          source data/evidence-contours-status.env
+          for value in "$node_status" "$check_status" "$freshness_status" "$diff_status" "$brand_attr_status" "$hero_status" "$descriptor_status" "$logo_status" "$asset_status"; do
+            test "$value" -eq 0
+          done
 
       - name: Run endpoint smoke checks
         shell: bash
