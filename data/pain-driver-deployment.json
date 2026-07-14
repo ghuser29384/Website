@@ -1,0 +1,23 @@
+{
+  "deployment_id": "painmap-pain-driver-context-2026-07-14",
+  "published_at": "2026-07-14T13:35:00Z",
+  "repository_commit": "d179cb2607a8c3f0c8917fe4f9723af46a5ca3ae",
+  "canonical_release_modified": false,
+  "public_context": {
+    "dataset_id": "painmap-human-mortality-context-v1",
+    "observations": 741,
+    "countries": 191,
+    "indicators": 4,
+    "json_url": "https://painmap.org/data/pain-driver-context.json",
+    "csv_url": "https://painmap.org/data/pain-driver-context.csv"
+  },
+  "candidate_context": {
+    "observations": 24,
+    "countries": 8,
+    "metrics": 3,
+    "status": "candidate_only_manual_review_required",
+    "summary_url": "https://painmap.org/data/candidates/country-data-expansion/source-backed-country-summary.json"
+  },
+  "landing_page": "https://painmap.org/data/pain-drivers/",
+  "comparison_policy": "No cross-domain composite score; compare only compatible units and methods."
+}
