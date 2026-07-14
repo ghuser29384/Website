@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-04T16:35:05+00:00",
+  "generated_at": "2026-07-14T12:47:02Z",
   "release_candidate_id": "release-candidate-2026-07-country-context-v0",
-  "note": "Planned snapshot manifest. Codex must capture payloads and populate checksums before promotion.",
+  "note": "Four source receipts captured: three bounded animal/geographic candidate inputs plus one global WHO/World Bank mortality-context family.",
   "rows": [
     {
       "source_snapshot_id": "snapshot.pending.painmap-live-homepage.2026-07-04",
@@ -25,46 +25,86 @@
       "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
     },
     {
-      "source_snapshot_id": "snapshot.pending.world-bank-wdi-api.2026-07-04",
+      "source_snapshot_id": "snapshot.world-bank-wdi-land-area.2026-07-14",
       "source_id": "world-bank-wdi-api",
-      "upstream_url": "https://api.worldbank.org/v2/country/all/indicator/{indicator}",
-      "retrieval_timestamp": "",
-      "source_vintage_or_reference_period": "latest available per indicator",
-      "media_type": "to_be_detected",
+      "upstream_url": "https://api.worldbank.org/v2/country/all/indicator/AG.LND.TOTL.K2?format=json&per_page=20000&date=1990:2026",
+      "retrieval_timestamp": "2026-07-14T12:47:02Z",
+      "source_vintage_or_reference_period": "AG.LND.TOTL.K2 latest positive target-country observations through 2023",
+      "media_type": "application/json",
       "checksum_algorithm": "sha256",
-      "checksum": "",
-      "byte_size": null,
+      "checksum": "df845aae057d0e11333b1b14abbb36780dc0fcce160495107abfaccfe8d078bc",
+      "byte_size": 1941062,
       "license_id": "world-bank-terms",
       "attribution": "World Bank Group, World Development Indicators / Indicators API",
       "retrieval_metadata": {
-        "status": "planned_not_captured_in_this_session",
-        "user_agent_required": true
+        "status": "captured_and_parsed",
+        "user_agent": "PainMap-source-candidate/2026-07-14 (+https://painmap.org/)",
+        "payloads": [
+          {
+            "url": "https://api.worldbank.org/v2/country/all/indicator/AG.LND.TOTL.K2?format=json&per_page=20000&date=1990:2026",
+            "sha256": "23124317b05c263acca4a61f6144faa3cf167e63edb67762cb327b298041ca9e",
+            "byte_size": 1941062,
+            "response_headers": {
+              "content-type": "application/json;charset=utf-8",
+              "last-modified": "Tue, 14 Jul 2026 11:25:05 GMT"
+            }
+          }
+        ]
       },
-      "notes": "Use for population, land area, agricultural land, poverty/socioeconomic proxies, and related WDI indicators.",
-      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
-      "redistribution_permitted": "unknown_or_verify_before_publication",
-      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+      "notes": "Land-area denominator and coarse wild-animal context proxy; compact selected-row extract committed, full API payload recorded by checksum.",
+      "reproducible_from_static_url_or_api_query": "yes; URLs and checksums recorded",
+      "redistribution_permitted": "candidate extract only; final release requires license review",
+      "snapshot_can_be_stored_directly_or_only_referenced": "compact selected-row extract committed; full upstream payload referenced by checksum",
+      "extract_path": "data/candidates/country-data-expansion/source-extracts/world-bank-land-area.json",
+      "extract_checksum_algorithm": "sha256",
+      "extract_checksum": "70f83d96ce37cddce4877b8ac525fbd10f1ac26428ac6dfb3be8c169a44b31ee",
+      "extract_byte_size": 2456
     },
     {
-      "source_snapshot_id": "snapshot.pending.owid-land-animals-slaughtered.2026-07-04",
+      "source_snapshot_id": "snapshot.owid-land-animals-slaughtered.2026-07-14",
       "source_id": "owid-land-animals-slaughtered",
-      "upstream_url": "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat",
-      "retrieval_timestamp": "",
-      "source_vintage_or_reference_period": "fetch via OWID metadata at build time",
-      "media_type": "to_be_detected",
+      "upstream_url": "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.csv",
+      "retrieval_timestamp": "2026-07-14T12:47:02Z",
+      "source_vintage_or_reference_period": "latest positive target-country observations through 2024",
+      "media_type": "text/csv",
       "checksum_algorithm": "sha256",
-      "checksum": "",
-      "byte_size": null,
+      "checksum": "810b0600f32d1830e06b9eab8c89dcd7563de626fb971cbea924f118e87c963f",
+      "byte_size": 1113814,
       "license_id": "owid-cc-by-third-party-terms",
-      "attribution": "Our World in Data; cite original data provider as specified in metadata",
+      "attribution": "Food and Agriculture Organization of the United Nations, processed by Our World in Data",
       "retrieval_metadata": {
-        "status": "planned_not_captured_in_this_session",
-        "user_agent_required": true
+        "status": "captured_and_parsed",
+        "user_agent": "PainMap-source-candidate/2026-07-14 (+https://painmap.org/)",
+        "payloads": [
+          {
+            "url": "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.csv",
+            "sha256": "921bff6c660167d76910af051451ff6b013209562b9ecfb4f98937c741a9bc20",
+            "byte_size": 1102057,
+            "response_headers": {
+              "content-type": "text/csv",
+              "content-length": "1102057",
+              "last-modified": "Tue, 14 Jul 2026 12:47:04 GMT"
+            }
+          },
+          {
+            "url": "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.metadata.json",
+            "sha256": "8b3921b460fbed3be8a585cf51b19e5ab47a2270911bd1be5d7ed7e6d2c027fd",
+            "byte_size": 11757,
+            "response_headers": {
+              "content-type": "application/json",
+              "content-length": "11757"
+            }
+          }
+        ]
       },
-      "notes": "Use for factory-farmed land animal country proxy where country rows exist.",
-      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
-      "redistribution_permitted": "unknown_or_verify_before_publication",
-      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+      "notes": "Country land-animal slaughter scale proxy; compact selected-row extract committed, full upstream CSV and metadata recorded by checksum.",
+      "reproducible_from_static_url_or_api_query": "yes; URLs and checksums recorded",
+      "redistribution_permitted": "candidate extract only; final release requires license review",
+      "snapshot_can_be_stored_directly_or_only_referenced": "compact selected-row extract committed; full upstream payload referenced by checksum",
+      "extract_path": "data/candidates/country-data-expansion/source-extracts/owid-land-animals-slaughtered.json",
+      "extract_checksum_algorithm": "sha256",
+      "extract_checksum": "6cc2a31131acb4fdbdbd94f893d07b185360e6172d2bd3c491d06e186c63f6d8",
+      "extract_byte_size": 18016
     },
     {
       "source_snapshot_id": "snapshot.pending.owid-farmed-fish-killed.2026-07-04",
@@ -130,25 +170,50 @@
       "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
     },
     {
-      "source_snapshot_id": "snapshot.pending.owid-insecticide-use.2026-07-04",
+      "source_snapshot_id": "snapshot.owid-insecticide-use.2026-07-14",
       "source_id": "owid-insecticide-use",
-      "upstream_url": "https://ourworldindata.org/grapher/insecticide-use.csv?v=1&csvType=full&useColumnShortNames=false",
-      "retrieval_timestamp": "",
-      "source_vintage_or_reference_period": "1990-2023 per inspected OWID page",
-      "media_type": "to_be_detected",
+      "upstream_url": "https://ourworldindata.org/grapher/insecticide-use.csv",
+      "retrieval_timestamp": "2026-07-14T12:47:02Z",
+      "source_vintage_or_reference_period": "latest positive target-country observations through 2023",
+      "media_type": "text/csv",
       "checksum_algorithm": "sha256",
-      "checksum": "",
-      "byte_size": null,
+      "checksum": "de44dcb904023295065eae85e9e1953869234eb1bf27dfba259380fb0139edfd",
+      "byte_size": 198306,
       "license_id": "owid-cc-by-third-party-terms",
-      "attribution": "Food and Agriculture Organization of the United Nations (2025) – with major processing by Our World in Data",
+      "attribution": "Food and Agriculture Organization of the United Nations, processed by Our World in Data",
       "retrieval_metadata": {
-        "status": "planned_not_captured_in_this_session",
-        "user_agent_required": true
+        "status": "captured_and_parsed",
+        "user_agent": "PainMap-source-candidate/2026-07-14 (+https://painmap.org/)",
+        "payloads": [
+          {
+            "url": "https://ourworldindata.org/grapher/insecticide-use.csv",
+            "sha256": "7928a819d2bf54eb9d8373ceed422bf8de149caabb3dcdbf7ef669a590c12651",
+            "byte_size": 197013,
+            "response_headers": {
+              "content-type": "text/csv",
+              "content-length": "197013",
+              "last-modified": "Tue, 14 Jul 2026 12:47:05 GMT"
+            }
+          },
+          {
+            "url": "https://ourworldindata.org/grapher/insecticide-use.metadata.json",
+            "sha256": "d41343295b8a5b3bcab7cdaadb51a18efb254b579866a19ac2ebe15fef52dd5b",
+            "byte_size": 1293,
+            "response_headers": {
+              "content-type": "application/json",
+              "content-length": "1293"
+            }
+          }
+        ]
       },
-      "notes": "Use as insect-pressure country proxy; units tonnes; OWID page date range 1990–2023.",
-      "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
-      "redistribution_permitted": "unknown_or_verify_before_publication",
-      "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+      "notes": "Agricultural insecticide-use pressure proxy; compact selected-row extract committed, full upstream CSV and metadata recorded by checksum.",
+      "reproducible_from_static_url_or_api_query": "yes; URLs and checksums recorded",
+      "redistribution_permitted": "candidate extract only; final release requires license review",
+      "snapshot_can_be_stored_directly_or_only_referenced": "compact selected-row extract committed; full upstream payload referenced by checksum",
+      "extract_path": "data/candidates/country-data-expansion/source-extracts/owid-insecticide-use.json",
+      "extract_checksum_algorithm": "sha256",
+      "extract_checksum": "6ca432c5547897f87146a221c3a0810353e1e4d613786aab19738cff75e0c173",
+      "extract_byte_size": 4418
     },
     {
       "source_snapshot_id": "snapshot.pending.fishcount-farmed-fish-country.2026-07-04",
@@ -275,6 +340,69 @@
       "reproducible_from_static_url_or_api_query": "yes_or_verify_at_fetch_time",
       "redistribution_permitted": "unknown_or_verify_before_publication",
       "snapshot_can_be_stored_directly_or_only_referenced": "verify_terms_before_storing"
+    },
+    {
+      "source_snapshot_id": "snapshot.world-bank-who-mortality-context.2026-07-14",
+      "source_id": "world-bank-who-mortality-context",
+      "upstream_url": "https://api.worldbank.org/v2/country/all/indicator/{indicator}",
+      "retrieval_timestamp": "2026-07-14T12:47:02Z",
+      "source_vintage_or_reference_period": "Latest common country year when available, otherwise latest non-null observation per indicator; 741 observations across 191 PainMap-indexed countries",
+      "media_type": "application/json",
+      "checksum_algorithm": "sha256",
+      "checksum": "ea50d4de2257db905dd50da8f4f94fb5e58c66c31a523b2913c21a3e6cecda51",
+      "byte_size": 7306978,
+      "license_id": "cc-by-4.0",
+      "attribution": "World Health Organization, via World Bank Indicators API",
+      "retrieval_metadata": {
+        "status": "captured_and_parsed",
+        "user_agent": "PainMap-source-candidate/2026-07-14 (+https://painmap.org/)",
+        "payloads": [
+          {
+            "url": "https://api.worldbank.org/v2/country/all/indicator/SH.STA.AIRP.P5?format=json&per_page=20000&date=2000:2026",
+            "sha256": "1d4566c2e6bc0bef2d7792126431e7265b3b216934fd22dd3d03292fd0c1b05f",
+            "byte_size": 2002275,
+            "response_headers": {
+              "content-type": "application/json;charset=utf-8",
+              "last-modified": "Tue, 14 Jul 2026 12:46:55 GMT"
+            }
+          },
+          {
+            "url": "https://api.worldbank.org/v2/country/all/indicator/SH.STA.WASH.P5?format=json&per_page=20000&date=2000:2026",
+            "sha256": "db29216cfabbc38660c2f5af840c7925f7fba362eba56d79cd2f9ab4af3cebb3",
+            "byte_size": 1988307,
+            "response_headers": {
+              "content-type": "application/json;charset=utf-8",
+              "last-modified": "Tue, 14 Jul 2026 12:46:56 GMT"
+            }
+          },
+          {
+            "url": "https://api.worldbank.org/v2/country/all/indicator/SH.STA.TRAF.P5?format=json&per_page=20000&date=2000:2026",
+            "sha256": "5704abc113f870ceab02769d2fa8e000178940706d25ca24610cbfe8c49151c1",
+            "byte_size": 1714995,
+            "response_headers": {
+              "content-type": "application/json;charset=utf-8",
+              "last-modified": "Tue, 14 Jul 2026 12:46:57 GMT"
+            }
+          },
+          {
+            "url": "https://api.worldbank.org/v2/country/all/indicator/SH.STA.SUIC.P5?format=json&per_page=20000&date=2000:2026",
+            "sha256": "42e6bdda970b594e420fd7c0d5d0ddea7ee88a678b063c3e1105f00f84e66286",
+            "byte_size": 1601401,
+            "response_headers": {
+              "content-type": "application/json;charset=utf-8",
+              "last-modified": "Tue, 14 Jul 2026 12:46:59 GMT"
+            }
+          }
+        ]
+      },
+      "notes": "Public non-canonical mortality-linked context dataset; ranks only within the compatible deaths-per-100,000 family.",
+      "reproducible_from_static_url_or_api_query": "yes; URLs and checksums recorded",
+      "redistribution_permitted": "yes under CC BY 4.0 with World Health Organization and World Bank attribution",
+      "snapshot_can_be_stored_directly_or_only_referenced": "compact selected-row extract committed; full upstream API payloads referenced by checksums",
+      "extract_path": "data/candidates/country-data-expansion/source-extracts/world-bank-who-mortality-context.json",
+      "extract_checksum_algorithm": "sha256",
+      "extract_checksum": "727bb023ea6fdce6d1f980377c6c40648e57b5847261a10b0398a2ea3eb78cee",
+      "extract_byte_size": 198700
     }
   ]
 }

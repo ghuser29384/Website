@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" data-brand="evidence-field-v1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Pain-driver context data | PainMap</title>
+    <meta name="description" content="Source-backed human mortality, animal-production, insecticide-use, and geographic context datasets for investigating major causes of pain by place.">
+    <link rel="canonical" href="https://painmap.org/data/pain-drivers/">
+    <meta property="og:title" content="Pain-driver context data | PainMap">
+    <meta property="og:description" content="Additional source-backed context for investigating major causes of pain by place, with explicit units, provenance, and uncertainty limits.">
+    <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://painmap.org/data/pain-drivers/">
+    <link rel="stylesheet" href="/styles.css?v=93e0a5d87fc250eb" integrity="sha384-247i4QQKs5xcO5DRVdCYNDn8SIksDDkmOncbjyJb10IWhCroxw7XbgJgLD7gwiez" crossorigin="anonymous">
+    <link rel="icon" href="/assets/brand/painmap-favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#F2F0E8" data-painmap-brand="evidence-field-v1">
+    <link rel="stylesheet" href="/brand.css?v=2cb1b100c5a8e940" integrity="sha384-xDZWchas6IQgiOcloxbhriO2lst0kxyCjuT6IklryzcwBBfTdy23hW0khCOj4DtU" crossorigin="anonymous" data-painmap-brand="evidence-field-v1">
+    <link rel="stylesheet" href="/assets/brand/brand-components.css?v=6fa78d873b7e24a7" integrity="sha384-1g3zTZ0UzEa5XrGAg8U1zygr+TixbkwDs8CWzt5x1tRgSCSmJc103Ef3opXZuH4d" crossorigin="anonymous" data-painmap-brand="evidence-field-v1">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "PainMap pain-driver context datasets",
+        "description": "Source-backed human mortality and animal, insecticide, and geographic context for investigating causes of pain by place without combining incompatible units into one score.",
+        "url": "https://painmap.org/data/pain-drivers/",
+        "creator": { "@type": "Organization", "name": "PainMap", "url": "https://painmap.org/" },
+        "distribution": [
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/pain-drivers.json" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/pain-driver-context.json" },
+          { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://painmap.org/data/pain-driver-context.csv" },
+          { "@type": "DataDownload", "encodingFormat": "application/schema+json", "contentUrl": "https://painmap.org/schemas/pain-driver-context.schema.json" }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="shell route-page">
+      <header class="site-header" aria-label="Primary navigation">
+        <a class="brand" href="/" aria-label="PainMap home"><img class="brand-mark" src="/assets/brand/painmap-symbol-primary.svg" width="44" height="44" alt=""><span>PainMap</span></a>
+        <nav class="site-nav" aria-label="Site sections">
+          <a href="/atlas/">Atlas</a>
+          <a href="/places/">Places</a>
+          <a href="/compare/">Compare</a>
+          <a href="/events/">Events</a>
+          <a href="/methods/">Methods</a>
+          <a href="/data/">Data</a>
+          <a href="/api/">API</a>
+          <a href="/about/">About</a>
+        </nav>
+      </header>
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">PainMap</a></li>
+          <li><a href="/data/">Data</a></li>
+          <li><span aria-current="page">Pain-driver context</span></li>
+        </ol>
+      </nav>
+      <main id="main-content" class="route-page">
+        <section class="route-panel route-hero" aria-labelledby="page-title">
+          <div>
+            <p class="label">Current public context supplement</p>
+            <h1 id="page-title">Evidence relevant to major causes of pain by place</h1>
+          </div>
+          <p class="route-copy">These datasets expand geographic coverage while keeping unlike evidence separate. They support investigation and prioritization; they are not a single universal pain ranking.</p>
+        </section>
+
+        <section class="route-panel" aria-labelledby="human-title">
+          <div class="section-intro">
+            <p class="label">Human severe-outcome context</p>
+            <h2 id="human-title">741 observations across 191 countries</h2>
+          </div>
+          <p>The public supplement contains four WHO mortality-rate series exposed through the World Bank Indicators API: household and ambient air pollution, unsafe water and sanitation, road traffic, and suicide. All values use deaths per 100,000 population, so comparisons are restricted to this compatible unit family.</p>
+          <div class="route-grid">
+            <article class="route-card"><p class="issue-tag">Coverage</p><h3>183 complete country profiles</h3><p>All four indicators share a latest common reference year for 183 countries. Eight additional countries use clearly labeled mixed latest years.</p></article>
+            <article class="route-card"><p class="issue-tag">Interpretation</p><h3>Mortality is a proxy</h3><p>These rates do not measure pain intensity, duration, prevalence, disability, nonfatal suffering, or total welfare burden.</p></article>
+          </div>
+          <div class="route-actions">
+            <a class="solid-button" href="/data/pain-driver-context.json">Download JSON</a>
+            <a class="ghost-link" href="/data/pain-driver-context.csv">Download CSV</a>
+            <a class="ghost-link" href="/schemas/pain-driver-context.schema.json">JSON Schema</a>
+            <a class="ghost-link" href="/data/candidates/country-data-expansion/source-extracts/world-bank-who-mortality-context.json">Source extract</a>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="cross-species-title">
+          <div class="section-intro">
+            <p class="label">Cross-species and environmental context</p>
+            <h2 id="cross-species-title">24 source-backed candidate observations</h2>
+          </div>
+          <p>The bounded candidate cohort covers China, Germany, Indonesia, Japan, Mexico, Russia, the United Kingdom, and the United States. It records land animals slaughtered annually, agricultural insecticide use, and land area context with retrieval receipts and checksums.</p>
+          <div class="data-table-wrap">
+            <table class="route-table">
+              <caption>Candidate context signals and their permitted interpretation.</caption>
+              <thead><tr><th scope="col">Signal</th><th scope="col">Unit</th><th scope="col">Role</th><th scope="col">Source extract</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Land animals slaughtered</th><td>animals per year</td><td>Scale proxy for exposure to husbandry, handling, transport, and slaughter; not a pain-duration estimate.</td><td><a href="/data/candidates/country-data-expansion/source-extracts/owid-land-animals-slaughtered.json">JSON</a></td></tr>
+                <tr><th scope="row">Agricultural insecticide use</th><td>tonnes of active ingredient per year</td><td>Pressure proxy for potentially large invertebrate exposure; causal welfare effects remain highly uncertain.</td><td><a href="/data/candidates/country-data-expansion/source-extracts/owid-insecticide-use.json">JSON</a></td></tr>
+                <tr><th scope="row">Land area</th><td>km²</td><td>Geographic denominator only. It is not a cause of pain and is excluded from cause rankings.</td><td><a href="/data/candidates/country-data-expansion/source-extracts/world-bank-land-area.json">JSON</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="route-actions">
+            <a class="solid-button" href="/data/candidates/country-data-expansion/source-backed-country-summary.json">Candidate summary</a>
+            <a class="ghost-link" href="/data/candidates/country-data-expansion/validation-summary.json">Validation record</a>
+            <a class="ghost-link" href="/data/pain-drivers.json">Machine-readable index</a>
+          </div>
+        </section>
+
+        <section class="route-panel" aria-labelledby="rules-title">
+          <div class="section-intro"><p class="label">Comparison rules</p><h2 id="rules-title">No cross-domain composite score</h2></div>
+          <p>Mortality rates, animal counts, chemical mass, land area, pain-duration estimates, and welfare weights are not commensurable. PainMap permits within-metric comparisons when units, methods, and reference-period semantics match. Any future synthesis must expose its transformations, uncertainty, sensitivity, and moral assumptions rather than hiding them in a single number.</p>
+        </section>
+      </main>
+    </div>
+    <script src="/route-table-labels.js?v=4fc546df01614183" defer></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://painmap.org/schemas/pain-driver-context.schema.json",
+  "title": "PainMap human mortality-linked context",
+  "description": "A non-canonical context dataset. Ranks are only within a compatible human mortality-rate family and are not total-pain scores.",
+  "type": "object",
+  "required": [
+    "dataset_id",
+    "generated_at",
+    "canonical_release",
+    "comparison_rules",
+    "sources",
+    "coverage",
+    "place_summaries",
+    "observations"
+  ],
+  "properties": {
+    "dataset_id": {
+      "const": "painmap-human-mortality-context-v1"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "canonical_release": {
+      "const": false
+    },
+    "comparison_rules": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object"
+      }
+    },
+    "coverage": {
+      "type": "object"
+    },
+    "place_summaries": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "observation_id",
+          "place_id",
+          "iso3",
+          "place_name",
+          "indicator_id",
+          "indicator_code",
+          "indicator_name",
+          "raw_value",
+          "unit_label",
+          "reference_year",
+          "within_place_rank",
+          "comparison_basis",
+          "source_id",
+          "source_snapshot_id",
+          "extraction_timestamp",
+          "license_id",
+          "data_license_uri",
+          "evidence_kind",
+          "uncertainty_class",
+          "caveat"
+        ],
+        "properties": {
+          "raw_value": {
+            "type": "number",
+            "minimum": 0
+          },
+          "unit_label": {
+            "const": "deaths per 100,000 population"
+          },
+          "within_place_rank": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "evidence_kind": {
+            "const": "proxy"
+          },
+          "source_id": {
+            "const": "world-bank-who-mortality-context"
+          },
+          "license_id": {
+            "const": "cc-by-4.0"
+          }
+        }
+      }
+    }
+  }
+}

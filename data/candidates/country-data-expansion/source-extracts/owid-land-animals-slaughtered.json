@@ -1,0 +1,364 @@
+{
+  "generated_at": "2026-07-14T12:47:02Z",
+  "release_candidate_id": "release-candidate-2026-07-country-context-v0",
+  "source_id": "owid-land-animals-slaughtered",
+  "selection_rule": "Latest positive observation per PainMap ISO3; use a supplied total column when present, otherwise sum all reported numeric species columns in the chart row.",
+  "source_payloads": [
+    {
+      "url": "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.csv",
+      "sha256": "921bff6c660167d76910af051451ff6b013209562b9ecfb4f98937c741a9bc20",
+      "byte_size": 1102057,
+      "response_headers": {
+        "content-type": "text/csv",
+        "content-length": "1102057",
+        "last-modified": "Tue, 14 Jul 2026 12:47:04 GMT"
+      }
+    },
+    {
+      "url": "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.metadata.json",
+      "sha256": "8b3921b460fbed3be8a585cf51b19e5ab47a2270911bd1be5d7ed7e6d2c027fd",
+      "byte_size": 11757,
+      "response_headers": {
+        "content-type": "application/json",
+        "content-length": "11757"
+      }
+    }
+  ],
+  "source_payload_composite_sha256": "810b0600f32d1830e06b9eab8c89dcd7563de626fb971cbea924f118e87c963f",
+  "source_payload_total_bytes": 1113814,
+  "metadata_summary": {
+    "chart": {
+      "title": "Land animals slaughtered for meat",
+      "subtitle": "These numbers do not include additional deaths that happen during the production of meat and dairy, chickens slaughtered in the egg industry, and other land animals for which there is no data.",
+      "citation": "Food and Agriculture Organization of the United Nations (2025)",
+      "originalChartUrl": "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat",
+      "selection": [
+        "World"
+      ]
+    },
+    "dataset": {},
+    "columns": {
+      "Number of chickens slaughtered to produce meat": {
+        "titleShort": "Number of chickens slaughtered to produce meat",
+        "titleLong": "Number of chickens slaughtered to produce meat",
+        "descriptionShort": "This data is based on the country of production, not consumption.",
+        "descriptionKey": [
+          "Additional deaths that happen during meat and dairy production prior to the slaughter, for example due to disease or accidents, are not included.",
+          "Male baby chickens slaughtered in the egg industry are not included."
+        ],
+        "shortUnit": "",
+        "unit": "animals",
+        "timespan": "1961-2024",
+        "type": "Integer",
+        "owidVariableId": 1205667,
+        "shortName": "n_animals_killed__animal_chickens",
+        "lastUpdated": "2026-03-03",
+        "nextUpdate": "2027-03-03",
+        "citationShort": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data",
+        "citationLong": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data. “Number of chickens slaughtered to produce meat” [dataset]. Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data].",
+        "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1205667.metadata.json"
+      },
+      "Number of ducks slaughtered to produce meat": {
+        "titleShort": "Number of ducks slaughtered to produce meat",
+        "titleLong": "Number of ducks slaughtered to produce meat",
+        "descriptionShort": "This data is based on the country of production, not consumption.",
+        "descriptionKey": [
+          "Additional deaths that happen during meat and dairy production prior to the slaughter, for example due to disease or accidents, are not included."
+        ],
+        "shortUnit": "",
+        "unit": "animals",
+        "timespan": "1961-2024",
+        "type": "Integer",
+        "owidVariableId": 1205664,
+        "shortName": "n_animals_killed__animal_ducks",
+        "lastUpdated": "2026-03-03",
+        "nextUpdate": "2027-03-03",
+        "citationShort": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data",
+        "citationLong": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data. “Number of ducks slaughtered to produce meat” [dataset]. Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data].",
+        "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1205664.metadata.json"
+      },
+      "Number of pigs slaughtered to produce meat": {
+        "titleShort": "Number of pigs slaughtered to produce meat",
+        "titleLong": "Number of pigs slaughtered to produce meat",
+        "descriptionShort": "This data is based on the country of production, not consumption.",
+        "descriptionKey": [
+          "Additional deaths that happen during meat and dairy production prior to the slaughter, for example due to disease or accidents, are not included."
+        ],
+        "shortUnit": "",
+        "unit": "animals",
+        "timespan": "1961-2024",
+        "type": "Integer",
+        "owidVariableId": 1205671,
+        "shortName": "n_animals_killed__animal_pigs",
+        "lastUpdated": "2026-03-03",
+        "nextUpdate": "2027-03-03",
+        "citationShort": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data",
+        "citationLong": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data. “Number of pigs slaughtered to produce meat” [dataset]. Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data].",
+        "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1205671.metadata.json"
+      },
+      "Number of geese slaughtered to produce meat": {
+        "titleShort": "Number of geese slaughtered to produce meat",
+        "titleLong": "Number of geese slaughtered to produce meat",
+        "descriptionShort": "This data is based on the country of production, not consumption.",
+        "descriptionKey": [
+          "Additional deaths that happen during meat and dairy production prior to the slaughter, for example due to disease or accidents, are not included."
+        ],
+        "shortUnit": "",
+        "unit": "animals",
+        "timespan": "1961-2024",
+        "type": "Integer",
+        "owidVariableId": 1205665,
+        "shortName": "n_animals_killed__animal_geese",
+        "lastUpdated": "2026-03-03",
+        "nextUpdate": "2027-03-03",
+        "citationShort": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data",
+        "citationLong": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data. “Number of geese slaughtered to produce meat” [dataset]. Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data].",
+        "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1205665.metadata.json"
+      },
+      "Number of sheep slaughtered to produce meat": {
+        "titleShort": "Number of sheep slaughtered to produce meat",
+        "titleLong": "Number of sheep slaughtered to produce meat",
+        "descriptionShort": "This data is based on the country of production, not consumption.",
+        "descriptionKey": [
+          "Additional deaths that happen during meat and dairy production prior to the slaughter, for example due to disease or accidents, are not included."
+        ],
+        "shortUnit": "",
+        "unit": "animals",
+        "timespan": "1961-2024",
+        "type": "Integer",
+        "owidVariableId": 1205673,
+        "shortName": "n_animals_killed__animal_sheep",
+        "lastUpdated": "2026-03-03",
+        "nextUpdate": "2027-03-03",
+        "citationShort": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data",
+        "citationLong": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data. “Number of sheep slaughtered to produce meat” [dataset]. Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data].",
+        "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1205673.metadata.json"
+      },
+      "Number of rabbits slaughtered to produce meat": {
+        "titleShort": "Number of rabbits slaughtered to produce meat",
+        "titleLong": "Number of rabbits slaughtered to produce meat",
+        "descriptionShort": "This data is based on the country of production, not consumption.",
+        "descriptionKey": [
+          "Additional deaths that happen during meat and dairy production prior to the slaughter, for example due to disease or accidents, are not included."
+        ],
+        "shortUnit": "",
+        "unit": "animals",
+        "timespan": "1961-2024",
+        "type": "Integer",
+        "owidVariableId": 1205670,
+        "shortName": "n_animals_killed__animal_rabbits",
+        "lastUpdated": "2026-03-03",
+        "nextUpdate": "2027-03-03",
+        "citationShort": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data",
+        "citationLong": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data. “Number of rabbits slaughtered to produce meat” [dataset]. Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data].",
+        "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1205670.metadata.json"
+      },
+      "Number of turkeys slaughtered to produce meat": {
+        "titleShort": "Number of turkeys slaughtered to produce meat",
+        "titleLong": "Number of turkeys slaughtered to produce meat",
+        "descriptionShort": "This data is based on the country of production, not consumption.",
+        "descriptionKey": [
+          "Additional deaths that happen during meat and dairy production prior to the slaughter, for example due to disease or accidents, are not included."
+        ],
+        "shortUnit": "",
+        "unit": "animals",
+        "timespan": "1961-2024",
+        "type": "Integer",
+        "owidVariableId": 1205672,
+        "shortName": "n_animals_killed__animal_turkeys",
+        "lastUpdated": "2026-03-03",
+        "nextUpdate": "2027-03-03",
+        "citationShort": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data",
+        "citationLong": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data. “Number of turkeys slaughtered to produce meat” [dataset]. Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data].",
+        "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1205672.metadata.json"
+      },
+      "Number of goats slaughtered to produce meat": {
+        "titleShort": "Number of goats slaughtered to produce meat",
+        "titleLong": "Number of goats slaughtered to produce meat",
+        "descriptionShort": "This data is based on the country of production, not consumption.",
+        "descriptionKey": [
+          "Additional deaths that happen during meat and dairy production prior to the slaughter, for example due to disease or accidents, are not included."
+        ],
+        "shortUnit": "",
+        "unit": "animals",
+        "timespan": "1961-2024",
+        "type": "Integer",
+        "owidVariableId": 1205668,
+        "shortName": "n_animals_killed__animal_goats",
+        "lastUpdated": "2026-03-03",
+        "nextUpdate": "2027-03-03",
+        "citationShort": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data",
+        "citationLong": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data. “Number of goats slaughtered to produce meat” [dataset]. Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data].",
+        "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1205668.metadata.json"
+      },
+      "Number of cattle slaughtered to produce meat": {
+        "titleShort": "Number of cattle slaughtered to produce meat",
+        "titleLong": "Number of cattle slaughtered to produce meat",
+        "descriptionShort": "This data is based on the country of production, not consumption.",
+        "descriptionKey": [
+          "Additional deaths that happen during meat and dairy production prior to the slaughter, for example due to disease or accidents, are not included."
+        ],
+        "shortUnit": "",
+        "unit": "animals",
+        "timespan": "1961-2024",
+        "type": "Integer",
+        "owidVariableId": 1205666,
+        "shortName": "n_animals_killed__animal_cattle",
+        "lastUpdated": "2026-03-03",
+        "nextUpdate": "2027-03-03",
+        "citationShort": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data",
+        "citationLong": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data. “Number of cattle slaughtered to produce meat” [dataset]. Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data].",
+        "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1205666.metadata.json"
+      },
+      "Number of other animals slaughtered to produce meat": {
+        "titleShort": "Number of other animals slaughtered to produce meat",
+        "titleLong": "Number of other animals slaughtered to produce meat",
+        "descriptionShort": "This data is based on the country of production, not consumption.",
+        "descriptionKey": [
+          "Additional deaths that happen during meat and dairy production prior to the slaughter, for example due to disease or accidents, are not included."
+        ],
+        "shortUnit": "",
+        "unit": "animals",
+        "timespan": "1961-2024",
+        "type": "Integer",
+        "owidVariableId": 1205669,
+        "shortName": "n_animals_killed__animal_other_animals",
+        "lastUpdated": "2026-03-03",
+        "nextUpdate": "2027-03-03",
+        "citationShort": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data",
+        "citationLong": "Food and Agriculture Organization of the United Nations (2025) – processed by Our World in Data. “Number of other animals slaughtered to produce meat” [dataset]. Food and Agriculture Organization of the United Nations, “Production: Crops and livestock products” [original data].",
+        "fullMetadata": "https://api.ourworldindata.org/v1/indicators/1205669.metadata.json"
+      }
+    }
+  },
+  "target_country_count": 8,
+  "rows": [
+    {
+      "iso3": "USA",
+      "country_name": "United States",
+      "reference_year": 2024,
+      "raw_value": 9960085520,
+      "components": {
+        "Cattle": 32155400,
+        "Chickens": 9574243328,
+        "Ducks": 24802000,
+        "Goats": 682900,
+        "Other animals": 0,
+        "Pigs": 129744400,
+        "Sheep": 2308500,
+        "Turkeys": 196148992
+      }
+    },
+    {
+      "iso3": "CHN",
+      "country_name": "China",
+      "reference_year": 2024,
+      "raw_value": 17517694785,
+      "components": {
+        "Cattle": 45888300,
+        "Chickens": 11865177088,
+        "Ducks": 3486423040,
+        "Geese": 766139008,
+        "Goats": 141503200,
+        "Other animals": 6847925,
+        "Pigs": 702560000,
+        "Rabbits": 303596992,
+        "Sheep": 199559232
+      }
+    },
+    {
+      "iso3": "JPN",
+      "country_name": "Japan",
+      "reference_year": 2024,
+      "raw_value": 863766623,
+      "components": {
+        "Cattle": 1026456,
+        "Chickens": 846705024,
+        "Goats": 2284,
+        "Other animals": 9716,
+        "Pigs": 16013156,
+        "Sheep": 6987,
+        "Turkeys": 3000
+      }
+    },
+    {
+      "iso3": "DEU",
+      "country_name": "Germany",
+      "reference_year": 2024,
+      "raw_value": 717773624,
+      "components": {
+        "Cattle": 3026190,
+        "Chickens": 629545024,
+        "Ducks": 8862000,
+        "Geese": 452000,
+        "Goats": 24880,
+        "Pigs": 44653200,
+        "Sheep": 1407330,
+        "Turkeys": 29803000
+      }
+    },
+    {
+      "iso3": "GBR",
+      "country_name": "United Kingdom",
+      "reference_year": 2024,
+      "raw_value": 1223824560,
+      "components": {
+        "Cattle": 2852000,
+        "Chickens": 1178200064,
+        "Ducks": 10157000,
+        "Geese": 367000,
+        "Other animals": 37496,
+        "Pigs": 10540000,
+        "Sheep": 12871000,
+        "Turkeys": 8800000
+      }
+    },
+    {
+      "iso3": "RUS",
+      "country_name": "Russia",
+      "reference_year": 2024,
+      "raw_value": 2714015565,
+      "components": {
+        "Cattle": 7541022,
+        "Chickens": 2639286016,
+        "Goats": 923692,
+        "Other animals": 269135,
+        "Pigs": 48565712,
+        "Rabbits": 6681000,
+        "Sheep": 10748988
+      }
+    },
+    {
+      "iso3": "IDN",
+      "country_name": "Indonesia",
+      "reference_year": 2024,
+      "raw_value": 4946787739,
+      "components": {
+        "Cattle": 1464476,
+        "Chickens": 4891522048,
+        "Ducks": 38474000,
+        "Goats": 6877261,
+        "Other animals": 100798,
+        "Pigs": 3629599,
+        "Rabbits": 291000,
+        "Sheep": 4428557
+      }
+    },
+    {
+      "iso3": "MEX",
+      "country_name": "Mexico",
+      "reference_year": 2024,
+      "raw_value": 2179248048,
+      "components": {
+        "Cattle": 8921082,
+        "Chickens": 2133746944,
+        "Goats": 2345207,
+        "Other animals": 548184,
+        "Pigs": 22442478,
+        "Rabbits": 4560000,
+        "Sheep": 3370153,
+        "Turkeys": 3314000
+      }
+    }
+  ]
+}
