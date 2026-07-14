@@ -1,4 +1,4 @@
-name: Publish PainMap Evidence Field brand
+name: Publish PainMap Evidence Contours brand
 
 on:
   workflow_dispatch:
@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Apply the brand system to generated routes
+      - name: Apply Evidence Contours to generated routes
         run: node scripts/apply-brand-system.mjs
 
       - name: Validate static and accessibility contracts
@@ -59,14 +59,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Apply PainMap Evidence Field brand to live static routes"
+          git commit -m "Apply PainMap Evidence Contours brand to live static routes"
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Publish summary
         run: |
           {
-            echo "## PainMap brand publish"
+            echo "## PainMap Evidence Contours publish"
             echo
             echo "Generated routes branded: ${{ steps.commit.outputs.changed }}"
             echo "Validation completed before commit."
