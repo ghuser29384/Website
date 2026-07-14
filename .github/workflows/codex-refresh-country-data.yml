@@ -34,7 +34,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p scripts
-          base64 --decode data/codex-bootstrap/script.b64 | gzip --decompress > scripts/build-source-backed-country-supplement.py
+          cat data/codex-bootstrap/script.part* | base64 --decode | gzip --decompress > scripts/build-source-backed-country-supplement.py
           base64 --decode data/codex-bootstrap/readme.b64 | gzip --decompress > README.md
           base64 --decode data/codex-bootstrap/package.b64 | gzip --decompress > package.json
           chmod +x scripts/build-source-backed-country-supplement.py
