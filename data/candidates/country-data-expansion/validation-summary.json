@@ -1,20 +1,20 @@
 {
   "candidate_package_present": true,
   "package_path": "data/candidates/country-data-expansion",
-  "generated_at": "2026-07-14T12:47:02Z",
+  "generated_at": "2026-07-04T16:35:05+00:00",
   "release_candidate_id": "release-candidate-2026-07-country-context-v0",
-  "implementation_decision": "requires_manual_release_review_before_promotion",
+  "implementation_decision": "staged_only_not_promoted",
   "package_file_audit": {
-    "file_count": 25,
-    "files_verified": 25,
+    "file_count": 20,
+    "files_verified": 20,
     "missing_files": [],
     "checksum_mismatches": [],
     "byte_mismatches": []
   },
   "publication_gate": {
-    "status": "manual_review_required",
+    "status": "blocked",
     "publish_candidate_measurements": false,
-    "reason": "Candidate package contains value-like rows, but release promotion still requires manual source, license, method, and UX review."
+    "reason": "Candidate package contains no publishable source-backed measurement rows: source snapshots, verified numeric values, and method QA are incomplete."
   },
   "source_snapshots": {
     "planned_count": 14,
@@ -24,16 +24,14 @@
   },
   "proposed_measurements": {
     "row_count": 1743,
-    "with_raw_values": 24,
-    "with_source_snapshot_ids": 24,
-    "publication_ready_rows": 24,
+    "with_raw_values": 0,
+    "with_source_snapshot_ids": 0,
+    "publication_ready_rows": 0,
     "coverage_status_counts": {
-      "candidate_source_backed_manual_review": 24,
-      "not_promoted": 1719
+      "not_promoted": 1743
     },
     "promotion_decision_counts": {
-      "blocked_pending_source_snapshot_and_QA": 1719,
-      "manual_review_required_not_promoted": 24
+      "blocked_pending_source_snapshot_and_QA": 1743
     },
     "layer_counts": {
       "factory-farmed-animals": 249,
@@ -59,18 +57,13 @@
     "promote_to_canonical": 0,
     "not_promoted": 249,
     "candidate_status_counts": {
-      "not_promoted": 241,
-      "source_backed_partial_manual_review": 8
+      "not_promoted": 249
     },
     "blocking_reason_counts": {
-      "candidate package has not been promoted into the immutable release": 8,
-      "candidate rows require manual source and method review": 8,
-      "licenses not fully verified": 241,
-      "numeric values not fetched/QAed": 241,
-      "OWID original-provider terms require final license review": 8,
-      "PainMap hidden coverage artifacts not fetched": 241,
-      "remaining canonical country-profile source groups are incomplete": 8,
-      "source snapshots not captured": 241
+      "licenses not fully verified": 249,
+      "numeric values not fetched/QAed": 249,
+      "PainMap hidden coverage artifacts not fetched": 249,
+      "source snapshots not captured": 249
     }
   },
   "country_universe": {
@@ -100,7 +93,7 @@
       "UMI"
     ]
   },
-  "package_context_note": "Candidate package mapped against local release artifacts.",
+  "package_context_note": "The package was generated without current PainMap release artifacts; this build maps candidate rows against the local release artifacts instead.",
   "current_release_after_candidate_review": {
     "canonical_country_profiles": 2,
     "boundary_only_countries": 237,

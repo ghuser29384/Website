@@ -110,10 +110,10 @@
       "reason": "Candidate package contains no publishable source-backed measurement rows: source snapshots, verified numeric values, and method QA are incomplete."
     },
     "source_snapshots": {
-      "planned_count": 13,
-      "captured_count": 0,
-      "with_checksums": 0,
-      "with_retrieval_timestamps": 0
+      "planned_count": 14,
+      "captured_count": 4,
+      "with_checksums": 4,
+      "with_retrieval_timestamps": 4
     },
     "proposed_measurements": {
       "row_count": 1743,
@@ -212,8 +212,8 @@
       "publish_candidate_measurements": false,
       "proposed_measurements": 1743,
       "proposed_measurements_with_raw_values": 0,
-      "planned_source_snapshots": 13,
-      "captured_source_snapshots": 0,
+      "planned_source_snapshots": 14,
+      "captured_source_snapshots": 4,
       "candidate_promotions": 0,
       "matched_current_countries": 235,
       "current_countries_missing_from_candidate": 4,
