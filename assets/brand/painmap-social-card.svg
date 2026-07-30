@@ -1,1 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc"><title id="title">PainMap social preview</title><desc id="desc">PainMap. Map pain. Keep uncertainty visible. Mixed-evidence atlas of pain sources by place.</desc><rect width="1200" height="630" fill="#3154D8"/><g opacity="0.18" stroke="#FFFFFF" stroke-width="1"><line x1="0" y1="0" x2="0" y2="630"/><line x1="100" y1="0" x2="100" y2="630"/><line x1="200" y1="0" x2="200" y2="630"/><line x1="300" y1="0" x2="300" y2="630"/><line x1="400" y1="0" x2="400" y2="630"/><line x1="500" y1="0" x2="500" y2="630"/><line x1="600" y1="0" x2="600" y2="630"/><line x1="700" y1="0" x2="700" y2="630"/><line x1="800" y1="0" x2="800" y2="630"/><line x1="900" y1="0" x2="900" y2="630"/><line x1="1000" y1="0" x2="1000" y2="630"/><line x1="1100" y1="0" x2="1100" y2="630"/><line x1="1200" y1="0" x2="1200" y2="630"/></g><g transform="translate(64 54)"><g transform="translate(0 2) scale(.64)"><g fill="none" stroke="#FFFFFF" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="round"><path d="M 88 34 V 80 Q 88 90 78 90 H 20 Q 10 90 10 80 V 20 Q 10 10 20 10 H 72"/><path d="M 78 38 V 71 Q 78 80 69 80 H 31 Q 22 80 22 71 V 31 Q 22 22 31 22 H 64"/><path d="M 68 43 V 61 Q 68 70 59 70 H 41 Q 32 70 32 61 V 41 Q 32 32 41 32 H 56"/><path d="M 58 48 V 52 Q 58 60 50 60 H 49 Q 42 60 42 53 V 48 Q 42 42 48 42 H 49"/></g><line x1="77" y1="10" x2="91" y2="10" stroke="#FFFFFF" stroke-width="1.8"/><circle cx="95" cy="10" r="2.6" fill="#FFFFFF"/></g><text x="78" y="64" font-family="EB Garamond, Georgia, serif" font-size="64" font-weight="700" letter-spacing="-1.2" fill="#FFFFFF">PainMap</text></g><text x="64" y="235" font-family="EB Garamond, Georgia, serif" font-size="76" font-weight="700" letter-spacing="-1.8" fill="#FFFFFF">Map pain.</text><text x="64" y="316" font-family="EB Garamond, Georgia, serif" font-size="76" font-weight="700" letter-spacing="-1.8" fill="#FFFFFF">Keep uncertainty visible.</text><text x="68" y="382" font-family="Inter, Arial, sans-serif" font-size="25" fill="#DDE4FF">Mixed-evidence atlas of pain sources by place</text><g transform="translate(790 110) scale(3.1)"><g fill="none" stroke="#FFFFFF" stroke-width="2.7" stroke-linecap="square" stroke-linejoin="round"><path d="M 88 34 V 80 Q 88 90 78 90 H 20 Q 10 90 10 80 V 20 Q 10 10 20 10 H 72"/><path d="M 78 38 V 71 Q 78 80 69 80 H 31 Q 22 80 22 71 V 31 Q 22 22 31 22 H 64"/><path d="M 68 43 V 61 Q 68 70 59 70 H 41 Q 32 70 32 61 V 41 Q 32 32 41 32 H 56"/><path d="M 58 48 V 52 Q 58 60 50 60 H 49 Q 42 60 42 53 V 48 Q 42 42 48 42 H 49"/></g></g><text x="68" y="558" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="650" letter-spacing="1.1" fill="#FFFFFF">DIRECT EVIDENCE · MODELED ESTIMATE · PROXY AGGREGATE · PRIORITY OVERLAY</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">PainMap Evidence Contours</title>
+  <desc id="desc">PainMap. What is known. What is inferred. What is missing.</desc>
+  <rect width="1200" height="630" fill="#F2EFE7"/>
+  <g stroke="#C7CBC5" stroke-width="1" opacity=".55">
+    <path d="M80 0V630M160 0V630M240 0V630M320 0V630M400 0V630M480 0V630M560 0V630M640 0V630M720 0V630M800 0V630M880 0V630M960 0V630M1040 0V630M1120 0V630"/>
+    <path d="M0 78H1200M0 156H1200M0 234H1200M0 312H1200M0 390H1200M0 468H1200M0 546H1200"/>
+  </g>
+  <g transform="translate(760 45) scale(3.9)" stroke="#174D55" stroke-linecap="round" fill="none">
+    <path d="M35 94C43 74 46 54 68 47C82 43 96 49 102 61C108 73 102 86 91 95" stroke-width="1.4"/>
+    <path d="M29 102C40 78 35 50 63 35C83 24 106 29 118 45" stroke-width="1.05"/>
+    <path d="M24 111C34 88 22 49 55 26C78 10 108 14 125 32" stroke-width=".75"/>
+  </g>
+  <circle cx="897" cy="412" r="17" fill="#E65B43"/>
+  <g transform="translate(72 62)">
+    <g stroke="#174D55" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M0 58V0H43"/><path d="M60 18V60H26"/>
+      <path d="M10 50C17 35 20 24 35 19C45 16 54 21 58 30" stroke-width="2.5"/>
+    </g>
+    <circle cx="10" cy="50" r="5" fill="#E65B43"/>
+    <text x="82" y="49" fill="#171A1B" font-family="Noto Serif Display, Georgia, serif" font-size="44" font-weight="600">PainMap</text>
+  </g>
+  <text x="72" y="255" fill="#171A1B" font-family="Noto Serif Display, Georgia, serif" font-size="72" font-weight="600">What is known.</text>
+  <text x="72" y="337" fill="#174D55" font-family="Noto Serif Display, Georgia, serif" font-size="72" font-weight="600">What is inferred.</text>
+  <text x="72" y="419" fill="#B83E2C" font-family="Noto Serif Display, Georgia, serif" font-size="72" font-weight="600">What is missing.</text>
+  <line x1="72" y1="492" x2="1128" y2="492" stroke="#171A1B"/>
+  <text x="72" y="540" fill="#626A6A" font-family="Inter, Arial, sans-serif" font-size="24">Animal pain evidence, mapped—with source, method, uncertainty and data gaps attached.</text>
+  <text x="72" y="586" fill="#174D55" font-family="PT Mono, Courier New, monospace" font-size="18" letter-spacing="2">SEE THE EVIDENCE. SEE ITS LIMITS.</text>
+</svg>

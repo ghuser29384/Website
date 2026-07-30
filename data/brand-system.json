@@ -1,24 +1,31 @@
 {
-  "name": "PainMap Brand System",
-  "version": "1.0",
-  "concept": "The Evidence Field",
-  "brand_id": "evidence-field-v1",
+  "name": "PainMap Evidence Contours Brand System",
+  "version": "1.0.0",
+  "concept": "Evidence Contours — the shape of what we know",
+  "brand_id": "evidence-contours-v1",
   "applied_at": "2026-07-14",
+  "messaging": {
+    "promise": "See the evidence. See its limits.",
+    "descriptor": "Animal pain evidence, mapped.",
+    "campaign_line": "What is known. What is inferred. What is missing."
+  },
   "stylesheets": [
     {
       "path": "/brand.css",
-      "version": "2cb1b100c5a8e940",
-      "integrity": "sha384-xDZWchas6IQgiOcloxbhriO2lst0kxyCjuT6IklryzcwBBfTdy23hW0khCOj4DtU"
+      "version": "b4437c8a6880a9db",
+      "integrity": "sha384-aKQU6+swZjdKXXFiseMfeFq1e7jA92cn0QMdJ9hAaMSqZIFwZZSxAduv3XOe4WKD"
     },
     {
       "path": "/assets/brand/brand-components.css",
-      "version": "6fa78d873b7e24a7",
-      "integrity": "sha384-1g3zTZ0UzEa5XrGAg8U1zygr+TixbkwDs8CWzt5x1tRgSCSmJc103Ef3opXZuH4d"
+      "version": "0648771439bc1fe1",
+      "integrity": "sha384-eNpvS+YcbYTTrF1/VrQOBDSAZgoK5AwO7G8lSdhNRfNvfQRT4eTqMr2+VJ+NDHnc"
     }
   ],
   "assets": {
+    "logo": "/assets/brand/painmap-logo-horizontal-primary.svg",
     "symbol": "/assets/brand/painmap-symbol-primary.svg",
     "favicon": "/assets/brand/painmap-favicon.svg",
+    "hero": "/assets/brand/evidence-contours-hero.svg",
     "social_card": "/assets/social-card.svg"
   }
 }

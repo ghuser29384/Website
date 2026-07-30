@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" fill="#F2EFE7"/>
+  <g stroke="#C7CBC5" stroke-width="1">
+    <path d="M100 0V1000"/><path d="M200 0V1000"/><path d="M300 0V1000"/><path d="M400 0V1000"/><path d="M500 0V1000"/><path d="M600 0V1000"/><path d="M700 0V1000"/><path d="M800 0V1000"/><path d="M900 0V1000"/><path d="M1000 0V1000"/><path d="M1100 0V1000"/><path d="M1200 0V1000"/><path d="M1300 0V1000"/><path d="M1400 0V1000"/><path d="M1500 0V1000"/>
+    <path d="M0 100H1600"/><path d="M0 200H1600"/><path d="M0 300H1600"/><path d="M0 400H1600"/><path d="M0 500H1600"/><path d="M0 600H1600"/><path d="M0 700H1600"/><path d="M0 800H1600"/><path d="M0 900H1600"/>
+  </g>
+  <g transform="translate(85 40) scale(11)" stroke="#174D55" stroke-linecap="round" fill="none">
+    <path d="M35 94C43 74 46 54 68 47C82 43 96 49 102 61C108 73 102 86 91 95" stroke-width="0.7"/>
+    <path d="M29 102C40 78 35 50 63 35C83 24 106 29 118 45" stroke-width="0.55"/>
+    <path d="M24 111C34 88 22 49 55 26C78 10 108 14 125 32" stroke-width="0.4"/>
+  </g>
+  <circle cx="470" cy="795" r="20" fill="#E65B43"/>
+  <g font-family="PT Mono" font-size="18" fill="#626A6A" letter-spacing="1">
+    <text x="1110" y="895">SOURCE / EVIDENCE / UNCERTAINTY</text>
+    <text x="1110" y="925">VISIBLE AT EVERY SCALE</text>
+  </g>
+</svg>
