@@ -1,0 +1,166 @@
+name: PainMap production Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: painmap-pages-production
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Validate and package production site
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out exact production revision
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate static, release, UI, fixture, and freshness contracts
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run check
+          npm run freshness:sources
+          git diff --exit-code
+          python3 -m py_compile \
+            clients/python/painmap_client.py \
+            examples/load_place_profile.py
+
+      - name: Smoke-test the exact packaged tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/painmap-pages-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 40); do
+            curl --fail --silent --show-error http://127.0.0.1:4173/ >/dev/null && break
+            sleep 0.25
+          done
+          curl --fail --silent --show-error http://127.0.0.1:4173/ >/dev/null
+          npm run smoke:endpoints
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build production Pages artifact
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Upload production Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    name: Deploy exact validated artifact
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  verify:
+    name: Verify rendered production contract
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PRODUCTION_URL: https://painmaps.org
+    steps:
+      - name: Wait for and verify the custom-domain deployment
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="${PRODUCTION_URL%/}"
+          revision="${GITHUB_SHA}"
+
+          verified=false
+          for attempt in $(seq 1 36); do
+            if curl --fail --location --silent --show-error \
+                -H 'Cache-Control: no-cache' \
+                "${base}/?revision=${revision}" > /tmp/painmap-home.html \
+              && grep -Fq 'data-brand="evidence-contours-v1"' /tmp/painmap-home.html \
+              && grep -Fq 'What is known.' /tmp/painmap-home.html \
+              && grep -Fq 'See the evidence. See its limits.' /tmp/painmap-home.html; then
+              verified=true
+              break
+            fi
+            sleep 5
+          done
+
+          if [ "$verified" != true ]; then
+            echo 'The custom domain did not serve the deployed Evidence Contours homepage.' >&2
+            exit 1
+          fi
+
+          curl --fail --location --silent --show-error \
+            -H 'Cache-Control: no-cache' \
+            "${base}/data/pain-drivers/?revision=${revision}" > /tmp/painmap-drivers.html
+          grep -Fq '24 source-backed candidate observations' /tmp/painmap-drivers.html
+          grep -Fq 'No cross-domain composite score' /tmp/painmap-drivers.html
+
+          curl --fail --location --silent --show-error \
+            -H 'Cache-Control: no-cache' \
+            "${base}/data/brand-system.json?revision=${revision}" > /tmp/painmap-brand.json
+          curl --fail --location --silent --show-error \
+            -H 'Cache-Control: no-cache' \
+            "${base}/data/candidates/country-data-expansion/validation-summary.json?revision=${revision}" > /tmp/painmap-candidate-validation.json
+
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          brand = json.loads(Path('/tmp/painmap-brand.json').read_text(encoding='utf-8'))
+          validation = json.loads(Path('/tmp/painmap-candidate-validation.json').read_text(encoding='utf-8'))
+
+          assert brand['brand_id'] == 'evidence-contours-v1'
+          assert brand['messaging']['promise'] == 'See the evidence. See its limits.'
+          assert brand['messaging']['campaign_line'] == 'What is known. What is inferred. What is missing.'
+
+          audit = validation['package_file_audit']
+          assert audit['file_count'] == 25
+          assert audit['files_verified'] == 25
+          assert audit['missing_files'] == []
+          assert audit['checksum_mismatches'] == []
+          assert audit['byte_mismatches'] == []
+
+          measurements = validation['proposed_measurements']
+          assert measurements['with_raw_values'] == 24
+          assert measurements['with_source_snapshot_ids'] == 24
+          assert validation['publication_gate']['publish_candidate_measurements'] is False
+          assert validation['current_release_after_candidate_review']['canonical_country_profiles'] == 2
+          PY
+
+          echo "Verified PainMap production revision ${revision} at ${base}."
