@@ -1,25 +1,29 @@
-# PainMap country data addition package
+# PainMap source-backed country data supplement
 
-Generated: 2026-07-04T16:35:05+00:00
+Generated: 2026-07-14T12:47:02Z
 
-This package supports adding country-level data for countries with no or little country context. It preserves the live site's product truth: animal-pain research is primary and the country globe is secondary context.
+## Added data
 
-`painmap.org` was accessible, but `painmaps.org` was not accessible in this session. Hidden PainMap JSON/CSV artifacts and source datasets were not directly fetchable through the browser/container, so this package is conservative: it contains country gap ledgers, source/coverage matrices, planned source snapshots, and measurement stubs, but no fabricated numeric values.
+- 8 countries: USA, CHN, JPN, DEU, GBR, RUS, IDN, MEX.
+- 24 populated candidate rows across land-animal slaughter, insecticide-use, and land-area contracts.
+- 4 captured source receipts with upstream URLs, retrieval timestamps, payload checksums, byte counts, and committed compact extracts.
+- A separate public WHO/World Bank mortality-linked context export with 741 observations across 191 PainMap-indexed countries.
+- Current PainMap ISO3 mappings reconciled against `v1/places/index.json`.
 
-## Countries promoted
+## Publication decision
 
-None.
+**No country was promoted.** All rows remain candidate scoped. The active `2026-05-31.atlas.2` release and canonical `data/place-measurements.json` are unchanged.
 
-## Main blockers
+## Remaining blockers
 
-- Machine-readable PainMap coverage artifacts were not fetchable.
-- Source datasets were not fetched, checksummed, or parsed here.
-- Fishcount, Rethink Priorities, and Wild Animal Initiative sources require terms/redistribution review before data reuse beyond citation/reference.
-- OWID pages are generally open, but OWID states third-party materials are subject to provider licenses; each grapher dataset's metadata and original provider terms must be checked.
+- Final review of the original FAO/OWID provider terms and attribution.
+- Manual review of species aggregation, proxy semantics, country-year comparability, and UI caveats.
+- Completion of remaining canonical source groups, especially aquatic-animal inputs and population/agricultural-land context.
+- A new immutable release build and release note if promotion is approved.
 
-## Exact UI caveats
+## Required UI caveats
 
 1. “This country card is a context proxy, not a direct measurement of total pain.”
-2. “Do not compare countries unless the same layer, unit, evidence kind, ranking mode, and reference period are shown.”
-3. “Boundary-only/no-data countries are shown for geographic orientation, not ranked pain estimates.”
-4. “Source vintage and reference period may differ by layer; check the audit drawer before comparing.”
+2. “Country reference years may differ; compare only rows with the same metric, unit, method version, and reference-period semantics.”
+3. “Insecticide tonnage is not a count of insects harmed, and land area is not a census of wild animals.”
+4. “Candidate data is excluded from default rankings until release review and promotion.”

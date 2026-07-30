@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T16:35:05+00:00",
+  "generated_at": "2026-07-14T12:47:02Z",
   "release_candidate_id": "release-candidate-2026-07-country-context-v0",
   "rows": [
     {
@@ -49,6 +49,13 @@
       "label": "geoBoundaries license check",
       "license_uri": "https://www.geoboundaries.org/",
       "redistribution_status": "verify_per_dataset_before_release"
+    },
+    {
+      "license_id": "cc-by-4.0",
+      "label": "Creative Commons Attribution 4.0 International",
+      "license_uri": "https://creativecommons.org/licenses/by/4.0/",
+      "redistribution_status": "permitted_with_attribution",
+      "notes": "Applies to the selected World Bank indicator pages used by the WHO mortality-context supplement; preserve source-level attribution."
     }
   ]
 }

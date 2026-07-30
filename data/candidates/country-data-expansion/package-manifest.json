@@ -1,100 +1,125 @@
 {
-  "generated_at": "2026-07-04T16:35:05+00:00",
+  "generated_at": "2026-07-14T12:47:02Z",
   "files": [
     {
       "file": "README.md",
-      "sha256": "212e45a3d23e45e004c9be1b49dd798db3a4bf334a7c8940a4e6150fd79a756d",
-      "bytes": 441
+      "sha256": "884f0081d459bbda14bebf2973a13ff149ccdedb447315f7c766f70697baafdc",
+      "bytes": 895
     },
     {
       "file": "assumptions-method-notes.json",
-      "sha256": "53438eedeb7a5f6d77ab5fa6336f459e868333d0e7a9609414ab66d6c27de76c",
-      "bytes": 4039
+      "sha256": "0b49046a656547c0c7fa7da700af75aff39bf5b50e1a03d878a676328aa8c406",
+      "bytes": 4428
     },
     {
       "file": "assumptions-method-notes.md",
-      "sha256": "68cc4754854ca60f7cedfcbdbf834f53581e36b94b9bfa9e0f43f55df7c47363",
-      "bytes": 4070
+      "sha256": "8247f05f5ed3b194a45b025f3cb8cfe89beb126fb3ec205843791ed1890aaee3",
+      "bytes": 1205
     },
     {
       "file": "codex-pr-checklist.md",
-      "sha256": "f0aecafa28a729f62b8497076435e2e9f214ff058090d84c651ab3c0c4976373",
-      "bytes": 1046
+      "sha256": "7fa6ab39e48105a197ae3d0118fffe0fb4ee3eab40999f42f285dfc50c45c2a9",
+      "bytes": 990
     },
     {
       "file": "country-gap-ledger.csv",
-      "sha256": "ee9efbd8b7669068a3395b8bad6e1defb4a879f690254c2a36d7e3859a342c15",
-      "bytes": 107269
+      "sha256": "cca43ce3c90bd95b9c28ab9889d94ac70b7aa6989bd8e4f68d25600e80fc65d9",
+      "bytes": 107827
     },
     {
       "file": "country-gap-ledger.json",
-      "sha256": "edc0718bd6fef8207449ccca0dedee5a34732447158d4b536d8a0511f7763fdb",
-      "bytes": 202121
+      "sha256": "b6a597b0d6736aa0a6e75b8c60e032bd1bd47b692e2835325645bc98f5519164",
+      "bytes": 202952
     },
     {
       "file": "country-promotion-decisions.csv",
-      "sha256": "7aefb60bea8ec05e75bc7b0f329786b1e78a56223656b1b35f617967039d4692",
-      "bytes": 94117
+      "sha256": "88f1885bc4abc53aaecee017126c86af4abf2758104b15ed0832816584f5acc8",
+      "bytes": 95099
     },
     {
       "file": "country-promotion-decisions.json",
-      "sha256": "21708a81007f80090729c3eb6e84e6e109badbaf4065fe150f9151a9b6a62a34",
-      "bytes": 156373
+      "sha256": "fdd2f85cc6440ef206e364658e1ee950cb3f0f3c2981709bdd3f3f9a01e2dba3",
+      "bytes": 157644
     },
     {
       "file": "country-source-coverage.csv",
-      "sha256": "fb04ab3de78997ff608099a746f02b5f4d7fe00e5b924269b13645310e1d6e92",
-      "bytes": 594509
+      "sha256": "8b43fcfb6ee270e4b931fd00c9025405bcec79788e7b8ef4fbb7a2187cf2b2c0",
+      "bytes": 596418
     },
     {
       "file": "final-report.md",
-      "sha256": "a4661427e8b12d0a0dce4fc1a57d195b32da1746ec5dbe24f6e6289d6c7ebf8e",
-      "bytes": 1627
+      "sha256": "5b6950c46ca01cd38ce46e1e2bf696e33aded9d98c0c521f7708ff8ba23c3168",
+      "bytes": 1633
     },
     {
       "file": "license-registry-additions.csv",
-      "sha256": "2b75938962d85c364eca745eee180907703e82d413d9af95ddd3cd9a3d054478",
-      "bytes": 1166
+      "sha256": "949c49879ac60120257ddbd63566316d92d386ae701dadd8fa4d1f172e45e1b8",
+      "bytes": 1432
     },
     {
       "file": "license-registry-additions.json",
-      "sha256": "06be0aa6b5c3b402752a385c5e22ff5ce816d19e482532039e13cbc4eb4407f9",
-      "bytes": 2134
+      "sha256": "875d9a374c8a5831bffdf54f0b9a0a7c7eb4d85b7bf983813be034ad5c14d7da",
+      "bytes": 2519
     },
     {
       "file": "proposed-country-measurements.csv",
-      "sha256": "9cb66f285688b7412b16843b95346a274fc7ff7ffa6a141aa31fde24fbc330f3",
-      "bytes": 1418891
+      "sha256": "af236e57632a56f5677b34c38c7baa579ccd0dae255e9c59b0c8e1d1b48d9e1c",
+      "bytes": 1427909
     },
     {
       "file": "proposed-country-measurements.json",
-      "sha256": "5d9852a24062b70c5e34135e4e42c2772bc2d87dce0fec09f690ff3fcd202aa9",
-      "bytes": 2933484
+      "sha256": "05d0a32fd81d50fe6f2273262632511b24ec7b2f3ecefc3bb8da839a6c51dd8f",
+      "bytes": 2944529
     },
     {
       "file": "release-coverage-summary.json",
-      "sha256": "de38850e064c739178b9e9fa466b45ae864bd64bb7f9a2c4b5c3738216930282",
-      "bytes": 1421
+      "sha256": "d1aff5c0868c9195750bfe191d6680626904ab96bb1906b0e36d910ea15cb9ba",
+      "bytes": 1675
     },
     {
       "file": "release-notes-draft.md",
-      "sha256": "ef67a2ebf0efdf846a7dfbc9b8d3e1c0c87398f5852c1d729bb8807deb11dafe",
-      "bytes": 441
+      "sha256": "dea9d6b0a3d328b649202879d5cfb92a1cb89af4a8ed27a5997cd3b3dfa5ef12",
+      "bytes": 876
+    },
+    {
+      "file": "source-backed-country-summary.json",
+      "sha256": "c4b5fb4dc9023f9a96ebd09dea6531d94f47081636601c19fa5a2059f0d35571",
+      "bytes": 1693
+    },
+    {
+      "file": "source-extracts/owid-insecticide-use.json",
+      "sha256": "6ca432c5547897f87146a221c3a0810353e1e4d613786aab19738cff75e0c173",
+      "bytes": 4418
+    },
+    {
+      "file": "source-extracts/owid-land-animals-slaughtered.json",
+      "sha256": "6cc2a31131acb4fdbdbd94f893d07b185360e6172d2bd3c491d06e186c63f6d8",
+      "bytes": 18016
+    },
+    {
+      "file": "source-extracts/world-bank-land-area.json",
+      "sha256": "70f83d96ce37cddce4877b8ac525fbd10f1ac26428ac6dfb3be8c169a44b31ee",
+      "bytes": 2456
+    },
+    {
+      "file": "source-extracts/world-bank-who-mortality-context.json",
+      "sha256": "727bb023ea6fdce6d1f980377c6c40648e57b5847261a10b0398a2ea3eb78cee",
+      "bytes": 198700
     },
     {
       "file": "source-registry-additions.csv",
-      "sha256": "de638166fcc5aef579bf0a537f6c74d538e4e1befdffed6d986012b452bc4159",
-      "bytes": 6385
+      "sha256": "c29003f8a9f3aaab2714f648f27f922e6bc74026991ee8999207fb78d1f0bdc9",
+      "bytes": 7204
     },
     {
       "file": "source-registry-additions.json",
-      "sha256": "946c073e7182edcef4122c1c9c386803eced5f0f7af6fcd377462c99201e3351",
-      "bytes": 10667
+      "sha256": "8b40ea60c9cb226918c1b4aad8e17c99660d0cb7a3be5315b1303b4fcc2916c4",
+      "bytes": 11828
     },
     {
       "file": "source-snapshots.json",
-      "sha256": "8a180e1f0692218ad8260f526912d3ae060cf8d50d8b5725d5d230740ef05ee6",
-      "bytes": 13955
+      "sha256": "8c88aa33eef3ebe86b923416d4e5b6cbe7ac25bb48ed6a630dae980cf74c2abd",
+      "bytes": 21409
     },
     {
       "file": "ux-recommendations.json",
