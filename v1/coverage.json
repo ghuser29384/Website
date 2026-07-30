@@ -34,10 +34,10 @@
       "excluded_countries": 0,
       "candidate_review": {
         "release_candidate_id": "release-candidate-2026-07-country-context-v0",
-        "status": "blocked",
+        "status": "manual_review_required",
         "publish_candidate_measurements": false,
         "proposed_measurements": 1743,
-        "proposed_measurements_with_raw_values": 0,
+        "proposed_measurements_with_raw_values": 24,
         "planned_source_snapshots": 14,
         "captured_source_snapshots": 4,
         "candidate_promotions": 0,

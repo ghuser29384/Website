@@ -94,20 +94,20 @@
   "candidate_review": {
     "candidate_package_present": true,
     "package_path": "data/candidates/country-data-expansion",
-    "generated_at": "2026-07-04T16:35:05+00:00",
+    "generated_at": "2026-07-14T12:47:02Z",
     "release_candidate_id": "release-candidate-2026-07-country-context-v0",
-    "implementation_decision": "staged_only_not_promoted",
+    "implementation_decision": "requires_manual_release_review_before_promotion",
     "package_file_audit": {
-      "file_count": 20,
-      "files_verified": 20,
+      "file_count": 25,
+      "files_verified": 25,
       "missing_files": [],
       "checksum_mismatches": [],
       "byte_mismatches": []
     },
     "publication_gate": {
-      "status": "blocked",
+      "status": "manual_review_required",
       "publish_candidate_measurements": false,
-      "reason": "Candidate package contains no publishable source-backed measurement rows: source snapshots, verified numeric values, and method QA are incomplete."
+      "reason": "Candidate package contains value-like rows, but release promotion still requires manual source, license, method, and UX review."
     },
     "source_snapshots": {
       "planned_count": 14,
@@ -117,14 +117,16 @@
     },
     "proposed_measurements": {
       "row_count": 1743,
-      "with_raw_values": 0,
-      "with_source_snapshot_ids": 0,
-      "publication_ready_rows": 0,
+      "with_raw_values": 24,
+      "with_source_snapshot_ids": 24,
+      "publication_ready_rows": 24,
       "coverage_status_counts": {
-        "not_promoted": 1743
+        "candidate_source_backed_manual_review": 24,
+        "not_promoted": 1719
       },
       "promotion_decision_counts": {
-        "blocked_pending_source_snapshot_and_QA": 1743
+        "blocked_pending_source_snapshot_and_QA": 1719,
+        "manual_review_required_not_promoted": 24
       },
       "layer_counts": {
         "factory-farmed-animals": 249,
@@ -150,13 +152,18 @@
       "promote_to_canonical": 0,
       "not_promoted": 249,
       "candidate_status_counts": {
-        "not_promoted": 249
+        "not_promoted": 241,
+        "source_backed_partial_manual_review": 8
       },
       "blocking_reason_counts": {
-        "licenses not fully verified": 249,
-        "numeric values not fetched/QAed": 249,
-        "PainMap hidden coverage artifacts not fetched": 249,
-        "source snapshots not captured": 249
+        "candidate package has not been promoted into the immutable release": 8,
+        "candidate rows require manual source and method review": 8,
+        "licenses not fully verified": 241,
+        "numeric values not fetched/QAed": 241,
+        "OWID original-provider terms require final license review": 8,
+        "PainMap hidden coverage artifacts not fetched": 241,
+        "remaining canonical country-profile source groups are incomplete": 8,
+        "source snapshots not captured": 241
       }
     },
     "country_universe": {
@@ -186,7 +193,7 @@
         "UMI"
       ]
     },
-    "package_context_note": "The package was generated without current PainMap release artifacts; this build maps candidate rows against the local release artifacts instead.",
+    "package_context_note": "Candidate package mapped against local release artifacts.",
     "current_release_after_candidate_review": {
       "canonical_country_profiles": 2,
       "boundary_only_countries": 237,
@@ -208,10 +215,10 @@
     "excluded_countries": 0,
     "candidate_review": {
       "release_candidate_id": "release-candidate-2026-07-country-context-v0",
-      "status": "blocked",
+      "status": "manual_review_required",
       "publish_candidate_measurements": false,
       "proposed_measurements": 1743,
-      "proposed_measurements_with_raw_values": 0,
+      "proposed_measurements_with_raw_values": 24,
       "planned_source_snapshots": 14,
       "captured_source_snapshots": 4,
       "candidate_promotions": 0,
@@ -2469,28 +2476,26 @@
       "geometry_level": "country",
       "coverage_status": "boundary_index_only",
       "gap_status": "boundary_only",
-      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because source snapshots not captured; licenses not fully verified; numeric values not fetched or QAed.",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because licenses not fully verified.",
       "missing_inputs": [
         "identity",
         "geometry",
         "population_denominator",
         "land_area_context",
         "core_socioeconomic_proxy",
-        "candidate_source_snapshot",
-        "candidate_license_review",
-        "candidate_numeric_value_QA"
+        "candidate_license_review"
       ],
       "eligible_for_promotion": false,
       "last_seen_in_release": "2026-05-31",
-      "candidate_status": "not_promoted",
+      "candidate_status": "source_backed_partial_manual_review",
       "candidate_promote_to_canonical": false,
       "candidate_blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "candidate_next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "candidate_next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "place_id": "GHA",
@@ -3000,28 +3005,26 @@
       "geometry_level": "country",
       "coverage_status": "boundary_index_only",
       "gap_status": "boundary_only",
-      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because source snapshots not captured; licenses not fully verified; numeric values not fetched or QAed.",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because licenses not fully verified.",
       "missing_inputs": [
         "identity",
         "geometry",
         "population_denominator",
         "land_area_context",
         "core_socioeconomic_proxy",
-        "candidate_source_snapshot",
-        "candidate_license_review",
-        "candidate_numeric_value_QA"
+        "candidate_license_review"
       ],
       "eligible_for_promotion": false,
       "last_seen_in_release": "2026-05-31",
-      "candidate_status": "not_promoted",
+      "candidate_status": "source_backed_partial_manual_review",
       "candidate_promote_to_canonical": false,
       "candidate_blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "candidate_next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "candidate_next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "place_id": "IRN",
@@ -3270,28 +3273,26 @@
       "geometry_level": "country",
       "coverage_status": "boundary_index_only",
       "gap_status": "boundary_only",
-      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because source snapshots not captured; licenses not fully verified; numeric values not fetched or QAed.",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because licenses not fully verified.",
       "missing_inputs": [
         "identity",
         "geometry",
         "population_denominator",
         "land_area_context",
         "core_socioeconomic_proxy",
-        "candidate_source_snapshot",
-        "candidate_license_review",
-        "candidate_numeric_value_QA"
+        "candidate_license_review"
       ],
       "eligible_for_promotion": false,
       "last_seen_in_release": "2026-05-31",
-      "candidate_status": "not_promoted",
+      "candidate_status": "source_backed_partial_manual_review",
       "candidate_promote_to_canonical": false,
       "candidate_blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "candidate_next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "candidate_next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "place_id": "JEY",
@@ -4105,28 +4106,26 @@
       "geometry_level": "country",
       "coverage_status": "boundary_index_only",
       "gap_status": "boundary_only",
-      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because source snapshots not captured; licenses not fully verified; numeric values not fetched or QAed.",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because licenses not fully verified.",
       "missing_inputs": [
         "identity",
         "geometry",
         "population_denominator",
         "land_area_context",
         "core_socioeconomic_proxy",
-        "candidate_source_snapshot",
-        "candidate_license_review",
-        "candidate_numeric_value_QA"
+        "candidate_license_review"
       ],
       "eligible_for_promotion": false,
       "last_seen_in_release": "2026-05-31",
-      "candidate_status": "not_promoted",
+      "candidate_status": "source_backed_partial_manual_review",
       "candidate_promote_to_canonical": false,
       "candidate_blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "candidate_next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "candidate_next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "place_id": "MDA",
@@ -5035,28 +5034,26 @@
       "geometry_level": "country",
       "coverage_status": "boundary_index_only",
       "gap_status": "boundary_only",
-      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because source snapshots not captured; licenses not fully verified; numeric values not fetched or QAed.",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because licenses not fully verified.",
       "missing_inputs": [
         "identity",
         "geometry",
         "population_denominator",
         "land_area_context",
         "core_socioeconomic_proxy",
-        "candidate_source_snapshot",
-        "candidate_license_review",
-        "candidate_numeric_value_QA"
+        "candidate_license_review"
       ],
       "eligible_for_promotion": false,
       "last_seen_in_release": "2026-05-31",
-      "candidate_status": "not_promoted",
+      "candidate_status": "source_backed_partial_manual_review",
       "candidate_promote_to_canonical": false,
       "candidate_blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "candidate_next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "candidate_next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "place_id": "PER",
@@ -5335,28 +5332,26 @@
       "geometry_level": "country",
       "coverage_status": "boundary_index_only",
       "gap_status": "boundary_only",
-      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because source snapshots not captured; licenses not fully verified; numeric values not fetched or QAed.",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because licenses not fully verified.",
       "missing_inputs": [
         "identity",
         "geometry",
         "population_denominator",
         "land_area_context",
         "core_socioeconomic_proxy",
-        "candidate_source_snapshot",
-        "candidate_license_review",
-        "candidate_numeric_value_QA"
+        "candidate_license_review"
       ],
       "eligible_for_promotion": false,
       "last_seen_in_release": "2026-05-31",
-      "candidate_status": "not_promoted",
+      "candidate_status": "source_backed_partial_manual_review",
       "candidate_promote_to_canonical": false,
       "candidate_blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "candidate_next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "candidate_next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "place_id": "RWA",
@@ -6940,28 +6935,26 @@
       "geometry_level": "country",
       "coverage_status": "boundary_index_only",
       "gap_status": "boundary_only",
-      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because source snapshots not captured; licenses not fully verified; numeric values not fetched or QAed.",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because licenses not fully verified.",
       "missing_inputs": [
         "identity",
         "geometry",
         "population_denominator",
         "land_area_context",
         "core_socioeconomic_proxy",
-        "candidate_source_snapshot",
-        "candidate_license_review",
-        "candidate_numeric_value_QA"
+        "candidate_license_review"
       ],
       "eligible_for_promotion": false,
       "last_seen_in_release": "2026-05-31",
-      "candidate_status": "not_promoted",
+      "candidate_status": "source_backed_partial_manual_review",
       "candidate_promote_to_canonical": false,
       "candidate_blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "candidate_next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "candidate_next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "place_id": "USA",
@@ -6970,28 +6963,26 @@
       "geometry_level": "country",
       "coverage_status": "boundary_index_only",
       "gap_status": "boundary_only",
-      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because source snapshots not captured; licenses not fully verified; numeric values not fetched or QAed.",
+      "coverage_reason": "Boundary is indexed but minimum canonical profile input gate has not been satisfied. Candidate expansion remains blocked because licenses not fully verified.",
       "missing_inputs": [
         "identity",
         "geometry",
         "population_denominator",
         "land_area_context",
         "core_socioeconomic_proxy",
-        "candidate_source_snapshot",
-        "candidate_license_review",
-        "candidate_numeric_value_QA"
+        "candidate_license_review"
       ],
       "eligible_for_promotion": false,
       "last_seen_in_release": "2026-05-31",
-      "candidate_status": "not_promoted",
+      "candidate_status": "source_backed_partial_manual_review",
       "candidate_promote_to_canonical": false,
       "candidate_blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "candidate_next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "candidate_next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "place_id": "VIR",
