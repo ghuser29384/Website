@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T16:35:05+00:00",
+  "generated_at": "2026-07-14T12:47:02Z",
   "release_candidate_id": "release-candidate-2026-07-country-context-v0",
   "rows": [
     {
@@ -651,16 +651,16 @@
       "iso3": "CHN",
       "display_name": "China",
       "place_id_candidate": "country:CHN",
-      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "candidate_status": "not_promoted",
+      "current_status": "boundary_index_only_in_active_release",
+      "candidate_status": "source_backed_partial_manual_review",
       "promote_to_canonical": false,
       "blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "iso3": "CIV",
@@ -891,16 +891,16 @@
       "iso3": "DEU",
       "display_name": "Germany",
       "place_id_candidate": "country:DEU",
-      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "candidate_status": "not_promoted",
+      "current_status": "boundary_index_only_in_active_release",
+      "candidate_status": "source_backed_partial_manual_review",
       "promote_to_canonical": false,
       "blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "iso3": "DJI",
@@ -1191,16 +1191,16 @@
       "iso3": "GBR",
       "display_name": "United Kingdom",
       "place_id_candidate": "country:GBR",
-      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "candidate_status": "not_promoted",
+      "current_status": "boundary_index_only_in_active_release",
+      "candidate_status": "source_backed_partial_manual_review",
       "promote_to_canonical": false,
       "blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "iso3": "GEO",
@@ -1536,16 +1536,16 @@
       "iso3": "IDN",
       "display_name": "Indonesia",
       "place_id_candidate": "country:IDN",
-      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "candidate_status": "not_promoted",
+      "current_status": "boundary_index_only_in_active_release",
+      "candidate_status": "source_backed_partial_manual_review",
       "promote_to_canonical": false,
       "blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "iso3": "IMN",
@@ -1731,16 +1731,16 @@
       "iso3": "JPN",
       "display_name": "Japan",
       "place_id_candidate": "country:JPN",
-      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "candidate_status": "not_promoted",
+      "current_status": "boundary_index_only_in_active_release",
+      "candidate_status": "source_backed_partial_manual_review",
       "promote_to_canonical": false,
       "blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "iso3": "KAZ",
@@ -2136,16 +2136,16 @@
       "iso3": "MEX",
       "display_name": "Mexico",
       "place_id_candidate": "country:MEX",
-      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "candidate_status": "not_promoted",
+      "current_status": "boundary_index_only_in_active_release",
+      "candidate_status": "source_backed_partial_manual_review",
       "promote_to_canonical": false,
       "blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "iso3": "MHL",
@@ -2841,16 +2841,16 @@
       "iso3": "RUS",
       "display_name": "Russian Federation",
       "place_id_candidate": "country:RUS",
-      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "candidate_status": "not_promoted",
+      "current_status": "boundary_index_only_in_active_release",
+      "candidate_status": "source_backed_partial_manual_review",
       "promote_to_canonical": false,
       "blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "iso3": "RWA",
@@ -3516,16 +3516,16 @@
       "iso3": "USA",
       "display_name": "United States",
       "place_id_candidate": "country:USA",
-      "current_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "candidate_status": "not_promoted",
+      "current_status": "boundary_index_only_in_active_release",
+      "candidate_status": "source_backed_partial_manual_review",
       "promote_to_canonical": false,
       "blocking_reasons": [
-        "PainMap hidden coverage artifacts not fetched",
-        "source snapshots not captured",
-        "licenses not fully verified",
-        "numeric values not fetched/QAed"
+        "candidate rows require manual source and method review",
+        "OWID original-provider terms require final license review",
+        "remaining canonical country-profile source groups are incomplete",
+        "candidate package has not been promoted into the immutable release"
       ],
-      "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
+      "next_action": "Review the three captured source groups, complete remaining source groups, then create a new immutable release rather than mutating the current release."
     },
     {
       "iso3": "UZB",
@@ -3737,5 +3737,6 @@
       ],
       "next_action": "Run Codex release compiler task to fetch source snapshots, fill values, validate licenses, and update coverage summary."
     }
-  ]
+  ],
+  "source_backed_partial_country_count": 8
 }

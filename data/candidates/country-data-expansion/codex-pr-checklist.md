@@ -1,12 +1,13 @@
-# Codex PR checklist: add country context data
+# PR checklist: source-backed country candidate supplement
 
-1. Fetch PainMap current release artifacts and reconcile this ISO country universe with the actual place identity registry.
-2. Capture source snapshots for each required dataset; fill retrieval timestamp, checksum, byte size, source vintage, and license metadata.
-3. Parse source datasets through release compiler modules.
-4. Populate real measurement values only where source, license, reference-period, method, and QA gates pass.
-5. Update country-source coverage rows to `present`, `stale`, `missing`, `license_blocked`, or `qa_failed`.
-6. Promote countries only when all required source groups pass.
-7. Keep Fishcount-derived values blocked until redistribution permission or terms are confirmed.
-8. Regenerate release coverage summary and route/indexing policy.
-9. Ensure compare views block/warn on incompatible evidence kind, unit, ranking mode, reference period, or comparability group.
-10. Run schema, snapshot, source/license, method/transform, coverage, UX, and artifact checksum tests.
+- [x] Reconcile target ISO3 identifiers with the current PainMap place registry.
+- [x] Capture source payload receipts with retrieval timestamps, checksums, and byte sizes.
+- [x] Commit compact selected-row extracts for the populated metrics.
+- [x] Populate only verified numeric source rows; leave all other stubs unchanged.
+- [x] Keep every candidate country non-canonical and excluded from active-release rankings.
+- [x] Add an offline validation command for candidate rows, extracts, decisions, package hashes, and the public context export.
+- [x] Preserve CC BY 4.0 license and WHO/World Bank attribution for the public mortality-context rows.
+- [ ] Complete original-provider license review for OWID/FAO-backed rows.
+- [ ] Review land-animal aggregation, proxy semantics, and country-year comparability.
+- [ ] Complete remaining canonical source groups.
+- [ ] Approve UX caveats and publish through a new immutable release.

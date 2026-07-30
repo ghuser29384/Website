@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T16:35:05+00:00",
+  "generated_at": "2026-07-14T12:47:02Z",
   "release_candidate_id": "release-candidate-2026-07-country-context-v0",
   "country_universe_basis": "pycountry ISO 3166-1; PainMap place registry reconciliation required",
   "rows": [
@@ -568,12 +568,12 @@
       "display_name": "China",
       "official_name": "People's Republic of China",
       "place_id_candidate": "country:CHN",
-      "painmap_place_id_status": "needs_mapping_to_current_place_registry",
-      "current_coverage_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "current_visible_country_fields_layers": "",
-      "missing_required_inputs": "all canonical country-profile source groups require source snapshots and QA in release compiler",
-      "proposed_promotion_status_after_research": "not_promoted_yet__candidate_pending_source_snapshots_license_and_QA",
-      "reason_if_still_not_promotable": "browser could verify homepage/source pages but could not fetch PainMap machine artifacts or source datasets; no values invented"
+      "painmap_place_id_status": "mapped_to_current_place_registry",
+      "current_coverage_status": "boundary_index_only",
+      "current_visible_country_fields_layers": "factory-farmed-animals; insects-insecticide-proxy; wild-animal-land-proxy-denominator (candidate only)",
+      "missing_required_inputs": "remaining aquatic-animal sources; population/agricultural-land context; welfare-range source review; manual license/method/UX review",
+      "proposed_promotion_status_after_research": "source_backed_partial_candidate__not_promoted",
+      "reason_if_still_not_promotable": "Three source groups now have numeric rows and checksum receipts, but the canonical country-profile gate and manual release review are incomplete."
     },
     {
       "iso3": "CIV",
@@ -776,12 +776,12 @@
       "display_name": "Germany",
       "official_name": "Federal Republic of Germany",
       "place_id_candidate": "country:DEU",
-      "painmap_place_id_status": "needs_mapping_to_current_place_registry",
-      "current_coverage_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "current_visible_country_fields_layers": "",
-      "missing_required_inputs": "all canonical country-profile source groups require source snapshots and QA in release compiler",
-      "proposed_promotion_status_after_research": "not_promoted_yet__candidate_pending_source_snapshots_license_and_QA",
-      "reason_if_still_not_promotable": "browser could verify homepage/source pages but could not fetch PainMap machine artifacts or source datasets; no values invented"
+      "painmap_place_id_status": "mapped_to_current_place_registry",
+      "current_coverage_status": "boundary_index_only",
+      "current_visible_country_fields_layers": "factory-farmed-animals; insects-insecticide-proxy; wild-animal-land-proxy-denominator (candidate only)",
+      "missing_required_inputs": "remaining aquatic-animal sources; population/agricultural-land context; welfare-range source review; manual license/method/UX review",
+      "proposed_promotion_status_after_research": "source_backed_partial_candidate__not_promoted",
+      "reason_if_still_not_promotable": "Three source groups now have numeric rows and checksum receipts, but the canonical country-profile gate and manual release review are incomplete."
     },
     {
       "iso3": "DJI",
@@ -1036,12 +1036,12 @@
       "display_name": "United Kingdom",
       "official_name": "United Kingdom of Great Britain and Northern Ireland",
       "place_id_candidate": "country:GBR",
-      "painmap_place_id_status": "needs_mapping_to_current_place_registry",
-      "current_coverage_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "current_visible_country_fields_layers": "",
-      "missing_required_inputs": "all canonical country-profile source groups require source snapshots and QA in release compiler",
-      "proposed_promotion_status_after_research": "not_promoted_yet__candidate_pending_source_snapshots_license_and_QA",
-      "reason_if_still_not_promotable": "browser could verify homepage/source pages but could not fetch PainMap machine artifacts or source datasets; no values invented"
+      "painmap_place_id_status": "mapped_to_current_place_registry",
+      "current_coverage_status": "boundary_index_only",
+      "current_visible_country_fields_layers": "factory-farmed-animals; insects-insecticide-proxy; wild-animal-land-proxy-denominator (candidate only)",
+      "missing_required_inputs": "remaining aquatic-animal sources; population/agricultural-land context; welfare-range source review; manual license/method/UX review",
+      "proposed_promotion_status_after_research": "source_backed_partial_candidate__not_promoted",
+      "reason_if_still_not_promotable": "Three source groups now have numeric rows and checksum receipts, but the canonical country-profile gate and manual release review are incomplete."
     },
     {
       "iso3": "GEO",
@@ -1335,12 +1335,12 @@
       "display_name": "Indonesia",
       "official_name": "Republic of Indonesia",
       "place_id_candidate": "country:IDN",
-      "painmap_place_id_status": "needs_mapping_to_current_place_registry",
-      "current_coverage_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "current_visible_country_fields_layers": "",
-      "missing_required_inputs": "all canonical country-profile source groups require source snapshots and QA in release compiler",
-      "proposed_promotion_status_after_research": "not_promoted_yet__candidate_pending_source_snapshots_license_and_QA",
-      "reason_if_still_not_promotable": "browser could verify homepage/source pages but could not fetch PainMap machine artifacts or source datasets; no values invented"
+      "painmap_place_id_status": "mapped_to_current_place_registry",
+      "current_coverage_status": "boundary_index_only",
+      "current_visible_country_fields_layers": "factory-farmed-animals; insects-insecticide-proxy; wild-animal-land-proxy-denominator (candidate only)",
+      "missing_required_inputs": "remaining aquatic-animal sources; population/agricultural-land context; welfare-range source review; manual license/method/UX review",
+      "proposed_promotion_status_after_research": "source_backed_partial_candidate__not_promoted",
+      "reason_if_still_not_promotable": "Three source groups now have numeric rows and checksum receipts, but the canonical country-profile gate and manual release review are incomplete."
     },
     {
       "iso3": "IMN",
@@ -1504,12 +1504,12 @@
       "display_name": "Japan",
       "official_name": "",
       "place_id_candidate": "country:JPN",
-      "painmap_place_id_status": "needs_mapping_to_current_place_registry",
-      "current_coverage_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "current_visible_country_fields_layers": "",
-      "missing_required_inputs": "all canonical country-profile source groups require source snapshots and QA in release compiler",
-      "proposed_promotion_status_after_research": "not_promoted_yet__candidate_pending_source_snapshots_license_and_QA",
-      "reason_if_still_not_promotable": "browser could verify homepage/source pages but could not fetch PainMap machine artifacts or source datasets; no values invented"
+      "painmap_place_id_status": "mapped_to_current_place_registry",
+      "current_coverage_status": "boundary_index_only",
+      "current_visible_country_fields_layers": "factory-farmed-animals; insects-insecticide-proxy; wild-animal-land-proxy-denominator (candidate only)",
+      "missing_required_inputs": "remaining aquatic-animal sources; population/agricultural-land context; welfare-range source review; manual license/method/UX review",
+      "proposed_promotion_status_after_research": "source_backed_partial_candidate__not_promoted",
+      "reason_if_still_not_promotable": "Three source groups now have numeric rows and checksum receipts, but the canonical country-profile gate and manual release review are incomplete."
     },
     {
       "iso3": "KAZ",
@@ -1855,12 +1855,12 @@
       "display_name": "Mexico",
       "official_name": "United Mexican States",
       "place_id_candidate": "country:MEX",
-      "painmap_place_id_status": "needs_mapping_to_current_place_registry",
-      "current_coverage_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "current_visible_country_fields_layers": "",
-      "missing_required_inputs": "all canonical country-profile source groups require source snapshots and QA in release compiler",
-      "proposed_promotion_status_after_research": "not_promoted_yet__candidate_pending_source_snapshots_license_and_QA",
-      "reason_if_still_not_promotable": "browser could verify homepage/source pages but could not fetch PainMap machine artifacts or source datasets; no values invented"
+      "painmap_place_id_status": "mapped_to_current_place_registry",
+      "current_coverage_status": "boundary_index_only",
+      "current_visible_country_fields_layers": "factory-farmed-animals; insects-insecticide-proxy; wild-animal-land-proxy-denominator (candidate only)",
+      "missing_required_inputs": "remaining aquatic-animal sources; population/agricultural-land context; welfare-range source review; manual license/method/UX review",
+      "proposed_promotion_status_after_research": "source_backed_partial_candidate__not_promoted",
+      "reason_if_still_not_promotable": "Three source groups now have numeric rows and checksum receipts, but the canonical country-profile gate and manual release review are incomplete."
     },
     {
       "iso3": "MHL",
@@ -2466,12 +2466,12 @@
       "display_name": "Russian Federation",
       "official_name": "",
       "place_id_candidate": "country:RUS",
-      "painmap_place_id_status": "needs_mapping_to_current_place_registry",
-      "current_coverage_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "current_visible_country_fields_layers": "",
-      "missing_required_inputs": "all canonical country-profile source groups require source snapshots and QA in release compiler",
-      "proposed_promotion_status_after_research": "not_promoted_yet__candidate_pending_source_snapshots_license_and_QA",
-      "reason_if_still_not_promotable": "browser could verify homepage/source pages but could not fetch PainMap machine artifacts or source datasets; no values invented"
+      "painmap_place_id_status": "mapped_to_current_place_registry",
+      "current_coverage_status": "boundary_index_only",
+      "current_visible_country_fields_layers": "factory-farmed-animals; insects-insecticide-proxy; wild-animal-land-proxy-denominator (candidate only)",
+      "missing_required_inputs": "remaining aquatic-animal sources; population/agricultural-land context; welfare-range source review; manual license/method/UX review",
+      "proposed_promotion_status_after_research": "source_backed_partial_candidate__not_promoted",
+      "reason_if_still_not_promotable": "Three source groups now have numeric rows and checksum receipts, but the canonical country-profile gate and manual release review are incomplete."
     },
     {
       "iso3": "RWA",
@@ -3051,12 +3051,12 @@
       "display_name": "United States",
       "official_name": "United States of America",
       "place_id_candidate": "country:USA",
-      "painmap_place_id_status": "needs_mapping_to_current_place_registry",
-      "current_coverage_status": "unknown_until_hidden_release_artifacts_fetchable",
-      "current_visible_country_fields_layers": "",
-      "missing_required_inputs": "all canonical country-profile source groups require source snapshots and QA in release compiler",
-      "proposed_promotion_status_after_research": "not_promoted_yet__candidate_pending_source_snapshots_license_and_QA",
-      "reason_if_still_not_promotable": "browser could verify homepage/source pages but could not fetch PainMap machine artifacts or source datasets; no values invented"
+      "painmap_place_id_status": "mapped_to_current_place_registry",
+      "current_coverage_status": "boundary_index_only",
+      "current_visible_country_fields_layers": "factory-farmed-animals; insects-insecticide-proxy; wild-animal-land-proxy-denominator (candidate only)",
+      "missing_required_inputs": "remaining aquatic-animal sources; population/agricultural-land context; welfare-range source review; manual license/method/UX review",
+      "proposed_promotion_status_after_research": "source_backed_partial_candidate__not_promoted",
+      "reason_if_still_not_promotable": "Three source groups now have numeric rows and checksum receipts, but the canonical country-profile gate and manual release review are incomplete."
     },
     {
       "iso3": "UZB",
@@ -3240,5 +3240,6 @@
       "proposed_promotion_status_after_research": "not_promoted_yet__candidate_pending_source_snapshots_license_and_QA",
       "reason_if_still_not_promotable": "browser could verify homepage/source pages but could not fetch PainMap machine artifacts or source datasets; no values invented"
     }
-  ]
+  ],
+  "source_backed_partial_country_count": 8
 }
