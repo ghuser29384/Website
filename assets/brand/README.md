@@ -10,6 +10,8 @@ The live static site is generated from three source layers:
 
 Run `npm run build:data` to regenerate the static site and apply the brand. The script fingerprints both stylesheets, writes Subresource Integrity metadata and records the active system in `data/brand-system.json`.
 
+Before production materialization, synchronize the current `main` data and release state. The generated routes and manifests must then rebuild under the reproducible clock with zero artifact drift. Brand application must not change evidence classifications, uncertainty, provenance, licensing, comparability, or release promotion decisions.
+
 Core proposition: **What is known. What is inferred. What is missing.**
 
 Brand promise: **See the evidence. See its limits.**
