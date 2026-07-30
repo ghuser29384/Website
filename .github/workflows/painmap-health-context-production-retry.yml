@@ -1,0 +1,224 @@
+name: PainMap health-pressure production retry
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/painmap-health-context-production-retry.yml
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: painmap-health-context-production
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    outputs:
+      sha: ${{ steps.commit.outputs.sha }}
+      observations: ${{ steps.verify.outputs.observations }}
+      countries: ${{ steps.verify.outputs.countries }}
+      indicators: ${{ steps.verify.outputs.indicators }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Refresh source-backed dataset with bounded retries
+        shell: bash
+        run: |
+          set -euo pipefail
+          builder='scripts/build-human-health-pressure-context.py'
+          test -f "$builder"
+          help_text="$(python3 "$builder" --help 2>&1 || true)"
+          args=()
+          if grep -q -- '--refresh' <<<"$help_text"; then args=(--refresh); elif grep -q -- '--publish' <<<"$help_text"; then args=(--publish); fi
+          for attempt in 1 2 3 4; do
+            if python3 "$builder" "${args[@]}"; then
+              exit 0
+            fi
+            if [ "$attempt" -eq 4 ]; then
+              exit 1
+            fi
+            sleep $((attempt * 20))
+          done
+
+      - name: Verify payload semantics and parity
+        id: verify
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import csv, json, os
+          from pathlib import Path
+          files = {
+            'json': Path('data/human-health-pressure-context.json'),
+            'csv': Path('data/human-health-pressure-context.csv'),
+            'schema': Path('schemas/human-health-pressure-context.schema.json'),
+            'route': Path('data/health-pressures/index.html'),
+            'receipt': Path('data/source-extracts/world-bank-health-pressure-context.json'),
+            'index': Path('data/pain-drivers.json'),
+          }
+          for name, path in files.items():
+              assert path.is_file() and path.stat().st_size > 50, f'{name} missing: {path}'
+          payload=json.loads(files['json'].read_text(encoding='utf-8'))
+          schema=json.loads(files['schema'].read_text(encoding='utf-8'))
+          receipt=json.loads(files['receipt'].read_text(encoding='utf-8'))
+          index=json.loads(files['index'].read_text(encoding='utf-8'))
+          observations=payload.get('observations',[])
+          countries=payload.get('place_summaries') or payload.get('country_summaries') or []
+          indicators=payload.get('indicators') or payload.get('indicator_registry') or []
+          assert payload.get('canonical_release') is False
+          assert len(observations) >= 500
+          assert len(countries) >= 100
+          assert len(indicators) >= 5
+          with files['csv'].open(newline='',encoding='utf-8') as stream:
+              rows=list(csv.DictReader(stream))
+          assert len(rows)==len(observations)
+          assert schema.get('$schema')=='https://json-schema.org/draft/2020-12/schema'
+          assert receipt.get('source_payloads') or receipt.get('payloads')
+          ids={x.get('dataset_id') for x in index.get('datasets',[])}
+          assert payload.get('dataset_id') in ids
+          policy=payload.get('comparison_policy') or index.get('comparison_policy') or {}
+          assert policy.get('overall_cross_domain_ranking_enabled') is False
+          html=files['route'].read_text(encoding='utf-8').lower()
+          for token in ('health-pressure','world bank','uncertainty'):
+              assert token in html
+          with open(os.environ['GITHUB_OUTPUT'],'a',encoding='utf-8') as out:
+              out.write(f'observations={len(observations)}\n')
+              out.write(f'countries={len(countries)}\n')
+              out.write(f'indicators={len(indicators)}\n')
+          print(json.dumps({'dataset_id':payload.get('dataset_id'),'observations':len(observations),'countries':len(countries),'indicators':len(indicators)},indent=2))
+          PY
+
+      - name: Run repository quality gates
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run check
+          npm run freshness:sources
+          python3 -m py_compile clients/python/painmap_client.py examples/load_place_profile.py scripts/build-human-health-pressure-context.py
+          git diff --check
+          python3 -m http.server 4173 --bind 127.0.0.1 >/tmp/painmap-health-retry-server.log 2>&1 &
+          pid=$!
+          trap 'kill "$pid" 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 40); do curl -fsS http://127.0.0.1:4173/ >/dev/null && break; sleep .25; done
+          npm run smoke:endpoints
+          for path in /data/health-pressures/ /data/human-health-pressure-context.json /data/human-health-pressure-context.csv /schemas/human-health-pressure-context.schema.json /data/source-extracts/world-bank-health-pressure-context.json; do curl -fsS "http://127.0.0.1:4173${path}" >/dev/null; done
+
+      - name: Remove temporary workflows and discovery trigger
+        shell: bash
+        run: |
+          set -euo pipefail
+          find .github/workflows -maxdepth 1 -type f \( -name 'painmap-health-context-production-retry.yml' -o -name 'painmap-publish-health-context-now.yml' -o -name '*health-pressure*publish*.yml' -o -name '*publish*health-pressure*.yml' -o -name '*nonfatal-pain*.yml' \) -print -delete
+          rm -f data/pain-data-discovery-trigger.json
+
+      - name: Commit verified production state
+        id: commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git status --short
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish and verify human health-pressure context data'
+            git push origin HEAD:main
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/configure-pages@v5
+      - name: Build Pages artifact
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+      - name: Upload QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: painmap-health-pressure-retry-evidence
+          path: |
+            data/human-health-pressure-context.json
+            data/human-health-pressure-context.csv
+            schemas/human-health-pressure-context.schema.json
+            data/source-extracts/world-bank-health-pressure-context.json
+            data/health-pressures/index.html
+            data/pain-drivers.json
+          if-no-files-found: warn
+          retention-days: 14
+
+  deploy:
+    needs: publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    outputs:
+      page_url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - id: pages
+        uses: actions/deploy-pages@v4
+
+  report:
+    if: always()
+    needs: [publish, deploy]
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const ok='${{ needs.publish.result }}'==='success' && '${{ needs.deploy.result }}'==='success';
+            const body=[
+              '## Human health-pressure context production result',
+              '',
+              `- Publication validation: **${{ needs.publish.result }}**`,
+              `- Pages deployment: **${{ needs.deploy.result }}**`,
+              `- Production SHA: \`${{ needs.publish.outputs.sha || 'unknown' }}\``,
+              `- Observations: **${{ needs.publish.outputs.observations || 'unknown' }}**`,
+              `- Countries: **${{ needs.publish.outputs.countries || 'unknown' }}**`,
+              `- Indicators: **${{ needs.publish.outputs.indicators || 'unknown' }}**`,
+              `- Page URL: ${{ needs.deploy.outputs.page_url || 'unavailable' }}`,
+              '',
+              '- https://painmaps.org/data/health-pressures/',
+              '- https://painmaps.org/data/human-health-pressure-context.json',
+              '- https://painmaps.org/data/human-health-pressure-context.csv',
+              '- https://painmaps.org/schemas/human-health-pressure-context.schema.json',
+              '- https://painmaps.org/data/source-extracts/world-bank-health-pressure-context.json'
+            ].join('\n');
+            for (const number of [15,17,19]) {
+              try {
+                const item=await github.rest.issues.get({owner:context.repo.owner,repo:context.repo.repo,issue_number:number});
+                if (number===19 || item.data.state==='open') await github.rest.issues.createComment({owner:context.repo.owner,repo:context.repo.repo,issue_number:number,body});
+                if (ok && item.data.state==='open') await github.rest.issues.update({owner:context.repo.owner,repo:context.repo.repo,issue_number:number,state:'closed',state_reason:'completed'});
+              } catch(e) { core.warning(`Issue ${number}: ${e.message}`); }
+            }
+            if (ok) {
+              try { await github.rest.pulls.update({owner:context.repo.owner,repo:context.repo.repo,pull_number:16,state:'closed',title:'[PainMap Data] Discover nonfatal pain sources — completed'}); } catch(e) { core.warning(e.message); }
+            } else core.setFailed('Production retry did not complete.');

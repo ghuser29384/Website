@@ -1,0 +1,364 @@
+name: PainMap publish human health-pressure context
+
+on:
+  issues:
+    types:
+      - opened
+  pull_request_target:
+    types:
+      - opened
+      - reopened
+      - synchronize
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: painmap-health-pressure-publish
+  cancel-in-progress: true
+
+jobs:
+  prepare:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'issues' &&
+       github.event.issue.title == '[PainMap Data] Publish human health-pressure context') ||
+      (github.event_name == 'pull_request_target' &&
+       github.event.pull_request.title == '[PainMap Data] Publish human health-pressure context' &&
+       github.event.pull_request.base.ref == 'main' &&
+       github.event.pull_request.head.repo.full_name == github.repository)
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    outputs:
+      final_sha: ${{ steps.commit.outputs.final_sha }}
+      data_commit_sha: ${{ steps.commit.outputs.data_commit_sha }}
+      observation_count: ${{ steps.summary.outputs.observation_count }}
+      country_count: ${{ steps.summary.outputs.country_count }}
+      complete_country_count: ${{ steps.summary.outputs.complete_country_count }}
+      indicator_count: ${{ steps.summary.outputs.indicator_count }}
+    steps:
+      - name: Check out current production branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch and build health-pressure context
+        run: python3 scripts/build-human-health-pressure-context.py --refresh
+
+      - name: Validate complete static site and data contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run check
+          npm run freshness:sources
+          python3 -m py_compile \
+            clients/python/painmap_client.py \
+            examples/load_place_profile.py \
+            scripts/build-source-backed-country-supplement.py \
+            scripts/build-human-health-pressure-context.py
+          git diff --check
+
+      - name: Smoke test public routes and exports
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/painmap-static-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 40); do
+            curl --fail --silent --show-error http://127.0.0.1:4173/ >/dev/null && break
+            sleep 0.25
+          done
+          curl --fail --silent --show-error http://127.0.0.1:4173/ >/dev/null || {
+            cat /tmp/painmap-static-server.log
+            exit 1
+          }
+          npm run smoke:endpoints
+          for path in \
+            /data/health-pressures/ \
+            /data/human-health-pressure-context.json \
+            /data/human-health-pressure-context.csv \
+            /schemas/human-health-pressure-context.schema.json \
+            /data/source-extracts/world-bank-health-pressure-context.json \
+            /data/pain-drivers.json; do
+            curl --fail --silent --show-error "http://127.0.0.1:4173${path}" >/dev/null
+          done
+          python3 - <<'PY'
+          import json
+          import urllib.request
+
+          base = 'http://127.0.0.1:4173'
+          with urllib.request.urlopen(base + '/data/human-health-pressure-context.json') as response:
+              context = json.load(response)
+          with urllib.request.urlopen(base + '/data/source-extracts/world-bank-health-pressure-context.json') as response:
+              receipt = json.load(response)
+          with urllib.request.urlopen(base + '/data/pain-drivers.json') as response:
+              index = json.load(response)
+
+          assert context['dataset_id'] == 'painmap-human-health-pressure-context-v1'
+          assert context['canonical_release'] is False
+          assert context['comparison_policy']['overall_cross_domain_ranking_enabled'] is False
+          assert len(context['observations']) >= 900
+          assert context['coverage']['countries_with_any_observation'] >= 180
+          assert context['coverage']['indicator_count'] == 8
+          assert receipt['observation_count'] == len(context['observations'])
+          assert len(receipt['indicators']) == 8
+          assert any(row.get('dataset_id') == context['dataset_id'] for row in index['datasets'])
+          print('Live-route smoke payload assertions passed.')
+          PY
+
+      - name: Capture publication summary
+        id: summary
+        shell: bash
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          from pathlib import Path
+          context = json.loads(Path('data/human-health-pressure-context.json').read_text(encoding='utf-8'))
+          coverage = context['coverage']
+          print(f"observation_count={coverage['observation_count']}")
+          print(f"country_count={coverage['countries_with_any_observation']}")
+          print(f"complete_country_count={coverage['countries_with_complete_indicator_set']}")
+          print(f"indicator_count={coverage['indicator_count']}")
+          PY
+
+      - name: Commit validated production data
+        id: commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          rm -f .github/workflows/painmap-discover-pain-data.yml
+          rm -f .github/workflows/painmap-publish-health-pressure-context.yml
+          git add -A
+          git diff --cached --check
+          git commit -m 'Publish human health-pressure context data'
+          data_commit_sha="$(git rev-parse HEAD)"
+
+          DATA_COMMIT_SHA="$data_commit_sha" python3 - <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          path = Path('data/pain-driver-deployment.json')
+          receipt = json.loads(path.read_text(encoding='utf-8'))
+          receipt['deployment_id'] = 'painmap-human-health-pressure-context-2026-07-14'
+          receipt['published_at'] = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')
+          receipt['repository_commit'] = os.environ['DATA_COMMIT_SHA']
+          receipt['canonical_release_modified'] = False
+          receipt['health_pressure_context']['data_commit'] = os.environ['DATA_COMMIT_SHA']
+          path.write_text(json.dumps(receipt, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+          PY
+
+          git add data/pain-driver-deployment.json
+          git commit -m 'Record health-pressure data deployment receipt'
+          final_sha="$(git rev-parse HEAD)"
+          git push origin HEAD:main
+
+          echo "data_commit_sha=$data_commit_sha" >> "$GITHUB_OUTPUT"
+          echo "final_sha=$final_sha" >> "$GITHUB_OUTPUT"
+
+      - name: Upload publication QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: painmap-health-pressure-publication-qa
+          path: |
+            data/human-health-pressure-context.json
+            data/human-health-pressure-context.csv
+            schemas/human-health-pressure-context.schema.json
+            data/source-extracts/world-bank-health-pressure-context.json
+            data/pain-drivers.json
+            data/pain-driver-deployment.json
+            data/health-pressures/index.html
+          if-no-files-found: error
+          retention-days: 7
+
+  build:
+    needs: prepare
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    outputs:
+      deployed_sha: ${{ steps.verify.outputs.sha }}
+    steps:
+      - name: Check out published production revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.prepare.outputs.final_sha }}
+          fetch-depth: 1
+
+      - name: Verify committed production payload
+        id: verify
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/build-human-health-pressure-context.py --check
+          test "$(git rev-parse HEAD)" = '${{ needs.prepare.outputs.final_sha }}'
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build production Pages artifact
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+  deploy:
+    needs:
+      - prepare
+      - build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  report:
+    if: always() && (github.event_name == 'issues' || github.event_name == 'pull_request_target')
+    needs:
+      - prepare
+      - build
+      - deploy
+    permissions:
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report and close audited publication
+        uses: actions/github-script@v7
+        env:
+          PREPARE_RESULT: ${{ needs.prepare.result }}
+          BUILD_RESULT: ${{ needs.build.result }}
+          DEPLOY_RESULT: ${{ needs.deploy.result }}
+          FINAL_SHA: ${{ needs.prepare.outputs.final_sha }}
+          OBSERVATION_COUNT: ${{ needs.prepare.outputs.observation_count }}
+          COUNTRY_COUNT: ${{ needs.prepare.outputs.country_count }}
+          COMPLETE_COUNTRY_COUNT: ${{ needs.prepare.outputs.complete_country_count }}
+          INDICATOR_COUNT: ${{ needs.prepare.outputs.indicator_count }}
+          PAGE_URL: ${{ needs.deploy.outputs.page_url }}
+        with:
+          script: |
+            const prepareResult = process.env.PREPARE_RESULT || 'not-run';
+            const buildResult = process.env.BUILD_RESULT || 'not-run';
+            const deployResult = process.env.DEPLOY_RESULT || 'not-run';
+            const successful = prepareResult === 'success' && buildResult === 'success' && deployResult === 'success';
+            const body = [
+              '## PainMap human health-pressure publication',
+              '',
+              `- Data preparation and validation: **${prepareResult}**`,
+              `- Pages build: **${buildResult}**`,
+              `- Pages deployment: **${deployResult}**`,
+              `- Production revision: \`${process.env.FINAL_SHA || 'unavailable'}\``,
+              `- Observations: ${process.env.OBSERVATION_COUNT || 'unavailable'}`,
+              `- Countries with any observation: ${process.env.COUNTRY_COUNT || 'unavailable'}`,
+              `- Countries with all indicators: ${process.env.COMPLETE_COUNTRY_COUNT || 'unavailable'}`,
+              `- Indicator families: ${process.env.INDICATOR_COUNT || 'unavailable'}`,
+              `- Pages URL: ${process.env.PAGE_URL || 'unavailable'}`,
+              '',
+              'Production endpoints:',
+              '- https://painmaps.org/data/health-pressures/',
+              '- https://painmaps.org/data/human-health-pressure-context.json',
+              '- https://painmaps.org/data/human-health-pressure-context.csv',
+              '- https://painmaps.org/schemas/human-health-pressure-context.schema.json',
+              '- https://painmaps.org/data/source-extracts/world-bank-health-pressure-context.json'
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body
+            });
+
+            if (successful) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                state: 'closed',
+                state_reason: 'completed'
+              });
+
+              for (const issue_number of [15, 17, 19]) {
+                try {
+                  await github.rest.issues.update({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number,
+                    state: 'closed',
+                    state_reason: 'completed'
+                  });
+                } catch (error) {
+                  core.info(`Could not close discovery issue ${issue_number}: ${error.message}`);
+                }
+              }
+
+              if (context.eventName === 'pull_request_target') {
+                try {
+                  await github.rest.pulls.update({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    pull_number: context.issue.number,
+                    state: 'closed'
+                  });
+                } catch (error) {
+                  core.info(`Could not close publication trigger PR ${context.issue.number}: ${error.message}`);
+                }
+              }
+
+              try {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: 16,
+                  body: 'Discovery completed and the reviewed dataset was published directly from `main`. This trigger branch was not merged.'
+                });
+                await github.rest.pulls.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: 16,
+                  state: 'closed'
+                });
+              } catch (error) {
+                core.info(`Could not close discovery PR 16: ${error.message}`);
+              }
+            }
