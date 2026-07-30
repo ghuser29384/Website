@@ -1,0 +1,95 @@
+name: Apply PainMap brand system
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "brand.css"
+      - "assets/brand/**"
+      - "scripts/apply-brand-system.mjs"
+      - "package.json"
+      - ".github/workflows/apply-painmap-brand.yml"
+  pull_request:
+    paths:
+      - "brand.css"
+      - "assets/brand/**"
+      - "scripts/apply-brand-system.mjs"
+      - "package.json"
+      - ".github/workflows/apply-painmap-brand.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: painmap-brand-${{ github.event_name }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  apply-brand:
+    name: Generate and commit branded site
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build, brand, and validate the static site
+        id: brand_check
+        continue-on-error: true
+        shell: bash
+        run: |
+          set +e
+          npm run check > /tmp/painmap-brand-check.log 2>&1
+          status=$?
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          tail -n 80 /tmp/painmap-brand-check.log
+          exit 0
+
+      - name: Upload brand validation log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: painmap-brand-validation-${{ github.run_id }}
+          path: /tmp/painmap-brand-check.log
+          if-no-files-found: error
+          retention-days: 3
+
+      - name: Fail when brand validation fails
+        if: steps.brand_check.outputs.status != '0'
+        shell: bash
+        run: |
+          echo "PainMap brand validation failed."
+          tail -n 180 /tmp/painmap-brand-check.log
+          exit 1
+
+      - name: Check patch formatting
+        run: git diff --check
+
+      - name: Commit generated branded site
+        shell: bash
+        env:
+          TARGET_BRANCH: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
+        run: |
+          if git diff --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
+            echo "PainMap brand system is already fully applied."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          git commit -m "Apply PainMap brand system to generated site"
+          git pull --rebase origin "$TARGET_BRANCH"
+          git push origin "HEAD:$TARGET_BRANCH"
