@@ -2,15 +2,16 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "dataset_id": "painmap-pain-driver-context-index-v1",
   "title": "PainMap pain-driver context datasets",
-  "generated_at": "2026-07-14T13:20:00Z",
+  "generated_at": "2026-07-31T06:16:43Z",
   "canonical_release": false,
   "purpose": "Expose additional source-backed evidence relevant to identifying major causes of pain by place without collapsing incompatible evidence into one score.",
   "comparison_policy": {
     "overall_cross_domain_ranking_enabled": false,
-    "reason": "Mortality rates, animal counts, insecticide mass, and land area use incompatible units and represent different causal and evidential relationships to pain.",
+    "reason": "Mortality rates, disease prevalence, incidence rates, violence rates, pollutant concentrations, animal counts, insecticide mass, and land area use incompatible units and represent different relationships to pain.",
     "allowed": [
       "Within-place comparison among the four human mortality-rate indicators, which share deaths per 100,000 population.",
-      "Within-metric comparison across places when method, unit, and reference-period semantics match."
+      "Within-metric comparison across places when method, unit, and reference-period semantics match.",
+      "Within-indicator comparison across places when method, unit, and latest-observation selection semantics match."
     ]
   },
   "datasets": [
@@ -57,6 +58,43 @@
       ],
       "validation_url": "https://painmap.org/data/candidates/country-data-expansion/validation-summary.json",
       "caveat": "These rows are public candidate context, not canonical PainMap measurements. Land area is a denominator, not a cause of pain, and is excluded from cause rankings."
+    },
+    {
+      "dataset_id": "painmap-human-health-pressure-context-v1",
+      "label": "Human health-pressure context",
+      "evidence_kind": "proxy",
+      "publication_status": "public_context_supplement",
+      "observation_count": 1421,
+      "country_count": 214,
+      "indicator_count": 8,
+      "indicators": [
+        "Diabetes prevalence (% of population ages 20 to 79)",
+        "Incidence of tuberculosis (per 100,000 people)",
+        "Incidence of malaria (per 1,000 population at risk)",
+        "Prevalence of HIV, total (% of population ages 15-49)",
+        "Maternal mortality ratio (modeled estimate, per 100,000 live births)",
+        "Intentional homicides (per 100,000 people)",
+        "Prevalence of undernourishment (% of population)",
+        "PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)"
+      ],
+      "units": [
+        "cases per 1,000 population at risk",
+        "cases per 100,000 population",
+        "deaths per 100,000 live births",
+        "deaths per 100,000 population",
+        "micrograms per cubic meter",
+        "percent of population",
+        "percent of population ages 15–49",
+        "percent of population ages 20–79"
+      ],
+      "json_url": "https://painmaps.org/data/human-health-pressure-context.json",
+      "csv_url": "https://painmaps.org/data/human-health-pressure-context.csv",
+      "schema_url": "https://painmaps.org/schemas/human-health-pressure-context.schema.json",
+      "landing_page_url": "https://painmaps.org/data/health-pressures/",
+      "source_extract_url": "https://painmaps.org/data/source-extracts/world-bank-health-pressure-context.json",
+      "attribution": "Underlying publishers identified in World Bank indicator metadata; distributed through the World Bank Indicators API.",
+      "license": "World Bank dataset terms and source-specific attribution requirements",
+      "caveat": "These are pain-relevant health-pressure proxies, not direct pain measurements. Cross-indicator composite ranking is disabled."
     }
   ]
 }

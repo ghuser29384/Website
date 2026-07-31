@@ -1,6 +1,6 @@
 {
   "deployment_id": "painmap-pain-driver-context-2026-07-14",
-  "published_at": "2026-07-14T13:35:00Z",
+  "published_at": "2026-07-31T06:16:43Z",
   "repository_commit": "d179cb2607a8c3f0c8917fe4f9723af46a5ca3ae",
   "canonical_release_modified": false,
   "public_context": {
@@ -19,5 +19,17 @@
     "summary_url": "https://painmap.org/data/candidates/country-data-expansion/source-backed-country-summary.json"
   },
   "landing_page": "https://painmap.org/data/pain-drivers/",
-  "comparison_policy": "No cross-domain composite score; compare only compatible units and methods."
+  "comparison_policy": "No cross-domain composite score; compare only compatible units and methods.",
+  "health_pressure_context": {
+    "dataset_id": "painmap-human-health-pressure-context-v1",
+    "observations": 1421,
+    "countries": 214,
+    "countries_with_all_indicators": 77,
+    "indicators": 8,
+    "json_url": "https://painmaps.org/data/human-health-pressure-context.json",
+    "csv_url": "https://painmaps.org/data/human-health-pressure-context.csv",
+    "landing_page": "https://painmaps.org/data/health-pressures/",
+    "source_receipt": "https://painmaps.org/data/source-extracts/world-bank-health-pressure-context.json",
+    "comparison_policy": "Within-indicator comparison only; no cross-domain composite score."
+  }
 }

@@ -7,12 +7,14 @@
     "routes:sync": "node scripts/synchronize-route-inventories.mjs",
     "routes:check": "node scripts/synchronize-route-inventories.mjs --check",
     "validate:release": "node scripts/validate-release-contract.mjs",
-    "check": "npm run build:data && npm run routes:check && node scripts/check-static-site.mjs && npm run validate:release && npm run smoke:ui && npm run fixtures:check",
+    "check": "npm run build:data && npm run health-pressure:data:check && npm run routes:check && node scripts/check-static-site.mjs && npm run validate:release && npm run smoke:ui && npm run fixtures:check",
     "fixtures:check": "node scripts/build-preview-release.mjs --check",
     "freshness:sources": "node scripts/check-source-freshness.mjs",
     "preview:fixture": "node scripts/build-preview-release.mjs",
     "smoke:ui": "node scripts/check-ui-smoke.mjs",
     "smoke:endpoints": "node scripts/check-endpoint-smoke.mjs",
-    "serve": "python3 -m http.server 4173"
+    "serve": "python3 -m http.server 4173",
+    "health-pressure:data:refresh": "python3 scripts/build-human-health-pressure-context.py --refresh",
+    "health-pressure:data:check": "python3 scripts/build-human-health-pressure-context.py --check"
   }
 }

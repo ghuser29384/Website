@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://painmaps.org/schemas/human-health-pressure-context.schema.json",
+  "title": "PainMap human health-pressure context",
+  "type": "object",
+  "required": [
+    "dataset_id",
+    "generated_at",
+    "canonical_release",
+    "comparison_policy",
+    "coverage",
+    "indicators",
+    "place_summaries",
+    "observations"
+  ],
+  "properties": {
+    "dataset_id": {
+      "const": "painmap-human-health-pressure-context-v1"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "canonical_release": {
+      "const": false
+    },
+    "comparison_policy": {
+      "type": "object"
+    },
+    "coverage": {
+      "type": "object"
+    },
+    "indicators": {
+      "type": "array",
+      "minItems": 8
+    },
+    "place_summaries": {
+      "type": "array"
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "observation_id",
+          "place_id",
+          "iso3",
+          "place_name",
+          "indicator_id",
+          "indicator_code",
+          "indicator_name",
+          "domain",
+          "raw_value",
+          "unit_label",
+          "reference_year",
+          "global_rank_within_indicator",
+          "indicator_country_count",
+          "adverse_percentile_within_indicator",
+          "comparison_direction",
+          "source_id",
+          "source_snapshot_id",
+          "source_vintage",
+          "extraction_timestamp",
+          "license_id",
+          "data_license_uri",
+          "evidence_kind",
+          "uncertainty_class",
+          "pain_relevance",
+          "caveat"
+        ],
+        "properties": {
+          "observation_id": {
+            "type": "string"
+          },
+          "place_id": {
+            "type": "string"
+          },
+          "iso3": {
+            "type": "string",
+            "pattern": "^[A-Z]{3}$"
+          },
+          "place_name": {
+            "type": "string"
+          },
+          "indicator_id": {
+            "enum": [
+              "diabetes-prevalence",
+              "tuberculosis-incidence",
+              "malaria-incidence",
+              "hiv-prevalence",
+              "maternal-mortality",
+              "intentional-homicide",
+              "undernourishment-prevalence",
+              "pm25-exposure"
+            ]
+          },
+          "indicator_code": {
+            "enum": [
+              "SH.STA.DIAB.ZS",
+              "SH.TBS.INCD",
+              "SH.MLR.INCD.P3",
+              "SH.DYN.AIDS.ZS",
+              "SH.STA.MMRT",
+              "VC.IHR.PSRC.P5",
+              "SN.ITK.DEFC.ZS",
+              "EN.ATM.PM25.MC.M3"
+            ]
+          },
+          "raw_value": {
+            "type": "number",
+            "minimum": 0
+          },
+          "reference_year": {
+            "type": "integer",
+            "minimum": 2010,
+            "maximum": 2026
+          },
+          "global_rank_within_indicator": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "indicator_country_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "adverse_percentile_within_indicator": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "comparison_direction": {
+            "const": "higher_value_more_adverse_context"
+          },
+          "evidence_kind": {
+            "const": "proxy"
+          },
+          "uncertainty_class": {
+            "enum": [
+              "low",
+              "very-low"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

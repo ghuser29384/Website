@@ -67,6 +67,14 @@
       "expected_canonical": "https://painmap.org/data/"
     },
     {
+      "key": "data-health-pressures",
+      "path": "/data/health-pressures/",
+      "file": "data/health-pressures/index.html",
+      "expected_title": "Human Health-Pressure Context | PainMap",
+      "expected_description": "Country-level disease, violence, nutrition, maternal-health, and environmental pressure indicators relevant to investigating pain, with explicit provenance and comparison limits.",
+      "expected_canonical": "https://painmap.org/data/health-pressures/"
+    },
+    {
       "key": "dataset-place-measurements",
       "path": "/dataset/place-measurements/",
       "file": "dataset/place-measurements/index.html",

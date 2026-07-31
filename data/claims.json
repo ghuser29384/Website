@@ -1,7 +1,7 @@
 {
   "release_id": "2026-05-31.atlas.2",
   "generated_at": "2026-05-31",
-  "count": 744,
+  "count": 745,
   "claims": [
     {
       "claim_id": "claim.2026-05-31.atlas.2.adm1-place.ago:cuanza-sul",
@@ -4039,6 +4039,17 @@
       "coverage_status": "route",
       "context": "Route-level correction surface and route metadata",
       "correction_url": "https://github.com/ghuser29384/Website/issues/new?title=%5BPainMap+correction%5D+2026-05-31.atlas.2%3A+Data+route&body=Release%3A+2026-05-31.atlas.2%0ASubject+type%3A+route%0ASubject+id%3A+data%0AClaim+id%3A+claim.2026-05-31.atlas.2.route.data%0ARoute%3A+%2Fdata%2F%0AClaims+context%3A+Route-level+correction+surface+and+route+metadata%0APlease+include+source+links%2C+scope%2C+and+what+should+be+corrected.&labels=correction"
+    },
+    {
+      "claim_id": "claim.2026-05-31.atlas.2.route.data-health-pressures",
+      "release_id": "2026-05-31.atlas.2",
+      "subject_type": "route",
+      "subject_id": "data-health-pressures",
+      "subject_label": "Human Health-Pressure Context route",
+      "route": "/data/health-pressures/",
+      "coverage_status": "route",
+      "context": "Route-level correction surface and route metadata",
+      "correction_url": "https://github.com/ghuser29384/Website/issues/new?title=%5BPainMap+correction%5D+2026-05-31.atlas.2%3A+Human+Health-Pressure+Context+route&body=Release%3A+2026-05-31.atlas.2%0ASubject+type%3A+route%0ASubject+id%3A+data-health-pressures%0AClaim+id%3A+claim.2026-05-31.atlas.2.route.data-health-pressures%0ARoute%3A+%2Fdata%2Fhealth-pressures%2F%0AClaims+context%3A+Route-level+correction+surface+and+route+metadata%0APlease+include+source+links%2C+scope%2C+and+what+should+be+corrected.&labels=correction"
     },
     {
       "claim_id": "claim.2026-05-31.atlas.2.route.dataset-place-measurements",

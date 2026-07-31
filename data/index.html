@@ -44,6 +44,8 @@
         "temporalCoverage": "2010/2026",
         "creator": { "@type": "Organization", "name": "PainMap", "url": "https://painmap.org/" },
         "distribution": [
+          { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://painmaps.org/data/human-health-pressure-context.csv" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmaps.org/data/human-health-pressure-context.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/pain-drivers.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/pain-driver-context.json" },
           { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://painmap.org/data/pain-driver-context.csv" },
@@ -163,6 +165,16 @@
                   <td>Very low to low; candidate-only and not canonical</td>
                   <td><a href="/data/candidates/country-data-expansion/source-backed-country-summary.json">summary</a>, <a href="/data/candidates/country-data-expansion/source-extracts/owid-land-animals-slaughtered.json">animal extract</a>, <a href="/data/candidates/country-data-expansion/source-extracts/owid-insecticide-use.json">insecticide extract</a>, <a href="/data/candidates/country-data-expansion/source-extracts/world-bank-land-area.json">land extract</a>, <a href="/data/candidates/country-data-expansion/validation-summary.json">validation</a></td>
                 </tr>
+                <!-- HEALTH_PRESSURE_CONTEXT_ROW_START -->
+                <tr>
+                  <th scope="row"><a href="/data/health-pressures/">Human health-pressure context</a></th>
+                  <td>Source-backed proxy context</td>
+                  <td>Latest numeric country observations retrieved 2026-07-31</td>
+                  <td>Low confidence for pain inference; compare only within the same indicator</td>
+                  <td><a href="/data/human-health-pressure-context.json">JSON</a>, <a href="/data/human-health-pressure-context.csv">CSV</a>, <a href="/schemas/human-health-pressure-context.schema.json">schema</a>, <a href="/data/source-extracts/world-bank-health-pressure-context.json">source receipt</a></td>
+                </tr>
+                <!-- HEALTH_PRESSURE_CONTEXT_ROW_END -->
+
                 <tr>
                   <th scope="row"><a href="/dataset/place-measurements/">Place measurements</a></th>
                   <td>Proxy aggregate</td>

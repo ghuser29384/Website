@@ -40,6 +40,20 @@ The live site publishes a non-canonical, evidence-preserving supplement for inve
 
 The supplement currently contains 741 WHO/World Bank mortality-context observations across 191 indexed countries and 24 source-backed animal, insecticide, and land-context candidate observations across eight countries. Comparisons are permitted only within compatible metric, unit, method, and reference-period groups. No cross-domain universal pain ranking is enabled, land area is not classified as a cause of pain, and no candidate rows are promoted into the immutable canonical release.
 
+<!-- HEALTH_PRESSURE_CONTEXT_README_START -->
+## Human health-pressure context supplement
+
+The live site publishes 1421 latest source-backed proxy observations across 214 PainMap-indexed countries and 8 indicator families:
+
+- [Human health-pressure guide](https://painmaps.org/data/health-pressures/)
+- [JSON](https://painmaps.org/data/human-health-pressure-context.json)
+- [CSV](https://painmaps.org/data/human-health-pressure-context.csv)
+- [JSON Schema](https://painmaps.org/schemas/human-health-pressure-context.schema.json)
+- [Source receipt](https://painmaps.org/data/source-extracts/world-bank-health-pressure-context.json)
+
+The supplement covers diabetes prevalence, tuberculosis and malaria incidence, HIV prevalence, maternal mortality, intentional homicide, undernourishment, and PM2.5 exposure. All rows are proxy context rather than direct pain measurements. Rankings and adverse percentiles are calculated only within the same indicator; cross-indicator composite scoring is disabled.
+<!-- HEALTH_PRESSURE_CONTEXT_README_END -->
+
 Run the release artifact builder before checks:
 
 ```sh

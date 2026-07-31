@@ -1,0 +1,358 @@
+{
+  "source_id": "world-bank-health-pressure-context",
+  "generated_at": "2026-07-31T06:16:43Z",
+  "dataset_id": "painmap-human-health-pressure-context-v1",
+  "selection_rule": "Latest non-null numeric PainMap country observation in 2010:2026; no imputation.",
+  "license_id": "world-bank-terms",
+  "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+  "transform_version": "painmap-health-pressure-context.2026-07-14.1",
+  "indicator_count": 8,
+  "observation_count": 1421,
+  "country_count": 214,
+  "indicators": [
+    {
+      "indicator_id": "diabetes-prevalence",
+      "indicator_code": "SH.STA.DIAB.ZS",
+      "indicator_name": "Diabetes prevalence (% of population ages 20 to 79)",
+      "domain": "chronic-metabolic-disease",
+      "unit_label": "percent of population ages 20–79",
+      "country_count": 208,
+      "reference_year_min": 2024,
+      "reference_year_max": 2024,
+      "comparison_direction": "higher_value_more_adverse_context",
+      "source_snapshot_id": "snapshot.world-bank-health-pressure.sh.sta.diab.zs.2026-07-31",
+      "source_organization": "Diabetes Atlas, International Diabetes Federation",
+      "source_note": "Diabetes prevalence refers to the percentage of people ages 20-79 who have type 1 or type 2 diabetes. It is calculated by adjusting to a standard population age-structure.",
+      "pain_relevance": "Diabetes can cause painful neuropathy and vascular complications. Prevalence is a disease-context proxy, not a measure of pain prevalence or severity.",
+      "caveat": "Proxy/context indicator only. It does not directly measure pain intensity, duration, prevalence, disability, or total suffering.",
+      "data_payload": {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/SH.STA.DIAB.ZS?format=json&per_page=20000&date=2010:2026",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "d327f06e05c057fbc4eb988d0ec98cfeb0f408311829d00f374b4dd7fa4e6ca0",
+        "byte_size": 995177,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:58:49 GMT"
+        }
+      },
+      "metadata_payload": {
+        "url": "https://api.worldbank.org/v2/indicator/SH.STA.DIAB.ZS?format=json",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "09118a6b43986bfdbeaa1881917ce8e0b51833391be1f944e066f1d9ac82138d",
+        "byte_size": 504,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Thu, 30 Jul 2026 13:43:16 GMT"
+        }
+      },
+      "metadata_status": "retrieved",
+      "metadata_error": null,
+      "license_id": "world-bank-terms",
+      "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "selection_rule": "Latest non-null numeric PainMap country observation in 2010:2026."
+    },
+    {
+      "indicator_id": "tuberculosis-incidence",
+      "indicator_code": "SH.TBS.INCD",
+      "indicator_name": "Incidence of tuberculosis (per 100,000 people)",
+      "domain": "infectious-disease",
+      "unit_label": "cases per 100,000 population",
+      "country_count": 208,
+      "reference_year_min": 2024,
+      "reference_year_max": 2024,
+      "comparison_direction": "higher_value_more_adverse_context",
+      "source_snapshot_id": "snapshot.world-bank-health-pressure.sh.tbs.incd.2026-07-31",
+      "source_organization": "Global Tuberculosis Report, World Health Organization (WHO)",
+      "source_note": "Incidence of tuberculosis is the estimated number of new and relapse tuberculosis cases arising in a given year, expressed as the rate per 100,000 population. All forms of TB are included, including cases in people living with HIV. Estimates for all years are recalculated as new information becomes available and techniques are refined, so they may differ from those published previously.",
+      "pain_relevance": "Tuberculosis can involve prolonged painful illness and treatment complications. Incidence is an episode-risk proxy, not a pain measurement.",
+      "caveat": "Proxy/context indicator only. It does not directly measure pain intensity, duration, prevalence, disability, or total suffering.",
+      "data_payload": {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/SH.TBS.INCD?format=json&per_page=20000&date=2010:2026",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "7085e7e47e7c90d7292d93b427e5b23a086d9638df0ab1aac30ecf3b170fb30d",
+        "byte_size": 955510,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:58:50 GMT"
+        }
+      },
+      "metadata_payload": {
+        "url": "https://api.worldbank.org/v2/indicator/SH.TBS.INCD?format=json",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "cf814387aaec4b53c786bc1712c00ca3781a9306716681e391debd164e1b709b",
+        "byte_size": 764,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Thu, 30 Jul 2026 12:15:37 GMT"
+        }
+      },
+      "metadata_status": "retrieved",
+      "metadata_error": null,
+      "license_id": "world-bank-terms",
+      "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "selection_rule": "Latest non-null numeric PainMap country observation in 2010:2026."
+    },
+    {
+      "indicator_id": "malaria-incidence",
+      "indicator_code": "SH.MLR.INCD.P3",
+      "indicator_name": "Incidence of malaria (per 1,000 population at risk)",
+      "domain": "infectious-disease",
+      "unit_label": "cases per 1,000 population at risk",
+      "country_count": 107,
+      "reference_year_min": 2020,
+      "reference_year_max": 2024,
+      "comparison_direction": "higher_value_more_adverse_context",
+      "source_snapshot_id": "snapshot.world-bank-health-pressure.sh.mlr.incd.p3.2026-07-31",
+      "source_organization": "Global Health Observatory Data Repository/World Health Statistics, World Health Organization (WHO), uri: http://apps.who.int/ghodata/",
+      "source_note": "Incidence of malaria is the number of new cases of malaria in a year per 1,000 population at risk.",
+      "pain_relevance": "Malaria causes acute febrile illness that may include severe aches and complications. Incidence is an episode-risk proxy, not a pain-duration estimate.",
+      "caveat": "Proxy/context indicator only. It does not directly measure pain intensity, duration, prevalence, disability, or total suffering.",
+      "data_payload": {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/SH.MLR.INCD.P3?format=json&per_page=20000&date=2010:2026",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "64cde60839828acd6da9c95ab1d8653a1546b555b008b67edd75f4b213702235",
+        "byte_size": 1000195,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:58:51 GMT"
+        }
+      },
+      "metadata_payload": {
+        "url": "https://api.worldbank.org/v2/indicator/SH.MLR.INCD.P3?format=json",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "80c90debc5fb66314daafc61a70f78d80cfd318f3a5473eaefb0991d6f38b924",
+        "byte_size": 520,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:05:37 GMT"
+        }
+      },
+      "metadata_status": "retrieved",
+      "metadata_error": null,
+      "license_id": "world-bank-terms",
+      "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "selection_rule": "Latest non-null numeric PainMap country observation in 2010:2026."
+    },
+    {
+      "indicator_id": "hiv-prevalence",
+      "indicator_code": "SH.DYN.AIDS.ZS",
+      "indicator_name": "Prevalence of HIV, total (% of population ages 15-49)",
+      "domain": "infectious-disease",
+      "unit_label": "percent of population ages 15–49",
+      "country_count": 153,
+      "reference_year_min": 2022,
+      "reference_year_max": 2024,
+      "comparison_direction": "higher_value_more_adverse_context",
+      "source_snapshot_id": "snapshot.world-bank-health-pressure.sh.dyn.aids.zs.2026-07-31",
+      "source_organization": "UNAIDS estimates, Joint United Nations Programme on HIV/AIDS (UNAIDS), uri: https://aidsinfo.unaids.org/, publisher: UNAIDS, date accessed: 2025-08-27, date published: 2025-07",
+      "source_note": "Prevalence of HIV refers to the percentage of people ages 15-49 who are infected with HIV.",
+      "pain_relevance": "HIV and associated conditions can produce painful symptoms and treatment burdens. Prevalence is a disease-context proxy, not a pain estimate.",
+      "caveat": "Proxy/context indicator only. It does not directly measure pain intensity, duration, prevalence, disability, or total suffering.",
+      "data_payload": {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/SH.DYN.AIDS.ZS?format=json&per_page=20000&date=2010:2026",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "784bdc060fa94385df236c5e7fc88ce702e1a829e1edc5c7ea2222c91d365b03",
+        "byte_size": 1005137,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:58:52 GMT"
+        }
+      },
+      "metadata_payload": {
+        "url": "https://api.worldbank.org/v2/indicator/SH.DYN.AIDS.ZS?format=json",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "8a4fe9f788a83e6dd73ce1db65a7eb100c847f31f61a96d4c6fc931af2ed36f9",
+        "byte_size": 595,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:58:52 GMT"
+        }
+      },
+      "metadata_status": "retrieved",
+      "metadata_error": null,
+      "license_id": "world-bank-terms",
+      "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "selection_rule": "Latest non-null numeric PainMap country observation in 2010:2026."
+    },
+    {
+      "indicator_id": "maternal-mortality",
+      "indicator_code": "SH.STA.MMRT",
+      "indicator_name": "Maternal mortality ratio (modeled estimate, per 100,000 live births)",
+      "domain": "maternal-health",
+      "unit_label": "deaths per 100,000 live births",
+      "country_count": 194,
+      "reference_year_min": 2023,
+      "reference_year_max": 2023,
+      "comparison_direction": "higher_value_more_adverse_context",
+      "source_snapshot_id": "snapshot.world-bank-health-pressure.sh.sta.mmrt.2026-07-31",
+      "source_organization": "Trends in Maternal Mortality, World Health Organization (WHO), uri: https://www.who.int/news/item/23-02-2023-a-woman-dies-every-two-minutes-due-to-pregnancy-or-childbirth--un-agencies;\nUN Children's Fund (UNICEF), note: Trends in Maternal Mortality;\nUN Population Fund (UNFPA), note: Trends in Maternal Mortality;\nWorld Bank Group (WBG), note: Trends in Maternal Mortality",
+      "source_note": "Maternal mortality ratio is the number of women who die from pregnancy-related causes while pregnant or within 42 days of pregnancy termination per 100,000 live births. The data are estimated with a regression model using information on the proportion of maternal deaths among non-AIDS deaths in women ages 15-49, fertility, birth attendants, and GDP measured using purchasing power parities (PPPs).",
+      "pain_relevance": "Maternal mortality is a severe obstetric-outcome proxy. It does not capture nonfatal labor pain, obstetric injury, morbidity, or access to analgesia.",
+      "caveat": "Proxy/context indicator only. It does not directly measure pain intensity, duration, prevalence, disability, or total suffering.",
+      "data_payload": {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/SH.STA.MMRT?format=json&per_page=20000&date=2010:2026",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "577f6028dd611cb390f092300ebf9c17e625fb7dfd407bda3551f4b4f01d5839",
+        "byte_size": 1047865,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:58:53 GMT"
+        }
+      },
+      "metadata_payload": {
+        "url": "https://api.worldbank.org/v2/indicator/SH.STA.MMRT?format=json",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "a61c460e477953049512663ff8355f6af8a976d5f4df3143ddbf51524cf9cd5b",
+        "byte_size": 1158,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Thu, 30 Jul 2026 15:30:31 GMT"
+        }
+      },
+      "metadata_status": "retrieved",
+      "metadata_error": null,
+      "license_id": "world-bank-terms",
+      "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "selection_rule": "Latest non-null numeric PainMap country observation in 2010:2026."
+    },
+    {
+      "indicator_id": "intentional-homicide",
+      "indicator_code": "VC.IHR.PSRC.P5",
+      "indicator_name": "Intentional homicides (per 100,000 people)",
+      "domain": "interpersonal-violence",
+      "unit_label": "deaths per 100,000 population",
+      "country_count": 183,
+      "reference_year_min": 2010,
+      "reference_year_max": 2023,
+      "comparison_direction": "higher_value_more_adverse_context",
+      "source_snapshot_id": "snapshot.world-bank-health-pressure.vc.ihr.psrc.p5.2026-07-31",
+      "source_organization": "UNODC Research - Data Portal – Intentional Homicide, UN Office on Drugs and Crime (UNODC)",
+      "source_note": "An intentional homicide is defined as an unlawful death inflicted upon a person with the intent to cause death or serious injury.",
+      "pain_relevance": "Homicide is a lethal-violence proxy. It omits nonfatal assault, injury severity, fear, bereavement, and other pain-related consequences.",
+      "caveat": "Proxy/context indicator only. It does not directly measure pain intensity, duration, prevalence, disability, or total suffering.",
+      "data_payload": {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/VC.IHR.PSRC.P5?format=json&per_page=20000&date=2010:2026",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "dd03b60f844762df7dd37be061a4d517086ac6e3092a205d9b9d9841a1d058d5",
+        "byte_size": 977664,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:58:54 GMT"
+        }
+      },
+      "metadata_payload": {
+        "url": "https://api.worldbank.org/v2/indicator/VC.IHR.PSRC.P5?format=json",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "1d0a75be08a99ba32bd5a06a7f8a57819364cbdb86e6c9b2c2056dcfe5ed07a9",
+        "byte_size": 503,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:58:54 GMT"
+        }
+      },
+      "metadata_status": "retrieved",
+      "metadata_error": null,
+      "license_id": "world-bank-terms",
+      "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "selection_rule": "Latest non-null numeric PainMap country observation in 2010:2026."
+    },
+    {
+      "indicator_id": "undernourishment-prevalence",
+      "indicator_code": "SN.ITK.DEFC.ZS",
+      "indicator_name": "Prevalence of undernourishment (% of population)",
+      "domain": "nutrition-and-deprivation",
+      "unit_label": "percent of population",
+      "country_count": 168,
+      "reference_year_min": 2018,
+      "reference_year_max": 2023,
+      "comparison_direction": "higher_value_more_adverse_context",
+      "source_snapshot_id": "snapshot.world-bank-health-pressure.sn.itk.defc.zs.2026-07-31",
+      "source_organization": "Food and Agriculture Organization of the United Nations (FAO), uri: http://www.fao.org/faostat/en/#home",
+      "source_note": "Prevalence of undernourishment is the percentage of the population whose habitual food consumption is insufficient to provide the dietary energy levels that are required to maintain a normal active and healthy life. Data showing as 2.5 may signify a prevalence of undernourishment below 2.5%.",
+      "pain_relevance": "Undernourishment is a deprivation and disease-risk proxy relevant to hunger and associated illness. It does not directly measure subjective suffering.",
+      "caveat": "Proxy/context indicator only. It does not directly measure pain intensity, duration, prevalence, disability, or total suffering.",
+      "data_payload": {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/SN.ITK.DEFC.ZS?format=json&per_page=20000&date=2010:2026",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "93a536a6b2d636b6d69c84990134fba571896d9126b85d2f7aedf1ab8793b072",
+        "byte_size": 987283,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:58:55 GMT"
+        }
+      },
+      "metadata_payload": {
+        "url": "https://api.worldbank.org/v2/indicator/SN.ITK.DEFC.ZS?format=json",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "71c6c83321b67c2c0b3448156bcdb7f8b6ad7cd300de1f73af846fbbe3b57263",
+        "byte_size": 681,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:58:55 GMT"
+        }
+      },
+      "metadata_status": "retrieved",
+      "metadata_error": null,
+      "license_id": "world-bank-terms",
+      "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "selection_rule": "Latest non-null numeric PainMap country observation in 2010:2026."
+    },
+    {
+      "indicator_id": "pm25-exposure",
+      "indicator_code": "EN.ATM.PM25.MC.M3",
+      "indicator_name": "PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",
+      "domain": "environmental-exposure",
+      "unit_label": "micrograms per cubic meter",
+      "country_count": 200,
+      "reference_year_min": 2023,
+      "reference_year_max": 2023,
+      "comparison_direction": "higher_value_more_adverse_context",
+      "source_snapshot_id": "snapshot.world-bank-health-pressure.en.atm.pm25.mc.m3.2026-07-31",
+      "source_organization": "Global Burden of Disease Study 2023 (GBD 2023) Air Pollution Exposure Estimates and Risk Curves 1990-2023, GBD Collaborator Network, uri: https://ghdx.healthdata.org/record/ihme-data/gbd-2023-air-pollution-exposure-estimates-1990-2023, note: Need to create account to retrieve data., publisher: Institute for Health Metrics and Evaluation (IHME), date accessed: 2026-04-03, date published: 2026-01-23",
+      "source_note": "Population-weighted exposure to ambient PM2.5 pollution is defined as the average level of exposure of a nation's population to concentrations of suspended particles measuring less than 2.5 microns in aerodynamic diameter, which are capable of penetrating deep into the respiratory tract and causing severe health damage. Exposure is calculated by weighting mean annual concentrations of PM2.5 by population in both urban and rural areas.",
+      "pain_relevance": "PM2.5 exposure is an upstream environmental health-risk proxy. It is not a measure of pain, symptoms, or individual exposure histories.",
+      "caveat": "Proxy/context indicator only. It does not directly measure pain intensity, duration, prevalence, disability, or total suffering.",
+      "data_payload": {
+        "url": "https://api.worldbank.org/v2/country/all/indicator/EN.ATM.PM25.MC.M3?format=json&per_page=20000&date=2010:2026",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "c02cc2adb4e1f407a767651060631396466eaef56c9a2a41bb3bb820cd813fa1",
+        "byte_size": 1128811,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:58:56 GMT"
+        }
+      },
+      "metadata_payload": {
+        "url": "https://api.worldbank.org/v2/indicator/EN.ATM.PM25.MC.M3?format=json",
+        "status": 200,
+        "attempts": 1,
+        "sha256": "c6a8abe3aa5bbdaa57df11d1375b4d98d82cfc5f3ee02af04f1e9e3f8d2651aa",
+        "byte_size": 1195,
+        "response_headers": {
+          "content-type": "application/json;charset=utf-8",
+          "last-modified": "Fri, 31 Jul 2026 05:04:45 GMT"
+        }
+      },
+      "metadata_status": "retrieved",
+      "metadata_error": null,
+      "license_id": "world-bank-terms",
+      "data_license_uri": "https://www.worldbank.org/en/about/legal/terms-of-use-for-datasets",
+      "selection_rule": "Latest non-null numeric PainMap country observation in 2010:2026."
+    }
+  ]
+}

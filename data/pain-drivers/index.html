@@ -29,6 +29,8 @@
         "url": "https://painmap.org/data/pain-drivers/",
         "creator": { "@type": "Organization", "name": "PainMap", "url": "https://painmap.org/" },
         "distribution": [
+          { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://painmaps.org/data/human-health-pressure-context.csv" },
+          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmaps.org/data/human-health-pressure-context.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/pain-drivers.json" },
           { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/pain-driver-context.json" },
           { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://painmap.org/data/pain-driver-context.csv" },
@@ -110,6 +112,15 @@
             <a class="ghost-link" href="/data/pain-drivers.json">Machine-readable index</a>
           </div>
         </section>
+
+        <!-- HEALTH_PRESSURE_CONTEXT_START -->
+        <section class="route-panel" aria-labelledby="health-pressure-title">
+          <div class="section-intro"><p class="label">Human health-pressure context</p><h2 id="health-pressure-title">1421 latest observations across 214 countries</h2></div>
+          <p>Eight World Bank API indicator families add disease, violence, nutrition, maternal-health, and environmental context. Every value is labeled as proxy evidence and may be ranked only within its own indicator.</p>
+          <div class="route-grid"><article class="route-card"><p class="issue-tag">Coverage</p><h3>8 indicator families</h3><p>77 countries have all eight latest observations; other countries retain explicit gaps.</p></article><article class="route-card"><p class="issue-tag">Interpretation</p><h3>No pain total</h3><p>Prevalence, incidence, mortality, violence, nutrition, and exposure values cannot be added or averaged into a universal pain score.</p></article></div>
+          <div class="route-actions"><a class="solid-button" href="/data/health-pressures/">Open health-pressure guide</a><a class="ghost-link" href="/data/human-health-pressure-context.json">JSON</a><a class="ghost-link" href="/data/human-health-pressure-context.csv">CSV</a><a class="ghost-link" href="/schemas/human-health-pressure-context.schema.json">schema</a></div>
+        </section>
+        <!-- HEALTH_PRESSURE_CONTEXT_END -->
 
         <section class="route-panel" aria-labelledby="rules-title">
           <div class="section-intro"><p class="label">Comparison rules</p><h2 id="rules-title">No cross-domain composite score</h2></div>

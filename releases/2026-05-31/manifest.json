@@ -3564,8 +3564,8 @@
     },
     {
       "path": "/data/index.html",
-      "sha256": "ce92726e9b8212714443671933e747d6b39810322971d5970c32274bf63cd405",
-      "bytes": 17385
+      "sha256": "ca86b9ff4ef2a13e679afe0e11cdf9566d3459f5c18386aa865baa9d7227625e",
+      "bytes": 18504
     },
     {
       "path": "/dataset/place-measurements/index.html",
@@ -5454,13 +5454,13 @@
     },
     {
       "path": "/data/routes.json",
-      "sha256": "014b7a5b2421142af23e53178fdb9f8432de165ad4f8297377913ea293fe2315",
-      "bytes": 163074
+      "sha256": "6a6a4babf6d241c7cefc02117090fe1225c4dc2a90a713054837231ae75c6ff8",
+      "bytes": 163507
     },
     {
       "path": "/data/route-smoke.json",
-      "sha256": "abde759cba0db46437552bd98015826888d8b846e866c4cc3724111826adc3c7",
-      "bytes": 171559
+      "sha256": "5f3a83630d31c19b86c5cb51364acf7965d78ad6742769197955bb75a14a58f0",
+      "bytes": 172053
     },
     {
       "path": "/data/provenance-registry.json",
@@ -5469,8 +5469,8 @@
     },
     {
       "path": "/data/claims.json",
-      "sha256": "7543e73a765bd4e6fdcf7df0b24c61763c37c7bd75e438cdc0510605d08fe8bc",
-      "bytes": 679490
+      "sha256": "4e7249c4cc4a1595e4c550512bc682477da74361d22eb46ea4f41550625c7271",
+      "bytes": 680433
     },
     {
       "path": "/data/source-snapshots.json",
@@ -8864,8 +8864,8 @@
     },
     {
       "path": "/sitemap.xml",
-      "sha256": "f7cd1c1c3856e91a25a3942b39fa8e7a784351aab04c7a6ddfbf31738ad1dde5",
-      "bytes": 39458
+      "sha256": "bb35a26c4c48e80651706341c2c2750a690927807d11ecf4348a60706f576581",
+      "bytes": 39567
     },
     {
       "path": "/robots.txt",
@@ -8894,8 +8894,8 @@
     },
     {
       "path": "/README.md",
-      "sha256": "74043107e7c016d47fa83d0a51e7b3fc598e6178376a6056d1371506ace3fa10",
-      "bytes": 7432
+      "sha256": "26d9998bd275c077699c551440865bd68dd1386aad6896a87e8d3af27cbb727c",
+      "bytes": 8476
     },
     {
       "path": "/LICENSE",
