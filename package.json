@@ -3,9 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:data": "node scripts/synchronize-route-metadata.mjs && node --import ./scripts/reproducible-build-clock.mjs scripts/build-static-artifacts.mjs && node scripts/apply-brand-system.mjs && node scripts/synchronize-candidate-package-manifest.mjs && node --import ./scripts/reproducible-build-clock.mjs scripts/build-static-artifacts.mjs",
+    "build:data": "node scripts/synchronize-route-metadata.mjs && node scripts/synchronize-route-inventories.mjs && node --import ./scripts/reproducible-build-clock.mjs scripts/build-static-artifacts.mjs && node scripts/apply-brand-system.mjs && node scripts/synchronize-candidate-package-manifest.mjs && node --import ./scripts/reproducible-build-clock.mjs scripts/build-static-artifacts.mjs",
+    "routes:sync": "node scripts/synchronize-route-inventories.mjs",
+    "routes:check": "node scripts/synchronize-route-inventories.mjs --check",
     "validate:release": "node scripts/validate-release-contract.mjs",
-    "check": "npm run build:data && node scripts/check-static-site.mjs && npm run validate:release && npm run smoke:ui && npm run fixtures:check",
+    "check": "npm run build:data && npm run routes:check && node scripts/check-static-site.mjs && npm run validate:release && npm run smoke:ui && npm run fixtures:check",
     "fixtures:check": "node scripts/build-preview-release.mjs --check",
     "freshness:sources": "node scripts/check-source-freshness.mjs",
     "preview:fixture": "node scripts/build-preview-release.mjs",
