@@ -1,7 +1,7 @@
 {
-  "deployment_id": "painmap-pain-driver-context-2026-07-14",
-  "published_at": "2026-07-31T06:16:43Z",
-  "repository_commit": "d179cb2607a8c3f0c8917fe4f9723af46a5ca3ae",
+  "deployment_id": "painmap-human-health-pressure-context-2026-07-14",
+  "published_at": "2026-07-31T06:16:49Z",
+  "repository_commit": "25fe83e5c1db634015d453f9e84dc681013d8210",
   "canonical_release_modified": false,
   "public_context": {
     "dataset_id": "painmap-human-mortality-context-v1",
@@ -30,6 +30,7 @@
     "csv_url": "https://painmaps.org/data/human-health-pressure-context.csv",
     "landing_page": "https://painmaps.org/data/health-pressures/",
     "source_receipt": "https://painmaps.org/data/source-extracts/world-bank-health-pressure-context.json",
-    "comparison_policy": "Within-indicator comparison only; no cross-domain composite score."
+    "comparison_policy": "Within-indicator comparison only; no cross-domain composite score.",
+    "data_commit": "25fe83e5c1db634015d453f9e84dc681013d8210"
   }
 }
