@@ -56,6 +56,28 @@ function hostPattern(host) {
   return new RegExp(`(?<![A-Za-z0-9-])${escapeRegExp(host)}(?![A-Za-z0-9-])`, "g");
 }
 
+function escapedHost(host, slashDepth) {
+  return host.replaceAll(".", `${"\\".repeat(slashDepth)}.`);
+}
+
+function replacementRules(host, canonicalHost) {
+  return [
+    {
+      representation: "plain",
+      pattern: hostPattern(host),
+      replacement: canonicalHost,
+    },
+    ...[1, 2].map((slashDepth) => {
+      const source = escapedHost(host, slashDepth);
+      return {
+        representation: `regex-escaped-${slashDepth}`,
+        pattern: new RegExp(escapeRegExp(source), "g"),
+        replacement: escapedHost(canonicalHost, slashDepth),
+      };
+    }),
+  ];
+}
+
 function isTextCandidate(relativePath) {
   if (excludedPaths.has(relativePath)) {
     return false;
@@ -123,12 +145,15 @@ function validateConfig(config) {
 }
 
 function countMatches(value, pattern) {
+  pattern.lastIndex = 0;
   return [...value.matchAll(pattern)].length;
 }
 
 const config = readJson(configPath);
 validateConfig(config);
-const patterns = config.legacy_hosts.map((host) => ({ host, pattern: hostPattern(host) }));
+const rules = config.legacy_hosts.flatMap((host) =>
+  replacementRules(host, config.canonical_host).map((rule) => ({ host, ...rule })),
+);
 const violations = [];
 const changes = [];
 let replacedOccurrences = 0;
@@ -143,17 +168,18 @@ for (const relativePath of trackedFiles()) {
   let next = original;
   let fileOccurrences = 0;
 
-  for (const { host, pattern } of patterns) {
+  for (const { host, representation, pattern, replacement } of rules) {
     const count = countMatches(next, pattern);
     if (!count) {
       continue;
     }
 
     fileOccurrences += count;
+    violations.push({ relativePath, host, representation, count });
     if (!checkOnly) {
-      next = next.replace(pattern, config.canonical_host);
+      pattern.lastIndex = 0;
+      next = next.replace(pattern, replacement);
     }
-    violations.push({ relativePath, host, count });
   }
 
   if (!checkOnly && next !== original) {
@@ -165,7 +191,10 @@ for (const relativePath of trackedFiles()) {
 
 if (checkOnly && violations.length > 0) {
   const details = violations
-    .map(({ relativePath, host, count }) => `${relativePath}: ${count} occurrence${count === 1 ? "" : "s"} of ${host}`)
+    .map(
+      ({ relativePath, host, representation, count }) =>
+        `${relativePath}: ${count} ${representation} occurrence${count === 1 ? "" : "s"} of ${host}`,
+    )
     .join("\n");
   throw new Error(`Legacy PainMap production hosts remain outside ${configPath}:\n${details}`);
 }
@@ -177,10 +206,12 @@ if (!checkOnly) {
       continue;
     }
     const value = readFileSync(absolute(relativePath), "utf8");
-    for (const { host, pattern } of patterns) {
+    for (const { host, representation, pattern } of rules) {
       const count = countMatches(value, pattern);
       if (count) {
-        remaining.push(`${relativePath}: ${count} occurrence${count === 1 ? "" : "s"} of ${host}`);
+        remaining.push(
+          `${relativePath}: ${count} ${representation} occurrence${count === 1 ? "" : "s"} of ${host}`,
+        );
       }
     }
   }
@@ -191,6 +222,6 @@ if (!checkOnly) {
 
 console.log(
   checkOnly
-    ? `Verified canonical production host ${config.canonical_host} across tracked public text files.`
-    : `Synchronized ${changes.length} tracked files and ${replacedOccurrences} legacy-host occurrences to ${config.canonical_host}.`
+    ? `Verified canonical production host ${config.canonical_host} across tracked public text files, including escaped validator forms.`
+    : `Synchronized ${changes.length} tracked files and ${replacedOccurrences} legacy-host occurrences to ${config.canonical_host}, including escaped validator forms.`,
 );
