@@ -60,6 +60,9 @@ function validateManifest(manifest) {
   if (!manifest.releaseId || !manifest.generatedAt || !Array.isArray(manifest.routes)) {
     throw new Error("data/routes.json must include releaseId, generatedAt, and routes");
   }
+  if (!/^\d{4}-\d{2}-\d{2}(?:T.*)?$/.test(String(manifest.generatedAt))) {
+    throw new Error(`data/routes.json generatedAt is not an ISO date or timestamp: ${manifest.generatedAt}`);
+  }
 
   const seen = {
     key: new Set(),
@@ -73,8 +76,19 @@ function validateManifest(manifest) {
         throw new Error(`Route is missing non-empty ${field}: ${JSON.stringify(route)}`);
       }
     }
+    if (/\s/.test(route.key)) {
+      throw new Error(`Route key must not contain whitespace: ${route.key}`);
+    }
     if (!route.path.startsWith("/") || !route.path.endsWith("/")) {
       throw new Error(`Route path must start and end with '/': ${route.path}`);
+    }
+    if (
+      route.canonicalPath !== undefined &&
+      (typeof route.canonicalPath !== "string" ||
+        !route.canonicalPath.startsWith("/") ||
+        !route.canonicalPath.endsWith("/"))
+    ) {
+      throw new Error(`Route canonicalPath must start and end with '/': ${route.canonicalPath}`);
     }
     if (!route.file.endsWith(".html")) {
       throw new Error(`Route file must be an HTML file: ${route.file}`);
