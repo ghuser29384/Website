@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:data": "npm run site-origin:sync && node scripts/synchronize-route-metadata.mjs && node scripts/synchronize-route-inventories.mjs && node --import ./scripts/reproducible-build-clock.mjs scripts/build-static-artifacts.mjs && node scripts/apply-brand-system.mjs && npm run html-assets:sync && node scripts/synchronize-candidate-package-manifest.mjs && node --import ./scripts/reproducible-build-clock.mjs scripts/build-static-artifacts.mjs",
+    "build:data": "npm run site-origin:sync && node scripts/synchronize-route-metadata.mjs && node scripts/synchronize-route-inventories.mjs && node --import ./scripts/reproducible-build-clock.mjs scripts/build-static-artifacts.mjs && npm run html-assets:sync && node scripts/apply-brand-system.mjs && node scripts/synchronize-candidate-package-manifest.mjs && node --import ./scripts/reproducible-build-clock.mjs scripts/build-static-artifacts.mjs",
     "site-origin:sync": "node scripts/synchronize-site-origin.mjs",
     "site-origin:check": "node scripts/synchronize-site-origin.mjs --check",
     "html-assets:sync": "node scripts/synchronize-html-asset-metadata.mjs",
