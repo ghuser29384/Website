@@ -1,0 +1,466 @@
+name: PainMap materialize fail-closed ranking readiness
+
+on:
+  push:
+    branches:
+      - feat/fail-closed-ranking-readiness-20260804
+
+permissions:
+  contents: write
+
+concurrency:
+  group: painmap-ranking-readiness-materializer
+  cancel-in-progress: false
+
+jobs:
+  materialize:
+    name: Apply, validate, and commit ranking-readiness gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out exact branch
+        uses: actions/checkout@v4
+        with:
+          ref: feat/fail-closed-ranking-readiness-20260804
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Preflight exact starting state
+        shell: bash
+        run: |
+          set -euo pipefail
+          expected_base='e57eb777a182ba38b4756231c3977636639e1b31'
+          test "$(git rev-parse HEAD^)" = "$expected_base"
+          test "$(git branch --show-current)" = 'feat/fail-closed-ranking-readiness-20260804'
+          test "$(git diff --name-only "$expected_base" HEAD)" = '.github/workflows/painmap-materialize-ranking-readiness.yml'
+          test -z "$(git status --porcelain=v1)"
+
+      - name: Apply exact fail-closed ranking-readiness patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          script_path = Path('script.js')
+          index_path = Path('index.html')
+          check_path = Path('scripts/check-static-site.mjs')
+
+          script = script_path.read_text(encoding='utf-8')
+          index = index_path.read_text(encoding='utf-8')
+          check = check_path.read_text(encoding='utf-8')
+
+          def replace_exact(text, old, new, label):
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f'{label}: expected exactly 1 occurrence, found {count}')
+              return text.replace(old, new, 1)
+
+          script = replace_exact(
+              script,
+              '  const rankingDisabledForGlobal = !isCountryView && !rankingReady;\n',
+              '  const rankingDisabled = !rankingReady;\n',
+              'ranking disabled declaration',
+          )
+
+          script = replace_exact(
+              script,
+              '''  if (globeModeSelect) {
+            globeModeSelect.value = state.globeMode;
+          }
+          ''',
+              '''  if (globeModeSelect) {
+            globeModeSelect.value = state.globeMode;
+            globeModeSelect.disabled = rankingDisabled;
+            globeModeSelect.title = rankingDisabled
+              ? "Cause-mode controls are disabled until the active release passes its ranking-readiness gate."
+              : "Choose the visible atlas cause context.";
+            globeModeSelect.setAttribute(
+              "aria-label",
+              rankingDisabled
+                ? "Cause-mode selector is disabled while release ranking-readiness gates are active"
+                : "Atlas cause mode"
+            );
+          }
+          ''',
+              'globe mode readiness gate',
+          )
+
+          script = replace_exact(
+              script,
+              '''  if (globeModeCopy) {
+            globeModeCopy.textContent = !isCountryView
+              ? globeMode.globeCopy
+              : isProvinceView
+                ? state.globeMode === "death"
+                  ? "Province drill-down uses real ADM1 geometry plus province population and age structure from WorldPop to estimate which death causes loom largest in the selected province."
+                  : "Province drill-down uses real ADM1 geometry, province population and age structure from WorldPop, World Bank ADM1 poverty where available, and province allocation proxies for the remaining causes."
+              : state.globeMode === "death"
+                ? "Country drill-down narrows back to national human death causes because the site does not load equally robust country animal-death data."
+                : "Country drill-down separates broader human suffering from three animal buckets for the selected country: factory-farmed animals, non-insect wild animals, and insects.";
+          }
+          ''',
+              '''  if (globeModeCopy) {
+            globeModeCopy.textContent = rankingDisabled
+              ? "Cause rankings are unavailable because the active release does not pass its ranking-readiness gate. The atlas remains available for coverage, provenance, and place-context inspection."
+              : !isCountryView
+                ? globeMode.globeCopy
+                : isProvinceView
+                  ? state.globeMode === "death"
+                    ? "Province drill-down uses real ADM1 geometry plus province population and age structure from WorldPop to estimate which death causes loom largest in the selected province."
+                    : "Province drill-down uses real ADM1 geometry, province population and age structure from WorldPop, World Bank ADM1 poverty where available, and province allocation proxies for the remaining causes."
+                : state.globeMode === "death"
+                  ? "Country drill-down narrows back to national human death causes because the site does not load equally robust country animal-death data."
+                  : "Country drill-down separates broader human suffering from three animal buckets for the selected country: factory-farmed animals, non-insect wild animals, and insects.";
+          }
+          ''',
+              'globe mode copy readiness gate',
+          )
+
+          script = replace_exact(
+              script,
+              '''  if (humanSectionLabel) {
+            humanSectionLabel.textContent = isProvinceView
+              ? state.globeMode === "death"
+                ? "Province death causes"
+                : "Top 10 causes of pain in this province"
+              : state.selectedCountry
+              ? globeMode.humanSectionLabel
+              : state.globeMode === "death"
+                ? "Atlas context: whole-world life-years lost"
+                : "Atlas context: whole-world suffering";
+          }
+
+          if (animalSectionLabel) {
+            animalSectionLabel.textContent = state.selectedCountry
+              ? globeMode.animalSectionLabel
+              : state.globeMode === "death"
+                ? ""
+                : "Whole-world animal suffering";
+          }
+          ''',
+              '''  if (humanSectionLabel) {
+            humanSectionLabel.textContent = rankingDisabled
+              ? "Cause ranking unavailable for this release"
+              : isProvinceView
+                ? state.globeMode === "death"
+                  ? "Province death causes"
+                  : "Top 10 causes of pain in this province"
+                : state.selectedCountry
+                ? globeMode.humanSectionLabel
+                : state.globeMode === "death"
+                  ? "Atlas context: whole-world life-years lost"
+                  : "Atlas context: whole-world suffering";
+          }
+
+          if (animalSectionLabel) {
+            animalSectionLabel.textContent = rankingDisabled
+              ? "Animal cause ranking unavailable"
+              : state.selectedCountry
+                ? globeMode.animalSectionLabel
+                : state.globeMode === "death"
+                  ? ""
+                  : "Whole-world animal suffering";
+          }
+          ''',
+              'section labels readiness gate',
+          )
+
+          script = replace_exact(
+              script,
+              '''    rankingModeSelect.disabled = rankingDisabledForGlobal;
+            rankingModeSelect.title = rankingDisabledForGlobal
+              ? "Global ranking is disabled in coverage-first mode. Select a country to use country-scoped ranking controls."
+              : "Order the visible atlas context by selected ranking mode.";
+            rankingModeSelect.setAttribute(
+              "aria-label",
+              rankingDisabledForGlobal
+                ? "Ranking mode selector is disabled while release coverage gates are active"
+                : "Ranking mode selector"
+            );
+          ''',
+              '''    rankingModeSelect.disabled = rankingDisabled;
+            rankingModeSelect.title = rankingDisabled
+              ? "Ranking controls are disabled until the active release passes its ranking-readiness gate."
+              : "Order the visible atlas context by selected ranking mode.";
+            rankingModeSelect.setAttribute(
+              "aria-label",
+              rankingDisabled
+                ? "Ranking mode selector is disabled while release ranking-readiness gates are active"
+                : "Ranking mode selector"
+            );
+          ''',
+              'ranking select readiness gate',
+          )
+
+          script = replace_exact(
+              script,
+              '''  if (rankingCopy) {
+            if (!isCountryView) {
+              rankingCopy.textContent = rankingModes[state.rankingMode].copy;
+          ''',
+              '''  if (rankingCopy) {
+            if (rankingDisabled) {
+              const reason = releaseRankingReadinessReason(state.releaseCoverage);
+              rankingCopy.textContent = `Ranking controls are unavailable for this release: ${reason} The map and tables remain available for coverage and provenance inspection.`;
+            } else if (!isCountryView) {
+              rankingCopy.textContent = rankingModes[state.rankingMode].copy;
+          ''',
+              'ranking copy readiness gate',
+          )
+
+          script = replace_exact(
+              script,
+              '''function renderIssues(country) {
+            if (isSnapshotMode()) {
+          ''',
+              '''function renderIssues(country) {
+            if (!releaseRankingReadiness(state.releaseCoverage)) {
+              const reason = releaseRankingReadinessReason(state.releaseCoverage);
+              renderIssueStatus(
+                "Cause ranking unavailable",
+                `The active release does not pass its ranking-readiness gate: ${reason} Use place search, coverage status, source metadata, and event evidence without treating the current context rows as a ranked comparison.`
+              );
+              return;
+            }
+
+            if (isSnapshotMode()) {
+          ''',
+              'human issue readiness guard',
+          )
+
+          script = replace_exact(
+              script,
+              '''function renderAnimalIssues(country) {
+            if (!currentGlobeModeConfig().showAnimals || state.selectedProvince) {
+          ''',
+              '''function renderAnimalIssues(country) {
+            if (!releaseRankingReadiness(state.releaseCoverage)) {
+              const reason = releaseRankingReadinessReason(state.releaseCoverage);
+              renderAnimalIssueStatus(
+                "Animal ranking unavailable",
+                `The active release does not pass its ranking-readiness gate: ${reason} Event-level animal-pain evidence remains available below without converting sparse proxy context into a cause ranking.`
+              );
+              return;
+            }
+
+            if (!currentGlobeModeConfig().showAnimals || state.selectedProvince) {
+          ''',
+              'animal issue readiness guard',
+          )
+
+          script = replace_exact(
+              script,
+              '''  selectionFootnote.textContent = `${boundarySource}${issueSource}${animalSource} Current ordering: ${rankingLabel(state.rankingMode)}.`;
+          ''',
+              '''  if (releaseRankingReadiness(state.releaseCoverage)) {
+            selectionFootnote.textContent = `${boundarySource}${issueSource}${animalSource} Current ordering: ${rankingLabel(state.rankingMode)}.`;
+          } else {
+            const reason = releaseRankingReadinessReason(state.releaseCoverage);
+            selectionSummary.textContent = `${provinceNameLabel || name} is selected for coverage, provenance, and place-context inspection. Cause rankings are unavailable because the active release does not pass its ranking-readiness gate.`;
+            selectionFootnote.textContent = `${boundarySource} The live context sources remain labeled separately from the frozen release. Ranking gate: ${reason}`;
+          }
+          ''',
+              'selected place readiness copy override',
+          )
+
+          index = replace_exact(
+              index,
+              '<select id="globe-mode" class="ranking-select">\n',
+              '<select id="globe-mode" class="ranking-select" disabled aria-disabled="true" title="Cause-mode controls are disabled until the active release passes its ranking-readiness gate.">\n',
+              'static globe mode disabled',
+          )
+          index = replace_exact(
+              index,
+              '<select id="ranking-mode" class="ranking-select">\n',
+              '<select id="ranking-mode" class="ranking-select" disabled aria-disabled="true" title="Ranking controls are disabled until the active release passes its ranking-readiness gate.">\n',
+              'static ranking mode disabled',
+          )
+          index = replace_exact(
+              index,
+              '''            <p class="ranking-copy" id="globe-mode-copy">
+                        Compare country-level suffering or death burdens while keeping the animal pain research visualizations and
+                        dataset pages connected to the same source registry.
+                      </p>
+          ''',
+              '''            <p class="ranking-copy" id="globe-mode-copy">
+                        Cause rankings are unavailable until the active release passes its ranking-readiness gate. The atlas remains
+                        available for coverage, provenance, and place-context inspection.
+                      </p>
+          ''',
+              'static globe copy',
+          )
+          index = replace_exact(
+              index,
+              '''            <p class="ranking-copy" id="ranking-copy">
+                        These controls affect the atlas ranking layer. Use the table equivalents and dataset pages to audit the
+                        same values without relying on the map.
+                      </p>
+          ''',
+              '''            <p class="ranking-copy" id="ranking-copy">
+                        Ranking controls are disabled for this release. Use the coverage table, source metadata, and event evidence
+                        without treating sparse context rows as a ranked comparison.
+                      </p>
+          ''',
+              'static ranking copy',
+          )
+          index = replace_exact(
+              index,
+              '<p class="label" id="human-section-label">Whole-world top 10 across humans and animals</p>',
+              '<p class="label" id="human-section-label">Cause ranking unavailable for this release</p>',
+              'static human section label',
+          )
+          index = replace_exact(
+              index,
+              '<p class="label" id="animal-section-label">Animal suffering causes</p>',
+              '<p class="label" id="animal-section-label">Animal cause ranking unavailable</p>',
+              'static animal section label',
+          )
+          index = replace_exact(
+              index,
+              '''          <p class="selection-summary" id="selection-summary">
+                      Search or select a place to inspect broader human and animal suffering burdens with source, method,
+                      vintage, and uncertainty metadata beside the visible rankings.
+                    </p>
+          ''',
+              '''          <p class="selection-summary" id="selection-summary">
+                      Search or select a place to inspect coverage, source, method, vintage, and uncertainty context. Cause
+                      rankings remain unavailable until the active release passes its ranking-readiness gate.
+                    </p>
+          ''',
+              'static selection summary',
+          )
+          index = replace_exact(
+              index,
+              '''          <p class="detail-footnote" id="selection-footnote">
+                      This panel is the place-first atlas layer. Human rankings combine recurring EA priorities with broader World
+                      Bank burden indicators. Animal cards use country slaughter, aquaculture, land-area wild estimates, and a
+                      Wild Animal Initiative direct insect benchmark plus Rethink Priorities sentience and welfare-range
+                      distributions as burden proxies rather than full moral-weight outputs.
+                    </p>
+          ''',
+              '''          <p class="detail-footnote" id="selection-footnote">
+                      This panel is the place-first atlas context layer. Boundary, proxy, and priority-overlay rows remain distinct
+                      from direct evidence, and the active release does not currently authorize a global, country, or province cause
+                      ranking. Event-level animal-pain evidence remains available below with its own source and uncertainty fields.
+                    </p>
+          ''',
+              'static selection footnote',
+          )
+
+          insert_after = '''expectPattern("index.html", read("index.html"), /id="release-mode-snapshot"/, "snapshot release mode tab");
+          expectPattern("index.html", read("index.html"), /id="release-mode-live"/, "live release mode tab");
+          '''
+          addition = r'''expectPattern(
+            "index.html",
+            read("index.html"),
+            /id="globe-mode"[^>]*disabled[^>]*aria-disabled="true"/,
+            "disabled static cause-mode control"
+          );
+          expectPattern(
+            "index.html",
+            read("index.html"),
+            /id="ranking-mode"[^>]*disabled[^>]*aria-disabled="true"/,
+            "disabled static ranking-mode control"
+          );
+          expectPattern(
+            "script.js",
+            read("script.js"),
+            /const rankingDisabled = !rankingReady;/,
+            "release-wide ranking-readiness control gate"
+          );
+          expectPattern(
+            "script.js",
+            read("script.js"),
+            /function renderIssues\(country\) \{[\s\S]*?if \(!releaseRankingReadiness\(state\.releaseCoverage\)\)/,
+            "human issue ranking fail-closed gate"
+          );
+          expectPattern(
+            "script.js",
+            read("script.js"),
+            /function renderAnimalIssues\(country\) \{[\s\S]*?if \(!releaseRankingReadiness\(state\.releaseCoverage\)\)/,
+            "animal issue ranking fail-closed gate"
+          );
+          if (read("script.js").includes("Select a country to use country-scoped ranking controls")) {
+            failures.push("script.js must not imply that country-scoped cause rankings bypass release ranking readiness");
+          }
+          '''
+          check = replace_exact(check, insert_after, insert_after + addition, 'static readiness assertions')
+
+          script_path.write_text(script, encoding='utf-8', newline='\n')
+          index_path.write_text(index, encoding='utf-8', newline='\n')
+          check_path.write_text(check, encoding='utf-8', newline='\n')
+          PY
+
+      - name: Validate complete repository contracts
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run check
+          npm run freshness:sources
+          python3 -m py_compile \
+            clients/python/painmap_client.py \
+            examples/load_place_profile.py \
+            scripts/build-source-backed-country-supplement.py \
+            scripts/build-human-health-pressure-context.py
+          git diff --check
+
+      - name: Smoke-test exact packaged tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/painmap-ranking-readiness-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for attempt in $(seq 1 40); do
+            curl --fail --silent --show-error http://127.0.0.1:4173/ >/dev/null && break
+            sleep 0.25
+          done
+          curl --fail --silent --show-error http://127.0.0.1:4173/ >/dev/null
+          npm run smoke:endpoints
+
+      - name: Audit fail-closed semantics
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          script = Path('script.js').read_text(encoding='utf-8')
+          index = Path('index.html').read_text(encoding='utf-8')
+          coverage = Path('v1/coverage.json').read_text(encoding='utf-8')
+
+          assert '"ready": false' in coverage
+          assert 'const rankingDisabled = !rankingReady;' in script
+          assert 'rankingDisabledForGlobal' not in script
+          assert script.count('if (!releaseRankingReadiness(state.releaseCoverage)) {') >= 2
+          assert 'Select a country to use country-scoped ranking controls' not in script
+          assert 'id="globe-mode" class="ranking-select" disabled aria-disabled="true"' in index
+          assert 'id="ranking-mode" class="ranking-select" disabled aria-disabled="true"' in index
+          assert 'Cause ranking unavailable for this release' in index
+          assert 'Animal cause ranking unavailable' in index
+          PY
+
+      - name: Commit materialized outputs and retire workflow
+        shell: bash
+        env:
+          BRANCH: feat/fail-closed-ranking-readiness-20260804
+        run: |
+          set -euo pipefail
+          rm .github/workflows/painmap-materialize-ranking-readiness.yml
+          git add -A
+          git diff --cached --check
+          test -n "$(git diff --cached --name-only)"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Fail closed cause rankings until release readiness'
+          git push origin "HEAD:${BRANCH}"
