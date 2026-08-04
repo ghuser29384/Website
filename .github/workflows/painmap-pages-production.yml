@@ -68,6 +68,13 @@ jobs:
           source: ./
           destination: ./_site
 
+      - name: Verify packaged well-known security policy
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f ./_site/.well-known/security.txt
+          cmp -s ./.well-known/security.txt ./_site/.well-known/security.txt
+
       - name: Upload production Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -124,6 +131,13 @@ jobs:
             echo 'The custom domain did not serve the deployed Evidence Contours homepage.' >&2
             exit 1
           fi
+
+          curl --fail --location --silent --show-error \
+            -H 'Cache-Control: no-cache' \
+            "${base}/.well-known/security.txt?revision=${revision}" > /tmp/painmap-security.txt
+          grep -Fqx 'Contact: mailto:security@painmaps.org' /tmp/painmap-security.txt
+          grep -Fqx 'Canonical: https://painmaps.org/.well-known/security.txt' /tmp/painmap-security.txt
+          grep -Fqx 'Policy: https://painmaps.org/security/' /tmp/painmap-security.txt
 
           curl --fail --location --silent --show-error \
             -H 'Cache-Control: no-cache' \
