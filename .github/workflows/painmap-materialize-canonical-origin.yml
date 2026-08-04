@@ -18,60 +18,216 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
-      - name: Check out canonical-origin branch
+      - name: Check out exact triggering revision
         uses: actions/checkout@v4
         with:
-          ref: fix/canonical-domain-painmaps-org-20260731
+          ref: ${{ github.sha }}
           fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: "22"
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
-      - name: Materialize and validate the complete site
+      - name: Verify isolated starting revision
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          test -z "$(git status --porcelain=v1)"
+          test "$(git merge-base HEAD 89e1fe89395ec8a4702b73bc3e89bf21b9870d44)" = "89e1fe89395ec8a4702b73bc3e89bf21b9870d44"
+
+      - name: Materialize and prove deterministic output
         shell: bash
         run: |
           set -euo pipefail
           npm run check
+          git diff --binary > /tmp/painmap-materialized-first.patch
+          sha256sum /tmp/painmap-materialized-first.patch | tee /tmp/materialized-patch-sha256.txt
+          npm run check
+          git diff --binary > /tmp/painmap-materialized-second.patch
+          cmp /tmp/painmap-materialized-first.patch /tmp/painmap-materialized-second.patch
+          sha256sum /tmp/painmap-materialized-second.patch
           npm run freshness:sources
-          python3 -m py_compile \
-            clients/python/painmap_client.py \
-            examples/load_place_profile.py \
-            scripts/build-source-backed-country-supplement.py \
-            scripts/build-human-health-pressure-context.py
-          git diff --check
+          python3 -m py_compile clients/python/painmap_client.py examples/load_place_profile.py
+          python3 -m py_compile scripts/build-source-backed-country-supplement.py scripts/build-human-health-pressure-context.py
 
-      - name: Verify canonical-host migration boundaries
+      - name: Audit generated migration semantics
         shell: bash
         run: |
           set -euo pipefail
           test "$(tr -d '\r\n' < CNAME)" = "painmaps.org"
           npm run site-origin:check
-          if git diff --numstat | awk '$1 == "-" || $2 == "-" { found=1 } END { exit found ? 0 : 1 }'; then
-            echo "Binary changes are not permitted in the canonical-host migration." >&2
-            exit 1
-          fi
-          changed_count="$(git diff --name-only | wc -l | tr -d ' ')"
-          if [[ "$changed_count" -lt 10 || "$changed_count" -gt 5000 ]]; then
-            echo "Unexpected canonical-host migration scope: $changed_count files." >&2
-            exit 1
-          fi
-          echo "Canonical-host migration changed $changed_count tracked files."
-          git diff --stat
+          npm run html-assets:check
+          git diff --check -- . ':(exclude)painmap2.md'
+          python3 - <<'PY'
+          import json
+          import pathlib
+          import re
+          import subprocess
 
-      - name: Commit exact validated migration and retire this workflow
+          root = pathlib.Path.cwd()
+          raw = subprocess.check_output(["git", "diff", "--name-only", "-z"])
+          changed = [item.decode("utf-8") for item in raw.split(b"\0") if item]
+          expected_total = 1071
+          if len(changed) != expected_total:
+              raise SystemExit(f"unexpected generated changed-file count: {len(changed)}; expected {expected_total}")
+
+          json_paths = [path for path in changed if path.endswith((".json", ".jsonld", ".geojson"))]
+          html_paths = [path for path in changed if path.endswith(".html")]
+          other_paths = [path for path in changed if path not in set(json_paths) and path not in set(html_paths)]
+          if (len(json_paths), len(html_paths), len(other_paths)) != (654, 388, 29):
+              raise SystemExit(
+                  f"unexpected generated file classes: JSON={len(json_paths)}, HTML={len(html_paths)}, other={len(other_paths)}"
+              )
+
+          def old_bytes(relative):
+              return subprocess.check_output(["git", "show", f"HEAD:{relative}"])
+
+          def old_text(relative):
+              return old_bytes(relative).decode("utf-8")
+
+          def replace_hosts(value):
+              return (
+                  value.replace("painmap.org", "painmaps.org")
+                  .replace("painmap\\.org", "painmaps\\.org")
+                  .replace("painmap\\\\.org", "painmaps\\\\.org")
+              )
+
+          for relative in changed:
+              data = (root / relative).read_bytes()
+              try:
+                  data.decode("utf-8")
+              except UnicodeDecodeError as error:
+                  raise SystemExit(f"non-UTF-8 generated change: {relative}: {error}")
+
+          allowed_byte_fields = {"bytes", "byte_count", "size", "size_bytes"}
+          hex64 = re.compile(r"[0-9a-f]{64}")
+
+          def audit_json(before, after, path):
+              if type(before) is not type(after):
+                  raise SystemExit(f"JSON type changed at {path}")
+              if isinstance(before, dict):
+                  if before.keys() != after.keys():
+                      raise SystemExit(f"JSON keys changed at {path}")
+                  for key in before:
+                      audit_json(before[key], after[key], path + (key,))
+                  return
+              if isinstance(before, list):
+                  if len(before) != len(after):
+                      raise SystemExit(f"JSON list length changed at {path}")
+                  for index, (left, right) in enumerate(zip(before, after)):
+                      audit_json(left, right, path + (index,))
+                  return
+              if before == after:
+                  return
+              leaf = str(path[-1])
+              if isinstance(before, str) and isinstance(after, str):
+                  if replace_hosts(before) == after:
+                      return
+                  if hex64.fullmatch(before) and hex64.fullmatch(after):
+                      return
+              if (
+                  isinstance(before, (int, float))
+                  and not isinstance(before, bool)
+                  and isinstance(after, (int, float))
+                  and not isinstance(after, bool)
+                  and leaf in allowed_byte_fields
+              ):
+                  return
+              raise SystemExit(f"unapproved JSON scalar change at {path}: {before!r} -> {after!r}")
+
+          for relative in json_paths:
+              before = json.loads(old_text(relative))
+              after = json.loads((root / relative).read_text(encoding="utf-8"))
+              audit_json(before, after, (relative,))
+
+          body_pattern = re.compile(r"<body\b[\s\S]*?</body>", re.IGNORECASE)
+          asset_names = ("script.js", "compare.js", "places-coverage.js", "route-table-labels.js")
+
+          def normalized_body(value, relative):
+              value = replace_hosts(value)
+              match = body_pattern.search(value)
+              if not match:
+                  raise SystemExit(f"missing body element: {relative}")
+              body = match.group(0)
+              for asset in asset_names:
+                  body = re.sub(
+                      rf'(\bsrc="(?:/|\.\.?/)*{re.escape(asset)})(?:\?[^\"]*)?(\")',
+                      r"\1\2",
+                      body,
+                      flags=re.IGNORECASE,
+                  )
+              body = re.sub(r'\s+integrity="[^"]*"', "", body, flags=re.IGNORECASE)
+              body = re.sub(r'\s+crossorigin="anonymous"', "", body, flags=re.IGNORECASE)
+              return body
+
+          for relative in html_paths:
+              before = normalized_body(old_text(relative), relative)
+              after = normalized_body((root / relative).read_text(encoding="utf-8"), relative)
+              if before != after:
+                  raise SystemExit(f"HTML body changed outside host and asset metadata: {relative}")
+
+          for relative in other_paths:
+              before = replace_hosts(old_text(relative))
+              after = (root / relative).read_text(encoding="utf-8")
+              if before != after:
+                  raise SystemExit(f"non-HTML text changed beyond canonical host replacement: {relative}")
+
+          if "painmap.org" in "\n".join((root / path).read_text(encoding="utf-8") for path in changed):
+              raise SystemExit("legacy plain host remains in generated changed files")
+
+          summary = {
+              "changed_files": len(changed),
+              "json_files": len(json_paths),
+              "html_files": len(html_paths),
+              "other_text_files": len(other_paths),
+              "json_contract": "host-strings-hashes-and-byte-counts-only",
+              "html_body_contract": "unchanged-except-host-and-known-asset-metadata",
+              "other_text_contract": "host-replacement-only",
+          }
+          pathlib.Path("/tmp/materialization-semantic-audit.json").write_text(
+              json.dumps(summary, indent=2, sort_keys=True) + "\n",
+              encoding="utf-8",
+          )
+          print(json.dumps(summary, sort_keys=True))
+          PY
+
+      - name: Smoke test materialized static endpoints
         shell: bash
         run: |
           set -euo pipefail
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/painmap-static-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          npm run smoke:endpoints
+
+      - name: Upload pre-commit audit evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr33-canonical-origin-materialization-${{ github.sha }}
+          path: |
+            /tmp/painmap-materialized-first.patch
+            /tmp/materialized-patch-sha256.txt
+            /tmp/materialization-semantic-audit.json
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Commit validated migration and retire temporary workflows
+        shell: bash
+        run: |
+          set -euo pipefail
+          git show 89e1fe89395ec8a4702b73bc3e89bf21b9870d44:.github/workflows/painmap-static-checks.yml > .github/workflows/painmap-static-checks.yml
           rm .github/workflows/painmap-materialize-canonical-origin.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Canonicalize public metadata on painmaps.org"
+          git commit -m "Materialize painmaps.org canonical origin"
+          git fetch origin fix/canonical-domain-painmaps-org-20260731
+          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
           git push origin HEAD:fix/canonical-domain-painmaps-org-20260731
