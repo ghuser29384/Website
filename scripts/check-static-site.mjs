@@ -684,6 +684,39 @@ for (const modeId of ["snapshot", "live"]) {
 
 expectPattern("index.html", read("index.html"), /id="release-mode-snapshot"/, "snapshot release mode tab");
 expectPattern("index.html", read("index.html"), /id="release-mode-live"/, "live release mode tab");
+expectPattern(
+  "index.html",
+  read("index.html"),
+  /id="globe-mode"[^>]*disabled[^>]*aria-disabled="true"/,
+  "disabled static cause-mode control"
+);
+expectPattern(
+  "index.html",
+  read("index.html"),
+  /id="ranking-mode"[^>]*disabled[^>]*aria-disabled="true"/,
+  "disabled static ranking-mode control"
+);
+expectPattern(
+  "script.js",
+  read("script.js"),
+  /const rankingDisabled = !rankingReady;/,
+  "release-wide ranking-readiness control gate"
+);
+expectPattern(
+  "script.js",
+  read("script.js"),
+  /function renderIssues\(country\) \{[\s\S]*?if \(!releaseRankingReadiness\(state\.releaseCoverage\)\)/,
+  "human issue ranking fail-closed gate"
+);
+expectPattern(
+  "script.js",
+  read("script.js"),
+  /function renderAnimalIssues\(country\) \{[\s\S]*?if \(!releaseRankingReadiness\(state\.releaseCoverage\)\)/,
+  "animal issue ranking fail-closed gate"
+);
+if (read("script.js").includes("Select a country to use country-scoped ranking controls")) {
+  failures.push("script.js must not imply that country-scoped cause rankings bypass release ranking readiness");
+}
 
 const analyticsEvents = readJson("data/analytics-events.json");
 for (const eventName of ["route_view", "atlas_place_selected", "dataset_download", "compare_opened", "release_manifest_opened", "release_mode_selected"]) {

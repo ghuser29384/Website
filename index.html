@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" as="style" href="/styles.css?v=93e0a5d87fc250eb">
-    <link rel="modulepreload" href="/script.js?v=e81a66deb7aa9e5a">
+    <link rel="modulepreload" href="/script.js?v=9a20d059b36bd776">
     <link rel="stylesheet" href="/styles.css?v=93e0a5d87fc250eb" integrity="sha384-247i4QQKs5xcO5DRVdCYNDn8SIksDDkmOncbjyJb10IWhCroxw7XbgJgLD7gwiez" crossorigin="anonymous">
     <link rel="icon" href="/assets/brand/painmap-favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/assets/brand/painmap-symbol-primary.svg">
@@ -368,8 +368,8 @@
           <p class="label" id="selection-meta">Atlas context</p>
           <h2 id="selection-title">Place-level context.</h2>
           <p class="selection-summary" id="selection-summary">
-            Search or select a place to inspect broader human and animal suffering burdens with source, method,
-            vintage, and uncertainty metadata beside the visible rankings.
+            Search or select a place to inspect coverage, source, method, vintage, and uncertainty context. Cause
+            rankings remain unavailable until the active release passes its ranking-readiness gate.
           </p>
 
           <div class="place-summary-card" id="place-summary-card" aria-label="Selected place summary">
@@ -468,14 +468,14 @@
             <p class="label" id="globe-mode-title">Atlas layer mode</p>
             <div class="ranking-controls">
               <label class="sr-only" for="globe-mode">Globe mode</label>
-              <select id="globe-mode" class="ranking-select">
+              <select id="globe-mode" class="ranking-select" disabled aria-disabled="true" title="Cause-mode controls are disabled until the active release passes its ranking-readiness gate.">
                 <option value="suffering">Top Causes of Suffering by Country</option>
                 <option value="death">Top Causes of Death by Country</option>
               </select>
             </div>
             <p class="ranking-copy" id="globe-mode-copy">
-              Compare country-level suffering or death burdens while keeping the animal pain research visualizations and
-              dataset pages connected to the same source registry.
+              Cause rankings are unavailable until the active release passes its ranking-readiness gate. The atlas remains
+              available for coverage, provenance, and place-context inspection.
             </p>
           </section>
 
@@ -483,35 +483,34 @@
             <p class="label" id="ranking-title">Order Causes By</p>
             <div class="ranking-controls">
               <label class="sr-only" for="ranking-mode">Cause ordering</label>
-              <select id="ranking-mode" class="ranking-select">
+              <select id="ranking-mode" class="ranking-select" disabled aria-disabled="true" title="Ranking controls are disabled until the active release passes its ranking-readiness gate.">
                 <option value="improvement">Available decrease in suffering per dollar</option>
                 <option value="total">Total amount of suffering caused</option>
                 <option value="per-being">Amount of suffering suffered per being</option>
               </select>
             </div>
             <p class="ranking-copy" id="ranking-copy">
-              These controls affect the atlas ranking layer. Use the table equivalents and dataset pages to audit the
-              same values without relying on the map.
+              Ranking controls are disabled for this release. Use the coverage table, source metadata, and event evidence
+              without treating sparse context rows as a ranked comparison.
             </p>
           </section>
 
           <section class="issues-section">
-            <p class="label" id="human-section-label">Whole-world top 10 across humans and animals</p>
+            <p class="label" id="human-section-label">Cause ranking unavailable for this release</p>
             <div class="issues" id="issues"></div>
             <div class="table-equivalent" id="issues-table"></div>
           </section>
 
           <section class="issues-section" id="animal-section">
-            <p class="label" id="animal-section-label">Animal suffering causes</p>
+            <p class="label" id="animal-section-label">Animal cause ranking unavailable</p>
             <div class="issues" id="animal-issues"></div>
             <div class="table-equivalent" id="animal-issues-table"></div>
           </section>
 
           <p class="detail-footnote" id="selection-footnote">
-            This panel is the place-first atlas layer. Human rankings combine recurring EA priorities with broader World
-            Bank burden indicators. Animal cards use country slaughter, aquaculture, land-area wild estimates, and a
-            Wild Animal Initiative direct insect benchmark plus Rethink Priorities sentience and welfare-range
-            distributions as burden proxies rather than full moral-weight outputs.
+            This panel is the place-first atlas context layer. Boundary, proxy, and priority-overlay rows remain distinct
+            from direct evidence, and the active release does not currently authorize a global, country, or province cause
+            ranking. Event-level animal-pain evidence remains available below with its own source and uncertainty fields.
           </p>
         </aside>
       </section>
@@ -809,6 +808,6 @@
     </div>
         <script src="vendor/d3.v7.min.js?v=f2094bbf6141b359" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
     <script src="vendor/topojson-client.v3.min.js?v=25cd02ae486cc506" integrity="sha384-Ukv1p/xTma6P4/2bY5KzWBw+ydSpXmhCMtyciIQVDJ1RmOxtCYNMF1uXT9T63H67" crossorigin="anonymous"></script>
-    <script type="module" src="script.js?v=e81a66deb7aa9e5a" integrity="sha384-TaYTgB4Zl0X/L2i7eETgus//FPgauU4FSS1lcwdHUXNmmBnQeKnp8nnMwj200S4N" crossorigin="anonymous"></script>
+    <script type="module" src="script.js?v=9a20d059b36bd776" integrity="sha384-Chofj+6+bwHPkCOlhy64iPsjLeUwRj45LN6t0UthqXVJWOJlGPA3IFRsEiSrAtR4" crossorigin="anonymous"></script>
   </body>
 </html>
