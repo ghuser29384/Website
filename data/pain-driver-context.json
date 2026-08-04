@@ -1,5 +1,5 @@
 {
-  "$schema": "https://painmap.org/schemas/pain-driver-context.schema.json",
+  "$schema": "https://painmaps.org/schemas/pain-driver-context.schema.json",
   "dataset_id": "painmap-human-mortality-context-v1",
   "title": "Human mortality-linked pain-driver context",
   "description": "Country context for selected severe human outcomes plausibly associated with pain and suffering. This is not a direct pain measurement and is not a universal ranking.",

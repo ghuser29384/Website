@@ -15,7 +15,7 @@
       "path": "/",
       "file": "index.html",
       "expected_title": "PainMap | Mixed-evidence atlas of pain sources by place",
-      "expected_canonical": "https://painmap.org/",
+      "expected_canonical": "https://painmaps.org/",
       "requires_breadcrumb": false,
       "accessibility": {
         "required_ids": [
@@ -105,7 +105,7 @@
       "path": "/atlas/",
       "file": "atlas/index.html",
       "expected_title": "Atlas | PainMap",
-      "expected_canonical": "https://painmap.org/atlas/",
+      "expected_canonical": "https://painmaps.org/atlas/",
       "requires_breadcrumb": true,
       "accessibility": {
         "required_ids": [],
@@ -132,7 +132,7 @@
       "path": "/places/",
       "file": "places/index.html",
       "expected_title": "Places | PainMap",
-      "expected_canonical": "https://painmap.org/places/",
+      "expected_canonical": "https://painmaps.org/places/",
       "requires_breadcrumb": true,
       "accessibility": {
         "required_ids": [],
@@ -158,7 +158,7 @@
       "path": "/compare/",
       "file": "compare/index.html",
       "expected_title": "Compare Places | PainMap",
-      "expected_canonical": "https://painmap.org/compare/",
+      "expected_canonical": "https://painmaps.org/compare/",
       "requires_breadcrumb": true,
       "accessibility": {
         "required_ids": [
@@ -224,7 +224,7 @@
       "path": "/data/",
       "file": "data/index.html",
       "expected_title": "Data | PainMap",
-      "expected_canonical": "https://painmap.org/data/",
+      "expected_canonical": "https://painmaps.org/data/",
       "requires_breadcrumb": true,
       "accessibility": {
         "required_ids": [],
@@ -252,7 +252,7 @@
       "path": "/api/",
       "file": "api/index.html",
       "expected_title": "API | PainMap",
-      "expected_canonical": "https://painmap.org/api/",
+      "expected_canonical": "https://painmaps.org/api/",
       "requires_breadcrumb": true,
       "accessibility": {
         "required_ids": [],
@@ -278,7 +278,7 @@
       "path": "/releases/2026-05-31/",
       "file": "releases/2026-05-31/index.html",
       "expected_title": "2026-05-31 Release | PainMap",
-      "expected_canonical": "https://painmap.org/releases/2026-05-31/",
+      "expected_canonical": "https://painmaps.org/releases/2026-05-31/",
       "requires_breadcrumb": true,
       "accessibility": {
         "required_ids": [],
@@ -305,7 +305,7 @@
       "path": "/releases/2026-05-31/changes/",
       "file": "releases/2026-05-31/changes/index.html",
       "expected_title": "2026-05-31 Release Changes | PainMap",
-      "expected_canonical": "https://painmap.org/releases/2026-05-31/changes/",
+      "expected_canonical": "https://painmaps.org/releases/2026-05-31/changes/",
       "requires_breadcrumb": true,
       "accessibility": {
         "required_ids": [],
@@ -332,7 +332,7 @@
       "path": "/security/",
       "file": "security/index.html",
       "expected_title": "Security | PainMap",
-      "expected_canonical": "https://painmap.org/security/",
+      "expected_canonical": "https://painmaps.org/security/",
       "requires_breadcrumb": true,
       "accessibility": {
         "required_ids": [],
@@ -358,7 +358,7 @@
       "path": "/policies/accessibility/audit-2026-06-05/",
       "file": "policies/accessibility/audit-2026-06-05/index.html",
       "expected_title": "WCAG 2.2 AA Audit Matrix | PainMap",
-      "expected_canonical": "https://painmap.org/policies/accessibility/audit-2026-06-05/",
+      "expected_canonical": "https://painmaps.org/policies/accessibility/audit-2026-06-05/",
       "requires_breadcrumb": true,
       "accessibility": {
         "required_ids": [],

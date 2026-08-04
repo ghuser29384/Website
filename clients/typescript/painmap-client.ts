@@ -231,7 +231,7 @@ export interface ReleaseManifest {
 export class PainMapClient {
   readonly baseUrl: string;
 
-  constructor(baseUrl = "https://painmap.org") {
+  constructor(baseUrl = "https://painmaps.org") {
     this.baseUrl = baseUrl.replace(/\/+$/, "");
   }
 

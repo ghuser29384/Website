@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 
 const csvPath = process.argv[2] || "examples/custom-geography.csv";
-const baseUrl = process.env.PAINMAP_BASE_URL || "https://painmap.org";
+const baseUrl = process.env.PAINMAP_BASE_URL || "https://painmaps.org";
 const base = new URL(baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`);
 
 function endpoint(pathname) {

@@ -4,7 +4,7 @@
   "policy_version": "2026-06-third-party-fetches-1",
   "default_network_collection": false,
   "snapshot_mode_client_upstream_fetches": false,
-  "privacy_summary": "Snapshot mode loads same-origin static release artifacts from painmap.org. Live overlay mode is opt-in and may fetch documented public-source domains for current context rows; the client does not send user ids, precise location, personal-health fields, or typed search strings to those upstream sources.",
+  "privacy_summary": "Snapshot mode loads same-origin static release artifacts from painmaps.org. Live overlay mode is opt-in and may fetch documented public-source domains for current context rows; the client does not send user ids, precise location, personal-health fields, or typed search strings to those upstream sources.",
   "connect_src_policy": [
     "self",
     "https://www.geoboundaries.org",
@@ -40,7 +40,7 @@
   "domains": [
     {
       "id": "painmap-static-release",
-      "domain": "painmap.org",
+      "domain": "painmaps.org",
       "mode": "release-materialized",
       "trigger": "Default site and API usage",
       "destination": "PainMap static hosting",

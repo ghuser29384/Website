@@ -292,7 +292,7 @@ function validateTextEndpoint(endpoint, text) {
   if (endpoint.path === "/.well-known/security.txt") {
     expect(text.includes("Contact:"), "/.well-known/security.txt must include Contact");
     expect(text.includes("Expires:"), "/.well-known/security.txt must include Expires");
-    expect(text.includes("Canonical: https://painmap.org/.well-known/security.txt"), "/.well-known/security.txt must include Canonical");
+    expect(text.includes("Canonical: https://painmaps.org/.well-known/security.txt"), "/.well-known/security.txt must include Canonical");
   }
 
   if (endpoint.path === "/data/country-gap-ledger.csv") {

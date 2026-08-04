@@ -1,15 +1,15 @@
-# painmap.org improvement plan for Codex GPT-5.5 xhigh reasoning
+# painmaps.org improvement plan for Codex GPT-5.5 xhigh reasoning
 
 ## Executive summary
 
 **Audience:** Codex GPT-5.5 xhigh reasoning  
 **Assumption:** this review had no access to private analytics, source repository internals, deployment settings, or backend/database credentials. Findings are based on a public crawl, rendered-page inspection, public SSL/hosting evidence, and primary standards/guidelines.
 
-painmap.org is currently a **single, highly ambitious, data-dense public page** whose stated purpose is to visualize current research on **animal pain**, especially Welfare Footprint estimates for birds, while using a **secondary country-context globe** for broader suffering/death burden context. The public crawl surfaced one main first-party page, a long sequence of interactive controls and explanatory sections, and a very large source list, but **no visible privacy policy, terms, cookie notice, or explicit persona-based navigation** in the rendered experience. Public SSL/hosting evidence indicates the domain resolves to GitHub CDN hostnames/IPs consistent with **GitHub Pages custom-domain hosting**. citeturn49view0turn49view3turn49view5turn9view6turn9view7turn15search0turn18search2turn18search3
+painmaps.org is currently a **single, highly ambitious, data-dense public page** whose stated purpose is to visualize current research on **animal pain**, especially Welfare Footprint estimates for birds, while using a **secondary country-context globe** for broader suffering/death burden context. The public crawl surfaced one main first-party page, a long sequence of interactive controls and explanatory sections, and a very large source list, but **no visible privacy policy, terms, cookie notice, or explicit persona-based navigation** in the rendered experience. Public SSL/hosting evidence indicates the domain resolves to GitHub CDN hostnames/IPs consistent with **GitHub Pages custom-domain hosting**. citeturn49view0turn49view3turn49view5turn9view6turn9view7turn15search0turn18search2turn18search3
 
 The site’s main strategic problem is **not lack of substance**. It is that the substance is presented in a structure that is too dense for broad comprehension, too visually dependent for strong accessibility, too under-governed for a health/research-adjacent public resource, and too lightly scaffolded for trust, discoverability, and long-term maintainability. The highest-confidence priorities are therefore: **rebuild the information architecture**, **add accessibility-equivalent non-visual pathways for every interactive map/chart**, **separate methods/data/policies from the storytelling layer**, **establish content governance and legal transparency**, and **instrument privacy-first performance and analytics**. citeturn49view0turn49view3turn49view5turn46view0turn46view1turn46view2turn29search8turn35search0
 
-A second major conclusion is strategic: **do not bolt patient-data collection onto the current GitHub Pages public site**. If painmap.org later expands from public research visualization into patient-, clinician-, or researcher-account workflows with identifiable health or symptom data, that should become a **separate product boundary** with a HIPAA-capable architecture, explicit data governance, consent flows, and business-associate/cloud controls. HHS states that the HIPAA Security Rule applies to electronic protected health information and that cloud use by regulated entities requires compliant safeguards and responsibilities; this is a materially different operating model from a static public website. citeturn35search0turn35search1turn35search9
+A second major conclusion is strategic: **do not bolt patient-data collection onto the current GitHub Pages public site**. If painmaps.org later expands from public research visualization into patient-, clinician-, or researcher-account workflows with identifiable health or symptom data, that should become a **separate product boundary** with a HIPAA-capable architecture, explicit data governance, consent flows, and business-associate/cloud controls. HHS states that the HIPAA Security Rule applies to electronic protected health information and that cloud use by regulated entities requires compliant safeguards and responsibilities; this is a materially different operating model from a static public website. citeturn35search0turn35search1turn35search9
 
 ## Current site crawl and technical profile
 
@@ -49,7 +49,7 @@ From a persona perspective, the current page best fits **researchers, policy/adv
 
 ### Technical profile
 
-The strongest public technical signal is hosting. A public SSL Labs lookup for painmap.org resolved the domain to four CDN IPs with hostnames like `cdn-185-199-110-153.github.com`, which, together with GitHub’s own documentation on custom domains for GitHub Pages, strongly indicates **GitHub Pages + GitHub CDN/Fastly-style edge delivery** under a custom domain. I could not, from this environment, independently enumerate the final live response headers or obtain a completed SSL grade artifact. citeturn15search0turn18search2turn18search3turn48search0
+The strongest public technical signal is hosting. A public SSL Labs lookup for painmaps.org resolved the domain to four CDN IPs with hostnames like `cdn-185-199-110-153.github.com`, which, together with GitHub’s own documentation on custom domains for GitHub Pages, strongly indicates **GitHub Pages + GitHub CDN/Fastly-style edge delivery** under a custom domain. I could not, from this environment, independently enumerate the final live response headers or obtain a completed SSL grade artifact. citeturn15search0turn18search2turn18search3turn48search0
 
 | Technical facet | High-confidence assessment | Confidence |
 |---|---|---|
@@ -86,7 +86,7 @@ What follows is the actionable backlog I would hand to Codex. Priorities are **P
 
 ### UX and information architecture
 
-The most important UX change is to stop treating the homepage as a container for the entire product. HHS’ **Health Literacy Online** emphasizes simple homepages, user-centered labeling, simple search, clear navigation, and content governance; the NHS digital service manual similarly emphasizes building consistent, usable services that put people first. painmap.org currently violates those principles by forcing primary narrative, controls, caveats, and bibliography into one dense scroll. citeturn46view0turn46view2turn46view4
+The most important UX change is to stop treating the homepage as a container for the entire product. HHS’ **Health Literacy Online** emphasizes simple homepages, user-centered labeling, simple search, clear navigation, and content governance; the NHS digital service manual similarly emphasizes building consistent, usable services that put people first. painmaps.org currently violates those principles by forcing primary narrative, controls, caveats, and bibliography into one dense scroll. citeturn46view0turn46view2turn46view4
 
 The current interface also lacks explicit onboarding. Comparable products show what “good” can look like at very different levels of sophistication: **PainSpot** uses a clear three-step path and a provider-specific route; **Pain-QuILT** was easier to use than comparison instruments, could be completed in under five minutes, and was preferred by a majority of adult chronic-pain participants; **CHOIR** explicitly balanced body-map precision against user burden through interviews and validation. Those are all strong signals that pain-related visualization products benefit from **guided entry**, **bounded task flows**, and **progressive disclosure** rather than “everything everywhere on one page.” citeturn37view1turn42view2turn37view2turn42view0
 
@@ -111,7 +111,7 @@ WCAG 2.1 requires text alternatives for non-text content, programmatically deter
 
 The highest-confidence accessibility risk is **non-visual parity**. Every action currently supported by globe clicks or chart scanning should also work through a keyboard/tabbed control set and a structured HTML table/list. W3C’s own accessibility tutorials and WCAG requirements make this a foundational expectation, not a bonus. citeturn29search1turn30search1turn31search2
 
-**WCAG-focused checklist for painmap.org**
+**WCAG-focused checklist for painmaps.org**
 
 | Criterion | Likely status | Why it is at risk on the current site | Remediation |
 |---|---|---|---|
@@ -144,7 +144,7 @@ For this site, the performance plan should be pragmatic: keep the public product
 
 The most urgent trust/compliance issue is straightforward: the public crawl did **not** reveal visible privacy or terms links. For a public site that mixes health-adjacent language, methodological interpretation, and links to organizations/charities, that is below the bar for maturity. HHS, NHS, and other public-sector models consistently surface accessibility, privacy, disclaimer, and editorial/governance links prominently. citeturn9view6turn9view7turn46view3turn47search4
 
-Because painmap.org appears to be a public informational/research site today, HIPAA likely does **not** apply to the current public content layer unless the site is collecting identifiable health data elsewhere. But if it ever starts creating, receiving, maintaining, or transmitting ePHI on behalf of a covered entity or business associate, HHS states the HIPAA Security Rule’s administrative, physical, and technical safeguards apply, including in cloud contexts. That is why my recommended architecture keeps the current public explorer separate from any future regulated workflow. citeturn35search0turn35search1turn35search9
+Because painmaps.org appears to be a public informational/research site today, HIPAA likely does **not** apply to the current public content layer unless the site is collecting identifiable health data elsewhere. But if it ever starts creating, receiving, maintaining, or transmitting ePHI on behalf of a covered entity or business associate, HHS states the HIPAA Security Rule’s administrative, physical, and technical safeguards apply, including in cloud contexts. That is why my recommended architecture keeps the current public explorer separate from any future regulated workflow. citeturn35search0turn35search1turn35search9
 
 For baseline web hardening, OWASP recommends secure response headers as a first-line defense. I could not enumerate the live header set from this environment, so this should be treated as a required verification task at the start of implementation. If any non-essential analytics or similar technologies are introduced, UK/EU-style cookie law guidance from the ICO requires clear explanation and active consent; essential-only/cookieless analytics is therefore the safer default for a public educational site. citeturn35search2turn35search6turn17search9turn36search0turn36search3
 
@@ -152,7 +152,7 @@ For baseline web hardening, OWASP recommends secure response headers as a first-
 
 The current title surfaced publicly as **“Who Can Feel Pain”**. That is elegant, but it is weak as a search asset because it does not tell searchers or crawlers enough about the site’s core topics: animal pain, welfare footprint, poultry pain, country context, or comparative suffering research. Google recommends clear title links, helpful meta descriptions, and appropriately deployed structured data. citeturn0search0turn33search1turn33search0turn33search2turn33search7
 
-The content-governance side is equally important. HHS’ Health Literacy Online and the CDC Clear Communication Index both emphasize clarity, scannability, and audience comprehension; the NHS health content standard and content policy emphasize transparent processes, quality standards, and trustworthy editorial handling. painmap.org clearly cares about evidence, but it does not yet package that evidence in a way that is easy to scan, understand, and find. citeturn46view0turn46view1turn47search0turn47search4
+The content-governance side is equally important. HHS’ Health Literacy Online and the CDC Clear Communication Index both emphasize clarity, scannability, and audience comprehension; the NHS health content standard and content policy emphasize transparent processes, quality standards, and trustworthy editorial handling. painmaps.org clearly cares about evidence, but it does not yet package that evidence in a way that is easy to scan, understand, and find. citeturn46view0turn46view1turn47search0turn47search4
 
 **Current vs recommended key pages**
 
@@ -167,9 +167,9 @@ The content-governance side is equally important. HHS’ Health Literacy Online 
 
 ### Technical architecture, scalability, and analytics
 
-GitHub Pages is a perfectly reasonable place to serve a **public, read-only, static-first knowledge product**. GitHub’s documentation also supports custom workflows and GitHub Actions-based deployment. That means you can keep painmap.org inexpensive and robust **if** you discipline the product boundary: static site for public exploration, generated artifacts for dataset pages, and optional edge/serverless read APIs only if the UX truly demands them. citeturn48search1turn48search8turn48search18
+GitHub Pages is a perfectly reasonable place to serve a **public, read-only, static-first knowledge product**. GitHub’s documentation also supports custom workflows and GitHub Actions-based deployment. That means you can keep painmaps.org inexpensive and robust **if** you discipline the product boundary: static site for public exploration, generated artifacts for dataset pages, and optional edge/serverless read APIs only if the UX truly demands them. citeturn48search1turn48search8turn48search18
 
-For long-term scalability, I recommend a **content/data pipeline** that emits versioned JSON and Markdown/MDX at build time. That gives you transparent provenance, immutable historical builds, and reproducible visualization state. The 2025 scoping review on digital pain manikin analysis found substantial methodological variation and called for **standardized methods**; that is a strong signal that painmap.org should treat data schemas, provenance, and versioning as first-class product features rather than background plumbing. citeturn39view6turn40view2turn44view0turn45view1
+For long-term scalability, I recommend a **content/data pipeline** that emits versioned JSON and Markdown/MDX at build time. That gives you transparent provenance, immutable historical builds, and reproducible visualization state. The 2025 scoping review on digital pain manikin analysis found substantial methodological variation and called for **standardized methods**; that is a strong signal that painmaps.org should treat data schemas, provenance, and versioning as first-class product features rather than background plumbing. citeturn39view6turn40view2turn44view0turn45view1
 
 On measurement, the right KPI set is not vanity traffic. It is **comprehension** and **task completion**. Suggested event taxonomy:
 
@@ -336,7 +336,7 @@ app.use(
         "img-src": ["'self'", "data:"],
         "script-src": ["'self'"],
         "style-src": ["'self'", "'unsafe-inline'"],
-        "connect-src": ["'self'", "https://api.painmap.org"],
+        "connect-src": ["'self'", "https://api.painmaps.org"],
         "frame-ancestors": ["'none'"],
       },
     },
@@ -535,7 +535,7 @@ jobs:
 
 ### Primary sources used
 
-The current-site findings are grounded in the public crawl of painmap.org itself, including the homepage structure, controls, methodological caveats, and source list. Public hosting signals came from SSL Labs, GitHub Pages documentation, and GitHub-associated IP information. citeturn49view0turn49view3turn49view5turn15search0turn18search2turn18search3
+The current-site findings are grounded in the public crawl of painmaps.org itself, including the homepage structure, controls, methodological caveats, and source list. Public hosting signals came from SSL Labs, GitHub Pages documentation, and GitHub-associated IP information. citeturn49view0turn49view3turn49view5turn15search0turn18search2turn18search3
 
 Accessibility guidance came from W3C/WAI WCAG 2.1/2.2 understanding docs and tutorials on non-text content, keyboard access, headings/labels, complex images, and image maps. citeturn29search0turn29search1turn29search3turn30search0turn30search1turn30search2turn30search3turn31search0turn31search2
 

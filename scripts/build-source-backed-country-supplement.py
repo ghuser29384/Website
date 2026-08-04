@@ -98,7 +98,7 @@ def world_bank_indicator_url(indicator_code: str) -> str:
         "?format=json&per_page=20000&date=2000:2026"
     )
 
-USER_AGENT = "PainMap-source-candidate/2026-07-14 (+https://painmap.org/)"
+USER_AGENT = "PainMap-source-candidate/2026-07-14 (+https://painmaps.org/)"
 CSV_TIMEOUT_SECONDS = 90
 
 
@@ -1082,7 +1082,7 @@ def public_context_schema() -> dict[str, Any]:
     ]
     return {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://painmap.org/schemas/pain-driver-context.schema.json",
+        "$id": "https://painmaps.org/schemas/pain-driver-context.schema.json",
         "title": "PainMap human mortality-linked context",
         "description": "A non-canonical context dataset. Ranks are only within a compatible human mortality-rate family and are not total-pain scores.",
         "type": "object",
@@ -1287,7 +1287,7 @@ def write_public_context(
         )
 
     dataset = {
-        "$schema": "https://painmap.org/schemas/pain-driver-context.schema.json",
+        "$schema": "https://painmaps.org/schemas/pain-driver-context.schema.json",
         "dataset_id": PUBLIC_CONTEXT_DATASET_ID,
         "title": "Human mortality-linked pain-driver context",
         "description": "Country context for selected severe human outcomes plausibly associated with pain and suffering. This is not a direct pain measurement and is not a universal ranking.",
@@ -1377,11 +1377,11 @@ def write_public_context(
 def update_data_page(fetched_at: str) -> None:
     path = ROOT / "data" / "index.html"
     html = path.read_text(encoding="utf-8")
-    if "https://painmap.org/data/pain-driver-context.json" not in html:
-        marker = '          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/releases/2026-05-31/diff.json" }'
+    if "https://painmaps.org/data/pain-driver-context.json" not in html:
+        marker = '          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmaps.org/releases/2026-05-31/diff.json" }'
         replacement = (
-            '          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmap.org/data/pain-driver-context.json" },\n'
-            '          { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://painmap.org/data/pain-driver-context.csv" },\n'
+            '          { "@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://painmaps.org/data/pain-driver-context.json" },\n'
+            '          { "@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": "https://painmaps.org/data/pain-driver-context.csv" },\n'
             + marker
         )
         if marker not in html:

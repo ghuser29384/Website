@@ -86,7 +86,7 @@
       "source_id": "painmap-welfare-assumptions",
       "label": "PainMap welfare and normalization assumptions",
       "publisher": "PainMap",
-      "url": "https://painmap.org/methods/",
+      "url": "https://painmaps.org/methods/",
       "license_id": "painmap-mit",
       "evidence_kind": "proxy",
       "source_vintage": "2026-05-31 release",
@@ -96,7 +96,7 @@
       "source_id": "painmap-priority-review",
       "label": "PainMap priority overlay review",
       "publisher": "PainMap",
-      "url": "https://painmap.org/releases/2026-05-31/",
+      "url": "https://painmaps.org/releases/2026-05-31/",
       "license_id": "painmap-mit",
       "evidence_kind": "priority-overlay",
       "source_vintage": "2026-05-31 release",
@@ -109,7 +109,7 @@
       "label": "PainMap site code and original release metadata",
       "license": "MIT",
       "licenseUri": "https://opensource.org/license/mit/",
-      "url": "https://painmap.org/LICENSE",
+      "url": "https://painmaps.org/LICENSE",
       "attribution": "PainMap contributors"
     },
     {

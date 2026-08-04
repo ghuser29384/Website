@@ -3,7 +3,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const site = "https://painmap.org";
+const site = "https://painmaps.org";
 const routeManifest = readJson("data/routes.json");
 const expectedRoutes = routeManifest.routes.map((route) => route.file);
 const expectedExports = [
@@ -254,9 +254,9 @@ for (const route of routeManifest.routes) {
   expectPattern(file, html, /name="referrer" content="strict-origin-when-cross-origin"/, "strict referrer metadata");
   expectPattern(file, html, /<link rel="preconnect" href="https:\/\/www\.geoboundaries\.org".*?>/, "preconnect to geoboundaries");
   expectPattern(file, html, /<link rel="preconnect" href="https:\/\/api\.worldbank\.org".*?>/, "preconnect to worldbank");
-  expectPattern(file, html, /<meta property="og:image" content="https:\/\/painmap\.org\/assets\/social-card\.svg">/, "og:image metadata");
+  expectPattern(file, html, /<meta property="og:image" content="https:\/\/painmaps\.org\/assets\/social-card\.svg">/, "og:image metadata");
   expectPattern(file, html, /<meta name="twitter:card" content="summary_large_image">/, "twitter card metadata");
-  expectPattern(file, html, /<meta name="twitter:image" content="https:\/\/painmap\.org\/assets\/social-card\.svg">/, "twitter image metadata");
+  expectPattern(file, html, /<meta name="twitter:image" content="https:\/\/painmaps\.org\/assets\/social-card\.svg">/, "twitter image metadata");
   expectPattern(file, html, /type="application\/ld\+json"/, "route JSON-LD");
 
   if (route.path !== "/") {
@@ -911,7 +911,7 @@ if (ogcItemIndex.count !== ogcPlaceFeatures.features?.length || ogcItemIndex.ite
   failures.push("ogc/collections/places/item-index.json count must match full OGC feature collection");
 }
 
-if (!ogcItemIndex.items?.some((item) => item.place_id === "IND" && item.item_url === "https://painmap.org/ogc/collections/places/items/IND.json")) {
+if (!ogcItemIndex.items?.some((item) => item.place_id === "IND" && item.item_url === "https://painmaps.org/ogc/collections/places/items/IND.json")) {
   failures.push("ogc/collections/places/item-index.json missing IND item URL");
 }
 
@@ -1025,8 +1025,8 @@ expectPattern("styles.css", css, /animation-duration:\s*0\.01ms/, "reduced-motio
 expectPattern("styles.css", css, /outline:\s*3px solid/, "visible focus outlines");
 
 const securityTxt = read(".well-known/security.txt");
-expectPattern(".well-known/security.txt", securityTxt, /Contact: mailto:security@painmap\.org/, "confidential security mail contact");
-expectPattern(".well-known/security.txt", securityTxt, /Policy: https:\/\/painmap\.org\/security\//, "security policy URL");
+expectPattern(".well-known/security.txt", securityTxt, /Contact: mailto:security@painmaps\.org/, "confidential security mail contact");
+expectPattern(".well-known/security.txt", securityTxt, /Policy: https:\/\/painmaps\.org\/security\//, "security policy URL");
 
 const placeMeasurements = readJson("data/place-measurements.json");
 const requiredMeasurementFields = [

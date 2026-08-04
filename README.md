@@ -95,4 +95,4 @@ Key source families include Welfare Footprint, Our World in Data, World Bank pub
 
 ## Security
 
-Confidential vulnerability reports can be sent to `security@painmap.org`. Public corrections, source updates, accessibility reports, and non-sensitive issues can use the project issue tracker.
+Confidential vulnerability reports can be sent to `security@painmaps.org`. Public corrections, source updates, accessibility reports, and non-sensitive issues can use the project issue tracker.

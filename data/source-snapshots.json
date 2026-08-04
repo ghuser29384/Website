@@ -38,34 +38,34 @@
     {
       "source_snapshot_id": "source-snapshot-2026-05-31.atlas.2-painmap-priority-review",
       "source_id": "painmap-priority-review",
-      "upstream_url": "https://painmap.org/releases/2026-05-31/",
+      "upstream_url": "https://painmaps.org/releases/2026-05-31/",
       "retrieval_timestamp": "2026-05-31T00:00:00Z",
       "source_vintage": "2026-05-31 release",
       "media_type": "application/json",
       "license_id": "painmap-mit",
       "retrieval_metadata": {
         "source_id": "painmap-priority-review",
-        "source_url": "https://painmap.org/releases/2026-05-31/"
+        "source_url": "https://painmaps.org/releases/2026-05-31/"
       },
       "checksum_algorithm": "sha256",
-      "retrieval_basis": "2026-05-31.atlas.2|painmap-priority-review|https://painmap.org/releases/2026-05-31/|2026-05-31 release|2026-05-31|",
-      "checksum": "325bfc2c9b0aef12a92790bc45a053674b017550d04a7240276ab0e2fa16eb27"
+      "retrieval_basis": "2026-05-31.atlas.2|painmap-priority-review|https://painmaps.org/releases/2026-05-31/|2026-05-31 release|2026-05-31|",
+      "checksum": "302eca15de2028b85ece2efa4b712354453209e0eef1aff2e7f2def1a8bc130c"
     },
     {
       "source_snapshot_id": "source-snapshot-2026-05-31.atlas.2-painmap-welfare-assumptions",
       "source_id": "painmap-welfare-assumptions",
-      "upstream_url": "https://painmap.org/methods/",
+      "upstream_url": "https://painmaps.org/methods/",
       "retrieval_timestamp": "2026-05-31T00:00:00Z",
       "source_vintage": "2026-05-31 release",
       "media_type": "application/json",
       "license_id": "painmap-mit",
       "retrieval_metadata": {
         "source_id": "painmap-welfare-assumptions",
-        "source_url": "https://painmap.org/methods/"
+        "source_url": "https://painmaps.org/methods/"
       },
       "checksum_algorithm": "sha256",
-      "retrieval_basis": "2026-05-31.atlas.2|painmap-welfare-assumptions|https://painmap.org/methods/|2026-05-31 release|2026-05-31|",
-      "checksum": "f8df064d50967dc43a4c55f133c8610e9c9fecf29b7416d6e62a14b8829b7954"
+      "retrieval_basis": "2026-05-31.atlas.2|painmap-welfare-assumptions|https://painmaps.org/methods/|2026-05-31 release|2026-05-31|",
+      "checksum": "818cd9a75ffa350eb0eda9f1c96064357f79064db6ad71b54d15bcb4e81bfdbd"
     },
     {
       "source_snapshot_id": "source-snapshot-2026-05-31.atlas.2-welfare-footprint-events",

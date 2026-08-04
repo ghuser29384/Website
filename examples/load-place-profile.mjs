@@ -1,5 +1,5 @@
 const placeId = process.argv[2] || "IND";
-const response = await fetch(`https://painmap.org/v1/places/${encodeURIComponent(placeId)}.json`);
+const response = await fetch(`https://painmaps.org/v1/places/${encodeURIComponent(placeId)}.json`);
 
 if (!response.ok) {
   throw new Error(`PainMap request failed for ${placeId}: HTTP ${response.status}`);

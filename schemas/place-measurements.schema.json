@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://painmap.org/schemas/place-measurements.schema.json",
+  "$id": "https://painmaps.org/schemas/place-measurements.schema.json",
   "title": "PainMap place measurements",
   "type": "object",
   "required": [

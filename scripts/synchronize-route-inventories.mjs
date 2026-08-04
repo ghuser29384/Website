@@ -2,7 +2,7 @@ import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const siteOrigin = "https://painmap.org";
+const siteOrigin = "https://painmaps.org";
 const correctionEndpoint = "https://github.com/ghuser29384/Website/issues/new";
 const checkOnly = process.argv.includes("--check");
 

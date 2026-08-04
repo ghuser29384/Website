@@ -559,7 +559,7 @@ for (const endpoint of endpointSmoke.endpoints) {
 
   if (endpoint.path === "/.well-known/security.txt") {
     const body = read(file);
-    expect(/Canonical: https:\/\/painmap\.org\/\.well-known\/security\.txt/.test(body), "security.txt missing canonical URL");
+    expect(/Canonical: https:\/\/painmaps\.org\/\.well-known\/security\.txt/.test(body), "security.txt missing canonical URL");
     expect(/Expires: \d{4}-\d{2}-\d{2}T/.test(body), "security.txt missing machine-readable expiry");
   }
 }
@@ -589,7 +589,7 @@ const ogcItemIndex = readJson("ogc/collections/places/item-index.json");
 expect(ogcItemIndex.count === ogcItems.features?.length, "OGC item index count mismatch");
 expect(ogcItemIndex.items?.length === ogcItems.features?.length, "OGC item index item length mismatch");
 expect(
-  ogcItemIndex.items?.some((item) => item.place_id === "IND" && item.item_url === "https://painmap.org/ogc/collections/places/items/IND.json"),
+  ogcItemIndex.items?.some((item) => item.place_id === "IND" && item.item_url === "https://painmaps.org/ogc/collections/places/items/IND.json"),
   "OGC item index missing IND partition URL"
 );
 
@@ -623,7 +623,7 @@ const releaseDiff = readJson("releases/2026-05-31/diff.json");
 expect(releaseDiff.release_id === placeIndex.release_id, "release diff release_id mismatch");
 expect(releaseDiff.comparison_type === "initial_release_baseline", "release diff should mark this release as the initial baseline");
 expect(
-  releaseDiff.human_readable_url === "https://painmap.org/releases/2026-05-31/changes/",
+  releaseDiff.human_readable_url === "https://painmaps.org/releases/2026-05-31/changes/",
   "release diff must link human-readable changes page"
 );
 expect(

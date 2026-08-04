@@ -2,7 +2,7 @@
 
 ## Executive summary
 
-Primary site inspected first, as requested: **painmap.org**. In its current public form, PainMap is a **static, single-page research visualization** about animal pain, with top-level in-page sections for **Events, Countries, Methods, Data, and Policies**, plus inline policy subsections for **Privacy, Terms, Accessibility, Editorial policy, Contact, and Changelog**. The site already does several things right: it explicitly says the **event-level animal pain visualization is the primary purpose**, treats the **country globe as secondary context**, discloses that it is **not medical or veterinary advice**, and states that it **does not collect personal data**. It also includes a skip link, grouped source lists, and a changelog claiming an update on **May 31, 2026**. citeturn1view0turn31view3turn31view4turn6search0
+Primary site inspected first, as requested: **painmaps.org**. In its current public form, PainMap is a **static, single-page research visualization** about animal pain, with top-level in-page sections for **Events, Countries, Methods, Data, and Policies**, plus inline policy subsections for **Privacy, Terms, Accessibility, Editorial policy, Contact, and Changelog**. The site already does several things right: it explicitly says the **event-level animal pain visualization is the primary purpose**, treats the **country globe as secondary context**, discloses that it is **not medical or veterinary advice**, and states that it **does not collect personal data**. It also includes a skip link, grouped source lists, and a changelog claiming an update on **May 31, 2026**. citeturn1view0turn31view3turn31view4turn6search0
 
 The biggest weakness is not the core concept; it is the **information architecture**. Right now, the homepage is doing the work of a landing page, tool hub, methods paper, source directory, policy center, and contact page all at once. That makes the product harder to understand, harder to crawl, harder to cite, harder to test for mobile reflow, and harder to expand. Search inspection surfaced the homepage as the public URL discovered in this review, while on-page text searches found **no “Blog,” no “Resources,” and no “Consent”** section labels. citeturn6search0turn31view0turn31view1turn31view5
 
@@ -228,7 +228,7 @@ This architecture matches the product’s current public identity: research-heav
 
 Below is the brief Codex should follow.
 
-> **Objective:** transform painmap.org from a dense single-page static visualization into a route-based, evidence-first, accessible, high-performance research site.  
+> **Objective:** transform painmaps.org from a dense single-page static visualization into a route-based, evidence-first, accessible, high-performance research site.  
 > **Non-negotiables:** preserve scientific caveats; keep root site no-personal-data; treat country context as secondary to event pain; make all interactive views keyboard-accessible; do not ship changes without automated audits.  
 > **Primary outcomes:** better comprehension, better source transparency, better crawlability, better accessibility, simpler maintenance.
 
@@ -519,7 +519,7 @@ export function buildOrganizationJsonLd() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "PainMap",
-    url: "https://painmap.org",
+    url: "https://painmaps.org",
     description: "Public research visualization about animal pain and country context",
     sameAs: [],
     contactPoint: [{
@@ -572,12 +572,12 @@ Google recommends PageSpeed Insights and Lighthouse for measurement, and Lightho
 
 ```bash
 # Local Lighthouse
-npx lighthouse https://painmap.org \
+npx lighthouse https://painmaps.org \
   --only-categories=performance,accessibility,best-practices,seo \
   --view
 
 # Mobile preset
-npx lighthouse https://painmap.org \
+npx lighthouse https://painmaps.org \
   --preset=desktop
 
 # Lighthouse CI
@@ -591,9 +591,9 @@ A minimal `lighthouserc.json`:
   "ci": {
     "collect": {
       "url": [
-        "https://painmap.org/",
-        "https://painmap.org/events",
-        "https://painmap.org/countries"
+        "https://painmaps.org/",
+        "https://painmaps.org/events",
+        "https://painmaps.org/countries"
       ],
       "numberOfRuns": 3
     },

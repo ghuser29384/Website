@@ -3,7 +3,7 @@
     "id": "2026-05-31.atlas.2",
     "release_id": "2026-05-31.atlas.2",
     "generatedAt": "2026-05-31",
-    "site": "https://painmap.org",
+    "site": "https://painmaps.org",
     "status": "static public registry"
   },
   "methodClasses": [
@@ -56,7 +56,7 @@
       "label": "PainMap site code and original release metadata",
       "license": "MIT",
       "licenseUri": "https://opensource.org/license/mit/",
-      "url": "https://painmap.org/LICENSE",
+      "url": "https://painmaps.org/LICENSE",
       "attribution": "PainMap contributors"
     },
     {
@@ -185,7 +185,7 @@
       "source_id": "painmap-welfare-assumptions",
       "label": "PainMap welfare and normalization assumptions",
       "publisher": "PainMap",
-      "url": "https://painmap.org/methods/",
+      "url": "https://painmaps.org/methods/",
       "license_id": "painmap-mit",
       "evidence_kind": "proxy",
       "source_vintage": "2026-05-31 release",
@@ -195,7 +195,7 @@
       "source_id": "painmap-priority-review",
       "label": "PainMap priority overlay review",
       "publisher": "PainMap",
-      "url": "https://painmap.org/releases/2026-05-31/",
+      "url": "https://painmaps.org/releases/2026-05-31/",
       "license_id": "painmap-mit",
       "evidence_kind": "priority-overlay",
       "source_vintage": "2026-05-31 release",
@@ -212,11 +212,11 @@
       "distribution": [
         {
           "format": "HTML",
-          "url": "https://painmap.org/events/"
+          "url": "https://painmaps.org/events/"
         },
         {
           "format": "JSON",
-          "url": "https://painmap.org/data/provenance-registry.json"
+          "url": "https://painmaps.org/data/provenance-registry.json"
         }
       ],
       "sources": ["welfare-footprint-events"]
@@ -230,23 +230,23 @@
       "distribution": [
         {
           "format": "JSON",
-          "url": "https://painmap.org/data/place-measurements.json"
+          "url": "https://painmaps.org/data/place-measurements.json"
         },
         {
           "format": "CSV",
-          "url": "https://painmap.org/data/place-measurements.csv"
+          "url": "https://painmaps.org/data/place-measurements.csv"
         },
         {
           "format": "GeoJSON",
-          "url": "https://painmap.org/data/places.geojson"
+          "url": "https://painmaps.org/data/places.geojson"
         },
         {
           "format": "JSON",
-          "url": "https://painmap.org/v1/places/index.json"
+          "url": "https://painmaps.org/v1/places/index.json"
         },
         {
           "format": "JSON",
-          "url": "https://painmap.org/v1/coverage.json"
+          "url": "https://painmaps.org/v1/coverage.json"
         }
       ],
       "sources": ["owid-livestock", "fishcount-aquaculture", "world-bank-indicators", "painmap-welfare-assumptions", "painmap-priority-review"]
@@ -260,11 +260,11 @@
       "distribution": [
         {
           "format": "GeoJSON",
-          "url": "https://painmap.org/data/natural-earth-countries.geojson"
+          "url": "https://painmaps.org/data/natural-earth-countries.geojson"
         },
         {
           "format": "HTML",
-          "url": "https://painmap.org/places/"
+          "url": "https://painmaps.org/places/"
         }
       ],
       "sources": ["natural-earth-admin0", "geoboundaries-adm1"]
@@ -278,15 +278,15 @@
       "distribution": [
         {
           "format": "JSON",
-          "url": "https://painmap.org/v1/adm1/index.json"
+          "url": "https://painmaps.org/v1/adm1/index.json"
         },
         {
           "format": "JSON",
-          "url": "https://painmap.org/v1/places/IND/adm1.json"
+          "url": "https://painmaps.org/v1/places/IND/adm1.json"
         },
         {
           "format": "JSON",
-          "url": "https://painmap.org/data/gsap-adm1-2023.json"
+          "url": "https://painmaps.org/data/gsap-adm1-2023.json"
         }
       ],
       "sources": ["world-bank-gsap-adm1"]

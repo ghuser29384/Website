@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://painmap.org/schemas/ogc-place-features.schema.json",
+  "$id": "https://painmaps.org/schemas/ogc-place-features.schema.json",
   "title": "PainMap OGC-style place features",
   "type": "object",
   "required": [

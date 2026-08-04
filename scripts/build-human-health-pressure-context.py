@@ -52,7 +52,7 @@ LICENSE_URI = "https://www.worldbank.org/en/about/legal/terms-of-use-for-dataset
 API_DATE_RANGE = "2010:2026"
 LANDING_TITLE = "Human Health-Pressure Context | PainMap"
 LANDING_DESCRIPTION = "Country-level disease, violence, nutrition, maternal-health, and environmental pressure indicators relevant to investigating pain, with explicit provenance and comparison limits."
-CANONICAL_ORIGIN = "https://painmap.org"
+CANONICAL_ORIGIN = "https://painmaps.org"
 PUBLIC_ORIGIN = "https://painmaps.org"
 RETRYABLE_STATUS = {408, 425, 429, 500, 502, 503, 504}
 

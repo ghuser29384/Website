@@ -5000,7 +5000,7 @@ function renderPainAnchors() {
 
 function buildPainCitation(row) {
   const sourceTitles = (row.sources || []).map((source) => source.title).join("; ");
-  return `PainMap. ${row.label}. ${formatPainValue(painTotal(row.values), row.unit)} total ${row.unit} across Welfare Footprint pain categories. Sources: ${sourceTitles}. Last reviewed ${row.lastReviewedAt}. https://painmap.org/events/`;
+  return `PainMap. ${row.label}. ${formatPainValue(painTotal(row.values), row.unit)} total ${row.unit} across Welfare Footprint pain categories. Sources: ${sourceTitles}. Last reviewed ${row.lastReviewedAt}. https://painmaps.org/events/`;
 }
 
 function buildEvidenceBadge(text) {

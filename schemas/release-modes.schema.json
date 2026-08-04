@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://painmap.org/schemas/release-modes.schema.json",
+  "$id": "https://painmaps.org/schemas/release-modes.schema.json",
   "title": "PainMap release modes",
   "type": "object",
   "required": [

@@ -27,7 +27,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/LVA/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/LVA/neighbors.json",
       "relation": "shared_boundary",
       "shared_boundary_point_count": 32
     },
@@ -39,7 +39,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/RUS/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/RUS/neighbors.json",
       "relation": "shared_boundary",
       "shared_boundary_point_count": 37
     }
@@ -53,7 +53,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/LVA/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/LVA/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 185.9
     },
@@ -65,7 +65,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/ALA/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/ALA/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 374.4
     },
@@ -77,7 +77,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/LTU/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/LTU/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 416.8
     },
@@ -89,7 +89,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/FIN/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/FIN/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 509.1
     },
@@ -101,7 +101,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/BLR/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/BLR/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 567.4
     },
@@ -113,7 +113,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/POL/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/POL/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 849.6
     },
@@ -125,7 +125,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/SWE/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/SWE/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 867.6
     },
@@ -137,20 +137,20 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/NOR/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/NOR/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 942.4
     }
   ],
   "links": [
     {
-      "href": "https://painmap.org/v1/places/index.json",
+      "href": "https://painmaps.org/v1/places/index.json",
       "rel": "collection",
       "type": "application/json",
       "title": "Place index"
     },
     {
-      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "href": "https://painmaps.org/ogc/collections/places/items.json",
       "rel": "alternate",
       "type": "application/geo+json",
       "title": "OGC-style place features"

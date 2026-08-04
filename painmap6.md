@@ -2,7 +2,7 @@
 
 ## Executive summary
 
-The first source inspected was **painmap.org** itself: the homepage, route pages such as `/about/`, `/api/`, `/places/`, `/methods/`, `/data/`, `/security/`, `/releases/2026-05-31/`, canonical place pages for Brazil and India, and public machine-readable assets including `v1/coverage.json`, `data/openapi.json`, `data/dcat.json`, `data/source-freshness.json`, `data/ui-smoke.json`, `data/endpoint-smoke.json`, `v1/releases.json`, `data/release-modes.json`, and `ogc/index.json`. I also inspected the linked public GitHub repository that appears to back the site. Publicly, PainMap presents itself as a **place-first public research visualization**, not medical or veterinary advice, with explicit provenance, immutable release snapshots, and labeled live overlays. citeturn0view0turn2view0turn2view1turn3view3turn5view0turn24view0turn25view4turn26view0turn27view0turn29view0turn30view0turn30view1turn31view0turn9view0
+The first source inspected was **painmaps.org** itself: the homepage, route pages such as `/about/`, `/api/`, `/places/`, `/methods/`, `/data/`, `/security/`, `/releases/2026-05-31/`, canonical place pages for Brazil and India, and public machine-readable assets including `v1/coverage.json`, `data/openapi.json`, `data/dcat.json`, `data/source-freshness.json`, `data/ui-smoke.json`, `data/endpoint-smoke.json`, `v1/releases.json`, `data/release-modes.json`, and `ogc/index.json`. I also inspected the linked public GitHub repository that appears to back the site. Publicly, PainMap presents itself as a **place-first public research visualization**, not medical or veterinary advice, with explicit provenance, immutable release snapshots, and labeled live overlays. citeturn0view0turn2view0turn2view1turn3view3turn5view0turn24view0turn25view4turn26view0turn27view0turn29view0turn30view0turn30view1turn31view0turn9view0
 
 PainMap already has several unusually strong foundations for a young public atlas: a release-first model with reproducibility language, OpenAPI 3.1, DCAT cataloging, OGC-style discovery endpoints, a public source-freshness registry, explicit uncertainty cues, privacy limits, `security.txt`, and meaningful accessibility affordances such as skip links, a map-independent search path, live regions, and table equivalents. The homepage also uses canonical tags, Open Graph and Twitter metadata, JSON-LD for `Organization`, `WebSite`, and `Dataset`, plus self-hosted vendor scripts with integrity attributes. citeturn35view0turn3view3turn24view0turn25view4turn26view0turn27view0turn28view0turn17view4turn17view6turn17view7turn23view0
 
@@ -265,7 +265,7 @@ export function mountDetailMap(container: HTMLElement) {
       sources: {
         adm1: {
           type: "vector",
-          url: "pmtiles://https://cdn.painmap.org/tiles/adm1.pmtiles"
+          url: "pmtiles://https://cdn.painmaps.org/tiles/adm1.pmtiles"
         }
       },
       layers: [

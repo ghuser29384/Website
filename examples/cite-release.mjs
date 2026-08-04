@@ -1,5 +1,5 @@
 const releaseDate = process.argv[2] || "2026-05-31";
-const baseUrl = process.env.PAINMAP_BASE_URL || "https://painmap.org";
+const baseUrl = process.env.PAINMAP_BASE_URL || "https://painmaps.org";
 const base = new URL(baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`);
 
 function endpoint(path) {
