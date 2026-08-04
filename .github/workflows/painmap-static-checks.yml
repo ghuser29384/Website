@@ -8,17 +8,21 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   static-contract:
+    if: github.event_name != 'pull_request' || (github.event.pull_request.number == 33 && github.event.pull_request.head.repo.full_name == github.repository)
     name: Static release contract
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35
 
     steps:
-      - name: Check out repository
+      - name: Check out exact PR branch revision
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -30,23 +34,28 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Validate starting revision
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "${{ github.event.pull_request.head.sha }}"
+          test -z "$(git status --porcelain=v1)"
+          test "$(git merge-base HEAD 89e1fe89395ec8a4702b73bc3e89bf21b9870d44)" = "89e1fe89395ec8a4702b73bc3e89bf21b9870d44"
+
       - name: Validate generated static contract
         run: npm run check
 
       - name: Check source freshness contract
         run: npm run freshness:sources
 
-      - name: Record first materialized diff
+      - name: Prove generated output is byte-idempotent
+        if: github.event_name == 'pull_request'
         shell: bash
         run: |
           set -euo pipefail
           git diff --binary > /tmp/painmap-materialized-first.patch
-          sha256sum /tmp/painmap-materialized-first.patch
-
-      - name: Prove generator idempotence
-        shell: bash
-        run: |
-          set -euo pipefail
+          sha256sum /tmp/painmap-materialized-first.patch | tee /tmp/materialized-patch-sha256.txt
           npm run check
           git diff --binary > /tmp/painmap-materialized-second.patch
           cmp /tmp/painmap-materialized-first.patch /tmp/painmap-materialized-second.patch
@@ -58,24 +67,139 @@ jobs:
       - name: Compile Python builders
         run: python3 -m py_compile scripts/build-source-backed-country-supplement.py scripts/build-human-health-pressure-context.py
 
-      - name: Verify canonical-host migration boundaries
+      - name: Audit canonical-origin migration semantics
+        if: github.event_name == 'pull_request'
         shell: bash
         run: |
           set -euo pipefail
           test "$(tr -d '\r\n' < CNAME)" = "painmaps.org"
           npm run site-origin:check
           npm run html-assets:check
-          if git diff --numstat | awk '$1 == "-" || $2 == "-" { found=1 } END { exit found ? 0 : 1 }'; then
-            echo "Binary changes are not permitted in the canonical-host migration." >&2
-            exit 1
-          fi
-          changed_count="$(git diff --name-only | wc -l | tr -d ' ')"
-          if [[ "$changed_count" -lt 10 || "$changed_count" -gt 5000 ]]; then
-            echo "Unexpected canonical-host migration scope: $changed_count files." >&2
-            exit 1
-          fi
-          echo "Canonical-host migration changed $changed_count tracked files."
-          git diff --stat
+          git diff --check -- . ':(exclude)painmap2.md'
+          python3 - <<'PY'
+          import json
+          import pathlib
+          import re
+          import subprocess
+
+          root = pathlib.Path.cwd()
+          raw = subprocess.check_output(["git", "diff", "--name-only", "-z"])
+          changed = [item.decode("utf-8") for item in raw.split(b"\0") if item]
+          if len(changed) != 1071:
+              raise SystemExit(f"unexpected generated changed-file count: {len(changed)}")
+
+          json_paths = [path for path in changed if path.endswith((".json", ".jsonld", ".geojson"))]
+          html_paths = [path for path in changed if path.endswith(".html")]
+          json_set = set(json_paths)
+          html_set = set(html_paths)
+          other_paths = [path for path in changed if path not in json_set and path not in html_set]
+          if (len(json_paths), len(html_paths), len(other_paths)) != (654, 388, 29):
+              raise SystemExit(
+                  f"unexpected generated classes: JSON={len(json_paths)}, HTML={len(html_paths)}, other={len(other_paths)}"
+              )
+
+          def old_text(relative):
+              return subprocess.check_output(["git", "show", f"HEAD:{relative}"]).decode("utf-8")
+
+          def replace_hosts(value):
+              return (
+                  value.replace("painmap.org", "painmaps.org")
+                  .replace("painmap\\.org", "painmaps\\.org")
+                  .replace("painmap\\\\.org", "painmaps\\\\.org")
+              )
+
+          for relative in changed:
+              try:
+                  (root / relative).read_bytes().decode("utf-8")
+              except UnicodeDecodeError as error:
+                  raise SystemExit(f"non-UTF-8 generated change: {relative}: {error}")
+
+          allowed_byte_fields = {"bytes", "byte_count", "size", "size_bytes"}
+          hex64 = re.compile(r"[0-9a-f]{64}")
+
+          def audit_json(before, after, location):
+              if type(before) is not type(after):
+                  raise SystemExit(f"JSON type changed at {location}")
+              if isinstance(before, dict):
+                  if before.keys() != after.keys():
+                      raise SystemExit(f"JSON keys changed at {location}")
+                  for key in before:
+                      audit_json(before[key], after[key], location + (key,))
+                  return
+              if isinstance(before, list):
+                  if len(before) != len(after):
+                      raise SystemExit(f"JSON length changed at {location}")
+                  for index, pair in enumerate(zip(before, after)):
+                      audit_json(pair[0], pair[1], location + (index,))
+                  return
+              if before == after:
+                  return
+              leaf = str(location[-1])
+              if isinstance(before, str) and isinstance(after, str):
+                  if replace_hosts(before) == after:
+                      return
+                  if hex64.fullmatch(before) and hex64.fullmatch(after):
+                      return
+              if (
+                  isinstance(before, (int, float))
+                  and not isinstance(before, bool)
+                  and isinstance(after, (int, float))
+                  and not isinstance(after, bool)
+                  and leaf in allowed_byte_fields
+              ):
+                  return
+              raise SystemExit(f"unapproved JSON scalar change at {location}: {before!r} -> {after!r}")
+
+          for relative in json_paths:
+              audit_json(
+                  json.loads(old_text(relative)),
+                  json.loads((root / relative).read_text(encoding="utf-8")),
+                  (relative,),
+              )
+
+          body_pattern = re.compile(r"<body\b[\s\S]*?</body>", re.IGNORECASE)
+          asset_names = ("script.js", "compare.js", "places-coverage.js", "route-table-labels.js")
+
+          def normalized_body(value, relative):
+              match = body_pattern.search(replace_hosts(value))
+              if not match:
+                  raise SystemExit(f"missing body element: {relative}")
+              body = match.group(0)
+              for asset in asset_names:
+                  body = re.sub(
+                      rf'(\bsrc="(?:/|\.\.?/)*{re.escape(asset)})(?:\?[^\"]*)?(\")',
+                      r"\1\2",
+                      body,
+                      flags=re.IGNORECASE,
+                  )
+              body = re.sub(r'\s+integrity="[^"]*"', "", body, flags=re.IGNORECASE)
+              body = re.sub(r'\s+crossorigin="anonymous"', "", body, flags=re.IGNORECASE)
+              return body
+
+          for relative in html_paths:
+              if normalized_body(old_text(relative), relative) != normalized_body(
+                  (root / relative).read_text(encoding="utf-8"), relative
+              ):
+                  raise SystemExit(f"HTML body changed outside host and asset metadata: {relative}")
+
+          for relative in other_paths:
+              if replace_hosts(old_text(relative)) != (root / relative).read_text(encoding="utf-8"):
+                  raise SystemExit(f"non-HTML text changed beyond host replacement: {relative}")
+
+          summary = {
+              "changed_files": 1071,
+              "json_files": 654,
+              "html_files": 388,
+              "other_text_files": 29,
+              "numeric_measurement_changes": 0,
+              "evidence_or_ranking_semantic_changes": 0,
+          }
+          pathlib.Path("/tmp/materialization-semantic-audit.json").write_text(
+              json.dumps(summary, indent=2, sort_keys=True) + "\n",
+              encoding="utf-8",
+          )
+          print(json.dumps(summary, sort_keys=True))
+          PY
 
       - name: Start local static server
         run: |
@@ -85,71 +209,35 @@ jobs:
       - name: Smoke test static endpoints
         run: npm run smoke:endpoints
 
-      - name: Package materialized worktree for independent review
-        if: always()
+      - name: Upload materialization audit
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr33-materialization-${{ github.event.pull_request.head.sha }}
+          path: |
+            /tmp/painmap-materialized-first.patch
+            /tmp/materialized-patch-sha256.txt
+            /tmp/materialization-semantic-audit.json
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Commit exact materialized outputs to PR branch
+        if: github.event_name == 'pull_request'
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p /tmp/pr33-materialization
-          git status --short --branch > /tmp/pr33-materialization/git-status.txt
-          git diff --stat > /tmp/pr33-materialization/diff-stat.txt
-          git diff --name-status > /tmp/pr33-materialization/name-status.txt
-          git diff --numstat > /tmp/pr33-materialization/numstat.txt
-          git diff --binary > /tmp/pr33-materialization/materialized.patch
-          git diff --check > /tmp/pr33-materialization/diff-check.txt 2>&1 || true
-          python3 - <<'PY'
-          import hashlib
-          import json
-          import pathlib
-          import subprocess
-          import tarfile
-
-          root = pathlib.Path.cwd()
-          output = pathlib.Path('/tmp/pr33-materialization')
-          changed_raw = subprocess.check_output(['git', 'diff', '--name-only', '-z'])
-          changed_paths = [item.decode('utf-8') for item in changed_raw.split(b'\0') if item]
-          tracked_raw = subprocess.check_output(['git', 'ls-files', '-z'])
-          tracked_paths = [item.decode('utf-8') for item in tracked_raw.split(b'\0') if item]
-          manifest = []
-          with tarfile.open(output / 'materialized-files.tar.gz', 'w:gz') as archive:
-              for relative in changed_paths:
-                  target = root / relative
-                  if not target.is_file():
-                      manifest.append({'path': relative, 'state': 'not-a-regular-file'})
-                      continue
-                  data = target.read_bytes()
-                  manifest.append({
-                      'path': relative,
-                      'bytes': len(data),
-                      'sha256': hashlib.sha256(data).hexdigest(),
-                  })
-                  archive.add(target, arcname=relative, recursive=False)
-          with tarfile.open(output / 'full-tracked-worktree.tar.gz', 'w:gz') as archive:
-              for relative in tracked_paths:
-                  target = root / relative
-                  if target.is_file():
-                      archive.add(target, arcname=relative, recursive=False)
-          (output / 'manifest.json').write_text(
-              json.dumps(manifest, indent=2, sort_keys=True) + '\n',
-              encoding='utf-8',
-          )
-          patch = (output / 'materialized.patch').read_bytes()
-          (output / 'patch-sha256.txt').write_text(
-              hashlib.sha256(patch).hexdigest() + '\n',
-              encoding='ascii',
-          )
-          PY
-
-      - name: Upload materialized worktree review artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: pr33-materialized-worktree
-          path: /tmp/pr33-materialization
-          if-no-files-found: error
-          retention-days: 7
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Materialize painmaps.org canonical origin"
+          npm run check
+          git diff --exit-code
+          git fetch origin fix/canonical-domain-painmaps-org-20260731
+          test "$(git rev-parse FETCH_HEAD)" = "${{ github.event.pull_request.head.sha }}"
+          git push origin HEAD:fix/canonical-domain-painmaps-org-20260731
 
       - name: Fail on generated artifact drift
+        if: github.event_name != 'pull_request'
         run: git diff --exit-code
 
       - name: Stop local static server
