@@ -83,8 +83,17 @@ jobs:
           import subprocess
 
           root = pathlib.Path.cwd()
+          temporary_workflows = {
+              ".github/workflows/painmap-static-checks.yml",
+              ".github/workflows/painmap-materialize-canonical-origin.yml",
+          }
           raw = subprocess.check_output(["git", "diff", "--name-only", "-z"])
-          changed = [item.decode("utf-8") for item in raw.split(b"\0") if item]
+          changed_all = [item.decode("utf-8") for item in raw.split(b"\0") if item]
+          if len(changed_all) != 1073:
+              raise SystemExit(f"unexpected all-changed-file count: {len(changed_all)}")
+          if not temporary_workflows.issubset(changed_all):
+              raise SystemExit("both temporary workflow paths must be present in the synchronized diff")
+          changed = [path for path in changed_all if path not in temporary_workflows]
           if len(changed) != 1071:
               raise SystemExit(f"unexpected generated changed-file count: {len(changed)}")
 
@@ -108,11 +117,15 @@ jobs:
                   .replace("painmap\\\\.org", "painmaps\\\\.org")
               )
 
-          for relative in changed:
+          for relative in changed_all:
               try:
                   (root / relative).read_bytes().decode("utf-8")
               except UnicodeDecodeError as error:
                   raise SystemExit(f"non-UTF-8 generated change: {relative}: {error}")
+
+          for relative in sorted(temporary_workflows):
+              if replace_hosts(old_text(relative)) != (root / relative).read_text(encoding="utf-8"):
+                  raise SystemExit(f"temporary workflow changed beyond canonical-host synchronization: {relative}")
 
           allowed_byte_fields = {"bytes", "byte_count", "size", "size_bytes"}
           hex64 = re.compile(r"[0-9a-f]{64}")
@@ -187,7 +200,9 @@ jobs:
                   raise SystemExit(f"non-HTML text changed beyond host replacement: {relative}")
 
           summary = {
-              "changed_files": 1071,
+              "all_changed_files": 1073,
+              "generated_changed_files": 1071,
+              "temporary_workflow_files": 2,
               "json_files": 654,
               "html_files": 388,
               "other_text_files": 29,
