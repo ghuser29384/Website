@@ -54,13 +54,11 @@ jobs:
           sha256sum /tmp/painmap-materialized-second.patch
           git diff --check
 
-      - name: Compile Python examples, client, and builders
-        run: |
-          python3 -m py_compile \
-            clients/python/painmap_client.py \
-            examples/load_place_profile.py \
-            scripts/build-source-backed-country-supplement.py \
-            scripts/build-human-health-pressure-context.py
+      - name: Compile Python examples and client
+        run: python3 -m py_compile clients/python/painmap_client.py examples/load_place_profile.py
+
+      - name: Compile Python builders
+        run: python3 -m py_compile scripts/build-source-backed-country-supplement.py scripts/build-human-health-pressure-context.py
 
       - name: Verify canonical-host migration boundaries
         shell: bash
