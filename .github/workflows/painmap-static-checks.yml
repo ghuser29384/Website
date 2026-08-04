@@ -14,7 +14,7 @@ jobs:
   static-contract:
     name: Static release contract
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       - name: Check out repository
@@ -36,11 +36,50 @@ jobs:
       - name: Check source freshness contract
         run: npm run freshness:sources
 
-      - name: Fail on generated artifact drift
-        run: git diff --exit-code
+      - name: Record first materialized diff
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --binary > /tmp/painmap-materialized-first.patch
+          sha256sum /tmp/painmap-materialized-first.patch
+          git diff --check
 
-      - name: Compile Python examples and client
-        run: python3 -m py_compile clients/python/painmap_client.py examples/load_place_profile.py
+      - name: Prove generator idempotence
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run check
+          git diff --binary > /tmp/painmap-materialized-second.patch
+          cmp /tmp/painmap-materialized-first.patch /tmp/painmap-materialized-second.patch
+          sha256sum /tmp/painmap-materialized-second.patch
+          git diff --check
+
+      - name: Compile Python examples, client, and builders
+        run: |
+          python3 -m py_compile \
+            clients/python/painmap_client.py \
+            examples/load_place_profile.py \
+            scripts/build-source-backed-country-supplement.py \
+            scripts/build-human-health-pressure-context.py
+
+      - name: Verify canonical-host migration boundaries
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(tr -d '\r\n' < CNAME)" = "painmaps.org"
+          npm run site-origin:check
+          npm run html-assets:check
+          if git diff --numstat | awk '$1 == "-" || $2 == "-" { found=1 } END { exit found ? 0 : 1 }'; then
+            echo "Binary changes are not permitted in the canonical-host migration." >&2
+            exit 1
+          fi
+          changed_count="$(git diff --name-only | wc -l | tr -d ' ')"
+          if [[ "$changed_count" -lt 10 || "$changed_count" -gt 5000 ]]; then
+            echo "Unexpected canonical-host migration scope: $changed_count files." >&2
+            exit 1
+          fi
+          echo "Canonical-host migration changed $changed_count tracked files."
+          git diff --stat
 
       - name: Start local static server
         run: |
@@ -49,6 +88,65 @@ jobs:
 
       - name: Smoke test static endpoints
         run: npm run smoke:endpoints
+
+      - name: Package materialized worktree for independent review
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/pr33-materialization
+          git status --short --branch > /tmp/pr33-materialization/git-status.txt
+          git diff --stat > /tmp/pr33-materialization/diff-stat.txt
+          git diff --name-status > /tmp/pr33-materialization/name-status.txt
+          git diff --numstat > /tmp/pr33-materialization/numstat.txt
+          git diff --binary > /tmp/pr33-materialization/materialized.patch
+          python3 - <<'PY'
+          import hashlib
+          import json
+          import pathlib
+          import subprocess
+          import tarfile
+
+          root = pathlib.Path.cwd()
+          output = pathlib.Path('/tmp/pr33-materialization')
+          raw = subprocess.check_output(['git', 'diff', '--name-only', '-z'])
+          paths = [item.decode('utf-8') for item in raw.split(b'\0') if item]
+          manifest = []
+          with tarfile.open(output / 'materialized-files.tar.gz', 'w:gz') as archive:
+              for relative in paths:
+                  target = root / relative
+                  if not target.is_file():
+                      manifest.append({'path': relative, 'state': 'not-a-regular-file'})
+                      continue
+                  data = target.read_bytes()
+                  manifest.append({
+                      'path': relative,
+                      'bytes': len(data),
+                      'sha256': hashlib.sha256(data).hexdigest(),
+                  })
+                  archive.add(target, arcname=relative, recursive=False)
+          (output / 'manifest.json').write_text(
+              json.dumps(manifest, indent=2, sort_keys=True) + '\n',
+              encoding='utf-8',
+          )
+          patch = (output / 'materialized.patch').read_bytes()
+          (output / 'patch-sha256.txt').write_text(
+              hashlib.sha256(patch).hexdigest() + '\n',
+              encoding='ascii',
+          )
+          PY
+
+      - name: Upload materialized worktree review artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr33-materialized-worktree
+          path: /tmp/pr33-materialization
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Fail on generated artifact drift
+        run: git diff --exit-code
 
       - name: Stop local static server
         if: always()
