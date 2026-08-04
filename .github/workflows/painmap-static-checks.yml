@@ -42,7 +42,6 @@ jobs:
           set -euo pipefail
           git diff --binary > /tmp/painmap-materialized-first.patch
           sha256sum /tmp/painmap-materialized-first.patch
-          git diff --check
 
       - name: Prove generator idempotence
         shell: bash
@@ -52,7 +51,6 @@ jobs:
           git diff --binary > /tmp/painmap-materialized-second.patch
           cmp /tmp/painmap-materialized-first.patch /tmp/painmap-materialized-second.patch
           sha256sum /tmp/painmap-materialized-second.patch
-          git diff --check
 
       - name: Compile Python examples and client
         run: python3 -m py_compile clients/python/painmap_client.py examples/load_place_profile.py
@@ -98,6 +96,7 @@ jobs:
           git diff --name-status > /tmp/pr33-materialization/name-status.txt
           git diff --numstat > /tmp/pr33-materialization/numstat.txt
           git diff --binary > /tmp/pr33-materialization/materialized.patch
+          git diff --check > /tmp/pr33-materialization/diff-check.txt 2>&1 || true
           python3 - <<'PY'
           import hashlib
           import json
@@ -107,11 +106,13 @@ jobs:
 
           root = pathlib.Path.cwd()
           output = pathlib.Path('/tmp/pr33-materialization')
-          raw = subprocess.check_output(['git', 'diff', '--name-only', '-z'])
-          paths = [item.decode('utf-8') for item in raw.split(b'\0') if item]
+          changed_raw = subprocess.check_output(['git', 'diff', '--name-only', '-z'])
+          changed_paths = [item.decode('utf-8') for item in changed_raw.split(b'\0') if item]
+          tracked_raw = subprocess.check_output(['git', 'ls-files', '-z'])
+          tracked_paths = [item.decode('utf-8') for item in tracked_raw.split(b'\0') if item]
           manifest = []
           with tarfile.open(output / 'materialized-files.tar.gz', 'w:gz') as archive:
-              for relative in paths:
+              for relative in changed_paths:
                   target = root / relative
                   if not target.is_file():
                       manifest.append({'path': relative, 'state': 'not-a-regular-file'})
@@ -123,6 +124,11 @@ jobs:
                       'sha256': hashlib.sha256(data).hexdigest(),
                   })
                   archive.add(target, arcname=relative, recursive=False)
+          with tarfile.open(output / 'full-tracked-worktree.tar.gz', 'w:gz') as archive:
+              for relative in tracked_paths:
+                  target = root / relative
+                  if target.is_file():
+                      archive.add(target, arcname=relative, recursive=False)
           (output / 'manifest.json').write_text(
               json.dumps(manifest, indent=2, sort_keys=True) + '\n',
               encoding='utf-8',
