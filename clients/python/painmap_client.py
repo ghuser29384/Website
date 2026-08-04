@@ -9,7 +9,7 @@ from urllib.request import Request, urlopen
 
 @dataclass(frozen=True)
 class PainMapClient:
-    base_url: str = "https://painmap.org"
+    base_url: str = "https://painmaps.org"
     timeout: float = 20.0
 
     def place_index(self) -> dict[str, Any]:

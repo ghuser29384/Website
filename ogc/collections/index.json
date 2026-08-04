@@ -1,13 +1,13 @@
 {
   "links": [
     {
-      "href": "https://painmap.org/ogc/index.json",
+      "href": "https://painmaps.org/ogc/index.json",
       "rel": "root",
       "type": "application/json",
       "title": "OGC landing document"
     },
     {
-      "href": "https://painmap.org/ogc/collections/places/index.json",
+      "href": "https://painmaps.org/ogc/collections/places/index.json",
       "rel": "item",
       "type": "application/json",
       "title": "Places collection"
@@ -44,13 +44,13 @@
       },
       "links": [
         {
-          "href": "https://painmap.org/ogc/collections/places/items.json",
+          "href": "https://painmaps.org/ogc/collections/places/items.json",
           "rel": "items",
           "type": "application/geo+json",
           "title": "GeoJSON items"
         },
         {
-          "href": "https://painmap.org/ogc/collections/places/item-index.json",
+          "href": "https://painmaps.org/ogc/collections/places/item-index.json",
           "rel": "alternate",
           "type": "application/json",
           "title": "Partitioned country feature index"

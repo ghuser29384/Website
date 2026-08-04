@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://painmap.org/schemas/coverage.schema.json",
+  "$id": "https://painmaps.org/schemas/coverage.schema.json",
   "title": "PainMap release coverage",
   "type": "object",
   "required": [

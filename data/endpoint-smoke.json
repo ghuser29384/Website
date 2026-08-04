@@ -4,7 +4,7 @@
   "endpoints": [
     {
       "path": "/",
-      "url": "https://painmap.org/",
+      "url": "https://painmaps.org/",
       "method": "GET",
       "expected_status": 200,
       "format": "text/html",
@@ -12,7 +12,7 @@
     },
     {
       "path": "/places/",
-      "url": "https://painmap.org/places/",
+      "url": "https://painmaps.org/places/",
       "method": "GET",
       "expected_status": 200,
       "format": "text/html",
@@ -20,7 +20,7 @@
     },
     {
       "path": "/countries/",
-      "url": "https://painmap.org/countries/",
+      "url": "https://painmaps.org/countries/",
       "method": "GET",
       "expected_status": 200,
       "format": "text/html",
@@ -28,7 +28,7 @@
     },
     {
       "path": "/compare/",
-      "url": "https://painmap.org/compare/",
+      "url": "https://painmaps.org/compare/",
       "method": "GET",
       "expected_status": 200,
       "format": "text/html",
@@ -36,7 +36,7 @@
     },
     {
       "path": "/examples/",
-      "url": "https://painmap.org/examples/",
+      "url": "https://painmaps.org/examples/",
       "method": "GET",
       "expected_status": 200,
       "format": "text/html",
@@ -44,7 +44,7 @@
     },
     {
       "path": "/data/openapi.json",
-      "url": "https://painmap.org/data/openapi.json",
+      "url": "https://painmaps.org/data/openapi.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -52,7 +52,7 @@
     },
     {
       "path": "/data/dcat.json",
-      "url": "https://painmap.org/data/dcat.json",
+      "url": "https://painmaps.org/data/dcat.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/ld+json",
@@ -60,7 +60,7 @@
     },
     {
       "path": "/data/release-modes.json",
-      "url": "https://painmap.org/data/release-modes.json",
+      "url": "https://painmaps.org/data/release-modes.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -68,7 +68,7 @@
     },
     {
       "path": "/data/source-freshness.json",
-      "url": "https://painmap.org/data/source-freshness.json",
+      "url": "https://painmaps.org/data/source-freshness.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -76,7 +76,7 @@
     },
     {
       "path": "/data/third-party-fetches.json",
-      "url": "https://painmap.org/data/third-party-fetches.json",
+      "url": "https://painmaps.org/data/third-party-fetches.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -84,7 +84,7 @@
     },
     {
       "path": "/data/accessibility-audit.json",
-      "url": "https://painmap.org/data/accessibility-audit.json",
+      "url": "https://painmaps.org/data/accessibility-audit.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -92,7 +92,7 @@
     },
     {
       "path": "/data/ui-smoke.json",
-      "url": "https://painmap.org/data/ui-smoke.json",
+      "url": "https://painmaps.org/data/ui-smoke.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -100,7 +100,7 @@
     },
   {
       "path": "/data/claims.json",
-      "url": "https://painmap.org/data/claims.json",
+      "url": "https://painmaps.org/data/claims.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -108,7 +108,7 @@
     },
     {
       "path": "/data/source-snapshots.json",
-      "url": "https://painmap.org/data/source-snapshots.json",
+      "url": "https://painmaps.org/data/source-snapshots.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -116,7 +116,7 @@
     },
     {
       "path": "/data/country-gap-ledger.json",
-      "url": "https://painmap.org/data/country-gap-ledger.json",
+      "url": "https://painmaps.org/data/country-gap-ledger.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -124,7 +124,7 @@
     },
     {
       "path": "/data/country-gap-ledger.csv",
-      "url": "https://painmap.org/data/country-gap-ledger.csv",
+      "url": "https://painmaps.org/data/country-gap-ledger.csv",
       "method": "GET",
       "expected_status": 200,
       "format": "text/csv",
@@ -132,7 +132,7 @@
     },
     {
       "path": "/data/country-profile-input-spec.json",
-      "url": "https://painmap.org/data/country-profile-input-spec.json",
+      "url": "https://painmaps.org/data/country-profile-input-spec.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -140,7 +140,7 @@
     },
     {
       "path": "/offline.html",
-      "url": "https://painmap.org/offline.html",
+      "url": "https://painmaps.org/offline.html",
       "method": "GET",
       "expected_status": 200,
       "format": "text/html",
@@ -148,7 +148,7 @@
     },
     {
       "path": "/service-worker.js",
-      "url": "https://painmap.org/service-worker.js",
+      "url": "https://painmaps.org/service-worker.js",
       "method": "GET",
       "expected_status": 200,
       "format": "text/javascript",
@@ -156,7 +156,7 @@
     },
     {
       "path": "/v1/places/index.json",
-      "url": "https://painmap.org/v1/places/index.json",
+      "url": "https://painmaps.org/v1/places/index.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -164,7 +164,7 @@
     },
     {
       "path": "/v1/adm1/index.json",
-      "url": "https://painmap.org/v1/adm1/index.json",
+      "url": "https://painmaps.org/v1/adm1/index.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -172,7 +172,7 @@
     },
     {
       "path": "/v1/coverage.json",
-      "url": "https://painmap.org/v1/coverage.json",
+      "url": "https://painmaps.org/v1/coverage.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -180,7 +180,7 @@
     },
     {
       "path": "/v1/places/IND/adm1.json",
-      "url": "https://painmap.org/v1/places/IND/adm1.json",
+      "url": "https://painmaps.org/v1/places/IND/adm1.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -188,7 +188,7 @@
     },
     {
       "path": "/v1/places/BRA/neighbors.json",
-      "url": "https://painmap.org/v1/places/BRA/neighbors.json",
+      "url": "https://painmaps.org/v1/places/BRA/neighbors.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -196,7 +196,7 @@
     },
     {
       "path": "/ogc/index.json",
-      "url": "https://painmap.org/ogc/index.json",
+      "url": "https://painmaps.org/ogc/index.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -204,7 +204,7 @@
     },
     {
       "path": "/ogc/collections/places/items.json",
-      "url": "https://painmap.org/ogc/collections/places/items.json",
+      "url": "https://painmaps.org/ogc/collections/places/items.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/geo+json",
@@ -212,7 +212,7 @@
     },
     {
       "path": "/ogc/collections/places/item-index.json",
-      "url": "https://painmap.org/ogc/collections/places/item-index.json",
+      "url": "https://painmaps.org/ogc/collections/places/item-index.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -220,7 +220,7 @@
     },
     {
       "path": "/ogc/collections/places/items/IND.json",
-      "url": "https://painmap.org/ogc/collections/places/items/IND.json",
+      "url": "https://painmaps.org/ogc/collections/places/items/IND.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/geo+json",
@@ -228,7 +228,7 @@
     },
     {
       "path": "/clients/typescript/painmap-client.ts",
-      "url": "https://painmap.org/clients/typescript/painmap-client.ts",
+      "url": "https://painmaps.org/clients/typescript/painmap-client.ts",
       "method": "GET",
       "expected_status": 200,
       "format": "text/typescript",
@@ -236,7 +236,7 @@
     },
     {
       "path": "/clients/python/painmap_client.py",
-      "url": "https://painmap.org/clients/python/painmap_client.py",
+      "url": "https://painmaps.org/clients/python/painmap_client.py",
       "method": "GET",
       "expected_status": 200,
       "format": "text/x-python",
@@ -244,7 +244,7 @@
     },
     {
       "path": "/releases/2026-05-31/manifest.json",
-      "url": "https://painmap.org/releases/2026-05-31/manifest.json",
+      "url": "https://painmaps.org/releases/2026-05-31/manifest.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -252,7 +252,7 @@
     },
     {
       "path": "/releases/2026-05-31/diff.json",
-      "url": "https://painmap.org/releases/2026-05-31/diff.json",
+      "url": "https://painmaps.org/releases/2026-05-31/diff.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -260,7 +260,7 @@
     },
     {
       "path": "/releases/2026-05-31/changes/",
-      "url": "https://painmap.org/releases/2026-05-31/changes/",
+      "url": "https://painmaps.org/releases/2026-05-31/changes/",
       "method": "GET",
       "expected_status": 200,
       "format": "text/html",
@@ -268,7 +268,7 @@
     },
     {
       "path": "/releases/2026-05-31/migration.json",
-      "url": "https://painmap.org/releases/2026-05-31/migration.json",
+      "url": "https://painmaps.org/releases/2026-05-31/migration.json",
       "method": "GET",
       "expected_status": 200,
       "format": "application/json",
@@ -276,7 +276,7 @@
     },
     {
       "path": "/policies/accessibility/audit-2026-06-05/",
-      "url": "https://painmap.org/policies/accessibility/audit-2026-06-05/",
+      "url": "https://painmaps.org/policies/accessibility/audit-2026-06-05/",
       "method": "GET",
       "expected_status": 200,
       "format": "text/html",
@@ -284,7 +284,7 @@
     },
     {
       "path": "/.well-known/security.txt",
-      "url": "https://painmap.org/.well-known/security.txt",
+      "url": "https://painmaps.org/.well-known/security.txt",
       "method": "GET",
       "expected_status": 200,
       "format": "text/plain",

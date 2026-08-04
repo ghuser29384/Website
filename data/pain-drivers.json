@@ -30,10 +30,10 @@
         "suicide mortality"
       ],
       "unit": "deaths per 100,000 population",
-      "json_url": "https://painmap.org/data/pain-driver-context.json",
-      "csv_url": "https://painmap.org/data/pain-driver-context.csv",
-      "schema_url": "https://painmap.org/schemas/pain-driver-context.schema.json",
-      "source_extract_url": "https://painmap.org/data/candidates/country-data-expansion/source-extracts/world-bank-who-mortality-context.json",
+      "json_url": "https://painmaps.org/data/pain-driver-context.json",
+      "csv_url": "https://painmaps.org/data/pain-driver-context.csv",
+      "schema_url": "https://painmaps.org/schemas/pain-driver-context.schema.json",
+      "source_extract_url": "https://painmaps.org/data/candidates/country-data-expansion/source-extracts/world-bank-who-mortality-context.json",
       "attribution": "World Health Organization, via World Bank Indicators API",
       "license": "CC BY 4.0",
       "caveat": "Mortality is a severe-outcome context proxy. It does not measure pain intensity, duration, prevalence, disability, nonfatal suffering, or total welfare burden."
@@ -50,13 +50,13 @@
         "agricultural insecticide use",
         "land area context"
       ],
-      "summary_url": "https://painmap.org/data/candidates/country-data-expansion/source-backed-country-summary.json",
+      "summary_url": "https://painmaps.org/data/candidates/country-data-expansion/source-backed-country-summary.json",
       "source_extract_urls": [
-        "https://painmap.org/data/candidates/country-data-expansion/source-extracts/owid-land-animals-slaughtered.json",
-        "https://painmap.org/data/candidates/country-data-expansion/source-extracts/owid-insecticide-use.json",
-        "https://painmap.org/data/candidates/country-data-expansion/source-extracts/world-bank-land-area.json"
+        "https://painmaps.org/data/candidates/country-data-expansion/source-extracts/owid-land-animals-slaughtered.json",
+        "https://painmaps.org/data/candidates/country-data-expansion/source-extracts/owid-insecticide-use.json",
+        "https://painmaps.org/data/candidates/country-data-expansion/source-extracts/world-bank-land-area.json"
       ],
-      "validation_url": "https://painmap.org/data/candidates/country-data-expansion/validation-summary.json",
+      "validation_url": "https://painmaps.org/data/candidates/country-data-expansion/validation-summary.json",
       "caveat": "These rows are public candidate context, not canonical PainMap measurements. Land area is a denominator, not a cause of pain, and is excluded from cause rankings."
     },
     {

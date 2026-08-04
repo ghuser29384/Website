@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "canonical_origin": "https://painmaps.org",
+  "canonical_host": "painmaps.org",
+  "legacy_hosts": [
+    "painmap.org"
+  ],
+  "cname_path": "CNAME",
+  "effective_date": "2026-07-31",
+  "brand_name": "PainMap",
+  "policy": "All public canonical URLs, structured metadata, API examples, release references, security contacts, sitemaps, and correction links must use the GitHub Pages custom domain declared by CNAME.",
+  "note": "The product brand remains PainMap; the canonical public host is the plural domain painmaps.org."
+}

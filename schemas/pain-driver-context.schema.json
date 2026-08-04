@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://painmap.org/schemas/pain-driver-context.schema.json",
+  "$id": "https://painmaps.org/schemas/pain-driver-context.schema.json",
   "title": "PainMap human mortality-linked context",
   "description": "A non-canonical context dataset. Ranks are only within a compatible human mortality-rate family and are not total-pain scores.",
   "type": "object",

@@ -4,9 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preload" as="style" href="/styles.css?v=93e0a5d87fc250eb">
-    <link rel="modulepreload" href="/script.js?v=94dce133b6afba83">
-    <link rel="preload" as="style" href="/styles.css?v=93e0a5d87fc250eb">
-    <link rel="modulepreload" href="/script.js?v=94dce133b6afba83">
+    <link rel="modulepreload" href="/script.js?v=e81a66deb7aa9e5a">
+    <link rel="stylesheet" href="/styles.css?v=93e0a5d87fc250eb" integrity="sha384-247i4QQKs5xcO5DRVdCYNDn8SIksDDkmOncbjyJb10IWhCroxw7XbgJgLD7gwiez" crossorigin="anonymous">
+    <link rel="icon" href="/assets/brand/painmap-favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/brand/painmap-symbol-primary.svg">
+    <meta name="theme-color" content="#F2EFE7" data-painmap-brand="evidence-contours-v1">
+    <link rel="stylesheet" href="/brand.css?v=b4437c8a6880a9db" integrity="sha384-aKQU6+swZjdKXXFiseMfeFq1e7jA92cn0QMdJ9hAaMSqZIFwZZSxAduv3XOe4WKD" crossorigin="anonymous" data-painmap-brand="evidence-contours-v1">
+    <link rel="stylesheet" href="/assets/brand/brand-components.css?v=0648771439bc1fe1" integrity="sha384-eNpvS+YcbYTTrF1/VrQOBDSAZgoK5AwO7G8lSdhNRfNvfQRT4eTqMr2+VJ+NDHnc" crossorigin="anonymous" data-painmap-brand="evidence-contours-v1">
     <link rel="preconnect" href="https://www.geoboundaries.org" crossorigin>
     <link rel="preconnect" href="https://api.worldbank.org" crossorigin>
     <link rel="preconnect" href="https://api.worldpop.org" crossorigin>
@@ -16,29 +20,23 @@
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Developers | PainMap</title>
     <meta name="description" content="Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution.">
-    <link rel="canonical" href="https://painmap.org/developers/">
+    <link rel="canonical" href="https://painmaps.org/developers/">
     <meta property="og:title" content="Developers | PainMap">
     <meta property="og:description" content="Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution.">
-    <meta property="og:image" content="https://painmap.org/assets/social-card.svg">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://painmap.org/developers/">
+    <meta property="og:url" content="https://painmaps.org/developers/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Developers | PainMap">
     <meta name="twitter:description" content="Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution.">
-    <meta name="twitter:image" content="https://painmap.org/assets/social-card.svg">
-<link rel="stylesheet" href="../styles.css?v=93e0a5d87fc250eb" integrity="sha384-247i4QQKs5xcO5DRVdCYNDn8SIksDDkmOncbjyJb10IWhCroxw7XbgJgLD7gwiez" crossorigin="anonymous">
-    <link rel="icon" href="/assets/brand/painmap-favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/assets/brand/painmap-symbol-primary.svg">
-    <meta name="theme-color" content="#F2EFE7" data-painmap-brand="evidence-contours-v1">
-    <link rel="stylesheet" href="/brand.css?v=b4437c8a6880a9db" integrity="sha384-aKQU6+swZjdKXXFiseMfeFq1e7jA92cn0QMdJ9hAaMSqZIFwZZSxAduv3XOe4WKD" crossorigin="anonymous" data-painmap-brand="evidence-contours-v1">
-    <link rel="stylesheet" href="/assets/brand/brand-components.css?v=0648771439bc1fe1" integrity="sha384-eNpvS+YcbYTTrF1/VrQOBDSAZgoK5AwO7G8lSdhNRfNvfQRT4eTqMr2+VJ+NDHnc" crossorigin="anonymous" data-painmap-brand="evidence-contours-v1">
 
 <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","name":"Developers | PainMap","url":"https://painmap.org/developers/","description":"Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution."}
+      {"@context":"https://schema.org","@type":"TechArticle","name":"Developers | PainMap","url":"https://painmaps.org/developers/","description":"Developer notes for PainMap static datasets, OpenAPI, DCAT, caching, security headers, and attribution."}
     </script>
       <script type="application/ld+json" data-painmap-jsonld="breadcrumbs">
-      {"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://painmap.org/developers/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"PainMap","item":"https://painmap.org"},{"@type":"ListItem","position":2,"name":"API","item":"https://painmap.org/api/"},{"@type":"ListItem","position":3,"name":"Developers","item":"https://painmap.org/developers/"}]}
+      {"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://painmaps.org/developers/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"PainMap","item":"https://painmaps.org"},{"@type":"ListItem","position":2,"name":"API","item":"https://painmaps.org/api/"},{"@type":"ListItem","position":3,"name":"Developers","item":"https://painmaps.org/developers/"}]}
     </script>
+      <meta property="og:image" content="https://painmaps.org/assets/social-card.svg">
+    <meta name="twitter:image" content="https://painmaps.org/assets/social-card.svg">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -79,24 +77,24 @@
             <p class="label">Quickstart</p>
             <h2 id="quickstart-title">Fetch the contract</h2>
           </div>
-          <pre class="code-block"><code>curl https://painmap.org/v1/releases.json
-curl https://painmap.org/releases/2026-05-31/manifest.json
-curl https://painmap.org/data/openapi.json
-curl https://painmap.org/data/release-modes.json
-curl https://painmap.org/v1/places/index.json
-curl https://painmap.org/v1/adm1/index.json
-curl https://painmap.org/v1/coverage.json
-curl https://painmap.org/v1/places/IND/adm1.json
-curl https://painmap.org/v1/places/IND/neighbors.json
-curl https://painmap.org/ogc/collections/places/items.json
-curl https://painmap.org/ogc/collections/places/item-index.json
-curl https://painmap.org/ogc/collections/places/items/IND.json
-curl https://painmap.org/data/place-measurements.json
-curl https://painmap.org/v1/places/BRA.json
-curl https://painmap.org/data/provenance-registry.json
-curl https://painmap.org/schemas/place-index.schema.json
-curl https://painmap.org/schemas/adm1-context.schema.json
-curl https://painmap.org/releases/2026-05-31/diff.json</code></pre>
+          <pre class="code-block"><code>curl https://painmaps.org/v1/releases.json
+curl https://painmaps.org/releases/2026-05-31/manifest.json
+curl https://painmaps.org/data/openapi.json
+curl https://painmaps.org/data/release-modes.json
+curl https://painmaps.org/v1/places/index.json
+curl https://painmaps.org/v1/adm1/index.json
+curl https://painmaps.org/v1/coverage.json
+curl https://painmaps.org/v1/places/IND/adm1.json
+curl https://painmaps.org/v1/places/IND/neighbors.json
+curl https://painmaps.org/ogc/collections/places/items.json
+curl https://painmaps.org/ogc/collections/places/item-index.json
+curl https://painmaps.org/ogc/collections/places/items/IND.json
+curl https://painmaps.org/data/place-measurements.json
+curl https://painmaps.org/v1/places/BRA.json
+curl https://painmaps.org/data/provenance-registry.json
+curl https://painmaps.org/schemas/place-index.schema.json
+curl https://painmaps.org/schemas/adm1-context.schema.json
+curl https://painmaps.org/releases/2026-05-31/diff.json</code></pre>
           <p class="route-copy">
             The API has no authentication and no write side. Use immutable release URLs for reproducible work; use latest aliases only when freshness matters more than exact replay. Validate client assumptions against the JSON Schemas and coverage status before treating a place as measured.
           </p>

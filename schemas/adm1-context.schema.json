@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://painmap.org/schemas/adm1-context.schema.json",
+  "$id": "https://painmaps.org/schemas/adm1-context.schema.json",
   "title": "PainMap ADM1 context overlay",
   "type": "object",
   "required": [

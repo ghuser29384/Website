@@ -28,31 +28,31 @@
   },
   "links": [
     {
-      "href": "https://painmap.org/ogc/collections/index.json",
+      "href": "https://painmaps.org/ogc/collections/index.json",
       "rel": "collection",
       "type": "application/json",
       "title": "Collections"
     },
     {
-      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "href": "https://painmaps.org/ogc/collections/places/items.json",
       "rel": "items",
       "type": "application/geo+json",
       "title": "239 place features"
     },
     {
-      "href": "https://painmap.org/ogc/collections/places/item-index.json",
+      "href": "https://painmaps.org/ogc/collections/places/item-index.json",
       "rel": "alternate",
       "type": "application/json",
       "title": "Partitioned country feature index"
     },
     {
-      "href": "https://painmap.org/ogc/collections/places/items/IND.json",
+      "href": "https://painmaps.org/ogc/collections/places/items/IND.json",
       "rel": "item",
       "type": "application/geo+json",
       "title": "Example country feature item"
     },
     {
-      "href": "https://painmap.org/v1/places/index.json",
+      "href": "https://painmaps.org/v1/places/index.json",
       "rel": "describedby",
       "type": "application/json",
       "title": "Coverage-aware place index"

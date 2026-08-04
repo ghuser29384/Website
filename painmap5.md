@@ -192,10 +192,10 @@ The visible blemish is the live `security.txt` issue. The security page links to
 A valid starting `security.txt` would be:
 
 ```txt
-Contact: mailto:security@painmap.org
+Contact: mailto:security@painmaps.org
 Expires: 2027-06-01T00:00:00.000Z
-Canonical: https://painmap.org/.well-known/security.txt
-Policy: https://painmap.org/security/
+Canonical: https://painmaps.org/.well-known/security.txt
+Policy: https://painmaps.org/security/
 Preferred-Languages: en
 ```
 

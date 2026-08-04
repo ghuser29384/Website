@@ -52,9 +52,9 @@ function ensureHtmlBrandAttribute(html) {
 
 function removeExistingBrandLinks(html) {
   return html
-    .replace(/\s*<link\b[^>]*data-painmap-brand="[^"]*"[^>]*>\s*/gi, "\n")
-    .replace(/\s*<meta\b[^>]*data-painmap-brand="[^"]*"[^>]*>\s*/gi, "\n")
-    .replace(/\s*<link\b[^>]*rel="(?:icon|apple-touch-icon)"[^>]*href="\/assets\/brand\/(?:painmap-favicon|painmap-symbol-primary)\.svg"[^>]*>\s*/gi, "\n");
+    .replace(/^[ \t]*<link\b[^>\r\n]*data-painmap-brand="[^"\r\n]*"[^>\r\n]*>[ \t]*(?:\r?\n|$)/gim, "")
+    .replace(/^[ \t]*<meta\b[^>\r\n]*data-painmap-brand="[^"\r\n]*"[^>\r\n]*>[ \t]*(?:\r?\n|$)/gim, "")
+    .replace(/^[ \t]*<link\b(?=[^>\r\n]*rel="(?:icon|apple-touch-icon)")(?=[^>\r\n]*href="\/assets\/brand\/(?:painmap-favicon|painmap-symbol-primary)\.svg")[^>\r\n]*>[ \t]*(?:\r?\n|$)/gim, "");
 }
 
 function insertHeadAssets(html, brandLinks, faviconLinks, themeColor) {

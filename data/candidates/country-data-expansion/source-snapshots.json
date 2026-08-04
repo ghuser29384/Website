@@ -6,7 +6,7 @@
     {
       "source_snapshot_id": "snapshot.pending.painmap-live-homepage.2026-07-04",
       "source_id": "painmap-live-homepage",
-      "upstream_url": "https://painmap.org/",
+      "upstream_url": "https://painmaps.org/",
       "retrieval_timestamp": "",
       "source_vintage_or_reference_period": "2026-07-04 browse",
       "media_type": "to_be_detected",
@@ -38,7 +38,7 @@
       "attribution": "World Bank Group, World Development Indicators / Indicators API",
       "retrieval_metadata": {
         "status": "captured_and_parsed",
-        "user_agent": "PainMap-source-candidate/2026-07-14 (+https://painmap.org/)",
+        "user_agent": "PainMap-source-candidate/2026-07-14 (+https://painmaps.org/)",
         "payloads": [
           {
             "url": "https://api.worldbank.org/v2/country/all/indicator/AG.LND.TOTL.K2?format=json&per_page=20000&date=1990:2026",
@@ -74,7 +74,7 @@
       "attribution": "Food and Agriculture Organization of the United Nations, processed by Our World in Data",
       "retrieval_metadata": {
         "status": "captured_and_parsed",
-        "user_agent": "PainMap-source-candidate/2026-07-14 (+https://painmap.org/)",
+        "user_agent": "PainMap-source-candidate/2026-07-14 (+https://painmaps.org/)",
         "payloads": [
           {
             "url": "https://ourworldindata.org/grapher/land-animals-slaughtered-for-meat.csv",
@@ -183,7 +183,7 @@
       "attribution": "Food and Agriculture Organization of the United Nations, processed by Our World in Data",
       "retrieval_metadata": {
         "status": "captured_and_parsed",
-        "user_agent": "PainMap-source-candidate/2026-07-14 (+https://painmap.org/)",
+        "user_agent": "PainMap-source-candidate/2026-07-14 (+https://painmaps.org/)",
         "payloads": [
           {
             "url": "https://ourworldindata.org/grapher/insecticide-use.csv",
@@ -355,7 +355,7 @@
       "attribution": "World Health Organization, via World Bank Indicators API",
       "retrieval_metadata": {
         "status": "captured_and_parsed",
-        "user_agent": "PainMap-source-candidate/2026-07-14 (+https://painmap.org/)",
+        "user_agent": "PainMap-source-candidate/2026-07-14 (+https://painmaps.org/)",
         "payloads": [
           {
             "url": "https://api.worldbank.org/v2/country/all/indicator/SH.STA.AIRP.P5?format=json&per_page=20000&date=2000:2026",

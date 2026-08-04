@@ -27,7 +27,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/BLZ/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/BLZ/neighbors.json",
       "relation": "shared_boundary",
       "shared_boundary_point_count": 14
     },
@@ -39,7 +39,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/GTM/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/GTM/neighbors.json",
       "relation": "shared_boundary",
       "shared_boundary_point_count": 51
     },
@@ -51,7 +51,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/USA/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/USA/neighbors.json",
       "relation": "shared_boundary",
       "shared_boundary_point_count": 144
     }
@@ -65,7 +65,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/GTM/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/GTM/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 1584.8
     },
@@ -77,7 +77,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/BLZ/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/BLZ/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 1597.3
     },
@@ -89,7 +89,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/USA/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/USA/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 1794.4
     },
@@ -101,7 +101,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/SLV/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/SLV/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 1810.1
     },
@@ -113,7 +113,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/HND/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/HND/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 1905.5
     },
@@ -125,7 +125,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/NIC/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/NIC/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 2203
     },
@@ -137,7 +137,7 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/CYM/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/CYM/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 2232.7
     },
@@ -149,20 +149,20 @@
       "canonical_measurement_count": 0,
       "profile_url": null,
       "measurements_url": null,
-      "neighbors_url": "https://painmap.org/v1/places/CRI/neighbors.json",
+      "neighbors_url": "https://painmaps.org/v1/places/CRI/neighbors.json",
       "relation": "nearest_centroid",
       "centroid_distance_km": 2469.4
     }
   ],
   "links": [
     {
-      "href": "https://painmap.org/v1/places/index.json",
+      "href": "https://painmaps.org/v1/places/index.json",
       "rel": "collection",
       "type": "application/json",
       "title": "Place index"
     },
     {
-      "href": "https://painmap.org/ogc/collections/places/items.json",
+      "href": "https://painmaps.org/ogc/collections/places/items.json",
       "rel": "alternate",
       "type": "application/geo+json",
       "title": "OGC-style place features"

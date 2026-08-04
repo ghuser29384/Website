@@ -5,7 +5,7 @@
 **User-specified site inspected first**
 
 ```text
-https://painmap.org
+https://painmaps.org
 ```
 
 The current site is **not yet a place-first global pain atlas**. It is a **static animal-pain research visualization** whose primary layer is event-level animal pain evidence, while the globe is explicitly framed as a **secondary country-context tool**. The homepage, events route, methods route, and countries route all repeat that hierarchy: event pain comes first; country context is proxy context, not a direct pain map or final moral ranking. citeturn48search0turn50view0turn50view1turn50view2
@@ -246,7 +246,7 @@ A practical release checklist should include:
 ### Suggested handoff brief for Codex GPT-5.5
 
 ```text
-You are improving painmap.org into a place-first atlas.
+You are improving painmaps.org into a place-first atlas.
 
 Primary goal:
 Turn the current research-explainer site into a place-first atlas where the default user question is:

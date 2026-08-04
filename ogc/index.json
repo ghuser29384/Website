@@ -3,31 +3,31 @@
   "description": "Static OGC API - Features-style discovery surfaces for PainMap place geometry, coverage status, and release-scoped atlas metadata.",
   "links": [
     {
-      "href": "https://painmap.org/ogc/index.json",
+      "href": "https://painmaps.org/ogc/index.json",
       "rel": "self",
       "type": "application/json",
       "title": "This document"
     },
     {
-      "href": "https://painmap.org/ogc/conformance.json",
+      "href": "https://painmaps.org/ogc/conformance.json",
       "rel": "conformance",
       "type": "application/json",
       "title": "Conformance classes"
     },
     {
-      "href": "https://painmap.org/ogc/collections/index.json",
+      "href": "https://painmaps.org/ogc/collections/index.json",
       "rel": "data",
       "type": "application/json",
       "title": "Collections"
     },
     {
-      "href": "https://painmap.org/ogc/collections/places/item-index.json",
+      "href": "https://painmaps.org/ogc/collections/places/item-index.json",
       "rel": "items",
       "type": "application/json",
       "title": "Partitioned country feature index"
     },
     {
-      "href": "https://painmap.org/data/openapi.json",
+      "href": "https://painmaps.org/data/openapi.json",
       "rel": "service-desc",
       "type": "application/vnd.oai.openapi+json;version=3.1",
       "title": "OpenAPI description"

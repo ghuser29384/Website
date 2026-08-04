@@ -16,73 +16,73 @@
       "@type": "dcat:Dataset",
       "dct:identifier": "place-measurements",
       "dct:title": "PainMap canonical place measurements",
-      "dct:license": "https://painmap.org/policies/terms/",
+      "dct:license": "https://painmaps.org/policies/terms/",
       "dct:hasVersion": "2026-05-31.atlas.2",
       "dcat:distribution": [
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/data/place-measurements.json"
+          "dcat:downloadURL": "https://painmaps.org/data/place-measurements.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "text/csv",
-          "dcat:downloadURL": "https://painmap.org/data/place-measurements.csv"
+          "dcat:downloadURL": "https://painmaps.org/data/place-measurements.csv"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/geo+json",
-          "dcat:downloadURL": "https://painmap.org/data/places.geojson"
+          "dcat:downloadURL": "https://painmaps.org/data/places.geojson"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/v1/places/index.json"
+          "dcat:downloadURL": "https://painmaps.org/v1/places/index.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/v1/adm1/index.json"
+          "dcat:downloadURL": "https://painmaps.org/v1/adm1/index.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/v1/places/IND/adm1.json"
+          "dcat:downloadURL": "https://painmaps.org/v1/places/IND/adm1.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/v1/coverage.json"
+          "dcat:downloadURL": "https://painmaps.org/v1/coverage.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/data/release-modes.json"
+          "dcat:downloadURL": "https://painmaps.org/data/release-modes.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/data/third-party-fetches.json"
+          "dcat:downloadURL": "https://painmaps.org/data/third-party-fetches.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/v1/places/BRA/neighbors.json"
+          "dcat:downloadURL": "https://painmaps.org/v1/places/BRA/neighbors.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/releases/2026-05-31/manifest.json"
+          "dcat:downloadURL": "https://painmaps.org/releases/2026-05-31/manifest.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/releases/2026-05-31/diff.json"
+          "dcat:downloadURL": "https://painmaps.org/releases/2026-05-31/diff.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/releases/2026-05-31/migration.json"
+          "dcat:downloadURL": "https://painmaps.org/releases/2026-05-31/migration.json"
         }
       ]
     },
@@ -90,18 +90,18 @@
       "@type": "dcat:Dataset",
       "dct:identifier": "provenance-registry",
       "dct:title": "PainMap provenance registry",
-      "dct:license": "https://painmap.org/policies/terms/",
+      "dct:license": "https://painmaps.org/policies/terms/",
       "dct:hasVersion": "2026-05-31.atlas.2",
       "dcat:distribution": [
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/data/provenance-registry.json"
+          "dcat:downloadURL": "https://painmaps.org/data/provenance-registry.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/ld+json",
-          "dcat:downloadURL": "https://painmap.org/data/dcat.json"
+          "dcat:downloadURL": "https://painmaps.org/data/dcat.json"
         }
       ]
     },
@@ -109,43 +109,43 @@
       "@type": "dcat:Dataset",
       "dct:identifier": "boundary-layers",
       "dct:title": "PainMap boundary layers",
-      "dct:license": "https://painmap.org/policies/terms/",
+      "dct:license": "https://painmaps.org/policies/terms/",
       "dct:hasVersion": "2026-05-31.atlas.2",
       "dcat:distribution": [
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/geo+json",
-          "dcat:downloadURL": "https://painmap.org/data/natural-earth-countries.geojson"
+          "dcat:downloadURL": "https://painmaps.org/data/natural-earth-countries.geojson"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/data/gsap-adm1-2023.json"
+          "dcat:downloadURL": "https://painmaps.org/data/gsap-adm1-2023.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:accessURL": "https://painmap.org/ogc/index.json"
+          "dcat:accessURL": "https://painmaps.org/ogc/index.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/geo+json",
-          "dcat:downloadURL": "https://painmap.org/ogc/collections/places/items.json"
+          "dcat:downloadURL": "https://painmaps.org/ogc/collections/places/items.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:accessURL": "https://painmap.org/ogc/collections/places/item-index.json"
+          "dcat:accessURL": "https://painmaps.org/ogc/collections/places/item-index.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/geo+json",
-          "dcat:accessURL": "https://painmap.org/ogc/collections/places/items/IND.json"
+          "dcat:accessURL": "https://painmaps.org/ogc/collections/places/items/IND.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:accessURL": "https://painmap.org/v1/sources.json"
+          "dcat:accessURL": "https://painmaps.org/v1/sources.json"
         }
       ]
     },
@@ -153,93 +153,93 @@
       "@type": "dcat:Dataset",
       "dct:identifier": "developer-contracts",
       "dct:title": "PainMap developer contracts and field budgets",
-      "dct:license": "https://painmap.org/policies/terms/",
+      "dct:license": "https://painmaps.org/policies/terms/",
       "dct:hasVersion": "2026-05-31.atlas.2",
       "dcat:distribution": [
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/schema+json",
-          "dcat:downloadURL": "https://painmap.org/schemas/place-index.schema.json"
+          "dcat:downloadURL": "https://painmaps.org/schemas/place-index.schema.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/schema+json",
-          "dcat:downloadURL": "https://painmap.org/schemas/adm1-context.schema.json"
+          "dcat:downloadURL": "https://painmaps.org/schemas/adm1-context.schema.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/schema+json",
-          "dcat:downloadURL": "https://painmap.org/schemas/place-measurements.schema.json"
+          "dcat:downloadURL": "https://painmaps.org/schemas/place-measurements.schema.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/schema+json",
-          "dcat:downloadURL": "https://painmap.org/schemas/coverage.schema.json"
+          "dcat:downloadURL": "https://painmaps.org/schemas/coverage.schema.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/schema+json",
-          "dcat:downloadURL": "https://painmap.org/schemas/release-modes.schema.json"
+          "dcat:downloadURL": "https://painmaps.org/schemas/release-modes.schema.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/schema+json",
-          "dcat:downloadURL": "https://painmap.org/schemas/ogc-place-features.schema.json"
+          "dcat:downloadURL": "https://painmaps.org/schemas/ogc-place-features.schema.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/data/performance-budgets.json"
+          "dcat:downloadURL": "https://painmaps.org/data/performance-budgets.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/data/source-freshness.json"
+          "dcat:downloadURL": "https://painmaps.org/data/source-freshness.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/data/accessibility-audit.json"
+          "dcat:downloadURL": "https://painmaps.org/data/accessibility-audit.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/data/ui-smoke.json"
+          "dcat:downloadURL": "https://painmaps.org/data/ui-smoke.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/data/endpoint-smoke.json"
+          "dcat:downloadURL": "https://painmaps.org/data/endpoint-smoke.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "text/typescript",
-          "dcat:downloadURL": "https://painmap.org/clients/typescript/painmap-client.ts"
+          "dcat:downloadURL": "https://painmaps.org/clients/typescript/painmap-client.ts"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "text/x-python",
-          "dcat:downloadURL": "https://painmap.org/clients/python/painmap_client.py"
+          "dcat:downloadURL": "https://painmaps.org/clients/python/painmap_client.py"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "text/markdown",
-          "dcat:downloadURL": "https://painmap.org/examples/README.md"
+          "dcat:downloadURL": "https://painmaps.org/examples/README.md"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "text/markdown",
-          "dcat:downloadURL": "https://painmap.org/fixtures/README.md"
+          "dcat:downloadURL": "https://painmaps.org/fixtures/README.md"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/fixtures/mock-registry.json"
+          "dcat:downloadURL": "https://painmaps.org/fixtures/mock-registry.json"
         },
         {
           "@type": "dcat:Distribution",
           "dct:format": "application/json",
-          "dcat:downloadURL": "https://painmap.org/fixtures/place-measurements.fixture.json"
+          "dcat:downloadURL": "https://painmaps.org/fixtures/place-measurements.fixture.json"
         }
       ]
     }

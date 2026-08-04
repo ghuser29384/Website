@@ -1447,7 +1447,7 @@ function sourceUpstreamFallback(source) {
     return source.url;
   }
 
-  return `https://painmap.org/data/sources/${encodeURIComponent(source?.source_id || "unknown")}/`;
+  return `https://painmaps.org/data/sources/${encodeURIComponent(source?.source_id || "unknown")}/`;
 }
 
 function annotateMeasurementsWithSnapshots(measurements, snapshotIdsBySourceId, countryInputSpec, sourceById, layerById) {
@@ -1537,7 +1537,7 @@ function updatePlaceIndexCoverageCounts(placeIndex, byPlaceMeasurements, byPlace
       canonical_measurement_count: canonicalCount,
       available_layers: Array.from(rowLayers).sort(),
       evidence_kinds: Array.from(rowEvidenceKinds).sort(),
-      neighbors_url: item.neighbors_url ?? `https://painmap.org/v1/places/${placeId}/neighbors.json`,
+      neighbors_url: item.neighbors_url ?? `https://painmaps.org/v1/places/${placeId}/neighbors.json`,
     };
 
     const status = normalizeCoverageStatus(next.coverage_status);
@@ -1545,8 +1545,8 @@ function updatePlaceIndexCoverageCounts(placeIndex, byPlaceMeasurements, byPlace
 
     if (canonicalCount > 0 && level !== "adm1") {
       next.coverage_status = "canonical_measurements";
-      next.profile_url = next.profile_url ?? `https://painmap.org/v1/places/${placeId}.json`;
-      next.measurements_url = next.measurements_url ?? `https://painmap.org/v1/places/${placeId}/measurements.json`;
+      next.profile_url = next.profile_url ?? `https://painmaps.org/v1/places/${placeId}.json`;
+      next.measurements_url = next.measurements_url ?? `https://painmaps.org/v1/places/${placeId}/measurements.json`;
     } else {
       next.profile_url = next.profile_url ?? null;
       next.measurements_url = next.measurements_url ?? null;
@@ -1572,11 +1572,11 @@ function updatePlaceIndexCoverageCounts(placeIndex, byPlaceMeasurements, byPlace
     }
 
     if (level === "country" && status === "boundary_index_only") {
-      next.page_url = next.page_url ?? `https://painmap.org/place/${next.iso3 ?? next.place_id}/`;
+      next.page_url = next.page_url ?? `https://painmaps.org/place/${next.iso3 ?? next.place_id}/`;
     }
 
     if (level === "adm1" && status === "adm1_context_overlay" && !next.context_url) {
-      next.context_url = `https://painmap.org/v1/places/${next.parent_place_id}/adm1.json`;
+      next.context_url = `https://painmaps.org/v1/places/${next.parent_place_id}/adm1.json`;
       next.neighbors_url = null;
       next.profile_url = null;
       next.measurements_url = null;

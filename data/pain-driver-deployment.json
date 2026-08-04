@@ -8,17 +8,17 @@
     "observations": 741,
     "countries": 191,
     "indicators": 4,
-    "json_url": "https://painmap.org/data/pain-driver-context.json",
-    "csv_url": "https://painmap.org/data/pain-driver-context.csv"
+    "json_url": "https://painmaps.org/data/pain-driver-context.json",
+    "csv_url": "https://painmaps.org/data/pain-driver-context.csv"
   },
   "candidate_context": {
     "observations": 24,
     "countries": 8,
     "metrics": 3,
     "status": "candidate_only_manual_review_required",
-    "summary_url": "https://painmap.org/data/candidates/country-data-expansion/source-backed-country-summary.json"
+    "summary_url": "https://painmaps.org/data/candidates/country-data-expansion/source-backed-country-summary.json"
   },
-  "landing_page": "https://painmap.org/data/pain-drivers/",
+  "landing_page": "https://painmaps.org/data/pain-drivers/",
   "comparison_policy": "No cross-domain composite score; compare only compatible units and methods.",
   "health_pressure_context": {
     "dataset_id": "painmap-human-health-pressure-context-v1",
