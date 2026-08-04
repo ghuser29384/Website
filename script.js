@@ -5286,6 +5286,15 @@ function renderMoralWeightNotes() {
 }
 
 function renderIssues(country) {
+  if (!releaseRankingReadiness(state.releaseCoverage)) {
+    const reason = releaseRankingReadinessReason(state.releaseCoverage);
+    renderIssueStatus(
+      "Cause ranking unavailable",
+      `The active release does not pass its ranking-readiness gate: ${reason} Use place search, coverage status, source metadata, and event evidence without treating the current context rows as a ranked comparison.`
+    );
+    return;
+  }
+
   if (isSnapshotMode()) {
     if (!country) {
       renderRankedIssues(
@@ -5455,6 +5464,15 @@ function renderIssues(country) {
 }
 
 function renderAnimalIssues(country) {
+  if (!releaseRankingReadiness(state.releaseCoverage)) {
+    const reason = releaseRankingReadinessReason(state.releaseCoverage);
+    renderAnimalIssueStatus(
+      "Animal ranking unavailable",
+      `The active release does not pass its ranking-readiness gate: ${reason} Event-level animal-pain evidence remains available below without converting sparse proxy context into a cause ranking.`
+    );
+    return;
+  }
+
   if (!currentGlobeModeConfig().showAnimals || state.selectedProvince) {
     animalIssuesRoot.textContent = "";
     clearTable(animalIssuesTableRoot);
@@ -5898,7 +5916,7 @@ function syncModeUi() {
   const isCountryView = Boolean(state.selectedCountry);
   const isProvinceView = Boolean(state.selectedProvince);
   const rankingReady = releaseRankingReadiness(state.releaseCoverage);
-  const rankingDisabledForGlobal = !isCountryView && !rankingReady;
+  const rankingDisabled = !rankingReady;
   const activeModeConfig = getReleaseModeConfig(state.releaseMode);
 
   if (topbarNote) {
@@ -5910,10 +5928,23 @@ function syncModeUi() {
 
   if (globeModeSelect) {
     globeModeSelect.value = state.globeMode;
+    globeModeSelect.disabled = rankingDisabled;
+    globeModeSelect.setAttribute("aria-disabled", String(rankingDisabled));
+    globeModeSelect.title = rankingDisabled
+      ? "Cause-mode controls are disabled until the active release passes its ranking-readiness gate."
+      : "Choose the visible atlas cause context.";
+    globeModeSelect.setAttribute(
+      "aria-label",
+      rankingDisabled
+        ? "Cause-mode selector is disabled while release ranking-readiness gates are active"
+        : "Atlas cause mode"
+    );
   }
 
   if (globeModeCopy) {
-    globeModeCopy.textContent = !isCountryView
+    globeModeCopy.textContent = rankingDisabled
+      ? "Cause rankings are unavailable because the active release does not pass its ranking-readiness gate. The atlas remains available for coverage, provenance, and place-context inspection."
+      : !isCountryView
       ? globeMode.globeCopy
       : isProvinceView
         ? state.globeMode === "death"
@@ -5925,7 +5956,9 @@ function syncModeUi() {
   }
 
   if (humanSectionLabel) {
-    humanSectionLabel.textContent = isProvinceView
+    humanSectionLabel.textContent = rankingDisabled
+      ? "Cause ranking unavailable for this release"
+      : isProvinceView
       ? state.globeMode === "death"
         ? "Province death causes"
         : "Top 10 causes of pain in this province"
@@ -5937,7 +5970,9 @@ function syncModeUi() {
   }
 
   if (animalSectionLabel) {
-    animalSectionLabel.textContent = state.selectedCountry
+    animalSectionLabel.textContent = rankingDisabled
+      ? "Animal cause ranking unavailable"
+      : state.selectedCountry
       ? globeMode.animalSectionLabel
       : state.globeMode === "death"
         ? ""
@@ -5961,20 +5996,23 @@ function syncModeUi() {
       }
     }
 
-    rankingModeSelect.disabled = rankingDisabledForGlobal;
-    rankingModeSelect.title = rankingDisabledForGlobal
-      ? "Global ranking is disabled in coverage-first mode. Select a country to use country-scoped ranking controls."
+    rankingModeSelect.disabled = rankingDisabled;
+    rankingModeSelect.title = rankingDisabled
+      ? "Ranking controls are disabled until the active release passes its ranking-readiness gate."
       : "Order the visible atlas context by selected ranking mode.";
     rankingModeSelect.setAttribute(
       "aria-label",
-      rankingDisabledForGlobal
-        ? "Ranking mode selector is disabled while release coverage gates are active"
+      rankingDisabled
+        ? "Ranking mode selector is disabled while release ranking-readiness gates are active"
         : "Ranking mode selector"
     );
   }
 
   if (rankingCopy) {
-    if (!isCountryView) {
+    if (rankingDisabled) {
+      const reason = releaseRankingReadinessReason(state.releaseCoverage);
+      rankingCopy.textContent = `Ranking controls are unavailable for this release: ${reason} The map and tables remain available for coverage and provenance inspection.`;
+    } else if (!isCountryView) {
       rankingCopy.textContent = rankingModes[state.rankingMode].copy;
     } else if (isProvinceView && state.globeMode === "death") {
       rankingCopy.textContent =
@@ -6464,7 +6502,13 @@ function renderDetails() {
       : animalDataState.error
         ? " Animal issue data failed to load."
         : " Animal cards now aggregate live data into three requested buckets: factory-farmed animals, non-insect wild animals, and insects. The model uses Our World in Data slaughter, aquaculture, wild-caught fish, and insecticide data, World Bank land and agricultural-land indicators, a Wild Animal Initiative direct-insect benchmark, and Rethink Priorities sentience and welfare-range distributions where available. Per-dollar ordering remains rough and should be read as intervention-priority guidance rather than a settled cost-effectiveness table.";
-  selectionFootnote.textContent = `${boundarySource}${issueSource}${animalSource} Current ordering: ${rankingLabel(state.rankingMode)}.`;
+  if (releaseRankingReadiness(state.releaseCoverage)) {
+    selectionFootnote.textContent = `${boundarySource}${issueSource}${animalSource} Current ordering: ${rankingLabel(state.rankingMode)}.`;
+  } else {
+    const reason = releaseRankingReadinessReason(state.releaseCoverage);
+    selectionSummary.textContent = `${provinceNameLabel || name} is selected for coverage, provenance, and place-context inspection. Cause rankings are unavailable because the active release does not pass its ranking-readiness gate.`;
+    selectionFootnote.textContent = `${boundarySource} The live context sources remain labeled separately from the frozen release. Ranking gate: ${reason}`;
+  }
 
   factLocation.textContent = provinceNameLabel ? `${provinceNameLabel}, ${name} · ${iso}` : `${name} · ${iso}`;
   factCountrySource.textContent = "Natural Earth Admin 0, 1:50m";
